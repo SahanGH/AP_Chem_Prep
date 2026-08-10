@@ -1,0 +1,170 @@
+% Ch17 WS4 -- dissolution, coupled reactions, and a 10-point FRQ. Block 5.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Entropy and Free Energy}
+\apcdoctitle{Worksheet 4 \textbullet\ Dissolution, Coupling \& FRQ}
+\apcsubtitle{Zumdahl \S17.5, 17.10 \textbullet\ free energies add, which is what makes coupling work}
+
+\begin{document}
+\wsheader[$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ \textbullet\
+$\Delta G^\circ = -RT\ln K$ \textbullet\ $R =
+\SI{8.314}{\joule\per\mole\per\kelvin}$. ATP hydrolysis:
+$\Delta G^\circ = \SI{-30.5}{\kilo\joule\per\mole}$. $S^\circ$ (J/K$\cdot$mol):
+\ce{H2} 131 \textbullet\ \ce{O2} 205 \textbullet\ \ce{H2O(l)} 70.
+$\Delta G_f^\circ$ (kJ/mol): \ce{H2O(l)} $-237$.]
+
+\problem[]{Dissolving a salt has three free-energy contributions. Name each
+and give the sign of its enthalpy or entropy contribution:}
+\begin{parts}
+  \item Breaking up the crystal lattice:
+        \answerblank[6.4cm]{$\Delta H$ positive, $\Delta S$ positive}
+  \item Reorganizing solvent around the ions:
+        \answerblank[7.6cm]{$\Delta S$ negative (hydration shells order)}
+  \item Attraction between ions and solvent:
+        \answerblank[6.4cm]{$\Delta H$ negative}
+\end{parts}
+
+\problem[]{The CED says predicting the overall $\Delta G^\circ$ of
+dissolution ``can be challenging.'' Explain why, and say what you
+\emph{are} expected to do.
+\answerlines[4]{The three contributions largely cancel: two large enthalpy
+terms of opposite sign, and two entropy terms of opposite sign. The net
+free energy is a small difference between big numbers, so its sign cannot
+be reliably predicted by inspection. You are expected to identify the
+contributions and their individual signs and reason about them, not to
+predict solubility from scratch.}}
+
+\problem[]{\ce{NH4NO3} dissolves \emph{endothermically} --- the beaker gets
+noticeably cold --- yet it is extremely soluble.}
+\begin{parts}
+  \item What does the cold beaker tell you about $\Delta H^\circ$?
+        \answerblank[3.4cm]{it is positive}
+  \item Since the salt dissolves readily, what must be true of
+        $\Delta G^\circ$, and therefore of $\Delta S^\circ$?
+        \answerlines[3]{$\Delta G^\circ$ must be negative. With
+        $\Delta H^\circ$ positive, the only way to achieve that is for
+        $T\Delta S^\circ$ to exceed it, so $\Delta S^\circ$ must be
+        positive and reasonably large.}
+  \item Explain the entropy increase in physical terms.
+        \answerlines[2]{A highly ordered ionic crystal breaks up into
+        individual ions free to move throughout the solvent, which is a
+        large increase in the dispersal of matter.}
+  \item What does this example prove about the claim ``exothermic reactions
+        are the favored ones''? \answerlines[2]{It disproves it. Enthalpy is
+        only one of two terms; here entropy alone drives the process while
+        enthalpy opposes it.}
+\end{parts}
+
+\problem[]{\ce{NaCl} dissolves with $\Delta H^\circ$ very close to zero, yet
+readily. Explain what must be driving it and write the reduced form of the
+free-energy expression that applies.
+\answerlines[3]{The entropy term is driving it. With
+$\Delta H^\circ \approx 0$ the expression reduces to
+$\Delta G^\circ \approx -T\Delta S^\circ$, and since dissolution disperses
+an ordered lattice into mobile hydrated ions, $\Delta S^\circ > 0$ and
+$\Delta G^\circ < 0$.}}
+
+\problem[]{Two ways to drive an unfavorable process.}
+\begin{parts}
+  \item Name them. \answerlines[2]{Supply energy from an external source, or
+        couple the process to a thermodynamically favorable reaction.}
+  \item Give the CED's two examples of an external source.
+        \answerlines[2]{Electrical energy driving an electrolytic cell or
+        charging a battery; light driving the conversion of carbon dioxide
+        to glucose in photosynthesis.}
+  \item What must two coupled reactions share for the coupling to be real
+        rather than bookkeeping?
+        \answerblank[5.4cm]{a common intermediate}
+\end{parts}
+
+\problem[]{Coupled reaction arithmetic.}
+\begin{parts}
+  \item Reaction X has $\Delta G^\circ = +9.2$~kJ/mol and is coupled to ATP
+        hydrolysis. Find the overall $\Delta G^\circ$ and say whether it is
+        favored. \answerblank[5cm]{$-21.3$ kJ/mol; favored}
+  \item Reaction Y has $\Delta G^\circ = +50$~kJ/mol. Show that coupling to
+        a single ATP hydrolysis is not enough, then find how many are
+        needed. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}One ATP: $+50 + (-30.5) = +19.5$~kJ ---
+        still unfavorable. Two ATP: $+50 + 2(-30.5) =
+        \mathbf{-11.0}~\text{kJ}$ --- favored. So \textbf{two} are
+        required.\end{apcanswer}}
+  \item Explain what ``ATP is the cell's energy currency'' actually means,
+        thermodynamically. \answerlines[3]{Not that ATP stores energy in
+        some special bond, but that its hydrolysis has a substantially
+        negative $\Delta G^\circ$. Because free energies add, that
+        favorable reaction can be coupled to reactions the cell needs which
+        are unfavorable on their own, making the sum favorable.}
+\end{parts}
+
+\problem[]{Photosynthesis converts \ce{CO2} and water to glucose and oxygen
+with $\Delta G^\circ \approx +2870$~kJ per mole of glucose.}
+\begin{parts}
+  \item Is the reaction thermodynamically favored?
+        \answerblank[2.6cm]{no}
+  \item Explain how it occurs anyway, and why no law is broken.
+        \answerlines[3]{It is driven by an external energy source: absorbed
+        sunlight supplies the free energy the reaction lacks. Considering
+        the plant together with the light source and surroundings, the
+        overall $\Delta G$ is still negative and
+        $\Delta S_{\text{univ}} > 0$.}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} Consider the electrolysis of water,
+\ce{2H2O(l) -> 2H2(g) + O2(g)}.}
+\begin{parts}
+  \item Predict the sign of $\Delta S^\circ$ and justify from the equation
+        alone. \answerlines[2]{Positive. Three moles of gas are produced
+        from a liquid, and gases carry far more entropy than condensed
+        phases.}
+  \item Calculate $\Delta S^\circ$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[2(131) + 205] - 2(70) = 467 - 140 =
+        \mathbf{+327}~\si{\joule\per\kelvin}$\end{apcanswer}}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin} from
+        $\Delta G_f^\circ$ values, and state whether the reaction is
+        thermodynamically favored. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = 0 - 2(-237) =
+        \mathbf{+474}~\text{kJ}$ --- strongly \textbf{not}
+        favored\end{apcanswer}}
+  \item Given $\Delta H^\circ = +572$~kJ, calculate the temperature above
+        which the reaction becomes favored, and comment on whether that is
+        a practical route to hydrogen. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$T = \Delta H^\circ/\Delta S^\circ =
+        572/0.327 = \mathbf{1749}~\si{\kelvin}$
+        ($\approx\SI{1480}{\celsius}$). Impractical --- maintaining that
+        temperature is far harder than supplying the energy
+        electrically.\end{apcanswer}}
+  \item Explain how hydrogen is obtained from water in practice, in terms
+        of this unit's vocabulary. \answerlines[3]{By electrolysis: an
+        external electrical energy source drives the thermodynamically
+        unfavorable reaction. The electricity supplies the free energy the
+        reaction lacks, exactly as light does for photosynthesis.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 positive, 1 justification citing 3 mol of gas formed
+from a liquid \textbullet\ \textbf{(b) 2 pts} 1 correct setup with
+coefficients, 1 answer $+327$~J/K \textbullet\ \textbf{(c) 2 pts} 1
+$\Delta G^\circ = +474$~kJ, 1 states not favored \textbullet\
+\textbf{(d) 3 pts} 1 recognizes $T = \Delta H^\circ/\Delta S^\circ$,
+1 unit conversion to kJ/K and answer $1749$~K, 1 comment on impracticality
+--- an answer that forgets to convert J to kJ earns at most 1 \textbullet\
+\textbf{(e) 1 pt} electrolysis identified as an external energy source
+driving an unfavorable process.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 17 \textbullet\ blocks 1--4}
+  \item $\Delta G^\circ = -RT\ln K$; if $K > 1$ then $\Delta G^\circ$ is
+        \answerblank[2cm]{negative}
+  \item Favored but immeasurably slow means:
+        \answerblank[3.4cm]{kinetic control}
+  \item Crossover temperature $=$ \answerblank[2.6cm]{$\Delta H/\Delta S$}
+  \item A catalyst changes the rate but not:
+        \answerblank[2cm]{$K$}
+  \item $\Delta H^\circ < 0$ with $\Delta S^\circ > 0$ is favored at:
+        \answerblank[3.6cm]{all temperatures}
+\end{spiralstrip}
+
+\end{document}

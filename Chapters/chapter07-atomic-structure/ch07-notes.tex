@@ -1,0 +1,559 @@
+% Zumdahl Chapter 7 -- Atomic Structure and Periodicity.
+% ELABORATED notes, 4 block lessons, with an explicit skip map: about a
+% third of this chapter is off the current CED.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{7}
+\apcunittitle{Atomic Structure and Periodicity}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S7.1--7.2, 7.5, 7.8--7.9, 7.11--7.12 \textbullet\ PDF pp.~331--389 \textbullet\ 4 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Read this before you open the chapter]
+Chapter 7 splits across \emph{two} CED units and carries more off-syllabus
+material than any chapter you have worked so far --- roughly a third of it.
+Reading straight through would cost you hours on topics the exam never asks
+about.
+
+\textbf{What feeds the CED:}
+\S7.1--7.2 $\to$ Unit 3.11--3.12 (spectroscopy, photons);
+\S7.5, 7.8--7.9, 7.11 $\to$ Unit 1.5 (electron configuration);
+\S7.12 $\to$ Unit 1.6--1.7 (PES and periodic trends).
+
+\textbf{What to skip:} \S7.3 (hydrogen line spectrum), \S7.4 (Bohr model),
+\S7.6 (quantum numbers), \S7.7 (orbital shapes and energies in detail),
+\S7.10 (history of the periodic table), \S7.13 (alkali metals). These are
+classic first-year-college content that AP dropped in the 2019 redesign.
+They are interesting; they are not tested.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Light and the Nature of Matter}{Zumdahl \S7.1--7.2}
+
+\begin{objectives}
+  \item Relate wavelength, frequency, and photon energy.
+  \item Explain the photoelectric effect and what it proved about light.
+\end{objectives}
+
+\reading{Zumdahl \S7.1--7.2}{332--340}
+
+\begin{warmup}[3]
+  \item Which has more energy per photon, red or violet light?
+        \answerblank[2.4cm]{violet}
+  \item Configuration of \ce{Ne}: \answerblank[3.4cm]{$1s^2 2s^2 2p^6$}
+  \item Which is larger, Na or \ce{Na+}? \answerblank[2cm]{Na}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Waves and their arithmetic}
+
+\notesectionz{Electromagnetic radiation}{7.1}
+\practice{5}
+
+Light is characterized by three interlocking quantities:
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item \term{Wavelength} $\lambda$ --- distance between successive peaks,
+        in metres.
+  \item \term{Frequency} $\nu$ --- cycles per second, in
+        \answerblank[1.8cm]{\si{\per\second}} (Hz).
+  \item \term{Speed} --- all electromagnetic radiation travels at
+        $c = \answerblank[3cm]{\SI{3.00e8}{\meter\per\second}}$ in a vacuum.
+\end{itemize}
+
+\[
+  c = \answerblank[1.6cm]{$\lambda\nu$}
+  \qquad\Rightarrow\qquad
+  \nu = \answerblank[1.6cm]{$c/\lambda$}
+\]
+
+Because $c$ is fixed, $\lambda$ and $\nu$ are
+\answerblank[2.4cm]{inversely} related --- short wavelength means high
+frequency.
+
+\notesub{Energy comes in packets}
+
+Planck's insight was that energy is not continuous but
+\term{quantized} --- transferred in discrete units. For a single photon:
+\[
+  E = \answerblank[1.4cm]{$h\nu$} = \answerblank[1.8cm]{$\dfrac{hc}{\lambda}$}
+  \qquad h = \SI{6.626e-34}{\joule\second}
+\]
+
+\begin{apctrap}
+The AP equations sheet gives you $E = h\nu$ but \emph{not} $\nu = c/\lambda$.
+When a problem hands you a wavelength, you must supply that step yourself.
+And $\lambda$ must be in \emph{metres} --- nanometres are the most common
+unit-conversion casualty on this topic.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 1: from wavelength to energy]
+Find the energy of one photon of \SI{400.}{\nano\meter} light.
+\begin{align*}
+  \nu &= \frac{c}{\lambda} = \frac{3.00\times10^{8}}{400.\times10^{-9}}
+       = \SI{7.50e14}{\per\second}\\
+  E &= h\nu = (6.626\times10^{-34})(7.50\times10^{14})
+     = \SI{4.97e-19}{\joule}
+\end{align*}
+Per mole: $\times 6.022\times10^{23} = \SI{299}{\kilo\joule\per\mole}$ ---
+comparable to a chemical bond energy, which is why UV light breaks bonds.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Photon arithmetic}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Frequency of \SI{600.}{\nano\meter} light:
+        \answerblank[3.4cm]{\SI{5.00e14}{\per\second}}
+  \item Energy of one such photon:
+        \answerblank[3.4cm]{\SI{3.31e-19}{\joule}}
+  \item A photon of \SI{200}{\nano\meter} light has how many times the
+        energy of one at \SI{800}{\nano\meter}? (No calculator.)
+        \answerblank[2.4cm]{4 times}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The photoelectric effect}
+
+\notesectionz{Evidence that light is particulate}{7.2}
+\practice{6}
+
+Shine light on a metal surface and electrons are ejected --- but only under
+specific conditions. Zumdahl lists three observations:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Below a \term{threshold frequency} $\nu_0$,
+        \answerblank[3cm]{no electrons} are emitted.
+  \item Below $\nu_0$, increasing the \answerblank[2.2cm]{intensity}
+        changes nothing --- still no electrons.
+  \item Above $\nu_0$, the \emph{number} of electrons emitted rises with
+        \answerblank[2.2cm]{intensity}.
+\end{enumerate}
+
+\begin{apcnote}
+Observation 2 is the decisive one. A pure wave model predicts that
+\emph{any} frequency should work if you shine it brightly enough --- energy
+would simply accumulate until an electron breaks free. It never happens.
+
+Einstein's resolution: light arrives as \term{photons}, discrete packets of
+energy $h\nu$. One photon ejects one electron, or it does not. Brighter
+light means \emph{more photons}, not more energetic ones. Frequency sets
+the energy per packet; intensity sets the number of packets.
+\end{apcnote}
+
+This is exactly the physics behind \textbf{photoelectron spectroscopy} in
+Block 4: a high-energy photon ejects an electron, and measuring what is left
+over tells you how tightly that electron was held.
+
+\begin{apcnote}[ENRICHMENT --- beyond the CED]
+\S7.2 also develops \textbf{de Broglie's relation} $\lambda = h/(mv)$,
+assigning a wavelength to matter, and \S7.3--7.4 use the hydrogen line
+spectrum to build the \textbf{Bohr model}. Both are historically important
+and neither is on the current CED. Read them for interest, not for the
+exam.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Reasoning from the model}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A metal has a threshold frequency of
+        \SI{6.0e14}{\per\second}. Predict what happens with (a) intense
+        red light at \SI{4.0e14}{\per\second} and (b) dim violet light
+        at \SI{7.5e14}{\per\second}.
+        \answerlines[3]{(a) Nothing --- each photon carries too little
+        energy, and brightness only adds more inadequate photons.
+        (b) Electrons are ejected, though few of them, because each photon
+        exceeds the threshold.}
+  \item Explain why microwave radiation warms food but does not cause
+        sunburn, while ultraviolet does the reverse.
+        \answerlines[2]{Microwave photons have far too little energy to
+        break bonds or damage DNA; they only increase molecular rotation.
+        UV photons carry enough energy per packet to break chemical bonds.}
+\end{enumerate}
+
+\begin{exitticket}
+Two beams of light deliver the same total energy per second. One is red, one
+is blue. Which delivers more photons, and why? \answerlines[2]{Red --- each
+red photon carries less energy ($E = hc/\lambda$, longer wavelength), so
+more of them are needed to total the same energy.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Orbitals and Polyelectronic Atoms}{Zumdahl \S7.5, 7.8--7.9}
+
+\begin{objectives}
+  \item Describe what an orbital is --- and is not.
+  \item Explain shielding and penetration, and why 2s lies below 2p.
+\end{objectives}
+
+\reading{Zumdahl \S7.5, 7.8--7.9}{346--356}
+
+\begin{warmup}[3]
+  \item $E$ of a \SI{500}{\nano\meter} photon:
+        \answerblank[3.2cm]{\SI{3.98e-19}{\joule}}
+  \item Below the threshold frequency, brighter light does what?
+        \answerblank[3cm]{still nothing}
+  \item Max electrons in a $p$ subshell: \answerblank[1.6cm]{6}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What an orbital actually is}
+
+\notesectionz{The quantum mechanical model}{7.5}
+\practice{1}
+
+An \term{orbital} is not a path or an orbit. It is a
+\answerblank[4.8cm]{probability distribution} --- a region of space where an
+electron is likely to be found. We cannot say where an electron \emph{is},
+only where it probably is.
+
+\notesub{The Pauli exclusion principle}
+
+An orbital holds at most \answerblank[1.2cm]{2} electrons, and those two
+must have \answerblank[3.0cm]{opposite spins}.
+
+Combined with the subshell capacities you already know:
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}lcccc@{}}
+\toprule
+Subshell & $s$ & $p$ & $d$ & $f$\\
+\midrule
+Orbitals & \answerblank[1cm]{1} & \answerblank[1cm]{3} &
+  \answerblank[1cm]{5} & \answerblank[1cm]{7}\\
+Max electrons & \answerblank[1cm]{2} & \answerblank[1cm]{6} &
+  \answerblank[1cm]{10} & \answerblank[1cm]{14}\\
+\bottomrule
+\end{tabular}
+
+\segment{GUIDED PRACTICE}{15}{Orbital counting}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Total orbitals in the $n = 3$ shell:
+        \answerblank[3.0cm]{9 (1 + 3 + 5)}
+  \item Maximum electrons in $n = 3$: \answerblank[2cm]{18}
+  \item Can two electrons in the same orbital have the same spin? Why?
+        \answerblank[6.4cm]{No --- Pauli exclusion principle}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Why multi-electron atoms are harder}
+
+\notesectionz{Shielding and penetration}{7.9}
+\practice{6}
+
+In hydrogen, all orbitals of a given $n$ have the \emph{same} energy. In any
+atom with more than one electron, they do not --- and the reason is
+electron--electron interaction.
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \term{Shielding}: inner electrons partly block the nuclear charge,
+        so a valence electron feels an \term{effective nuclear charge}
+        \[ Z_{\text{eff}} \approx Z - \answerblank[2.6cm]{$S$ (shielding)} \]
+  \item \term{Penetration}: some orbitals let an electron spend a small but
+        significant fraction of its time \answerblank[4.5cm]{very near the
+        nucleus}.
+\end{itemize}
+
+\begin{workedexample}[Worked example: why 2s lies below 2p]
+Zumdahl's argument from the radial probability profiles. The 2$p$ orbital
+actually has its \emph{maximum} probability closer to the nucleus than the
+2$s$ does --- which naively suggests 2$p$ should be lower in energy.
+
+But the 2$s$ profile has a small extra hump of electron density very close
+to the nucleus. So although a 2$s$ electron spends most of its time slightly
+farther out, it spends a small and very significant amount of time
+\emph{inside} the shielding of the core.
+
+That penetration means the 2$s$ electron is attracted more strongly overall.
+Result: in any polyelectronic atom,
+\[ E(2s) < E(2p) \]
+The same pattern holds for 3$s$ $<$ 3$p$ $<$ 3$d$.
+\end{workedexample}
+
+\begin{apcnote}
+This single fact --- penetration ordering $s < p < d$ within a shell --- is
+what makes the aufbau filling order work, and it is what you will
+\emph{measure directly} with photoelectron spectroscopy in Block 4. PES peak
+positions are the experimental proof of this energy ordering.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Reasoning with $Z_{\text{eff}}$}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Which experiences a larger $Z_{\text{eff}}$: a 2$p$ electron in
+        oxygen or a 2$p$ electron in fluorine? Explain.
+        \answerlines[2]{Fluorine --- it has one more proton with essentially
+        the same shielding from the same core, so the net attraction on a
+        2$p$ electron is greater.}
+  \item Sodium's 3$s$ electron is far easier to remove than any of its 2$p$
+        electrons. Give both reasons.
+        \answerlines[3]{The 3$s$ electron is farther from the nucleus, and
+        it is shielded by the entire $n=1$ and $n=2$ core --- so it feels a
+        much smaller $Z_{\text{eff}}$ at a greater distance.}
+\end{enumerate}
+
+\begin{exitticket}
+In hydrogen, 2$s$ and 2$p$ have identical energies; in lithium they do not.
+Explain what changed. \answerlines[2]{Hydrogen has only one electron, so
+there is no shielding or electron--electron repulsion. In lithium the 1$s$
+core shields the $n=2$ electrons, and 2$s$ penetrates that core better than
+2$p$ does --- so the degeneracy is broken.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Electron Configurations}{Zumdahl \S7.11}
+
+\begin{objectives}
+  \item Write ground-state configurations for atoms and ions.
+  \item Connect configuration to position on the periodic table.
+\end{objectives}
+
+\reading{Zumdahl \S7.11}{358--364}
+
+\begin{warmup}[4]
+  \item Why is 2$s$ lower in energy than 2$p$?
+        \answerblank[5.7cm]{2s penetrates the core more}
+  \item Max electrons in $n = 2$: \answerblank[1.6cm]{8}
+  \item An orbital is best described as a:
+        \answerblank[4.8cm]{probability distribution}
+  \item $Z_{\text{eff}}$ means: \answerblank[4.8cm]{effective nuclear charge}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Three rules}
+
+\notesectionz{Building ground states}{7.11}
+\practice{1}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item \term{Aufbau}: fill orbitals from
+        \answerblank[4.5cm]{lowest energy upward}.
+  \item \term{Pauli}: at most \answerblank[4.6cm]{2 electrons per orbital},
+        opposite spins.
+  \item \term{Hund}: within a subshell, occupy orbitals
+        \answerblank[4.3cm]{singly before pairing}, with parallel spins.
+\end{enumerate}
+
+Filling order: $1s\,2s\,2p\,3s\,3p\,\mathbf{4s}\,3d\,4p\,5s\,4d\,5p$\ldots ---
+note that \answerblank[1.4cm]{4s} fills before 3$d$, a direct consequence of
+the penetration effect from Block 2.
+
+\begin{workedexample}[Worked example 1: three notations for sulfur]
+Sulfur, 16 electrons.\\
+\textbf{Full:} $1s^2\,2s^2\,2p^6\,3s^2\,3p^4$\\
+\textbf{Noble-gas core:} $[\ce{Ne}]\,3s^2\,3p^4$\\
+\textbf{Orbital diagram, 3$p$ only:}
+$\uparrow\downarrow\ \ \uparrow\ \ \uparrow$ --- Hund's rule requires the
+last two electrons to occupy separate orbitals, leaving two unpaired.
+\end{workedexample}
+
+\notesub{Reading configurations off the table}
+
+The periodic table \emph{is} a configuration map: groups 1--2 are the
+\answerblank[1.2cm]{$s$} block, 13--18 the \answerblank[1.2cm]{$p$} block,
+the transition metals the \answerblank[1.2cm]{$d$} block. An element's
+period number gives the valence \answerblank[1.2cm]{$n$}.
+
+\segment{GUIDED PRACTICE}{15}{Write them}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{P}: \answerblank[4.2cm]{$[\ce{Ne}]\,3s^2\,3p^3$}
+  \item \ce{Ca}: \answerblank[4.2cm]{$[\ce{Ar}]\,4s^2$}
+  \item \ce{Br}: \answerblank[4.2cm]{$[\ce{Ar}]\,4s^2\,3d^{10}\,4p^5$}
+  \item \ce{Fe}: \answerblank[4.2cm]{$[\ce{Ar}]\,4s^2\,3d^6$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Ions and exceptions}
+
+\notesectionz{Cations, anions, and two anomalies}{7.11}
+\practice{1}
+
+\begin{apctrap}
+For an ion, adjust the electron count \emph{first}, then write the
+configuration --- do not write the atom's configuration and label it.
+\ce{Ca^2+} is $[\ce{Ar}]$, not $[\ce{Ar}]4s^2$.
+
+And for transition metals, electrons leave the \answerblank[1.4cm]{4s}
+orbital before the 3$d$, even though 4$s$ filled first. \ce{Fe^2+} is
+$[\ce{Ar}]3d^6$, not $[\ce{Ar}]4s^2 3d^4$.
+\end{apctrap}
+
+\notesub{The two exceptions worth knowing}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item \ce{Cr}: expected $[\ce{Ar}]4s^2 3d^4$, actual
+        \answerblank[3cm]{$[\ce{Ar}]4s^1 3d^5$}
+  \item \ce{Cu}: expected $[\ce{Ar}]4s^2 3d^9$, actual
+        \answerblank[3cm]{$[\ce{Ar}]4s^1 3d^{10}$}
+\end{itemize}
+
+Half-filled and filled $d$ subshells are slightly more stable, and the 4$s$
+and 3$d$ energies are close enough that promoting one electron pays off.
+
+\segment{APPLICATION}{20}{Configurations in context}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Write configurations for \ce{S^2-}, \ce{K+}, and \ce{Ar}. What do
+        you notice? \answerlines[2]{All three are $[\ce{Ar}]$ /
+        $1s^22s^22p^63s^23p^6$ --- they are isoelectronic, with 18
+        electrons each.}
+  \item How many unpaired electrons does a ground-state Fe atom have?
+        \answerlines[2]{$[\ce{Ar}]4s^2 3d^6$: the six $d$ electrons fill
+        five orbitals as $\uparrow\downarrow,\uparrow,\uparrow,\uparrow,
+        \uparrow$ --- four unpaired.}
+  \item Distinguish ground state, excited state, and impossible:
+        $1s^2 2s^2 2p^5 3s^1$ (10 electrons).
+        \answerlines[2]{Excited neon --- the electron count is right but
+        2$p$ is short while 3$s$ is occupied, violating aufbau.}
+\end{enumerate}
+
+\begin{exitticket}
+Write the configuration of \ce{Fe^3+} and state how many unpaired electrons
+it has. \answerlines[2]{$[\ce{Ar}]3d^5$ --- remove the two 4$s$ electrons
+first, then one 3$d$. Five unpaired electrons, one in each $d$ orbital.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Periodic Trends and PES}{Zumdahl \S7.12}
+
+\begin{objectives}
+  \item Explain trends in ionization energy, radius, and electronegativity
+        using Coulombic reasoning.
+  \item Interpret successive ionization energies and PES spectra.
+\end{objectives}
+
+\reading{Zumdahl \S7.12}{364--371}
+
+\begin{warmup}[3]
+  \item Configuration of \ce{Cr}: \answerblank[3.6cm]{$[\ce{Ar}]4s^1 3d^5$}
+  \item Unpaired electrons in ground-state N: \answerblank[1.6cm]{3}
+  \item Which is removed first from Fe, a 4$s$ or 3$d$ electron?
+        \answerblank[1.6cm]{4$s$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Ionization energy}
+
+\notesectionz{Successive ionization energies}{7.12}
+\practice{5}
+
+The \term{first ionization energy} $I_1$ removes the
+\answerblank[3.6cm]{highest-energy} (least tightly bound) electron.
+
+\begin{workedexample}[Worked example 1: Zumdahl's aluminium]
+Al is $[\ce{Ne}]3s^2 3p^1$. Removing electrons one at a time:
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & $I_1$ & $I_2$ & $I_3$ & $I_4$\\
+kJ/mol & 580 & 1815 & 2740 & 11600\\
+\bottomrule
+\end{tabular}
+\end{center}
+$I_1$ removes the lone 3$p$ electron. $I_2$ then removes a 3$s$ electron ---
+harder, and not only because 3$s$ lies lower. The dominant reason is
+\textbf{charge}: the second electron is being pulled from a
+\emph{positive ion} rather than a neutral atom, and Coulomb's law says a
+greater positive charge binds electrons more firmly.
+
+The enormous jump at $I_4$ marks the point where you begin removing
+\answerblank[2.2cm]{core} electrons --- confirming aluminium has
+\answerblank[1.4cm]{3} valence electrons.
+\end{workedexample}
+
+\begin{apcnote}
+This is the AP tool: locate the \emph{big jump} in a successive-ionization
+table and count how many electrons came off before it. That number is the
+group's valence count, which identifies the group.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Read the jump}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item $I$ values 738, 1451, 7733 kJ/mol $\to$ group:
+        \answerblank[2.4cm]{2 (Mg)}
+  \item $I$ values 1012, 1907, 2914, 4964, 6274, 21{,}267 $\to$ group:
+        \answerblank[2.4cm]{15 (P)}
+  \item Why is $I_2$ always larger than $I_1$ for any element?
+        \answerlines[2]{The second electron is removed from a cation ---
+        the same nuclear charge acting on fewer electrons binds them more
+        tightly.}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Trends and PES}
+
+\notesectionz{The three trends, one engine}{7.12}
+\practice{6}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{3.2cm}p{2.8cm}p{6.4cm}@{}}
+\toprule
+\textbf{Property} & \textbf{Across a period} & \textbf{Coulombic reason}\\
+\midrule
+Atomic radius & \answerblank[2.1cm]{decreases} &
+  rising $Z_{\text{eff}}$ pulls the same shell inward\\
+Ionization energy & \answerblank[2.0cm]{increases} &
+  valence electron held more tightly\\
+Electronegativity & \answerblank[2.0cm]{increases} &
+  same engine: more charge, less distance\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Two period-2 anomalies in ionization energy: B $<$ Be (boron's outer
+electron is in a higher-energy 2$p$) and O $<$ N (oxygen's fourth 2$p$
+electron is \emph{paired}, and the repulsion makes it easier to remove).
+Both are standard AP items.
+\end{apctrap}
+
+\notesub{Photoelectron spectroscopy}
+
+Zumdahl \S7.12 (pp.~368--369) applies the photoelectric effect from Block 1
+as a measuring instrument. A high-energy photon ejects an electron; the
+kinetic energy left over reveals how tightly it was bound:
+\[
+  E_{\text{electron}} = h\nu - KE
+\]
+Helium is the usual source, emitting at \SI{58.4}{\nano\meter}
+(\SI{21.2}{\electronvolt}) --- energetic enough to eject electrons from most
+atoms.
+
+On the spectrum: peak \emph{position} gives
+\answerblank[3.2cm]{binding energy}; peak \emph{area} gives the
+\answerblank[4.2cm]{number of electrons} in that subshell.
+
+\begin{workedexample}[Worked example 2: reading magnesium]
+Peaks at 126, 9.07, 5.31, and 0.74 MJ/mol with relative areas
+$2 : 2 : 6 : 2$.
+
+Areas total 12 electrons $\to$ $1s^2 2s^2 2p^6 3s^2$ $\to$ magnesium.
+Note that the 2$p$ peak (5.31) sits at \emph{lower} binding energy than
+2$s$ (9.07), exactly as the penetration argument in Block 2 predicts. PES
+is the experimental confirmation of that energy ordering.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Trends and spectra together}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item The 1$s$ binding energy of boron is 19.3 MJ/mol; of fluorine, 67.2
+        MJ/mol. Explain the difference without using the word ``shell.''
+        \answerlines[3]{1$s$ electrons are essentially unshielded, so they
+        feel nearly the full nuclear charge. Fluorine has 9 protons to
+        boron's 5, acting at a comparable distance --- so its 1$s$ electrons
+        are bound far more tightly.}
+  \item Predict two specific differences between the PES spectra of
+        phosphorus and sulfur. \answerlines[2]{Every sulfur peak shifts to
+        slightly higher binding energy (one more proton at similar
+        shielding), and the 3$p$ peak's area grows from 3 to 4.}
+  \item Rank first ionization energy: Na, Mg, Al. Explain any anomaly.
+        \answerlines[3]{Mg $>$ Al $>$ Na. Mg exceeds Al because aluminium's
+        outermost electron occupies a higher-energy 3$p$ orbital, while
+        magnesium's comes from a filled 3$s$.}
+\end{enumerate}
+
+\begin{exitticket}
+A PES spectrum shows peaks with areas $2:2:6:2:3$. Identify the element and
+state which peak's electrons are lost first on ionization.
+\answerlines[2]{Total 15 electrons $\to$ phosphorus. The lowest binding
+energy peak (area 3, the 3$p$) is lost first.}
+\end{exitticket}
+
+\end{document}

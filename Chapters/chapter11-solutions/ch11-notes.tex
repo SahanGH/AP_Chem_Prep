@@ -1,0 +1,521 @@
+% Zumdahl Chapter 11 -- Properties of Solutions. ELABORATED notes.
+% 3 examinable blocks (11.1-11.3) + 1 clearly marked enrichment block
+% (11.4-11.7 colligative properties), which are off the current CED.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{11}
+\apcunittitle{Properties of Solutions}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S11.1--11.3 (CED) $+$ \S11.4--11.7 (enrichment) \textbullet\ PDF pp.~551--581 \textbullet\ 4 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Read this first --- about half the chapter is off-syllabus]
+\textbf{Examinable: \S11.1--11.3.} Solution composition, the energetics of
+dissolving, and the factors that affect solubility --- CED 3.7 and 3.10,
+taught in Unit 3.
+
+\textbf{Not examinable: \S11.4--11.8.} Vapour pressure lowering,
+boiling-point elevation, freezing-point depression, osmotic pressure, and
+colloids. Collectively the \emph{colligative properties}, all dropped from
+the AP framework in the 2019 redesign. They appear here as
+\textbf{one clearly marked enrichment block}, included because freezing-point
+depression is the reason salt is spread on icy roads and osmosis is the
+reason cells burst in pure water --- worth an hour, worth zero exam points.
+
+Note that \textbf{molality} exists almost entirely to serve colligative
+calculations. It is defined in Block 1 for completeness and because
+distinguishing it from molarity sharpens what molarity actually means.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Solution Composition}{Zumdahl \S11.1}
+
+\begin{objectives}
+  \item Compute molarity, molality, mass percent, and mole fraction.
+  \item Explain why molarity is temperature-dependent and molality is not.
+\end{objectives}
+
+\reading{Zumdahl \S11.1}{552--555}
+
+\begin{warmup}[3]
+  \item Moles in \SI{58.44}{\gram} \ce{NaCl}:
+        \answerblank[2.6cm]{\SI{1.000}{\mole}}
+  \item $[\ce{Cl-}]$ in \SI{0.20}{\Molar} \ce{CaCl2}:
+        \answerblank[2.6cm]{\SI{0.40}{\Molar}}
+  \item Mole fraction of A if $n_A = 0.25$, $n_{\text{tot}} = 1.00$:
+        \answerblank[2cm]{0.25}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Four ways to state a concentration}
+
+\notesectionz{The definitions}{11.1}
+\practice{5}
+
+\renewcommand{\arraystretch}{1.6}
+\noindent\begin{tabular}{@{}p{3.0cm}p{5.4cm}p{5.0cm}@{}}
+\toprule
+\textbf{Measure} & \textbf{Definition} & \textbf{Note}\\
+\midrule
+\term{Molarity} ($M$) &
+  \answerblank[4.2cm]{$\dfrac{\text{mol solute}}{\text{L solution}}$} &
+  the working unit of AP chemistry\\
+\term{Molality} ($m$) &
+  \answerblank[4.4cm]{$\dfrac{\text{mol solute}}{\text{kg solvent}}$} &
+  used for colligative work\\
+\term{Mass percent} &
+  \answerblank[4.6cm]{$\dfrac{\text{mass solute}}{\text{mass solution}}\times100\%$} &
+  common in industry and medicine\\
+\term{Mole fraction} ($\chi$) &
+  \answerblank[4.2cm]{$\dfrac{n_A}{n_{\text{total}}}$} &
+  used for gas partial pressures\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Two denominators, two different things. Molarity uses litres of
+\emph{solution}; molality uses kilograms of \emph{solvent}. Dissolving a
+solid changes the volume but not the mass of solvent --- which is exactly
+why these are different numbers, and why you cannot convert between them
+without knowing the density.
+\end{apctrap}
+
+\notesub{Why molality is temperature-independent}
+
+Volume \answerblank[2cm]{expands} when a solution is warmed, so molarity
+\answerblank[2cm]{decreases} even though nothing was added or removed. Mass
+does not change with temperature, so molality stays
+\answerblank[1.8cm]{constant}. That is the only reason molality exists.
+
+\begin{workedexample}[Worked example: one solution, four numbers]
+Dissolve \SI{5.00}{\gram} of \ce{NaCl} ($M = 58.44$) in \SI{100.0}{\gram} of
+water. The resulting solution has a volume of \SI{102}{\milli\liter}.
+\begin{align*}
+  n(\ce{NaCl}) &= \frac{5.00}{58.44} = \SI{0.0856}{\mole}\\
+  \text{molarity} &= \frac{0.0856}{0.102} = \SI{0.839}{\Molar}\\
+  \text{molality} &= \frac{0.0856}{0.1000} = \SI{0.856}{\mole\per\kilo\gram}\\
+  \text{mass \%} &= \frac{5.00}{105.0}\times100 = 4.76\%\\
+  n(\ce{H2O}) &= \frac{100.0}{18.02} = \SI{5.549}{\mole},\quad
+  \chi(\ce{NaCl}) = \frac{0.0856}{5.635} = 0.0152
+\end{align*}
+Four correct descriptions of the same bottle. Molarity and molality are
+close here only because the solution is dilute and aqueous --- do not assume
+that in general.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Composition drill}
+
+A solution contains \SI{12.0}{\gram} of \ce{NaOH} ($M = 40.00$) dissolved in
+\SI{250.0}{\gram} of water; the solution volume is \SI{255}{\milli\liter}.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Moles of \ce{NaOH}: \answerblank[2.8cm]{\SI{0.300}{\mole}}
+  \item Molarity: \answerblank[2.8cm]{\SI{1.18}{\Molar}}
+  \item Molality: \answerblank[2.8cm]{\SI{1.20}{\mole\per\kilo\gram}}
+  \item Mass percent: \answerblank[2.8cm]{4.58\%}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Choosing the right measure}
+
+\notesectionz{Which one, and when}{11.1}
+\practice{4}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \textbf{Molarity} for anything involving reaction stoichiometry ---
+        you measure out a \answerblank[1.6cm]{volume} and need moles.
+  \item \textbf{Mole fraction} for gas mixtures --- it converts directly to
+        \answerblank[3.2cm]{partial pressure} via
+        $P_A = \chi_A P_{\text{total}}$.
+  \item \textbf{Mass percent} when the solute's identity or molar mass is
+        unknown, or irrelevant.
+  \item \textbf{Molality} essentially only for colligative properties.
+\end{itemize}
+
+\segment{APPLICATION}{20}{Composition reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A solution is prepared and then warmed from \SI{20}{\celsius} to
+        \SI{60}{\celsius}. State what happens to its molarity, its molality,
+        and its mass percent. \answerlines[3]{Molarity decreases --- the
+        volume expands while the moles stay fixed. Molality is unchanged ---
+        both moles and solvent mass are unaffected by temperature. Mass
+        percent is unchanged for the same reason.}
+  \item A student prepares a solution by adding \SI{0.100}{\mole} of solute
+        to exactly \SI{1.000}{\liter} of water and labels it
+        \SI{0.100}{\Molar}. Identify the error and state whether the true
+        molarity is higher or lower. \answerlines[3]{Molarity requires
+        litres of \emph{solution}, not solvent. Adding solute makes the
+        total volume slightly more than 1.000 L, so the true molarity is
+        slightly \emph{lower} than 0.100 M. (The molality, however, is
+        exactly 0.100.)}
+\end{enumerate}
+
+\begin{exitticket}
+Why can you not convert molarity to molality without knowing the solution's
+density? \answerlines[2]{Molarity is per litre of solution and molality is
+per kilogram of solvent; density is what relates the solution's volume to
+its mass, so without it the two denominators cannot be connected.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Energetics of Dissolving}{Zumdahl \S11.2}
+
+\begin{objectives}
+  \item Break dissolving into three energy steps and predict the sign of
+        each.
+  \item Use $\Delta H_{\text{soln}}$ to explain why some things dissolve and
+        others do not.
+\end{objectives}
+
+\reading{Zumdahl \S11.2}{555--559}
+
+\begin{warmup}[3]
+  \item Molality of \SI{0.50}{\mole} in \SI{500}{\gram} solvent:
+        \answerblank[3cm]{\SI{1.0}{\mole\per\kilo\gram}}
+  \item Which measure is temperature-independent?
+        \answerblank[2.4cm]{molality}
+  \item Strongest IMF in water: \answerblank[3.8cm]{hydrogen bonding}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Three steps}
+
+\notesectionz{Zumdahl's model of solution formation}{11.2}
+\practice{5}
+
+Dissolving is treated as three imaginary steps. They are not a mechanism ---
+they are an energy accounting scheme, exactly like Hess's law.
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{1.2cm}p{5.6cm}p{6.4cm}@{}}
+\toprule
+\textbf{Step} & \textbf{What happens} & \textbf{Sign of $\Delta H$}\\
+\midrule
+1 & Separate the \answerblank[1.8cm]{solute} into its components &
+  \answerblank[2.7cm]{endothermic} --- forces must be overcome\\
+2 & Expand the \answerblank[1.8cm]{solvent} to make room &
+  \answerblank[2.7cm]{endothermic} --- same reason\\
+3 & Let solute and solvent \answerblank[1.6cm]{interact} &
+  \answerblank[2.2cm]{exothermic} --- new attractions form\\
+\bottomrule
+\end{tabular}
+
+\[
+  \Delta H_{\text{soln}} = \answerblank[3.6cm]{$\Delta H_1 + \Delta H_2 + \Delta H_3$}
+\]
+
+The overall sign can go either way, and small differences between large
+numbers decide it.
+
+\begin{apcnote}
+For an ionic solute the accounting has familiar names: Step 1 is the
+\term{lattice energy} (large and endothermic to overcome), and Step 3 is the
+\term{hydration energy} (large and exothermic). Dissolving happens when
+hydration nearly pays for the lattice. \ce{NaCl} is a near-tie:
+$\Delta H_{\text{soln}} = \SI{+3.9}{\kilo\joule\per\mole}$, barely
+endothermic --- which is why table salt dissolves readily but the water gets
+very slightly cooler.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Predict the thermal effect}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{NH4NO3} has $\Delta H_{\text{soln}} =
+        \SI{+25.7}{\kilo\joule\per\mole}$. What do you feel when it
+        dissolves? \answerblank[4.5cm]{the container gets cold}
+  \item \ce{CaCl2} has $\Delta H_{\text{soln}} =
+        \SI{-82.8}{\kilo\joule\per\mole}$. What do you feel?
+        \answerblank[4.5cm]{the container gets hot}
+  \item Which of the two would you put in an instant cold pack?
+        \answerblank[3cm]{\ce{NH4NO3}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Why oil and water do not mix}
+
+\notesectionz{The energetic explanation of ``like dissolves like''}{11.2}
+\practice{6}
+
+\begin{workedexample}[Worked example: Zumdahl's oil slick]
+Why is oil insoluble in water? Work through the three steps.
+
+\textbf{Step 1} (expand the oil): oil molecules are held only by dispersion
+forces --- but they are large molecules, so this is
+\emph{moderately} endothermic.
+
+\textbf{Step 2} (expand the water): this requires breaking water's
+\answerblank[3.4cm]{hydrogen bonds}, which is \emph{strongly} endothermic
+--- the largest term in the accounting.
+
+\textbf{Step 3} (let them interact): a polar water molecule can induce a
+dipole in a nonpolar oil molecule, so this is exothermic --- but a
+dipole--induced dipole attraction is much
+\answerblank[1.6cm]{weaker} than the hydrogen bonds that were sacrificed in
+Step 2.
+
+The exothermic Step 3 cannot pay for the endothermic Step 2, so
+$\Delta H_{\text{soln}}$ is strongly positive and the two liquids stay
+separate.
+\end{workedexample}
+
+\begin{apcnote}
+This is what ``like dissolves like'' actually \emph{means}. It is not a
+rule to memorize --- it is the observation that Step 3 can only repay Step 2
+when the new solute--solvent attractions are of the same kind and strength
+as the solvent--solvent attractions being broken.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Energetic reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Explain, using the three-step model, why \ce{NaCl} dissolves in
+        water but not in hexane. \answerlines[3]{In both cases Step 1
+        requires overcoming \ce{NaCl}'s very large lattice energy. Water's
+        Step 3 produces strong ion--dipole attractions that largely repay
+        it. Hexane is nonpolar and can offer only weak dispersion
+        interactions with the ions, so Step 3 comes nowhere near repaying
+        Step 1.}
+  \item Ethanol is miscible with water in all proportions. Explain in terms
+        of the three steps. \answerlines[3]{Step 2 breaks water's hydrogen
+        bonds and Step 1 breaks ethanol's, both endothermic. But Step 3 lets
+        ethanol's O--H hydrogen bond directly to water --- the same type and
+        strength of attraction that was broken --- so the energy is
+        essentially repaid and mixing proceeds freely.}
+\end{enumerate}
+
+\begin{exitticket}
+A solute dissolves even though $\Delta H_{\text{soln}}$ is positive. What
+does that tell you about the process? \answerlines[2]{Enthalpy is not the
+whole story --- the increase in disorder on mixing can drive dissolving even
+when it costs energy. (Unit 9 makes this precise with entropy.)}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Factors Affecting Solubility}{Zumdahl \S11.3}
+
+\begin{objectives}
+  \item Predict solubility from molecular structure.
+  \item State how pressure and temperature affect solid and gas solubility.
+\end{objectives}
+
+\reading{Zumdahl \S11.3}{559--563}
+
+\begin{warmup}[3]
+  \item Sign of $\Delta H$ for Step 2 (expanding solvent):
+        \answerblank[2.6cm]{positive}
+  \item Cold pack salt: \answerblank[2.6cm]{\ce{NH4NO3}}
+  \item Which dissolves \ce{I2} better, water or \ce{CCl4}?
+        \answerblank[2.4cm]{\ce{CCl4}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Structure effects}
+
+\notesectionz{Hydrophobic and hydrophilic}{11.3}
+\practice{6}
+
+\begin{workedexample}[Worked example: two vitamins]
+Zumdahl contrasts vitamins A and C.
+
+\textbf{Vitamin A} is built almost entirely from carbon and hydrogen, whose
+electronegativities are similar --- so the molecule is essentially
+\answerblank[1.8cm]{nonpolar}, or \term{hydrophobic}. It dissolves in body
+fat but not in water.
+
+\textbf{Vitamin C} carries many polar O--H and C--O bonds, making it
+\answerblank[1.6cm]{polar}, or \term{hydrophilic}, and water-soluble.
+
+The consequence is medical: fat-soluble vitamins (A, D, E, K)
+\answerblank[2.4cm]{accumulate} in fatty tissue, so excess intake can cause
+hypervitaminosis. Water-soluble vitamins are
+\answerblank[1.8cm]{excreted} and must be consumed regularly --- which is
+why sailors developed scurvy without fresh food.
+\end{workedexample}
+
+\notesub{The chain-length effect}
+
+For alcohols, water solubility \answerblank[1.6cm]{falls} as the carbon
+chain grows: methanol and ethanol are miscible, but 1-octanol is nearly
+insoluble. The polar --OH group stays the same size while the nonpolar
+hydrocarbon portion grows, so the molecule becomes progressively more
+hydrophobic overall.
+
+\segment{GUIDED PRACTICE}{15}{Predict solubility}
+
+More soluble in water? Give the structural reason.
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{CH3OH} or \ce{C6H14}:
+        \answerblank[6.4cm]{\ce{CH3OH} --- H-bonds with water}
+  \item \ce{NaCl} or \ce{I2}:
+        \answerblank[5.5cm]{\ce{NaCl} --- ion--dipole}
+  \item \ce{C2H5OH} or \ce{C8H17OH}:
+        \answerblank[7.2cm]{\ce{C2H5OH} --- shorter nonpolar chain}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Pressure and temperature}
+
+\notesectionz{What changes solubility}{11.3}
+\practice{4}
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{2.4cm}p{4.8cm}p{5.8cm}@{}}
+\toprule
+ & \textbf{Solids in water} & \textbf{Gases in water}\\
+\midrule
+Pressure & essentially \answerblank[1.9cm]{no effect} &
+  solubility \answerblank[1.8cm]{increases} with pressure\\
+Temperature & \emph{usually} increases, but
+  \answerblank[2.2cm]{not always} &
+  solubility \answerblank[1.8cm]{decreases} with temperature\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example: why soda goes flat]
+A sealed bottle is pressurized with \ce{CO2} at \SI{5.0}{\atm}. Using
+Zumdahl's Henry's law constant $k = \SI{3.1e-2}{\mole\per\liter\per\atm}$:
+\begin{align*}
+  \text{sealed:}\quad C &= (3.1\times10^{-2})(5.0) = \SI{0.16}{\mole\per\liter}\\
+  \text{opened:}\quad C &= (3.1\times10^{-2})(4.0\times10^{-4}) = \SI{1.2e-5}{\mole\per\liter}
+\end{align*}
+Once opened, the \ce{CO2} equilibrates with the atmosphere, where its
+partial pressure is only $4.0\times10^{-4}$ atm. The dissolved concentration
+falls by a factor of more than ten thousand --- which is precisely what
+``going flat'' means.
+\end{workedexample}
+
+\begin{apcnote}
+AP expects the \emph{relationships} --- gas solubility rises with pressure
+and falls with temperature --- not the Henry's law constant calculation. The
+qualitative reasoning is what gets tested: warm soda goes flat faster, and
+warm river water holds less dissolved oxygen, which is why thermal pollution
+harms fish.
+\end{apcnote}
+
+\begin{apctrap}
+``Solids always dissolve better when hot'' is false, and Zumdahl says so
+explicitly. Most solids do, but sodium sulfate and cerium sulfate become
+\emph{less} soluble as temperature rises. Also distinguish two different
+claims: heating always makes dissolving \emph{faster}, but it does not
+always increase \emph{how much} will dissolve.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Solubility reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Explain why a warm carbonated drink fizzes more violently when
+        opened than a cold one. \answerlines[2]{Gas solubility decreases
+        with temperature, so the warm liquid holds less dissolved \ce{CO2}
+        at equilibrium --- more gas escapes, and faster, when the pressure
+        is released.}
+  \item A power plant returns warmed water to a river. Explain the effect on
+        dissolved oxygen and why it matters.
+        \answerlines[3]{Gas solubility falls as temperature rises, so the
+        warmed water holds less dissolved \ce{O2}. Fish and aquatic
+        organisms depend on that oxygen, so thermal pollution can suffocate
+        them even though nothing chemical was added.}
+  \item A student says ``heating always dissolves more solute.'' Give a
+        precise correction. \answerlines[2]{Heating always makes dissolving
+        occur faster, but the maximum amount that dissolves may increase or
+        decrease depending on the substance --- sodium sulfate is a
+        counterexample.}
+\end{enumerate}
+
+\begin{exitticket}
+Divers breathing compressed air at depth must ascend slowly. Connect this to
+gas solubility. \answerlines[2]{At high pressure more nitrogen dissolves in
+the blood. Ascending too quickly drops the pressure rapidly, and the
+nitrogen comes out of solution as bubbles --- decompression sickness.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{ENRICHMENT: Colligative Properties}{Zumdahl \S11.4--11.7 --- NOT on the CED}
+
+\begin{apcnote}[This block is optional]
+Nothing here is assessed on the AP exam --- colligative properties were
+dropped in the 2019 redesign. It is included because these effects explain
+several everyday phenomena, and because the central idea (a property that
+depends only on how many particles are present, not what they are) is
+elegant. Skip it entirely without penalty.
+\end{apcnote}
+
+\begin{objectives}
+  \item Define a colligative property.
+  \item Describe vapour pressure lowering, boiling-point elevation,
+        freezing-point depression, and osmotic pressure.
+\end{objectives}
+
+\reading{Zumdahl \S11.4--11.7}{563--579}
+
+\segment{INSTRUCTION A}{25}{Counting particles, not identifying them}
+
+\notesectionz{What colligative means}{11.4}
+\practice{1}
+
+A \term{colligative} property depends only on the
+\answerblank[5.4cm]{number of solute particles} in solution --- not on their
+chemical identity. One mole of dissolved sugar and one mole of dissolved
+neon would behave identically.
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{4.2cm}p{4.0cm}p{5.0cm}@{}}
+\toprule
+\textbf{Property} & \textbf{Effect of solute} & \textbf{Everyday example}\\
+\midrule
+Vapour pressure & lowered & ---\\
+Boiling point & \answerblank[1.6cm]{raised} & salted cooking water\\
+Freezing point & \answerblank[1.6cm]{lowered} & salt on icy roads;
+  antifreeze\\
+Osmotic pressure & develops across a membrane & cells swell in pure water\\
+\bottomrule
+\end{tabular}
+
+\notesub{Why electrolytes count double (or triple)}
+
+Because these properties count \emph{particles}, a mole of \ce{NaCl}
+produces \answerblank[1.2cm]{2} moles of particles and a mole of \ce{CaCl2}
+produces \answerblank[1.2cm]{3}. That is why salt is far more effective per
+gram at melting ice than sugar would be.
+
+\segment{GUIDED PRACTICE}{15}{Particle counting}
+
+Rank by freezing-point depression, greatest first, at equal molality:
+glucose, \ce{NaCl}, \ce{CaCl2}.
+\answerblank[8.5cm]{\ce{CaCl2} $>$ \ce{NaCl} $>$ glucose (3, 2, 1 particles)}
+
+\segment{INSTRUCTION B}{20}{Osmosis}
+
+\notesectionz{Water moving through a membrane}{11.6}
+\practice{6}
+
+A \term{semipermeable} membrane lets solvent through but blocks solute.
+Water moves from the \answerblank[2.4cm]{more dilute} side toward the
+\answerblank[3.9cm]{more concentrated} side. The pressure needed to stop
+that flow is the \term{osmotic pressure}.
+
+\begin{apcnote}
+Consequences worth knowing: a red blood cell placed in pure water swells and
+bursts, because water floods in toward the higher solute concentration
+inside. Placed in concentrated brine it shrivels, as water leaves. This is
+why intravenous fluids must be \emph{isotonic} with blood --- and why
+saltwater is undrinkable.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Explaining familiar effects}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Explain why spreading salt on an icy road melts the ice.
+        \answerlines[2]{Dissolved ions lower the freezing point of water
+        below the ambient temperature, so ice that was stable at that
+        temperature melts.}
+  \item Explain why a cucumber shrivels into a pickle in brine.
+        \answerlines[2]{The brine has a far higher solute concentration than
+        the cucumber's cells, so water flows out of the cells by osmosis.}
+\end{enumerate}
+
+\begin{exitticket}
+Why is \ce{CaCl2} preferred over \ce{NaCl} for de-icing at very low
+temperatures? \answerlines[2]{It releases three particles per formula unit
+instead of two, producing a greater freezing-point depression per mole
+dissolved.}
+\end{exitticket}
+
+\end{document}

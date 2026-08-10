@@ -1,0 +1,299 @@
+% Unit 4 exam -- 20 MCQ (no calculator) + 1 long FRQ. 52 min, 30 points.
+\documentclass{apchem-exam}
+
+\apcunit{4}
+\apcunittitle{Chemical Reactions}
+\apcdoctitle{Unit Exam}
+\apcsubtitle{Mon Oct 26 \textbullet\ 52 minutes \textbullet\ periodic table and equations sheet provided}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- 4.4 physical vs chemical (3) ------------------------------------------
+\begin{mcq}
+  Which process is a chemical change?
+  \choices
+    \choice{ice melting}
+    \choice{sugar dissolving in water}
+    \correct{\ce{HCl} gas dissolving in water}
+    \choice{dry ice subliming}
+\end{mcq}
+\why{\ce{HCl} ionizes to \ce{H+} and \ce{Cl-} --- species that did not exist
+before. The others leave the substance intact.}
+\distractor{B}{sugar disperses as whole molecules --- physical}
+
+\begin{mcq}
+  A student observes bubbling when a solid is added to a warm liquid. This
+  observation alone
+  \choices
+    \choice{proves a chemical reaction occurred}
+    \correct{is consistent with, but does not prove, a chemical reaction}
+    \choice{proves no reaction occurred}
+    \choice{indicates a physical change only}
+\end{mcq}
+\why{Bubbles can be dissolved air escaping on warming.}
+
+\begin{mcq}
+  Melting a molecular solid requires overcoming
+  \choices
+    \choice{covalent bonds within molecules}
+    \correct{intermolecular forces between molecules}
+    \choice{ionic bonds}
+    \choice{metallic bonds}
+\end{mcq}
+\why{Identity is unchanged, so only IMFs break --- a physical change.}
+
+% ---- 4.3 representations (3) -----------------------------------------------
+\begin{mcq}
+  A correct particulate diagram of aqueous \ce{Na2SO4} shows
+  \choices
+    \choice{intact \ce{Na2SO4} units}
+    \correct{twice as many \ce{Na+} particles as \ce{SO4^2-} particles, all
+      separated}
+    \choice{equal numbers of separated \ce{Na+} and \ce{SO4^2-}}
+    \choice{separated \ce{Na+}, \ce{S^2-}, and \ce{O^2-}}
+\end{mcq}
+\why{Complete dissociation in the 2:1 ratio; the polyatomic ion stays
+intact.}
+\distractor{D}{polyatomic ions do not break apart on dissolving}
+
+\begin{mcq}
+  In a particulate ``before and after'' pair of diagrams, which quantity
+  must be identical in both boxes?
+  \choices
+    \choice{the number of molecules}
+    \correct{the number of atoms of each element}
+    \choice{the number of distinct substances}
+    \choice{the volume occupied}
+\end{mcq}
+\why{Atoms are conserved; molecule counts routinely change.}
+
+\begin{mcq}
+  In a particulate diagram of a completed precipitation reaction, the
+  precipitate should be drawn as
+  \choices
+    \choice{separated ions dispersed in solution}
+    \correct{a cluster of ions held together}
+    \choice{neutral molecules}
+    \choice{omitted entirely}
+\end{mcq}
+\why{A precipitate is an insoluble lattice, not free ions.}
+
+% ---- 4.2 net ionic (4) -----------------------------------------------------
+\begin{mcq}
+  Which species should be written as separated ions in a complete ionic
+  equation?
+  \choices
+    \choice{\ce{H2O(l)}}
+    \choice{\ce{HC2H3O2(aq)}}
+    \correct{\ce{KNO3(aq)}}
+    \choice{\ce{CaCO3(s)}}
+\end{mcq}
+\why{Only strong electrolytes are split; \ce{KNO3} is a soluble salt.}
+\distractor{B}{a weak acid stays intact}
+
+\begin{mcq}
+  The net ionic equation for mixing \ce{Na2CO3(aq)} and \ce{CaCl2(aq)} is
+  \choices
+    \choice{\ce{Na+(aq) + Cl^-(aq) -> NaCl(s)}}
+    \correct{\ce{Ca^2+(aq) + CO3^2-(aq) -> CaCO3(s)}}
+    \choice{\ce{Na2CO3(aq) + CaCl2(aq) -> CaCO3(s) + 2 NaCl(aq)}}
+    \choice{no reaction occurs}
+\end{mcq}
+\why{Calcium carbonate is insoluble; \ce{Na+} and \ce{Cl-} are spectators.}
+\distractor{C}{that is the formula equation}
+
+\begin{mcq}
+  Which pair of reactants gives the net ionic equation
+  \ce{H+(aq) + OH^-(aq) -> H2O(l)}?
+  \choices
+    \correct{\ce{HNO3(aq)} and \ce{KOH(aq)}}
+    \choice{\ce{HF(aq)} and \ce{NaOH(aq)}}
+    \choice{\ce{HCl(aq)} and \ce{NH3(aq)}}
+    \choice{\ce{HC2H3O2(aq)} and \ce{KOH(aq)}}
+\end{mcq}
+\why{Requires a strong acid AND a strong base; the others involve a weak
+species that stays intact.}
+
+% ---- 4.7 reaction types / solubility (4) -----------------------------------
+\begin{mcq}
+  Mixing which pair produces a precipitate?
+  \choices
+    \choice{\ce{KNO3(aq)} and \ce{NaCl(aq)}}
+    \correct{\ce{AgNO3(aq)} and \ce{K2CrO4(aq)}}
+    \choice{\ce{NH4Cl(aq)} and \ce{NaNO3(aq)}}
+    \choice{\ce{LiBr(aq)} and \ce{KNO3(aq)}}
+\end{mcq}
+\why{\ce{Ag2CrO4} is insoluble; every other combination is soluble.}
+
+\begin{mcq}
+  The reaction \ce{Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)} is best
+  classified as
+  \choices
+    \choice{precipitation}
+    \choice{acid--base}
+    \correct{oxidation--reduction}
+    \choice{decomposition}
+\end{mcq}
+\why{Zn goes $0 \to +2$ and Cu goes $+2 \to 0$.}
+
+\begin{mcq}
+  Two clear solutions are mixed and no precipitate forms. The best
+  conclusion is that
+  \choices
+    \choice{no ions are present}
+    \correct{all possible ion combinations are soluble}
+    \choice{the solutions were too dilute to react}
+    \choice{a gas must have formed instead}
+\end{mcq}
+\why{``No reaction'' is a legitimate outcome when every product is soluble.}
+
+% ---- 4.8 acid-base (3) -----------------------------------------------------
+\begin{mcq}
+  Which is a weak acid?
+  \choices
+    \choice{\ce{HCl}}
+    \choice{\ce{HNO3}}
+    \correct{\ce{HF}}
+    \choice{\ce{HClO4}}
+\end{mcq}
+\why{HF is weak despite fluorine's electronegativity --- the H--F bond is
+strong.}
+
+\begin{mcq}
+  A Bronsted--Lowry base is defined as a substance that
+  \choices
+    \choice{produces hydroxide ions in water}
+    \correct{accepts a proton}
+    \choice{donates a proton}
+    \choice{dissolves to give a conducting solution}
+\end{mcq}
+\why{This broader definition covers \ce{NH3}.}
+
+\begin{mcq}
+  In the net ionic equation for \ce{HF(aq)} reacting with \ce{NaOH(aq)},
+  hydrofluoric acid appears as
+  \choices
+    \correct{\ce{HF(aq)}, an intact molecule}
+    \choice{\ce{H+(aq)} and \ce{F^-(aq)}}
+    \choice{\ce{H+(aq)} only}
+    \choice{a spectator}
+\end{mcq}
+\why{Weak acids are barely ionized, so the molecular form is what reacts.}
+
+% ---- 4.9 redox (4) ---------------------------------------------------------
+\begin{mcq}
+  The oxidation state of nitrogen in \ce{NO2-} is
+  \choices
+    \choice{$+5$}
+    \correct{$+3$}
+    \choice{$-3$}
+    \choice{$+4$}
+\end{mcq}
+\why{$x + 2(-2) = -1 \Rightarrow x = +3$.}
+\distractor{A}{that is nitrogen in nitrate, \ce{NO3-}}
+
+\begin{mcq}
+  In \ce{2 Mg(s) + O2(g) -> 2 MgO(s)}, magnesium is
+  \choices
+    \correct{oxidized and acts as the reducing agent}
+    \choice{oxidized and acts as the oxidizing agent}
+    \choice{reduced and acts as the reducing agent}
+    \choice{reduced and acts as the oxidizing agent}
+\end{mcq}
+\why{Mg goes $0 \to +2$ (loses electrons); by donating them it reduces the
+oxygen.}
+\distractor{B}{agent labels swapped --- the oxidized species is the reducing
+agent}
+
+\begin{mcq}
+  Which reaction is NOT a redox reaction?
+  \choices
+    \choice{\ce{2 Na + Cl2 -> 2 NaCl}}
+    \choice{\ce{CH4 + 2 O2 -> CO2 + 2 H2O}}
+    \correct{\ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)}}
+    \choice{\ce{Fe2O3 + 3 CO -> 2 Fe + 3 CO2}}
+\end{mcq}
+\why{In the precipitation reaction every element keeps its oxidation state.}
+
+% ---- 4.5/4.6 stoichiometry and titration (2) -------------------------------
+\begin{mcq}
+  \SI{25.0}{\milli\liter} of \ce{HCl} is exactly neutralized by
+  \SI{25.0}{\milli\liter} of \SI{0.100}{\Molar} \ce{NaOH}. The
+  concentration of the acid is
+  \choices
+    \choice{\SI{0.0500}{\Molar}}
+    \correct{\SI{0.100}{\Molar}}
+    \choice{\SI{0.200}{\Molar}}
+    \choice{cannot be determined}
+\end{mcq}
+\why{Equal volumes, 1:1 stoichiometry, so equal concentrations.}
+
+\begin{mcq}
+  Titrating \ce{H2SO4} with \ce{NaOH} and assuming a 1:1 mole ratio will
+  make the calculated acid concentration
+  \choices
+    \correct{twice the true value}
+    \choice{half the true value}
+    \choice{unchanged}
+    \choice{four times the true value}
+\end{mcq}
+\why{\ce{H2SO4} is diprotic, so the true ratio is 1 acid : 2 base;
+attributing all the base to a 1:1 reaction doubles the apparent acid.}
+
+\examsection{II}{Free Response}{1 question \textbullet\ 20 minutes}{\calculatorok}
+
+\frq{long}{10}{CED 4.2--4.9 synthesis \textbullet\ SP 1, 4, 6}
+
+A student mixes \SI{40.0}{\milli\liter} of \SI{0.150}{\Molar}
+\ce{BaCl2(aq)} with \SI{40.0}{\milli\liter} of \SI{0.100}{\Molar}
+\ce{Na2SO4(aq)}. A white solid forms.
+
+\begin{parts}
+  \item Write the balanced formula equation, including states.
+        \answerlines[2]{\ce{BaCl2(aq) + Na2SO4(aq) -> BaSO4(s) +
+        2 NaCl(aq)}}
+  \item Write the net ionic equation and identify the spectator ions.
+        \answerlines[2]{\ce{Ba^2+(aq) + SO4^2-(aq) -> BaSO4(s)};
+        spectators \ce{Na+} and \ce{Cl-}.}
+  \item Determine the limiting reactant. Show the comparison.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Ba^2+}) = (0.0400)(0.150) =
+        \SI{6.00e-3}{\mole}$; $n(\ce{SO4^2-}) = (0.0400)(0.100) =
+        \SI{4.00e-3}{\mole}$. The ratio is 1:1, so sulfate is
+        limiting.\end{apcanswer}}
+  \item Calculate the mass of \ce{BaSO4}
+        ($M = \SI{233.39}{\gram\per\mole}$) produced.
+        \answerlines[2]{$4.00\times10^{-3} \times 233.39 =
+        \SI{0.934}{\gram}$}
+  \item Calculate the concentration of the excess \ce{Ba^2+} remaining after
+        the reaction. Assume volumes are additive. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Excess $= 6.00\times10^{-3} -
+        4.00\times10^{-3} = \SI{2.00e-3}{\mole}$ in
+        \SI{80.0}{\milli\liter}: $[\ce{Ba^2+}] = 2.00\times10^{-3}/0.0800 =
+        \SI{0.0250}{\Molar}$\end{apcanswer}}
+  \item Explain why the formation of a white solid is stronger evidence of
+        a chemical reaction than a temperature change would be.
+        \answerlines[3]{A solid appearing from two clear solutions requires
+        new bonding --- no physical process converts two liquids into an
+        insoluble lattice. A temperature change also accompanies simple
+        dissolving, so it is ambiguous on its own.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) balanced equation with correct states}
+  \rpoint{2}{(b) 1 pt net ionic equation; 1 pt both spectator ions}
+  \rpoint{2}{(c) 1 pt both mole values computed; 1 pt names \ce{SO4^2-} as
+    limiting with the 1:1 ratio cited}
+  \rpoint{1}{(d) \SI{0.934}{\gram} with units}
+  \rpoint{2}{(e) 1 pt excess moles by subtraction; 1 pt divides by the
+    TOTAL \SI{80.0}{\milli\liter} --- using \SI{40.0}{\milli\liter} earns 0}
+  \rpoint{2}{(f) 1 pt identifies solid formation as requiring new bonding;
+    1 pt notes temperature change is ambiguous (also occurs on dissolving)}
+\end{rubric}
+
+\examtotal
+
+\end{document}

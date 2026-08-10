@@ -1,0 +1,94 @@
+% Ch5 WS1 -- pressure, gas laws, ideal gas law, density. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Worksheet 1 \textbullet\ Gas Laws and the Ideal Gas Equation}
+\apcsubtitle{Zumdahl \S5.1--5.3 \textbullet\ kelvin before you substitute, every time}
+
+\begin{document}
+\wsheader[Convert all temperatures to kelvin and all pressures to atm before
+using $R = \SI{0.08206}{\liter\atm\per\mole\per\kelvin}$. Show the
+rearranged equation before plugging in.]
+
+\problem[]{Pressure conversions:}
+\begin{parts}
+  \item \SI{1.25}{\atm} to torr: \answerblank[3cm]{\SI{950.}{\torr}}
+  \item \SI{608}{\mmHg} to atm: \answerblank[3cm]{\SI{0.800}{\atm}}
+  \item \SI{50.66}{\kilo\pascal} to atm: \answerblank[3cm]{\SI{0.5000}{\atm}}
+  \item \SI{3.00}{\atm} to kPa: \answerblank[3cm]{\SI{304}{\kilo\pascal}}
+\end{parts}
+
+\problem[]{Explain why a sealed metal can collapses when the steam inside it
+condenses. Refer to what is pushing in which direction.
+\answerlines[3]{Condensing steam leaves very few gas particles inside, so
+the outward pressure from internal collisions nearly vanishes. Atmospheric
+pressure --- unchanged the whole time --- then exceeds the internal pressure
+and crushes the can. Nothing pulls it in.}}
+
+\problem[]{Single-variable gas laws:}
+\begin{parts}
+  \item \SI{2.00}{\liter} at \SI{3.00}{\atm} expands to \SI{6.00}{\liter} at
+        constant $T$. New pressure: \answerblank[3cm]{\SI{1.00}{\atm}}
+  \item \SI{500.}{\milli\liter} at \SI{250.}{\kelvin} is heated to
+        \SI{400.}{\kelvin} at constant $P$. New volume:
+        \answerblank[3cm]{\SI{800.}{\milli\liter}}
+  \item \SI{1.50}{\liter} holding \SI{0.200}{\mole} is expanded to
+        \SI{4.50}{\liter} at constant $T$ and $P$. Moles now present:
+        \answerblank[3cm]{\SI{0.600}{\mole}}
+\end{parts}
+
+\problem[]{A student heats a gas from \SI{20}{\celsius} to
+\SI{40}{\celsius} and predicts the volume will double. Explain the error and
+give the correct factor. \answerlines[3]{Volume is proportional to
+\emph{absolute} temperature. 293 K to 313 K is a factor of 1.068, not 2 ---
+about a 7\% increase. Celsius has an arbitrary zero and cannot be used in
+ratios.}}
+
+\problem[]{Ideal gas law calculations:}
+\begin{parts}
+  \item Volume of \SI{1.50}{\mole} at \SI{2.00}{\atm} and
+        \SI{350.}{\kelvin}: \answerblank[3cm]{\SI{21.5}{\liter}}
+  \item Moles in \SI{4.00}{\liter} at \SI{760}{\torr} and
+        \SI{27}{\celsius}: \answerblank[3cm]{\SI{0.163}{\mole}}
+  \item Pressure of \SI{0.500}{\mole} in \SI{12.0}{\liter} at
+        \SI{100.}{\celsius}: \answerblank[3cm]{\SI{1.28}{\atm}}
+  \item Temperature at which \SI{2.00}{\mole} occupies \SI{50.0}{\liter} at
+        \SI{1.00}{\atm}: \answerblank[3cm]{\SI{305}{\kelvin}}
+\end{parts}
+
+\problem[]{Density and molar mass:}
+\begin{parts}
+  \item Density of \ce{N2} at STP:
+        \answerblank[3.4cm]{\SI{1.25}{\gram\per\liter}}
+  \item A gas has density \SI{2.86}{\gram\per\liter} at STP. Its molar mass
+        is: \answerblank[3.4cm]{\SI{64.1}{\gram\per\mole}}
+  \item Suggest an identity for that gas.
+        \answerblank[3cm]{\ce{SO2} (64.07)}
+  \item A \SI{1.00}{\gram} sample occupies \SI{0.500}{\liter} at
+        \SI{1.00}{\atm} and \SI{273}{\kelvin}. Molar mass?
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$n = (1.00)(0.500)/((0.08206)(273)) =
+        \SI{0.02232}{\mole}$; $M = 1.00/0.02232 =
+        \SI{44.8}{\gram\per\mole}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Why is it meaningless to state ``the density of oxygen gas'' with
+no further information, while ``the density of liquid water'' is a useful
+figure? \answerlines[3]{Gas density depends strongly on pressure and
+temperature ($d = PM/RT$), so it varies by orders of magnitude across
+ordinary conditions. Liquid density is nearly incompressible and changes
+only slightly with temperature.}}
+
+\begin{spiralstrip}{Chapters 3--4 \textbullet\ spiral}
+  \item Moles in \SI{88.0}{\gram} \ce{CO2}: \answerblank[2.6cm]{\SI{2.00}{\mole}}
+  \item Net ionic for \ce{Ag+} with \ce{Cl-}:
+        \answerblank[5.0cm]{\ce{Ag+ + Cl^- -> AgCl(s)}}
+  \item Oxidation state of S in \ce{SO4^2-}: \answerblank[2cm]{$+6$}
+  \item Limiting reactant determines what?
+        \answerblank[3.4cm]{theoretical yield}
+  \item Name \ce{Fe(NO3)3}: \answerblank[4cm]{iron(III) nitrate}
+\end{spiralstrip}
+
+\end{document}

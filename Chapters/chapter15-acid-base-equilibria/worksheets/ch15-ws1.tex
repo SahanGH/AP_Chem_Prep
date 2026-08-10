@@ -1,0 +1,145 @@
+% Ch15 WS1 -- common ion effect, buffer recognition, Henderson-Hasselbalch.
+% Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{15}
+\apcunittitle{Acid--Base Equilibria}
+\apcdoctitle{Worksheet 1 \textbullet\ Common Ion and Henderson--Hasselbalch}
+\apcsubtitle{Zumdahl \S15.1--15.2 \textbullet\ the ratio sets the pH, not the concentration}
+
+\begin{document}
+\wsheader[p$K_a$: \ce{HF} 3.14 \textbullet\ \ce{HNO2} 3.40 \textbullet\
+\ce{HC2H3O2} 4.74 \textbullet\ \ce{HOCl} 7.46 \textbullet\ \ce{HCN} 9.21
+\textbullet\ \ce{NH4+} 9.25. $K_a(\ce{HF}) = 7.2\times10^{-4}$.]
+
+\problem[]{Predict the effect of each addition on the pH of the solution
+(rises, falls, or no change), and name the ion responsible:}
+\begin{parts}
+  \item \ce{NaF} added to \ce{HF}:
+        \answerblank[6cm]{rises --- \ce{F-}}
+  \item \ce{NH4Cl} added to \ce{NH3}:
+        \answerblank[6cm]{falls --- \ce{NH4+}}
+  \item \ce{KNO3} added to \ce{HNO2}:
+        \answerblank[7.2cm]{no change --- neither ion participates}
+  \item \ce{NaCN} added to \ce{HCN}:
+        \answerblank[6cm]{rises --- \ce{CN-}}
+  \item \ce{HCl} added to \ce{NH3}:
+        \answerblank[6cm]{falls --- \ce{H+} reacts with \ce{NH3}}
+\end{parts}
+
+\problem[]{Explain the common ion effect in terms of Le Ch\^atelier's
+principle, using \ce{HF} and \ce{NaF} as your example.
+\answerlines[3]{\ce{HF(aq) <=> H+(aq) + F^-(aq)}. Dissolving \ce{NaF} adds
+\ce{F-}, which is a product of this equilibrium. The system shifts left to
+consume the added product, so less \ce{HF} ionizes and $[\ce{H+}]$ falls.}}
+
+\problem[]{Zumdahl's comparison. For \SI{1.0}{\Molar} \ce{HF} alone,
+$[\ce{H+}] = 2.7\times10^{-2}$ and the acid is 2.7\% ionized.}
+\begin{parts}
+  \item Calculate $[\ce{H+}]$ in a solution \SI{1.0}{\Molar} in \ce{HF} and
+        \SI{1.0}{\Molar} in \ce{NaF}. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$[\ce{H+}] = K_a[\ce{HF}]/[\ce{F-}] =
+        (7.2\times10^{-4})(1.0/1.0) = 7.2\times10^{-4}$;
+        pH $= 3.14$\end{apcanswer}}
+  \item Calculate the percent ionization in that solution.
+        \answerblank[3cm]{0.072\%}
+  \item State in one sentence what the comparison demonstrates.
+        \answerlines[2]{The common ion suppresses the ionization of the weak
+        acid by a large factor --- here about 37-fold --- so the solution is
+        far less acidic than the acid alone.}
+\end{parts}
+
+\problem[]{Buffer or not? Circle one and give a one-phrase reason.}
+\begin{parts}
+  \item \ce{HC2H3O2} $+$ \ce{NaC2H3O2}:
+        \answerblank[8.5cm]{buffer --- weak acid and its conjugate base}
+  \item \ce{HCl} $+$ \ce{NaCl}:
+        \answerblank[7cm]{not --- \ce{HCl} is strong, \ce{Cl-} inert}
+  \item \ce{NH3} $+$ \ce{NH4NO3}:
+        \answerblank[8.5cm]{buffer --- weak base and its conjugate acid}
+  \item \ce{NaOH} $+$ \ce{NaC2H3O2}:
+        \answerblank[8cm]{not --- no weak conjugate pair present}
+  \item \ce{HNO2} $+$ \ce{NaNO2}:
+        \answerblank[8.5cm]{buffer --- weak acid and its conjugate base}
+\end{parts}
+
+\problem[]{Derive the Henderson--Hasselbalch equation from the $K_a$
+expression. Show each step.
+\answerlines[4]{$K_a = [\ce{H+}][\ce{A^-}]/[\ce{HA}]$, so
+$[\ce{H+}] = K_a[\ce{HA}]/[\ce{A^-}]$. Taking $-\log$:
+$-\log[\ce{H+}] = -\log K_a - \log([\ce{HA}]/[\ce{A^-}])$, that is
+pH $=$ p$K_a - \log([\ce{HA}]/[\ce{A^-}])$. Inverting the fraction reverses
+the sign: pH $=$ p$K_a + \log([\ce{A^-}]/[\ce{HA}])$.}}
+
+\problem[]{Calculate the pH of each buffer:}
+\begin{parts}
+  \item \SI{0.20}{\Molar} \ce{HC2H3O2} $+$ \SI{0.20}{\Molar}
+        \ce{NaC2H3O2}: \answerblank[2.4cm]{4.74}
+  \item \SI{0.10}{\Molar} \ce{HC2H3O2} $+$ \SI{0.30}{\Molar}
+        \ce{NaC2H3O2}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}pH $= 4.74 + \log(0.30/0.10) =
+        4.74 + 0.48 = \mathbf{5.22}$\end{apcanswer}}
+  \item \SI{0.50}{\Molar} \ce{HF} $+$ \SI{0.25}{\Molar} \ce{NaF}:
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}pH $= 3.14 + \log(0.25/0.50) =
+        3.14 - 0.30 = \mathbf{2.84}$\end{apcanswer}}
+  \item \SI{0.20}{\Molar} \ce{HCN} $+$ \SI{0.40}{\Molar} \ce{NaCN}:
+        \answerblank[2.4cm]{9.51}
+  \item \SI{0.50}{\Molar} \ce{NH4Cl} $+$ \SI{0.25}{\Molar} \ce{NH3}:
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}pH $= 9.25 + \log(0.25/0.50) =
+        9.25 - 0.30 = \mathbf{8.95}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{For each buffer in problem 6, state without further calculation
+whether its pH is above, below, or equal to p$K_a$, and why.
+\answerlines[3]{(a) equal --- ratio 1. (b) above --- more base than acid.
+(c) below --- more acid than base. (d) above --- more base. (e) below ---
+more acid. The sign of the log term is decided entirely by which member of
+the pair is in excess.}}
+
+\problem[]{Working backwards.}
+\begin{parts}
+  \item What ratio $[\ce{C2H3O2^-}]/[\ce{HC2H3O2}]$ gives pH 5.00?
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$5.00 = 4.74 + \log r$;
+        $\log r = 0.26$; $r = \mathbf{1.8}$\end{apcanswer}}
+  \item What ratio $[\ce{NH3}]/[\ce{NH4+}]$ gives pH 9.00?
+        \answerblank[2.4cm]{0.56}
+  \item A \ce{HF}/\ce{NaF} buffer has pH 3.00. Is there more \ce{HF} or
+        more \ce{F-}? Justify without calculating.
+        \answerlines[2]{More \ce{HF}. The pH lies below p$K_a$ (3.14), which
+        requires the log term to be negative, so the acid must outnumber the
+        conjugate base.}
+\end{parts}
+
+\problem[]{A student prepares two acetate buffers: X is \SI{1.0}{\Molar} in
+each component, Y is \SI{0.010}{\Molar} in each.}
+\begin{parts}
+  \item Which has the higher pH? \answerblank[5cm]{neither --- both 4.74}
+  \item Which is the better buffer, and why?
+        \answerlines[3]{X. The pH depends only on the ratio, which is 1 in
+        both, but the capacity depends on the absolute amounts. X holds 100
+        times as much of each component, so it can absorb far more added
+        acid or base before the ratio moves appreciably.}
+\end{parts}
+
+\problem[]{Explain why diluting a buffer barely changes its pH, while
+diluting a solution of the weak acid alone raises the pH noticeably.
+\answerlines[3]{A buffer's pH depends on the \emph{ratio} of two
+concentrations, and dilution divides both by the same factor, leaving the
+ratio unchanged. A weak acid alone has $[\ce{H+}] = \sqrt{K_aC_0}$, which
+depends on $C_0$ itself, so lowering $C_0$ lowers $[\ce{H+}]$ and raises the
+pH.}}
+
+\begin{spiralstrip}{Chapter 14 \textbullet\ spiral}
+  \item pH of \SI{0.010}{\Molar} \ce{HCl}: \answerblank[1.8cm]{2.00}
+  \item $K_aK_b = $ \answerblank[1.8cm]{$K_w$}
+  \item For a weak base, ICE $x$ is: \answerblank[2.2cm]{$[\ce{OH-}]$}
+  \item Conjugate base of \ce{H2PO4^-}:
+        \answerblank[2.4cm]{\ce{HPO4^2-}}
+  \item \ce{NH4Cl} solutions are: \answerblank[2cm]{acidic}
+\end{spiralstrip}
+
+\end{document}

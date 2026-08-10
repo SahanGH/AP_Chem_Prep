@@ -1,0 +1,313 @@
+% Zumdahl Chapter 11 test -- CED content only (11.1-11.3).
+% 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{11}
+\apcunittitle{Properties of Solutions}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S11.1--11.3 only \textbullet\ 50 minutes \textbullet\ see scope note}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+This test covers \S11.1--11.3 only. Nothing from \S11.4--11.8 --- vapour
+pressure lowering, boiling-point elevation, freezing-point depression,
+osmotic pressure, or colloids --- appears. Those were marked enrichment in
+the notes and are not on the AP framework.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- 11.1 composition ------------------------------------------------------
+\begin{mcq}
+  Molarity is defined as moles of solute per
+  \choices
+    \choice{kilogram of solvent}
+    \correct{litre of solution}
+    \choice{litre of solvent}
+    \choice{kilogram of solution}
+\end{mcq}
+\why{Solution, not solvent --- dissolving changes the volume.}
+\distractor{C}{this confusion is why volumetric flasks are filled TO the
+mark}
+
+\begin{mcq}
+  Molality is defined as moles of solute per
+  \choices
+    \correct{kilogram of solvent}
+    \choice{litre of solution}
+    \choice{kilogram of solution}
+    \choice{mole of solvent}
+\end{mcq}
+\why{Mass-based, which is what makes it temperature-independent.}
+
+\begin{mcq}
+  A solution is warmed from \SI{20}{\celsius} to \SI{50}{\celsius}. Which
+  quantity changes?
+  \choices
+    \correct{molarity}
+    \choice{molality}
+    \choice{mass percent}
+    \choice{mole fraction}
+\end{mcq}
+\why{Only molarity has a volume in its denominator, and volume expands.}
+
+\begin{mcq}
+  A solution contains \SI{0.500}{\mole} of solute in \SI{250.}{\gram} of
+  water. Its molality is
+  \choices
+    \choice{\SI{0.500}{\mole\per\kilo\gram}}
+    \correct{\SI{2.00}{\mole\per\kilo\gram}}
+    \choice{\SI{1.25}{\mole\per\kilo\gram}}
+    \choice{\SI{125}{\mole\per\kilo\gram}}
+\end{mcq}
+\why{$0.500/0.250 = 2.00$.}
+
+\begin{mcq}
+  Which concentration unit converts most directly into a partial pressure?
+  \choices
+    \choice{molarity}
+    \choice{molality}
+    \correct{mole fraction}
+    \choice{mass percent}
+\end{mcq}
+\why{$P_A = \chi_A P_{\text{total}}$.}
+
+\begin{mcq}
+  \SI{25.0}{\gram} of solute is dissolved to give \SI{125.0}{\gram} of
+  solution. The mass percent of solute is
+  \choices
+    \choice{25.0\%}
+    \correct{20.0\%}
+    \choice{16.7\%}
+    \choice{80.0\%}
+\end{mcq}
+\why{$25.0/125.0 \times 100$ --- the denominator is the solution mass.}
+\distractor{A}{used the solvent mass of 100.0 g as the denominator}
+
+% ---- 11.2 energetics -------------------------------------------------------
+\begin{mcq}
+  In the three-step model of solution formation, which step is exothermic?
+  \choices
+    \choice{separating the solute}
+    \choice{expanding the solvent}
+    \correct{allowing solute and solvent to interact}
+    \choice{all three}
+\end{mcq}
+\why{Steps 1 and 2 break attractions; only step 3 forms them.}
+
+\begin{mcq}
+  For an ionic solute dissolving in water, step 1 of the model corresponds
+  to overcoming the
+  \choices
+    \correct{lattice energy}
+    \choice{hydration energy}
+    \choice{ionization energy}
+    \choice{bond energy}
+\end{mcq}
+\why{Separating the solute means pulling the ionic lattice apart.}
+
+\begin{mcq}
+  Dissolving \ce{NH4NO3} in water makes the container feel cold. Therefore
+  \choices
+    \choice{$\Delta H_{\text{soln}}$ is negative}
+    \correct{$\Delta H_{\text{soln}}$ is positive}
+    \choice{no energy is transferred}
+    \choice{the process is impossible}
+\end{mcq}
+\why{The system absorbed energy from the surroundings --- endothermic.}
+
+\begin{mcq}
+  A salt has $\Delta H_{\text{soln}} = \SI{-82}{\kilo\joule\per\mole}$. When
+  it dissolves, the hydration energy
+  \choices
+    \correct{exceeds the combined cost of steps 1 and 2}
+    \choice{is smaller than the lattice energy}
+    \choice{is zero}
+    \choice{is endothermic}
+\end{mcq}
+\why{A negative overall value means step 3 more than repaid steps 1 and 2.}
+
+\begin{mcq}
+  Oil does not dissolve in water primarily because
+  \choices
+    \choice{oil molecules are too large}
+    \correct{the weak oil--water attractions cannot repay the energy of
+      breaking water's hydrogen bonds}
+    \choice{oil is denser than water}
+    \choice{oil has no intermolecular forces}
+\end{mcq}
+\why{Step 2 is very costly and step 3 offers only dipole--induced dipole
+attraction.}
+\distractor{D}{oil molecules have dispersion forces}
+
+\begin{mcq}
+  A substance dissolves even though $\Delta H_{\text{soln}}$ is positive.
+  The best explanation is that
+  \choices
+    \choice{the measurement was wrong}
+    \correct{the increase in disorder on mixing can drive the process}
+    \choice{no bonds were broken}
+    \choice{the solvent was heated}
+\end{mcq}
+\why{Enthalpy alone does not determine whether a process occurs.}
+
+\begin{mcq}
+  \ce{NaCl} has $\Delta H_{\text{soln}} = \SI{+3.9}{\kilo\joule\per\mole}$
+  despite a very large lattice energy. This small value indicates that
+  \choices
+    \correct{the hydration energy nearly cancels the lattice energy}
+    \choice{the lattice energy is small}
+    \choice{no hydration occurs}
+    \choice{\ce{NaCl} is insoluble}
+\end{mcq}
+\why{A small net is the difference between two large opposing terms.}
+
+% ---- 11.3 solubility factors -----------------------------------------------
+\begin{mcq}
+  Which is most soluble in water?
+  \choices
+    \choice{\ce{CCl4}}
+    \choice{\ce{C6H14}}
+    \correct{\ce{CH3OH}}
+    \choice{\ce{I2}}
+\end{mcq}
+\why{Methanol hydrogen bonds with water; the others are nonpolar.}
+
+\begin{mcq}
+  Water solubility of straight-chain alcohols decreases as the chain
+  lengthens because
+  \choices
+    \choice{the O--H group becomes less polar}
+    \correct{the nonpolar hydrocarbon portion grows relative to the polar
+      group}
+    \choice{the molecules become ionic}
+    \choice{hydrogen bonding stops entirely}
+\end{mcq}
+\why{One --OH cannot solvate an ever-longer hydrophobic tail.}
+
+\begin{mcq}
+  Vitamin A is stored in fatty tissue while vitamin C is excreted. This
+  difference arises because vitamin A is
+  \choices
+    \correct{nonpolar and therefore fat-soluble}
+    \choice{polar and therefore water-soluble}
+    \choice{ionic}
+    \choice{a larger molecule}
+\end{mcq}
+\why{Its structure is almost entirely C and H.}
+
+\begin{mcq}
+  Increasing the pressure above a solution has the greatest effect on the
+  solubility of
+  \choices
+    \choice{a solid}
+    \correct{a gas}
+    \choice{a liquid}
+    \choice{an ionic compound}
+\end{mcq}
+\why{Only gases are significantly compressible.}
+
+\begin{mcq}
+  As the temperature of water increases, the solubility of a typical gas
+  \choices
+    \choice{increases}
+    \correct{decreases}
+    \choice{is unchanged}
+    \choice{first increases, then decreases}
+\end{mcq}
+\why{Which is why warm rivers hold less dissolved oxygen.}
+
+\begin{mcq}
+  An opened bottle of soda goes flat because
+  \choices
+    \choice{the \ce{CO2} reacts with water}
+    \correct{the \ce{CO2} partial pressure above the liquid drops sharply}
+    \choice{the temperature falls}
+    \choice{the soda becomes saturated}
+\end{mcq}
+\why{Atmospheric \ce{CO2} partial pressure is roughly
+$4\times10^{-4}$ atm versus about 5 atm when sealed.}
+
+\begin{mcq}
+  Which statement about the temperature dependence of solid solubility is
+  correct?
+  \choices
+    \choice{All solids become more soluble when heated}
+    \correct{Most solids become more soluble when heated, but some become
+      less soluble}
+    \choice{All solids become less soluble when heated}
+    \choice{Temperature has no effect on solid solubility}
+\end{mcq}
+\why{Sodium sulfate is the standard counterexample.}
+\distractor{A}{tempting, and wrong --- Zumdahl says so explicitly}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S11.1 \textbullet\ solution composition}
+
+A solution is prepared by dissolving \SI{18.0}{\gram} of glucose
+(\ce{C6H12O6}, $M = \SI{180.16}{\gram\per\mole}$) in \SI{182.0}{\gram} of
+water. The resulting solution has a volume of \SI{190.}{\milli\liter}.
+
+\begin{parts}
+  \item Calculate the molality of the solution. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$n = 18.0/180.16 = \SI{0.0999}{\mole}$;
+        $m = 0.0999/0.1820 =
+        \SI{0.549}{\mole\per\kilo\gram}$\end{apcanswer}}
+  \item Calculate the molarity of the solution. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$M = 0.0999/0.190 =
+        \SI{0.526}{\Molar}$\end{apcanswer}}
+  \item The solution is warmed to \SI{60}{\celsius}. State what happens to
+        each of your two answers, with a reason.
+        \answerlines[3]{The molality is unchanged --- both moles of solute
+        and mass of solvent are independent of temperature. The molarity
+        decreases --- the solution expands, so the same moles occupy a
+        larger volume.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) uses \SI{0.1820}{\kilo\gram} of SOLVENT --- using the
+    solution mass earns 0}
+  \rpoint{1}{(a) \SI{0.549}{\mole\per\kilo\gram}}
+  \rpoint{1}{(b) \SI{0.526}{\Molar} using the solution volume}
+  \rpoint{1}{(c) both effects correct WITH reasons}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S11.2--11.3 \textbullet\ energetics and solubility}
+
+Two salts are dissolved separately in water. Salt X causes the solution to
+warm; salt Y causes it to cool.
+
+\begin{parts}
+  \item State the sign of $\Delta H_{\text{soln}}$ for each and justify from
+        the observation. \answerlines[2]{X: negative --- the solution warmed,
+        so the dissolving released energy. Y: positive --- the solution
+        cooled, so the dissolving absorbed energy from it.}
+  \item Using the three-step model, explain what must be true of the
+        hydration energy for salt Y. \answerlines[3]{Its hydration energy
+        (step 3) is smaller in magnitude than the combined endothermic cost
+        of breaking the lattice (step 1) and expanding the solvent (step 2),
+        so the net enthalpy change is positive.}
+  \item A student claims salt Y cannot dissolve because dissolving it
+        requires energy. Evaluate this claim. \answerlines[3]{The claim is
+        wrong. Enthalpy is not the only factor --- mixing increases disorder,
+        and that increase can drive dissolving even when energy must be
+        absorbed. Instant cold packs work on exactly this principle.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) both signs correct, each tied to the observation}
+  \rpoint{2}{(b) 1 pt names step 3 as smaller than steps 1+2 combined;
+    1 pt states that this makes $\Delta H_{\text{soln}}$ positive}
+  \rpoint{1}{(c) rejects the claim AND cites disorder/entropy --- ``it just
+    does'' earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

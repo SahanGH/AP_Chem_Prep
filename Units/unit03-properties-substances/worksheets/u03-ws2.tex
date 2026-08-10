@@ -1,0 +1,103 @@
+% U3 WS2 -- Type A/B: gas laws, KMT, real gases. Blocks 3-5.
+\documentclass{apchem-worksheet}
+
+\apcunit{3}
+\apcunittitle{Properties of Substances and Mixtures}
+\apcdoctitle{Worksheet 2 \textbullet\ Gases}
+\apcsubtitle{CED 3.4--3.6 \textbullet\ kelvin every time}
+
+\begin{document}
+\wsheader[Convert every temperature to kelvin before substituting. Show the
+rearranged equation before plugging in numbers.]
+
+\problem[3.4]{Ideal gas calculations. $R = \SI{0.08206}{\liter\atm\per\mole\per\kelvin}$.}
+\begin{parts}
+  \item Volume of \SI{3.00}{\mole} at \SI{2.00}{\atm} and
+        \SI{127}{\celsius}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$T = \SI{400.}{\kelvin}$;
+        $V = (3.00)(0.08206)(400.)/2.00 = \SI{49.2}{\liter}$\end{apcanswer}}
+  \item Moles in \SI{5.00}{\liter} at \SI{1.20}{\atm} and
+        \SI{27}{\celsius}: \answerblank[3cm]{\SI{0.244}{\mole}}
+  \item Pressure of \SI{0.100}{\mole} in \SI{2.00}{\liter} at
+        \SI{300.}{\kelvin}: \answerblank[3cm]{\SI{1.23}{\atm}}
+\end{parts}
+
+\problem[3.4]{A gas occupies \SI{6.0}{\liter} at \SI{300}{\kelvin} and
+\SI{1.0}{\atm}.}
+\begin{parts}
+  \item Volume at \SI{600}{\kelvin}, constant pressure:
+        \answerblank[2.6cm]{\SI{12}{\liter}}
+  \item Volume at \SI{3.0}{\atm}, constant temperature:
+        \answerblank[2.6cm]{\SI{2.0}{\liter}}
+  \item A student converts \SI{300}{\kelvin} to \SI{27}{\celsius} and uses
+        27 in the ratio. Explain the error's effect.
+        \answerlines[2]{Ratios require absolute temperature; using Celsius
+        would predict a 22-fold volume change instead of doubling, because
+        Celsius has an arbitrary zero.}
+\end{parts}
+
+\problem[3.4]{A \SI{10.0}{\liter} vessel holds \SI{0.30}{\mole} \ce{N2},
+\SI{0.50}{\mole} \ce{O2}, and \SI{0.20}{\mole} \ce{Ar} at
+\SI{300.}{\kelvin}.}
+\begin{parts}
+  \item Total pressure: \answerblank[3cm]{\SI{2.46}{\atm}}
+  \item Mole fraction of \ce{O2}: \answerblank[3cm]{0.50}
+  \item Partial pressure of \ce{O2}: \answerblank[3cm]{\SI{1.23}{\atm}}
+  \item If all the \ce{O2} were removed, what happens to the partial
+        pressure of \ce{N2}? \answerlines[2]{Unchanged --- each gas exerts
+        pressure independently of the others.}
+\end{parts}
+
+\problem[3.5]{State which KMT assumption each observation depends on:}
+\begin{parts}
+  \item Gas pressure rises when the container shrinks.
+        \answerblank[7.3cm]{constant random motion / collisions}
+  \item All gases at the same $T$ have equal average kinetic energy.
+        \answerblank[5.5cm]{$KE \propto T$}
+  \item Gas particles don't slow down over time in a sealed flask.
+        \answerblank[5.5cm]{elastic collisions}
+\end{parts}
+
+\problem[3.5]{\ce{He} and \ce{CO2} are held at the same temperature.}
+\begin{parts}
+  \item Compare their average kinetic energies.
+        \answerblank[6.4cm]{equal --- KE depends only on $T$}
+  \item Compare their average speeds, with reasoning.
+        \answerlines[2]{He moves much faster: $u_{\text{rms}} =
+        \sqrt{3RT/M}$, and He's molar mass is 11 times smaller.}
+  \item Sketch both Maxwell--Boltzmann curves on one set of axes and label
+        them. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}He: broad, flat, peak far right.
+        \ce{CO2}: narrow, tall, peak left. Equal areas.\end{apcanswer}}
+\end{parts}
+
+\problem[3.6]{Under which conditions does a real gas behave most ideally,
+and why? Name both failed assumptions in your answer.
+\answerlines[3]{High temperature and low pressure. At low pressure
+particles are far apart, so their own volume is negligible compared with the
+container; at high temperature they move fast enough that intermolecular
+attractions barely affect collisions.}}
+
+\problem[3.6]{For \ce{CH4} at \SI{200}{\kelvin}, a plot of $PV/nRT$ vs $P$
+first dips below 1, then rises above 1.}
+\begin{parts}
+  \item Cause of the dip: \answerblank[6.6cm]{attractions reduce collision
+        force}
+  \item Cause of the rise: \answerblank[7.2cm]{particle volume becomes
+        significant}
+  \item Would \ce{He} show a larger or smaller dip? Why?
+        \answerlines[2]{Smaller --- He's dispersion forces are extremely
+        weak, so attractions barely reduce the measured pressure.}
+\end{parts}
+
+\begin{spiralstrip}{Unit 3 \textbullet\ blocks 1--2}
+  \item Strongest IMF in \ce{CH3CH2OH}: \answerblank[3.5cm]{hydrogen bonding}
+  \item Solid type of diamond: \answerblank[3.5cm]{covalent network}
+  \item Higher vapor pressure: water or acetone (bp \SI{56}{\celsius})?
+        \answerblank[2.5cm]{acetone}
+  \item Melting a molecular solid breaks:
+        \answerblank[3.5cm]{IMFs, not bonds}
+  \item Higher bp: \ce{Ar} or \ce{Ne}? \answerblank[2cm]{\ce{Ar}}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,316 @@
+% Zumdahl Chapter 6 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S6.1--6.4 \textbullet\ 50 minutes \textbullet\ formation data provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- 6.1 first law / signs -------------------------------------------------
+\begin{mcq}
+  A reaction is run in a beaker, and the beaker becomes noticeably colder.
+  For the reaction,
+  \choices
+    \choice{$q < 0$ and the process is exothermic}
+    \correct{$q > 0$ and the process is endothermic}
+    \choice{$q = 0$}
+    \choice{$q > 0$ and the process is exothermic}
+\end{mcq}
+\why{The system absorbed energy from the surroundings, cooling them.}
+\distractor{A}{reasons from the surroundings instead of the system}
+
+\begin{mcq}
+  A gas expands against a constant external pressure. The work done is
+  \choices
+    \choice{positive, because the gas gained energy}
+    \correct{negative, because the system did work on the surroundings}
+    \choice{zero, because pressure is constant}
+    \choice{negative, because the gas was compressed}
+\end{mcq}
+\why{$w = -P\Delta V$ with $\Delta V > 0$.}
+
+\begin{mcq}
+  A system absorbs \SI{500}{\joule} of heat and has \SI{200}{\joule} of work
+  done on it. Its change in internal energy is
+  \choices
+    \choice{\SI{300}{\joule}}
+    \correct{\SI{700}{\joule}}
+    \choice{\SI{-300}{\joule}}
+    \choice{\SI{-700}{\joule}}
+\end{mcq}
+\why{$\Delta E = q + w = 500 + 200$.}
+\distractor{A}{subtracted, treating work done ON the system as negative}
+
+\begin{mcq}
+  Which quantity is NOT a state function?
+  \choices
+    \choice{internal energy}
+    \choice{enthalpy}
+    \correct{work}
+    \choice{temperature}
+\end{mcq}
+\why{Work depends on the path taken, not merely the endpoints.}
+
+\begin{mcq}
+  Energy transferred between two objects because of a temperature
+  difference is called
+  \choices
+    \correct{heat}
+    \choice{work}
+    \choice{enthalpy}
+    \choice{internal energy}
+\end{mcq}
+\why{That is the definition of heat.}
+
+% ---- 6.2 enthalpy / calorimetry --------------------------------------------
+\begin{mcq}
+  The enthalpy change of a reaction equals the heat transferred when the
+  reaction is carried out at constant
+  \choices
+    \choice{volume}
+    \correct{pressure}
+    \choice{temperature}
+    \choice{internal energy}
+\end{mcq}
+\why{$\Delta H = q_P$ --- which is why enthalpy is the useful quantity for
+open-beaker chemistry.}
+
+\begin{mcq}
+  For \ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)},
+  $\Delta H = \SI{-890}{\kilo\joule}$. Burning \SI{0.500}{\mole} of
+  \ce{CH4} releases
+  \choices
+    \choice{\SI{890}{\kilo\joule}}
+    \correct{\SI{445}{\kilo\joule}}
+    \choice{\SI{1780}{\kilo\joule}}
+    \choice{\SI{222}{\kilo\joule}}
+\end{mcq}
+\why{$\Delta H$ scales with amount: half a mole releases half the heat.}
+
+\begin{mcq}
+  Which substance requires the most energy to raise \SI{1}{\gram} of it by
+  \SI{1}{\celsius}?
+  \choices
+    \correct{water, $c = 4.184$}
+    \choice{aluminium, $c = 0.897$}
+    \choice{copper, $c = 0.385$}
+    \choice{gold, $c = 0.129$}
+\end{mcq}
+\why{Largest specific heat capacity by definition.}
+
+\begin{mcq}
+  \SI{100.}{\gram} of water is warmed by \SI{10.0}{\celsius}. The heat
+  absorbed is closest to
+  \choices
+    \choice{\SI{418}{\joule}}
+    \correct{\SI{4180}{\joule}}
+    \choice{\SI{41.8}{\joule}}
+    \choice{\SI{41800}{\joule}}
+\end{mcq}
+\why{$q = (100.)(4.184)(10.0)$.}
+
+\begin{mcq}
+  In a coffee-cup calorimeter the solution warms up. For the reaction,
+  \choices
+    \correct{$q_{\text{rxn}}$ is negative and equals $-q_{\text{solution}}$}
+    \choice{$q_{\text{rxn}}$ is positive and equals $q_{\text{solution}}$}
+    \choice{$q_{\text{rxn}} = 0$}
+    \choice{$q_{\text{rxn}}$ cannot be determined}
+\end{mcq}
+\why{The solution gained what the reaction released.}
+\distractor{B}{the classic sign-flip omission}
+
+\begin{mcq}
+  Two samples absorb the same quantity of heat. The one with the smaller
+  specific heat capacity will show
+  \choices
+    \correct{a larger temperature change}
+    \choice{a smaller temperature change}
+    \choice{no temperature change}
+    \choice{the same temperature change}
+\end{mcq}
+\why{$\Delta T = q/(mc)$ --- smaller $c$ gives larger $\Delta T$.}
+
+% ---- 6.3 Hess's law --------------------------------------------------------
+\begin{mcq}
+  Hess's law is a direct consequence of the fact that enthalpy is
+  \choices
+    \choice{always negative}
+    \correct{a state function}
+    \choice{measured at constant volume}
+    \choice{proportional to temperature}
+\end{mcq}
+\why{Path independence is exactly what makes step-summing valid.}
+
+\begin{mcq}
+  If \ce{A -> B} has $\Delta H = \SI{-150}{\kilo\joule}$, then
+  \ce{B -> A} has $\Delta H =$
+  \choices
+    \choice{\SI{-150}{\kilo\joule}}
+    \correct{\SI{+150}{\kilo\joule}}
+    \choice{\SI{-300}{\kilo\joule}}
+    \choice{\SI{0}{\kilo\joule}}
+\end{mcq}
+\why{Reversing a reaction reverses the direction of heat flow.}
+
+\begin{mcq}
+  For \ce{2 X -> 2 Y}, $\Delta H = \SI{-80}{\kilo\joule}$. For
+  \ce{X -> Y}, $\Delta H =$
+  \choices
+    \choice{\SI{-80}{\kilo\joule}}
+    \correct{\SI{-40}{\kilo\joule}}
+    \choice{\SI{-160}{\kilo\joule}}
+    \choice{\SI{+40}{\kilo\joule}}
+\end{mcq}
+\why{Enthalpy is extensive --- halve the coefficients, halve $\Delta H$.}
+
+\begin{mcq}
+  Two reactions sum to a target reaction. The target's $\Delta H$ is
+  \choices
+    \choice{the average of the two}
+    \correct{the sum of the two}
+    \choice{the difference of the two}
+    \choice{independent of the two}
+\end{mcq}
+\why{Hess's law.}
+
+% ---- 6.4 formation enthalpies ----------------------------------------------
+\begin{mcq}
+  The standard enthalpy of formation of \ce{Br2(l)} is
+  \choices
+    \correct{\SI{0}{\kilo\joule\per\mole}}
+    \choice{positive}
+    \choice{negative}
+    \choice{equal to that of \ce{Br2(g)}}
+\end{mcq}
+\why{Liquid bromine is the standard state of the element.}
+\distractor{D}{\ce{Br2(g)} is not the standard state, so its value is
+nonzero}
+
+\begin{mcq}
+  Which equation correctly represents the formation of \ce{NH3(g)}?
+  \choices
+    \choice{\ce{N2(g) + 3 H2(g) -> 2 NH3(g)}}
+    \correct{\ce{1/2 N2(g) + 3/2 H2(g) -> NH3(g)}}
+    \choice{\ce{N(g) + 3 H(g) -> NH3(g)}}
+    \choice{\ce{NH3(l) -> NH3(g)}}
+\end{mcq}
+\why{Exactly one mole of product, from elements in their standard states.}
+\distractor{A}{produces two moles, so it is twice the formation reaction}
+\distractor{C}{atomic N and H are not standard states}
+
+\begin{mcq}
+  $\Delta H^\circ_{\text{rxn}}$ is calculated as
+  \choices
+    \choice{reactants minus products}
+    \correct{products minus reactants, each weighted by its coefficient}
+    \choice{the sum of all $\Delta H^\circ_f$ values}
+    \choice{the average of products and reactants}
+\end{mcq}
+\why{Both the order and the coefficients matter.}
+
+\begin{mcq}
+  $\Delta H^\circ_f$ for \ce{H2O(l)} is $-285.8$ and for \ce{H2O(g)} is
+  $-241.8$ \si{\kilo\joule\per\mole}. The difference of \SI{44}{\kilo\joule\per\mole}
+  corresponds to
+  \choices
+    \choice{the bond energy of \ce{O-H}}
+    \correct{the enthalpy of vaporization of water}
+    \choice{an experimental error}
+    \choice{the ionization energy of water}
+\end{mcq}
+\why{Converting liquid to vapour is exactly the difference between the two
+formation values.}
+
+\begin{mcq}
+  A reaction has $\Delta H^\circ = \SI{+92}{\kilo\joule}$. This reaction
+  \choices
+    \choice{releases heat and warms its surroundings}
+    \correct{absorbs heat and cools its surroundings}
+    \choice{does no work}
+    \choice{cannot occur}
+\end{mcq}
+\why{Positive $\Delta H$ means endothermic.}
+\distractor{D}{endothermic reactions occur routinely}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+\begin{apcnote}[Standard enthalpies of formation (kJ/mol)]
+\ce{CH4(g)} $-74.8$ \textbullet\ \ce{C2H6(g)} $-84.7$ \textbullet\
+\ce{CO2(g)} $-393.5$ \textbullet\ \ce{H2O(l)} $-285.8$ \textbullet\
+\ce{H2O(g)} $-241.8$ \textbullet\ \ce{NH3(g)} $-46.1$ \textbullet\
+\ce{NO(g)} $+90.3$
+\end{apcnote}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S6.2 \textbullet\ calorimetry}
+
+A student mixes \SI{100.0}{\milli\liter} of \SI{0.500}{\Molar} \ce{HCl}
+with \SI{100.0}{\milli\liter} of \SI{0.500}{\Molar} \ce{NaOH} in a
+coffee-cup calorimeter. Both solutions start at \SI{21.0}{\celsius}; the
+mixture reaches \SI{24.4}{\celsius}. Assume the solution has a density of
+\SI{1.00}{\gram\per\milli\liter} and a specific heat of
+\SI{4.184}{\joule\per\gram\per\celsius}.
+
+\begin{parts}
+  \item Calculate the heat absorbed by the solution. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$q = (200.0)(4.184)(3.4) =
+        \SI{2845}{\joule} = \SI{2.85}{\kilo\joule}$\end{apcanswer}}
+  \item Determine the moles of water formed.
+        \answerlines[1]{$(0.1000)(0.500) = \SI{0.0500}{\mole}$}
+  \item Calculate $\Delta H$ per mole of water formed, with the correct
+        sign. \answerlines[2]{$q_{\text{rxn}} = \SI{-2.85}{\kilo\joule}$;
+        $\Delta H = -2.85/0.0500 = \SI{-57.0}{\kilo\joule\per\mole}$}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) uses the TOTAL \SI{200.0}{\gram} of solution --- using
+    \SI{100.0}{\gram} earns 0}
+  \rpoint{1}{(a) correct $q$ value}
+  \rpoint{1}{(b) \SI{0.0500}{\mole}}
+  \rpoint{1}{(c) $-57$ kJ/mol WITH the negative sign --- a positive answer
+    earns 0 regardless of magnitude}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S6.3--6.4 \textbullet\ Hess's law and formation data}
+
+Ethane burns according to
+\[ \ce{2 C2H6(g) + 7 O2(g) -> 4 CO2(g) + 6 H2O(l)} \]
+
+\begin{parts}
+  \item Calculate $\Delta H^\circ$ for this reaction using the formation
+        data provided. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$[4(-393.5) + 6(-285.8)] - [2(-84.7) + 0]
+        = (-1574.0 - 1714.8) + 169.4 =
+        \SI{-3119.4}{\kilo\joule}$\end{apcanswer}}
+  \item Determine the heat released when \SI{15.0}{\gram} of ethane
+        ($M = \SI{30.07}{\gram\per\mole}$) burns. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = 15.0/30.07 = \SI{0.499}{\mole}$;
+        per mole of \ce{C2H6} the value is $-3119.4/2 = -1559.7$ kJ;
+        $q = 0.499 \times (-1559.7) =
+        \SI{-778}{\kilo\joule}$\end{apcanswer}}
+  \item If the reaction produced gaseous rather than liquid water, would
+        the magnitude of $\Delta H^\circ$ increase or decrease? Justify
+        quantitatively. \answerlines[3]{Decrease. Six moles of water would
+        remain as vapour, leaving $6 \times 44 = \SI{264}{\kilo\joule}$ of
+        vaporization enthalpy unreleased, giving about
+        \SI{-2855}{\kilo\joule}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct setup, products minus reactants with coefficients}
+  \rpoint{1}{(a) $-3119$ kJ (accept $\pm 2$)}
+  \rpoint{1}{(b) divides by 2 for one mole of ethane before scaling}
+  \rpoint{1}{(c) says decrease AND supports with the vaporization figure}
+\end{rubric}
+
+\examtotal
+
+\end{document}

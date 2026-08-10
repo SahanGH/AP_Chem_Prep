@@ -1,0 +1,102 @@
+% Ch7 WS1 -- light, photons, photoelectric effect, orbitals. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{7}
+\apcunittitle{Atomic Structure and Periodicity}
+\apcdoctitle{Worksheet 1 \textbullet\ Light, Photons, and Orbitals}
+\apcsubtitle{Zumdahl \S7.1--7.2, 7.5, 7.9 \textbullet\ wavelengths in metres, always}
+
+\begin{document}
+\wsheader[Constants: $c = \SI{3.00e8}{\meter\per\second}$,
+$h = \SI{6.626e-34}{\joule\second}$,
+$N_A = \SI{6.022e23}{\per\mole}$. Convert nanometres to metres before
+substituting.]
+
+\problem[]{Photon calculations:}
+\begin{parts}
+  \item Frequency of \SI{750.}{\nano\meter} light:
+        \answerblank[3.4cm]{\SI{4.00e14}{\per\second}}
+  \item Energy of one photon at that wavelength:
+        \answerblank[3.4cm]{\SI{2.65e-19}{\joule}}
+  \item Energy per mole of those photons:
+        \answerblank[3.4cm]{\SI{160.}{\kilo\joule\per\mole}}
+  \item Wavelength of a photon carrying \SI{3.00e-19}{\joule}:
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\lambda = hc/E =
+        (6.626\times10^{-34})(3.00\times10^{8})/(3.00\times10^{-19}) =
+        \SI{6.63e-7}{\meter} = \SI{663}{\nano\meter}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Without a calculator, state which member of each pair has the
+greater photon energy and why:}
+\begin{parts}
+  \item \SI{300}{\nano\meter} or \SI{600}{\nano\meter}:
+        \answerblank[6cm]{300 nm --- shorter $\lambda$, higher $E$}
+  \item Infrared or ultraviolet:
+        \answerblank[6cm]{ultraviolet}
+  \item $\nu = \SI{2e15}{\per\second}$ or $\nu = \SI{5e14}{\per\second}$:
+        \answerblank[6cm]{$2\times10^{15}$ --- higher frequency}
+\end{parts}
+
+\problem[]{The photoelectric effect. A certain metal has a threshold
+frequency of \SI{9.0e14}{\per\second}.}
+\begin{parts}
+  \item Will light of \SI{5.0e14}{\per\second} eject electrons, no matter
+        how intense? Explain. \answerlines[2]{No. Each photon carries less
+        energy than the threshold requires, and increasing intensity only
+        supplies more photons of the same inadequate energy.}
+  \item Will dim light at \SI{1.2e15}{\per\second} eject electrons?
+        \answerlines[2]{Yes --- each photon exceeds the threshold, so
+        electrons are ejected, though relatively few of them.}
+  \item Explain what these two results together prove about the nature of
+        light. \answerlines[3]{Light must be particulate. A pure wave model
+        predicts that any frequency should work at sufficient intensity, as
+        energy accumulates. That never happens --- so energy arrives in
+        discrete photons of size $h\nu$, one of which either does or does
+        not have enough energy.}
+\end{parts}
+
+\problem[]{Orbitals and the Pauli principle:}
+\begin{parts}
+  \item Define an orbital in one sentence.
+        \answerlines[2]{A region of space described by a probability
+        distribution, indicating where an electron is likely to be found ---
+        not a path or orbit.}
+  \item Number of orbitals in the $n=4$ shell:
+        \answerblank[2.4cm]{16}
+  \item Maximum electrons in $n=4$: \answerblank[2cm]{32}
+  \item Why can an orbital hold only two electrons?
+        \answerblank[6cm]{Pauli --- two spin states only}
+\end{parts}
+
+\problem[]{Shielding and penetration.}
+\begin{parts}
+  \item In hydrogen, 2$s$ and 2$p$ have identical energy; in lithium they do
+        not. Explain what changed. \answerlines[3]{Hydrogen has a single
+        electron, so there is no shielding or electron--electron repulsion.
+        In lithium the 1$s$ core shields the $n=2$ electrons, and 2$s$
+        penetrates that core better than 2$p$ does --- so 2$s$ ends up lower
+        in energy.}
+  \item The 2$p$ orbital has its maximum probability \emph{closer} to the
+        nucleus than 2$s$ does. Why, then, is 2$s$ lower in energy?
+        \answerlines[3]{The 2$s$ profile has a small extra hump of density
+        very near the nucleus. Although a 2$s$ electron spends most of its
+        time slightly farther out, that small amount of time inside the core
+        shielding produces a stronger overall attraction.}
+  \item Write the expression relating effective and actual nuclear charge.
+        \answerblank[4cm]{$Z_{\text{eff}} \approx Z - S$}
+\end{parts}
+
+\begin{spiralstrip}{Chapters 5--6 \textbullet\ spiral}
+  \item Molar volume at STP: \answerblank[2.8cm]{\SI{22.42}{\liter}}
+  \item $\Delta H = q$ under what condition?
+        \answerblank[3.4cm]{constant pressure}
+  \item Gas collected over water: subtract what?
+        \answerblank[3cm]{$P_{\ce{H2O}}$}
+  \item $\Delta H^\circ_f$ of \ce{O2(g)}: \answerblank[1.6cm]{0}
+  \item $q$ for \SI{100.}{\gram} water warmed \SI{2.00}{\celsius}:
+        \answerblank[3cm]{\SI{837}{\joule}}
+\end{spiralstrip}
+
+\end{document}

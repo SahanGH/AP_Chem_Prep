@@ -1,0 +1,424 @@
+% Unit 9 exam -- 25 MCQ + 1 long + 1 short FRQ = 39 pts, 69 min.
+\documentclass{apchem-exam}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Unit Exam}
+\apcsubtitle{CED 9.1--9.11 \textbullet\ Fri Mar 19 \textbullet\ 69 minutes \textbullet\ 39 points}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Format and scope]
+Section I: 25 multiple choice, \textbf{no calculator}, 38 minutes.
+Section II: one long and one short free response, calculator permitted,
+31 minutes.
+
+Per the CED, topic 9.10 is assessed \textbf{without the Nernst equation} ---
+predict the direction of a change and justify it with $Q$ against $K$.
+Topic 9.8 excludes labelling electrodes as positive or negative; identify
+them as anode and cathode.
+
+Write \textbf{thermodynamically favored}, not ``spontaneous''.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{25 questions \textbullet\ 38 minutes \textbullet\ 1 point each}{\nocalculator}
+
+\begin{mcq}
+  Entropy is best described as a measure of
+  \choices
+    \correct{the dispersal of energy and matter among available
+      arrangements}
+    \choice{the disorder of the objects in a system}
+    \choice{the heat content of a system}
+    \choice{the rate at which a reaction proceeds}
+\end{mcq}
+\why{Entropy counts microscopic arrangements; it is unrelated to rate.}
+\distractor{B}{the usual shorthand, but it describes appearance rather than
+the quantity measured}
+
+\begin{mcq}
+  Which change has the most positive $\Delta S^\circ$?
+  \choices
+    \choice{\ce{H2O(g) -> H2O(l)}}
+    \correct{\ce{CO2(s) -> CO2(g)}}
+    \choice{\ce{2NO2(g) -> N2O4(g)}}
+    \choice{\ce{Ag+(aq) + Cl^-(aq) -> AgCl(s)}}
+\end{mcq}
+\why{A solid becoming a gas is the largest possible increase in dispersal.}
+
+\begin{mcq}
+  For \ce{N2(g) + 3H2(g) -> 2NH3(g)}, $\Delta S^\circ$ is negative
+  principally because
+  \choices
+    \correct{four moles of gas become two}
+    \choice{the reaction is exothermic}
+    \choice{ammonia is a polar molecule}
+    \choice{the reaction requires a catalyst}
+\end{mcq}
+\why{When the number of gas moles changes, that term dominates.}
+
+\begin{mcq}
+  Which statement about $S^\circ$ is correct?
+  \choices
+    \correct{$S^\circ$ for \ce{O2(g)} is a positive, nonzero value}
+    \choice{$S^\circ$ for any element in its standard state is zero}
+    \choice{$S^\circ$ is negative for all stable compounds}
+    \choice{$S^\circ$ cannot be measured, only changes in it}
+\end{mcq}
+\why{The third law fixes a true zero, so absolute entropies exist and
+elements have no reason to sit at it.}
+\distractor{B}{true of $\Delta H_f^\circ$ and $\Delta G_f^\circ$, not of
+$S^\circ$}
+
+\begin{mcq}
+  A process has $\Delta S_{\text{sys}} < 0$ and is thermodynamically
+  favored. It follows that
+  \choices
+    \correct{$\Delta S_{\text{surr}}$ is positive and larger in magnitude}
+    \choice{the second law has been violated}
+    \choice{$\Delta H$ must be positive}
+    \choice{$\Delta S_{\text{univ}}$ is negative}
+\end{mcq}
+\why{The second law constrains the universe, not the system.}
+
+\begin{mcq}
+  $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$. A reaction with
+  $\Delta H^\circ < 0$ and $\Delta S^\circ > 0$ is favored
+  \choices
+    \correct{at all temperatures}
+    \choice{only at high temperature}
+    \choice{only at low temperature}
+    \choice{at no temperature}
+\end{mcq}
+\why{Both terms make $\Delta G^\circ$ negative, so $T$ cannot change the
+outcome.}
+
+\begin{mcq}
+  A reaction with $\Delta H^\circ > 0$ and $\Delta S^\circ > 0$ becomes
+  favored
+  \choices
+    \correct{above $T = \Delta H^\circ/\Delta S^\circ$}
+    \choice{below $T = \Delta H^\circ/\Delta S^\circ$}
+    \choice{at all temperatures}
+    \choice{only if a catalyst is added}
+\end{mcq}
+\why{The entropy term grows with $T$ until it overtakes the enthalpy term.}
+\distractor{D}{a catalyst never changes favorability}
+
+\begin{mcq}
+  A student computes $\Delta G^\circ = 178.5 - 298(161)$ and obtains
+  $-47{,}800$~kJ. The error is that
+  \choices
+    \correct{$\Delta S^\circ$ was not converted from J/K to kJ/K}
+    \choice{the temperature should be in \si{\celsius}}
+    \choice{the sign of $\Delta H^\circ$ is wrong}
+    \choice{$\Delta S^\circ$ should have been divided by $T$}
+\end{mcq}
+\why{The magnitude is the giveaway: no ordinary reaction has a free energy
+change of tens of thousands of kJ.}
+
+\begin{mcq}
+  For a reaction at equilibrium,
+  \choices
+    \correct{$\Delta G = 0$}
+    \choice{$\Delta G^\circ = 0$}
+    \choice{$K = 0$}
+    \choice{$\Delta S_{\text{univ}} > 0$}
+\end{mcq}
+\why{$\Delta G^\circ$ is zero only in the special case $K = 1$.}
+\distractor{B}{a very common slip --- $\Delta G^\circ$ is fixed at a given
+temperature}
+
+\begin{mcq}
+  If $\Delta G^\circ$ for a reaction is positive, then
+  \choices
+    \correct{$K < 1$}
+    \choice{$K > 1$}
+    \choice{$K = 0$}
+    \choice{the reaction cannot occur under any conditions}
+\end{mcq}
+\why{$\Delta G^\circ = -RT\ln K$.}
+\distractor{D}{a small enough $Q$ still makes $\Delta G$ negative}
+
+\begin{mcq}
+  Reaction A has $\Delta G^\circ = -5$~kJ and reaction B has
+  $\Delta G^\circ = -50$~kJ. Compared with $K_A$, $K_B$ is
+  \choices
+    \correct{very much larger}
+    \choice{ten times larger}
+    \choice{ten times smaller}
+    \choice{the same}
+\end{mcq}
+\why{$K$ depends exponentially on $\Delta G^\circ$.}
+\distractor{B}{treats the relationship as linear}
+
+\begin{mcq}
+  A reaction has $\Delta G^\circ = -180$~kJ but no measurable rate at
+  \SI{298}{\kelvin}. The best explanation is
+  \choices
+    \correct{a large activation energy}
+    \choice{an error in the value of $\Delta G^\circ$}
+    \choice{that $K$ must be less than 1}
+    \choice{that the reaction is endothermic}
+\end{mcq}
+\why{Favorability and rate are independent; this is kinetic control.}
+
+\begin{mcq}
+  Adding a catalyst to a reaction changes
+  \choices
+    \correct{the activation energy only}
+    \choice{$\Delta G^\circ$ and $K$}
+    \choice{$\Delta H^\circ$ only}
+    \choice{$K$ but not the rate}
+\end{mcq}
+\why{A catalyst lowers the barrier without moving the reactant or product
+free energies.}
+
+\begin{mcq}
+  \ce{NH4NO3} dissolves endothermically yet is highly soluble. This is
+  because
+  \choices
+    \correct{$T\Delta S^\circ$ exceeds $\Delta H^\circ$}
+    \choice{the lattice energy is negligible}
+    \choice{$\Delta S^\circ$ is negative}
+    \choice{dissolving is always favored}
+\end{mcq}
+\why{Entropy drives this dissolution against the enthalpy term.}
+
+\begin{mcq}
+  When an ionic solid dissolves, the reorganization of solvent molecules
+  into hydration shells contributes
+  \choices
+    \correct{a negative $\Delta S$}
+    \choice{a positive $\Delta S$}
+    \choice{a positive $\Delta H$}
+    \choice{nothing to either term}
+\end{mcq}
+\why{Ordering the solvent around ions reduces the number of arrangements
+available to it.}
+
+\begin{mcq}
+  An unfavorable reaction is coupled to a favorable one. For the coupled
+  process to be favored, the two reactions must share a common intermediate
+  and
+  \choices
+    \correct{the sum of the two $\Delta G^\circ$ values must be negative}
+    \choice{both reactions must be exothermic}
+    \choice{the favorable reaction must be faster}
+    \choice{the two $\Delta G^\circ$ values must be equal in magnitude}
+\end{mcq}
+\why{Free energies add.}
+
+\begin{mcq}
+  In any electrochemical cell, oxidation occurs at the
+  \choices
+    \correct{anode}
+    \choice{cathode}
+    \choice{salt bridge}
+    \choice{negative electrode in every case}
+\end{mcq}
+\why{An~Ox holds in galvanic and electrolytic cells alike.}
+\distractor{D}{the sign reverses between cell types, which is why the CED
+excludes it}
+
+\begin{mcq}
+  The purpose of a salt bridge is to
+  \choices
+    \correct{carry ions so both solutions stay electrically neutral}
+    \choice{carry electrons between the half-cells}
+    \choice{prevent the two solutions from reacting}
+    \choice{increase the cell potential}
+\end{mcq}
+\why{Without it, charge builds up and electron flow stops almost at once.}
+\distractor{B}{electrons travel through the wire, not the bridge}
+
+\begin{mcq}
+  An electrolytic cell has
+  \choices
+    \correct{$E^\circ_{\text{cell}} < 0$ and $\Delta G^\circ > 0$}
+    \choice{$E^\circ_{\text{cell}} > 0$ and $\Delta G^\circ < 0$}
+    \choice{$E^\circ_{\text{cell}} > 0$ and $\Delta G^\circ > 0$}
+    \choice{$E^\circ_{\text{cell}} = 0$ and $\Delta G^\circ = 0$}
+\end{mcq}
+\why{It requires an external supply, which is CED 9.7's ``external energy''
+in hardware.}
+\distractor{D}{that describes a dead battery}
+
+\begin{mcq}
+  Given \ce{Zn^2+}/\ce{Zn} $= -0.76$~V and \ce{Cu^2+}/\ce{Cu} $= +0.34$~V,
+  $E^\circ_{\text{cell}}$ for \ce{Zn + Cu^2+ -> Zn^2+ + Cu} is
+  \choices
+    \correct{$+1.10$~V}
+    \choice{$-1.10$~V}
+    \choice{$-0.42$~V}
+    \choice{$+0.42$~V}
+\end{mcq}
+\why{$E^\circ = 0.34 - (-0.76)$.}
+\distractor{D}{adds the two potentials instead of subtracting}
+
+\begin{mcq}
+  For \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}, with \ce{Ag+}/\ce{Ag} $= +0.80$~V and
+  \ce{Cu^2+}/\ce{Cu} $= +0.34$~V, $E^\circ_{\text{cell}}$ is
+  \choices
+    \correct{$+0.46$~V}
+    \choice{$+1.26$~V}
+    \choice{$+1.94$~V}
+    \choice{$-0.46$~V}
+\end{mcq}
+\why{Doubling the silver half-reaction does not double its potential ---
+$E^\circ$ is intensive.}
+\distractor{B}{doubles $E^\circ$ along with the coefficients, the classic
+error}
+
+\begin{mcq}
+  Two cells have the same $E^\circ_{\text{cell}}$ but transfer 1 and 3
+  electrons respectively. Compared with the first, the second cell has
+  \choices
+    \correct{the same voltage and three times the magnitude of
+      $\Delta G^\circ$}
+    \choice{three times the voltage and the same $\Delta G^\circ$}
+    \choice{three times both}
+    \choice{the same value of both}
+\end{mcq}
+\why{Potential is intensive; free energy is an amount of energy and scales
+with $n$.}
+
+\begin{mcq}
+  A galvanic cell has been running for some time. Compared with its initial
+  state,
+  \choices
+    \correct{$Q$ has increased and $E_{\text{cell}}$ has decreased}
+    \choice{$Q$ has decreased and $E_{\text{cell}}$ has increased}
+    \choice{$K$ has decreased}
+    \choice{$E^\circ_{\text{cell}}$ has decreased}
+\end{mcq}
+\why{The reaction moves toward equilibrium; $K$ and $E^\circ$ are fixed at
+a given temperature.}
+\distractor{D}{$E^\circ$ is a standard-state constant, unlike
+$E_{\text{cell}}$}
+
+\begin{mcq}
+  For \ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}, increasing
+  $[\ce{Cu^2+}]$ will
+  \choices
+    \correct{increase $E_{\text{cell}}$, because $Q$ decreases}
+    \choice{decrease $E_{\text{cell}}$, because $Q$ decreases}
+    \choice{increase $E_{\text{cell}}$, because $E^\circ$ increases}
+    \choice{leave $E_{\text{cell}}$ unchanged}
+\end{mcq}
+\why{A reactant concentration appears in the denominator of $Q$; a smaller
+$Q$ means a larger displacement from equilibrium.}
+
+\begin{mcq}
+  Passing one mole of electrons through solutions of \ce{Ag+},
+  \ce{Cu^2+}, and \ce{Al^3+} deposits
+  \choices
+    \correct{1 mol \ce{Ag}, 0.5 mol \ce{Cu}, and $1/3$ mol \ce{Al}}
+    \choice{one mole of each metal}
+    \choice{1 mol \ce{Ag}, 2 mol \ce{Cu}, and 3 mol \ce{Al}}
+    \choice{amounts that depend on the current used}
+\end{mcq}
+\why{The half-reaction supplies the electron ratio, read off the ion's
+charge.}
+\distractor{C}{multiplies where it should divide}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 31 minutes \textbullet\ calculator permitted}{}
+
+% ---- FRQ 1 (long) ----------------------------------------------------------
+\frq{long}{10}{CED 9.8, 9.9, 9.10 \textbullet\ a galvanic cell end to end}
+
+A galvanic cell is assembled from a nickel electrode in \SI{1.0}{\Molar}
+\ce{Ni(NO3)2} and a silver electrode in \SI{1.0}{\Molar} \ce{AgNO3}, joined
+by a salt bridge.
+
+\medskip
+$E^\circ$: \ce{Ag+ + e^- -> Ag}, $+0.80$~V \textbullet\
+\ce{Ni^2+ + 2e^- -> Ni}, $-0.23$~V \textbullet\
+$F = \SI{96485}{\coulomb\per\mole}$
+
+\begin{parts}
+  \item Identify the anode and the cathode, and give the direction of
+        electron flow through the wire.
+        \answerlines[2]{Nickel is the anode (oxidation --- it has the more
+        negative reduction potential); silver is the cathode (reduction).
+        Electrons flow through the wire from the nickel electrode to the
+        silver electrode.}
+  \item Write the balanced overall cell reaction and state $n$.
+        \answerlines[2]{\ce{Ni(s) + 2Ag+(aq) -> Ni^2+(aq) + 2Ag(s)};
+        $n = 2$.}
+  \item Calculate $E^\circ_{\text{cell}}$. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$E^\circ = 0.80 - (-0.23) =
+        \mathbf{+1.03}$~V\end{apcanswer}}
+  \item Calculate $\Delta G^\circ$ for the cell reaction, in kJ.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -nFE^\circ =
+        -(2)(96485)(1.03) = -198{,}759~\text{J} =
+        \mathbf{-199}~\text{kJ}$\end{apcanswer}}
+  \item The \ce{AgNO3} solution is diluted to \SI{0.010}{\Molar} while the
+        nickel half-cell is unchanged. Predict the effect on
+        $E_{\text{cell}}$ and justify with $Q$. Do not calculate.
+        \answerlines[3]{\ce{Ag+} is a reactant and appears in the
+        denominator of $Q$, so lowering its concentration increases $Q$.
+        A larger $Q$ places the system nearer equilibrium, reducing the
+        driving force, so $E_{\text{cell}}$ decreases.}
+  \item State the mass change at each electrode as the cell runs, and give
+        $E_{\text{cell}}$ when the cell is exhausted.
+        \answerlines[2]{The nickel anode loses mass as it is oxidized; the
+        silver cathode gains mass as \ce{Ag+} plates onto it. When
+        exhausted, $Q = K$ and $E_{\text{cell}} = 0$.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both electrodes correctly identified with oxidation
+    at nickel; 1 pt electron flow stated anode $\to$ cathode. Labelling an
+    electrode $+$ or $-$ is neither required nor penalized}
+  \rpoint{2}{(b) 1 pt balanced equation with \ce{Ag+} doubled; 1 pt
+    $n = 2$ --- an unbalanced equation earns 0 for both}
+  \rpoint{1}{(c) $+1.03$~V --- using $2(0.80)$ earns 0}
+  \rpoint{2}{(d) 1 pt substitution into $-nFE^\circ$ with $n = 2$; 1 pt
+    $-199$~kJ with the conversion from joules --- reporting
+    $-198{,}759$~kJ earns 0 for this point}
+  \rpoint{2}{(e) 1 pt states $Q$ increases because \ce{Ag+} is a reactant;
+    1 pt concludes $E_{\text{cell}}$ decreases. A bare ``decreases''
+    with no $Q$ reasoning earns 0}
+  \rpoint{1}{(f) both mass changes AND $E_{\text{cell}} = 0$ required}
+\end{rubric}
+
+% ---- FRQ 2 (short) ---------------------------------------------------------
+\frq{short}{4}{CED 9.3, 9.4 \textbullet\ favorability and rate}
+
+For \ce{CaCO3(s) -> CaO(s) + CO2(g)}, $\Delta H^\circ = +178.5$~kJ and
+$\Delta S^\circ = +161$~\si{\joule\per\kelvin}.
+
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin} and state whether
+        the reaction is thermodynamically favored. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = 178.5 - 298(0.161)
+        = 178.5 - 48.0 = \mathbf{+131}$~kJ. Positive, so \textbf{not}
+        thermodynamically favored at \SI{298}{\kelvin}.\end{apcanswer}}
+  \item Calculate the temperature above which the reaction becomes favored.
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$T = \Delta H^\circ/\Delta S^\circ =
+        178.5/0.161 = \mathbf{1109}~\si{\kelvin}$\end{apcanswer}}
+  \item A student claims that adding a catalyst would allow the
+        decomposition to proceed at \SI{298}{\kelvin}. Evaluate the claim.
+        \answerlines[3]{The claim is wrong. A catalyst lowers the
+        activation energy and so increases the rate, but it does not change
+        $\Delta H^\circ$, $\Delta S^\circ$, $\Delta G^\circ$, or $K$. Since
+        $\Delta G^\circ$ is positive at \SI{298}{\kelvin}, the reaction is
+        not favored and no catalyst can make it so.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt correct substitution with $\Delta S^\circ$ converted
+    to kJ/K; 1 pt $+131$~kJ and ``not favored''. An answer near
+    $-47{,}800$ signals the unconverted entropy and earns 0 for both}
+  \rpoint{1}{(b) $1109$~K (accept \SI{1100}{\kelvin} to 2 s.f.)}
+  \rpoint{1}{(c) rejects the claim AND states that a catalyst leaves
+    $\Delta G^\circ$ or $K$ unchanged --- ``no'' alone earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

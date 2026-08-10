@@ -1,0 +1,97 @@
+% U4 WS3 -- redox and solution stoichiometry.
+\documentclass{apchem-worksheet}
+
+\apcunit{4}
+\apcunittitle{Chemical Reactions}
+\apcdoctitle{Worksheet 3 \textbullet\ Redox and Solution Stoichiometry}
+\apcsubtitle{CED 4.5, 4.9 \textbullet\ assign states before naming agents}
+
+\begin{document}
+\wsheader[Write oxidation states above the symbols before you conclude
+anything. For stoichiometry, convert volume $\times$ molarity to moles as
+the very first step.]
+
+\problem[4.9]{Assign the oxidation state of the named element:}
+\begin{parts}
+  \item Mn in \ce{MnO2}: \answerblank[1.8cm]{$+4$}
+  \item Cr in \ce{Cr2O3}: \answerblank[1.8cm]{$+3$}
+  \item S in \ce{SO3^2-}: \answerblank[1.8cm]{$+4$}
+  \item N in \ce{NH4+}: \answerblank[1.8cm]{$-3$}
+  \item Cl in \ce{ClO2-}: \answerblank[1.8cm]{$+3$}
+  \item O in \ce{H2O2}: \answerblank[1.8cm]{$-1$}
+\end{parts}
+
+\problem[4.9]{For each reaction: is it redox? If so, name what is oxidized,
+what is reduced, and both agents.}
+\begin{parts}
+  \item \ce{Cu(s) + 2 AgNO3(aq) -> Cu(NO3)2(aq) + 2 Ag(s)}
+        \answerlines[3]{Redox. Cu $0 \to +2$ oxidized, reducing agent.
+        Ag $+1 \to 0$ reduced; \ce{AgNO3} is the oxidizing agent.}
+  \item \ce{BaCl2(aq) + Na2SO4(aq) -> BaSO4(s) + 2 NaCl(aq)}
+        \answerlines[2]{Not redox --- no oxidation state changes; this is
+        precipitation.}
+  \item \ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(g)}
+        \answerlines[3]{Redox. C $-4 \to +4$ oxidized, \ce{CH4} is the
+        reducing agent. O $0 \to -2$ reduced, \ce{O2} is the oxidizing
+        agent.}
+\end{parts}
+
+\problem[4.9]{A student writes: ``Zinc is oxidized, so zinc is the oxidizing
+agent.'' Correct the statement and explain the naming convention.
+\answerlines[3]{Zinc is the \emph{reducing} agent. The label names what the
+species does to its partner: by donating electrons, zinc causes the other
+substance to be reduced. The species oxidized is always the reducing
+agent.}}
+
+\problem[4.5]{Solution stoichiometry:}
+\begin{parts}
+  \item Moles of \ce{Ba^2+} in \SI{35.0}{\milli\liter} of
+        \SI{0.200}{\Molar} \ce{BaCl2}:
+        \answerblank[3cm]{\SI{7.00e-3}{\mole}}
+  \item Mass of \ce{BaSO4} ($M = 233.39$) if that all precipitates:
+        \answerblank[3cm]{\SI{1.63}{\gram}}
+  \item Volume of \SI{0.150}{\Molar} \ce{Na2SO4} needed to react with it
+        exactly: \answerblank[3cm]{\SI{46.7}{\milli\liter}}
+\end{parts}
+
+\problem[4.5]{\SI{40.0}{\milli\liter} of \SI{0.100}{\Molar} \ce{AgNO3} is
+mixed with \SI{40.0}{\milli\liter} of \SI{0.150}{\Molar} \ce{NaCl}.}
+\begin{parts}
+  \item Moles of each reactant:
+        \answerblank[8.2cm]{\ce{Ag+} \SI{4.00e-3}{\mole}; \ce{Cl-}
+        \SI{6.00e-3}{\mole}}
+  \item Limiting reactant, with reasoning: \workspace[2cm]
+        \keyonly{\begin{apcanswer}1:1 ratio, so \ce{Ag+} (fewer moles) is
+        limiting.\end{apcanswer}}
+  \item Mass of \ce{AgCl} formed ($M = 143.32$):
+        \answerblank[3cm]{\SI{0.573}{\gram}}
+  \item Moles of excess reactant remaining:
+        \answerblank[4.1cm]{\SI{2.00e-3}{\mole} \ce{Cl-}}
+\end{parts}
+
+\problem[4.6]{Titration calculations:}
+\begin{parts}
+  \item \SI{25.0}{\milli\liter} of \ce{HCl} needs \SI{28.6}{\milli\liter}
+        of \SI{0.125}{\Molar} \ce{NaOH}. Find $[\ce{HCl}]$.
+        \answerblank[3cm]{\SI{0.143}{\Molar}}
+  \item \SI{20.0}{\milli\liter} of \SI{0.200}{\Molar} \ce{H2SO4} is
+        titrated with \SI{0.250}{\Molar} \ce{KOH}. Volume needed?
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{H2SO4}) = \SI{4.00e-3}{\mole}$;
+        diprotic $\to n(\ce{OH-}) = \SI{8.00e-3}{\mole}$;
+        $V = 8.00\times10^{-3}/0.250 =
+        \SI{32.0}{\milli\liter}$\end{apcanswer}}
+\end{parts}
+
+\begin{spiralstrip}{Unit 4 \textbullet\ blocks 1--5}
+  \item Net ionic for \ce{Pb^2+} with \ce{I-}:
+        \answerblank[5.1cm]{\ce{Pb^2+ + 2 I^- -> PbI2(s)}}
+  \item Weak acid written how in a net ionic?
+        \answerblank[2.6cm]{intact}
+  \item Physical or chemical: iron rusting?
+        \answerblank[2.4cm]{chemical}
+  \item Reaction type: \ce{HNO3 + KOH}: \answerblank[2.6cm]{acid--base}
+  \item Oxidation state of H in \ce{CaH2}: \answerblank[2cm]{$-1$}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,132 @@
+% Ch17 WS1 -- entropy, its sign, and the second law. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Entropy and Free Energy}
+\apcdoctitle{Worksheet 1 \textbullet\ Entropy and the Second Law}
+\apcsubtitle{Zumdahl \S17.1--17.2 \textbullet\ count moles of gas before you do anything else}
+
+\begin{document}
+\wsheader[Write \textbf{thermodynamically favored}, not ``spontaneous.''
+$S^\circ$ in \si{\joule\per\kelvin\per\mole}: \ce{H2} 131 \textbullet\
+\ce{O2} 205 \textbullet\ \ce{N2} 192 \textbullet\ \ce{H2O(l)} 70
+\textbullet\ \ce{H2O(g)} 189 \textbullet\ \ce{CO2} 214 \textbullet\
+\ce{CO} 198 \textbullet\ \ce{C(gr)} 6 \textbullet\ \ce{NH3} 193.]
+
+\problem[]{Entropy measures dispersal. Name the two things that disperse,
+and give an example of each.
+\answerlines[3]{\textbf{Matter} --- particles occupy a larger volume or move
+more freely, as when a solid melts or a gas expands. \textbf{Energy} --- the
+distribution of molecular kinetic energies broadens as temperature rises, so
+the energy is spread over more available states.}}
+
+\problem[]{Give the sign of $\Delta S^\circ$ for each change and a
+one-phrase reason:}
+\begin{parts}
+  \item \ce{H2O(s) -> H2O(l)}
+        \answerblank[6.4cm]{positive --- solid to liquid}
+  \item \ce{2SO2(g) + O2(g) -> 2SO3(g)}
+        \answerblank[6.4cm]{negative --- 3 mol gas to 2}
+  \item \ce{NH4NO3(s) -> NH4+(aq) + NO3^-(aq)}
+        \answerblank[8.4cm]{positive --- ordered lattice to free ions}
+  \item A gas is compressed into half its volume
+        \answerblank[7cm]{negative --- less space to occupy}
+  \item \ce{CaCO3(s) -> CaO(s) + CO2(g)}
+        \answerblank[7.8cm]{positive --- gas produced from a solid}
+  \item A sample of argon is warmed from 300 to \SI{400}{\kelvin}
+        \answerblank[8.8cm]{positive --- energy spread over more states}
+  \item \ce{H2(g) + Cl2(g) -> 2HCl(g)}
+        \answerlines[2]{Near zero --- 2 mol of gas becomes 2 mol of gas, so
+        $\Delta n_{\text{gas}} = 0$ and no large change is expected. (It is
+        slightly positive, $+20$~J/K, because \ce{HCl} has more atoms free
+        to arrange than the symmetric diatomics.)}
+\end{parts}
+
+\problem[]{Explain why counting moles of gas is the first move, using
+water as evidence. \answerlines[3]{Gases carry far more entropy than
+condensed phases, so a change in the number of moles of gas dominates any
+other contribution. \ce{H2O(l)} has $S^\circ = 70$ but \ce{H2O(g)} has 189
+\si{\joule\per\kelvin\per\mole} --- the same substance, nearly triple, purely
+because of the phase.}}
+
+\problem[]{State the second law and explain why it refers to the universe
+rather than the system.
+\answerlines[4]{In any thermodynamically favored process the entropy of the
+universe increases: $\Delta S_{\text{univ}} = \Delta S_{\text{sys}} +
+\Delta S_{\text{surr}} > 0$. It must refer to the universe because the
+system's own entropy is frequently allowed to fall --- water freezes,
+ammonia forms, organisms build ordered molecules. Those are permitted
+because the surroundings gain more entropy than the system loses.}}
+
+\problem[]{$\Delta S_{\text{surr}} = -\Delta H/T$.}
+\begin{parts}
+  \item For an exothermic reaction, the sign of $\Delta S_{\text{surr}}$ is
+        \answerblank[3cm]{positive}
+  \item Why does the same quantity of heat raise the surroundings' entropy
+        more at low temperature than at high?
+        \answerlines[3]{The temperature sits in the denominator. Delivering
+        a fixed amount of heat to cold surroundings is a large fractional
+        increase in their energy dispersal; the same heat delivered to hot
+        surroundings, which already hold a great deal of thermal energy,
+        changes the dispersal comparatively little.}
+  \item Use that to explain why water freezes below \SI{0}{\celsius} but
+        melts above it, given that $\Delta H$ and $\Delta S$ for freezing
+        barely change over that range.
+        \answerlines[4]{Freezing has $\Delta S_{\text{sys}} < 0$ but is
+        exothermic, so $\Delta S_{\text{surr}} = -\Delta H/T > 0$. As $T$
+        falls that positive term grows, and below \SI{0}{\celsius} it
+        outweighs the system's loss, making $\Delta S_{\text{univ}} > 0$.
+        Above \SI{0}{\celsius} it no longer does, and melting becomes the
+        favored direction instead.}
+\end{parts}
+
+\problem[]{For the combustion of carbon, \ce{C(gr) + O2(g) -> CO2(g)}:}
+\begin{parts}
+  \item Predict the sign of $\Delta S^\circ$ before calculating, and say
+        why the prediction is hard here.
+        \answerlines[2]{One mole of gas becomes one mole of gas, so
+        $\Delta n_{\text{gas}} = 0$ and no large change is expected. With
+        the dominant term absent, the sign cannot be predicted by
+        inspection.}
+  \item Calculate $\Delta S^\circ$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$214 - (6 + 205) =
+        \mathbf{+3}~\si{\joule\per\kelvin}$ --- very small, as
+        predicted\end{apcanswer}}
+  \item The reaction is strongly exothermic. What does that tell you about
+        $\Delta S_{\text{univ}}$? \answerlines[2]{It must be strongly
+        positive. The system contributes almost nothing, so essentially all
+        of the increase comes from $\Delta S_{\text{surr}} = -\Delta H/T$,
+        which is large because the reaction releases a great deal of heat.}
+\end{parts}
+
+\problem[]{A classmate says: ``Life creates order out of disorder, so living
+things break the second law.'' Refute this.
+\answerlines[4]{An organism is not an isolated system. It takes in
+concentrated chemical energy and releases heat and simpler waste molecules
+to its surroundings. The entropy gained by those surroundings exceeds the
+entropy lost in assembling ordered biomolecules, so
+$\Delta S_{\text{univ}}$ is still positive. The second law constrains the
+universe, not any chosen part of it.}}
+
+\problem[]{Rank by molar entropy, lowest first: \ce{H2O(s)}, \ce{H2O(l)},
+\ce{H2O(g)}. Then explain what would change if the comparison were made at
+\SI{500}{\kelvin} instead of \SI{298}{\kelvin}.
+\answerlines[3]{\ce{H2O(s)} $<$ \ce{H2O(l)} $<$ \ce{H2O(g)} --- freedom of
+motion and accessible volume both increase down the list. At
+\SI{500}{\kelvin} every value would be larger, because raising the
+temperature broadens the distribution of kinetic energies, but the ordering
+would be unchanged.}}
+
+\begin{spiralstrip}{Chapters 15--16 \textbullet\ spiral}
+  \item pH $=$ p$K_a$ when the buffer ratio is:
+        \answerblank[1.6cm]{1}
+  \item For an \ce{MX2} salt, $K_{sp} = $ \answerblank[1.8cm]{$4s^3$}
+  \item Common ion added $\Rightarrow$ solubility:
+        \answerblank[1.8cm]{falls}
+  \item Equivalence pH, weak acid $+$ strong base:
+        \answerblank[2.2cm]{above 7}
+  \item Does a common ion change $K_{sp}$? \answerblank[1.6cm]{no}
+\end{spiralstrip}
+
+\end{document}

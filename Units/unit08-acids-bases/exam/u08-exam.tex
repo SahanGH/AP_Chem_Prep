@@ -1,0 +1,423 @@
+% Unit 8 exam -- 30 MCQ + 1 long + 1 short FRQ = 44 pts, 76 min.
+\documentclass{apchem-exam}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Unit Exam}
+\apcsubtitle{CED 8.1--8.11 \textbullet\ Fri Feb 19 \textbullet\ 76 minutes \textbullet\ 44 points}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Format and scope]
+Section I: 30 multiple choice, \textbf{no calculator}, 45 minutes.
+Section II: one long and one short free response, calculator permitted,
+31 minutes.
+
+Per the CED exclusion on topic 8.11, pH and solubility is assessed
+\textbf{qualitatively only} --- predict a direction and justify it, never
+compute a solubility from a pH.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{30 questions \textbullet\ 45 minutes \textbullet\ 1 point each}{\nocalculator}
+
+\begin{mcq}
+  A Br\o nsted--Lowry acid is
+  \choices
+    \correct{a proton donor}
+    \choice{a substance that produces \ce{OH-} in water}
+    \choice{an electron-pair acceptor}
+    \choice{any substance with pH below 7}
+\end{mcq}
+\why{Arrhenius gives the second; Lewis the third.}
+
+\begin{mcq}
+  The conjugate base of \ce{H2PO4^-} is
+  \choices
+    \choice{\ce{H3PO4}}
+    \correct{\ce{HPO4^2-}}
+    \choice{\ce{PO4^3-}}
+    \choice{\ce{OH-}}
+\end{mcq}
+\why{Remove one proton.}
+\distractor{A}{that is the conjugate acid}
+
+\begin{mcq}
+  For a conjugate acid--base pair, $K_a \times K_b$ equals
+  \choices
+    \choice{1}
+    \correct{$K_w$}
+    \choice{$K_a/K_b$}
+    \choice{14}
+\end{mcq}
+\why{Adding the two reactions gives the autoionization of water.}
+
+\begin{mcq}
+  The stronger an acid, the
+  \choices
+    \correct{weaker its conjugate base}
+    \choice{stronger its conjugate base}
+    \choice{higher its p$K_a$}
+    \choice{lower its concentration}
+\end{mcq}
+\why{An acid that readily loses a proton yields an anion with little
+affinity to reclaim it.}
+
+\begin{mcq}
+  Which is \emph{not} one of the six strong acids?
+  \choices
+    \choice{\ce{HClO4}}
+    \choice{\ce{HNO3}}
+    \correct{\ce{HF}}
+    \choice{\ce{HBr}}
+\end{mcq}
+\why{\ce{HF} is weak because the H--F bond is exceptionally strong.}
+
+\begin{mcq}
+  Pure water at \SI{50}{\celsius} has pH slightly below 7. This water is
+  \choices
+    \choice{acidic}
+    \correct{neutral, because $[\ce{H+}] = [\ce{OH-}]$}
+    \choice{basic}
+    \choice{impossible}
+\end{mcq}
+\why{$K_w$ rises with temperature; neutrality is the equality, not the
+number 7.}
+
+\begin{mcq}
+  The pH of \SI{0.010}{\Molar} \ce{Ba(OH)2} is
+  \choices
+    \choice{12.00}
+    \correct{12.30}
+    \choice{11.70}
+    \choice{2.00}
+\end{mcq}
+\why{Two hydroxides per formula unit: $[\ce{OH-}] = 0.020$.}
+\distractor{A}{forgot to double the hydroxide}
+
+\begin{mcq}
+  A solution with pH 3 is how many times more acidic than one with pH 6?
+  \choices
+    \choice{2}
+    \choice{3}
+    \choice{30}
+    \correct{1000}
+\end{mcq}
+\why{Each unit is a factor of 10.}
+
+\begin{mcq}
+  If pOH $= 4.20$, the pH is
+  \choices
+    \choice{4.20}
+    \correct{9.80}
+    \choice{10.20}
+    \choice{$-4.20$}
+\end{mcq}
+\why{pH $+$ pOH $= 14.00$.}
+
+\begin{mcq}
+  Which solution has the lowest pH?
+  \choices
+    \correct{\SI{0.10}{\Molar} \ce{HCl}}
+    \choice{\SI{0.10}{\Molar} \ce{HF}}
+    \choice{\SI{0.10}{\Molar} \ce{HC2H3O2}}
+    \choice{\SI{0.10}{\Molar} \ce{HCN}}
+\end{mcq}
+\why{Same concentration; only \ce{HCl} ionizes completely.}
+
+\begin{mcq}
+  For a weak acid, the small-$x$ approximation gives $[\ce{H+}]$
+  approximately equal to
+  \choices
+    \correct{$\sqrt{K_aC_0}$}
+    \choice{$K_aC_0$}
+    \choice{$K_a/C_0$}
+    \choice{$C_0$}
+\end{mcq}
+\why{From $K_a \approx x^2/C_0$.}
+
+\begin{mcq}
+  When solving a weak \emph{base} problem, the $x$ from the ICE table is
+  \choices
+    \choice{$[\ce{H+}]$}
+    \correct{$[\ce{OH-}]$}
+    \choice{the pH}
+    \choice{$K_b$}
+\end{mcq}
+\why{Which is why the answer must be converted through pOH.}
+\distractor{A}{the most-lost point in the unit}
+
+\begin{mcq}
+  Diluting a weak acid causes the percent ionization to
+  \choices
+    \correct{increase}
+    \choice{decrease}
+    \choice{stay the same}
+    \choice{become zero}
+\end{mcq}
+\why{$x$ falls as $\sqrt{C_0}$ while $C_0$ falls linearly.}
+
+\begin{mcq}
+  For \ce{H3PO4}, the pH may be calculated from $K_{a1}$ alone because
+  \choices
+    \correct{$K_{a2}$ is about $10^5$ times smaller}
+    \choice{only one proton is acidic}
+    \choice{$K_{a2}$ is zero}
+    \choice{the second ionization is instantaneous}
+\end{mcq}
+\why{The later ionizations contribute negligibly.}
+
+\begin{mcq}
+  Which is the strongest acid?
+  \choices
+    \choice{\ce{HClO}}
+    \choice{\ce{HClO2}}
+    \choice{\ce{HClO3}}
+    \correct{\ce{HClO4}}
+\end{mcq}
+\why{More electronegative oxygens weaken the O--H bond and stabilize the
+conjugate base.}
+
+\begin{mcq}
+  \ce{HF} is the weakest hydrohalic acid mainly because
+  \choices
+    \correct{the H--F bond is the strongest of the four}
+    \choice{fluorine is the least electronegative halogen}
+    \choice{\ce{F-} is the weakest conjugate base}
+    \choice{\ce{HF} is a gas}
+\end{mcq}
+\why{Bond strength dominates going down a group.}
+
+\begin{mcq}
+  An aqueous solution of \ce{NH4Cl} is
+  \choices
+    \correct{acidic}
+    \choice{basic}
+    \choice{neutral}
+    \choice{acidic or basic depending on concentration}
+\end{mcq}
+\why{\ce{NH4+} is the conjugate acid of a weak base; \ce{Cl-} is inert.}
+
+\begin{mcq}
+  A lower p$K_a$ indicates
+  \choices
+    \correct{a stronger acid}
+    \choice{a weaker acid}
+    \choice{a more concentrated solution}
+    \choice{a higher pH}
+\end{mcq}
+\why{p$K_a = -\log K_a$, so lower p$K_a$ means larger $K_a$.}
+
+\begin{mcq}
+  Which pair constitutes a buffer?
+  \choices
+    \choice{\ce{HCl} and \ce{NaCl}}
+    \choice{\ce{NaOH} and \ce{NaCl}}
+    \correct{\ce{NH3} and \ce{NH4Cl}}
+    \choice{\ce{HNO3} and \ce{KNO3}}
+\end{mcq}
+\why{A buffer needs both members of a \emph{weak} conjugate pair.}
+\distractor{A}{\ce{Cl-} has no affinity for protons}
+
+\begin{mcq}
+  Adding \ce{NaF} to a solution of \ce{HF} causes the pH to
+  \choices
+    \correct{rise, because \ce{F-} shifts the ionization left}
+    \choice{fall, because \ce{NaF} is a salt}
+    \choice{stay the same}
+    \choice{rise, because \ce{Na+} is basic}
+\end{mcq}
+\why{The common-ion effect is Le Ch\^atelier applied to the acid.}
+
+\begin{mcq}
+  The Henderson--Hasselbalch equation is
+  \choices
+    \correct{pH $=$ p$K_a + \log([\text{base}]/[\text{acid}])$}
+    \choice{pH $=$ p$K_a + \log([\text{acid}]/[\text{base}])$}
+    \choice{pH $=$ p$K_a - [\text{base}]/[\text{acid}]$}
+    \choice{pH $=$ p$K_a \times \log([\text{base}]/[\text{acid}])$}
+\end{mcq}
+\why{Base over acid; inverting flips the sign of the correction.}
+
+\begin{mcq}
+  A buffer with equal concentrations of both components has
+  \choices
+    \correct{pH $=$ p$K_a$}
+    \choice{pH $= 7.00$}
+    \choice{pH $=$ p$K_b$}
+    \choice{no buffering ability}
+\end{mcq}
+\why{$\log 1 = 0$.}
+
+\begin{mcq}
+  Diluting a buffer with water
+  \choices
+    \correct{leaves the pH nearly unchanged but lowers the capacity}
+    \choice{raises the pH and the capacity}
+    \choice{lowers the pH and the capacity}
+    \choice{changes neither}
+\end{mcq}
+\why{The ratio survives dilution; the absolute amounts do not.}
+
+\begin{mcq}
+  The correct first step for ``buffer plus strong base'' is
+  \choices
+    \correct{a stoichiometry calculation taken to completion}
+    \choice{an ICE table containing the added \ce{OH-}}
+    \choice{substituting the original concentrations into H--H}
+    \choice{calculating $K_b$ for the conjugate base}
+\end{mcq}
+\why{Strong base consumes the weak acid; it does not equilibrate with it.}
+\distractor{B}{the fastest way to lose an entire buffer question}
+
+\begin{mcq}
+  Buffering capacity is greatest when the two components are
+  \choices
+    \correct{present in equal and large amounts}
+    \choice{present in a 10:1 ratio}
+    \choice{as dilute as possible}
+    \choice{a strong acid and its salt}
+\end{mcq}
+\why{Ratio 1 is least sensitive to change, and more material absorbs more.}
+
+\begin{mcq}
+  A buffer is useful over approximately
+  \choices
+    \choice{p$K_a \pm 0.1$}
+    \correct{p$K_a \pm 1$}
+    \choice{p$K_a \pm 7$}
+    \choice{any pH}
+\end{mcq}
+\why{Beyond a 10:1 ratio the minor component is too scarce.}
+
+\begin{mcq}
+  At the halfway point of a weak acid titration,
+  \choices
+    \correct{pH $=$ p$K_a$}
+    \choice{pH $= 7.00$}
+    \choice{pH $=$ p$K_b$}
+    \choice{the buffer has failed}
+\end{mcq}
+\why{Half the acid has become its conjugate base, so the ratio is 1.}
+
+\begin{mcq}
+  A weak acid titrated with a strong base has an equivalence point that is
+  \choices
+    \choice{acidic}
+    \choice{exactly neutral}
+    \correct{basic}
+    \choice{dependent only on the titrant concentration}
+\end{mcq}
+\why{Only the conjugate base of the weak acid remains, and it hydrolyses.}
+
+\begin{mcq}
+  An indicator changes colour over a range of approximately
+  \choices
+    \correct{p$K_a \pm 1$}
+    \choice{p$K_a \pm 0.1$}
+    \choice{$7 \pm 1$}
+    \choice{the entire titration}
+\end{mcq}
+\why{The eye needs about one part in ten of the new form.}
+
+\begin{mcq}
+  Which salt is \emph{more} soluble in acidic solution than in pure water?
+  \choices
+    \choice{\ce{AgCl}}
+    \choice{\ce{AgBr}}
+    \correct{\ce{CaCO3}}
+    \choice{\ce{PbI2}}
+\end{mcq}
+\why{\ce{CO3^2-} is the conjugate base of a weak acid; the halides come
+from strong acids.}
+\distractor{A}{\ce{Cl-} is a negligible base, so acid has no effect}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 31 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+$K_a$: \ce{HOCl} $3.5\times10^{-8}$ (p$K_a$ 7.46) \textbullet\
+\ce{HC2H3O2} $1.8\times10^{-5}$ (p$K_a$ 4.74) \textbullet\
+$K_b(\ce{NH3}) = 1.8\times10^{-5}$. $K_w = 1.0\times10^{-14}$. \\
+Indicator ranges: methyl red 4.4--6.2 \textbullet\ bromthymol blue
+6.0--7.6 \textbullet\ phenolphthalein 8.2--10.0.
+\end{apcnote}
+
+% ---- FRQ 1 (long) ----------------------------------------------------------
+\frq{long}{10}{CED 8.3, 8.5, 8.9 \textbullet\ a complete weak acid titration}
+
+A \SI{25.00}{\milli\litre} sample of \SI{0.100}{\Molar} \ce{HOCl} is
+titrated with \SI{0.100}{\Molar} \ce{NaOH}.
+
+\begin{parts}
+  \item Calculate the volume of \ce{NaOH} required to reach equivalence.
+        \answerblank[4cm]{\SI{25.00}{\milli\litre}}
+  \item Calculate the pH before any base is added. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(3.5\times10^{-8})(0.100)} =
+        5.9\times10^{-5}$; pH $= \mathbf{4.23}$\end{apcanswer}}
+  \item Calculate the pH after \SI{12.50}{\milli\litre} and explain why the
+        value could have been predicted without calculation.
+        \answerlines[3]{That is half the equivalence volume, so half the
+        \ce{HOCl} has become \ce{OCl-} and $[\ce{HOCl}] = [\ce{OCl^-}]$.
+        The log term vanishes and pH $=$ p$K_a$ $= 7.46$.}
+  \item Calculate the pH after \SI{20.00}{\milli\litre}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}\ce{HOCl} $= 0.500$, \ce{OCl-} $= 2.000$
+        mmol; pH $= 7.46 + \log(2.000/0.500) =
+        \mathbf{8.06}$\end{apcanswer}}
+  \item Calculate the pH at the equivalence point. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$[\ce{OCl^-}] = 2.500/50.00 = 0.0500$~M;
+        $K_b = 2.9\times10^{-7}$; $x = 1.2\times10^{-4}$;
+        pOH $= 3.92$; pH $= \mathbf{10.08}$\end{apcanswer}}
+  \item Select an indicator from the list and justify.
+        \answerlines[2]{Phenolphthalein (8.2--10.0) --- its range brackets
+        the equivalence pH of 10.08 most closely, so its end point falls
+        near equivalence. The others would change colour while acid
+        remained.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{25.00}{\milli\litre}}
+  \rpoint{2}{(b) 1 pt $\sqrt{K_aC_0}$ setup; 1 pt pH $= 4.23$}
+  \rpoint{2}{(c) 1 pt pH $= 7.46$; 1 pt reasoning naming the halfway point
+    AND $[\ce{HA}] = [\ce{A^-}]$ --- the value alone earns 1}
+  \rpoint{2}{(d) 1 pt mmol bookkeeping; 1 pt pH $= 8.06$}
+  \rpoint{2}{(e) 1 pt dilution to \SI{50.00}{\milli\litre} AND $K_b$ from
+    $K_w/K_a$; 1 pt pH $= 10.08$ via pOH --- reporting $-\log x$ as the pH
+    earns 0 for this point}
+  \rpoint{1}{(f) phenolphthalein with a justification tied to the
+    equivalence pH --- naming it alone earns 0}
+\end{rubric}
+
+% ---- FRQ 2 (short) ---------------------------------------------------------
+\frq{short}{4}{CED 8.10, 8.11 \textbullet\ buffer action and pH effects}
+
+\SI{1.00}{\litre} of a buffer is \SI{0.30}{\Molar} in \ce{HC2H3O2} and
+\SI{0.30}{\Molar} in \ce{NaC2H3O2}.
+
+\begin{parts}
+  \item Calculate the initial pH. \answerblank[3cm]{4.74}
+  \item \SI{0.060}{\mole} of \ce{NaOH} is added. Write the reaction and
+        calculate the new pH. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\ce{OH^- + HC2H3O2 -> C2H3O2^- + H2O};
+        \ce{HC2H3O2} $= 0.24$, \ce{C2H3O2^-} $= 0.36$ mol;
+        pH $= 4.74 + \log(0.36/0.24) = 4.74 + 0.18 =
+        \mathbf{4.92}$\end{apcanswer}}
+  \item \ce{CaCO3} and \ce{AgCl} are each treated with dilute \ce{HNO3}.
+        Predict the effect on each solubility and justify the difference.
+        Do not calculate. \answerlines[3]{\ce{CaCO3} becomes more soluble:
+        \ce{CO3^2-} is the conjugate base of the weak acid \ce{H2CO3}, so
+        added \ce{H+} removes it and the dissolution equilibrium shifts
+        right. \ce{AgCl} is unaffected, because \ce{Cl-} is the conjugate
+        base of a strong acid and does not react with \ce{H+}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) pH $= 4.74$}
+  \rpoint{2}{(b) 1 pt balanced reaction with correct new amounts; 1 pt
+    pH $= 4.92$ --- putting \ce{OH-} into an ICE table earns 0}
+  \rpoint{1}{(c) both predictions correct with the weak-acid /
+    strong-acid conjugate reasoning --- ``acids dissolve things'' earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

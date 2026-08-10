@@ -1,0 +1,388 @@
+% Zumdahl Chapter 2 -- Atoms, Molecules, and Ions. Chapter-track guided notes.
+% Follows the BOOK's sequence (not the CED's) -- see Chapters/README.md.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{2}
+\apcunittitle{Atoms, Molecules, and Ions}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S2.1--2.8 \textbullet\ PDF pp.~69--109 \textbullet\ 3 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+Most of this chapter is \emph{foundation}, not tested CED content: the
+historical laws and early experiments build the reasoning AP assesses in
+Unit 1, and \S2.8 nomenclature is a prerequisite skill assumed silently by
+every later unit. Sections 2.6--2.8 carry the durable payload --- ions,
+formulas, and naming. Learn the names cold now and Units 4, 7, and 8 get
+much easier.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{From Laws to Atoms}{Zumdahl \S2.1--2.5}
+
+\begin{objectives}
+  \item State the three fundamental mass laws and explain how each supports
+        atomic theory.
+  \item Describe the experiments that revealed the electron and the nucleus,
+        and what each one ruled out.
+\end{objectives}
+
+\reading{Zumdahl \S2.1--2.5}{69--82}
+
+\begin{warmup}[3]
+  \item How many protons in \ce{^{35}Cl}? \answerblank[2cm]{17}
+  \item Which subatomic particle has negligible mass?
+        \answerblank[2.5cm]{electron}
+  \item Charge of a neutron: \answerblank[2cm]{zero}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The three mass laws}
+
+\notesectionz{Laws that demanded atoms}{2.2}
+\practice{6}
+
+\renewcommand{\arraystretch}{1.5}
+\noindent\begin{tabular}{@{}p{3.6cm}p{4.2cm}p{5.6cm}@{}}
+\toprule
+\textbf{Law} & \textbf{Statement} & \textbf{What it implies}\\
+\midrule
+Conservation of mass\newline(Lavoisier) &
+  mass is neither \answerblank[1.8cm]{created} nor destroyed in a reaction &
+  atoms are rearranged, not made or destroyed\\
+Definite proportion\newline(Proust) &
+  a given compound always has the \answerblank[2.4cm]{same} mass ratio of
+  elements &
+  compounds have fixed formulas\\
+Multiple proportions\newline(Dalton) &
+  masses of B combining with a fixed mass of A are in small
+  \answerblank[3.0cm]{whole-number} ratios &
+  atoms combine in discrete units --- the strongest argument\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example: multiple proportions]
+Two oxides of carbon. In compound I, 1.00 g C combines with 1.33 g O; in
+compound II, 1.00 g C combines with 2.66 g O.
+\[
+  \frac{2.66}{1.33} = 2.00
+\]
+The oxygen masses are in a 2:1 ratio --- exactly what you'd expect if
+compound I is \ce{CO} and II is \ce{CO2}. Fractional ratios would be
+impossible if matter were continuous.
+\end{workedexample}
+
+\notesub{Dalton's atomic theory (1808)}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item Elements are made of tiny particles called \answerblank[2.2cm]{atoms}.
+  \item All atoms of a given element are \answerblank[2.4cm]{identical}
+        --- \emph{later corrected by} \answerblank[2.2cm]{isotopes}.
+  \item Atoms of different elements differ in
+        \answerblank[3.4cm]{mass/properties}.
+  \item Compounds form when atoms combine in fixed
+        \answerblank[4.3cm]{whole-number ratios}.
+  \item Chemical reactions only \answerblank[3cm]{rearrange} atoms.
+\end{enumerate}
+
+\segment{GUIDED PRACTICE}{15}{Law identification}
+
+Which law does each observation illustrate?
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Water from any source is 11.2\% H by mass.
+        \answerblank[5.5cm]{definite proportion}
+  \item \SI{10.0}{\gram} reactants yield \SI{10.0}{\gram} products.
+        \answerblank[5.5cm]{conservation of mass}
+  \item \ce{NO} and \ce{NO2}: O per gram of N is in a 1:2 ratio.
+        \answerblank[5.5cm]{multiple proportions}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Taking the atom apart}
+
+\notesectionz{Three experiments, three conclusions}{2.4--2.5}
+\practice{4}
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.4cm}p{4.4cm}p{5.6cm}@{}}
+\toprule
+\textbf{Experiment} & \textbf{Observation} & \textbf{Conclusion}\\
+\midrule
+Thomson\newline cathode ray &
+  beam deflects toward the \answerblank[1.6cm]{positive} plate; same
+  charge/mass for any gas &
+  \answerblank[3.4cm]{electrons exist} in all atoms; ``plum pudding''\\
+Millikan\newline oil drop &
+  droplet charges are multiples of one value &
+  charge of the \answerblank[2.2cm]{electron}; with $e/m$, gives its mass\\
+Rutherford\newline gold foil &
+  most $\alpha$ pass through; a few deflect \answerblank[2.7cm]{sharply back} &
+  atom is mostly \answerblank[2.7cm]{empty space} with a tiny, dense,
+  positive \answerblank[1.8cm]{nucleus}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+The gold-foil result is famous for what it \emph{disproved}. Plum pudding
+predicted \emph{all} particles pass nearly straight through --- spread-out
+positive charge can't repel hard. The rare large-angle backscatter is the
+evidence, not the common straight-through path. AP asks for the anomaly.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Reasoning from evidence}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Thomson found the same charge-to-mass ratio no matter which gas
+        filled the tube. Why did that matter?
+        \answerlines[2]{The same particle came from every element ---
+        electrons are a universal component of all atoms, not a property of
+        one gas.}
+  \item If the nucleus were the size of a marble, the atom would be about
+        the size of a stadium. Which experimental result does that
+        illustrate? \answerlines[2]{Rutherford's: nearly all $\alpha$
+        particles passed undeflected because the atom is mostly empty
+        space.}
+\end{enumerate}
+
+\begin{exitticket}
+Dalton said all atoms of an element are identical. What later discovery
+corrected this, and does it break the theory?
+\answerlines[2]{Isotopes --- same protons, different neutrons. The theory
+survives: atoms of an element still behave identically chemically, since
+chemistry depends on electrons/protons, not neutrons.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Atoms, Ions, and the Periodic Table}{Zumdahl \S2.5--2.7}
+
+\begin{objectives}
+  \item Use isotope notation to count protons, neutrons, and electrons.
+  \item Predict common ion charges from periodic-table position.
+\end{objectives}
+
+\reading{Zumdahl \S2.5--2.7}{80--87}
+
+\begin{warmup}[3]
+  \item Which experiment found the nucleus? \answerblank[3cm]{gold foil}
+  \item \ce{CO} vs \ce{CO2} illustrates which law?
+        \answerblank[4cm]{multiple proportions}
+  \item Sign of an electron's charge: \answerblank[2cm]{negative}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Isotope notation}
+
+\notesectionz{Reading \ce{^{A}_{Z}X}}{2.5}
+\practice{1}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item $Z$ = \term{atomic number} = number of
+        \answerblank[2.2cm]{protons} --- fixes the element's identity.
+  \item $A$ = \term{mass number} = protons $+$
+        \answerblank[2.2cm]{neutrons}.
+  \item Neutrons $= $ \answerblank[2cm]{$A - Z$}.
+  \item Neutral atom: electrons $=$ \answerblank[2cm]{protons}.
+        For an ion, adjust by the \answerblank[2cm]{charge}.
+\end{itemize}
+
+\begin{workedexample}[Worked example: three species]
+\ce{^{56}_{26}Fe^{3+}}: 26 protons, $56-26 = 30$ neutrons,
+$26-3 = 23$ electrons.\\
+\ce{^{32}_{16}S^{2-}}: 16 protons, 16 neutrons, $16+2 = 18$ electrons.\\
+\ce{^{40}_{18}Ar}: 18 protons, 22 neutrons, 18 electrons.\\
+Note \ce{S^{2-}} and \ce{Ar} both have 18 electrons --- isoelectronic.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Fill the table}
+
+\renewcommand{\arraystretch}{1.5}
+\noindent\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Species} & \textbf{protons} & \textbf{neutrons} & \textbf{electrons} & \textbf{charge}\\
+\midrule
+\ce{^{27}_{13}Al} & \answerblank[1cm]{13} & \answerblank[1cm]{14} &
+  \answerblank[1cm]{13} & \answerblank[1cm]{0}\\
+\ce{^{19}_{9}F^-} & \answerblank[1cm]{9} & \answerblank[1cm]{10} &
+  \answerblank[1cm]{10} & \answerblank[1cm]{$1-$}\\
+\ce{^{65}_{30}Zn^{2+}} & \answerblank[1cm]{30} & \answerblank[1cm]{35} &
+  \answerblank[1cm]{28} & \answerblank[1cm]{$2+$}\\
+? & 20 & 20 & 18 & \answerblank[2.4cm]{\ce{^{40}Ca^{2+}}}\\
+\bottomrule
+\end{tabular}
+
+\segment{INSTRUCTION B}{20}{Charges from the table}
+
+\notesectionz{Predictable ion charges}{2.6--2.7}
+\practice{1}
+
+Main-group metals lose electrons; nonmetals gain them:
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Group} & 1A & 2A & 3A & 6A & 7A\\
+\midrule
+\textbf{Typical ion} & \answerblank[1.2cm]{$1+$} &
+  \answerblank[1.2cm]{$2+$} & \answerblank[1.2cm]{$3+$} &
+  \answerblank[1.2cm]{$2-$} & \answerblank[1.2cm]{$1-$}\\
+\bottomrule
+\end{tabular}
+
+Transition metals are the exception --- most form
+\answerblank[4.5cm]{more than one charge}, which is why their names need a
+\answerblank[3.4cm]{Roman numeral}.
+
+Memorize the exceptions that never take a numeral: \ce{Ag+}, \ce{Zn^2+},
+\ce{Cd^2+}, and \ce{Al^3+}.
+
+\segment{APPLICATION}{20}{Build formulas from charges}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Potassium + sulfur: \answerblank[2.5cm]{\ce{K2S}}
+  \item Aluminum + oxygen: \answerblank[2.5cm]{\ce{Al2O3}}
+  \item Barium + nitrogen: \answerblank[2.5cm]{\ce{Ba3N2}}
+  \item An ion has 34 protons and 36 electrons. Identify it fully.
+        \answerblank[3.5cm]{\ce{Se^2-}}
+\end{enumerate}
+
+\begin{exitticket}
+An element in group 2A forms an ion with 10 electrons. Identify the element
+and the ion. \answerlines[2]{Loses 2 electrons $\to$ neutral atom had 12
+$\to$ magnesium; the ion is \ce{Mg^2+}.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Nomenclature}{Zumdahl \S2.8}
+
+\begin{objectives}
+  \item Name and write formulas for ionic compounds (Type I and II),
+        polyatomic-ion compounds, binary covalent compounds, and acids.
+\end{objectives}
+
+\reading{Zumdahl \S2.8}{87--98}
+
+\begin{warmup}[3]
+  \item Charge on the aluminum ion: \answerblank[2cm]{$3+$}
+  \item Neutrons in \ce{^{63}Cu}: \answerblank[2cm]{34}
+  \item Formula: magnesium + chlorine: \answerblank[2.5cm]{\ce{MgCl2}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The decision tree}
+
+\notesectionz{Which naming rules apply?}{2.8}
+\practice{1}
+
+Ask two questions in order:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Does the formula start with \ce{H} (in water)? $\to$ it's an
+        \answerblank[1.6cm]{acid}.
+  \item Otherwise, is the first element a metal?
+        \begin{itemize}[leftmargin=1.4em,itemsep=0.1em]
+          \item \textbf{Yes} $\to$ \answerblank[1.8cm]{ionic}. Does the metal
+                have a variable charge (transition metals, Pb, Sn)?
+                Then include a \answerblank[3.4cm]{Roman numeral}.
+          \item \textbf{No} (two nonmetals) $\to$
+                \answerblank[3.3cm]{binary covalent} --- use
+                \answerblank[1.8cm]{prefixes}.
+        \end{itemize}
+\end{enumerate}
+
+\notesub{Type I ionic --- fixed-charge metal}
+
+Cation name (element name) $+$ anion root $+$
+``\answerblank[1.4cm]{-ide}''.\\
+\ce{CaS} $=$ \answerblank[4cm]{calcium sulfide};\quad
+\ce{Li3N} $=$ \answerblank[4cm]{lithium nitride}.
+
+\notesub{Type II ionic --- variable-charge metal}
+
+Deduce the cation charge from the anion total, then write the numeral.\\
+\ce{Fe2O3}: three \ce{O^2-} $=6-$, so each Fe is
+\answerblank[1.4cm]{$3+$} $\to$
+\answerblank[4cm]{iron(III) oxide}.\\
+\ce{CuCl} $=$ \answerblank[4cm]{copper(I) chloride};\quad
+\ce{PbCl2} $=$ \answerblank[4cm]{lead(II) chloride}.
+
+\begin{apctrap}
+The Roman numeral is the charge on \emph{one} metal ion, never the number of
+atoms. \ce{Fe2O3} is iron(\textsc{iii}) oxide, not iron(\textsc{ii}) --- the
+subscript 2 tells you how many Fe, the charge balance tells you the numeral.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Ionic drill}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{CoBr2}: \answerblank[5cm]{cobalt(II) bromide}
+  \item \ce{Al2O3}: \answerblank[5cm]{aluminum oxide}
+  \item chromium(III) chloride: \answerblank[3cm]{\ce{CrCl3}}
+  \item \ce{MnO2}: \answerblank[5cm]{manganese(IV) oxide}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Polyatomics, covalent, acids}
+
+\notesectionz{Polyatomic ions}{2.8}
+\practice{1}
+
+Memorize these --- there is no derivation:
+
+\renewcommand{\arraystretch}{1.25}
+\noindent\begin{tabular}{@{}llll@{}}
+\toprule
+\ce{NH4+} ammonium & \ce{NO3-} nitrate & \ce{SO4^2-} sulfate & \ce{PO4^3-} phosphate\\
+\ce{OH-} hydroxide & \ce{NO2-} nitrite & \ce{SO3^2-} sulfite & \ce{CO3^2-} carbonate\\
+\ce{CN-} cyanide & \ce{ClO3-} chlorate & \ce{HCO3-} hydrogen carbonate & \ce{C2H3O2-} acetate\\
+\bottomrule
+\end{tabular}
+
+\notesub{The oxyanion ladder (chlorine as the model)}
+
+\ce{ClO-} \answerblank[2.7cm]{hypochlorite} $\to$
+\ce{ClO2-} \answerblank[1.8cm]{chlorite} $\to$
+\ce{ClO3-} \answerblank[1.8cm]{chlorate} $\to$
+\ce{ClO4-} \answerblank[2.4cm]{perchlorate}.
+
+Fewer O $\to$ \emph{-ite}; more O $\to$ \emph{-ate};
+\textit{hypo-} is one below \emph{-ite}, \textit{per-} one above
+\emph{-ate}. Same ladder works for Br and I.
+
+\notesub{Binary covalent (Type III) --- prefixes}
+
+mono(1), di(2), tri(3), tetra(4), penta(5), hexa(6).
+Drop \emph{mono-} on the \answerblank[2.4cm]{first} element only.\\
+\ce{N2O5} $=$ \answerblank[5cm]{dinitrogen pentoxide};\quad
+\ce{CO} $=$ \answerblank[4cm]{carbon monoxide}.
+
+\notesub{Acids}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item No oxygen: \emph{hydro-}root\emph{-ic acid}. \ce{HCl(aq)} $=$
+        \answerblank[4cm]{hydrochloric acid}.
+  \item Anion ends \emph{-ate} $\to$ acid ends
+        \answerblank[1.6cm]{-ic}. \ce{H2SO4} $=$
+        \answerblank[3.4cm]{sulfuric acid}.
+  \item Anion ends \emph{-ite} $\to$ acid ends
+        \answerblank[1.8cm]{-ous}. \ce{H2SO3} $=$
+        \answerblank[3.4cm]{sulfurous acid}.
+\end{itemize}
+
+\segment{APPLICATION}{20}{Mixed naming --- the real test}
+
+Name or write the formula. Identify the type first.
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{Fe(NO3)3}: \answerblank[5.5cm]{iron(III) nitrate}
+  \item \ce{P4O10}: \answerblank[5.5cm]{tetraphosphorus decoxide}
+  \item \ce{HNO2(aq)}: \answerblank[5.5cm]{nitrous acid}
+  \item sodium hydrogen carbonate: \answerblank[3cm]{\ce{NaHCO3}}
+  \item cesium perchlorate: \answerblank[3cm]{\ce{CsClO4}}
+  \item ammonium sulfate: \answerblank[3cm]{\ce{(NH4)2SO4}}
+\end{enumerate}
+
+\begin{exitticket}
+\ce{Cu(NO3)2} and \ce{CuNO3} --- name both, and explain what forces the
+difference. \answerlines[2]{Copper(II) nitrate and copper(I) nitrate. Each
+\ce{NO3-} is $1-$, so charge balance requires \ce{Cu^2+} in the first and
+\ce{Cu+} in the second.}
+\end{exitticket}
+
+\end{document}

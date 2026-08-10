@@ -1,0 +1,145 @@
+% U5 WS1 -- rates and rate laws. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Worksheet 1 \textbullet\ Rates and Rate Laws}
+\apcsubtitle{CED 5.1--5.2 \textbullet\ orders come from data, never from coefficients}
+
+\begin{document}
+\wsheader[{$\text{rate} = -\tfrac{1}{a}\Delta[\ce{A}]/\Delta t =
++\tfrac{1}{c}\Delta[\ce{C}]/\Delta t$} \textbullet\
+{$\text{rate} = k[\ce{A}]^m[\ce{B}]^n$} \textbullet\ orders are determined
+experimentally.]
+
+\problem[]{\ced{5.1} For $\ce{2N2O5(g) -> 4NO2(g) + O2(g)}$, oxygen forms at
+\SI{2.0e-3}{\Molar\per\second}.}
+\begin{parts}
+  \item The rate of the reaction: \answerblank[3.4cm]{\SI{2.0e-3}{\Molar\per\second}}
+  \item Rate of disappearance of \ce{N2O5}:
+        \answerblank[3.4cm]{\SI{4.0e-3}{\Molar\per\second}}
+  \item Rate of appearance of \ce{NO2}:
+        \answerblank[3.4cm]{\SI{8.0e-3}{\Molar\per\second}}
+  \item Why do the three numbers differ? \answerlines[2]{Each species is
+        consumed or formed at a rate set by its coefficient. Dividing each
+        by its coefficient gives one common value --- the reaction rate ---
+        which is why the convention exists.}
+\end{parts}
+
+\problem[]{\ced{5.1} For $\ce{N2 + 3H2 -> 2NH3}$, \ce{H2} is consumed at
+\SI{0.030}{\Molar\per\second}. Find the reaction rate and the rate of
+formation of \ce{NH3}. \workspace[2.4cm]
+\keyonly{\begin{apcanswer}rate $= (1/3)(0.030) =
+\mathbf{0.010}~\si{\Molar\per\second}$;
+\ce{NH3} forms at $2(0.010) =
+\mathbf{0.020}~\si{\Molar\per\second}$\end{apcanswer}}}
+
+\problem[]{\ced{5.1} A plot of $[\ce{A}]$ against time is steep at first and
+flattens.}
+\begin{parts}
+  \item Average rate is the slope of: \answerblank[8.7cm]{a straight line
+        between two points}
+  \item Instantaneous rate is the slope of:
+        \answerblank[5.2cm]{the tangent at that point}
+  \item Why does the curve flatten? \answerlines[2]{Reactant is being
+        consumed, so its concentration --- and therefore the frequency of
+        reactive collisions --- decreases with time.}
+  \item Why are rate laws determined from \emph{initial} rates?
+        \answerlines[2]{At $t=0$ no product has built up, so there is no
+        reverse reaction and no interference from products to complicate the
+        measurement.}
+\end{parts}
+
+\problem[]{\ced{5.2} Use the data to find the rate law and $k$.}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\hline
+\textbf{Exp} & $[\ce{A}]_0$ (M) & $[\ce{B}]_0$ (M) &
+  \textbf{rate} (\si{\Molar\per\second}) \\
+\hline
+1 & 0.10 & 0.10 & $2.0\times10^{-3}$ \\
+2 & 0.20 & 0.10 & $8.0\times10^{-3}$ \\
+3 & 0.10 & 0.20 & $4.0\times10^{-3}$ \\
+\hline
+\end{tabular}
+\end{center}
+\begin{parts}
+  \item Order in A, with the comparison you used: \answerlines[2]{2.
+        Comparing experiments 1 and 2, only $[\ce{A}]$ changed: doubling it
+        multiplied the rate by 4, and $4 = 2^2$.}
+  \item Order in B: \answerblank[1.8cm]{1}
+  \item Overall order: \answerblank[1.8cm]{3}
+  \item Rate law: \answerblank[4.4cm]{rate $= k[\ce{A}]^2[\ce{B}]$}
+  \item Calculate $k$ with units. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$k = 2.0\times10^{-3}/[(0.10)^2(0.10)] =
+        2.0\times10^{-3}/1.0\times10^{-3} =
+        \mathbf{2.0}~\si{\per\Molar\squared\per\second}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{\ced{5.2} A second reaction:}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\hline
+\textbf{Exp} & $[\ce{X}]_0$ (M) & $[\ce{Y}]_0$ (M) &
+  \textbf{rate} (\si{\Molar\per\second}) \\
+\hline
+1 & 0.20 & 0.10 & $1.5\times10^{-2}$ \\
+2 & 0.40 & 0.10 & $3.0\times10^{-2}$ \\
+3 & 0.20 & 0.20 & $1.5\times10^{-2}$ \\
+\hline
+\end{tabular}
+\end{center}
+\begin{parts}
+  \item Rate law: \answerblank[4cm]{rate $= k[\ce{X}]$}
+  \item $k$ with units: \answerblank[3cm]{\SI{0.075}{\per\second}}
+  \item Y is a reactant yet does not appear in the rate law. Explain what
+        that tells you. \answerlines[3]{Y is zero order --- changing its
+        concentration does not change the rate. Mechanistically, Y does not
+        take part in the rate-determining step, even though it is consumed
+        somewhere in the overall reaction.}
+\end{parts}
+
+\problem[]{\ced{5.2} Units as a check. Give the units of $k$ for:}
+\begin{parts}
+  \item zero order: \answerblank[3cm]{\si{\Molar\per\second}}
+  \item first order: \answerblank[3cm]{\si{\per\second}}
+  \item second order: \answerblank[3cm]{\si{\per\Molar\per\second}}
+  \item Why are the units a useful self-check?
+        \answerlines[2]{Rate always has units of \si{\Molar\per\second}, so
+        the units of $k$ are fixed by the overall order. If your $k$ carries
+        the wrong units, your orders must be wrong.}
+\end{parts}
+
+\problem[]{\ced{5.2} For rate $= k[\ce{A}]^2[\ce{B}]$ with
+$k = \SI{2.0}{\per\Molar\squared\per\second}$:}
+\begin{parts}
+  \item Find the rate when $[\ce{A}] = 0.30$ and $[\ce{B}] = 0.20$.
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(2.0)(0.30)^2(0.20) =
+        \mathbf{0.036}~\si{\Molar\per\second}$\end{apcanswer}}
+  \item Predict the factor by which the rate changes if $[\ce{A}]$ is
+        tripled and $[\ce{B}]$ halved.
+        \answerblank[3cm]{$\times 4.5$}
+\end{parts}
+
+\problem[]{\ced{5.2} Zumdahl's decomposition $\ce{2N2O5 -> 4NO2 + O2}$ is
+experimentally \emph{first} order in \ce{N2O5}. Explain why this single fact
+disposes of the idea that coefficients give orders.
+\answerlines[3]{If coefficients gave orders, this reaction would be second
+order in \ce{N2O5}. It is measured to be first order. Since the overall
+equation only summarizes stoichiometry while the rate law reflects the
+slowest elementary step, there is no reason for the two to agree --- and
+here they demonstrably do not.}}
+
+\begin{spiralstrip}{Units 1--4 \textbullet\ spiral}
+  \item Net ionic for \ce{Ag+} with \ce{Cl-}:
+        \answerblank[5.0cm]{\ce{Ag+ + Cl- -> AgCl(s)}}
+  \item Oxidation state of S in \ce{SO4^2-}: \answerblank[1.8cm]{$+6$}
+  \item Strongest IMF in \ce{H2O}: \answerblank[3.8cm]{hydrogen bonding}
+  \item Moles in \SI{25.0}{\milli\litre} of \SI{0.200}{\Molar}:
+        \answerblank[2.6cm]{\SI{0.00500}{\mole}}
+  \item Electron configuration of \ce{Ca}:
+        \answerblank[3.4cm]{[Ar]$4s^2$}
+\end{spiralstrip}
+
+\end{document}

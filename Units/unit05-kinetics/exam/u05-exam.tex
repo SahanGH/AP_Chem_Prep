@@ -1,0 +1,413 @@
+% Unit 5 exam -- 25 MCQ + 1 short + 1 long FRQ = 39 pts, 69 min.
+\documentclass{apchem-exam}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Unit Exam}
+\apcsubtitle{CED 5.1--5.11 \textbullet\ Fri Nov 20 \textbullet\ 69 minutes \textbullet\ 39 points}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Format]
+Section I: 25 multiple choice, \textbf{no calculator}, 37 minutes.
+Section II: one short and one long free response, calculator permitted,
+32 minutes. Constants and equations are provided with Section II.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{25 questions \textbullet\ 37 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- rates -----------------------------------------------------------------
+\begin{mcq}
+  For $\ce{2A -> B}$, if A disappears at \SI{0.040}{\Molar\per\second}, the
+  rate of the reaction is
+  \choices
+    \choice{\SI{0.080}{\Molar\per\second}}
+    \correct{\SI{0.020}{\Molar\per\second}}
+    \choice{\SI{0.040}{\Molar\per\second}}
+    \choice{\SI{0.010}{\Molar\per\second}}
+\end{mcq}
+\why{Divide by the coefficient of 2.}
+
+\begin{mcq}
+  For $\ce{N2 + 3H2 -> 2NH3}$, \ce{H2} is consumed
+  \choices
+    \correct{three times as fast as \ce{N2}}
+    \choice{at the same rate as \ce{N2}}
+    \choice{twice as fast as \ce{N2}}
+    \choice{half as fast as \ce{N2}}
+\end{mcq}
+\why{The coefficient ratio is 3:1.}
+
+\begin{mcq}
+  The instantaneous rate at a given moment is
+  \choices
+    \correct{the slope of the tangent to the concentration--time curve}
+    \choice{the slope of a line joining two points on the curve}
+    \choice{the average of the initial and final rates}
+    \choice{always equal to the initial rate}
+\end{mcq}
+\why{The average rate is the secant slope; the instantaneous rate is the
+tangent.}
+
+\begin{mcq}
+  Rate laws are determined from initial rates because at $t = 0$
+  \choices
+    \correct{no products have accumulated to complicate the measurement}
+    \choice{the temperature is lowest}
+    \choice{the rate constant is largest}
+    \choice{the reaction is at equilibrium}
+\end{mcq}
+\why{No reverse reaction and no product interference.}
+
+% ---- rate laws -------------------------------------------------------------
+\begin{mcq}
+  In the rate law rate $= k[\ce{A}]^m[\ce{B}]^n$, the exponents $m$ and $n$
+  \choices
+    \choice{equal the coefficients in the balanced equation}
+    \correct{must be determined experimentally}
+    \choice{are always whole numbers equal to 1}
+    \choice{depend on the concentrations used}
+\end{mcq}
+\why{Coefficients give orders only for an elementary step.}
+\distractor{A}{$\ce{2N2O5 -> 4NO2 + O2}$ is first order --- the standard
+counterexample}
+
+\begin{mcq}
+  Doubling $[\ce{A}]$ leaves the rate unchanged. The order in A is
+  \choices
+    \correct{0}
+    \choice{1}
+    \choice{2}
+    \choice{$\tfrac{1}{2}$}
+\end{mcq}
+\why{$2^0 = 1$.}
+
+\begin{mcq}
+  Tripling $[\ce{A}]$ multiplies the rate by 9. The order in A is
+  \choices
+    \choice{1}
+    \correct{2}
+    \choice{3}
+    \choice{9}
+\end{mcq}
+\why{$3^2 = 9$.}
+
+\begin{mcq}
+  A rate constant has units of \si{\per\Molar\per\second}. The overall
+  order is
+  \choices
+    \choice{0}
+    \choice{1}
+    \correct{2}
+    \choice{3}
+\end{mcq}
+\why{Units of $k$ are fixed by the overall order.}
+
+\begin{mcq}
+  For rate $= k[\ce{A}]^2[\ce{B}]$, tripling $[\ce{A}]$ and halving
+  $[\ce{B}]$ changes the rate by a factor of
+  \choices
+    \choice{1.5}
+    \choice{3}
+    \correct{4.5}
+    \choice{9}
+\end{mcq}
+\why{$3^2 \times \tfrac{1}{2}$.}
+
+\begin{mcq}
+  The rate constant $k$ is independent of
+  \choices
+    \correct{concentration}
+    \choice{temperature}
+    \choice{activation energy}
+    \choice{the presence of a catalyst}
+\end{mcq}
+\why{$k$ changes with temperature, $E_a$ and catalysis, but not with how
+much you mix.}
+
+% ---- integrated -------------------------------------------------------------
+\begin{mcq}
+  A plot of $\ln[\ce{A}]$ against time is linear. The reaction is
+  \choices
+    \choice{zero order}
+    \correct{first order}
+    \choice{second order}
+    \choice{third order}
+\end{mcq}
+\why{Each order linearizes a different function.}
+
+\begin{mcq}
+  A plot of $1/[\ce{A}]$ against time is linear with a positive slope. The
+  slope equals
+  \choices
+    \correct{$k$}
+    \choice{$-k$}
+    \choice{$1/k$}
+    \choice{$0.693/k$}
+\end{mcq}
+\why{$1/[\ce{A}] = kt + 1/[\ce{A}]_0$.}
+
+\begin{mcq}
+  For which order is the half-life independent of the starting
+  concentration?
+  \choices
+    \choice{zero}
+    \correct{first}
+    \choice{second}
+    \choice{all of them}
+\end{mcq}
+\why{$t_{1/2} = 0.693/k$ contains no $[\ce{A}]_0$.}
+
+\begin{mcq}
+  A first-order reaction has $k = \SI{0.0693}{\per\second}$. Its half-life
+  is
+  \choices
+    \choice{\SI{0.693}{\second}}
+    \choice{\SI{6.93}{\second}}
+    \correct{\SI{10.0}{\second}}
+    \choice{\SI{100}{\second}}
+\end{mcq}
+\why{$0.693/0.0693$.}
+
+\begin{mcq}
+  An isotope has a half-life of \SI{8.0}{\day}. Starting from
+  \SI{40.0}{\milli\gram}, the mass after \SI{24}{\day} is
+  \choices
+    \choice{\SI{20.0}{\milli\gram}}
+    \choice{\SI{10.0}{\milli\gram}}
+    \correct{\SI{5.0}{\milli\gram}}
+    \choice{\SI{2.5}{\milli\gram}}
+\end{mcq}
+\why{Three half-lives: $40 \to 20 \to 10 \to 5$.}
+
+\begin{mcq}
+  For a second-order reaction, as the reaction proceeds the successive
+  half-lives
+  \choices
+    \correct{get longer}
+    \choice{get shorter}
+    \choice{stay the same}
+    \choice{become zero}
+\end{mcq}
+\why{$t_{1/2} = 1/(k[\ce{A}]_0)$ and the concentration is falling.}
+
+% ---- mechanisms -------------------------------------------------------------
+\begin{mcq}
+  For the elementary step $\ce{2NO -> N2O2}$, the rate law is
+  \choices
+    \choice{rate $= k[\ce{NO}]$}
+    \correct{rate $= k[\ce{NO}]^2$}
+    \choice{rate $= k[\ce{N2O2}]$}
+    \choice{cannot be determined without data}
+\end{mcq}
+\why{For an elementary step --- and only then --- molecularity gives the
+order.}
+
+\begin{mcq}
+  A species produced in one step of a mechanism and consumed in a later one
+  is
+  \choices
+    \correct{an intermediate}
+    \choice{a catalyst}
+    \choice{a transition state}
+    \choice{a spectator}
+\end{mcq}
+\why{A catalyst is consumed first and regenerated later --- the reverse
+order.}
+
+\begin{mcq}
+  A proposed mechanism is acceptable only if
+  \choices
+    \correct{its steps sum to the overall equation and it predicts the
+      observed rate law}
+    \choice{it contains no intermediates}
+    \choice{every step is bimolecular}
+    \choice{the first step is always slow}
+\end{mcq}
+\why{Both conditions, and even then it is consistent rather than proven.}
+
+\begin{mcq}
+  Termolecular elementary steps are rare because
+  \choices
+    \correct{a simultaneous three-particle collision is highly improbable}
+    \choice{they violate conservation of mass}
+    \choice{they always have zero activation energy}
+    \choice{they cannot be rate-determining}
+\end{mcq}
+\why{Probability, not principle.}
+
+% ---- collision, profiles, catalysis -----------------------------------------
+\begin{mcq}
+  A collision leads to reaction only if the particles collide with
+  sufficient energy AND
+  \choices
+    \correct{the correct orientation}
+    \choice{equal masses}
+    \choice{opposite charges}
+    \choice{the same speed}
+\end{mcq}
+\why{Energy and orientation are both required.}
+
+\begin{mcq}
+  Raising the temperature increases the rate mainly because
+  \choices
+    \correct{a larger fraction of collisions exceeds the activation energy}
+    \choice{collisions become much more frequent}
+    \choice{the activation energy decreases}
+    \choice{$\Delta H$ becomes more negative}
+\end{mcq}
+\why{The frequency effect is small; the distribution effect dominates.}
+\distractor{C}{only a catalyst changes $E_a$}
+
+\begin{mcq}
+  On an energy profile, the activation energy is measured from
+  \choices
+    \correct{the reactants up to the transition state}
+    \choice{the reactants to the products}
+    \choice{the products up to the transition state}
+    \choice{the baseline to the products}
+\end{mcq}
+\why{That last one from products would be the reverse $E_a$.}
+
+\begin{mcq}
+  A reaction has $E_a(\text{forward}) = \SI{80}{\kilo\joule}$ and
+  $E_a(\text{reverse}) = \SI{120}{\kilo\joule}$. Then $\Delta H$ is
+  \choices
+    \correct{\SI{-40}{\kilo\joule}}
+    \choice{\SI{+40}{\kilo\joule}}
+    \choice{\SI{+200}{\kilo\joule}}
+    \choice{\SI{-200}{\kilo\joule}}
+\end{mcq}
+\why{$E_a(\text{fwd}) - E_a(\text{rev})$.}
+
+\begin{mcq}
+  Adding a catalyst to a reaction at equilibrium
+  \choices
+    \correct{speeds up both directions equally and does not shift the
+      equilibrium}
+    \choice{shifts the equilibrium toward products}
+    \choice{increases $K$}
+    \choice{makes $\Delta H$ more negative}
+\end{mcq}
+\why{It lowers $E_a$ for forward and reverse by the same amount.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 32 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+rate $= k[\ce{A}]^m[\ce{B}]^n$ \textbullet\
+$\ln[\ce{A}] = -kt + \ln[\ce{A}]_0$ \textbullet\
+$1/[\ce{A}] = kt + 1/[\ce{A}]_0$ \textbullet\
+$t_{1/2} = 0.693/k$ (first order) \textbullet\
+$k = Ae^{-E_a/RT}$ \textbullet\
+$\ln(k_2/k_1) = -\tfrac{E_a}{R}(\tfrac{1}{T_2}-\tfrac{1}{T_1})$
+\textbullet\ $R = \SI{8.314}{\joule\per\mole\per\kelvin}$.
+\end{apcnote}
+
+% ---- FRQ 1 (short) ---------------------------------------------------------
+\frq{short}{4}{CED 5.3 \textbullet\ integrated rate laws}
+
+A reaction is followed and three plots are prepared. Only the plot of
+$1/[\ce{A}]$ against time is linear; it has slope $+0.42$ and intercept
+$5.0$.
+
+\begin{parts}
+  \item State the order of the reaction and justify from the graphs.
+        \answerlines[2]{Second order. Each order linearizes a different
+        function, and here it is $1/[\ce{A}]$ against $t$ that is straight
+        --- which is the second-order integrated form.}
+  \item Give $k$ with units and $[\ce{A}]_0$.
+        \answerlines[2]{Slope $= k = \SI{0.42}{\per\Molar\per\second}$;
+        intercept $= 1/[\ce{A}]_0 = 5.0$, so
+        $[\ce{A}]_0 = \SI{0.20}{\Molar}$.}
+  \item Calculate the half-life at the start of the reaction.
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$t_{1/2} = 1/(k[\ce{A}]_0) =
+        1/[(0.42)(0.20)] = \mathbf{12}~\si{\second}$\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) second order, justified by naming which plot is linear ---
+    ``the graph is linear'' alone earns 0}
+  \rpoint{2}{(b) 1 pt $k = 0.42$ with units; 1 pt
+    $[\ce{A}]_0 = \SI{0.20}{\Molar}$ from the intercept}
+  \rpoint{1}{(c) $t_{1/2} = 12$~s using the second-order expression ---
+    using $0.693/k$ earns 0}
+\end{rubric}
+
+% ---- FRQ 2 (long) ----------------------------------------------------------
+\frq{long}{10}{CED 5.2, 5.5, 5.8, 5.9 \textbullet\ a complete kinetics analysis}
+
+The reaction $\ce{2NO(g) + O2(g) -> 2NO2(g)}$ was studied at
+\SI{300}{\kelvin}.
+
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\hline
+\textbf{Exp} & $[\ce{NO}]_0$ (M) & $[\ce{O2}]_0$ (M) &
+  \textbf{initial rate} (\si{\Molar\per\second}) \\
+\hline
+1 & 0.010 & 0.010 & $2.5\times10^{-5}$ \\
+2 & 0.020 & 0.010 & $1.0\times10^{-4}$ \\
+3 & 0.010 & 0.020 & $5.0\times10^{-5}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the order with respect to each reactant, citing the
+        experiments compared. \answerlines[3]{Comparing 1 and 2, only
+        $[\ce{NO}]$ changes: doubling it multiplies the rate by 4, so the
+        order in \ce{NO} is 2. Comparing 1 and 3, doubling $[\ce{O2}]$
+        doubles the rate, so the order in \ce{O2} is 1.}
+  \item Write the rate law and calculate $k$ with units.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}rate $= k[\ce{NO}]^2[\ce{O2}]$;
+        $k = 2.5\times10^{-5}/[(0.010)^2(0.010)] =
+        \mathbf{25}~\si{\per\Molar\squared\per\second}$\end{apcanswer}}
+  \item Predict the initial rate when $[\ce{NO}] = 0.030$~M and
+        $[\ce{O2}] = 0.015$~M. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$(25)(0.030)^2(0.015) =
+        \mathbf{3.4\times10^{-4}}~\si{\Molar\per\second}$\end{apcanswer}}
+  \item The following mechanism is proposed:
+        step 1 (fast equilibrium) $\ce{2NO <=> N2O2}$;
+        step 2 (slow) $\ce{N2O2 + O2 -> 2NO2}$.
+        Show that it predicts the observed rate law.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}The slow step gives
+        rate $= k_2[\ce{N2O2}][\ce{O2}]$, but \ce{N2O2} is an intermediate.
+        From step 1's equilibrium, $K_1 = [\ce{N2O2}]/[\ce{NO}]^2$, so
+        $[\ce{N2O2}] = K_1[\ce{NO}]^2$. Substituting gives
+        rate $= k_2K_1[\ce{NO}]^2[\ce{O2}]$, which matches the observed form
+        with $k = k_2K_1$.\end{apcanswer}}
+  \item Identify the intermediate, and explain why it must not appear in
+        the final rate law. \answerlines[2]{\ce{N2O2}. A rate law must be
+        written in terms of species whose concentrations can be measured
+        and controlled; an intermediate is never mixed in and its
+        concentration is not independently known.}
+  \item When the temperature is raised to \SI{310}{\kelvin}, $k$ increases
+        by a factor of 1.9. Calculate $E_a$. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$\ln(1.9) = 0.642 =
+        -(E_a/8.314)(1/310 - 1/300)$. The bracket is
+        $-1.075\times10^{-4}$, so
+        $E_a = (0.642)(8.314)/(1.075\times10^{-4}) =
+        \mathbf{5.0\times10^{4}}~\si{\joule\per\mole} =
+        \SI{50}{\kilo\joule\per\mole}$\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both orders correct; 1 pt cites the specific
+    experiments compared for each --- orders with no justification earn 1}
+  \rpoint{2}{(b) 1 pt rate law; 1 pt $k = 25$ \emph{with units}}
+  \rpoint{1}{(c) $3.4\times10^{-4}$~\si{\Molar\per\second}}
+  \rpoint{3}{(d) 1 pt writes the slow step's rate law; 1 pt uses $K_1$ to
+    express $[\ce{N2O2}]$; 1 pt substitutes to reach the observed form ---
+    an answer still containing \ce{N2O2} earns at most 1}
+  \rpoint{1}{(e) \ce{N2O2} identified with a reason referring to
+    measurability}
+  \rpoint{1}{(f) $E_a \approx \SI{50}{\kilo\joule\per\mole}$}
+\end{rubric}
+
+\examtotal
+
+\end{document}

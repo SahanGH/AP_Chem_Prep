@@ -1,0 +1,150 @@
+% U9 WS2 -- Gibbs free energy, four cases, formation route, kinetic control.
+\documentclass{apchem-worksheet}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Worksheet 2 \textbullet\ Gibbs Free Energy}
+\apcsubtitle{CED 9.3--9.4 \textbullet\ convert the entropy to kJ before you subtract}
+
+\begin{document}
+\wsheader[$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ \textbullet\
+crossover $T = \Delta H^\circ/\Delta S^\circ$ \textbullet\
+$\Delta G^\circ = \sum n\Delta G_f^\circ{}_{\text{prod}} -
+\sum n\Delta G_f^\circ{}_{\text{react}}$ \textbullet\ $\Delta H^\circ$ in
+kJ, $\Delta S^\circ$ in J/K \textbullet\ take $T = \SI{298}{\kelvin}$ unless
+told otherwise.]
+
+\problem[]{\ced{9.3} The four cases. Complete the table without
+calculating:}
+\begin{parts}
+  \item $\Delta H^\circ < 0$, $\Delta S^\circ > 0$:
+        \answerblank[5.6cm]{favored at all temperatures}
+  \item $\Delta H^\circ > 0$, $\Delta S^\circ < 0$:
+        \answerblank[5.4cm]{favored at no temperature}
+  \item $\Delta H^\circ > 0$, $\Delta S^\circ > 0$:
+        \answerblank[5cm]{favored at high $T$}
+  \item $\Delta H^\circ < 0$, $\Delta S^\circ < 0$:
+        \answerblank[5cm]{favored at low $T$}
+  \item Which two cases need a crossover temperature calculated, and why?
+        \answerlines[2]{(c) and (d) --- the two terms oppose each other, so
+        which one wins depends on $T$. In (a) and (b) both terms point the
+        same way and temperature cannot change the outcome.}
+\end{parts}
+
+\problem[]{\ced{9.3} \ce{CaCO3(s) -> CaO(s) + CO2(g)} has
+$\Delta H^\circ = +178.5$~kJ and $\Delta S^\circ = +161$~J/K.}
+\begin{parts}
+  \item Which of the four cases is this? \answerblank[4cm]{high $T$ only}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin}. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$178.5 - 298(0.161) = 178.5 - 48.0 =
+        \mathbf{+131}$~kJ --- not favored\end{apcanswer}}
+  \item Calculate the crossover temperature. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$T = 178.5/0.161 = \mathbf{1109}$~K
+        $\approx \SI{836}{\celsius}$\end{apcanswer}}
+  \item Relate your answer to why limestone buildings survive but lime
+        kilns work. \answerlines[2]{At ordinary temperatures
+        $\Delta G^\circ$ is strongly positive, so limestone does not
+        decompose. A kiln is run above about \SI{1100}{\kelvin}, where the
+        $T\Delta S^\circ$ term finally exceeds $\Delta H^\circ$.}
+\end{parts}
+
+\problem[]{\ced{9.3} The Haber process has $\Delta H^\circ = -92$~kJ and
+$\Delta S^\circ = -199$~J/K.}
+\begin{parts}
+  \item $\Delta G^\circ$ at \SI{298}{\kelvin}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$-92 - 298(-0.199) = -92 + 59 =
+        \mathbf{-33}$~kJ --- favored\end{apcanswer}}
+  \item Crossover temperature: \answerblank[2.6cm]{462 K}
+  \item Is the reaction favored above or below that temperature? Explain.
+        \answerlines[2]{Below. Both terms are negative, so this is the
+        low-temperature case: raising $T$ makes $-T\Delta S^\circ$
+        increasingly positive until it overwhelms the negative
+        $\Delta H^\circ$.}
+  \item Industrial ammonia synthesis is run at about \SI{700}{\kelvin},
+        above the crossover. Suggest why, given Unit 5.
+        \answerlines[3]{At \SI{298}{\kelvin} the reaction is favored but
+        far too slow. Raising the temperature sacrifices thermodynamic
+        favorability for rate, and the loss in yield is recovered by high
+        pressure and by recycling unreacted gas. This is a thermodynamics
+        versus kinetics trade-off, not a contradiction.}
+\end{parts}
+
+\problem[]{\ced{9.3} For \ce{H2O(l) -> H2O(g)}, $\Delta H^\circ = +44$~kJ
+and $\Delta S^\circ = +119$~J/K. Calculate the crossover temperature and
+state what it physically is. \workspace[2.4cm]
+\keyonly{\begin{apcanswer}$T = 44/0.119 = \mathbf{370}$~K
+$\approx \SI{97}{\celsius}$ --- the \textbf{normal boiling point}. The
+tabulated value is 373 K; the difference is rounding in the
+table.\end{apcanswer}}}
+
+\problem[]{\ced{9.3} A student calculates
+$\Delta G^\circ = 178.5 - 298(161) = -47{,}800$~kJ for problem 2.
+Identify the error and state how you would catch it without redoing the
+arithmetic.
+\answerlines[3]{They failed to convert $\Delta S^\circ$ from J/K to kJ/K,
+so the entropy term is a thousand times too large. The magnitude is the
+giveaway --- no ordinary reaction has a free energy change of tens of
+thousands of kilojoules per mole, so a result that size signals a unit
+error rather than an arithmetic one.}}
+
+\problem[]{\ced{9.3} The formation route. For
+\ce{2H2(g) + O2(g) -> 2H2O(l)}, $\Delta G_f^\circ(\ce{H2O(l)}) = -237$~kJ/mol.}
+\begin{parts}
+  \item Why is $\Delta G_f^\circ$ for \ce{H2(g)} and \ce{O2(g)} zero?
+        \answerblank[7.2cm]{elements in their standard states}
+  \item Calculate $\Delta G^\circ$. \answerblank[3cm]{$-474$ kJ}
+  \item Route 1 gives $-475$~kJ from $\Delta H^\circ = -572$~kJ and
+        $\Delta S^\circ = -327$~J/K. Verify, and account for the
+        difference. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$-572 - 298(-0.327) = -572 + 97.4 =
+        \mathbf{-475}$~kJ. The 1 kJ gap is rounding in the tabulated
+        values, not an error in either method.\end{apcanswer}}
+  \item State the one place $S^\circ$ and $\Delta G_f^\circ$ differ in
+        convention. \answerlines[2]{$\Delta G_f^\circ$ of an element in its
+        standard state is zero by definition; $S^\circ$ of that same
+        element is a positive measured number.}
+\end{parts}
+
+\problem[]{\ced{9.4} Thermodynamic versus kinetic control.}
+\begin{parts}
+  \item $\Delta G^\circ$ tells you \answerblank[5.4cm]{whether, and how
+        far}; $E_a$ tells you \answerblank[2.4cm]{how fast}.
+  \item Diamond converting to graphite has $\Delta G^\circ < 0$. Explain
+        why jewellery survives. \answerlines[3]{The conversion requires
+        breaking and reforming a covalent network, which carries an
+        enormous activation energy. The reaction is thermodynamically
+        favored but under kinetic control, so its rate at room temperature
+        is immeasurably small.}
+  \item A catalyst changes \answerblank[2cm]{$E_a$} but does not change
+        \answerblank[5.4cm]{$\Delta G^\circ$, $\Delta H^\circ$, or $K$}.
+  \item Can a catalyst make an unfavorable reaction favorable? Justify.
+        \answerlines[2]{No. It alters only the barrier between reactants
+        and products, not their relative free energies, so
+        $\Delta G^\circ$ and $K$ are untouched.}
+\end{parts}
+
+\problem[]{\ced{9.4} A reaction has $\Delta G^\circ = -200$~kJ and no
+observable rate at \SI{298}{\kelvin}. A student concludes the value of
+$\Delta G^\circ$ must be wrong. Explain why the conclusion does not follow,
+and give two ways to make the reaction proceed.
+\answerlines[4]{$\Delta G^\circ$ compares the free energies of reactants
+and products and says nothing about the barrier between them, so a large
+negative value is entirely compatible with a negligible rate. Raise the
+temperature, so more molecules exceed $E_a$ --- this also changes $K$,
+since $K$ is temperature-dependent. Or add a catalyst, which lowers $E_a$
+and leaves $K$ unchanged.}}
+
+\begin{spiralstrip}{Unit 9 \textbullet\ blocks 1--2}
+  \item Sign of $\Delta S^\circ$ for \ce{2NO2(g) -> N2O4(g)}:
+        \answerblank[2cm]{negative}
+  \item $\Delta S^\circ$ for \ce{CaCO3(s) -> CaO(s) + CO2(g)}:
+        \answerblank[2.6cm]{$+161$ J/K}
+  \item $S^\circ$ of an element in its standard state:
+        \answerblank[3.4cm]{not zero}
+  \item Second law, as an inequality:
+        \answerblank[4cm]{$\Delta S_{\text{univ}} > 0$}
+  \item The AP term replacing ``spontaneous'':
+        \answerblank[5.4cm]{thermodynamically favored}
+\end{spiralstrip}
+
+\end{document}

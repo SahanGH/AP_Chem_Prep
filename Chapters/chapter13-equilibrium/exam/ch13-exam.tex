@@ -1,0 +1,297 @@
+% Zumdahl Chapter 13 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{13}
+\apcunittitle{Chemical Equilibrium}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S13.1--13.7 \textbullet\ 50 minutes \textbullet\ $R = \SI{0.08206}{\liter\atm\per\mole\per\kelvin}$}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- equilibrium condition -------------------------------------------------
+\begin{mcq}
+  At chemical equilibrium,
+  \choices
+    \choice{both reactions have stopped}
+    \correct{the forward and reverse rates are equal}
+    \choice{reactant and product concentrations are equal}
+    \choice{only the forward reaction continues}
+\end{mcq}
+\why{Equilibrium is dynamic --- both continue, but they cancel.}
+\distractor{C}{constant is not the same as equal}
+
+\begin{mcq}
+  Which statement about a system at equilibrium is correct?
+  \choices
+    \choice{Concentrations of all species are identical}
+    \correct{Concentrations remain constant over time}
+    \choice{No molecules are reacting}
+    \choice{The reaction has gone to completion}
+\end{mcq}
+\why{Constant, not equal, and not stopped.}
+
+\begin{mcq}
+  Starting with pure products instead of pure reactants at the same
+  temperature leads to
+  \choices
+    \correct{the same equilibrium state}
+    \choice{a different value of $K$}
+    \choice{no reaction at all}
+    \choice{a permanently different set of concentrations}
+\end{mcq}
+\why{Equilibrium is path-independent at a given temperature.}
+
+% ---- K expressions ---------------------------------------------------------
+\begin{mcq}
+  The equilibrium expression for \ce{2 SO2(g) + O2(g) <=> 2 SO3(g)} is
+  \choices
+    \correct{$[\ce{SO3}]^2/([\ce{SO2}]^2[\ce{O2}])$}
+    \choice{$[\ce{SO2}]^2[\ce{O2}]/[\ce{SO3}]^2$}
+    \choice{$[\ce{SO3}]/([\ce{SO2}][\ce{O2}])$}
+    \choice{$2[\ce{SO3}]/(2[\ce{SO2}] + [\ce{O2}])$}
+\end{mcq}
+\why{Products over reactants, coefficients as exponents.}
+\distractor{B}{that is the reverse reaction's expression}
+
+\begin{mcq}
+  A reaction has $K = 8.0$. The equilibrium constant for the reverse
+  reaction is
+  \choices
+    \choice{8.0}
+    \choice{$-8.0$}
+    \correct{0.125}
+    \choice{64}
+\end{mcq}
+\why{Reversing inverts $K$.}
+
+\begin{mcq}
+  If all coefficients in a balanced equation are doubled, the new
+  equilibrium constant is
+  \choices
+    \choice{$2K$}
+    \correct{$K^2$}
+    \choice{$K/2$}
+    \choice{unchanged}
+\end{mcq}
+\why{Multiplying coefficients by $n$ raises $K$ to the $n$th power.}
+
+\begin{mcq}
+  Which species is omitted from an equilibrium expression?
+  \choices
+    \choice{a gas}
+    \choice{an aqueous ion}
+    \correct{a pure solid}
+    \choice{a dissolved molecule}
+\end{mcq}
+\why{Pure solids and pure liquids have fixed concentrations set by density.}
+
+\begin{mcq}
+  For \ce{CaCO3(s) <=> CaO(s) + CO2(g)}, the expression for $K_p$ is
+  \choices
+    \choice{$P_{\ce{CaO}}P_{\ce{CO2}}/P_{\ce{CaCO3}}$}
+    \correct{$P_{\ce{CO2}}$}
+    \choice{$1/P_{\ce{CO2}}$}
+    \choice{$P_{\ce{CaO}}P_{\ce{CO2}}$}
+\end{mcq}
+\why{Both calcium species are pure solids.}
+
+% ---- Kp / Kc ---------------------------------------------------------------
+\begin{mcq}
+  For which reaction does $K_p = K_c$?
+  \choices
+    \choice{\ce{N2(g) + 3 H2(g) <=> 2 NH3(g)}}
+    \correct{\ce{H2(g) + I2(g) <=> 2 HI(g)}}
+    \choice{\ce{2 NO2(g) <=> N2O4(g)}}
+    \choice{\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}}
+\end{mcq}
+\why{$\Delta n = 0$, so $(RT)^{\Delta n} = 1$.}
+
+\begin{mcq}
+  For \ce{N2O4(g) <=> 2 NO2(g)}, $\Delta n$ equals
+  \choices
+    \correct{$+1$}
+    \choice{$-1$}
+    \choice{0}
+    \choice{$+2$}
+\end{mcq}
+\why{Two moles of gas produced, one consumed.}
+
+\begin{mcq}
+  In the relation $K_p = K_c(RT)^{\Delta n}$, $\Delta n$ counts
+  \choices
+    \choice{all species in the equation}
+    \correct{gaseous species only}
+    \choice{solids and liquids only}
+    \choice{aqueous species only}
+\end{mcq}
+\why{Only gases contribute partial pressures.}
+
+% ---- magnitude of K and Q --------------------------------------------------
+\begin{mcq}
+  A reaction has $K = 4\times10^{-8}$. At equilibrium the mixture consists
+  mostly of
+  \choices
+    \choice{products}
+    \correct{reactants}
+    \choice{equal amounts of both}
+    \choice{neither --- no reaction occurs}
+\end{mcq}
+\why{A very small $K$ places the equilibrium far to the left.}
+
+\begin{mcq}
+  A reaction has $K = 10^{18}$ but produces no detectable product in a day.
+  The best explanation is that
+  \choices
+    \choice{the value of $K$ must be wrong}
+    \correct{the activation energy is large, so the reaction is very slow}
+    \choice{the reaction is at equilibrium already}
+    \choice{$K$ decreases over time}
+\end{mcq}
+\why{$K$ is thermodynamics; rate is kinetics. They are independent.}
+
+\begin{mcq}
+  If $Q < K$ for a reaction mixture, the system will
+  \choices
+    \correct{shift toward products}
+    \choice{shift toward reactants}
+    \choice{remain unchanged}
+    \choice{change the value of $K$}
+\end{mcq}
+\why{Too few products relative to equilibrium, so the forward direction is
+favoured.}
+
+\begin{mcq}
+  The reaction quotient $Q$ differs from $K$ in that $Q$
+  \choices
+    \choice{uses a different algebraic form}
+    \correct{uses current concentrations, which need not be equilibrium
+      values}
+    \choice{applies only to gases}
+    \choice{has units}
+\end{mcq}
+\why{Same expression, different inputs.}
+
+% ---- ICE / solving ---------------------------------------------------------
+\begin{mcq}
+  For \ce{2 HI <=> H2 + I2} starting with \SI{0.500}{\Molar} \ce{HI}, the
+  equilibrium concentration of \ce{HI} is
+  \choices
+    \choice{$0.500 - x$}
+    \correct{$0.500 - 2x$}
+    \choice{$0.500 + 2x$}
+    \choice{$2x$}
+\end{mcq}
+\why{The coefficient of 2 carries into the change row.}
+\distractor{A}{ignores the coefficient}
+
+\begin{mcq}
+  The small-$x$ approximation in an equilibrium calculation is justified
+  when
+  \choices
+    \choice{$K$ is very large}
+    \correct{$K$ is very small}
+    \choice{the reaction is exothermic}
+    \choice{a catalyst is present}
+\end{mcq}
+\why{A small $K$ means very little reaction occurs, so $x$ is small.}
+
+\begin{mcq}
+  After using the small-$x$ approximation, a student finds $x$ is 12\% of
+  the initial concentration. The correct response is to
+  \choices
+    \choice{accept the answer}
+    \correct{discard the approximation and solve the quadratic}
+    \choice{double the value of $x$}
+    \choice{recalculate $K$}
+\end{mcq}
+\why{The 5\% threshold has been exceeded.}
+
+\begin{mcq}
+  A quadratic yields $x = 0.30$ and $x = 1.80$, with an initial reactant
+  concentration of \SI{1.00}{\Molar}. The correct root is
+  \choices
+    \correct{0.30, because 1.80 gives a negative concentration}
+    \choice{1.80, because it is larger}
+    \choice{their average}
+    \choice{either one}
+\end{mcq}
+\why{Roots are rejected on physical grounds.}
+
+% ---- Le Chatelier ----------------------------------------------------------
+\begin{mcq}
+  Which change alters the numerical value of the equilibrium constant?
+  \choices
+    \choice{adding a reactant}
+    \choice{decreasing the volume}
+    \correct{changing the temperature}
+    \choice{adding a catalyst}
+\end{mcq}
+\why{All other changes shift the position while restoring the same $K$.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S13.5--13.6 \textbullet\ ICE table}
+
+For \ce{N2O4(g) <=> 2 NO2(g)}, $K_c = 4.6\times10^{-3}$ at
+\SI{25}{\celsius}. A sealed flask initially contains \SI{2.00}{\Molar}
+\ce{N2O4} and no \ce{NO2}.
+
+\begin{parts}
+  \item Construct the ICE table.
+        \answerlines[2]{$[\ce{N2O4}] = 2.00-x$; $[\ce{NO2}] = 2x$.}
+  \item Solve for the equilibrium concentrations, using the small-$x$
+        approximation. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$4x^2/2.00 = 4.6\times10^{-3}$;
+        $x^2 = 2.30\times10^{-3}$; $x = 0.0480$.
+        $[\ce{NO2}] = \SI{0.0959}{\Molar}$;
+        $[\ce{N2O4}] = \SI{1.95}{\Molar}$\end{apcanswer}}
+  \item Justify the approximation with an explicit check.
+        \answerlines[2]{$0.0480/2.00 = 2.4\%$, which is below the 5\%
+        threshold, so the approximation is valid.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) change row uses $-x$ and $+2x$ correctly}
+  \rpoint{2}{(b) 1 pt sets up and solves for $x$; 1 pt both concentrations
+    with $[\ce{NO2}] = 2x$ applied}
+  \rpoint{1}{(c) computes the percentage AND compares it to 5\% ---
+    asserting validity without the number earns 0}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S13.7 \textbullet\ Le Ch\^{a}telier}
+
+Consider \ce{CO(g) + 2 H2(g) <=> CH3OH(g)},
+$\Delta H = \SI{-91}{\kilo\joule}$, at equilibrium in a sealed vessel.
+
+\begin{parts}
+  \item Predict the direction of shift when the volume of the vessel is
+        decreased, and explain. \answerlines[2]{Shifts right --- decreasing
+        the volume raises the pressure, and the system moves toward the side
+        with fewer moles of gas (1 versus 3).}
+  \item Predict the effect of raising the temperature on both the direction
+        of shift and the value of $K$.
+        \answerlines[3]{The forward reaction is exothermic, so raising the
+        temperature shifts the system left, toward reactants. Because
+        temperature is involved, $K$ itself decreases.}
+  \item Argon is added at constant volume. State the effect and explain.
+        \answerlines[2]{No shift. The partial pressures of \ce{CO},
+        \ce{H2}, and \ce{CH3OH} are unchanged, so $Q$ still equals $K$ ---
+        only the total pressure rises.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) right, with the gas-mole comparison cited}
+  \rpoint{2}{(b) 1 pt shifts left using the exothermic direction; 1 pt
+    states that $K$ decreases --- ``$K$ unchanged'' earns 0 here}
+  \rpoint{1}{(c) no shift, justified by unchanged partial pressures}
+\end{rubric}
+
+\examtotal
+
+\end{document}

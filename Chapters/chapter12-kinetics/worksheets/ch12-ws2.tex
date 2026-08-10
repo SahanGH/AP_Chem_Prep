@@ -1,0 +1,121 @@
+% Ch12 WS2 -- integrated rate laws and half-life. Block 3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{12}
+\apcunittitle{Chemical Kinetics}
+\apcdoctitle{Worksheet 2 \textbullet\ Integrated Rate Laws}
+\apcsubtitle{Zumdahl \S12.4 \textbullet\ the linear plot identifies the order}
+
+\begin{document}
+% NOTE: a bare ] inside an optional argument closes it early -- the maths
+% below must stay wrapped in braces.
+\wsheader[State which plot is linear before computing anything. Remember
+that {$\ln[\ce{A}]$} is linear in time for first order --- concentrations
+themselves are not, so never average them.]
+
+\problem[]{Complete the table from memory:}
+
+\renewcommand{\arraystretch}{1.6}
+\noindent\begin{tabular}{@{}cp{4.4cm}p{3.0cm}p{3.4cm}@{}}
+\toprule
+\textbf{Order} & \textbf{Integrated form} & \textbf{Linear plot} & \textbf{Half-life}\\
+\midrule
+0 & \answerblank[3.6cm]{$[\ce{A}]_t = -kt + [\ce{A}]_0$} &
+  \answerblank[2cm]{$[\ce{A}]$ vs $t$} &
+  \answerblank[2.4cm]{$[\ce{A}]_0/2k$}\\
+1 & \answerblank[3.8cm]{$\ln[\ce{A}]_t = -kt + \ln[\ce{A}]_0$} &
+  \answerblank[2.2cm]{$\ln[\ce{A}]$ vs $t$} &
+  \answerblank[2.2cm]{$0.693/k$}\\
+2 & \answerblank[3.6cm]{$1/[\ce{A}]_t = kt + 1/[\ce{A}]_0$} &
+  \answerblank[2.2cm]{$1/[\ce{A}]$ vs $t$} &
+  \answerblank[2.4cm]{$1/(k[\ce{A}]_0)$}\\
+\bottomrule
+\end{tabular}
+
+\problem[]{Identify the order from each observation:}
+\begin{parts}
+  \item A plot of $\ln[\ce{A}]$ versus time is a straight line:
+        \answerblank[2cm]{first}
+  \item A plot of $[\ce{A}]$ versus time is a straight line:
+        \answerblank[2cm]{zero}
+  \item Half-life is independent of starting concentration:
+        \answerblank[2cm]{first}
+  \item A plot of $1/[\ce{A}]$ versus time is a straight line:
+        \answerblank[2cm]{second}
+\end{parts}
+
+\problem[]{Explain why only first-order reactions have a half-life
+independent of concentration, and give one real consequence.
+\answerlines[3]{The first-order expression $t_{1/2} = 0.693/k$ contains no
+concentration term, so each successive halving takes the same time. This is
+why radioactive decay and drug elimination from the bloodstream are
+described by a single half-life value.}}
+
+\problem[]{A first-order reaction has $k = \SI{0.0250}{\per\second}$ and
+$[\ce{A}]_0 = \SI{1.20}{\Molar}$.}
+\begin{parts}
+  \item Half-life: \answerblank[3cm]{\SI{27.7}{\second}}
+  \item $[\ce{A}]$ after \SI{60.0}{\second}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\ln[\ce{A}] = -(0.0250)(60.0) +
+        \ln(1.20) = -1.500 + 0.1823 = -1.318$;
+        $[\ce{A}] = \SI{0.268}{\Molar}$\end{apcanswer}}
+  \item Time for $[\ce{A}]$ to fall to \SI{0.150}{\Molar}:
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\ln(0.150/1.20) = -kt$;
+        $-2.079 = -0.0250t$; $t = \SI{83.2}{\second}$ --- three
+        half-lives\end{apcanswer}}
+\end{parts}
+
+\problem[]{Zumdahl's \ce{N2O5} data: $[\ce{N2O5}]_0 = \SI{0.1000}{\Molar}$,
+falling to \SI{0.0500}{\Molar} at \SI{100}{\second} and
+\SI{0.0250}{\Molar} at \SI{200}{\second}.}
+\begin{parts}
+  \item What order is the reaction, and how do the data show it?
+        \answerlines[2]{First order --- successive halvings take equal
+        times, so the half-life is independent of concentration.}
+  \item Calculate $k$. \answerblank[3.4cm]{\SI{6.93e-3}{\per\second}}
+  \item A student estimates $[\ce{N2O5}]$ at \SI{150}{\second} by averaging
+        0.0500 and 0.0250 to get \SI{0.0375}{\Molar}. Explain why this is
+        wrong and compute the correct value. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}It is $\ln[\ce{A}]$, not $[\ce{A}]$, that
+        is linear in time, so linear interpolation of concentration is
+        invalid. $\ln[\ce{A}] = -(6.93\times10^{-3})(150.) + \ln(0.1000) =
+        -3.343$; $[\ce{A}] = \SI{0.0353}{\Molar}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{A first-order reaction has $t_{1/2} = \SI{12.0}{\minute}$.}
+\begin{parts}
+  \item Value of $k$: \answerblank[3.4cm]{\SI{0.0578}{\per\minute}}
+  \item Fraction remaining after \SI{36.0}{\minute}:
+        \answerblank[2cm]{1/8}
+  \item Fraction remaining after \SI{48.0}{\minute}:
+        \answerblank[2cm]{1/16}
+\end{parts}
+
+\problem[]{A second-order reaction has $k =
+\SI{0.500}{\per\Molar\per\second}$ and $[\ce{A}]_0 = \SI{0.200}{\Molar}$.}
+\begin{parts}
+  \item Half-life: \answerblank[3cm]{\SI{10.0}{\second}}
+  \item $[\ce{A}]$ after \SI{20.0}{\second}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$1/[\ce{A}] = (0.500)(20.0) + 1/0.200 =
+        10.0 + 5.00 = 15.0$; $[\ce{A}] =
+        \SI{0.0667}{\Molar}$\end{apcanswer}}
+  \item Explain why the second half-life is longer than the first for a
+        second-order reaction. \answerlines[2]{$t_{1/2} = 1/(k[\ce{A}]_0)$
+        depends inversely on the starting concentration, so as the
+        concentration falls each successive half-life takes longer.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 12 \textbullet\ blocks 1--2}
+  \item Rate law exponents come from:
+        \answerblank[2.8cm]{experiment}
+  \item If doubling [A] triples nothing (rate unchanged), the order is:
+        \answerblank[1.6cm]{0}
+  \item Units of $k$ for first order: \answerblank[2cm]{s$^{-1}$}
+  \item Initial rate is measured when? \answerblank[2cm]{$t=0$}
+  \item Overall order for rate $= k[\ce{A}]^2[\ce{B}]$:
+        \answerblank[1.4cm]{3}
+\end{spiralstrip}
+
+\end{document}

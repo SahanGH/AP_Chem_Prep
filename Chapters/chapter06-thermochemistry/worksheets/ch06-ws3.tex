@@ -1,0 +1,127 @@
+% Ch6 WS3 -- standard enthalpies of formation + FRQ. Block 4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Worksheet 3 \textbullet\ Formation Enthalpies \& FRQ}
+\apcsubtitle{Zumdahl \S6.4 \textbullet\ products minus reactants, each times its coefficient}
+
+\begin{document}
+\wsheader[Use this data table throughout. Watch physical states --- liquid
+and gaseous water are not interchangeable.]
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}lcclc@{}}
+\toprule
+\textbf{Substance} & $\Delta H^\circ_f$ (kJ/mol) & \quad &
+\textbf{Substance} & $\Delta H^\circ_f$ (kJ/mol)\\
+\midrule
+\ce{CH4(g)}   & $-74.8$  & & \ce{CO2(g)}    & $-393.5$\\
+\ce{C2H2(g)}  & $+227$   & & \ce{H2O(l)}    & $-285.8$\\
+\ce{C2H6(g)}  & $-84.7$  & & \ce{H2O(g)}    & $-241.8$\\
+\ce{NH3(g)}   & $-46.1$  & & \ce{NO(g)}     & $+90.3$\\
+\ce{Fe2O3(s)} & $-826$   & & \ce{NO2(g)}    & $+33.2$\\
+\ce{Al2O3(s)} & $-1676$  & & \ce{SO2(g)}    & $-297$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\problem[]{Definitions:}
+\begin{parts}
+  \item Define standard enthalpy of formation precisely.
+        \answerlines[2]{The enthalpy change when one mole of a compound is
+        formed from its constituent elements, all substances in their
+        standard states.}
+  \item Why is $\Delta H^\circ_f$ of \ce{O2(g)} zero, while that of
+        \ce{O3(g)} is not? \answerlines[2]{\ce{O2} is the standard state of
+        elemental oxygen, so forming it from itself involves no change.
+        Ozone is a different substance and its formation from \ce{O2}
+        requires energy.}
+  \item Write the formation equation for \ce{NO2(g)}.
+        \answerblank[6cm]{\ce{1/2 N2(g) + O2(g) -> NO2(g)}}
+\end{parts}
+
+\problem[]{Compute $\Delta H^\circ$ for each reaction:}
+\begin{parts}
+  \item \ce{2 NH3(g) -> N2(g) + 3 H2(g)} \workspace[1.6cm]
+        \keyonly{\begin{apcanswer}$[0] - [2(-46.1)] =
+        \SI{+92.2}{\kilo\joule}$\end{apcanswer}}
+  \item \ce{2 Al(s) + Fe2O3(s) -> Al2O3(s) + 2 Fe(s)} \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$[(-1676)+0] - [0+(-826)] =
+        \SI{-850}{\kilo\joule}$\end{apcanswer}}
+  \item \ce{2 C2H6(g) + 7 O2(g) -> 4 CO2(g) + 6 H2O(l)} \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[4(-393.5)+6(-285.8)] - [2(-84.7)+0]
+        = (-1574.0-1714.8) - (-169.4) =
+        \SI{-3119.4}{\kilo\joule}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Compute $\Delta H^\circ$ for methane combustion producing
+\emph{gaseous} water:
+\ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(g)}. Then compare with the
+liquid-water value of \SI{-890.3}{\kilo\joule} and explain the difference.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}$[(-393.5)+2(-241.8)] - [(-74.8)] =
+(-877.1)+74.8 = \SI{-802.3}{\kilo\joule}$. Less heat is released because
+producing vapour instead of liquid leaves the $2 \times 44 = 88$ kJ of
+vaporization enthalpy unreleased.\end{apcanswer}}}
+
+\problem[]{\textbf{FRQ (10 points).} Hydrazine, \ce{N2H4}, is used as a
+rocket fuel. Its combustion is
+\[ \ce{N2H4(l) + O2(g) -> N2(g) + 2 H2O(l)} \qquad \Delta H^\circ = \SI{-622}{\kilo\joule} \]}
+\begin{parts}
+  \item Using $\Delta H^\circ_f(\ce{H2O(l)}) = \SI{-285.8}{\kilo\joule\per\mole}$,
+        determine $\Delta H^\circ_f$ for \ce{N2H4(l)}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$-622 = [0 + 2(-285.8)] -
+        [\Delta H^\circ_f(\ce{N2H4}) + 0]$, so
+        $\Delta H^\circ_f(\ce{N2H4}) = -571.6 + 622 =
+        \SI{+50.4}{\kilo\joule\per\mole}$\end{apcanswer}}
+  \item Explain what the sign of your answer means about hydrazine.
+        \answerlines[2]{Positive --- forming hydrazine from its elements
+        absorbs energy, so it is energetically uphill relative to \ce{N2}
+        and \ce{H2}. That stored energy is part of why it works as a fuel.}
+  \item Calculate the heat released when \SI{32.0}{\gram} of \ce{N2H4}
+        ($M = \SI{32.05}{\gram\per\mole}$) burns completely.
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$n = 32.0/32.05 = \SI{0.998}{\mole}$;
+        $q = 0.998 \times (-622) =
+        \SI{-621}{\kilo\joule}$\end{apcanswer}}
+  \item If the reaction instead produced \emph{gaseous} water, would the
+        magnitude of $\Delta H^\circ$ be larger or smaller? Justify
+        quantitatively. \answerlines[3]{Smaller. Vaporizing 2 mol of water
+        costs $2 \times 44 = \SI{88}{\kilo\joule}$, so
+        $\Delta H^\circ = -622 + 88 = \SI{-534}{\kilo\joule}$ --- less heat
+        released.}
+  \item The combustion is run in a coffee-cup calorimeter containing
+        \SI{500.0}{\gram} of water initially at \SI{25.0}{\celsius}. If
+        \SI{0.0500}{\mole} of hydrazine burns and all the heat is absorbed
+        by the water, find the final temperature. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$q = 0.0500 \times 622 =
+        \SI{31.1}{\kilo\joule}$ released;
+        $\Delta T = 31100/[(500.0)(4.184)] = \SI{14.9}{\celsius}$;
+        $T_f = \SI{39.9}{\celsius}$\end{apcanswer}}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 3 pts} 1 sets up products minus reactants correctly, 1 uses
+$\Delta H^\circ_f = 0$ for \ce{N2} and \ce{O2}, 1 arrives at
+$+50.4$ kJ/mol \textbullet\ \textbf{(b) 1 pt} interprets the positive sign
+as endothermic formation \textbullet\ \textbf{(c) 2 pts} 1 moles, 1 heat
+with sign and units \textbullet\ \textbf{(d) 2 pts} 1 says smaller,
+1 supports with the 88 kJ vaporization figure \textbullet\
+\textbf{(e) 2 pts} 1 correct $\Delta T$, 1 final temperature.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 6 \textbullet\ blocks 1--3}
+  \item $\Delta H$ for the reverse of a $-200$ kJ reaction:
+        \answerblank[2.8cm]{$+200$ kJ}
+  \item Hess's law works because $H$ is a:
+        \answerblank[3cm]{state function}
+  \item $\Delta H^\circ_f$ of \ce{Fe(s)}: \answerblank[2cm]{0}
+  \item $q$ for \SI{200.}{\gram} water warmed \SI{3.00}{\celsius}:
+        \answerblank[3cm]{\SI{2510}{\joule}}
+  \item Exothermic means $\Delta H$ is: \answerblank[2.2cm]{negative}
+\end{spiralstrip}
+
+\end{document}

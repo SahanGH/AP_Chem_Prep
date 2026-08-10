@@ -1,0 +1,98 @@
+% Ch8 WS1 -- electronegativity, polarity, ions, lattice energy. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{8}
+\apcunittitle{Bonding: General Concepts}
+\apcdoctitle{Worksheet 1 \textbullet\ Polarity, Ions, and Lattice Energy}
+\apcsubtitle{Zumdahl \S8.1--8.5 \textbullet\ charges first, radii second --- every time}
+
+\begin{document}
+\wsheader[Electronegativities where needed: H 2.1, C 2.5, N 3.0, O 3.5,
+F 4.0, S 2.5, Cl 3.0, Br 2.8, Na 0.9, K 0.8. Every ranking needs its
+reason.]
+
+\problem[]{Classify each bond and give the $\Delta$EN that decides it:}
+\begin{parts}
+  \item \ce{O-O}: \answerblank[5.5cm]{nonpolar covalent, $\Delta$EN $=0$}
+  \item \ce{N-H}: \answerblank[5.5cm]{polar covalent, $\Delta$EN $=0.9$}
+  \item \ce{K-Cl}: \answerblank[5.5cm]{ionic, $\Delta$EN $=2.2$}
+  \item \ce{C-S}: \answerblank[5.5cm]{nonpolar covalent, $\Delta$EN $=0$}
+\end{parts}
+
+\problem[]{Rank by increasing bond polarity and state the trend that
+decides it: \ce{C-H}, \ce{C-N}, \ce{C-O}, \ce{C-F}.
+\answerlines[2]{\ce{C-H} $<$ \ce{C-N} $<$ \ce{C-O} $<$ \ce{C-F}
+($\Delta$EN $=$ 0.4, 0.5, 1.0, 1.5). Polarity grows with electronegativity
+difference.}}
+
+\problem[]{Bond polarity versus molecular polarity:}
+\begin{parts}
+  \item Does \ce{CO2} contain polar bonds? Is it a polar molecule? Explain
+        the apparent contradiction. \answerlines[3]{Yes and no. The two C=O
+        bonds are strongly polar, but the linear geometry points their
+        dipoles exactly opposite, so the vector sum is zero and the molecule
+        is nonpolar.}
+  \item Name one molecule that is polar despite having identical bonds
+        throughout, and explain. \answerlines[2]{\ce{H2O} (or \ce{NH3},
+        \ce{SO2}) --- identical bonds, but a bent or pyramidal geometry
+        prevents the dipoles from cancelling.}
+\end{parts}
+
+\problem[]{Ionic radii:}
+\begin{parts}
+  \item Explain why every cation is smaller than its parent atom.
+        \answerlines[2]{Electrons are removed --- often emptying an entire
+        outer shell --- while the nuclear charge is unchanged, so the
+        remaining electrons are drawn in more tightly.}
+  \item Explain why every anion is larger than its parent atom.
+        \answerlines[2]{Added electrons increase electron--electron
+        repulsion with no additional protons to compensate, so the cloud
+        expands.}
+  \item Rank by decreasing size: \ce{Se^2-}, \ce{Br-}, \ce{Rb+},
+        \ce{Sr^2+}. State the principle.
+        \answerlines[2]{\ce{Se^2-} $>$ \ce{Br-} $>$ \ce{Rb+} $>$
+        \ce{Sr^2+}. These are isoelectronic (36 electrons each), so size
+        decreases as nuclear charge $Z$ rises: 34, 35, 37, 38.}
+  \item Rank by decreasing size: \ce{N^3-}, \ce{O^2-}, \ce{F-}, \ce{Na+}.
+        \answerblank[6.5cm]{\ce{N^3-} $>$ \ce{O^2-} $>$ \ce{F-} $>$ \ce{Na+}}
+\end{parts}
+
+\problem[]{Lattice energy. Use $\text{LE} \propto |Q_1Q_2|/r$.}
+\begin{parts}
+  \item Rank by lattice energy magnitude: \ce{NaCl}, \ce{MgO}, \ce{NaF},
+        \ce{CaO}. \answerlines[3]{\ce{MgO} $>$ \ce{CaO} $\gg$ \ce{NaF} $>$
+        \ce{NaCl}. Charge products $4, 4, 1, 1$ decide the two groups;
+        within each, the smaller cation or anion wins (\ce{Mg^2+} $<$
+        \ce{Ca^2+}; \ce{F-} $<$ \ce{Cl-}).}
+  \item \ce{KF} and \ce{CaO} have similar ion sizes but very different
+        melting points. Explain quantitatively.
+        \answerlines[2]{\ce{CaO}'s charge product is $2\times2 = 4$ versus 1
+        for \ce{KF}, so its lattice attraction is roughly four times as
+        strong at comparable separation.}
+  \item In the \ce{LiF} lattice, how many \ce{F-} ions surround each
+        \ce{Li+}, and why does that arrangement occur?
+        \answerlines[2]{Six. The packing maximizes attractions between
+        oppositely charged ions while minimizing repulsions between like
+        charges.}
+\end{parts}
+
+\problem[]{A student ranks \ce{BaO} above \ce{MgO} in lattice energy because
+barium is a larger, heavier atom. Correct the reasoning.
+\answerlines[3]{Size works the other way: larger ions sit farther apart, so
+$r$ increases and lattice energy \emph{decreases}. Both compounds have the
+same charge product of 4, so the smaller \ce{Mg^2+} gives the stronger
+lattice --- \ce{MgO} $>$ \ce{BaO}.}}
+
+\begin{spiralstrip}{Chapters 6--7 \textbullet\ spiral}
+  \item $\Delta H^\circ_f$ of \ce{N2(g)}: \answerblank[1.6cm]{0}
+  \item Energy of a \SI{500}{\nano\meter} photon:
+        \answerblank[3.2cm]{\SI{3.98e-19}{\joule}}
+  \item Configuration of \ce{Fe^3+}: \answerblank[3.2cm]{$[\ce{Ar}]3d^5$}
+  \item PES peak area represents: \answerblank[5.2cm]{electrons in that
+        subshell}
+  \item Hess's law works because $H$ is a:
+        \answerblank[3cm]{state function}
+\end{spiralstrip}
+
+\end{document}

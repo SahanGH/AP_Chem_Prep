@@ -1,0 +1,746 @@
+% Zumdahl Chapter 17 -- Spontaneity, Entropy, and Free Energy.
+% Elaborated notes, 5 blocks. Covers CED 9.1-9.7 (front half of Unit 9).
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Entropy and Free Energy}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S17.1--17.10 \textbullet\ PDF pp.~834--880 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+This is the \textbf{front half of Unit 9}, the last unit of the course:
+\S17.1--17.2 $\to$ CED 9.1, \S17.6 $\to$ 9.2, \S17.3--17.4 and 17.7
+$\to$ 9.3, \S17.9 $\to$ 9.5, \S17.5 $\to$ 9.6, \S17.10 $\to$ 9.7.
+Chapter 18 supplies the electrochemistry half (9.8--9.11).
+
+Kinetic control (\textbf{9.4}) has no Zumdahl section of its own --- it is a
+deliberate callback to Chapter 12, and Block 4 makes it.
+
+\S17.8 (pressure dependence of $G$) and the derivations in \S17.10 go
+beyond the framework; the parts you need are folded into Blocks 4 and 5.
+
+\textbf{This chapter answers a question Chapter 12 could not.} Kinetics told
+you \emph{how fast}; equilibrium told you \emph{how far}. Neither told you
+\emph{why} a reaction runs one way at all. That is what free energy is for.
+\end{apcnote}
+
+\begin{apctrap}
+\textbf{Read this before anything else: the textbook and the exam use
+different words.}
+
+Zumdahl's chapter is titled ``Spontaneity, Entropy, and Free Energy'' and
+uses \term{spontaneous} on nearly every page. The 2024 CED explicitly
+retires that word:
+
+\begin{quote}\small
+``Historically, the term \emph{spontaneous} has been used to describe
+processes for which $\Delta G^\circ < 0$. The phrase \emph{thermodynamically
+favored} is preferred instead, so that common misunderstandings (equating
+`spontaneous' with `suddenly' or `without cause') can be avoided.''
+\end{quote}
+
+Read ``spontaneous'' in the textbook; write \textbf{``thermodynamically
+favored''} on the exam. They mean the same thing --- $\Delta G^\circ < 0$
+--- and neither means fast, sudden, or uncaused. A thermodynamically favored
+reaction may take a million years.
+\end{apctrap}
+
+% =====================================================================
+\blocklesson{Entropy and the Second Law}{Zumdahl \S17.1--17.2}
+
+\begin{objectives}
+  \item Identify the sign and relative magnitude of an entropy change.
+  \item State the second law and explain what it predicts.
+\end{objectives}
+
+\reading{Zumdahl \S17.1--17.2}{835--843}
+
+\begin{warmup}[4]
+  \item Sign of $\Delta H$ for an exothermic reaction:
+        \answerblank[2cm]{negative}
+  \item Which phase has the most freedom of motion?
+        \answerblank[2cm]{gas}
+  \item At constant $P$, $q$ equals: \answerblank[2.4cm]{$\Delta H$}
+  \item Raising the temperature of a gas does what to the spread of
+        molecular speeds? \answerblank[3cm]{broadens it}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What entropy actually measures}
+
+\notesectionz{Dispersal, not disorder}{17.1}
+\practice{6}
+
+\term{Entropy} ($S$) measures how \textbf{dispersed} the matter and energy
+of a system are --- how many microscopic arrangements produce the same
+macroscopic state. The more ways there are, the higher the entropy.
+
+``Disorder'' is the usual shorthand and it is a poor one: a messy bedroom is
+not a thermodynamic state. Think \emph{spread out}, in two senses the CED
+names separately:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Matter disperses.} Particles occupy a larger volume or move
+        more freely.
+  \item \textbf{Energy disperses.} At higher temperature the distribution of
+        molecular kinetic energies \answerblank[2.4cm]{broadens}, so the
+        energy is spread over more states.
+\end{itemize}
+
+\notesectionz{The four situations you must recognize}{17.1}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{Change} & \textbf{$\Delta S$} & \textbf{Why} \\
+\hline
+solid $\to$ liquid $\to$ gas & \textbf{positive} & particles freer, larger
+  volume \\
+gas expands (constant $T$) & \textbf{positive} & same particles, more space
+  \\
+temperature rises & \textbf{positive} & energy spread over more states \\
+moles of gas increase & \textbf{positive} & the dominant term in a
+  reaction \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apctrap}
+\textbf{For a reaction, count moles of gas first.} Gases carry far more
+entropy than liquids or solids, so $\Delta n_{\text{gas}}$ almost always
+decides the sign. Compare the standard entropies:
+\ce{H2O(l)} is \SI{70}{\joule\per\kelvin\per\mole} but \ce{H2O(g)} is
+\SI{189}{\joule\per\kelvin\per\mole} --- the same substance, nearly triple.
+
+Only when $\Delta n_{\text{gas}} = 0$ do you look at anything else.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Predicting the sign}
+
+Give the sign of $\Delta S^\circ$ and the reason:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{CaCO3(s) -> CaO(s) + CO2(g)}
+        \answerblank[6cm]{positive --- 0 to 1 mol gas}
+  \item \ce{N2(g) + 3H2(g) -> 2NH3(g)}
+        \answerblank[6cm]{negative --- 4 to 2 mol gas}
+  \item \ce{2H2(g) + O2(g) -> 2H2O(l)}
+        \answerblank[6cm]{negative --- 3 mol gas to 0}
+  \item \ce{H2O(s) -> H2O(l)}
+        \answerblank[6cm]{positive --- solid to liquid}
+  \item \ce{2NO2(g) -> N2O4(g)}
+        \answerblank[6cm]{negative --- 2 to 1 mol gas}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The second law}
+
+\notesectionz{The universe, not the system}{17.2}
+\practice{6}
+
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+\textbf{Second law of thermodynamics:} in any thermodynamically favored
+process, the entropy of the \emph{universe} increases. \\[0.3em]
+$\Delta S_{\text{univ}} = \Delta S_{\text{sys}} +
+\Delta S_{\text{surr}} > 0$}}
+\end{center}
+
+The system's entropy is allowed to \answerblank[2cm]{decrease} --- water
+freezes, ammonia forms, life builds ordered structures --- provided the
+surroundings gain more than the system loses.
+
+The surroundings gain entropy when the system releases heat to them, and how
+much they gain depends on temperature:
+\[ \Delta S_{\text{surr}} = -\frac{\Delta H}{T} \]
+
+\begin{apcnote}[Why the same heat matters more when it is cold]
+The $T$ in the denominator is doing real work. Dumping
+\SI{1}{\kilo\joule} into cold surroundings is a large fractional increase in
+their energy dispersal; the same kilojoule into hot surroundings barely
+registers.
+
+That is why \textbf{exothermicity is a strong driving force at low
+temperature and a weak one at high temperature} --- and it is the reason
+water freezes below \SI{0}{\celsius} but melts above it, with no change in
+$\Delta H$ or $\Delta S$ at all.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Reasoning with the second law}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Water freezing has $\Delta S_{\text{sys}} < 0$. Explain how it can
+        still occur below \SI{0}{\celsius}.
+        \answerlines[3]{Freezing is exothermic, so
+        $\Delta S_{\text{surr}} = -\Delta H/T$ is positive. At low enough
+        $T$ that positive term is larger in magnitude than the system's
+        loss, so $\Delta S_{\text{univ}} > 0$ and the process is favored.
+        Above \SI{0}{\celsius} the surroundings term is too small and the
+        reverse process wins instead.}
+  \item A living organism builds highly ordered molecules from simple ones.
+        Does this violate the second law? \answerlines[3]{No. The organism
+        is not an isolated system. It releases heat and simpler waste
+        products to its surroundings, and the entropy those gain exceeds
+        the entropy lost in building the ordered structures. The
+        \emph{universe} still gains.}
+\end{enumerate}
+
+\begin{exitticket}
+State the sign of $\Delta S_{\text{sys}}$, of $\Delta S_{\text{surr}}$, and
+of $\Delta S_{\text{univ}}$ for the combustion of methane at room
+temperature.
+\keyonly{\begin{apcanswer}$\Delta S_{\text{sys}}$ is negative (3 mol gas
+becomes 1 mol gas plus liquid water). $\Delta S_{\text{surr}}$ is strongly
+positive, because the reaction is very exothermic. $\Delta S_{\text{univ}}$
+is positive --- the reaction is thermodynamically favored, so the
+surroundings term must dominate.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Calculating Entropy Changes}{Zumdahl \S17.6}
+
+\begin{objectives}
+  \item Calculate $\Delta S^\circ$ from absolute (standard molar) entropies.
+  \item Explain why absolute entropies exist but absolute enthalpies do not.
+\end{objectives}
+
+\reading{Zumdahl \S17.6}{851--855}
+
+\begin{warmup}[3]
+  \item Sign of $\Delta S^\circ$ when moles of gas increase:
+        \answerblank[2cm]{positive}
+  \item $\Delta S_{\text{surr}} = $ \answerblank[2.6cm]{$-\Delta H/T$}
+  \item Units of $S^\circ$: \answerblank[3.4cm]{J/(K$\cdot$mol)}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Absolute entropies}
+
+\notesectionz{The third law makes a real zero possible}{17.6}
+\practice{5}
+
+The \term{third law of thermodynamics} says a perfect crystal at
+\SI{0}{\kelvin} has an entropy of exactly \answerblank[1.4cm]{zero}. That
+gives entropy a genuine origin, so every substance has an
+\term{absolute entropy} $S^\circ$ --- a positive number, tabulated
+directly.
+
+\begin{apctrap}
+Contrast this with enthalpy. There is no absolute $H$, so tables list
+$\Delta H_f^\circ$, the enthalpy \emph{of formation}, and elements in their
+standard states are assigned zero by convention.
+
+Entropy tables are different: \textbf{$S^\circ$ for an element is not zero}.
+\ce{O2(g)} has $S^\circ = \SI{205}{\joule\per\kelvin\per\mole}$. Setting
+element entropies to zero out of habit is a reliable way to lose a point.
+\end{apctrap}
+
+\[ \boxed{\;\Delta S^\circ_{\text{reaction}} = \sum n S^\circ_{\text{products}}
+   - \sum n S^\circ_{\text{reactants}}\;} \]
+
+Note the coefficients multiply, exactly as in Hess's law --- and note the
+units: $S^\circ$ is in \textbf{joules} while $\Delta H^\circ$ is in
+\textbf{kilojoules}. Mixing them is the single most common arithmetic error
+in this unit.
+
+\begin{workedexample}[Worked example 1: decomposing limestone]
+\[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \]
+$S^\circ$: \ce{CaCO3} 93, \ce{CaO} 40, \ce{CO2} 214
+\si{\joule\per\kelvin\per\mole}.
+
+\[ \Delta S^\circ = (40 + 214) - (93) = \mathbf{+161}~
+   \si{\joule\per\kelvin} \]
+
+Positive, as predicted --- a gas appeared where there was none.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: the Haber process]
+\[ \ce{N2(g) + 3H2(g) -> 2NH3(g)} \]
+$S^\circ$: \ce{N2} 192, \ce{H2} 131, \ce{NH3} 193.
+
+\[ \Delta S^\circ = 2(193) - [192 + 3(131)]
+   = 386 - 585 = \mathbf{-199}~\si{\joule\per\kelvin} \]
+
+Four moles of gas became two, so the sign had to be negative. Notice the
+coefficient of 3 on hydrogen --- dropping it gives $-68$ and the wrong
+magnitude entirely.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Running the sums}
+
+$S^\circ$ values (\si{\joule\per\kelvin\per\mole}): \ce{H2} 131,
+\ce{O2} 205, \ce{H2O(l)} 70, \ce{H2O(g)} 189, \ce{NO2} 240,
+\ce{N2O4} 304.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{2H2(g) + O2(g) -> 2H2O(l)}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$2(70) - [2(131) + 205] = 140 - 467
+        = \mathbf{-327}~\si{\joule\per\kelvin}$\end{apcanswer}}
+  \item \ce{H2O(l) -> H2O(g)}: \answerblank[3.4cm]{$+119$ J/K}
+  \item \ce{2NO2(g) -> N2O4(g)}: \answerblank[3.4cm]{$-176$ J/K}
+\end{enumerate}
+
+\segment{APPLICATION}{20}{Interpreting the numbers}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{H2O(l) -> H2O(g)}, $\Delta S^\circ = +119$~J/K while
+        $\Delta H^\circ = +44$~kJ. Explain what each sign says about
+        whether the process is favored at \SI{25}{\celsius}.
+        \answerlines[3]{The entropy term favors vaporization --- gas is far
+        more dispersed. The enthalpy term opposes it, since hydrogen bonds
+        must be broken. At \SI{25}{\celsius} the enthalpy term wins and
+        liquid water does not spontaneously all become vapour; at higher
+        temperature the $T\Delta S$ term grows until it does.}
+  \item Why is $S^\circ$ for \ce{H2O(g)} nearly triple that for
+        \ce{H2O(l)}, when it is the same substance?
+        \answerlines[2]{In the gas the molecules are free to occupy a far
+        larger volume and to move independently, so vastly more microscopic
+        arrangements correspond to the same macroscopic state.}
+  \item A student computes $\Delta S^\circ$ for the Haber process as
+        $193 - (192 + 131) = -130$~J/K. Find both errors.
+        \answerlines[3]{They omitted the coefficient 2 on \ce{NH3} and the
+        coefficient 3 on \ce{H2}. Correctly,
+        $2(193) - [192 + 3(131)] = -199$~J/K.}
+\end{enumerate}
+
+\begin{exitticket}
+Why can a table list an absolute $S^\circ$ for oxygen gas but not an
+absolute $H^\circ$?
+\keyonly{\begin{apcanswer}The third law fixes a true zero for entropy --- a
+perfect crystal at \SI{0}{\kelvin} has $S = 0$ --- so entropies can be
+measured on an absolute scale. Enthalpy has no such natural zero, so only
+\emph{changes} in enthalpy are measurable and tables use
+$\Delta H_f^\circ$ with elements assigned zero by
+convention.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Gibbs Free Energy}{Zumdahl \S17.3--17.4, 17.7}
+
+\begin{objectives}
+  \item Calculate $\Delta G^\circ$ two ways and judge thermodynamic
+        favorability.
+  \item Predict the temperature conditions under which a process is favored.
+\end{objectives}
+
+\reading{Zumdahl \S17.3--17.4, 17.7}{843--851, 855--860}
+
+\begin{warmup}[4]
+  \item $\Delta S^\circ$ for \ce{CaCO3(s) -> CaO(s) + CO2(g)}:
+        \answerblank[2.6cm]{$+161$ J/K}
+  \item $\Delta S_{\text{univ}}$ must be what sign for a favored process?
+        \answerblank[2cm]{positive}
+  \item Units of $S^\circ$ versus $\Delta H^\circ$:
+        \answerblank[5.2cm]{J/(K$\cdot$mol) versus kJ/mol}
+  \item The AP term replacing ``spontaneous'':
+        \answerblank[5.4cm]{thermodynamically favored}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{One number that decides}
+
+\notesectionz{Folding the surroundings into the system}{17.4}
+\practice{5}
+
+Judging favorability from $\Delta S_{\text{univ}}$ means tracking the
+surroundings, which is a nuisance. \term{Gibbs free energy} removes the
+need:
+\[ G = H - TS \qquad\Longrightarrow\qquad
+   \boxed{\;\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\;} \]
+
+Dividing $\Delta G = \Delta H - T\Delta S$ by $-T$ gives exactly
+$\Delta S_{\text{surr}} + \Delta S_{\text{sys}} = \Delta S_{\text{univ}}$.
+So $\Delta G$ is the second law rewritten \emph{entirely in terms of the
+system} --- which is why it is worth having.
+
+\begin{center}
+\fbox{\parbox{0.8\linewidth}{\centering
+$\Delta G^\circ < 0$: \textbf{thermodynamically favored} \\
+$\Delta G^\circ > 0$: not favored (the reverse is) \\
+$\Delta G^\circ = 0$: at equilibrium}}
+\end{center}
+
+The sign flip is worth stating: $\Delta S_{\text{univ}}$ must be
+\answerblank[1.8cm]{positive}, but $\Delta G^\circ$ must be
+\answerblank[1.8cm]{negative}, because of the $-T$ used in the derivation.
+
+\notesectionz{The second route: free energies of formation}{17.7}
+
+Exactly as with enthalpy, $\Delta G^\circ$ can be assembled from tabulated
+formation values:
+\[ \Delta G^\circ_{\text{reaction}} =
+   \sum n\Delta G_f^\circ{}_{\text{products}}
+   - \sum n\Delta G_f^\circ{}_{\text{reactants}} \]
+
+\begin{workedexample}[Worked example 3: two routes, one answer]
+For \ce{2H2(g) + O2(g) -> 2H2O(l)}:
+
+\textbf{Route 1 --- from $\Delta H^\circ$ and $\Delta S^\circ$.}
+$\Delta H^\circ = 2(-286) = -572$~kJ;
+$\Delta S^\circ = -327$~J/K $= -0.327$~kJ/K.
+\[ \Delta G^\circ = -572 - (298)(-0.327) = -572 + 97 = \mathbf{-475}~
+   \text{kJ} \]
+
+\textbf{Route 2 --- from $\Delta G_f^\circ$.}
+$\Delta G^\circ = 2(-237) - 0 = \mathbf{-474}$~kJ.
+
+The two agree to within rounding in the table. \textbf{Watch the units} ---
+the entropy had to be converted from J/K to kJ/K before it could be
+subtracted from a value in kJ.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{When temperature decides}
+
+\notesectionz{The four cases}{17.3}
+\practice{5}
+
+Because $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, the signs of
+$\Delta H^\circ$ and $\Delta S^\circ$ between them determine whether
+temperature matters at all:
+
+\begin{center}
+\begin{tabular}{@{}cccl@{}}
+\hline
+$\Delta H^\circ$ & $\Delta S^\circ$ & \textbf{Favored at} &
+  \textbf{Comment} \\
+\hline
+$-$ & $+$ & \textbf{all temperatures} & both terms help; no calculation
+  needed \\
+$+$ & $-$ & \textbf{no temperature} & both terms oppose; never favored \\
+$+$ & $+$ & \textbf{high $T$} & entropy wins once $T$ is large enough \\
+$-$ & $-$ & \textbf{low $T$} & enthalpy wins while $T$ is small \\
+\hline
+\end{tabular}
+\end{center}
+
+For the two mixed cases, the \term{crossover temperature} --- where
+$\Delta G^\circ = 0$ and the behaviour switches --- is
+\[ T = \frac{\Delta H^\circ}{\Delta S^\circ} \]
+
+\begin{workedexample}[Worked example 4: why limestone needs a kiln]
+\ce{CaCO3(s) -> CaO(s) + CO2(g)}:
+$\Delta H^\circ = +178.5$~kJ, $\Delta S^\circ = +161$~J/K.
+
+Both positive $\Rightarrow$ favored only at high temperature.
+
+\textbf{At \SI{298}{\kelvin}:}
+$\Delta G^\circ = 178.5 - 298(0.161) = +131$~kJ --- \emph{not} favored, which
+is why limestone buildings do not crumble into quicklime.
+
+\textbf{Crossover:}
+\[ T = \frac{178.5}{0.161} = \mathbf{1109}~\si{\kelvin}
+   \quad (\approx \SI{836}{\celsius}) \]
+Above about \SI{1100}{\kelvin} the decomposition becomes favored --- which is
+exactly the temperature at which lime kilns are operated.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Predicting and calculating}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For the Haber process, $\Delta H^\circ = -92$~kJ and
+        $\Delta S^\circ = -199$~J/K. Find $\Delta G^\circ$ at
+        \SI{298}{\kelvin} and the crossover temperature. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -92 - 298(-0.199)
+        = -92 + 59 = \mathbf{-33}$~kJ, so favored at \SI{298}{\kelvin}.
+        Crossover $T = 92/0.199 = \mathbf{462}$~K --- favored
+        \emph{below} 462 K, since both terms are
+        negative.\end{apcanswer}}
+  \item For \ce{H2O(l) -> H2O(g)}, $\Delta H^\circ = +44$~kJ and
+        $\Delta S^\circ = +119$~J/K. Find the crossover temperature and
+        say what it physically is. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$T = 44/0.119 = \mathbf{370}$~K
+        $\approx \SI{97}{\celsius}$ --- the \textbf{boiling point}. Above
+        it, vaporization is favored at 1 atm; below it, condensation is.
+        The tabulated value is 373 K; the 3 K gap is rounding in the
+        table.\end{apcanswer}}
+  \item Without calculating, say whether
+        \ce{2H2O2(l) -> 2H2O(l) + O2(g)} ($\Delta H^\circ < 0$) is favored,
+        and at what temperatures. \answerlines[2]{$\Delta H^\circ$ is
+        negative and $\Delta S^\circ$ is positive (a gas is produced from a
+        liquid), so both terms help and it is favored at \emph{all}
+        temperatures. No calculation is needed.}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction has $\Delta H^\circ = +50$~kJ and $\Delta S^\circ = +100$~J/K.
+Is it favored at \SI{298}{\kelvin}? Above what temperature does that change?
+\keyonly{\begin{apcanswer}At \SI{298}{\kelvin},
+$\Delta G^\circ = 50 - 298(0.100) = +20$~kJ, so it is not favored.
+Crossover at $T = 50/0.100 = \SI{500}{\kelvin}$; above \SI{500}{\kelvin} it
+becomes favored.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Free Energy, Equilibrium, and Kinetic Control}{Zumdahl \S17.9}
+
+\begin{objectives}
+  \item Relate $\Delta G^\circ$ to $K$ and estimate one from the other.
+  \item Explain why a favored reaction may not occur at a measurable rate.
+\end{objectives}
+
+\reading{Zumdahl \S17.9}{863--869}
+
+\begin{warmup}[4]
+  \item $\Delta G^\circ = $ \answerblank[4cm]{$\Delta H^\circ -
+        T\Delta S^\circ$}
+  \item Favored means $\Delta G^\circ$ is: \answerblank[2cm]{negative}
+  \item If $K > 1$, which side is favored?
+        \answerblank[2.4cm]{products}
+  \item What raises a rate without changing $K$?
+        \answerblank[2.6cm]{a catalyst}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two languages for the same fact}
+
+\notesectionz{$\Delta G^\circ$ and $K$}{17.9}
+\practice{5}
+
+You now have two ways of saying ``products are favored'': $K > 1$ from
+Unit 7, and $\Delta G^\circ < 0$ from this unit. They are the same
+statement, linked by
+\[ \boxed{\;\Delta G^\circ = -RT\ln K\;}
+   \qquad\text{equivalently}\qquad K = e^{-\Delta G^\circ/RT} \]
+with $R = \SI{8.314}{\joule\per\mole\per\kelvin}$ --- note \textbf{joules},
+so $\Delta G^\circ$ must be converted from kJ.
+
+\begin{center}
+\begin{tabular}{@{}ccl@{}}
+\hline
+$\Delta G^\circ$ & $K$ & \\
+\hline
+negative & $> 1$ & products favored at equilibrium \\
+zero     & $= 1$ & neither side favored \\
+positive & $< 1$ & reactants favored \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apcnote}[Estimating without a calculator]
+The CED asks you to connect $K$ and $\Delta G^\circ$ \emph{qualitatively by
+estimation}, so learn the scale rather than only the formula. The quantity
+to compare against is $RT$, which at \SI{298}{\kelvin} is about
+\SI{2.5}{\kilo\joule\per\mole}.
+
+\begin{center}
+\begin{tabular}{@{}rl@{}}
+\hline
+$\Delta G^\circ \approx 0$ & $K$ close to 1 \\
+$\Delta G^\circ = -10$ kJ & $K \approx 60$ \\
+$\Delta G^\circ = -50$ kJ & $K \approx 6\times10^{8}$ \\
+$\Delta G^\circ = +50$ kJ & $K \approx 2\times10^{-9}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+The lesson: because $\Delta G^\circ$ sits inside an exponential, a modest
+free-energy change produces an enormous swing in $K$.
+\end{apcnote}
+
+\begin{workedexample}[Worked example 5: limestone again, as an equilibrium]
+At \SI{298}{\kelvin} the decomposition of \ce{CaCO3} has
+$\Delta G^\circ = +131$~kJ. Find $K$.
+
+\[ \ln K = -\frac{\Delta G^\circ}{RT}
+   = -\frac{131{,}000}{(8.314)(298)} = -52.9 \]
+\[ K = e^{-52.9} = \mathbf{1\times10^{-23}} \]
+
+Essentially no \ce{CO2} above limestone at room temperature --- which is
+what ``not favored'' looks like quantitatively.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Favored is not the same as fast}
+
+\notesectionz{Kinetic control}{17.4 (CED)}
+\practice{6}
+
+This is CED topic \textbf{9.4}, and it is the payoff for having taught
+kinetics first.
+
+A thermodynamically favored reaction tells you \emph{where} the system would
+end up. It says nothing about \emph{how long} that takes. When a favored
+reaction proceeds too slowly to observe, it is under
+\term{kinetic control}, and the usual cause is a high
+\answerblank[3.8cm]{activation energy}.
+
+\begin{apctrap}
+\textbf{A reaction that is not proceeding is not necessarily at
+equilibrium.} Diamond converting to graphite has $\Delta G^\circ < 0$ at
+room temperature --- it is favored --- yet diamonds persist indefinitely
+because the activation barrier is enormous.
+
+If you are told a process is favored but nothing appears to happen, the
+conclusion the CED wants is \textbf{kinetic control}, not equilibrium.
+
+Note what a catalyst does and does not do: it lowers $E_a$ and so raises the
+rate, but it cannot change $\Delta G^\circ$ or $K$. Catalysts move a system
+to equilibrium faster; they never move the equilibrium.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Thermodynamics versus kinetics}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A reaction has $\Delta G^\circ = -33$~kJ at \SI{298}{\kelvin}.
+        Calculate $K$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\ln K = 33{,}000/[(8.314)(298)] = 13.3$;
+        $K = e^{13.3} = \mathbf{6\times10^{5}}$ --- strongly
+        product-favored\end{apcanswer}}
+  \item A mixture of \ce{H2} and \ce{O2} can sit in a flask for years
+        without reacting, yet the combustion has
+        $\Delta G^\circ = -474$~kJ. Explain, and say what a spark does.
+        \answerlines[3]{The reaction is strongly favored but under kinetic
+        control: the activation energy is very high, so at room temperature
+        almost no collisions have enough energy. A spark supplies that
+        energy locally and starts the reaction, which then releases enough
+        heat to sustain itself. The spark changes the rate, not
+        $\Delta G^\circ$.}
+  \item A student says ``$\Delta G^\circ$ is negative, so the reaction will
+        be fast.'' Correct them in one sentence.
+        \answerlines[2]{$\Delta G^\circ$ predicts the position of
+        equilibrium, not the rate --- rate is set by activation energy, and
+        a strongly favored reaction can be immeasurably slow.}
+\end{enumerate}
+
+\begin{exitticket}
+Give one reaction that is thermodynamically favored but does not visibly
+occur, and name what is preventing it.
+\keyonly{\begin{apcanswer}Diamond $\to$ graphite (or the combustion of a
+hydrogen--oxygen mixture without ignition). In each case
+$\Delta G^\circ < 0$, but a very high activation energy puts the process
+under kinetic control, so the rate is negligible at room
+temperature.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Dissolution and Coupled Reactions}{Zumdahl \S17.5, 17.10}
+
+\begin{objectives}
+  \item Explain solubility in terms of the enthalpy and entropy of
+        dissolution.
+  \item Explain how an unfavorable process can be driven by coupling or an
+        external energy source.
+\end{objectives}
+
+\reading{Zumdahl \S17.5, 17.10}{850--851, 869--873}
+
+\begin{warmup}[3]
+  \item $\Delta G^\circ = -RT\ln K$; if $\Delta G^\circ < 0$ then $K$ is:
+        \answerblank[3cm]{greater than 1}
+  \item A favored but immeasurably slow reaction is under:
+        \answerblank[3.4cm]{kinetic control}
+  \item Adding two reactions adds their:
+        \answerblank[3.4cm]{$\Delta G^\circ$ values}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Why some salts dissolve and others do not}
+
+\notesectionz{Three competing contributions}{17.5}
+\practice{4}
+
+This is CED \textbf{9.6}. Dissolving a salt is a free-energy balance with
+three parts:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Breaking up the solid} --- overcoming the lattice.
+        $\Delta H$ strongly \answerblank[2cm]{positive},
+        $\Delta S$ positive.
+  \item \textbf{Reorganizing the solvent} around the ions.
+        $\Delta S$ \answerblank[2cm]{negative} --- water molecules become
+        ordered in hydration shells.
+  \item \textbf{Ion--solvent attraction} (hydration).
+        $\Delta H$ \answerblank[2cm]{negative}.
+\end{enumerate}
+
+\begin{apcnote}[Why the CED does not ask you to predict the total]
+The framework says outright that predicting the overall $\Delta G^\circ$ of
+dissolution ``can be challenging due to the cancellations among'' these
+three factors. The enthalpy terms are large and opposite; the entropy terms
+likewise. What is left over is a small difference between big numbers.
+
+So you are expected to \textbf{identify the contributions and their signs},
+not to predict solubility from scratch. An answer that reasons through the
+three factors earns credit even if the final direction is uncertain.
+\end{apcnote}
+
+\begin{workedexample}[Worked example 6: dissolving that cools the beaker]
+\ce{NH4NO3} dissolves \emph{endothermically} --- the beaker gets cold, so
+$\Delta H^\circ > 0$. Yet it is very soluble. Why?
+
+Because $\Delta S^\circ$ is strongly positive: an ordered crystal becomes
+freely moving hydrated ions dispersed through the solvent. At room
+temperature $T\Delta S^\circ$ exceeds $\Delta H^\circ$, so
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ < 0$.
+
+\textbf{Entropy is driving this one on its own} --- the enthalpy term is
+working against it. This is precisely the case the CED flags in 9.3.A.4,
+where you must consider both terms rather than assuming exothermic means
+favored.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Driving the unfavorable}
+
+\notesectionz{Coupling, and external energy}{17.10}
+\practice{4}
+
+A process with $\Delta G^\circ > 0$ will not happen on its own. There are
+two ways to make it happen anyway --- CED topic \textbf{9.7}.
+
+\textbf{1. Supply external energy.} Examples the CED names:
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \textbf{Electrical energy} driving an electrolytic cell or charging
+        a battery --- the whole subject of Chapter 18.
+  \item \textbf{Light} driving photosynthesis, which converts \ce{CO2} and
+        water into glucose with a hugely positive $\Delta G^\circ$.
+\end{itemize}
+
+\textbf{2. Couple it to a favorable reaction.} Because free energies
+\answerblank[2cm]{add}, an unfavorable step can be carried by a favorable
+one, provided the two share a \answerblank[4.4cm]{common intermediate} and
+the \emph{sum} has $\Delta G^\circ < 0$.
+
+\begin{workedexample}[Worked example 7: how cells pay for chemistry]
+Phosphorylating glucose is unfavorable on its own:
+\[ \text{glucose} + \ce{P_i} \to \text{glucose-6-phosphate}
+   \qquad \Delta G^\circ = +13.8~\text{kJ/mol} \]
+Hydrolysing ATP is strongly favorable:
+\[ \ce{ATP} + \ce{H2O} \to \ce{ADP} + \ce{P_i}
+   \qquad \Delta G^\circ = -30.5~\text{kJ/mol} \]
+Coupled through the shared \ce{P_i}, the overall process is
+\[ \Delta G^\circ = +13.8 + (-30.5) = \mathbf{-16.7}~\text{kJ/mol} \]
+and therefore favored. This is what ``ATP is the cell's energy currency''
+actually means --- not that ATP contains energy, but that its hydrolysis is
+favorable enough to pay for reactions that are not.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Putting the unit together}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Photosynthesis has $\Delta G^\circ \approx +2870$~kJ/mol of
+        glucose. Explain how it occurs at all.
+        \answerlines[3]{It is driven by an external energy source ---
+        sunlight. The absorbed light supplies the free energy the reaction
+        lacks, so the overall system including the light source still has
+        $\Delta G < 0$. Nothing about the second law is violated.}
+  \item Reaction X has $\Delta G^\circ = +25$~kJ. It is coupled to
+        reaction Y with $\Delta G^\circ = -60$~kJ. Is the coupled process
+        favored, and what must the two reactions share?
+        \answerblank[7.4cm]{yes, $-35$ kJ; a common intermediate}
+  \item \ce{NaCl} dissolves with $\Delta H^\circ$ very close to zero.
+        Explain what must be driving it. \answerlines[3]{The entropy term.
+        With $\Delta H^\circ \approx 0$, $\Delta G^\circ \approx
+        -T\Delta S^\circ$, and dissolution disperses an ordered lattice
+        into mobile hydrated ions, so $\Delta S^\circ > 0$ and
+        $\Delta G^\circ < 0$.}
+\end{enumerate}
+
+\begin{exitticket}
+A classmate says ``an unfavorable reaction can never happen.'' Give the two
+ways it can, with one example each.
+\keyonly{\begin{apcanswer}It can be driven by an external energy source ---
+electricity in electrolysis, or light in photosynthesis. Or it can be
+coupled to a favorable reaction sharing a common intermediate, so that the
+summed $\Delta G^\circ$ is negative --- as ATP hydrolysis drives the
+phosphorylation of glucose.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

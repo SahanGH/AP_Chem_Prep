@@ -1,0 +1,160 @@
+% U9 WS4 -- cells, standard potentials, and the E/G/K triangle. Blocks 7-8.
+\documentclass{apchem-worksheet}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Worksheet 4 \textbullet\ Cells and Cell Potential}
+\apcsubtitle{CED 9.8--9.9 \textbullet\ scale the half-reaction, never its voltage}
+
+\begin{document}
+\wsheader[$E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} -
+E^\circ_{\text{anode}}$ \textbullet\ $\Delta G^\circ = -nFE^\circ$
+\textbullet\ $F = \SI{96485}{\coulomb\per\mole}$ \textbullet\ $E^\circ$
+(V): \ce{Ag+}/\ce{Ag} $+0.80$ \textbullet\ \ce{Cu^2+}/\ce{Cu} $+0.34$
+\textbullet\ \ce{2H+}/\ce{H2} $0.00$ \textbullet\ \ce{Pb^2+}/\ce{Pb}
+$-0.13$ \textbullet\ \ce{Ni^2+}/\ce{Ni} $-0.23$ \textbullet\
+\ce{Fe^2+}/\ce{Fe} $-0.44$ \textbullet\ \ce{Zn^2+}/\ce{Zn} $-0.76$
+\textbullet\ \ce{Mg^2+}/\ce{Mg} $-2.37$.]
+
+\problem[]{\ced{9.8} Parts of a galvanic cell.}
+\begin{parts}
+  \item Oxidation occurs at the \answerblank[2cm]{anode}; reduction at the
+        \answerblank[2.4cm]{cathode}.
+  \item Electrons travel through the wire from
+        \answerblank[4cm]{anode to cathode}.
+  \item State what the salt bridge does and what happens without it.
+        \answerlines[3]{It carries ions between the half-cells to keep both
+        solutions electrically neutral. Without it, oxidation leaves the
+        anode solution positively charged and the cathode solution
+        negative; the charge separation stops electron flow almost
+        immediately and the cell dies.}
+  \item Why does the CED avoid labelling electrodes positive or negative?
+        \answerlines[3]{The sign convention reverses between cell types ---
+        the anode is negative in a galvanic cell and positive in an
+        electrolytic one. Oxidation occurs at the anode in both, so
+        identifying electrodes by process is unambiguous where identifying
+        them by charge is not.}
+\end{parts}
+
+\problem[]{\ced{9.8} Galvanic against electrolytic. Fill in:}
+\begin{parts}
+  \item Galvanic: $E^\circ_{\text{cell}}$ \answerblank[2cm]{positive},
+        $\Delta G^\circ$ \answerblank[2cm]{negative}
+  \item Electrolytic: $E^\circ_{\text{cell}}$ \answerblank[2cm]{negative},
+        $\Delta G^\circ$ \answerblank[2cm]{positive}
+  \item Which converts chemical energy to electrical?
+        \answerblank[2.4cm]{galvanic}
+  \item An electrolytic cell is which CED 9.7 strategy, in hardware?
+        \answerblank[5.6cm]{external energy supplied}
+\end{parts}
+
+\problem[]{\ced{9.9} A cell is built from \ce{Zn}/\ce{Zn^2+} and
+\ce{Cu}/\ce{Cu^2+}.}
+\begin{parts}
+  \item Which metal is oxidized, and why?
+        \answerlines[2]{Zinc. Its reduction potential is the more negative,
+        so copper is preferentially reduced and zinc is left to be
+        oxidized.}
+  \item Write the balanced overall equation.
+        \answerblank[6cm]{\ce{Zn + Cu^2+ -> Zn^2+ + Cu}}
+  \item Calculate $E^\circ_{\text{cell}}$. \workspace[1.6cm]
+        \keyonly{\begin{apcanswer}$E^\circ = 0.34 - (-0.76) =
+        \mathbf{+1.10}$~V\end{apcanswer}}
+  \item State what happens to the mass of each electrode as it runs.
+        \answerlines[2]{The zinc anode loses mass as it is oxidized to
+        \ce{Zn^2+}; the copper cathode gains mass as \ce{Cu^2+} is reduced
+        and plates onto it.}
+\end{parts}
+
+\problem[]{\ced{9.9} Calculate $E^\circ_{\text{cell}}$ for each pairing:}
+\begin{parts}
+  \item \ce{Zn} and \ce{Ag+}: \answerblank[2.6cm]{$+1.56$ V}
+  \item \ce{Mg} and \ce{Cu^2+}: \answerblank[2.6cm]{$+2.71$ V}
+  \item \ce{Zn} and \ce{Ni^2+}: \answerblank[2.6cm]{$+0.53$ V}
+  \item \ce{Fe} and \ce{Cu^2+}: \answerblank[2.6cm]{$+0.78$ V}
+  \item \ce{Pb} and \ce{Ag+}: \answerblank[2.6cm]{$+0.93$ V}
+\end{parts}
+
+\problem[]{\ced{9.9} For \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}:}
+\begin{parts}
+  \item Calculate $E^\circ_{\text{cell}}$. \answerblank[2.6cm]{$+0.46$ V}
+  \item A student writes $2(0.80) - 0.34 = 1.26$~V. Identify the error and
+        state the principle. \answerlines[3]{They scaled the silver
+        half-reaction's potential along with its coefficients. Potential is
+        an intensive property --- volts are energy per unit charge --- so
+        multiplying a half-reaction leaves $E^\circ$ unchanged. Only $n$
+        changes.}
+  \item Give $n$ for this reaction, and say where you read it from.
+        \answerblank[8.3cm]{$n = 2$, from the balanced overall equation}
+\end{parts}
+
+\problem[]{\ced{9.9} Will \ce{Cu(s)} react with \SI{1}{\Molar} \ce{HCl}?
+Support your answer with a cell potential. \workspace[2.4cm]
+\keyonly{\begin{apcanswer}The proposed reaction is
+\ce{Cu + 2H+ -> Cu^2+ + H2}. Cathode \ce{2H+}/\ce{H2} $= 0.00$; anode
+\ce{Cu^2+}/\ce{Cu} $= +0.34$. $E^\circ = 0.00 - 0.34 = \mathbf{-0.34}$~V.
+Negative, so \textbf{no} --- copper does not dissolve in hydrochloric
+acid.\end{apcanswer}}}
+
+\problem[]{\ced{9.9} Reading the table as a ranking.}
+\begin{parts}
+  \item Stronger oxidizing agent, \ce{Ag+} or \ce{Zn^2+}? Justify.
+        \answerlines[2]{\ce{Ag+}. A more positive reduction potential means
+        the species is more readily reduced, and a species readily reduced
+        is by definition the stronger oxidizing agent.}
+  \item Stronger reducing agent, \ce{Mg} or \ce{Cu}? Justify.
+        \answerlines[2]{\ce{Mg}. Its reduction potential is far more
+        negative, so the reverse process --- oxidation of the metal --- is
+        strongly favored, which is what a good reducing agent does.}
+  \item Which metal in the strip cannot be oxidized by \ce{Ag+}?
+        \answerblank[5.1cm]{none --- \ce{Ag+} oxidizes all}
+\end{parts}
+
+\problem[]{\ced{9.9} $\Delta G^\circ = -nFE^\circ$.}
+\begin{parts}
+  \item For the Daniell cell ($E^\circ = +1.10$~V, $n = 2$), calculate
+        $\Delta G^\circ$ in kJ. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$-(2)(96485)(1.10) = -212{,}267$~J
+        $= \mathbf{-212}$~kJ\end{apcanswer}}
+  \item For \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag} ($E^\circ = +0.46$~V):
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$-(2)(96485)(0.46) = -88{,}766$~J
+        $= \mathbf{-89}$~kJ\end{apcanswer}}
+  \item Why does the calculation produce joules rather than kilojoules?
+        \answerblank[7cm]{$F$ in C/mol, and 1 V $=$ 1 J/C}
+  \item Two cells share $E^\circ = +0.50$~V but transfer 1 and 4 electrons.
+        Compare their voltages and their $\Delta G^\circ$ values.
+        \answerlines[3]{The voltages are identical --- potential does not
+        depend on $n$. The free energy changes differ by a factor of four,
+        because four times as much charge moves through the same potential
+        difference, and $\Delta G^\circ$ is an amount of energy.}
+\end{parts}
+
+\problem[]{\ced{9.9} Complete the three-way correspondence:}
+\begin{parts}
+  \item $E^\circ > 0$: $\Delta G^\circ$ \answerblank[1.8cm]{$< 0$}, $K$
+        \answerblank[1.8cm]{$> 1$}, cell is \answerblank[2.4cm]{galvanic}
+  \item $E^\circ = 0$: $\Delta G^\circ$ \answerblank[1.8cm]{$= 0$}, $K$
+        \answerblank[1.8cm]{$= 1$}, cell is \answerblank[2cm]{dead}
+  \item $E^\circ < 0$: $\Delta G^\circ$ \answerblank[1.8cm]{$> 0$}, $K$
+        \answerblank[1.8cm]{$< 1$}, cell is
+        \answerblank[2.6cm]{electrolytic}
+  \item A battery is described as ``dead''. Is it empty? Explain.
+        \answerlines[2]{No --- it is at equilibrium. $Q$ has risen to $K$,
+        so $E_{\text{cell}} = 0$ and $\Delta G = 0$; there is no longer a
+        driving force to push electrons through the wire, though the
+        chemicals are still present.}
+\end{parts}
+
+\begin{spiralstrip}{Unit 9 \textbullet\ blocks 1--6}
+  \item $\Delta G^\circ = $ \answerblank[3.4cm]{$-RT\ln K$}
+  \item At equilibrium, $\Delta G = $ \answerblank[1.4cm]{0}
+  \item Coupled reactions must share a:
+        \answerblank[4.6cm]{common intermediate}
+  \item $\Delta S$ of solvent reorganizing around ions:
+        \answerblank[2.4cm]{negative}
+  \item $\Delta G^\circ$ of ATP hydrolysis:
+        \answerblank[3cm]{$-30.5$ kJ/mol}
+\end{spiralstrip}
+
+\end{document}

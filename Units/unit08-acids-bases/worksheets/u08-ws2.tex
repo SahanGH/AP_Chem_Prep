@@ -1,0 +1,111 @@
+% U8 WS2 -- weak acids and weak bases. Blocks 3-4.
+\documentclass{apchem-worksheet}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 2 \textbullet\ Weak Acids and Weak Bases}
+\apcsubtitle{CED 8.3 \textbullet\ for a base, $x$ is $[\ce{OH-}]$ --- convert}
+
+\begin{document}
+\wsheader[$K_a$: \ce{HF} $7.2\times10^{-4}$ \textbullet\ \ce{HC2H3O2}
+$1.8\times10^{-5}$ \textbullet\ \ce{HOCl} $3.5\times10^{-8}$ \textbullet\
+\ce{HCN} $6.2\times10^{-10}$. $K_b(\ce{NH3}) = 1.8\times10^{-5}$.
+$K_w = 1.0\times10^{-14}$. Always run the 5\% check.]
+
+\problem[]{\ced{8.3} Set up the ICE table for \SI{0.250}{\Molar} \ce{HOCl}
+and write $K_a$ in terms of $x$.
+\answerlines[2]{$[\ce{HOCl}] = 0.250-x$; $[\ce{H+}] = [\ce{OCl-}] = x$;
+$K_a = x^2/(0.250-x)$.}}
+
+\problem[]{\ced{8.3} Calculate the pH of each weak acid solution, with the
+5\% check:}
+\begin{parts}
+  \item \SI{0.100}{\Molar} \ce{HC2H3O2}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(1.8\times10^{-5})(0.100)} =
+        1.34\times10^{-3}$; pH $= \mathbf{2.87}$.
+        Check: 1.3\% \checkmark\end{apcanswer}}
+  \item \SI{0.500}{\Molar} \ce{HOCl}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(3.5\times10^{-8})(0.500)} =
+        1.32\times10^{-4}$; pH $= \mathbf{3.88}$.
+        Check: 0.026\% \checkmark\end{apcanswer}}
+  \item \SI{0.0500}{\Molar} \ce{HCN}: \answerblank[2.6cm]{pH $= 5.25$}
+\end{parts}
+
+\problem[]{\ced{8.3} \SI{0.10}{\Molar} \ce{HCl} has pH 1.00;
+\SI{0.10}{\Molar} acetic acid has pH 2.87. Explain the difference and state
+what it shows about the words ``strong'' and ``concentrated.''
+\answerlines[3]{\ce{HCl} ionizes completely, so $[\ce{H+}] = 0.10$. Acetic
+acid reaches equilibrium with only about 1.3\% ionized, giving a far smaller
+$[\ce{H+}]$. The two solutions are equally \emph{concentrated} but differ
+enormously in \emph{strength} --- strength is the fraction that ionizes.}}
+
+\problem[]{\ced{8.3} Percent ionization.}
+\begin{parts}
+  \item For \SI{0.100}{\Molar} acetic acid: \answerblank[2.6cm]{1.3\%}
+  \item For \SI{0.0100}{\Molar} acetic acid,
+        $[\ce{H+}] = 4.24\times10^{-4}$. Percent ionization?
+        \answerblank[2.6cm]{4.24\%}
+  \item The dilute solution has the higher percent ionization but the
+        higher pH. Explain. \answerlines[3]{$x \approx \sqrt{K_aC_0}$ falls
+        only as the square root of concentration while $C_0$ falls
+        linearly, so the \emph{fraction} ionized rises on dilution. The
+        absolute $[\ce{H+}]$ is nonetheless smaller, so the pH is
+        higher.}
+\end{parts}
+
+\problem[]{\ced{8.3} A \SI{0.20}{\Molar} solution of a weak acid has
+pH 3.10.}
+\begin{parts}
+  \item $[\ce{H+}] = $ \answerblank[3cm]{$7.9\times10^{-4}$}
+  \item Calculate $K_a$. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$K_a \approx (7.9\times10^{-4})^2/0.20 =
+        \mathbf{3.1\times10^{-6}}$\end{apcanswer}}
+  \item p$K_a = $ \answerblank[2.4cm]{5.51}
+\end{parts}
+
+\problem[]{\ced{8.3} Calculate the pH of each weak base solution:}
+\begin{parts}
+  \item \SI{0.150}{\Molar} \ce{NH3}: \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(1.8\times10^{-5})(0.150)} =
+        1.64\times10^{-3} = [\ce{OH-}]$; pOH $= 2.78$;
+        pH $= \mathbf{11.22}$\end{apcanswer}}
+  \item \SI{0.400}{\Molar} \ce{NH3}: \answerblank[2.6cm]{pH $= 11.43$}
+  \item \SI{0.100}{\Molar} \ce{NH3}: \answerblank[2.6cm]{pH $= 11.13$}
+\end{parts}
+
+\problem[]{\ced{8.3} A student calculates $x = 1.64\times10^{-3}$ for
+\SI{0.150}{\Molar} \ce{NH3} and reports pH $= 2.78$. Identify the error and
+give the correct answer.
+\answerlines[3]{For a base, $x$ is $[\ce{OH-}]$, not $[\ce{H+}]$. Taking
+$-\log x$ gives the pOH, so pH $= 14.00 - 2.78 = 11.22$. They reported a
+strongly basic solution as strongly acidic --- a sanity check on the
+direction would have caught it.}}
+
+\problem[]{\ced{8.3} Polyprotic acids. \ce{H3PO4} has
+$K_{a1} = 7.5\times10^{-3}$, $K_{a2} = 6.2\times10^{-8}$,
+$K_{a3} = 4.8\times10^{-13}$.}
+\begin{parts}
+  \item Why is each successive constant so much smaller?
+        \answerlines[2]{Each proton must be pulled away from an
+        increasingly negative anion, and separating positive from negative
+        charge becomes progressively harder.}
+  \item Justify calculating the pH from $K_{a1}$ alone.
+        \answerlines[2]{$K_{a2}$ is about $10^5$ times smaller, so the
+        second ionization contributes a negligible amount of \ce{H+}
+        relative to the first.}
+  \item Which polyprotic acid is the exception, and why?
+        \answerlines[2]{\ce{H2SO4} --- its first ionization is strong and
+        its second ($K_{a2} = 1.2\times10^{-2}$) is large enough to
+        contribute measurably.}
+\end{parts}
+
+\begin{spiralstrip}{Unit 8 \textbullet\ blocks 1--2}
+  \item pH of \SI{0.010}{\Molar} \ce{HCl}: \answerblank[1.8cm]{2.00}
+  \item $K_aK_b = $ \answerblank[1.8cm]{$K_w$}
+  \item pH of \SI{0.010}{\Molar} \ce{Ba(OH)2}:
+        \answerblank[2cm]{12.30}
+  \item Conjugate base of \ce{HNO2}: \answerblank[2.4cm]{\ce{NO2^-}}
+  \item Neutral means: \answerblank[4cm]{$[\ce{H+}] = [\ce{OH-}]$}
+\end{spiralstrip}
+
+\end{document}

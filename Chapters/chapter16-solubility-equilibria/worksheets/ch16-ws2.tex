@@ -1,0 +1,147 @@
+% Ch16 WS2 -- molar solubility from Ksp, and relative solubility. Block 2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{16}
+\apcunittitle{Solubility Equilibria}
+\apcdoctitle{Worksheet 2 \textbullet\ Solubility from $K_{sp}$ and Ranking Salts}
+\apcsubtitle{Zumdahl \S16.1 \textbullet\ you may compare $K_{sp}$ only when the ion counts match}
+
+\begin{document}
+\wsheader[$K_{sp}$ at \SI{25}{\celsius}: \ce{AgCl} $1.6\times10^{-10}$
+\textbullet\ \ce{AgI} $1.5\times10^{-16}$ \textbullet\ \ce{CuI}
+$5.0\times10^{-12}$ \textbullet\ \ce{BaSO4} $1.5\times10^{-9}$
+\textbullet\ \ce{CaSO4} $6.1\times10^{-5}$ \textbullet\ \ce{PbSO4}
+$1.3\times10^{-8}$ \textbullet\ \ce{SrSO4} $3.2\times10^{-7}$
+\textbullet\ \ce{CaF2} $4.0\times10^{-11}$ \textbullet\ \ce{MgF2}
+$6.4\times10^{-9}$ \textbullet\ \ce{BaCrO4} $8.5\times10^{-11}$
+\textbullet\ \ce{Mg(OH)2} $8.9\times10^{-12}$ \textbullet\ \ce{Ag3PO4}
+$1.8\times10^{-18}$.]
+
+\problem[]{Calculate the molar solubility of each 1:1 salt:}
+\begin{parts}
+  \item \ce{AgCl}: \answerblank[3.2cm]{$1.3\times10^{-5}$~M}
+  \item \ce{BaSO4}: \answerblank[3.2cm]{$3.9\times10^{-5}$~M}
+  \item \ce{AgI}: \answerblank[3.2cm]{$1.2\times10^{-8}$~M}
+  \item \ce{CaSO4}: \answerblank[3.2cm]{$7.8\times10^{-3}$~M}
+\end{parts}
+
+\problem[]{Calculate the molar solubility of each salt that produces three
+ions:}
+\begin{parts}
+  \item \ce{CaF2}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$4.0\times10^{-11} = 4s^3$;
+        $s^3 = 1.0\times10^{-11}$;
+        $s = \mathbf{2.2\times10^{-4}}$~M\end{apcanswer}}
+  \item \ce{MgF2}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$6.4\times10^{-9} = 4s^3$;
+        $s^3 = 1.6\times10^{-9}$;
+        $s = \mathbf{1.2\times10^{-3}}$~M\end{apcanswer}}
+  \item \ce{Mg(OH)2}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$8.9\times10^{-12} = 4s^3$;
+        $s^3 = 2.2\times10^{-12}$;
+        $s = \mathbf{1.3\times10^{-4}}$~M\end{apcanswer}}
+  \item For \ce{Mg(OH)2}, what is $[\ce{OH-}]$ in that saturated solution?
+        \answerblank[3.2cm]{$2.6\times10^{-4}$~M}
+\end{parts}
+
+\problem[]{\ce{Ag3PO4} dissolves to give three \ce{Ag+} and one
+\ce{PO4^3-}.}
+\begin{parts}
+  \item Write $K_{sp}$ in terms of $s$.
+        \answerblank[4.4cm]{$(3s)^3(s) = 27s^4$}
+  \item Calculate the molar solubility. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$27s^4 = 1.8\times10^{-18}$;
+        $s^4 = 6.67\times10^{-20}$;
+        $s = \mathbf{1.6\times10^{-5}}$~M\end{apcanswer}}
+\end{parts}
+
+\problem[]{Ranking, part 1 --- same stoichiometry.}
+\begin{parts}
+  \item Rank \ce{BaSO4}, \ce{CaSO4}, \ce{PbSO4}, \ce{SrSO4} by increasing
+        solubility. \answerlines[1]{\ce{BaSO4} $<$ \ce{PbSO4} $<$
+        \ce{SrSO4} $<$ \ce{CaSO4}}
+  \item Justify doing this without calculating anything.
+        \answerlines[2]{All four are \ce{MX} salts producing two ions, so
+        $s = \sqrt{K_{sp}}$ for every one of them. A square root is
+        increasing, so ranking by $K_{sp}$ already ranks by solubility.}
+\end{parts}
+
+\problem[]{Ranking, part 2 --- different stoichiometry. Consider \ce{CaF2}
+($K_{sp} = 4.0\times10^{-11}$) and \ce{BaCrO4}
+($K_{sp} = 8.5\times10^{-11}$).}
+\begin{parts}
+  \item Which has the larger $K_{sp}$? \answerblank[3cm]{\ce{BaCrO4}}
+  \item Calculate both molar solubilities. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}\ce{CaF2}: $4s^3 = 4.0\times10^{-11}$,
+        $s = 2.2\times10^{-4}$~M. \ce{BaCrO4}:
+        $s = \sqrt{8.5\times10^{-11}} =
+        9.2\times10^{-6}$~M\end{apcanswer}}
+  \item Which is actually more soluble, and by roughly what factor?
+        \answerblank[5.4cm]{\ce{CaF2}, about 24 times}
+  \item State the lesson in one sentence.
+        \answerlines[2]{A larger $K_{sp}$ does not guarantee greater
+        solubility unless the two salts release the same total number of
+        ions.}
+\end{parts}
+
+\problem[]{Zumdahl's extreme case. The sulfides below are listed in
+\emph{decreasing} order of $K_{sp}$:}
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\hline
+\textbf{Salt} & \textbf{type} & $K_{sp}$ & \textbf{solubility (M)} \\
+\hline
+\ce{CuS}   & \ce{MX}   & $8.5\times10^{-45}$ & \\
+\ce{Ag2S}  & \ce{M2X}  & $1.6\times10^{-49}$ & \\
+\ce{Bi2S3} & \ce{M2X3} & $1.1\times10^{-73}$ & \\
+\hline
+\end{tabular}
+\end{center}
+\begin{parts}
+  \item Given the solubilities are $9.2\times10^{-23}$,
+        $3.4\times10^{-17}$ and $1.0\times10^{-15}$~M, match each to its
+        salt. \answerlines[2]{\ce{CuS} $9.2\times10^{-23}$;
+        \ce{Ag2S} $3.4\times10^{-17}$; \ce{Bi2S3} $1.0\times10^{-15}$.}
+  \item How does the solubility order compare with the $K_{sp}$ order?
+        \answerblank[5.4cm]{exactly reversed}
+  \item Explain why a salt producing five ions can have a minute $K_{sp}$
+        and still be the most soluble of the three.
+        \answerlines[3]{$K_{sp}$ for \ce{Bi2S3} is a product of five
+        concentration factors, $(2s)^2(3s)^3 = 108s^5$. Raising a small
+        number to the fifth power drives the product down enormously, so
+        even a comparatively large $s$ yields a tiny $K_{sp}$. Comparing
+        $K_{sp}$ across different powers compares nothing meaningful.}
+\end{parts}
+
+\problem[]{Connecting to Unit 4.}
+\begin{parts}
+  \item The CED notes that salts with $K_{sp} > 1$ are the ones the Unit 4
+        rules call \answerblank[2.6cm]{soluble}.
+  \item What does ``insoluble'' actually mean, in equilibrium terms?
+        \answerlines[2]{Not that nothing dissolves, but that the
+        dissolution equilibrium lies far to the left --- a very small
+        $K_{sp}$ and a correspondingly tiny but non-zero solubility.}
+\end{parts}
+
+\problem[]{A saturated solution of \ce{CaF2} is prepared, and the excess
+solid is filtered off. The clear filtrate is then diluted with an equal
+volume of pure water. State what happens to $[\ce{Ca^2+}]$ and to $Q$
+relative to $K_{sp}$, and whether anything precipitates.
+\answerlines[3]{$[\ce{Ca^2+}]$ is halved by the dilution, and $[\ce{F-}]$
+likewise, so $Q = [\ce{Ca^2+}][\ce{F-}]^2$ falls to one-eighth of $K_{sp}$.
+Since $Q < K_{sp}$ the solution is now unsaturated and nothing
+precipitates --- and with the solid filtered off, nothing can dissolve to
+restore saturation either.}}
+
+\begin{spiralstrip}{Chapter 16 \textbullet\ block 1}
+  \item $K_{sp}$ expression for \ce{PbI2}:
+        \answerblank[3.6cm]{$[\ce{Pb^2+}][\ce{I-}]^2$}
+  \item For an \ce{MX2} salt, $K_{sp} = $ \answerblank[1.8cm]{$4s^3$}
+  \item Does extra undissolved solid change $[\ce{Ag+}]$?
+        \answerblank[1.6cm]{no}
+  \item $K_{sp}$ depends only on: \answerblank[2.6cm]{temperature}
+  \item Solubility is an equilibrium: \answerblank[2cm]{position}
+\end{spiralstrip}
+
+\end{document}

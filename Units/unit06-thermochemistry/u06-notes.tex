@@ -1,0 +1,623 @@
+% Unit 6 (Thermochemistry) guided notes -- 5 blocks, CED sequence.
+\documentclass{apchem-notes}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 6.1--6.9 \textbullet\ Zumdahl Ch 6, \S8.8, \S10.8 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[The one habit this unit runs on]
+Nearly every error in thermochemistry is a \textbf{sign} error, and nearly
+every sign error comes from losing track of \emph{whose} point of view you
+are taking.
+
+Fix the convention now and use it without exception: signs are always
+written \textbf{from the system's point of view}. Heat entering the system
+is positive; heat leaving is negative. When a reaction warms the water in a
+calorimeter, the water gained heat ($q_{\text{water}} > 0$) and the reaction
+lost it ($q_{\text{rxn}} < 0$). Those are the same event described from two
+sides, and the exam will ask for both.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Energy, Heat, and Direction}{CED 6.1--6.3 \textbullet\ Zumdahl \S6.1}
+
+\begin{objectives}
+  \item Classify processes as endothermic or exothermic and assign signs.
+  \item Explain heat transfer and thermal equilibrium at the particle level.
+\end{objectives}
+
+\reading{Zumdahl \S6.1}{283--290}
+
+\begin{warmup}[4]
+  \item Units of energy: \answerblank[3cm]{joules (J)}
+  \item Temperature measures the average
+        \answerblank[3.4cm]{kinetic energy} of particles.
+  \item Breaking a bond requires energy or releases it?
+        \answerblank[2.4cm]{requires}
+  \item Which has more energy, a gas or the same substance as a liquid?
+        \answerblank[1.8cm]{gas}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{System, surroundings, and sign}
+
+\notesection{The convention that prevents most errors}{6.1}
+\practice{5}
+
+The \term{system} is the part you are studying --- usually the reaction. The
+\term{surroundings} are everything else, including the solvent, the
+calorimeter, and the thermometer.
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\hline
+\textbf{Process} & \textbf{Heat} & $q_{\text{system}}$ &
+  \textbf{Surroundings} \\
+\hline
+\term{Exothermic} & released by the system & \textbf{negative} & warm up \\
+\term{Endothermic} & absorbed by the system & \textbf{positive} & cool down \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apctrap}
+\textbf{The thermometer measures the surroundings, not the system.} A
+reaction that makes the beaker feel hot is \emph{exothermic}, so its
+$\Delta H$ is \answerblank[2cm]{negative} --- even though the temperature
+you measured went \emph{up}.
+
+This inversion is the most-missed idea in the unit. When a question gives
+you a temperature change, your first move should be to write down which
+thing changed temperature.
+\end{apctrap}
+
+\notesection{Energy diagrams}{6.2}
+
+An energy diagram plots potential energy against reaction progress.
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Products \emph{below} reactants $\Rightarrow$
+        \answerblank[2.4cm]{exothermic}, $\Delta H < 0$.
+  \item Products \emph{above} reactants $\Rightarrow$
+        \answerblank[2.7cm]{endothermic}, $\Delta H > 0$.
+  \item $\Delta H$ is the difference between
+        \answerblank[4.6cm]{products and reactants} --- and it says nothing
+        about how fast the reaction goes.
+\end{itemize}
+
+\segment{INSTRUCTION B}{20}{Heat transfer and thermal equilibrium}
+
+\notesection{What actually moves}{6.3}
+\practice{6}
+
+Put a hot metal block into cool water. At the particle level:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Fast-moving metal atoms collide with slower water molecules and
+        \answerblank[4.8cm]{transfer kinetic energy}.
+  \item Energy flows from \answerblank[2.6cm]{hot to cold} --- always, and
+        never the reverse on its own.
+  \item Transfer continues until both reach the same
+        \answerblank[2.6cm]{temperature}: \term{thermal equilibrium}.
+  \item At equilibrium the transfer has not \emph{stopped} --- collisions
+        continue, but energy now flows both ways at
+        \answerblank[2.4cm]{equal rates}.
+\end{itemize}
+
+\begin{apcnote}[Heat is not a substance a body contains]
+Say ``heat is transferred,'' not ``the block has a lot of heat.'' Heat is
+energy \emph{in transit} because of a temperature difference. What a body
+contains is internal energy; heat is what crosses the boundary.
+
+The exam does penalize ``the hot object gives its heat to the cold object''
+when the question asks for a particle-level explanation --- it wants
+collisions and kinetic-energy transfer.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Signs and directions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Ammonium nitrate dissolves and the beaker becomes noticeably cold.
+        Give the sign of $q$ for the dissolving process, the sign for the
+        water, and classify it. \answerlines[3]{The dissolving process
+        absorbed energy, so $q_{\text{system}} > 0$ --- endothermic. The
+        water lost that energy, so $q_{\text{water}} < 0$, which is why it
+        cooled. The two have opposite signs and equal magnitude.}
+  \item Two blocks of the same metal, one at \SI{80}{\celsius} and one at
+        \SI{20}{\celsius}, are placed in contact and left. Describe the
+        final state and what is happening in it. \answerlines[3]{Both reach
+        the same intermediate temperature --- thermal equilibrium. Energy
+        transfer has not ceased: collisions continue at the interface, but
+        energy now flows in both directions at equal rates, so no net change
+        occurs.}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction is run in solution and the thermometer reading rises from
+\SI{22.0}{\celsius} to \SI{28.4}{\celsius}. State the sign of
+$q_{\text{water}}$, the sign of $\Delta H_{\text{rxn}}$, and explain why
+they differ.
+\keyonly{\begin{apcanswer}$q_{\text{water}}$ is positive --- the water
+absorbed energy and warmed. $\Delta H_{\text{rxn}}$ is negative: the
+reaction released that energy, so the process is exothermic. They differ
+because the two describe the same energy from opposite sides of the system
+boundary.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Heat Capacity and Calorimetry}{CED 6.4 \textbullet\ Zumdahl \S6.2}
+
+\begin{objectives}
+  \item Use $q = mc\Delta T$ in both directions.
+  \item Determine $\Delta H$ per mole from calorimetry data.
+\end{objectives}
+
+\reading{Zumdahl \S6.2}{290--297}
+
+\begin{warmup}[3]
+  \item Exothermic means $q_{\text{system}}$ is:
+        \answerblank[2cm]{negative}
+  \item Heat flows from: \answerblank[2.6cm]{hot to cold}
+  \item Specific heat of water: \answerblank[3.4cm]{\SI{4.18}{\joule\per\gram\per\celsius}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The workhorse equation}
+
+\notesection{$q = mc\Delta T$}{6.4}
+\practice{5}
+
+\[ q = mc\Delta T \qquad \Delta T = T_{\text{final}} - T_{\text{initial}} \]
+
+\term{Specific heat} $c$ is the energy needed to raise \SI{1}{\gram} by
+\SI{1}{\celsius}. Water's is unusually
+\answerblank[2cm]{large} at \SI{4.18}{\joule\per\gram\per\celsius}, which is
+why it is used as the absorbing medium in calorimetry and why coastal
+climates are mild.
+
+\begin{workedexample}[Worked example 1: straight substitution]
+How much energy raises \SI{50.0}{\gram} of water from \SI{20.0}{\celsius}
+to \SI{80.0}{\celsius}?
+\[ q = (50.0)(4.18)(60.0) = 12{,}540~\text{J} =
+   \mathbf{12.5}~\text{kJ} \]
+Positive, because the water absorbed energy.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Calorimetry: from $q$ to $\Delta H$ per mole}
+
+\notesection{The two-step chain}{6.4}
+\practice{5}
+
+A calorimeter measures the temperature change of the \emph{water}. Getting
+to $\Delta H$ takes two moves:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item $q_{\text{water}} = mc\Delta T$, then $q_{\text{rxn}}$ equals
+        \answerblank[3cm]{$-q_{\text{water}}$}.
+  \item Divide by the moles of the limiting reactant to get
+        \answerblank[3cm]{\si{\kilo\joule\per\mole}}.
+\end{enumerate}
+
+\begin{workedexample}[Worked example 2: a full calorimetry problem]
+A reaction is run in \SI{100.0}{\gram} of water in a coffee-cup
+calorimeter. The temperature rises by \SI{5.20}{\celsius}, and
+\SI{0.0250}{\mole} of the limiting reactant was used.
+
+\textbf{Step 1 --- heat absorbed by the water:}
+\[ q_{\text{water}} = (100.0)(4.18)(5.20) = 2174~\text{J} \]
+The water \emph{gained} it, so the reaction \emph{lost} it:
+$q_{\text{rxn}} = -2174$~J.
+
+\textbf{Step 2 --- per mole:}
+\[ \Delta H = \frac{-2174~\text{J}}{0.0250~\text{mol}}
+   = -86{,}900~\si{\joule\per\mole} =
+   \mathbf{-86.9}~\si{\kilo\joule\per\mole} \]
+
+Negative, as the temperature rise already told us.
+\end{workedexample}
+
+\begin{apctrap}
+Two habits worth building here. First, \textbf{the minus sign in step 1 is
+not optional} --- omitting it reports an exothermic reaction as
+endothermic. Second, \textbf{$\Delta H$ is per mole}; a bare answer in
+kilojoules with no ``per mole'' loses the point even when the arithmetic is
+right.
+
+Note also that we used the \emph{water's} mass and specific heat, not the
+reactants'. The water is the surroundings, and it is what the thermometer
+was in.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Thermal equilibrium calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A \SI{50.0}{\gram} metal block at \SI{100.0}{\celsius} is dropped
+        into \SI{100.0}{\gram} of water at \SI{22.0}{\celsius}. The final
+        temperature is \SI{24.6}{\celsius}. Find the specific heat of the
+        metal. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$q_{\text{water}} = (100.0)(4.18)(2.6) =
+        1087$~J, gained. So the metal lost 1087~J:
+        $-1087 = (50.0)(c)(24.6 - 100.0) = (50.0)(c)(-75.4)$,
+        giving $c = \mathbf{0.288}~\si{\joule\per\gram\per\celsius}$.
+        Much smaller than water's --- typical of a
+        metal.\end{apcanswer}}
+  \item Why does the water's temperature change so little while the metal's
+        changes by more than \SI{75}{\celsius}?
+        \answerlines[3]{Water has a far larger specific heat, so absorbing
+        a given amount of energy raises its temperature much less. There is
+        also twice as much water by mass. Both factors work the same way.}
+\end{enumerate}
+
+\begin{exitticket}
+In a calorimetry problem, whose mass and whose specific heat go into
+$q = mc\Delta T$, and why?
+\keyonly{\begin{apcanswer}The water's --- the surroundings'. The
+calorimeter measures the temperature change of the water, and that is the
+only thing whose heat we can compute directly. The reaction's enthalpy is
+then inferred as the negative of that value, divided by
+moles.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Energy of Phase Changes}{CED 6.5 \textbullet\ Zumdahl \S10.8}
+
+\begin{objectives}
+  \item Calculate the energy of a phase change.
+  \item Read a heating curve and choose the right equation for each region.
+\end{objectives}
+
+\reading{Zumdahl \S10.8}{523--530}
+
+\begin{warmup}[3]
+  \item $q = mc\Delta T$ applies when what is changing?
+        \answerblank[2.6cm]{temperature}
+  \item $\Delta H_{\text{fus}}$ for water:
+        \answerblank[3cm]{\SI{6.02}{\kilo\joule\per\mole}}
+  \item $\Delta H_{\text{vap}}$ for water:
+        \answerblank[3cm]{\SI{40.7}{\kilo\joule\per\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Temperature does not change during a phase change}
+
+\notesection{Two different equations}{6.5}
+\practice{5}
+
+\begin{center}
+\fbox{\parbox{0.9\linewidth}{\centering
+\textbf{Temperature changing, one phase:} $q = mc\Delta T$ \\[0.3em]
+\textbf{Phase changing, temperature constant:}
+$q = n\Delta H_{\text{fus}}$ or $n\Delta H_{\text{vap}}$}}
+\end{center}
+
+\begin{apctrap}
+\textbf{You cannot use $q = mc\Delta T$ during a phase change}, because
+$\Delta T$ is \answerblank[1.4cm]{zero} --- it would give $q = 0$, which is
+plainly wrong for melting a block of ice.
+
+During melting or boiling, the added energy goes into overcoming
+\textbf{intermolecular forces}, not into speeding the particles up. That is
+why the temperature holds steady on a heating curve, and it is the
+explanation the exam wants.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 3: melting and boiling]
+\textbf{Melt \SI{36.0}{\gram} of ice at \SI{0}{\celsius}.}
+$n = 36.0/18.02 = \SI{2.00}{\mole}$;
+$q = (2.00)(6.02) = \mathbf{12.0}~\text{kJ}$.
+
+\textbf{Vaporize \SI{18.0}{\gram} of water at \SI{100}{\celsius}.}
+$n = \SI{1.00}{\mole}$; $q = (1.00)(40.7) = \mathbf{40.7}~\text{kJ}$.
+
+Vaporizing one mole costs nearly \textbf{seven times} as much as melting
+one mole --- because melting only loosens the lattice, while boiling
+separates the molecules entirely.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Reading a heating curve}
+
+\notesection{Five regions, five calculations}{6.5}
+\practice{4}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=10.6cm, height=5cm,
+    xlabel={energy added}, ylabel={temperature},
+    xtick=\empty, ytick=\empty, xmin=0, xmax=12, ymin=-2, ymax=12,
+    axis lines=left]
+  \addplot[seriesA] coordinates
+    {(0,-1.5) (1,0) (4,0) (5.5,6) (10.5,6) (11.5,9.5)};
+  \node[font=\scriptsize,anchor=west] at (axis cs:0.1,1.2) {solid};
+  \node[font=\scriptsize,anchor=south] at (axis cs:2.5,0.2) {melting};
+  \node[font=\scriptsize,anchor=west] at (axis cs:4.6,3.4) {liquid};
+  \node[font=\scriptsize,anchor=south] at (axis cs:7.5,6.2) {boiling};
+  \node[font=\scriptsize,anchor=west] at (axis cs:10.6,8.2) {gas};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+The \textbf{sloped} regions use \answerblank[2.6cm]{$q = mc\Delta T$}; the
+\textbf{flat} regions use \answerblank[3cm]{$q = n\Delta H$}.
+
+The boiling plateau is always much \answerblank[2cm]{longer} than the
+melting plateau, for the same reason vaporization costs more energy.
+
+\begin{workedexample}[Worked example 4: ice to steam, all five regions]
+Take \SI{25.0}{\gram} of ice from \SI{-10.0}{\celsius} to steam at
+\SI{110.0}{\celsius}. ($c_{\text{ice}} = 2.09$,
+$c_{\text{water}} = 4.18$, $c_{\text{steam}} = 2.03$
+\si{\joule\per\gram\per\celsius}; $n = 25.0/18.02 = \SI{1.39}{\mole}$)
+
+\begin{center}
+\begin{tabular}{@{}llr@{}}
+\hline
+\textbf{Region} & \textbf{Equation} & \textbf{$q$ (kJ)} \\
+\hline
+warm ice $-10 \to 0$ & $mc\Delta T$ & 0.52 \\
+melt at \SI{0}{\celsius} & $n\Delta H_{\text{fus}}$ & 8.35 \\
+warm water $0 \to 100$ & $mc\Delta T$ & 10.45 \\
+boil at \SI{100}{\celsius} & $n\Delta H_{\text{vap}}$ & \textbf{56.47} \\
+warm steam $100 \to 110$ & $mc\Delta T$ & 0.51 \\
+\hline
+\textbf{Total} & & \textbf{76.30} \\
+\hline
+\end{tabular}
+\end{center}
+
+Boiling alone is \textbf{74\%} of the total. If a heating-curve question
+asks which step dominates, that is nearly always the answer.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Phase-change reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Calculate the energy to melt \SI{90.0}{\gram} of ice at
+        \SI{0}{\celsius}. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$n = 90.0/18.02 = \SI{4.99}{\mole}$;
+        $q = (4.99)(6.02) = \mathbf{30.1}~\text{kJ}$\end{apcanswer}}
+  \item Explain, in terms of intermolecular forces, why the temperature
+        stays constant while ice melts even though energy is being added.
+        \answerlines[3]{The added energy is used to overcome the hydrogen
+        bonds holding the crystal together, increasing the potential energy
+        of the particles. Temperature reflects average \emph{kinetic}
+        energy, which is not changing, so the thermometer reading holds
+        steady until the last of the solid is gone.}
+  \item Why is a steam burn worse than a burn from the same mass of water
+        at \SI{100}{\celsius}? \answerlines[3]{Condensing steam releases
+        \SI{40.7}{\kilo\joule\per\mole} before its temperature falls at
+        all. That energy is delivered to the skin on top of whatever the
+        subsequent cooling releases, so far more energy is transferred.}
+\end{enumerate}
+
+\begin{exitticket}
+Which region of a heating curve requires the most energy for water, and
+why?
+\keyonly{\begin{apcanswer}Boiling. Vaporization must separate the molecules
+completely against their hydrogen bonding, whereas melting only has to
+loosen the lattice --- $\SI{40.7}{\kilo\joule\per\mole}$ against
+$\SI{6.02}{\kilo\joule\per\mole}$, nearly seven times
+larger.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Enthalpy of Reaction and Hess's Law}{CED 6.6, 6.9 \textbullet\ Zumdahl \S6.2--6.3}
+
+\begin{objectives}
+  \item Scale $\Delta H$ with the amount of substance reacting.
+  \item Combine reactions using Hess's law.
+\end{objectives}
+
+\reading{Zumdahl \S6.2--6.3}{290--301}
+
+\begin{warmup}[3]
+  \item During a phase change, $\Delta T$ is:
+        \answerblank[1.6cm]{zero}
+  \item $\Delta H_{\text{vap}}$ is larger than
+        $\Delta H_{\text{fus}}$ because:
+        \answerblank[7.5cm]{boiling separates molecules entirely}
+  \item Exothermic $\Delta H$ is: \answerblank[2cm]{negative}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{$\Delta H$ is an extensive quantity}
+
+\notesection{Enthalpy scales with amount}{6.6}
+\practice{5}
+
+A thermochemical equation carries its $\Delta H$ for the amounts written:
+\[ \ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)} \qquad
+   \Delta H = -890.5~\text{kJ} \]
+means \SI{890.5}{\kilo\joule} released per \emph{one mole} of \ce{CH4}.
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Double the coefficients $\Rightarrow$ $\Delta H$
+        \answerblank[2cm]{doubles}.
+  \item Reverse the reaction $\Rightarrow$ $\Delta H$
+        \answerblank[3cm]{changes sign}.
+  \item Half a mole of \ce{CH4} releases
+        \answerblank[3cm]{\SI{445.3}{\kilo\joule}}.
+\end{itemize}
+
+\segment{INSTRUCTION B}{20}{Hess's law}
+
+\notesection{Enthalpy is a state function}{6.9}
+\practice{5}
+
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering
+$\Delta H$ depends only on the initial and final states, \\
+never on the route taken. \\[0.3em]
+So reactions can be added, and their $\Delta H$ values add with them.}}
+\end{center}
+
+Two rules when manipulating:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Reverse a reaction $\Rightarrow$
+        \answerblank[3.8cm]{flip the sign of $\Delta H$}.
+  \item Multiply a reaction by $n$ $\Rightarrow$
+        \answerblank[3.7cm]{multiply $\Delta H$ by $n$}.
+\end{enumerate}
+
+\begin{workedexample}[Worked example 5: finding an unmeasurable $\Delta H$]
+Burning carbon straight to \ce{CO} cannot be done cleanly --- some
+\ce{CO2} always forms. But these two \emph{can} be measured:
+
+\begin{align*}
+  (1)&\quad \ce{C(gr) + O2(g) -> CO2(g)}
+     &\Delta H &= -393.5~\text{kJ} \\
+  (2)&\quad \ce{CO(g) + \tfrac{1}{2}O2(g) -> CO2(g)}
+     &\Delta H &= -283.0~\text{kJ}
+\end{align*}
+
+\textbf{Target:} $\ce{C(gr) + \tfrac{1}{2}O2(g) -> CO(g)}$.
+
+Take (1) as written, and \emph{reverse} (2) so \ce{CO} ends up as a
+product --- flipping its sign:
+\begin{align*}
+  \ce{C(gr) + O2 &-> CO2} &\Delta H &= -393.5 \\
+  \ce{CO2 &-> CO + \tfrac{1}{2}O2} &\Delta H &= +283.0 \\
+  \hline
+  \ce{C(gr) + \tfrac{1}{2}O2 &-> CO} &\Delta H &= \mathbf{-110.5}~\text{kJ}
+\end{align*}
+
+\ce{CO2} cancels, and half the oxygen cancels. The answer matches the
+tabulated $\Delta H_f^\circ$ of \ce{CO} exactly --- a good check.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Scaling and combining}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For $\ce{2CO(g) + O2(g) -> 2CO2(g)}$,
+        $\Delta H = -566$~kJ. How much energy is released by
+        \SI{1.00}{\mole} of \ce{CO}? \answerblank[3cm]{\SI{283}{\kilo\joule}}
+  \item Give $\Delta H$ for $\ce{2CO2(g) -> 2CO(g) + O2(g)}$.
+        \answerblank[3cm]{$+566$ kJ}
+  \item A student combining reactions forgets to flip the sign when
+        reversing one. If the correct answer is $-110.5$~kJ, what do they
+        report, and what is the size of the error?
+        \answerlines[2]{They report $-393.5 + (-283.0) = -676.5$~kJ. The
+        error is $566$~kJ --- twice the magnitude of the reaction they
+        mis-signed.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does Hess's law work --- what property of enthalpy makes it valid?
+\keyonly{\begin{apcanswer}Enthalpy is a state function: its value depends
+only on the initial and final states of the system, not on the path taken
+between them. So any set of steps beginning and ending at the same places
+must sum to the same $\Delta H$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Bond and Formation Enthalpies}{CED 6.7, 6.8 \textbullet\ Zumdahl \S8.8, \S6.4}
+
+\begin{objectives}
+  \item Estimate $\Delta H$ from average bond enthalpies.
+  \item Calculate $\Delta H^\circ$ from enthalpies of formation.
+\end{objectives}
+
+\reading{Zumdahl \S8.8}{412--415} \reading{Zumdahl \S6.4}{301--308}
+
+\begin{warmup}[3]
+  \item Reversing a reaction does what to $\Delta H$?
+        \answerblank[3cm]{flips the sign}
+  \item Breaking bonds is endothermic or exothermic?
+        \answerblank[2.6cm]{endothermic}
+  \item $\Delta H_f^\circ$ of \ce{O2(g)}: \answerblank[1.6cm]{0}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two routes with opposite conventions}
+
+\notesection{Bond enthalpies}{6.7}
+\practice{5}
+
+Breaking a bond always \answerblank[2.4cm]{requires} energy; forming one
+always \answerblank[2.4cm]{releases} it. So:
+
+\[ \boxed{\;\Delta H = \sum D(\text{bonds broken})
+   - \sum D(\text{bonds formed})\;} \]
+
+\begin{apctrap}
+\textbf{Broken minus formed} --- the reverse of every other convention in
+this unit, where it is products minus reactants. Bonds broken are on the
+reactant side, so the order looks inverted, and students who have just
+finished Hess's law reliably flip it.
+
+A sanity check that costs nothing: if more energy is released forming bonds
+than was spent breaking them, the reaction is exothermic and your answer
+must come out \emph{negative}.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 6: hydrogen and chlorine]
+$\ce{H2(g) + Cl2(g) -> 2HCl(g)}$, using
+$D(\ce{H-H}) = 432$, $D(\ce{Cl-Cl}) = 239$, $D(\ce{H-Cl}) = 427$
+\si{\kilo\joule\per\mole}.
+
+\textbf{Broken:} $432 + 239 = 671$~kJ. \\
+\textbf{Formed:} $2(427) = 854$~kJ.
+\[ \Delta H = 671 - 854 = \mathbf{-183}~\text{kJ} \]
+Exothermic, as the negative sign should confirm.
+\end{workedexample}
+
+\notesection{Enthalpies of formation}{6.8}
+
+$\Delta H_f^\circ$ is the enthalpy change forming \textbf{one mole} of a
+compound from its elements in their standard states. By definition, an
+element in its standard state has $\Delta H_f^\circ =$
+\answerblank[1.4cm]{0}.
+
+\[ \Delta H^\circ_{\text{rxn}} = \sum n\Delta H_f^\circ(\text{products})
+   - \sum n\Delta H_f^\circ(\text{reactants}) \]
+
+\begin{workedexample}[Worked example 7: the same reaction, two routes]
+$\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}$
+
+\textbf{From $\Delta H_f^\circ$} ($\ce{CH4}$ $-75$, $\ce{CO2}$ $-393.5$,
+$\ce{H2O(g)}$ $-242$, $\ce{O2}$ $0$):
+\[ \Delta H^\circ = [-393.5 + 2(-242)] - [-75 + 0] =
+   -877.5 + 75 = \mathbf{-802.5}~\text{kJ} \]
+
+\textbf{From bond enthalpies:} broken $4(413) + 2(495) = 2642$;
+formed $2(799) + 4(467) = 3466$; $\Delta H = \mathbf{-824}$~kJ.
+
+\textbf{They disagree by about 22 kJ --- and that is expected.} Bond
+enthalpies are \emph{averages} over many molecules and ignore the specific
+molecular environment. Formation enthalpies are measured for the actual
+substances. When a question gives you both, use $\Delta H_f^\circ$; use
+bond enthalpies when that is all you have, and call the result an estimate.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Both routes}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Calculate $\Delta H^\circ$ for $\ce{N2 + 3H2 -> 2NH3}$ from
+        $\Delta H_f^\circ(\ce{NH3}) = -46$~kJ/mol. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$2(-46) - 0 =
+        \mathbf{-92}~\text{kJ}$\end{apcanswer}}
+  \item Now estimate it from bond enthalpies
+        ($\ce{N#N}$ 941, $\ce{H-H}$ 432, $\ce{N-H}$ 391).
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Broken $941 + 3(432) = 2237$;
+        formed $6(391) = 2346$;
+        $\Delta H = \mathbf{-109}~\text{kJ}$ --- the same sign and rough
+        size as $-92$, but not equal\end{apcanswer}}
+  \item Account for the difference between your two answers.
+        \answerlines[3]{Bond enthalpies are averaged over many different
+        compounds, so they do not capture the actual N--H bonds in ammonia
+        specifically. Formation enthalpies come from measurements on the
+        real substances, so the $-92$~kJ value is the reliable one and the
+        bond-enthalpy figure is an estimate.}
+\end{enumerate}
+
+\begin{exitticket}
+State the two enthalpy expressions used in this block and say which one
+runs backwards relative to the other.
+\keyonly{\begin{apcanswer}Formation: products minus reactants. Bond
+enthalpies: bonds \emph{broken} minus bonds \emph{formed} --- which is the
+reactant side minus the product side, the reverse order. The reason is that
+breaking bonds costs energy, so those terms must enter
+positively.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

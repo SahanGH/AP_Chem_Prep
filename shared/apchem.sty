@@ -1,0 +1,400 @@
+%% apchem.sty -- shared core for AP Chemistry materials
+%% Phase 0 infrastructure. Loaded by apchem-notes/worksheet/exam classes.
+%%
+%% TWO BUILD TOGGLES, set by \def before \input (see build.ps1):
+%%   \ISKEY  defined -> teacher key   (answers shown)
+%%   \ISLMS  defined -> screen/LMS    (tighter blanks, live links, no punch gutter)
+%% Undefined = student, print. Four PDFs from one source.
+%%
+%% Layout invariant: answer blanks occupy the SAME width/height in student and
+%% key builds, so page breaks never drift between the two copies.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{apchem}[2026/08/08 v1.0 AP Chemistry shared macros]
+
+\RequirePackage{etoolbox}
+
+\newtoggle{apcKey}
+\newtoggle{apcLMS}
+\ifcsname ISKEY\endcsname\toggletrue{apcKey}\fi
+\ifcsname ISLMS\endcsname\toggletrue{apcLMS}\fi
+
+% ---------------------------------------------------------------- page setup
+% Print is duplex-bound: TWOSIDE with the binder gutter on the INNER edge
+% (left of odd pages, right of even pages), so punched holes always land on
+% the binding side. LMS is on-screen: symmetric margins, oneside.
+\iftoggle{apcLMS}{%
+  \RequirePackage[letterpaper,top=0.8in,bottom=0.85in,left=0.85in,right=0.85in]{geometry}%
+}{%
+  \RequirePackage[letterpaper,twoside,top=0.85in,bottom=0.9in,inner=1.2in,outer=0.7in]{geometry}%
+}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{multicol}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\RequirePackage{pgffor}
+\RequirePackage[version=4]{mhchem}
+\RequirePackage{siunitx}
+\RequirePackage{chemfig}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{needspace}
+
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,positioning,patterns,calc}
+
+% Semantic plot styles: multi-series plots MUST use these, never raw colors.
+% LMS separates series by hue; print separates them by dash pattern, so a B&W
+% copy of two curves stays readable.
+\iftoggle{apcLMS}{%
+  \tikzset{
+    seriesA/.style={color=apcaccent, thick},
+    seriesB/.style={color=apcans, thick},
+    seriesC/.style={color=apcwarn, thick},
+  }%
+}{%
+  \tikzset{
+    seriesA/.style={color=black, thick},
+    seriesB/.style={color=black, thick, dashed},
+    seriesC/.style={color=black, thick, dotted},
+  }%
+}
+
+\sisetup{
+  separate-uncertainty = true,
+  per-mode             = symbol,
+  range-units          = single,
+  detect-weight        = true,
+}
+
+% Chemistry units siunitx does not ship. Declare once here so no content file
+% ever hand-types them -- \SI{1.5}{\atm}, \SI{0.20}{\Molar}, \SI{63.55}{\amu}.
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\Molar{M}
+\DeclareSIUnit\torr{torr}
+\DeclareSIUnit\mmHg{mmHg}
+\DeclareSIUnit\amu{u}
+\DeclareSIUnit\cal{cal}
+
+% Links live only in the LMS build; on paper they are dead ink.
+\iftoggle{apcLMS}{%
+  \RequirePackage[colorlinks=true,linkcolor=apcaccent,urlcolor=apcaccent]{hyperref}%
+}{%
+  \RequirePackage[hidelinks]{hyperref}%
+}
+
+% ------------------------------------------------------------------- colours
+% PRINT builds are deliberately grayscale: they go through B&W copiers, and
+% designed grays beat color-converted-to-mud. Answers are distinguished by
+% weight, underline, and boxes -- never by hue alone. LMS builds get color.
+% Banner colors are semantic: every titled box and section header draws from
+% these, so the print/LMS distinction lives here and nowhere else.
+%   LMS   -- colored fills, white text
+%   print -- light gray fills one step darker than minor headings (F2F2F2),
+%            BLACK text; no heavy toner fields anywhere
+\iftoggle{apcLMS}{%
+  \definecolor{apcaccent}{HTML}{1F4E79}% headers, structural rules
+  \definecolor{apcans}{HTML}{9E2A2B}   % key answers
+  \definecolor{apcansbg}{HTML}{FBEFEF}
+  \definecolor{apcgray}{HTML}{5A5A5A}
+  \definecolor{apclight}{HTML}{EEF3F8}
+  \definecolor{apcrule}{HTML}{BFC9D4}
+  \definecolor{apcwarn}{HTML}{8A6D1F}
+  \definecolor{apcwarnbg}{HTML}{FDF6E3}
+  \definecolor{apcbanner}{HTML}{1F4E79}    % accent-role banner fill
+  \definecolor{apcbannergray}{HTML}{5A5A5A}% gray-role banner fill
+  \definecolor{apcbannerwarn}{HTML}{8A6D1F}% trap banner fill
+  \definecolor{apcbannerans}{HTML}{9E2A2B} % rubric banner fill
+  \definecolor{apcbannertext}{HTML}{FFFFFF}
+}{%
+  \definecolor{apcaccent}{HTML}{2B2B2B}
+  \definecolor{apcans}{HTML}{000000}   % answers: black + bold + box/underline
+  \definecolor{apcansbg}{HTML}{EFEFEF}
+  \definecolor{apcgray}{HTML}{4D4D4D}
+  \definecolor{apclight}{HTML}{F2F2F2} % minor headings / segment strips
+  \definecolor{apcrule}{HTML}{B3B3B3}
+  \definecolor{apcwarn}{HTML}{4D4D4D}
+  \definecolor{apcwarnbg}{HTML}{F2F2F2}
+  \definecolor{apcbanner}{HTML}{D9D9D9}    % one step darker than apclight
+  \definecolor{apcbannergray}{HTML}{D9D9D9}
+  \definecolor{apcbannerwarn}{HTML}{D9D9D9}
+  \definecolor{apcbannerans}{HTML}{D9D9D9}
+  \definecolor{apcbannertext}{HTML}{000000}
+}
+
+% ------------------------------------------------------- conditional content
+\newcommand{\keyonly}[1]{\iftoggle{apcKey}{#1}{}}
+\newcommand{\studentonly}[1]{\iftoggle{apcKey}{}{#1}}
+\newcommand{\printonly}[1]{\iftoggle{apcLMS}{}{#1}}
+\newcommand{\lmsonly}[1]{\iftoggle{apcLMS}{#1}{}}
+
+% ------------------------------------------------------------ answer blanks
+% A last-resort line break before an \answerblank.
+%
+% The blank is a fixed-width \makebox and cannot be broken or shrunk. When it
+% does not fit in what is left of the line, TeX's only alternative is to break
+% at the preceding space -- but that leaves a very loose line whose badness
+% exceeds \tolerance, so TeX rejects it and emits an OVERFULL box instead: the
+% blank, and the key's answer inside it, run off the right edge of the page and
+% are clipped. That silently damaged 37 paragraphs across the corpus before it
+% was caught by reading a built PDF.
+%
+% The fil pair makes the break legal AND cheap when it is taken: the two glues
+% cancel exactly (0pt natural, +1fil and -1fil stretch) when no break occurs, so
+% the inline footprint is untouched; when the break IS taken at the penalty, the
+% first fil fills out the short line (badness 0) and the negative fil is
+% discarded after the break.
+%
+% The penalty must be 9999, not 0. At 0 the break is free, so TeX prefers it and
+% every narrow inline blank jumps to its own line, reflowing the whole corpus.
+% At 9999 the demerits are enormous and TeX takes it only when the alternative
+% is an overfull box -- which is exactly the case we are fixing.
+\newcommand{\apc@blankbreak}{%
+  \hskip 0pt plus 1fil\relax\penalty 9999 \hskip 0pt plus -1fil\relax
+}
+
+% \answerblank[width]{answer} -- inline fill-in.
+% Identical footprint in both builds so line breaking never shifts.
+% The key's answer is set in a \makebox of the DECLARED width. If the answer is
+% wider than that, \makebox does not complain -- the text simply spills out of
+% the box and lands on top of whatever follows it. Nothing in the build fails
+% and the log stays silent; the only symptom is overprinted text in the key.
+%
+% So measure the answer once, into a box we then reuse for typesetting (reusing
+% it rather than re-expanding #2 keeps the content from being executed twice),
+% and warn with the exact shortfall. Widths are only checked in the key build
+% because the student build's blank is empty -- but the footprint invariant
+% makes the two widths identical, so checking the key checks both.
+\newsavebox{\apc@ansmeasure}
+\newlength{\apc@ansover}
+\newcommand{\answerblank}[2][4cm]{%
+  \apc@blankbreak
+  \iftoggle{apcKey}{%
+    \sbox{\apc@ansmeasure}{\color{apcans}\bfseries #2}%
+    \setlength{\apc@ansover}{\wd\apc@ansmeasure}%
+    \addtolength{\apc@ansover}{-#1}%
+    \ifdim\apc@ansover>\z@
+      \PackageWarning{apchem}{%
+        answerblank OVERFLOW by \the\apc@ansover\space (declared #1)%
+      }%
+    \fi
+    \underline{\makebox[#1][l]{\usebox{\apc@ansmeasure}}}%
+  }{%
+    \underline{\makebox[#1]{\rule{0pt}{1.15em}}}%
+  }%
+}
+
+% \answerlines[n]{answer} -- n ruled lines of writing space.
+% LMS build shrinks the line count (typing is denser than handwriting).
+%
+% Footprint invariant: the key's answer box is usually SHORTER than the n
+% ruled lines it replaces, which silently drifts pagination between the two
+% builds. So measure the box and pad it up to the student height. Padding
+% only -- a long answer is never clipped, it just grows past the target.
+\newsavebox{\apc@ansbox}
+\newlength{\apc@anstarget}
+\newlength{\apc@ansgap}
+\newcommand{\answerlines}[2][3]{%
+  \par\nopagebreak\vspace{0.35em}%
+  \iftoggle{apcKey}{%
+    % Reserve exactly the height the student's ruled lines would occupy, so
+    % the two builds paginate identically. A fixed-height minipage is exact
+    % by construction -- no \vspace to be swallowed or discarded at a break.
+    % Height is max(natural, target), so a long answer grows instead of
+    % being clipped.
+    % Cost of ONE student ruled line: the \vspace after it, plus \parskip
+    % (each rule is its own paragraph), plus a full \baselineskip -- TeX
+    % advances a whole baseline for the rule's line box, not merely its
+    % 0.4pt height. Omitting the baselineskip term was leaving the key
+    % about 15% short per line, which compounded to 3 pages on Unit 4.
+    \setlength{\apc@anstarget}{#1\dimexpr 1.6em+\parskip+\baselineskip\relax}%
+    \sbox{\apc@ansbox}{\begin{minipage}{\linewidth}%
+      \begin{apcanswerfixed}#2\end{apcanswerfixed}%
+    \end{minipage}}%
+    \setlength{\apc@ansgap}{\dimexpr\ht\apc@ansbox+\dp\apc@ansbox\relax}%
+    \ifdim\apc@ansgap<\apc@anstarget
+      \setlength{\apc@ansgap}{\apc@anstarget}%
+    \fi
+    \noindent\begin{minipage}[t][\apc@ansgap][t]{\linewidth}%
+      \usebox{\apc@ansbox}%
+    \end{minipage}\par
+  }{%
+    \iftoggle{apcLMS}{\def\apc@n{1}}{\def\apc@n{#1}}%
+    \foreach \apc@i in {1,...,\apc@n}{%
+      \noindent\textcolor{apcrule}{\rule{\linewidth}{0.4pt}}\par\vspace{1.6em}%
+    }%
+  }%
+  \vspace{0.2em}%
+}
+
+% \workspace[height] -- blank calculation space, print only gets the full box.
+\newcommand{\workspace}[1][3cm]{%
+  \par\vspace{0.3em}%
+  \iftoggle{apcLMS}{\vspace{0.8cm}}{\vspace{#1}}%
+  \par%
+}
+
+\newtcolorbox{apcanswer}{
+  enhanced, breakable,
+  colback=apcansbg, colframe=apcans,
+  boxrule=0.9pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fontupper=\color{apcans}\bfseries,
+  before skip=4pt, after skip=6pt,
+}
+
+% Non-breakable twin, used inside \answerlines' measuring \sbox -- a
+% breakable tcolorbox cannot be measured in a save box.
+\newtcolorbox{apcanswerfixed}{
+  enhanced, breakable=false,
+  colback=apcansbg, colframe=apcans,
+  boxrule=0.9pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fontupper=\color{apcans}\bfseries,
+  before skip=4pt, after skip=6pt,
+}
+
+% ---------------------------------------------------------------- CED tagging
+% Every item is traceable to the framework and the textbook.
+\newcommand{\ced}[1]{%
+  \tikz[baseline=(n.base)]{\node[fill=apcbanner,text=apcbannertext,rounded corners=2pt,
+    inner xsep=4pt,inner ysep=1.5pt,font=\sffamily\bfseries\scriptsize] (n) {CED #1};}%
+}
+\newcommand{\practice}[1]{%
+  \tikz[baseline=(n.base)]{\node[draw=apcgray,text=apcgray,rounded corners=2pt,
+    inner xsep=4pt,inner ysep=1.2pt,font=\sffamily\scriptsize] (n) {SP #1};}%
+}
+% \zsec{2.8} -- textbook-section tag for Chapters\ materials. Distinct from
+% \ced so a chapter section number is never mistaken for a CED topic code.
+\newcommand{\zsec}[1]{%
+  \tikz[baseline=(n.base)]{\node[draw=apcaccent,line width=0.7pt,text=apcaccent,
+    rounded corners=2pt,inner xsep=4pt,inner ysep=1.5pt,
+    font=\sffamily\bfseries\scriptsize] (n) {ZUM \S#1};}%
+}
+% \zref{section}{pdf page range} -- Zumdahl citation, always by page range.
+\newcommand{\zref}[2]{%
+  {\sffamily\footnotesize\color{apcgray}Zumdahl #1\,\textbullet\,pp.~#2}%
+}
+
+\newcommand{\term}[1]{\textbf{\color{apcaccent}#1}}
+
+% --------------------------------------------------------------- callout boxes
+\newtcolorbox{apctrap}[1][AP trap]{
+  enhanced, breakable,
+  colback=apcwarnbg, colframe=apcwarn,
+  boxrule=0.8pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  title={\sffamily\bfseries\small #1},
+  coltitle=apcbannertext, colbacktitle=apcbannerwarn,
+  before skip=6pt, after skip=8pt,
+}
+
+\newtcolorbox{apcnote}[1][Note]{
+  enhanced, breakable,
+  colback=apclight, colframe=apcaccent,
+  boxrule=0.8pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  title={\sffamily\bfseries\small #1},
+  coltitle=apcbannertext, colbacktitle=apcbanner,
+  before skip=6pt, after skip=8pt,
+}
+
+% ------------------------------------------------------------ document header
+% \apcsetup{unit=3, unittitle=..., doctitle=..., subtitle=...}
+\newcommand{\apc@unit}{}
+\newcommand{\apc@unitword}{Unit}% "Unit" for CED units, "Chapter" for textbook-chapter materials
+\newcommand{\apc@unittitle}{}
+\newcommand{\apc@doctitle}{}
+\newcommand{\apc@subtitle}{}
+\newcommand{\apcunit}[1]{\renewcommand{\apc@unit}{#1}}
+\newcommand{\apcunitword}[1]{\renewcommand{\apc@unitword}{#1}}
+\newcommand{\apcunittitle}[1]{\renewcommand{\apc@unittitle}{#1}}
+\newcommand{\apcdoctitle}[1]{\renewcommand{\apc@doctitle}{#1}}
+\newcommand{\apcsubtitle}[1]{\renewcommand{\apc@subtitle}{#1}}
+
+\newcommand{\apcvariant}{\iftoggle{apcKey}{TEACHER KEY}{STUDENT}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\sffamily\footnotesize\color{apcaccent}%
+  AP Chemistry\ \textbullet\ \apc@unitword\ \apc@unit: \apc@unittitle}
+\fancyhead[R]{\sffamily\footnotesize\color{apcaccent}%
+  \iftoggle{apcKey}{\bfseries\color{apcans}\apcvariant}{\apc@doctitle}}
+% Footers mirror in twoside print: Name at the inner (bound) edge, page
+% number at the outer edge where a flipping thumb finds it. In oneside (LMS)
+% only the O selectors fire, reproducing the old left/right layout.
+\fancyfoot[LO,RE]{\sffamily\footnotesize\color{apcgray}Name:~\rule{4.5cm}{0.4pt}}
+\fancyfoot[RO,LE]{\sffamily\footnotesize\color{apcgray}\thepage}
+
+% Print keys carry a standing reminder so a stray copy is never mistaken for a
+% student handout mid-class.
+\iftoggle{apcKey}{%
+  \RequirePackage{background}%
+  \backgroundsetup{scale=1,angle=45,opacity=0.06,
+    contents={\sffamily\bfseries\Huge TEACHER KEY}}%
+}{}
+
+\newcommand{\apctitleblock}{%
+  \thispagestyle{fancy}%
+  \begin{tcolorbox}[enhanced,colback=apclight,colframe=apcaccent,boxrule=1pt,
+      left=10pt,right=10pt,top=8pt,bottom=8pt,arc=3pt]
+    {\sffamily\bfseries\Large\color{apcaccent} \apc@unitword\ \apc@unit\ \textbullet\ \apc@unittitle}\\[2pt]
+    {\sffamily\LARGE\bfseries \apc@doctitle}%
+    \ifdefempty{\apc@subtitle}{}{\\[3pt]{\sffamily\normalsize\color{apcgray}\apc@subtitle}}%
+    \keyonly{\\[4pt]{\sffamily\bfseries\normalsize\color{apcans}TEACHER KEY --- answers
+      \iftoggle{apcLMS}{shown in red}{shown bold in answer boxes}}}%
+  \end{tcolorbox}%
+  \vspace{0.4em}%
+}
+
+% ------------------------------------------------------------ shared elements
+% Retrieval warm-up. Monday gets 4 items (3-day gap), Wed/Fri get 3.
+\newenvironment{warmup}[1][3]{%
+  \needspace{4\baselineskip}%
+  \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=apcaccent,
+    boxrule=0.9pt,left=6pt,right=6pt,top=4pt,bottom=4pt,
+    title={\sffamily\bfseries\small RETRIEVAL WARM-UP \textbullet\ 5 min \textbullet\ #1 items},
+    coltitle=apcbannertext,colbacktitle=apcbanner]%
+  \begin{enumerate}[leftmargin=*,itemsep=0.4em,topsep=2pt]%
+}{%
+  \end{enumerate}\end{tcolorbox}\vspace{0.3em}%
+}
+
+\newenvironment{exitticket}{%
+  \needspace{4\baselineskip}%
+  \begin{tcolorbox}[enhanced,breakable,colback=apclight,colframe=apcaccent,
+    boxrule=0.9pt,left=6pt,right=6pt,top=4pt,bottom=4pt,
+    title={\sffamily\bfseries\small EXIT TICKET \textbullet\ 5 min \textbullet\ collected},
+    coltitle=apcbannertext,colbacktitle=apcbanner]%
+}{%
+  \end{tcolorbox}%
+}
+
+\newtcolorbox{workedexample}[1][Worked example]{
+  enhanced, breakable,
+  colback=white, colframe=apcgray,
+  boxrule=0.7pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  title={\sffamily\bfseries\small #1},
+  coltitle=apcbannertext, colbacktitle=apcbannergray,
+  before skip=6pt, after skip=8pt,
+}
+
+% Spaced retrieval: every worksheet's back page pulls from earlier units.
+\newenvironment{spiralstrip}[1]{%
+  \needspace{5\baselineskip}%
+  \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=apcgray,
+    boxrule=0.8pt,left=6pt,right=6pt,top=4pt,bottom=4pt,
+    title={\sffamily\bfseries\small SPIRAL REVIEW \textbullet\ #1},
+    coltitle=apcbannertext,colbacktitle=apcbannergray]%
+  \begin{enumerate}[leftmargin=*,itemsep=0.6em,topsep=2pt]%
+}{%
+  \end{enumerate}\end{tcolorbox}%
+}
+
+\endinput

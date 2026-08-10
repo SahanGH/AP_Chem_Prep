@@ -1,0 +1,113 @@
+% Ch13 WS2 -- heterogeneous equilibria, magnitude of K, Q, ICE tables.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{13}
+\apcunittitle{Chemical Equilibrium}
+\apcdoctitle{Worksheet 2 \textbullet\ $Q$, $K$, and ICE Tables}
+\apcsubtitle{Zumdahl \S13.4--13.6 \textbullet\ always check the approximation}
+
+\begin{document}
+\wsheader[Show the full ICE table for every equilibrium calculation. When
+you use the small-$x$ approximation, state the 5\% check explicitly --- an
+unchecked approximation earns no credit.]
+
+\problem[]{Write $K$ for each heterogeneous equilibrium:}
+\begin{parts}
+  \item \ce{Fe3O4(s) + 4 H2(g) <=> 3 Fe(s) + 4 H2O(g)}:
+        \answerblank[5.4cm]{$[\ce{H2O}]^4/[\ce{H2}]^4$}
+  \item \ce{2 NaHCO3(s) <=> Na2CO3(s) + CO2(g) + H2O(g)}:
+        \answerblank[5.4cm]{$[\ce{CO2}][\ce{H2O}]$}
+  \item Explain why pure solids and liquids are excluded.
+        \answerlines[2]{Their concentration is fixed by density and does not
+        change as the reaction proceeds, so including them would add a
+        constant that is already absorbed into $K$.}
+\end{parts}
+
+\problem[]{Interpreting the magnitude of $K$:}
+\begin{parts}
+  \item $K = 3\times10^{12}$: the equilibrium mixture is mostly
+        \answerblank[2.8cm]{products}
+  \item $K = 2\times10^{-9}$: mostly
+        \answerblank[2.8cm]{reactants}
+  \item Does a large $K$ imply a fast reaction? Explain.
+        \answerlines[3]{No. $K$ describes the equilibrium position, which is
+        thermodynamics; speed is kinetics, set by the activation energy. A
+        reaction can be strongly product-favoured and still take years.}
+\end{parts}
+
+\problem[]{For \ce{N2(g) + 3 H2(g) <=> 2 NH3(g)}, $K_c = 0.500$. A flask
+contains $[\ce{N2}] = \SI{1.00}{\Molar}$, $[\ce{H2}] = \SI{1.00}{\Molar}$,
+$[\ce{NH3}] = \SI{1.00}{\Molar}$.}
+\begin{parts}
+  \item Calculate $Q$. \workspace[1.6cm]
+        \keyonly{\begin{apcanswer}$Q = (1.00)^2/[(1.00)(1.00)^3] =
+        1.00$\end{apcanswer}}
+  \item Compare $Q$ with $K$ and predict the direction of shift.
+        \answerlines[2]{$Q = 1.00 > K = 0.500$, so the system shifts to the
+        left, toward reactants.}
+  \item What would $Q$ have to equal for no shift to occur?
+        \answerblank[2.4cm]{0.500}
+\end{parts}
+
+\problem[]{ICE table setup. Write the equilibrium row for each:}
+\begin{parts}
+  \item \ce{2 HI <=> H2 + I2}, starting with \SI{0.400}{\Molar} \ce{HI}:
+        \answerblank[6cm]{$[\ce{HI}] = 0.400-2x$; $[\ce{H2}] = [\ce{I2}] = x$}
+  \item \ce{PCl5 <=> PCl3 + Cl2}, starting with \SI{1.50}{\Molar} \ce{PCl5}:
+        \answerblank[6cm]{$1.50-x$; $x$; $x$}
+\end{parts}
+
+\problem[]{\ce{N2O4(g) <=> 2 NO2(g)} has $K_c = 4.6\times10^{-3}$. A flask
+initially contains \SI{1.00}{\Molar} \ce{N2O4}.}
+\begin{parts}
+  \item Write the ICE table.
+        \answerlines[2]{$[\ce{N2O4}] = 1.00-x$; $[\ce{NO2}] = 2x$.}
+  \item Solve using the small-$x$ approximation. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$4x^2/1.00 = 4.6\times10^{-3}$;
+        $x^2 = 1.15\times10^{-3}$; $x = 0.0339$\end{apcanswer}}
+  \item Perform the 5\% check and state whether the approximation is valid.
+        \answerlines[2]{$0.0339/1.00 = 3.4\%$, which is under 5\% --- the
+        approximation is valid.}
+  \item Give both equilibrium concentrations.
+        \answerblank[6.6cm]{$[\ce{NO2}] = 0.068$ M;
+        $[\ce{N2O4}] = 0.966$ M}
+\end{parts}
+
+\problem[]{\ce{H2(g) + I2(g) <=> 2 HI(g)} has $K = 50.0$. A flask initially
+contains \SI{1.00}{\Molar} of each reactant and no \ce{HI}.}
+\begin{parts}
+  \item Explain why the small-$x$ approximation cannot be used here.
+        \answerlines[2]{$K$ is large, so a substantial fraction of the
+        reactants is consumed --- $x$ will not be small compared with 1.00.}
+  \item Solve for $x$. (The expression is a perfect square.)
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$(2x)^2/(1.00-x)^2 = 50.0$; take roots:
+        $2x/(1.00-x) = 7.071$; $9.071x = 7.071$;
+        $x = 0.779$\end{apcanswer}}
+  \item Give all three equilibrium concentrations and verify against $K$.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{H2}] = [\ce{I2}] = 0.221$ M;
+        $[\ce{HI}] = 1.558$ M. Check:
+        $(1.558)^2/(0.221)^2 = 49.7 \approx 50.0$ \checkmark\end{apcanswer}}
+\end{parts}
+
+\problem[]{A student solving an equilibrium problem obtains the roots
+$x = 0.45$ and $x = 3.20$ from a quadratic, where the initial reactant
+concentration was \SI{1.00}{\Molar}. Which root is correct, and how do you
+know? \answerlines[3]{$x = 0.45$. The other root would give a reactant
+concentration of $1.00 - 3.20 = -2.20$ M, which is physically impossible ---
+concentrations cannot be negative. Roots are rejected on physical grounds,
+not preference.}}
+
+\begin{spiralstrip}{Chapter 13 \textbullet\ blocks 1--3}
+  \item $K$ for the reverse of a reaction with $K = 20$:
+        \answerblank[2.4cm]{0.050}
+  \item $\Delta n$ for \ce{PCl5 <=> PCl3 + Cl2}:
+        \answerblank[1.6cm]{$+1$}
+  \item If $Q < K$, the shift is: \answerblank[2cm]{right}
+  \item Are pure liquids included in $K$? \answerblank[1.6cm]{no}
+  \item Is equilibrium static or dynamic? \answerblank[2cm]{dynamic}
+\end{spiralstrip}
+
+\end{document}

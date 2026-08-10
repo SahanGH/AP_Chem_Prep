@@ -1,0 +1,109 @@
+% Ch4 WS4 -- redox: oxidation states, agents, titration. Block 5. Plus FRQ.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{4}
+\apcunittitle{Types of Chemical Reactions and Solution Stoichiometry}
+\apcdoctitle{Worksheet 4 \textbullet\ Redox \& FRQ Practice}
+\apcsubtitle{Zumdahl \S4.9--4.11 \textbullet\ assign states first, conclusions second}
+
+\begin{document}
+\wsheader[Never name an oxidizing or reducing agent without first writing
+the oxidation states that justify it. Remember the label is counterintuitive:
+the species oxidized is the reducing agent.]
+
+\problem[]{Assign the oxidation state of the named element:}
+\begin{parts}
+  \item S in \ce{SO3}: \answerblank[2cm]{$+6$}
+  \item N in \ce{NO2-}: \answerblank[2cm]{$+3$}
+  \item Cr in \ce{CrO4^2-}: \answerblank[2cm]{$+6$}
+  \item Cl in \ce{ClO3-}: \answerblank[2cm]{$+5$}
+  \item P in \ce{H3PO4}: \answerblank[2cm]{$+5$}
+  \item O in \ce{H2O2}: \answerblank[2.9cm]{$-1$ (peroxide)}
+  \item H in \ce{NaH}: \answerblank[2.8cm]{$-1$ (hydride)}
+  \item Fe in \ce{Fe2O3}: \answerblank[2cm]{$+3$}
+\end{parts}
+
+\problem[]{For each reaction: state whether it is redox; if so, identify
+what is oxidized, what is reduced, the oxidizing agent, and the reducing
+agent.}
+\begin{parts}
+  \item \ce{Mg(s) + 2 HCl(aq) -> MgCl2(aq) + H2(g)}
+        \answerlines[3]{Redox. Mg $0 \to +2$ oxidized, reducing agent.
+        H $+1 \to 0$ reduced; \ce{HCl} is the oxidizing agent. Cl is
+        unchanged at $-1$.}
+  \item \ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)}
+        \answerlines[2]{Not redox --- no oxidation state changes; this is a
+        precipitation (double replacement) reaction.}
+  \item \ce{2 Na(s) + Cl2(g) -> 2 NaCl(s)}
+        \answerlines[3]{Redox. Na $0 \to +1$ oxidized, reducing agent.
+        Cl $0 \to -1$ reduced, \ce{Cl2} is the oxidizing agent.}
+\end{parts}
+
+\problem[]{Explain, in your own words, why the substance that is oxidized is
+called the \emph{reducing} agent. \answerlines[2]{It donates the electrons
+that another species gains --- by giving electrons away it causes the other
+substance to be reduced, so it is the agent of reduction.}}
+
+\problem[]{In \ce{Fe3O4}, the four oxygens total $-8$.}
+\begin{parts}
+  \item What is the average oxidation state of iron?
+        \answerblank[2.5cm]{$+8/3$}
+  \item Explain why a non-integer value appears here.
+        \answerlines[2]{The rules treat all three Fe atoms as equivalent,
+        but the compound really contains two \ce{Fe^3+} and one \ce{Fe^2+}
+        per formula unit; $+8/3$ is their average.}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} An iron ore sample is analyzed for iron
+content by redox titration. The dissolved iron is present as \ce{Fe^2+} and
+is titrated with standardized \ce{KMnO4}:
+\[ \ce{5 Fe^2+(aq) + MnO4^-(aq) + 8 H+(aq) -> 5 Fe^3+(aq) + Mn^2+(aq) + 4 H2O(l)} \]
+A \SI{1.250}{\gram} ore sample is dissolved and requires
+\SI{31.20}{\milli\liter} of \SI{0.0250}{\Molar} \ce{KMnO4} to reach the
+endpoint.}
+\begin{parts}
+  \item Determine the oxidation state of manganese in \ce{MnO4-} and in
+        \ce{Mn^2+}, and state whether Mn is oxidized or reduced.
+        \answerlines[2]{In \ce{MnO4-}: $x + 4(-2) = -1 \Rightarrow x = +7$.
+        As \ce{Mn^2+}: $+2$. The state decreases, so Mn is reduced.}
+  \item Identify the oxidizing agent and the reducing agent.
+        \answerlines[2]{\ce{MnO4-} is the oxidizing agent (it is reduced);
+        \ce{Fe^2+} is the reducing agent (it is oxidized, $+2 \to +3$).}
+  \item Calculate the moles of \ce{MnO4-} used. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$(0.03120)(0.0250) =
+        \SI{7.80e-4}{\mole}$\end{apcanswer}}
+  \item Calculate the moles and mass of iron in the sample.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$5 \times 7.80\times10^{-4} =
+        \SI{3.90e-3}{\mole}$ Fe; $\times 55.85 =
+        \SI{0.2178}{\gram}$\end{apcanswer}}
+  \item Calculate the mass percent of iron in the ore.
+        \answerblank[3.5cm]{17.4\%}
+  \item Explain why no indicator is needed for this titration.
+        \answerlines[2]{\ce{MnO4-} is deep purple and \ce{Mn^2+} is nearly
+        colourless; the first excess drop of titrant leaves a persistent
+        pink colour, so the titrant is its own indicator.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 both oxidation states, 1 ``reduced'' with the decrease
+cited \textbullet\ \textbf{(b) 2 pts} 1 each agent, correctly matched to
+oxidized/reduced \textbullet\ \textbf{(c) 1 pt} $7.80\times10^{-4}$ mol
+\textbullet\ \textbf{(d) 2 pts} 1 applies the 5:1 ratio, 1 mass with units
+\textbullet\ \textbf{(e) 1 pt} 17.4\% \textbullet\ \textbf{(f) 2 pts}
+1 names the colour change, 1 identifies it as self-indicating.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 4 \textbullet\ full chapter}
+  \item Net ionic, strong acid + strong base:
+        \answerblank[4.5cm]{\ce{H+ + OH^- -> H2O}}
+  \item Soluble? \ce{AgNO3} \answerblank[3.4cm]{yes --- rules 1, 3}
+  \item Oxidation state of S in \ce{H2S}: \answerblank[2cm]{$-2$}
+  \item \SI{20.0}{\milli\liter} of \SI{0.100}{\Molar} \ce{NaOH} contains how
+        many moles? \answerblank[3cm]{\SI{2.00e-3}{\mole}}
+  \item Weak acid in a net ionic equation is written how?
+        \answerblank[4.5cm]{intact (undissociated)}
+\end{spiralstrip}
+
+\end{document}

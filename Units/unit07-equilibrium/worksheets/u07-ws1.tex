@@ -1,0 +1,123 @@
+% U7 WS1 -- dynamic equilibrium, Q and K, calculating K. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunit{7}
+\apcunittitle{Equilibrium}
+\apcdoctitle{Worksheet 1 \textbullet\ Dynamic Equilibrium, $Q$ and $K$}
+\apcsubtitle{CED 7.1--7.4 \textbullet\ equal \emph{rates}, not equal amounts}
+
+\begin{document}
+\wsheader[{$K = [\text{products}]^{\text{coef}}/[\text{reactants}]^{\text{coef}}$},
+omitting pure solids and liquids \textbullet\ $Q$ has the same form at any
+moment \textbullet\ $K_p = K_c(RT)^{\Delta n}$,
+$R = \SI{0.08206}{\litre\atm\per\mole\per\kelvin}$.]
+
+\problem[]{\ced{7.1} Describe what is happening at equilibrium at the
+particle level, and state precisely what is equal.
+\answerlines[4]{Both the forward and reverse reactions continue at the
+particle level --- molecules keep reacting in both directions. What is equal
+is the \emph{rate} of the forward and reverse reactions, so every product
+formed is matched by one converting back. Concentrations therefore stop
+changing, though they are generally not equal to one another.}}
+
+\problem[]{\ced{7.1} Starting from pure reactants:}
+\begin{parts}
+  \item Initially the forward rate is: \answerblank[3.4cm]{at its maximum}
+  \item Initially the reverse rate is: \answerblank[1.8cm]{zero}
+  \item As the reaction proceeds, the forward rate
+        \answerblank[2.2cm]{falls} and the reverse rate
+        \answerblank[2.2cm]{rises}.
+  \item Equilibrium is reached when: \answerblank[7.1cm]{the two rates
+        become equal}
+\end{parts}
+
+\problem[]{\ced{7.1} A student looking at a concentration--time graph says
+``the reactant and product curves level off at the same height, so the
+concentrations are equal at equilibrium.'' Identify both errors.
+\answerlines[3]{The curves generally level off at \emph{different} heights
+--- only their ratio is fixed, by $K$. And even if they happened to
+coincide, that would be a coincidence rather than a definition; equilibrium
+is defined by equal rates, not equal concentrations.}}
+
+\problem[]{\ced{7.3} Write the $K$ expression for each:}
+\begin{parts}
+  \item $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$
+        \answerblank[6.4cm]{$[\ce{NH3}]^2/([\ce{N2}][\ce{H2}]^3)$}
+  \item $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$
+        \answerblank[6.4cm]{$[\ce{SO3}]^2/([\ce{SO2}]^2[\ce{O2}])$}
+  \item $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$
+        \answerblank[6.4cm]{$[\ce{CO2}]$}
+  \item $\ce{Fe3O4(s) + 4H2(g) <=> 3Fe(s) + 4H2O(g)}$
+        \answerblank[6.4cm]{$[\ce{H2O}]^4/[\ce{H2}]^4$}
+  \item $\ce{2H2O(l) <=> 2H2(g) + O2(g)}$
+        \answerblank[6.4cm]{$[\ce{H2}]^2[\ce{O2}]$}
+\end{parts}
+
+\problem[]{\ced{7.3} Why are pure solids and pure liquids omitted, and what
+decides whether water appears?
+\answerlines[4]{A pure solid or liquid has a fixed density and molar volume,
+so its ``concentration'' does not change as the reaction proceeds ---
+including it would merely multiply $K$ by a constant. Water is omitted when
+it is the pure liquid solvent but included when it is a gas or a dissolved
+species. The state symbol decides, so it must be read.}}
+
+\problem[]{\ced{7.4} Calculate $K$ from each set of equilibrium
+concentrations:}
+\begin{parts}
+  \item $\ce{H2 + I2 <=> 2HI}$ with $[\ce{H2}] = 0.20$,
+        $[\ce{I2}] = 0.40$, $[\ce{HI}] = 0.60$~M. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$K = (0.60)^2/[(0.20)(0.40)] =
+        0.36/0.080 = \mathbf{4.5}$\end{apcanswer}}
+  \item $\ce{N2 + 3H2 <=> 2NH3}$ with $[\ce{N2}] = 0.50$,
+        $[\ce{H2}] = 0.30$, $[\ce{NH3}] = 0.20$~M. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$K = (0.20)^2/[(0.50)(0.30)^3] =
+        0.040/0.0135 = \mathbf{3.0}$. Note $(0.30)^3 = 0.027$, not
+        $0.90$.\end{apcanswer}}
+  \item In (b), what is the most likely arithmetic slip?
+        \answerlines[2]{Failing to cube the hydrogen concentration --- using
+        $0.30$ or $0.90$ instead of $0.027$, which changes the answer by a
+        factor of tens.}
+\end{parts}
+
+\problem[]{\ced{7.3} $Q$ and $K$.}
+\begin{parts}
+  \item How does the expression for $Q$ differ from that for $K$?
+        \answerlines[2]{It does not --- the algebraic form is identical.
+        The difference is the concentrations substituted: $Q$ uses values at
+        any moment, $K$ uses equilibrium values.}
+  \item $K = 4.5$ for $\ce{H2 + I2 <=> 2HI}$. A vessel holds
+        $[\ce{H2}] = 0.40$, $[\ce{I2}] = 0.30$, $[\ce{HI}] = 0.40$~M.
+        Calculate $Q$ and state the direction of change.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$Q = (0.40)^2/[(0.40)(0.30)] =
+        0.16/0.12 = \mathbf{1.3}$. Since $Q < K$, there are too few
+        products, so the reaction proceeds to the
+        \textbf{right}.\end{apcanswer}}
+  \item Repeat for $[\ce{H2}] = [\ce{I2}] = 0.10$, $[\ce{HI}] = 0.30$~M.
+        \answerblank[5.4cm]{$Q = 9.0 > K$; shifts left}
+\end{parts}
+
+\problem[]{\ced{7.4} $K_p$ and $K_c$.}
+\begin{parts}
+  \item Write the relationship. \answerblank[4.4cm]{$K_p = K_c(RT)^{\Delta n}$}
+  \item For $\ce{N2 + 3H2 <=> 2NH3}$, $\Delta n = $
+        \answerblank[1.8cm]{$-2$}
+  \item At \SI{500}{\kelvin} with $K_c = 0.50$, find $K_p$.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$K_p = 0.50[(0.08206)(500)]^{-2} =
+        0.50/(41.03)^2 =
+        \mathbf{3.0\times10^{-4}}$\end{apcanswer}}
+  \item For which reactions are $K_p$ and $K_c$ numerically equal?
+        \answerblank[5cm]{those with $\Delta n = 0$}
+\end{parts}
+
+\begin{spiralstrip}{Units 5--6 \textbullet\ spiral}
+  \item Orders come from: \answerblank[2.6cm]{experiment}
+  \item Exothermic $\Delta H$ is: \answerblank[2cm]{negative}
+  \item First-order half-life: \answerblank[2cm]{$0.693/k$}
+  \item Hess's law works because $H$ is a:
+        \answerblank[3cm]{state function}
+  \item Bond enthalpy expression: \answerblank[4.4cm]{broken $-$ formed}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,173 @@
+% Ch16 WS4 -- pH and solubility, Q vs Ksp, and a 10-point FRQ. Block 4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{16}
+\apcunittitle{Solubility Equilibria}
+\apcdoctitle{Worksheet 4 \textbullet\ pH, Precipitation \& FRQ}
+\apcsubtitle{Zumdahl \S16.1--16.2 \textbullet\ the test is whether the \emph{anion} is a base}
+
+\begin{document}
+\wsheader[$K_{sp}$: \ce{AgCl} $1.6\times10^{-10}$ \textbullet\ \ce{BaSO4}
+$1.5\times10^{-9}$ \textbullet\ \ce{PbCl2} $1.6\times10^{-5}$
+\textbullet\ \ce{CaF2} $4.0\times10^{-11}$ \textbullet\ \ce{Mg(OH)2}
+$8.9\times10^{-12}$. \textbf{CED 8.11 is qualitative only} --- predict the
+direction, justify with Le Ch\^atelier, never compute solubility from pH.]
+
+\problem[]{State the single test that decides whether a salt's solubility
+depends on pH, and explain why it works.
+\answerlines[4]{Ask whether the anion is a meaningful base --- equivalently,
+whether its conjugate acid \ce{HX} is weak. If it is, added \ce{H+} reacts
+with the anion and removes it from solution, which shifts the dissolution
+equilibrium to the right and increases solubility. If \ce{HX} is a strong
+acid, the anion has no affinity for protons, nothing is removed, and the
+equilibrium does not move.}}
+
+\problem[]{For each salt, state whether it is more soluble in acidic
+solution than in pure water, and name the conjugate acid of its anion:}
+\begin{parts}
+  \item \ce{CaCO3}: \answerblank[6.4cm]{yes --- \ce{H2CO3}, weak}
+  \item \ce{AgCl}: \answerblank[6.4cm]{no --- \ce{HCl}, strong}
+  \item \ce{CaF2}: \answerblank[6.4cm]{yes --- \ce{HF}, weak}
+  \item \ce{PbI2}: \answerblank[6.4cm]{no --- \ce{HI}, strong}
+  \item \ce{ZnS}: \answerblank[6.4cm]{yes --- \ce{H2S}, weak}
+  \item \ce{Mg(OH)2}: \answerblank[6.4cm]{yes --- \ce{H2O}, very weak}
+  \item \ce{Ag3PO4}: \answerblank[6.4cm]{yes --- \ce{HPO4^2-}, weak}
+  \item \ce{Ba(NO3)2}: \answerblank[6.4cm]{no --- \ce{HNO3}, strong}
+\end{parts}
+
+\problem[]{Milk of magnesia is a suspension of solid \ce{Mg(OH)2}.}
+\begin{parts}
+  \item Write the dissolution equilibrium.
+        \answerlines[1]{\ce{Mg(OH)2(s) <=> Mg^2+(aq) + 2OH^-(aq)}}
+  \item Explain, with an equation, why it dissolves in the stomach.
+        \answerlines[3]{Stomach acid supplies \ce{H+}, which reacts with
+        hydroxide: $\ce{H+(aq) + OH^-(aq) -> H2O(l)}$. Removing a product
+        shifts the dissolution equilibrium to the right, so more solid
+        dissolves --- and it does so only as fast as acid is available to
+        neutralize.}
+  \item What would adding \ce{NaOH} do instead?
+        \answerlines[2]{Adding \ce{OH-} is the common-ion effect: the
+        equilibrium shifts left and the solubility falls.}
+\end{parts}
+
+\problem[]{Refute this claim: ``Acids are very reactive, so every salt is
+more soluble in acid than in water.'' Use a specific counterexample.
+\answerlines[4]{The claim is false. What matters is not the acid's strength
+but whether the salt's anion is a base. \ce{AgCl} is the counterexample: its
+solubility in \SI{1}{\Molar} \ce{HNO3} is the same as in pure water, because
+\ce{Cl-} is the conjugate base of the strong acid \ce{HCl} and has
+essentially no affinity for protons. Nothing removes chloride from
+solution, so the equilibrium does not shift.}}
+
+\problem[]{Limestone caves.}
+\begin{parts}
+  \item Rainwater dissolves \ce{CO2}, making it slightly
+        \answerblank[2.4cm]{acidic}.
+  \item Explain how that hollows out caverns in limestone, \ce{CaCO3}.
+        \answerlines[3]{Carbonate is the conjugate base of the weak acid
+        \ce{H2CO3}, so it reacts with \ce{H+} to give \ce{HCO3^-}. That
+        removes carbonate from solution and shifts
+        $\ce{CaCO3(s) <=> Ca^2+ + CO3^2-}$ to the right, dissolving the
+        rock over long periods.}
+  \item Where the water drips into open air, \ce{CO2} escapes and
+        stalactites form. Explain the reversal.
+        \answerlines[2]{Losing \ce{CO2} raises the pH, so carbonate is no
+        longer consumed. Its concentration rises until $Q$ exceeds
+        $K_{sp}$ and \ce{CaCO3} precipitates.}
+\end{parts}
+
+\problem[]{\emph{Enrichment --- $Q$ versus $K_{sp}$.} State the rule:}
+\begin{parts}
+  \item $Q > K_{sp}$: \answerblank[5.4cm]{a precipitate forms}
+  \item $Q < K_{sp}$: \answerblank[5.4cm]{no precipitate; unsaturated}
+  \item What must you always do to the concentrations before computing
+        $Q$ for two mixed solutions?
+        \answerblank[5.4cm]{correct them for dilution}
+\end{parts}
+
+\problem[]{\emph{Enrichment.} \SI{50.0}{\milli\litre} of
+\SI{0.0020}{\Molar} \ce{AgNO3} is mixed with \SI{50.0}{\milli\litre} of
+\SI{0.0020}{\Molar} \ce{NaCl}.}
+\begin{parts}
+  \item Concentrations after mixing:
+        \answerblank[5.4cm]{both $1.0\times10^{-3}$~M}
+  \item Calculate $Q$ and decide. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$Q = (1.0\times10^{-3})(1.0\times10^{-3})
+        = 1.0\times10^{-6}$. Since
+        $1.0\times10^{-6} > 1.6\times10^{-10} = K_{sp}$,
+        \textbf{a precipitate forms}.\end{apcanswer}}
+  \item What would the answer have been had you forgotten the dilution?
+        \answerlines[2]{$Q$ would come out as
+        $(2.0\times10^{-3})^2 = 4.0\times10^{-6}$, four times too large.
+        Here the conclusion happens to be unchanged, but in a borderline
+        case it would flip the answer.}
+\end{parts}
+
+\problem[]{\emph{Enrichment.} \SI{100.0}{\milli\litre} of
+\SI{0.0010}{\Molar} \ce{Pb(NO3)2} is mixed with \SI{100.0}{\milli\litre} of
+\SI{0.020}{\Molar} \ce{NaCl}. Will \ce{PbCl2} precipitate?
+\workspace[3cm]
+\keyonly{\begin{apcanswer}After mixing, $[\ce{Pb^2+}] = 5.0\times10^{-4}$
+and $[\ce{Cl-}] = 1.0\times10^{-2}$.
+$Q = (5.0\times10^{-4})(1.0\times10^{-2})^2 = 5.0\times10^{-8}$.
+Since $5.0\times10^{-8} < 1.6\times10^{-5} = K_{sp}$, \textbf{no precipitate
+forms}.\end{apcanswer}}}
+
+\problem[]{\textbf{FRQ (10 points).} Calcium fluoride has
+$K_{sp} = 4.0\times10^{-11}$ at \SI{25}{\celsius}.}
+\begin{parts}
+  \item Write the dissolution equation and the $K_{sp}$ expression.
+        \answerlines[2]{\ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)};
+        $K_{sp} = [\ce{Ca^2+}][\ce{F-}]^2$}
+  \item Calculate the molar solubility in pure water. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$[\ce{Ca^2+}] = s$, $[\ce{F-}] = 2s$;
+        $K_{sp} = (s)(2s)^2 = 4s^3 = 4.0\times10^{-11}$;
+        $s^3 = 1.0\times10^{-11}$;
+        $s = \mathbf{2.2\times10^{-4}}$~M\end{apcanswer}}
+  \item Calculate the molar solubility in \SI{0.025}{\Molar} \ce{NaF}, and
+        state the assumption you made. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$[\ce{F-}] = 0.025 + 2s \approx 0.025$,
+        assuming $2s$ is negligible because $K_{sp}$ is very small.
+        $4.0\times10^{-11} = (s)(0.025)^2$;
+        $s = \mathbf{6.4\times10^{-8}}$~M. The assumption is justified:
+        $2s = 1.3\times10^{-7}$, utterly negligible beside
+        0.025.\end{apcanswer}}
+  \item State what happens to $K_{sp}$ between parts (b) and (c), and why.
+        \answerlines[2]{Nothing --- $K_{sp}$ is unchanged, because it is an
+        equilibrium constant and depends only on temperature. Only the
+        equilibrium position moved.}
+  \item Predict whether \ce{CaF2} is more soluble in
+        \SI{0.10}{\Molar} \ce{HCl} than in pure water, and justify.
+        Do not calculate. \answerlines[3]{More soluble. \ce{F-} is the
+        conjugate base of the weak acid \ce{HF}, so added \ce{H+} converts
+        fluoride to \ce{HF} and removes it from solution. By Le Ch\^atelier
+        the dissolution equilibrium shifts right.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 balanced equation with states, 1 expression with the
+fluoride squared \textbullet\ \textbf{(b) 3 pts} 1 recognizing
+$[\ce{F-}] = 2s$, 1 setting up $4s^3$, 1 answer $2.2\times10^{-4}$~M ---
+using $s^3$ instead of $4s^3$ caps this part at 1 \textbullet\
+\textbf{(c) 2 pts} 1 correct substitution of 0.025 for $[\ce{F-}]$,
+1 answer $6.4\times10^{-8}$~M with the approximation stated \textbullet\
+\textbf{(d) 1 pt} unchanged, because $K_{sp}$ depends only on temperature
+--- saying ``it decreases'' earns 0 \textbullet\ \textbf{(e) 2 pts}
+1 more soluble, 1 justification naming \ce{F-} as the conjugate base of a
+weak acid.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 16 \textbullet\ blocks 1--3}
+  \item Common ion added $\Rightarrow$ solubility:
+        \answerblank[1.8cm]{falls}
+  \item Common ion added $\Rightarrow$ $K_{sp}$:
+        \answerblank[2.4cm]{unchanged}
+  \item Solubility of \ce{CaF2} in water:
+        \answerblank[3cm]{$2.2\times10^{-4}$~M}
+  \item For \ce{MX2}, $K_{sp} = $ \answerblank[1.8cm]{$4s^3$}
+  \item Ranking by $K_{sp}$ is valid only when:
+        \answerblank[4.4cm]{the ion counts match}
+\end{spiralstrip}
+
+\end{document}

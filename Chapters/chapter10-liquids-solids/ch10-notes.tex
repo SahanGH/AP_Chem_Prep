@@ -1,0 +1,664 @@
+% Zumdahl Chapter 10 -- Liquids and Solids. ELABORATED notes, 5 blocks.
+% Two enrichment asides are marked: unit-cell calculations and the
+% Clausius-Clapeyron equation are both off the current CED.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{10}
+\apcunittitle{Liquids and Solids}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S10.1--10.8 \textbullet\ PDF pp.~491--530 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+A chapter that feeds \emph{three} different CED units:
+\S10.1 $\to$ Unit 3.1 (intermolecular forces);
+\S10.2--10.3, 10.6--10.7 $\to$ Unit 3.2--3.3 (solids, liquids, phases);
+\S10.4 $\to$ Unit 2.4 (metals and alloys);
+\S10.7 $\to$ Unit 2.3 (ionic solids);
+and \S10.8 $\to$ \textbf{Unit 6.5}, the energy-of-phase-changes topic that
+Unit 6 borrows from this chapter.
+
+\textbf{Two things inside are off-syllabus} and are marked as enrichment
+where they arise: \emph{unit-cell counting and density calculations}
+(\S10.3--10.4) and the \emph{Clausius--Clapeyron equation} (\S10.8). You are
+responsible for the qualitative structures and for reading a heating curve
+--- not for computing a density from a unit-cell edge.
+
+\S10.9 (phase diagrams) is optional; a short treatment is included at the
+end of Block 5 because it makes vapour pressure easier to picture.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Intermolecular Forces}{Zumdahl \S10.1}
+
+\begin{objectives}
+  \item Identify every intermolecular force acting in a substance.
+  \item Rank substances by IMF strength, accounting for polarizability.
+\end{objectives}
+
+\reading{Zumdahl \S10.1}{493--498}
+
+\begin{warmup}[3]
+  \item Is \ce{CH4} polar? \answerblank[2cm]{no}
+  \item Which is more electronegative, O or S?
+        \answerblank[1.6cm]{O}
+  \item Geometry of \ce{H2O}: \answerblank[2cm]{bent}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The forces between molecules}
+
+\notesectionz{Three intermolecular forces}{10.1}
+\practice{1}
+
+These are attractions \emph{between} molecules, not the bonds within them.
+They are far weaker than covalent bonds --- which is why melting a molecular
+solid needs so much less energy than decomposing it.
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{3.4cm}p{4.0cm}p{5.8cm}@{}}
+\toprule
+\textbf{Force} & \textbf{Present in} & \textbf{Origin}\\
+\midrule
+\term{London dispersion} & \answerblank[3.4cm]{every substance} &
+  instantaneous, momentary dipoles from electron motion\\
+\term{Dipole--dipole} & polar molecules &
+  permanent $\delta^+$ attracted to a neighbour's
+  \answerblank[1.4cm]{$\delta^-$}\\
+\term{Hydrogen bonding} & H bonded directly to
+  \answerblank[2.2cm]{N, O, or F} &
+  an especially strong dipole--dipole case\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Dispersion forces exist in \emph{everything}, including polar molecules.
+The question is never whether they are present but how large they are.
+Strength grows with the number of electrons, because a bigger, looser
+electron cloud is more \term{polarizable}.
+\end{apcnote}
+
+\notesub{Hydrogen bonding requires a direct attachment}
+
+\ce{CH3OH} hydrogen bonds through its \answerblank[1.4cm]{O--H} group.
+\ce{CH3OCH3} has the same formula \ce{C2H6O} but
+\answerblank[2.4cm]{cannot} hydrogen bond --- its hydrogens are all on
+carbon. Boiling points: \SI{65}{\celsius} versus \SI{-24}{\celsius}.
+
+\begin{workedexample}[Worked example: when dispersion wins]
+Zumdahl's Table 10.3:
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Molecule & Forces & bp (\si{\celsius})\\
+\midrule
+\ce{BI3} & dispersion only & 209.5\\
+\ce{PCl3} & dispersion $+$ dipole--dipole & 76.1\\
+\ce{NH3} & dispersion $+$ hydrogen bonding & $-33.0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\ce{BI3} is nonpolar yet boils highest. Its enormous electron count makes
+dispersion overwhelming, while \ce{NH3} is tiny with few electrons.
+
+\textbf{Never rank by force \emph{type} alone.} Compare molecular size
+first when the molecules differ greatly; compare force type only among
+molecules of similar size.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Identify and rank}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{CO2}: \answerblank[5.5cm]{dispersion only}
+  \item \ce{HCl}: \answerblank[5.5cm]{dispersion $+$ dipole--dipole}
+  \item \ce{NH3}: \answerblank[7.4cm]{dispersion, dipole--dipole, H-bonding}
+  \item Rank bp: \ce{CH4}, \ce{Xe}, \ce{H2O}
+        \answerblank[5.5cm]{\ce{H2O} $>$ \ce{Xe} $>$ \ce{CH4}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{What IMFs control}
+
+\notesectionz{Properties that track IMF strength}{10.1}
+\practice{6}
+
+Stronger IMFs give \answerblank[1.8cm]{higher} boiling point,
+\answerblank[1.8cm]{higher} viscosity, \answerblank[1.8cm]{higher} surface
+tension --- and \answerblank[1.6cm]{lower} vapour pressure.
+
+\begin{apctrap}
+Vapour pressure runs \emph{opposite} to the others, and it catches people
+out. Strong IMFs hold molecules in the liquid, so fewer escape --- hence a
+\emph{low} vapour pressure. A liquid that evaporates readily is called
+\term{volatile}, and volatility means \emph{weak} IMFs.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Structure to property}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{F2}, \ce{Cl2}, \ce{Br2}, \ce{I2} are all nonpolar, yet boiling
+        point rises steadily down the group. Explain.
+        \answerlines[2]{Only dispersion operates in all four, but electron
+        count rises down the group, giving larger and more polarizable
+        clouds and therefore stronger dispersion forces.}
+  \item \ce{H2O} boils at \SI{100}{\celsius} while \ce{H2S} boils at
+        \SI{-60}{\celsius}, even though \ce{H2S} has the greater molar
+        mass. Explain. \answerlines[3]{Water hydrogen bonds --- H attached
+        directly to oxygen, one of only three elements that permit it.
+        Sulfur is not electronegative enough, so \ce{H2S} manages only
+        dipole--dipole and dispersion, which do not compensate for its
+        larger mass.}
+\end{enumerate}
+
+\begin{exitticket}
+Two liquids have equal molar mass; one is polar and one is not. Which has
+the higher vapour pressure at room temperature, and why?
+\answerlines[2]{The nonpolar one --- with only dispersion forces and no
+dipole--dipole attraction, its molecules escape the liquid more readily.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Liquid State}{Zumdahl \S10.2}
+
+\begin{objectives}
+  \item Explain surface tension, viscosity, and capillary action in terms of
+        intermolecular forces.
+  \item Distinguish cohesive from adhesive forces.
+\end{objectives}
+
+\reading{Zumdahl \S10.2}{498--501}
+
+\begin{warmup}[3]
+  \item Strongest IMF in \ce{CH3OH}: \answerblank[3.8cm]{hydrogen bonding}
+  \item Higher vapour pressure: strong or weak IMFs?
+        \answerblank[2cm]{weak}
+  \item Which has stronger dispersion, \ce{Ne} or \ce{Xe}?
+        \answerblank[2cm]{\ce{Xe}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Cohesion and adhesion}
+
+\notesectionz{Two kinds of attraction}{10.2}
+\practice{1}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \term{Cohesive} forces act between molecules of the
+        \answerblank[1.8cm]{same} substance.
+  \item \term{Adhesive} forces act between the liquid and a
+        \answerblank[3.4cm]{different surface}, such as glass.
+\end{itemize}
+
+Which of the two wins determines much of a liquid's visible behaviour.
+
+\notesub{Surface tension}
+
+A molecule in the interior is pulled equally in all directions. A molecule at
+the surface has no neighbours above, so it is pulled
+\answerblank[2cm]{inward} --- the liquid minimizes its surface area.
+
+That is why water \answerblank[1.6cm]{beads} on a waxed car and why some
+insects walk on ponds. Stronger IMFs give
+\answerblank[1.8cm]{higher} surface tension.
+
+\segment{GUIDED PRACTICE}{15}{Explain the observations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Why does a drop of water form a sphere in free fall?
+        \answerlines[2]{A sphere has the smallest surface area for a given
+        volume, and surface tension drives the liquid to minimize surface
+        area.}
+  \item Mercury has a much higher surface tension than water. What does that
+        say about its cohesive forces?
+        \answerblank[6.2cm]{they are stronger than water's}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Capillary action and viscosity}
+
+\notesectionz{Reading a meniscus}{10.2}
+\practice{4}
+
+Water creeps up a narrow glass tube because water's
+\answerblank[2cm]{adhesive} forces to glass --- the polar Si--OH groups
+attract water's dipole --- exceed its cohesive forces. The column rises
+until its weight balances that attraction.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{3.0cm}p{4.4cm}p{5.8cm}@{}}
+\toprule
+\textbf{Liquid} & \textbf{Which force wins} & \textbf{Meniscus shape}\\
+\midrule
+Water in glass & \answerblank[1.8cm]{adhesive} &
+  \answerblank[1.8cm]{concave} (curves up at the edges)\\
+Mercury in glass & \answerblank[1.8cm]{cohesive} &
+  \answerblank[1.8cm]{convex} (bulges upward)\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+The meniscus is a direct readout of which force is stronger. Water wets
+glass and climbs it; mercury does not wet glass and pulls away from it.
+Reading a burette to the bottom of the meniscus is a consequence of this ---
+with mercury you would read the top.
+\end{apcnote}
+
+\notesub{Viscosity}
+
+\term{Viscosity} is resistance to flow. It increases with
+\answerblank[3.1cm]{stronger IMFs} and also with
+\answerblank[4.3cm]{molecular size/shape} --- long chain molecules tangle,
+which is why motor oil and glycerol pour slowly while water does not.
+
+\segment{APPLICATION}{20}{Property reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Glycerol (\ce{C3H8O3}, three O--H groups) is far more viscous than
+        ethanol (\ce{C2H5OH}, one O--H). Give both reasons.
+        \answerlines[3]{Glycerol can form three times as many hydrogen bonds
+        per molecule, greatly increasing the cohesive attraction; and its
+        larger, more branched structure lets molecules tangle, further
+        resisting flow.}
+  \item Predict the meniscus shape for water in a plastic (nonpolar) tube
+        and justify. \answerlines[2]{Nearly flat or convex --- water's
+        adhesive attraction to a nonpolar plastic is weak, so cohesive
+        forces dominate and the water does not wet the surface.}
+\end{enumerate}
+
+\begin{exitticket}
+Explain why a paperclip can be floated on water even though steel is far
+denser than water. \answerlines[2]{Surface tension --- water's hydrogen
+bonding creates a strong inward pull at the surface that resists being
+broken, supporting the clip's weight without it ever becoming submerged.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Metallic and Network Solids}{Zumdahl \S10.3--10.5}
+
+\begin{objectives}
+  \item Classify solids by particle type and predict properties.
+  \item Explain metallic bonding, alloys, and network covalent structures.
+\end{objectives}
+
+\reading{Zumdahl \S10.3--10.5}{501--518}
+
+\begin{warmup}[3]
+  \item Water in glass gives which meniscus?
+        \answerblank[2cm]{concave}
+  \item Viscosity increases with what?
+        \answerblank[3.4cm]{stronger IMFs}
+  \item Does graphite conduct electricity? \answerblank[1.6cm]{yes}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Four kinds of solid}
+
+\notesectionz{Classification}{10.3}
+\practice{1}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{2.7cm}p{2.6cm}p{2.9cm}p{4.4cm}@{}}
+\toprule
+\textbf{Type} & \textbf{Particles} & \textbf{Held by} & \textbf{Properties}\\
+\midrule
+Metallic & cations $+$ e$^-$ sea & delocalized electrons &
+  conducts \answerblank[1.6cm]{always}, malleable, lustrous\\
+Ionic & cations, anions & electrostatic attraction &
+  high mp, brittle, conducts only when
+  \answerblank[3.4cm]{molten/aqueous}\\
+Network covalent & atoms & \answerblank[3.2cm]{covalent bonds} &
+  very high mp, very hard\\
+Molecular & molecules & \answerblank[1.4cm]{IMFs} &
+  low mp, soft, nonconducting\\
+\bottomrule
+\end{tabular}
+
+\segment{GUIDED PRACTICE}{15}{Classify from data}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item mp \SI{1538}{\celsius}, conducts as a solid, malleable:
+        \answerblank[4cm]{metallic}
+  \item mp \SI{3550}{\celsius}, extremely hard, insulating:
+        \answerblank[4cm]{network covalent}
+  \item mp \SI{-95}{\celsius}, soft, insulating:
+        \answerblank[4cm]{molecular}
+  \item mp \SI{2852}{\celsius}, brittle, conducts when molten:
+        \answerblank[4cm]{ionic}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Metals, alloys, and network solids}
+
+\notesectionz{The electron sea and its consequences}{10.4}
+\practice{6}
+
+Metal cations sit in fixed positions while valence electrons are
+\term{delocalized} across the entire sample. One model, three properties:
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item conducts electricity --- \answerblank[6.0cm]{mobile electrons carry
+        charge};
+  \item malleable --- layers slide without
+        \answerblank[4.2cm]{aligning like charges} (contrast ionic solids,
+        which shatter);
+  \item lustrous --- mobile electrons re-emit light.
+\end{itemize}
+
+\notesub{Alloys}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item \term{Substitutional}: similar-sized atoms
+        \answerblank[2.2cm]{replace} host atoms --- brass (Zn in Cu).
+  \item \term{Interstitial}: small atoms fill
+        \answerblank[1.8cm]{holes} between hosts --- steel (C in Fe).
+        These pin the layers, making the alloy
+        \answerblank[5.2cm]{harder and less malleable}.
+\end{itemize}
+
+\notesub{Two forms of carbon}
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{2.4cm}p{3.4cm}p{6.4cm}@{}}
+\toprule
+ & \textbf{Diamond} & \textbf{Graphite}\\
+\midrule
+Bonding & \answerblank[1.6cm]{sp$^3$}, 3-D network &
+  \answerblank[1.6cm]{sp$^2$} sheets, with a leftover $p$ electron
+  delocalized across each layer\\
+Conducts? & \answerblank[1.2cm]{no} & \answerblank[1.4cm]{yes}, within
+  the layers\\
+Hardness & hardest known & soft; layers slide over one another\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Same element, wildly different properties --- because \emph{structure},
+not composition, sets behaviour. Graphite's individual sheets are
+\term{graphene}, first isolated with adhesive tape in 2004 and awarded the
+2010 Nobel Prize in physics. It is roughly 100 times stronger than steel.
+\end{apcnote}
+
+\begin{apcnote}[ENRICHMENT --- beyond the CED]
+\S10.3--10.4 also develop \textbf{unit cells}: counting atoms per cell
+($8 \times \tfrac18 + 6 \times \tfrac12 = 4$ for face-centred cubic) and
+computing a solid's density from its atomic radius. This is not on the
+current CED. You are responsible for the \emph{qualitative} structures and
+their properties, not for unit-cell arithmetic.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Structure explains property}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Diamond and graphite are both pure carbon, yet one is the hardest
+        known material and the other is used as a lubricant. Explain fully.
+        \answerlines[3]{Diamond is a three-dimensional network of sp$^3$
+        carbons, so deforming it means breaking covalent bonds in every
+        direction. Graphite consists of strongly bonded sp$^2$ sheets held
+        to one another only by weak dispersion forces, so the layers slide
+        past each other easily.}
+  \item Explain why steel is harder than pure iron but still conducts
+        electricity. \answerlines[2]{Interstitial carbon atoms block the
+        iron layers from sliding, increasing hardness; the delocalized
+        electron sea is unaffected, so conduction continues.}
+\end{enumerate}
+
+\begin{exitticket}
+\ce{SiO2} (quartz) melts near \SI{1600}{\celsius} while \ce{CO2} sublimes at
+\SI{-78}{\celsius}. Both are group-14 oxides. Explain.
+\answerlines[2]{\ce{SiO2} is a covalent network --- melting requires
+breaking strong covalent bonds throughout the lattice. \ce{CO2} is molecular,
+so only weak dispersion forces between discrete molecules must be overcome.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Molecular and Ionic Solids}{Zumdahl \S10.6--10.7}
+
+\begin{objectives}
+  \item Explain the properties of molecular solids from their IMFs.
+  \item Explain ionic solid properties, including brittleness and
+        conductivity.
+\end{objectives}
+
+\reading{Zumdahl \S10.6--10.7}{518--523}
+
+\begin{warmup}[3]
+  \item Type of solid: graphite? \answerblank[3.4cm]{network covalent}
+  \item Steel is which kind of alloy? \answerblank[2.4cm]{interstitial}
+  \item Do ionic solids conduct as solids? \answerblank[1.6cm]{no}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Molecular solids}
+
+\notesectionz{Weak forces, low melting points}{10.6}
+\practice{1}
+
+In a molecular solid the lattice points are occupied by whole
+\answerblank[2.2cm]{molecules}, held to each other only by
+\answerblank[1.4cm]{IMFs}.
+
+\begin{apctrap}
+Melting a molecular solid breaks \emph{intermolecular} forces, never
+covalent bonds. Melting ice does not break O--H bonds --- it breaks hydrogen
+bonds between water molecules. Writing otherwise scores zero on an FRQ, and
+the numbers show why: hydrogen bonds in water are roughly
+\SI{20}{\kilo\joule\per\mole} while the O--H bond is about
+\SI{460}{\kilo\joule\per\mole}.
+\end{apctrap}
+
+\notesub{Why ice floats}
+
+Hydrogen bonding forces water molecules into an open hexagonal lattice with
+more \answerblank[2.7cm]{empty space} than the liquid. Solid water is
+therefore \answerblank[1.6cm]{less} dense than liquid water --- almost
+uniquely among substances, and the reason lakes freeze from the top down.
+
+\segment{GUIDED PRACTICE}{15}{Predict melting points}
+
+Rank by increasing melting point and give the reason:
+\ce{CH4}, \ce{H2O}, \ce{NaCl}, \ce{SiO2}.
+\answerlines[3]{\ce{CH4} $<$ \ce{H2O} $<$ \ce{NaCl} $<$ \ce{SiO2}. Methane
+is molecular with dispersion only; water is molecular with hydrogen bonding;
+\ce{NaCl} is ionic with a full lattice of electrostatic attractions;
+\ce{SiO2} is a covalent network requiring covalent bonds to break.}
+
+\segment{INSTRUCTION B}{20}{Ionic solids}
+
+\notesectionz{Lattice, brittleness, conductivity}{10.7}
+\practice{6}
+
+An ionic solid is a repeating three-dimensional lattice --- each cation
+surrounded by anions and vice versa. There is no ``\ce{NaCl} molecule,'' only
+a repeating \answerblank[1.4cm]{ratio}.
+
+\begin{workedexample}[Worked example: why ionic solids shatter]
+Strike an ionic crystal and one layer shifts relative to the next. That
+shift brings \answerblank[2.4cm]{like charges} into alignment --- cation
+above cation --- and the sudden repulsion splits the crystal along a clean
+plane.
+
+Now do the same to a metal. Its layers slide too, but the delocalized
+electron sea simply flows with them and no like-charge alignment occurs ---
+so the metal deforms instead of breaking. \textbf{Brittle versus malleable
+comes down entirely to what happens when layers shift.}
+\end{workedexample}
+
+\notesub{Conductivity requires mobile charges}
+
+Solid ionic compounds do \emph{not} conduct: the ions are
+\answerblank[1.8cm]{locked} in place. Melt or dissolve them and the ions
+become \answerblank[1.6cm]{mobile}, so the liquid or solution conducts.
+
+\segment{APPLICATION}{20}{Contrasting solids}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Copper conducts as a solid; \ce{NaCl} conducts only when molten or
+        dissolved. Explain both, naming the charge carrier in each.
+        \answerlines[3]{In copper the charge carriers are delocalized
+        electrons, mobile in any phase. In \ce{NaCl} the carriers are ions,
+        which are fixed in the solid lattice and become mobile only when the
+        lattice is disrupted by melting or dissolving.}
+  \item Why is \ce{MgO} both harder and higher-melting than \ce{NaCl}?
+        \answerlines[2]{\ce{MgO}'s $2{+}/2{-}$ charge product is four times
+        \ce{NaCl}'s $1{+}/1{-}$, so the Coulombic attractions throughout the
+        lattice are far stronger.}
+\end{enumerate}
+
+\begin{exitticket}
+Identify the solid type and justify: a substance melts at
+\SI{801}{\celsius}, shatters when struck, and conducts only when dissolved.
+\answerlines[2]{Ionic --- the high melting point indicates strong lattice
+attractions, brittleness indicates layer-shift repulsion, and conductivity
+only when dissolved indicates ions that must be freed to move.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Vapour Pressure and Changes of State}{Zumdahl \S10.8}
+
+\begin{objectives}
+  \item Explain vapour pressure and its temperature dependence.
+  \item Read a heating curve and compute the energy of phase changes.
+\end{objectives}
+
+\reading{Zumdahl \S10.8}{523--530}
+
+\begin{warmup}[4]
+  \item Why does ice float? \answerblank[4.4cm]{open H-bonded lattice}
+  \item Melting a molecular solid breaks:
+        \answerblank[3.5cm]{IMFs, not bonds}
+  \item Charge carrier in molten \ce{NaCl}: \answerblank[2cm]{ions}
+  \item Specific heat of liquid water:
+        \answerblank[3.6cm]{\SI{4.184}{\joule\per\gram\per\celsius}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Vapour pressure}
+
+\notesectionz{An equilibrium, not an escape}{10.8}
+\practice{4}
+
+In a closed container, molecules leave the liquid and others return. When
+the two rates are equal the system is at
+\answerblank[2.4cm]{equilibrium}, and the pressure of vapour above the
+liquid is its \term{vapour pressure}.
+
+Vapour pressure \answerblank[1.8cm]{increases} with temperature (more
+molecules have enough kinetic energy to escape) and
+\answerblank[1.8cm]{decreases} with stronger IMFs.
+
+\notesub{Boiling}
+
+A liquid \term{boils} when its vapour pressure equals the
+\answerblank[3.6cm]{external pressure}. The \term{normal boiling point} is
+the temperature at which vapour pressure reaches
+\answerblank[1.6cm]{\SI{1}{\atm}}.
+
+\begin{apcnote}
+This is why water boils near \SI{95}{\celsius} in Denver and why a pressure
+cooker works. Lower the external pressure and the liquid boils sooner; raise
+it and boiling is postponed to a higher temperature --- which is what cooks
+the food faster.
+\end{apcnote}
+
+\begin{apcnote}[ENRICHMENT --- beyond the CED]
+\S10.8 derives the \textbf{Clausius--Clapeyron equation},
+$\ln(P_{\text{vap}}) = -\frac{\Delta H_{\text{vap}}}{R}\left(\frac1T\right)
++ C$, so that a plot of $\ln P$ versus $1/T$ is a straight line of slope
+$-\Delta H_{\text{vap}}/R$. It is elegant and it is not on the current CED.
+The qualitative content --- vapour pressure rises with temperature, and a
+steeper slope means a larger $\Delta H_{\text{vap}}$ --- is what matters.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Vapour pressure reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Higher vapour pressure at \SI{25}{\celsius}: water or diethyl ether
+        (bp \SI{35}{\celsius})? \answerblank[2.6cm]{ether}
+  \item Which therefore has the larger $\Delta H_{\text{vap}}$?
+        \answerblank[2.6cm]{water}
+  \item Does vapour pressure depend on the \emph{amount} of liquid present?
+        Explain. \answerlines[2]{No --- it is an equilibrium property set by
+        temperature and intermolecular forces, not by quantity. A drop and a
+        litre give the same vapour pressure.}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Heating curves}
+
+\notesectionz{Where the energy goes}{10.8}
+\practice{5}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=10cm, height=5.2cm,
+    xlabel={heat added}, ylabel={temperature (\si{\celsius})},
+    xtick=\empty, ytick={0,100}, ymin=-40, ymax=140,
+    xmin=0, xmax=10, axis lines=left]
+  \addplot[seriesA, thick] coordinates
+    {(0,-25) (0.6,0) (2.2,0) (3.5,100) (8.8,100) (10,125)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+On a sloped segment, added energy raises
+\answerblank[2.7cm]{temperature} --- use $q = mc\Delta T$.
+On a \answerblank[1.8cm]{plateau}, temperature is constant while energy goes
+into \answerblank[3.6cm]{overcoming IMFs} --- use $q = n\Delta H$.
+
+\begin{workedexample}[Worked example: ice to steam]
+Heat \SI{18.0}{\gram} (one mole) of ice from \SI{-25.0}{\celsius} to steam
+at \SI{125.0}{\celsius}. Data: $c_{\text{ice}} = 2.09$,
+$c_{\text{water}} = 4.184$, $c_{\text{steam}} = 2.0$
+\si{\joule\per\gram\per\celsius}; $\Delta H_{\text{fus}} = 6.02$,
+$\Delta H_{\text{vap}} = 40.7$ \si{\kilo\joule\per\mole}.
+\begin{align*}
+  \text{warm ice} &: (18.0)(2.09)(25.0) = \SI{0.94}{\kilo\joule}\\
+  \text{melt} &: (1.00)(6.02) = \SI{6.02}{\kilo\joule}\\
+  \text{warm water} &: (18.0)(4.184)(100.0) = \SI{7.53}{\kilo\joule}\\
+  \text{vaporize} &: (1.00)(40.7) = \SI{40.7}{\kilo\joule}\\
+  \text{warm steam} &: (18.0)(2.0)(25.0) = \SI{0.90}{\kilo\joule}\\[2pt]
+  \text{total} &= \SI{56.1}{\kilo\joule}
+\end{align*}
+Note that vaporization alone is \SI{40.7}{\kilo\joule} --- about
+\textbf{73\% of the total}. Separating molecules completely costs far more
+than merely loosening them.
+\end{workedexample}
+
+\begin{apctrap}
+$\Delta H_{\text{vap}}$ is always much larger than $\Delta H_{\text{fus}}$
+(40.7 versus 6.02 for water --- nearly seven times). Melting only loosens
+molecules enough to flow; vaporizing separates them entirely. Any answer
+that has fusion costing more than vaporization is wrong.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Heating curve calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item How much energy is needed to melt \SI{45.0}{\gram} of ice already at
+        \SI{0}{\celsius}? \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$n = 45.0/18.02 = \SI{2.50}{\mole}$;
+        $q = 2.50 \times 6.02 = \SI{15.1}{\kilo\joule}$\end{apcanswer}}
+  \item How much energy to convert \SI{45.0}{\gram} of water at
+        \SI{100}{\celsius} into steam at \SI{100}{\celsius}?
+        \answerblank[3.4cm]{\SI{102}{\kilo\joule}}
+  \item Explain why steam at \SI{100}{\celsius} causes far worse burns than
+        liquid water at \SI{100}{\celsius}.
+        \answerlines[3]{Condensing steam releases its entire enthalpy of
+        vaporization --- about \SI{40.7}{\kilo\joule\per\mole} --- into the
+        skin before the resulting water has even begun to cool. That energy
+        release is absent when liquid water at the same temperature contacts
+        skin.}
+\end{enumerate}
+
+\begin{apcnote}[Optional: phase diagrams (\S10.9)]
+A phase diagram plots pressure against temperature, dividing the plane into
+solid, liquid, and gas regions. The lines are equilibria between two phases;
+the \term{triple point} is where all three coexist. It is not on the CED,
+but it makes the vapour-pressure and boiling-point ideas above easier to
+picture in one image --- worth twenty minutes if you have them.
+\end{apcnote}
+
+\begin{exitticket}
+On a heating curve, why does temperature stay constant during a phase
+change even though energy is still being added?
+\answerlines[2]{The added energy goes into overcoming intermolecular forces
+and separating the particles, not into increasing their average kinetic
+energy --- and temperature measures only the latter.}
+\end{exitticket}
+
+\end{document}

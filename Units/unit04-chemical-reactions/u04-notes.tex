@@ -1,0 +1,715 @@
+% Unit 4 guided notes -- 7 block lessons.
+\documentclass{apchem-notes}
+
+\apcunit{4}
+\apcunittitle{Chemical Reactions}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 4.1--4.9 \textbullet\ Zumdahl \S1.10, \S3.8--3.11, \S4.4--4.11}
+
+\begin{document}
+\apctitleblock
+
+% =====================================================================
+\blocklesson{Physical and Chemical Change}{Fri Oct 9}
+
+\begin{objectives}
+  \item Distinguish physical from chemical change at the particle level.
+  \item Evaluate observational evidence for a chemical reaction critically.
+\end{objectives}
+
+\reading{Zumdahl \S1.10}{53--57}\quad\reading{\S3.8}{132--134}
+
+\begin{warmup}[3]
+  \item Melting ice breaks what kind of force?
+        \answerblank[4.9cm]{hydrogen bonds (IMFs)}
+  \item Balance: \ce{Na + Cl2 -> NaCl}:
+        \answerblank[4.7cm]{\ce{2 Na + Cl2 -> 2 NaCl}}
+  \item Moles in \SI{18.0}{\gram} \ce{H2O}: \answerblank[2.6cm]{\SI{1.00}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What actually changed?}
+
+\notesection{The particle-level test}{4.4}
+\practice{1}
+
+The distinction is not about how dramatic the change looks. It is about
+whether the \emph{substances themselves} changed identity:
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.2cm}p{4.6cm}p{5.6cm}@{}}
+\toprule
+ & \textbf{Physical change} & \textbf{Chemical change}\\
+\midrule
+What changes & arrangement or spacing of particles &
+  \answerblank[5.0cm]{which atoms are bonded}\\
+Bonds & intermolecular forces broken/formed &
+  \answerblank[3.5cm]{covalent or ionic} bonds broken/formed\\
+Identity & \answerblank[2.2cm]{unchanged} & new substances exist\\
+Example & \ce{H2O(l) -> H2O(g)} &
+  \answerblank[4.4cm]{\ce{2 H2O -> 2 H2 + O2}}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Dissolving is the classic hard case. Dissolving sugar is \emph{physical} ---
+\ce{C12H22O11} molecules simply disperse. Dissolving \ce{NaCl} is treated as
+physical too, though ionic bonds are disrupted, because no new substance
+forms and the process reverses on evaporation. But dissolving \ce{HCl} gas
+in water is \emph{chemical} --- it ionizes to \ce{H+} and \ce{Cl-}, species
+that did not exist before.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Classify with justification}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Iron rusting: \answerblank[6.9cm]{chemical --- new compound
+        \ce{Fe2O3}}
+  \item Dry ice subliming: \answerblank[5.5cm]{physical --- still \ce{CO2}}
+  \item Magnesium burning: \answerblank[5.5cm]{chemical --- forms \ce{MgO}}
+  \item Salt dissolving: \answerblank[7.4cm]{physical --- ions dispersed,
+        reversible}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Evidence --- and its limits}
+
+\notesection{Reading experimental evidence}{4.1}
+\practice{2}
+
+Common indicators that a chemical reaction has occurred:
+\begin{itemize}[leftmargin=*,itemsep=0.15em]
+  \item formation of a \answerblank[2.2cm]{precipitate}
+  \item evolution of a \answerblank[1.6cm]{gas}
+  \item a \answerblank[4.2cm]{temperature change} (energy released or
+        absorbed)
+  \item a persistent \answerblank[3.0cm]{colour change}
+\end{itemize}
+
+\begin{apcnote}
+Every one of these can mislead. Bubbles may be dissolved air escaping on
+warming. A colour change may be dilution or an indicator responding to pH
+rather than a new substance. A temperature change accompanies dissolving
+too. \textbf{Good evidence is a combination, plus a plausible product.} AP
+rewards students who name the ambiguity.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Evaluate the claim}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A student adds a colourless solution to another colourless solution
+        and the mixture turns faintly yellow. They claim a reaction
+        occurred. Give one reason this may be right and one reason it may
+        not be. \answerlines[3]{May be right: a new coloured product (e.g.\
+        a chromate or an iron complex) could have formed. May not be:
+        mixing could simply have diluted or combined pre-existing coloured
+        species, or an indicator may have responded to a pH change without
+        any new compound forming.}
+  \item Heating a sealed flask of water produces vigorous bubbling. Is this
+        chemical? Justify. \answerlines[2]{No --- boiling is a physical
+        change; the bubbles are gaseous \ce{H2O}, the same substance, and
+        the process reverses on cooling.}
+\end{enumerate}
+
+\begin{exitticket}
+Give one observation that would be strong evidence of a chemical change and
+explain why it is hard to explain physically.
+\answerlines[2]{A solid precipitate forming when two clear solutions mix ---
+no physical process converts two liquids into an insoluble solid, so new
+bonding must have occurred.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Representations of Reactions}{Mon Oct 12}
+
+\begin{objectives}
+  \item Translate among symbolic, particulate, and macroscopic
+        representations.
+  \item Draw particulate diagrams that conserve atoms and charge.
+\end{objectives}
+
+\reading{Zumdahl \S4.6--4.7}{188--192}
+
+\begin{warmup}[4]
+  \item Physical or chemical: sugar dissolving?
+        \answerblank[2.4cm]{physical}
+  \item Evidence of reaction that gases can fake:
+        \answerblank[3.6cm]{bubbling}
+  \item Balance: \ce{H2 + O2 -> H2O}:
+        \answerblank[4.4cm]{\ce{2 H2 + O2 -> 2 H2O}}
+  \item $[\ce{Cl-}]$ in \SI{0.20}{\Molar} \ce{MgCl2}:
+        \answerblank[2.6cm]{\SI{0.40}{\Molar}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Three levels of description}
+
+\notesection{The AP triangle}{4.3}
+\practice{1}
+
+Every chemical idea can be described at three levels, and AP asks you to
+move fluently among them:
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\small, node distance=2.6cm]
+  \node[draw=apcaccent, thick, rounded corners, minimum width=2.9cm,
+        minimum height=0.9cm] (mac) at (0,2.1) {macroscopic};
+  \node[draw=apcaccent, thick, rounded corners, minimum width=2.9cm,
+        minimum height=0.9cm] (par) at (-2.7,0) {particulate};
+  \node[draw=apcaccent, thick, rounded corners, minimum width=2.9cm,
+        minimum height=0.9cm] (sym) at (2.7,0) {symbolic};
+  \draw[{Stealth}-{Stealth}, thick] (mac) -- (par);
+  \draw[{Stealth}-{Stealth}, thick] (mac) -- (sym);
+  \draw[{Stealth}-{Stealth}, thick] (par) -- (sym);
+  \node[font=\sffamily\scriptsize, text width=2.6cm, align=center]
+    at (0,2.9) {what you observe};
+  \node[font=\sffamily\scriptsize, text width=2.8cm, align=center]
+    at (-3.0,-0.85) {what the particles do};
+  \node[font=\sffamily\scriptsize, text width=2.8cm, align=center]
+    at (3.0,-0.85) {equations and formulas};
+\end{tikzpicture}
+\end{center}
+
+\notesub{Rules for a correct particulate diagram}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Conserve \answerblank[1.6cm]{atoms} --- count each type on both
+        sides.
+  \item Conserve \answerblank[1.6cm]{charge} --- total charge before equals
+        total charge after.
+  \item Show ionic compounds in solution as
+        \answerblank[2.8cm]{separated ions}.
+  \item Show the correct \answerblank[1.6cm]{ratio} of particles.
+  \item Leftover excess reactant \emph{stays in the picture} --- do not
+        quietly delete it.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: reading a particulate diagram]
+A box before reaction shows 6 filled circles (\ce{A}) and 2 open pairs
+(\ce{B2}). After reaction it shows 4 \ce{AB} units and 2 leftover filled
+circles.
+
+Atom check: before, 6 A and 4 B; after, $4 + 2 = 6$ A and 4 B. \checkmark\\
+Equation: $\ce{2 A + B2 -> 2 AB}$. \\
+Limiting reactant: \ce{B2} --- it is entirely consumed while 2 A remain.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Symbolic to particulate}
+
+Draw the particulate picture of \SI{0.1}{\Molar} \ce{Na2SO4} reacting with
+\SI{0.1}{\Molar} \ce{BaCl2}, showing 3 formula units of each.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}Before: 6 \ce{Na+}, 3 \ce{SO4^2-}, 3 \ce{Ba^2+},
+6 \ce{Cl-}, all separated. After: 3 \ce{BaSO4} drawn as a clustered solid,
+with 6 \ce{Na+} and 6 \ce{Cl-} still separated in solution.\end{apcanswer}}
+
+\segment{INSTRUCTION B}{20}{Common drawing errors}
+
+\notesection{What graders look for}{4.3}
+\practice{1}
+
+\begin{apctrap}
+The four errors that cost the most points:
+\begin{enumerate}[leftmargin=*,itemsep=0.1em]
+  \item Drawing \ce{NaCl} as bonded pairs in solution instead of free ions.
+  \item Losing or inventing atoms between the before and after boxes.
+  \item Omitting the excess reactant from the ``after'' picture.
+  \item Drawing a precipitate as scattered ions rather than a clustered
+        solid.
+\end{enumerate}
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Diagnose and redraw}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A student's ``after'' box for \ce{Zn + 2 HCl -> ZnCl2 + H2} shows
+        \ce{ZnCl2} as one bonded unit floating in solution, and no
+        \ce{H2}. Name both errors.
+        \answerlines[2]{\ce{ZnCl2} is soluble and must be drawn as
+        \ce{Zn^2+} plus two separate \ce{Cl-}; and the \ce{H2} gas produced
+        has been omitted entirely, violating conservation of atoms.}
+  \item Explain why a particulate diagram of a precipitation reaction should
+        show the solid as a cluster rather than dispersed particles.
+        \answerlines[2]{A precipitate is an insoluble lattice --- its ions
+        are held together, no longer free to move independently through the
+        solution.}
+\end{enumerate}
+
+\begin{exitticket}
+Why must charge as well as atoms be conserved in a particulate drawing of an
+ionic reaction? \answerlines[2]{Electrons are neither created nor destroyed;
+if total charge changed, electrons would have appeared or vanished.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Net Ionic Equations}{Wed Oct 14}
+
+\begin{objectives}
+  \item Write formula, complete ionic, and net ionic equations.
+  \item Justify which species are written as ions.
+\end{objectives}
+
+\reading{Zumdahl \S4.6}{188--190}
+
+\begin{warmup}[3]
+  \item Conserve what two things in a particulate drawing?
+        \answerblank[3.6cm]{atoms and charge}
+  \item Is \ce{AgCl} soluble? \answerblank[2cm]{no}
+  \item Strong or weak electrolyte: \ce{HC2H3O2}?
+        \answerblank[2cm]{weak}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The splitting rule}
+
+\notesection{What gets written as ions}{4.2}
+\practice{1}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \textbf{Split}: soluble ionic compounds, strong acids, strong bases
+        --- all \answerblank[3.9cm]{strong electrolytes}.
+  \item \textbf{Keep whole}: solids \ce{(s)}, liquids \ce{(l)}, gases
+        \ce{(g)}, \answerblank[3.6cm]{weak electrolytes},
+        nonelectrolytes.
+\end{itemize}
+
+Ions unchanged on both sides are \term{spectator ions} and are
+\answerblank[1.8cm]{cancelled}.
+
+\begin{workedexample}[Worked example: the full sequence]
+\textbf{Formula:} \ce{Pb(NO3)2(aq) + 2 KI(aq) -> PbI2(s) + 2 KNO3(aq)}\\
+\textbf{Complete ionic:}
+\ce{Pb^2+(aq) + 2 NO3^-(aq) + 2 K+(aq) + 2 I^-(aq) -> PbI2(s) + 2 K+(aq) + 2 NO3^-(aq)}\\
+\textbf{Spectators:} \ce{K+}, \ce{NO3-}\\
+\textbf{Net ionic:} \ce{Pb^2+(aq) + 2 I^-(aq) -> PbI2(s)}
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Write the net ionic}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{AgNO3(aq) + NaBr(aq)}:
+        \answerblank[6.5cm]{\ce{Ag+ + Br^- -> AgBr(s)}}
+  \item \ce{HCl(aq) + KOH(aq)}:
+        \answerblank[6.5cm]{\ce{H+ + OH^- -> H2O(l)}}
+  \item \ce{K2CO3(aq) + CaCl2(aq)}:
+        \answerblank[6.5cm]{\ce{Ca^2+ + CO3^2- -> CaCO3(s)}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Why it matters}
+
+\notesection{One equation, many disguises}{4.2}
+\practice{6}
+
+Because spectators vanish, the net ionic equation reveals that many
+different-looking reactions are chemically identical. \ce{AgNO3} with
+\ce{NaCl}, with \ce{KCl}, or with \ce{NH4Cl} all reduce to
+\answerblank[5cm]{\ce{Ag+ + Cl^- -> AgCl(s)}}.
+
+\begin{apctrap}
+Never split water, and never split a weak acid or weak base. \ce{HF},
+\ce{HC2H3O2}, and \ce{NH3} all appear as whole molecules --- they are barely
+ionized, so the molecular form is what is actually present.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Harder cases}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Write the net ionic equation for \ce{HF(aq)} with \ce{NaOH(aq)} and
+        explain how it differs from the \ce{HCl} case.
+        \answerlines[3]{\ce{HF(aq) + OH^-(aq) -> F^-(aq) + H2O(l)}. HF is a
+        weak acid, so it stays intact; with HCl the reacting species is free
+        \ce{H+}, giving \ce{H+ + OH^- -> H2O}.}
+  \item \ce{Ba(OH)2(aq)} reacts with \ce{H2SO4(aq)}. Explain why this
+        reaction has \emph{no} spectator ions.
+        \answerlines[3]{Both products remove ions: \ce{Ba^2+} and
+        \ce{SO4^2-} form insoluble \ce{BaSO4}, while \ce{H+} and \ce{OH-}
+        form water. Every ion is consumed.}
+\end{enumerate}
+
+\begin{exitticket}
+Mixing \ce{NaNO3(aq)} and \ce{KCl(aq)} produces no net ionic equation.
+What does that tell you physically? \answerlines[2]{No reaction occurred ---
+every possible product is soluble, so all four ion types simply remain
+dispersed in solution.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Types of Reactions and Precipitation}{Fri Oct 16}
+
+\begin{objectives}
+  \item Classify reactions by type and predict products.
+  \item Use solubility rules to predict precipitates.
+\end{objectives}
+
+\reading{Zumdahl \S4.4--4.5}{182--188}
+
+\begin{warmup}[3]
+  \item Net ionic for \ce{AgNO3 + NaCl}:
+        \answerblank[5cm]{\ce{Ag+ + Cl^- -> AgCl(s)}}
+  \item Do you split \ce{NH3} in an ionic equation?
+        \answerblank[2cm]{no}
+  \item Soluble? \ce{BaSO4} \answerblank[2cm]{no}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The three AP reaction types}
+
+\notesection{Classification}{4.7}
+\practice{1}
+
+The CED organizes reactions into three families you must recognize on sight:
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.0cm}p{4.6cm}p{5.8cm}@{}}
+\toprule
+\textbf{Type} & \textbf{Signature} & \textbf{Net ionic pattern}\\
+\midrule
+\term{Precipitation} & two soluble salts mixed; an insoluble product forms &
+  \answerblank[4.4cm]{cation $+$ anion $\to$ solid}\\
+\term{Acid--base} & proton transfer &
+  \answerblank[4.4cm]{\ce{H+ + OH^- -> H2O}} (strong/strong)\\
+\term{Redox} & oxidation states \answerblank[1.8cm]{change} &
+  electron transfer between species\\
+\bottomrule
+\end{tabular}
+
+\notesub{Solubility rules --- the working set}
+
+\begin{itemize}[leftmargin=*,itemsep=0.15em]
+  \item Always soluble: \answerblank[3.4cm]{\ce{NO3-}}, alkali metals,
+        \ce{NH4+}
+  \item Usually soluble: \ce{Cl-}, \ce{Br-}, \ce{I-} except with
+        \answerblank[3cm]{\ce{Ag+}, \ce{Pb^2+}}; \ce{SO4^2-} except with
+        \answerblank[3.8cm]{\ce{Ba^2+}, \ce{Pb^2+}, \ce{Ca^2+}}
+  \item Usually insoluble: \ce{CO3^2-}, \ce{PO4^3-}, \ce{S^2-},
+        \ce{OH-} --- unless paired with the always-soluble cations
+\end{itemize}
+
+\segment{GUIDED PRACTICE}{15}{Predict and classify}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{Ba(NO3)2(aq) + K2SO4(aq)}:
+        \answerblank[6.5cm]{precipitation --- \ce{BaSO4(s)}}
+  \item \ce{HNO3(aq) + NaOH(aq)}:
+        \answerblank[6.5cm]{acid--base --- water forms}
+  \item \ce{Mg(s) + 2 HCl(aq)}:
+        \answerblank[6.5cm]{redox --- Mg oxidized, H reduced}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Predicting products by ion interchange}
+
+\notesection{The procedure}{4.7}
+\practice{4}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item List the ions present after mixing.
+  \item Swap partners: pair each \answerblank[1.6cm]{cation} with the
+        other's anion.
+  \item Balance the charges to get correct formulas.
+  \item Apply the solubility rules; the insoluble one is the
+        \answerblank[2.2cm]{precipitate}.
+\end{enumerate}
+
+\begin{apcnote}
+``No reaction'' is a legitimate answer. If both possible products are
+soluble, nothing happens --- the beaker just contains four kinds of ion.
+Being willing to write that is part of the skill.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Full prediction}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Predict the products of \ce{Pb(NO3)2(aq) + Na2CO3(aq)}, write the
+        balanced formula and net ionic equations, and name the precipitate.
+        \answerlines[3]{\ce{Pb(NO3)2(aq) + Na2CO3(aq) -> PbCO3(s) +
+        2 NaNO3(aq)}; net ionic \ce{Pb^2+ + CO3^2- -> PbCO3(s)}; the
+        precipitate is lead(II) carbonate.}
+  \item A student mixes \ce{KNO3(aq)} and \ce{NaCl(aq)} and reports a
+        precipitate. What most likely happened?
+        \answerlines[2]{No reaction is possible --- all four combinations
+        are soluble. They probably observed undissolved solid from
+        incomplete mixing or an impure sample.}
+\end{enumerate}
+
+\begin{exitticket}
+Which is the precipitate when \ce{CaCl2(aq)} meets \ce{Na3PO4(aq)}, and what
+rule decides it? \answerlines[2]{\ce{Ca3(PO4)2} --- phosphates are insoluble
+except with alkali metals or ammonium, and calcium is neither.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Acid--Base Reactions}{Mon Oct 19}
+
+\begin{objectives}
+  \item Apply Arrhenius and Bronsted--Lowry definitions.
+  \item Write net ionic equations for strong and weak acid neutralizations.
+\end{objectives}
+
+\reading{Zumdahl \S4.8}{192--199}
+
+\begin{warmup}[4]
+  \item Precipitate from \ce{Pb^2+} and \ce{I-}:
+        \answerblank[2.4cm]{\ce{PbI2}}
+  \item Reaction type for \ce{Zn + CuSO4}:
+        \answerblank[2.4cm]{redox}
+  \item Always-soluble anion: \answerblank[2.4cm]{nitrate}
+  \item Moles in \SI{25.0}{\milli\liter} of \SI{0.200}{\Molar}:
+        \answerblank[3cm]{\SI{5.00e-3}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two definitions}
+
+\notesection{Arrhenius and Bronsted--Lowry}{4.8}
+\practice{1}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \term{Arrhenius}: acid produces \answerblank[1.4cm]{\ce{H+}};
+        base produces \answerblank[1.8cm]{\ce{OH-}}.
+  \item \term{Bronsted--Lowry}: acid is a proton
+        \answerblank[1.6cm]{donor}; base is a proton
+        \answerblank[1.8cm]{acceptor} --- broad enough to cover \ce{NH3}.
+\end{itemize}
+
+The six strong acids: \ce{HCl}, \ce{HBr}, \ce{HI}, \ce{HNO3},
+\ce{H2SO4}, \answerblank[1.8cm]{\ce{HClO4}}. Strong bases: group 1
+hydroxides plus \ce{Ca(OH)2}, \ce{Sr(OH)2}, \ce{Ba(OH)2}. Everything else is
+\answerblank[1.4cm]{weak}.
+
+\segment{GUIDED PRACTICE}{15}{Strong or weak}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{H2SO4}: \answerblank[3.2cm]{strong acid}
+  \item \ce{HF}: \answerblank[3.2cm]{weak acid}
+  \item \ce{NH3}: \answerblank[3.2cm]{weak base}
+  \item \ce{Ba(OH)2}: \answerblank[3.2cm]{strong base}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Neutralization net ionic equations}
+
+\notesection{Two cases}{4.8}
+\practice{6}
+
+\begin{workedexample}[Strong acid + strong base]
+\ce{HNO3(aq) + KOH(aq)}: both fully ionized, \ce{K+} and \ce{NO3-} are
+spectators.
+\[ \ce{H+(aq) + OH^-(aq) -> H2O(l)} \]
+This is the net ionic equation for \emph{every} strong/strong
+neutralization.
+\end{workedexample}
+
+\begin{workedexample}[Weak acid + strong base]
+\ce{HC2H3O2(aq) + NaOH(aq)}: the acid is weak, so it stays whole.
+\[ \ce{HC2H3O2(aq) + OH^-(aq) -> C2H3O2^-(aq) + H2O(l)} \]
+Only \ce{Na+} is a spectator.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Reasoning about neutralization}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Equal volumes of \SI{0.10}{\Molar} \ce{HCl} and \SI{0.10}{\Molar}
+        \ce{HC2H3O2} are each titrated with \SI{0.10}{\Molar} \ce{NaOH}.
+        Do they require the same volume of base? Explain.
+        \answerlines[3]{Yes --- titration measures \emph{total} moles of
+        acid available, and both solutions contain the same number of moles
+        of acid. Weak acids ionize further as base is added, so ultimately
+        all of the acid reacts.}
+  \item Why does the \ce{HC2H3O2} solution have a much higher pH before
+        titration begins? \answerlines[2]{It is only slightly ionized, so
+        its \ce{H+} concentration is far lower than the fully ionized
+        \ce{HCl} at the same formal concentration.}
+\end{enumerate}
+
+\begin{exitticket}
+Write the net ionic equation for \ce{HCl(aq)} reacting with \ce{NH3(aq)}.
+\answerlines[2]{\ce{H+(aq) + NH3(aq) -> NH4+(aq)} --- ammonia is a weak base
+and stays intact; chloride is a spectator.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Oxidation--Reduction}{Wed Oct 21}
+
+\begin{objectives}
+  \item Assign oxidation states and identify redox reactions.
+  \item Name the oxidizing and reducing agents correctly.
+\end{objectives}
+
+\reading{Zumdahl \S4.9--4.10}{199--210}
+
+\begin{warmup}[3]
+  \item Net ionic, strong acid + strong base:
+        \answerblank[4.5cm]{\ce{H+ + OH^- -> H2O}}
+  \item Weak acid in a net ionic is written how?
+        \answerblank[3cm]{intact}
+  \item Oxidation state of O (usual): \answerblank[2cm]{$-2$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Oxidation states}
+
+\notesection{The rules}{4.9}
+\practice{5}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item Free element: \answerblank[1.2cm]{0}
+  \item Monatomic ion: its \answerblank[1.6cm]{charge}
+  \item Oxygen: \answerblank[1.2cm]{$-2$} (peroxides $-1$)
+  \item Hydrogen: \answerblank[1.2cm]{$+1$} (metal hydrides $-1$)
+  \item Fluorine: \answerblank[1.2cm]{$-1$}
+  \item Sum $=$ 0 for a compound, or the \answerblank[2.2cm]{ion charge}
+\end{enumerate}
+
+\begin{workedexample}[Worked example]
+\ce{Cr2O7^2-}: seven oxygens give $-14$. The ion is $2-$, so two chromiums
+must total $+12$ --- each Cr is $+6$.\\
+\ce{MnO4-}: four oxygens give $-8$; ion is $1-$; Mn is $+7$.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Assign}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item N in \ce{NO3-}: \answerblank[1.8cm]{$+5$}
+  \item S in \ce{SO4^2-}: \answerblank[1.8cm]{$+6$}
+  \item C in \ce{CO2}: \answerblank[1.8cm]{$+4$}
+  \item Cl in \ce{ClO4-}: \answerblank[1.8cm]{$+7$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Agents}
+
+\notesection{Who lost, who gained}{4.9}
+\practice{6}
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{3.4cm}p{3.6cm}p{5.8cm}@{}}
+\toprule
+ & \textbf{Oxidation} & \textbf{Reduction}\\
+\midrule
+Electrons & \answerblank[1.4cm]{lost} & \answerblank[1.4cm]{gained}\\
+Oxidation state & \answerblank[1.8cm]{increases} &
+  \answerblank[1.8cm]{decreases}\\
+That species is the & \answerblank[3.2cm]{reducing agent} &
+  \answerblank[3.2cm]{oxidizing agent}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+The labels are backwards from intuition: the species \emph{oxidized} is the
+\emph{reducing} agent. Read it as ``the thing that causes reduction in
+something else.'' \textbf{OIL RIG}: Oxidation Is Loss, Reduction Is Gain.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Full redox analysis}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{Fe2O3(s) + 3 CO(g) -> 2 Fe(s) + 3 CO2(g)}, identify all
+        oxidation state changes and both agents.
+        \answerlines[3]{Fe: $+3 \to 0$, reduced --- \ce{Fe2O3} is the
+        oxidizing agent. C: $+2 \to +4$, oxidized --- \ce{CO} is the
+        reducing agent. Oxygen stays $-2$ throughout.}
+  \item Explain how you can tell at a glance that
+        \ce{2 Na + Cl2 -> 2 NaCl} is redox.
+        \answerlines[2]{Both reactants are free elements at oxidation state
+        0, and the product is ionic --- so states must have changed.}
+\end{enumerate}
+
+\begin{exitticket}
+In \ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}, name the oxidizing agent and
+justify with oxidation states. \answerlines[2]{\ce{Cu^2+} --- it goes
+$+2 \to 0$, gaining electrons (reduced), so it is the oxidizing agent.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Stoichiometry and Titration}{Fri Oct 23}
+
+\begin{objectives}
+  \item Carry out solution stoichiometry, including limiting reactant.
+  \item Analyze titration data and curves.
+\end{objectives}
+
+\reading{Zumdahl \S3.9--3.11}{134--153}\quad\reading{\S4.11}{210--212}
+
+\begin{warmup}[3]
+  \item Oxidizing agent in \ce{2 Mg + O2 -> 2 MgO}:
+        \answerblank[2.4cm]{\ce{O2}}
+  \item Moles in \SI{40.0}{\milli\liter} of \SI{0.250}{\Molar}:
+        \answerblank[3cm]{\SI{0.0100}{\mole}}
+  \item Theoretical yield comes from which reactant?
+        \answerblank[3.4cm]{the limiting one}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Solution stoichiometry}
+
+\notesection{Volume and molarity to moles}{4.5}
+\practice{5}
+
+The only new step versus ordinary stoichiometry: convert
+volume $\times$ molarity into \answerblank[1.6cm]{moles} at the start, and
+back to volume or mass at the end.
+
+\begin{workedexample}[Worked example: limiting reactant in solution]
+\SI{50.0}{\milli\liter} of \SI{0.200}{\Molar} \ce{Pb(NO3)2} is mixed with
+\SI{50.0}{\milli\liter} of \SI{0.300}{\Molar} \ce{KI}.
+\begin{align*}
+  n(\ce{Pb^2+}) &= (0.0500)(0.200) = \SI{0.0100}{\mole}\\
+  n(\ce{I-}) &= (0.0500)(0.300) = \SI{0.0150}{\mole}\\
+  &\ce{Pb^2+ + 2 I^- -> PbI2(s)}
+\end{align*}
+\ce{Pb^2+} could make 0.0100 mol of solid; \ce{I-} could make
+$0.0150/2 = 0.00750$ mol. \textbf{Iodide is limiting.}
+Mass $= 0.00750 \times 461.0 = \SI{3.46}{\gram}$.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Solution stoichiometry drill}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Moles of \ce{Ag+} in \SI{30.0}{\milli\liter} of
+        \SI{0.150}{\Molar} \ce{AgNO3}:
+        \answerblank[3cm]{\SI{4.50e-3}{\mole}}
+  \item Mass of \ce{AgCl} ($M = 143.32$) if all of it precipitates:
+        \answerblank[3cm]{\SI{0.645}{\gram}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Titration}
+
+\notesection{Finding an unknown concentration}{4.6}
+\practice{4}
+
+At the \term{equivalence point}, moles of titrant added exactly satisfy the
+\answerblank[4.6cm]{reaction stoichiometry}. The \term{endpoint} is where the
+indicator changes --- chosen to fall as close to the equivalence point as
+possible.
+
+\begin{workedexample}[Worked example]
+\SI{25.0}{\milli\liter} of \ce{H2SO4} needs \SI{40.0}{\milli\liter} of
+\SI{0.200}{\Molar} \ce{NaOH}.
+\begin{align*}
+  n(\ce{OH-}) &= (0.0400)(0.200) = \SI{8.00e-3}{\mole}\\
+  n(\ce{H2SO4}) &= \tfrac12(8.00\times10^{-3}) = \SI{4.00e-3}{\mole}\\
+  [\ce{H2SO4}] &= \frac{4.00\times10^{-3}}{0.0250} = \SI{0.160}{\Molar}
+\end{align*}
+The factor of $\tfrac12$ is because \ce{H2SO4} is
+\answerblank[1.8cm]{diprotic}.
+\end{workedexample}
+
+\begin{apctrap}
+The most common titration error in this unit is using a 1:1 ratio for a
+diprotic acid, which halves the reported concentration. Always write the
+balanced neutralization equation before dividing.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Titration analysis}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \SI{20.0}{\milli\liter} of \ce{NaOH} requires
+        \SI{18.5}{\milli\liter} of \SI{0.150}{\Molar} \ce{HCl}. Find
+        $[\ce{NaOH}]$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{H+}) = (0.0185)(0.150) =
+        \SI{2.78e-3}{\mole}$; 1:1 $\to [\ce{NaOH}] =
+        2.78\times10^{-3}/0.0200 = \SI{0.139}{\Molar}$\end{apcanswer}}
+  \item A student overshoots the endpoint by several drops. Does the
+        reported acid concentration come out too high or too low? Explain.
+        \answerlines[2]{Too high --- extra titrant is counted as though it
+        reacted, inflating the calculated moles of analyte.}
+\end{enumerate}
+
+\begin{exitticket}
+Why must the balanced equation be written before doing titration
+arithmetic? \answerlines[2]{The mole ratio between acid and base comes from
+the coefficients; assuming 1:1 gives a wrong answer for any polyprotic acid
+or polybasic base.}
+\end{exitticket}
+
+\end{document}

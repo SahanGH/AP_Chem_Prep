@@ -1,0 +1,148 @@
+% Ch15 WS2 -- buffer action, buffering capacity, buffer design. Block 3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{15}
+\apcunittitle{Acid--Base Equilibria}
+\apcdoctitle{Worksheet 2 \textbullet\ Buffer Action and Capacity}
+\apcsubtitle{Zumdahl \S15.2--15.3 \textbullet\ stoichiometry first, then Henderson--Hasselbalch}
+
+\begin{document}
+\wsheader[p$K_a$: \ce{HF} 3.14 \textbullet\ \ce{HNO2} 3.40 \textbullet\
+\ce{HC2H3O2} 4.74 \textbullet\ \ce{HOCl} 7.46 \textbullet\ \ce{HCN} 9.21
+\textbullet\ \ce{NH4+} 9.25. $K_a(\ce{HC2H3O2}) = 1.8\times10^{-5}$,
+$K_w = 1.0\times10^{-14}$.]
+
+\problem[]{State the two-step method for a buffer receiving strong acid or
+strong base, and say what makes each step different.
+\answerlines[4]{Step 1 --- stoichiometry: the strong reagent reacts to
+completion, converting one member of the conjugate pair into the other. Work
+in moles and use no equilibrium constant. Step 2 --- equilibrium: substitute
+the new amounts into Henderson--Hasselbalch. The first step is a
+limiting-reactant calculation, the second is an equilibrium calculation, and
+they must not be combined.}}
+
+\problem[]{\SI{1.00}{\litre} of a buffer is \SI{0.50}{\Molar} in
+\ce{HC2H3O2} and \SI{0.50}{\Molar} in \ce{NaC2H3O2}.}
+\begin{parts}
+  \item Initial pH: \answerblank[2.2cm]{4.74}
+  \item Add \SI{0.050}{\mole} \ce{NaOH}. Write the reaction and the new
+        amounts. \answerlines[2]{\ce{OH^- + HC2H3O2 -> C2H3O2^- + H2O};
+        \ce{HC2H3O2} $= 0.45$ mol, \ce{C2H3O2^-} $= 0.55$ mol.}
+  \item New pH: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}pH $= 4.74 + \log(0.55/0.45) =
+        4.74 + 0.09 = \mathbf{4.83}$\end{apcanswer}}
+  \item Instead add \SI{0.050}{\mole} \ce{HCl} to the original buffer. New
+        pH: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}\ce{H+} converts \ce{C2H3O2^-} to
+        \ce{HC2H3O2}: 0.55 acid, 0.45 base.
+        pH $= 4.74 + \log(0.45/0.55) = 4.74 - 0.09 =
+        \mathbf{4.65}$\end{apcanswer}}
+  \item Add \SI{0.050}{\mole} \ce{NaOH} to \SI{1.00}{\litre} of pure water
+        instead. pH: \answerblank[2.4cm]{12.70}
+  \item Compare the pH changes in (c) and (e) and state the point.
+        \answerlines[2]{The buffer moved 0.09 units; pure water moved 5.70.
+        The buffer converts added strong base into a weak conjugate base
+        instead of letting $[\ce{OH-}]$ accumulate.}
+\end{parts}
+
+\problem[]{\SI{0.500}{\litre} of a buffer is \SI{0.20}{\Molar} in \ce{HF}
+and \SI{0.20}{\Molar} in \ce{NaF}. Add \SI{0.020}{\mole} of \ce{HCl}.}
+\begin{parts}
+  \item Moles of each component before the addition:
+        \answerblank[5.3cm]{0.10 mol \ce{HF}, 0.10 mol \ce{F-}}
+  \item Moles after: \answerblank[5.3cm]{0.12 mol \ce{HF}, 0.08 mol \ce{F-}}
+  \item New pH: \workspace[2cm]
+        \keyonly{\begin{apcanswer}pH $= 3.14 + \log(0.08/0.12) =
+        3.14 - 0.18 = \mathbf{2.96}$\end{apcanswer}}
+  \item Why was it safe to use moles rather than molarities here?
+        \answerlines[2]{Both species occupy the same volume, so the volume
+        cancels from the ratio. Only when a volume \emph{change} matters ---
+        as at a titration equivalence point --- must you convert back to
+        concentration.}
+\end{parts}
+
+\problem[]{\SI{1.00}{\litre} of a buffer is \SI{0.25}{\Molar} in \ce{NH3}
+and \SI{0.25}{\Molar} in \ce{NH4Cl}. Add \SI{0.050}{\mole} \ce{HCl}.}
+\begin{parts}
+  \item Which component is consumed? \answerblank[3.4cm]{\ce{NH3}}
+  \item New pH: \workspace[2cm]
+        \keyonly{\begin{apcanswer}\ce{NH3} $= 0.20$, \ce{NH4+} $= 0.30$.
+        pH $= 9.25 + \log(0.20/0.30) = 9.25 - 0.18 =
+        \mathbf{9.07}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Buffer failure. \SI{1.00}{\litre} of a buffer is
+\SI{0.10}{\Molar} in \ce{HC2H3O2} and \SI{0.10}{\Molar} in
+\ce{NaC2H3O2}.}
+\begin{parts}
+  \item Add \SI{0.10}{\mole} \ce{NaOH}. What is left in solution?
+        \answerlines[2]{All \SI{0.10}{\mole} of \ce{HC2H3O2} is consumed,
+        leaving \SI{0.20}{\mole} of \ce{C2H3O2^-} and no weak acid. This is
+        no longer a buffer.}
+  \item Calculate the pH. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[\ce{C2H3O2^-}] = 0.20$;
+        $K_b = 5.6\times10^{-10}$;
+        $x = \sqrt{(5.6\times10^{-10})(0.20)} = 1.06\times10^{-5}$;
+        pOH $= 4.98$; pH $= \mathbf{9.02}$\end{apcanswer}}
+  \item Explain why Henderson--Hasselbalch cannot be used for part (b).
+        \answerlines[2]{The equation requires both members of the conjugate
+        pair to be present. With no \ce{HC2H3O2} left the ratio is
+        undefined, and the solution is simply a weak base --- a $K_b$ ICE
+        problem.}
+  \item Add \SI{0.15}{\mole} \ce{NaOH} to the original buffer instead. pH:
+        \answerblank[2.6cm]{12.70}
+\end{parts}
+
+\problem[]{Buffering capacity. Two acetate buffers each receive
+\SI{0.01}{\mole} of \ce{H+}:}
+\begin{parts}
+  \item Buffer A is \SI{1.00}{\Molar} in each component. Ratio before and
+        after: \answerblank[5cm]{1.00, then 0.98}
+  \item Buffer B is \SI{1.00}{\Molar} in \ce{C2H3O2^-} and
+        \SI{0.01}{\Molar} in \ce{HC2H3O2}. Ratio before and after:
+        \answerblank[5cm]{100, then 49.5}
+  \item Which buffer resists better, and by roughly what factor in percent
+        change of the ratio? \answerlines[2]{A. Its ratio changed 2.0\%
+        against B's 50.5\% --- about 25 times better --- even though both
+        received the same amount of acid.}
+  \item State the general condition for optimal buffering.
+        \answerlines[2]{Equal concentrations of the two components, that is
+        a ratio of 1, which puts the pH at p$K_a$. A buffer is useful over
+        roughly p$K_a \pm 1$.}
+\end{parts}
+
+\problem[]{Buffer design. For each target pH, choose the best acid from the
+data strip and give the required $[\text{base}]/[\text{acid}]$ ratio:}
+\begin{parts}
+  \item pH 3.50: \answerblank[6cm]{\ce{HNO2}, ratio 1.3}
+  \item pH 7.50: \answerblank[6cm]{\ce{HOCl}, ratio 1.1}
+  \item pH 9.00: \answerblank[6cm]{\ce{HCN}, ratio 0.62}
+  \item Explain why \ce{HCN} would be a poor choice for a pH 3.50 buffer
+        even though a ratio can be calculated.
+        \answerlines[3]{p$K_a(\ce{HCN}) = 9.21$ is 5.7 units away, so the
+        required ratio is about $10^{-5.7}$. Essentially no \ce{CN-} would
+        be present, leaving nothing to neutralize added acid --- the
+        solution would have a pH near 3.50 but no capacity at all.}
+\end{parts}
+
+\problem[]{A student writes: ``Adding \SI{0.010}{\mole} \ce{NaOH} to the
+acetate buffer, I put $0.010$ into the ICE table as the initial
+$[\ce{OH-}]$ and solved for $x$.'' Identify the error and describe the
+correct first move. \answerlines[3]{Strong base does not sit at equilibrium
+with a weak acid --- it consumes it completely. The \ce{OH-} never appears
+in an ICE table. The correct first move is a stoichiometry step that
+subtracts \SI{0.010}{\mole} from the weak acid and adds it to the conjugate
+base, after which Henderson--Hasselbalch uses the new amounts.}}
+
+\begin{spiralstrip}{Chapter 15 \textbullet\ blocks 1--2}
+  \item pH $=$ p$K_a$ when the ratio is:
+        \answerblank[1.6cm]{1}
+  \item Diluting a buffer changes pH how? \answerblank[2.6cm]{hardly at all}
+  \item \ce{NaF} added to \ce{HF} makes the pH:
+        \answerblank[1.8cm]{rise}
+  \item p$K_a$ of \ce{HC2H3O2}: \answerblank[1.6cm]{4.74}
+  \item Is \ce{HCl} $+$ \ce{NaCl} a buffer? \answerblank[1.6cm]{no}
+\end{spiralstrip}
+
+\end{document}

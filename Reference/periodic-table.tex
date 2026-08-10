@@ -1,0 +1,280 @@
+%% periodic-table.tex -- printable one-page periodic table (landscape letter)
+%%
+%% Reference sheet, not a content document: no answers, no CED tags, so the
+%% four build variants differ only in palette (print = grayscale, LMS = tint).
+%% The key builds are byte-identical in content to the student builds; the
+%% diagonal TEACHER KEY wash is suppressed below because it sits behind 118
+%% cells of small type and hurts legibility for no benefit.
+%%
+%% DATA SOURCE -- every symbol and mass is transcribed from Zumdahl &
+%% DeCoste, Chemistry 10e, "Table of Atomic Masses" (front matter, cache page
+%% p0003), NOT from memory. Four significant figures where possible; a value
+%% in parentheses is the mass number of the longest-lived isotope. Keeping the
+%% masses identical to the course textbook means a student's hand-computed
+%% molar mass always matches the book to the last digit.
+
+\documentclass[10pt]{article}
+\usepackage{apchem}
+
+% Full-bleed landscape: this sheet is a wall/binder reference, so it gives up
+% the standard binder gutter to buy cell size.
+\geometry{landscape,left=0.3in,right=0.3in,top=0.3in,bottom=0.3in}
+\pagestyle{empty}
+\keyonly{\backgroundsetup{contents={}}}% see header note
+
+% ------------------------------------------------------------------ geometry
+% WIDTH is the hard constraint: 18 columns must fit 10.4in of usable page, so
+% \ptW cannot exceed ~1.46cm. HEIGHT is not -- the table is only ~9.7 cells
+% deep against 7.9in, so the cells are deliberately taller than they are wide
+% and the type is sized off the HEIGHT, not the width. Symbols are set at
+% 16pt: "Og"/"Mc" (the widest two-letter symbols) measure ~0.8cm, well inside
+% \ptW, so nothing collides horizontally.
+\newlength{\ptW}\setlength{\ptW}{1.42cm}
+\newlength{\ptH}\setlength{\ptH}{1.88cm}
+
+% ---------------------------------------------------------------- block tints
+% Print separates the four blocks by GRAY VALUE, so a B&W copy still reads
+% (convention 3: never distinguish by hue alone). LMS gets the same four steps
+% as light tints. Text stays black on every fill.
+\iftoggle{apcLMS}{%
+  \definecolor{ptS}{HTML}{DCE9F5}
+  \definecolor{ptP}{HTML}{FBEEDC}
+  \definecolor{ptD}{HTML}{E3EFE0}
+  \definecolor{ptF}{HTML}{EFE3F2}
+}{%
+  \definecolor{ptS}{HTML}{FFFFFF}
+  \definecolor{ptD}{HTML}{F0F0F0}
+  \definecolor{ptP}{HTML}{E0E0E0}
+  \definecolor{ptF}{HTML}{CFCFCF}
+}
+
+\newcommand{\ptznum}{\fontsize{7.2}{8}\selectfont\sffamily}
+\newcommand{\ptsym}{\fontsize{16}{17}\selectfont\sffamily\bfseries}
+\newcommand{\ptmass}{\fontsize{7.2}{8}\selectfont\sffamily}
+\newcommand{\ptlab}{\fontsize{9}{10}\selectfont\sffamily\bfseries}
+
+\tikzset{
+  ptcell/.style={draw=black,line width=0.4pt,minimum width=\ptW,
+                 minimum height=\ptH,inner sep=0pt,align=center,text=black},
+  ptswatch/.style={draw=black,line width=0.4pt,minimum width=0.60cm,
+                   minimum height=0.40cm,inner sep=0pt},
+}
+
+% \ptelem{col}{row}{Z}{symbol}{mass}{blockcolor}
+% The 16pt symbol box is taller than the node's \baselineskip, so TeX falls
+% back to \lineskip between the three lines -- the explicit struts below are
+% what actually control the stack, not the \\ arguments.
+\newcommand{\ptelem}[6]{%
+  \node[ptcell,fill=#6] at (#1,-#2)
+    {{\ptznum #3}\\[1.2pt]{\ptsym #4}\\[1.2pt]{\ptmass #5}};%
+}
+
+\begin{document}
+\vspace*{\fill}
+\begin{center}
+\begin{tikzpicture}[x=\ptW,y=\ptH]
+
+% ------------------------------------------------------- group / period rails
+\foreach \g in {1,...,18}{%
+  \node[font=\ptlab,text=apcaccent] at (\g,-0.30) {\g};}
+\foreach \p in {1,...,7}{%
+  \node[font=\ptlab,text=apcaccent] at (0.32,-\p) {\p};}
+
+% --------------------------------------------------------------- period 1
+\ptelem{1}{1}{1}{H}{1.008}{ptS}
+\ptelem{18}{1}{2}{He}{4.003}{ptS}
+
+% --------------------------------------------------------------- period 2
+\ptelem{1}{2}{3}{Li}{6.941}{ptS}
+\ptelem{2}{2}{4}{Be}{9.012}{ptS}
+\ptelem{13}{2}{5}{B}{10.81}{ptP}
+\ptelem{14}{2}{6}{C}{12.01}{ptP}
+\ptelem{15}{2}{7}{N}{14.01}{ptP}
+\ptelem{16}{2}{8}{O}{16.00}{ptP}
+\ptelem{17}{2}{9}{F}{19.00}{ptP}
+\ptelem{18}{2}{10}{Ne}{20.18}{ptP}
+
+% --------------------------------------------------------------- period 3
+\ptelem{1}{3}{11}{Na}{22.99}{ptS}
+\ptelem{2}{3}{12}{Mg}{24.31}{ptS}
+\ptelem{13}{3}{13}{Al}{26.98}{ptP}
+\ptelem{14}{3}{14}{Si}{28.09}{ptP}
+\ptelem{15}{3}{15}{P}{30.97}{ptP}
+\ptelem{16}{3}{16}{S}{32.07}{ptP}
+\ptelem{17}{3}{17}{Cl}{35.45}{ptP}
+\ptelem{18}{3}{18}{Ar}{39.95}{ptP}
+
+% --------------------------------------------------------------- period 4
+\ptelem{1}{4}{19}{K}{39.10}{ptS}
+\ptelem{2}{4}{20}{Ca}{40.08}{ptS}
+\ptelem{3}{4}{21}{Sc}{44.96}{ptD}
+\ptelem{4}{4}{22}{Ti}{47.88}{ptD}
+\ptelem{5}{4}{23}{V}{50.94}{ptD}
+\ptelem{6}{4}{24}{Cr}{52.00}{ptD}
+\ptelem{7}{4}{25}{Mn}{54.94}{ptD}
+\ptelem{8}{4}{26}{Fe}{55.85}{ptD}
+\ptelem{9}{4}{27}{Co}{58.93}{ptD}
+\ptelem{10}{4}{28}{Ni}{58.69}{ptD}
+\ptelem{11}{4}{29}{Cu}{63.55}{ptD}
+\ptelem{12}{4}{30}{Zn}{65.38}{ptD}
+\ptelem{13}{4}{31}{Ga}{69.72}{ptP}
+\ptelem{14}{4}{32}{Ge}{72.59}{ptP}
+\ptelem{15}{4}{33}{As}{74.92}{ptP}
+\ptelem{16}{4}{34}{Se}{78.96}{ptP}
+\ptelem{17}{4}{35}{Br}{79.90}{ptP}
+\ptelem{18}{4}{36}{Kr}{83.80}{ptP}
+
+% --------------------------------------------------------------- period 5
+\ptelem{1}{5}{37}{Rb}{85.47}{ptS}
+\ptelem{2}{5}{38}{Sr}{87.62}{ptS}
+\ptelem{3}{5}{39}{Y}{88.91}{ptD}
+\ptelem{4}{5}{40}{Zr}{91.22}{ptD}
+\ptelem{5}{5}{41}{Nb}{92.91}{ptD}
+\ptelem{6}{5}{42}{Mo}{95.94}{ptD}
+\ptelem{7}{5}{43}{Tc}{(98)}{ptD}
+\ptelem{8}{5}{44}{Ru}{101.1}{ptD}
+\ptelem{9}{5}{45}{Rh}{102.9}{ptD}
+\ptelem{10}{5}{46}{Pd}{106.4}{ptD}
+\ptelem{11}{5}{47}{Ag}{107.9}{ptD}
+\ptelem{12}{5}{48}{Cd}{112.4}{ptD}
+\ptelem{13}{5}{49}{In}{114.8}{ptP}
+\ptelem{14}{5}{50}{Sn}{118.7}{ptP}
+\ptelem{15}{5}{51}{Sb}{121.8}{ptP}
+\ptelem{16}{5}{52}{Te}{127.6}{ptP}
+\ptelem{17}{5}{53}{I}{126.9}{ptP}
+\ptelem{18}{5}{54}{Xe}{131.3}{ptP}
+
+% --------------------------------------------------------------- period 6
+\ptelem{1}{6}{55}{Cs}{132.9}{ptS}
+\ptelem{2}{6}{56}{Ba}{137.3}{ptS}
+\ptelem{3}{6}{57}{La}{138.9}{ptD}
+\ptelem{4}{6}{72}{Hf}{178.5}{ptD}
+\ptelem{5}{6}{73}{Ta}{180.9}{ptD}
+\ptelem{6}{6}{74}{W}{183.9}{ptD}
+\ptelem{7}{6}{75}{Re}{186.2}{ptD}
+\ptelem{8}{6}{76}{Os}{190.2}{ptD}
+\ptelem{9}{6}{77}{Ir}{192.2}{ptD}
+\ptelem{10}{6}{78}{Pt}{195.1}{ptD}
+\ptelem{11}{6}{79}{Au}{197.0}{ptD}
+\ptelem{12}{6}{80}{Hg}{200.6}{ptD}
+\ptelem{13}{6}{81}{Tl}{204.4}{ptP}
+\ptelem{14}{6}{82}{Pb}{207.2}{ptP}
+\ptelem{15}{6}{83}{Bi}{209.0}{ptP}
+\ptelem{16}{6}{84}{Po}{(209)}{ptP}
+\ptelem{17}{6}{85}{At}{(210)}{ptP}
+\ptelem{18}{6}{86}{Rn}{(222)}{ptP}
+
+% --------------------------------------------------------------- period 7
+\ptelem{1}{7}{87}{Fr}{(223)}{ptS}
+\ptelem{2}{7}{88}{Ra}{(226)}{ptS}
+\ptelem{3}{7}{89}{Ac}{(227)}{ptD}
+\ptelem{4}{7}{104}{Rf}{(261)}{ptD}
+\ptelem{5}{7}{105}{Db}{(262)}{ptD}
+\ptelem{6}{7}{106}{Sg}{(263)}{ptD}
+\ptelem{7}{7}{107}{Bh}{(264)}{ptD}
+\ptelem{8}{7}{108}{Hs}{(265)}{ptD}
+\ptelem{9}{7}{109}{Mt}{(268)}{ptD}
+\ptelem{10}{7}{110}{Ds}{(271)}{ptD}
+\ptelem{11}{7}{111}{Rg}{(272)}{ptD}
+\ptelem{12}{7}{112}{Cn}{(285)}{ptD}
+\ptelem{13}{7}{113}{Nh}{(284)}{ptP}
+\ptelem{14}{7}{114}{Fl}{(289)}{ptP}
+\ptelem{15}{7}{115}{Mc}{(288)}{ptP}
+\ptelem{16}{7}{116}{Lv}{(293)}{ptP}
+\ptelem{17}{7}{117}{Ts}{(294)}{ptP}
+\ptelem{18}{7}{118}{Og}{(294)}{ptP}
+
+% ------------------------------------------------------- f-block, pulled out
+\ptelem{4}{8.40}{58}{Ce}{140.1}{ptF}
+\ptelem{5}{8.40}{59}{Pr}{140.9}{ptF}
+\ptelem{6}{8.40}{60}{Nd}{144.2}{ptF}
+\ptelem{7}{8.40}{61}{Pm}{(145)}{ptF}
+\ptelem{8}{8.40}{62}{Sm}{150.4}{ptF}
+\ptelem{9}{8.40}{63}{Eu}{152.0}{ptF}
+\ptelem{10}{8.40}{64}{Gd}{157.3}{ptF}
+\ptelem{11}{8.40}{65}{Tb}{158.9}{ptF}
+\ptelem{12}{8.40}{66}{Dy}{162.5}{ptF}
+\ptelem{13}{8.40}{67}{Ho}{164.9}{ptF}
+\ptelem{14}{8.40}{68}{Er}{167.3}{ptF}
+\ptelem{15}{8.40}{69}{Tm}{168.9}{ptF}
+\ptelem{16}{8.40}{70}{Yb}{173.0}{ptF}
+\ptelem{17}{8.40}{71}{Lu}{175.0}{ptF}
+
+\ptelem{4}{9.40}{90}{Th}{232.0}{ptF}
+\ptelem{5}{9.40}{91}{Pa}{(231)}{ptF}
+\ptelem{6}{9.40}{92}{U}{238.0}{ptF}
+\ptelem{7}{9.40}{93}{Np}{(237)}{ptF}
+\ptelem{8}{9.40}{94}{Pu}{(244)}{ptF}
+\ptelem{9}{9.40}{95}{Am}{(243)}{ptF}
+\ptelem{10}{9.40}{96}{Cm}{(247)}{ptF}
+\ptelem{11}{9.40}{97}{Bk}{(247)}{ptF}
+\ptelem{12}{9.40}{98}{Cf}{(251)}{ptF}
+\ptelem{13}{9.40}{99}{Es}{(252)}{ptF}
+\ptelem{14}{9.40}{100}{Fm}{(257)}{ptF}
+\ptelem{15}{9.40}{101}{Md}{(258)}{ptF}
+\ptelem{16}{9.40}{102}{No}{(259)}{ptF}
+\ptelem{17}{9.40}{103}{Lr}{(260)}{ptF}
+
+\node[font=\ptlab,text=apcaccent,align=center] at (2,-8.40) {Lanthanide\\series};
+\node[font=\ptlab,text=apcaccent,align=center] at (2,-9.40) {Actinide\\series};
+
+% ----------------------------------------------------- metalloid staircase
+% Heavy rule along the right/bottom edges of B, Si, Ge--As, Sb--Te, At: the
+% metals/nonmetals divide. Drawn last so it sits on top of the cell borders.
+\draw[line width=1.5pt,black]
+  (13.5,-1.5) -- (13.5,-2.5) -- (14.5,-2.5) -- (14.5,-3.5) --
+  (15.5,-3.5) -- (15.5,-4.5) -- (16.5,-4.5) -- (16.5,-5.5) --
+  (17.5,-5.5) -- (17.5,-6.5);
+
+% ================================================== title + legend (the gap)
+% Periods 1--3 leave cols 3--12 empty; that is where a periodic table
+% traditionally carries its title and legend, so nothing is wasted.
+\node[font=\sffamily\bfseries\LARGE,text=apcaccent] at (7.5,-0.95)
+  {PERIODIC TABLE OF THE ELEMENTS};
+\node[font=\sffamily\normalsize,text=apcgray] at (7.5,-1.45)
+  {AP Chemistry reference sheet};
+
+% --- how to read a cell
+\node[ptcell,fill=ptD] at (4.1,-2.75)
+  {{\ptznum 29}\\[1.2pt]{\ptsym Cu}\\[1.2pt]{\ptmass 63.55}};
+\node[font=\ptmass,anchor=west,text=apcgray] at (4.85,-2.45) {atomic number ($Z$) = protons};
+\node[font=\ptmass,anchor=west,text=apcgray] at (4.85,-2.75) {symbol};
+\node[font=\ptmass,anchor=west,text=apcgray] at (4.85,-3.05)   % siunitx defaults to the math font and, in text mode, resets to the
+  % document family -- both give a serif "g/mol" against this sans legend.
+  {molar mass (\si[mode=text,reset-text-family=false]{\gram\per\mole})};
+\draw[apcgray,line width=0.3pt] (4.72,-2.45) -- (4.83,-2.45);
+\draw[apcgray,line width=0.3pt] (4.72,-2.75) -- (4.83,-2.75);
+\draw[apcgray,line width=0.3pt] (4.72,-3.05) -- (4.83,-3.05);
+
+% --- block legend
+% Everything here must stay left of x=12.5 -- that is where column 13 (the
+% B/Al p-block wall) begins, and an overrun lands on top of live cells.
+\node[font=\ptlab,text=apcaccent,anchor=west] at (8.5,-2.15)
+  {Shading = block being filled};
+\node[ptswatch,fill=ptS] at (8.70,-2.58) {};
+\node[font=\ptmass,anchor=west,text=black] at (8.97,-2.58) {$s$};
+\node[ptswatch,fill=ptD] at (9.55,-2.58) {};
+\node[font=\ptmass,anchor=west,text=black] at (9.82,-2.58) {$d$};
+\node[ptswatch,fill=ptP] at (10.40,-2.58) {};
+\node[font=\ptmass,anchor=west,text=black] at (10.67,-2.58) {$p$};
+\node[ptswatch,fill=ptF] at (11.25,-2.58) {};
+\node[font=\ptmass,anchor=west,text=black] at (11.52,-2.58) {$f$};
+\draw[line width=1.5pt,black] (8.55,-3.08) -- (8.90,-3.08);
+\node[font=\ptmass,anchor=west,text=apcgray,align=left,text width=4.70cm,
+      inner sep=0pt] at (8.98,-3.08)
+  {heavy rule = metal\,/\,nonmetal divide;\\ the metalloids touch it on the left};
+
+\end{tikzpicture}
+
+% ------------------------------------------------------------------ footnote
+\vspace{0.5em}
+{\sffamily\fontsize{7.4}{9}\selectfont\color{apcgray}%
+Atomic masses to four significant figures where possible; a value in
+parentheses is the mass number of the longest-lived isotope. Masses follow
+Zumdahl \& DeCoste, \emph{Chemistry} 10e, Table of Atomic Masses, so a
+hand-computed molar mass matches the textbook to the last digit.\quad
+\textbf{Note:} Te (127.6) sits \emph{before} I (126.9) --- the table is
+ordered by atomic number, never by mass.\par}
+\end{center}
+\vspace*{\fill}
+\end{document}

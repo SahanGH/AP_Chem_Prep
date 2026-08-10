@@ -1,0 +1,616 @@
+% Zumdahl Chapter 8 -- Bonding: General Concepts. ELABORATED notes, 5 blocks.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{8}
+\apcunittitle{Bonding: General Concepts}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S8.1--8.13 \textbullet\ PDF pp.~390--453 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+A high-value chapter: nearly all of \textbf{CED Unit 2} lives here, and it
+also supplies two topics that belong to other units ---
+\textbf{\S8.4} (ions and ionic radii) is CED 1.8, and
+\textbf{\S8.8} (bond energies) is CED 6.7, the bond-enthalpy topic Unit 6
+borrows from this chapter.
+
+Blocks 4 and 5 cover Lewis structures, resonance, and VSEPR, which you
+worked in Unit 2. Treat those as consolidation; the genuinely new material
+for most students is \textbf{lattice energy} (Block 2) and
+\textbf{computing $\Delta H$ from bond energies} (Block 3).
+
+\S8.6 (partial ionic character) is background reading only.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Bond Types, Electronegativity, and Polarity}{Zumdahl \S8.1--8.3}
+
+\begin{objectives}
+  \item Classify bonds using electronegativity difference.
+  \item Distinguish bond polarity from molecular polarity.
+\end{objectives}
+
+\reading{Zumdahl \S8.1--8.3}{391--400}
+
+\begin{warmup}[3]
+  \item Which is more electronegative, N or O?
+        \answerblank[2cm]{O}
+  \item Geometry of \ce{CO2}: \answerblank[2.4cm]{linear}
+  \item Configuration of \ce{Mg^2+}: \answerblank[2.6cm]{$[\ce{Ne}]$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Electronegativity}
+
+\notesectionz{The property that decides bond type}{8.2}
+\practice{6}
+
+\term{Electronegativity} is an atom's ability to attract shared electrons in
+a bond. On the Pauling scale it runs from
+\answerblank[1.8cm]{4.0} for fluorine down to \answerblank[1.8cm]{0.7} for
+caesium.
+
+The trend follows the same Coulombic engine as everything in Unit 1: it
+\answerblank[2cm]{increases} across a period (rising $Z_{\text{eff}}$) and
+\answerblank[2cm]{decreases} down a group (greater distance and shielding).
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.4cm}p{3.2cm}p{6.2cm}@{}}
+\toprule
+\textbf{Bond type} & \textbf{$\Delta$EN} & \textbf{Electron behaviour}\\
+\midrule
+Nonpolar covalent & \answerblank[1.4cm]{$\approx 0$} &
+  shared equally; no partial charges\\
+Polar covalent & intermediate &
+  shared \answerblank[2.2cm]{unequally}; $\delta^+$ and $\delta^-$ appear\\
+Ionic & large &
+  \answerblank[2.4cm]{transferred} to form ions\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+These are regions on a \emph{continuum}, not three separate boxes. Zumdahl
+is explicit about this: as $\Delta$EN grows, bonds acquire progressively
+more ionic character. Do not argue about where the boundary sits --- argue
+with the $\Delta$EN value.
+\end{apcnote}
+
+\begin{workedexample}[Worked example: ranking bond polarity]
+Order \ce{H-H}, \ce{S-H}, \ce{Cl-H}, \ce{O-H}, \ce{F-H} by polarity.
+
+Electronegativities: H 2.1, S 2.5, Cl 3.0, O 3.5, F 4.0. So
+$\Delta$EN $=$ 0, 0.4, 0.9, 1.4, 1.9 respectively:
+\[ \ce{H-H} < \ce{S-H} < \ce{Cl-H} < \ce{O-H} < \ce{F-H} \]
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Classify and rank}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{K-Br}: \answerblank[5cm]{ionic --- large $\Delta$EN}
+  \item \ce{N-N}: \answerblank[5cm]{nonpolar covalent}
+  \item \ce{C-O}: \answerblank[5cm]{polar covalent}
+  \item Most polar of \ce{C-N}, \ce{C-O}, \ce{C-F}:
+        \answerblank[3cm]{\ce{C-F}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{From bond dipoles to molecular dipoles}
+
+\notesectionz{Dipole moments}{8.3}
+\practice{1}
+
+A polar bond has a \term{bond dipole} --- a vector pointing toward the more
+electronegative atom. Whether the \emph{molecule} is polar depends on
+whether those vectors \answerblank[1.8cm]{cancel}.
+
+Two conditions, both required for a polar molecule:
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item at least one \answerblank[2.4cm]{polar bond}, and
+  \item a geometry that does \emph{not} produce
+        \answerblank[2.6cm]{cancellation}.
+\end{enumerate}
+
+\begin{apctrap}
+``It has polar bonds, so it is polar'' is the single most common error on
+this topic. \ce{CO2} has two strongly polar C=O bonds and is
+\textbf{nonpolar}, because its linear geometry points them exactly opposite.
+Same story for \ce{BF3} (trigonal planar) and \ce{CCl4} (tetrahedral).
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Polarity decisions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{CCl4} and \ce{CHCl3} both contain polar C--Cl bonds, yet only
+        one is a polar molecule. Identify it and explain.
+        \answerlines[3]{\ce{CHCl3}. In \ce{CCl4} four identical bond dipoles
+        arranged tetrahedrally sum to zero. Replacing one Cl with H breaks
+        that symmetry, so the dipoles no longer cancel and a net dipole
+        remains.}
+  \item \ce{NH3} is polar but \ce{BF3} is not, even though both are
+        ``\ce{XY3}.'' Explain in terms of geometry.
+        \answerlines[3]{\ce{NH3} has a lone pair on nitrogen, giving four
+        electron domains and a trigonal pyramidal shape whose dipoles do not
+        cancel. \ce{BF3} has only three domains and is trigonal planar, so
+        its three equal dipoles at 120$^\circ$ sum to zero.}
+\end{enumerate}
+
+\begin{exitticket}
+Can a molecule containing only nonpolar bonds be polar? Explain.
+\answerlines[2]{No --- with no bond dipoles there is nothing to fail to
+cancel, so the molecular dipole must be zero.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Ions and Lattice Energy}{Zumdahl \S8.4--8.5}
+
+\begin{objectives}
+  \item Predict ion configurations and rank ionic radii, including
+        isoelectronic series.
+  \item Use Coulomb's law to rank lattice energies.
+\end{objectives}
+
+\reading{Zumdahl \S8.4--8.5}{400--408}
+
+\begin{warmup}[3]
+  \item $\Delta$EN of \ce{H-F} given H 2.1, F 4.0:
+        \answerblank[2cm]{1.9}
+  \item Is \ce{BF3} polar? \answerblank[2cm]{no}
+  \item Configuration of \ce{S^2-}: \answerblank[2.6cm]{$[\ce{Ar}]$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Ion sizes}
+
+\notesectionz{How ions differ from their parent atoms}{8.4}
+\practice{6}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item A \term{cation} is always \answerblank[2cm]{smaller} than its parent
+        atom --- electrons are removed (often emptying a whole shell) while
+        the nuclear charge is unchanged, so the remainder is pulled in
+        tightly.
+  \item An \term{anion} is always \answerblank[2cm]{larger} --- added
+        electrons increase mutual repulsion with no extra protons to
+        compensate.
+\end{itemize}
+
+\notesub{Isoelectronic series}
+
+Ions with the same electron count differ only in nuclear charge. Zumdahl's
+rule: for a series of isoelectronic ions, size
+\answerblank[2.2cm]{decreases} as $Z$ increases.
+
+\begin{workedexample}[Worked example: Zumdahl's krypton series]
+Rank \ce{Se^2-}, \ce{Br-}, \ce{Rb+}, \ce{Sr^2+} by decreasing size.
+
+All four have the krypton configuration --- 36 electrons each --- so
+repulsions are comparable. Their nuclear charges are $Z = 34, 35, 37, 38$.
+More protons pulling the same 36 electrons means a smaller ion:
+\[ \ce{Se^2-} > \ce{Br-} > \ce{Rb+} > \ce{Sr^2+} \]
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Rank the ions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Larger: \ce{Cl} or \ce{Cl-}? \answerblank[2.4cm]{\ce{Cl-}}
+  \item Larger: \ce{Fe^2+} or \ce{Fe^3+}? \answerblank[2.4cm]{\ce{Fe^2+}}
+  \item Rank by size: \ce{O^2-}, \ce{F-}, \ce{Na+}, \ce{Mg^2+}
+        \answerblank[6cm]{\ce{O^2-} $>$ \ce{F-} $>$ \ce{Na+} $>$ \ce{Mg^2+}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Lattice energy}
+
+\notesectionz{Coulomb's law, applied to a crystal}{8.5}
+\practice{5}
+
+\term{Lattice energy} is the energy change when gaseous ions assemble into
+an ionic solid. Zumdahl writes it as a modified Coulomb's law:
+\[
+  \text{Lattice energy} = k\!\left(\answerblank[1.8cm]{$\dfrac{Q_1Q_2}{r}$}\right)
+\]
+where $Q_1$ and $Q_2$ are the ionic \answerblank[1.6cm]{charges} and $r$ is
+the distance between ion \answerblank[1.6cm]{centres}.
+
+\notesub{The ranking procedure}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Compare the \answerblank[3.4cm]{charge products} $|Q_1Q_2|$ first
+        --- they dominate.
+  \item Only if those tie, compare \answerblank[2cm]{ionic radii}: smaller
+        ions sit closer, giving a stronger lattice.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: three-way ranking]
+Rank \ce{NaCl}, \ce{MgO}, and \ce{NaF} by lattice energy magnitude.
+
+Charge products: \ce{MgO} is $(2)(2) = 4$; \ce{NaCl} and \ce{NaF} are both
+$(1)(1) = 1$. So \ce{MgO} is far strongest.
+
+Tiebreak \ce{NaF} vs \ce{NaCl}: \ce{F-} is smaller than \ce{Cl-}, so $r$ is
+shorter and the attraction stronger.
+\[ \ce{MgO} \gg \ce{NaF} > \ce{NaCl} \]
+\end{workedexample}
+
+\notesub{Why this matters structurally}
+
+In the \ce{LiF} lattice each \ce{Li+} is surrounded by
+\answerblank[1.2cm]{six} \ce{F-} ions and vice versa --- the sodium chloride
+structure. That packing maximizes attractions between opposite charges while
+minimizing repulsions between like charges.
+
+\segment{APPLICATION}{20}{Lattice energy reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{MgO} melts at \SI{2852}{\celsius} but \ce{NaF} at
+        \SI{993}{\celsius}, despite similar ion sizes. Explain
+        quantitatively. \answerlines[3]{Charge product is 4 for \ce{MgO}
+        versus 1 for \ce{NaF}, so the Coulombic attraction is roughly four
+        times as strong at comparable separation --- far more energy is
+        needed to disrupt the lattice.}
+  \item Rank \ce{CaO}, \ce{KCl}, \ce{KBr}, \ce{SrO} by lattice energy and
+        justify. \answerlines[3]{\ce{CaO} $>$ \ce{SrO} $\gg$ \ce{KCl} $>$
+        \ce{KBr}. Charges first: the oxides are $2{+}/2{-}$. Within each
+        pair, the smaller ion wins --- \ce{Ca^2+} $<$ \ce{Sr^2+} and
+        \ce{Cl-} $<$ \ce{Br-}.}
+\end{enumerate}
+
+\begin{exitticket}
+Why is \ce{Al2O3} used as a furnace lining while \ce{NaCl} is not?
+\answerlines[2]{\ce{Al2O3} has a $3{+}/2{-}$ charge product of 6 versus 1
+for \ce{NaCl}, so its lattice energy and melting point are enormously
+higher.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Bond Energies}{Zumdahl \S8.7--8.8}
+
+\begin{objectives}
+  \item Relate bond order to bond length and bond energy.
+  \item Estimate $\Delta H$ for a reaction from bond energies.
+\end{objectives}
+
+\reading{Zumdahl \S8.7--8.8}{409--415}
+
+\begin{warmup}[4]
+  \item Lattice energy depends on charges and what else?
+        \answerblank[2.6cm]{ionic radii}
+  \item Larger: \ce{K+} or \ce{Ca^2+}? \answerblank[2.4cm]{\ce{K+}}
+  \item Stronger lattice: \ce{LiF} or \ce{KI}?
+        \answerblank[2.4cm]{\ce{LiF}}
+  \item Sign of $\Delta H$ for an exothermic reaction:
+        \answerblank[2.2cm]{negative}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What a bond energy is}
+
+\notesectionz{Breaking bonds always costs energy}{8.8}
+\practice{5}
+
+The \term{bond energy} is the energy required to break one mole of a
+particular bond in the gas phase. It is always
+\answerblank[1.8cm]{positive} --- breaking a bond is always
+\answerblank[2.7cm]{endothermic}, and forming one always releases energy.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}lccc@{}}
+\toprule
+ & \textbf{Bond order} & \textbf{Length} & \textbf{Energy (kJ/mol)}\\
+\midrule
+\ce{C-C} & 1 & longest & 347\\
+\ce{C=C} & 2 & middle & 614\\
+\ce{C#C} & 3 & \answerblank[1.6cm]{shortest} & \answerblank[1.4cm]{839}\\
+\bottomrule
+\end{tabular}
+
+Higher bond order $\to$ \answerblank[1.8cm]{shorter} and
+\answerblank[1.8cm]{stronger}. Note that the triple bond is not three times
+the single --- the increments shrink.
+
+\segment{GUIDED PRACTICE}{15}{Bond order reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Shortest N--O bond: \ce{NO3-}, \ce{NO2-}, or \ce{NO+}?
+        \answerblank[3.2cm]{\ce{NO+} (order 3)}
+  \item Which requires more energy to break, \ce{O2} or \ce{N2}? Why?
+        \answerblank[5.5cm]{\ce{N2} --- triple bond}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Computing $\Delta H$ from bonds}
+
+\notesectionz{The bookkeeping}{8.8}
+\practice{5}
+
+Imagine the reaction proceeding in two stages: tear every reactant apart
+into atoms, then assemble the products.
+\[
+  \Delta H = \answerblank[8.2cm]{$\sum D(\text{bonds broken}) - \sum D(\text{bonds formed})$}
+\]
+
+\begin{apctrap}
+The order is \textbf{broken minus formed} --- the reverse of the formation
+enthalpy equation from Chapter 6, which is products minus reactants.
+Reversing them flips your sign. A quick sanity check: if the products have
+stronger bonds, the reaction should come out exothermic.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 1: Zumdahl's HF synthesis]
+\[ \ce{H2(g) + F2(g) -> 2 HF(g)} \]
+Bonds broken: one \ce{H-H} (432) and one \ce{F-F} (154).
+Bonds formed: two \ce{H-F} (565 each).
+\[
+  \Delta H = (432 + 154) - 2(565) = 586 - 1130 = \SI{-544}{\kilo\joule}
+\]
+Compare with formation data: $2 \times (-271) = \SI{-542}{\kilo\joule}$.
+The two methods agree to within 2 kJ.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: HCl synthesis]
+\[ \ce{H2(g) + Cl2(g) -> 2 HCl(g)} \]
+Broken: \ce{H-H} 432 $+$ \ce{Cl-Cl} 239 $= 671$.
+Formed: $2 \times \ce{H-Cl}$ 427 $= 854$.
+\[ \Delta H = 671 - 854 = \SI{-183}{\kilo\joule} \]
+Formation data give $2(-92.3) = \SI{-184.6}{\kilo\joule}$ --- again close.
+\end{workedexample}
+
+\begin{apcnote}
+Bond energies give \emph{estimates}, not exact values, because tabulated
+figures are averages over many compounds. A C--H bond in methane is not
+identical to one in ethanol. Expect agreement within a few percent, and say
+so if a question asks why the two methods differ.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Full calculation}
+
+Bond energies (kJ/mol): \ce{N#N} 941, \ce{H-H} 432, \ce{N-H} 391.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Compute $\Delta H$ for \ce{N2(g) + 3 H2(g) -> 2 NH3(g)}.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Broken: $941 + 3(432) = 2237$. Formed:
+        $6(391) = 2346$. $\Delta H = 2237 - 2346 =
+        \SI{-109}{\kilo\joule}$\end{apcanswer}}
+  \item The accepted value is \SI{-92.2}{\kilo\joule}. Explain the
+        discrepancy. \answerlines[2]{Tabulated bond energies are averages
+        across many molecules, so a calculation using them yields an
+        estimate rather than an exact value.}
+  \item Which contributed more to the exothermicity: breaking the triple
+        bond, or forming the six N--H bonds? Explain.
+        \answerlines[2]{Forming the N--H bonds --- that step releases
+        2346 kJ, more than the 2237 kJ required to break all the reactant
+        bonds, which is exactly why the reaction is exothermic.}
+\end{enumerate}
+
+\begin{exitticket}
+Why is breaking a bond always endothermic? \answerlines[2]{A bond exists
+because the bonded state is lower in energy than separated atoms; climbing
+back out of that energy well requires an input of energy.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Lewis Structures and Octet Exceptions}{Zumdahl \S8.9--8.11}
+
+\begin{objectives}
+  \item Draw Lewis structures reliably.
+  \item Recognize the three classes of octet exception.
+\end{objectives}
+
+\reading{Zumdahl \S8.9--8.11}{415--423}
+
+\begin{warmup}[3]
+  \item $\Delta H$ formula from bond energies:
+        \answerblank[4.6cm]{broken $-$ formed}
+  \item Valence electrons in \ce{SO4^2-}:
+        \answerblank[2.9cm]{$6+24+2 = 32$}
+  \item Bond order of \ce{N2}: \answerblank[1.6cm]{3}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The procedure}
+
+\notesectionz{Five steps}{8.10}
+\practice{1}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Count total valence electrons ---
+        \answerblank[7.1cm]{add for anions, subtract for cations}.
+  \item Choose the central atom: the
+        \answerblank[4.2cm]{least electronegative} one, never H.
+  \item Connect with single bonds; complete the
+        \answerblank[2.6cm]{outer atoms'} octets (H takes 2).
+  \item Place any remaining electrons on the
+        \answerblank[2.8cm]{central atom}.
+  \item If the central atom is short, convert lone pairs into
+        \answerblank[3.2cm]{multiple bonds}.
+\end{enumerate}
+
+Always finish with a two-part check: the total electron count \emph{and}
+every octet.
+
+\begin{workedexample}[Worked example: \ce{HCN}]
+Count: $1 + 4 + 5 = 10$ electrons. Carbon is least electronegative (H can
+never be central), so the skeleton is H--C--N.
+
+Single bonds use 4; putting the remaining 6 on N gives N an octet but leaves
+C with only 4. Convert two of nitrogen's lone pairs into bonds:
+\[ \ce{H-C#N} \]
+with one lone pair left on N. Check: 10 electrons, C and N both have
+octets, H has 2. \checkmark
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Draw four}
+
+Give the electron count, then the structure: \ce{PH3}, \ce{CO2},
+\ce{SO2}, \ce{ClO4-}.
+\workspace[4.4cm]
+\keyonly{\begin{apcanswer}\ce{PH3}: 8 e$^-$, P central, 1 lone pair.
+\ce{CO2}: 16 e$^-$, O=C=O, 2 lone pairs per O. \ce{SO2}: 18 e$^-$, bent,
+lone pair on S. \ce{ClO4-}: 32 e$^-$, Cl central, 4 single bonds, 3 lone
+pairs per O, brackets with $-$.\end{apcanswer}}
+
+\segment{INSTRUCTION B}{20}{When the octet rule fails}
+
+\notesectionz{Three classes of exception}{8.11}
+\practice{1}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{3.4cm}p{3.6cm}p{5.8cm}@{}}
+\toprule
+\textbf{Class} & \textbf{Examples} & \textbf{Why}\\
+\midrule
+Odd number of electrons & \ce{NO}, \ce{NO2} &
+  one electron must remain \answerblank[1.8cm]{unpaired}\\
+Fewer than an octet & \ce{BF3}, \ce{BeH2} &
+  B and Be are content with \answerblank[1.6cm]{6} and 4\\
+Expanded octet & \ce{SF6}, \ce{PCl5}, \ce{XeF2} &
+  central atom is in period \answerblank[1.4cm]{3} or beyond\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Only period 3 and beyond can expand. Nitrogen \emph{cannot} hold more than
+eight electrons, so structures like ``\ce{NF5}'' do not exist. If a
+structure needs an expanded octet on a period-2 atom, the structure is
+wrong.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Diagnose the structures}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A student draws \ce{BF3} with one B=F double bond to give boron an
+        octet. Evaluate. \answerlines[3]{Rejected. The double bond forces a
+        $+1$ formal charge onto fluorine, the most electronegative element
+        --- energetically unreasonable. Boron's six-electron structure is
+        accepted.}
+  \item Explain why \ce{SF6} can exist but \ce{OF6} cannot.
+        \answerlines[2]{Sulfur is in period 3 and can accommodate an
+        expanded octet; oxygen is in period 2 and is limited to eight
+        electrons.}
+\end{enumerate}
+
+\begin{exitticket}
+Give the electron count for \ce{PO4^3-} and state whether an expanded octet
+is required. \answerlines[2]{$5 + 24 + 3 = 32$ electrons. Not required ---
+four single bonds and octets on the oxygens use exactly 32, though phosphorus
+could expand if a different structure were drawn.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Resonance, Formal Charge, and VSEPR}{Zumdahl \S8.12--8.13}
+
+\begin{objectives}
+  \item Use formal charge to select the best structure.
+  \item Draw resonance sets and state their physical meaning.
+  \item Predict geometry and bond angles with VSEPR.
+\end{objectives}
+
+\reading{Zumdahl \S8.12--8.13}{423--440}
+
+\begin{warmup}[4]
+  \item Electrons in \ce{NO3-}: \answerblank[2.4cm]{24}
+  \item Can nitrogen expand its octet? \answerblank[1.6cm]{no}
+  \item Which class of exception is \ce{BF3}?
+        \answerblank[4.1cm]{fewer than an octet}
+  \item Central atom of \ce{OCS}: \answerblank[1.8cm]{C}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Formal charge and resonance}
+
+\notesectionz{Choosing among candidate structures}{8.12}
+\practice{5}
+
+\[
+  FC = \text{valence} - \answerblank[5cm]{$\text{nonbonding} - \tfrac12(\text{bonding})$}
+\]
+
+The best structure has formal charges closest to
+\answerblank[1.2cm]{zero}, with any negative charge on the
+\answerblank[4.3cm]{most electronegative} atom. The formal charges must sum
+to the species' overall charge --- that is a check, not a preference.
+
+\notesub{Resonance}
+
+When the electrons could be arranged in more than one equivalent way, draw
+all forms joined by \answerblank[4.5cm]{double-headed arrows}. The real
+molecule is the \term{hybrid} --- a single averaged structure, not a
+molecule flipping between forms.
+
+\begin{workedexample}[Worked example: nitrate]
+\ce{NO3-} has 24 electrons and three equivalent forms, with the double bond
+on each oxygen in turn.
+
+The evidence that this is an average rather than an alternation: all three
+N--O bonds are measured to be \emph{identical} in length, intermediate
+between a single and a double bond. Bond order is
+$4/3$, and each oxygen carries an average charge of $-2/3$.
+\end{workedexample}
+
+\begin{apctrap}
+``The double bond moves back and forth'' scores zero. Cite the experimental
+evidence instead: equal bond lengths, fractional bond order, delocalized
+charge.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Formal charge practice}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item FC on S in \ce{SO4^2-} drawn with four single bonds:
+        \answerblank[2cm]{$+2$}
+  \item FC on each O in that structure: \answerblank[2cm]{$-1$}
+  \item Bond order of C--O in \ce{CO3^2-}: \answerblank[2cm]{$4/3$}
+  \item Bond order of O--O in \ce{O3}: \answerblank[2cm]{$3/2$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{VSEPR}
+
+\notesectionz{Geometry from electron-domain repulsion}{8.13}
+\practice{1}
+
+Electron domains --- bonding groups plus lone pairs --- arrange themselves
+to maximize separation. A multiple bond counts as
+\answerblank[2.4cm]{one domain}.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}cllc@{}}
+\toprule
+\textbf{Domains} & \textbf{Domain geometry} & \textbf{Angle} & \textbf{Example}\\
+\midrule
+2 & \answerblank[2.6cm]{linear} & 180$^\circ$ & \ce{CO2}\\
+3 & \answerblank[3cm]{trigonal planar} & 120$^\circ$ & \ce{BF3}\\
+4 & \answerblank[2.6cm]{tetrahedral} & 109.5$^\circ$ & \ce{CH4}\\
+5 & trigonal bipyramidal & 90/120$^\circ$ & \ce{PCl5}\\
+6 & octahedral & 90$^\circ$ & \ce{SF6}\\
+\bottomrule
+\end{tabular}
+
+Molecular geometry names only the \emph{atom} positions, so lone pairs
+change the name: 4 domains with 1 lone pair is
+\answerblank[3.9cm]{trigonal pyramidal}; with 2 lone pairs it is
+\answerblank[1.6cm]{bent}.
+
+Lone pairs also compress angles, because they repel
+\answerblank[3.0cm]{more strongly} than bonding pairs --- hence
+\ce{CH4} 109.5$^\circ$, \ce{NH3} $\approx107^\circ$, \ce{H2O}
+$\approx104.5^\circ$.
+
+\segment{APPLICATION}{20}{The full chain}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{SO2}: electron count, domains, geometry, angle, polarity.
+        \answerlines[3]{18 e$^-$; 3 domains including one lone pair on S;
+        bent; slightly less than 120$^\circ$; polar, because the bent shape
+        prevents the S--O dipoles from cancelling.}
+  \item \ce{CO2} and \ce{SO2} are both triatomic oxides, yet one is linear
+        and one is bent. Explain the difference completely.
+        \answerlines[3]{Carbon has two domains (two double bonds, no lone
+        pairs) so \ce{CO2} is linear at 180$^\circ$. Sulfur has three
+        domains including a lone pair, which occupies space and pushes the
+        oxygens together into a bent shape.}
+\end{enumerate}
+
+\begin{exitticket}
+Predict the geometry and approximate bond angle of \ce{NF3}, and state
+whether it is polar. \answerlines[2]{Four domains with one lone pair $\to$
+trigonal pyramidal, about 107$^\circ$. Polar --- the three N--F dipoles do
+not cancel in that geometry.}
+\end{exitticket}
+
+\end{document}

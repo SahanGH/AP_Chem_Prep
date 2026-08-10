@@ -1,0 +1,85 @@
+% WS2 -- Type A/B: Lewis diagrams, formal charge, resonance. Blocks 3-4.
+\documentclass{apchem-worksheet}
+
+\apcunit{2}
+\apcunittitle{Compound Structure and Properties}
+\apcdoctitle{Worksheet 2 \textbullet\ Lewis, Formal Charge, Resonance}
+\apcsubtitle{CED 2.5, 2.6 \textbullet\ electron count first, always}
+
+\begin{document}
+\wsheader[Start every structure with the total electron count written down
+--- uncounted structures are uncheckable, and the count catches most errors
+before they happen.]
+
+\problem[2.5]{For each species: electron count, then the Lewis diagram.}
+\begin{parts}
+  \item \ce{OF2} \quad count: \answerblank[2cm]{20} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}F--O--F; 2 lone pairs on O, 3 on each F.
+        Bent shape comes later --- the diagram just needs correct
+        pairs.\end{apcanswer}}
+  \item \ce{C2H4} \quad count: \answerblank[2cm]{12} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}H$_2$C=CH$_2$; double bond, no lone
+        pairs.\end{apcanswer}}
+  \item \ce{NO2-} \quad count: \answerblank[2cm]{18} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Two resonance forms: N central, one N=O
+        and one N--O, lone pair on N; brackets, $-$.\end{apcanswer}}
+  \item \ce{XeF2} \quad count: \answerblank[2cm]{22} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}F--Xe--F with THREE lone pairs on Xe ---
+        expanded octet (period 5).\end{apcanswer}}
+\end{parts}
+
+\problem[2.6]{Compute formal charges for the sulfate skeleton drawn with
+four single bonds (32 e$^-$):}
+\begin{parts}
+  \item FC on S: \answerblank[2cm]{$+2$}\quad FC on each O:
+        \answerblank[2cm]{$-1$}
+  \item Verify the sum against the ion's charge.
+        \answerblank[5cm]{$+2 + 4(-1) = -2$ \checkmark}
+\end{parts}
+
+\problem[2.6]{Cyanide, \ce{CN-} (10 e$^-$), could be drawn C$\equiv$N with
+the lone pair on C or on N shifted variants. The accepted structure puts
+$FC(\ce{C}) = -1$, $FC(\ce{N}) = 0$. A student objects: ``negative charge
+should sit on the MORE electronegative atom --- this structure is wrong.''
+Respond. \answerlines[3]{The rule is a preference among valid candidates,
+not a veto. Alternatives (double bond) leave atoms without octets or larger
+charges; with octets satisfied, $-1$ on C is the least-bad option ---
+minimal-charge structures win first.}}
+
+\problem[2.6]{Ozone, \ce{O3} (18 e$^-$).}
+\begin{parts}
+  \item Draw both resonance forms. \workspace[3cm]
+        \keyonly{\begin{apcanswer}Central O with lone pair; O=O and O--O
+        swapping; each form 18 e$^-$.\end{apcanswer}}
+  \item Both O--O bonds measure 128 pm. A true O=O is 121 pm; O--O single is
+        148 pm. Explain how this is evidence for the resonance hybrid.
+        \answerlines[2]{Both bonds are identical and intermediate ---
+        matching a $3/2$-order average, not one single + one double.}
+  \item Bond order: \answerblank[2cm]{$3/2$}
+\end{parts}
+
+\problem[2.5]{The diagram police: each structure below contains one error.
+Identify it.}
+\begin{parts}
+  \item \ce{BF3} drawn with a B=F double bond ``to complete boron's
+        octet.'' \answerlines[2]{The double bond puts $+1$ on F (most
+        electronegative element) --- B's incomplete octet (6 e$^-$) is the
+        accepted structure.}
+  \item \ce{SF4} drawn with only 8 electrons on S when the count demands
+        more. \answerlines[2]{$6+4(7)=34$ e$^-$; four bonds use 8, F octets
+        use 24 --- the last pair MUST sit on S (expanded octet, period 3).}
+\end{parts}
+
+\begin{spiralstrip}{Units 1--2 \textbullet\ spiral}
+  \item Percent N in \ce{(NH4)2SO4} ($M=132.15$), setup only:
+        \answerblank[5.7cm]{$28.02/132.15\times100\%$ ($=21.2\%$)}
+  \item PES peak areas 2:2:6:2:6:2 --- element?
+        \answerblank[3cm]{Ca (20 e$^-$)}
+  \item Stronger lattice: \ce{BaO} or \ce{MgO}?
+        \answerblank[6.5cm]{\ce{MgO} --- same charges, smaller $r$}
+  \item Excited or ground: $1s^2 2s^2 2p^5 3s^2$ (11 e$^-$)?
+        \answerblank[3cm]{excited Na}
+  \item Empirical formula of \ce{C4H10}: \answerblank[2.5cm]{\ce{C2H5}}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,657 @@
+% Unit 2 guided notes -- 6 block lessons.
+\documentclass{apchem-notes}
+
+\apcunit{2}
+\apcunittitle{Compound Structure and Properties}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 2.1--2.7 \textbullet\ Zumdahl \S8.1--8.13, \S9.1, \S10.4, \S10.7}
+
+\begin{document}
+\apctitleblock
+
+% =====================================================================
+\blocklesson{Bond Types and Potential Energy}{Wed Aug 26}
+
+\begin{objectives}
+  \item Classify bonding from electronegativity difference and element type.
+  \item Read bond length and bond energy off a potential-energy curve.
+\end{objectives}
+
+\reading{Zumdahl \S8.1--8.3}{391--400}\quad\reading{\S8.8}{412--415}
+
+\begin{warmup}[3]
+  \item Configuration of \ce{Cl-}: \answerblank[3.5cm]{$[\ce{Ar}]$}
+  \item Higher first IE: Mg or Al? \answerblank[6.7cm]{Mg (Al's 3p e$^-$ is
+        higher-energy)}
+  \item Formula: calcium + fluorine: \answerblank[2.5cm]{\ce{CaF2}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{A spectrum of bonds, not three boxes}
+
+\notesection{Types of chemical bonds}{2.1}
+\practice{4}
+
+Bonding is a competition for electrons, scored by
+\term{electronegativity} (EN):
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{3.4cm}p{3.6cm}p{6.2cm}@{}}
+\toprule
+\textbf{Bond type} & \textbf{Typical partners} & \textbf{Electron behavior}\\
+\midrule
+Nonpolar covalent & two identical nonmetals & shared
+  \answerblank[2.2cm]{equally}\\
+Polar covalent & different nonmetals & shared
+  \answerblank[2.4cm]{unequally} --- partial charges $\delta^+/\delta^-$\\
+Ionic & metal + nonmetal & \answerblank[2.6cm]{transferred} to the
+  nonmetal\\
+Metallic & metal + metal & delocalized ``\answerblank[2.6cm]{sea}'' over
+  cations\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+The AP exam treats these as a \emph{continuum}: greater $\Delta$EN $\to$
+more ionic character. \ce{HF} is very polar covalent; \ce{NaCl} is mostly
+ionic. Don't fight over borderline cases --- argue with $\Delta$EN.
+\end{apcnote}
+
+Rank the bond polarity, least to most: \ce{C-H}, \ce{C-F}, \ce{C-O}:
+\answerblank[7.1cm]{\ce{C-H} $<$ \ce{C-O} $<$ \ce{C-F} ($\Delta$EN grows)}
+
+\segment{GUIDED PRACTICE}{15}{Classify and justify}
+
+For each substance: bond type + one-phrase justification.
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{Br2}: \answerblank[7.4cm]{nonpolar covalent --- identical atoms}
+  \item \ce{K2O}: \answerblank[7.8cm]{ionic --- metal + nonmetal, large $\Delta$EN}
+  \item \ce{NO}: \answerblank[8.9cm]{polar covalent --- two nonmetals, small $\Delta$EN}
+  \item brass (Cu/Zn): \answerblank[6.5cm]{metallic --- delocalized electrons}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The potential-energy curve}
+
+\notesection{Why bonds form: the energy well}{2.2}
+\practice{4}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9.2cm, height=5.4cm,
+    xlabel={internuclear distance (pm)}, ylabel={potential energy (kJ/mol)},
+    xmin=30, xmax=300, ymin=-500, ymax=420,
+    xtick={74}, xticklabels={74},
+    ytick={0,-432}, yticklabels={0, $-432$},
+    axis lines=left, every axis y label/.append style={rotate=0}]
+  \addplot[seriesA, domain=48:295, samples=120]
+    {432*((1-exp(-0.02*(x-74)))^2 - 1)};
+  \draw[densely dotted, thick] (axis cs:74,-432) -- (axis cs:74,0);
+  \draw[densely dotted, thick] (axis cs:30,-432) -- (axis cs:74,-432);
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Reading the curve for \ce{H2}:
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item At large distance, PE $\approx$ \answerblank[1.6cm]{0} --- atoms
+        don't interact.
+  \item As atoms approach, PE \answerblank[2.2cm]{decreases}: each nucleus
+        attracts the other's electron density.
+  \item The minimum sits at the \term{bond length}
+        (\answerblank[1.8cm]{74 pm} for \ce{H2}); its depth is the
+        \term{bond energy} (\answerblank[2.5cm]{432 kJ/mol}).
+  \item At very short distance PE shoots up:
+        \answerblank[5.3cm]{nucleus--nucleus repulsion} dominates.
+\end{itemize}
+
+\begin{apctrap}
+The minimum is a \emph{balance} of attraction and repulsion --- not ``where
+attraction stops.'' And breaking a bond \emph{requires} energy (climb out of
+the well); forming one \emph{releases} it. Bond breaking is never
+exothermic.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Compare two wells}
+
+\ce{N2}'s well: minimum at 110 pm, depth 945 kJ/mol. \ce{H2}: 74 pm,
+432 kJ/mol.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Which bond is stronger, and what feature of the curve says so?
+        \answerlines[2]{\ce{N2} --- deeper well (945 vs 432 kJ/mol): more
+        energy to climb out.}
+  \item \ce{N2}'s bond is a triple bond. Connect that to both numbers.
+        \answerlines[2]{Three shared pairs pull the nuclei closer would-be
+        --- but N is larger than H, so compare like to like: vs a N--N
+        single bond, the triple is much shorter and far deeper.}
+  \item On one set of axes, sketch curves for \ce{F2} (bond energy
+        155 kJ/mol, length 142 pm) and \ce{H2}. Label which is which.
+        \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}\ce{F2}: shallower well (155), minimum
+        farther right (142 pm). \ce{H2}: deeper (432), minimum at 74
+        pm.\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+On a PE curve, what two pieces of information does the minimum give you?
+\answerlines[2]{Its x-position is the equilibrium bond length; its depth
+below zero is the bond energy.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Ionic Solids, Metals, and Alloys}{Fri Aug 28}
+
+\begin{objectives}
+  \item Rank lattice energies using Coulomb's law.
+  \item Explain metallic properties from the electron-sea model; classify
+        alloys.
+\end{objectives}
+
+\reading{Zumdahl \S8.5}{404--408}\quad\reading{\S10.4, 10.7}{505--511, 520--523}
+
+\begin{warmup}[3]
+  \item Most polar bond: \ce{H-F}, \ce{H-Cl}, or \ce{H-Br}?
+        \answerblank[3cm]{\ce{H-F}}
+  \item On a PE curve, bond energy is the \answerblank[3.5cm]{well depth}.
+  \item Smaller radius: \ce{Na+} or \ce{Mg^2+}? Why (5 words)?
+        \answerblank[6.6cm]{\ce{Mg^2+} --- more protons, same e$^-$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Ionic solids and lattice energy}
+
+\notesection{The lattice and its energy}{2.3}
+\practice{6}
+
+An ionic solid is a 3-D \term{lattice}: each cation surrounded by anions and
+vice versa --- no ``\ce{NaCl} molecule,'' just a repeating ratio. The
+\term{lattice energy} is the energy change when gaseous ions assemble into
+the solid; its magnitude follows Coulomb's law:
+\[
+  |E| \propto \answerblank[3.5cm]{$\dfrac{|q_1 q_2|}{r}$}
+\]
+
+Decision order for ranking:
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Compare \answerblank[3.4cm]{charge products} first --- they dominate.
+  \item Tie? Compare \answerblank[3.2cm]{ionic radii} --- smaller ions,
+        stronger lattice.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: rank MgO, NaF, NaCl]
+Charge products: MgO $(2\times2)=4$; NaF and NaCl $(1\times1)=1$. So MgO is
+far strongest. Tiebreak NaF vs NaCl: \ce{F-} is smaller than \ce{Cl-}, so
+NaF $>$ NaCl. Final: $\ce{MgO} \gg \ce{NaF} > \ce{NaCl}$.
+\end{workedexample}
+
+Consequences you can be asked to explain: high melting points
+(strong \answerblank[4.9cm]{electrostatic attractions} throughout the
+lattice), brittleness (shifting layers aligns
+\answerblank[3.5cm]{like charges} $\to$ repulsion $\to$ cleave), and
+conductivity only when \answerblank[3.8cm]{molten or dissolved} (ions must
+be mobile).
+
+\segment{GUIDED PRACTICE}{15}{Lattice ranking}
+
+Rank by melting point, highest first, one reason each: \ce{KCl}, \ce{CaO},
+\ce{KBr}.
+\answerlines[3]{\ce{CaO} (charges $2\times2$) $>$ \ce{KCl} $>$ \ce{KBr}
+(\ce{Cl-} smaller than \ce{Br-}). Charges first, then radius.}
+
+\segment{INSTRUCTION B}{20}{Metals and alloys}
+
+\notesection{The electron sea}{2.4}
+\practice{1}
+
+Metallic bonding: cations in fixed positions, valence electrons
+\term{delocalized} over the whole sample. This one model explains:
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item conductivity: \answerblank[6.0cm]{mobile electrons carry charge}
+  \item malleability: layers slide without
+        \answerblank[4.5cm]{aligning like charges} (contrast: ionic solids
+        shatter)
+  \item luster, thermal conduction: same mobile sea.
+\end{itemize}
+
+\notesub{Alloys}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \term{Substitutional}: similar-size atoms \answerblank[3.2cm]{replace}
+        host atoms (brass: Zn for Cu).
+  \item \term{Interstitial}: small atoms fill \answerblank[2.6cm]{gaps}
+        between hosts (steel: C in Fe). Interstitials pin sliding layers
+        $\to$ \answerblank[4.5cm]{harder, less malleable}.
+\end{itemize}
+
+\segment{APPLICATION}{20}{Model-based predictions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Solid \ce{NaCl} does not conduct; molten \ce{NaCl} does. Solid Cu
+        conducts either way. Explain both with particle-level models.
+        \answerlines[3]{In solid \ce{NaCl}, ions are locked in the lattice
+        (no mobile charges); melting frees the ions. Cu's charge carriers
+        are delocalized electrons, mobile in any phase.}
+  \item Pure iron bends easily; steel (Fe + small \% C) resists. Why, at the
+        particle level? \answerlines[2]{Carbon atoms sit in interstitial
+        holes and block the Fe layers from sliding past one another.}
+\end{enumerate}
+
+\begin{exitticket}
+Predict which has the higher melting point, \ce{LiF} or \ce{CsBr}, with the
+two-step Coulombic argument. \answerlines[2]{Same charge product (1); Li$^+$
+and F$^-$ are much smaller $\to$ shorter $r$ $\to$ stronger attraction $\to$
+\ce{LiF}.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Lewis Diagrams}{Mon Aug 31}
+
+\begin{objectives}
+  \item Draw Lewis diagrams for molecules and polyatomic ions quickly and
+        correctly.
+  \item Know the octet exceptions the AP exam actually tests.
+\end{objectives}
+
+\reading{Zumdahl \S8.9--8.11}{415--423}
+
+\begin{warmup}[4]
+  \item Stronger lattice: \ce{MgS} or \ce{NaCl}? Why?
+        \answerblank[5.8cm]{\ce{MgS} --- $2\times2$ charge product}
+  \item Valence electrons in \ce{P}: \answerblank[1.5cm]{5}
+  \item Valence electrons in \ce{SO4^2-} total:
+        \answerblank[3cm]{$6+4(6)+2 = 32$}
+  \item Steel is which alloy type? \answerblank[3cm]{interstitial}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The five-step draw}
+
+\notesection{Lewis diagrams}{2.5}
+\practice{1}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Count \emph{total} valence electrons
+        (\answerblank[7.1cm]{add for anions, subtract for cations}).
+  \item Skeleton: \answerblank[6.8cm]{least electronegative atom central}
+        (never H); connect with single bonds.
+  \item Complete outer atoms' octets (H gets \answerblank[1.2cm]{2}).
+  \item Leftovers go on the \answerblank[2.6cm]{central atom}.
+  \item Central atom short? Convert lone pairs to
+        \answerblank[3.4cm]{multiple bonds}.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: \ce{CO2} in 20 seconds]
+$4 + 2(6) = 16$ e$^-$. Skeleton O--C--O (12 left). Octets on the O's uses
+all 16 --- C has only 4. Convert one lone pair from each O:
+\chemfig{O=C=O} with two lone pairs on each oxygen --- every atom has an
+octet, 16 e$^-$ total. Always end with the two-count check: electrons AND
+octets.
+\end{workedexample}
+
+\notesub{The exceptions worth knowing}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \term{Odd-electron} species (\ce{NO}, \ce{NO2}): someone keeps an
+        unpaired electron.
+  \item \term{Incomplete octet}: \ce{BF3} --- B holds \answerblank[1.4cm]{6}
+        happily.
+  \item \term{Expanded octet}: period-3+ central atoms (\ce{SF6},
+        \ce{PCl5}) may hold more than 8 --- possible because $n\ge3$.
+\end{itemize}
+
+\segment{GUIDED PRACTICE}{15}{Draw four}
+
+Draw Lewis diagrams (show electron count first):
+\ce{NH3}, \ce{HCN}, \ce{ClO-}, \ce{PF5}
+\workspace[4.6cm]
+\keyonly{\begin{apcanswer}\ce{NH3}: 8 e$^-$, N central, 1 lone pair.
+\ce{HCN}: 10 e$^-$, H-C$\equiv$N with lone pair on N. \ce{ClO-}: 14 e$^-$,
+single bond, 3 lone pairs each, in brackets with $-$. \ce{PF5}: 40 e$^-$,
+expanded octet, 5 single bonds, 3 lone pairs per F.\end{apcanswer}}
+
+\segment{INSTRUCTION B}{20}{Bond order, length, strength}
+
+\notesection{What the drawing predicts}{2.5}
+\practice{4}
+
+More shared pairs $\to$ higher \term{bond order} $\to$
+\answerblank[2.6cm]{shorter} and \answerblank[2.6cm]{stronger} bond.
+
+C--O bond in three species:
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}llll@{}}
+\toprule
+ & \ce{CH3OH} & \ce{CO2} & \ce{CO}\\
+\midrule
+bond order & \answerblank[1.4cm]{1} & \answerblank[1.4cm]{2} &
+  \answerblank[1.4cm]{3}\\
+length & longest & middle & shortest\\
+\bottomrule
+\end{tabular}
+
+\segment{APPLICATION}{20}{Diagnose broken diagrams}
+
+Each diagram below has one error; name it and fix it.
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{H2O} drawn with H--O--H and \emph{two} lone pairs on each H.
+        \answerlines[2]{H can hold only 2 electrons --- lone pairs belong on
+        O (2 pairs), giving 8 total.}
+  \item \ce{CO3^2-} drawn with 22 electrons.
+        \answerlines[2]{Count is $4+18+2 = 24$; the $2-$ charge ADDS two
+        electrons.}
+  \item \ce{NO+} drawn with a double bond and 12 electrons.
+        \answerlines[2]{$5+6-1 = 10$ e$^-$ --- cation subtracts one; triple
+        bond, one lone pair each.}
+\end{enumerate}
+
+\begin{exitticket}
+Total valence electrons in \ce{PO4^3-}, and is an expanded octet allowed on
+P? \answerlines[2]{$5+4(6)+3 = 32$; yes --- P is period 3 ($n=3$), though
+the all-single-bond structure already satisfies octets.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Formal Charge and Resonance}{Wed Sep 2}
+
+\begin{objectives}
+  \item Compute formal charge and use it to select the best structure.
+  \item Draw complete resonance sets and state their physical meaning.
+\end{objectives}
+
+\reading{Zumdahl \S8.12}{423--427}
+
+\begin{warmup}[3]
+  \item Valence electrons in \ce{NO3-}: \answerblank[2.9cm]{$5+18+1=24$}
+  \item Shortest C--O bond: \ce{CO}, \ce{CO2}, or \ce{CH3OH}?
+        \answerblank[2.5cm]{\ce{CO}}
+  \item Central atom in \ce{OCS} (carbon compound):
+        \answerblank[5.1cm]{C (least electronegative)}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Formal charge: the tiebreaker}
+
+\notesection{Formal charge}{2.6}
+\practice{5}
+
+\[
+  FC = (\text{valence e}^-) -
+  \answerblank[6.6cm]{$(\text{nonbonding e}^-) - \tfrac12(\text{bonding e}^-)$}
+\]
+
+Selection rules --- the best structure has:
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item formal charges closest to \answerblank[1.4cm]{zero};
+  \item any negative FC on the \answerblank[5.5cm]{more electronegative atom};
+  \item FCs summing to the species' \answerblank[3.2cm]{overall charge}
+        (always --- this is a check, not a preference).
+\end{enumerate}
+
+\begin{workedexample}[Worked example: \ce{OCN-} skeleton choice]
+Candidate skeletons: O--C--N vs C--O--N. For O--C--N with a C$\equiv$N
+triple: FC(O)$=-1$, FC(C)$=0$, FC(N)$=0$ --- sum $-1$ \checkmark, minimal
+charges, negative on electronegative O. The C--O--N skeletons force larger
+charges (e.g.\ $+1$ on O). Carbon takes the center; formal charge proves it.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Compute and choose}
+
+For \ce{CO2} drawn two ways --- (i) two double bonds; (ii) single + triple:
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item FCs for (i): \answerblank[4.5cm]{0, 0, 0}
+  \item FCs for (ii): \answerblank[5.2cm]{$-1$ (single-bond O), 0, $+1$}
+  \item Which is better and why?
+        \answerblank[6.5cm]{(i) --- all formal charges zero}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Resonance}
+
+\notesection{When one drawing isn't enough}{2.6}
+\practice{1}
+
+If the electron-pushing step could go more than one equivalent way, draw
+\emph{all} of them connected by \answerblank[4.5cm]{double-headed arrows}.
+The molecule is the \term{average} --- a resonance \term{hybrid} --- not a
+movie flipping between forms.
+
+\begin{workedexample}[Worked example: nitrate]
+\ce{NO3-} (24 e$^-$): the double bond can sit on any of three oxygens ---
+three equivalent forms. Experiment agrees: all three N--O bonds are
+\emph{identical}, length between single and double, bond order $4/3$.
+\end{workedexample}
+
+\begin{apctrap}
+``The bond switches back and forth'' scores zero. The measured structure is
+one static average: equal bond lengths, fractional bond order, charge spread
+over equivalent atoms. Cite the \emph{evidence} (equal lengths) when asked
+what resonance means.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Full resonance analysis}
+
+For carbonate, \ce{CO3^2-}:
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Draw all three resonance forms. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Three forms, double bond rotating among
+        the O's; 24 e$^-$ each; brackets with $2-$.\end{apcanswer}}
+  \item Bond order of each C--O bond: \answerblank[2cm]{$4/3$}
+  \item Predict how the C--O length compares with the C--O single bond in
+        \ce{CH3OH} and the C=O in \ce{H2CO}.
+        \answerlines[2]{Intermediate: shorter than the single bond in
+        \ce{CH3OH}, longer than the true double bond in \ce{H2CO}.}
+  \item Each O carries what average charge? \answerblank[2.5cm]{$-2/3$}
+\end{enumerate}
+
+\begin{exitticket}
+\ce{NO2-} has two resonance forms. What does that predict about its two N--O
+bonds, and what experiment would confirm it? \answerlines[2]{Equal length,
+order $3/2$, between single and double; confirmed by measuring both bond
+lengths (e.g.\ diffraction) and finding them identical.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{VSEPR: Shapes from Repulsion}{Fri Sep 4}
+
+\begin{objectives}
+  \item Predict electron-domain and molecular geometries through 6 domains.
+  \item Explain bond-angle deviations with lone-pair repulsion.
+\end{objectives}
+
+\reading{Zumdahl \S8.13}{427--440}
+
+\begin{warmup}[3]
+  \item FC of S in \ce{SO4^2-} (all single bonds):
+        \answerblank[2cm]{$+2$}
+  \item Resonance forms of \ce{NO3-}: how many?
+        \answerblank[1.5cm]{3}
+  \item Bond order of N--O in \ce{NO3-}: \answerblank[2cm]{$4/3$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Domains first, shape second}
+
+\notesection{VSEPR}{2.7}
+\practice{1}
+
+Electron domains (bonding groups + lone pairs) around the central atom
+repel and spread to maximum separation. A double bond counts as
+\answerblank[3.2cm]{ONE domain}.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}clll@{}}
+\toprule
+\textbf{Domains} & \textbf{Domain geometry} & \textbf{Angles} & \textbf{Example}\\
+\midrule
+2 & linear & 180$^\circ$ & \ce{CO2}\\
+3 & trigonal planar & 120$^\circ$ & \ce{BF3}\\
+4 & tetrahedral & 109.5$^\circ$ & \ce{CH4}\\
+5 & trigonal bipyramidal & 90/120$^\circ$ & \ce{PCl5}\\
+6 & octahedral & 90$^\circ$ & \ce{SF6}\\
+\bottomrule
+\end{tabular}
+
+\notesub{Lone pairs bend the name}
+
+Molecular geometry names only the \emph{atoms}:
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Domains (LP)} & \textbf{Molecular geometry} & \textbf{Angle} & \textbf{Example}\\
+\midrule
+4 (1 LP) & \answerblank[3.9cm]{trigonal pyramidal} & $\approx107^\circ$ & \ce{NH3}\\
+4 (2 LP) & \answerblank[2.4cm]{bent} & $\approx104.5^\circ$ & \ce{H2O}\\
+3 (1 LP) & bent & $<120^\circ$ & \ce{SO2}\\
+\bottomrule
+\end{tabular}
+
+Angles shrink because lone pairs repel \answerblank[3.4cm]{more strongly}
+than bonding pairs (held closer to one nucleus, fatter cloud).
+
+\segment{GUIDED PRACTICE}{15}{Shape table sprint}
+
+Lewis $\to$ domains $\to$ geometry $\to$ angle:
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{PF3}: \answerblank[9.4cm]{4 domains (1 LP) --- trigonal pyramidal, $\approx107^\circ$}
+  \item \ce{CO3^2-}: \answerblank[7cm]{3 domains --- trigonal planar, 120$^\circ$}
+  \item \ce{HCN}: \answerblank[7cm]{2 domains --- linear, 180$^\circ$}
+  \item \ce{SF6}: \answerblank[7cm]{6 domains --- octahedral, 90$^\circ$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Explaining angles like a grader}
+
+\notesection{The three-sentence angle answer}{2.7}
+\practice{6}
+
+Full-credit template, using \ce{H2O} vs \ce{CH4}:
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Count: both have \answerblank[2.6cm]{4 domains} (tetrahedral
+        arrangement).
+  \item Distinguish: water has \answerblank[2.6cm]{2 lone pairs}; methane
+        none.
+  \item Conclude: lone pairs compress the H--O--H angle from 109.5$^\circ$
+        to $\approx$\answerblank[2cm]{104.5$^\circ$}.
+\end{enumerate}
+
+\begin{apctrap}
+Naming the shape is 1 point; the \emph{angle comparison} earns the rest.
+``Bent, about 104.5$^\circ$, because two lone pairs repel more strongly than
+bonding pairs'' --- practice the whole sentence.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Shapes in contrast}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{CO2} is linear; \ce{SO2} is bent. Same atom count --- explain
+        the difference completely. \answerlines[3]{C has 2 domains (two
+        double bonds, no lone pairs) $\to$ 180$^\circ$. S has 3 domains
+        (double bond, single-ish bond, lone pair) $\to$ bent,
+        $<120^\circ$ --- the lone pair pushes the O's together.}
+  \item Predict the geometry and angle of \ce{NO3-} and reconcile with its
+        resonance. \answerlines[2]{Trigonal planar, 120$^\circ$ exactly ---
+        resonance makes all three bonds identical, so no distortion.}
+\end{enumerate}
+
+\begin{exitticket}
+\ce{NH3} vs \ce{BF3}: both ``\ce{XY3}.'' Different shapes --- why?
+\answerlines[2]{N has 4 domains (1 lone pair) $\to$ trigonal pyramidal
+$\approx107^\circ$; B has only 3 domains (6 e$^-$, no lone pair) $\to$
+trigonal planar 120$^\circ$.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Hybridization and Molecular Polarity}{Mon Sep 7 (confirm --- Labor Day)}
+
+\begin{objectives}
+  \item Assign sp, sp$^2$, sp$^3$ hybridization from electron domains; count
+        $\sigma$ and $\pi$ bonds.
+  \item Decide molecular polarity from shape + bond dipoles.
+\end{objectives}
+
+\reading{Zumdahl \S9.1}{455--466}
+
+\begin{warmup}[4]
+  \item Geometry of \ce{SO3}: \answerblank[3.5cm]{trigonal planar}
+  \item Angle in \ce{H2S} vs 109.5$^\circ$: \answerblank[4.4cm]{smaller
+        (2 lone pairs)}
+  \item Bond order in \ce{O3}: \answerblank[2cm]{$3/2$}
+  \item Lattice energy: bigger factor, charge or radius?
+        \answerblank[2.5cm]{charge}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Hybridization: count domains, done}
+
+\notesection{sp, sp$^2$, sp$^3$}{2.7}
+\practice{1}
+
+Hybridization is bookkeeping for domain count:
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}cll@{}}
+\toprule
+\textbf{Domains} & \textbf{Hybridization} & \textbf{Leftover p orbitals for $\pi$}\\
+\midrule
+2 & \answerblank[1.8cm]{sp} & 2\\
+3 & \answerblank[1.8cm]{sp$^2$} & 1\\
+4 & \answerblank[1.8cm]{sp$^3$} & 0\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+The AP exam assesses ONLY sp, sp$^2$, sp$^3$. Five- and six-domain centers
+(\ce{PCl5}, \ce{SF6}) still get shapes from VSEPR, but you will not be asked
+their hybridization.
+\end{apcnote}
+
+\notesub{$\sigma$ and $\pi$}
+
+Single bond = 1 $\sigma$. Double = $\sigma + \pi$. Triple =
+$\sigma + 2\pi$. Count for \ce{H2C=CH2}:
+\answerblank[3.4cm]{5 $\sigma$ + 1 $\pi$}.
+
+\segment{GUIDED PRACTICE}{15}{Assign and count}
+
+For \ce{HCN}: hybridization of C \answerblank[1.6cm]{sp}; total $\sigma$
+\answerblank[1.2cm]{2}; total $\pi$ \answerblank[1.2cm]{2}.\\
+For \ce{H2CO} (C central): C is \answerblank[1.6cm]{sp$^2$}; angles
+$\approx$ \answerblank[1.6cm]{120$^\circ$}.\\
+For \ce{CH3OH}: C is \answerblank[1.6cm]{sp$^3$}; O is
+\answerblank[1.6cm]{sp$^3$} (2 lone pairs + 2 bonds).
+
+\segment{INSTRUCTION B}{20}{Molecular polarity: the vector test}
+
+\notesection{Polar molecule or not}{2.7}
+\practice{6}
+
+Two requirements, both necessary:
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item \answerblank[3.4cm]{polar bonds} exist ($\Delta$EN $\ne$ 0), AND
+  \item the geometry does NOT \answerblank[3.2cm]{cancel} the bond dipoles.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: \ce{CO2} vs \ce{H2O}]
+\ce{CO2}: two strong C=O dipoles, but linear geometry points them exactly
+opposite --- vector sum zero --- \textbf{nonpolar}. \ce{H2O}: two O--H
+dipoles at 104.5$^\circ$ add to a net dipole toward O --- \textbf{polar}.
+Same logic kills \ce{CCl4} (tetrahedral, cancels) and saves \ce{CHCl3}
+(one different corner, doesn't cancel).
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Unit synthesis --- structure to property}
+
+For \ce{SO2} and \ce{SO3}:
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Geometry of each: \answerblank[9.1cm]{\ce{SO2} bent ($<120^\circ$);
+        \ce{SO3} trigonal planar (120$^\circ$)}
+  \item One is polar, one is not --- assign and justify with the vector
+        argument. \answerlines[2]{\ce{SO2} polar: bent shape leaves a net
+        dipole. \ce{SO3} nonpolar: three equal dipoles at 120$^\circ$
+        cancel.}
+  \item Hybridization of S in each: \answerblank[4.4cm]{both sp$^2$ (3
+        domains)}
+\end{enumerate}
+
+\begin{exitticket}
+\ce{NF3} and \ce{BF3}: which is polar? Full argument --- shape, dipoles,
+cancellation. \answerlines[3]{\ce{NF3}: trigonal pyramidal (lone pair on N),
+three N--F dipoles don't cancel $\to$ polar. \ce{BF3}: trigonal planar,
+symmetric, cancels $\to$ nonpolar.}
+\end{exitticket}
+
+\end{document}

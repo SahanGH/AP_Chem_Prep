@@ -1,0 +1,666 @@
+% Zumdahl Chapter 13 -- Chemical Equilibrium. ELABORATED notes, 5 blocks.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{13}
+\apcunittitle{Chemical Equilibrium}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S13.1--13.7 \textbullet\ PDF pp.~650--695 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+Chapter 13 covers \textbf{CED 7.1--7.10} in the textbook's own order --- about
+80\% of Unit 7, with nothing off-syllabus.
+
+The two topics it does \emph{not} contain are \textbf{7.11 solubility
+equilibria ($K_{sp}$)} and \textbf{7.12 the common-ion effect}, which live in
+Zumdahl \S16.1 and \S15.1. Plan to pick those up separately.
+
+\textbf{One connection worth making explicitly:} the ICE tables in Block 4
+are the BCA tables from Chapter 3 with new labels. Before/Change/After
+becomes Initial/Change/Equilibrium, and the change row is still driven by
+coefficient ratios. The only new idea is that the reaction stops partway
+instead of running to completion.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{The Equilibrium Condition}{Zumdahl \S13.1}
+
+\begin{objectives}
+  \item Describe chemical equilibrium as a dynamic condition.
+  \item Explain why concentrations become constant but not equal.
+\end{objectives}
+
+\reading{Zumdahl \S13.1}{651--654}
+
+\begin{warmup}[3]
+  \item Rate law for the elementary step \ce{A + B -> C}:
+        \answerblank[3.4cm]{$k[\ce{A}][\ce{B}]$}
+  \item Does a catalyst change $\Delta H$? \answerblank[1.6cm]{no}
+  \item Balance: \ce{N2 + H2 -> NH3}:
+        \answerblank[4.4cm]{\ce{N2 + 3 H2 -> 2 NH3}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What equilibrium actually is}
+
+\notesectionz{Dynamic, not static}{13.1}
+\practice{1}
+
+Start with pure reactants. The forward reaction begins fast and slows as
+reactants are consumed. Products accumulate, so the reverse reaction speeds
+up. Eventually the two rates become
+\answerblank[1.6cm]{equal}, and from that moment the concentrations stop
+changing.
+
+\[
+  \text{at equilibrium:}\qquad
+  \text{rate}_{\text{forward}} = \answerblank[3cm]{$\text{rate}_{\text{reverse}}$}
+\]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9.6cm, height=4.6cm,
+    xlabel={time}, ylabel={rate},
+    xtick=\empty, ytick=\empty, xmin=0, xmax=10, ymin=0, ymax=10,
+    axis lines=left, legend style={draw=none, font=\sffamily\scriptsize,
+      at={(0.98,0.75)}, anchor=east}]
+  \addplot[seriesA, samples=100, domain=0:10] {3.5+5*exp(-0.55*x)};
+  \addlegendentry{forward}
+  \addplot[seriesB, samples=100, domain=0:10] {3.5-3.5*exp(-0.55*x)};
+  \addlegendentry{reverse}
+  \draw[densely dotted] (axis cs:0,3.5) -- (axis cs:10,3.5);
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+Equilibrium is \term{dynamic}, not static. Both reactions continue at full
+speed --- they simply cancel out. Nothing has stopped; the traffic in both
+directions is merely balanced.
+
+And ``constant'' does not mean ``equal.'' Concentrations of reactants and
+products settle at values that are typically very different from one
+another. Saying ``at equilibrium the concentrations are equal'' is the
+single most common error in this unit.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{True or false, with reasons}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item At equilibrium, the forward reaction stops.
+        \answerblank[7.5cm]{False --- both continue at equal rates}
+  \item At equilibrium, concentrations are constant.
+        \answerblank[5.5cm]{True}
+  \item At equilibrium, $[\text{reactants}] = [\text{products}]$.
+        \answerblank[5.5cm]{False --- constant, not equal}
+  \item Equilibrium can be reached from either direction.
+        \answerblank[5.5cm]{True}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Approaching from either side}
+
+\notesectionz{The same destination}{13.1}
+\practice{4}
+
+A crucial property: for a given temperature, starting with pure reactants or
+with pure products leads to the \answerblank[2.6cm]{same} equilibrium
+condition. Only the \emph{route} differs.
+
+\begin{apcnote}
+This is why equilibrium is described by a constant rather than a
+procedure. The system does not remember how it got there --- which is the
+same path-independence you met with state functions in Chapter 6.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Reasoning about the approach}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Sketch how $[\ce{N2}]$, $[\ce{H2}]$, and $[\ce{NH3}]$ change over
+        time starting from pure \ce{N2} and \ce{H2}, and mark where
+        equilibrium is reached. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}\ce{N2} and \ce{H2} fall (H2 three times as
+        steeply), \ce{NH3} rises from zero; all three level off and stay
+        constant thereafter at unequal values.\end{apcanswer}}
+  \item A sealed flask of \ce{N2O4} is left until no further colour change
+        occurs, yet a chemist insists both reactions are still running.
+        How could that be demonstrated? \answerlines[3]{Introduce isotopically
+        labelled molecules and they will appear on both sides over time,
+        showing that interconversion continues even though the net
+        concentrations no longer change.}
+\end{enumerate}
+
+\begin{exitticket}
+Explain the difference between saying concentrations are ``constant'' and
+saying they are ``equal'' at equilibrium.
+\answerlines[2]{Constant means unchanging over time, which is true.
+Equal would mean the same numerical value, which is generally false --- the
+equilibrium values depend on $K$ and the starting amounts.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Equilibrium Constant}{Zumdahl \S13.2--13.3}
+
+\begin{objectives}
+  \item Write $K$ expressions from balanced equations.
+  \item Convert between $K_c$ and $K_p$.
+\end{objectives}
+
+\reading{Zumdahl \S13.2--13.3}{654--660}
+
+\begin{warmup}[3]
+  \item At equilibrium the two rates are:
+        \answerblank[2cm]{equal}
+  \item Is equilibrium static or dynamic? \answerblank[2cm]{dynamic}
+  \item $R$ in \si{\liter\atm\per\mole\per\kelvin}:
+        \answerblank[2.4cm]{0.08206}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The law of mass action}
+
+\notesectionz{Writing $K$}{13.2}
+\practice{5}
+
+For the general reaction $j\ce{A} + k\ce{B} \rightleftharpoons l\ce{C} + m\ce{D}$:
+\[
+  K = \answerblank[4.6cm]{$\dfrac{[\ce{C}]^l[\ce{D}]^m}{[\ce{A}]^j[\ce{B}]^k}$}
+\]
+
+\answerblank[2cm]{Products} over reactants, each raised to its
+\answerblank[2cm]{coefficient}.
+
+\begin{apcnote}
+Here the coefficients \emph{do} become exponents --- unlike rate laws in
+Chapter 12, where they never do. The difference is that $K$ describes a
+thermodynamic end state determined by the overall equation, while a rate law
+describes a mechanism. Two different questions, two different rules.
+\end{apcnote}
+
+\notesub{Manipulating $K$}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{5.4cm}p{7.4cm}@{}}
+\toprule
+\textbf{If you\ldots} & \textbf{then the new constant is\ldots}\\
+\midrule
+reverse the reaction & \answerblank[1.8cm]{$1/K$}\\
+multiply coefficients by $n$ & \answerblank[1.6cm]{$K^n$}\\
+add two reactions & \answerblank[2.6cm]{$K_1 \times K_2$}\\
+\bottomrule
+\end{tabular}
+
+\segment{GUIDED PRACTICE}{15}{Write the expressions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{N2(g) + 3 H2(g) <=> 2 NH3(g)}:
+        \answerblank[5.4cm]{$[\ce{NH3}]^2/([\ce{N2}][\ce{H2}]^3)$}
+  \item \ce{2 SO2(g) + O2(g) <=> 2 SO3(g)}:
+        \answerblank[5.4cm]{$[\ce{SO3}]^2/([\ce{SO2}]^2[\ce{O2}])$}
+  \item If $K = 4.0$ for a reaction, $K$ for the reverse is:
+        \answerblank[2cm]{0.25}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{$K_p$ and $K_c$}
+
+\notesectionz{Equilibrium in terms of pressure}{13.3}
+\practice{5}
+
+For gases it is often easier to measure pressure than concentration, so
+$K_p$ uses partial pressures in place of molar concentrations.
+
+Since $C = P/RT$ for an ideal gas, substituting gives
+\[
+  K_p = \answerblank[3cm]{$K_c(RT)^{\Delta n}$}
+  \qquad \Delta n = \answerblank[8.3cm]{(mol gas products) $-$ (mol gas reactants)}
+\]
+
+\begin{workedexample}[Worked example 1: when the two are equal]
+For \ce{H2(g) + F2(g) <=> 2 HF(g)}: two moles of gas on each side, so
+$\Delta n = 0$ and $(RT)^0 = 1$. Therefore
+\[ K_p = K_c \]
+Zumdahl works the substitution explicitly --- every $RT$ term cancels.
+Whenever the gas-mole totals match, the two constants are identical.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: when they differ]
+For \ce{N2O4(g) <=> 2 NO2(g)} at \SI{25}{\celsius}, $K_c =
+4.6\times10^{-3}$. Here $\Delta n = 2 - 1 = 1$:
+\[
+  K_p = K_c(RT)^1 = (4.6\times10^{-3})(0.08206)(298) = 0.11
+\]
+The two differ by a factor of $RT \approx 24.5$ --- large enough that
+quoting the wrong one is a serious error.
+\end{workedexample}
+
+\begin{apctrap}
+$\Delta n$ counts \emph{gases only}. Solids and liquids are excluded, for
+the same reason they are excluded from the $K$ expression itself
+(Block 3). And equilibrium constants are conventionally written without
+units --- do not attach any.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Conversions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{N2(g) + 3 H2(g) <=> 2 NH3(g)}, find $\Delta n$ and write the
+        relationship between $K_p$ and $K_c$.
+        \answerlines[2]{$\Delta n = 2 - 4 = -2$, so $K_p = K_c(RT)^{-2}$,
+        equivalently $K_c = K_p(RT)^2$.}
+  \item For \ce{2 SO2(g) + O2(g) <=> 2 SO3(g)} at \SI{700}{\kelvin},
+        $K_c = 4.3\times10^{6}$. Calculate $K_p$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\Delta n = 2-3 = -1$;
+        $K_p = (4.3\times10^{6})(0.08206 \times 700)^{-1} =
+        4.3\times10^{6}/57.4 = 7.5\times10^{4}$\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+For which type of reaction does $K_p = K_c$? Give an example.
+\answerlines[2]{One where the total moles of gas are the same on both sides
+($\Delta n = 0$), such as \ce{H2(g) + I2(g) <=> 2 HI(g)}.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Heterogeneous Equilibria, Magnitude of $K$, and $Q$}{Zumdahl \S13.4--13.5}
+
+\begin{objectives}
+  \item Write $K$ for heterogeneous equilibria.
+  \item Interpret the magnitude of $K$, and use $Q$ to predict direction.
+\end{objectives}
+
+\reading{Zumdahl \S13.4--13.5}{660--671}
+
+\begin{warmup}[4]
+  \item $K$ expression for \ce{2 A <=> B}:
+        \answerblank[3.4cm]{$[\ce{B}]/[\ce{A}]^2$}
+  \item $\Delta n$ for \ce{2 NO2 <=> N2O4}: \answerblank[1.6cm]{$-1$}
+  \item If $K = 100$, $K$ for the reverse is:
+        \answerblank[1.8cm]{0.010}
+  \item Do equilibrium constants carry units? \answerblank[1.4cm]{no}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Leaving things out}
+
+\notesectionz{Heterogeneous equilibria}{13.4}
+\practice{6}
+
+When a reaction involves more than one phase, \term{pure solids} and
+\term{pure liquids} are \answerblank[2cm]{omitted} from the $K$ expression.
+
+The reason is not arbitrary: the ``concentration'' of a pure condensed phase
+is fixed by its \answerblank[1.6cm]{density}, which does not change as the
+reaction proceeds. Adding more solid does not make it more concentrated --- it
+just makes the pile bigger.
+
+\begin{workedexample}[Worked example: limestone decomposition]
+\[ \ce{CaCO3(s) <=> CaO(s) + CO2(g)} \]
+Both calcium-containing species are pure solids, so
+\[ K_p = P_{\ce{CO2}} \]
+The equilibrium pressure of \ce{CO2} above the solid depends only on
+temperature. Doubling the amount of \ce{CaCO3} in the flask changes
+\emph{nothing} --- provided some of each solid remains present.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Write heterogeneous expressions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{2 H2O(l) <=> 2 H2(g) + O2(g)}:
+        \answerblank[4.6cm]{$K = [\ce{H2}]^2[\ce{O2}]$}
+  \item \ce{C(s) + CO2(g) <=> 2 CO(g)}:
+        \answerblank[4.6cm]{$K = [\ce{CO}]^2/[\ce{CO2}]$}
+  \item \ce{NH4Cl(s) <=> NH3(g) + HCl(g)}:
+        \answerblank[4.6cm]{$K = [\ce{NH3}][\ce{HCl}]$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{What $K$ tells you --- and what it does not}
+
+\notesectionz{The extent of reaction}{13.5}
+\practice{6}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{3.0cm}p{4.4cm}p{5.6cm}@{}}
+\toprule
+\textbf{Magnitude} & \textbf{At equilibrium} & \textbf{Position}\\
+\midrule
+$K \gg 1$ & mostly \answerblank[1.8cm]{products} &
+  lies far to the \answerblank[1.4cm]{right}\\
+$K \approx 1$ & appreciable amounts of both & near the middle\\
+$K \ll 1$ & mostly \answerblank[1.8cm]{reactants} &
+  lies far to the \answerblank[1.2cm]{left}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Zumdahl is explicit about this and it is a favourite exam trap:
+\textbf{the size of $K$ says nothing about how fast equilibrium is reached.}
+Extent is thermodynamics; speed is kinetics, governed by $E_a$. A reaction
+with $K = 10^{20}$ can take centuries --- diamond turning to graphite is
+exactly that case.
+\end{apctrap}
+
+\notesub{The reaction quotient}
+
+$Q$ has the identical algebraic form as $K$, but uses whatever
+concentrations you have \emph{right now}, equilibrium or not. Comparing
+them predicts which way the system must move:
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{2.6cm}p{4.2cm}p{6.0cm}@{}}
+\toprule
+\textbf{Comparison} & \textbf{Meaning} & \textbf{Shift}\\
+\midrule
+$Q < K$ & too few products & toward \answerblank[2.0cm]{products} (right)\\
+$Q = K$ & at equilibrium & \answerblank[1.6cm]{no shift}\\
+$Q > K$ & too many products & toward \answerblank[1.8cm]{reactants} (left)\\
+\bottomrule
+\end{tabular}
+
+\segment{APPLICATION}{20}{Using $Q$}
+
+For \ce{H2(g) + I2(g) <=> 2 HI(g)}, $K = 50.0$ at a given temperature.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A flask contains all three at \SI{1.0}{\Molar}. Compute $Q$ and
+        predict the direction of change. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$Q = (1.0)^2/[(1.0)(1.0)] = 1.0$.
+        $Q < K$, so the reaction proceeds to the
+        right.\end{apcanswer}}
+  \item Another flask has $[\ce{HI}] = \SI{2.0}{\Molar}$,
+        $[\ce{H2}] = [\ce{I2}] = \SI{0.010}{\Molar}$. Compute $Q$ and
+        predict. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$Q = (2.0)^2/[(0.010)(0.010)] =
+        4.0\times10^{4}$. $Q > K$, so the reaction proceeds to the
+        left.\end{apcanswer}}
+  \item Explain why $Q$ is useful even though it is not a new equation.
+        \answerlines[2]{It converts an equilibrium constant into a
+        prediction: comparing $Q$ with $K$ tells you which direction a
+        non-equilibrium mixture will move without solving anything.}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction has $K = 3\times10^{15}$ yet no product forms in a laboratory
+over several hours. Explain how both facts can be true.
+\answerlines[2]{$K$ describes the equilibrium position, not the rate. A very
+large activation energy can make the reaction imperceptibly slow even though
+it is strongly product-favoured.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Solving Equilibrium Problems}{Zumdahl \S13.6}
+
+\begin{objectives}
+  \item Build and complete an ICE table.
+  \item Solve for equilibrium concentrations, including by approximation.
+\end{objectives}
+
+\reading{Zumdahl \S13.6}{671--676}
+
+\begin{warmup}[3]
+  \item If $Q < K$, the reaction shifts:
+        \answerblank[2.2cm]{right}
+  \item $K$ expression for \ce{CaCO3(s) <=> CaO(s) + CO2(g)}:
+        \answerblank[3cm]{$K_p = P_{\ce{CO2}}$}
+  \item Does a large $K$ mean a fast reaction? \answerblank[1.4cm]{no}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The ICE table}
+
+\notesectionz{BCA tables, one chapter later}{13.6}
+\practice{5}
+
+The tool is the Chapter 3 BCA table with new labels:
+\term{Initial}, \term{Change}, \term{Equilibrium}. As before, the change row
+is set by the \answerblank[3.5cm]{coefficient ratios}; the only new feature
+is that the reaction stops partway, so the change is an unknown $x$ rather
+than a known quantity.
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}lccc@{}}
+\toprule
+ & \ce{N2O4} & $\rightleftharpoons$ & \ce{2 NO2}\\
+\midrule
+\textbf{Initial} & 1.00 & & 0\\
+\textbf{Change} & \answerblank[1.4cm]{$-x$} & & \answerblank[1.4cm]{$+2x$}\\
+\textbf{Equilibrium} & \answerblank[1.8cm]{$1.00-x$} & &
+  \answerblank[1.4cm]{$2x$}\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example 1: with the approximation]
+\ce{N2O4(g) <=> 2 NO2(g)}, $K_c = 4.6\times10^{-3}$, starting at
+$[\ce{N2O4}] = \SI{1.00}{\Molar}$.
+\[
+  K = \frac{(2x)^2}{1.00-x} = 4.6\times10^{-3}
+\]
+Because $K$ is small, very little reacts --- so assume
+$1.00 - x \approx 1.00$:
+\[
+  4x^2 = 4.6\times10^{-3} \Rightarrow x^2 = 1.15\times10^{-3}
+  \Rightarrow x = 0.0339
+\]
+\textbf{Validity check (the 5\% rule):} $0.0339/1.00 = 3.4\%$, comfortably
+under 5\%, so the approximation stands.
+\[
+  [\ce{NO2}] = 2x = \SI{0.068}{\Molar}, \qquad
+  [\ce{N2O4}] = \SI{0.966}{\Molar}
+\]
+\end{workedexample}
+
+\begin{apctrap}
+The approximation is only legal when $x$ is small compared with the initial
+concentration --- roughly when $K$ is small. \textbf{Always run the 5\%
+check.} If $x$ exceeds 5\% of the initial value, discard the approximation
+and solve the quadratic properly.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Set up the table}
+
+For \ce{2 SO2 + O2 <=> 2 SO3} starting with \SI{2.0}{\Molar} \ce{SO2},
+\SI{1.0}{\Molar} \ce{O2}, no \ce{SO3}, write the equilibrium row.
+\answerlines[2]{$[\ce{SO2}] = 2.0-2x$; $[\ce{O2}] = 1.0-x$;
+$[\ce{SO3}] = 2x$.}
+
+\segment{INSTRUCTION B}{20}{When you must use the quadratic}
+
+\notesectionz{Zumdahl's hydrogen fluoride problem}{13.6}
+\practice{5}
+
+\begin{workedexample}[Worked example 2: large $K$, no shortcut]
+\ce{H2(g) + F2(g) <=> 2 HF(g)}, $K = 1.15\times10^{2}$, starting with
+$[\ce{H2}] = \SI{1.000}{\Molar}$ and $[\ce{F2}] = \SI{2.000}{\Molar}$.
+
+ICE gives $[\ce{H2}] = 1.000-x$, $[\ce{F2}] = 2.000-x$, $[\ce{HF}] = 2x$:
+\[
+  \frac{(2x)^2}{(1.000-x)(2.000-x)} = 115
+\]
+$K$ is large, so $x$ will \emph{not} be small --- the approximation is
+unavailable. Expanding gives
+\[
+  111x^2 - 345x + 230 = 0
+  \qquad\Rightarrow\qquad
+  x = 0.968 \ \text{ or } \ 2.140
+\]
+\textbf{Reject $x = 2.140$}: subtracting it from 1.000 M would give a
+negative concentration of \ce{H2}, which is physically impossible. So
+\[
+  [\ce{H2}] = \SI{0.032}{\Molar},\quad
+  [\ce{F2}] = \SI{1.032}{\Molar},\quad
+  [\ce{HF}] = \SI{1.936}{\Molar}
+\]
+\textbf{Reality check:} substituting back gives
+$(1.936)^2/[(0.032)(1.032)] = 1.13\times10^{2}$, agreeing with the given
+$1.15\times10^{2}$ to within rounding. \checkmark
+\end{workedexample}
+
+\begin{apcnote}
+Two habits from that example are worth keeping. First, a quadratic always
+gives two roots and one is normally \emph{physically} impossible --- reject
+it by checking for negative concentrations, not by preference. Second,
+always substitute your answer back into the $K$ expression. It takes ten
+seconds and catches nearly every arithmetic slip.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Full problem}
+
+\ce{H2(g) + I2(g) <=> 2 HI(g)} has $K = 50.0$. A flask initially contains
+\SI{1.00}{\Molar} \ce{H2} and \SI{1.00}{\Molar} \ce{I2}.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Build the ICE table.
+        \answerlines[2]{$[\ce{H2}] = [\ce{I2}] = 1.00-x$;
+        $[\ce{HI}] = 2x$.}
+  \item Solve for $x$. (This one is a perfect square --- take the square
+        root of both sides.) \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$(2x)^2/(1.00-x)^2 = 50.0$;
+        $2x/(1.00-x) = 7.071$; $2x = 7.071 - 7.071x$;
+        $9.071x = 7.071$; $x = 0.779$\end{apcanswer}}
+  \item State all three equilibrium concentrations and check them against
+        $K$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{H2}] = [\ce{I2}] =
+        \SI{0.221}{\Molar}$; $[\ce{HI}] = \SI{1.558}{\Molar}$.
+        Check: $(1.558)^2/(0.221)^2 = 49.7 \approx 50.0$
+        \checkmark\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+When is it safe to assume $x$ is negligible, and how do you confirm it?
+\answerlines[2]{When $K$ is small, so very little reaction occurs. Confirm
+by checking that $x$ is less than 5\% of the initial concentration it was
+subtracted from.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Le Ch\^{a}telier's Principle}{Zumdahl \S13.7}
+
+\begin{objectives}
+  \item Predict the direction of shift for concentration, volume, and
+        temperature changes.
+  \item Explain which changes alter $K$ and which do not.
+\end{objectives}
+
+\reading{Zumdahl \S13.7}{676--683}
+
+\begin{warmup}[3]
+  \item The 5\% rule checks what? \answerblank[6.0cm]{validity of the
+        approximation}
+  \item Reject a quadratic root when it gives:
+        \answerblank[5.0cm]{a negative concentration}
+  \item If $Q > K$, the shift is: \answerblank[2cm]{left}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The principle}
+
+\notesectionz{Systems relieve stress}{13.7}
+\practice{6}
+
+\begin{apcnote}
+\textbf{Le Ch\^{a}telier's principle:} if a change is imposed on a system at
+equilibrium, the equilibrium position shifts in the direction that
+partially \answerblank[2cm]{offsets} that change.
+
+Zumdahl's formulation for concentration is particularly clean: add a
+component and the system shifts in the direction that
+\emph{lowers} the concentration of that component. Remove one and the
+opposite happens.
+\end{apcnote}
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{3.6cm}p{4.4cm}p{4.8cm}@{}}
+\toprule
+\textbf{Change} & \textbf{Shift} & \textbf{Does $K$ change?}\\
+\midrule
+Add a reactant & toward \answerblank[2.0cm]{products} &
+  \answerblank[1.2cm]{no}\\
+Remove a product & toward \answerblank[2.0cm]{products} &
+  \answerblank[1.2cm]{no}\\
+Decrease volume & toward the side with \answerblank[3.3cm]{fewer gas moles} &
+  \answerblank[1.2cm]{no}\\
+Increase temperature & toward the \answerblank[2.6cm]{endothermic} direction &
+  \textbf{\answerblank[1.2cm]{yes}}\\
+Add a catalyst & \answerblank[1.8cm]{no shift} &
+  \answerblank[1.2cm]{no}\\
+Add an inert gas at constant $V$ & \answerblank[1.8cm]{no shift} &
+  \answerblank[1.2cm]{no}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+\textbf{Only temperature changes the value of $K$.} Everything else shifts
+the \emph{position} of equilibrium while leaving the constant alone --- the
+system simply moves to restore the same $K$.
+
+Two more traps in that table. A catalyst speeds both directions equally, so
+equilibrium arrives sooner but sits in the same place. And an inert gas
+added at constant volume changes the total pressure without changing any
+\emph{partial} pressure, so nothing shifts.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Predict the shifts}
+
+For \ce{N2(g) + 3 H2(g) <=> 2 NH3(g)}, $\Delta H = \SI{-92}{\kilo\joule}$:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Add \ce{N2}: \answerblank[2.4cm]{right}
+  \item Remove \ce{NH3}: \answerblank[2.4cm]{right}
+  \item Decrease the volume: \answerblank[4.6cm]{right (4 mol $\to$ 2 mol)}
+  \item Increase the temperature:
+        \answerblank[5.2cm]{left (exothermic forward)}
+  \item Add a catalyst: \answerblank[2.4cm]{no shift}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Temperature and heterogeneous cases}
+
+\notesectionz{Two special situations}{13.7}
+\practice{4}
+
+\notesub{Treat heat as a term in the equation}
+
+For an exothermic reaction, write heat as a \answerblank[1.6cm]{product}:
+\[ \ce{N2 + 3 H2 <=> 2 NH3} + \text{heat} \]
+Now Le Ch\^{a}telier applies directly --- adding heat (raising the
+temperature) pushes the system \answerblank[1.4cm]{left}, exactly as adding
+any other product would.
+
+\begin{workedexample}[Worked example: Zumdahl's arsenic roasting]
+\[ \ce{As4O6(s) + 6 C(s) <=> As4(g) + 6 CO(g)} \]
+\textbf{(a) Add \ce{CO}:} shift \emph{left}, away from the added substance.
+
+\textbf{(b) Add or remove \ce{C} or \ce{As4O6}:} \emph{no shift at all}.
+Both are pure solids, so they do not appear in $K$ --- adding more changes
+no concentration. (Removing \emph{all} of one would stop the reaction, but
+that is a different situation.)
+
+\textbf{(c) Remove \ce{As4} gas:} shift \emph{right}, to replace it.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Applied Le Ch\^{a}telier}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{2 SO2(g) + O2(g) <=> 2 SO3(g)}, $\Delta H < 0$: state one
+        change that increases the yield of \ce{SO3} and one that does not,
+        with reasons. \answerlines[3]{Increases yield: raise the pressure
+        (fewer gas moles on the right), or lower the temperature (shifts
+        toward the exothermic direction). Does not: add a catalyst --- it
+        speeds both directions and leaves the position unchanged.}
+  \item The Haber process is run at high temperature even though that
+        \emph{lowers} the equilibrium yield of ammonia. Explain the
+        trade-off. \answerlines[3]{Low temperature favours the position of
+        equilibrium but makes the reaction far too slow to be useful.
+        Industry accepts a smaller equilibrium yield in exchange for
+        reaching it quickly --- a kinetics-versus-thermodynamics compromise,
+        partly recovered by using high pressure and a catalyst.}
+  \item Explain why adding argon to a rigid vessel containing an
+        equilibrium mixture causes no shift.
+        \answerlines[2]{At constant volume the partial pressures of the
+        reacting gases are unchanged, so $Q$ still equals $K$ --- only the
+        total pressure rises.}
+\end{enumerate}
+
+\begin{exitticket}
+Which single type of change alters the numerical value of $K$, and why do
+the others not? \answerlines[2]{Temperature. All other changes disturb the
+concentrations, and the system shifts precisely to restore the same $K$;
+temperature changes the constant itself because it changes the underlying
+thermodynamics.}
+\end{exitticket}
+
+\end{document}

@@ -1,0 +1,81 @@
+% WS2 -- Type B conceptual/particulate: mass spectra + classifying matter.
+\documentclass{apchem-worksheet}
+
+\apcunit{1}
+\apcunittitle{Atomic Structure and Properties}
+\apcdoctitle{Worksheet 2 \textbullet\ Mass Spectra \& Particulate Reasoning}
+\apcsubtitle{Type B conceptual \textbullet\ CED 1.2, 1.4 \textbullet\ drawings and justifications, not just answers}
+
+\begin{document}
+\wsheader[Answers without reasoning earn no credit here --- this sheet trains
+the justification sentences the FRQs grade. Keep every explanation to one or
+two sentences built on evidence.]
+
+\problem[1.2]{The mass spectrum of zirconium:}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9cm, height=4.4cm,
+    xlabel={mass (u)}, ylabel={relative abundance},
+    ytick=\empty, xtick={90,91,92,94,96},
+    ymin=0, ymax=60, xmin=88.5, xmax=97.5, axis lines=left]
+  \addplot[ycomb, seriesA, line width=3pt]
+    coordinates {(90,51.5) (91,11.2) (92,17.1) (94,17.4) (96,2.8)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+  \item How many naturally occurring isotopes does Zr have?
+        \answerblank[2cm]{5}
+  \item Without computing, is the average atomic mass closer to 90 or 93?
+        Justify from the spectrum.
+        \answerlines[2]{Closer to 90 --- over half the atoms are
+        \ce{^{90}Zr}, so the weighted average is pulled strongly toward 90
+        (actual: 91.2 u).}
+  \item Write --- but do not evaluate --- the full expression for the average
+        atomic mass. \answerlines[2]{$\bar m = 0.515(90) + 0.112(91) +
+        0.171(92) + 0.174(94) + 0.028(96)$ u (abundances as decimals)}
+  \item \ce{^{90}Zr} and \ce{^{94}Zr}: identical, in one column; different,
+        in the other. Fill both.
+        \answerlines[2]{Identical: protons (40), electrons, chemical
+        behavior. Different: neutrons (50 vs 54), mass.}
+\end{parts}
+
+\problem[1.2]{Antimony has two isotopes: \ce{^{121}Sb} and \ce{^{123}Sb}. The
+periodic table lists Sb as \SI{121.76}{u}. Which isotope is more abundant,
+and \emph{approximately} what fraction is it? Reason without long
+computation. \answerlines[3]{\ce{^{121}Sb}. The average sits 0.76 above 121
+on a 2 u gap $\to$ \ce{^{123}Sb} fraction $\approx 0.76/2 \approx 38\%$, so
+\ce{^{121}Sb} $\approx 62\%$.}}
+
+\problem[1.4]{In the box below, draw a particulate diagram of a mixture of
+diatomic element $X_2$ (filled circles) and compound $XY$ (filled--open
+pairs). Include at least 3 particles of each. \workspace[4cm]
+\keyonly{\begin{apcanswer}Any drawing with $\ge3$ filled--filled pairs and
+$\ge3$ filled--open pairs, particles separated (not bonded into one lattice),
+roughly uniform distribution.\end{apcanswer}}}
+
+\problem[1.4]{A sample contains only \ce{H2O} molecules. A student claims it
+must be a mixture because it contains two different elements. Evaluate the
+claim. \answerlines[2]{Wrong --- every particle is identical (\ce{H2O}), so
+it is a pure compound; ``mixture'' requires more than one kind of
+\emph{particle}, not more than one element.}}
+
+\problem[1.2]{Chlorine gas is made of \ce{Cl2} molecules built from
+\ce{^{35}Cl} (75.8\%) and \ce{^{37}Cl} (24.2\%). The mass spectrum of
+\ce{Cl2} (molecular ions) shows peaks at 70, 72, and 74 u. Explain where the
+72 u peak comes from. \answerlines[2]{A \ce{^{35}Cl-^{37}Cl} molecule:
+$35+37=72$. The three peaks are the three isotope pairings 35--35, 35--37,
+37--37.}}
+
+\begin{spiralstrip}{Block 1 \textbullet\ mole drill}
+  \item Moles in \SI{8.0}{\gram} of \ce{O2}: \answerblank[3cm]{\SI{0.25}{\mole}}
+  \item Mass of $6.02\times10^{22}$ atoms of Na: \answerblank[3cm]{\SI{2.3}{\gram}}
+  \item \%\,C in \ce{CH4} (nearest whole): \answerblank[2.5cm]{75\%}
+  \item Empirical formula of \ce{N2O4}: \answerblank[2.5cm]{\ce{NO2}}
+  \item An element's spectrum has one peak. What does that tell you?
+        \answerblank[5cm]{only one stable isotope}
+\end{spiralstrip}
+
+\end{document}

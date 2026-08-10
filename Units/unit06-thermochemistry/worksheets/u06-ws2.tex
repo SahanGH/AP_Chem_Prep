@@ -1,0 +1,135 @@
+% U6 WS2 -- calorimetry and phase changes. Blocks 2-3.
+\documentclass{apchem-worksheet}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Worksheet 2 \textbullet\ Calorimetry and Phase Changes}
+\apcsubtitle{CED 6.4--6.5 \textbullet\ $q = mc\Delta T$ only while the temperature is changing}
+
+\begin{document}
+\wsheader[$q = mc\Delta T$ \textbullet\ $q = n\Delta H$ for a phase change
+\textbullet\ $c$: water 4.18, ice 2.09, steam 2.03
+\si{\joule\per\gram\per\celsius} \textbullet\
+$\Delta H_{\text{fus}} = \SI{6.02}{\kilo\joule\per\mole}$,
+$\Delta H_{\text{vap}} = \SI{40.7}{\kilo\joule\per\mole}$ \textbullet\
+$M(\ce{H2O}) = \SI{18.02}{\gram\per\mole}$.]
+
+\problem[]{\ced{6.4} Straight substitution.}
+\begin{parts}
+  \item Energy to raise \SI{50.0}{\gram} of water from \SI{20.0}{\celsius}
+        to \SI{80.0}{\celsius}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(50.0)(4.18)(60.0) = 12{,}540$~J
+        $= \mathbf{12.5}$~kJ\end{apcanswer}}
+  \item Energy released when \SI{250.0}{\gram} of water cools by
+        \SI{15.0}{\celsius}: \answerblank[3cm]{\SI{-15.7}{\kilo\joule}}
+  \item Why is water's specific heat unusually large, and name one
+        consequence. \answerlines[3]{Hydrogen bonding means much of the
+        added energy goes into disrupting the network rather than speeding
+        molecules up, so a large input produces a small temperature rise.
+        One consequence: coastal climates are milder than inland ones.}
+\end{parts}
+
+\problem[]{\ced{6.4} A reaction is run in \SI{100.0}{\gram} of water in a
+coffee-cup calorimeter. The temperature rises \SI{5.20}{\celsius}, and
+\SI{0.0250}{\mole} of the limiting reactant was consumed.}
+\begin{parts}
+  \item Calculate $q_{\text{water}}$. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(100.0)(4.18)(5.20) =
+        \mathbf{2174}~\text{J}$, absorbed by the
+        water\end{apcanswer}}
+  \item State $q_{\text{rxn}}$ and explain the sign.
+        \answerlines[2]{$-2174$~J. The water gained that energy, so the
+        reaction must have lost it --- the two are equal in magnitude and
+        opposite in sign.}
+  \item Calculate $\Delta H$ in \si{\kilo\joule\per\mole}.
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$-2174/0.0250 = -86{,}900$~J/mol
+        $= \mathbf{-86.9}$~kJ/mol\end{apcanswer}}
+  \item Why is the answer reported per mole rather than in kilojoules
+        alone? \answerlines[2]{Because $\Delta H$ is an intensive property
+        of the reaction, not of the particular quantity you happened to
+        run. Reporting bare kilojoules describes only this experiment.}
+\end{parts}
+
+\problem[]{\ced{6.4} A \SI{50.0}{\gram} metal block at \SI{100.0}{\celsius}
+is dropped into \SI{100.0}{\gram} of water at \SI{22.0}{\celsius}. The
+final temperature is \SI{24.6}{\celsius}.}
+\begin{parts}
+  \item Calculate the heat gained by the water. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(100.0)(4.18)(2.6) =
+        \mathbf{1087}~\text{J}$\end{apcanswer}}
+  \item Calculate the specific heat of the metal. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$-1087 = (50.0)(c)(24.6-100.0) =
+        (50.0)(c)(-75.4)$;
+        $c = \mathbf{0.288}~\si{\joule\per\gram\per\celsius}$\end{apcanswer}}
+  \item The metal's temperature changed by more than \SI{75}{\celsius}
+        while the water's changed by less than 3. Give two reasons.
+        \answerlines[3]{Water has a specific heat about 14 times larger, so
+        the same energy changes its temperature far less. There is also
+        twice as much water by mass. Both effects push the same way.}
+\end{parts}
+
+\problem[]{\ced{6.5} Phase changes.}
+\begin{parts}
+  \item Energy to melt \SI{36.0}{\gram} of ice at \SI{0}{\celsius}:
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$n = 36.0/18.02 = 2.00$~mol;
+        $q = (2.00)(6.02) = \mathbf{12.0}$~kJ\end{apcanswer}}
+  \item Energy to vaporize \SI{18.0}{\gram} of water at
+        \SI{100}{\celsius}: \answerblank[3cm]{\SI{40.7}{\kilo\joule}}
+  \item Energy to melt \SI{90.0}{\gram} of ice: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$n = 4.99$~mol;
+        $q = \mathbf{30.1}$~kJ\end{apcanswer}}
+  \item Vaporizing a mole costs about seven times what melting a mole
+        costs. Explain in terms of intermolecular forces.
+        \answerlines[3]{Melting only has to loosen the lattice so molecules
+        can move past one another --- many hydrogen bonds survive.
+        Vaporizing must separate the molecules completely, breaking
+        essentially all of the remaining attractions.}
+\end{parts}
+
+\problem[]{\ced{6.5} Why can $q = mc\Delta T$ not be used during melting?
+\answerlines[3]{Because $\Delta T$ is zero while a substance melts, so the
+expression would give $q = 0$ --- plainly wrong. The energy added is going
+into overcoming intermolecular forces, raising potential energy rather than
+kinetic energy, so the temperature does not change.}}
+
+\problem[]{\ced{6.5} Take \SI{25.0}{\gram} of ice at \SI{-10.0}{\celsius}
+all the way to steam at \SI{110.0}{\celsius}.}
+\begin{parts}
+  \item Which equation applies to the sloped regions of the heating curve?
+        \answerblank[3cm]{$q = mc\Delta T$}
+  \item Which applies to the flat regions?
+        \answerblank[3cm]{$q = n\Delta H$}
+  \item Calculate the total energy required. \workspace[4cm]
+        \keyonly{\begin{apcanswer}$n = 25.0/18.02 = 1.39$~mol. \\
+        ice $-10\to0$: $(25.0)(2.09)(10.0) = 522$~J $= 0.52$~kJ \\
+        melt: $(1.39)(6.02) = 8.35$~kJ \\
+        water $0\to100$: $(25.0)(4.18)(100.0) = 10.45$~kJ \\
+        boil: $(1.39)(40.7) = 56.47$~kJ \\
+        steam $100\to110$: $(25.0)(2.03)(10.0) = 0.51$~kJ \\
+        \textbf{Total} $= \mathbf{76.3}$~kJ\end{apcanswer}}
+  \item Which single step dominates, and what fraction of the total is it?
+        \answerblank[4.4cm]{boiling, about 74\%}
+\end{parts}
+
+\problem[]{\ced{6.5} Explain why a steam burn at \SI{100}{\celsius} is
+worse than a burn from liquid water at the same temperature.
+\answerlines[3]{Before its temperature can fall at all, the steam must
+condense, releasing \SI{40.7}{\kilo\joule\per\mole}. That energy is
+delivered to the skin in addition to whatever the subsequent cooling
+releases, so far more total energy is transferred.}}
+
+\begin{spiralstrip}{Unit 6 \textbullet\ block 1}
+  \item Exothermic: sign of $q_{\text{system}}$?
+        \answerblank[2cm]{negative}
+  \item Heat flows: \answerblank[2.6cm]{hot to cold}
+  \item Products below reactants means:
+        \answerblank[2.6cm]{exothermic}
+  \item Thermal equilibrium means both reach the same:
+        \answerblank[2.6cm]{temperature}
+  \item The thermometer measures the:
+        \answerblank[3cm]{surroundings}
+\end{spiralstrip}
+
+\end{document}

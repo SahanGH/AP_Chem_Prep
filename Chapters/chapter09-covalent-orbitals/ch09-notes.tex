@@ -1,0 +1,410 @@
+% Zumdahl Chapter 9 -- Covalent Bonding: Orbitals.
+% ELABORATED notes. Only 9.1 is on the CED; 9.2-9.5 (molecular orbital
+% theory) is a clearly marked enrichment block. 3 blocks total.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{9}
+\apcunittitle{Covalent Bonding: Orbitals}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S9.1 (CED) $+$ \S9.2--9.3 (enrichment) \textbullet\ PDF pp.~454--490 \textbullet\ 3 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Read this before you open the chapter --- it is mostly off-syllabus]
+This is the \textbf{thinnest chapter in the book for AP purposes}. Only
+\textbf{\S9.1} is examinable --- hybridization and $\sigma$/$\pi$ bonding,
+which are CED 2.7.
+
+\textbf{\S9.2--9.5 develop molecular orbital theory} --- MO diagrams, bond
+order from filled orbitals, homonuclear and heteronuclear diatomics. None of
+it is on the current CED. Rather than pretend otherwise, this chapter is
+built as two examinable blocks plus \textbf{one clearly marked enrichment
+block}. Work Blocks 1--2 properly; treat Block 3 as optional reading.
+
+One more scope note: the CED assesses only \textbf{sp, sp$^2$, and sp$^3$}.
+Zumdahl's \S9.1 also covers dsp$^3$ and d$^2$sp$^3$ for expanded octets ---
+and he himself notes that this model ``does not give an accurate picture''
+and that newer work does not use $d$ orbitals at all. You still assign
+\emph{shapes} to \ce{PCl5} and \ce{SF6} with VSEPR; you are simply not asked
+for their hybridization.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Hybridization and the Localized Electron Model}{Zumdahl \S9.1}
+
+\begin{objectives}
+  \item Explain why hybrid orbitals are proposed at all.
+  \item Assign sp, sp$^2$, or sp$^3$ from the electron-domain count.
+\end{objectives}
+
+\reading{Zumdahl \S9.1}{455--466}
+
+\begin{warmup}[3]
+  \item Electron domains around C in \ce{CH4}: \answerblank[1.6cm]{4}
+  \item Geometry of \ce{BF3}: \answerblank[3.4cm]{trigonal planar}
+  \item Does a double bond count as one domain or two?
+        \answerblank[2cm]{one}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The problem hybridization solves}
+
+\notesectionz{Why plain atomic orbitals are not enough}{9.1}
+\practice{1}
+
+Carbon's ground-state configuration is $[\ce{He}]\,2s^2\,2p^2$ --- one
+filled $s$ orbital and two half-filled $p$ orbitals, pointing at
+90$^\circ$ to each other. Taken literally, that predicts carbon should form
+\answerblank[1.4cm]{two} bonds at \answerblank[1.6cm]{90$^\circ$}.
+
+Methane is observed to have \answerblank[1.4cm]{four} identical C--H bonds
+at \answerblank[2cm]{109.5$^\circ$}. The atomic-orbital picture is simply
+wrong about the molecule.
+
+\begin{apcnote}
+Zumdahl's resolution, and the key idea of the whole chapter: \emph{start
+with the molecule, not the atoms}. A molecule's tendency to minimize its
+energy matters more than preserving the orbital arrangement the free atom
+happened to have. So we assume the atom \term{hybridizes} --- its $2s$ and
+three $2p$ orbitals combine into four identical orbitals pointing at the
+corners of a tetrahedron.
+
+Hybridization is a \emph{model built to fit observed geometry}, not a
+physical event that happens to atoms. Nothing ``hybridizes'' in time.
+\end{apcnote}
+
+\notesub{The three hybridizations you are responsible for}
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}cp{2.6cm}p{2.9cm}p{3.4cm}p{2.6cm}@{}}
+\toprule
+\textbf{Domains} & \textbf{Hybrid} & \textbf{Built from} &
+\textbf{Geometry} & \textbf{Leftover $p$}\\
+\midrule
+2 & \answerblank[1.4cm]{sp} & one $s$, one $p$ &
+  \answerblank[1.8cm]{linear} & \answerblank[1cm]{2}\\
+3 & \answerblank[1.4cm]{sp$^2$} & one $s$, two $p$ &
+  \answerblank[3.2cm]{trigonal planar} & \answerblank[1cm]{1}\\
+4 & \answerblank[1.4cm]{sp$^3$} & one $s$, three $p$ &
+  \answerblank[2.5cm]{tetrahedral} & \answerblank[1cm]{0}\\
+\bottomrule
+\end{tabular}
+
+The count is the whole trick: \textbf{the number of hybrid orbitals always
+equals the number of atomic orbitals combined}, and equals the number of
+electron \answerblank[1.6cm]{domains}.
+
+\segment{GUIDED PRACTICE}{15}{Zumdahl's three-step procedure}
+
+Always in this order:
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item Draw the \answerblank[3.3cm]{Lewis structure}.
+  \item Determine the electron-pair arrangement using
+        \answerblank[1.6cm]{VSEPR}.
+  \item Assign the \answerblank[3.2cm]{hybrid orbitals} that match.
+\end{enumerate}
+
+Apply it:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item C in \ce{CH4}: \answerblank[4.5cm]{4 domains $\to$ sp$^3$}
+  \item B in \ce{BF3}: \answerblank[4.5cm]{3 domains $\to$ sp$^2$}
+  \item C in \ce{CO2}: \answerblank[4.5cm]{2 domains $\to$ sp}
+  \item N in \ce{NH3}: \answerblank[5.0cm]{4 domains (1 LP) $\to$ sp$^3$}
+  \item O in \ce{H2O}: \answerblank[5.0cm]{4 domains (2 LP) $\to$ sp$^3$}
+\end{enumerate}
+
+\begin{apctrap}
+Count \emph{domains}, not bonds. Water's oxygen has only two bonds but two
+lone pairs as well --- four domains, so sp$^3$. Students who count bonds
+report sp for water and get both the hybridization and the bent geometry
+wrong.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{The model's limits}
+
+\notesectionz{Where the simple picture strains}{9.1}
+\practice{6}
+
+For \ce{PCl5}, five electron pairs require a trigonal bipyramidal
+arrangement, and Zumdahl introduces \term{dsp$^3$} hybridization to supply
+five orbitals. But he immediately adds a caution worth taking seriously:
+
+\begin{apcnote}
+Zumdahl's own words are that this model ``does not give an accurate picture
+of the actual bonding,'' and that recent research shows a better model
+\emph{does not use $d$ orbitals at all}. He keeps it only for convenience.
+
+This is a good general lesson: the simple models in an introductory course
+are chosen for usefulness, not truth, and a well-taught course tells you
+which is which. It is also why the CED stops at sp$^3$ --- you assign
+\ce{PCl5} and \ce{SF6} their \emph{shapes} with VSEPR and leave their
+hybridization alone.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Assign hybridization in real molecules}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item In methanol, \ce{CH3OH}, give the hybridization of both the carbon
+        and the oxygen, with domain counts.
+        \answerlines[2]{C: four bonds $\to$ 4 domains $\to$ sp$^3$.
+        O: two bonds plus two lone pairs $\to$ 4 domains $\to$ sp$^3$.}
+  \item In formaldehyde, \ce{H2CO}, give the carbon's hybridization and
+        predict the H--C--H angle. \answerlines[2]{Three domains (two C--H
+        bonds and one C=O) $\to$ sp$^2$, trigonal planar, angle close to
+        120$^\circ$.}
+  \item \ce{SO2} and \ce{SO3} both have sulfur as the central atom, yet only
+        one is bent. Give each hybridization and explain.
+        \answerlines[3]{\ce{SO3}: 3 domains, no lone pair $\to$ sp$^2$,
+        trigonal planar. \ce{SO2}: 3 domains including a lone pair $\to$
+        also sp$^2$, but the lone pair occupies one position, leaving a bent
+        \emph{molecular} shape.}
+\end{enumerate}
+
+\begin{exitticket}
+Both \ce{CH4} and \ce{H2O} have sp$^3$ hybridized central atoms, yet their
+bond angles differ. Explain. \answerlines[2]{Both have four domains, so both
+are sp$^3$. Water's two lone pairs repel more strongly than bonding pairs,
+compressing its angle from 109.5$^\circ$ to about 104.5$^\circ$.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Sigma and Pi Bonds}{Zumdahl \S9.1}
+
+\begin{objectives}
+  \item Distinguish $\sigma$ from $\pi$ bonds by how orbitals overlap.
+  \item Count $\sigma$ and $\pi$ bonds, and explain restricted rotation.
+\end{objectives}
+
+\reading{Zumdahl \S9.1}{455--466}
+
+\begin{warmup}[3]
+  \item Hybridization of C in \ce{C2H6}: \answerblank[2cm]{sp$^3$}
+  \item How many hybrid orbitals does sp$^2$ produce?
+        \answerblank[1.6cm]{3}
+  \item Leftover unhybridized $p$ orbitals on an sp carbon:
+        \answerblank[1.4cm]{2}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two ways for orbitals to overlap}
+
+\notesectionz{Sigma and pi}{9.1}
+\practice{1}
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{2.4cm}p{4.6cm}p{6.0cm}@{}}
+\toprule
+ & \textbf{$\sigma$ (sigma) bond} & \textbf{$\pi$ (pi) bond}\\
+\midrule
+Overlap & \answerblank[2.4cm]{head-on}, along the internuclear axis &
+  \answerblank[2.6cm]{side-by-side}, above and below the axis\\
+Built from & hybrid orbitals & leftover \answerblank[3.2cm]{unhybridized
+  $p$} orbitals\\
+Electron density & concentrated \answerblank[3.9cm]{between the nuclei} &
+  in two lobes off the axis\\
+Rotation & \answerblank[1.8cm]{free} & \answerblank[2cm]{blocked}\\
+\bottomrule
+\end{tabular}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize, scale=0.95]
+  % sigma
+  \fill[apcgray!40] (0,0) circle (0.42);
+  \fill[apcgray!40] (1.5,0) circle (0.42);
+  \fill[apcgray!70] (0.75,0) ellipse (0.5 and 0.3);
+  \node[circle,fill=black,inner sep=1.6pt] at (0,0) {};
+  \node[circle,fill=black,inner sep=1.6pt] at (1.5,0) {};
+  \node at (0.75,-0.95) {$\sigma$: overlap ON the axis};
+  % pi
+  \begin{scope}[xshift=5.4cm]
+    \node[circle,fill=black,inner sep=1.6pt] at (0,0) {};
+    \node[circle,fill=black,inner sep=1.6pt] at (1.5,0) {};
+    \draw[thick] (0,0) -- (1.5,0);
+    \fill[apcgray!55] (0.75,0.55) ellipse (0.95 and 0.34);
+    \fill[apcgray!55] (0.75,-0.55) ellipse (0.95 and 0.34);
+    \node at (0.75,-1.25) {$\pi$: lobes ABOVE and BELOW};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\notesub{Counting rule}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item Single bond $=$ \answerblank[1.6cm]{1 $\sigma$}
+  \item Double bond $=$ \answerblank[2.6cm]{1 $\sigma$ + 1 $\pi$}
+  \item Triple bond $=$ \answerblank[2.6cm]{1 $\sigma$ + 2 $\pi$}
+\end{itemize}
+
+\begin{apcnote}
+The \emph{first} bond between two atoms is always $\sigma$; every additional
+bond is $\pi$. That is because head-on overlap is more effective than
+side-by-side, so it happens first --- and it is also why $\pi$ bonds are
+generally weaker and more reactive.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Count them}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{C2H6} (ethane): \answerblank[4.5cm]{7 $\sigma$, 0 $\pi$}
+  \item \ce{C2H4} (ethene): \answerblank[4.5cm]{5 $\sigma$, 1 $\pi$}
+  \item \ce{C2H2} (ethyne): \answerblank[4.5cm]{3 $\sigma$, 2 $\pi$}
+  \item \ce{HCN}: \answerblank[4.5cm]{2 $\sigma$, 2 $\pi$}
+  \item \ce{N2}: \answerblank[4.5cm]{1 $\sigma$, 2 $\pi$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Why double bonds cannot rotate}
+
+\notesectionz{Restricted rotation}{9.1}
+\practice{6}
+
+A $\sigma$ bond is cylindrically symmetric about the internuclear axis, so
+the two ends can spin freely --- rotation costs essentially nothing.
+
+A $\pi$ bond is different. Its two lobes must stay
+\answerblank[2.4cm]{parallel} to overlap at all. Rotating one end by
+90$^\circ$ would set the $p$ orbitals perpendicular, destroying the overlap
+and \answerblank[3.9cm]{breaking the bond}. That takes a large amount of
+energy, so at ordinary temperatures a double bond is
+\answerblank[1.6cm]{rigid}.
+
+\begin{workedexample}[Worked example: why cis and trans exist]
+In \ce{C2H4Cl2} with one Cl on each carbon, the two chlorines can sit on the
+same side of the double bond (\emph{cis}) or opposite sides
+(\emph{trans}). Because the $\pi$ bond blocks rotation, these are
+\textbf{different compounds} --- separable, with different melting points
+and dipole moments.
+
+Do the same with ethane (\ce{C2H4Cl2} with a single C--C bond) and the two
+arrangements interconvert freely billions of times a second. They are not
+distinguishable substances at all.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Structure and bonding together}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{H2C=CH-C#N}: give the hybridization of each carbon and the
+        total $\sigma$ and $\pi$ counts.
+        \answerlines[3]{\ce{CH2} carbon: 3 domains, sp$^2$. Middle carbon:
+        3 domains, sp$^2$. Nitrile carbon: 2 domains, sp. Totals:
+        6 $\sigma$ and 3 $\pi$.}
+  \item Explain why ethyne (\ce{C2H2}) is linear while ethene
+        (\ce{C2H4}) is planar but not linear.
+        \answerlines[3]{Ethyne's carbons have two domains each $\to$ sp,
+        180$^\circ$, so every atom lies on one line. Ethene's carbons have
+        three domains $\to$ sp$^2$, 120$^\circ$, giving a flat molecule with
+        bent angles at each carbon.}
+\end{enumerate}
+
+\begin{exitticket}
+A molecule has 4 $\sigma$ and 2 $\pi$ bonds between its heavy atoms. What
+kind of multiple bonding must it contain? \answerlines[2]{Two $\pi$ bonds
+means either one triple bond (1$\sigma$ + 2$\pi$) or two separate double
+bonds (each 1$\sigma$ + 1$\pi$).}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{ENRICHMENT: The Molecular Orbital Model}{Zumdahl \S9.2--9.3 --- NOT on the CED}
+
+\begin{apcnote}[This block is optional]
+Nothing in this block is assessed on the AP exam. It is included because
+molecular orbital theory answers one question the Lewis model cannot ---
+and knowing where a model \emph{fails} is worth an hour of anyone's time.
+Skip it entirely without penalty.
+\end{apcnote}
+
+\begin{objectives}
+  \item Explain what a molecular orbital is and compute bond order.
+  \item Describe the oxygen paramagnetism problem and its resolution.
+\end{objectives}
+
+\reading{Zumdahl \S9.2--9.3}{466--476}
+
+\segment{INSTRUCTION A}{25}{Orbitals that belong to the molecule}
+
+\notesectionz{Bonding and antibonding}{9.2}
+\practice{1}
+
+The localized electron model treats bonds as belonging to \emph{pairs} of
+atoms. Molecular orbital theory instead combines atomic orbitals into
+orbitals that span the \emph{whole molecule}.
+
+Combining two atomic orbitals always produces two molecular orbitals:
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item a \term{bonding} MO --- lower in energy, with electron density
+        \answerblank[3.9cm]{between the nuclei};
+  \item an \term{antibonding} MO ($\sigma^*$, $\pi^*$) --- higher in energy,
+        with a \answerblank[1.6cm]{node} between the nuclei.
+\end{itemize}
+
+\[
+  \text{Bond order} =
+  \answerblank[6.5cm]{$\dfrac{(\text{bonding e}^-) - (\text{antibonding e}^-)}{2}$}
+\]
+
+A bond order of zero means \answerblank[3cm]{no bond forms} --- which is
+exactly why \ce{He2} does not exist.
+
+\segment{GUIDED PRACTICE}{15}{Bond order practice}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{H2}: 2 bonding, 0 antibonding $\to$ bond order
+        \answerblank[1.4cm]{1}
+  \item \ce{He2}: 2 bonding, 2 antibonding $\to$ bond order
+        \answerblank[1.4cm]{0}
+  \item \ce{O2}: 10 bonding, 6 antibonding $\to$ bond order
+        \answerblank[1.4cm]{2}
+  \item \ce{N2}: 10 bonding, 4 antibonding $\to$ bond order
+        \answerblank[1.4cm]{3}
+\end{enumerate}
+
+Zumdahl notes the payoff: across the period-2 diatomics, as MO bond order
+rises, bond energy \answerblank[1.8cm]{increases} and bond length
+\answerblank[1.8cm]{decreases} --- strong evidence the model is capturing
+something real.
+
+\segment{INSTRUCTION B}{20}{The oxygen problem}
+
+\notesectionz{Where Lewis structures fail}{9.3}
+\practice{6}
+
+\begin{apcnote}
+Draw the Lewis structure of \ce{O2} and you get \ce{O=O} with two lone pairs
+on each oxygen --- \textbf{every electron paired}. That structure predicts
+oxygen should be \term{diamagnetic}, weakly repelled by a magnet.
+
+Liquid oxygen is \term{paramagnetic}. Pour it between the poles of a magnet
+and it visibly sticks. It has \textbf{two unpaired electrons}.
+
+The Lewis model cannot account for this. It is not a small discrepancy or a
+measurement issue --- the model simply gets it wrong.
+\end{apcnote}
+
+The MO model resolves it cleanly. Filling oxygen's molecular orbitals places
+the last two electrons in \emph{separate} degenerate $\pi^*$ orbitals, with
+parallel spins by Hund's rule. Result: bond order 2 (agreeing with the
+double bond) \emph{and} two \answerblank[2.2cm]{unpaired} electrons,
+matching the magnetic evidence exactly.
+
+\segment{APPLICATION}{20}{Comparing the two models}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item State one thing the localized electron model does better than MO
+        theory, and one thing MO does better.
+        \answerlines[3]{Localized electron model: far easier to apply, and
+        it predicts molecular geometry, which MO theory does not do
+        naturally. MO theory: correctly predicts magnetic behaviour and
+        handles delocalized electrons and fractional bond orders.}
+  \item Both models agree that \ce{O2} has a bond order of 2. Why is that
+        agreement reassuring rather than trivial?
+        \answerlines[2]{Two independently constructed models converging on
+        the same measurable quantity is evidence that the quantity is real
+        rather than an artifact of either model's assumptions.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does \ce{He2} not exist, in MO terms? \answerlines[2]{Its two bonding
+and two antibonding electrons give a bond order of zero --- there is no net
+stabilization, so no bond forms.}
+\end{exitticket}
+
+\end{document}

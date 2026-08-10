@@ -1,0 +1,60 @@
+% Smoke test: apchem-exam.cls -- MCQ engine, FRQ blocks, rubric, point totals.
+\documentclass{apchem-exam}
+
+\apcunit{0}
+\apcunittitle{Infrastructure Smoke Test}
+\apcdoctitle{Unit Exam}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{2 questions \textbullet\ 3 minutes}{\nocalculator}
+
+\begin{mcq}
+  A sample of neon gives mass-spectrum peaks at 20, 21, and 22 u with relative
+  areas 90.5, 0.3, and 9.2. The average atomic mass is closest to
+  \choices
+    \choice{20.0 u}
+    \correct{20.2 u}
+    \choice{21.0 u}
+    \choice{22.0 u}
+\end{mcq}
+\why{Weighted average is dominated by the 20 u peak but pulled slightly up by 22 u.}
+\distractor{A}{took the most abundant isotope's mass as the answer}
+\distractor{C}{took the unweighted mean of the three masses}
+
+\begin{mcq}
+  Which species has the ground-state configuration $1s^2 2s^2 2p^6$?
+  \choices
+    \choice{\ce{Na}}
+    \choice{\ce{F}}
+    \correct{\ce{Mg^2+}}
+    \choice{\ce{S^2-}}
+\end{mcq}
+\why{\ce{Mg^2+} has 10 electrons, isoelectronic with Ne.}
+
+\examsection{II}{Free Response}{1 question \textbullet\ 9 minutes}{\calculatorok}
+
+\frq{short}{4}{CED 1.2 Mass Spectra \textbullet\ SP 4}
+
+A pure element gives two mass-spectrum peaks: 62.93 u (69.2\%) and 64.93 u
+(30.8\%).
+
+\begin{parts}
+  \item Calculate the average atomic mass. \workspace[2.5cm]
+  \item Identify the element. \answerblank[3cm]{copper}
+  \item A student claims the sample contains two different elements.
+        Refute this claim in one sentence. \answerlines[2]{Both peaks arise from
+        atoms with the same number of protons; they are isotopes of one element.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{correct weighted-average setup with both abundances}
+  \rpoint{1}{answer $63.55\pm0.02$ u with correct units}
+  \rpoint{1}{identifies copper from the periodic table}
+  \rpoint{1}{refutation references equal proton number / isotopes}
+\end{rubric}
+
+\examtotal
+
+\end{document}

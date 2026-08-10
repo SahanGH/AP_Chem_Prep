@@ -1,0 +1,355 @@
+% Zumdahl Chapter 17 test -- 20 MCQ + 1 long FRQ + 1 short FRQ. 60 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Entropy and Free Energy}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S17.1--17.10 \textbullet\ 60 minutes \textbullet\ thermodynamic data provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope and format]
+Covers CED \textbf{9.1--9.7}. Electrochemistry (9.8--9.11) is Chapter 18 and
+does not appear.
+
+Write \textbf{thermodynamically favored}, not ``spontaneous.'' The textbook
+uses the older word; the exam does not.
+
+This test carries \textbf{one long and one short free response} rather than
+two short ones. A complete thermodynamic analysis --- $\Delta S^\circ$,
+$\Delta G^\circ$ by two routes, crossover temperature, $K$ --- is a standard
+AP long-response task and does not fit in four points.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- entropy basics --------------------------------------------------------
+\begin{mcq}
+  Entropy is best described as a measure of
+  \choices
+    \correct{the dispersal of matter and energy}
+    \choice{the total energy of a system}
+    \choice{how quickly a reaction proceeds}
+    \choice{the heat released by a reaction}
+\end{mcq}
+\why{``Disorder'' is loose shorthand; dispersal is what is actually
+counted.}
+
+\begin{mcq}
+  Which change has a positive $\Delta S^\circ$?
+  \choices
+    \choice{\ce{2H2(g) + O2(g) -> 2H2O(l)}}
+    \correct{\ce{CaCO3(s) -> CaO(s) + CO2(g)}}
+    \choice{\ce{N2(g) + 3H2(g) -> 2NH3(g)}}
+    \choice{\ce{2NO2(g) -> N2O4(g)}}
+\end{mcq}
+\why{Only this one increases the moles of gas.}
+
+\begin{mcq}
+  When predicting the sign of $\Delta S^\circ$ for a reaction, the first
+  thing to examine is
+  \choices
+    \correct{the change in the number of moles of gas}
+    \choice{whether the reaction is exothermic}
+    \choice{the number of atoms in each molecule}
+    \choice{the temperature}
+\end{mcq}
+\why{Gases dominate the entropy budget.}
+
+\begin{mcq}
+  Raising the temperature of a gas increases its entropy because
+  \choices
+    \correct{the distribution of molecular kinetic energies broadens}
+    \choice{the molecules become larger}
+    \choice{the number of molecules increases}
+    \choice{the pressure necessarily falls}
+\end{mcq}
+\why{Energy is dispersed over more accessible states.}
+
+\begin{mcq}
+  For the same substance, which ordering of $S^\circ$ is correct?
+  \choices
+    \choice{gas $<$ liquid $<$ solid}
+    \correct{solid $<$ liquid $<$ gas}
+    \choice{liquid $<$ solid $<$ gas}
+    \choice{all three are equal}
+\end{mcq}
+\why{\ce{H2O}: 70 as a liquid, 189 as a gas.}
+
+% ---- second law ------------------------------------------------------------
+\begin{mcq}
+  The second law of thermodynamics requires that, for a thermodynamically
+  favored process,
+  \choices
+    \choice{$\Delta S_{\text{sys}} > 0$}
+    \choice{$\Delta S_{\text{surr}} > 0$}
+    \correct{$\Delta S_{\text{univ}} > 0$}
+    \choice{$\Delta H < 0$}
+\end{mcq}
+\why{The system alone may lose entropy, as when water freezes.}
+\distractor{A}{ammonia synthesis and freezing both have
+$\Delta S_{\text{sys}} < 0$}
+
+\begin{mcq}
+  $\Delta S_{\text{surr}}$ is given by
+  \choices
+    \correct{$-\Delta H/T$}
+    \choice{$+\Delta H/T$}
+    \choice{$-T\Delta H$}
+    \choice{$\Delta H - T\Delta S$}
+\end{mcq}
+\why{Heat leaving the system disperses into the surroundings.}
+
+\begin{mcq}
+  Exothermicity is most effective as a driving force
+  \choices
+    \correct{at low temperature}
+    \choice{at high temperature}
+    \choice{equally at all temperatures}
+    \choice{only above the crossover temperature}
+\end{mcq}
+\why{$T$ is in the denominator of $\Delta S_{\text{surr}}$.}
+
+\begin{mcq}
+  Water freezes below \SI{0}{\celsius} even though
+  $\Delta S_{\text{sys}} < 0$ because
+  \choices
+    \correct{the surroundings gain more entropy than the system loses}
+    \choice{the second law does not apply to phase changes}
+    \choice{$\Delta S_{\text{sys}}$ becomes positive below
+      \SI{0}{\celsius}}
+    \choice{freezing is endothermic}
+\end{mcq}
+\why{Freezing is exothermic, and $-\Delta H/T$ grows as $T$ falls.}
+
+% ---- calculating -----------------------------------------------------------
+\begin{mcq}
+  $\Delta S^\circ$ for a reaction is calculated as
+  \choices
+    \correct{$\sum nS^\circ_{\text{products}} -
+      \sum nS^\circ_{\text{reactants}}$}
+    \choice{$\sum nS^\circ_{\text{reactants}} -
+      \sum nS^\circ_{\text{products}}$}
+    \choice{$\sum nS^\circ_{\text{products}} +
+      \sum nS^\circ_{\text{reactants}}$}
+    \choice{$-\Delta H/T$}
+\end{mcq}
+\why{Products minus reactants, with coefficients.}
+
+\begin{mcq}
+  The standard entropy $S^\circ$ of \ce{O2(g)} at \SI{298}{\kelvin} is
+  \choices
+    \choice{exactly zero, since it is an element}
+    \correct{a positive number, about \SI{205}{\joule\per\kelvin\per\mole}}
+    \choice{negative}
+    \choice{undefined}
+\end{mcq}
+\why{Entropy has a true zero at \SI{0}{\kelvin}, so absolute values are
+tabulated; only $\Delta H_f^\circ$ is set to zero for elements.}
+\distractor{A}{confuses the entropy convention with the enthalpy one}
+
+\begin{mcq}
+  A student computes $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$
+  using $\Delta H^\circ$ in kJ and $\Delta S^\circ$ in J/K without
+  converting. Their answer will be wrong by a factor of roughly
+  \choices
+    \choice{10}
+    \choice{100}
+    \correct{1000}
+    \choice{they will get the right answer}
+\end{mcq}
+\why{The $T\Delta S$ term is inflated a thousandfold.}
+
+% ---- free energy -----------------------------------------------------------
+\begin{mcq}
+  A process is thermodynamically favored when
+  \choices
+    \correct{$\Delta G^\circ < 0$}
+    \choice{$\Delta G^\circ > 0$}
+    \choice{$\Delta H^\circ < 0$ only}
+    \choice{$\Delta S^\circ > 0$ only}
+\end{mcq}
+\why{Both terms are folded into $\Delta G^\circ$.}
+
+\begin{mcq}
+  A reaction with $\Delta H^\circ < 0$ and $\Delta S^\circ > 0$ is favored
+  \choices
+    \correct{at all temperatures}
+    \choice{at no temperature}
+    \choice{only at high temperature}
+    \choice{only at low temperature}
+\end{mcq}
+\why{Both terms push the same way, so no calculation is needed.}
+
+\begin{mcq}
+  A reaction with $\Delta H^\circ > 0$ and $\Delta S^\circ > 0$ is favored
+  \choices
+    \choice{at all temperatures}
+    \choice{at no temperature}
+    \correct{above the crossover temperature}
+    \choice{below the crossover temperature}
+\end{mcq}
+\why{The $T\Delta S^\circ$ term must grow large enough to overcome
+$\Delta H^\circ$.}
+
+\begin{mcq}
+  The crossover temperature at which $\Delta G^\circ = 0$ equals
+  \choices
+    \correct{$\Delta H^\circ / \Delta S^\circ$}
+    \choice{$\Delta S^\circ / \Delta H^\circ$}
+    \choice{$-\Delta H^\circ \Delta S^\circ$}
+    \choice{$\Delta H^\circ - \Delta S^\circ$}
+\end{mcq}
+\why{Set $\Delta H^\circ - T\Delta S^\circ = 0$ and solve.}
+
+% ---- G and K ---------------------------------------------------------------
+\begin{mcq}
+  If $\Delta G^\circ$ is negative, then
+  \choices
+    \correct{$K > 1$ and products are favored at equilibrium}
+    \choice{$K < 1$ and reactants are favored}
+    \choice{$K = 1$}
+    \choice{$K$ cannot be determined}
+\end{mcq}
+\why{$\Delta G^\circ = -RT\ln K$.}
+
+\begin{mcq}
+  A reaction has $\Delta G^\circ$ very close to zero. Then $K$ is
+  \choices
+    \choice{very large}
+    \choice{very small}
+    \correct{close to 1}
+    \choice{negative}
+\end{mcq}
+\why{$\ln K \approx 0$.}
+
+% ---- kinetic control -------------------------------------------------------
+\begin{mcq}
+  A thermodynamically favored reaction that proceeds at no measurable rate
+  is best described as
+  \choices
+    \correct{under kinetic control}
+    \choice{at equilibrium}
+    \choice{thermodynamically unfavored after all}
+    \choice{endothermic}
+\end{mcq}
+\why{High activation energy is the usual cause; a stalled reaction is not
+necessarily an equilibrium.}
+\distractor{B}{the CED calls this out specifically --- no observable change
+does not imply equilibrium}
+
+\begin{mcq}
+  Adding a catalyst to a thermodynamically favored reaction
+  \choices
+    \correct{increases the rate but leaves $K$ and $\Delta G^\circ$
+      unchanged}
+    \choice{increases both the rate and $K$}
+    \choice{makes $\Delta G^\circ$ more negative}
+    \choice{has no effect on anything}
+\end{mcq}
+\why{A catalyst lowers $E_a$ only. It reaches equilibrium sooner, never
+moves it.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 30 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+$\Delta H_f^\circ$ (kJ/mol), $\Delta G_f^\circ$ (kJ/mol),
+$S^\circ$ (J/K$\cdot$mol): \ce{CO(g)} $-110.5$, $-137$, 198 \textbullet\
+\ce{CO2(g)} $-393.5$, $-394$, 214 \textbullet\ \ce{O2(g)} 0, 0, 205
+\textbullet\ \ce{CaCO3(s)} $-1207$, $-1129$, 93 \textbullet\ \ce{CaO(s)}
+$-635$, $-604$, 40. \\
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ \textbullet\
+$\Delta G^\circ = -RT\ln K$ \textbullet\
+$R = \SI{8.314}{\joule\per\mole\per\kelvin}$. ATP hydrolysis:
+$\Delta G^\circ = \SI{-30.5}{\kilo\joule\per\mole}$.
+\end{apcnote}
+
+% ---- FRQ 1 (long) ----------------------------------------------------------
+\frq{long}{10}{Zumdahl \S17.3--17.9 \textbullet\ a complete thermodynamic analysis}
+
+Limestone decomposes according to
+\[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \]
+
+\begin{parts}
+  \item Predict the sign of $\Delta S^\circ$ and justify from the equation.
+        \answerlines[2]{Positive --- one mole of gas is produced where there
+        was none, and gases carry far more entropy than solids.}
+  \item Calculate $\Delta S^\circ$ and $\Delta H^\circ$. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$\Delta S^\circ = (40 + 214) - 93 =
+        \mathbf{+161}~\si{\joule\per\kelvin}$;
+        $\Delta H^\circ = [-635 + (-393.5)] - (-1207) =
+        \mathbf{+178.5}~\text{kJ}$\end{apcanswer}}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin} and state whether
+        the decomposition is thermodynamically favored.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = 178.5 - (298)(0.161) =
+        178.5 - 48.0 = \mathbf{+131}~\text{kJ}$ --- \textbf{not
+        favored}\end{apcanswer}}
+  \item Verify your answer to (c) using the $\Delta G_f^\circ$ values, and
+        comment on any difference. \answerlines[3]{$\Delta G^\circ =
+        [-604 + (-394)] - (-1129) = -998 + 1129 = +131$~kJ, in agreement.
+        Small differences of a kJ or two between the two routes are
+        expected, because the tabulated values are rounded.}
+  \item Calculate the temperature above which the decomposition becomes
+        thermodynamically favored. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$T = \Delta H^\circ/\Delta S^\circ =
+        178.5/0.161 = \mathbf{1109}~\si{\kelvin}$
+        ($\approx\SI{836}{\celsius}$)\end{apcanswer}}
+  \item Calculate $K$ at \SI{298}{\kelvin}, and explain what its magnitude
+        means physically. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\ln K = -131{,}000/[(8.314)(298)] =
+        -52.9$; $K = e^{-52.9} = \mathbf{1\times10^{-23}}$. Essentially no
+        \ce{CO2} sits above limestone at room temperature --- which is why
+        limestone buildings do not decompose.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) positive, justified by production of a gas}
+  \rpoint{2}{(b) 1 pt $\Delta S^\circ = +161$~J/K; 1 pt
+    $\Delta H^\circ = +178.5$~kJ}
+  \rpoint{2}{(c) 1 pt correct unit conversion of $\Delta S^\circ$ to kJ/K;
+    1 pt $+131$~kJ and ``not favored'' --- an answer of $+130{,}000$ or
+    similar earns 0 for the conversion point}
+  \rpoint{2}{(d) 1 pt $+131$~kJ from $\Delta G_f^\circ$; 1 pt attributes
+    any small gap to rounding rather than to an error}
+  \rpoint{1}{(e) $T = 1109$~K}
+  \rpoint{2}{(f) 1 pt $K \approx 1\times10^{-23}$; 1 pt interpretation that
+    essentially no product is present at equilibrium}
+\end{rubric}
+
+% ---- FRQ 2 (short) ---------------------------------------------------------
+\frq{short}{4}{Zumdahl \S17.10 \textbullet\ kinetic control and coupling}
+
+\begin{parts}
+  \item The oxidation \ce{2CO(g) + O2(g) -> 2CO2(g)} has
+        $\Delta G^\circ = -514$~kJ, yet carbon monoxide persists in the
+        atmosphere for months. Explain.
+        \answerlines[3]{The reaction is strongly thermodynamically favored
+        but under kinetic control: its activation energy is high, so at
+        atmospheric temperatures the rate is very low. A favored reaction
+        need not be a fast one, and the persistence does not mean the
+        system is at equilibrium.}
+  \item A biochemical reaction has $\Delta G^\circ = +21$~kJ/mol. Show
+        whether coupling it to one ATP hydrolysis makes it favored.
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$+21 + (-30.5) = \mathbf{-9.5}$~kJ/mol,
+        which is negative, so the coupled process \textbf{is}
+        favored.\end{apcanswer}}
+  \item State what the two reactions must share for the coupling to be
+        chemically real. \answerblank[5.4cm]{a common intermediate}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt identifies kinetic control / high activation energy;
+    1 pt states that favorability does not determine rate --- an answer
+    that only says ``the reaction is slow'' earns 1}
+  \rpoint{1}{(b) $-9.5$~kJ/mol with the conclusion that it is favored}
+  \rpoint{1}{(c) a common intermediate --- ``they are added together''
+    alone earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

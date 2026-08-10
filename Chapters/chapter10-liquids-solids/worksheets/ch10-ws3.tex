@@ -1,0 +1,127 @@
+% Ch10 WS3 -- vapour pressure, heating curves, phase-change energy + FRQ.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{10}
+\apcunittitle{Liquids and Solids}
+\apcdoctitle{Worksheet 3 \textbullet\ Vapour Pressure and Phase Changes}
+\apcsubtitle{Zumdahl \S10.8 \textbullet\ also CED 6.5 --- Unit 6 borrows this topic}
+
+\begin{document}
+\wsheader[Water data for all problems: $c_{\text{ice}} = 2.09$,
+$c_{\text{water}} = 4.184$, $c_{\text{steam}} = 2.0$
+\si{\joule\per\gram\per\celsius}; $\Delta H_{\text{fus}} =
+\SI{6.02}{\kilo\joule\per\mole}$;
+$\Delta H_{\text{vap}} = \SI{40.7}{\kilo\joule\per\mole}$;
+$M = \SI{18.02}{\gram\per\mole}$.]
+
+\problem[]{Vapour pressure concepts:}
+\begin{parts}
+  \item Define vapour pressure in terms of equilibrium.
+        \answerlines[2]{The pressure exerted by vapour above a liquid in a
+        closed container when the rate of evaporation equals the rate of
+        condensation.}
+  \item Does vapour pressure depend on how much liquid is present? Explain.
+        \answerlines[2]{No --- it is set by temperature and intermolecular
+        forces alone. A drop and a litre give the same value at the same
+        temperature.}
+  \item State the condition for boiling.
+        \answerlines[2]{The liquid's vapour pressure equals the external
+        pressure; the normal boiling point is where it reaches
+        \SI{1}{\atm}.}
+  \item Explain why water boils below \SI{100}{\celsius} at high altitude.
+        \answerlines[2]{Atmospheric pressure is lower there, so the vapour
+        pressure needed to match it is reached at a lower temperature.}
+\end{parts}
+
+\problem[]{Heating-curve segments. State whether each uses $q = mc\Delta T$
+or $q = n\Delta H$, and explain what the energy does:}
+\begin{parts}
+  \item Warming ice from \SI{-20}{\celsius} to \SI{0}{\celsius}:
+        \answerblank[6cm]{$mc\Delta T$ --- raises kinetic energy}
+  \item Melting ice at \SI{0}{\celsius}:
+        \answerblank[6cm]{$n\Delta H_{\text{fus}}$ --- overcomes IMFs}
+  \item Boiling water at \SI{100}{\celsius}:
+        \answerblank[6cm]{$n\Delta H_{\text{vap}}$ --- separates molecules}
+\end{parts}
+
+\problem[]{Calculations:}
+\begin{parts}
+  \item Energy to melt \SI{36.04}{\gram} of ice at \SI{0}{\celsius}:
+        \answerblank[3.4cm]{\SI{12.0}{\kilo\joule}}
+  \item Energy to vaporize \SI{36.04}{\gram} of water at
+        \SI{100}{\celsius}: \answerblank[3.4cm]{\SI{81.4}{\kilo\joule}}
+  \item Energy to warm \SI{36.04}{\gram} of liquid water from
+        \SI{0}{\celsius} to \SI{100}{\celsius}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$q = (36.04)(4.184)(100.0) =
+        \SI{15.1}{\kilo\joule}$\end{apcanswer}}
+  \item Which of these three steps requires the most energy, and why?
+        \answerlines[2]{Vaporization --- separating molecules completely
+        costs far more than loosening them enough to flow, or than simply
+        raising their kinetic energy.}
+\end{parts}
+
+\problem[]{Explain why $\Delta H_{\text{vap}}$ (\SI{40.7}{\kilo\joule\per\mole})
+is nearly seven times $\Delta H_{\text{fus}}$
+(\SI{6.02}{\kilo\joule\per\mole}) for water.
+\answerlines[3]{Melting only loosens the hydrogen-bonded lattice enough for
+molecules to slide past one another --- most intermolecular contacts remain.
+Vaporizing must break essentially all remaining attractions and move each
+molecule far from its neighbours.}}
+
+\problem[]{\textbf{FRQ (10 points).} A \SI{90.1}{\gram} sample of ice at
+\SI{-15.0}{\celsius} is heated until it becomes steam at
+\SI{115.0}{\celsius}.}
+\begin{parts}
+  \item Determine the number of moles of water.
+        \answerlines[1]{$90.1/18.02 = \SI{5.00}{\mole}$}
+  \item Calculate the energy required for each of the five stages.
+        \workspace[4.2cm]
+        \keyonly{\begin{apcanswer}Warm ice: $(90.1)(2.09)(15.0) =
+        \SI{2.82}{\kilo\joule}$. Melt: $(5.00)(6.02) =
+        \SI{30.1}{\kilo\joule}$. Warm water: $(90.1)(4.184)(100.0) =
+        \SI{37.7}{\kilo\joule}$. Vaporize: $(5.00)(40.7) =
+        \SI{204}{\kilo\joule}$. Warm steam: $(90.1)(2.0)(15.0) =
+        \SI{2.7}{\kilo\joule}$.\end{apcanswer}}
+  \item Determine the total energy required.
+        \answerblank[3.4cm]{\SI{277}{\kilo\joule}}
+  \item What percentage of the total is spent on vaporization? Comment on
+        the result. \answerlines[2]{$204/277 = 74\%$. Nearly three-quarters
+        of the energy goes into a single step that produces no temperature
+        change at all.}
+  \item Sketch the heating curve, labelling both plateaus and stating why
+        the temperature is constant along them. \workspace[4cm]
+        \keyonly{\begin{apcanswer}Curve rises, plateaus at
+        \SI{0}{\celsius}, rises, plateaus (longer) at
+        \SI{100}{\celsius}, rises. Temperature is constant because the
+        energy is overcoming intermolecular forces rather than increasing
+        average kinetic energy.\end{apcanswer}}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 1 pt} 5.00 mol \textbullet\ \textbf{(b) 4 pts} 1 per correct
+sloped-segment pair (ice and steam), 1 fusion, 1 vaporization, 1 liquid
+warming --- using mass in $n\Delta H$ or moles in $mc\Delta T$ loses the
+point \textbullet\ \textbf{(c) 1 pt} \SI{277}{\kilo\joule} \textbullet\
+\textbf{(d) 2 pts} 1 percentage, 1 comment noting no temperature change
+\textbullet\ \textbf{(e) 2 pts} 1 correct shape with the longer plateau at
+\SI{100}{\celsius}, 1 explanation citing IMFs versus kinetic energy.
+\end{apcnote}
+
+\problem[]{Explain why steam at \SI{100}{\celsius} produces far more severe
+burns than liquid water at \SI{100}{\celsius}, using a quantitative
+comparison. \answerlines[3]{Condensing steam releases
+\SI{40.7}{\kilo\joule\per\mole} into the skin \emph{before} the resulting
+water begins to cool. Cooling that same water from \SI{100}{\celsius} to
+body temperature releases only about \SI{4.7}{\kilo\joule\per\mole}, so the
+condensation delivers roughly nine times more energy.}}
+
+\begin{spiralstrip}{Chapter 10 \textbullet\ blocks 1--4}
+  \item Type of solid: diamond? \answerblank[3.4cm]{network covalent}
+  \item Steel is which alloy type? \answerblank[2.6cm]{interstitial}
+  \item Why does ice float? \answerblank[4.6cm]{open H-bonded lattice}
+  \item Ionic solids conduct when: \answerblank[4.1cm]{molten or dissolved}
+  \item Strongest IMF in \ce{NH3}: \answerblank[3.8cm]{hydrogen bonding}
+\end{spiralstrip}
+
+\end{document}

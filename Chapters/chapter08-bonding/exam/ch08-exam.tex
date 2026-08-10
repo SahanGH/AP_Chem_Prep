@@ -1,0 +1,311 @@
+% Zumdahl Chapter 8 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{8}
+\apcunittitle{Bonding: General Concepts}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S8.1--8.13 \textbullet\ 50 minutes \textbullet\ bond energies provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- electronegativity and polarity ----------------------------------------
+\begin{mcq}
+  Electronegativity generally
+  \choices
+    \choice{increases down a group and across a period}
+    \correct{increases across a period and decreases down a group}
+    \choice{decreases across a period and down a group}
+    \choice{is the same for all nonmetals}
+\end{mcq}
+\why{Same Coulombic engine as ionization energy: rising $Z_{\text{eff}}$
+across, greater distance down.}
+
+\begin{mcq}
+  Which bond is the most polar?
+  \choices
+    \choice{\ce{C-N}}
+    \choice{\ce{C-O}}
+    \correct{\ce{H-F}}
+    \choice{\ce{O-F}}
+\end{mcq}
+\why{$\Delta$EN $= 1.9$ --- the largest of the four.}
+\distractor{D}{picks two very electronegative atoms, but their DIFFERENCE is
+small}
+
+\begin{mcq}
+  A molecule with polar bonds will be nonpolar overall if
+  \choices
+    \choice{the bonds are very strong}
+    \correct{its geometry causes the bond dipoles to cancel}
+    \choice{it contains no lone pairs}
+    \choice{it is a gas at room temperature}
+\end{mcq}
+\why{Symmetry is what cancels the vector sum.}
+
+\begin{mcq}
+  Which molecule is polar?
+  \choices
+    \choice{\ce{CO2}}
+    \choice{\ce{BF3}}
+    \choice{\ce{CCl4}}
+    \correct{\ce{NH3}}
+\end{mcq}
+\why{The lone pair on N makes it pyramidal, so the dipoles do not cancel.}
+
+% ---- ions and lattice energy -----------------------------------------------
+\begin{mcq}
+  Compared with its parent atom, a cation is always
+  \choices
+    \correct{smaller, because the remaining electrons feel the same nuclear
+      charge}
+    \choice{larger, because it has lost electron repulsion}
+    \choice{the same size}
+    \choice{smaller, because it has fewer protons}
+\end{mcq}
+\why{Often an entire outer shell is removed; the proton count never
+changes.}
+\distractor{D}{ions never differ from their atoms in proton count}
+
+\begin{mcq}
+  For an isoelectronic series of ions, size decreases as
+  \choices
+    \choice{the number of electrons increases}
+    \correct{the nuclear charge increases}
+    \choice{the ionic charge becomes more negative}
+    \choice{the atomic mass decreases}
+\end{mcq}
+\why{Same electron count, so only $Z$ varies.}
+
+\begin{mcq}
+  Which ion is the smallest?
+  \choices
+    \choice{\ce{O^2-}}
+    \choice{\ce{F-}}
+    \choice{\ce{Na+}}
+    \correct{\ce{Mg^2+}}
+\end{mcq}
+\why{All are isoelectronic with Ne; magnesium has the most protons.}
+
+\begin{mcq}
+  Lattice energy is proportional to
+  \choices
+    \correct{$Q_1Q_2/r$}
+    \choice{$r/Q_1Q_2$}
+    \choice{$Q_1Q_2 \times r$}
+    \choice{$Q_1 + Q_2$}
+\end{mcq}
+\why{A modified Coulomb's law.}
+
+\begin{mcq}
+  Which compound has the largest lattice energy magnitude?
+  \choices
+    \choice{\ce{NaCl}}
+    \choice{\ce{KBr}}
+    \correct{\ce{MgO}}
+    \choice{\ce{CaS}}
+\end{mcq}
+\why{Charge product 4 AND the smallest such ion pair --- beats \ce{CaS} on
+radius.}
+
+\begin{mcq}
+  \ce{LiF} and \ce{KI} have the same charge product, but \ce{LiF} has a much
+  larger lattice energy because
+  \choices
+    \correct{its ions are smaller, so they sit closer together}
+    \choice{fluorine is more electronegative}
+    \choice{lithium has fewer electrons}
+    \choice{\ce{KI} is covalent}
+\end{mcq}
+\why{Smaller $r$ gives stronger Coulombic attraction.}
+\distractor{B}{electronegativity governs sharing, not lattice separation}
+
+% ---- bond energies ---------------------------------------------------------
+\begin{mcq}
+  Breaking a chemical bond is
+  \choices
+    \choice{always exothermic}
+    \correct{always endothermic}
+    \choice{exothermic for ionic bonds only}
+    \choice{energy-neutral}
+\end{mcq}
+\why{Energy must be supplied to separate atoms from a lower-energy bonded
+state.}
+
+\begin{mcq}
+  As bond order increases from single to triple, bond length and bond energy
+  respectively
+  \choices
+    \choice{increase and increase}
+    \correct{decrease and increase}
+    \choice{increase and decrease}
+    \choice{decrease and decrease}
+\end{mcq}
+\why{More shared pairs pull the nuclei closer and hold them more tightly.}
+
+\begin{mcq}
+  $\Delta H$ for a reaction is estimated from bond energies as
+  \choices
+    \choice{bonds formed minus bonds broken}
+    \correct{bonds broken minus bonds formed}
+    \choice{the sum of all bond energies}
+    \choice{products minus reactants}
+\end{mcq}
+\why{Note this is the reverse order from the formation-enthalpy equation.}
+\distractor{D}{that phrasing belongs to $\Delta H^\circ_f$ calculations}
+
+\begin{mcq}
+  Bond-energy calculations give only approximate values because tabulated
+  bond energies are
+  \choices
+    \choice{measured at absolute zero}
+    \correct{averages taken over many different compounds}
+    \choice{always too large}
+    \choice{valid only for ionic substances}
+\end{mcq}
+\why{A C--H bond in methane differs slightly from one in ethanol.}
+
+% ---- Lewis structures ------------------------------------------------------
+\begin{mcq}
+  The total number of valence electrons in \ce{ClO3-} is
+  \choices
+    \choice{24}
+    \correct{26}
+    \choice{25}
+    \choice{32}
+\end{mcq}
+\why{$7 + 18 + 1 = 26$; the negative charge adds one electron.}
+\distractor{A}{forgot the charge}
+
+\begin{mcq}
+  Which species has a central atom with an expanded octet?
+  \choices
+    \choice{\ce{NH3}}
+    \choice{\ce{CO2}}
+    \correct{\ce{SF6}}
+    \choice{\ce{H2O}}
+\end{mcq}
+\why{Sulfur is in period 3 and holds twelve electrons.}
+
+\begin{mcq}
+  \ce{NF5} does not exist because nitrogen
+  \choices
+    \choice{is too electronegative}
+    \correct{is in period 2 and cannot exceed an octet}
+    \choice{has too few valence electrons}
+    \choice{forms only ionic compounds}
+\end{mcq}
+\why{Only period 3 and beyond can expand.}
+
+% ---- resonance, formal charge, VSEPR ---------------------------------------
+\begin{mcq}
+  In \ce{CO3^2-}, the carbon--oxygen bond order is
+  \choices
+    \choice{1}
+    \correct{$4/3$}
+    \choice{$3/2$}
+    \choice{2}
+\end{mcq}
+\why{Four bonding pairs spread over three equivalent positions.}
+\distractor{C}{that is \ce{NO2-} or \ce{O3}, which have two positions}
+
+\begin{mcq}
+  The best experimental evidence that \ce{NO3-} is a resonance hybrid is
+  that
+  \choices
+    \choice{it carries a negative charge}
+    \correct{all three N--O bonds have identical, intermediate lengths}
+    \choice{nitrogen has a formal charge of $+1$}
+    \choice{it is trigonal planar}
+\end{mcq}
+\why{Alternating structures would produce two different bond lengths.}
+
+\begin{mcq}
+  The bond angle in \ce{H2O} is smaller than in \ce{CH4} because water
+  \choices
+    \choice{has fewer electron domains}
+    \correct{has two lone pairs, which repel more strongly than bonding
+      pairs}
+    \choice{has weaker bonds}
+    \choice{is a smaller molecule}
+\end{mcq}
+\why{Both have four domains; lone pairs compress the angle.}
+\distractor{A}{both have four domains --- that is the point}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+\begin{apcnote}[Bond energies (kJ/mol)]
+\ce{H-H} 432 \textbullet\ \ce{Cl-Cl} 239 \textbullet\ \ce{H-Cl} 427
+\textbullet\ \ce{N#N} 941 \textbullet\ \ce{N-H} 391 \textbullet\
+\ce{O=O} 495 \textbullet\ \ce{O-H} 467 \textbullet\ \ce{C-H} 413
+\textbullet\ \ce{C=C} 614 \textbullet\ \ce{C-C} 347
+\end{apcnote}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S8.8 \textbullet\ bond energies}
+
+Consider \ce{2 H2(g) + O2(g) -> 2 H2O(g)}.
+
+\begin{parts}
+  \item Calculate $\Delta H$ using bond energies. Show which bonds are
+        broken and which are formed. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Broken: $2(432) + 495 = 1359$.
+        Formed: $4(467) = 1868$. $\Delta H = 1359 - 1868 =
+        \SI{-509}{\kilo\joule}$\end{apcanswer}}
+  \item Explain why the reaction is exothermic, referring to the relative
+        strengths of the bonds involved. \answerlines[2]{The four O--H
+        bonds formed release more energy (1868 kJ) than is required to break
+        the reactant bonds (1359 kJ), so there is a net release.}
+  \item The accepted value is \SI{-483.6}{\kilo\joule}. Explain the
+        difference. \answerlines[2]{Tabulated bond energies are averages
+        across many compounds, so the method gives an estimate rather than
+        an exact value.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct bonds identified with coefficients applied}
+  \rpoint{1}{(a) $-509$ kJ, using broken minus formed --- a positive answer
+    earns 0}
+  \rpoint{1}{(b) compares total energy released to total required}
+  \rpoint{1}{(c) attributes the gap to averaged bond energies}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S8.4--8.5 \textbullet\ ions and lattice energy}
+
+Consider the compounds \ce{NaF}, \ce{MgO}, and \ce{KCl}.
+
+\begin{parts}
+  \item Rank the three by lattice energy magnitude, largest first, and
+        justify each comparison. \answerlines[3]{\ce{MgO} $>$ \ce{NaF} $>$
+        \ce{KCl}. \ce{MgO} has a charge product of 4 versus 1 for the
+        others, which dominates. \ce{NaF} beats \ce{KCl} because \ce{Na+}
+        and \ce{F-} are smaller than \ce{K+} and \ce{Cl-}, so $r$ is
+        shorter.}
+  \item \ce{MgO} melts near \SI{2850}{\celsius} while \ce{NaF} melts near
+        \SI{990}{\celsius}. Explain the difference using Coulomb's law.
+        \answerlines[2]{Lattice energy scales as $Q_1Q_2/r$. With similar
+        ionic radii, \ce{MgO}'s $2{+}/2{-}$ charges give roughly four times
+        the attraction, so far more energy is needed to disrupt the
+        lattice.}
+  \item Rank \ce{Na+}, \ce{F-}, and \ce{Mg^2+} by size and explain the
+        principle you used. \answerlines[3]{\ce{F-} $>$ \ce{Na+} $>$
+        \ce{Mg^2+}. All three are isoelectronic with neon, so size is
+        determined solely by nuclear charge --- more protons pulling the
+        same ten electrons gives a smaller ion.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct order}
+  \rpoint{1}{(a) charge product cited BEFORE radius --- radius-first
+    reasoning earns 0}
+  \rpoint{1}{(b) quantitative Coulombic comparison}
+  \rpoint{1}{(c) correct order AND the isoelectronic principle named}
+\end{rubric}
+
+\examtotal
+
+\end{document}

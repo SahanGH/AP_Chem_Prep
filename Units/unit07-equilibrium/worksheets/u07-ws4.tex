@@ -1,0 +1,129 @@
+% U7 WS4 -- representations, Le Chatelier, Q vs K. Blocks 6-7.
+\documentclass{apchem-worksheet}
+
+\apcunit{7}
+\apcunittitle{Equilibrium}
+\apcdoctitle{Worksheet 4 \textbullet\ Le Ch\^atelier and $Q$ versus $K$}
+\apcsubtitle{CED 7.8--7.10 \textbullet\ only temperature changes the value of $K$}
+
+\begin{document}
+\wsheader[Add reactant $\to$ right \textbullet\ add product $\to$ left
+\textbullet\ compress $\to$ fewer moles of gas \textbullet\ inert gas at
+constant $V$ $\to$ no shift \textbullet\ catalyst $\to$ no shift
+\textbullet\ temperature is the only change that alters $K$.]
+
+\problem[]{\ced{7.9} For $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$,
+$\Delta H = -92$~kJ, state the direction of shift and whether $K$
+changes:}
+\begin{parts}
+  \item Add \ce{N2} \answerblank[5.4cm]{right; $K$ unchanged}
+  \item Remove \ce{NH3} \answerblank[5.4cm]{right; $K$ unchanged}
+  \item Compress the vessel \answerblank[5.4cm]{right; $K$ unchanged}
+  \item Add argon at constant volume
+        \answerblank[5.4cm]{no shift; $K$ unchanged}
+  \item Add a catalyst \answerblank[5.4cm]{no shift; $K$ unchanged}
+  \item Raise the temperature \answerblank[5.4cm]{left; $K$ decreases}
+\end{parts}
+
+\problem[]{\ced{7.9} Explain, in terms of partial pressures, why adding an
+inert gas at constant volume causes no shift.
+\answerlines[3]{The inert gas raises the total pressure but occupies the
+same container, so the partial pressure --- and the concentration --- of
+every reacting species is unchanged. Since $Q$ depends only on those, $Q$
+is unchanged and there is nothing to drive a shift.}}
+
+\problem[]{\ced{7.9} Explain why compressing the vessel shifts
+$\ce{N2 + 3H2 <=> 2NH3}$ to the right.
+\answerlines[3]{Reducing the volume raises every concentration, but the
+reactant side has 4 moles of gas against 2 on the product side. The
+denominator of $Q$ is affected more strongly, so $Q$ falls below $K$ and
+the system responds by shifting toward the side with fewer gas
+molecules.}}
+
+\problem[]{\ced{7.9} Temperature.}
+\begin{parts}
+  \item For an exothermic forward reaction, heat behaves as a:
+        \answerblank[2.4cm]{product}
+  \item Raising the temperature therefore shifts it:
+        \answerblank[1.8cm]{left}
+  \item And $K$ therefore: \answerblank[2.4cm]{decreases}
+  \item For an endothermic forward reaction, raising the temperature does
+        what to $K$? \answerblank[2.6cm]{increases it}
+  \item Why is temperature the only disturbance that changes $K$?
+        \answerlines[3]{Every other disturbance changes concentrations or
+        pressures, which alters $Q$; the system then shifts until $Q$
+        returns to the same $K$. Temperature changes the constant itself,
+        so the system settles at a genuinely different ratio of products to
+        reactants.}
+\end{parts}
+
+\problem[]{\ced{7.10} $K = 4.5$ for $\ce{H2 + I2 <=> 2HI}$. For each
+mixture calculate $Q$ and state the direction of change:}
+\begin{parts}
+  \item $[\ce{H2}] = [\ce{I2}] = [\ce{HI}] = 0.50$~M
+        \answerblank[5cm]{$Q = 1.0$; shifts right}
+  \item $[\ce{H2}] = 0.40$, $[\ce{I2}] = 0.30$, $[\ce{HI}] = 0.40$~M
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$Q = (0.40)^2/[(0.40)(0.30)] = 0.16/0.12
+        = \mathbf{1.3}$; $Q < K$, so it shifts
+        \textbf{right}\end{apcanswer}}
+  \item $[\ce{H2}] = [\ce{I2}] = 0.10$, $[\ce{HI}] = 0.30$~M
+        \answerblank[5cm]{$Q = 9.0$; shifts left}
+  \item $[\ce{H2}] = 0.20$, $[\ce{I2}] = 0.20$, $[\ce{HI}] = 0.424$~M
+        \answerblank[6.4cm]{$Q = 4.5$; already at equilibrium}
+\end{parts}
+
+\problem[]{\ced{7.10} A system at equilibrium has extra product added.
+Explain the resulting shift using $Q$ rather than Le Ch\^atelier.
+\answerlines[3]{Adding product increases the numerator of $Q$ while $K$ is
+unchanged, so $Q$ rises above $K$. A mixture with $Q > K$ holds too many
+products relative to equilibrium, so the reverse reaction dominates until
+$Q$ falls back to $K$.}}
+
+\problem[]{\ced{7.10} When is comparing $Q$ with $K$ the right tool and Le
+Ch\^atelier's principle the wrong one?
+\answerlines[3]{When the mixture was never at equilibrium --- for example an
+arbitrary set of starting concentrations poured into a flask. Le
+Ch\^atelier describes only the response to \emph{disturbing} an existing
+equilibrium, whereas $Q$ versus $K$ predicts the direction of change for
+any mixture whatsoever.}}
+
+\problem[]{\ced{7.8} Particulate representations. A sealed flask is drawn
+at three successive times. The first two pictures differ; the second and
+third are identical.}
+\begin{parts}
+  \item What can you conclude?
+        \answerblank[9.3cm]{equilibrium was reached by the second picture}
+  \item What must be true of the total number of atoms of each element
+        across all three? \answerblank[3.4cm]{it is conserved}
+  \item If a diagram shows 8 product particles and 2 reactant particles for
+        $\ce{A <=> B}$, estimate $K$.
+        \answerblank[2.4cm]{about 4}
+  \item Why is ``the reaction stopped'' the wrong description of the last
+        two pictures? \answerlines[2]{Both directions continue at equal
+        rates. The particle counts hold steady because formation and
+        consumption are balanced, not because motion or reaction has
+        ceased.}
+\end{parts}
+
+\problem[]{\ced{7.9} For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$,
+$\Delta H = -198$~kJ, a manufacturer wants to maximise the yield of
+\ce{SO3}. Recommend a temperature and a pressure, and note the practical
+tension.
+\answerlines[4]{High pressure favours the product side, which has fewer
+moles of gas, so a high pressure helps. The forward reaction is exothermic,
+so a \emph{low} temperature increases $K$ and the yield. The tension is that
+a low temperature also makes the reaction very slow, so in practice a
+moderate temperature is used together with a catalyst --- accepting a
+somewhat lower equilibrium yield in exchange for reaching it at all.}}
+
+\begin{spiralstrip}{Unit 7 \textbullet\ blocks 1--5}
+  \item ICE stands for: \answerblank[5.8cm]{Initial, Change, Equilibrium}
+  \item The approximation threshold: \answerblank[1.6cm]{5\%}
+  \item $Q = K$ means: \answerblank[3cm]{at equilibrium}
+  \item Equilibrium means equal: \answerblank[2cm]{rates}
+  \item Adding a catalyst shifts equilibrium how?
+        \answerblank[2.4cm]{not at all}
+\end{spiralstrip}
+
+\end{document}

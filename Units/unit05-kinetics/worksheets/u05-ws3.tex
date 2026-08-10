@@ -1,0 +1,143 @@
+% U5 WS3 -- mechanisms, collision model, energy profiles. Blocks 4-5.
+\documentclass{apchem-worksheet}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Worksheet 3 \textbullet\ Mechanisms and Energy Profiles}
+\apcsubtitle{CED 5.4--5.8 \textbullet\ molecularity gives the order only for an elementary step}
+
+\begin{document}
+\wsheader[Elementary step: coefficients \emph{are} orders \textbullet\
+$k = Ae^{-E_a/RT}$ \textbullet\
+$\ln(k_2/k_1) = -\tfrac{E_a}{R}\left(\tfrac{1}{T_2}-\tfrac{1}{T_1}\right)$
+\textbullet\ $R = \SI{8.314}{\joule\per\mole\per\kelvin}$ \textbullet\
+$E_a(\text{fwd}) - E_a(\text{rev}) = \Delta H$.]
+
+\problem[]{\ced{5.4} Write the rate law for each \emph{elementary} step:}
+\begin{parts}
+  \item $\ce{A -> products}$ \answerblank[3.4cm]{rate $= k[\ce{A}]$}
+  \item $\ce{A + B -> products}$
+        \answerblank[3.4cm]{rate $= k[\ce{A}][\ce{B}]$}
+  \item $\ce{2A -> products}$ \answerblank[3.4cm]{rate $= k[\ce{A}]^2$}
+  \item $\ce{2NO + O2 -> 2NO2}$ as a single step
+        \answerblank[4.4cm]{rate $= k[\ce{NO}]^2[\ce{O2}]$}
+  \item Why is (d) an unlikely elementary step?
+        \answerlines[2]{It would be termolecular --- three particles
+        colliding simultaneously with the correct orientation --- which is
+        so improbable that such steps are rarely proposed.}
+\end{parts}
+
+\problem[]{\ced{5.4} Explain precisely why coefficients give orders for an
+elementary step but not for an overall equation.
+\answerlines[4]{An elementary step \emph{is} the molecular event: its
+coefficients state how many particles must actually collide, and the
+probability of that collision scales with each concentration to that power.
+An overall equation only summarizes the net stoichiometry of a sequence of
+steps, and the observed rate is set by the slowest of them --- which may
+involve entirely different species in different numbers.}}
+
+\problem[]{\ced{5.7}--\ced{5.8} Overall: $\ce{2NO2 + F2 -> 2NO2F}$,
+experimental rate $= k[\ce{NO2}][\ce{F2}]$. Proposed mechanism:
+step 1 (slow) $\ce{NO2 + F2 -> NO2F + F}$; step 2 (fast)
+$\ce{NO2 + F -> NO2F}$.}
+\begin{parts}
+  \item Show that the steps sum to the overall equation.
+        \answerlines[2]{Adding: $\ce{2NO2 + F2 + F -> 2NO2F + F}$. The F
+        atom appears on both sides and cancels, leaving
+        $\ce{2NO2 + F2 -> 2NO2F}$.}
+  \item Give the predicted rate law and say why.
+        \answerlines[2]{Step 1 is rate-determining and elementary, so the
+        rate law is that of step 1: rate $= k[\ce{NO2}][\ce{F2}]$.}
+  \item Does the mechanism pass both tests?
+        \answerblank[3cm]{yes}
+  \item Identify the intermediate.
+        \answerblank[2.6cm]{\ce{F}}
+  \item Does passing both tests prove the mechanism is correct? Explain.
+        \answerlines[3]{No. It shows the mechanism is \emph{consistent} with
+        the evidence. Other mechanisms can predict the same rate law and sum
+        to the same equation, so kinetics can rule mechanisms out but never
+        single one in.}
+\end{parts}
+
+\problem[]{\ced{5.8} For the mechanism $\ce{A2 -> 2A}$ (slow), then
+$\ce{A + B -> AB}$ (fast):}
+\begin{parts}
+  \item Overall equation:
+        \answerblank[5cm]{$\ce{A2 + 2B -> 2AB}$}
+  \item Predicted rate law: \answerblank[3.4cm]{rate $= k[\ce{A2}]$}
+  \item B is a reactant but absent from the rate law. Is that a problem?
+        \answerlines[2]{No. B appears only in the fast step, which is not
+        rate-determining, so its concentration does not affect the overall
+        rate. Zero order in a reactant is a perfectly normal result.}
+\end{parts}
+
+\problem[]{\ced{5.5} The collision model.}
+\begin{parts}
+  \item List the three requirements for a reactive collision.
+        \answerlines[2]{The particles must collide; the collision must carry
+        at least the activation energy; and the particles must be correctly
+        oriented.}
+  \item Why is the fraction of successful collisions so small?
+        \answerlines[2]{Most collisions are either too low in energy to
+        cross the barrier or occur at an unproductive orientation, so only a
+        small tail of the distribution reacts.}
+  \item Raising the temperature increases the rate far more than it
+        increases collision frequency. Explain.
+        \answerlines[3]{Higher temperature broadens the distribution of
+        kinetic energies. Because the reactive fraction lies in the
+        high-energy tail, a modest broadening moves a disproportionately
+        large number of particles past $E_a$, which dominates the small
+        increase in how often particles meet.}
+\end{parts}
+
+\problem[]{\ced{5.5} Arrhenius calculations.}
+\begin{parts}
+  \item A reaction with $E_a = \SI{50.0}{\kilo\joule\per\mole}$ is warmed
+        from \SI{300}{\kelvin} to \SI{310}{\kelvin}. By what factor does
+        $k$ change? \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$\ln(k_2/k_1) = -(50000/8.314)
+        (1/310 - 1/300) = 0.647$;
+        $k_2/k_1 = e^{0.647} = \mathbf{1.9}$ --- roughly
+        double\end{apcanswer}}
+  \item Repeat for $E_a = \SI{100.0}{\kilo\joule\per\mole}$.
+        \answerblank[3cm]{$\times 3.6$}
+  \item What general conclusion follows?
+        \answerlines[2]{The larger the activation energy, the more
+        sensitive the rate is to temperature, because a bigger barrier means
+        a smaller and more sharply changing reactive fraction.}
+  \item A reaction has $k = \SI{2.0e-3}{\per\second}$ at \SI{300}{\kelvin}
+        and \SI{8.0e-3}{\per\second} at \SI{320}{\kelvin}. Find $E_a$.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\ln(8.0/2.0) = 1.386 =
+        -(E_a/8.314)(1/320 - 1/300)$;
+        $E_a = \mathbf{5.5\times10^{4}}~\si{\joule\per\mole} =
+        \SI{55}{\kilo\joule\per\mole}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{\ced{5.6} Energy profiles.}
+\begin{parts}
+  \item $E_a(\text{fwd}) = \SI{80}{\kilo\joule}$,
+        $E_a(\text{rev}) = \SI{120}{\kilo\joule}$. Find $\Delta H$ and
+        classify. \answerblank[5cm]{$-40$ kJ; exothermic}
+  \item $E_a(\text{fwd}) = \SI{150}{\kilo\joule}$,
+        $\Delta H = \SI{+60}{\kilo\joule}$. Find $E_a(\text{rev})$.
+        \answerblank[3cm]{\SI{90}{\kilo\joule}}
+  \item On a profile, $E_a$ is measured from what to what?
+        \answerblank[7.5cm]{reactants up to the transition state}
+  \item Can a strongly exothermic reaction be very slow? Explain.
+        \answerlines[3]{Yes. $\Delta H$ and $E_a$ are independent: the
+        products may lie far below the reactants while the barrier between
+        them is still very high. Diamond converting to graphite is the
+        standard case --- favorable, and effectively never observed.}
+\end{parts}
+
+\begin{spiralstrip}{Unit 5 \textbullet\ blocks 1--3}
+  \item First-order half-life: \answerblank[2cm]{$0.693/k$}
+  \item Which plot is linear for second order?
+        \answerblank[3cm]{$1/[\ce{A}]$ vs $t$}
+  \item Constant half-life implies: \answerblank[2.6cm]{first order}
+  \item Orders come from: \answerblank[2.4cm]{experiment}
+  \item Zero-order half-life: \answerblank[2.4cm]{$[\ce{A}]_0/2k$}
+\end{spiralstrip}
+
+\end{document}

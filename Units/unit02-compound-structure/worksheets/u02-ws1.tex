@@ -1,0 +1,78 @@
+% WS1 -- Type A/B: bond types, PE curves, lattice energy, alloys. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunit{2}
+\apcunittitle{Compound Structure and Properties}
+\apcdoctitle{Worksheet 1 \textbullet\ Bonds, Wells, and Lattices}
+\apcsubtitle{CED 2.1--2.4 \textbullet\ classify, rank, and justify}
+
+\begin{document}
+\wsheader[Every ranking needs its reason --- ``charges first, then radii''
+is a full sentence here. One-word answers earn half credit at best.]
+
+\problem[2.1]{Classify the bonding in each (nonpolar covalent / polar
+covalent / ionic / metallic) with a one-phrase reason:}
+\begin{parts}
+  \item \ce{N2}: \answerblank[7.4cm]{nonpolar covalent --- identical atoms}
+  \item \ce{SrCl2}: \answerblank[6.5cm]{ionic --- metal + nonmetal}
+  \item \ce{ICl}: \answerblank[8.1cm]{polar covalent --- nonmetals, small $\Delta$EN}
+  \item bronze (Cu/Sn): \answerblank[6.5cm]{metallic --- delocalized e$^-$ sea}
+\end{parts}
+
+\problem[2.1]{Rank by increasing bond polarity, then state the trend that
+decides it: \ce{O-F}, \ce{O-H}, \ce{O-O}.
+\answerlines[2]{\ce{O-O} $<$ \ce{O-F} $<$ \ce{O-H}; polarity grows with
+$\Delta$EN (O and F are neighbors; O vs H differ most).}}
+
+\problem[2.2]{A potential-energy curve for \ce{Cl2} has its minimum at
+199 pm and $-243$ kJ/mol.}
+\begin{parts}
+  \item Bond length: \answerblank[2.5cm]{199 pm}\quad
+        Bond energy: \answerblank[2.5cm]{243 kJ/mol}
+  \item At distances shorter than 199 pm, the curve rises steeply. What
+        interaction dominates there?
+        \answerblank[5cm]{nucleus--nucleus repulsion}
+  \item \ce{Br2}'s well: 228 pm, $-193$ kJ/mol. On shared axes, sketch both
+        curves, labeled. \workspace[4cm]
+        \keyonly{\begin{apcanswer}\ce{Br2} minimum farther right (228) and
+        shallower ($-193$); \ce{Cl2} deeper, shorter.\end{apcanswer}}
+  \item Which bond is easier to break, and what number says so?
+        \answerblank[8.0cm]{\ce{Br2} --- smaller well depth (193 kJ/mol)}
+\end{parts}
+
+\problem[2.3]{Rank by lattice energy magnitude, largest first:
+\ce{KBr}, \ce{CaO}, \ce{KCl}, \ce{SrO}.
+\answerlines[3]{\ce{CaO} $>$ \ce{SrO} $\gg$ \ce{KCl} $>$ \ce{KBr}. Charge
+products first ($4$ vs $1$); within each pair, smaller ions win
+(\ce{Ca^2+} $<$ \ce{Sr^2+}; \ce{Cl-} $<$ \ce{Br-}).}}
+
+\problem[2.3]{Solid \ce{MgO} melts at 2852$^\circ$C; solid \ce{NaF} at
+993$^\circ$C. Both lattices have similar ion sizes. Explain the gap with
+Coulomb's law. \answerlines[2]{\ce{MgO} is $2+/2-$: charge product 4 vs 1
+for \ce{NaF} --- roughly four times the attraction at similar $r$.}}
+
+\problem[2.4]{A jeweler's gold alloy substitutes Cu atoms (similar radius)
+into the Au lattice; steel inserts small C atoms into holes in the Fe
+lattice.}
+\begin{parts}
+  \item Name each alloy type: \answerblank[7.8cm]{Au/Cu substitutional; steel
+        interstitial}
+  \item Both alloys are harder than the pure metal. Give the particle-level
+        reason. \answerlines[2]{Foreign atoms disrupt the uniform layers so
+        planes of atoms can no longer slide freely past each other.}
+  \item Why does the alloy still conduct electricity?
+        \answerlines[1]{The delocalized electron sea remains mobile.}
+\end{parts}
+
+\begin{spiralstrip}{Unit 1 \textbullet\ atoms don't forget}
+  \item Average mass: peaks at 20 u (90.5\%), 22 u (9.3\%), 21 u (0.3\%):
+        \answerblank[3cm]{20.2 u (Ne)}
+  \item Configuration of \ce{Se^2-}: \answerblank[3.5cm]{$[\ce{Kr}]$}
+  \item PES: which peak has the greatest area for Si, and why?
+        \answerblank[7.8cm]{2p --- 6 electrons, most in any subshell}
+  \item Moles in \SI{14.0}{\gram} \ce{N2}: \answerblank[2.5cm]{\SI{0.500}{\mole}}
+  \item Larger radius: \ce{O^2-} or \ce{F-}? Reason?
+        \answerblank[6.3cm]{\ce{O^2-} --- same e$^-$, fewer protons}
+\end{spiralstrip}
+
+\end{document}

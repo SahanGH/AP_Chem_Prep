@@ -1,0 +1,103 @@
+% U8 WS1 -- conjugate pairs, pH/pOH, strong acids and bases. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 1 \textbullet\ Conjugates, pH, and Strong Acids}
+\apcsubtitle{CED 8.1--8.2 \textbullet\ neutral means $[\ce{H+}] = [\ce{OH-}]$, not pH 7}
+
+\begin{document}
+\wsheader[{$\mathrm{pH} = -\log[\ce{H+}]$} \textbullet\
+{$\mathrm{pH} + \mathrm{pOH} = 14.00$} \textbullet\
+{$K_aK_b = K_w = 1.0\times10^{-14}$} \textbullet\ six strong acids:
+\ce{HCl}, \ce{HBr}, \ce{HI}, \ce{HNO3}, \ce{H2SO4}, \ce{HClO4}.]
+
+\problem[]{\ced{8.1} Identify the conjugate:}
+\begin{parts}
+  \item Conjugate base of \ce{H2SO4}: \answerblank[2.6cm]{\ce{HSO4^-}}
+  \item Conjugate acid of \ce{HCO3^-}: \answerblank[2.6cm]{\ce{H2CO3}}
+  \item Conjugate base of \ce{HCO3^-}: \answerblank[2.6cm]{\ce{CO3^2-}}
+  \item Conjugate acid of \ce{NH3}: \answerblank[2.6cm]{\ce{NH4+}}
+\end{parts}
+
+\problem[]{\ced{8.1} For
+$\ce{HNO2(aq) + H2O(l) <=> H3O+(aq) + NO2^-(aq)}$, label all four species.
+\answerlines[2]{\ce{HNO2} acid; \ce{H2O} base; \ce{H3O+} conjugate acid;
+\ce{NO2^-} conjugate base.}}
+
+\problem[]{\ced{8.1} Explain why water can act as a Br\o nsted--Lowry base,
+referring to its structure.
+\answerlines[2]{Its oxygen carries two unshared electron pairs, either of
+which can form a covalent bond to a proton --- which is exactly what
+accepting \ce{H+} means.}}
+
+\problem[]{\ced{8.1} Conjugate strength.}
+\begin{parts}
+  \item The stronger the acid, the \answerblank[2.6cm]{weaker} its
+        conjugate base.
+  \item $K_a \times K_b$ equals \answerblank[2cm]{$K_w$}
+  \item Given $K_a(\ce{HC2H3O2}) = 1.8\times10^{-5}$, find $K_b$ for
+        acetate. \answerblank[3.4cm]{$5.6\times10^{-10}$}
+  \item Given $K_b(\ce{NH3}) = 1.8\times10^{-5}$, find $K_a$ for
+        \ce{NH4+}. \answerblank[3.4cm]{$5.6\times10^{-10}$}
+  \item Rank as bases, weakest first: \ce{Cl-}, \ce{F-}, \ce{CN-}.
+        \answerlines[2]{\ce{Cl-} $<$ \ce{F-} $<$ \ce{CN-}. \ce{Cl-} comes
+        from a strong acid and is negligible; among the rest, base strength
+        runs opposite to conjugate acid strength, and \ce{HF} is a much
+        stronger acid than \ce{HCN}.}
+\end{parts}
+
+\problem[]{\ced{8.2} pH and pOH conversions at \SI{25}{\celsius}:}
+\begin{parts}
+  \item $[\ce{H+}] = 2.5\times10^{-3}$: pH $=$
+        \answerblank[2.2cm]{2.60}
+  \item pH $= 8.40$: $[\ce{H+}] =$
+        \answerblank[3cm]{$4.0\times10^{-9}$}
+  \item $[\ce{OH-}] = 5.0\times10^{-5}$: pH $=$
+        \answerblank[2.2cm]{9.70}
+  \item pH $= 11.20$: pOH $=$ \answerblank[2.2cm]{2.80}
+  \item pH 3 is how many times more acidic than pH 6?
+        \answerblank[2cm]{1000}
+\end{parts}
+
+\problem[]{\ced{8.2} Explain why pure water at \SI{50}{\celsius} has a pH
+below 7 yet is still neutral.
+\answerlines[3]{$K_w$ increases with temperature, so both $[\ce{H+}]$ and
+$[\ce{OH-}]$ rise and the pH falls below 7. The solution stays neutral
+because neutrality is defined by $[\ce{H+}] = [\ce{OH-}]$, not by the number
+7 --- which applies only at \SI{25}{\celsius}.}}
+
+\problem[]{\ced{8.2} Strong acid and base pH:}
+\begin{parts}
+  \item \SI{0.020}{\Molar} \ce{HCl}: \answerblank[2.4cm]{1.70}
+  \item \SI{0.0010}{\Molar} \ce{HNO3}: \answerblank[2.4cm]{3.00}
+  \item \SI{0.025}{\Molar} \ce{NaOH}: \answerblank[2.4cm]{12.40}
+  \item \SI{0.015}{\Molar} \ce{Ba(OH)2}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$[\ce{OH-}] = 2(0.015) = 0.030$;
+        pOH $= 1.52$; pH $= \mathbf{12.48}$\end{apcanswer}}
+  \item \SI{0.0050}{\Molar} \ce{Ca(OH)2}:
+        \answerblank[2.4cm]{12.00}
+\end{parts}
+
+\problem[]{\ced{8.2} A student calculates the pH of \SI{0.010}{\Molar}
+\ce{Sr(OH)2} as 12.00. Identify the error and give the correct value.
+\answerlines[3]{They used $[\ce{OH-}] = 0.010$, but strontium hydroxide
+releases two hydroxide ions per formula unit, so $[\ce{OH-}] = 0.020$.
+Then pOH $= 1.70$ and pH $= 12.30$.}}
+
+\problem[]{\ced{8.2} Name the six strong acids, and say which common acid
+is conspicuously absent from the list.
+\answerlines[3]{\ce{HCl}, \ce{HBr}, \ce{HI}, \ce{HNO3}, \ce{H2SO4},
+\ce{HClO4}. \ce{HF} is absent --- despite fluorine's electronegativity it is
+a weak acid, because the H--F bond is exceptionally strong.}}
+
+\begin{spiralstrip}{Unit 7 \textbullet\ spiral}
+  \item $Q < K$ means the system shifts:
+        \answerblank[1.8cm]{right}
+  \item Only what alters $K$? \answerblank[2.6cm]{temperature}
+  \item Pure solids appear in $K$? \answerblank[1.6cm]{no}
+  \item $K_{sp}$ for an \ce{MX2} salt: \answerblank[1.8cm]{$4s^3$}
+  \item Equilibrium means equal: \answerblank[2cm]{rates}
+\end{spiralstrip}
+
+\end{document}

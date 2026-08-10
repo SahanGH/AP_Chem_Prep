@@ -1,0 +1,116 @@
+% Ch5 WS3 -- KMT, real gases, plus an FRQ. Block 5.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Worksheet 3 \textbullet\ KMT, Real Gases \& FRQ}
+\apcsubtitle{Zumdahl \S5.6--5.9 \textbullet\ name the failed postulate, not just ``it's real''}
+
+\begin{document}
+\wsheader[Deviation answers must name \emph{which} postulate fails and
+\emph{which direction} $PV/nRT$ moves. ``Because it is a real gas'' earns
+nothing.]
+
+\problem[]{State which KMT postulate each observation relies on:}
+\begin{parts}
+  \item A gas fills its container uniformly.
+        \answerblank[5.5cm]{constant random motion}
+  \item Gas pressure in a sealed flask does not decay over time.
+        \answerblank[5.5cm]{elastic collisions}
+  \item \ce{He} and \ce{Xe} at the same $T$ have equal average kinetic
+        energies. \answerblank[5.5cm]{$KE \propto T$}
+\end{parts}
+
+\problem[]{At \SI{300}{\kelvin}, rank \ce{H2}, \ce{O2}, and \ce{SF6}
+($M = 146.06$) by:}
+\begin{parts}
+  \item Average kinetic energy:
+        \answerblank[6.3cm]{all equal --- depends only on $T$}
+  \item Average molecular speed:
+        \answerblank[5cm]{\ce{H2} $>$ \ce{O2} $>$ \ce{SF6}}
+  \item Explain how both answers can be true at once.
+        \answerlines[2]{$KE = \tfrac12 mu^2$: heavier molecules compensate
+        for greater mass by moving more slowly, so all reach the same
+        average energy at a given temperature.}
+\end{parts}
+
+\problem[]{Sketch, on one set of axes, Maxwell--Boltzmann distributions for
+one gas at \SI{200}{\kelvin} and at \SI{600}{\kelvin}. Label both curves and
+state what stays the same. \workspace[4.2cm]
+\keyonly{\begin{apcanswer}600 K curve: broader, flatter, peak shifted right.
+200 K: narrower, taller, peak left. The \emph{area} under both is the same
+--- it represents the total number of molecules.\end{apcanswer}}}
+
+\problem[]{Real gas behaviour:}
+\begin{parts}
+  \item Under what two conditions does a real gas behave most ideally?
+        \answerblank[5.5cm]{high $T$, low $P$}
+  \item At high pressure, $PV/nRT$ rises above 1. Name the failed postulate
+        and explain. \answerlines[2]{``Particles have negligible volume''
+        fails --- the molecules' own volume is a significant fraction of the
+        container, so the gas cannot be compressed as far as predicted.}
+  \item At low temperature, $PV/nRT$ dips below 1. Name the failed postulate
+        and explain. \answerlines[2]{``No attractive forces'' fails ---
+        molecules pull on one another, softening wall collisions and
+        lowering the measured pressure below the ideal value.}
+  \item Which deviates more, \ce{Ne} or \ce{NH3}? Why?
+        \answerblank[6cm]{\ce{NH3} --- hydrogen bonding}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} A student generates oxygen by
+decomposing potassium chlorate and collects it over water:
+\[ \ce{2 KClO3(s) -> 2 KCl(s) + 3 O2(g)} \]
+A sample of \SI{2.45}{\gram} \ce{KClO3} ($M = \SI{122.55}{\gram\per\mole}$)
+is fully decomposed. The gas is collected at \SI{25}{\celsius} with a total
+pressure of \SI{754}{\torr}. The vapour pressure of water at
+\SI{25}{\celsius} is \SI{23.8}{\torr}.}
+\begin{parts}
+  \item Calculate the moles of \ce{O2} that should be produced.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{KClO3}) = 2.45/122.55 =
+        \SI{0.0200}{\mole}$; $\times\tfrac32 =
+        \SI{0.0300}{\mole}$ \ce{O2}\end{apcanswer}}
+  \item Determine the partial pressure of \ce{O2}, in atm.
+        \answerlines[2]{$754 - 23.8 = \SI{730.2}{\torr}$;
+        $730.2/760 = \SI{0.9608}{\atm}$}
+  \item Calculate the volume of gas collected. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$V = nRT/P = (0.0300)(0.08206)(298)/0.9608
+        = \SI{0.764}{\liter}$\end{apcanswer}}
+  \item Explain why the water-vapour correction is a subtraction, and state
+        the effect of omitting it. \answerlines[3]{The collected gas is a
+        mixture, so the measured total includes water vapour's contribution;
+        the oxygen alone accounts for less. Omitting the correction
+        overstates $P_{\ce{O2}}$ and therefore understates the calculated
+        volume for a known number of moles.}
+  \item The student repeats the collection at \SI{35}{\celsius}
+        ($P_{\ce{H2O}} = \SI{42.2}{\torr}$), same total pressure. Predict
+        whether the collected volume is larger or smaller, and give both
+        reasons. \answerlines[3]{Larger. Higher temperature increases volume
+        directly ($V \propto T$), and the larger water-vapour correction
+        lowers $P_{\ce{O2}}$, which also increases the volume needed to hold
+        the same moles.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 moles of \ce{KClO3}, 1 the 3:2 ratio applied
+\textbullet\ \textbf{(b) 2 pts} 1 subtraction performed, 1 conversion to atm
+\textbullet\ \textbf{(c) 2 pts} 1 correct rearrangement with kelvin, 1 value
+with units \textbullet\ \textbf{(d) 2 pts} 1 explains the mixture/Dalton
+reasoning, 1 states the direction of the error \textbullet\
+\textbf{(e) 2 pts} 1 predicts larger, 1 gives BOTH reasons --- one reason
+only earns 1.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 5 \textbullet\ blocks 1--4}
+  \item $P_{\ce{H2O}}$ at \SI{30}{\celsius}: \answerblank[2.6cm]{\SI{31.8}{\torr}}
+  \item Volume of \SI{3.00}{\mole} at STP: \answerblank[2.8cm]{\SI{67.3}{\liter}}
+  \item $\chi_A$ if $P_A = \SI{1.5}{\atm}$, $P_{\text{tot}} =
+        \SI{6.0}{\atm}$: \answerblank[2cm]{0.25}
+  \item Faster at equal $T$: \ce{CH4} or \ce{Ar}?
+        \answerblank[2.4cm]{\ce{CH4}}
+  \item $d$ of a gas with $M = \SI{28.0}{\gram\per\mole}$ at STP:
+        \answerblank[3.2cm]{\SI{1.25}{\gram\per\liter}}
+\end{spiralstrip}
+
+\end{document}

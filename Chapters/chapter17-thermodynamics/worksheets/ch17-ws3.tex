@@ -1,0 +1,169 @@
+% Ch17 WS3 -- temperature dependence, dG and K, kinetic control. Blocks 3-4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Entropy and Free Energy}
+\apcdoctitle{Worksheet 3 \textbullet\ Temperature, $K$, and Kinetic Control}
+\apcsubtitle{Zumdahl \S17.3, 17.9 \textbullet\ favored says where it ends up, never how fast}
+
+\begin{document}
+\wsheader[$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ \textbullet\
+$\Delta G^\circ = -RT\ln K$ \textbullet\ $R = \SI{8.314}{\joule\per\mole\per\kelvin}$
+\textbullet\ $RT \approx \SI{2.5}{\kilo\joule\per\mole}$ at
+\SI{298}{\kelvin}. Remember to convert $\Delta G^\circ$ to joules before
+using $R$.]
+
+\problem[]{Complete the four-case table:}
+\begin{parts}
+  \item $\Delta H^\circ < 0$, $\Delta S^\circ > 0$: favored at
+        \answerblank[5.4cm]{all temperatures}
+  \item $\Delta H^\circ > 0$, $\Delta S^\circ < 0$: favored at
+        \answerblank[5.4cm]{no temperature}
+  \item $\Delta H^\circ > 0$, $\Delta S^\circ > 0$: favored at
+        \answerblank[5.4cm]{high temperature}
+  \item $\Delta H^\circ < 0$, $\Delta S^\circ < 0$: favored at
+        \answerblank[5.4cm]{low temperature}
+  \item In which two cases is no calculation needed at all, and why?
+        \answerlines[2]{(a) and (b). When both terms point the same way the
+        sign of $\Delta G^\circ$ is fixed regardless of $T$, so there is
+        nothing to compute.}
+\end{parts}
+
+\problem[]{The crossover temperature is where $\Delta G^\circ = 0$.}
+\begin{parts}
+  \item Derive the expression for it from
+        $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$.
+        \answerlines[2]{Setting $\Delta G^\circ = 0$ gives
+        $0 = \Delta H^\circ - T\Delta S^\circ$, so
+        $T = \Delta H^\circ/\Delta S^\circ$.}
+  \item A reaction has $\Delta H^\circ = +30$~kJ and
+        $\Delta S^\circ = +80$~J/K. Find the crossover temperature and say
+        on which side it is favored. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$T = 30/0.080 = \mathbf{375}$~K
+        ($\approx\SI{102}{\celsius}$). Both terms positive, so it is
+        favored \textbf{above} 375 K.\end{apcanswer}}
+  \item A reaction has $\Delta H^\circ = -40$~kJ and
+        $\Delta S^\circ = -120$~J/K. Find the crossover temperature and
+        the favored side. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$T = -40/-0.120 = \mathbf{333}$~K
+        ($\approx\SI{60}{\celsius}$). Both terms negative, so it is
+        favored \textbf{below} 333 K.\end{apcanswer}}
+\end{parts}
+
+\problem[]{Vaporization of water has $\Delta H^\circ = +44$~kJ and
+$\Delta S^\circ = +119$~J/K.}
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin} and interpret it.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$44 - 298(0.119) = 44 - 35.5 =
+        \mathbf{+8.5}$~kJ --- not favored, which is why a glass of water
+        does not all become vapour at room
+        temperature.\end{apcanswer}}
+  \item Calculate the crossover temperature and identify what it physically
+        is. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$T = 44/0.119 = \mathbf{370}$~K
+        $\approx\SI{97}{\celsius}$ --- the \textbf{normal boiling
+        point}\end{apcanswer}}
+  \item Water actually boils at \SI{373}{\kelvin}. Account for the
+        discrepancy. \answerlines[2]{The tabulated $\Delta H_f^\circ$ and
+        $S^\circ$ values are rounded to the nearest whole unit, and the
+        crossover is a ratio of two such rounded numbers. A 3 K gap on a
+        370 K result is well within that rounding.}
+\end{parts}
+
+\problem[]{Convert between $\Delta G^\circ$ and $K$ at \SI{298}{\kelvin}:}
+\begin{parts}
+  \item $\Delta G^\circ = -20$~kJ. Find $K$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\ln K = 20{,}000/[(8.314)(298)] = 8.07$;
+        $K = e^{8.07} = \mathbf{3.2\times10^{3}}$\end{apcanswer}}
+  \item $\Delta G^\circ = +20$~kJ. Find $K$.
+        \answerblank[3.4cm]{$3.1\times10^{-4}$}
+  \item $K = 25$. Find $\Delta G^\circ$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -RT\ln K =
+        -(8.314)(298)\ln 25 = -(2477)(3.22) = -7977~\text{J} =
+        \mathbf{-8.0}~\text{kJ}$\end{apcanswer}}
+  \item $K = 1.0\times10^{-5}$. Find $\Delta G^\circ$.
+        \answerblank[3cm]{$+28.5$ kJ}
+\end{parts}
+
+\problem[]{Estimation without a calculator. Fill in ``greater than 1,''
+``close to 1,'' or ``less than 1'':}
+\begin{parts}
+  \item $\Delta G^\circ = -45$~kJ: $K$ is
+        \answerblank[4.4cm]{much greater than 1}
+  \item $\Delta G^\circ = +45$~kJ: $K$ is
+        \answerblank[4.4cm]{much less than 1}
+  \item $\Delta G^\circ \approx 0$: $K$ is
+        \answerblank[4.4cm]{close to 1}
+  \item Why does a change of only a few kJ in $\Delta G^\circ$ swing $K$ so
+        violently? \answerlines[3]{$\Delta G^\circ$ enters through an
+        exponential, $K = e^{-\Delta G^\circ/RT}$, and the natural scale it
+        is compared against is $RT \approx \SI{2.5}{\kilo\joule\per\mole}$
+        at \SI{298}{\kelvin}. A change of a few kJ is therefore a change of
+        one or two in the exponent, which multiplies or divides $K$ several
+        times over.}
+\end{parts}
+
+\problem[]{For \ce{N2O4(g) -> 2NO2(g)}, $\Delta H^\circ = +58$~kJ and
+$\Delta S^\circ = +176$~J/K.}
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin}.
+        \answerblank[3cm]{$+5.6$ kJ}
+  \item Calculate $K$ at \SI{298}{\kelvin}. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\ln K = -5600/[(8.314)(298)] = -2.26$;
+        $K = \mathbf{0.10}$ --- reactant-favored, but only
+        modestly\end{apcanswer}}
+  \item Find the crossover temperature and explain what a student would
+        observe on warming a sealed tube of this mixture.
+        \answerlines[3]{$T = 58/0.176 = 330$~K ($\approx\SI{57}{\celsius}$).
+        Above that, dissociation becomes favored, so warming the tube
+        shifts the equilibrium towards \ce{NO2} and the mixture darkens ---
+        \ce{NO2} is brown, \ce{N2O4} colourless.}
+\end{parts}
+
+\problem[]{Kinetic control.}
+\begin{parts}
+  \item Define kinetic control and give the usual cause.
+        \answerlines[2]{A process that is thermodynamically favored but
+        proceeds too slowly to observe is under kinetic control. The usual
+        cause is a high activation energy.}
+  \item The conversion of diamond to graphite has
+        $\Delta G^\circ < 0$ at \SI{298}{\kelvin}. Explain why diamonds
+        persist. \answerlines[3]{The reaction is favored but requires
+        breaking and reorganizing the entire covalent network, so the
+        activation energy is enormous. At room temperature effectively no
+        collisions supply it, and the rate is immeasurably slow. It is
+        under kinetic control, not at equilibrium.}
+  \item A mixture of \ce{H2} and \ce{O2} sits unchanged for years, yet the
+        combustion has $\Delta G^\circ = -474$~kJ. What does a spark change,
+        and what does it not? \answerlines[3]{The spark supplies energy to
+        surmount the activation barrier locally, raising the rate. It does
+        not change $\Delta H^\circ$, $\Delta S^\circ$, $\Delta G^\circ$ or
+        $K$ --- the reaction was always favored; it was only slow.}
+  \item A catalyst is added to a favored but slow reaction. State the
+        effect on the rate and on $K$.
+        \answerblank[6.4cm]{rate increases; $K$ unchanged}
+\end{parts}
+
+\problem[]{A student writes: ``The reaction has a large negative
+$\Delta G^\circ$, so it must go quickly and go to completion.'' Identify
+both errors. \answerlines[4]{First, $\Delta G^\circ$ says nothing about
+rate --- a strongly favored reaction can be under kinetic control and take
+geological time. Second, ``favored'' does not mean ``complete'': it means
+$K > 1$, so products dominate at equilibrium, but some reactant always
+remains. Only an infinite $K$ would correspond to going to completion.}}
+
+\begin{spiralstrip}{Chapter 17 \textbullet\ blocks 1--2}
+  \item $\Delta S^\circ_{\text{rxn}} = $
+        \answerblank[4.6cm]{$\sum S^\circ_{\text{prod}} -
+        \sum S^\circ_{\text{react}}$}
+  \item $S^\circ$ for an element is: \answerblank[2cm]{not zero}
+  \item Sign of $\Delta S^\circ$ when gas moles rise:
+        \answerblank[1.8cm]{positive}
+  \item Units of $S^\circ$: \answerblank[3.4cm]{J/(K$\cdot$mol)}
+  \item $\Delta S_{\text{surr}}$ matters most at what temperature?
+        \answerblank[2cm]{low}
+\end{spiralstrip}
+
+\end{document}

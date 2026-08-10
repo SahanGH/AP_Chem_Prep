@@ -1,0 +1,906 @@
+% Unit 3 guided notes -- 8 block lessons. Heaviest unit in the course.
+\documentclass{apchem-notes}
+
+\apcunit{3}
+\apcunittitle{Properties of Substances and Mixtures}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 3.1--3.13 \textbullet\ Zumdahl \S1.10, \S4.1--4.3, \S5.2--5.9, \S7.1--7.2, \S10--11, App.~3}
+
+\begin{document}
+\apctitleblock
+
+% =====================================================================
+\blocklesson{Intermolecular Forces}{Fri Sep 11}
+
+\begin{objectives}
+  \item Identify all intermolecular forces present in a substance.
+  \item Rank substances by IMF strength, accounting for both polarity and
+        polarizability.
+\end{objectives}
+
+\reading{Zumdahl \S10.1}{493--498}
+
+\begin{warmup}[3]
+  \item Is \ce{CCl4} polar? Why? \answerblank[6.6cm]{no --- tetrahedral,
+        dipoles cancel}
+  \item Geometry of \ce{H2O}: \answerblank[3cm]{bent}
+  \item Which is more electronegative, N or H?
+        \answerblank[2cm]{N}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The forces between particles}
+
+\notesection{Interparticle forces, weakest to strongest}{3.1}
+\practice{1}
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.5cm}p{4.4cm}p{5.4cm}@{}}
+\toprule
+\textbf{Force} & \textbf{Present in} & \textbf{Origin}\\
+\midrule
+London dispersion (LDF) & \answerblank[3.2cm]{ALL substances} &
+  instantaneous, temporary dipoles from electron motion\\
+Dipole--dipole & polar molecules &
+  permanent $\delta^+$ attracted to \answerblank[1.6cm]{$\delta^-$}\\
+Hydrogen bonding & H bonded to \answerblank[2.4cm]{N, O, or F} &
+  an especially strong dipole--dipole case\\
+Ion--dipole & ion $+$ polar solvent &
+  drives \answerblank[3.7cm]{dissolving of salts}\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Dispersion forces exist in \emph{everything}, including polar molecules and
+ions. The question is never ``does it have LDF'' but ``how strong are
+they.'' Strength grows with the number of electrons --- more electrons means
+a more \term{polarizable} electron cloud.
+\end{apcnote}
+
+\notesub{Hydrogen bonding is not a bond}
+
+It is an intermolecular \answerblank[2.6cm]{attraction}, roughly 5--10\% as
+strong as a covalent bond. It requires H bonded \emph{directly} to N, O, or
+F --- \ce{CH3OH} qualifies through its O--H;
+\ce{CH3OCH3} \answerblank[2.4cm]{does not} (no H on O).
+
+\begin{workedexample}[Worked example: when dispersion wins]
+Zumdahl's Table 10.3 compares three molecules:
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{@{}llc@{}}
+\toprule
+Molecule & Forces present & bp (\si{\celsius})\\
+\midrule
+\ce{BI3} & LDF only & 209.5\\
+\ce{PCl3} & LDF + dipole--dipole & 76.1\\
+\ce{NH3} & LDF + hydrogen bonding & $-33.0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\ce{BI3} is nonpolar yet boils highest --- its huge electron count makes
+dispersion overwhelming. \textbf{Never rank by force \emph{type} alone.}
+Compare molar mass first when the sizes differ greatly.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Identify and rank}
+
+List every IMF present:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{CH4}: \answerblank[5.5cm]{LDF only}
+  \item \ce{HCl}: \answerblank[5.5cm]{LDF + dipole--dipole}
+  \item \ce{H2O}: \answerblank[7.1cm]{LDF + dipole--dipole + H-bonding}
+  \item \ce{NaCl} in water: \answerblank[5.5cm]{ion--dipole}
+\end{enumerate}
+
+Rank boiling points, highest first: \ce{CH4}, \ce{H2O}, \ce{Kr}
+\answerblank[6cm]{\ce{H2O} $>$ \ce{Kr} $>$ \ce{CH4}}
+
+\segment{INSTRUCTION B}{20}{What IMFs control}
+
+\notesection{Properties that track IMF strength}{3.1}
+\practice{6}
+
+Stronger IMFs $\to$ \answerblank[2.4cm]{higher} boiling point,
+\answerblank[2.4cm]{higher} surface tension,
+\answerblank[2.4cm]{higher} viscosity, and
+\answerblank[2.4cm]{lower} vapor pressure.
+
+\begin{apctrap}
+Vapor pressure runs \emph{opposite} to the others. Strong IMFs hold
+molecules in the liquid, so fewer escape --- low vapor pressure. A liquid
+that evaporates readily (high vapor pressure) is called
+\term{volatile} and has \emph{weak} IMFs.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Structure to property}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{C2H5OH} (bp \SI{78}{\celsius}) vs \ce{CH3OCH3}
+        (bp \SI{-24}{\celsius}). Same formula \ce{C2H6O}. Explain the
+        \SI{100}{\celsius} gap. \answerlines[3]{Ethanol's O--H lets it
+        hydrogen bond to other ethanol molecules; dimethyl ether has no H on
+        O, so only dipole--dipole and LDF operate. Hydrogen bonding is much
+        stronger, so far more energy is needed to separate ethanol
+        molecules.}
+  \item \ce{F2}, \ce{Cl2}, \ce{Br2}, \ce{I2} are all nonpolar, yet their
+        boiling points rise steadily down the group. Explain.
+        \answerlines[2]{All have only LDF, but electron count rises down the
+        group; larger, more polarizable clouds give stronger dispersion
+        forces.}
+\end{enumerate}
+
+\begin{exitticket}
+Which has the higher vapor pressure at room temperature: water or ethanol
+(bp \SI{100}{\celsius} vs \SI{78}{\celsius})? Justify.
+\answerlines[2]{Ethanol --- its lower boiling point signals weaker overall
+IMFs, so more molecules escape to the vapor phase at a given temperature.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Solids and Phase Changes}{Mon Sep 14}
+
+\begin{objectives}
+  \item Classify solids by particle type and predict their properties.
+  \item Explain phase changes and vapor pressure at the particle level.
+\end{objectives}
+
+\reading{Zumdahl \S10.2--10.7}{498--523}
+
+\begin{warmup}[4]
+  \item Strongest IMF in \ce{NH3}: \answerblank[3.5cm]{hydrogen bonding}
+  \item Do nonpolar molecules have LDF? \answerblank[2cm]{yes}
+  \item Higher bp: \ce{Ne} or \ce{Xe}? Why?
+        \answerblank[7.3cm]{\ce{Xe} --- more electrons, stronger LDF}
+  \item Vapor pressure and IMF strength are related how?
+        \answerblank[3.5cm]{inversely}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Four kinds of solid}
+
+\notesection{Classifying solids}{3.2}
+\practice{1}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{2.9cm}p{2.8cm}p{3.1cm}p{4.4cm}@{}}
+\toprule
+\textbf{Type} & \textbf{Particles} & \textbf{Held by} & \textbf{Properties}\\
+\midrule
+Ionic & cations, anions & electrostatic attraction &
+  high mp, brittle, conducts only \answerblank[3.4cm]{molten/aqueous}\\
+Metallic & cations $+$ e$^-$ sea & delocalized electrons &
+  conducts \answerblank[1.8cm]{always}, malleable, lustrous\\
+Covalent network & atoms & \answerblank[3.2cm]{covalent bonds} &
+  very high mp, hard, usually nonconducting (\ce{SiO2}, diamond)\\
+Molecular & molecules & \answerblank[2.4cm]{IMFs} &
+  low mp, soft, nonconducting (ice, \ce{CO2})\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Melting a \emph{molecular} solid breaks intermolecular forces, never
+covalent bonds. Ice melting does not break O--H bonds --- it breaks hydrogen
+bonds between molecules. Saying otherwise scores zero on the FRQ.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Classify from properties}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item mp \SI{1610}{\celsius}, hard, does not conduct:
+        \answerblank[4.5cm]{covalent network}
+  \item mp \SI{801}{\celsius}, conducts when dissolved:
+        \answerblank[4.5cm]{ionic}
+  \item mp \SI{-57}{\celsius}, soft, nonconducting:
+        \answerblank[4.5cm]{molecular}
+  \item mp \SI{1085}{\celsius}, conducts as a solid:
+        \answerblank[4.5cm]{metallic}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Phase changes and vapor pressure}
+
+\notesection{Energy and the phase diagram of behavior}{3.3}
+\practice{4}
+
+During a phase change, added energy goes into
+\answerblank[3.6cm]{overcoming IMFs}, not raising temperature --- so the
+heating curve shows a \answerblank[2cm]{plateau}.
+
+\term{Vapor pressure} is the pressure of vapor in equilibrium with its
+liquid. It increases with \answerblank[2.7cm]{temperature} and decreases
+with \answerblank[3.1cm]{stronger IMFs}.
+
+A liquid \term{boils} when its vapor pressure equals the
+\answerblank[3.4cm]{external pressure} --- which is why water boils below
+\SI{100}{\celsius} at altitude.
+
+\segment{APPLICATION}{20}{Reasoning about phases}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{SiO2} melts at \SI{1610}{\celsius}; \ce{CO2} sublimes at
+        \SI{-78}{\celsius}. Both are ``oxides of a group 14 element.''
+        Explain the enormous difference.
+        \answerlines[3]{\ce{SiO2} is a covalent network --- melting requires
+        breaking strong covalent bonds throughout the lattice. \ce{CO2} is
+        molecular --- only weak LDF between discrete molecules must be
+        overcome.}
+  \item A sealed flask of water at \SI{25}{\celsius} is warmed to
+        \SI{50}{\celsius}. Describe what happens to the vapor pressure and
+        why, at the particle level. \answerlines[2]{It rises --- more
+        molecules have enough kinetic energy to escape the liquid's IMFs, so
+        equilibrium is reached at a higher vapor concentration.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does ice float on water? Answer at the level of structure and forces.
+\answerlines[2]{Hydrogen bonding locks water molecules into an open
+hexagonal lattice with more empty space than liquid water, lowering the
+solid's density.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Gas Laws}{Wed Sep 16}
+
+\begin{objectives}
+  \item Apply the ideal gas law and the combined gas law.
+  \item Use Dalton's law of partial pressures and mole fractions.
+\end{objectives}
+
+\reading{Zumdahl \S5.2--5.5}{229--251}
+
+\begin{warmup}[3]
+  \item Type of solid: graphite (conducts, very high mp):
+        \answerblank[4cm]{covalent network}
+  \item Melting ice breaks what?
+        \answerblank[6.9cm]{hydrogen bonds (not O--H bonds)}
+  \item Molar mass of \ce{O2}: \answerblank[3cm]{\SI{32.00}{\gram\per\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The ideal gas law}
+
+\notesection{$PV = nRT$}{3.4}
+\practice{5}
+
+\[
+  PV = nRT \qquad R = \answerblank[4.3cm]{\SI{0.08206}{\liter\atm\per\mole\per\kelvin}}
+\]
+
+Temperature must \emph{always} be in \answerblank[1.8cm]{kelvin}:
+$T(\mathrm{K}) = T(^\circ\mathrm{C}) + 273.15$.
+
+\begin{apctrap}
+Forgetting the kelvin conversion is the single most common gas-law error.
+A Celsius temperature can be zero or negative --- and $PV = nRT$ with
+$T = 0$ predicts zero pressure, which should immediately look wrong.
+\end{apctrap}
+
+\notesub{Combined gas law --- when conditions change}
+
+\[
+  \frac{P_1V_1}{n_1T_1} = \answerblank[3cm]{$\dfrac{P_2V_2}{n_2T_2}$}
+\]
+
+Drop any quantity held constant. At constant $n$ and $T$: $P_1V_1 = P_2V_2$
+(\term{Boyle}). At constant $n$ and $P$: $V_1/T_1 = V_2/T_2$
+(\term{Charles}).
+
+\begin{workedexample}[Worked example]
+What volume does \SI{2.00}{\mole} of gas occupy at \SI{27}{\celsius} and
+\SI{1.50}{\atm}?
+\[
+  V = \frac{nRT}{P} = \frac{(2.00)(0.08206)(300.)}{1.50} = \SI{32.8}{\liter}
+\]
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Gas calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \SI{1.00}{\mole} gas at STP (\SI{273}{\kelvin}, \SI{1.00}{\atm})
+        occupies: \answerblank[3cm]{\SI{22.4}{\liter}}
+  \item A gas at \SI{2.0}{\atm} and \SI{4.0}{\liter} is compressed to
+        \SI{1.0}{\liter} at constant $T$. New pressure:
+        \answerblank[3cm]{\SI{8.0}{\atm}}
+  \item \SI{0.500}{\mole} gas in \SI{5.00}{\liter} at
+        \SI{25}{\celsius}. Pressure? \answerblank[3cm]{\SI{2.45}{\atm}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Mixtures of gases}
+
+\notesection{Dalton's law of partial pressures}{3.4}
+\practice{5}
+
+Each gas in a mixture exerts pressure independently:
+\[
+  P_{\text{total}} = \answerblank[4cm]{$P_1 + P_2 + P_3 + \cdots$}
+  \qquad
+  P_A = \answerblank[2.4cm]{$\chi_A P_{\text{total}}$}
+\]
+where the \term{mole fraction} $\chi_A = $
+\answerblank[2.4cm]{$n_A/n_{\text{total}}$}.
+
+\begin{workedexample}[Worked example]
+A container holds \SI{0.20}{\mole} \ce{N2} and \SI{0.30}{\mole} \ce{O2} at a
+total pressure of \SI{2.5}{\atm}.
+\[
+  \chi_{\ce{O2}} = \frac{0.30}{0.50} = 0.60
+  \qquad P_{\ce{O2}} = 0.60 \times 2.5 = \SI{1.5}{\atm}
+\]
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Gas reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Two identical flasks at the same $T$ and $P$ hold \ce{He} and
+        \ce{Ne}. Compare the number of molecules and the total mass.
+        \answerlines[2]{Same number of molecules (equal $n$ from $PV=nRT$);
+        Ne has the greater mass because its molar mass is larger.}
+  \item A gas sample is heated from \SI{27}{\celsius} to
+        \SI{327}{\celsius} at constant pressure. By what factor does its
+        volume change? \answerlines[2]{$T$ goes from 300 K to 600 K --- the
+        volume doubles. (Using Celsius would wrongly suggest a factor of
+        12.)}
+\end{enumerate}
+
+\begin{exitticket}
+A \SI{3.0}{\liter} flask holds \SI{1.0}{\mole} \ce{N2} and \SI{2.0}{\mole}
+\ce{He}. What fraction of the total pressure comes from helium?
+\answerlines[2]{$\chi_{\ce{He}} = 2.0/3.0 = 0.67$ --- two-thirds of the
+total pressure, regardless of the identity of the gases.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Kinetic Molecular Theory}{Fri Sep 18}
+
+\begin{objectives}
+  \item State the KMT assumptions and use them to explain gas laws.
+  \item Interpret Maxwell--Boltzmann distribution curves.
+\end{objectives}
+
+\reading{Zumdahl \S5.6--5.7}{251--260}
+
+\begin{warmup}[3]
+  \item Convert \SI{25}{\celsius} to kelvin: \answerblank[2.5cm]{\SI{298}{\kelvin}}
+  \item $P_A$ if $\chi_A = 0.25$ and $P_{\text{tot}} = \SI{4.0}{\atm}$:
+        \answerblank[2.5cm]{\SI{1.0}{\atm}}
+  \item Volume of \SI{2.0}{\mole} at STP: \answerblank[2.5cm]{\SI{44.8}{\liter}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The model behind the law}
+
+\notesection{KMT assumptions}{3.5}
+\practice{1}
+
+An ideal gas is modeled as particles that:
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item are in constant, \answerblank[2.6cm]{random} motion;
+  \item have \answerblank[3.7cm]{negligible volume} compared with the
+        container;
+  \item exert \answerblank[4.0cm]{no attractive forces} on one another;
+  \item collide \answerblank[2.6cm]{elastically} (no kinetic energy lost);
+  \item have average kinetic energy proportional to
+        \answerblank[4.5cm]{absolute temperature}.
+\end{enumerate}
+
+\[
+  KE_{\text{avg}} = \tfrac32 k_B T
+  \qquad\Rightarrow\qquad
+  u_{\text{rms}} = \answerblank[2.8cm]{$\sqrt{\dfrac{3RT}{M}}$}
+\]
+
+\begin{apcnote}
+At a given temperature, \emph{all} gases have the same average kinetic
+energy --- but not the same speed. Since $KE = \frac12mu^2$, heavier
+molecules must move \answerblank[1.8cm]{slower} to carry the same energy.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Explaining laws with the model}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Why does pressure rise when volume decreases at constant $T$?
+        \answerlines[2]{Same number of particles at the same speed hit a
+        smaller wall area more often --- more collisions per unit area per
+        second.}
+  \item Why does pressure rise when temperature rises at constant $V$?
+        \answerlines[2]{Higher $T$ means higher average speed, so collisions
+        are both more frequent and more forceful.}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Maxwell--Boltzmann distributions}
+
+\notesection{Reading the speed distribution}{3.5}
+\practice{4}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9.6cm, height=5.2cm,
+    xlabel={molecular speed}, ylabel={fraction of molecules},
+    xtick=\empty, ytick=\empty, ymin=0, xmin=0, xmax=1000,
+    axis lines=left, legend style={draw=none, font=\sffamily\footnotesize,
+      at={(0.98,0.98)}, anchor=north east}]
+  \addplot[seriesA, samples=140, domain=1:1000] {x^2*exp(-x^2/45000)/2200};
+  \addlegendentry{low $T$}
+  \addplot[seriesB, samples=140, domain=1:1000] {x^2*exp(-x^2/130000)/6000};
+  \addlegendentry{high $T$}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+As temperature rises the curve becomes \answerblank[2.2cm]{broader} and
+\answerblank[2.2cm]{flatter}, with its peak shifted
+\answerblank[1.8cm]{right}. The \emph{area} under both curves is the same
+because it represents \answerblank[6.1cm]{the total number of molecules}.
+
+\begin{apctrap}
+The peak is the \emph{most probable} speed, not the average, and not the
+maximum. And a heavier gas at the same temperature gives a narrower curve
+shifted left --- same energy, less speed.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Distribution reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{He} and \ce{Ar} are at the same temperature. Sketch how their
+        distributions compare and justify. \workspace[3cm]
+        \keyonly{\begin{apcanswer}He's curve is broader and shifted right
+        (faster); Ar's is narrower and left. Same average KE, but
+        $u \propto 1/\sqrt{M}$, and He's molar mass is ten times
+        smaller.\end{apcanswer}}
+  \item Explain why raising the temperature increases the \emph{fraction} of
+        molecules above any given speed threshold.
+        \answerlines[2]{The distribution broadens and shifts right, so a
+        larger share of the area lies beyond that speed.}
+\end{enumerate}
+
+\begin{exitticket}
+Two gases at the same $T$: which has the greater average kinetic energy,
+\ce{H2} or \ce{O2}? Which moves faster? \answerlines[2]{Equal average
+kinetic energies (KE depends only on $T$); \ce{H2} moves much faster because
+its molar mass is far smaller.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Real Gases}{Mon Sep 21}
+
+\begin{objectives}
+  \item Predict the conditions under which real gases deviate from ideality.
+  \item Explain deviations in terms of molecular volume and attractions.
+\end{objectives}
+
+\reading{Zumdahl \S5.8--5.9}{260--264}
+
+\begin{warmup}[4]
+  \item Which KMT assumption says gas particles don't attract each other?
+        \answerblank[3.5cm]{assumption 3}
+  \item Faster at the same $T$: \ce{N2} or \ce{Kr}?
+        \answerblank[2.5cm]{\ce{N2}}
+  \item Area under a Maxwell--Boltzmann curve represents:
+        \answerblank[4cm]{total molecules}
+  \item $PV = nRT$: solve for $n$. \answerblank[2.5cm]{$n = PV/RT$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Where the model breaks}
+
+\notesection{Deviations from ideal behavior}{3.6}
+\practice{6}
+
+Two ideal assumptions fail under stress:
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.6cm}p{4.2cm}p{5.4cm}@{}}
+\toprule
+\textbf{Failed assumption} & \textbf{When it matters} & \textbf{Effect on measured $PV/nRT$}\\
+\midrule
+Particles have no volume & \answerblank[3.2cm]{high pressure} &
+  actual volume is larger than ideal $\to$ ratio \answerblank[1.6cm]{$>1$}\\
+Particles don't attract & \answerblank[3.5cm]{low temperature} &
+  attractions soften collisions, lowering $P$ $\to$ ratio
+  \answerblank[1.6cm]{$<1$}\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Gases behave most ideally at \answerblank[2.2cm]{high} temperature and
+\answerblank[2.2cm]{low} pressure --- particles are far apart (volume
+negligible) and fast-moving (attractions negligible).
+\end{apcnote}
+
+\notesub{Which gases deviate most?}
+
+Those with the strongest IMFs and largest molecules --- so \ce{H2O} and
+\ce{NH3} deviate far more than \ce{He} or \ce{H2}. This connects directly
+back to \ced{3.1}: deviation is an IMF story.
+
+\segment{GUIDED PRACTICE}{15}{Predict the deviation}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Most ideal behavior: \ce{He} at \SI{500}{\kelvin} \& \SI{0.1}{\atm},
+        or \ce{NH3} at \SI{200}{\kelvin} \& \SI{50}{\atm}?
+        \answerblank[5.7cm]{He (hot, dilute, weak IMFs)}
+  \item At very high pressure, is measured $V$ larger or smaller than ideal
+        predicts? \answerblank[3cm]{larger}
+  \item Which deviates more, \ce{CH4} or \ce{H2O}? Why in five words?
+        \answerblank[5.4cm]{\ce{H2O} --- hydrogen bonding}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Connecting to the equation}
+
+\notesection{Correcting the ideal gas law}{3.6}
+\practice{5}
+
+The van der Waals equation adjusts both failures:
+\[
+  \left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT
+\]
+The $a$ term corrects for \answerblank[2.6cm]{attractions}; the $b$ term
+corrects for \answerblank[3cm]{particle volume}.
+
+You will not be asked to compute with this on the AP exam, but you should be
+able to say \emph{which term addresses which failure}.
+
+\segment{APPLICATION}{20}{Explain the graph}
+
+A plot of $PV/nRT$ versus $P$ for \ce{CH4} at \SI{200}{\kelvin} dips below
+1 at moderate pressure, then rises above 1 at high pressure.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Explain the initial dip. \answerlines[2]{Intermolecular attractions
+        pull molecules together, reducing the force of wall collisions ---
+        measured $P$ is lower than ideal, so $PV/nRT < 1$.}
+  \item Explain the rise at high pressure. \answerlines[2]{Molecules are
+        squeezed close enough that their own volume is a significant
+        fraction of the container, so $V$ cannot shrink as the ideal law
+        predicts --- the ratio climbs above 1.}
+  \item Predict how the curve changes at \SI{500}{\kelvin}.
+        \answerlines[2]{The dip shrinks or disappears; faster molecules
+        overcome attractions, so behavior stays closer to ideal over a wider
+        pressure range.}
+\end{enumerate}
+
+\begin{exitticket}
+Under what two conditions does a real gas behave most ideally, and why?
+\answerlines[2]{High temperature and low pressure --- particles are far
+apart (their own volume is negligible) and moving fast enough that
+attractions barely affect collisions.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Solutions and Concentration}{Wed Sep 23}
+
+\begin{objectives}
+  \item Calculate molarity and perform dilution calculations.
+  \item Interpret and draw particulate representations of solutions.
+\end{objectives}
+
+\reading{Zumdahl \S4.1--4.3}{169--182}\quad\reading{\S11.1--11.3}{545--563}
+
+\begin{warmup}[3]
+  \item Gases are most ideal at what $T$ and $P$?
+        \answerblank[4cm]{high $T$, low $P$}
+  \item Which deviates more, \ce{Ne} or \ce{NH3}?
+        \answerblank[2.5cm]{\ce{NH3}}
+  \item Moles in \SI{58.5}{\gram} \ce{NaCl}:
+        \answerblank[2.5cm]{\SI{1.00}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Molarity}
+
+\notesection{Concentration}{3.7}
+\practice{5}
+
+\[
+  M = \answerblank[4.6cm]{$\dfrac{\text{moles of solute}}{\text{liters of solution}}$}
+\]
+
+Note ``liters of \emph{solution},'' not liters of solvent --- dissolving
+changes the volume.
+
+\begin{workedexample}[Worked example]
+What is the molarity of a solution made from \SI{11.7}{\gram} \ce{NaCl}
+diluted to \SI{250.0}{\milli\liter}?
+\[
+  n = \frac{11.7}{58.44} = \SI{0.200}{\mole}
+  \qquad M = \frac{0.200}{0.2500} = \SI{0.800}{\Molar}
+\]
+\end{workedexample}
+
+\notesub{Dilution}
+
+Adding solvent changes volume but not
+\answerblank[3.2cm]{moles of solute}:
+\[
+  M_1V_1 = \answerblank[2cm]{$M_2V_2$}
+\]
+
+\notesub{Electrolyte dissociation}
+
+\ce{NaCl(aq)} gives \answerblank[1.2cm]{2} mol of ions per mole dissolved;
+\ce{CaCl2(aq)} gives \answerblank[1.2cm]{3}. So \SI{0.10}{\Molar}
+\ce{CaCl2} is \answerblank[2cm]{\SI{0.20}{\Molar}} in \ce{Cl-}.
+
+\segment{GUIDED PRACTICE}{15}{Concentration drill}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Molarity of \SI{0.50}{\mole} in \SI{2.0}{\liter}:
+        \answerblank[2.6cm]{\SI{0.25}{\Molar}}
+  \item Moles in \SI{500.}{\milli\liter} of \SI{0.20}{\Molar}:
+        \answerblank[2.6cm]{\SI{0.10}{\mole}}
+  \item Dilute \SI{50.0}{\milli\liter} of \SI{6.0}{\Molar} to
+        \SI{300.}{\milli\liter}. New $M$:
+        \answerblank[2.6cm]{\SI{1.0}{\Molar}}
+  \item $[\ce{K+}]$ in \SI{0.15}{\Molar} \ce{K2SO4}:
+        \answerblank[2.6cm]{\SI{0.30}{\Molar}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Particulate representations}
+
+\notesection{Drawing what's really there}{3.8}
+\practice{1}
+
+AP asks you to \emph{draw} solutions. The rules:
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item Show ionic compounds as \answerblank[3cm]{separated ions}, never as
+        intact \ce{NaCl} units.
+  \item Show molecular solutes (sugar, ethanol) as
+        \answerblank[3.4cm]{whole molecules}.
+  \item Keep the \answerblank[2.7cm]{correct ratio} of ions.
+  \item Water is usually omitted for clarity --- say so in a caption.
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[thick] (0,0) rectangle (3.4,2.2);
+  \foreach \x/\y in {0.6/0.5, 1.5/1.5, 2.5/0.7, 1.0/1.0, 2.9/1.6}
+    {\node[circle,fill=black,inner sep=1.8pt] at (\x,\y) {};}
+  \foreach \x/\y in {1.0/0.4, 2.0/1.2, 0.5/1.6, 2.4/1.9, 1.8/0.5,
+                     2.9/1.0, 0.9/1.9, 1.4/0.9, 2.2/0.4, 0.5/1.1}
+    {\node[circle,draw,thick,inner sep=1.8pt] at (\x,\y) {};}
+  \node[below] at (1.7,-0.1) {\ce{CaCl2}: filled $=$ \ce{Ca^2+}, open $=$ \ce{Cl-} (1:2)};
+\end{tikzpicture}
+\end{center}
+
+\segment{APPLICATION}{20}{Solution reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item How would you prepare \SI{250.}{\milli\liter} of
+        \SI{0.100}{\Molar} \ce{KNO3} from solid? Give the mass and the
+        procedure. \answerlines[3]{$n = 0.0250$ mol $\times 101.11 =
+        \SI{2.53}{\gram}$. Weigh it, dissolve in less than 250 mL of water
+        in a volumetric flask, then add water \emph{to} the 250 mL mark.}
+  \item Draw the particulate view of \SI{0.10}{\Molar} \ce{Na2SO4}, showing
+        the correct ion ratio. \workspace[3cm]
+        \keyonly{\begin{apcanswer}Twice as many \ce{Na+} as \ce{SO4^2-},
+        all separated; sulfate may be drawn as a single labeled unit.\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+A student prepares a solution by adding \SI{0.10}{\mole} solute to exactly
+\SI{1.00}{\liter} of water and calls it \SI{0.10}{\Molar}. What is wrong?
+\answerlines[2]{Molarity uses liters of \emph{solution}. Adding solute to
+1.00 L of water gives slightly more than 1.00 L total, so the true
+concentration is slightly below 0.10 M.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Solubility and Separation}{Fri Sep 25}
+
+\begin{objectives}
+  \item Predict solubility from structure using ``like dissolves like.''
+  \item Match a separation technique to the property it exploits.
+\end{objectives}
+
+\reading{Zumdahl \S11.2}{551--559}\quad\reading{\S1.10}{53--57}
+
+\begin{warmup}[3]
+  \item $[\ce{Cl-}]$ in \SI{0.20}{\Molar} \ce{MgCl2}:
+        \answerblank[2.6cm]{\SI{0.40}{\Molar}}
+  \item Dilute \SI{10.}{\milli\liter} of \SI{2.0}{\Molar} to
+        \SI{100.}{\milli\liter}: \answerblank[2.6cm]{\SI{0.20}{\Molar}}
+  \item Strongest IMF in \ce{CH3OH}: \answerblank[3.5cm]{hydrogen bonding}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Like dissolves like}
+
+\notesection{Why things dissolve}{3.10}
+\practice{6}
+
+Dissolving happens when solute--solvent attractions are comparable to the
+solute--solute and solvent--solvent attractions being replaced. So
+\answerblank[2.6cm]{polar} solvents dissolve polar and ionic solutes, and
+\answerblank[2.6cm]{nonpolar} solvents dissolve nonpolar solutes.
+
+\begin{workedexample}[Worked example: two vitamins]
+Zumdahl contrasts vitamin A and vitamin C. Vitamin A is mostly C and H
+--- essentially nonpolar --- so it dissolves in body fat but not water
+(\term{hydrophobic}). Vitamin C carries many O--H and C--O bonds, making it
+polar and water-soluble (\term{hydrophilic}). This is why fat-soluble
+vitamins accumulate in tissue while excess vitamin C is excreted.
+\end{workedexample}
+
+For a long-chain alcohol, solubility in water \emph{falls} as the carbon
+chain grows, because the \answerblank[3.2cm]{nonpolar chain} increasingly
+outweighs the polar \answerblank[1.6cm]{O--H} group.
+
+\segment{GUIDED PRACTICE}{15}{Predict and justify}
+
+More soluble in water? Give the structural reason.
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{CH3OH} or \ce{CH3CH2CH2CH2CH3}:
+        \answerblank[6.4cm]{\ce{CH3OH} --- H-bonds with water}
+  \item \ce{NaCl} or \ce{I2}: \answerblank[6cm]{\ce{NaCl} --- ion--dipole}
+  \item \ce{I2} in water or in \ce{CCl4}:
+        \answerblank[6cm]{\ce{CCl4} --- both nonpolar}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Separation techniques}
+
+\notesection{Exploiting a difference}{3.9}
+\practice{4}
+
+Every separation exploits a \emph{difference in one physical property}:
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{3.2cm}p{4.4cm}p{5.6cm}@{}}
+\toprule
+\textbf{Technique} & \textbf{Property exploited} & \textbf{Use}\\
+\midrule
+Filtration & \answerblank[2.8cm]{particle size} & solid from liquid\\
+Distillation & \answerblank[2.8cm]{boiling point} & liquids that vaporize at
+  different $T$\\
+Chromatography & \answerblank[3.6cm]{relative attraction} to mobile vs
+  stationary phase & mixtures of similar substances\\
+\bottomrule
+\end{tabular}
+
+\notesub{Chromatography in one sentence}
+
+A component with stronger attraction to the \term{stationary phase} moves
+\answerblank[2cm]{slower}; one attracted more to the \term{mobile phase}
+travels \answerblank[2cm]{farther}.
+
+\segment{APPLICATION}{20}{Choose and justify}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Sand in salt water: name the technique(s) and the order.
+        \answerlines[2]{Filter first (particle size removes the sand), then
+        evaporate or distill to recover the salt from the water.}
+  \item On a paper chromatogram (polar stationary phase, nonpolar solvent),
+        which pigment travels farther --- polar or nonpolar? Justify.
+        \answerlines[2]{The nonpolar one --- it interacts weakly with the
+        polar paper and is carried along by the nonpolar mobile phase.}
+\end{enumerate}
+
+\begin{exitticket}
+Ethanol (bp \SI{78}{\celsius}) and water (bp \SI{100}{\celsius}) are mixed.
+Name the separation technique and the property it exploits.
+\answerlines[2]{Distillation --- the difference in boiling point, which
+itself reflects a difference in intermolecular forces.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Spectroscopy and Beer--Lambert}{Mon Sep 28}
+
+\begin{objectives}
+  \item Relate wavelength, frequency, and photon energy.
+  \item Match a region of the spectrum to the molecular transition it probes.
+  \item Use $A = \epsilon bc$ and a calibration curve.
+\end{objectives}
+
+\reading{Zumdahl \S7.1--7.2}{332--340}\quad\reading{Appendix 3}{1142--1144}
+
+\begin{warmup}[4]
+  \item More soluble in water: \ce{C6H14} or \ce{C2H5OH}?
+        \answerblank[2.6cm]{\ce{C2H5OH}}
+  \item Chromatography separates by: \answerblank[4cm]{relative attraction}
+  \item $[\ce{NO3-}]$ in \SI{0.050}{\Molar} \ce{Ca(NO3)2}:
+        \answerblank[2.6cm]{\SI{0.10}{\Molar}}
+  \item Distillation exploits differences in:
+        \answerblank[3cm]{boiling point}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Light and photons}
+
+\notesection{The electromagnetic spectrum}{3.11--3.12}
+\practice{5}
+
+\[
+  c = \lambda\nu \qquad E = h\nu = \answerblank[2.4cm]{$\dfrac{hc}{\lambda}$}
+\]
+with $c = \SI{3.00e8}{\meter\per\second}$ and
+$h = \SI{6.626e-34}{\joule\second}$.
+
+Short wavelength $\to$ \answerblank[2cm]{high} frequency $\to$
+\answerblank[2cm]{high} energy.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{3.2cm}p{3.4cm}p{6.2cm}@{}}
+\toprule
+\textbf{Region} & \textbf{Energy} & \textbf{Transition probed}\\
+\midrule
+Microwave & lowest & molecular \answerblank[2.2cm]{rotation}\\
+Infrared & low & bond \answerblank[2.6cm]{vibration}\\
+UV--visible & high & \answerblank[2.8cm]{electronic} transitions\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+The equations sheet gives $E = h\nu$ but not $\nu = c/\lambda$ --- you must
+supply that step yourself when given a wavelength. Watch units: $\lambda$
+must be in meters.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Photon calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Frequency of \SI{500}{\nano\meter} light:
+        \answerblank[3.4cm]{$6.00\times10^{14}$ s$^{-1}$}
+  \item Energy of one such photon:
+        \answerblank[3.4cm]{$3.98\times10^{-19}$ J}
+  \item Which has more energy per photon, red (700 nm) or blue (450 nm)?
+        \answerblank[2.4cm]{blue}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Beer--Lambert law}
+
+\notesection{Concentration from absorbance}{3.13}
+\practice{4}
+
+\[
+  A = \answerblank[2.4cm]{$\epsilon b c$}
+\]
+$A$ absorbance (unitless), $\epsilon$ molar absorptivity, $b$ path length,
+$c$ concentration.
+
+Because $A$ is directly proportional to $c$, a plot of $A$ versus $c$ is a
+straight line through the origin with slope
+\answerblank[1.8cm]{$\epsilon b$}. That plot is a
+\term{calibration curve}: measure a set of known standards, then read an
+unknown off the line.
+
+\begin{workedexample}[Worked example]
+Standards give a calibration line $A = 12.0\,c$ (with $c$ in
+\si{\mole\per\liter}, $b = \SI{1.0}{\centi\meter}$). An unknown reads
+$A = 0.60$.
+\[
+  c = \frac{A}{\epsilon b} = \frac{0.60}{12.0} = \SI{0.050}{\Molar}
+\]
+\end{workedexample}
+
+\begin{apctrap}
+The slope is $\epsilon b$, not the concentration. To find $c$ you
+\emph{divide} the unknown's absorbance by the slope --- a very common
+mis-step under time pressure.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Full spectroscopic analysis}
+
+A student measures these standards at \SI{525}{\nano\meter} in a
+\SI{1.00}{\centi\meter} cell:
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+$c$ (M) & 0.0020 & 0.0040 & 0.0060\\
+$A$ & 0.150 & 0.300 & 0.450\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Determine the slope, with units. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$0.150/0.0020 = \SI{75}{\per\Molar}$
+        (i.e.\ $\epsilon b = \SI{75}{\liter\per\mole}$ with
+        $b = \SI{1.00}{\centi\meter}$)\end{apcanswer}}
+  \item An unknown gives $A = 0.375$. Find its concentration.
+        \answerblank[3cm]{\SI{0.0050}{\Molar}}
+  \item Why must all measurements use the same wavelength and cell?
+        \answerlines[2]{$\epsilon$ depends on wavelength and $b$ on the
+        cell, so changing either changes the slope and invalidates the
+        calibration.}
+\end{enumerate}
+
+\begin{exitticket}
+A solution's absorbance doubles. What happened to its concentration, and
+why? \answerlines[2]{It doubled --- $A = \epsilon bc$ is directly
+proportional to $c$ when wavelength and path length are unchanged.}
+\end{exitticket}
+
+\end{document}

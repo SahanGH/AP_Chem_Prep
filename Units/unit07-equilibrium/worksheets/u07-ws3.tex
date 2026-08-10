@@ -1,0 +1,132 @@
+% U7 WS3 -- ICE tables, approximations, quadratics. Blocks 4-5.
+\documentclass{apchem-worksheet}
+
+\apcunit{7}
+\apcunittitle{Equilibrium}
+\apcdoctitle{Worksheet 3 \textbullet\ ICE Tables}
+\apcsubtitle{CED 7.7 \textbullet\ the 5\% check is part of the answer, not a formality}
+
+\begin{document}
+\wsheader[Set up Initial / Change / Equilibrium, drive the change row from
+the coefficients, then substitute into $K$ \textbullet\ approximate only
+when justified, and always report the percentage.]
+
+\problem[]{\ced{7.7} ICE tables and the BCA tables from Unit 4 have the
+same shape. State the one difference and why it arises.
+\answerlines[3]{In a BCA table the reaction runs to completion, so the
+change row is a known quantity fixed by the limiting reactant. In an ICE
+table the reaction stops partway, so the change is an unknown $x$ whose
+value is set by $K$. Both still drive the change row from the
+coefficients.}}
+
+\problem[]{\ced{7.7} $\ce{A <=> B + C}$ with
+$K = 1.0\times10^{-5}$ and $[\ce{A}]_0 = \SI{0.100}{\Molar}$.}
+\begin{parts}
+  \item Complete the equilibrium row: $[\ce{A}] = $
+        \answerblank[2.4cm]{$0.100 - x$}, $[\ce{B}] = [\ce{C}] = $
+        \answerblank[1.6cm]{$x$}
+  \item Write the $K$ expression in terms of $x$.
+        \answerblank[4.4cm]{$x^2/(0.100 - x)$}
+  \item Apply the small-$x$ approximation and solve.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$x^2/0.100 \approx 1.0\times10^{-5}$;
+        $x^2 = 1.0\times10^{-6}$;
+        $x = \mathbf{1.0\times10^{-3}}$~M\end{apcanswer}}
+  \item Carry out the 5\% check explicitly.
+        \answerlines[2]{$x/[\ce{A}]_0 = 1.0\times10^{-3}/0.100 = 1.0\%$,
+        which is below 5\%, so the approximation is justified.}
+  \item Give the three equilibrium concentrations.
+        \answerblank[8.3cm]{$[\ce{A}] = 0.099$; $[\ce{B}] = [\ce{C}] =
+        1.0\times10^{-3}$}
+\end{parts}
+
+\problem[]{\ced{7.7} $\ce{A <=> 2B}$ with
+$K = 4.0\times10^{-6}$ and $[\ce{A}]_0 = \SI{0.50}{\Molar}$.}
+\begin{parts}
+  \item Why is the change in B written as $+2x$ rather than $+x$?
+        \answerlines[2]{The coefficient of B is 2, so two moles of B form
+        for every mole of A consumed. The change row always follows the
+        coefficients.}
+  \item Solve for $[\ce{B}]$ at equilibrium. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$K = (2x)^2/(0.50-x) \approx 4x^2/0.50$;
+        $4x^2 = 2.0\times10^{-6}$; $x = 7.1\times10^{-4}$;
+        $[\ce{B}] = 2x = \mathbf{1.4\times10^{-3}}$~M\end{apcanswer}}
+  \item Check the approximation. \answerblank[4.4cm]{$0.14\%$ --- valid}
+\end{parts}
+
+\problem[]{\ced{7.7} The same setup as problem 2 --- $\ce{A <=> B + C}$
+with $[\ce{A}]_0 = 0.100$ --- but now $K = 0.20$.}
+\begin{parts}
+  \item Apply the small-$x$ approximation and report the value it gives.
+        \answerblank[3cm]{$x = 0.141$}
+  \item Carry out the check. What does it show?
+        \answerlines[2]{$x/[\ce{A}]_0 = 141\%$ --- the supposedly small $x$
+        exceeds the entire initial concentration, which is impossible. The
+        approximation is invalid.}
+  \item Solve properly with the quadratic. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$x^2 = 0.20(0.100 - x)$, so
+        $x^2 + 0.20x - 0.020 = 0$.
+        $x = [-0.20 + \sqrt{0.040 + 0.080}]/2 =
+        (-0.20 + 0.3464)/2 = \mathbf{0.073}$~M\end{apcanswer}}
+  \item By what percentage was the approximation wrong?
+        \answerblank[2.6cm]{about 93\%}
+\end{parts}
+
+\problem[]{\ced{7.7} For each case, predict whether the small-$x$
+approximation will hold, and say why:}
+\begin{parts}
+  \item $K = 1\times10^{-8}$, $[\ce{A}]_0 = 1.0$~M
+        \answerblank[6.9cm]{valid --- $K$ is minute beside $[\ce{A}]_0$}
+  \item $K = 2.0$, $[\ce{A}]_0 = 0.10$~M
+        \answerblank[5.4cm]{invalid --- $K$ exceeds $[\ce{A}]_0$}
+  \item $K = 1\times10^{-6}$, $[\ce{A}]_0 = 1\times10^{-5}$~M
+        \answerlines[3]{Invalid. Although $K$ is small in absolute terms,
+        the initial concentration is smaller still, and it is the
+        \emph{ratio} $[\ce{A}]_0/K$ that decides. Here that ratio is only
+        10, far below the rough threshold of a few hundred.}
+\end{parts}
+
+\problem[]{\ced{7.7} $\ce{H2 + I2 <=> 2HI}$ with $K = 50.0$ and both
+reactants starting at \SI{1.00}{\Molar}.}
+\begin{parts}
+  \item Write $K$ in terms of $x$ and explain why no quadratic formula is
+        needed. \answerlines[3]{$K = (2x)^2/[(1.00-x)(1.00-x)] =
+        [2x/(1.00-x)]^2$. Both sides are perfect squares, so taking the
+        square root of each gives a linear equation in $x$.}
+  \item Solve for $x$. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$2x/(1.00-x) = \sqrt{50.0} = 7.07$;
+        $2x = 7.07 - 7.07x$; $9.07x = 7.07$;
+        $x = \mathbf{0.780}$\end{apcanswer}}
+  \item Give the three equilibrium concentrations.
+        \answerblank[8.3cm]{$[\ce{H2}] = [\ce{I2}] = 0.220$;
+        $[\ce{HI}] = 1.56$}
+  \item Verify by substituting back into $K$. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(1.56)^2/(0.220)^2 = 2.43/0.0484 =
+        \mathbf{50.2}$ --- agrees with 50.0 to rounding
+        \checkmark\end{apcanswer}}
+\end{parts}
+
+\problem[]{\ced{7.7} Solve $\ce{A <=> 2B}$ with $K = 0.50$ and
+$[\ce{A}]_0 = \SI{1.00}{\Molar}$ using the quadratic formula.
+\workspace[3.4cm]
+\keyonly{\begin{apcanswer}$K = 4x^2/(1.00 - x) = 0.50$, so
+$4x^2 = 0.50 - 0.50x$ and $4x^2 + 0.50x - 0.50 = 0$.
+$x = [-0.50 + \sqrt{0.25 + 8.0}]/8 = (-0.50 + 2.872)/8 = \mathbf{0.297}$.
+So $[\ce{A}] = 0.703$~M and $[\ce{B}] = 0.593$~M.\end{apcanswer}}}
+
+\problem[]{\ced{7.7} Why is a negative root always discarded when solving
+an equilibrium quadratic?
+\answerlines[2]{A negative $x$ would mean a negative concentration for a
+species starting at zero, or more reactant consumed than was present. Only
+the physically possible root is kept.}}
+
+\begin{spiralstrip}{Unit 7 \textbullet\ blocks 1--3}
+  \item Reversing a reaction gives $K = $ \answerblank[1.8cm]{$1/K$}
+  \item Doubling coefficients gives $K = $ \answerblank[1.8cm]{$K^2$}
+  \item $K \gg 1$ favors: \answerblank[2.2cm]{products}
+  \item $Q > K$ means the system shifts:
+        \answerblank[1.8cm]{left}
+  \item Only what changes $K$? \answerblank[2.6cm]{temperature}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,176 @@
+% Ch18 WS4 -- electrolysis, Faraday's law, and a 10-point FRQ. Block 5.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{18}
+\apcunittitle{Electrochemistry}
+\apcdoctitle{Worksheet 4 \textbullet\ Electrolysis, Faraday's Law \& FRQ}
+\apcsubtitle{Zumdahl \S18.7--18.8 \textbullet\ the electron is a reagent; count it}
+
+\begin{document}
+\wsheader[$I = q/t$ \textbullet\ $F = \SI{96485}{\coulomb\per\mole}$
+e$^-$ \textbullet\ time in \textbf{seconds}. Molar masses
+(\si{\gram\per\mole}): \ce{Ag} 107.87 \textbullet\ \ce{Cu} 63.55
+\textbullet\ \ce{Cr} 52.00 \textbullet\ \ce{Al} 26.98 \textbullet\
+\ce{Ni} 58.69 \textbullet\ \ce{Au} 196.97.]
+
+\problem[]{Write the conversion chain from a measured current to a mass of
+plated metal, naming each step.
+\answerlines[4]{Current and time give charge, $q = It$. Charge divided by
+Faraday's constant gives moles of electrons. Moles of electrons divided by
+the number of electrons in the half-reaction gives moles of metal. Moles
+times molar mass gives the mass.}}
+
+\problem[]{How many moles of electrons are needed to deposit one mole of
+each metal?}
+\begin{parts}
+  \item \ce{Ag} from \ce{Ag+}: \answerblank[1.8cm]{1}
+  \item \ce{Cu} from \ce{Cu^2+}: \answerblank[1.8cm]{2}
+  \item \ce{Al} from \ce{Al^3+}: \answerblank[1.8cm]{3}
+  \item \ce{Cr} from \ce{Cr^3+}: \answerblank[1.8cm]{3}
+  \item Where does that number come from?
+        \answerblank[9cm]{the charge on the ion, via the half-reaction}
+\end{parts}
+
+\problem[]{A current of \SI{2.00}{\ampere} passes through \ce{AgNO3}
+solution for \SI{30.0}{\minute}.}
+\begin{parts}
+  \item Convert the time to seconds. \answerblank[2.4cm]{1800 s}
+  \item Calculate the charge passed. \answerblank[2.4cm]{3600 C}
+  \item Calculate the moles of electrons. \answerblank[2.6cm]{0.0373 mol}
+  \item Calculate the mass of silver deposited. \workspace[2cm]
+        \keyonly{\begin{apcanswer}\ce{Ag+ + e^- -> Ag}, so
+        mol Ag $= 0.0373$;
+        $m = (0.0373)(107.87) =
+        \mathbf{4.03}~\text{g}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{The same charge is now passed through \ce{CuSO4} solution
+instead --- \SI{1.50}{\ampere} for \SI{1.00}{\hour}.}
+\begin{parts}
+  \item Calculate the mass of copper deposited. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$q = (1.50)(3600) = 5400$~C;
+        mol e$^- = 5400/96485 = 0.0560$;
+        \ce{Cu^2+ + 2e^- -> Cu} so mol Cu $= 0.0280$;
+        $m = (0.0280)(63.55) =
+        \mathbf{1.78}~\text{g}$\end{apcanswer}}
+  \item A student forgets to divide by 2 and reports 3.56 g. By what factor
+        is that wrong, and what step did they skip?
+        \answerlines[2]{Wrong by a factor of 2. They converted moles of
+        electrons directly into moles of copper, ignoring that the
+        half-reaction requires two electrons per copper atom.}
+\end{parts}
+
+\problem[]{Working backwards.}
+\begin{parts}
+  \item How long, in hours, does it take to deposit \SI{5.00}{\gram} of
+        copper at \SI{2.00}{\ampere}? \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}mol Cu $= 5.00/63.55 = 0.0787$;
+        mol e$^- = 0.157$; $q = (0.157)(96485) = 15{,}183$~C;
+        $t = 15183/2.00 = 7591$~s $= \mathbf{2.11}$~h\end{apcanswer}}
+  \item What current is needed to deposit \SI{10.0}{\gram} of silver in
+        exactly \SI{1.00}{\hour}? \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}mol Ag $= 10.0/107.87 = 0.0927$;
+        mol e$^- = 0.0927$; $q = 8945$~C;
+        $I = 8945/3600 = \mathbf{2.48}~\text{A}$\end{apcanswer}}
+  \item Chromium is plated from \ce{Cr^3+} at \SI{5.00}{\ampere} for
+        \SI{2.00}{\hour}. Find the mass. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$q = (5.00)(7200) = 36{,}000$~C;
+        mol e$^- = 0.373$; mol Cr $= 0.373/3 = 0.124$;
+        $m = (0.124)(52.00) = \mathbf{6.47}~\text{g}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Two electrolytic cells are wired in series, so the same current
+passes through both for the same time. One contains \ce{AgNO3}, the other
+\ce{CuSO4}.}
+\begin{parts}
+  \item Which receives more charge?
+        \answerblank[6.4cm]{the same --- they are in series}
+  \item Which deposits more \emph{moles} of metal, and why?
+        \answerlines[3]{The silver cell, by a factor of two. Equal charge
+        means equal moles of electrons delivered to each, but silver needs
+        one electron per atom while copper needs two, so twice as many
+        moles of silver are produced.}
+  \item Does that mean the silver electrode gains more \emph{mass}?
+        Explain. \answerlines[2]{Yes, and by more than a factor of two:
+        silver has both the larger mole count and the larger molar mass
+        (107.87 against 63.55).}
+\end{parts}
+
+\problem[]{Industrial scale.}
+\begin{parts}
+  \item How much charge is required to produce \SI{1.00}{\kilo\gram} of
+        aluminium from \ce{Al^3+}? \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}mol Al $= 1000/26.98 = 37.1$;
+        mol e$^- = 3(37.1) = 111$;
+        $q = (111)(96485) =
+        \mathbf{1.07\times10^{7}}~\text{C}$\end{apcanswer}}
+  \item Explain, using two features of aluminium, why smelting it is so
+        energy-intensive. \answerlines[3]{Each aluminium atom requires
+        three electrons rather than one or two, and the \ce{Al^3+}/\ce{Al}
+        reduction potential is very negative ($-1.66$~V), so a large
+        applied voltage is needed as well as a large charge. Energy is
+        charge times voltage, and both factors are large.}
+  \item Why does recycling aluminium save so much energy compared with
+        producing it? \answerlines[2]{Melting and reforming existing
+        aluminium metal requires no electrolysis at all, so the enormous
+        electrical energy of reducing \ce{Al^3+} is avoided entirely.}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} An electrolytic cell is used to plate
+nickel onto a steel part from a solution of \ce{NiSO4}. A current of
+\SI{3.00}{\ampere} is passed for \SI{45.0}{\minute}.}
+\begin{parts}
+  \item Write the half-reaction occurring at the cathode.
+        \answerblank[6cm]{\ce{Ni^2+ + 2e^- -> Ni}}
+  \item Explain why the part being plated must be the cathode.
+        \answerlines[3]{Plating means depositing nickel metal, which
+        requires reducing \ce{Ni^2+} to \ce{Ni}. Reduction always occurs at
+        the cathode, in electrolytic cells exactly as in galvanic ones, so
+        the part must be connected as the cathode.}
+  \item Calculate the mass of nickel deposited. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$t = 45.0 \times 60 = 2700$~s;
+        $q = (3.00)(2700) = 8100$~C;
+        mol e$^- = 8100/96485 = 0.0840$;
+        mol Ni $= 0.0840/2 = 0.0420$;
+        $m = (0.0420)(58.69) =
+        \mathbf{2.46}~\text{g}$\end{apcanswer}}
+  \item Given $E^\circ$ for \ce{Ni^2+/Ni} is $-0.23$~V and for the anode
+        reaction $+1.23$~V, calculate $E^\circ_{\text{cell}}$ and state
+        what it tells you about the cell. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$E^\circ_{\text{cell}} = -0.23 - 1.23 =
+        \mathbf{-1.46}~\text{V}$. Negative, so the reaction is
+        thermodynamically unfavored and the cell is
+        \textbf{electrolytic} --- it requires an external applied potential
+        of more than 1.46 V.\end{apcanswer}}
+  \item Calculate $\Delta G^\circ$ for the cell reaction, taking $n = 2$.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -(2)(96485)(-1.46) =
+        +281{,}736~\text{J} = \mathbf{+282}~\text{kJ}$ --- positive, as
+        expected for an unfavored process\end{apcanswer}}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 1 pt} balanced half-reaction with 2 electrons \textbullet\
+\textbf{(b) 2 pts} 1 identifies that plating requires reduction, 1 states
+reduction occurs at the cathode in \emph{all} cells --- an answer relying on
+the electrode's sign earns 0 \textbullet\ \textbf{(c) 4 pts} 1 time
+converted to seconds, 1 charge, 1 moles of electrons divided by 2, 1 mass
+$= 2.46$~g \textbullet\ \textbf{(d) 2 pts} 1 $E^\circ = -1.46$~V, 1
+identifies the cell as electrolytic and requiring an applied potential
+\textbullet\ \textbf{(e) 1 pt} $\Delta G^\circ = +282$~kJ with the correct
+positive sign.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 18 \textbullet\ blocks 1--4}
+  \item At equilibrium a cell has $E = $ \answerblank[1.6cm]{0}
+  \item Standard conditions correspond to $Q = $ \answerblank[1.6cm]{1}
+  \item In a concentration cell, the anode is the:
+        \answerblank[3cm]{dilute side}
+  \item $\Delta G^\circ = -nFE^\circ$; if $E^\circ < 0$ then $\Delta G^\circ$
+        is \answerblank[2cm]{positive}
+  \item Le Ch\^atelier applies to a running cell?
+        \answerblank[1.6cm]{no}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,326 @@
+% Zumdahl Chapter 10 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{10}
+\apcunittitle{Liquids and Solids}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S10.1--10.8 \textbullet\ 50 minutes \textbullet\ water data provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Unit-cell calculations (\S10.3--10.4) and the Clausius--Clapeyron equation
+(\S10.8) were marked enrichment in the notes and do not appear on this test.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- IMFs ------------------------------------------------------------------
+\begin{mcq}
+  Which intermolecular force is present in all substances?
+  \choices
+    \choice{dipole--dipole}
+    \choice{hydrogen bonding}
+    \correct{London dispersion}
+    \choice{ion--dipole}
+\end{mcq}
+\why{Any electron cloud produces instantaneous dipoles.}
+
+\begin{mcq}
+  Which substance exhibits hydrogen bonding?
+  \choices
+    \choice{\ce{CH3F}}
+    \correct{\ce{CH3NH2}}
+    \choice{\ce{CH3OCH3}}
+    \choice{\ce{H2S}}
+\end{mcq}
+\why{Requires H bonded directly to N, O, or F --- only the N--H qualifies.}
+\distractor{C}{has oxygen but no H attached to it}
+
+\begin{mcq}
+  \ce{BI3} is nonpolar and boils at \SI{210}{\celsius}; \ce{NH3} hydrogen
+  bonds and boils at \SI{-33}{\celsius}. The best explanation is that
+  \choices
+    \correct{\ce{BI3}'s much larger electron cloud gives very strong
+      dispersion forces}
+    \choice{\ce{NH3} does not really hydrogen bond}
+    \choice{\ce{BI3} is ionic}
+    \choice{boiling point is unrelated to intermolecular forces}
+\end{mcq}
+\why{Magnitude, not force type, decides when molecular sizes differ
+greatly.}
+
+\begin{mcq}
+  Which property \emph{decreases} as intermolecular forces strengthen?
+  \choices
+    \choice{boiling point}
+    \choice{surface tension}
+    \correct{vapour pressure}
+    \choice{viscosity}
+\end{mcq}
+\why{Strong IMFs keep molecules in the liquid, so fewer escape.}
+
+% ---- liquid state ----------------------------------------------------------
+\begin{mcq}
+  Water forms a concave meniscus in a glass tube because
+  \choices
+    \correct{its adhesive forces to glass exceed its cohesive forces}
+    \choice{its cohesive forces exceed its adhesive forces}
+    \choice{glass is nonpolar}
+    \choice{water has low surface tension}
+\end{mcq}
+\why{Water wets glass and climbs it; mercury does the opposite.}
+
+\begin{mcq}
+  A liquid droplet forms a sphere in free fall because
+  \choices
+    \choice{gravity compresses it}
+    \correct{surface tension minimizes the surface area}
+    \choice{air pressure is uniform}
+    \choice{the liquid is nonpolar}
+\end{mcq}
+\why{A sphere is the minimum-surface shape for a given volume.}
+
+\begin{mcq}
+  Viscosity is best described as a liquid's
+  \choices
+    \choice{tendency to evaporate}
+    \correct{resistance to flow}
+    \choice{ability to dissolve solids}
+    \choice{surface curvature}
+\end{mcq}
+\why{It rises with stronger IMFs and with molecular size or chain length.}
+
+% ---- solids ----------------------------------------------------------------
+\begin{mcq}
+  A solid melts at \SI{2800}{\celsius}, is extremely hard, and does not
+  conduct in any phase. It is
+  \choices
+    \choice{ionic}
+    \choice{metallic}
+    \correct{network covalent}
+    \choice{molecular}
+\end{mcq}
+\why{Covalent bonds throughout the lattice with no mobile charges.}
+\distractor{A}{ionic solids conduct when molten}
+
+\begin{mcq}
+  Which solid conducts electricity in the solid state?
+  \choices
+    \choice{\ce{NaCl}}
+    \correct{Cu}
+    \choice{\ce{SiO2}}
+    \choice{ice}
+\end{mcq}
+\why{Delocalized electrons are mobile in any phase.}
+
+\begin{mcq}
+  Metals are malleable but ionic solids are brittle because, when layers
+  shift,
+  \choices
+    \correct{the electron sea flows with metal layers, but ionic layers
+      bring like charges into contact}
+    \choice{metals have weaker bonds}
+    \choice{ionic solids contain no charged particles}
+    \choice{metals melt at lower temperatures}
+\end{mcq}
+\why{Layer-shift repulsion is the whole difference.}
+
+\begin{mcq}
+  Steel is harder than pure iron because carbon atoms
+  \choices
+    \choice{replace iron atoms in the lattice}
+    \correct{occupy interstitial holes and impede layer sliding}
+    \choice{bond ionically to iron}
+    \choice{remove the delocalized electrons}
+\end{mcq}
+\why{Interstitial alloy; conduction is unaffected.}
+\distractor{A}{that describes a substitutional alloy such as brass}
+
+\begin{mcq}
+  Graphite conducts electricity but diamond does not because in graphite
+  \choices
+    \choice{carbon atoms are ionized}
+    \correct{each sp$^2$ carbon has a delocalized $p$ electron}
+    \choice{the carbon atoms are sp$^3$ hybridized}
+    \choice{the layers are held by covalent bonds}
+\end{mcq}
+\why{Diamond's electrons are all localized in $\sigma$ bonds.}
+\distractor{D}{graphite's layers are held by dispersion forces, not covalent
+bonds}
+
+\begin{mcq}
+  Melting solid \ce{CO2} requires overcoming
+  \choices
+    \choice{covalent C=O bonds}
+    \correct{dispersion forces between molecules}
+    \choice{ionic attractions}
+    \choice{hydrogen bonds}
+\end{mcq}
+\why{Molecular solid --- only intermolecular forces break.}
+
+\begin{mcq}
+  Ice is less dense than liquid water because hydrogen bonding
+  \choices
+    \correct{holds molecules in an open lattice with more empty space}
+    \choice{makes the molecules heavier}
+    \choice{is weaker in the solid}
+    \choice{converts water to a network covalent solid}
+\end{mcq}
+\why{The hexagonal arrangement is more open than the liquid.}
+
+% ---- vapour pressure and phase change --------------------------------------
+\begin{mcq}
+  Vapour pressure depends on
+  \choices
+    \choice{the amount of liquid present}
+    \correct{the temperature and the strength of intermolecular forces}
+    \choice{the volume of the container}
+    \choice{the surface area of the liquid}
+\end{mcq}
+\why{It is an equilibrium property, independent of quantity.}
+
+\begin{mcq}
+  A liquid boils when its vapour pressure
+  \choices
+    \choice{reaches zero}
+    \correct{equals the external pressure}
+    \choice{exceeds its surface tension}
+    \choice{equals its viscosity}
+\end{mcq}
+\why{Which is why altitude and pressure cookers change boiling
+temperature.}
+
+\begin{mcq}
+  During a phase change at constant pressure, the added energy
+  \choices
+    \choice{raises the temperature steadily}
+    \correct{overcomes intermolecular forces at constant temperature}
+    \choice{breaks covalent bonds}
+    \choice{is lost to the surroundings}
+\end{mcq}
+\why{The heating-curve plateau.}
+
+\begin{mcq}
+  For water, $\Delta H_{\text{vap}}$ is about seven times
+  $\Delta H_{\text{fus}}$ because vaporizing
+  \choices
+    \correct{separates molecules almost completely, while melting only
+      loosens them}
+    \choice{breaks O--H covalent bonds}
+    \choice{occurs at a higher temperature}
+    \choice{requires a catalyst}
+\end{mcq}
+\why{Melting leaves most intermolecular contacts intact.}
+\distractor{B}{no covalent bonds break in either phase change}
+
+\begin{mcq}
+  Steam at \SI{100}{\celsius} causes worse burns than liquid water at
+  \SI{100}{\celsius} because the steam
+  \choices
+    \correct{releases its enthalpy of vaporization on condensing}
+    \choice{is at a higher temperature}
+    \choice{has a higher specific heat}
+    \choice{is chemically more reactive}
+\end{mcq}
+\why{About \SI{40.7}{\kilo\joule\per\mole} delivered before any cooling
+begins.}
+\distractor{B}{both are at \SI{100}{\celsius} --- that is the point}
+
+\begin{mcq}
+  Water boils at a lower temperature in Denver than at sea level because
+  \choices
+    \choice{water is purer at altitude}
+    \correct{the lower atmospheric pressure is matched at a lower vapour
+      pressure}
+    \choice{the air is colder}
+    \choice{water's $\Delta H_{\text{vap}}$ changes with altitude}
+\end{mcq}
+\why{Boiling requires vapour pressure to equal external pressure.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+\begin{apcnote}[Water data]
+$c_{\text{ice}} = 2.09$ \textbullet\ $c_{\text{water}} = 4.184$ \textbullet\
+$c_{\text{steam}} = 2.0$ \si{\joule\per\gram\per\celsius} \textbullet\
+$\Delta H_{\text{fus}} = \SI{6.02}{\kilo\joule\per\mole}$ \textbullet\
+$\Delta H_{\text{vap}} = \SI{40.7}{\kilo\joule\per\mole}$ \textbullet\
+$M = \SI{18.02}{\gram\per\mole}$
+\end{apcnote}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S10.8 \textbullet\ phase-change energy}
+
+A \SI{54.06}{\gram} sample of ice at \SI{0}{\celsius} is heated until it is
+entirely liquid water at \SI{50.0}{\celsius}.
+
+\begin{parts}
+  \item Calculate the energy needed to melt the ice. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$n = 54.06/18.02 = \SI{3.00}{\mole}$;
+        $q = 3.00 \times 6.02 = \SI{18.1}{\kilo\joule}$\end{apcanswer}}
+  \item Calculate the energy needed to warm the resulting water to
+        \SI{50.0}{\celsius}. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$q = (54.06)(4.184)(50.0) =
+        \SI{11310}{\joule} = \SI{11.3}{\kilo\joule}$\end{apcanswer}}
+  \item State the total energy required, and explain why the temperature
+        did not rise during the first stage.
+        \answerlines[2]{\SI{29.4}{\kilo\joule} total. During melting the
+        energy overcame hydrogen bonds holding the lattice rather than
+        increasing average kinetic energy, which is what temperature
+        measures.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) converts to moles before applying $\Delta H_{\text{fus}}$}
+  \rpoint{1}{(a) \SI{18.1}{\kilo\joule}}
+  \rpoint{1}{(b) \SI{11.3}{\kilo\joule} using mass, not moles}
+  \rpoint{1}{(c) total AND the IMF-versus-kinetic-energy explanation}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S10.1--10.7 \textbullet\ structure and properties}
+
+The table gives data for four solids.
+
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Substance & mp (\si{\celsius}) & Conducts as solid? & Conducts when molten?\\
+\midrule
+W & 2 & no & no\\
+X & 1074 & no & yes\\
+Y & 1495 & yes & yes\\
+Z & 1610 & no & no\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Substance Z is extremely hard; substance W is soft.
+
+\begin{parts}
+  \item Classify each substance by solid type.
+        \answerlines[2]{W molecular, X ionic, Y metallic, Z network
+        covalent.}
+  \item Explain how the conductivity data alone distinguish X from Y.
+        \answerlines[2]{Y conducts as a solid, so its charge carriers are
+        delocalized electrons --- metallic. X conducts only when molten, so
+        its carriers are ions that must be freed from a lattice --- ionic.}
+  \item Predict which substance is most likely to shatter when struck, and
+        explain at the particle level. \answerlines[3]{X. A blow shifts one
+        layer of the ionic lattice, bringing like charges into alignment;
+        the resulting repulsion splits the crystal. Y deforms instead,
+        because its electron sea flows with the shifting layers.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt for W and Z; 1 pt for X and Y}
+  \rpoint{1}{(b) names electrons vs ions as the respective carriers}
+  \rpoint{1}{(c) selects X AND gives the like-charge-alignment mechanism}
+\end{rubric}
+
+\examtotal
+
+\end{document}

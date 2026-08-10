@@ -1,0 +1,106 @@
+% U3 WS5 -- Type C: spectroscopy, Beer-Lambert, and a long FRQ. Block 8.
+\documentclass{apchem-worksheet}
+
+\apcunit{3}
+\apcunittitle{Properties of Substances and Mixtures}
+\apcdoctitle{Worksheet 5 \textbullet\ Spectroscopy \& FRQ Practice}
+\apcsubtitle{CED 3.11--3.13 \textbullet\ answer fully, then self-score against the rubric}
+
+\begin{document}
+\wsheader[Constants: $c = \SI{3.00e8}{\meter\per\second}$,
+$h = \SI{6.626e-34}{\joule\second}$. The equations sheet gives $E = h\nu$
+but not $\nu = c/\lambda$ --- supply that step yourself.]
+
+\problem[3.11]{Match each spectroscopic region to the molecular transition
+it probes:}
+\begin{parts}
+  \item Microwave: \answerblank[4.5cm]{molecular rotation}
+  \item Infrared: \answerblank[4.5cm]{bond vibration}
+  \item Ultraviolet--visible: \answerblank[4.5cm]{electronic transitions}
+\end{parts}
+
+\problem[3.12]{Photon calculations:}
+\begin{parts}
+  \item Frequency of \SI{400.}{\nano\meter} light:
+        \answerblank[3.6cm]{$7.50\times10^{14}$ s$^{-1}$}
+  \item Energy of one photon at that wavelength:
+        \answerblank[3.6cm]{$4.97\times10^{-19}$ J}
+  \item Energy of one mole of those photons:
+        \answerblank[3.6cm]{\SI{299}{\kilo\joule\per\mole}}
+  \item A photon of \SI{200}{\nano\meter} light has how many times the
+        energy of one at \SI{600}{\nano\meter}? Answer without a
+        calculator. \answerblank[2.6cm]{3 times}
+\end{parts}
+
+\problem[3.13]{Beer--Lambert basics. $A = \epsilon bc$.}
+\begin{parts}
+  \item A solution has $A = 0.480$ in a \SI{1.00}{\centi\meter} cell with
+        $\epsilon = \SI{240}{\per\Molar\per\centi\meter}$. Find $c$.
+        \answerblank[3cm]{\SI{0.00200}{\Molar}}
+  \item If the same solution is measured in a \SI{2.00}{\centi\meter} cell,
+        what is $A$? \answerblank[2.4cm]{0.960}
+  \item Why does absorbance have no units?
+        \answerlines[2]{It is a ratio of transmitted to incident light
+        intensity --- the units cancel.}
+\end{parts}
+
+\problem[3.13]{\textbf{Long FRQ (10 points).} A student determines the
+concentration of a copper(II) solution by visible spectroscopy. Standards
+are measured at \SI{635}{\nano\meter} in a \SI{1.00}{\centi\meter} cell:}
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+$c$ (M) & 0.0100 & 0.0200 & 0.0300 & 0.0400\\
+$A$ & 0.125 & 0.250 & 0.375 & 0.500\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item On the axes below, plot $A$ versus $c$ and draw the best-fit line.
+        \workspace[4.6cm]
+        \keyonly{\begin{apcanswer}Straight line through the origin, points
+        collinear.\end{apcanswer}}
+  \item Determine the slope of the line, including units.
+        \answerlines[2]{$0.500/0.0400 = \SI{12.5}{\per\Molar}$ (this equals
+        $\epsilon b$).}
+  \item Calculate $\epsilon$, stating its units.
+        \answerlines[2]{$\epsilon = \text{slope}/b = 12.5/1.00 =
+        \SI{12.5}{\per\Molar\per\centi\meter}$.}
+  \item An unknown gives $A = 0.300$. Determine its concentration.
+        \answerlines[2]{$c = 0.300/12.5 = \SI{0.0240}{\Molar}$.}
+  \item The student dilutes the unknown by half and re-measures. Predict the
+        new absorbance and justify. \answerlines[2]{$A = 0.150$ ---
+        absorbance is directly proportional to concentration at fixed
+        $\lambda$ and $b$.}
+  \item Explain why the calibration must be performed at a single fixed
+        wavelength. \answerlines[2]{$\epsilon$ is wavelength-dependent, so
+        changing $\lambda$ changes the slope and the calibration no longer
+        applies.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 correctly plotted points, 1 straight best-fit line
+through the origin \textbullet\ \textbf{(b) 2 pts} 1 slope value, 1 units
+\textbullet\ \textbf{(c) 1 pt} $\epsilon$ with $b$ divided out
+\textbullet\ \textbf{(d) 2 pts} 1 divides by slope (not multiplies), 1
+correct value \textbullet\ \textbf{(e) 1 pt} 0.150 with proportionality
+stated \textbullet\ \textbf{(f) 1 pt} names $\epsilon$'s wavelength
+dependence \textbullet\ \textbf{1 pt} overall: all concentrations carry
+units and sig figs.
+\end{apcnote}
+
+\begin{spiralstrip}{Unit 3 \textbullet\ full unit}
+  \item Which travels farther on polar paper with nonpolar solvent, a polar
+        or nonpolar dye? \answerblank[3cm]{nonpolar}
+  \item $PV/nRT < 1$ is caused by: \answerblank[3.5cm]{attractions}
+  \item $[\ce{K+}]$ in \SI{0.25}{\Molar} \ce{K3PO4}:
+        \answerblank[2.6cm]{\SI{0.75}{\Molar}}
+  \item Solid type of \ce{SiO2}: \answerblank[3.5cm]{covalent network}
+  \item Which has higher energy photons, IR or UV?
+        \answerblank[2cm]{UV}
+\end{spiralstrip}
+
+\end{document}

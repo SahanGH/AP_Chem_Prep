@@ -1,0 +1,306 @@
+% Zumdahl Chapter 14 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{14}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S14.1--14.9 \textbullet\ 50 minutes \textbullet\ $K$ values provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \S14.1--14.9. Nothing from \S14.10 (oxides) or \S14.11 (the Lewis
+model) appears --- both were marked enrichment in the notes, and the Lewis
+model is not on the AP framework.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- definitions and conjugates --------------------------------------------
+\begin{mcq}
+  According to the Br\o nsted--Lowry model, an acid is
+  \choices
+    \choice{a substance that produces \ce{OH-} in water}
+    \correct{a proton donor}
+    \choice{an electron-pair acceptor}
+    \choice{any substance with a pH below 7}
+\end{mcq}
+\why{Arrhenius gives the first; Lewis gives the third.}
+
+\begin{mcq}
+  The conjugate base of \ce{H2PO4^-} is
+  \choices
+    \choice{\ce{H3PO4}}
+    \correct{\ce{HPO4^2-}}
+    \choice{\ce{PO4^3-}}
+    \choice{\ce{OH-}}
+\end{mcq}
+\why{Remove one proton.}
+\distractor{A}{that is the conjugate ACID}
+
+\begin{mcq}
+  Water can act as a Br\o nsted--Lowry base because its oxygen
+  \choices
+    \correct{has unshared electron pairs that can bond to \ce{H+}}
+    \choice{is negatively charged overall}
+    \choice{contains hydrogen atoms}
+    \choice{is more electronegative than hydrogen}
+\end{mcq}
+\why{Accepting a proton means providing a lone pair to bond with it.}
+
+\begin{mcq}
+  Which species is the strongest base?
+  \choices
+    \choice{\ce{Cl-}}
+    \choice{\ce{F-}}
+    \correct{\ce{CN-}}
+    \choice{\ce{NO3^-}}
+\end{mcq}
+\why{Base strength runs opposite to conjugate acid strength, and \ce{HCN} is
+by far the weakest of the parent acids.}
+
+% ---- strength and Ka -------------------------------------------------------
+\begin{mcq}
+  A larger value of $K_a$ indicates
+  \choices
+    \correct{a stronger acid}
+    \choice{a weaker acid}
+    \choice{a more concentrated solution}
+    \choice{a higher pH}
+\end{mcq}
+\why{$K_a$ measures the extent of ionization.}
+
+\begin{mcq}
+  Acid A has pK$_a$ 2.5 and acid B has pK$_a$ 7.5. Acid A is
+  \choices
+    \choice{weaker than B}
+    \correct{stronger than B by a factor of $10^5$ in $K_a$}
+    \choice{stronger than B by a factor of 3}
+    \choice{the same strength as B}
+\end{mcq}
+\why{pK$_a$ is a logarithmic scale; a difference of 5 units is $10^5$.}
+
+\begin{mcq}
+  The stronger an acid, the
+  \choices
+    \choice{stronger its conjugate base}
+    \correct{weaker its conjugate base}
+    \choice{higher its pK$_a$}
+    \choice{lower its concentration}
+\end{mcq}
+\why{An acid that readily gives up a proton yields an anion with little
+affinity to reclaim it.}
+
+% ---- pH scale --------------------------------------------------------------
+\begin{mcq}
+  At \SI{25}{\celsius}, $K_w$ equals
+  \choices
+    \choice{$1.0\times10^{-7}$}
+    \correct{$1.0\times10^{-14}$}
+    \choice{$1.0\times10^{7}$}
+    \choice{14.00}
+\end{mcq}
+\why{$K_w = [\ce{H+}][\ce{OH-}]$.}
+\distractor{A}{that is $[\ce{H+}]$ in pure water}
+
+\begin{mcq}
+  A solution with pH 3 is how many times more acidic than one with pH 6?
+  \choices
+    \choice{2}
+    \choice{3}
+    \choice{30}
+    \correct{1000}
+\end{mcq}
+\why{Each pH unit is a factor of 10, and $10^3 = 1000$.}
+
+\begin{mcq}
+  Pure water at \SI{50}{\celsius} has a pH slightly below 7. This solution
+  is
+  \choices
+    \choice{acidic}
+    \correct{neutral, because $[\ce{H+}] = [\ce{OH-}]$}
+    \choice{basic}
+    \choice{impossible}
+\end{mcq}
+\why{Neutrality is the equality, not the number 7 --- $K_w$ rises with
+temperature.}
+
+\begin{mcq}
+  If pOH $= 4.20$, then pH equals
+  \choices
+    \choice{4.20}
+    \correct{9.80}
+    \choice{10.20}
+    \choice{$-4.20$}
+\end{mcq}
+\why{pH $+$ pOH $= 14.00$ at \SI{25}{\celsius}.}
+
+% ---- strong acids and bases ------------------------------------------------
+\begin{mcq}
+  The pH of \SI{0.0010}{\Molar} \ce{HCl} is
+  \choices
+    \choice{1.00}
+    \choice{2.00}
+    \correct{3.00}
+    \choice{11.00}
+\end{mcq}
+\why{Strong acid, so $[\ce{H+}] = 0.0010$.}
+
+\begin{mcq}
+  The pH of \SI{0.010}{\Molar} \ce{Ba(OH)2} is
+  \choices
+    \choice{12.00}
+    \correct{12.30}
+    \choice{11.70}
+    \choice{2.00}
+\end{mcq}
+\why{Two hydroxides per formula unit: $[\ce{OH-}] = 0.020$, pOH $= 1.70$.}
+\distractor{A}{forgot to double the hydroxide concentration}
+
+\begin{mcq}
+  Which solution has the lowest pH?
+  \choices
+    \correct{\SI{0.10}{\Molar} \ce{HCl}}
+    \choice{\SI{0.10}{\Molar} \ce{HF}}
+    \choice{\SI{0.10}{\Molar} \ce{HC2H3O2}}
+    \choice{\SI{0.10}{\Molar} \ce{HCN}}
+\end{mcq}
+\why{Same concentration, but only \ce{HCl} ionizes completely.}
+
+% ---- weak acids and bases --------------------------------------------------
+\begin{mcq}
+  For a weak acid solution, the small-$x$ approximation gives
+  $[\ce{H+}]$ approximately equal to
+  \choices
+    \correct{$\sqrt{K_aC_0}$}
+    \choice{$K_aC_0$}
+    \choice{$K_a/C_0$}
+    \choice{$C_0$}
+\end{mcq}
+\why{From $K_a \approx x^2/C_0$.}
+
+\begin{mcq}
+  Diluting a weak acid solution causes the percent dissociation to
+  \choices
+    \correct{increase}
+    \choice{decrease}
+    \choice{stay the same}
+    \choice{become zero}
+\end{mcq}
+\why{$x$ falls as the square root of $C_0$ while $C_0$ falls linearly, so
+their ratio grows.}
+\distractor{B}{confuses percent dissociation with $[\ce{H+}]$, which does
+decrease}
+
+\begin{mcq}
+  When solving a weak \emph{base} problem, the value of $x$ obtained from
+  the ICE table equals
+  \choices
+    \choice{$[\ce{H+}]$}
+    \correct{$[\ce{OH-}]$}
+    \choice{the pH}
+    \choice{$K_b$}
+\end{mcq}
+\why{Which is why the answer must be converted through pOH.}
+
+\begin{mcq}
+  For a conjugate acid--base pair, $K_a \times K_b$ equals
+  \choices
+    \choice{1}
+    \correct{$K_w$}
+    \choice{$K_a/K_b$}
+    \choice{14}
+\end{mcq}
+\why{Adding the two reactions gives the autoionization of water.}
+
+% ---- salts and structure ---------------------------------------------------
+\begin{mcq}
+  An aqueous solution of \ce{NH4Cl} is
+  \choices
+    \correct{acidic}
+    \choice{basic}
+    \choice{neutral}
+    \choice{acidic or basic depending on concentration}
+\end{mcq}
+\why{\ce{NH4+} is the conjugate acid of a weak base; \ce{Cl-} is inert.}
+
+\begin{mcq}
+  Which is the strongest acid?
+  \choices
+    \choice{\ce{HClO}}
+    \choice{\ce{HClO2}}
+    \choice{\ce{HClO3}}
+    \correct{\ce{HClO4}}
+\end{mcq}
+\why{More electronegative oxygens weaken the O--H bond and better stabilize
+the conjugate base.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+$K_a$: \ce{HF} $7.2\times10^{-4}$ \textbullet\ \ce{HC2H3O2}
+$1.8\times10^{-5}$ \textbullet\ \ce{HOCl} $3.5\times10^{-8}$ \textbullet\
+\ce{HCN} $6.2\times10^{-10}$. $K_b$: \ce{NH3} $1.8\times10^{-5}$.
+$K_w = 1.0\times10^{-14}$.
+\end{apcnote}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S14.5 \textbullet\ weak acid equilibrium}
+
+A \SI{0.250}{\Molar} solution of acetic acid is prepared.
+
+\begin{parts}
+  \item Write the ionization equation and the $K_a$ expression.
+        \answerlines[2]{\ce{HC2H3O2(aq) <=> H+(aq) + C2H3O2^-(aq)};
+        $K_a = [\ce{H+}][\ce{C2H3O2^-}]/[\ce{HC2H3O2}]$.}
+  \item Calculate the pH, showing the ICE setup. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx (1.8\times10^{-5})(0.250) =
+        4.5\times10^{-6}$; $x = 2.12\times10^{-3}$;
+        pH $= 2.67$\end{apcanswer}}
+  \item Verify that the approximation used was valid.
+        \answerlines[2]{$2.12\times10^{-3}/0.250 = 0.85\%$, well below the
+        5\% threshold, so the approximation is justified.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) equation and expression both correct}
+  \rpoint{2}{(b) 1 pt ICE setup with $x^2/(C_0-x)$; 1 pt pH $= 2.67$}
+  \rpoint{1}{(c) computes the percentage AND compares to 5\% --- asserting
+    validity without the number earns 0}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S14.6--14.8 \textbullet\ conjugates and salts}
+
+Sodium cyanide, \ce{NaCN}, is dissolved in water to give a
+\SI{0.100}{\Molar} solution.
+
+\begin{parts}
+  \item Predict whether the solution is acidic, basic, or neutral, and
+        justify by considering both ions. \answerlines[3]{Basic. \ce{Na+} is
+        the cation of a strong base and does not react with water.
+        \ce{CN-} is the conjugate base of the very weak acid \ce{HCN}, so it
+        accepts a proton from water and produces \ce{OH-}.}
+  \item Write the hydrolysis equation and calculate $K_b$ for \ce{CN-}.
+        \answerlines[2]{\ce{CN^-(aq) + H2O(l) <=> HCN(aq) + OH^-(aq)};
+        $K_b = 1.0\times10^{-14}/6.2\times10^{-10} = 1.6\times10^{-5}$.}
+  \item Calculate the pH of the solution. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x^2/0.100 \approx 1.6\times10^{-5}$;
+        $x = 1.27\times10^{-3} = [\ce{OH-}]$; pOH $= 2.90$;
+        pH $= 11.10$\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) basic, with BOTH ions addressed --- discussing only
+    \ce{CN-} earns 0}
+  \rpoint{1}{(b) hydrolysis equation with \ce{OH-} as a product}
+  \rpoint{1}{(b) $K_b = 1.6\times10^{-5}$ from $K_w/K_a$}
+  \rpoint{1}{(c) pH $= 11.10$ via pOH --- reporting $-\log x$ as the pH
+    earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

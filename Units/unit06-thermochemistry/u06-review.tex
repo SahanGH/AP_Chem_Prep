@@ -1,0 +1,110 @@
+% Unit 6 review sheet -- 2 pages.
+\documentclass{apchem-worksheet}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Review Sheet}
+\apcsubtitle{Everything on the exam traces to this page \textbullet\ exam Fri Dec 11}
+
+\begin{document}
+\apctitleblock
+
+\section*{\sffamily The five tools}
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{3.9cm}p{9.8cm}@{}}
+\toprule
+\textbf{Sign convention} & always from the \emph{system's} view.
+  Exothermic $q < 0$, surroundings warm. Endothermic $q > 0$, surroundings
+  cool. The thermometer is in the surroundings\\
+\textbf{$q = mc\Delta T$} & only while the temperature is changing, and
+  only for one phase. Use the \emph{water's} mass and specific heat in
+  calorimetry ($c = 4.18$)\\
+\textbf{Phase changes} & $q = n\Delta H_{\text{fus}}$ or
+  $n\Delta H_{\text{vap}}$. Temperature is constant, so $q = mc\Delta T$
+  gives zero and cannot be used\\
+\textbf{Hess's law} & reactions add, and so do their $\Delta H$. Reverse
+  $\Rightarrow$ flip the sign; multiply by $n$ $\Rightarrow$ multiply
+  $\Delta H$ by $n$\\
+\textbf{Two $\Delta H$ formulas} & formation: products $-$ reactants.
+  Bonds: \emph{broken} $-$ \emph{formed}. The bond one runs the other way\\
+\bottomrule
+\end{tabular}
+
+\section*{\sffamily Numbers worth knowing cold}
+
+\begin{itemize}[leftmargin=*,itemsep=0.18em]
+  \item $c$(water) $= \SI{4.18}{\joule\per\gram\per\celsius}$ --- unusually
+        large, because of hydrogen bonding.
+  \item $\Delta H_{\text{fus}}$(water) $=
+        \SI{6.02}{\kilo\joule\per\mole}$;
+        $\Delta H_{\text{vap}}$(water) $=
+        \SI{40.7}{\kilo\joule\per\mole}$ --- nearly seven times larger.
+  \item On a heating curve for water, boiling is roughly \textbf{three
+        quarters} of the total energy.
+  \item $\Delta H_f^\circ = 0$ for any element in its standard state.
+\end{itemize}
+
+\section*{\sffamily The four-step calorimetry chain}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.18em]
+  \item $\Delta T = T_{\text{final}} - T_{\text{initial}}$ for the
+        \emph{water}.
+  \item $q_{\text{water}} = mc\Delta T$.
+  \item $q_{\text{rxn}} = -q_{\text{water}}$ \quad(the sign reversal is
+        where marks are lost).
+  \item $\Delta H = q_{\text{rxn}} / n$, reported in
+        \si{\kilo\joule\per\mole}.
+\end{enumerate}
+
+\section*{\sffamily The traps, one line each}
+
+\begin{itemize}[leftmargin=*,itemsep=0.22em]
+  \item Calling a reaction endothermic because the temperature went up.
+  \item Using $q = mc\Delta T$ during melting or boiling.
+  \item Forgetting the minus sign converting $q_{\text{water}}$ to
+        $q_{\text{rxn}}$.
+  \item Reporting kilojoules when the question wants
+        \si{\kilo\joule\per\mole}.
+  \item Reversing a reaction in Hess's law without flipping the sign.
+  \item Using \emph{formed minus broken} for bond enthalpies.
+  \item Treating an element's $\Delta H_f^\circ$ as something other than
+        zero.
+\end{itemize}
+
+\section*{\sffamily Self-check --- 10 questions, exam conditions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A beaker gets hot during a reaction. Sign of $\Delta H_{\text{rxn}}$?
+        \answerblank[2.4cm]{negative}
+  \item Energy to warm \SI{50.0}{\gram} of water by \SI{60.0}{\celsius}:
+        \answerblank[3cm]{\SI{12.5}{\kilo\joule}}
+  \item Energy to melt \SI{2.00}{\mole} of ice:
+        \answerblank[3cm]{\SI{12.0}{\kilo\joule}}
+  \item Which heating-curve region needs the most energy?
+        \answerblank[2.6cm]{boiling}
+  \item $\Delta H$ for the reverse of a $-566$~kJ reaction:
+        \answerblank[2.6cm]{$+566$ kJ}
+  \item $\Delta H_f^\circ$ of \ce{N2(g)}: \answerblank[1.6cm]{0}
+  \item Bond enthalpy expression: \answerblank[4.4cm]{broken $-$ formed}
+  \item $\Delta H$ for $\ce{H2 + Cl2 -> 2HCl}$ from bond enthalpies:
+        \answerblank[2.6cm]{$-183$ kJ}
+  \item In calorimetry, whose specific heat do you use?
+        \answerblank[2.6cm]{the water's}
+  \item Why is the temperature constant while ice melts?
+        \answerblank[7.9cm]{energy breaks IMFs, not kinetic energy}
+\end{enumerate}
+
+\begin{apcnote}[How to study for this exam]
+Redo WS 4's FRQ cold --- the exam's free-response questions are its twins
+in shape. Then run the four-step calorimetry chain until it is automatic,
+because it opens most thermochemistry FRQs and the sign reversal in step 3
+is the most commonly dropped point in the unit.
+
+For every ``explain'' item, name what the \emph{particles} are doing:
+colliding and transferring kinetic energy, or overcoming intermolecular
+forces. And before writing any final answer, ask once: does the sign match
+the direction of the temperature change I was given?
+\end{apcnote}
+
+\end{document}

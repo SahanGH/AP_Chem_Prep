@@ -1,0 +1,117 @@
+% Ch14 WS2 -- weak acids, weak bases, polyprotic. Blocks 3-4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{14}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 2 \textbullet\ Weak Acids and Weak Bases}
+\apcsubtitle{Zumdahl \S14.5--14.7 \textbullet\ for a base, $x$ is $[\ce{OH-}]$ --- convert}
+
+\begin{document}
+\wsheader[$K_a$: \ce{HF} $7.2\times10^{-4}$ \textbullet\ \ce{HC2H3O2}
+$1.8\times10^{-5}$ \textbullet\ \ce{HOCl} $3.5\times10^{-8}$ \textbullet\
+\ce{HCN} $6.2\times10^{-10}$. $K_b$: \ce{NH3} $1.8\times10^{-5}$.
+Always run the 5\% check.]
+
+\problem[]{Set up the ICE table for \SI{0.250}{\Molar} \ce{HOCl} and write
+the $K_a$ expression in terms of $x$.
+\answerlines[2]{$[\ce{HOCl}] = 0.250-x$; $[\ce{H+}] = [\ce{OCl-}] = x$;
+$K_a = x^2/(0.250-x)$.}}
+
+\problem[]{Calculate the pH of each weak acid solution:}
+\begin{parts}
+  \item \SI{0.100}{\Molar} \ce{HC2H3O2}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx (1.8\times10^{-5})(0.100)$;
+        $x = 1.34\times10^{-3}$; pH $= 2.87$. Check:
+        1.3\% \checkmark\end{apcanswer}}
+  \item \SI{0.500}{\Molar} \ce{HOCl}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx (3.5\times10^{-8})(0.500) =
+        1.75\times10^{-8}$; $x = 1.32\times10^{-4}$; pH $= 3.88$. Check:
+        0.026\% \checkmark\end{apcanswer}}
+  \item \SI{0.0500}{\Molar} \ce{HCN}: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx (6.2\times10^{-10})(0.0500) =
+        3.1\times10^{-11}$; $x = 5.57\times10^{-6}$;
+        pH $= 5.25$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Percent dissociation.}
+\begin{parts}
+  \item Compute the percent dissociation for problem 2(a).
+        \answerblank[2.6cm]{1.34\%}
+  \item For \SI{0.0100}{\Molar} acetic acid, $[\ce{H+}] =
+        4.24\times10^{-4}$. Compute the percent dissociation.
+        \answerblank[2.6cm]{4.24\%}
+  \item The dilute solution has the higher percent dissociation but the
+        higher pH. Explain how both are true.
+        \answerlines[3]{$x \approx \sqrt{K_aC_0}$ falls only as the square
+        root of concentration while $C_0$ falls linearly, so the
+        \emph{fraction} ionized rises on dilution. But the absolute
+        $[\ce{H+}]$ is still smaller, so the pH is higher.}
+\end{parts}
+
+\problem[]{A \SI{0.20}{\Molar} solution of a weak acid has pH 3.10.}
+\begin{parts}
+  \item Determine $[\ce{H+}]$: \answerblank[3cm]{$7.9\times10^{-4}$}
+  \item Calculate $K_a$. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$K_a \approx (7.9\times10^{-4})^2/0.20 =
+        3.1\times10^{-6}$\end{apcanswer}}
+  \item Determine pK$_a$: \answerblank[2.4cm]{5.51}
+\end{parts}
+
+\problem[]{Calculate the pH of each weak base solution:}
+\begin{parts}
+  \item \SI{0.150}{\Molar} \ce{NH3}: \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx (1.8\times10^{-5})(0.150) =
+        2.7\times10^{-6}$; $x = 1.64\times10^{-3} = [\ce{OH-}]$;
+        pOH $= 2.78$; pH $= 11.22$\end{apcanswer}}
+  \item \SI{0.400}{\Molar} \ce{NH3}: \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx 7.2\times10^{-6}$;
+        $x = 2.68\times10^{-3}$; pOH $= 2.57$;
+        pH $= 11.43$\end{apcanswer}}
+\end{parts}
+
+\problem[]{A student calculates $x = 1.64\times10^{-3}$ for
+\SI{0.150}{\Molar} \ce{NH3} and reports pH $= 2.78$. Identify the error and
+give the correct answer. \answerlines[3]{For a base, $x$ is $[\ce{OH-}]$,
+not $[\ce{H+}]$. Taking $-\log x$ gives pOH $= 2.78$, so
+pH $= 14.00 - 2.78 = 11.22$. They reported a strongly basic solution as
+strongly acidic.}}
+
+\problem[]{Conjugate constants.}
+\begin{parts}
+  \item $K_b$ for \ce{C2H3O2^-}: \answerblank[3.2cm]{$5.6\times10^{-10}$}
+  \item $K_b$ for \ce{CN-}: \answerblank[3.2cm]{$1.6\times10^{-5}$}
+  \item $K_a$ for \ce{NH4+}: \answerblank[3.2cm]{$5.6\times10^{-10}$}
+  \item Which is the stronger base, acetate or cyanide? Explain.
+        \answerlines[2]{Cyanide --- its $K_b$ is roughly $10^5$ times
+        larger, because \ce{HCN} is a much weaker acid than acetic acid.}
+\end{parts}
+
+\problem[]{Phosphoric acid has $K_{a1} = 7.5\times10^{-3}$,
+$K_{a2} = 6.2\times10^{-8}$, $K_{a3} = 4.8\times10^{-13}$.}
+\begin{parts}
+  \item Explain why each successive constant is so much smaller.
+        \answerlines[2]{Each proton must be pulled away from an
+        increasingly negative anion, and separating positive from negative
+        charge becomes progressively harder.}
+  \item Justify calculating the pH from $K_{a1}$ alone.
+        \answerlines[2]{$K_{a2}$ is about $10^5$ times smaller, so the
+        second ionization contributes a negligible amount of \ce{H+}
+        relative to the first.}
+  \item Which polyprotic acid is the exception, and why?
+        \answerlines[2]{\ce{H2SO4} --- its first ionization is strong and
+        its second ($K_{a2} = 1.2\times10^{-2}$) is large enough to
+        contribute measurably.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 14 \textbullet\ blocks 1--2}
+  \item pH of \SI{0.010}{\Molar} \ce{HCl}: \answerblank[1.8cm]{2.00}
+  \item $K_w$ at \SI{25}{\celsius}:
+        \answerblank[2.6cm]{$1.0\times10^{-14}$}
+  \item Conjugate base of \ce{HNO2}: \answerblank[2.2cm]{\ce{NO2^-}}
+  \item Lower pK$_a$ means the acid is: \answerblank[2cm]{stronger}
+  \item pH of \SI{0.010}{\Molar} \ce{Ba(OH)2}:
+        \answerblank[2cm]{12.30}
+\end{spiralstrip}
+
+\end{document}

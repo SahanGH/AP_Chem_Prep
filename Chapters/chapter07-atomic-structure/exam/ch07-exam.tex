@@ -1,0 +1,321 @@
+% Zumdahl Chapter 7 test -- 20 MCQ + 2 FRQ. 50 min.
+% Covers only the CED-relevant sections; skip-list material is not tested.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{7}
+\apcunittitle{Atomic Structure and Periodicity}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S7.1--7.2, 7.5, 7.8--7.9, 7.11--7.12 \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+This test covers only the CED-relevant sections. Nothing from \S7.3--7.4
+(hydrogen spectrum, Bohr model), \S7.6--7.7 (quantum numbers, orbital
+shapes), \S7.10, or \S7.13 appears.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- light and photons -----------------------------------------------------
+\begin{mcq}
+  Which relationship correctly connects the wavelength and frequency of
+  light?
+  \choices
+    \correct{$\lambda\nu = c$}
+    \choice{$\lambda + \nu = c$}
+    \choice{$\lambda/\nu = c$}
+    \choice{$\lambda\nu = h$}
+\end{mcq}
+\why{Speed is fixed, so wavelength and frequency are inversely related.}
+
+\begin{mcq}
+  Which type of electromagnetic radiation has photons of the greatest
+  energy?
+  \choices
+    \choice{microwave}
+    \choice{infrared}
+    \choice{red visible light}
+    \correct{ultraviolet}
+\end{mcq}
+\why{$E = hc/\lambda$ --- shortest wavelength, highest energy.}
+
+\begin{mcq}
+  A photon of \SI{300}{\nano\meter} light has how many times the energy of a
+  photon of \SI{900}{\nano\meter} light?
+  \choices
+    \choice{$1/3$}
+    \correct{3}
+    \choice{9}
+    \choice{the same}
+\end{mcq}
+\why{Energy is inversely proportional to wavelength.}
+\distractor{C}{energy goes as $1/\lambda$, not $1/\lambda^2$}
+
+\begin{mcq}
+  Light below a metal's threshold frequency is shone on it at very high
+  intensity. The result is
+  \choices
+    \choice{many electrons are ejected}
+    \choice{a few electrons are ejected}
+    \correct{no electrons are ejected}
+    \choice{electrons are ejected only after a delay}
+\end{mcq}
+\why{Intensity supplies more photons, not more energetic ones.}
+\distractor{D}{a wave model predicts this delay; it is never observed}
+
+\begin{mcq}
+  The photoelectric effect provides evidence that light
+  \choices
+    \choice{travels as a continuous wave only}
+    \correct{is quantized into photons of energy $h\nu$}
+    \choice{has mass}
+    \choice{slows down in a vacuum}
+\end{mcq}
+\why{The threshold behaviour cannot be explained by a continuous wave.}
+
+% ---- orbitals and shielding ------------------------------------------------
+\begin{mcq}
+  An atomic orbital is best described as
+  \choices
+    \choice{a circular path followed by an electron}
+    \correct{a region of space where an electron is likely to be found}
+    \choice{the surface of the nucleus}
+    \choice{a fixed energy level containing all electrons}
+\end{mcq}
+\why{Orbitals are probability distributions, not trajectories.}
+
+\begin{mcq}
+  How many orbitals are in the $n = 3$ shell?
+  \choices
+    \choice{3}
+    \choice{6}
+    \correct{9}
+    \choice{18}
+\end{mcq}
+\why{$1 + 3 + 5$ for $3s$, $3p$, $3d$.}
+\distractor{D}{that is the maximum electron count}
+
+\begin{mcq}
+  In a polyelectronic atom, the 2$s$ orbital is lower in energy than the
+  2$p$ because
+  \choices
+    \choice{2$s$ is farther from the nucleus on average}
+    \correct{2$s$ penetrates closer to the nucleus and is shielded less}
+    \choice{2$s$ holds more electrons}
+    \choice{2$p$ orbitals are unstable}
+\end{mcq}
+\why{The small hump of 2$s$ density near the nucleus produces stronger net
+attraction.}
+\distractor{A}{true but incomplete --- and by itself would predict the
+opposite}
+
+\begin{mcq}
+  In hydrogen, the 2$s$ and 2$p$ orbitals have
+  \choices
+    \correct{the same energy, because there is no shielding}
+    \choice{different energies, because 2$s$ penetrates more}
+    \choice{the same energy, because hydrogen has one proton}
+    \choice{different energies, because of the Pauli principle}
+\end{mcq}
+\why{With only one electron there is no electron--electron repulsion to
+break the degeneracy.}
+
+\begin{mcq}
+  A 2$p$ electron in fluorine experiences a larger effective nuclear charge
+  than one in oxygen because fluorine has
+  \choices
+    \correct{one more proton with essentially the same shielding}
+    \choice{one more electron shell}
+    \choice{a larger atomic radius}
+    \choice{fewer core electrons}
+\end{mcq}
+\why{$Z$ increases while $S$ stays essentially constant across a period.}
+
+% ---- electron configurations -----------------------------------------------
+\begin{mcq}
+  The ground-state configuration of arsenic (33 electrons) is
+  \choices
+    \choice{$[\ce{Ar}]4s^2 4p^3$}
+    \correct{$[\ce{Ar}]4s^2 3d^{10} 4p^3$}
+    \choice{$[\ce{Ar}]4s^2 3d^{10} 4p^5$}
+    \choice{$[\ce{Kr}]4s^2 3d^{10}$}
+\end{mcq}
+\why{$18 + 2 + 10 + 3 = 33$.}
+\distractor{A}{omits the $3d$ subshell entirely}
+
+\begin{mcq}
+  The configuration of \ce{Fe^2+} is
+  \choices
+    \choice{$[\ce{Ar}]4s^2 3d^4$}
+    \correct{$[\ce{Ar}]3d^6$}
+    \choice{$[\ce{Ar}]4s^2 3d^6$}
+    \choice{$[\ce{Ar}]4s^1 3d^5$}
+\end{mcq}
+\why{Transition metals lose 4$s$ electrons before 3$d$.}
+\distractor{A}{removes $d$ electrons instead --- the standard error}
+
+\begin{mcq}
+  Which species is isoelectronic with argon?
+  \choices
+    \choice{\ce{Na+}}
+    \choice{\ce{F-}}
+    \correct{\ce{S^2-}}
+    \choice{\ce{Mg^2+}}
+\end{mcq}
+\why{$16 + 2 = 18$ electrons.}
+
+\begin{mcq}
+  How many unpaired electrons are in a ground-state \ce{Fe^3+} ion?
+  \choices
+    \choice{3}
+    \choice{4}
+    \correct{5}
+    \choice{0}
+\end{mcq}
+\why{$[\ce{Ar}]3d^5$ --- one electron in each of the five $d$ orbitals, by
+Hund's rule.}
+
+\begin{mcq}
+  Which configuration represents an excited state of a neutral atom?
+  \choices
+    \choice{$1s^2 2s^2 2p^6$}
+    \correct{$1s^2 2s^2 2p^5 3s^1$}
+    \choice{$1s^2 2s^2 2p^6 3s^1$}
+    \choice{$1s^2 2s^2 2p^3$}
+\end{mcq}
+\why{Ten electrons (neon) with 2$p$ short while 3$s$ is occupied --- aufbau
+violated.}
+
+\begin{mcq}
+  The actual ground-state configuration of chromium is
+  \choices
+    \choice{$[\ce{Ar}]4s^2 3d^4$}
+    \correct{$[\ce{Ar}]4s^1 3d^5$}
+    \choice{$[\ce{Ar}]4s^2 3d^5$}
+    \choice{$[\ce{Ar}]3d^6$}
+\end{mcq}
+\why{A half-filled $d$ subshell is slightly favoured, and $4s$/$3d$ are
+close in energy.}
+
+% ---- trends and PES --------------------------------------------------------
+\begin{mcq}
+  Which atom has the largest atomic radius?
+  \choices
+    \correct{K}
+    \choice{Ca}
+    \choice{Na}
+    \choice{Mg}
+\end{mcq}
+\why{Radius grows down a group and shrinks across a period; K is farthest
+down and left.}
+
+\begin{mcq}
+  The first ionization energy of oxygen is lower than that of nitrogen
+  because
+  \choices
+    \choice{oxygen has a larger atomic radius}
+    \correct{oxygen's fourth 2$p$ electron is paired, adding repulsion}
+    \choice{oxygen has fewer protons}
+    \choice{nitrogen has a filled 2$p$ subshell}
+\end{mcq}
+\why{Nitrogen's 2$p$ electrons are all unpaired; oxygen must pair one.}
+\distractor{D}{nitrogen's 2$p$ is half-filled, not filled}
+
+\begin{mcq}
+  Successive ionization energies for an element are 578, 1817, 2745, and
+  11{,}577 kJ/mol. The element is in group
+  \choices
+    \choice{1}
+    \choice{2}
+    \correct{13}
+    \choice{14}
+\end{mcq}
+\why{The large jump comes after the third electron, so three valence
+electrons (it is aluminium).}
+
+\begin{mcq}
+  In a photoelectron spectrum, the area under a peak is proportional to
+  \choices
+    \choice{the binding energy of those electrons}
+    \correct{the number of electrons in that subshell}
+    \choice{the atomic number}
+    \choice{the energy of the incident photons}
+\end{mcq}
+\why{Position gives energy; area gives population.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S7.1--7.2 \textbullet\ photons and the photoelectric effect}
+
+A certain metal has a threshold frequency of \SI{8.5e14}{\per\second}.
+Constants: $c = \SI{3.00e8}{\meter\per\second}$,
+$h = \SI{6.626e-34}{\joule\second}$.
+
+\begin{parts}
+  \item Calculate the minimum photon energy required to eject an electron
+        from this metal. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$E = h\nu_0 =
+        (6.626\times10^{-34})(8.5\times10^{14}) =
+        \SI{5.6e-19}{\joule}$\end{apcanswer}}
+  \item Determine whether light of wavelength \SI{400.}{\nano\meter} will
+        eject electrons. Show your reasoning. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\nu = 3.00\times10^{8}/400.\times10^{-9}
+        = \SI{7.50e14}{\per\second}$, which is below
+        $8.5\times10^{14}$ --- so no electrons are
+        ejected.\end{apcanswer}}
+  \item Explain why increasing the intensity of that \SI{400.}{\nano\meter}
+        light would not change your answer to (b).
+        \answerlines[3]{Intensity determines how many photons arrive, not
+        how much energy each carries. Ejection requires a single photon with
+        at least the threshold energy, so supplying more insufficient
+        photons accomplishes nothing.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{5.6e-19}{\joule} with units}
+  \rpoint{1}{(b) converts wavelength to frequency correctly}
+  \rpoint{1}{(b) concludes no ejection, by comparison to the threshold}
+  \rpoint{1}{(c) distinguishes photon energy from photon number ---
+    an answer about ``total energy'' earns 0}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S7.11--7.12 \textbullet\ configuration, PES, and trends}
+
+The complete photoelectron spectrum of an element shows peaks at 126, 9.07,
+5.31, and 0.74 MJ/mol with relative areas $2 : 2 : 6 : 2$.
+
+\begin{parts}
+  \item Determine the electron configuration and identify the element,
+        citing your evidence. \answerlines[2]{Areas total 12 electrons:
+        $1s^2 2s^2 2p^6 3s^2$ --- magnesium.}
+  \item Explain why the peak at 5.31 MJ/mol lies at lower binding energy
+        than the peak at 9.07, even though both correspond to electrons in
+        the $n = 2$ shell. \answerlines[3]{The 9.07 peak is 2$s$ and the
+        5.31 peak is 2$p$. The 2$s$ orbital penetrates closer to the
+        nucleus, so it is shielded less and held more tightly; 2$p$
+        experiences slightly more shielding and a smaller
+        $Z_{\text{eff}}$.}
+  \item Predict whether aluminium's 1$s$ binding energy is greater or less
+        than 126 MJ/mol, and justify with Coulombic reasoning.
+        \answerlines[3]{Greater --- aluminium has 13 protons to magnesium's
+        12, and 1$s$ electrons are essentially unshielded, so they
+        experience nearly the full increase in nuclear charge at
+        comparable distance.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) configuration matching all four areas AND magnesium}
+  \rpoint{2}{(b) 1 pt assigns 2$s$ and 2$p$ correctly; 1 pt penetration or
+    shielding argument --- ``2$p$ is farther out'' alone earns 0}
+  \rpoint{1}{(c) greater, justified by nuclear charge on unshielded 1$s$;
+    stability or octet language earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

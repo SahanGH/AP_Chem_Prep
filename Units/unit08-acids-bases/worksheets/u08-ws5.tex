@@ -1,0 +1,186 @@
+% U8 WS5 -- titrations, indicators, pH and solubility, + FRQ. Block 9.
+\documentclass{apchem-worksheet}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 5 \textbullet\ Titrations, Indicators \& FRQ}
+\apcsubtitle{CED 8.5, 8.11 \textbullet\ name the major species before choosing a method}
+
+\begin{document}
+\wsheader[$K_a$: \ce{HC2H3O2} $1.8\times10^{-5}$ (p$K_a$ 4.74)
+\textbullet\ \ce{HOCl} $3.5\times10^{-8}$ (p$K_a$ 7.46). $K_b(\ce{NH3}) =
+1.8\times10^{-5}$, $K_a(\ce{NH4+}) = 5.6\times10^{-10}$ (p$K_a$ 9.25).
+$K_w = 1.0\times10^{-14}$. Indicator ranges: methyl red 4.4--6.2
+\textbullet\ bromthymol blue 6.0--7.6 \textbullet\ phenolphthalein
+8.2--10.0.]
+
+\problem[]{\ced{8.5} For a weak acid titrated with a strong base, name the
+major species and the method in each region:}
+\begin{parts}
+  \item Before any base is added:
+        \answerblank[7cm]{\ce{HA} only --- weak-acid ICE}
+  \item Between the start and equivalence:
+        \answerblank[7cm]{\ce{HA} and \ce{A-} --- buffer, use H--H}
+  \item At equivalence:
+        \answerblank[7cm]{\ce{A-} only --- weak-base ICE with $K_b$}
+  \item After equivalence:
+        \answerblank[7cm]{excess \ce{OH-} --- strong base alone}
+\end{parts}
+
+\problem[]{\ced{8.5} \SI{25.0}{\milli\litre} of \SI{0.100}{\Molar}
+\ce{HCl} is titrated with \SI{0.100}{\Molar} \ce{NaOH}.}
+\begin{parts}
+  \item Volume at equivalence: \answerblank[3cm]{\SI{25.0}{\milli\litre}}
+  \item pH before any base: \answerblank[2.2cm]{1.00}
+  \item pH after \SI{10.0}{\milli\litre}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}\ce{H+} left $= 2.50 - 1.00 =
+        1.50$~mmol in \SI{35.0}{\milli\litre};
+        $[\ce{H+}] = 0.0429$; pH $= \mathbf{1.37}$\end{apcanswer}}
+  \item pH at equivalence, with a reason. \answerlines[2]{7.00 --- only
+        \ce{Na+} and \ce{Cl-} remain, and neither reacts with water.}
+\end{parts}
+
+\problem[]{\ced{8.5} \SI{50.0}{\milli\litre} of \SI{0.10}{\Molar}
+\ce{HC2H3O2} is titrated with \SI{0.10}{\Molar} \ce{NaOH}.}
+\begin{parts}
+  \item Volume at equivalence: \answerblank[3cm]{\SI{50.0}{\milli\litre}}
+  \item pH before any base: \answerblank[2.2cm]{2.87}
+  \item pH after \SI{25.0}{\milli\litre}, and what is special about it.
+        \answerlines[2]{The halfway point --- $[\ce{HA}] = [\ce{A^-}]$, so
+        the log term vanishes and pH $=$ p$K_a$ $= 4.74$.}
+  \item pH at equivalence. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$[\ce{C2H3O2^-}] = 5.0/100.0 = 0.050$~M;
+        $K_b = 5.6\times10^{-10}$;
+        $x = 5.3\times10^{-6}$; pOH $= 5.28$;
+        pH $= \mathbf{8.72}$\end{apcanswer}}
+  \item Why is this equivalence point basic rather than neutral?
+        \answerlines[2]{All the acid has been converted to acetate, the
+        conjugate base of a weak acid, which hydrolyses water to produce
+        \ce{OH-}.}
+\end{parts}
+
+\problem[]{\ced{8.5} Compare the two titrations in problems 2 and 3, which
+use the same volumes and concentrations.}
+\begin{parts}
+  \item Are the equivalence \emph{volumes} the same? Explain.
+        \answerlines[2]{Yes --- \SI{25.0}{} and \SI{50.0}{\milli\litre}
+        respectively for the amounts given, each set purely by
+        stoichiometry and concentration, not by acid strength.}
+  \item Are the equivalence \emph{pH values} the same? Explain.
+        \answerlines[3]{No: 7.00 for \ce{HCl}, 8.72 for acetic acid. The
+        acetic acid titration leaves acetate, a weak base that hydrolyses;
+        the \ce{HCl} titration leaves only inert \ce{Cl-}.}
+  \item Which curve has a flat buffer region, and why?
+        \answerlines[2]{The acetic acid curve. Between the start and
+        equivalence both \ce{HC2H3O2} and \ce{C2H3O2^-} are present, so
+        added base only changes their ratio, and pH depends on the log of
+        that ratio.}
+\end{parts}
+
+\problem[]{\ced{8.5} \SI{100.0}{\milli\litre} of \SI{0.050}{\Molar}
+\ce{NH3} is titrated with \SI{0.10}{\Molar} \ce{HCl}.}
+\begin{parts}
+  \item Volume at equivalence: \answerblank[3cm]{\SI{50.0}{\milli\litre}}
+  \item pH at the halfway point, with a one-line reason.
+        \answerlines[2]{At \SI{25.0}{\milli\litre},
+        $[\ce{NH3}] = [\ce{NH4+}]$, so pH $=$ p$K_a(\ce{NH4+}) = 9.25$.}
+  \item pH at equivalence. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[\ce{NH4+}] = 5.0/150.0 = 0.0333$~M;
+        $x = \sqrt{(5.6\times10^{-10})(0.0333)} = 4.3\times10^{-6}$;
+        pH $= \mathbf{5.36}$\end{apcanswer}}
+  \item Why is this equivalence point acidic?
+        \answerblank[6.4cm]{only \ce{NH4+} remains, a weak acid}
+\end{parts}
+
+\problem[]{\ced{8.5} Indicators.}
+\begin{parts}
+  \item An indicator is itself a \answerblank[3.4cm]{weak acid} whose two
+        forms differ in \answerblank[2cm]{colour}.
+  \item It changes colour over roughly:
+        \answerblank[2.6cm]{p$K_a \pm 1$}
+  \item Distinguish end point from equivalence point.
+        \answerlines[2]{The equivalence point is fixed by reaction
+        stoichiometry; the end point is where the indicator visibly
+        changes. A well-chosen indicator makes them nearly coincide.}
+  \item Which indicator suits problem 3 (equivalence 8.72)?
+        \answerblank[4cm]{phenolphthalein}
+  \item Which suits problem 5 (equivalence 5.36)?
+        \answerblank[4cm]{methyl red}
+\end{parts}
+
+\problem[]{\ced{8.11} pH and solubility --- \textbf{qualitative only}.}
+\begin{parts}
+  \item State the test that decides whether a salt's solubility depends on
+        pH. \answerlines[2]{Ask whether the anion is a meaningful base ---
+        equivalently, whether its conjugate acid is weak. Only then does
+        added \ce{H+} remove the anion from solution.}
+  \item More soluble in acid? \ce{CaCO3}
+        \answerblank[6cm]{yes --- \ce{H2CO3} is weak}
+  \item \ce{AgCl} \answerblank[6cm]{no --- \ce{HCl} is strong}
+  \item \ce{Mg(OH)2} \answerblank[6cm]{yes --- \ce{H2O} is very weak}
+  \item Refute the claim ``acids are reactive, so every salt dissolves
+        better in acid.'' \answerlines[3]{\ce{AgCl} is the counterexample:
+        its solubility in \SI{1}{\Molar} \ce{HNO3} equals that in pure
+        water, because \ce{Cl-} is the conjugate base of a strong acid and
+        has no affinity for protons. What matters is the basicity of the
+        anion, not the strength of the acid.}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} \ced{8.3} \ced{8.5} \ced{8.9}
+A \SI{25.00}{\milli\litre} sample of \SI{0.100}{\Molar} hypochlorous acid,
+\ce{HOCl}, is titrated with \SI{0.100}{\Molar} \ce{NaOH}.}
+\begin{parts}
+  \item Calculate the volume of \ce{NaOH} needed to reach equivalence.
+        \answerblank[4cm]{\SI{25.00}{\milli\litre}}
+  \item Calculate the pH before any base is added. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(3.5\times10^{-8})(0.100)}
+        = 5.9\times10^{-5}$; pH $= \mathbf{4.23}$\end{apcanswer}}
+  \item Calculate the pH after \SI{12.50}{\milli\litre} of base, and
+        explain why it could have been written down without calculation.
+        \answerlines[3]{This is half the equivalence volume, so half the
+        \ce{HOCl} has become \ce{OCl-} and
+        $[\ce{HOCl}] = [\ce{OCl^-}]$. The log term vanishes and
+        pH $=$ p$K_a$ $= 7.46$.}
+  \item Calculate the pH after \SI{20.00}{\milli\litre} of base.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}\ce{HOCl} $= 2.500 - 2.000 = 0.500$,
+        \ce{OCl-} $= 2.000$~mmol;
+        pH $= 7.46 + \log(2.000/0.500) = 7.46 + 0.60 =
+        \mathbf{8.06}$\end{apcanswer}}
+  \item Calculate the pH at the equivalence point. \workspace[3cm]
+        \keyonly{\begin{apcanswer}All \SI{2.500}{\milli\mole} is \ce{OCl-}
+        in \SI{50.00}{\milli\litre}, so $[\ce{OCl^-}] = 0.0500$~M.
+        $K_b = 1.0\times10^{-14}/3.5\times10^{-8} = 2.9\times10^{-7}$;
+        $x = 1.2\times10^{-4}$; pOH $= 3.92$;
+        pH $= \mathbf{10.08}$\end{apcanswer}}
+  \item Select an indicator and justify.
+        \answerlines[2]{Phenolphthalein (8.2--10.0) --- its range brackets
+        the equivalence pH of 10.08 most closely. Methyl red and bromthymol
+        blue would both change colour while acid still remained.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 1 pt} \SI{25.00}{\milli\litre} \textbullet\ \textbf{(b) 2 pts}
+1 correct $\sqrt{K_aC_0}$ setup, 1 pH $= 4.23$ \textbullet\
+\textbf{(c) 2 pts} 1 pH $= 7.46$, 1 reasoning that identifies the halfway
+point AND states $[\ce{HA}] = [\ce{A^-}]$ --- naming the value with no
+reasoning earns 1 \textbullet\ \textbf{(d) 2 pts} 1 correct mmol
+bookkeeping, 1 pH $= 8.06$ \textbullet\ \textbf{(e) 2 pts} 1 dilution to
+\SI{50.00}{\milli\litre} AND $K_b$ from $K_w/K_a$, 1 pH $= 10.08$ via pOH
+--- reporting $-\log x$ as the pH earns 0 for that point \textbullet\
+\textbf{(f) 1 pt} phenolphthalein with a justification tied to the
+equivalence pH --- naming it alone earns 0.
+\end{apcnote}
+
+\begin{spiralstrip}{Unit 8 \textbullet\ blocks 1--8}
+  \item Buffer method step 1: \answerblank[7.3cm]{stoichiometry to
+        completion}
+  \item pH $=$ p$K_a$ at which point of a titration?
+        \answerblank[3.6cm]{the halfway point}
+  \item Optimal buffering ratio: \answerblank[1.6cm]{1}
+  \item Equivalence pH, weak acid $+$ strong base:
+        \answerblank[2.2cm]{above 7}
+  \item For a weak base, ICE $x$ is: \answerblank[2.2cm]{$[\ce{OH-}]$}
+\end{spiralstrip}
+
+\end{document}

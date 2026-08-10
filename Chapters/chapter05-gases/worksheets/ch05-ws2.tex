@@ -1,0 +1,100 @@
+% Ch5 WS2 -- gas stoichiometry and partial pressures. Blocks 3-4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Worksheet 2 \textbullet\ Gas Stoichiometry and Partial Pressures}
+\apcsubtitle{Zumdahl \S5.4--5.5 \textbullet\ the molar-volume shortcut works ONLY at STP}
+
+\begin{document}
+\wsheader[Before using \SI{22.42}{\liter\per\mole}, check that the problem
+says STP. If it gives any other temperature or pressure, use $PV = nRT$.]
+
+\problem[]{\ce{2 KClO3(s) -> 2 KCl(s) + 3 O2(g)}. $M(\ce{KClO3}) = 122.55$.}
+\begin{parts}
+  \item Volume of \ce{O2} at STP from \SI{24.51}{\gram} \ce{KClO3}:
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = 24.51/122.55 = \SI{0.2000}{\mole}$;
+        $\times\tfrac32 = \SI{0.3000}{\mole}$ \ce{O2}; $\times 22.42 =
+        \SI{6.73}{\liter}$\end{apcanswer}}
+  \item Volume of that same \ce{O2} at \SI{25}{\celsius} and
+        \SI{1.00}{\atm}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$V = (0.3000)(0.08206)(298)/1.00 =
+        \SI{7.34}{\liter}$\end{apcanswer}}
+  \item Explain why (b) is larger than (a).
+        \answerlines[2]{Same number of moles at higher temperature and the
+        same pressure --- volume is proportional to absolute temperature, so
+        it expands.}
+\end{parts}
+
+\problem[]{\ce{CaCO3(s) -> CaO(s) + CO2(g)}. What mass of \ce{CaCO3}
+($M = 100.09$) is needed to produce \SI{11.2}{\liter} of \ce{CO2} at STP?
+\workspace[2.2cm]
+\keyonly{\begin{apcanswer}$n(\ce{CO2}) = 11.2/22.42 = \SI{0.500}{\mole}$;
+1:1 $\to 0.500 \times 100.09 = \SI{50.0}{\gram}$\end{apcanswer}}}
+
+\problem[]{\ce{N2(g) + 3 H2(g) -> 2 NH3(g)}, all gases at the same
+temperature and pressure.}
+\begin{parts}
+  \item Volume of \ce{H2} needed to react with \SI{12.0}{\liter} \ce{N2}:
+        \answerblank[3cm]{\SI{36.0}{\liter}}
+  \item Volume of \ce{NH3} produced: \answerblank[3cm]{\SI{24.0}{\liter}}
+  \item Explain why you can work entirely in volumes here without ever
+        computing moles. \answerlines[2]{At fixed $T$ and $P$, volume is
+        proportional to moles (Avogadro), so volumes combine in the same
+        ratio as the coefficients.}
+\end{parts}
+
+\problem[]{\SI{6.00}{\liter} of \ce{H2} and \SI{2.00}{\liter} of \ce{O2},
+both at \SI{1.00}{\atm} and \SI{298}{\kelvin}, react completely.}
+\begin{parts}
+  \item Balanced equation:
+        \answerblank[4.5cm]{\ce{2 H2 + O2 -> 2 H2O}}
+  \item Limiting reactant, using volumes: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}Needed ratio 2:1. \SI{6.00}{\liter}
+        \ce{H2} requires \SI{3.00}{\liter} \ce{O2}, but only
+        \SI{2.00}{\liter} is present $\to$ \ce{O2} is
+        limiting.\end{apcanswer}}
+  \item Volume of \ce{H2} left over: \answerblank[3cm]{\SI{2.00}{\liter}}
+\end{parts}
+
+\problem[]{A \SI{5.00}{\liter} vessel at \SI{300.}{\kelvin} holds
+\SI{0.150}{\mole} \ce{N2}, \SI{0.250}{\mole} \ce{O2}, and
+\SI{0.100}{\mole} \ce{CO2}.}
+\begin{parts}
+  \item Total pressure: \answerblank[3cm]{\SI{2.46}{\atm}}
+  \item Mole fraction of \ce{O2}: \answerblank[3cm]{0.500}
+  \item Partial pressure of \ce{O2}: \answerblank[3cm]{\SI{1.23}{\atm}}
+  \item If the \ce{CO2} were removed at constant $T$ and $V$, what happens
+        to $P_{\ce{N2}}$? \answerlines[2]{Nothing --- each gas exerts its
+        pressure independently of the others.}
+\end{parts}
+
+\problem[]{Hydrogen is collected over water at \SI{20}{\celsius}. The total
+pressure is \SI{738}{\torr}, the volume \SI{0.400}{\liter}. The vapour
+pressure of water at \SI{20}{\celsius} is \SI{17.5}{\torr}.}
+\begin{parts}
+  \item Partial pressure of \ce{H2} in torr and atm:
+        \answerblank[5.5cm]{\SI{720.5}{\torr} $=$ \SI{0.9480}{\atm}}
+  \item Moles of \ce{H2} collected: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = (0.9480)(0.400)/((0.08206)(293)) =
+        \SI{0.01577}{\mole}$\end{apcanswer}}
+  \item A student forgets the water-vapour correction. Is their answer too
+        high or too low, and by roughly what percentage?
+        \answerlines[2]{Too high --- they would use 738 torr instead of
+        720.5, overstating the moles by about 2.4\%.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 5 \textbullet\ blocks 1--2}
+  \item Molar volume at STP: \answerblank[2.6cm]{\SI{22.42}{\liter}}
+  \item \SI{2.00}{\atm} in torr: \answerblank[2.6cm]{\SI{1520}{\torr}}
+  \item Density of \ce{He} at STP:
+        \answerblank[3.2cm]{\SI{0.179}{\gram\per\liter}}
+  \item $M$ from $d = \SI{1.96}{\gram\per\liter}$ at STP:
+        \answerblank[3.2cm]{\SI{43.9}{\gram\per\mole}}
+  \item Boyle's law holds which variables constant?
+        \answerblank[2.6cm]{$n$ and $T$}
+\end{spiralstrip}
+
+\end{document}

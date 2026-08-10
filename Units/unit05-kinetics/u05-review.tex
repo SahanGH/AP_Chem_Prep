@@ -1,0 +1,114 @@
+% Unit 5 review sheet -- 2 pages.
+\documentclass{apchem-worksheet}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Review Sheet}
+\apcsubtitle{Everything on the exam traces to this page \textbullet\ exam Fri Nov 20}
+
+\begin{document}
+\apctitleblock
+
+\section*{\sffamily The five tools}
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{3.9cm}p{9.8cm}@{}}
+\toprule
+\textbf{Rate definition} & rate $= -\tfrac{1}{a}\Delta[\ce{A}]/\Delta t =
+  +\tfrac{1}{c}\Delta[\ce{C}]/\Delta t$. \emph{Always divide by the
+  coefficient} --- otherwise ``the rate'' depends on which species you
+  watched\\
+\textbf{Rate law} & rate $= k[\ce{A}]^m[\ce{B}]^n$, orders from
+  \emph{experiment}. Method of initial rates: change one concentration,
+  see what the rate does. Doubling $\to$ $\times1$, $\times2$, $\times4$
+  means order 0, 1, 2\\
+\textbf{Integrated laws} & zero: $[\ce{A}]$ vs $t$ linear; first:
+  $\ln[\ce{A}]$ vs $t$; second: $1/[\ce{A}]$ vs $t$. Slope is $-k$, $-k$,
+  $+k$\\
+\textbf{Mechanism tests} & steps must sum to the overall equation AND
+  predict the observed rate law. Elementary steps only: molecularity gives
+  order\\
+\textbf{Collision model} & rate depends on collision frequency, energy
+  ($\ge E_a$) and orientation. $k = Ae^{-E_a/RT}$\\
+\bottomrule
+\end{tabular}
+
+\section*{\sffamily Half-lives, and what they tell you}
+
+\begin{itemize}[leftmargin=*,itemsep=0.18em]
+  \item \textbf{Zero order:} $t_{1/2} = [\ce{A}]_0/2k$ --- gets
+        \emph{shorter} as the reaction proceeds.
+  \item \textbf{First order:} $t_{1/2} = 0.693/k$ --- \emph{constant}, the
+        only one independent of concentration. All radioactive decay.
+  \item \textbf{Second order:} $t_{1/2} = 1/(k[\ce{A}]_0)$ --- gets
+        \emph{longer} as the reaction proceeds.
+  \item A half-life that does not change is therefore direct evidence of
+        first-order kinetics.
+\end{itemize}
+
+\section*{\sffamily Mechanisms in five lines}
+
+\begin{itemize}[leftmargin=*,itemsep=0.18em]
+  \item \textbf{Slow step first} $\Rightarrow$ the rate law is that step's,
+        written straight from its molecularity.
+  \item \textbf{Fast step first} $\Rightarrow$ write the slow step's rate
+        law, then replace the intermediate using $K$ of step 1.
+  \item \textbf{Intermediate:} produced then consumed. Never in a final
+        rate law.
+  \item \textbf{Catalyst:} consumed then regenerated. Present at the end.
+  \item Matching the rate law makes a mechanism \emph{consistent}, never
+        \emph{proven}.
+\end{itemize}
+
+\section*{\sffamily The traps, one line each}
+
+\begin{itemize}[leftmargin=*,itemsep=0.22em]
+  \item Reading orders off the balanced equation.
+        ($\ce{2N2O5 -> 4NO2 + O2}$ is \emph{first} order.)
+  \item Forgetting the coefficient when converting between species rates.
+  \item Saying ``the graph is linear'' without naming the plotted quantity.
+  \item Using $t_{1/2} = 0.693/k$ for a reaction that is not first order.
+  \item Leaving an intermediate in a final rate law.
+  \item Saying a catalyst shifts the equilibrium or changes $\Delta H$.
+  \item Reporting $k$ without units --- the units are a free check on your
+        orders.
+\end{itemize}
+
+\section*{\sffamily Self-check --- 10 questions, exam conditions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For $\ce{2A -> 3B}$, B forms at \SI{6.0e-4}{\Molar\per\second}. How
+        fast does A disappear?
+        \answerblank[3.4cm]{\SI{4.0e-4}{\Molar\per\second}}
+  \item Doubling $[\ce{A}]$ multiplies the rate by 4. Order in A?
+        \answerblank[1.8cm]{2}
+  \item Units of $k$ for a second-order reaction:
+        \answerblank[3.2cm]{\si{\per\Molar\per\second}}
+  \item Which plot is linear for first order?
+        \answerblank[3.4cm]{$\ln[\ce{A}]$ vs $t$}
+  \item $k = \SI{0.0693}{\per\second}$; find $t_{1/2}$:
+        \answerblank[2.6cm]{\SI{10.0}{\second}}
+  \item Rate law for the elementary step $\ce{2NO -> N2O2}$:
+        \answerblank[3.4cm]{rate $= k[\ce{NO}]^2$}
+  \item $E_a(\text{fwd}) = 80$, $E_a(\text{rev}) = 120$ kJ. $\Delta H$?
+        \answerblank[2.6cm]{$-40$ kJ}
+  \item A catalyst changes $K$ how? \answerblank[2.6cm]{not at all}
+  \item In $\ce{X + C -> XC}$ then $\ce{XC + Y -> XY + C}$, name the
+        catalyst: \answerblank[2cm]{C}
+  \item Constant half-life implies which order?
+        \answerblank[2.4cm]{first}
+\end{enumerate}
+
+\begin{apcnote}[How to study for this exam]
+Redo WS 4's FRQ cold --- the exam's long free-response is its twin in shape
+and length. Then drill the chain \emph{table $\to$ orders $\to$ rate law
+$\to$ $k$ with units} until it runs without stopping, because it opens
+almost every kinetics FRQ.
+
+For every ``explain'' item, say what the \emph{particles} are doing before
+naming the effect: more collisions, more energetic collisions, a lower
+barrier, a different pathway. And whenever a graph is mentioned, name the
+axis.
+\end{apcnote}
+
+\end{document}

@@ -1,0 +1,156 @@
+% Unit 9 review sheet -- 2 pages.
+\documentclass{apchem-worksheet}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Review Sheet}
+\apcsubtitle{Everything on the exam traces to this page \textbullet\ exam Fri Mar 19}
+
+\begin{document}
+\apctitleblock
+
+\section*{\sffamily First: which two of the three are you moving between?}
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{4.4cm}p{9.3cm}@{}}
+\toprule
+\textbf{$\Delta H^\circ,\ \Delta S^\circ \to \Delta G^\circ$} &
+  $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$. Convert
+  $\Delta S^\circ$ from J/K to kJ/K first\\
+\textbf{$\Delta G^\circ \leftrightarrow K$} &
+  $\Delta G^\circ = -RT\ln K$, $R$ in J/(mol$\cdot$K). Qualitative on the
+  MCQ half\\
+\textbf{$\Delta G^\circ \leftrightarrow E^\circ$} &
+  $\Delta G^\circ = -nFE^\circ$, $F = \SI{96485}{\coulomb\per\mole}$, $n$
+  from the \emph{balanced overall} equation\\
+\textbf{Away from standard} &
+  $\Delta G = \Delta G^\circ + RT\ln Q$. Compare $Q$ with $K$; no Nernst
+  equation is required\\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{center}
+\fbox{\parbox{0.82\linewidth}{\centering
+$\Delta G^\circ < 0 \iff K > 1 \iff E^\circ_{\text{cell}} > 0$ \\
+\small One fact, three languages. Every conversion question is translation.}}
+\end{center}
+
+\section*{\sffamily Entropy, in one block}
+
+\begin{itemize}[leftmargin=*,itemsep=0.16em]
+  \item $\Delta S^\circ = \sum nS^\circ_{\text{prod}} -
+        \sum nS^\circ_{\text{react}}$. Coefficients multiply.
+  \item \textbf{Count the gas moles first.} If that number changes, it
+        decides the sign and nothing else matters.
+  \item Otherwise: solid $<$ liquid $\ll$ gas; dissolving increases;
+        heating increases.
+  \item $S^\circ$ of an element is \textbf{not} zero.
+        $\Delta H_f^\circ$ and $\Delta G_f^\circ$ of an element are.
+\end{itemize}
+
+\section*{\sffamily The four cases, and what temperature does}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}cccl@{}}
+\toprule
+$\Delta H^\circ$ & $\Delta S^\circ$ & \textbf{Favored at} &
+  \textbf{Comment}\\
+\midrule
+$-$ & $+$ & all temperatures & no calculation needed \\
+$+$ & $-$ & no temperature & never favored \\
+$+$ & $+$ & high $T$ & crossover $T = \Delta H^\circ/\Delta S^\circ$ \\
+$-$ & $-$ & low $T$ & crossover $T = \Delta H^\circ/\Delta S^\circ$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{\sffamily Cells, in one table}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}llll@{}}
+\toprule
+ & \textbf{Galvanic} & \textbf{Electrolytic} & \\
+\midrule
+$E^\circ_{\text{cell}}$ & positive & negative & $= E^\circ_{\text{cath}}
+  - E^\circ_{\text{an}}$ \\
+$\Delta G^\circ$ & negative & positive & $= -nFE^\circ$ \\
+Runs by itself & yes & no --- needs a supply & \\
+Energy & chemical $\to$ electrical & electrical $\to$ chemical & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{An~Ox and Red~Cat} holds in both: oxidation at the anode, reduction
+at the cathode. Electrons always travel anode $\to$ cathode. Do
+\emph{not} label electrodes $+$ or $-$; topic 9.8 excludes it, because the
+signs reverse between the two cell types.
+
+\section*{\sffamily The traps, one line each}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item Mixing J and kJ in $\Delta H^\circ - T\Delta S^\circ$ --- the most
+        common error in the unit. Check the magnitude.
+  \item Setting $S^\circ$ of an element to zero.
+  \item Writing ``$\Delta G^\circ = 0$ at equilibrium''; it is
+        $\Delta G$ that is zero.
+  \item Multiplying $E^\circ$ when a half-reaction is scaled --- potential
+        is intensive.
+  \item Taking $n$ from a half-reaction rather than the balanced overall
+        equation.
+  \item Forgetting to convert time to seconds, or to divide by $n$, in
+        Faraday's law.
+  \item Calling a thermodynamically favored reaction ``fast''.
+  \item Writing ``spontaneous'' where the CED wants
+        ``thermodynamically favored''.
+\end{itemize}
+
+\section*{\sffamily Self-check --- 12 questions, exam conditions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.34em]
+  \item Sign of $\Delta S^\circ$ for \ce{2SO2(g) + O2(g) -> 2SO3(g)}:
+        \answerblank[2cm]{negative}
+  \item $\Delta S^\circ$ for \ce{CaCO3(s) -> CaO(s) + CO2(g)}
+        ($S^\circ$ 93, 40, 214): \answerblank[2.6cm]{$+161$ J/K}
+  \item $\Delta G^\circ$ at \SI{298}{\kelvin} for
+        $\Delta H^\circ = +178.5$~kJ, $\Delta S^\circ = +161$~J/K:
+        \answerblank[2.4cm]{$+131$ kJ}
+  \item Crossover temperature for that reaction:
+        \answerblank[2.4cm]{1109 K}
+  \item A reaction is favored at all temperatures when the signs are:
+        \answerblank[4.6cm]{$\Delta H^\circ -$, $\Delta S^\circ +$}
+  \item $\Delta G^\circ$ when $K = 1$: \answerblank[1.4cm]{0}
+  \item At equilibrium, $\Delta G = $ \answerblank[1.4cm]{0} and
+        $Q = $ \answerblank[1.4cm]{$K$}
+  \item A catalyst leaves which two unchanged?
+        \answerblank[4cm]{$\Delta G^\circ$ and $K$}
+  \item $E^\circ_{\text{cell}}$ for \ce{Zn} and \ce{Ag+}
+        ($-0.76$, $+0.80$): \answerblank[2.6cm]{$+1.56$ V}
+  \item $\Delta G^\circ$ for that cell, $n = 2$:
+        \answerblank[2.4cm]{$-301$ kJ}
+  \item Raising a reactant concentration does what to $E_{\text{cell}}$?
+        \answerblank[2.6cm]{increases it}
+  \item Mass of \ce{Ag} from \SI{2.00}{\ampere} for \SI{30.0}{\minute}:
+        \answerblank[2.2cm]{4.03 g}
+\end{enumerate}
+
+\begin{apcnote}[How to study for this exam --- and for May]
+This is a 39-point exam over nine blocks, and it is the last unit exam of
+the course. Everything after it is cumulative review.
+
+Redo WS 5's FRQ cold --- the long free-response on the exam is its twin and
+walks the same cell from electrodes through $\Delta G^\circ$ to a
+concentration change. Then practise the translation drill: given any one of
+$\Delta G^\circ$, $K$, $E^\circ$, produce the other two and say what each
+means physically.
+
+Two sanity checks worth thirty seconds each. After a $\Delta G^\circ$
+calculation, is the magnitude in the tens or hundreds of kJ? If it is in
+the tens of thousands you forgot to convert the entropy. And after a
+$-nFE^\circ$ calculation, does a positive voltage give a negative
+$\Delta G^\circ$? If not, you dropped the minus sign.
+\end{apcnote}
+
+\end{document}

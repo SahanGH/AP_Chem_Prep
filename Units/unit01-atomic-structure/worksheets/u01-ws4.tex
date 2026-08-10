@@ -1,0 +1,76 @@
+% WS4 -- Type C: AP-style FRQ practice with the rubric VISIBLE to students.
+% Students answer, then self-score against the printed rubric. The rubric here
+% is intentionally student-facing (unlike exams, where it lives in the key).
+\documentclass{apchem-worksheet}
+
+\apcunit{1}
+\apcunittitle{Atomic Structure and Properties}
+\apcdoctitle{Worksheet 4 \textbullet\ FRQ Practice}
+\apcsubtitle{Type C \textbullet\ CED 1.6--1.8 \textbullet\ answer first, then self-score against the rubric}
+
+\begin{document}
+\wsheader[Write your answers completely before looking at the scoring boxes.
+Then grade yourself the way a reader would: a point is earned only if the
+required element is explicitly on the page --- readers do not award what you
+``meant.'']
+
+\problem[1.6]{\textbf{FRQ 1 (4 points).} The PES spectrum of element Q shows
+five peaks (MJ/mol : relative area): 239 : 2, \ 22.7 : 2, \ 16.5 : 6,
+\ 2.05 : 2, \ 1.00 : 4.}
+\begin{parts}
+  \item Write the full electron configuration of Q and identify it.
+        \answerlines[2]{$1s^2\,2s^2\,2p^6\,3s^2\,3p^4$ --- sulfur (16 e$^-$).}
+  \item Which peak's electrons are removed when Q forms its most common ion,
+        and what is that ion's charge? \answerlines[2]{No removal --- S
+        \emph{gains} 2 e$^-$ into 3p (the 1.00 MJ/mol peak grows), forming
+        \ce{S^2-}.}
+  \item A student claims the 239 MJ/mol peak represents the most
+        \emph{chemically important} electrons because they are held most
+        tightly. Evaluate. \answerlines[2]{Wrong --- chemistry is done by the
+        loosest-held (valence) electrons, the 2.05 and 1.00 MJ/mol peaks;
+        tightly bound core electrons don't participate in bonding.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- FRQ 1 (score yourself)]
+\textbf{1 pt} (a) correct configuration matching all five areas \textbullet\
+\textbf{1 pt} (a) sulfur, tied to 16 total electrons \textbullet\
+\textbf{1 pt} (b) gains 2 electrons $\to$ \ce{S^2-} (accept: 3p peak
+involved) \textbullet\ \textbf{1 pt} (c) rejects claim AND names valence
+electrons as the chemically active ones.
+\end{apcnote}
+
+\problem[1.7]{\textbf{FRQ 2 (4 points).} Successive ionization energies of
+element Z (kJ/mol): $IE_1=590$, $IE_2=1145$, $IE_3=4912$, $IE_4=6491$.}
+\begin{parts}
+  \item Identify Z's group and justify from the data.
+        \answerlines[2]{Group 2 --- the jump between $IE_2$ (1145) and
+        $IE_3$ (4912) marks the start of core removal after 2 valence
+        electrons. (Z is Ca.)}
+  \item Write the formula of the compound Z forms with phosphorus.
+        \answerlines[1]{\ce{Z3P2} (e.g.\ \ce{Ca3P2}): $3(+2) + 2(-3) = 0$.}
+  \item Explain why $IE_2 > IE_1$ \emph{even though} both remove valence
+        electrons. \answerlines[2]{The second electron leaves a
+        \emph{positive} ion --- same nuclear charge acting on fewer
+        electrons (less repulsion, smaller radius), so more energy is
+        required.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- FRQ 2 (score yourself)]
+\textbf{1 pt} (a) group 2 with the $IE_2\to IE_3$ jump cited \textbullet\
+\textbf{1 pt} (b) correct 3:2 formula \textbullet\ \textbf{1 pt} (c) removal
+from a cation / reduced repulsion or radius argument \textbullet\
+\textbf{1 pt} overall: no octet-stability language used as an
+``explanation'' anywhere.
+\end{apcnote}
+
+\begin{spiralstrip}{Blocks 1--3}
+  \item Molecules in \SI{3.4}{\gram} of \ce{NH3}:
+        \answerblank[3.5cm]{$1.2\times10^{23}$}
+  \item Peaks at 10 u and 11 u, average 10.8 u --- which is more abundant?
+        \answerblank[2.5cm]{11 u (\ce{^{11}B})}
+  \item Configuration of \ce{F-}: \answerblank[3cm]{$[\ce{Ne}]$}
+  \item Larger radius: K or \ce{K+}? \answerblank[2cm]{K}
+  \item \%\,H in \ce{H2O2} (nearest whole): \answerblank[2cm]{6\%}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,138 @@
+% Ch18 WS3 -- nonstandard conditions and concentration cells. Block 4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{18}
+\apcunittitle{Electrochemistry}
+\apcdoctitle{Worksheet 3 \textbullet\ Nonstandard Conditions}
+\apcsubtitle{Zumdahl \S18.4 \textbullet\ reason from distance to equilibrium, not from Le Ch\^atelier}
+
+\begin{document}
+\wsheader[\textbf{CED 9.10 is reasoning, not calculation} --- the Nernst
+equation is not required. Standard conditions are $Q = 1$; at equilibrium
+$Q = K$ and $E = 0$. $E^\circ$ (V): \ce{Ag+/Ag} $+0.80$ \textbullet\
+\ce{Cu^2+/Cu} $+0.34$ \textbullet\ \ce{Zn^2+/Zn} $-0.76$.]
+
+\problem[]{State the central principle of this block in one sentence, then
+give the two consequences.
+\answerlines[4]{The cell potential is a driving force toward equilibrium,
+and its magnitude measures how far the cell is from equilibrium.
+Consequently: a change that moves the cell further from equilibrium
+increases $|E|$, and a change that moves it closer decreases $|E|$, reaching
+exactly zero when $Q = K$.}}
+
+\problem[]{Fill in:}
+\begin{parts}
+  \item Standard conditions correspond to $Q = $ \answerblank[1.6cm]{1}
+  \item At that point, $E$ equals \answerblank[2.4cm]{$E^\circ$}
+  \item At equilibrium, $Q = $ \answerblank[1.6cm]{$K$} and $E = $
+        \answerblank[1.6cm]{0}
+  \item A ``dead'' battery is one that has reached
+        \answerblank[3.4cm]{equilibrium}
+\end{parts}
+
+\problem[]{Explain why a dead battery is not an empty one.
+\answerlines[3]{Its voltage is zero because $Q$ has reached $K$ and there is
+no longer a driving force toward equilibrium --- not because the reactants
+are used up. Substantial reactant generally remains; the system has simply
+stopped having anywhere to go.}}
+
+\problem[]{For the Daniell cell,
+$\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}$:}
+\begin{parts}
+  \item Write $Q$ for this reaction.
+        \answerblank[5cm]{$[\ce{Zn^2+}]/[\ce{Cu^2+}]$}
+  \item Why do \ce{Zn(s)} and \ce{Cu(s)} not appear?
+        \answerblank[5.4cm]{they are pure solids}
+  \item Increasing $[\ce{Cu^2+}]$ changes $Q$ how, and $E$ how?
+        \answerlines[2]{$Q$ decreases, taking the cell further from
+        equilibrium, so $E$ increases above $E^\circ$.}
+  \item Increasing $[\ce{Zn^2+}]$ changes $Q$ how, and $E$ how?
+        \answerlines[2]{$Q$ increases, moving the cell closer to
+        equilibrium, so $E$ decreases below $E^\circ$.}
+  \item Adding more solid zinc to the anode changes $E$ how?
+        \answerblank[6.8cm]{not at all --- it is a pure solid}
+\end{parts}
+
+\problem[]{For each change to a running Daniell cell, state whether $E$
+rises, falls, or is unchanged:}
+\begin{parts}
+  \item Water is added to the cathode compartment, diluting \ce{Cu^2+}
+        \answerblank[3cm]{falls}
+  \item \ce{Na2S} is added to the cathode compartment, precipitating
+        \ce{CuS} \answerblank[3cm]{falls}
+  \item Solid \ce{CuSO4} is dissolved in the cathode compartment
+        \answerblank[3cm]{rises}
+  \item The zinc electrode is replaced with a larger zinc electrode
+        \answerblank[3cm]{unchanged}
+  \item The cell is allowed to run for several hours
+        \answerblank[3cm]{falls}
+\end{parts}
+
+\problem[]{Explain your answer to 5(b) fully --- why does precipitating the
+cathode ion have a larger effect than simple dilution?
+\answerlines[3]{Precipitation removes \ce{Cu^2+} from solution far more
+completely than dilution does, since \ce{CuS} is extremely insoluble. That
+drives $[\ce{Cu^2+}]$ very low, so $Q = [\ce{Zn^2+}]/[\ce{Cu^2+}]$ becomes
+very large and the cell moves much closer to equilibrium, cutting the
+voltage sharply.}}
+
+\problem[]{A student justifies an answer by writing ``by Le Ch\^atelier's
+principle, removing a product shifts the equilibrium forward, so the voltage
+rises.'' Explain why this reasoning is rejected here and give the correct
+version.
+\answerlines[4]{The CED states that equilibrium arguments such as Le
+Ch\^atelier's principle do not apply to electrochemical cells, because a
+running cell is not at equilibrium --- being away from equilibrium is
+precisely what gives it a voltage. The correct reasoning compares $Q$ with
+$K$: removing a product lowers $Q$, which takes the cell further from
+equilibrium, and a greater distance from equilibrium means a larger
+potential.}}
+
+\problem[]{Concentration cells. Consider
+$\ce{Cu} \mid \ce{Cu^2+}~(\SI{0.010}{\Molar}) \parallel
+\ce{Cu^2+}~(\SI{1.0}{\Molar}) \mid \ce{Cu}$.}
+\begin{parts}
+  \item Calculate $E^\circ_{\text{cell}}$. \answerblank[3.4cm]{$0.00$ V}
+  \item Explain why the cell nevertheless produces a voltage.
+        \answerlines[3]{Because it is not at equilibrium. For a
+        concentration cell, equilibrium means equal concentrations on both
+        sides, and these differ by a factor of 100. The cell has a driving
+        force to even them out, and that is what the voltage measures.}
+  \item Which half-cell is the anode? Justify by asking what must happen to
+        reach equilibrium. \answerlines[3]{The dilute
+        (\SI{0.010}{\Molar}) side. To reach equal concentrations, that side
+        must gain \ce{Cu^2+}, which requires $\ce{Cu -> Cu^2+ + 2e^-}$ ---
+        oxidation, and therefore the anode.}
+  \item In which direction do electrons flow?
+        \answerblank[9.2cm]{from the dilute to the concentrated half-cell}
+  \item What happens to $E$ as the cell runs, and what is its final value?
+        \answerlines[2]{It falls steadily as the two concentrations
+        converge, reaching zero when they become equal.}
+\end{parts}
+
+\problem[]{A concentration cell is built from silver electrodes in
+\SI{0.10}{\Molar} and \SI{2.0}{\Molar} \ce{AgNO3}.}
+\begin{parts}
+  \item Identify the cathode. \answerblank[5cm]{the \SI{2.0}{\Molar} side}
+  \item Predict what happens to the mass of each electrode.
+        \answerlines[2]{The electrode in the dilute solution loses mass as
+        silver is oxidized; the one in the concentrated solution gains mass
+        as \ce{Ag+} is reduced onto it.}
+  \item Would a cell built from \SI{1.0}{\Molar} and \SI{1.0}{\Molar}
+        \ce{AgNO3} produce any voltage? Explain.
+        \answerlines[2]{No. The concentrations are already equal, so the
+        cell is at equilibrium from the start, $Q = K$, and $E = 0$.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 18 \textbullet\ blocks 1--3}
+  \item $E^\circ_{\text{cell}} = $
+        \answerblank[5cm]{$E^\circ_{\text{cath}} - E^\circ_{\text{anode}}$}
+  \item $\Delta G^\circ = $ \answerblank[2.4cm]{$-nFE^\circ$}
+  \item Doubling a half-reaction changes $E^\circ$ how?
+        \answerblank[2.4cm]{not at all}
+  \item Faraday's constant: \answerblank[3cm]{96,485 C/mol}
+  \item Reduction occurs at the: \answerblank[2cm]{cathode}
+\end{spiralstrip}
+
+\end{document}

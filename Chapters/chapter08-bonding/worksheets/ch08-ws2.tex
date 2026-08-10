@@ -1,0 +1,98 @@
+% Ch8 WS2 -- bond energies and enthalpy from bonds. Block 3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{8}
+\apcunittitle{Bonding: General Concepts}
+\apcdoctitle{Worksheet 2 \textbullet\ Bond Energies}
+\apcsubtitle{Zumdahl \S8.8 \textbullet\ broken minus formed --- the reverse of the formation equation}
+
+\begin{document}
+\wsheader[Bond energies (kJ/mol) for all problems:
+\ce{H-H} 432 \textbullet\ \ce{F-F} 154 \textbullet\ \ce{Cl-Cl} 239
+\textbullet\ \ce{Br-Br} 193 \textbullet\ \ce{H-F} 565 \textbullet\
+\ce{H-Cl} 427 \textbullet\ \ce{H-Br} 363 \textbullet\ \ce{N#N} 941
+\textbullet\ \ce{N-H} 391 \textbullet\ \ce{O=O} 495 \textbullet\
+\ce{O-H} 467 \textbullet\ \ce{C-H} 413 \textbullet\ \ce{C-C} 347
+\textbullet\ \ce{C=C} 614 \textbullet\ \ce{C#C} 839.]
+
+\problem[]{Bond order, length, and energy:}
+\begin{parts}
+  \item Rank \ce{C-C}, \ce{C=C}, \ce{C#C} by increasing bond length.
+        \answerblank[5cm]{\ce{C#C} $<$ \ce{C=C} $<$ \ce{C-C}}
+  \item Is a triple bond three times as strong as a single bond? Support
+        with the data. \answerlines[2]{No --- $839$ versus $347$ is about
+        2.4 times, not 3. The increments shrink as bond order rises.}
+  \item Explain why breaking a bond is always endothermic.
+        \answerlines[2]{The bonded arrangement is lower in energy than
+        separated atoms, so energy must be supplied to climb out of that
+        well.}
+\end{parts}
+
+\problem[]{Compute $\Delta H$ from bond energies:}
+\begin{parts}
+  \item \ce{H2(g) + Br2(g) -> 2 HBr(g)} \workspace[2cm]
+        \keyonly{\begin{apcanswer}Broken $432 + 193 = 625$; formed
+        $2(363) = 726$; $\Delta H = 625 - 726 =
+        \SI{-101}{\kilo\joule}$\end{apcanswer}}
+  \item \ce{N2(g) + 3 H2(g) -> 2 NH3(g)} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}Broken $941 + 3(432) = 2237$; formed
+        $6(391) = 2346$; $\Delta H =
+        \SI{-109}{\kilo\joule}$\end{apcanswer}}
+  \item \ce{2 H2(g) + O2(g) -> 2 H2O(g)} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}Broken $2(432) + 495 = 1359$; formed
+        $4(467) = 1868$; $\Delta H =
+        \SI{-509}{\kilo\joule}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{The accepted value for problem 2(b) is
+\SI{-92.2}{\kilo\joule}, but bond energies give \SI{-109}{\kilo\joule}.}
+\begin{parts}
+  \item Explain the discrepancy. \answerlines[2]{Tabulated bond energies are
+        averages taken across many different compounds, so any calculation
+        built from them yields an estimate rather than an exact value.}
+  \item Would you expect better or worse agreement for
+        \ce{H2 + F2 -> 2 HF}, where every species is diatomic? Explain.
+        \answerlines[2]{Better --- for diatomic molecules the bond energy is
+        a directly measured value for that specific bond, not an average, so
+        the estimate is far more reliable.}
+\end{parts}
+
+\problem[]{Compute $\Delta H$ for the hydrogenation of ethene,
+\ce{C2H4(g) + H2(g) -> C2H6(g)}. Ethene contains one \ce{C=C} and four
+\ce{C-H}; ethane contains one \ce{C-C} and six \ce{C-H}.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Broken: \ce{C=C} 614 $+$ 4 \ce{C-H} $1652$ $+$
+\ce{H-H} 432 $= 2698$. Formed: \ce{C-C} 347 $+$ 6 \ce{C-H} $2478 = 2825$.
+$\Delta H = 2698 - 2825 = \SI{-127}{\kilo\joule}$.
+
+Shortcut: only the C=C$\to$C--C change and two new C--H bonds matter:
+$(614 + 432) - (347 + 2 \times 413) = 1046 - 1173 =
+\SI{-127}{\kilo\joule}$\end{apcanswer}}}
+
+\problem[]{A student computes $\Delta H$ as ``bonds formed minus bonds
+broken'' and reports \SI{+109}{\kilo\joule} for ammonia synthesis. Explain
+the error and how to catch it without redoing the arithmetic.
+\answerlines[3]{The correct order is broken minus formed --- reversing it
+flips the sign. The sanity check: the products' bonds (2346 kJ) are
+collectively stronger than the reactants' (2237 kJ), so energy must be
+released and $\Delta H$ must be negative.}}
+
+\problem[]{Predict, without calculating, whether
+\ce{2 HCl(g) -> H2(g) + Cl2(g)} is exothermic or endothermic. Justify from
+the bond energies alone. \answerlines[2]{Endothermic. Breaking two strong
+H--Cl bonds ($2 \times 427 = 854$) costs more than forming one H--H and one
+Cl--Cl bond releases ($432 + 239 = 671$).}}
+
+\begin{spiralstrip}{Chapter 8 \textbullet\ blocks 1--2}
+  \item Most polar bond: \ce{C-N}, \ce{C-O}, or \ce{C-F}?
+        \answerblank[2.4cm]{\ce{C-F}}
+  \item Larger: \ce{S^2-} or \ce{Cl-}? \answerblank[2.4cm]{\ce{S^2-}}
+  \item Higher lattice energy: \ce{NaF} or \ce{MgO}?
+        \answerblank[2.4cm]{\ce{MgO}}
+  \item Is \ce{CCl4} polar? \answerblank[2cm]{no}
+  \item Lattice energy depends on charges and:
+        \answerblank[2.6cm]{ionic radii}
+\end{spiralstrip}
+
+\end{document}

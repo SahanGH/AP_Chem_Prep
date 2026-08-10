@@ -1,0 +1,125 @@
+% U5 WS2 -- integrated rate laws and half-life. Block 3.
+\documentclass{apchem-worksheet}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Worksheet 2 \textbullet\ Concentration Over Time}
+\apcsubtitle{CED 5.3 \textbullet\ say \emph{which} plot is linear, not just ``the graph''}
+
+\begin{document}
+\wsheader[Zero: {$[\ce{A}] = -kt + [\ce{A}]_0$}, {$t_{1/2} = [\ce{A}]_0/2k$}
+\textbullet\ First: {$\ln[\ce{A}] = -kt + \ln[\ce{A}]_0$},
+{$t_{1/2} = 0.693/k$} \textbullet\ Second:
+{$1/[\ce{A}] = kt + 1/[\ce{A}]_0$}, {$t_{1/2} = 1/(k[\ce{A}]_0)$}.]
+
+\problem[]{\ced{5.3} Complete the table from memory, then check it against
+the data strip:}
+\begin{parts}
+  \item Zero order --- linear plot: \answerblank[3.4cm]{$[\ce{A}]$ vs $t$},
+        slope \answerblank[1.6cm]{$-k$}
+  \item First order --- linear plot:
+        \answerblank[3.4cm]{$\ln[\ce{A}]$ vs $t$}, slope
+        \answerblank[1.6cm]{$-k$}
+  \item Second order --- linear plot:
+        \answerblank[3.4cm]{$1/[\ce{A}]$ vs $t$}, slope
+        \answerblank[1.6cm]{$+k$}
+\end{parts}
+
+\problem[]{\ced{5.3} A first-order reaction has
+$k = \SI{0.0250}{\per\second}$ and $[\ce{A}]_0 = \SI{0.500}{\Molar}$.}
+\begin{parts}
+  \item Find $[\ce{A}]$ after \SI{60.0}{\second}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\ln[\ce{A}] = -(0.0250)(60.0) +
+        \ln(0.500) = -1.50 - 0.693 = -2.193$;
+        $[\ce{A}] = e^{-2.193} =
+        \mathbf{0.112}~\si{\Molar}$\end{apcanswer}}
+  \item Find the half-life. \answerblank[2.6cm]{\SI{27.7}{\second}}
+  \item After two half-lives, what fraction remains, and does your answer
+        to (a) look consistent? \answerlines[2]{One quarter, so
+        \SI{0.125}{\Molar} at \SI{55.4}{\second}. The value at
+        \SI{60}{\second} is slightly lower, \SI{0.112}{\Molar}, which is
+        exactly what it should be.}
+\end{parts}
+
+\problem[]{\ced{5.3} A second-order reaction has
+$k = \SI{0.15}{\per\Molar\per\second}$ and
+$[\ce{A}]_0 = \SI{0.20}{\Molar}$.}
+\begin{parts}
+  \item Find $[\ce{A}]$ after \SI{100}{\second}. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$1/[\ce{A}] = (0.15)(100) + 1/0.20 =
+        15 + 5.0 = 20$; $[\ce{A}] =
+        \mathbf{0.050}~\si{\Molar}$\end{apcanswer}}
+  \item Find the half-life. \answerblank[2.6cm]{\SI{33}{\second}}
+  \item After the first half-life, will the second take the same time,
+        less, or more? Justify. \answerlines[3]{More. For second order
+        $t_{1/2} = 1/(k[\ce{A}]_0)$ depends on the starting concentration,
+        and once half has reacted the remaining concentration is lower, so
+        the next half-life is twice as long.}
+\end{parts}
+
+\problem[]{\ced{5.3} A zero-order reaction has
+$k = \SI{0.020}{\Molar\per\second}$ and $[\ce{A}]_0 = \SI{1.00}{\Molar}$.}
+\begin{parts}
+  \item Find $t_{1/2}$. \answerblank[2.4cm]{\SI{25}{\second}}
+  \item Find $[\ce{A}]$ after \SI{30}{\second}.
+        \answerblank[2.4cm]{\SI{0.40}{\Molar}}
+  \item At what time does the reactant run out completely? What does that
+        tell you about zero-order behaviour?
+        \answerlines[3]{At \SI{50}{\second}, since the concentration falls
+        linearly. Zero-order kinetics cannot continue past that point --- a
+        real reaction stops being zero order once the reactant becomes
+        scarce, because the mechanism causing the saturation (a full
+        catalyst surface, say) can no longer be maintained.}
+\end{parts}
+
+\problem[]{\ced{5.3} Identify the order from each observation:}
+\begin{parts}
+  \item Half-life is \SI{25.0}{\minute} at the start and
+        \SI{25.0}{\minute} again later: \answerblank[3cm]{first order}
+  \item $k$ for that reaction: \answerblank[3cm]{\SI{0.0277}{\per\minute}}
+  \item A plot of $1/[\ce{A}]$ vs $t$ is a straight line with slope
+        $+0.42$: \answerblank[6.4cm]{second order, $k = 0.42$
+        \si{\per\Molar\per\second}}
+  \item A plot of $[\ce{A}]$ vs $t$ is a straight line:
+        \answerblank[3cm]{zero order}
+\end{parts}
+
+\problem[]{\ced{5.3} A student writes ``the graph was linear, so the
+reaction is first order.'' Explain why this earns no credit and write the
+sentence that would.
+\answerlines[3]{All three orders produce \emph{some} linear plot --- the
+statement does not distinguish them. The answer must name the quantity
+plotted: ``the plot of $\ln[\ce{A}]$ against time is linear, therefore the
+reaction is first order in A.''}}
+
+\problem[]{\ced{5.3} Why is a constant half-life such strong evidence of
+first-order kinetics?
+\answerlines[3]{Of the three expressions, only $t_{1/2} = 0.693/k$ contains
+no $[\ce{A}]_0$. For zero order the half-life shortens as the reaction
+proceeds and for second order it lengthens, so a half-life that does not
+change with concentration is a signature of first order.}}
+
+\problem[]{\ced{5.3} A radioactive isotope has a half-life of
+\SI{8.0}{\day}. A sample starts at \SI{40.0}{\milli\gram}.}
+\begin{parts}
+  \item Mass remaining after \SI{24}{\day}:
+        \answerblank[2.6cm]{\SI{5.0}{\milli\gram}}
+  \item How did you get it without using the integrated rate law?
+        \answerlines[2]{\SI{24}{\day} is exactly three half-lives, so the
+        mass halves three times: $40.0 \to 20.0 \to 10.0 \to 5.0$~mg.}
+  \item Radioactive decay is always first order. What does that imply about
+        the time to go from 40.0 to 20.0 mg versus 20.0 to 10.0 mg?
+        \answerblank[4.4cm]{the same --- \SI{8.0}{\day} each}
+\end{parts}
+
+\begin{spiralstrip}{Unit 5 \textbullet\ blocks 1--2}
+  \item Orders come from: \answerblank[2.6cm]{experiment}
+  \item Units of $k$, first order: \answerblank[2.4cm]{\si{\per\second}}
+  \item Doubling [A] quadruples the rate; order in A?
+        \answerblank[1.6cm]{2}
+  \item Rate for $\ce{2A -> B}$ in terms of A:
+        \answerblank[4cm]{$-\tfrac{1}{2}\Delta[\ce{A}]/\Delta t$}
+  \item Initial rate is measured at: \answerblank[2cm]{$t=0$}
+\end{spiralstrip}
+
+\end{document}

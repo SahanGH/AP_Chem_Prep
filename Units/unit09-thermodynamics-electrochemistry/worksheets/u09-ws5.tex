@@ -1,0 +1,172 @@
+% U9 WS5 -- nonstandard conditions, electrolysis, + 10 pt FRQ. Block 9.
+\documentclass{apchem-worksheet}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Worksheet 5 \textbullet\ Nonstandard Conditions, Electrolysis \& FRQ}
+\apcsubtitle{CED 9.10--9.11 \textbullet\ argue from $Q$ against $K$; no Nernst equation required}
+
+\begin{document}
+\wsheader[$q = It$ \textbullet\ $\text{mol e}^- = q/F$ \textbullet\
+$F = \SI{96485}{\coulomb\per\mole}$ \textbullet\
+$E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} -
+E^\circ_{\text{anode}}$ \textbullet\ $\Delta G^\circ = -nFE^\circ$
+\textbullet\ $E^\circ$ (V): \ce{Ag+}/\ce{Ag} $+0.80$ \textbullet\
+\ce{Cu^2+}/\ce{Cu} $+0.34$ \textbullet\ \ce{Zn^2+}/\ce{Zn} $-0.76$
+\textbullet\ molar masses: \ce{Ag} 107.87, \ce{Cu} 63.55, \ce{Al} 26.98.]
+
+\problem[]{\ced{9.10} A cell's voltage as it runs.}
+\begin{parts}
+  \item As a galvanic cell operates, $Q$ \answerblank[1.6cm]{rises} toward
+        $K$ and $E_{\text{cell}}$ \answerblank[1.6cm]{falls}.
+  \item The cell is dead when \answerblank[3cm]{$Q = K$}, at which point
+        $E_{\text{cell}} = $ \answerblank[1.4cm]{0}.
+  \item Explain in one sentence what a cell potential physically measures.
+        \answerlines[2]{How far the cell reaction currently sits from
+        equilibrium --- the larger the displacement, the greater the
+        driving force available to push electrons through the wire.}
+\end{parts}
+
+\problem[]{\ced{9.10} For \ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)},
+predict the effect on $E_{\text{cell}}$ and justify each with $Q$. Do not
+calculate.}
+\begin{parts}
+  \item $[\ce{Cu^2+}]$ is increased.
+        \answerblank[6.6cm]{increases --- $Q$ falls}
+  \item $[\ce{Zn^2+}]$ is increased.
+        \answerblank[6.6cm]{decreases --- $Q$ rises}
+  \item More solid \ce{Zn} is added.
+        \answerblank[7.2cm]{no change --- solids omitted from $Q$}
+  \item Write the reasoning behind (a) in full, as an FRQ answer would
+        require. \answerlines[3]{\ce{Cu^2+} appears in the denominator of
+        $Q$, so raising its concentration lowers $Q$. A smaller $Q$ places
+        the system further from equilibrium, which increases the driving
+        force, so $E_{\text{cell}}$ increases.}
+\end{parts}
+
+\problem[]{\ced{9.10} Concentration cells. Two \ce{Cu} electrodes sit in
+\SI{0.10}{\Molar} and \SI{1.0}{\Molar} \ce{Cu^2+}.}
+\begin{parts}
+  \item $E^\circ_{\text{cell}}$ for this cell is
+        \answerblank[1.4cm]{0}, because
+        \answerblank[6cm]{both half-cells are identical}.
+  \item Yet it produces a voltage. Which half-cell is the anode, and why?
+        \answerlines[3]{The dilute (\SI{0.10}{\Molar}) half-cell. Copper
+        dissolves there, raising its \ce{Cu^2+} concentration, while
+        \ce{Cu^2+} plates out in the concentrated half-cell and lowers it.
+        The cell runs in whichever direction moves the two concentrations
+        toward each other.}
+  \item When does it stop? \answerblank[6.9cm]{when the concentrations are
+        equal}
+\end{parts}
+
+\problem[]{\ced{9.11} Faraday's law --- the chain. Put the four conversions
+in order:}
+\begin{parts}
+  \item First: \answerblank[5.5cm]{current and time to charge}
+  \item Then: \answerblank[5.7cm]{charge to moles of electrons}
+  \item Then: \answerblank[8.1cm]{moles of electrons to moles of
+        substance}
+  \item Finally: \answerblank[5cm]{moles to grams}
+  \item Which step needs the half-reaction, and why?
+        \answerlines[2]{The third. The half-reaction gives the number of
+        electrons per formula unit --- one for \ce{Ag+}, two for
+        \ce{Cu^2+}, three for \ce{Al^3+} --- and that ratio cannot be
+        guessed from the current.}
+\end{parts}
+
+\problem[]{\ced{9.11} A current of \SI{2.00}{\ampere} flows for
+\SI{30.0}{\minute} through \ce{AgNO3}. Calculate the mass of silver
+deposited. \workspace[2.8cm]
+\keyonly{\begin{apcanswer}$t = 1800$~s; $q = (2.00)(1800) = 3600$~C;
+mol e$^- = 3600/96485 = 0.0373$; \ce{Ag+ + e^- -> Ag} is one electron per
+atom, so $m = (0.0373)(107.87) = \mathbf{4.03}$~g\end{apcanswer}}}
+
+\problem[]{\ced{9.11} The same charge is passed through \ce{CuSO4} instead
+--- \SI{1.50}{\ampere} for \SI{1.00}{\hour}.}
+\begin{parts}
+  \item Calculate the mass of copper deposited. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$q = (1.50)(3600) = 5400$~C;
+        mol e$^- = 5400/96485 = 0.0560$; \ce{Cu^2+ + 2e^- -> Cu} needs two
+        per atom, so mol Cu $= 0.0280$ and
+        $m = (0.0280)(63.55) = \mathbf{1.78}$~g\end{apcanswer}}
+  \item A student reports 3.56 g. Identify the single omitted step.
+        \answerblank[6.4cm]{did not divide by $n = 2$}
+\end{parts}
+
+\problem[]{\ced{9.11} How long, in hours, to deposit \SI{5.00}{\gram} of
+copper at \SI{2.00}{\ampere}? \workspace[2.8cm]
+\keyonly{\begin{apcanswer}mol Cu $= 5.00/63.55 = 0.0787$;
+mol e$^- = 2(0.0787) = 0.157$; $q = (0.157)(96485) = 15{,}183$~C;
+$t = 15{,}183/2.00 = 7591$~s $= \mathbf{2.11}$~h\end{apcanswer}}}
+
+\problem[]{\ced{9.11} Producing aluminium requires three electrons per
+atom and \ce{Al^3+}/\ce{Al} sits at $-1.66$~V. Explain why aluminium
+smelters are built beside power stations, and why recycling saves so much
+energy.
+\answerlines[3]{Reducing \ce{Al^3+} is strongly unfavorable, so a large
+applied potential is needed, and three moles of electrons are required per
+mole of metal. Both factors make the electrical energy per kilogram very
+large. Recycling melts aluminium that has already been reduced, skipping
+the electrolysis entirely.}}
+
+\problem[]{\textbf{FRQ (10 points).} \ced{9.8} \ced{9.9} \ced{9.10}
+A galvanic cell is constructed from a zinc electrode in
+\SI{1.0}{\Molar} \ce{Zn(NO3)2} and a silver electrode in \SI{1.0}{\Molar}
+\ce{AgNO3}, joined by a salt bridge.}
+\begin{parts}
+  \item Identify the anode and the cathode, and state the direction of
+        electron flow through the external wire.
+        \answerlines[2]{Zinc is the anode (oxidation, the more negative
+        reduction potential); silver is the cathode (reduction). Electrons
+        flow through the wire from the zinc electrode to the silver
+        electrode.}
+  \item Write the balanced overall cell reaction and give $n$.
+        \answerlines[2]{\ce{Zn(s) + 2Ag+(aq) -> Zn^2+(aq) + 2Ag(s)};
+        $n = 2$.}
+  \item Calculate $E^\circ_{\text{cell}}$. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$E^\circ = 0.80 - (-0.76) =
+        \mathbf{+1.56}$~V\end{apcanswer}}
+  \item Calculate $\Delta G^\circ$ in kJ. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -nFE^\circ =
+        -(2)(96485)(1.56) = -301{,}033~\text{J} =
+        \mathbf{-301}~\text{kJ}$\end{apcanswer}}
+  \item The \ce{AgNO3} solution is diluted to \SI{0.10}{\Molar}. Predict
+        the effect on $E_{\text{cell}}$ and justify without calculating.
+        \answerlines[3]{\ce{Ag+} is a reactant, so lowering its
+        concentration raises $Q$. A larger $Q$ places the system closer to
+        equilibrium, reducing the driving force, so $E_{\text{cell}}$
+        decreases.}
+  \item State the value of $E_{\text{cell}}$ when the cell is exhausted,
+        and the relationship between $Q$ and $K$ at that moment.
+        \answerblank[7.4cm]{$E_{\text{cell}} = 0$ and $Q = K$}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 for both electrodes correctly assigned, 1 for electron
+direction stated as anode $\to$ cathode \textbullet\ \textbf{(b) 2 pts}
+1 balanced equation with \ce{Ag+} doubled, 1 for $n = 2$ --- an unbalanced
+equation earns 0 for both \textbullet\ \textbf{(c) 1 pt} $+1.56$~V; using
+$2(0.80)$ earns 0 \textbullet\ \textbf{(d) 2 pts} 1 correct substitution
+into $-nFE^\circ$ with $n = 2$, 1 answer converted to kJ --- reporting
+joules as kilojoules earns 0 for that point \textbullet\ \textbf{(e) 2 pts}
+1 states that $Q$ increases because \ce{Ag+} is a reactant, 1 concludes
+$E_{\text{cell}}$ decreases --- a bare ``decreases'' with no $Q$ reasoning
+earns 0 of 2 \textbullet\ \textbf{(f) 1 pt} both $E = 0$ and $Q = K$
+required.
+
+\textbf{Total: } $2 + 2 + 1 + 2 + 2 + 1 = 10$.
+\end{apcnote}
+
+\begin{spiralstrip}{Unit 9 \textbullet\ blocks 1--8}
+  \item $E^\circ_{\text{cell}}$ for \ce{Zn} and \ce{Ag+}:
+        \answerblank[2.6cm]{$+1.56$ V}
+  \item $\Delta G^\circ = $ \answerblank[3cm]{$-nFE^\circ$}
+  \item Oxidation occurs at the: \answerblank[2cm]{anode}
+  \item Crossover temperature $= $ \answerblank[3cm]{$\Delta H^\circ /
+        \Delta S^\circ$}
+  \item A catalyst leaves which two unchanged?
+        \answerblank[4cm]{$\Delta G^\circ$ and $K$}
+\end{spiralstrip}
+
+\end{document}

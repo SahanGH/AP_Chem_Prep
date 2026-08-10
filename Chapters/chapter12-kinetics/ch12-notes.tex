@@ -1,0 +1,766 @@
+% Zumdahl Chapter 12 -- Chemical Kinetics. ELABORATED notes, 5 blocks.
+% Every section is on the CED -- this is the cleanest 1:1 chapter-to-unit
+% match in the book alongside Chapter 6.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{12}
+\apcunittitle{Chemical Kinetics}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S12.1--12.7 \textbullet\ PDF pp.~593--632 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+\textbf{Nothing here is off-syllabus.} Chapter 12 maps onto CED Unit 5
+(Kinetics) section by section, in the textbook's own order --- the cleanest
+one-to-one match in the book alongside Chapter 6. You can assign ``read
+Chapter 12'' and mean it.
+
+\S12.1 $\to$ 5.1 \textbullet\ \S12.2--12.3 $\to$ 5.2 \textbullet\
+\S12.4 $\to$ 5.3 \textbullet\ \S12.5 $\to$ 5.4, 5.7--5.9 \textbullet\
+\S12.6 $\to$ 5.5, 5.6, 5.10 \textbullet\ \S12.7 $\to$ 5.11.
+
+One idea governs the whole chapter and is worth holding onto from the start:
+\textbf{everything about a rate must be determined by experiment.} You
+cannot read a rate law off a balanced equation. Thermodynamics tells you
+whether a reaction \emph{can} happen; kinetics tells you how fast, and the
+two are independent.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Reaction Rates}{Zumdahl \S12.1}
+
+\begin{objectives}
+  \item Express reaction rate in terms of any reactant or product.
+  \item Distinguish average from instantaneous rate.
+\end{objectives}
+
+\reading{Zumdahl \S12.1}{594--598}
+
+\begin{warmup}[3]
+  \item Balance: \ce{N2O5 -> NO2 + O2}:
+        \answerblank[4.9cm]{\ce{2 N2O5 -> 4 NO2 + O2}}
+  \item Molarity units: \answerblank[2.6cm]{mol/L}
+  \item Does a negative $\Delta H$ mean a reaction is fast?
+        \answerblank[1.6cm]{no}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Defining rate}
+
+\notesectionz{Concentration change per unit time}{12.1}
+\practice{5}
+
+\[
+  \text{rate} = \answerblank[4cm]{$-\dfrac{\Delta[\text{reactant}]}{\Delta t}$}
+  = \answerblank[3.8cm]{$+\dfrac{\Delta[\text{product}]}{\Delta t}$}
+\]
+
+The minus sign on the reactant term exists so the rate comes out
+\answerblank[1.8cm]{positive} --- reactant concentration is falling, and a
+negative rate would be meaningless.
+
+\notesub{Stoichiometry relates the rates}
+
+For \ce{2 N2O5 -> 4 NO2 + O2}, \ce{NO2} appears four times as fast as
+\ce{O2}. To get one number for the whole reaction, divide each rate by its
+\answerblank[2.2cm]{coefficient}:
+\[
+  \text{rate} = -\frac{1}{2}\frac{\Delta[\ce{N2O5}]}{\Delta t}
+  = \frac{1}{4}\frac{\Delta[\ce{NO2}]}{\Delta t}
+  = \frac{\Delta[\ce{O2}]}{\Delta t}
+\]
+
+\begin{apcnote}
+This is why a question must say \emph{which} species it means. ``The rate of
+the reaction'' and ``the rate of disappearance of \ce{N2O5}'' differ by a
+factor of two here. Read the wording carefully before computing.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Relating rates}
+
+For \ce{2 NO + O2 -> 2 NO2}, if \ce{O2} disappears at
+\SI{0.020}{\Molar\per\second}:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Rate of \ce{NO} disappearance:
+        \answerblank[3.2cm]{\SI{0.040}{\Molar\per\second}}
+  \item Rate of \ce{NO2} formation:
+        \answerblank[3.2cm]{\SI{0.040}{\Molar\per\second}}
+  \item Rate of the reaction: \answerblank[3.2cm]{\SI{0.020}{\Molar\per\second}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Average versus instantaneous}
+
+\notesectionz{Reading a concentration--time curve}{12.1}
+\practice{4}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9.4cm, height=4.8cm,
+    xlabel={time}, ylabel={[reactant]},
+    xtick=\empty, ytick=\empty, ymin=0, xmin=0, xmax=10,
+    axis lines=left]
+  \addplot[seriesA, samples=100, domain=0:10] {1.0*exp(-0.28*x)};
+  \draw[densely dashed, thick] (axis cs:1.2,0.715) -- (axis cs:4.6,0.075);
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item The \term{average rate} over an interval is the slope of the
+        \answerblank[2.4cm]{straight line} joining two points.
+  \item The \term{instantaneous rate} at one moment is the slope of the
+        \answerblank[1.8cm]{tangent} at that point.
+  \item The \term{initial rate} is the instantaneous rate at
+        \answerblank[1.4cm]{$t = 0$} --- the value used in rate-law
+        experiments, because no products have accumulated to complicate
+        things.
+\end{itemize}
+
+\begin{apctrap}
+The curve is steepest at the start and flattens out. That means the rate is
+\emph{not constant} --- it decreases as reactants are consumed. Reporting an
+average rate over a long interval as though it were the rate throughout is a
+standard error.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Rate reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Explain why the initial rate is preferred for determining a rate
+        law. \answerlines[3]{At $t = 0$ the reactant concentrations are
+        known exactly, and no products have built up to run a reverse
+        reaction or interfere. Later rates depend on how much has already
+        reacted, which confounds the measurement.}
+  \item A reaction's rate decreases steadily over time even at constant
+        temperature. Explain why.
+        \answerlines[2]{Reactant concentrations fall as they are consumed,
+        so collisions between reactant molecules become less frequent.}
+\end{enumerate}
+
+\begin{exitticket}
+For \ce{N2 + 3 H2 -> 2 NH3}, if \ce{H2} is consumed at
+\SI{0.30}{\Molar\per\second}, at what rate is \ce{NH3} formed?
+\answerlines[2]{\ce{NH3} forms at $\tfrac23$ the rate \ce{H2} disappears:
+\SI{0.20}{\Molar\per\second}.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Rate Laws and the Method of Initial Rates}{Zumdahl \S12.2--12.3}
+
+\begin{objectives}
+  \item Write a rate law and interpret reaction orders.
+  \item Determine orders experimentally from initial-rate data.
+\end{objectives}
+
+\reading{Zumdahl \S12.2--12.3}{598--604}
+
+\begin{warmup}[3]
+  \item Rate of the reaction \ce{2 A -> B} in terms of A:
+        \answerblank[3.6cm]{$-\tfrac12\Delta[\ce{A}]/\Delta t$}
+  \item Instantaneous rate is the slope of what?
+        \answerblank[2.6cm]{the tangent}
+  \item Why use initial rates? \answerblank[4.9cm]{no products present yet}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The rate law}
+
+\notesectionz{Form and meaning}{12.2}
+\practice{5}
+
+\[
+  \text{rate} = k[\ce{A}]^n[\ce{B}]^m
+\]
+
+$k$ is the \term{rate constant}; $n$ and $m$ are the
+\term{reaction orders}. The \term{overall order} is
+\answerblank[1.4cm]{$n+m$}.
+
+\begin{apctrap}
+\textbf{The exponents are not the coefficients.} They must be determined
+experimentally and frequently disagree with the balanced equation. Zumdahl's
+\ce{2 N2O5 -> 4 NO2 + O2} has a coefficient of 2 but is
+\emph{first} order in \ce{N2O5}. Any answer that reads orders off the
+equation is guessing.
+\end{apctrap}
+
+\notesub{What each order means physically}
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{2.4cm}p{4.6cm}p{6.0cm}@{}}
+\toprule
+\textbf{Order in A} & \textbf{Double [A] and the rate\ldots} & \textbf{Meaning}\\
+\midrule
+0 & \answerblank[3.4cm]{does not change} & rate independent of [A]\\
+1 & \answerblank[1.8cm]{doubles} & rate proportional to [A]\\
+2 & \answerblank[2.4cm]{quadruples} & rate proportional to [A]$^2$\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example: Zumdahl's dinitrogen pentoxide]
+For \ce{2 N2O5 -> 4 NO2 + O2} at \SI{45}{\celsius}, tangent slopes give:
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{tabular}{@{}cc@{}}
+\toprule
+$[\ce{N2O5}]$ & rate (\si{\mole\per\liter\per\second})\\
+\midrule
+0.90 M & $5.4\times10^{-4}$\\
+0.45 M & $2.7\times10^{-4}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Halving the concentration halves the rate, so the reaction is
+\textbf{first order} in \ce{N2O5}:
+\[ \text{rate} = k[\ce{N2O5}] \]
+even though the coefficient is 2.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Interpreting orders}
+
+For rate $= k[\ce{A}]^2[\ce{B}]$:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Overall order: \answerblank[1.6cm]{3}
+  \item Effect of doubling [A]: \answerblank[3cm]{rate $\times 4$}
+  \item Effect of doubling [B]: \answerblank[3cm]{rate $\times 2$}
+  \item Effect of doubling both: \answerblank[3cm]{rate $\times 8$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The method of initial rates}
+
+\notesectionz{Changing one thing at a time}{12.3}
+\practice{5}
+
+The procedure: run several trials, changing \emph{one} concentration
+between two of them while holding the others
+\answerblank[1.8cm]{constant}. The ratio of rates then reveals that
+reactant's order.
+
+\begin{workedexample}[Worked example: determining a full rate law]
+For \ce{2 NO + O2 -> 2 NO2}:
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Trial & $[\ce{NO}]$ & $[\ce{O2}]$ & initial rate (\si{\Molar\per\second})\\
+\midrule
+1 & 0.010 & 0.010 & $2.5\times10^{-5}$\\
+2 & 0.020 & 0.010 & $1.0\times10^{-4}$\\
+3 & 0.010 & 0.020 & $5.0\times10^{-5}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Order in NO} (trials 1 and 2, $[\ce{O2}]$ fixed): [NO] doubled and
+the rate went up by a factor of $1.0\times10^{-4}/2.5\times10^{-5} = 4$.
+Since $2^n = 4$, $n = 2$.
+
+\textbf{Order in \ce{O2}} (trials 1 and 3, [NO] fixed): $[\ce{O2}]$ doubled
+and the rate doubled. $2^m = 2$, so $m = 1$.
+\[ \text{rate} = k[\ce{NO}]^2[\ce{O2}] \]
+
+\textbf{Rate constant} (any trial):
+\[
+  k = \frac{2.5\times10^{-5}}{(0.010)^2(0.010)}
+    = \SI{25}{\per\Molar\squared\per\second}
+\]
+\end{workedexample}
+
+\begin{apcnote}
+The units of $k$ depend on the overall order --- they are whatever makes the
+right side come out as \si{\Molar\per\second}. Third order here gives
+\si{\per\Molar\squared\per\second}. If you are unsure of an order, checking
+that the units of $k$ work is a reliable diagnostic.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Determine a rate law}
+
+For \ce{A + B -> C}:
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Trial & $[\ce{A}]$ & $[\ce{B}]$ & rate (\si{\Molar\per\second})\\
+\midrule
+1 & 0.10 & 0.10 & $4.0\times10^{-3}$\\
+2 & 0.20 & 0.10 & $8.0\times10^{-3}$\\
+3 & 0.20 & 0.20 & $8.0\times10^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Order in A: \answerblank[1.6cm]{1}\quad
+        Order in B: \answerblank[1.6cm]{0}
+  \item Write the rate law and the overall order.
+        \answerblank[6.0cm]{rate $= k[\ce{A}]$; first order overall}
+  \item Calculate $k$ with units. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$k = 4.0\times10^{-3}/0.10 =
+        \SI{4.0e-2}{\per\second}$\end{apcanswer}}
+  \item What does it mean physically that B is zero order?
+        \answerlines[2]{Changing B's concentration does not affect the rate
+        --- B does not appear in the rate-determining step.}
+\end{enumerate}
+
+\begin{exitticket}
+Why can a rate law never be written from a balanced equation alone?
+\answerlines[2]{Orders reflect the mechanism --- specifically the
+rate-determining step --- not the overall stoichiometry, so they must be
+measured experimentally.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Integrated Rate Laws and Half-Life}{Zumdahl \S12.4}
+
+\begin{objectives}
+  \item Use integrated rate laws for zero, first, and second order.
+  \item Identify order from which plot is linear; compute half-life.
+\end{objectives}
+
+\reading{Zumdahl \S12.4}{604--615}
+
+\begin{warmup}[3]
+  \item Rate law for a first-order reaction in A:
+        \answerblank[2.6cm]{rate $= k[\ce{A}]$}
+  \item If doubling [A] quadruples the rate, the order is:
+        \answerblank[1.4cm]{2}
+  \item Units of $k$ for a first-order reaction:
+        \answerblank[2cm]{s$^{-1}$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Three integrated forms}
+
+\notesectionz{Concentration as a function of time}{12.4}
+\practice{5}
+
+The rate law tells you the rate \emph{now}; the integrated rate law tells
+you the concentration \emph{later}.
+
+\renewcommand{\arraystretch}{1.55}
+\noindent\begin{tabular}{@{}p{1.6cm}p{4.4cm}p{3.4cm}p{3.6cm}@{}}
+\toprule
+\textbf{Order} & \textbf{Integrated form} & \textbf{Linear plot} & \textbf{Half-life}\\
+\midrule
+0 & $[\ce{A}]_t = -kt + [\ce{A}]_0$ &
+  \answerblank[2.2cm]{$[\ce{A}]$ vs $t$} &
+  $t_{1/2} = [\ce{A}]_0/2k$\\
+1 & $\ln[\ce{A}]_t = -kt + \ln[\ce{A}]_0$ &
+  \answerblank[2.4cm]{$\ln[\ce{A}]$ vs $t$} &
+  \answerblank[2.7cm]{$t_{1/2} = 0.693/k$}\\
+2 & $\dfrac{1}{[\ce{A}]_t} = kt + \dfrac{1}{[\ce{A}]_0}$ &
+  \answerblank[2.2cm]{$1/[\ce{A}]$ vs $t$} &
+  $t_{1/2} = 1/(k[\ce{A}]_0)$\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Each is a straight line $y = mx + b$ with slope $\pm k$. That is the
+practical test: given concentration--time data, plot all three and see
+\emph{which one is linear}. That plot identifies the order, and its slope
+gives $k$. The AP equations sheet supplies the first- and second-order
+forms.
+\end{apcnote}
+
+\notesub{Why first-order half-life is special}
+
+Only for first order is $t_{1/2}$ \answerblank[6.0cm]{independent of
+concentration}. A first-order reaction takes the same time to go from
+1.00 M to 0.50 M as from 0.50 M to 0.25 M --- which is why radioactive decay
+and drug elimination are described by half-lives at all.
+
+\begin{workedexample}[Worked example: Zumdahl's \ce{N2O5} data]
+Starting at $[\ce{N2O5}]_0 = \SI{0.1000}{\Molar}$, the concentration is
+\SI{0.0500}{\Molar} at \SI{100}{\second} and \SI{0.0250}{\Molar} at
+\SI{200}{\second}. Equal successive halvings confirm
+\textbf{first order} with $t_{1/2} = \SI{100}{\second}$:
+\[
+  k = \frac{0.693}{100.} = \SI{6.93e-3}{\per\second}
+\]
+\end{workedexample}
+
+\begin{workedexample}[Worked example: the tempting wrong answer]
+What is $[\ce{N2O5}]$ at \SI{150}{\second}?
+
+It is tempting to average 0.0500 and 0.0250 to get 0.0375. \textbf{That is
+wrong.} It is $\ln[\ce{A}]$, not $[\ce{A}]$, that is linear in time.
+\begin{align*}
+  \ln[\ce{A}]_{150} &= -(6.93\times10^{-3})(150.) + \ln(0.1000)\\
+  &= -1.040 - 2.303 = -3.343\\
+  [\ce{A}]_{150} &= e^{-3.343} = \SI{0.0353}{\Molar}
+\end{align*}
+Not halfway between --- and the gap between 0.0375 and 0.0353 is exactly the
+error that linear thinking introduces.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Half-life and order}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item First-order with $k = \SI{0.0231}{\per\second}$. Find $t_{1/2}$:
+        \answerblank[2.8cm]{\SI{30.0}{\second}}
+  \item After three half-lives, what fraction remains?
+        \answerblank[2cm]{1/8}
+  \item A plot of $1/[\ce{A}]$ versus $t$ is linear. The order is:
+        \answerblank[1.4cm]{2}
+  \item A plot of $[\ce{A}]$ versus $t$ is linear. The order is:
+        \answerblank[1.4cm]{0}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Identifying order from data}
+
+\notesectionz{The graphical method}{12.4}
+\practice{4}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=10.2cm, height=4.4cm,
+    xlabel={time}, ylabel={plotted quantity},
+    xtick=\empty, ytick=\empty, xmin=0, xmax=10, ymin=0, ymax=10,
+    axis lines=left, legend style={draw=none, font=\sffamily\scriptsize,
+      at={(0.02,0.98)}, anchor=north west}]
+  \addplot[seriesA, domain=0:10] {8-0.6*x};
+  \addlegendentry{$[\ce{A}]$ --- linear $\Rightarrow$ zero order}
+  \addplot[seriesB, domain=0:10] {2+0.7*x};
+  \addlegendentry{$\ln[\ce{A}]$ or $1/[\ce{A}]$ --- whichever is linear}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Procedure: tabulate $[\ce{A}]$, $\ln[\ce{A}]$, and $1/[\ce{A}]$ against
+time. Exactly one column will plot as a straight line, and that identifies
+the \answerblank[1.4cm]{order}. The magnitude of the slope is
+\answerblank[1.2cm]{$k$}.
+
+\segment{APPLICATION}{20}{Full analysis}
+
+A reaction is first order in A with $k = \SI{0.0450}{\per\second}$ and
+$[\ce{A}]_0 = \SI{0.800}{\Molar}$.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Find $t_{1/2}$. \answerblank[3cm]{\SI{15.4}{\second}}
+  \item Find $[\ce{A}]$ after \SI{30.0}{\second}. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\ln[\ce{A}] = -(0.0450)(30.0) +
+        \ln(0.800) = -1.350 - 0.2231 = -1.573$;
+        $[\ce{A}] = \SI{0.208}{\Molar}$\end{apcanswer}}
+  \item How long until $[\ce{A}] = \SI{0.100}{\Molar}$? \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\ln(0.100/0.800) = -kt$;
+        $-2.079 = -0.0450t$; $t = \SI{46.2}{\second}$
+        --- exactly three half-lives, as expected\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+A first-order reaction has $t_{1/2} = \SI{20}{\minute}$. If you start with
+\SI{8.0}{\gram}, how much remains after \SI{60}{\minute}?
+\answerlines[2]{Three half-lives: $8.0 \to 4.0 \to 2.0 \to
+\SI{1.0}{\gram}$.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Reaction Mechanisms}{Zumdahl \S12.5}
+
+\begin{objectives}
+  \item Write rate laws for elementary steps from their molecularity.
+  \item Use the rate-determining step to test a proposed mechanism.
+\end{objectives}
+
+\reading{Zumdahl \S12.5}{615--620}
+
+\begin{warmup}[4]
+  \item $t_{1/2}$ for first order with $k = \SI{0.0693}{\per\second}$:
+        \answerblank[2.6cm]{\SI{10.0}{\second}}
+  \item Which plot is linear for second order?
+        \answerblank[2.6cm]{$1/[\ce{A}]$ vs $t$}
+  \item Fraction left after 2 half-lives: \answerblank[1.6cm]{1/4}
+  \item Rate law exponents come from: \answerblank[3cm]{experiment}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Elementary steps}
+
+\notesectionz{What actually happens, collision by collision}{12.5}
+\practice{1}
+
+A \term{mechanism} is the series of \term{elementary steps} by which a
+reaction really occurs. For an elementary step --- and \emph{only} for an
+elementary step --- the rate law can be written directly from the
+\term{molecularity}:
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{3.2cm}p{3.4cm}p{5.6cm}@{}}
+\toprule
+\textbf{Molecularity} & \textbf{Step} & \textbf{Rate law}\\
+\midrule
+Unimolecular & \ce{A -> products} & \answerblank[2.4cm]{rate $= k[\ce{A}]$}\\
+Bimolecular & \ce{A + B -> products} &
+  \answerblank[3cm]{rate $= k[\ce{A}][\ce{B}]$}\\
+Bimolecular & \ce{2A -> products} &
+  \answerblank[2.6cm]{rate $= k[\ce{A}]^2$}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+This is the one place coefficients \emph{do} become exponents --- because an
+elementary step describes an actual collision. Never do this for an overall
+balanced equation. Knowing which is which is the whole skill.
+\end{apctrap}
+
+\notesub{Two requirements for a valid mechanism}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item The steps must sum to the \answerblank[3.4cm]{overall equation}.
+  \item The predicted rate law must match the
+        \answerblank[3.4cm]{experimental} rate law.
+\end{enumerate}
+
+An \term{intermediate} is produced in one step and consumed in a later one,
+so it \answerblank[2.6cm]{cancels} in the sum and never appears in the
+overall equation.
+
+\segment{GUIDED PRACTICE}{15}{Write step rate laws}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{O3 -> O2 + O}: \answerblank[4cm]{rate $= k[\ce{O3}]$}
+  \item \ce{NO2 + NO2 -> NO3 + NO}:
+        \answerblank[4cm]{rate $= k[\ce{NO2}]^2$}
+  \item \ce{O + O3 -> 2 O2}:
+        \answerblank[4.4cm]{rate $= k[\ce{O}][\ce{O3}]$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The rate-determining step}
+
+\notesectionz{The slow step controls everything}{12.5}
+\practice{6}
+
+\begin{apcnote}
+Zumdahl's analogy: pouring water rapidly through a funnel into a container.
+The container fills at a rate set by the \emph{funnel opening}, not by how
+fast you pour. In the same way, an overall reaction can be no faster than
+its \answerblank[2.6cm]{slowest step} --- the
+\term{rate-determining step}.
+\end{apcnote}
+
+\begin{workedexample}[Worked example: Zumdahl's \ce{NO2} $+$ \ce{CO}]
+Overall: \ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}.
+Experimentally, rate $= k[\ce{NO2}]^2$ --- note that \ce{CO} does not appear
+at all.
+
+Proposed mechanism:
+\begin{align*}
+  \ce{NO2 + NO2 &-> NO3 + NO} &&\text{slow (rate-determining)}\\
+  \ce{NO3 + CO &-> NO2 + CO2} &&\text{fast}
+\end{align*}
+
+\textbf{Check 1 --- do the steps sum correctly?} \ce{NO3} cancels, and one
+\ce{NO2} appears on both sides and cancels, leaving
+\ce{NO2 + CO -> NO + CO2}. \checkmark
+
+\textbf{Check 2 --- does the predicted rate law match?} The slow step is
+bimolecular in \ce{NO2}, so rate $= k[\ce{NO2}]^2$. \checkmark
+
+The mechanism also explains the puzzle: \ce{CO} is absent from the rate law
+because it appears only \emph{after} the rate-determining step. Speeding up
+a step that comes after the bottleneck changes nothing.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Evaluate a mechanism}
+
+Overall: \ce{2 NO + O2 -> 2 NO2}, with experimental
+rate $= k[\ce{NO}]^2[\ce{O2}]$. Proposed:
+\begin{align*}
+  \ce{NO + NO &-> N2O2} &&\text{fast equilibrium}\\
+  \ce{N2O2 + O2 &-> 2 NO2} &&\text{slow}
+\end{align*}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Identify the intermediate.
+        \answerblank[2.6cm]{\ce{N2O2}}
+  \item Verify the steps sum to the overall equation.
+        \answerlines[2]{\ce{N2O2} cancels, leaving
+        \ce{2 NO + O2 -> 2 NO2}. \checkmark}
+  \item The slow step gives rate $= k[\ce{N2O2}][\ce{O2}]$, but
+        \ce{N2O2} is an intermediate and cannot appear in a rate law.
+        Using the fast equilibrium $[\ce{N2O2}] \propto [\ce{NO}]^2$,
+        show that the mechanism predicts the observed rate law.
+        \answerlines[3]{Substituting gives rate $\propto
+        [\ce{NO}]^2[\ce{O2}]$, matching the experimental law. This
+        substitution is the \emph{pre-equilibrium approximation}.}
+\end{enumerate}
+
+\begin{exitticket}
+Why can a proposed mechanism never be \emph{proved} correct?
+\answerlines[2]{Agreement with the observed rate law and the overall
+equation shows a mechanism is consistent, but another untested mechanism
+could predict the same rate law --- consistency is not proof.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Collision Model, Activation Energy, and Catalysis}{Zumdahl \S12.6--12.7}
+
+\begin{objectives}
+  \item Explain rate in terms of collisions, energy, and orientation.
+  \item Interpret energy profiles and use the Arrhenius relationship.
+  \item Explain how catalysts work.
+\end{objectives}
+
+\reading{Zumdahl \S12.6--12.7}{620--632}
+
+\begin{warmup}[3]
+  \item Rate law for the elementary step \ce{2 A -> B}:
+        \answerblank[3cm]{$k[\ce{A}]^2$}
+  \item A species made then consumed is called an:
+        \answerblank[2.6cm]{intermediate}
+  \item The slowest step is called the:
+        \answerblank[4.5cm]{rate-determining step}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Why most collisions do nothing}
+
+\notesectionz{The collision model}{12.6}
+\practice{1}
+
+Molecules collide constantly, yet reactions proceed far more slowly than
+collision frequency alone would predict. Two requirements filter them:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Sufficient \answerblank[3.0cm]{kinetic energy} --- at least the
+        \term{activation energy} $E_a$.
+  \item Correct \answerblank[2.4cm]{orientation} --- the reacting atoms must
+        meet.
+\end{enumerate}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9.6cm, height=5cm,
+    xlabel={reaction progress}, ylabel={potential energy},
+    xtick=\empty, ytick=\empty, xmin=0, xmax=10, ymin=0, ymax=10,
+    axis lines=left]
+  \addplot[seriesA, samples=200, domain=0:10]
+    {3 + 5.2*exp(-((x-5)^2)/2.2)  - 0.15*x};
+  \draw[<->, thick] (axis cs:5,3.1) -- (axis cs:5,8.1)
+    node[midway,right,font=\sffamily\scriptsize] {$E_a$};
+  \draw[<->, thick] (axis cs:9.3,3.0) -- (axis cs:9.3,1.6)
+    node[midway,right,font=\sffamily\scriptsize] {$\Delta H$};
+  \draw[densely dotted] (axis cs:0,3.0) -- (axis cs:9.3,3.0);
+  \draw[densely dotted] (axis cs:8,1.6) -- (axis cs:9.6,1.6);
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+The peak is the \term{activated complex} (transition state). Note that
+$E_a$ and $\Delta H$ are \answerblank[2.4cm]{independent} --- a very
+exothermic reaction can still be extremely slow if $E_a$ is large, which is
+why diamond does not spontaneously become graphite.
+
+\begin{apctrap}
+$E_a$ controls the \emph{rate}; $\Delta H$ controls the \emph{energy
+released}. Confusing them produces the classic wrong claim that exothermic
+reactions must be fast. They are unrelated quantities.
+\end{apctrap}
+
+\notesub{Temperature and the Arrhenius relationship}
+
+\[
+  k = Ae^{-E_a/RT}
+  \qquad\Longleftrightarrow\qquad
+  \ln k = \answerblank[3.4cm]{$-\dfrac{E_a}{R}\left(\dfrac1T\right) + \ln A$}
+\]
+
+A plot of $\ln k$ versus $1/T$ is a straight line of slope
+\answerblank[1.8cm]{$-E_a/R$}. Raising the temperature increases $k$ because
+a larger \emph{fraction} of molecules exceeds $E_a$ --- connect this to the
+Maxwell--Boltzmann curves from Unit 3.
+
+\begin{workedexample}[Worked example: finding $E_a$]
+For \ce{2 N2O5 -> 4 NO2 + O2}: $k = 2.0\times10^{-5}\ \si{\per\second}$ at
+\SI{20}{\celsius} and $k = 2.9\times10^{-3}\ \si{\per\second}$ at
+\SI{60}{\celsius}.
+\begin{align*}
+  \ln\frac{k_2}{k_1} &= -\frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)\\
+  \ln\frac{2.9\times10^{-3}}{2.0\times10^{-5}} &= \ln(145) = 4.98\\
+  \frac{1}{333}-\frac{1}{293} &= -4.10\times10^{-4}\\
+  E_a &= \frac{(8.314)(4.98)}{4.10\times10^{-4}} = \SI{1.0e5}{\joule\per\mole}
+       = \SI{100}{\kilo\joule\per\mole}
+\end{align*}
+A 40-degree rise multiplied the rate constant by roughly 145.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Energy profile reading}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item $E_a$ is measured from which point to which?
+        \answerblank[5cm]{reactants up to the peak}
+  \item $\Delta H$ is measured from which to which?
+        \answerblank[5cm]{reactants to products}
+  \item If the peak lies above the reactants and the products lie below,
+        the reaction is: \answerblank[2.6cm]{exothermic}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Catalysis}
+
+\notesectionz{A different path}{12.7}
+\practice{6}
+
+A \term{catalyst} increases the rate by providing an alternative pathway
+with a \answerblank[2cm]{lower $E_a$}. It is
+\answerblank[3.0cm]{not consumed} --- it is regenerated by the end.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{3.4cm}p{4.2cm}p{5.4cm}@{}}
+\toprule
+ & \textbf{Catalyst} & \textbf{Intermediate}\\
+\midrule
+Appears first as a & \answerblank[1.8cm]{reactant} &
+  \answerblank[1.6cm]{product}\\
+Net effect & regenerated, unchanged & consumed later\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+The distinction is a favourite exam item and comes down to \emph{order of
+appearance}. A catalyst is used in an early step and regenerated in a later
+one; an intermediate is created in an early step and used up in a later one.
+Both cancel from the overall equation --- so look at which side each appears
+on first.
+\end{apcnote}
+
+\notesub{What a catalyst does and does not change}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item Changes: the \answerblank[2.4cm]{mechanism}, $E_a$, and the rate.
+  \item Does \emph{not} change: $\Delta H$, the position of
+        \answerblank[2.5cm]{equilibrium}, or the identity of the products.
+\end{itemize}
+
+Types: \term{homogeneous} (same phase as reactants) and
+\term{heterogeneous} (different phase --- typically a solid surface, as in a
+catalytic converter). \term{Enzymes} are biological catalysts.
+
+\segment{APPLICATION}{20}{Catalysis reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item On an energy profile, sketch how a catalyst changes the curve and
+        state what stays the same. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}A second curve with a lower peak (possibly
+        with multiple smaller humps for a multi-step path). Reactant and
+        product energies --- and therefore $\Delta H$ --- are
+        unchanged.\end{apcanswer}}
+  \item A catalyst speeds up a reaction. Does it produce more product at
+        equilibrium? Explain. \answerlines[3]{No. A catalyst lowers $E_a$
+        for both the forward and reverse directions equally, so equilibrium
+        is reached sooner but its position is unchanged. Only the rate
+        changes, not the yield.}
+  \item In this mechanism, classify \ce{Cl} and \ce{ClO}:
+        \ce{Cl + O3 -> ClO + O2}; \ce{ClO + O -> Cl + O2}.
+        \answerlines[2]{\ce{Cl} is a catalyst --- consumed first, then
+        regenerated. \ce{ClO} is an intermediate --- produced first, then
+        consumed. This is the ozone-depletion mechanism.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does a modest temperature rise often produce a large increase in rate?
+\answerlines[2]{Rate depends exponentially on temperature through
+$e^{-E_a/RT}$. A small rise substantially increases the \emph{fraction} of
+molecules with energy exceeding $E_a$, since that fraction lies in the tail
+of the Maxwell--Boltzmann distribution.}
+\end{exitticket}
+
+\end{document}

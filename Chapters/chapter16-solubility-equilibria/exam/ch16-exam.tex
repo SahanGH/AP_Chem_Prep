@@ -1,0 +1,322 @@
+% Zumdahl Chapter 16 test -- 20 MCQ + 2 short FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{16}
+\apcunittitle{Solubility Equilibria}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S16.1 \textbullet\ 50 minutes \textbullet\ $K_{sp}$ values provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \S16.1 only --- CED topics 7.11, 7.12 and 8.11. Nothing from
+\S16.2 (precipitation, qualitative analysis) or \S16.3 (complex ions)
+appears; both are off the framework, and the $Q$-versus-$K_{sp}$ material in
+Block 4 was marked enrichment.
+
+Per the CED exclusion on topic 8.11, pH and solubility is assessed
+\textbf{qualitatively only}. You will be asked to predict a direction and
+justify it, never to compute a solubility from a pH.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 25 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- Ksp expressions and meaning -------------------------------------------
+\begin{mcq}
+  The $K_{sp}$ expression for \ce{Ag2CrO4} is
+  \choices
+    \choice{$[\ce{Ag+}][\ce{CrO4^2-}]$}
+    \correct{$[\ce{Ag+}]^2[\ce{CrO4^2-}]$}
+    \choice{$[\ce{Ag+}]^2[\ce{CrO4^2-}]^2$}
+    \choice{$[\ce{Ag2CrO4}]/[\ce{Ag+}]^2[\ce{CrO4^2-}]$}
+\end{mcq}
+\why{Each ion is raised to its coefficient; the solid is omitted.}
+
+\begin{mcq}
+  A solid is omitted from a $K_{sp}$ expression because
+  \choices
+    \correct{it is a pure solid and has no variable concentration}
+    \choice{its concentration is zero}
+    \choice{it does not participate in the reaction}
+    \choice{$K_{sp}$ applies only to ions}
+\end{mcq}
+\why{The same rule that omits pure solids and liquids from any $K$.}
+
+\begin{mcq}
+  Adding more undissolved solid \ce{AgCl} to a saturated solution of
+  \ce{AgCl} causes $[\ce{Ag+}]$ to
+  \choices
+    \correct{stay the same}
+    \choice{increase}
+    \choice{decrease}
+    \choice{increase, then decrease}
+\end{mcq}
+\why{Extra surface area speeds dissolving and re-depositing equally, so the
+equilibrium position does not move.}
+
+\begin{mcq}
+  Which statement is correct?
+  \choices
+    \correct{$K_{sp}$ is a constant; solubility is a position that varies
+      with the solution}
+    \choice{$K_{sp}$ and solubility are two names for the same quantity}
+    \choice{solubility is constant; $K_{sp}$ varies with the solution}
+    \choice{both vary with the amount of excess solid}
+\end{mcq}
+\why{This distinction governs every common-ion question.}
+
+% ---- Ksp from solubility and back ------------------------------------------
+\begin{mcq}
+  For a salt \ce{MX} with molar solubility $s$, $K_{sp}$ equals
+  \choices
+    \correct{$s^2$}
+    \choice{$2s$}
+    \choice{$4s^3$}
+    \choice{$s$}
+\end{mcq}
+\why{Both ions are present at $s$.}
+
+\begin{mcq}
+  For a salt \ce{MX2} with molar solubility $s$, $K_{sp}$ equals
+  \choices
+    \choice{$s^3$}
+    \choice{$2s^3$}
+    \correct{$4s^3$}
+    \choice{$27s^4$}
+\end{mcq}
+\why{$(s)(2s)^2$ --- the 2 is both a multiplier and inside the square.}
+\distractor{A}{forgot to double the anion}
+
+\begin{mcq}
+  A salt \ce{MX} has $K_{sp} = 4.0\times10^{-10}$. Its molar solubility is
+  \choices
+    \choice{$4.0\times10^{-10}$}
+    \choice{$2.0\times10^{-10}$}
+    \correct{$2.0\times10^{-5}$}
+    \choice{$1.6\times10^{-19}$}
+\end{mcq}
+\why{$s = \sqrt{K_{sp}}$.}
+
+\begin{mcq}
+  A student finds $K_{sp}$ for \ce{PbI2} using $K_{sp} = s^3$. Their answer
+  is
+  \choices
+    \correct{too small by a factor of 4}
+    \choice{too large by a factor of 4}
+    \choice{too small by a factor of 2}
+    \choice{correct}
+\end{mcq}
+\why{The correct expression is $4s^3$.}
+
+\begin{mcq}
+  \ce{Ag3PO4} dissolves to give three \ce{Ag+} and one \ce{PO4^3-}. In
+  terms of $s$, $K_{sp}$ equals
+  \choices
+    \choice{$3s^2$}
+    \choice{$4s^3$}
+    \correct{$27s^4$}
+    \choice{$s^4$}
+\end{mcq}
+\why{$(3s)^3(s) = 27s^4$.}
+
+% ---- relative solubilities -------------------------------------------------
+\begin{mcq}
+  $K_{sp}$ values may be compared directly to rank solubilities only when
+  the salts
+  \choices
+    \correct{produce the same total number of ions}
+    \choice{contain the same cation}
+    \choice{have $K_{sp}$ values within one order of magnitude}
+    \choice{are all insoluble by the Unit 4 rules}
+\end{mcq}
+\why{Otherwise $s$ enters $K_{sp}$ raised to different powers.}
+
+\begin{mcq}
+  \ce{BaSO4} ($K_{sp} = 1.5\times10^{-9}$), \ce{PbSO4}
+  ($1.3\times10^{-8}$) and \ce{SrSO4} ($3.2\times10^{-7}$). The most
+  soluble is
+  \choices
+    \choice{\ce{BaSO4}}
+    \choice{\ce{PbSO4}}
+    \correct{\ce{SrSO4}}
+    \choice{cannot be determined without calculation}
+\end{mcq}
+\why{All three are \ce{MX} salts, so the largest $K_{sp}$ is the most
+soluble.}
+
+\begin{mcq}
+  \ce{CuS} has a much larger $K_{sp}$ than \ce{Bi2S3}, yet \ce{Bi2S3} is
+  far more soluble. This is possible because
+  \choices
+    \correct{\ce{Bi2S3} releases five ions, so $K_{sp}$ involves $s$ to the
+      fifth power}
+    \choice{$K_{sp}$ values for sulfides are unreliable}
+    \choice{\ce{Bi2S3} reacts with water}
+    \choice{\ce{CuS} has a larger molar mass}
+\end{mcq}
+\why{$K_{sp} = 108s^5$ for \ce{M2X3}; a fifth power crushes the number.}
+
+\begin{mcq}
+  According to the CED, salts the Unit 4 rules call ``soluble'' correspond
+  to $K_{sp}$ values that are
+  \choices
+    \choice{negative}
+    \choice{exactly 1}
+    \correct{greater than 1}
+    \choice{smaller than $10^{-10}$}
+\end{mcq}
+\why{The solubility rules are the qualitative form of the same idea.}
+
+% ---- common ion ------------------------------------------------------------
+\begin{mcq}
+  Adding \ce{NaCl} to a saturated solution of \ce{AgCl} causes the
+  solubility of \ce{AgCl} to
+  \choices
+    \correct{decrease}
+    \choice{increase}
+    \choice{remain the same}
+    \choice{decrease only if the solution is heated}
+\end{mcq}
+\why{Adding a product shifts the dissolution equilibrium left.}
+
+\begin{mcq}
+  In that same experiment, $K_{sp}$ for \ce{AgCl}
+  \choices
+    \choice{decreases}
+    \choice{increases}
+    \correct{does not change}
+    \choice{becomes undefined}
+\end{mcq}
+\why{Only temperature changes an equilibrium constant.}
+
+\begin{mcq}
+  Which addition would \emph{not} change the solubility of \ce{BaSO4}?
+  \choices
+    \choice{\ce{Na2SO4}}
+    \choice{\ce{BaCl2}}
+    \correct{\ce{KNO3}}
+    \choice{\ce{Ba(NO3)2}}
+\end{mcq}
+\why{Neither \ce{K+} nor \ce{NO3-} appears in the equilibrium.}
+
+\begin{mcq}
+  For \ce{CaF2}, adding fluoride suppresses the solubility far more
+  strongly than adding an equal concentration of calcium, because
+  \choices
+    \correct{fluoride is squared in the $K_{sp}$ expression}
+    \choice{fluoride ions are smaller}
+    \choice{calcium ions are more highly charged}
+    \choice{\ce{NaF} is more soluble than \ce{Ca(NO3)2}}
+\end{mcq}
+\why{The exponent controls how sensitive the product is to that ion.}
+
+% ---- pH and solubility -----------------------------------------------------
+\begin{mcq}
+  A salt's solubility increases in acidic solution when its anion is
+  \choices
+    \correct{the conjugate base of a weak acid}
+    \choice{the conjugate base of a strong acid}
+    \choice{a halide}
+    \choice{singly charged}
+\end{mcq}
+\why{Only then does added \ce{H+} remove the anion from solution.}
+
+\begin{mcq}
+  Which salt is \emph{more} soluble in \SI{1}{\Molar} \ce{HNO3} than in
+  pure water?
+  \choices
+    \choice{\ce{AgCl}}
+    \choice{\ce{AgBr}}
+    \correct{\ce{CaCO3}}
+    \choice{\ce{PbI2}}
+\end{mcq}
+\why{\ce{CO3^2-} is the conjugate base of the weak acid \ce{H2CO3}; the
+halides come from strong acids.}
+\distractor{A}{\ce{Cl-} is a negligible base, so acid has no effect}
+
+\begin{mcq}
+  Raising the pH of a saturated \ce{Mg(OH)2} solution causes its solubility
+  to
+  \choices
+    \choice{increase}
+    \correct{decrease}
+    \choice{stay the same}
+    \choice{first increase, then decrease}
+\end{mcq}
+\why{Higher pH means more \ce{OH-}, which is a common ion here.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 25 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+$K_{sp}$ at \SI{25}{\celsius}: \ce{Mg(OH)2} $8.9\times10^{-12}$
+\textbullet\ \ce{AgCl} $1.6\times10^{-10}$ \textbullet\ \ce{BaSO4}
+$1.5\times10^{-9}$ \textbullet\ \ce{CaCO3} $8.7\times10^{-9}$.
+\end{apcnote}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S16.1 \textbullet\ $K_{sp}$ and molar solubility}
+
+Magnesium hydroxide, \ce{Mg(OH)2}, is a sparingly soluble solid.
+
+\begin{parts}
+  \item Write the dissolution equation and the $K_{sp}$ expression.
+        \answerlines[2]{\ce{Mg(OH)2(s) <=> Mg^2+(aq) + 2OH^-(aq)};
+        $K_{sp} = [\ce{Mg^2+}][\ce{OH-}]^2$}
+  \item Calculate the molar solubility in pure water. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$[\ce{Mg^2+}] = s$, $[\ce{OH-}] = 2s$;
+        $K_{sp} = 4s^3 = 8.9\times10^{-12}$;
+        $s^3 = 2.2\times10^{-12}$;
+        $s = \mathbf{1.3\times10^{-4}}$~M\end{apcanswer}}
+  \item State what happens to the solubility if \ce{NaOH} is added, and
+        what happens to $K_{sp}$. \answerlines[2]{The solubility decreases,
+        because \ce{OH-} is a common ion and shifts the equilibrium left.
+        $K_{sp}$ is unchanged --- it depends only on temperature.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) equation and expression both correct, with the hydroxide
+    squared}
+  \rpoint{2}{(b) 1 pt recognizing $[\ce{OH-}] = 2s$ and building $4s^3$;
+    1 pt $s = 1.3\times10^{-4}$~M --- using $s^3$ caps this part at 1}
+  \rpoint{1}{(c) BOTH halves right: solubility falls AND $K_{sp}$ unchanged
+    --- saying $K_{sp}$ decreases earns 0 for this point}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S16.1 \textbullet\ common ion and pH}
+
+A saturated solution of \ce{BaSO4} is prepared.
+
+\begin{parts}
+  \item Calculate the molar solubility of \ce{BaSO4} in pure water.
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$K_{sp} = s^2 = 1.5\times10^{-9}$;
+        $s = \mathbf{3.9\times10^{-5}}$~M\end{apcanswer}}
+  \item Calculate the molar solubility in \SI{0.010}{\Molar} \ce{Na2SO4}.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[\ce{SO4^2-}] \approx 0.010$;
+        $1.5\times10^{-9} = (s)(0.010)$;
+        $s = \mathbf{1.5\times10^{-7}}$~M\end{apcanswer}}
+  \item \ce{BaSO4} and \ce{CaCO3} are each treated with dilute
+        \ce{HNO3}. Predict the effect on each solubility and justify the
+        difference. Do not calculate. \answerlines[3]{\ce{CaCO3} becomes
+        more soluble: \ce{CO3^2-} is the conjugate base of the weak acid
+        \ce{H2CO3}, so \ce{H+} removes it and the equilibrium shifts right.
+        \ce{BaSO4} is essentially unaffected, because \ce{SO4^2-} comes
+        from the strong acid \ce{H2SO4} and is a negligible base.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) $s = 3.9\times10^{-5}$~M}
+  \rpoint{1}{(b) $s = 1.5\times10^{-7}$~M from $K_{sp}/[\ce{SO4^2-}]$}
+  \rpoint{2}{(c) 1 pt \ce{CaCO3} more soluble with the weak-acid
+    justification; 1 pt \ce{BaSO4} unaffected because \ce{SO4^2-} is a
+    negligible base --- an answer that only says ``acids dissolve things''
+    earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

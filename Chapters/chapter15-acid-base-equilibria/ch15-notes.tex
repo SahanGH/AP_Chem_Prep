@@ -1,0 +1,900 @@
+% Zumdahl Chapter 15 -- Acid-Base Equilibria. Elaborated notes, 5 blocks.
+% Back half of CED Unit 8 (buffers + titrations) and CED 7.12 (common ion).
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{15}
+\apcunittitle{Acid--Base Equilibria}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S15.1--15.5 \textbullet\ PDF pp.~755--803 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+This is the \textbf{back half of Unit 8} and the chapter that finishes it:
+\S15.1 $\to$ CED 7.12, \S15.2 $\to$ 8.4 and 8.8--8.9, \S15.3 $\to$ 8.10,
+\S15.4 $\to$ 8.5, \S15.5 $\to$ 8.5 (indicator choice).
+
+\textbf{It also closes a gap left open in Chapter 13.} Unit 7's last two
+topics were missing from the equilibrium chapter: \S15.1 supplies
+\textbf{7.12, the common-ion effect}. Only \textbf{7.11 (Ksp)} is still
+outstanding, and it lives in \S16.1.
+
+\textbf{Marked enrichment:} \S15.6 (polyprotic titrations). You are
+responsible for recognizing the \emph{shape} of a polyprotic curve and what
+each plateau means; the multi-equivalence-point calculations are not on the
+framework.
+
+Nothing here is a new kind of problem. A buffer is a weak-acid equilibrium
+with the conjugate base already present, and a titration is a
+\emph{stoichiometry} problem followed by whichever equilibrium is left over.
+The skill being built is deciding \emph{which} of those two you are in.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{The Common Ion Effect and What a Buffer Is}{Zumdahl \S15.1--15.2}
+
+\begin{objectives}
+  \item Predict the effect of a common ion using Le Ch\^atelier's principle.
+  \item Recognize a buffer and calculate its pH from $K_a$ and the
+        concentration ratio.
+\end{objectives}
+
+\reading{Zumdahl \S15.1--15.2}{756--765}
+
+\begin{warmup}[4]
+  \item pH of \SI{0.10}{\Molar} \ce{HC2H3O2} ($K_a = 1.8\times10^{-5}$):
+        \answerblank[2.4cm]{2.87}
+  \item $K_b$ for \ce{C2H3O2^-}: \answerblank[3.2cm]{$5.6\times10^{-10}$}
+  \item If $Q < K$, the equilibrium shifts: \answerblank[2.4cm]{right}
+  \item Adding a product to a system at equilibrium shifts it:
+        \answerblank[2.4cm]{left}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The common ion effect}
+
+\notesectionz{Le Ch\^atelier, wearing a different hat}{15.1}
+\practice{6}
+
+A \term{common ion} is an ion that is already a participant in the
+equilibrium you care about. Adding it shifts the position of that
+equilibrium \answerblank[2.6cm]{backward} --- there is no new principle
+here at all. This is Le Ch\^atelier's principle applied to an acid
+ionization.
+
+\[ \ce{HF(aq) <=> H+(aq) + F^-(aq)} \]
+
+Dissolve \ce{NaF} in this solution and you have added \ce{F-}, a product.
+The equilibrium shifts \answerblank[2cm]{left}, so the acid ionizes
+\emph{less} and the solution is \answerblank[2.4cm]{less acidic} than the
+acid alone.
+
+\begin{workedexample}[Worked example 1: Zumdahl's fluoride comparison]
+Compare \SI{1.0}{\Molar} \ce{HF} alone with a solution that is
+\SI{1.0}{\Molar} in \ce{HF} \emph{and} \SI{1.0}{\Molar} in \ce{NaF}.
+$K_a(\ce{HF}) = 7.2\times10^{-4}$.
+
+\textbf{\ce{HF} alone.} The usual weak-acid ICE:
+$x = \sqrt{(7.2\times10^{-4})(1.0)} = 2.7\times10^{-2}$, so
+$\mathrm{pH} = \mathbf{1.57}$ and the acid is $\mathbf{2.7\%}$ ionized.
+
+\textbf{With \ce{NaF} present.} Now $[\ce{F-}]_0 = 1.0$, not zero:
+\[ K_a = \frac{x(1.0+x)}{1.0-x} \approx \frac{x(1.0)}{1.0}
+   \quad\Longrightarrow\quad x = K_a\frac{[\ce{HF}]}{[\ce{F-}]}
+   = 7.2\times10^{-4} \]
+so $\mathrm{pH} = \mathbf{3.14}$ and the acid is only $\mathbf{0.072\%}$
+ionized.
+
+The common ion suppressed the ionization by a factor of about
+\textbf{37}, and moved the pH by more than \textbf{1.5 units}.
+\end{workedexample}
+
+\begin{apctrap}
+Notice what the algebra collapsed to:
+\[ [\ce{H+}] = K_a\,\frac{[\ce{HA}]}{[\ce{A^-}]} \]
+No square root, no quadratic. When \emph{both} members of a conjugate pair
+are present in comparable amounts, the ICE table's $x$ is negligible against
+both of them, and the whole problem reduces to a ratio. This single
+expression is the engine of the entire chapter.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Predicting the shift}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{NaCN} is added to a solution of \ce{HCN}. The pH
+        \answerblank[4.6cm]{rises (less ionization)}
+  \item \ce{NH4Cl} is added to a solution of \ce{NH3}. The pH
+        \answerblank[4.6cm]{falls (less \ce{OH-})}
+  \item \ce{NaCl} is added to a solution of \ce{HC2H3O2}. The pH
+        \answerblank[7.2cm]{no change --- neither ion participates}
+  \item Which ion in item 3 would have mattered?
+        \answerblank[4.6cm]{\ce{C2H3O2^-}, not \ce{Cl-}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{What makes a solution a buffer}
+
+\notesectionz{Definition and recognition}{15.2}
+\practice{6}
+
+A \term{buffered solution} resists a change in pH when acid or base is
+added. It contains \textbf{significant amounts of both members of a
+conjugate acid--base pair}: a weak acid together with its conjugate base, or
+a weak base together with its conjugate acid.
+
+Three ways a buffer shows up on the exam:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Stated outright} --- \ce{HC2H3O2} plus \ce{NaC2H3O2}, or
+        \ce{NH3} plus \ce{NH4Cl}.
+  \item \textbf{Made by partial neutralization} --- a weak acid plus
+        \emph{less than enough} strong base to consume it. The base
+        converts part of the acid to its conjugate base, and what remains is
+        a mixture of both.
+  \item \textbf{Hiding at the halfway point of a titration}, which is item 2
+        with the amounts chosen so the two are equal.
+\end{enumerate}
+
+\begin{apctrap}
+A strong acid and its ``conjugate base'' is \emph{not} a buffer.
+\ce{HCl} and \ce{NaCl} do nothing: \ce{Cl-} has no affinity for protons, so
+there is nothing to absorb added acid. A buffer requires a \emph{weak}
+conjugate pair --- the reversibility is the whole point.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Ratio calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Find $[\ce{H+}]$ and pH for a solution \SI{0.10}{\Molar} in \ce{HF}
+        and \SI{0.30}{\Molar} in \ce{NaF}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[\ce{H+}] = (7.2\times10^{-4})
+        (0.10/0.30) = 2.4\times10^{-4}$; pH $= \mathbf{3.62}$\end{apcanswer}}
+  \item Identify each as a buffer or not, with a reason:
+        \begin{enumerate}[leftmargin=1.4em,itemsep=0.25em]
+          \item \ce{HNO3} $+$ \ce{NaNO3}
+                \answerblank[7cm]{no --- \ce{HNO3} is strong}
+          \item \ce{NH3} $+$ \ce{NH4Cl}
+                \answerblank[8cm]{yes --- weak base and its conjugate acid}
+          \item \ce{HCN} $+$ \ce{NaCN}
+                \answerblank[8cm]{yes --- weak acid and its conjugate base}
+          \item \ce{NaOH} $+$ \ce{NaCl}
+                \answerblank[8cm]{no --- strong base, no conjugate pair}
+        \end{enumerate}
+\end{enumerate}
+
+\begin{exitticket}
+A student says ``\ce{NaF} makes the solution basic, so adding it to \ce{HF}
+raises the pH.'' The conclusion is right but the reasoning is incomplete.
+Give the better explanation.
+\keyonly{\begin{apcanswer}\ce{F-} is a product of the \ce{HF} ionization, so
+adding it shifts that equilibrium to the left and suppresses the production
+of \ce{H+}. The hydrolysis of \ce{F-} is a real but much smaller effect; the
+dominant reason is the common-ion shift.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Henderson--Hasselbalch Equation}{Zumdahl \S15.2}
+
+\begin{objectives}
+  \item Derive and apply $\mathrm{pH} = \mathrm{p}K_a +
+        \log([\text{base}]/[\text{acid}])$.
+  \item Explain why the ratio, not the absolute concentration, sets the pH.
+\end{objectives}
+
+\reading{Zumdahl \S15.2}{763--767}
+
+\begin{warmup}[3]
+  \item $[\ce{H+}] = K_a \times$ \answerblank[3cm]{$[\ce{HA}]/[\ce{A^-}]$}
+  \item p$K_a$ of \ce{HC2H3O2}: \answerblank[2cm]{4.74}
+  \item $\log(1) =$ \answerblank[1.4cm]{0}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Deriving the equation}
+
+\notesectionz{From $K_a$ to a log equation}{15.2}
+\practice{5}
+
+Start from the rearranged $K_a$ expression and take $-\log$ of both sides:
+\[ [\ce{H+}] = K_a\frac{[\ce{HA}]}{[\ce{A^-}]}
+   \;\Longrightarrow\;
+   -\log[\ce{H+}] = -\log K_a - \log\frac{[\ce{HA}]}{[\ce{A^-}]} \]
+Inverting the fraction flips the sign of its log, which gives the
+\term{Henderson--Hasselbalch equation}:
+\[ \boxed{\;\mathrm{pH} = \mathrm{p}K_a
+   + \log\frac{[\ce{A^-}]}{[\ce{HA}]}
+   = \mathrm{p}K_a + \log\frac{[\text{base}]}{[\text{acid}]}\;} \]
+
+Read the equation as three separate statements:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item If $[\text{base}] = [\text{acid}]$, the log term is
+        \answerblank[1.4cm]{0}, so the pH equals
+        \answerblank[2cm]{p$K_a$}.
+  \item More base than acid $\Rightarrow$ log term positive $\Rightarrow$ pH
+        \answerblank[2.4cm]{above p$K_a$}.
+  \item More acid than base $\Rightarrow$ pH
+        \answerblank[2.4cm]{below p$K_a$}.
+\end{itemize}
+
+\begin{apctrap}
+\textbf{Base over acid, and the base is the anion.} Writing the ratio upside
+down flips the sign of the correction, so a pH that should sit above p$K_a$
+lands the same distance below it. Before you divide, name the two species
+out loud: \ce{C2H3O2^-} is the base, \ce{HC2H3O2} is the acid.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Straight substitution}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \SI{0.25}{\Molar} \ce{HC2H3O2} and \SI{0.15}{\Molar}
+        \ce{NaC2H3O2}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}pH $= 4.74 + \log(0.15/0.25)
+        = 4.74 - 0.22 = \mathbf{4.52}$\end{apcanswer}}
+  \item \SI{0.20}{\Molar} \ce{NH3} and \SI{0.30}{\Molar} \ce{NH4Cl}, given
+        $K_a(\ce{NH4+}) = 5.6\times10^{-10}$: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}p$K_a = 9.25$;
+        pH $= 9.25 + \log(0.20/0.30) = 9.25 - 0.18 =
+        \mathbf{9.07}$\end{apcanswer}}
+  \item \SI{0.100}{\Molar} \ce{HOCl} and \SI{0.100}{\Molar} \ce{NaOCl}
+        ($K_a = 3.5\times10^{-8}$): \answerblank[2.6cm]{pH $= 7.46$}
+\end{enumerate}
+
+\begin{apcnote}[On the ammonium p$K_a$]
+Two routes give answers differing by $0.01$: $-\log(5.6\times10^{-10}) =
+9.25$, while $14.00 - \mathrm{p}K_b = 14.00 - 4.74 = 9.26$. Both are
+correct; the gap is rounding in the tabulated constants, nothing more. AP
+scoring accepts either. Do not chase the last digit --- pick one route and
+be consistent within a problem.
+\end{apcnote}
+
+\segment{INSTRUCTION B}{20}{Why the ratio is what matters}
+
+\notesectionz{Dilution does not change a buffer's pH}{15.2}
+\practice{5}
+
+Because only the \emph{ratio} appears in the equation, two solutions with
+the same ratio have the same pH no matter how concentrated they are:
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\hline
+\textbf{Solution} & $[\ce{A^-}]/[\ce{HA}]$ & \textbf{pH} \\
+\hline
+\SI{5.0}{\Molar} \ce{HC2H3O2} $+$ \SI{3.0}{\Molar} \ce{NaC2H3O2}
+  & $3.0/5.0 = 0.60$ & 4.52 \\
+\SI{0.050}{\Molar} \ce{HC2H3O2} $+$ \SI{0.030}{\Molar} \ce{NaC2H3O2}
+  & $0.030/0.050 = 0.60$ & 4.52 \\
+\hline
+\end{tabular}
+\end{center}
+
+Two consequences worth writing down:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Diluting a buffer does not change its pH} (to a good
+        approximation) --- both concentrations fall by the same factor, so
+        the ratio is \answerblank[2.4cm]{unchanged}. Compare this with a
+        weak acid alone, where dilution \emph{does} raise the pH.
+  \item \textbf{You may use moles instead of molarity.} Both species share
+        the same volume, so the volume cancels out of the ratio. This saves
+        a step on nearly every titration problem.
+\end{itemize}
+
+\begin{workedexample}[Worked example 2: moles are enough]
+What is the pH of a solution made by dissolving \SI{0.100}{\mole} of
+\ce{HC2H3O2} and \SI{0.100}{\mole} of \ce{NaC2H3O2} in enough water to make
+\SI{500}{\milli\litre}?
+
+There is no need to compute either molarity. The mole ratio is
+$0.100/0.100 = 1$, so
+$\mathrm{pH} = \mathrm{p}K_a = \mathbf{4.74}$.
+
+The answer would be identical in \SI{2.0}{\litre}.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Working backwards}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A buffer made from \ce{HOCl} and \ce{NaOCl} has pH 7.00. Find
+        $[\ce{OCl-}]/[\ce{HOCl}]$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$7.00 = 7.46 + \log r$, so
+        $\log r = -0.46$ and $r = \mathbf{0.35}$. Less base than acid,
+        as expected for a pH below p$K_a$.\end{apcanswer}}
+  \item A \ce{NH3}/\ce{NH4Cl} buffer is \SI{0.30}{\Molar} in \ce{NH3} and
+        \SI{0.15}{\Molar} in \ce{NH4Cl}. Find the pH and say whether it lies
+        above or below p$K_a$, with a reason. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}pH $= 9.25 + \log(0.30/0.15)
+        = 9.25 + 0.30 = \mathbf{9.55}$. Above p$K_a$, because the base
+        outnumbers its conjugate acid.\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Two beakers hold acetate buffers. Beaker A is \SI{1.0}{\Molar} in each
+component; beaker B is \SI{0.010}{\Molar} in each. Which has the higher pH,
+and which is the better buffer?
+\keyonly{\begin{apcanswer}Neither has a higher pH --- both ratios are 1, so
+both are at pH 4.74. Beaker A is the better buffer, because it holds far
+more of each component and can therefore absorb far more added acid or base
+before the ratio moves appreciably.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Buffer Action and Buffering Capacity}{Zumdahl \S15.2--15.3}
+
+\begin{objectives}
+  \item Calculate the pH of a buffer after a strong acid or base is added.
+  \item Compare buffering capacity and choose components for a target pH.
+\end{objectives}
+
+\reading{Zumdahl \S15.2--15.3}{761--770}
+
+\begin{warmup}[3]
+  \item Henderson--Hasselbalch: pH $=$
+        \answerblank[5cm]{p$K_a + \log([\text{base}]/[\text{acid}])$}
+  \item pH of a buffer with equal amounts of both components:
+        \answerblank[2cm]{p$K_a$}
+  \item Diluting a buffer changes its pH how?
+        \answerblank[3cm]{hardly at all}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Stoichiometry first, then equilibrium}
+
+\notesectionz{The two-step method}{15.2}
+\practice{5}
+
+This is the most important procedure in the chapter, and the one students
+most often try to skip.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \textbf{Stoichiometry step.} Strong acid or strong base reacts
+        \term{completely}. Added \ce{OH-} converts \ce{HA} to \ce{A-};
+        added \ce{H+} converts \ce{A-} to \ce{HA}. Work in
+        \answerblank[2cm]{moles} (or mmol) and take the reaction to
+        completion. No $K$ appears in this step.
+  \item \textbf{Equilibrium step.} Take the new amounts and put them into
+        Henderson--Hasselbalch.
+\end{enumerate}
+
+\begin{apctrap}
+Do \textbf{not} put the added \ce{OH-} into an ICE table. Strong base does
+not sit at equilibrium with a weak acid --- it consumes it. Mixing the two
+steps is the single most common way to lose every point on a buffer
+question.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 3: a buffer absorbing a strong base]
+\SI{1.00}{\litre} of solution is \SI{0.50}{\Molar} in \ce{HC2H3O2} and
+\SI{0.50}{\Molar} in \ce{NaC2H3O2}. Add \SI{0.010}{\mole} of \ce{NaOH}.
+
+\textbf{Start:} ratio $=1$, so pH $= 4.74$.
+
+\textbf{Step 1 --- stoichiometry.} $\ce{OH^- + HC2H3O2 -> C2H3O2^- + H2O}$
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\hline
+ & \ce{HC2H3O2} & \ce{OH-} & \ce{C2H3O2^-} \\
+\hline
+before & 0.50 & 0.010 & 0.50 \\
+after  & 0.49 & 0      & 0.51 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Step 2 --- equilibrium.}
+$\mathrm{pH} = 4.74 + \log(0.51/0.49) = 4.74 + 0.02 = \mathbf{4.76}$
+
+\medskip
+\textbf{For contrast:} the same \SI{0.010}{\mole} of \ce{NaOH} in
+\SI{1.00}{\litre} of \emph{pure water} gives $[\ce{OH-}] = 0.010$,
+pOH $= 2.00$, and $\mathrm{pH} = \mathbf{12.00}$.
+
+The buffer moved \textbf{0.02} pH units. Water moved \textbf{5.00}.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{The same buffer, acid added}
+
+Add \SI{0.010}{\mole} of \ce{HCl} to the same original buffer instead.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Which component is consumed? \answerblank[3.4cm]{\ce{C2H3O2^-}}
+  \item New amounts: \ce{HC2H3O2} $=$ \answerblank[1.6cm]{0.51},
+        \ce{C2H3O2^-} $=$ \answerblank[1.6cm]{0.49}
+  \item New pH: \answerblank[2.4cm]{4.72}
+  \item Same \ce{HCl} in \SI{1.00}{\litre} pure water:
+        \answerblank[2.4cm]{2.00}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Capacity, and choosing a buffer}
+
+\notesectionz{Why equal amounts buffer best}{15.3}
+\practice{6}
+
+\term{Buffering capacity} is how much added acid or base a buffer can absorb
+before its pH moves appreciably. Two things control it:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{How much} of each component is present. More is better ---
+        this is why dilution, which leaves the pH alone, still \emph{hurts}
+        the buffer.
+  \item \textbf{How lopsided} the ratio is. Zumdahl's Table 15.1 makes the
+        case with two solutions at very different ratios, each receiving
+        \SI{0.01}{\mole} of \ce{H+}:
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{@{}lcccc@{}}
+\hline
+ & $[\ce{A^-}]/[\ce{HA}]$ before & after & change & pH shift \\
+\hline
+A \ \SI{1.00}{\Molar} / \SI{1.00}{\Molar} & 1.00 & 0.98 & 2.0\% &
+  $4.74 \to 4.73$ \\
+B \ \SI{1.00}{\Molar} / \SI{0.01}{\Molar} & 100  & 49.5 & 50.5\% &
+  $6.74 \to 6.43$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Same amount of acid added; solution B's ratio changed
+\answerblank[2.6cm]{25 times} as much. The lesson:
+
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+Optimal buffering occurs when $[\ce{HA}] = [\ce{A^-}]$, that is, when
+$\mathrm{pH} = \mathrm{p}K_a$. \\
+A buffer is useful over roughly
+$\mathrm{p}K_a \pm 1$.}}
+\end{center}
+
+So to \textbf{design} a buffer for a target pH, choose a weak acid whose
+p$K_a$ is as close as possible to that pH, then set the ratio with
+Henderson--Hasselbalch.
+
+\begin{workedexample}[Worked example 4: designing a pH 4.00 buffer]
+Which acid, and in what ratio?
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\hline
+\textbf{Acid} & p$K_a$ & $|\mathrm{pH} - \mathrm{p}K_a|$ \\
+\hline
+\ce{HF}       & 3.14 & 0.86 \\
+\ce{HNO2}     & 3.40 & \textbf{0.60} \\
+\ce{HC2H3O2}  & 4.74 & 0.74 \\
+\ce{HOCl}     & 7.46 & 3.46 \quad (unusable) \\
+\hline
+\end{tabular}
+\end{center}
+
+\ce{HNO2} is the closest, so use \ce{HNO2}/\ce{NaNO2}:
+\[ 4.00 = 3.40 + \log\frac{[\ce{NO2^-}]}{[\ce{HNO2}]}
+   \;\Longrightarrow\;
+   \frac{[\ce{NO2^-}]}{[\ce{HNO2}]} = 10^{0.60} = \mathbf{4.0} \]
+Four times as much nitrite as nitrous acid. \ce{HOCl} is useless here: its
+p$K_a$ is 3.5 units away, so reaching pH 4.00 would need a ratio near
+$10^{-3.5}$ --- almost no conjugate base present, and no capacity against
+added acid.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Capacity reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \SI{1.0}{\litre} of a buffer is \SI{0.40}{\Molar} in
+        \ce{HC2H3O2} and \SI{0.40}{\Molar} in \ce{NaC2H3O2}. Add
+        \SI{0.050}{\mole} \ce{NaOH}. Find the new pH. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}After reaction: \ce{HC2H3O2} $= 0.35$,
+        \ce{C2H3O2^-} $= 0.45$.
+        pH $= 4.74 + \log(0.45/0.35) = 4.74 + 0.11 =
+        \mathbf{4.85}$\end{apcanswer}}
+  \item Explain why a buffer eventually fails if you keep adding base.
+        \answerlines[3]{Each addition converts more \ce{HA} into \ce{A-}.
+        Once the \ce{HA} is essentially gone there is nothing left to
+        neutralize the base, so further additions simply raise
+        $[\ce{OH-}]$ and the pH climbs sharply.}
+  \item Rank for buffering capacity at pH 4.74, highest first:
+        (i) \SI{1.0}{\Molar}/\SI{1.0}{\Molar} acetate,
+        (ii) \SI{0.10}{\Molar}/\SI{0.10}{\Molar} acetate,
+        (iii) \SI{1.0}{\Molar}/\SI{0.010}{\Molar} acetate.
+        \answerlines[2]{(i) $>$ (ii) $>$ (iii). (i) beats (ii) on amount at
+        the same ideal ratio; (iii) is at neither the right pH nor a
+        balanced ratio, and has almost no acid to absorb added base.}
+\end{enumerate}
+
+\begin{exitticket}
+Blood is buffered near pH 7.4 by the \ce{H2CO3}/\ce{HCO3-} pair
+(p$K_a \approx 6.4$). Is this the ideal buffer for that pH? Why might the
+body use it anyway?
+\keyonly{\begin{apcanswer}Not ideal --- 7.4 is a full unit above p$K_a$, at
+the edge of the useful range, so the ratio is about 10:1 and the capacity
+against added base is limited. The body uses it because \ce{CO2} is
+continuously produced and can be exhaled, so the system is constantly
+replenished and is not a closed buffer at all.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Titrations and pH Curves}{Zumdahl \S15.4}
+
+\begin{objectives}
+  \item Calculate pH at any point of a strong--strong or weak--strong
+        titration.
+  \item Interpret the regions and landmarks of a titration curve.
+\end{objectives}
+
+\reading{Zumdahl \S15.4}{770--785}
+
+\begin{warmup}[4]
+  \item Buffer method, step 1: \answerblank[5.6cm]{stoichiometry to
+        completion}
+  \item Buffer method, step 2: \answerblank[4.6cm]{Henderson--Hasselbalch}
+  \item mmol $=$ \answerblank[3.6cm]{mL $\times$ molarity}
+  \item pH of a \SI{0.10}{\Molar} \ce{NaC2H3O2} solution:
+        \answerblank[2cm]{8.87}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Strong acid with strong base}
+
+\notesectionz{Bookkeeping in millimoles}{15.4}
+\practice{5}
+
+Since $\text{mL}\times\text{molarity} = \text{mmol}$, working in mL and mmol
+avoids every unit conversion. The total volume is always
+\answerblank[6.2cm]{initial volume $+$ volume added}.
+
+\begin{workedexample}[Worked example 5: Zumdahl's nitric acid titration]
+\SI{50.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{HNO3}
+($= \SI{10.0}{\milli\mole}$ \ce{H+}) titrated with \SI{0.100}{\Molar}
+\ce{NaOH}. The reaction is $\ce{H+ + OH^- -> H2O}$.
+
+\begin{center}
+\begin{tabular}{@{}rrrr@{}}
+\hline
+\textbf{mL NaOH} & \textbf{mmol \ce{OH-}} & \textbf{excess} &
+  \textbf{pH} \\
+\hline
+0     & 0    & 10.0 mmol \ce{H+} & 0.70 \\
+10.0  & 1.00 & 9.00 mmol \ce{H+} & 0.82 \\
+20.0  & 2.00 & 8.00 mmol \ce{H+} & 0.94 \\
+50.0  & 5.00 & 5.00 mmol \ce{H+} & 1.30 \\
+100.0 & 10.0 & none --- \textbf{equivalence} & \textbf{7.00} \\
+150.0 & 15.0 & 5.00 mmol \ce{OH-} & 12.40 \\
+\hline
+\end{tabular}
+\end{center}
+
+Sample: at \SI{20.0}{\milli\litre},
+$[\ce{H+}] = 8.00/(50.0+20.0) = \SI{0.114}{\Molar}$, pH $= 0.94$.
+
+At equivalence the only species left are \ce{Na+}, \ce{NO3-} and water.
+Neither ion reacts, so the pH is exactly \textbf{7.00}.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Weak acid with strong base}
+
+\notesectionz{Four regions, four different methods}{15.4}
+\practice{5}
+
+This is the curve AP asks about most, and the reason is that
+\emph{each region needs a different calculation}:
+
+\begin{center}
+\begin{tabular}{@{}llp{6.4cm}@{}}
+\hline
+\textbf{Region} & \textbf{Major species} & \textbf{Method} \\
+\hline
+Before any base & \ce{HA} only & weak-acid ICE, $x=\sqrt{K_aC_0}$ \\
+Before equivalence & \ce{HA} $+$ \ce{A-} & \textbf{buffer:}
+  Henderson--Hasselbalch \\
+At equivalence & \ce{A-} only & weak-\emph{base} ICE, $K_b = K_w/K_a$ \\
+After equivalence & \ce{A-} $+$ excess \ce{OH-} & excess strong base alone \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{workedexample}[Worked example 6: acetic acid titrated with \ce{NaOH}]
+\SI{50.0}{\milli\litre} of \SI{0.10}{\Molar} \ce{HC2H3O2}
+($= \SI{5.0}{\milli\mole}$) with \SI{0.10}{\Molar} \ce{NaOH}. Equivalence
+comes at \SI{50.0}{\milli\litre}.
+
+\begin{center}
+\begin{tabular}{@{}rllr@{}}
+\hline
+\textbf{mL} & \textbf{Region} & \textbf{Work} & \textbf{pH} \\
+\hline
+0    & weak acid & $x=\sqrt{(1.8\times10^{-5})(0.10)}=1.34\times10^{-3}$
+  & 2.87 \\
+10.0 & buffer & $4.74+\log(1.0/4.0)$ & 4.14 \\
+25.0 & \textbf{halfway} & $4.74+\log(2.5/2.5)$ & \textbf{4.74} \\
+40.0 & buffer & $4.74+\log(4.0/1.0)$ & 5.34 \\
+50.0 & \textbf{equivalence} & $[\ce{A^-}]=0.050$, $K_b=5.6\times10^{-10}$
+  & \textbf{8.72} \\
+60.0 & excess base & $[\ce{OH-}]=1.0/110.0$ & 11.96 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{The equivalence-point calculation in full.} All \SI{5.0}{\milli\mole}
+of acid has become acetate, in $50.0+50.0 = \SI{100.0}{\milli\litre}$:
+$[\ce{C2H3O2^-}] = \SI{0.050}{\Molar}$. Then
+$x = \sqrt{(5.6\times10^{-10})(0.050)} = 5.3\times10^{-6} = [\ce{OH-}]$,
+pOH $= 5.28$, pH $= \mathbf{8.72}$.
+\end{workedexample}
+
+\begin{apctrap}
+\textbf{The equivalence point of a weak acid titration is not pH 7.} All the
+acid has been converted to its conjugate base, and that base hydrolyses. For
+a weak acid titrated with a strong base the equivalence pH is
+\answerblank[1.8cm]{above 7}; for a weak base titrated with a strong acid it
+is \answerblank[1.8cm]{below 7}. Only strong-with-strong lands on 7.00.
+\end{apctrap}
+
+\begin{apcnote}[Two useful landmarks]
+\textbf{Halfway point.} Exactly half the acid has been converted, so
+$[\ce{HA}]=[\ce{A^-}]$ and $\mathrm{pH} = \mathrm{p}K_a$. This is how $K_a$
+is measured from a curve, and it is worth a point almost every time it
+appears.
+
+\textbf{Equivalence point.} Moles of added base $=$ moles of acid
+originally present. This is a \emph{stoichiometric} definition --- it says
+nothing about the pH being 7.
+\end{apcnote}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=11cm, height=6.4cm,
+    xlabel={mL of \SI{0.100}{\Molar} \ce{NaOH} added},
+    ylabel={pH}, xmin=0, xmax=80, ymin=0, ymax=13.5,
+    xtick={0,20,40,50,60,80}, ytick={0,2,4,6,8,10,12},
+    axis lines=left, legend style={draw=none, font=\sffamily\scriptsize,
+      at={(0.98,0.02)}, anchor=south east}]
+  \addplot[seriesA] coordinates {(0,1.000) (5,1.087) (10,1.176) (20,1.368)
+    (30,1.602) (40,1.954) (45,2.279) (48,2.690) (49,2.996) (49.5,3.299)
+    (49.9,4.000) (50,7.000) (50.1,10.000) (50.5,10.697) (51,10.996)
+    (52,11.292) (55,11.678) (60,11.959) (70,12.222) (80,12.363)};
+  \addlegendentry{\SI{0.100}{\Molar} \ce{HCl} (strong)}
+  \addplot[seriesB] coordinates {(0,2.875) (5,3.799) (10,4.145) (20,4.569)
+    (30,4.921) (40,5.347) (45,5.699) (48,6.125) (49,6.435) (49.5,6.740)
+    (49.9,7.442) (50,8.722) (50.1,10.001) (50.5,10.697) (51,10.996)
+    (52,11.292) (55,11.678) (60,11.959) (70,12.222) (80,12.363)};
+  \addlegendentry{\SI{0.100}{\Molar} \ce{HC2H3O2} (weak)}
+  \draw[densely dotted] (axis cs:25,0) -- (axis cs:25,4.74);
+  \draw[densely dotted] (axis cs:0,4.74) -- (axis cs:25,4.74);
+  \node[font=\scriptsize,anchor=west] at (axis cs:26,4.0)
+    {halfway: pH $=$ p$K_a$ $= 4.74$};
+  % mark both equivalence points explicitly -- they share a volume but not a pH
+  \fill (axis cs:50,7.00) circle (1.6pt);
+  \fill (axis cs:50,8.72) circle (1.6pt);
+  \node[font=\scriptsize,anchor=east] at (axis cs:47.5,8.9)
+    {equiv.\ 8.72 (weak)};
+  \node[font=\scriptsize,anchor=west] at (axis cs:52,6.4)
+    {equiv.\ 7.00 (strong)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Both curves start and end in different places but converge after
+equivalence, because once the acid is gone the pH is set only by
+\answerblank[3.6cm]{excess \ce{NaOH}}, which is the same in both flasks.
+
+\segment{APPLICATION}{20}{Reading and calculating}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \SI{100.0}{\milli\litre} of \SI{0.050}{\Molar} \ce{NH3}
+        ($K_b = 1.8\times10^{-5}$) is titrated with \SI{0.10}{\Molar}
+        \ce{HCl}. Find the volume at equivalence and the pH there.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}\SI{5.0}{\milli\mole} \ce{NH3} needs
+        \SI{5.0}{\milli\mole} \ce{HCl} $=$ \SI{50.0}{\milli\litre}.
+        At equivalence $[\ce{NH4+}] = 5.0/150.0 = 0.0333$;
+        $K_a = 5.6\times10^{-10}$;
+        $x = \sqrt{(5.6\times10^{-10})(0.0333)} = 4.3\times10^{-6}$;
+        pH $= \mathbf{5.36}$ --- \textbf{acidic}, as expected for the
+        conjugate acid of a weak base.\end{apcanswer}}
+  \item For that same titration, what is the pH after
+        \SI{25.0}{\milli\litre} of \ce{HCl}, and why can you write it down
+        with almost no work? \answerlines[2]{That is the halfway point, so
+        $[\ce{NH3}] = [\ce{NH4+}]$ and pH $=$ p$K_a(\ce{NH4+}) = 9.25$.}
+  \item A curve for a monoprotic acid shows its equivalence point at pH
+        9.1. Is the acid strong or weak? Justify.
+        \answerlines[2]{Weak. A strong acid titrated with strong base gives
+        equivalence at exactly 7.00; a basic equivalence point means the
+        anion left behind hydrolyses, which only happens if it is the
+        conjugate base of a weak acid.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does the buffer region of the weak-acid curve appear flat, while the
+strong-acid curve has no flat region at all?
+\keyonly{\begin{apcanswer}In the weak-acid case both \ce{HA} and \ce{A-} are
+present, so added \ce{OH-} only changes their ratio --- and pH depends on
+the \emph{log} of that ratio, so it moves slowly. In the strong-acid case
+there is no conjugate pair to absorb the base; every added \ce{OH-}
+directly removes \ce{H+} from solution.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Indicators and Titration as Analysis}{Zumdahl \S15.5--15.6}
+
+\begin{objectives}
+  \item Select an indicator whose range matches a titration's equivalence
+        point.
+  \item Determine $K_a$ and concentration from titration data.
+\end{objectives}
+
+\reading{Zumdahl \S15.5--15.6}{785--792}
+
+\begin{warmup}[3]
+  \item Equivalence pH, weak acid $+$ strong base:
+        \answerblank[2.2cm]{above 7}
+  \item Equivalence pH, weak base $+$ strong acid:
+        \answerblank[2.2cm]{below 7}
+  \item At the halfway point, pH $=$ \answerblank[2cm]{p$K_a$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{How an indicator works}
+
+\notesectionz{An indicator is just another weak acid}{15.5}
+\practice{6}
+
+An \term{acid--base indicator} is a weak acid, written \ce{HIn}, whose two
+forms have different colors:
+\[ \ce{HIn(aq) <=> H+(aq) + In^-(aq)} \]
+\centerline{\small (one color) \hfill (the other color)}
+
+Because it is a weak acid, it obeys the same equation everything else in
+this chapter obeys:
+\[ \mathrm{pH} = \mathrm{p}K_a + \log\frac{[\ce{In^-}]}{[\ce{HIn}]} \]
+
+The eye needs about \textbf{one part in ten} of the new form before it
+registers a change in color. So, titrating an \emph{acid} (going from
+\ce{HIn} toward \ce{In-}), the change first shows when
+$[\ce{In^-}]/[\ce{HIn}] = 1/10$:
+\[ \mathrm{pH} = \mathrm{p}K_a + \log\tfrac{1}{10}
+   = \mathrm{p}K_a - 1 \]
+and titrating a \emph{base}, at the reciprocal ratio, at
+$\mathrm{p}K_a + 1$. Hence the general rule:
+
+\begin{center}
+\fbox{\parbox{0.78\linewidth}{\centering An indicator changes color over
+roughly $\mathrm{p}K_a \pm 1$ --- a span of about \textbf{2 pH units}.}}
+\end{center}
+
+\begin{workedexample}[Worked example 7: bromthymol blue]
+Bromthymol blue has $K_a = 1.0\times10^{-7}$, yellow as \ce{HIn} and blue as
+\ce{In-}. An acidic solution containing it is titrated with \ce{NaOH}. At
+what pH does the color first visibly change?
+
+$\mathrm{p}K_a = 7.00$, and the change is visible at
+$[\ce{In^-}]/[\ce{HIn}] = 1/10$:
+\[ \mathrm{pH} = 7.00 + \log(0.10) = 7.00 - 1.00 = \mathbf{6.00} \]
+A greenish tint --- a little blue mixed into the yellow. Its useful range
+runs from about \textbf{6 to 8}.
+\end{workedexample}
+
+\notesectionz{End point is not equivalence point}{15.5}
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item The \term{equivalence point} is defined by
+        \answerblank[4.6cm]{reaction stoichiometry}.
+  \item The \term{end point} is defined by
+        \answerblank[5.6cm]{the indicator changing color}.
+\end{itemize}
+
+They are different things. A good indicator makes them nearly coincide; a
+badly chosen one does not.
+
+\segment{GUIDED PRACTICE}{15}{Choosing an indicator}
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\hline
+\textbf{Indicator} & \textbf{approx.\ p$K_a$} & \textbf{useful range} \\
+\hline
+Methyl orange     & 3.7 & 3.1--4.4 \\
+Methyl red        & 5.3 & 4.4--6.2 \\
+Bromthymol blue   & 7.0 & 6.0--7.6 \\
+Phenolphthalein   & 9.1 & 8.2--10.0 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{HCl} with \ce{NaOH}, equivalence pH 7.00. Suitable indicators:
+        \answerblank[8.5cm]{any of them --- the jump is nearly vertical}
+  \item \ce{HC2H3O2} with \ce{NaOH}, equivalence pH 8.72:
+        \answerblank[6cm]{phenolphthalein}
+  \item Why is methyl red wrong for item 2?
+        \answerlines[2]{Its range (4.4--6.2) sits inside the buffer region,
+        well before equivalence. It would change color while acid still
+        remained, so the end point would badly underestimate the volume
+        needed.}
+  \item \ce{NH3} with \ce{HCl}, equivalence pH 5.36:
+        \answerblank[6cm]{methyl red}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Titration as a measuring tool}
+
+\notesectionz{Getting $K_a$ and concentration from a curve}{15.4}
+\practice{4}
+
+A titration curve carries two independent pieces of information:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item The \textbf{equivalence volume} gives the amount --- and therefore
+        the concentration --- of the unknown.
+  \item The \textbf{pH at half that volume} gives
+        \answerblank[2cm]{p$K_a$}, and hence $K_a$.
+\end{itemize}
+
+\begin{workedexample}[Worked example 8: identifying an unknown acid]
+\SI{25.00}{\milli\litre} of a monoprotic acid requires
+\SI{18.50}{\milli\litre} of \SI{0.1050}{\Molar} \ce{NaOH} to reach
+equivalence. The pH at \SI{9.25}{\milli\litre} is 4.20.
+
+\textbf{Concentration.} $n = (18.50)(0.1050) = \SI{1.943}{\milli\mole}$, so
+$C = 1.943/25.00 = \SI{0.0777}{\Molar}$.
+
+\textbf{$K_a$.} \SI{9.25}{\milli\litre} is exactly half of
+\SI{18.50}{\milli\litre}, so this is the halfway point:
+$\mathrm{p}K_a = 4.20$ and
+$K_a = 10^{-4.20} = \mathbf{6.3\times10^{-5}}$.
+
+\textbf{Sanity check.} A $K_a$ near $10^{-5}$ is a typical weak organic
+acid, and it predicts an equivalence point above 7 --- consistent with
+titrating a weak acid with a strong base.
+\end{workedexample}
+
+\notesectionz{Polyprotic curves}{15.6}
+
+\begin{apcnote}[Enrichment --- shape only]
+A polyprotic acid is titrated one proton at a time, giving \emph{one
+equivalence point per ionizable proton}. Each addition of \ce{OH-} strips
+off the next proton in turn:
+\[ \ce{H3PO4 -> H2PO4^- -> HPO4^2- -> PO4^3-} \]
+Each step consumes the \emph{same} number of moles of base, so the
+equivalence points are evenly spaced along the volume axis --- which is how
+you count the protons from a curve. Between them sit buffer plateaus.
+
+You should be able to read a polyprotic curve and say how many acidic
+protons the acid has. Calculating pH at the second and third equivalence
+points is beyond the current CED.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Putting it together}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A \SI{25.0}{\milli\litre} sample of \SI{0.100}{\Molar}
+        \ce{HC2H3O2} is titrated with \SI{0.100}{\Molar} \ce{NaOH}. After
+        \SI{10.0}{\milli\litre} the pH is measured. Predict it.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Start: \SI{2.50}{\milli\mole} \ce{HA}.
+        Added: \SI{1.00}{\milli\mole} \ce{OH-}. Left: 1.50 \ce{HA} and
+        1.00 \ce{A-}.
+        pH $= 4.74 + \log(1.00/1.50) = 4.74 - 0.18 =
+        \mathbf{4.56}$\end{apcanswer}}
+  \item An indicator has $K_a = 1\times10^{-5}$. Over what pH range does it
+        change color, and which titration in this block would it suit?
+        \answerlines[2]{p$K_a = 5.0$, so the range is about 4 to 6. It suits
+        the \ce{NH3}/\ce{HCl} titration (equivalence 5.36), not the acetic
+        acid titration (equivalence 8.72).}
+  \item A student titrating acetic acid with \ce{NaOH} uses methyl orange
+        and reports a concentration that is far too low. Explain the
+        source of the error. \answerlines[3]{Methyl orange changes color
+        near pH 3--4, which occurs very early in this titration while most
+        of the acetic acid is still unreacted. The student stopped adding
+        base long before equivalence, recorded too small a volume, and so
+        calculated too few moles of acid.}
+\end{enumerate}
+
+\begin{exitticket}
+State the one question you should ask before starting any titration
+calculation, and why it settles the method.
+\keyonly{\begin{apcanswer}``What are the major species after the strong
+acid or base has reacted completely?'' The answer tells you which of the
+four situations you are in --- weak acid alone, buffer, conjugate base
+alone, or excess strong reagent --- and each has its own method. Choosing
+the method first and identifying the species afterwards is how students end
+up applying Henderson--Hasselbalch at an equivalence point, where there is
+no buffer at all.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

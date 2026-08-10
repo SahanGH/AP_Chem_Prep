@@ -1,0 +1,253 @@
+% Zumdahl Chapter 1 -- Chemical Foundations. ONE block: the Day 1 launch.
+% Prerequisite skills the CED assumes everywhere but never lists as a topic.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{1}
+\apcunittitle{Chemical Foundations}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S1.3--1.5, 1.7--1.10 \textbullet\ PDF pp.~27--68 \textbullet\ 1 block (Day 1)}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Why this chapter exists, and why it is only one block]
+\textbf{None of this is a CED topic. All of it is assumed on every CED
+topic.} Significant figures, dimensional analysis and density never appear
+in the framework as learning objectives --- and they appear in almost every
+free-response question you will ever write.
+
+That is why this is the \textbf{Day 1 launch block} rather than a unit:
+one block to establish the conventions, a scored diagnostic to find out who
+actually has them, and a remediation sheet for whoever needs it. There is no
+chapter test.
+
+\textbf{Skipped:} \S1.1--1.2 (overview and the scientific method) and
+\S1.6 (a general problem-solving essay). Read them if you like; nothing
+is examined from them.
+
+\textbf{Where this bites on the real exam:} AP readers deduct for
+significant-figure errors on calculated FRQ answers. It is one of the few
+places you can reason perfectly and still lose the point.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Measurement, Uncertainty, and Units}{Zumdahl \S1.3--1.5, 1.7--1.10}
+
+\begin{objectives}
+  \item Count significant figures and apply them to calculations.
+  \item Convert units by dimensional analysis and use density as a
+        conversion factor.
+\end{objectives}
+
+\reading{Zumdahl \S1.3--1.5, 1.7--1.10}{35--56}
+
+\begin{warmup}[4]
+  \item How many significant figures in $0.0025$?
+        \answerblank[1.8cm]{2}
+  \item How many in $1.008$? \answerblank[1.8cm]{4}
+  \item $\SI{25}{\celsius}$ in kelvin: \answerblank[2.4cm]{298 K}
+  \item Density $=$ \answerblank[3.4cm]{mass $\div$ volume}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Every measurement carries uncertainty}
+
+\notesectionz{Precision is not accuracy}{1.4}
+\practice{2}
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \term{Accuracy} is how close a measurement is to the
+        \answerblank[2.6cm]{true value}.
+  \item \term{Precision} is how close repeated measurements are to
+        \answerblank[3cm]{one another}.
+\end{itemize}
+
+\begin{apcnote}[Zumdahl's graduated cylinder]
+A student fills a cylinder to its 25-mL mark five times and measures what
+was actually delivered with a buret: 26.54, 26.51, 26.60, 26.49,
+\SI{26.57}{\milli\litre}. Average: \SI{26.54}{\milli\litre}.
+
+The five readings agree closely --- \textbf{excellent precision}, good
+technique. But every one is about \SI{1.5}{\milli\litre} above 25, so the
+cylinder is \textbf{not accurate}. That constant offset is a
+\term{systematic error}.
+
+\textbf{Precision indicates accuracy only when there is no systematic
+error.} A well-behaved set of repeated results can be reliably, repeatably
+wrong --- which is why calibration matters and why AP asks about it in
+experimental-design questions.
+\end{apcnote}
+
+\notesectionz{Counting significant figures}{1.5}
+\practice{5}
+
+Zumdahl's rules, which are the ones AP uses:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Nonzero digits} always count.
+  \item \textbf{Leading zeros} (before all nonzero digits) are
+        \answerblank[2.4cm]{never} significant --- they only place the
+        decimal. $0.0025$ has \answerblank[1.4cm]{2}.
+  \item \textbf{Captive zeros} (between nonzero digits) are
+        \answerblank[2.4cm]{always} significant. $1.008$ has
+        \answerblank[1.4cm]{4}.
+  \item \textbf{Trailing zeros} are significant \emph{only if there is a
+        decimal point}. $100$ has \answerblank[1.4cm]{1};
+        $100.$ has \answerblank[1.4cm]{3}; $1.00\times10^{2}$ has
+        \answerblank[1.4cm]{3}.
+  \item \textbf{Exact numbers} --- from counting (8 molecules) or from
+        definitions ($1~\text{in} \equiv 2.54~\text{cm}$) --- have
+        \answerblank[3.4cm]{infinite} significant figures and never limit a
+        result.
+\end{enumerate}
+
+\begin{apctrap}
+\textbf{Scientific notation removes the ambiguity, so use it.} Written as
+$2500$, the number could mean two, three or four significant figures and
+the reader cannot tell. Written as $2.5\times10^{3}$, $2.50\times10^{3}$ or
+$2.500\times10^{3}$, it is unambiguous.
+
+When a question gives you a bare number like $100$, take it at the rules'
+word: one significant figure.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Counting}
+
+Give the number of significant figures:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item $0.0105$ \answerblank[1.6cm]{3}
+  \item $0.050080$ \answerblank[1.6cm]{5}
+  \item $8.050\times10^{-3}$ \answerblank[1.6cm]{4}
+  \item $45.20$ \answerblank[1.6cm]{4}
+  \item $1200$ \answerblank[1.6cm]{2}
+  \item $1.20\times10^{3}$ \answerblank[1.6cm]{3}
+  \item $0.00300$ \answerblank[1.6cm]{3}
+  \item $6.0\times10^{-5}$ \answerblank[1.6cm]{2}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Significant figures in calculations}
+
+\notesectionz{Two different rules --- do not mix them}{1.5}
+\practice{5}
+
+\begin{center}
+\fbox{\parbox{0.9\linewidth}{\centering
+\textbf{Multiply or divide:} the result keeps the fewest
+\textbf{significant figures} of any factor. \\[0.3em]
+\textbf{Add or subtract:} the result keeps the fewest
+\textbf{decimal places} of any term.}}
+\end{center}
+
+These are genuinely different rules, and using the multiplication rule on a
+sum is the most common significant-figure error there is.
+
+\begin{workedexample}[Worked example 1: the two rules side by side]
+\textbf{Multiplication.} $4.56 \times 1.4 = 6.384$. The limiting factor
+$1.4$ has two significant figures, so the answer is $\mathbf{6.4}$.
+
+\textbf{Addition.} $12.11 + 18.0 + 1.013 = 31.123$. The limiting term
+$18.0$ has one decimal place, so the answer is $\mathbf{31.1}$ --- which
+still has three significant figures. \emph{Counting significant figures
+here would have given the wrong answer.}
+
+\textbf{Subtraction, where it gets dramatic.}
+$25.64 - 25.6 = 0.04$. One decimal place, so the answer is
+$\mathbf{0.0}$. Two four-figure measurements produced a result with
+essentially no significant figures at all --- subtracting nearly equal
+numbers destroys precision, which is exactly why titration and
+calorimetry procedures are designed to avoid it.
+\end{workedexample}
+
+\notesectionz{Dimensional analysis}{1.7}
+\practice{5}
+
+Multiply by conversion factors arranged so unwanted units
+\answerblank[2cm]{cancel}. The factor you need is whichever way up makes
+that happen.
+
+\begin{workedexample}[Worked example 2: a multi-step conversion]
+Convert 5.00 miles to kilometres, given
+$1~\text{mi} = 5280~\text{ft}$, $1~\text{ft} = 12~\text{in}$,
+$1~\text{in} = 2.54~\text{cm}$.
+
+\[ 5.00~\text{mi} \times
+   \frac{5280~\text{ft}}{1~\text{mi}} \times
+   \frac{12~\text{in}}{1~\text{ft}} \times
+   \frac{2.54~\text{cm}}{1~\text{in}} \times
+   \frac{1~\text{m}}{100~\text{cm}} \times
+   \frac{1~\text{km}}{1000~\text{m}} = 8.0467\ldots \]
+
+Track the cancellation by reading down the fractions: \textbf{mi} on top
+meets mi on the bottom, then ft meets ft, in meets in, cm meets cm, m meets
+m --- each unit appears once above the line and once below, so all of them
+divide out and only \textbf{km} survives. If a unit does not appear on both
+sides, the factor is upside down.
+
+Every conversion factor here is a \emph{definition}, so all are exact and
+none limits the answer. Only the measured $5.00$ does, giving three
+significant figures: $\mathbf{8.05}~\text{km}$.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Density, temperature, and matter}
+
+\notesectionz{Density is a conversion factor}{1.9}
+\practice{5}
+
+\[ d = \frac{m}{V} \]
+Treat it as a conversion factor between mass and volume, not as a formula to
+memorize --- that is how it is used in every real problem.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Aluminium has $d = \SI{2.70}{\gram\per\centi\metre\cubed}$. Find
+        the mass of \SI{15.0}{\centi\metre\cubed}. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(2.70)(15.0) = \mathbf{40.5}~\text{g}$
+        --- three significant figures\end{apcanswer}}
+  \item A metal sample has mass \SI{45.2}{\gram}. Dropped into a cylinder,
+        the water level rises from \SI{25.0}{\milli\litre} to
+        \SI{41.7}{\milli\litre}. Find the density. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$V = 41.7 - 25.0 =
+        \SI{16.7}{\milli\litre}$ (subtraction: one decimal place);
+        $d = 45.2/16.7 = \mathbf{2.71}~\si{\gram\per\milli\litre}$ --- three
+        significant figures, likely aluminium\end{apcanswer}}
+\end{enumerate}
+
+\notesectionz{Temperature and classification}{1.8, 1.10}
+
+\[ K = {}^\circ\text{C} + 273.15 \]
+Kelvin is the scale that matters: it appears in the gas laws, in
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, and in every
+equilibrium expression. \SI{25}{\celsius}, the standard temperature, is
+\answerblank[2cm]{298 K}.
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\hline
+\textbf{Matter} & \\
+\hline
+\quad Pure substances & \textbf{elements} (one kind of atom) and
+  \textbf{compounds} (fixed ratio) \\
+\quad Mixtures & \textbf{homogeneous} (uniform; a solution) and
+  \textbf{heterogeneous} (visibly non-uniform) \\
+\hline
+\end{tabular}
+\end{center}
+
+A \term{physical change} alters form but not identity (melting, dissolving);
+a \term{chemical change} produces a
+\answerblank[3cm]{new substance}.
+
+\begin{exitticket}
+A student computes $100.0 + 0.005$ and reports $1\times10^{2}$, reasoning
+that ``$0.005$ has only one significant figure, so the answer gets one.''
+Identify the error and give the correct answer.
+\keyonly{\begin{apcanswer}They applied the multiplication rule to a sum. For
+addition and subtraction the limit is \emph{decimal places}, not significant
+figures. $100.0$ has one decimal place, so the sum $100.005$ is reported as
+$\mathbf{100.0}$ --- four significant figures, not one. Their answer is
+wrong by a factor of about 1000 in precision, and it discards three
+perfectly good digits that the balance actually
+measured.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

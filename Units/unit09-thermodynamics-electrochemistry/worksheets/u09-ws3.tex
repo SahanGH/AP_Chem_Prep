@@ -1,0 +1,153 @@
+% U9 WS3 -- free energy and equilibrium, dissolution, coupling. Blocks 5-6.
+\documentclass{apchem-worksheet}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Worksheet 3 \textbullet\ Free Energy, $K$, and Coupling}
+\apcsubtitle{CED 9.5--9.7 \textbullet\ $\Delta G$ is not $\Delta G^\circ$}
+
+\begin{document}
+\wsheader[$\Delta G^\circ = -RT\ln K$ \textbullet\
+$\Delta G = \Delta G^\circ + RT\ln Q$ \textbullet\
+$R = \SI{8.314}{\joule\per\mole\per\kelvin}$ --- note \emph{joules}
+\textbullet\ free energies of coupled steps add.]
+
+\problem[]{\ced{9.5} Complete the correspondence:}
+\begin{parts}
+  \item $\Delta G^\circ$ negative $\Rightarrow$ $K$
+        \answerblank[2cm]{$> 1$} $\Rightarrow$
+        \answerblank[3.4cm]{products favored}
+  \item $\Delta G^\circ$ zero $\Rightarrow$ $K$ \answerblank[2cm]{$= 1$}
+  \item $\Delta G^\circ$ positive $\Rightarrow$ $K$
+        \answerblank[2cm]{$< 1$} $\Rightarrow$
+        \answerblank[3.6cm]{reactants favored}
+  \item Why must $\Delta G^\circ$ be converted to joules before using
+        $\Delta G^\circ = -RT\ln K$?
+        \answerblank[6.4cm]{$R$ is in J/(mol$\cdot$K)}
+\end{parts}
+
+\problem[]{\ced{9.5} Reaction A has $\Delta G^\circ = -5$~kJ; reaction B
+has $\Delta G^\circ = -50$~kJ. Compare their equilibrium constants
+qualitatively, without a calculator.
+\answerlines[3]{Both exceed 1. B's is enormously larger --- $K$ depends
+exponentially on $\Delta G^\circ$, so making the free energy change ten
+times more negative multiplies $K$ by a huge factor rather than by ten. A's
+$K$ is only modestly above 1.}}
+
+\problem[]{\ced{9.5} $\Delta G$ against $\Delta G^\circ$.}
+\begin{parts}
+  \item $\Delta G^\circ$ refers to \answerblank[4.4cm]{standard
+        conditions}; $\Delta G$ refers to \answerblank[4.6cm]{the current
+        mixture}.
+  \item $Q < K$: sign of $\Delta G$ is \answerblank[2cm]{negative} and the
+        reaction shifts \answerblank[2.4cm]{forward}.
+  \item $Q = K$: $\Delta G = $ \answerblank[1.4cm]{0}
+  \item $Q > K$: sign of $\Delta G$ is \answerblank[2cm]{positive}
+  \item A student writes ``at equilibrium $\Delta G^\circ = 0$.'' Correct
+        them. \answerlines[3]{At equilibrium $\Delta G = 0$, not
+        $\Delta G^\circ$. $\Delta G^\circ$ is a fixed property of the
+        reaction at that temperature and is zero only in the special case
+        $K = 1$. Setting $\Delta G = 0$ in
+        $\Delta G = \Delta G^\circ + RT\ln Q$ is exactly what yields
+        $\Delta G^\circ = -RT\ln K$.}
+\end{parts}
+
+\problem[]{\ced{9.5} A reaction has $\Delta G^\circ = +20$~kJ. A student
+concludes it can never proceed forward under any circumstances. Explain why
+that is wrong.
+\answerlines[3]{$\Delta G^\circ$ describes standard conditions, where every
+species is at 1 M or 1 atm. If very little product is present, $Q$ is small
+and $RT\ln Q$ is negative enough to make $\Delta G < 0$, so the reaction
+does run forward --- until $Q$ rises to $K$.}}
+
+\problem[]{\ced{9.5} For each, state whether the quantity is fixed at a
+given temperature or depends on the current composition:}
+\begin{parts}
+  \item $K$: \answerblank[2cm]{fixed}
+  \item $Q$: \answerblank[4.2cm]{depends on mixture}
+  \item $\Delta G^\circ$: \answerblank[2cm]{fixed}
+  \item $\Delta G$: \answerblank[4.2cm]{depends on mixture}
+\end{parts}
+
+\problem[]{\ced{9.6} Free energy of dissolution. Give the sign of the
+contribution named:}
+\begin{parts}
+  \item $\Delta H$ of breaking up the lattice:
+        \answerblank[2.4cm]{positive}
+  \item $\Delta S$ of breaking up the lattice:
+        \answerblank[2.4cm]{positive}
+  \item $\Delta S$ of solvent reorganizing around the ions:
+        \answerblank[2.4cm]{negative}
+  \item $\Delta H$ of ion--solvent attraction:
+        \answerblank[2.4cm]{negative}
+\end{parts}
+
+\problem[]{\ced{9.6} \ce{NH4NO3} dissolves endothermically --- the beaker
+gets cold --- yet it is very soluble. Account for this using both terms of
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$.
+\answerlines[4]{$\Delta H^\circ > 0$ opposes dissolution, so enthalpy alone
+would predict it does not happen. But $\Delta S^\circ$ is strongly
+positive: an ordered crystal becomes freely moving hydrated ions dispersed
+through the solvent. At room temperature $T\Delta S^\circ$ exceeds
+$\Delta H^\circ$, so $\Delta G^\circ$ is negative and the salt dissolves.
+Entropy is driving this one against the enthalpy term.}}
+
+\problem[]{\ced{9.6} The CED does not ask you to predict the overall
+$\Delta G^\circ$ of dissolution from scratch. State the reason, and say
+what you are expected to produce instead.
+\answerlines[3]{The three contributions largely cancel --- the enthalpy
+terms are large and opposite, as are the entropy terms --- so the net value
+is a small difference between big numbers and is not reliably predictable
+by inspection. You are expected to identify the contributions and their
+signs, and reason about which dominates.}}
+
+\problem[]{\ced{9.7} Driving an unfavorable process.}
+\begin{parts}
+  \item Name the two general strategies.
+        \answerlines[2]{Supply external energy from outside the system, or
+        couple the unfavorable reaction to a favorable one.}
+  \item External energy driving electrolysis of water:
+        \answerblank[2.6cm]{electrical}
+  \item External energy driving photosynthesis:
+        \answerblank[2cm]{light}
+  \item Free energies of coupled steps \answerblank[1.6cm]{add}, provided
+        the steps share a \answerblank[4.6cm]{common intermediate}.
+\end{parts}
+
+\problem[]{\ced{9.7} Phosphorylating glucose has
+$\Delta G^\circ = +13.8$~kJ/mol. ATP hydrolysis has
+$\Delta G^\circ = -30.5$~kJ/mol.}
+\begin{parts}
+  \item $\Delta G^\circ$ for the coupled process: \workspace[1.6cm]
+        \keyonly{\begin{apcanswer}$+13.8 + (-30.5) =
+        \mathbf{-16.7}$~kJ/mol --- favored\end{apcanswer}}
+  \item Which species is the common intermediate?
+        \answerblank[3cm]{\ce{P_i} (phosphate)}
+  \item Explain what ``ATP is the cell's energy currency'' actually means.
+        \answerlines[3]{Not that ATP stores energy in a special bond, but
+        that its hydrolysis is favorable enough to pay for reactions that
+        are not. Coupling the two through a shared intermediate makes the
+        sum of the free energies negative, so the combined process runs.}
+\end{parts}
+
+\problem[]{\ced{9.7} Reaction X has $\Delta G^\circ = +25$~kJ; reaction Y
+has $\Delta G^\circ = -18$~kJ. A student couples them and reports the pair
+as favored. Evaluate.
+\answerlines[3]{The sum is $+25 + (-18) = +7$~kJ, still positive, so the
+coupled process is \emph{not} favored --- Y is not favorable enough to
+carry X. Coupling also requires a shared common intermediate; without one
+the addition is arithmetic rather than chemistry.}}
+
+\begin{spiralstrip}{Unit 9 \textbullet\ blocks 1--4}
+  \item Crossover temperature $= $ \answerblank[3cm]{$\Delta H^\circ /
+        \Delta S^\circ$}
+  \item $\Delta G^\circ$ for the Haber process at \SI{298}{\kelvin}:
+        \answerblank[2.2cm]{$-33$ kJ}
+  \item A catalyst changes: \answerblank[3cm]{$E_a$ only}
+  \item $\Delta G_f^\circ$ of an element in its standard state:
+        \answerblank[1.4cm]{0}
+  \item $\Delta S^\circ$ for \ce{H2O(l) -> H2O(g)}:
+        \answerblank[2.6cm]{$+119$ J/K}
+\end{spiralstrip}
+
+\end{document}

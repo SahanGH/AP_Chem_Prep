@@ -1,0 +1,83 @@
+% WS3 -- Types A+B: electron configurations and PES. Blocks 3-4.
+\documentclass{apchem-worksheet}
+
+\apcunit{1}
+\apcunittitle{Atomic Structure and Properties}
+\apcdoctitle{Worksheet 3 \textbullet\ Configurations \& PES}
+\apcsubtitle{CED 1.5, 1.6 \textbullet\ configurations cold, spectra warm}
+
+\begin{document}
+\wsheader[Configurations from memory --- no periodic-table peeking until you
+check. PES answers must cite peak position or area as evidence.]
+
+\problem[1.5]{Write shorthand ground-state configurations:}
+\begin{parts}
+  \item \ce{Si}: \answerblank[4cm]{$[\ce{Ne}]\,3s^2\,3p^2$}
+  \item \ce{K+}: \answerblank[4cm]{$[\ce{Ar}]$}
+  \item \ce{N^3-}: \answerblank[4cm]{$[\ce{Ne}]$ ($1s^22s^22p^6$)}
+  \item \ce{Se}: \answerblank[4cm]{$[\ce{Ar}]\,4s^2\,3d^{10}\,4p^4$}
+\end{parts}
+
+\problem[1.5]{Classify each as ground state, excited state, or impossible ---
+and name the element where one exists:}
+\begin{parts}
+  \item $1s^2\,2s^2\,2p^2$: \answerblank[4.5cm]{ground --- carbon}
+  \item $1s^2\,2s^2\,2p^7$: \answerblank[4.5cm]{impossible (p max 6)}
+  \item $1s^2\,2s^2\,2p^5\,3s^1$: \answerblank[4.5cm]{excited neon (10 e$^-$)}
+\end{parts}
+
+\problem[1.5]{How many \emph{unpaired} electrons in a ground-state N atom?
+Draw the 2p orbital diagram to support your count. \workspace[1.8cm]
+\keyonly{\begin{apcanswer}3 --- Hund's rule: $\uparrow\ \uparrow\ \uparrow$
+across the three 2p orbitals.\end{apcanswer}}}
+
+\problem[1.6]{The complete PES spectrum of an unknown element:}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{semilogxaxis}[width=9cm, height=4.4cm, x dir=reverse,
+    xlabel={binding energy (MJ/mol)}, ylabel={rel.\ \#\,e$^-$},
+    ytick=\empty, xtick={126,9.07,5.31,0.74},
+    xticklabels={126, 9.07, 5.31, 0.74},
+    ymin=0, ymax=7, axis lines=left]
+  \addplot[ycomb, seriesA, line width=2.5pt]
+    coordinates {(126,2) (9.07,2) (5.31,6) (0.74,2)};
+\end{semilogxaxis}
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+  \item Assign every peak to a subshell:
+        \answerblank[8.9cm]{126 $\to 1s^2$; 9.07 $\to 2s^2$; 5.31 $\to 2p^6$;
+        0.74 $\to 3s^2$}
+  \item Identify the element, citing total electron count as evidence:
+        \answerblank[6.8cm]{$2+2+6+2 = 12$ e$^-$ $\to$ magnesium}
+  \item Why does the 2p peak sit at \emph{lower} binding energy than 2s, even
+        though both are in shell 2? \answerlines[2]{2p penetrates less toward
+        the nucleus than 2s, so it is shielded slightly more and held
+        slightly less tightly.}
+  \item Predict two specific changes in this spectrum for the \emph{next}
+        element (Al). \answerlines[2]{All peaks shift to higher BE (13
+        protons), and a new small peak (area 1, the $3p^1$) appears at lower
+        BE than the 3s peak.}
+\end{parts}
+
+\problem[1.6]{The 1s binding energy of C is 28.6 MJ/mol; of O it is 54.4
+MJ/mol. Explain the difference in one Coulombic sentence --- no octet
+language. \answerlines[2]{1s electrons are essentially unshielded, so the
+6-proton pull in C vs the 8-proton pull in O acts at similar distance ---
+higher $Z$, higher binding energy.}}
+
+\begin{spiralstrip}{Blocks 1--2 \textbullet\ keep it warm}
+  \item Average mass, peaks at 85 u (72\%) and 87 u (28\%):
+        \answerblank[3cm]{85.6 u (Rb)}
+  \item Moles of \ce{Al} in \SI{5.4}{\gram}: \answerblank[3cm]{\SI{0.20}{\mole}}
+  \item Empirical formula: 80.0\% C, 20.0\% H:
+        \answerblank[3cm]{\ce{CH3}}
+  \item If its molar mass is \SI{30}{\gram\per\mole}, molecular formula:
+        \answerblank[3cm]{\ce{C2H6}}
+  \item One-particle-type diagram with two-atom units of different elements:
+        element, compound, or mixture? \answerblank[3cm]{compound}
+\end{spiralstrip}
+
+\end{document}

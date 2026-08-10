@@ -1,0 +1,85 @@
+% Ch11 WS1 -- solution composition. Block 1. CED content.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{11}
+\apcunittitle{Properties of Solutions}
+\apcdoctitle{Worksheet 1 \textbullet\ Solution Composition}
+\apcsubtitle{Zumdahl \S11.1 \textbullet\ litres of SOLUTION vs kilograms of SOLVENT}
+
+\begin{document}
+\wsheader[State which denominator each calculation uses before you compute.
+Most errors on this sheet are denominator errors, not arithmetic errors.]
+
+\problem[]{Write the defining formula for each:}
+\begin{parts}
+  \item Molarity: \answerblank[6cm]{mol solute / L solution}
+  \item Molality: \answerblank[6cm]{mol solute / kg solvent}
+  \item Mass percent: \answerblank[7.0cm]{(mass solute / mass solution)$\times$100}
+  \item Mole fraction: \answerblank[6cm]{$n_A / n_{\text{total}}$}
+\end{parts}
+
+\problem[]{A solution is made by dissolving \SI{20.0}{\gram} of \ce{KCl}
+($M = 74.55$) in \SI{180.0}{\gram} of water. The final volume is
+\SI{190.}{\milli\liter}.}
+\begin{parts}
+  \item Moles of \ce{KCl}: \answerblank[3cm]{\SI{0.268}{\mole}}
+  \item Molarity: \answerblank[3cm]{\SI{1.41}{\Molar}}
+  \item Molality: \answerblank[3cm]{\SI{1.49}{\mole\per\kilo\gram}}
+  \item Mass percent: \answerblank[3cm]{10.0\%}
+  \item Mole fraction of \ce{KCl}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{H2O}) = 180.0/18.02 =
+        \SI{9.989}{\mole}$; $\chi = 0.268/(0.268+9.989) =
+        0.0261$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Explain why molarity changes with temperature but molality does
+not. \answerlines[3]{Molarity is per litre of solution, and volume expands
+when heated, so the same moles occupy more litres and the molarity falls.
+Molality is per kilogram of solvent, and mass is unaffected by temperature,
+so it stays constant.}}
+
+\problem[]{A student adds \SI{0.500}{\mole} of solute to exactly
+\SI{1.000}{\liter} of water and labels the bottle
+``\SI{0.500}{\Molar}.''}
+\begin{parts}
+  \item Identify the error. \answerlines[2]{Molarity requires litres of
+        \emph{solution}. Adding solute increases the total volume beyond
+        1.000 L, so the concentration is less than 0.500 M.}
+  \item What quantity \emph{is} exactly 0.500 for this solution?
+        \answerblank[5.6cm]{the molality (per kg water)}
+  \item How should the solution have been prepared?
+        \answerlines[2]{Dissolve the solute in less than a litre of water,
+        then add water up to the 1.000 L calibration mark of a volumetric
+        flask.}
+\end{parts}
+
+\problem[]{Which concentration measure is most appropriate, and why?}
+\begin{parts}
+  \item Calculating the partial pressure of one gas in a mixture:
+        \answerblank[5cm]{mole fraction}
+  \item Titrating an acid of known volume:
+        \answerblank[5cm]{molarity}
+  \item Reporting the composition of a saline solution to a patient:
+        \answerblank[5cm]{mass percent}
+\end{parts}
+
+\problem[]{A \SI{500.0}{\gram} sample of aqueous glucose
+(\ce{C6H12O6}, $M = 180.16$) is 12.0\% glucose by mass.}
+\begin{parts}
+  \item Mass of glucose present: \answerblank[3cm]{\SI{60.0}{\gram}}
+  \item Moles of glucose: \answerblank[3cm]{\SI{0.333}{\mole}}
+  \item Mass of water: \answerblank[3cm]{\SI{440.0}{\gram}}
+  \item Molality: \answerblank[3cm]{\SI{0.757}{\mole\per\kilo\gram}}
+\end{parts}
+
+\begin{spiralstrip}{Chapters 9--10 \textbullet\ spiral}
+  \item Hybridization of C in \ce{CH4}: \answerblank[2cm]{sp$^3$}
+  \item Why does ice float? \answerblank[4.6cm]{open H-bonded lattice}
+  \item $\Delta H_{\text{vap}}$ of water:
+        \answerblank[3.2cm]{\SI{40.7}{\kilo\joule\per\mole}}
+  \item Type of solid: graphite? \answerblank[3.4cm]{network covalent}
+  \item Which bond type blocks rotation? \answerblank[1.8cm]{$\pi$}
+\end{spiralstrip}
+
+\end{document}

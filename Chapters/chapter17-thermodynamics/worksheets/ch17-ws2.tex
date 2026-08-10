@@ -1,0 +1,132 @@
+% Ch17 WS2 -- calculating dS, dH and dG from tables. Blocks 2-3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Entropy and Free Energy}
+\apcdoctitle{Worksheet 2 \textbullet\ Calculating $\Delta S^\circ$ and $\Delta G^\circ$}
+\apcsubtitle{Zumdahl \S17.6--17.7 \textbullet\ entropies are in joules, enthalpies in kilojoules}
+
+\begin{document}
+\wsheader[Zumdahl Appendix 4. Columns: $\Delta H_f^\circ$ (kJ/mol),
+$\Delta G_f^\circ$ (kJ/mol), $S^\circ$ (J/K$\cdot$mol). \ce{H2} 0, 0, 131
+\textbullet\ \ce{O2} 0, 0, 205 \textbullet\ \ce{N2} 0, 0, 192 \textbullet\
+\ce{C(gr)} 0, 0, 6 \textbullet\ \ce{H2O(l)} $-286$, $-237$, 70 \textbullet\
+\ce{H2O(g)} $-242$, $-229$, 189 \textbullet\ \ce{CO2} $-393.5$, $-394$, 214
+\textbullet\ \ce{CO} $-110.5$, $-137$, 198 \textbullet\ \ce{CH4} $-75$,
+$-51$, 186 \textbullet\ \ce{NH3} $-46$, $-17$, 193 \textbullet\ \ce{NO} 90,
+87, 211 \textbullet\ \ce{NO2} 34, 52, 240 \textbullet\ \ce{N2O4} 10, 98,
+304 \textbullet\ \ce{HCl} $-92$, $-95$, 187 \textbullet\ \ce{Cl2} 0, 0,
+223.]
+
+\problem[]{Why can a table list an absolute $S^\circ$ but only a
+$\Delta H_f^\circ$? \answerlines[3]{The third law fixes a genuine zero for
+entropy --- a perfect crystal at \SI{0}{\kelvin} has $S = 0$ --- so
+entropies are measurable on an absolute scale. Enthalpy has no natural zero,
+so only changes are measurable, and tables adopt the convention that
+elements in their standard states have $\Delta H_f^\circ = 0$.}}
+
+\problem[]{Consequently, $S^\circ$ for an element in its standard state is
+\answerblank[3cm]{not zero}, while $\Delta H_f^\circ$ for that element
+\answerblank[3cm]{is zero}. Give the value of $S^\circ$ for \ce{O2(g)} as
+evidence. \answerblank[3.6cm]{205 J/(K$\cdot$mol)}}
+
+\problem[]{Calculate $\Delta S^\circ$ for each reaction. Check each answer
+against the sign you would have predicted:}
+\begin{parts}
+  \item \ce{2NO(g) + O2(g) -> 2NO2(g)} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$2(240) - [2(211) + 205] = 480 - 627 =
+        \mathbf{-147}~\si{\joule\per\kelvin}$; predicted negative (3 mol gas
+        $\to$ 2) \checkmark\end{apcanswer}}
+  \item \ce{2CO(g) + O2(g) -> 2CO2(g)} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$2(214) - [2(198) + 205] = 428 - 601 =
+        \mathbf{-173}~\si{\joule\per\kelvin}$; predicted negative
+        \checkmark\end{apcanswer}}
+  \item \ce{N2O4(g) -> 2NO2(g)} \answerblank[3.4cm]{$+176$ J/K}
+  \item \ce{H2(g) + Cl2(g) -> 2HCl(g)} \answerblank[3.4cm]{$+20$ J/K}
+  \item \ce{2H2O(l) -> 2H2(g) + O2(g)} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[2(131) + 205] - 2(70) = 467 - 140 =
+        \mathbf{+327}~\si{\joule\per\kelvin}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Calculate $\Delta H^\circ$ and then $\Delta G^\circ$ at
+\SI{298}{\kelvin} for \ce{2NO(g) + O2(g) -> 2NO2(g)} using
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$. Use your
+$\Delta S^\circ$ from problem 3(a). \workspace[3.4cm]
+\keyonly{\begin{apcanswer}$\Delta H^\circ = 2(34) - 2(90) = 68 - 180 =
+-112$~kJ. Converting the entropy, $\Delta S^\circ = -0.147$~kJ/K.
+$\Delta G^\circ = -112 - (298)(-0.147) = -112 + 43.8 =
+\mathbf{-68}~\text{kJ}$ --- thermodynamically favored.\end{apcanswer}}}
+
+\problem[]{Now calculate $\Delta G^\circ$ for the same reaction the other
+way, from $\Delta G_f^\circ$ values.}
+\begin{parts}
+  \item Set up and evaluate. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = 2(52) - [2(87) + 0]
+        = 104 - 174 = \mathbf{-70}~\text{kJ}$\end{apcanswer}}
+  \item The two routes give $-68$ and $-70$~kJ. Is one of them wrong?
+        \answerlines[3]{No. Zumdahl's appendix rounds every value to the
+        nearest whole kJ or J, and those roundings accumulate differently
+        along the two routes. A gap of a few kJ across a reaction of this
+        size is expected, and either answer earns full credit.}
+\end{parts}
+
+\problem[]{Unit discipline. A student calculates $\Delta G^\circ$ for a
+reaction with $\Delta H^\circ = -92$~kJ and $\Delta S^\circ = -199$~J/K as
+$-92 - 298(-199) = +59{,}210$.}
+\begin{parts}
+  \item Identify the error. \answerlines[2]{They used the entropy in joules
+        while the enthalpy was in kilojoules. $\Delta S^\circ$ must be
+        converted to $-0.199$~kJ/K first.}
+  \item Give the correct value. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$-92 - 298(-0.199) = -92 + 59.3 =
+        \mathbf{-33}~\text{kJ}$\end{apcanswer}}
+  \item Their answer was wrong by roughly what factor?
+        \answerblank[2.6cm]{about 1000}
+\end{parts}
+
+\problem[]{Calculate $\Delta H^\circ$, $\Delta S^\circ$ and
+$\Delta G^\circ$ at \SI{298}{\kelvin} for the combustion of methane,
+\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}. \workspace[4cm]
+\keyonly{\begin{apcanswer}$\Delta H^\circ = [-393.5 + 2(-286)] - [-75] =
+-965.5 + 75 = -890.5$~kJ. \\
+$\Delta S^\circ = [214 + 2(70)] - [186 + 2(205)] = 354 - 596 = -242$~J/K.\\
+$\Delta G^\circ = -890.5 - 298(-0.242) = -890.5 + 72.1 =
+\mathbf{-818}~\text{kJ}$. From $\Delta G_f^\circ$: $[-394 + 2(-237)] -
+[-51] = -817$~kJ \checkmark\end{apcanswer}}}
+
+\problem[]{For \ce{2CuO(s) -> 2Cu(s) + O2(g)}, $\Delta H^\circ = +312$~kJ
+and $\Delta S^\circ = +185$~J/K.}
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin}.
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$312 - 298(0.185) = 312 - 55.1 =
+        \mathbf{+257}~\text{kJ}$ --- not favored\end{apcanswer}}
+  \item Is copper(II) oxide stable at room temperature? Justify from your
+        answer. \answerlines[2]{Yes. $\Delta G^\circ$ is large and
+        positive, so decomposition to the metal and oxygen is strongly
+        unfavored --- which is why copper oxide does not spontaneously
+        revert to copper in air.}
+\end{parts}
+
+\problem[]{Rank these three by increasing $\Delta S^\circ$ without
+calculating, then say which one you could not have ranked confidently:
+\ce{2H2O(l) -> 2H2(g) + O2(g)}, \ce{N2(g) + 3H2(g) -> 2NH3(g)},
+\ce{H2(g) + Cl2(g) -> 2HCl(g)}.
+\answerlines[3]{Haber ($4 \to 2$ mol gas, most negative) $<$ \ce{HCl}
+formation ($2 \to 2$, near zero) $<$ electrolysis of water ($0 \to 3$ mol
+gas, most positive). The \ce{HCl} reaction is the uncertain one: with
+$\Delta n_{\text{gas}} = 0$ the dominant term vanishes and only a small
+residual effect is left, which cannot be signed by inspection.}}
+
+\begin{spiralstrip}{Chapter 17 \textbullet\ block 1}
+  \item Entropy measures: \answerblank[2.6cm]{dispersal}
+  \item $\Delta S_{\text{surr}} = $ \answerblank[2.4cm]{$-\Delta H/T$}
+  \item Second law: $\Delta S_{\text{univ}}$ must be
+        \answerblank[2cm]{positive}
+  \item Which phase has the highest $S^\circ$? \answerblank[1.6cm]{gas}
+  \item The AP term for $\Delta G^\circ < 0$:
+        \answerblank[5.4cm]{thermodynamically favored}
+\end{spiralstrip}
+
+\end{document}

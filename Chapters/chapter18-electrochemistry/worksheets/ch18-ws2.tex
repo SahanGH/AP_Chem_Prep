@@ -1,0 +1,170 @@
+% Ch18 WS2 -- standard reduction potentials, E-cell, dG and K. Blocks 2-3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{18}
+\apcunittitle{Electrochemistry}
+\apcdoctitle{Worksheet 2 \textbullet\ $E^\circ_{\text{cell}}$, $\Delta G^\circ$ and $K$}
+\apcsubtitle{Zumdahl \S18.2--18.3 \textbullet\ scale the half-reaction, never scale the volts}
+
+\begin{document}
+\wsheader[$E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} -
+E^\circ_{\text{anode}}$ \textbullet\ $\Delta G^\circ = -nFE^\circ$
+\textbullet\ $F = \SI{96485}{\coulomb\per\mole}$ \textbullet\
+$R = \SI{8.314}{\joule\per\mole\per\kelvin}$. \\
+$E^\circ$ (V): \ce{F2/F-} $+2.87$ \textbullet\ \ce{Cl2/Cl-} $+1.36$
+\textbullet\ \ce{Ag+/Ag} $+0.80$ \textbullet\ \ce{Fe^3+/Fe^2+} $+0.77$
+\textbullet\ \ce{I2/I-} $+0.54$ \textbullet\ \ce{Cu^2+/Cu} $+0.34$
+\textbullet\ \ce{H+/H2} $0.00$ \textbullet\ \ce{Pb^2+/Pb} $-0.13$
+\textbullet\ \ce{Ni^2+/Ni} $-0.23$ \textbullet\ \ce{Fe^2+/Fe} $-0.44$
+\textbullet\ \ce{Zn^2+/Zn} $-0.76$ \textbullet\ \ce{Al^3+/Al} $-1.66$
+\textbullet\ \ce{Mg^2+/Mg} $-2.37$.]
+
+\problem[]{The standard hydrogen electrode.}
+\begin{parts}
+  \item What $E^\circ$ is assigned to \ce{2H+ + 2e^- -> H2}?
+        \answerblank[3.1cm]{exactly 0.00 V}
+  \item Why must some half-reaction be assigned a value by convention?
+        \answerlines[3]{Only a potential \emph{difference} between two
+        half-cells can be measured; there is no way to measure a single
+        electrode in isolation. Fixing one half-reaction at zero lets every
+        other be assigned a value relative to it.}
+  \item State the three standard conditions.
+        \answerblank[6.4cm]{1 M solutes, 1 atm gases, \SI{25}{\celsius}}
+\end{parts}
+
+\problem[]{Two rules about manipulating half-reactions.}
+\begin{parts}
+  \item Reversing a half-reaction does what to $E^\circ$?
+        \answerblank[3.4cm]{flips the sign}
+  \item Multiplying a half-reaction by 3 does what to $E^\circ$?
+        \answerblank[3.4cm]{nothing at all}
+  \item Explain the second rule. \answerlines[3]{Potential is an intensive
+        property --- energy per unit charge. Tripling the half-reaction
+        triples both the energy transferred and the charge moved, so their
+        ratio, the voltage, is unchanged. Only $n$ changes, and that enters
+        later through $\Delta G^\circ = -nFE^\circ$.}
+\end{parts}
+
+\problem[]{For each pair, identify which species is reduced, write the
+overall equation, and calculate $E^\circ_{\text{cell}}$:}
+\begin{parts}
+  \item \ce{Zn} and \ce{Ag+} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}\ce{Ag+} is reduced (more positive).
+        $\ce{Zn + 2Ag+ -> Zn^2+ + 2Ag}$;
+        $E^\circ = 0.80 - (-0.76) =
+        \mathbf{+1.56}~\text{V}$\end{apcanswer}}
+  \item \ce{Ni} and \ce{Cu^2+} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}\ce{Cu^2+} is reduced.
+        $\ce{Ni + Cu^2+ -> Ni^2+ + Cu}$;
+        $E^\circ = 0.34 - (-0.23) =
+        \mathbf{+0.57}~\text{V}$\end{apcanswer}}
+  \item \ce{Al} and \ce{Zn^2+} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}\ce{Zn^2+} is reduced.
+        $\ce{2Al + 3Zn^2+ -> 2Al^3+ + 3Zn}$;
+        $E^\circ = -0.76 - (-1.66) =
+        \mathbf{+0.90}~\text{V}$\end{apcanswer}}
+  \item \ce{I-} and \ce{Cl2} \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}\ce{Cl2} is reduced.
+        $\ce{2I- + Cl2 -> I2 + 2Cl-}$;
+        $E^\circ = 1.36 - 0.54 =
+        \mathbf{+0.82}~\text{V}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{In problem 3(c), the aluminium half-reaction was doubled and the
+zinc half-reaction tripled. Show that $E^\circ_{\text{cell}}$ is unaffected,
+and state what \emph{is} affected.
+\answerlines[3]{$E^\circ$ values are taken directly from the table
+regardless of the coefficients, so $E^\circ_{\text{cell}} = -0.76 - (-1.66)
+= +0.90$~V either way. What the balancing does determine is $n$: six
+electrons are transferred in the balanced overall equation, and that value
+is needed for $\Delta G^\circ = -nFE^\circ$.}}
+
+\problem[]{Reading the table as a ranking.}
+\begin{parts}
+  \item The strongest oxidizing agent in the data strip is
+        \answerblank[2.6cm]{\ce{F2}}, because it has the
+        \answerblank[4cm]{most positive $E^\circ$}
+  \item The strongest reducing agent is \answerblank[2.6cm]{\ce{Mg}},
+        because its reduction potential is the
+        \answerblank[4cm]{most negative}
+  \item Will \ce{Ag(s)} reduce \ce{Cu^2+}? Justify with a potential.
+        \answerlines[2]{No. $\ce{2Ag + Cu^2+ -> 2Ag+ + Cu}$ gives
+        $E^\circ = 0.34 - 0.80 = -0.46$~V, which is negative, so the
+        reaction is not favored.}
+  \item Which metals in the strip would dissolve in \SI{1}{\Molar} \ce{HCl}?
+        Explain the criterion. \answerlines[3]{Any metal whose reduction
+        potential is below 0.00 V: \ce{Pb}, \ce{Ni}, \ce{Fe}, \ce{Zn},
+        \ce{Al} and \ce{Mg}. For those, $E^\circ_{\text{cell}} = 0.00 -
+        E^\circ_{\text{metal}}$ is positive, so the metal is oxidized by
+        \ce{H+}. Copper and silver, being above zero, do not dissolve.}
+\end{parts}
+
+\problem[]{$\Delta G^\circ = -nFE^\circ$.}
+\begin{parts}
+  \item For the Daniell cell ($E^\circ = +1.10$~V, $n = 2$), calculate
+        $\Delta G^\circ$ in kJ. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -(2)(96485)(1.10) =
+        -212{,}267~\text{J} = \mathbf{-212}~\text{kJ}$\end{apcanswer}}
+  \item For $\ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}$, calculate $E^\circ$ and then
+        $\Delta G^\circ$. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$E^\circ = 0.80 - 0.34 = +0.46$~V;
+        $n = 2$; $\Delta G^\circ = -(2)(96485)(0.46) = -88{,}766~\text{J} =
+        \mathbf{-89}~\text{kJ}$\end{apcanswer}}
+  \item Why does the answer come out in joules rather than kilojoules?
+        \answerlines[2]{$F$ is in coulombs per mole and a volt is a joule
+        per coulomb, so the product $nFE^\circ$ carries units of joules.
+        Dividing by 1000 converts to kJ.}
+\end{parts}
+
+\problem[]{Two cells each have $E^\circ = +0.60$~V. Cell A transfers 1
+electron; cell B transfers 3.}
+\begin{parts}
+  \item Which has the larger voltage? \answerblank[3.4cm]{neither --- equal}
+  \item Which has the more negative $\Delta G^\circ$, and by what factor?
+        \answerblank[4.4cm]{B, by a factor of 3}
+  \item Explain the difference in one sentence.
+        \answerlines[2]{Voltage is intensive and independent of how many
+        electrons move, whereas $\Delta G^\circ$ is a total energy, so
+        moving three times the charge through the same potential releases
+        three times the energy.}
+\end{parts}
+
+\problem[]{Connecting to $K$. Using $\ln K = nFE^\circ/RT$:}
+\begin{parts}
+  \item For the Daniell cell, calculate $\ln K$ and $K$ at
+        \SI{298}{\kelvin}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\ln K = (2)(96485)(1.10)/[(8.314)(298)]
+        = 85.7$; $K = e^{85.7} \approx
+        \mathbf{2\times10^{37}}$\end{apcanswer}}
+  \item Complete the table:
+        \begin{enumerate}[leftmargin=1.4em,itemsep=0.2em]
+          \item $E^\circ > 0$: $\Delta G^\circ$
+                \answerblank[2cm]{negative}, $K$
+                \answerblank[3cm]{greater than 1}
+          \item $E^\circ = 0$: $\Delta G^\circ$
+                \answerblank[2cm]{zero}, $K$
+                \answerblank[2.4cm]{equal to 1}
+          \item $E^\circ < 0$: $\Delta G^\circ$
+                \answerblank[2cm]{positive}, $K$
+                \answerblank[2.4cm]{less than 1}
+        \end{enumerate}
+  \item Explain why a cell voltage of only 1.10 V corresponds to an
+        equilibrium constant as enormous as $10^{37}$.
+        \answerlines[3]{The voltage is multiplied by $nF$ --- roughly
+        200,000 coulombs here --- before it enters the exponential. A
+        seemingly modest potential therefore produces a very large exponent,
+        and $K$ is $e$ raised to it.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 18 \textbullet\ block 1}
+  \item Oxidation occurs at the: \answerblank[2cm]{anode}
+  \item Electrons flow from anode to: \answerblank[2.4cm]{cathode}
+  \item Anions in the salt bridge move toward:
+        \answerblank[2.4cm]{the anode}
+  \item Electrolytic cells have $E^\circ$: \answerblank[2cm]{negative}
+  \item The exam will not ask you to label an electrode:
+        \answerblank[4.6cm]{positive or negative}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,142 @@
+% Ch11 WS3 -- factors affecting solubility + FRQ, plus optional enrichment.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{11}
+\apcunittitle{Properties of Solutions}
+\apcdoctitle{Worksheet 3 \textbullet\ Solubility Factors, FRQ $+$ Optional}
+\apcsubtitle{Zumdahl \S11.3 examinable \textbullet\ \S11.4--11.7 optional}
+
+\begin{document}
+\wsheader[Problems 1--4 are exam-relevant. Problem 5 is marked OPTIONAL ---
+colligative properties are not on the AP exam.]
+
+\problem[]{Predict which is more soluble in water and give the structural
+reason:}
+\begin{parts}
+  \item \ce{CH3CH2OH} or \ce{CH3(CH2)6CH2OH}
+        \answerlines[2]{Ethanol --- both have one O--H, but the longer chain
+        adds nonpolar bulk that water cannot solvate, so the polar fraction
+        of the molecule shrinks.}
+  \item \ce{NH3} or \ce{PH3}
+        \answerlines[2]{\ce{NH3} --- it hydrogen bonds with water; \ce{PH3}
+        cannot, since phosphorus is not electronegative enough.}
+  \item \ce{KNO3} or \ce{I2}
+        \answerlines[2]{\ce{KNO3} --- its ions are stabilized by strong
+        ion--dipole attractions; \ce{I2} is nonpolar.}
+\end{parts}
+
+\problem[]{Vitamins A and C.}
+\begin{parts}
+  \item Vitamin A is largely carbon and hydrogen; vitamin C carries several
+        O--H and C--O bonds. Classify each as hydrophobic or hydrophilic.
+        \answerblank[6cm]{A hydrophobic; C hydrophilic}
+  \item Explain why excess vitamin A can cause hypervitaminosis while excess
+        vitamin C generally does not. \answerlines[3]{Vitamin A dissolves in
+        fatty tissue and accumulates there, so an excess builds up. Vitamin
+        C stays in the aqueous phase and is excreted, so it does not
+        accumulate --- but it must be consumed regularly.}
+\end{parts}
+
+\problem[]{Pressure and temperature effects. Complete the table:}
+
+\renewcommand{\arraystretch}{1.5}
+\noindent\begin{tabular}{@{}p{3.2cm}p{6.0cm}p{5.0cm}@{}}
+\toprule
+ & \textbf{Solids in water} & \textbf{Gases in water}\\
+\midrule
+Increasing pressure & \answerblank[4.1cm]{essentially no effect} &
+  \answerblank[3.9cm]{increases solubility}\\
+Increasing temperature & \answerblank[5.8cm]{usually increases, not always} &
+  \answerblank[4.0cm]{decreases solubility}\\
+\bottomrule
+\end{tabular}
+
+\problem[]{Explain each observation:}
+\begin{parts}
+  \item An opened bottle of soda goes flat.
+        \answerlines[2]{Sealed, the \ce{CO2} is under high partial pressure
+        and much dissolves. Opened, it equilibrates with the atmosphere
+        where the \ce{CO2} partial pressure is minuscule, so nearly all the
+        dissolved gas escapes.}
+  \item A warm soda fizzes more violently than a cold one when opened.
+        \answerlines[2]{Gas solubility falls as temperature rises, so the
+        warm liquid can hold less \ce{CO2} at equilibrium and expels it
+        faster.}
+  \item A power plant discharging warm water can suffocate fish.
+        \answerlines[2]{Warmer water holds less dissolved oxygen, and
+        aquatic organisms depend on that dissolved \ce{O2}.}
+  \item A student claims heating always dissolves more solute. Correct them
+        precisely. \answerlines[2]{Heating always makes dissolving
+        \emph{faster}, but the maximum amount that dissolves may increase or
+        decrease --- sodium sulfate becomes less soluble as temperature
+        rises.}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} A student investigates the dissolving
+of two ionic salts in water. Salt A causes the solution temperature to fall
+by \SI{8.2}{\celsius}; salt B causes it to rise by \SI{11.5}{\celsius}.}
+\begin{parts}
+  \item State the sign of $\Delta H_{\text{soln}}$ for each salt and name
+        the process. \answerlines[2]{Salt A: positive, endothermic --- it
+        absorbed energy from the solution. Salt B: negative, exothermic.}
+  \item Using the three-step model, explain how salt A can dissolve at all
+        despite absorbing energy. \answerlines[3]{Steps 1 and 2 (breaking
+        the lattice and expanding the solvent) together exceed the energy
+        released by Step 3 (hydration), so $\Delta H_{\text{soln}} > 0$.
+        Dissolving still occurs because the increase in disorder on mixing
+        can drive the process even when it is energetically uphill.}
+  \item For salt B, state which energy term must be unusually large, and
+        identify it by name. \answerlines[2]{Step 3 --- the hydration
+        energy. It must exceed the combined cost of breaking the lattice and
+        expanding the solvent.}
+  \item Which salt would be suitable for an instant cold pack, and which for
+        a hand warmer? \answerblank[6cm]{A cold pack; B hand warmer}
+  \item The student dissolves \SI{0.150}{\mole} of salt A in
+        \SI{200.0}{\gram} of water. Calculate $\Delta H_{\text{soln}}$ in
+        \si{\kilo\joule\per\mole}, assuming the solution has the specific
+        heat of water (\SI{4.184}{\joule\per\gram\per\celsius}).
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$q_{\text{soln}} = (200.0)(4.184)(-8.2) =
+        \SI{-6862}{\joule}$, so the dissolving absorbed
+        $+6.86$ kJ. $\Delta H_{\text{soln}} = 6.86/0.150 =
+        \SI{+45.7}{\kilo\joule\per\mole}$\end{apcanswer}}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 per salt, sign AND term \textbullet\ \textbf{(b) 3 pts}
+1 identifies steps 1+2 exceeding step 3, 1 states $\Delta H > 0$,
+1 invokes disorder/entropy as the driver \textbullet\ \textbf{(c) 2 pts}
+1 names step 3, 1 calls it hydration energy \textbullet\ \textbf{(d) 1 pt}
+both assignments \textbullet\ \textbf{(e) 2 pts} 1 flips the sign from
+solution to system, 1 correct value per mole.
+\end{apcnote}
+
+\problem[]{\textbf{OPTIONAL --- enrichment only.} Colligative properties are
+not assessed on the AP exam.}
+\begin{parts}
+  \item Define a colligative property.
+        \answerlines[2]{One that depends only on the number of dissolved
+        particles, not on their chemical identity.}
+  \item Rank by freezing-point depression at equal molality: glucose,
+        \ce{NaCl}, \ce{CaCl2}. Explain.
+        \answerlines[2]{\ce{CaCl2} $>$ \ce{NaCl} $>$ glucose --- they
+        release 3, 2, and 1 particles per formula unit respectively.}
+  \item Explain why a red blood cell bursts in pure water.
+        \answerlines[2]{Water moves by osmosis from the dilute exterior into
+        the more concentrated cell interior, swelling it until the membrane
+        fails.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 11 \textbullet\ blocks 1--2}
+  \item Molality formula: \answerblank[4.5cm]{mol solute / kg solvent}
+  \item Sign of $\Delta H$ for expanding the solvent:
+        \answerblank[2.2cm]{positive}
+  \item Cold-pack salt: \answerblank[2.6cm]{\ce{NH4NO3}}
+  \item For an ionic solute, step 3 is called:
+        \answerblank[3.4cm]{hydration energy}
+  \item Which is temperature-independent, molarity or molality?
+        \answerblank[2.4cm]{molality}
+\end{spiralstrip}
+
+\end{document}

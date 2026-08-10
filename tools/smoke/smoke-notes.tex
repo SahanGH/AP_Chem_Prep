@@ -1,0 +1,116 @@
+% Smoke test: apchem-notes.cls + every shared macro + the full graphics stack.
+% If this compiles in all four variants, the infrastructure is sound.
+\documentclass{apchem-notes}
+
+\apcunit{0}
+\apcunittitle{Infrastructure Smoke Test}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Exercises every macro once --- not real content}
+
+\begin{document}
+\apctitleblock
+
+\blocklesson{Toggle and macro check}{Smoke --- 90 min}
+
+\begin{objectives}
+  \item Compile with \texttt{mhchem}, \texttt{siunitx}, \texttt{chemfig},
+        \texttt{pgfplots}, \texttt{tikz}, \texttt{tcolorbox}.
+  \item Render identically-sized blanks in student and key builds.
+\end{objectives}
+
+\reading{\S 7.12}{368--369}
+
+\begin{warmup}[3]
+  \item Write the formula for sulfuric acid: \answerblank[3cm]{\ce{H2SO4}}
+  \item How many significant figures in \num{0.00340}? \answerblank[2cm]{3}
+  \item State Avogadro's number: \answerblank[4cm]{\SI{6.022e23}{\per\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Chemistry rendering}
+
+\notesection{Equations and units}{1.1}
+\practice{5}
+
+A balanced equation with states and an equilibrium arrow:
+\[ \ce{N2(g) + 3 H2(g) <=> 2 NH3(g)} \qquad
+   \Delta H = \SI{-92.2}{\kilo\joule\per\mole} \]
+
+Redox half-reaction: \ce{Cu^2+ + 2 e- -> Cu}.
+Molarity: \SI{0.150}{\mol\per\liter}. Range: \SIrange{25}{75}{\celsius}.
+
+\term{Key vocabulary} renders in accent color. Fill in:
+the mole is defined via \answerblank[6.4cm]{exactly $6.02214076\times10^{23}$ entities}.
+
+\begin{workedexample}[Worked example: average atomic mass]
+  Copper is 69.15\% \ce{^{63}Cu} (\SI{62.93}{u}) and 30.85\% \ce{^{65}Cu}
+  (\SI{64.93}{u}).
+  \[ 0.6915(62.93) + 0.3085(64.93) = \SI{63.55}{u} \]
+\end{workedexample}
+
+\begin{apctrap}
+  Students average 62.93 and 64.93 to get 63.93, ignoring abundance weighting.
+\end{apctrap}
+
+\begin{apcnote}
+  The equations sheet gives $E = h\nu$; students must supply $\nu = c/\lambda$.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Structures and diagrams}
+
+\notesub{A Lewis-adjacent structure via chemfig}
+
+\chemfig{H-[:30]O-[:-30]H} \hspace{2em}
+\chemfig{O=C=O}
+
+\notesub{A particulate diagram via TikZ}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \draw[apcaccent, thick] (0,0) rectangle (4,2.4);
+  \foreach \x/\y in {0.6/0.5, 1.5/1.8, 2.4/0.9, 3.3/1.6, 1.0/1.2}
+    \fill[apcaccent!60] (\x,\y) circle (0.16);
+  \foreach \x/\y in {0.9/1.9, 2.0/0.4, 2.9/1.9, 3.5/0.6}
+    \draw[apcans, thick] (\x,\y) circle (0.16);
+  \node[font=\sffamily\footnotesize, below] at (2,-0.1)
+    {filled = \ce{Na+}, open = \ce{Cl-}};
+\end{tikzpicture}
+\end{center}
+
+\segment{INSTRUCTION B}{20}{Plots}
+
+A Maxwell--Boltzmann sketch via pgfplots:
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=9cm, height=5cm,
+    xlabel={molecular speed}, ylabel={fraction},
+    xtick=\empty, ytick=\empty,
+    axis lines=left, domain=0:1200, samples=80]
+  \addplot[seriesA] {x^2*exp(-x^2/80000)/1500};
+  \addplot[seriesB] {x^2*exp(-x^2/180000)/2500};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\segment{APPLICATION}{20}{Free-form answer space}
+
+Explain why the higher-temperature curve flattens and shifts right:
+\answerlines[3]{Same total area (same $N$), but the distribution spreads over
+more speeds; the peak drops and the most-probable speed increases with $T$.}
+
+Show your work below:
+\workspace[2.5cm]
+
+\begin{exitticket}
+  One question, collected on the way out:
+  \ce{^{20}Ne} vs \ce{^{22}Ne} --- same element? Why?
+  \answerlines[2]{Yes: identical proton count (10); they differ only in neutrons.}
+\end{exitticket}
+
+\begin{spiralstrip}{drawn from earlier units}
+  \item (U0) Convert \SI{2.5}{\gram} \ce{H2O} to moles. \answerblank[3cm]{\SI{0.14}{\mole}}
+  \item (U0) \lmsonly{This sentence appears only in the LMS build.}%
+        \printonly{This sentence appears only in the print build.}
+\end{spiralstrip}
+
+\end{document}

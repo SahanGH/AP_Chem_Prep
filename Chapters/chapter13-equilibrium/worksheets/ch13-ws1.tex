@@ -1,0 +1,97 @@
+% Ch13 WS1 -- equilibrium condition, K expressions, Kp/Kc. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{13}
+\apcunittitle{Chemical Equilibrium}
+\apcdoctitle{Worksheet 1 \textbullet\ The Equilibrium Constant}
+\apcsubtitle{Zumdahl \S13.1--13.3 \textbullet\ constant does not mean equal}
+
+\begin{document}
+\wsheader[Write every $K$ expression as products over reactants with
+coefficients as exponents. Omit pure solids and pure liquids --- and be ready
+to say why.]
+
+\problem[]{Evaluate each statement about a system at equilibrium as true or
+false, with a one-line justification:}
+\begin{parts}
+  \item The forward and reverse reactions have both stopped.
+        \answerlines[2]{False --- both continue at equal rates; equilibrium
+        is dynamic.}
+  \item The concentrations of reactants and products are equal.
+        \answerlines[2]{False --- they are constant, but generally very
+        different from one another.}
+  \item The same equilibrium state can be reached from either direction.
+        \answerlines[2]{True --- only the route differs, not the
+        destination.}
+\end{parts}
+
+\problem[]{Write the $K_c$ expression for each:}
+\begin{parts}
+  \item \ce{2 NO(g) + O2(g) <=> 2 NO2(g)}:
+        \answerblank[5.6cm]{$[\ce{NO2}]^2/([\ce{NO}]^2[\ce{O2}])$}
+  \item \ce{PCl5(g) <=> PCl3(g) + Cl2(g)}:
+        \answerblank[5.6cm]{$[\ce{PCl3}][\ce{Cl2}]/[\ce{PCl5}]$}
+  \item \ce{4 NH3(g) + 5 O2(g) <=> 4 NO(g) + 6 H2O(g)}:
+        \answerblank[6cm]{$[\ce{NO}]^4[\ce{H2O}]^6/([\ce{NH3}]^4[\ce{O2}]^5)$}
+\end{parts}
+
+\problem[]{Manipulating $K$. A reaction has $K = 25$.}
+\begin{parts}
+  \item $K$ for the reverse reaction: \answerblank[2.4cm]{0.040}
+  \item $K$ if all coefficients are doubled:
+        \answerblank[2.4cm]{625}
+  \item $K$ if all coefficients are halved:
+        \answerblank[2.4cm]{5.0}
+\end{parts}
+
+\problem[]{Explain why coefficients become exponents in a $K$ expression but
+never in a rate law. \answerlines[3]{$K$ describes a thermodynamic end state
+determined entirely by the overall balanced equation. A rate law describes
+the mechanism --- specifically the rate-determining step --- which the overall
+equation does not reveal, so its orders must be measured.}}
+
+\problem[]{$K_p$ and $K_c$. Use $K_p = K_c(RT)^{\Delta n}$ with
+$R = \SI{0.08206}{\liter\atm\per\mole\per\kelvin}$.}
+\begin{parts}
+  \item Determine $\Delta n$ for \ce{2 SO2(g) + O2(g) <=> 2 SO3(g)}:
+        \answerblank[2cm]{$-1$}
+  \item Determine $\Delta n$ for \ce{H2(g) + Cl2(g) <=> 2 HCl(g)}:
+        \answerblank[2cm]{0}
+  \item For which of those two does $K_p = K_c$? Explain.
+        \answerlines[2]{The \ce{HCl} synthesis --- with equal moles of gas on
+        both sides, $(RT)^0 = 1$ and the two constants coincide.}
+  \item For \ce{N2O4(g) <=> 2 NO2(g)} at \SI{25}{\celsius},
+        $K_c = 4.6\times10^{-3}$. Calculate $K_p$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\Delta n = 1$;
+        $K_p = (4.6\times10^{-3})(0.08206)(298) = 0.11$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Sketch, on one set of axes, how $[\ce{N2O4}]$ and $[\ce{NO2}]$
+change with time starting from pure \ce{N2O4}, and mark the point where
+equilibrium is established. \workspace[4cm]
+\keyonly{\begin{apcanswer}$[\ce{N2O4}]$ falls from its initial value and
+levels off; $[\ce{NO2}]$ rises from zero and levels off at a different
+value. Equilibrium begins where both curves become horizontal --- the
+values are unequal.\end{apcanswer}}}
+
+\problem[]{A student writes $K = [\ce{CaO}][\ce{CO2}]/[\ce{CaCO3}]$ for
+\ce{CaCO3(s) <=> CaO(s) + CO2(g)}. Identify the error, give the correct
+expression, and explain the reasoning.
+\answerlines[3]{Pure solids are omitted, so $K_p = P_{\ce{CO2}}$ (or
+$K_c = [\ce{CO2}]$). The ``concentration'' of a pure solid is fixed by its
+density and does not change as the reaction proceeds --- adding more solid
+just makes a bigger pile.}}
+
+\begin{spiralstrip}{Chapters 11--12 \textbullet\ spiral}
+  \item $t_{1/2}$ for first order with $k = \SI{0.0693}{\per\second}$:
+        \answerblank[2.6cm]{\SI{10.0}{\second}}
+  \item Rate law exponents come from:
+        \answerblank[2.8cm]{experiment}
+  \item Molality formula: \answerblank[4.8cm]{mol solute / kg solvent}
+  \item Does a catalyst change $\Delta H$? \answerblank[1.6cm]{no}
+  \item Gas solubility and temperature:
+        \answerblank[3.5cm]{inversely related}
+\end{spiralstrip}
+
+\end{document}

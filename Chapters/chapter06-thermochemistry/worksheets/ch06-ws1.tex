@@ -1,0 +1,113 @@
+% Ch6 WS1 -- first law, signs, enthalpy, calorimetry. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Worksheet 1 \textbullet\ Energy, Enthalpy, Calorimetry}
+\apcsubtitle{Zumdahl \S6.1--6.2 \textbullet\ every sign is written from the system's point of view}
+
+\begin{document}
+\wsheader[State the sign of every energy quantity explicitly, and say which
+way the energy moved. A magnitude with no sign is an incomplete answer.]
+
+\problem[]{Assign the sign of $q$ and of $w$ for the system in each case:}
+\begin{parts}
+  \item A reaction makes its flask feel hot.
+        \answerblank[5.5cm]{$q < 0$ (exothermic)}
+  \item A gas is compressed by a piston.
+        \answerblank[5.5cm]{$w > 0$}
+  \item An instant cold pack absorbs heat from your hand.
+        \answerblank[5.5cm]{$q > 0$ for the pack}
+  \item A gas expands, lifting a weight.
+        \answerblank[5.5cm]{$w < 0$}
+\end{parts}
+
+\problem[]{First law calculations:}
+\begin{parts}
+  \item A system absorbs \SI{650}{\joule} of heat and does
+        \SI{225}{\joule} of work on its surroundings. Find $\Delta E$.
+        \answerblank[3cm]{$+425$ J}
+  \item A system releases \SI{1.20}{\kilo\joule} of heat while
+        \SI{450}{\joule} of work is done on it. Find $\Delta E$.
+        \answerblank[3cm]{$-750$ J}
+  \item A gas expands from \SI{1.5}{\liter} to \SI{4.5}{\liter} against
+        \SI{2.0}{\atm}. Find $w$ in \si{\liter\atm} and in joules
+        (\SI{1}{\liter\atm} $=$ \SI{101.3}{\joule}). \workspace[2cm]
+        \keyonly{\begin{apcanswer}$w = -(2.0)(3.0) =
+        \SI{-6.0}{\liter\atm} = \SI{-608}{\joule}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Explain why $\Delta E$ is a state function but $q$ and $w$
+separately are not. Use an everyday analogy.
+\answerlines[3]{$\Delta E$ depends only on the initial and final states, so
+every path between them gives the same value. How that energy divides
+between heat and work depends entirely on the route --- just as two hikers
+reaching one summit share an altitude change but may walk very different
+distances.}}
+
+\problem[]{Specific heat calculations. For water,
+$c = \SI{4.184}{\joule\per\gram\per\celsius}$.}
+\begin{parts}
+  \item Heat needed to raise \SI{250.}{\gram} of water from
+        \SI{22.0}{\celsius} to \SI{98.0}{\celsius}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$q = (250.)(4.184)(76.0) =
+        \SI{7.95e4}{\joule} = \SI{79.5}{\kilo\joule}$\end{apcanswer}}
+  \item Heat released when \SI{75.0}{\gram} of water cools from
+        \SI{60.0}{\celsius} to \SI{25.0}{\celsius}:
+        \answerblank[3.4cm]{\SI{-1.10e4}{\joule}}
+  \item Final temperature when \SI{5.02}{\kilo\joule} is added to
+        \SI{120.}{\gram} of water initially at \SI{20.0}{\celsius}:
+        \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\Delta T = 5020/[(120.)(4.184)] =
+        \SI{10.0}{\celsius}$; $T_f =
+        \SI{30.0}{\celsius}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{A \SI{45.0}{\gram} sample of an unknown metal at
+\SI{95.0}{\celsius} is placed in \SI{80.0}{\gram} of water at
+\SI{20.0}{\celsius}. The final temperature is \SI{23.5}{\celsius}.}
+\begin{parts}
+  \item Heat gained by the water: \answerblank[3.4cm]{\SI{1172}{\joule}}
+  \item Specific heat of the metal: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$q_{\text{metal}} = \SI{-1172}{\joule}$;
+        $c = 1172/[(45.0)(71.5)] =
+        \SI{0.364}{\joule\per\gram\per\celsius}$\end{apcanswer}}
+  \item The metal's temperature changed by \SI{71.5}{\celsius} while the
+        water's changed by only \SI{3.5}{\celsius}. Explain.
+        \answerlines[2]{Water has a far larger specific heat and nearly
+        twice the mass, so the same quantity of energy produces a much
+        smaller temperature change in it.}
+\end{parts}
+
+\problem[]{\SI{50.0}{\milli\liter} of \SI{1.00}{\Molar} \ce{HCl} at
+\SI{22.0}{\celsius} is mixed with \SI{50.0}{\milli\liter} of
+\SI{1.00}{\Molar} \ce{NaOH} at \SI{22.0}{\celsius} in a coffee-cup
+calorimeter. The temperature rises to \SI{28.8}{\celsius}. Assume the
+solution has the density and specific heat of water.}
+\begin{parts}
+  \item Heat absorbed by the solution: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$q = (100.0)(4.184)(6.8) =
+        \SI{2845}{\joule} = \SI{2.85}{\kilo\joule}$\end{apcanswer}}
+  \item Moles of water formed: \answerblank[3cm]{\SI{0.0500}{\mole}}
+  \item $\Delta H$ per mole, with sign: \answerblank[3.4cm]{\SI{-56.9}{\kilo\joule\per\mole}}
+  \item Give one reason the measured magnitude is slightly smaller than the
+        accepted \SI{57.3}{\kilo\joule\per\mole}.
+        \answerlines[2]{Some heat is absorbed by the cup, thermometer, and
+        surroundings rather than by the solution, so the measured
+        temperature rise understates the heat released.}
+\end{parts}
+
+\begin{spiralstrip}{Chapters 4--5 \textbullet\ spiral}
+  \item Net ionic for strong acid + strong base:
+        \answerblank[4.5cm]{\ce{H+ + OH^- -> H2O}}
+  \item Volume of \SI{1.00}{\mole} gas at STP:
+        \answerblank[2.8cm]{\SI{22.42}{\liter}}
+  \item Oxidation state of Cr in \ce{Cr2O7^2-}: \answerblank[2cm]{$+6$}
+  \item Gas collected over water: add or subtract $P_{\ce{H2O}}$?
+        \answerblank[2.4cm]{subtract}
+  \item Moles in \SI{25.0}{\milli\liter} of \SI{0.200}{\Molar}:
+        \answerblank[3cm]{\SI{5.00e-3}{\mole}}
+\end{spiralstrip}
+
+\end{document}

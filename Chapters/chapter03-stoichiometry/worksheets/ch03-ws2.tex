@@ -1,0 +1,85 @@
+% Ch3 WS2 -- balancing and mass-to-mass stoichiometry. Block 3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Worksheet 2 \textbullet\ Balancing and Mass Relationships}
+\apcsubtitle{Zumdahl \S3.8--3.10 \textbullet\ the road always runs through moles}
+
+\begin{document}
+\wsheader[Balance before you calculate --- an unbalanced equation makes
+every downstream number wrong. Never change a subscript to balance.]
+
+\problem[]{Balance each equation:}
+\begin{parts}
+  \item \ce{Na + H2O -> NaOH + H2}
+        \answerblank[6.5cm]{\ce{2 Na + 2 H2O -> 2 NaOH + H2}}
+  \item \ce{C4H10 + O2 -> CO2 + H2O}
+        \answerblank[7.5cm]{\ce{2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O}}
+  \item \ce{Fe2O3 + CO -> Fe + CO2}
+        \answerblank[6.4cm]{\ce{Fe2O3 + 3 CO -> 2 Fe + 3 CO2}}
+  \item \ce{Ca3(PO4)2 + H2SO4 -> CaSO4 + H3PO4}
+        \answerblank[9.3cm]{\ce{Ca3(PO4)2 + 3 H2SO4 -> 3 CaSO4 + 2 H3PO4}}
+\end{parts}
+
+\problem[]{A student "balances" \ce{H2 + O2 -> H2O} by writing
+\ce{H2 + O2 -> H2O2}. Explain what is wrong in one sentence, then balance it
+correctly. \answerlines[2]{Changing the subscript makes a different
+substance (hydrogen peroxide, not water); only coefficients may change:
+\ce{2 H2 + O2 -> 2 H2O}.}}
+
+\problem[]{For \ce{2 KClO3 -> 2 KCl + 3 O2}:}
+\begin{parts}
+  \item Moles of \ce{O2} from \SI{4.0}{\mole} \ce{KClO3}:
+        \answerblank[2.6cm]{\SI{6.0}{\mole}}
+  \item Moles of \ce{KClO3} needed for \SI{1.5}{\mole} \ce{O2}:
+        \answerblank[2.6cm]{\SI{1.0}{\mole}}
+  \item Mass of \ce{O2} from \SI{24.5}{\gram} \ce{KClO3}
+        ($M = 122.55$): \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$24.5/122.55 = \SI{0.200}{\mole}$
+        \ce{KClO3} $\times \tfrac32 = \SI{0.300}{\mole}$ \ce{O2}
+        $\times 32.00 = \SI{9.60}{\gram}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Ammonia burns: \ce{4 NH3 + 5 O2 -> 4 NO + 6 H2O}. Starting with
+\SI{34.0}{\gram} \ce{NH3} and excess oxygen:}
+\begin{parts}
+  \item Moles of \ce{NH3}: \answerblank[2.6cm]{\SI{2.00}{\mole}}
+  \item Mass of NO produced: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$2.00$ mol \ce{NH3} $\to 2.00$ mol NO
+        $\times 30.01 = \SI{60.0}{\gram}$\end{apcanswer}}
+  \item Mass of \ce{O2} consumed: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$2.00 \times \tfrac54 = \SI{2.50}{\mole}$
+        \ce{O2} $\times 32.00 = \SI{80.0}{\gram}$\end{apcanswer}}
+  \item Mass of water produced, then verify conservation of mass across the
+        whole reaction. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$2.00\times\tfrac64 = \SI{3.00}{\mole}$
+        \ce{H2O} $\times 18.02 = \SI{54.1}{\gram}$. Check:
+        $34.0+80.0 = 114.0$ in; $60.0+54.1 = 114.1$ out
+        (rounding).\end{apcanswer}}
+\end{parts}
+
+\problem[]{Thermite: \ce{Fe2O3 + 2 Al -> 2 Fe + Al2O3}. What mass of
+aluminum is required to produce \SI{100.0}{\gram} of iron?
+\workspace[2.8cm]
+\keyonly{\begin{apcanswer}$100.0/55.85 = \SI{1.791}{\mole}$ Fe; Al:Fe is
+$2{:}2 = 1{:}1 \to \SI{1.791}{\mole}$ Al $\times 26.98 =
+\SI{48.3}{\gram}$\end{apcanswer}}}
+
+\problem[]{Explain, in one or two sentences, why the coefficients of a
+balanced equation give mole ratios but \emph{not} mass ratios.
+\answerlines[2]{Coefficients count particles, and different substances have
+different molar masses --- so equal mole numbers correspond to unequal
+masses.}}
+
+\begin{spiralstrip}{Chapter 3 \textbullet\ blocks 1--2}
+  \item Molar mass of \ce{K2Cr2O7}:
+        \answerblank[3.2cm]{\SI{294.20}{\gram\per\mole}}
+  \item Moles in \SI{9.00}{\gram} \ce{H2O}: \answerblank[2.6cm]{\SI{0.500}{\mole}}
+  \item $\%\,\ce{C}$ in \ce{CH4}: \answerblank[2.4cm]{74.9\%}
+  \item Empirical formula of \ce{C4H10}: \answerblank[2.4cm]{\ce{C2H5}}
+  \item Atoms in \SI{0.500}{\mole} of \ce{O2}: \answerblank[3cm]{$6.02\times10^{23}$}
+\end{spiralstrip}
+
+\end{document}

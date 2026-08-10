@@ -1,0 +1,102 @@
+% Ch6 WS2 -- Hess's law. Block 3.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Worksheet 2 \textbullet\ Hess's Law}
+\apcsubtitle{Zumdahl \S6.3 \textbullet\ write the target first, then work backwards}
+
+\begin{document}
+\wsheader[For every problem, show which given equation you reversed or
+scaled and by what factor. An answer with no manipulation shown cannot be
+checked --- or given partial credit.]
+
+\problem[]{State the two rules for manipulating a thermochemical equation,
+and give the physical reason for each.
+\answerlines[3]{Reversing a reaction reverses the sign of $\Delta H$,
+because the sign records the direction of heat flow. Multiplying the
+coefficients multiplies $\Delta H$ by the same factor, because enthalpy is
+extensive --- twice the reaction transfers twice the heat.}}
+
+\problem[]{Given \ce{N2(g) + 3 H2(g) -> 2 NH3(g)},
+$\Delta H = \SI{-92.2}{\kilo\joule}$, find $\Delta H$ for:}
+\begin{parts}
+  \item \ce{2 NH3(g) -> N2(g) + 3 H2(g)}:
+        \answerblank[3.2cm]{\SI{+92.2}{\kilo\joule}}
+  \item \ce{1/2 N2(g) + 3/2 H2(g) -> NH3(g)}:
+        \answerblank[3.2cm]{\SI{-46.1}{\kilo\joule}}
+  \item \ce{2 N2(g) + 6 H2(g) -> 4 NH3(g)}:
+        \answerblank[3.2cm]{\SI{-184.4}{\kilo\joule}}
+\end{parts}
+
+\problem[]{Verify Hess's law using Zumdahl's nitrogen oxides. Given
+\begin{align*}
+  \ce{N2(g) + O2(g) &-> 2 NO(g)}   &\Delta H &= \SI{180}{\kilo\joule}\\
+  \ce{2 NO(g) + O2(g) &-> 2 NO2(g)} &\Delta H &= \SI{-112}{\kilo\joule}
+\end{align*}}
+\begin{parts}
+  \item Add the two equations and write the net reaction.
+        \answerlines[2]{\ce{N2(g) + 2 O2(g) -> 2 NO2(g)} --- the \ce{2 NO}
+        cancels.}
+  \item Compute $\Delta H$ for the net reaction.
+        \answerblank[3cm]{\SI{+68}{\kilo\joule}}
+  \item What property of enthalpy guarantees this equals the directly
+        measured value? \answerblank[4cm]{it is a state function}
+\end{parts}
+
+\problem[]{Determine $\Delta H$ for \ce{C(s) + 1/2 O2(g) -> CO(g)} given
+\begin{align*}
+  \text{(i)}\ \ce{C(s) + O2(g) &-> CO2(g)}   &\Delta H &= \SI{-393.5}{\kilo\joule}\\
+  \text{(ii)}\ \ce{2 CO(g) + O2(g) &-> 2 CO2(g)} &\Delta H &= \SI{-566.0}{\kilo\joule}
+\end{align*}
+\workspace[3.4cm]
+\keyonly{\begin{apcanswer}Reverse and halve (ii):
+\ce{CO2 -> CO + 1/2 O2}, $\Delta H = \SI{+283.0}{\kilo\joule}$. Add to (i);
+\ce{CO2} cancels. $\Delta H = -393.5 + 283.0 =
+\SI{-110.5}{\kilo\joule}$\end{apcanswer}}}
+
+\problem[]{Determine $\Delta H$ for
+\ce{2 C(s) + H2(g) -> C2H2(g)} given
+\begin{align*}
+  \text{(i)}\ \ce{C2H2(g) + 5/2 O2(g) &-> 2 CO2(g) + H2O(l)} &\Delta H &= \SI{-1300.}{\kilo\joule}\\
+  \text{(ii)}\ \ce{C(s) + O2(g) &-> CO2(g)} &\Delta H &= \SI{-393.5}{\kilo\joule}\\
+  \text{(iii)}\ \ce{H2(g) + 1/2 O2(g) &-> H2O(l)} &\Delta H &= \SI{-286}{\kilo\joule}
+\end{align*}
+\workspace[3.8cm]
+\keyonly{\begin{apcanswer}Reverse (i): $+1300.$; take $2\times$(ii):
+$-787.0$; take (iii) as written: $-286$. Sum:
+$\Delta H = \SI{+227}{\kilo\joule}$ --- acetylene is endothermic to
+form.\end{apcanswer}}}
+
+\problem[]{Determine $\Delta H$ for \ce{N2H4(l) + O2(g) -> N2(g) + 2 H2O(l)}
+given
+\begin{align*}
+  \text{(i)}\ \ce{N2H4(l) + O2(g) &-> N2(g) + 2 H2O(g)} &\Delta H &= \SI{-534}{\kilo\joule}\\
+  \text{(ii)}\ \ce{H2O(l) &-> H2O(g)} &\Delta H &= \SI{+44}{\kilo\joule}
+\end{align*}
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Reverse (ii) and double it:
+\ce{2 H2O(g) -> 2 H2O(l)}, $\Delta H = \SI{-88}{\kilo\joule}$. Add to (i):
+$\Delta H = -534 - 88 = \SI{-622}{\kilo\joule}$\end{apcanswer}}}
+
+\problem[]{A student solving problem 6 forgets to double the reversed step
+and reports \SI{-578}{\kilo\joule}. Explain why the doubling is required.
+\answerlines[2]{The target produces two moles of liquid water, so two moles
+of vapour must be condensed --- and enthalpy is extensive, so the
+condensation enthalpy must be doubled along with the coefficients.}}
+
+\begin{spiralstrip}{Chapter 6 \textbullet\ blocks 1--2}
+  \item $\Delta E$ if $q = +300$ J and $w = -100$ J:
+        \answerblank[2.6cm]{$+200$ J}
+  \item $\Delta H = q$ under what condition?
+        \answerblank[3.4cm]{constant pressure}
+  \item $q$ for \SI{100.}{\gram} water warmed \SI{5.00}{\celsius}:
+        \answerblank[3cm]{\SI{2092}{\joule}}
+  \item Specific heat of water:
+        \answerblank[3.6cm]{\SI{4.184}{\joule\per\gram\per\celsius}}
+  \item Sign of $w$ when a gas is compressed:
+        \answerblank[2.2cm]{positive}
+\end{spiralstrip}
+
+\end{document}

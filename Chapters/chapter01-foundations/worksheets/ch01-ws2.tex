@@ -1,0 +1,160 @@
+% Ch01 WS2 -- remediation practice, assigned on the diagnostic result.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{1}
+\apcunittitle{Chemical Foundations}
+\apcdoctitle{Worksheet 2 \textbullet\ Remediation Practice}
+\apcsubtitle{Zumdahl \S1.5, 1.7, 1.9 \textbullet\ assigned from the diagnostic --- drill until automatic}
+
+\begin{document}
+\wsheader[$K = {}^\circ$C $+\ 273.15$ \textbullet\ $d = m/V$ \textbullet\
+$1~\text{in} \equiv 2.54~\text{cm}$ (exact). \textbf{Multiply or divide:}
+fewest significant figures. \textbf{Add or subtract:} fewest decimal
+places.]
+
+\problem[]{Counting practice. Give the number of significant figures:}
+\begin{parts}
+  \item $0.0105$ \answerblank[1.4cm]{3}
+  \item $0.050080$ \answerblank[1.4cm]{5}
+  \item $8.050\times10^{-3}$ \answerblank[1.4cm]{4}
+  \item $100$ \answerblank[1.4cm]{1}
+  \item $100.$ \answerblank[1.4cm]{3}
+  \item $1.00\times10^{2}$ \answerblank[1.4cm]{3}
+  \item $1200$ \answerblank[1.4cm]{2}
+  \item $1.20\times10^{3}$ \answerblank[1.4cm]{3}
+  \item $0.00300$ \answerblank[1.4cm]{3}
+  \item $45.20$ \answerblank[1.4cm]{4}
+\end{parts}
+
+\problem[]{For each of the three zero types, state the rule and give one
+example from problem 1.
+\answerlines[4]{\textbf{Leading zeros} are never significant --- they only
+place the decimal point; $0.00300$ has three, none of them counted.
+\textbf{Captive zeros}, between nonzero digits, are always significant;
+$0.050080$ includes captive zeros that count.
+\textbf{Trailing zeros} count only when a decimal point is present:
+$45.20$ has four significant figures, but $1200$ has only two.}}
+
+\problem[]{Why is $1.20\times10^{3}$ unambiguous where $1200$ is not?
+\answerlines[3]{In $1200$ the trailing zeros may or may not have been
+measured, and the notation cannot distinguish the cases --- by the rules it
+must be read as two significant figures. Scientific notation states the
+precision explicitly: every digit written before the power of ten is
+significant, so $1.20\times10^{3}$ declares three.}}
+
+\problem[]{Multiplication and division. Report each to the correct number of
+significant figures:}
+\begin{parts}
+  \item $4.56 \times 1.4$ \answerblank[2.4cm]{6.4}
+  \item $2.5 \times 3.42$ \answerblank[2.4cm]{8.6}
+  \item $12.4 \times 0.0025$ \answerblank[2.4cm]{0.031}
+  \item $0.0250 \times 4.00$ \answerblank[2.4cm]{0.100}
+  \item $8.315 \div 298$ \workspace[1.6cm]
+        \keyonly{\begin{apcanswer}$= 0.027903\ldots$; three significant
+        figures in both, so $\mathbf{0.0279}$\end{apcanswer}}
+  \item $(6.022\times10^{23})(2.0)$
+        \answerblank[3cm]{$1.2\times10^{24}$}
+\end{parts}
+
+\problem[]{Addition and subtraction. Watch the decimal places:}
+\begin{parts}
+  \item $12.11 + 18.0 + 1.013$ \workspace[1.6cm]
+        \keyonly{\begin{apcanswer}$= 31.123$; $18.0$ limits to one decimal
+        place, so $\mathbf{31.1}$\end{apcanswer}}
+  \item $3.14159 - 0.2$ \answerblank[2.4cm]{2.9}
+  \item $100.0 + 0.005$ \answerblank[2.4cm]{100.0}
+  \item $1.0 + 2.02 + 3.003$ \answerblank[2.4cm]{6.0}
+  \item $25.64 - 25.6$ \answerblank[2.4cm]{0.0}
+\end{parts}
+
+\problem[]{Look again at 5(c) and 5(e).}
+\begin{parts}
+  \item In 5(c), how many significant figures does the answer have, and how
+        many does the \emph{least precise} term have?
+        \answerlines[2]{The answer $100.0$ has four significant figures,
+        while $0.005$ has only one. The decimal-place rule can leave the
+        result with far more significant figures than one of its terms ---
+        which is why the two rules must not be confused.}
+  \item In 5(e), two numbers with three or four significant figures produced
+        an answer with essentially none. Explain, and name a laboratory
+        situation where this matters. \answerlines[3]{Subtracting two nearly
+        equal measurements cancels the digits they share and leaves only the
+        uncertain ones, so precision collapses. It matters whenever a result
+        is a small difference of large readings --- for instance a
+        calorimetry temperature change, or a mass by difference on an
+        analytical balance.}
+\end{parts}
+
+\problem[]{Dimensional analysis. Show your conversion factors.}
+\begin{parts}
+  \item \SI{1.50}{\kilo\gram} to grams
+        \answerblank[3cm]{\SI{1500}{\gram}}
+  \item \SI{2.50}{\litre} to millilitres
+        \answerblank[3cm]{\SI{2500}{\milli\litre}}
+  \item \SI{750}{\milli\litre} to litres
+        \answerblank[3cm]{\SI{0.750}{\litre}}
+  \item 12.0 inches to centimetres \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(12.0)(2.54) = \mathbf{30.5}$~cm ---
+        the 2.54 is exact, so three significant figures come from the
+        $12.0$\end{apcanswer}}
+  \item 65.0 miles per hour to metres per second. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$65.0 \times 5280 \times 12 \times 2.54
+        \div 100 = \SI{104607}{\metre\per\hour}$;
+        $\div 3600 = 29.057\ldots$, so
+        $\mathbf{29.1}~\si{\metre\per\second}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Why do the conversion factors in problem 7(d) and 7(e) not limit
+the significant figures? \answerlines[3]{They are exact numbers. Some come
+from definitions --- one inch is defined as exactly \SI{2.54}{\centi\metre},
+and there are exactly 5280 feet in a mile --- and definitions carry an
+infinite number of significant figures. Only the measured quantity limits
+the answer.}}
+
+\problem[]{Density.}
+\begin{parts}
+  \item Mercury has $d = \SI{13.6}{\gram\per\milli\litre}$. What volume does
+        \SI{100.0}{\gram} occupy? \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$100.0/13.6 = \mathbf{7.35}$~mL --- three
+        significant figures, limited by the
+        $13.6$\end{apcanswer}}
+  \item A \SI{25.0}{\gram} sample occupies
+        \SI{9.26}{\centi\metre\cubed}. Find its density and suggest the
+        metal. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$25.0/9.26 =
+        \mathbf{2.70}~\si{\gram\per\centi\metre\cubed}$ ---
+        aluminium\end{apcanswer}}
+  \item Explain why density is better thought of as a conversion factor than
+        as a formula. \answerlines[3]{Because it converts between mass and
+        volume in either direction, exactly as any other conversion factor
+        does. Written as \SI{2.70}{\gram\per\centi\metre\cubed} it turns
+        volume into mass; inverted, it turns mass into volume. Treating it
+        that way removes the need to rearrange $d = m/V$ every time.}
+\end{parts}
+
+\problem[]{Precision, accuracy, and a decision.}
+\begin{parts}
+  \item Four students measure the same \SI{10.00}{\gram} standard.
+        Their results:
+        \begin{center}
+        \begin{tabular}{@{}llll@{}}
+        \hline
+        \textbf{A} 9.99, 10.01, 10.00 & \textbf{B} 9.2, 10.8, 9.7 &
+        \textbf{C} 9.45, 9.46, 9.44 & \textbf{D} 8.1, 11.4, 10.2 \\
+        \hline
+        \end{tabular}
+        \end{center}
+        Classify each as precise, accurate, both, or neither.
+        \answerlines[3]{A: both precise and accurate. B: accurate on
+        average but not precise. C: precise but not accurate --- a
+        systematic error. D: neither.}
+  \item Which student's problem is fixed by more careful technique, and
+        which by recalibrating the instrument?
+        \answerlines[3]{B and D need better technique --- their scatter is
+        random. C needs recalibration: the readings agree closely with each
+        other but are consistently about \SI{0.55}{\gram} low, which is a
+        systematic error that repeating will never reveal or remove.}
+\end{parts}
+
+\end{document}

@@ -1,0 +1,495 @@
+% Zumdahl Chapter 3 -- Stoichiometry. Chapter-track guided notes.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S3.1--3.11 \textbullet\ PDF pp.~110--167 \textbullet\ 4 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+The front half (\S3.1--3.7) is CED Unit 1 territory --- moles, molar mass,
+percent composition, empirical formulas. The back half (\S3.8--3.11) is
+\emph{Unit 4} content you won't formally meet until much later: balancing,
+mass-to-mass calculations, limiting reactant, percent yield. Working the
+whole chapter now front-loads the single most reusable skill in chemistry.
+Every unit from 4 onward assumes you can do stoichiometry without thinking.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Counting by Weighing}{Zumdahl \S3.1--3.5}
+
+\begin{objectives}
+  \item Explain why chemists count particles by weighing them.
+  \item Convert fluently among mass, moles, and number of particles.
+\end{objectives}
+
+\reading{Zumdahl \S3.1--3.5}{110--123}
+
+\begin{warmup}[3]
+  \item Neutrons in \ce{^{65}Cu}: \answerblank[2cm]{36}
+  \item Formula for calcium phosphate: \answerblank[3cm]{\ce{Ca3(PO4)2}}
+  \item Sig figs in \SI{0.03060}{\gram}: \answerblank[1.5cm]{4}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The mole and molar mass}
+
+\notesectionz{Counting by weighing}{3.1--3.3}
+\practice{5}
+
+You cannot count atoms individually, so you count them the way a bank counts
+pennies --- by \answerblank[2.2cm]{weighing}. That requires knowing the
+average mass of one particle, which is what the periodic table gives you.
+
+The \term{mole} is a counting unit:
+\[
+  1\ \text{mol} = \answerblank[4.6cm]{$6.022\times10^{23}$ particles}
+  \qquad (N_A,\ \text{Avogadro's number})
+\]
+
+\notesub{Atomic mass is a weighted average}
+
+Because elements are mixtures of isotopes, the tabulated mass is
+\[
+  \bar m = \answerblank[6.4cm]{$\sum(\text{fractional abundance}\times\text{mass})$}
+\]
+
+\ce{^{63}Cu} (62.93 u, 69.15\%) and \ce{^{65}Cu} (64.93 u, 30.85\%) give
+\answerblank[2.6cm]{63.55 u} --- closer to 63 because that isotope
+dominates.
+
+\notesub{Molar mass}
+
+The \term{molar mass} $M$ in \si{\gram\per\mole} is numerically the atomic
+(or formula) mass. Build it by summing:
+
+\ce{Ca(NO3)2}: $40.08 + 2(14.01) + 6(16.00) =$
+\answerblank[3.2cm]{\SI{164.10}{\gram\per\mole}}
+
+\begin{apctrap}
+Count the atoms \emph{inside} parentheses times the subscript outside.
+\ce{Ca(NO3)2} has 2 N and 6 O, not 1 N and 3 O. This single slip wrecks more
+stoichiometry problems than any other.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Conversions in both directions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Moles in \SI{36.0}{\gram} of \ce{H2O}:
+        \answerblank[3cm]{\SI{2.00}{\mole}}
+  \item Mass of \SI{0.500}{\mole} of \ce{NaCl}:
+        \answerblank[3cm]{\SI{29.2}{\gram}}
+  \item Molecules in \SI{2.00}{\mole} of \ce{CO2}:
+        \answerblank[3cm]{$1.20\times10^{24}$}
+  \item Moles of O atoms in \SI{1.00}{\mole} of \ce{Ca(NO3)2}:
+        \answerblank[3cm]{\SI{6.00}{\mole}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Solving problems systematically}
+
+\notesectionz{Where are we going? How do we get there?}{3.5}
+\practice{5}
+
+Zumdahl's framing, worth adopting: before computing, write
+\emph{where are we going} (the target quantity and unit) and \emph{what do
+we know}. Then build the path.
+
+\begin{workedexample}[Worked example: multi-step conversion]
+How many hydrogen atoms are in \SI{25.0}{\gram} of \ce{C3H8}?
+\begin{align*}
+  M(\ce{C3H8}) &= 3(12.01) + 8(1.008) = \SI{44.09}{\gram\per\mole}\\
+  n &= \frac{25.0}{44.09} = \SI{0.567}{\mole}\ \ce{C3H8}\\
+  n_{\ce{H}} &= 8 \times 0.567 = \SI{4.54}{\mole}\ \ce{H}\\
+  N_{\ce{H}} &= 4.54 \times 6.022\times10^{23} = 2.73\times10^{24}\ \text{atoms}
+\end{align*}
+Every step passes through moles. There is no shortcut from grams to atoms.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Reverse problems}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A sample of \ce{N2} contains $3.01\times10^{23}$ molecules. Find its
+        mass. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = 3.01\times10^{23}/6.022\times10^{23}
+        = \SI{0.500}{\mole}$; $m = 0.500 \times 28.02 =
+        \SI{14.0}{\gram}$\end{apcanswer}}
+  \item A \SI{5.00}{\gram} sample of an unknown metal contains
+        $4.58\times10^{22}$ atoms. Identify the metal.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n = 4.58\times10^{22}/6.022\times10^{23}
+        = \SI{0.0761}{\mole}$; $M = 5.00/0.0761 = \SI{65.7}{\gram\per\mole}$
+        $\to$ zinc\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Which contains more atoms: \SI{10.0}{\gram} of He or \SI{10.0}{\gram} of Ne?
+Justify without a calculator. \answerlines[2]{He --- its molar mass is much
+smaller, so the same mass is many more moles, and each is one atom.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Formulas from Composition Data}{Zumdahl \S3.6--3.7}
+
+\begin{objectives}
+  \item Compute percent composition from a formula.
+  \item Determine empirical and molecular formulas from percent composition
+        or combustion data.
+\end{objectives}
+
+\reading{Zumdahl \S3.6--3.7}{123--132}
+
+\begin{warmup}[4]
+  \item Molar mass of \ce{(NH4)2SO4}:
+        \answerblank[3.2cm]{\SI{132.15}{\gram\per\mole}}
+  \item Moles in \SI{4.4}{\gram} \ce{CO2}: \answerblank[2.5cm]{\SI{0.10}{\mole}}
+  \item Atoms in \SI{0.25}{\mole} Fe: \answerblank[3cm]{$1.5\times10^{23}$}
+  \item Mass of \SI{2.0}{\mole} \ce{O2}: \answerblank[2.5cm]{\SI{64}{\gram}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Percent composition}
+
+\notesectionz{From formula to percentages}{3.6}
+\practice{5}
+
+\[
+  \%\ \text{element} =
+  \answerblank[7.5cm]{$\dfrac{\text{mass of that element in 1 mol}}{\text{molar mass}}\times100\%$}
+\]
+
+\ce{C2H5OH} ($M = 46.07$): $\%\,\ce{C} = \dfrac{24.02}{46.07}\times100 =$
+\answerblank[2.4cm]{52.14\%}
+
+A useful check: the percentages must total
+\answerblank[1.8cm]{100\%}.
+
+\segment{GUIDED PRACTICE}{15}{Percent composition drill}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item $\%\,\ce{N}$ in \ce{NH3}: \answerblank[2.6cm]{82.2\%}
+  \item $\%\,\ce{O}$ in \ce{H2SO4}: \answerblank[2.6cm]{65.25\%}
+  \item Mass of Fe in \SI{100.0}{\gram} of \ce{Fe2O3}:
+        \answerblank[2.6cm]{\SI{69.94}{\gram}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Empirical and molecular formulas}
+
+\notesectionz{The four-step determination}{3.7}
+\practice{5}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Assume \answerblank[2cm]{\SI{100}{\gram}} --- percents become grams.
+  \item Convert each mass to \answerblank[1.8cm]{moles}.
+  \item Divide all by the \answerblank[2cm]{smallest}.
+  \item Not whole numbers? Multiply all by a small
+        \answerblank[1.8cm]{integer}.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: a phosphorus oxide]
+43.64\% P, 56.36\% O; molar mass \SI{283.88}{\gram\per\mole}.
+\begin{align*}
+  \ce{P}&: \frac{43.64}{30.97} = 1.409 &
+  \ce{O}&: \frac{56.36}{16.00} = 3.523\\
+  \ce{P}&: \frac{1.409}{1.409} = 1 &
+  \ce{O}&: \frac{3.523}{1.409} = 2.5
+\end{align*}
+$\times2 \to$ empirical \ce{P2O5} ($M_{\text{emp}} = 141.94$).
+$\dfrac{283.88}{141.94} = 2$, so the molecular formula is \ce{P4O10}.
+\end{workedexample}
+
+\begin{apctrap}
+Zumdahl states the rounding rule explicitly: values like 9.92 and 1.08
+\emph{should} be rounded; values like 2.25, 4.33, and 2.72
+\emph{should not}. Those are signals to multiply by 4, 3, and 4
+respectively --- never round a .25/.33/.5/.67/.75.
+\end{apctrap}
+
+\notesub{Molecular from empirical}
+
+\[
+  \text{multiplier} = \answerblank[4.6cm]{$\dfrac{\text{molar mass}}{\text{empirical formula mass}}$}
+\]
+
+\segment{APPLICATION}{20}{Combustion analysis}
+
+Burning a hydrocarbon in excess \ce{O2} converts all C to \ce{CO2} and all H
+to \ce{H2O}. Working backward gives the formula.
+
+A \SI{0.1000}{\gram} sample of a compound containing only C, H, and O burns
+to give \SI{0.1466}{\gram} \ce{CO2} and \SI{0.0600}{\gram} \ce{H2O}. Its
+molar mass is \SI{60.05}{\gram\per\mole}.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Mass of C (all of it came from the \ce{CO2}):
+        \answerblank[3.4cm]{\SI{0.0400}{\gram}}
+  \item Mass of H (from the \ce{H2O}):
+        \answerblank[3.4cm]{\SI{0.00671}{\gram}}
+  \item Mass of O --- explain why it must be found \emph{by difference}.
+        \answerlines[2]{Oxygen from the sample is indistinguishable from the
+        \ce{O2} burned with it, so it cannot be measured directly:
+        $0.1000 - 0.0400 - 0.0067 = \SI{0.0533}{\gram}$.}
+  \item Empirical and molecular formulas: \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}C: $0.0400/12.01 = 3.33\times10^{-3}$;
+        H: $0.00671/1.008 = 6.66\times10^{-3}$;
+        O: $0.0533/16.00 = 3.33\times10^{-3}$. Ratio $1{:}2{:}1 \to$
+        \ce{CH2O} ($M_{\text{emp}} = 30.03$); $60.05/30.03 = 2 \to$
+        \ce{C2H4O2}.\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+A compound is 40.0\% C, 6.7\% H, 53.3\% O with molar mass
+\SI{180}{\gram\per\mole}. Find both formulas.
+\answerlines[3]{C: $40.0/12.01 = 3.33$; H: $6.7/1.008 = 6.65$;
+O: $53.3/16.00 = 3.33$. Ratio $1{:}2{:}1 \to$ \ce{CH2O}
+($M_{\text{emp}} = 30.03$). $180/30.03 = 6 \to$ \ce{C6H12O6}.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Equations and Mass Relationships}{Zumdahl \S3.8--3.10}
+
+\begin{objectives}
+  \item Balance chemical equations and state what the coefficients mean.
+  \item Carry out mass-to-mass stoichiometric calculations.
+\end{objectives}
+
+\reading{Zumdahl \S3.8--3.10}{132--142}
+
+\begin{warmup}[3]
+  \item Empirical formula of \ce{C6H12O6}: \answerblank[2.4cm]{\ce{CH2O}}
+  \item $\%\,\ce{H}$ in \ce{CH4}: \answerblank[2.4cm]{25.1\%}
+  \item Moles in \SI{9.0}{\gram} \ce{Al}: \answerblank[2.6cm]{\SI{0.33}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Balancing and what it means}
+
+\notesectionz{Chemical equations}{3.8--3.9}
+\practice{1}
+
+A balanced equation expresses conservation of
+\answerblank[2.2cm]{atoms} (hence mass). You may change
+\answerblank[2.2cm]{coefficients} but never
+\answerblank[2.2cm]{subscripts} --- changing a subscript changes the
+substance.
+
+\notesub{Coefficients are mole ratios}
+
+\ce{2 H2 + O2 -> 2 H2O} reads: 2 mol \ce{H2} react with
+\answerblank[1.4cm]{1} mol \ce{O2} to give \answerblank[1.4cm]{2} mol
+\ce{H2O}. It does \emph{not} say 2 grams.
+
+\begin{workedexample}[Worked example: combustion of propane]
+Balance \ce{C3H8 + O2 -> CO2 + H2O}.\\
+Carbon first: 3 C on the left $\to$ \ce{3 CO2}. Hydrogen: 8 H $\to$
+\ce{4 H2O}. Now count oxygen on the right: $3(2) + 4(1) = 10$ O $\to$
+\ce{5 O2}.
+\[
+  \ce{C3H8 + 5 O2 -> 3 CO2 + 4 H2O}
+\]
+Strategy: save the element that appears in the most compounds (usually O)
+for last.
+\end{workedexample}
+
+Balance these:
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{Fe + O2 -> Fe2O3}:
+        \answerblank[5.4cm]{\ce{4 Fe + 3 O2 -> 2 Fe2O3}}
+  \item \ce{Al + HCl -> AlCl3 + H2}:
+        \answerblank[6.4cm]{\ce{2 Al + 6 HCl -> 2 AlCl3 + 3 H2}}
+  \item \ce{C2H6 + O2 -> CO2 + H2O}:
+        \answerblank[6.8cm]{\ce{2 C2H6 + 7 O2 -> 4 CO2 + 6 H2O}}
+\end{enumerate}
+
+\segment{GUIDED PRACTICE}{15}{Mole-ratio reasoning}
+
+For \ce{N2 + 3 H2 -> 2 NH3}:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Moles of \ce{H2} needed for \SI{2.0}{\mole} \ce{N2}:
+        \answerblank[2.6cm]{\SI{6.0}{\mole}}
+  \item Moles of \ce{NH3} from \SI{0.50}{\mole} \ce{N2}:
+        \answerblank[2.6cm]{\SI{1.0}{\mole}}
+  \item Moles of \ce{N2} needed for \SI{5.0}{\mole} \ce{NH3}:
+        \answerblank[2.6cm]{\SI{2.5}{\mole}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The mass-to-mass road}
+
+\notesectionz{Stoichiometric calculations}{3.10}
+\practice{5}
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.5cm, font=\sffamily\small]
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm] (ga) {g A};
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm, right=of ga] (ma) {mol A};
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm, right=of ma] (mb) {mol B};
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm, right=of mb] (gb) {g B};
+  \draw[-{Stealth}, thick] (ga) -- node[above,font=\sffamily\scriptsize]{$\div M_A$} (ma);
+  \draw[-{Stealth}, thick] (ma) -- node[above,font=\sffamily\scriptsize]{ratio} (mb);
+  \draw[-{Stealth}, thick] (mb) -- node[above,font=\sffamily\scriptsize]{$\times M_B$} (gb);
+\end{tikzpicture}
+\end{center}
+
+The middle arrow is the only step that uses the
+\answerblank[3.8cm]{balanced equation}. Everything else is molar mass.
+
+\begin{workedexample}[Worked example: mass to mass]
+What mass of \ce{O2} is needed to burn \SI{22.0}{\gram} of \ce{C3H8}?
+\[
+  22.0\ \text{g} \times \frac{1\ \text{mol}}{44.09\ \text{g}}
+  \times \frac{5\ \text{mol } \ce{O2}}{1\ \text{mol } \ce{C3H8}}
+  \times \frac{32.00\ \text{g}}{1\ \text{mol}} = \SI{79.8}{\gram}
+\]
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Full stoichiometry}
+
+For \ce{2 Al + 3 Cl2 -> 2 AlCl3}:
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Mass of \ce{AlCl3} from \SI{5.40}{\gram} Al (excess \ce{Cl2}):
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$5.40/26.98 = \SI{0.200}{\mole}$ Al
+        $\to \SI{0.200}{\mole}$ \ce{AlCl3} $\times 133.33 =
+        \SI{26.7}{\gram}$\end{apcanswer}}
+  \item Mass of \ce{Cl2} consumed: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$0.200 \times \tfrac32 =
+        \SI{0.300}{\mole}$ \ce{Cl2} $\times 70.90 =
+        \SI{21.3}{\gram}$\end{apcanswer}}
+  \item Check your two answers against conservation of mass.
+        \answerlines[2]{$5.40 + 21.3 = 26.7$ g \checkmark\ --- mass in
+        equals mass out.}
+\end{enumerate}
+
+\begin{exitticket}
+Why can't you convert grams of A directly to grams of B using the
+coefficients? \answerlines[2]{Coefficients are ratios of \emph{moles}, not
+masses; different substances have different molar masses, so the mass ratio
+is not the coefficient ratio.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Limiting Reactant and Percent Yield}{Zumdahl \S3.11}
+
+\begin{objectives}
+  \item Identify the limiting reactant and compute theoretical yield.
+  \item Use a BCA table to track a reaction to completion.
+  \item Calculate percent yield.
+\end{objectives}
+
+\reading{Zumdahl \S3.11}{142--153}
+
+\begin{warmup}[4]
+  \item Balance: \ce{H2 + O2 -> H2O}:
+        \answerblank[4.4cm]{\ce{2 H2 + O2 -> 2 H2O}}
+  \item Moles in \SI{28.0}{\gram} \ce{N2}: \answerblank[2.4cm]{\SI{1.00}{\mole}}
+  \item Mole ratio \ce{O2}:\ce{CO2} in \ce{C3H8 + 5 O2 -> 3 CO2 + 4 H2O}:
+        \answerblank[2cm]{$5{:}3$}
+  \item Molar mass of \ce{NH3}: \answerblank[3cm]{\SI{17.03}{\gram\per\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The sandwich problem}
+
+\notesectionz{Limiting reactant}{3.11}
+\practice{5}
+
+Zumdahl's analogy: with 8 slices of bread, 9 slices of meat, and 5 slices of
+cheese, and a sandwich needing 2 bread $+$ 3 meat $+$ 1 cheese, you can make
+\answerblank[1.4cm]{3} sandwiches. The
+\answerblank[2.6cm]{meat} runs out first --- even though you started with
+\emph{more} of it than anything else.
+
+\begin{apcnote}
+The limiting reactant is not the one with the smallest amount. It is the one
+that runs out first \emph{given the ratio the reaction demands}. You must
+compare against the coefficients.
+\end{apcnote}
+
+\notesub{Method: compare moles of product each reactant could make}
+
+Whichever reactant yields \answerblank[2cm]{less} product is limiting, and
+that smaller number is the \term{theoretical yield}.
+
+\begin{workedexample}[Worked example: ammonia synthesis]
+\SI{25.0}{\gram} \ce{N2} and \SI{5.00}{\gram} \ce{H2} react:
+\ce{N2 + 3 H2 -> 2 NH3}.
+\begin{align*}
+  n(\ce{N2}) &= 25.0/28.02 = \SI{0.892}{\mole} \to 2(0.892) = \SI{1.78}{\mole}\ \ce{NH3}\\
+  n(\ce{H2}) &= 5.00/2.016 = \SI{2.48}{\mole} \to \tfrac23(2.48) = \SI{1.65}{\mole}\ \ce{NH3}
+\end{align*}
+\ce{H2} gives less $\to$ \ce{H2} is limiting; theoretical yield
+$= 1.65 \times 17.03 = \SI{28.1}{\gram}$ \ce{NH3}.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{BCA tables}
+
+A \term{BCA table} (Before / Change / After) tracks moles through a
+reaction. Changes are always in the coefficient ratio.
+
+For \ce{N2 + 3 H2 -> 2 NH3} starting with 5 mol \ce{N2} and 9 mol \ce{H2}:
+
+\renewcommand{\arraystretch}{1.5}
+\noindent\begin{tabular}{@{}lccc@{}}
+\toprule
+ & \ce{N2} & \ce{3 H2} & \ce{2 NH3}\\
+\midrule
+\textbf{Before} & 5 & 9 & 0\\
+\textbf{Change} & \answerblank[1.4cm]{$-3$} & \answerblank[1.4cm]{$-9$} &
+  \answerblank[1.4cm]{$+6$}\\
+\textbf{After}  & \answerblank[1.4cm]{2} & \answerblank[1.4cm]{0} &
+  \answerblank[1.4cm]{6}\\
+\bottomrule
+\end{tabular}
+
+The limiting reactant is the one whose \textbf{After} value is
+\answerblank[1.4cm]{zero} --- here, \answerblank[1.6cm]{\ce{H2}}.
+
+\segment{INSTRUCTION B}{20}{Percent yield}
+
+\notesectionz{Theoretical vs actual}{3.11}
+\practice{5}
+
+\[
+  \%\ \text{yield} = \answerblank[5cm]{$\dfrac{\text{actual yield}}{\text{theoretical yield}}\times100\%$}
+\]
+
+Real yields fall short because of side reactions, incomplete reaction, and
+losses during \answerblank[4.2cm]{transfer/purification}.
+
+\begin{apctrap}
+Percent yield above 100\% is not a triumph --- it signals impure or wet
+product, or a measurement error. And theoretical yield must always come from
+the \emph{limiting} reactant; computing it from the excess reactant is the
+most common error on this topic.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Complete analysis}
+
+\SI{15.0}{\gram} \ce{Fe} reacts with \SI{12.0}{\gram} \ce{S}:
+\ce{Fe + S -> FeS}.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Identify the limiting reactant. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Fe}) = 15.0/55.85 =
+        \SI{0.269}{\mole}$; $n(\ce{S}) = 12.0/32.07 = \SI{0.374}{\mole}$.
+        1:1 ratio $\to$ \ce{Fe} is limiting.\end{apcanswer}}
+  \item Theoretical yield of \ce{FeS}: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$0.269 \times 87.92 =
+        \SI{23.6}{\gram}$\end{apcanswer}}
+  \item Mass of excess reactant remaining: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(0.374 - 0.269) \times 32.07 =
+        \SI{3.4}{\gram}$ S left\end{apcanswer}}
+  \item If \SI{20.1}{\gram} \ce{FeS} is actually isolated, find the percent
+        yield. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$20.1/23.6 \times 100 =
+        85.1\%$\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+A student computes theoretical yield from the excess reactant and gets a
+percent yield of 68\%. Is the true percent yield higher or lower than 68\%?
+Explain. \answerlines[2]{Higher --- the excess reactant predicts a
+\emph{larger} theoretical yield than the limiting one does, so dividing by
+it understates the percent yield.}
+\end{exitticket}
+
+\end{document}

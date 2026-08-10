@@ -1,0 +1,581 @@
+% Zumdahl Chapter 6 -- Thermochemistry. ELABORATED notes, 4 block lessons.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S6.1--6.4 \textbullet\ PDF pp.~282--308 \textbullet\ 4 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+This is the \textbf{cleanest chapter-to-unit match in the book}. Sections
+6.1--6.4 are essentially all of CED Unit 6, in the textbook's own order ---
+you can read straight through without untangling anything.
+
+Unit 6 adds only two topics from elsewhere, and you have already met both:
+\textbf{energy of phase changes} (CED 6.5, Zumdahl \S10.8) came up in Unit 3
+Block 2, and \textbf{bond enthalpies} (CED 6.7, Zumdahl \S8.8) in Unit 2
+Block 1. Treat those as callbacks to your own notes.
+
+\S6.5--6.6 (present and new energy sources) are skipped --- off-syllabus.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{The Nature of Energy}{Zumdahl \S6.1}
+
+\begin{objectives}
+  \item Define system and surroundings, and apply the sign conventions for
+        heat and work.
+  \item Use the first law, $\Delta E = q + w$, including $w = -P\Delta V$.
+  \item Explain what makes a quantity a state function.
+\end{objectives}
+
+\reading{Zumdahl \S6.1}{283--290}
+
+\begin{warmup}[3]
+  \item Convert \SI{25}{\celsius} to kelvin: \answerblank[2.6cm]{\SI{298}{\kelvin}}
+  \item KMT: temperature measures what?
+        \answerblank[4.6cm]{average kinetic energy}
+  \item Moles in \SI{16.04}{\gram} \ce{CH4}: \answerblank[2.6cm]{\SI{1.000}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Energy, heat, and work}
+
+\notesectionz{Defining the boundary}{6.1}
+\practice{1}
+
+Before any energy bookkeeping, you must decide what you are keeping books
+\emph{on}:
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item The \term{system} is the part of the universe you are studying ---
+        usually the \answerblank[2.4cm]{reaction} itself.
+  \item The \term{surroundings} are \answerblank[3.6cm]{everything else} ---
+        the solvent, the container, the room.
+\end{itemize}
+
+Energy crosses that boundary in exactly two ways:
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{2.4cm}p{4.8cm}p{6.0cm}@{}}
+\toprule
+ & \textbf{Definition} & \textbf{Sign convention (system's view)}\\
+\midrule
+\term{Heat} ($q$) & transfer driven by a
+  \answerblank[4.7cm]{temperature difference} &
+  $q > 0$: heat flows \answerblank[1.6cm]{into} the system (endothermic)\newline
+  $q < 0$: heat flows \answerblank[1.6cm]{out} (exothermic)\\
+\term{Work} ($w$) & transfer by force acting through a distance &
+  $w > 0$: work done \answerblank[2.2cm]{on} the system\newline
+  $w < 0$: system does work on the surroundings\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Every sign is written from the \emph{system's} point of view --- treat the
+system as an account and ask whether energy is being deposited or withdrawn.
+Heat flowing out of a reaction is negative for the reaction even though the
+room got warmer. Students who reason from the surroundings invert every
+sign.
+\end{apcnote}
+
+\notesub{How heat transfer actually happens}
+
+Zumdahl's picture: two gas samples at different temperatures separated by a
+thin membrane. Temperature measures average kinetic energy, so the
+fast-moving particles on the hot side transfer energy through collisions to
+the slower particles on the cold side. Energy always flows from
+\answerblank[1.6cm]{hot} to \answerblank[1.6cm]{cold}, until both reach the
+same \answerblank[2.6cm]{intermediate} temperature.
+
+\segment{GUIDED PRACTICE}{15}{Assign the signs}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item A reaction warms the beaker it is in.
+        \answerblank[5cm]{exothermic, $q < 0$}
+  \item An ice pack cools your skin.
+        \answerblank[6.4cm]{endothermic, $q > 0$ for the pack}
+  \item A gas is compressed by a piston.
+        \answerblank[5.9cm]{$w > 0$ (work done on the gas)}
+  \item A gas expands and pushes the piston out.
+        \answerblank[5cm]{$w < 0$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The first law}
+
+\notesectionz{Conservation of energy, written down}{6.1}
+\practice{5}
+
+\[
+  \Delta E = \answerblank[2cm]{$q + w$}
+\]
+
+$\Delta E$ is the change in \term{internal energy} --- the total kinetic and
+potential energy of everything in the system. The first law says energy is
+neither created nor destroyed; it only moves or changes form.
+
+\notesub{Pressure--volume work}
+
+When a gas expands against a constant external pressure:
+\[
+  w = \answerblank[2.4cm]{$-P\Delta V$}
+\]
+
+The minus sign is not decoration. If the gas \emph{expands}, $\Delta V$ is
+positive, so $w$ is \answerblank[1.8cm]{negative} --- the system spent
+energy pushing the surroundings back. If it is compressed, $\Delta V < 0$
+and $w > 0$.
+
+\begin{workedexample}[Worked example 1: combining heat and work]
+A gas absorbs \SI{450}{\joule} of heat and expands, doing \SI{120}{\joule}
+of work on its surroundings.
+\[
+  \Delta E = q + w = (+450) + (-120) = \SI{+330}{\joule}
+\]
+The system gained 450 J but spent 120 J pushing outward, so its internal
+energy rose by only 330 J.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: $P\Delta V$ with units]
+A gas expands from \SI{2.0}{\liter} to \SI{5.0}{\liter} against a constant
+\SI{1.5}{\atm}.
+\[
+  w = -P\Delta V = -(1.5)(5.0-2.0) = \SI{-4.5}{\liter\atm}
+\]
+Converting with \SI{1}{\liter\atm} $=$ \SI{101.3}{\joule}:
+$w = \SI{-456}{\joule}$. Negative, as expected for expansion.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{State functions}
+
+\notesectionz{Path independence}{6.1}
+\practice{6}
+
+A \term{state function} depends only on the current state, not on how you
+got there. Energy ($E$) and enthalpy ($H$) are state functions;
+$q$ and $w$ individually are \answerblank[1.6cm]{not}.
+
+\begin{apcnote}
+Altitude is a state function; distance walked is not. Two hikers reaching
+the same summit have identical altitude change but may have walked wildly
+different distances. Likewise, two routes from the same reactants to the
+same products give identical $\Delta E$ --- even though the heat and work
+split differently along the way. Block 3 turns this fact into a calculation
+tool.
+\end{apcnote}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A system releases \SI{200}{\joule} of heat while
+        \SI{75}{\joule} of work is done on it. Find $\Delta E$.
+        \answerblank[3.2cm]{$-125$ J}
+  \item Explain why $\Delta E$ for converting graphite to diamond is the
+        same whether done in one step or ten.
+        \answerlines[2]{Internal energy is a state function --- it depends
+        only on the initial and final states, so any path connecting them
+        gives the same $\Delta E$.}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction in a beaker makes the beaker feel cold. State the sign of $q$ for
+the reaction and name the process. \answerlines[2]{$q > 0$ --- endothermic.
+The reaction absorbed energy from the beaker and solution, lowering their
+temperature.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Enthalpy and Calorimetry}{Zumdahl \S6.2}
+
+\begin{objectives}
+  \item Relate enthalpy change to heat at constant pressure.
+  \item Use $q = mc\Delta T$ and interpret calorimetry data.
+\end{objectives}
+
+\reading{Zumdahl \S6.2}{290--297}
+
+\begin{warmup}[4]
+  \item Sign of $q$ for an exothermic reaction:
+        \answerblank[2cm]{negative}
+  \item First law equation: \answerblank[2.4cm]{$\Delta E = q + w$}
+  \item $w$ when a gas expands: \answerblank[2.4cm]{negative}
+  \item Is enthalpy a state function? \answerblank[2cm]{yes}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Enthalpy}
+
+\notesectionz{Why chemists use $H$ instead of $E$}{6.2}
+\practice{5}
+
+Enthalpy is defined as $H = E + PV$. Its value comes from one consequence:
+at \emph{constant pressure} --- which is how nearly every reaction in an
+open beaker runs ---
+\[
+  \Delta H = \answerblank[1.6cm]{$q_P$}
+\]
+
+So the heat you measure in an open container \emph{is} the enthalpy change.
+That is the whole reason enthalpy exists as a bookkeeping quantity.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{3.4cm}p{4.4cm}p{5.6cm}@{}}
+\toprule
+ & \textbf{$\Delta H$ sign} & \textbf{Surroundings}\\
+\midrule
+\term{Exothermic} & \answerblank[1.9cm]{negative} &
+  get \answerblank[1.6cm]{warmer}\\
+\term{Endothermic} & \answerblank[1.6cm]{positive} &
+  get \answerblank[1.6cm]{cooler}\\
+\bottomrule
+\end{tabular}
+
+\notesub{$\Delta H$ scales with amount}
+
+A thermochemical equation's $\Delta H$ belongs to the coefficients as
+written:
+\[ \ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \qquad \Delta H = \SI{-890}{\kilo\joule} \]
+
+\begin{workedexample}[Worked example 1: scaling]
+How much heat is released when \SI{5.8}{\gram} of \ce{CH4} burns at constant
+pressure?
+\begin{align*}
+  n &= \frac{5.8}{16.04} = \SI{0.36}{\mole}\\
+  \Delta H &= 0.36 \times (-890) = \SI{-320}{\kilo\joule}
+\end{align*}
+\emph{Reality check:} less than one mole burned, so less than 890 kJ should
+be released. It is.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Enthalpy scaling}
+
+Using $\Delta H = \SI{-890}{\kilo\joule}$ per mole of \ce{CH4}:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Heat from \SI{2.00}{\mole} \ce{CH4}:
+        \answerblank[3cm]{\SI{-1780}{\kilo\joule}}
+  \item Heat from \SI{32.08}{\gram} \ce{CH4}:
+        \answerblank[3cm]{\SI{-1780}{\kilo\joule}}
+  \item $\Delta H$ for the \emph{reverse} reaction:
+        \answerblank[3cm]{\SI{+890}{\kilo\joule}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Calorimetry}
+
+\notesectionz{Measuring heat by measuring temperature}{6.2}
+\practice{4}
+
+A \term{calorimeter} determines heat by watching a temperature change. The
+central equation:
+\[
+  q = \answerblank[2.2cm]{$mc\Delta T$}
+  \qquad \Delta T = T_{\text{final}} - T_{\text{initial}}
+\]
+
+The \term{specific heat capacity} $c$ is the energy needed to raise
+\SI{1}{\gram} by \SI{1}{\celsius}. For water,
+$c = \answerblank[3.2cm]{\SI{4.184}{\joule\per\gram\per\celsius}}$ --- unusually
+large, which is why water moderates temperature so effectively.
+
+\begin{apctrap}
+The heat absorbed by the \emph{solution} and the heat released by the
+\emph{reaction} are equal in magnitude and opposite in sign:
+$q_{\text{rxn}} = -q_{\text{solution}}$. Students routinely report an
+exothermic reaction with a positive $\Delta H$ because they forgot to flip
+the sign after computing $mc\Delta T$ for the water.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 2: neutralization in a coffee cup]
+\SI{50.0}{\milli\liter} of \SI{1.00}{\Molar} \ce{HCl} and
+\SI{50.0}{\milli\liter} of \SI{1.00}{\Molar} \ce{NaOH}, both at
+\SI{25.0}{\celsius}, are mixed. The temperature rises to
+\SI{31.9}{\celsius}. Assume the solution has the density and specific heat
+of water.
+\begin{align*}
+  m &= \SI{100.0}{\gram}, \qquad \Delta T = \SI{6.9}{\celsius}\\
+  q_{\text{soln}} &= (100.0)(4.184)(6.9) = \SI{2887}{\joule} = \SI{2.89}{\kilo\joule}\\
+  q_{\text{rxn}} &= \SI{-2.89}{\kilo\joule}\\
+  n &= (0.0500)(1.00) = \SI{0.0500}{\mole}\\
+  \Delta H &= \frac{-2.89}{0.0500} = \SI{-57.8}{\kilo\joule\per\mole}
+\end{align*}
+The accepted value is about \SI{-57.3}{\kilo\joule\per\mole} --- close, with
+the difference explained by heat lost to the cup and thermometer.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Determining a specific heat}
+
+A \SI{55.0}{\gram} piece of metal is heated to \SI{99.0}{\celsius} and
+dropped into \SI{100.0}{\gram} of water at \SI{21.0}{\celsius}. The final
+temperature is \SI{24.8}{\celsius}.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Heat gained by the water: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$q = (100.0)(4.184)(3.8) =
+        \SI{1590}{\joule}$\end{apcanswer}}
+  \item Specific heat of the metal: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$q_{\text{metal}} = \SI{-1590}{\joule}$;
+        $c = 1590/[(55.0)(74.2)] =
+        \SI{0.390}{\joule\per\gram\per\celsius}$\end{apcanswer}}
+  \item Suggest the metal's identity.
+        \answerblank[4cm]{copper ($c \approx 0.385$)}
+  \item Why does the water's temperature rise far less than the metal's
+        falls? \answerlines[2]{Water's specific heat is about eleven times
+        larger, and there is nearly twice the mass --- so absorbing the same
+        energy produces a much smaller temperature change.}
+\end{enumerate}
+
+\begin{exitticket}
+A student computes $q_{\text{solution}} = \SI{+3.2}{\kilo\joule}$ for a
+reaction and reports $\Delta H = \SI{+3.2}{\kilo\joule}$. What did they get
+wrong? \answerlines[2]{The solution \emph{gained} heat, so the reaction
+\emph{released} it: $q_{\text{rxn}} = \SI{-3.2}{\kilo\joule}$. The reaction
+is exothermic and $\Delta H$ is negative.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Hess's Law}{Zumdahl \S6.3}
+
+\begin{objectives}
+  \item State Hess's law and explain why it follows from $H$ being a state
+        function.
+  \item Combine thermochemical equations to obtain an unknown $\Delta H$.
+\end{objectives}
+
+\reading{Zumdahl \S6.3}{297--301}
+
+\begin{warmup}[3]
+  \item $\Delta H$ equals $q$ under what condition?
+        \answerblank[3.4cm]{constant pressure}
+  \item $q$ for \SI{25.0}{\gram} water warmed \SI{10.0}{\celsius}:
+        \answerblank[3cm]{\SI{1046}{\joule}}
+  \item Sign of $\Delta H$ for an endothermic process:
+        \answerblank[2.2cm]{positive}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The law and why it must be true}
+
+\notesectionz{Hess's law}{6.3}
+\practice{5}
+
+\begin{apcnote}
+\textbf{Hess's law:} if a reaction is carried out in a series of steps,
+$\Delta H$ for the overall reaction equals the \answerblank[2cm]{sum} of the
+$\Delta H$ values for the individual steps.
+
+This is not a separate discovery --- it is a direct consequence of enthalpy
+being a \answerblank[3.0cm]{state function}. If $\Delta H$ depended on the
+route, you could build a machine that created energy by going one way and
+returning another.
+\end{apcnote}
+
+\begin{workedexample}[Worked example 1: Zumdahl's nitrogen oxides]
+The direct reaction:
+\[ \ce{N2(g) + 2 O2(g) -> 2 NO2(g)} \qquad \Delta H_1 = \SI{68}{\kilo\joule} \]
+The same change in two steps:
+\begin{align*}
+  \ce{N2(g) + O2(g) &-> 2 NO(g)}   &\Delta H_2 &= \SI{180}{\kilo\joule}\\
+  \ce{2 NO(g) + O2(g) &-> 2 NO2(g)} &\Delta H_3 &= \SI{-112}{\kilo\joule}
+\end{align*}
+Adding the steps cancels the \ce{2 NO} and reproduces the overall equation,
+and indeed $180 + (-112) = \SI{68}{\kilo\joule} = \Delta H_1$.
+\end{workedexample}
+
+\notesub{The two manipulation rules}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Reverse a reaction $\Rightarrow$ \answerblank[3.3cm]{reverse the sign}
+        of $\Delta H$.
+  \item Multiply the coefficients by a factor $\Rightarrow$
+        \answerblank[3.4cm]{multiply $\Delta H$} by the same factor.
+\end{enumerate}
+
+Rule 1 follows because $\Delta H$'s sign records the direction of heat flow;
+run the change backwards and the flow reverses. Rule 2 follows because
+enthalpy is \term{extensive} --- twice the reaction releases twice the heat.
+
+\segment{GUIDED PRACTICE}{15}{Manipulate}
+
+Given \ce{2 H2(g) + O2(g) -> 2 H2O(l)}, $\Delta H = \SI{-572}{\kilo\joule}$:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item $\Delta H$ for \ce{H2(g) + 1/2 O2(g) -> H2O(l)}:
+        \answerblank[3cm]{\SI{-286}{\kilo\joule}}
+  \item $\Delta H$ for \ce{2 H2O(l) -> 2 H2(g) + O2(g)}:
+        \answerblank[3cm]{\SI{+572}{\kilo\joule}}
+  \item $\Delta H$ for \ce{4 H2(g) + 2 O2(g) -> 4 H2O(l)}:
+        \answerblank[3cm]{\SI{-1144}{\kilo\joule}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The working method}
+
+\notesectionz{A reliable procedure}{6.3}
+\practice{5}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item Write the \answerblank[3.3cm]{target equation} first.
+  \item Find a substance that appears in only \emph{one} given equation and
+        place it correctly --- reverse or scale that equation as needed.
+  \item Repeat for the next such substance.
+  \item Add everything; confirm the intermediates
+        \answerblank[1.6cm]{cancel}.
+  \item Sum the adjusted $\Delta H$ values.
+\end{enumerate}
+
+\begin{workedexample}[Worked example 2: a two-step target]
+Target: \ce{C(s) + 1/2 O2(g) -> CO(g)}, given
+\begin{align*}
+  \text{(i)}\ \ce{C(s) + O2(g) &-> CO2(g)} &\Delta H &= \SI{-393.5}{\kilo\joule}\\
+  \text{(ii)}\ \ce{2 CO(g) + O2(g) &-> 2 CO2(g)} &\Delta H &= \SI{-566.0}{\kilo\joule}
+\end{align*}
+CO appears only in (ii), but on the wrong side and with the wrong
+coefficient. Reverse (ii) and halve it:
+\[ \ce{CO2(g) -> CO(g) + 1/2 O2(g)} \qquad \Delta H = \SI{+283.0}{\kilo\joule} \]
+Add to (i): the \ce{CO2} cancels, giving the target with
+\[ \Delta H = -393.5 + 283.0 = \SI{-110.5}{\kilo\joule} \]
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Build it yourself}
+
+Determine $\Delta H$ for \ce{2 C(s) + H2(g) -> C2H2(g)} given:
+\begin{align*}
+  \text{(i)}\ \ce{C2H2(g) + 5/2 O2(g) &-> 2 CO2(g) + H2O(l)} &\Delta H &= \SI{-1300.}{\kilo\joule}\\
+  \text{(ii)}\ \ce{C(s) + O2(g) &-> CO2(g)} &\Delta H &= \SI{-393.5}{\kilo\joule}\\
+  \text{(iii)}\ \ce{H2(g) + 1/2 O2(g) &-> H2O(l)} &\Delta H &= \SI{-286}{\kilo\joule}
+\end{align*}
+
+\workspace[4.4cm]
+\keyonly{\begin{apcanswer}Reverse (i): $+1300.$; use (ii) $\times 2$:
+$-787.0$; use (iii) as written: $-286$.
+$\Delta H = 1300. - 787.0 - 286 = \SI{+227}{\kilo\joule}$ --- acetylene is
+endothermic to form, which is why it stores so much energy.\end{apcanswer}}
+
+\begin{exitticket}
+Why does reversing a reaction reverse the sign of $\Delta H$?
+\answerlines[2]{The sign records the direction of heat flow at constant
+pressure. Running the change in reverse reverses that flow --- energy
+released one way must be absorbed the other.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Standard Enthalpies of Formation}{Zumdahl \S6.4}
+
+\begin{objectives}
+  \item Define $\Delta H^\circ_f$ and standard state.
+  \item Compute $\Delta H^\circ_{\text{rxn}}$ from tabulated formation
+        enthalpies.
+\end{objectives}
+
+\reading{Zumdahl \S6.4}{301--308}
+
+\begin{warmup}[4]
+  \item Hess's law depends on $H$ being a what?
+        \answerblank[3cm]{state function}
+  \item Reverse a reaction: $\Delta H$ does what?
+        \answerblank[3cm]{changes sign}
+  \item Halve the coefficients: $\Delta H$ does what?
+        \answerblank[2.4cm]{halves}
+  \item $q$ for \SI{50.0}{\gram} water cooled \SI{4.00}{\celsius}:
+        \answerblank[3cm]{\SI{-837}{\joule}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{A universal reference point}
+
+\notesectionz{Standard enthalpy of formation}{6.4}
+\practice{5}
+
+The \term{standard enthalpy of formation} $\Delta H^\circ_f$ is the enthalpy
+change when \answerblank[1.4cm]{1 mole} of a compound forms from its
+\answerblank[2cm]{elements}, with everything in its
+\term{standard state}.
+
+Standard state means the substance's most stable form at
+\SI{1}{\atm} and (conventionally) \SI{25}{\celsius} --- so
+\ce{O2(g)}, \ce{Br2(l)}, \ce{C(graphite)}.
+
+\begin{apcnote}
+It follows directly from the definition that
+$\Delta H^\circ_f$ of an \emph{element in its standard state} is
+\answerblank[1.2cm]{0} --- forming an element from itself is no change at
+all. That is why \ce{O2(g)} contributes nothing to a calculation while
+\ce{O3(g)} (not the standard form) contributes $+143$ kJ/mol.
+\end{apcnote}
+
+\notesub{Why the tables exist}
+
+Some enthalpy changes cannot be measured directly. Zumdahl's example:
+converting graphite to diamond is far too slow for a calorimeter. But if
+every compound's formation enthalpy is tabulated once, any reaction's
+$\Delta H$ can be assembled from them --- Hess's law industrialized.
+
+\segment{GUIDED PRACTICE}{15}{Writing formation equations}
+
+Write the formation equation (1 mol of product, elements in standard states):
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{NH3(g)}:
+        \answerblank[6cm]{\ce{1/2 N2(g) + 3/2 H2(g) -> NH3(g)}}
+  \item \ce{CO2(g)}:
+        \answerblank[6.7cm]{\ce{C(graphite) + O2(g) -> CO2(g)}}
+  \item $\Delta H^\circ_f$ of \ce{N2(g)}: \answerblank[2cm]{0}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The master equation}
+
+\notesectionz{Computing $\Delta H^\circ_{\text{rxn}}$}{6.4}
+\practice{5}
+
+\[
+  \Delta H^\circ_{\text{rxn}} =
+  \answerblank[8.0cm]{$\sum n\,\Delta H^\circ_f(\text{products}) - \sum n\,\Delta H^\circ_f(\text{reactants})$}
+\]
+
+Note the two easy losses: multiply each value by its
+\answerblank[2cm]{coefficient}, and subtract in the right order ---
+\answerblank[5.2cm]{products minus reactants}.
+
+\begin{workedexample}[Worked example 1: methane combustion]
+\[ \ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \]
+Using $\Delta H^\circ_f$: \ce{CH4} $-74.8$, \ce{O2} $0$, \ce{CO2} $-393.5$,
+\ce{H2O(l)} $-285.8$ kJ/mol.
+\begin{align*}
+  \Delta H^\circ &= [(-393.5) + 2(-285.8)] - [(-74.8) + 2(0)]\\
+  &= (-965.1) - (-74.8) = \SI{-890.3}{\kilo\joule}
+\end{align*}
+This matches the experimental $-890$ kJ used in Block 2 --- a good check
+that the method and the table agree.
+\end{workedexample}
+
+\begin{apctrap}
+Watch the physical state. $\Delta H^\circ_f$ for \ce{H2O(l)} is $-285.8$ but
+for \ce{H2O(g)} it is $-241.8$ --- a 44 kJ/mol difference, exactly the heat
+of vaporization. Using the wrong state is worth 88 kJ of error in the
+example above.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Full calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Compute $\Delta H^\circ$ for
+        \ce{2 NH3(g) -> N2(g) + 3 H2(g)}, given
+        $\Delta H^\circ_f(\ce{NH3}) = \SI{-46.1}{\kilo\joule\per\mole}$.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\Delta H^\circ = [0 + 0] - [2(-46.1)]
+        = \SI{+92.2}{\kilo\joule}$ --- decomposition is
+        endothermic.\end{apcanswer}}
+  \item Compute $\Delta H^\circ$ for the thermite reaction
+        \ce{2 Al(s) + Fe2O3(s) -> Al2O3(s) + 2 Fe(s)}, given
+        $\Delta H^\circ_f$: \ce{Fe2O3} $-826$, \ce{Al2O3} $-1676$
+        kJ/mol. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\Delta H^\circ = [(-1676) + 0] -
+        [0 + (-826)] = \SI{-850}{\kilo\joule}$ --- strongly exothermic,
+        which is why thermite melts iron.\end{apcanswer}}
+  \item In problem 2, why do \ce{Al(s)} and \ce{Fe(s)} contribute nothing?
+        \answerlines[2]{Both are elements in their standard states, so their
+        $\Delta H^\circ_f$ values are zero by definition.}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction has $\Delta H^\circ = \SI{-1250}{\kilo\joule}$. State whether it
+is exothermic or endothermic, and what happens to the temperature of the
+surroundings. \answerlines[2]{Exothermic --- the negative sign means heat
+flows out of the system, so the surroundings warm up.}
+\end{exitticket}
+
+\end{document}

@@ -1,0 +1,120 @@
+% Unit 8 review sheet -- 2 pages.
+\documentclass{apchem-worksheet}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Review Sheet}
+\apcsubtitle{Everything on the exam traces to this page \textbullet\ exam Fri Feb 19}
+
+\begin{document}
+\apctitleblock
+
+\section*{\sffamily First: which of the four cases are you in?}
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{4.4cm}p{9.3cm}@{}}
+\toprule
+\textbf{Strong acid or base alone} & complete ionization; pH directly.
+  Double $[\ce{OH-}]$ for \ce{Ba(OH)2}, \ce{Ca(OH)2}, \ce{Sr(OH)2}\\
+\textbf{Weak acid or base alone} & one equilibrium.
+  $[\ce{H+}] = \sqrt{K_aC_0}$, or for a base
+  $[\ce{OH-}] = \sqrt{K_bC_0}$ --- then convert through pOH\\
+\textbf{Both members of a pair} & buffer.
+  pH $=$ p$K_a + \log(\text{base}/\text{acid})$\\
+\textbf{Strong reagent added} & react to completion \emph{first}, in moles;
+  then whichever case is left\\
+\bottomrule
+\end{tabular}
+
+\section*{\sffamily The numbers and relationships}
+
+\begin{itemize}[leftmargin=*,itemsep=0.16em]
+  \item $\mathrm{pH} + \mathrm{pOH} = 14.00$;
+        $K_aK_b = K_w = 1.0\times10^{-14}$;
+        p$K_a = -\log K_a$.
+  \item Six strong acids: \ce{HCl}, \ce{HBr}, \ce{HI}, \ce{HNO3},
+        \ce{H2SO4}, \ce{HClO4}. \ce{HF} is \emph{not} one.
+  \item Neutral means $[\ce{H+}] = [\ce{OH-}]$ --- \textbf{not} pH 7.
+  \item Optimal buffering at pH $=$ p$K_a$; useful range p$K_a \pm 1$;
+        indicators change over p$K_a \pm 1$ too.
+\end{itemize}
+
+\section*{\sffamily Titration curve, region by region}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Region} & \textbf{Major species} & \textbf{Method} \\
+\midrule
+before any base & \ce{HA} & weak-acid ICE \\
+before equivalence & \ce{HA} $+$ \ce{A-} & buffer, H--H \\
+\textbf{halfway} & equal amounts & \textbf{pH $=$ p$K_a$} \\
+at equivalence & \ce{A-} only & weak-base ICE, $K_b = K_w/K_a$ \\
+after equivalence & excess \ce{OH-} & strong base alone \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Equivalence pH: strong$+$strong $= 7.00$ exactly; weak acid $+$ strong base
+$>7$; weak base $+$ strong acid $<7$.
+
+\section*{\sffamily The traps, one line each}
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item Reporting $-\log x$ as the pH for a weak \emph{base} --- it is the
+        pOH.
+  \item Forgetting to double $[\ce{OH-}]$ for a Group 2 hydroxide.
+  \item Skipping the 5\% check, or running it and ignoring the result.
+  \item Putting added strong base into an ICE table instead of reacting it
+        to completion first.
+  \item Inverting the base/acid ratio in Henderson--Hasselbalch.
+  \item Assuming any equivalence point is at pH 7.
+  \item \emph{Calculating} solubility from pH --- topic 8.11 excludes it.
+\end{itemize}
+
+\section*{\sffamily Self-check --- 12 questions, exam conditions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.34em]
+  \item pH of \SI{0.010}{\Molar} \ce{Ba(OH)2}:
+        \answerblank[2cm]{12.30}
+  \item pH of \SI{0.10}{\Molar} acetic acid ($K_a = 1.8\times10^{-5}$):
+        \answerblank[2cm]{2.87}
+  \item pH of \SI{0.100}{\Molar} \ce{NH3} ($K_b = 1.8\times10^{-5}$):
+        \answerblank[2cm]{11.13}
+  \item $K_b$ for acetate: \answerblank[3.2cm]{$5.6\times10^{-10}$}
+  \item \ce{NH4Cl} solutions are: \answerblank[2cm]{acidic}
+  \item pH of a buffer with equal amounts of acetic acid and acetate:
+        \answerblank[2cm]{4.74}
+  \item Buffer at pH 5.22 from acetic acid: base/acid ratio?
+        \answerblank[2cm]{3.0}
+  \item pH at the halfway point of a weak acid titration:
+        \answerblank[2cm]{p$K_a$}
+  \item Equivalence pH for acetic acid $+$ \ce{NaOH}
+        (\SI{0.10}{\Molar} each, \SI{50}{\milli\litre}):
+        \answerblank[2cm]{8.72}
+  \item Equivalence pH for \ce{HCl} $+$ \ce{NaOH}:
+        \answerblank[2cm]{7.00}
+  \item Indicator for an equivalence pH of 8.7:
+        \answerblank[3.4cm]{phenolphthalein}
+  \item Is \ce{AgCl} more soluble in acid?
+        \answerblank[1.6cm]{no}
+\end{enumerate}
+
+\begin{apcnote}[How to study for this exam]
+This is a 44-point exam covering nine blocks --- the second-heaviest unit in
+the course. Budget more time than for any unit except 3.
+
+Redo WS 5's FRQ cold; the long free-response is its twin, and it
+deliberately walks the whole titration curve. Then drill the \emph{method
+selection} table on page one until naming the case is automatic, because
+almost every lost mark in this unit comes from running the right arithmetic
+on the wrong situation.
+
+Two sanity checks worth thirty seconds each: for a base problem, does your
+pH come out above 7? And after a buffer calculation, is the pH within one
+unit of p$K_a$? If either fails, you have almost certainly picked the wrong
+case.
+\end{apcnote}
+
+\end{document}

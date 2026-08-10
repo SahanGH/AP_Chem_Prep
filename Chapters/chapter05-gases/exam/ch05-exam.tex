@@ -1,0 +1,301 @@
+% Zumdahl Chapter 5 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S5.1--5.9 \textbullet\ 50 minutes \textbullet\ periodic table and constants provided}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- pressure and empirical laws -------------------------------------------
+\begin{mcq}
+  Which pressure is equivalent to \SI{2.00}{\atm}?
+  \choices
+    \choice{\SI{380}{\torr}}
+    \correct{\SI{1520}{\torr}}
+    \choice{\SI{760}{\torr}}
+    \choice{\SI{101}{\kilo\pascal}}
+\end{mcq}
+\why{$2.00 \times 760 = 1520$.}
+\distractor{D}{that is 1 atm in kPa}
+
+\begin{mcq}
+  A sealed can collapses when the steam inside condenses because
+  \choices
+    \choice{a vacuum pulls the walls inward}
+    \correct{the internal pressure drops far below atmospheric pressure}
+    \choice{condensation makes the metal contract}
+    \choice{the water expands as it cools}
+\end{mcq}
+\why{Atmospheric pressure was always present; the inside simply stopped
+pushing back.}
+\distractor{A}{vacuums do not pull --- pressure differences push}
+
+\begin{mcq}
+  A gas at \SI{4.0}{\atm} in \SI{3.0}{\liter} is expanded to
+  \SI{12.0}{\liter} at constant temperature. Its new pressure is
+  \choices
+    \choice{\SI{16}{\atm}}
+    \correct{\SI{1.0}{\atm}}
+    \choice{\SI{4.0}{\atm}}
+    \choice{\SI{0.25}{\atm}}
+\end{mcq}
+\why{Boyle: $(4.0)(3.0)/12.0 = 1.0$.}
+
+\begin{mcq}
+  A gas occupies \SI{2.0}{\liter} at \SI{200}{\kelvin}. At constant
+  pressure, its volume at \SI{400}{\kelvin} is
+  \choices
+    \choice{\SI{1.0}{\liter}}
+    \correct{\SI{4.0}{\liter}}
+    \choice{\SI{2.0}{\liter}}
+    \choice{\SI{8.0}{\liter}}
+\end{mcq}
+\why{Charles: absolute temperature doubles, so volume doubles.}
+
+\begin{mcq}
+  Which variable must always be expressed in kelvin when using a gas law?
+  \choices
+    \choice{pressure}
+    \choice{volume}
+    \correct{temperature}
+    \choice{moles}
+\end{mcq}
+\why{Celsius has an arbitrary zero, so ratios of Celsius temperatures are
+meaningless.}
+
+% ---- ideal gas law ---------------------------------------------------------
+\begin{mcq}
+  What volume does \SI{2.00}{\mole} of an ideal gas occupy at STP?
+  \choices
+    \choice{\SI{22.4}{\liter}}
+    \correct{\SI{44.8}{\liter}}
+    \choice{\SI{11.2}{\liter}}
+    \choice{\SI{2.00}{\liter}}
+\end{mcq}
+\why{$2.00 \times 22.42$.}
+
+\begin{mcq}
+  The molar volume of \SI{22.4}{\liter\per\mole} may be used only when
+  \choices
+    \choice{the gas is diatomic}
+    \choice{the gas is at room temperature}
+    \correct{the gas is at \SI{0}{\celsius} and \SI{1}{\atm}}
+    \choice{the gas behaves non-ideally}
+\end{mcq}
+\why{It is derived from $PV = nRT$ at STP specifically.}
+
+\begin{mcq}
+  Which expression gives the density of an ideal gas?
+  \choices
+    \correct{$PM/RT$}
+    \choice{$RT/PM$}
+    \choice{$MRT/P$}
+    \choice{$nRT/V$}
+\end{mcq}
+\why{From $PV = (m/M)RT$, rearranged for $m/V$.}
+
+\begin{mcq}
+  At constant temperature and pressure, which gas has the greatest density?
+  \choices
+    \choice{\ce{H2}}
+    \choice{\ce{He}}
+    \choice{\ce{N2}}
+    \correct{\ce{CO2}}
+\end{mcq}
+\why{At fixed $P$ and $T$, density is proportional to molar mass.}
+
+\begin{mcq}
+  A \SI{1.00}{\liter} sample of gas at STP has a mass of \SI{1.96}{\gram}.
+  Its molar mass is closest to
+  \choices
+    \choice{\SI{22.4}{\gram\per\mole}}
+    \correct{\SI{44}{\gram\per\mole}}
+    \choice{\SI{2.0}{\gram\per\mole}}
+    \choice{\SI{88}{\gram\per\mole}}
+\end{mcq}
+\why{$M = d \times 22.42 = 1.96 \times 22.42 \approx 44$.}
+
+% ---- gas stoichiometry -----------------------------------------------------
+\begin{mcq}
+  For \ce{N2(g) + 3 H2(g) -> 2 NH3(g)} with all gases at the same $T$ and
+  $P$, \SI{9.0}{\liter} of \ce{H2} reacts completely with
+  \choices
+    \correct{\SI{3.0}{\liter} of \ce{N2}}
+    \choice{\SI{9.0}{\liter} of \ce{N2}}
+    \choice{\SI{27}{\liter} of \ce{N2}}
+    \choice{\SI{6.0}{\liter} of \ce{N2}}
+\end{mcq}
+\why{Volumes combine in the coefficient ratio 1:3 at fixed $T$ and $P$.}
+
+\begin{mcq}
+  \ce{CaCO3(s) -> CaO(s) + CO2(g)}. Decomposing \SI{1.00}{\mole} of
+  \ce{CaCO3} produces what volume of \ce{CO2} at STP?
+  \choices
+    \choice{\SI{11.2}{\liter}}
+    \correct{\SI{22.4}{\liter}}
+    \choice{\SI{44.8}{\liter}}
+    \choice{\SI{100}{\liter}}
+\end{mcq}
+\why{1:1 ratio, then one molar volume.}
+
+\begin{mcq}
+  Gas volumes may be compared directly to identify a limiting reactant only
+  when
+  \choices
+    \choice{the gases have equal molar masses}
+    \correct{all gases are at the same temperature and pressure}
+    \choice{the reaction occurs at STP}
+    \choice{the gases are all diatomic}
+\end{mcq}
+\why{Then volume is proportional to moles (Avogadro's principle).}
+
+% ---- partial pressures -----------------------------------------------------
+\begin{mcq}
+  A flask holds \SI{0.20}{\mole} \ce{He} and \SI{0.60}{\mole} \ce{Ar} at a
+  total pressure of \SI{4.0}{\atm}. The partial pressure of helium is
+  \choices
+    \correct{\SI{1.0}{\atm}}
+    \choice{\SI{2.0}{\atm}}
+    \choice{\SI{3.0}{\atm}}
+    \choice{\SI{0.80}{\atm}}
+\end{mcq}
+\why{$\chi_{\ce{He}} = 0.20/0.80 = 0.25$; $0.25 \times 4.0 = 1.0$.}
+
+\begin{mcq}
+  In a mixture of ideal gases, the partial pressure exerted by one component
+  depends on
+  \choices
+    \choice{its molar mass}
+    \choice{the molar masses of the other gases}
+    \correct{its mole fraction and the total pressure}
+    \choice{the size of its molecules}
+\end{mcq}
+\why{$P_A = \chi_A P_{\text{total}}$ --- identity is irrelevant.}
+
+\begin{mcq}
+  A gas collected over water at \SI{25}{\celsius} shows a total pressure of
+  \SI{760}{\torr}. If the vapour pressure of water is \SI{23.8}{\torr}, the
+  partial pressure of the collected gas is
+  \choices
+    \choice{\SI{783.8}{\torr}}
+    \correct{\SI{736.2}{\torr}}
+    \choice{\SI{760}{\torr}}
+    \choice{\SI{23.8}{\torr}}
+\end{mcq}
+\why{Subtract the water vapour's contribution.}
+\distractor{A}{added instead of subtracting --- a very common slip}
+
+\begin{mcq}
+  A student collecting gas over water forgets to subtract the water vapour
+  pressure. The calculated number of moles of gas will be
+  \choices
+    \correct{too high}
+    \choice{too low}
+    \choice{unaffected}
+    \choice{negative}
+\end{mcq}
+\why{Using the inflated total pressure in $n = PV/RT$ overstates $n$.}
+
+% ---- KMT and real gases ----------------------------------------------------
+\begin{mcq}
+  Two gases at the same temperature must have the same
+  \choices
+    \choice{average molecular speed}
+    \correct{average kinetic energy}
+    \choice{density}
+    \choice{molar mass}
+\end{mcq}
+\why{$KE_{\text{avg}}$ depends only on absolute temperature.}
+
+\begin{mcq}
+  As the temperature of a gas rises, its Maxwell--Boltzmann distribution
+  \choices
+    \choice{narrows and shifts left}
+    \correct{broadens and shifts right, with unchanged area}
+    \choice{keeps its shape but grows in area}
+    \choice{becomes a straight line}
+\end{mcq}
+\why{Area equals the total number of molecules, which does not change.}
+
+\begin{mcq}
+  A real gas shows $PV/nRT$ less than 1. The best explanation is that
+  \choices
+    \correct{intermolecular attractions reduce the force of wall collisions}
+    \choice{the molecules occupy significant volume}
+    \choice{the temperature is measured in Celsius}
+    \choice{the gas is decomposing}
+\end{mcq}
+\why{Attractions lower the measured pressure below the ideal prediction.}
+\distractor{B}{that effect pushes the ratio ABOVE 1}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S5.4--5.5 \textbullet\ gas stoichiometry and collection}
+
+Magnesium reacts with hydrochloric acid:
+\[ \ce{Mg(s) + 2 HCl(aq) -> MgCl2(aq) + H2(g)} \]
+A \SI{0.243}{\gram} sample of Mg ($M = \SI{24.31}{\gram\per\mole}$) reacts
+completely. The hydrogen is collected over water at \SI{25}{\celsius}, where
+the vapour pressure of water is \SI{23.8}{\torr}. The total pressure is
+\SI{752}{\torr}.
+
+\begin{parts}
+  \item Calculate the moles of \ce{H2} produced.
+        \answerlines[2]{$n(\ce{Mg}) = 0.243/24.31 = \SI{0.0100}{\mole}$;
+        1:1 ratio $\to \SI{0.0100}{\mole}$ \ce{H2}.}
+  \item Determine the partial pressure of \ce{H2} in atm.
+        \answerlines[2]{$752 - 23.8 = \SI{728.2}{\torr}$;
+        $\div 760 = \SI{0.9582}{\atm}$}
+  \item Calculate the volume of gas collected. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$V = nRT/P = (0.0100)(0.08206)(298)/0.9582
+        = \SI{0.255}{\liter}$\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{0.0100}{\mole} with the 1:1 ratio used}
+  \rpoint{1}{(b) subtracts the water vapour pressure}
+  \rpoint{1}{(b) converts to atm correctly}
+  \rpoint{1}{(c) \SI{0.255}{\liter} using kelvin and the corrected pressure}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S5.6, 5.8 \textbullet\ KMT and real behaviour}
+
+Consider samples of \ce{He} and \ce{CO2}, each at \SI{300}{\kelvin}.
+
+\begin{parts}
+  \item Compare their average kinetic energies and their average molecular
+        speeds, with justification.
+        \answerlines[3]{Average kinetic energies are equal --- $KE$ depends
+        only on absolute temperature. Helium moves much faster, because
+        $u_{\text{rms}} = \sqrt{3RT/M}$ and helium's molar mass is about
+        eleven times smaller.}
+  \item At \SI{200}{\kelvin} and \SI{50}{\atm}, which gas is expected to
+        deviate more from ideal behaviour? Justify.
+        \answerlines[2]{\ce{CO2} --- it is larger and has significantly
+        stronger dispersion forces, so both the volume and attraction
+        corrections matter more than for tiny, weakly interacting helium.}
+  \item State one change in conditions that would make both gases behave
+        more ideally, and explain why.
+        \answerlines[2]{Raise the temperature (or lower the pressure).
+        Faster molecules overcome intermolecular attractions; lower pressure
+        keeps particles far apart so their own volume stays negligible.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) equal kinetic energies, tied to temperature}
+  \rpoint{1}{(a) He faster, with the $1/\sqrt{M}$ reasoning}
+  \rpoint{1}{(b) \ce{CO2} with a size or IMF justification}
+  \rpoint{1}{(c) names a valid change AND the matching reason}
+\end{rubric}
+
+\examtotal
+
+\end{document}

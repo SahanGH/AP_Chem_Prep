@@ -1,0 +1,156 @@
+% U6 WS4 -- bond and formation enthalpies + FRQ. Block 5.
+\documentclass{apchem-worksheet}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Worksheet 4 \textbullet\ Bond and Formation Enthalpies \& FRQ}
+\apcsubtitle{CED 6.7--6.8 \textbullet\ bonds: \emph{broken minus formed}, the one reversed convention}
+
+\begin{document}
+\wsheader[$\Delta H = \sum D(\text{broken}) - \sum D(\text{formed})$
+\textbullet\
+$\Delta H^\circ = \sum n\Delta H_f^\circ(\text{prod}) -
+\sum n\Delta H_f^\circ(\text{react})$ \textbullet\ elements in their
+standard states have $\Delta H_f^\circ = 0$. \\
+Bond energies (kJ/mol): H--H 432 \textbullet\ Cl--Cl 239 \textbullet\
+H--Cl 427 \textbullet\ C--H 413 \textbullet\ C--C 347 \textbullet\
+O--H 467 \textbullet\ O=O 495 \textbullet\ C=O (in \ce{CO2}) 799
+\textbullet\ C=C 614 \textbullet\ N$\equiv$N 941 \textbullet\ N--H 391. \\
+$\Delta H_f^\circ$ (kJ/mol): \ce{CO2} $-393.5$ \textbullet\ \ce{CO}
+$-110.5$ \textbullet\ \ce{H2O(l)} $-286$ \textbullet\ \ce{H2O(g)} $-242$
+\textbullet\ \ce{CH4} $-75$ \textbullet\ \ce{NH3} $-46$ \textbullet\
+\ce{C2H4} $+52$ \textbullet\ \ce{C2H6} $-84.7$.]
+
+\problem[]{\ced{6.7} Bond enthalpy basics.}
+\begin{parts}
+  \item Breaking a bond is: \answerblank[2.6cm]{endothermic}
+  \item Forming a bond is: \answerblank[2.6cm]{exothermic}
+  \item The expression is broken minus formed. Why does that ordering look
+        backwards next to every other rule in this unit?
+        \answerlines[3]{Every other expression is products minus reactants.
+        Bonds broken belong to the \emph{reactant} side, so the order
+        appears inverted --- but it must be, because breaking costs energy
+        and those terms have to enter positively.}
+\end{parts}
+
+\problem[]{\ced{6.7} Estimate $\Delta H$ for
+$\ce{H2(g) + Cl2(g) -> 2HCl(g)}$.}
+\begin{parts}
+  \item Total energy of bonds broken: \answerblank[3cm]{\SI{671}{\kilo\joule}}
+  \item Total energy of bonds formed: \answerblank[3cm]{\SI{854}{\kilo\joule}}
+  \item $\Delta H$: \answerblank[3cm]{$-183$ kJ}
+  \item Does the sign make sense? \answerlines[2]{Yes --- more energy was
+        released forming the two H--Cl bonds than was spent breaking H--H
+        and Cl--Cl, so the reaction is exothermic and $\Delta H$ must come
+        out negative.}
+\end{parts}
+
+\problem[]{\ced{6.7} Estimate $\Delta H$ for
+$\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}$ from bond enthalpies.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Broken: $4(413) + 2(495) = 1652 + 990 = 2642$~kJ.
+Formed: $2(799) + 4(467) = 1598 + 1868 = 3466$~kJ.
+$\Delta H = 2642 - 3466 = \mathbf{-824}~\text{kJ}$\end{apcanswer}}}
+
+\problem[]{\ced{6.8} Now calculate $\Delta H^\circ$ for that same reaction
+from enthalpies of formation. \workspace[2.6cm]
+\keyonly{\begin{apcanswer}$[-393.5 + 2(-242)] - [-75 + 0] =
+-877.5 + 75 = \mathbf{-802.5}~\text{kJ}$\end{apcanswer}}}
+
+\problem[]{The two routes gave $-824$~kJ and $-802.5$~kJ.}
+\begin{parts}
+  \item Which is the more reliable, and why?
+        \answerlines[3]{The formation-enthalpy value, $-802.5$~kJ. Those
+        are measured for the actual substances, whereas bond enthalpies are
+        averages over many different molecules and ignore the specific
+        environment a bond sits in.}
+  \item When should you use bond enthalpies at all?
+        \answerlines[2]{When formation data are not available. The result
+        should then be described as an estimate rather than a
+        value.}
+  \item Is a discrepancy of about 20~kJ evidence that one calculation is
+        wrong? \answerlines[2]{No --- a difference of that size is exactly
+        what averaging over molecular environments produces. Both
+        calculations can be correct as performed.}
+\end{parts}
+
+\problem[]{\ced{6.8} Enthalpies of formation.}
+\begin{parts}
+  \item $\Delta H_f^\circ$ of \ce{O2(g)}: \answerblank[1.8cm]{0}
+  \item $\Delta H_f^\circ$ of \ce{C} (graphite):
+        \answerblank[1.8cm]{0}
+  \item Why are these zero by definition?
+        \answerlines[2]{A formation enthalpy is the change on forming a
+        substance from its elements in their standard states. For an
+        element already in that state there is nothing to form, so the
+        change is zero.}
+  \item Calculate $\Delta H^\circ$ for $\ce{N2 + 3H2 -> 2NH3}$.
+        \answerblank[3cm]{$-92$ kJ}
+  \item Estimate the same reaction from bond enthalpies.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Broken $941 + 3(432) = 2237$;
+        formed $6(391) = 2346$;
+        $\Delta H = \mathbf{-109}~\text{kJ}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{\ced{6.8} Calculate $\Delta H^\circ$ for
+$\ce{C2H4(g) + H2(g) -> C2H6(g)}$ from formation enthalpies.
+\workspace[2cm]
+\keyonly{\begin{apcanswer}$(-84.7) - (52 + 0) =
+\mathbf{-136.7}~\text{kJ}$\end{apcanswer}}}
+
+\problem[]{\textbf{FRQ (10 points).} \ced{6.4} \ced{6.6} \ced{6.8}
+Methane is burned in a calorimeter. A \SI{0.0400}{\mole} sample is
+completely combusted in \SI{500.0}{\gram} of water, whose temperature rises
+from \SI{21.00}{\celsius} to \SI{38.05}{\celsius}.}
+\begin{parts}
+  \item Write the balanced equation for the complete combustion of methane,
+        with liquid water as a product.
+        \answerlines[1]{\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}}
+  \item Calculate the heat absorbed by the water. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$q = (500.0)(4.18)(17.05) =
+        \mathbf{35{,}635}~\text{J} = 35.6~\text{kJ}$\end{apcanswer}}
+  \item Calculate the experimental $\Delta H$ of combustion in
+        \si{\kilo\joule\per\mole}. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$q_{\text{rxn}} = -35.6$~kJ;
+        $\Delta H = -35.6/0.0400 =
+        \mathbf{-891}~\si{\kilo\joule\per\mole}$\end{apcanswer}}
+  \item Calculate the accepted value from enthalpies of formation.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[-393.5 + 2(-286)] - [-75] =
+        -965.5 + 75 = \mathbf{-890.5}~\si{\kilo\joule\per\mole}$
+        \end{apcanswer}}
+  \item Comment on the agreement, and state one reason a real calorimetry
+        experiment usually gives a magnitude that is too \emph{small}.
+        \answerlines[3]{The two agree closely, within about
+        \SI{1}{\kilo\joule\per\mole}. In practice the measured magnitude is
+        usually low because some heat escapes to the calorimeter walls and
+        the surroundings rather than going into the water, so the
+        temperature rise --- and therefore the calculated energy ---
+        under-reports the reaction.}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 1 pt} balanced equation with states \textbullet\
+\textbf{(b) 2 pts} 1 correct $\Delta T = 17.05$, 1 answer 35.6~kJ
+\textbullet\ \textbf{(c) 3 pts} 1 sign reversal to $q_{\text{rxn}}$,
+1 division by moles, 1 answer with \si{\kilo\joule\per\mole} --- an answer
+in bare kJ earns at most 2 \textbullet\ \textbf{(d) 2 pts} 1 correct setup
+products minus reactants, 1 answer $-890.5$ \textbullet\ \textbf{(e) 2 pts}
+1 notes the close agreement, 1 gives heat loss to the calorimeter or
+surroundings as the reason for a low magnitude.
+\end{apcnote}
+
+\begin{spiralstrip}{Unit 6 \textbullet\ blocks 1--4}
+  \item Reversing a reaction does what to $\Delta H$?
+        \answerblank[3cm]{flips the sign}
+  \item Hess's law works because enthalpy is a:
+        \answerblank[3cm]{state function}
+  \item $q$ for melting: \answerblank[2.6cm]{$n\Delta H_{\text{fus}}$}
+  \item Sign of $q_{\text{system}}$ for exothermic:
+        \answerblank[2cm]{negative}
+  \item $\Delta H_f^\circ$ of an element:
+        \answerblank[1.6cm]{0}
+\end{spiralstrip}
+
+\end{document}

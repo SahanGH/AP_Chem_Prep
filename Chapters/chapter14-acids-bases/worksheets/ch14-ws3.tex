@@ -1,0 +1,119 @@
+% Ch14 WS3 -- salts, structure, and FRQ. Block 5.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{14}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 3 \textbullet\ Salts, Structure \& FRQ}
+\apcsubtitle{Zumdahl \S14.8--14.9 \textbullet\ trace every salt back to its parent acid and base}
+
+\begin{document}
+\wsheader[$K_a$: \ce{HF} $7.2\times10^{-4}$ \textbullet\ \ce{HC2H3O2}
+$1.8\times10^{-5}$ \textbullet\ \ce{HCN} $6.2\times10^{-10}$.
+$K_b$: \ce{NH3} $1.8\times10^{-5}$. $K_w = 1.0\times10^{-14}$.]
+
+\problem[]{Classify each salt solution as acidic, basic, or neutral, and
+name the ion responsible:}
+\begin{parts}
+  \item \ce{NaCl}: \answerblank[6.5cm]{neutral --- neither ion hydrolyses}
+  \item \ce{NH4Cl}: \answerblank[6.5cm]{acidic --- \ce{NH4+}}
+  \item \ce{NaCN}: \answerblank[6.5cm]{basic --- \ce{CN-}}
+  \item \ce{KNO3}: \answerblank[6.5cm]{neutral}
+  \item \ce{NH4NO3}: \answerblank[6.5cm]{acidic --- \ce{NH4+}}
+  \item \ce{KF}: \answerblank[6.5cm]{basic --- \ce{F-}}
+\end{parts}
+
+\problem[]{Explain, in conjugate-pair terms, why \ce{NaCl} solutions are
+neutral but \ce{NaCN} solutions are basic.
+\answerlines[3]{Both contain \ce{Na+}, which comes from the strong base
+\ce{NaOH} and does not react. \ce{Cl-} comes from the strong acid \ce{HCl},
+so it is a negligible base. \ce{CN-} comes from the very weak acid
+\ce{HCN}, so it readily accepts a proton from water and generates
+\ce{OH-}.}}
+
+\problem[]{Calculate the pH of \SI{0.20}{\Molar} \ce{NaC2H3O2}.}
+\begin{parts}
+  \item Write the hydrolysis equation.
+        \answerlines[1]{\ce{C2H3O2^-(aq) + H2O(l) <=> HC2H3O2(aq) + OH^-(aq)}}
+  \item Calculate $K_b$. \answerblank[3.2cm]{$5.6\times10^{-10}$}
+  \item Calculate the pH. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x^2/0.20 \approx 5.6\times10^{-10}$;
+        $x = 1.06\times10^{-5} = [\ce{OH-}]$; pOH $= 4.98$;
+        pH $= 9.02$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Calculate the pH of \SI{0.30}{\Molar} \ce{NaF}.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}$K_b = 1.0\times10^{-14}/7.2\times10^{-4} =
+1.4\times10^{-11}$; $x^2/0.30 \approx 1.4\times10^{-11}$;
+$x = 2.0\times10^{-6}$; pOH $= 5.69$; pH $= 8.31$\end{apcanswer}}}
+
+\problem[]{Structure and acid strength:}
+\begin{parts}
+  \item Rank \ce{HF}, \ce{HCl}, \ce{HBr}, \ce{HI} by increasing strength and
+        give the controlling factor.
+        \answerlines[2]{\ce{HF} $<$ \ce{HCl} $<$ \ce{HBr} $<$ \ce{HI}. The
+        H--X bond weakens down the group, so the proton is released more
+        readily; bond strength outweighs electronegativity here.}
+  \item Explain why \ce{HF} is the weakest despite fluorine being the most
+        electronegative element. \answerlines[2]{The H--F bond is by far the
+        strongest of the four, and holding the proton tightly matters more
+        than pulling electron density away from it.}
+  \item Rank \ce{HClO}, \ce{HClO2}, \ce{HClO3}, \ce{HClO4} and give both
+        reasons. \answerlines[3]{Strength increases with the number of
+        oxygens. Each additional electronegative oxygen withdraws electron
+        density from the O--H bond, weakening it, and spreads the negative
+        charge of the conjugate base, stabilizing it.}
+  \item Rank \ce{HOI}, \ce{HOBr}, \ce{HOCl}.
+        \answerblank[5cm]{\ce{HOI} $<$ \ce{HOBr} $<$ \ce{HOCl}}
+\end{parts}
+
+\problem[]{\textbf{FRQ (10 points).} Hypochlorous acid, \ce{HOCl}, has
+$K_a = 3.5\times10^{-8}$.}
+\begin{parts}
+  \item Write the ionization equation and the $K_a$ expression.
+        \answerlines[2]{\ce{HOCl(aq) <=> H+(aq) + OCl^-(aq)};
+        $K_a = [\ce{H+}][\ce{OCl-}]/[\ce{HOCl}]$.}
+  \item Calculate the pH of a \SI{0.150}{\Molar} solution of \ce{HOCl},
+        including the validity check on any approximation.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$x^2 \approx (3.5\times10^{-8})(0.150) =
+        5.25\times10^{-9}$; $x = 7.25\times10^{-5}$; pH $= 4.14$.
+        Check: $7.25\times10^{-5}/0.150 = 0.048\%$, far under 5\%
+        \checkmark\end{apcanswer}}
+  \item Calculate the percent dissociation.
+        \answerblank[3cm]{0.048\%}
+  \item Sodium hypochlorite, \ce{NaOCl}, is dissolved in water. Predict
+        whether the solution is acidic, basic, or neutral, and justify.
+        \answerlines[3]{Basic. \ce{Na+} comes from a strong base and does
+        not react, but \ce{OCl-} is the conjugate base of a weak acid and
+        accepts a proton from water, generating \ce{OH-}.}
+  \item Calculate $K_b$ for \ce{OCl-} and the pH of a \SI{0.150}{\Molar}
+        \ce{NaOCl} solution. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$K_b = 1.0\times10^{-14}/3.5\times10^{-8}
+        = 2.9\times10^{-7}$; $x^2/0.150 \approx 2.9\times10^{-7}$;
+        $x = 2.08\times10^{-4} = [\ce{OH-}]$; pOH $= 3.68$;
+        pH $= 10.32$\end{apcanswer}}
+\end{parts}
+
+\begin{apcnote}[Rubric --- score yourself, 10 points]
+\textbf{(a) 2 pts} 1 equation, 1 expression \textbullet\ \textbf{(b) 3 pts}
+1 correct ICE setup, 1 pH $= 4.14$, 1 explicit 5\% check with the number ---
+asserting validity earns 0 \textbullet\ \textbf{(c) 1 pt} 0.048\%
+\textbullet\ \textbf{(d) 2 pts} 1 basic, 1 identifies \ce{OCl-} as the
+conjugate base of a weak acid AND \ce{Na+} as inert \textbullet\
+\textbf{(e) 2 pts} 1 $K_b$ from $K_w/K_a$, 1 pH via pOH --- reporting
+$-\log x$ as the pH earns 0.
+\end{apcnote}
+
+\begin{spiralstrip}{Chapter 14 \textbullet\ blocks 1--4}
+  \item $K_aK_b = $ \answerblank[2cm]{$K_w$}
+  \item pH of \SI{0.100}{\Molar} \ce{NH3}: \answerblank[2cm]{11.13}
+  \item Stronger acid: lower or higher pK$_a$?
+        \answerblank[2cm]{lower}
+  \item Which ionization dominates for \ce{H3PO4}?
+        \answerblank[2cm]{the first}
+  \item pH of \SI{0.010}{\Molar} \ce{NaOH}: \answerblank[2cm]{12.00}
+\end{spiralstrip}
+
+\end{document}

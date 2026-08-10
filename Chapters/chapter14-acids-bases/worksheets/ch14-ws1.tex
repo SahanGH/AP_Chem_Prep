@@ -1,0 +1,102 @@
+% Ch14 WS1 -- conjugate pairs, strength, pH scale, strong acids/bases.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{14}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 1 \textbullet\ Conjugates, Strength, and the pH Scale}
+\apcsubtitle{Zumdahl \S14.1--14.4, 14.6 \textbullet\ strong is not the same word as concentrated}
+
+\begin{document}
+\wsheader[$K_a$ values where needed: \ce{HF} $7.2\times10^{-4}$ \textbullet\
+\ce{HNO2} $4.0\times10^{-4}$ \textbullet\ \ce{HC2H3O2}
+$1.8\times10^{-5}$ \textbullet\ \ce{HOCl} $3.5\times10^{-8}$ \textbullet\
+\ce{HCN} $6.2\times10^{-10}$. $K_w = 1.0\times10^{-14}$.]
+
+\problem[]{Identify the conjugate:}
+\begin{parts}
+  \item Conjugate base of \ce{H2SO4}: \answerblank[2.6cm]{\ce{HSO4^-}}
+  \item Conjugate acid of \ce{HCO3^-}: \answerblank[2.6cm]{\ce{H2CO3}}
+  \item Conjugate base of \ce{HCO3^-}: \answerblank[2.6cm]{\ce{CO3^2-}}
+  \item Conjugate acid of \ce{H2O}: \answerblank[2.6cm]{\ce{H3O+}}
+\end{parts}
+
+\problem[]{For \ce{HNO2(aq) + H2O(l) <=> H3O+(aq) + NO2^-(aq)}, label all
+four species as acid, base, conjugate acid, or conjugate base.
+\answerlines[2]{\ce{HNO2} acid; \ce{H2O} base; \ce{H3O+} conjugate acid;
+\ce{NO2^-} conjugate base.}}
+
+\problem[]{Explain why water can act as a Br\o nsted--Lowry base, referring
+to its structure. \answerlines[2]{Its oxygen carries two unshared electron
+pairs, either of which can form a covalent bond to a proton --- which is
+exactly what accepting \ce{H+} means.}}
+
+\problem[]{Rank as bases, weakest to strongest, and justify:
+\ce{Cl-}, \ce{F-}, \ce{CN-}, \ce{C2H3O2^-}.
+\answerlines[3]{\ce{Cl-} $<$ \ce{F-} $<$ \ce{C2H3O2^-} $<$ \ce{CN-}.
+\ce{Cl-} comes from a strong acid and is negligible. Among the rest, base
+strength runs opposite to conjugate acid strength, and $K_a$ decreases in
+the order \ce{HF} $>$ \ce{HC2H3O2} $>$ \ce{HCN}.}}
+
+\problem[]{pK$_a$ practice:}
+\begin{parts}
+  \item pK$_a$ of acetic acid: \answerblank[2.4cm]{4.74}
+  \item pK$_a$ of \ce{HCN}: \answerblank[2.4cm]{9.21}
+  \item Which is the stronger acid, and how does pK$_a$ show it?
+        \answerlines[2]{Acetic acid --- a lower pK$_a$ means a larger $K_a$
+        and therefore greater ionization.}
+\end{parts}
+
+\problem[]{pH and pOH conversions at \SI{25}{\celsius}:}
+\begin{parts}
+  \item $[\ce{H+}] = 2.5\times10^{-3}$: pH $=$
+        \answerblank[2.2cm]{2.60}
+  \item pH $= 8.40$: $[\ce{H+}] =$
+        \answerblank[3cm]{$4.0\times10^{-9}$}
+  \item $[\ce{OH-}] = 5.0\times10^{-5}$: pH $=$
+        \answerblank[2.2cm]{9.70}
+  \item pH $= 11.20$: pOH $=$ \answerblank[2.2cm]{2.80}
+\end{parts}
+
+\problem[]{Explain why pure water at \SI{50}{\celsius} has a pH slightly
+below 7 yet is still neutral.
+\answerlines[3]{$K_w$ increases with temperature, so both $[\ce{H+}]$ and
+$[\ce{OH-}]$ rise and pH falls below 7. The solution remains neutral because
+neutrality is defined by $[\ce{H+}] = [\ce{OH-}]$, not by the number 7 ---
+which applies only at \SI{25}{\celsius}.}}
+
+\problem[]{Strong acid and base pH:}
+\begin{parts}
+  \item \SI{0.020}{\Molar} \ce{HCl}: \answerblank[2.4cm]{1.70}
+  \item \SI{0.0010}{\Molar} \ce{HNO3}: \answerblank[2.4cm]{3.00}
+  \item \SI{0.025}{\Molar} \ce{NaOH}: \answerblank[2.4cm]{12.40}
+  \item \SI{0.015}{\Molar} \ce{Ba(OH)2}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$[\ce{OH-}] = 2(0.015) = 0.030$;
+        pOH $= 1.52$; pH $= 12.48$\end{apcanswer}}
+\end{parts}
+
+\problem[]{A student calculates the pH of \SI{0.010}{\Molar}
+\ce{Sr(OH)2} as 12.00. Identify the error and give the correct value.
+\answerlines[3]{They used $[\ce{OH-}] = 0.010$, but strontium hydroxide
+releases two hydroxide ions per formula unit, so $[\ce{OH-}] = 0.020$.
+pOH $= 1.70$ and pH $= 12.30$.}}
+
+\problem[]{\SI{0.10}{\Molar} \ce{HCl} has pH 1.00; \SI{0.10}{\Molar} acetic
+acid has pH 2.87. Explain the difference and state what it illustrates about
+the words ``strong'' and ``concentrated.''
+\answerlines[3]{\ce{HCl} ionizes completely, so $[\ce{H+}] = 0.10$. Acetic
+acid reaches equilibrium with only about 1.3\% ionized, giving a much
+smaller $[\ce{H+}]$. The two solutions are equally \emph{concentrated} but
+differ enormously in \emph{strength} --- strength is the fraction that
+ionizes.}}
+
+\begin{spiralstrip}{Chapters 12--13 \textbullet\ spiral}
+  \item If $Q < K$, the shift is: \answerblank[2cm]{right}
+  \item $t_{1/2}$ for first order with $k = \SI{0.0693}{\per\second}$:
+        \answerblank[2.6cm]{\SI{10.0}{\second}}
+  \item Only what change alters $K$? \answerblank[2.6cm]{temperature}
+  \item Rate law exponents come from: \answerblank[2.6cm]{experiment}
+  \item $K$ expression omits: \answerblank[4.8cm]{pure solids and liquids}
+\end{spiralstrip}
+
+\end{document}

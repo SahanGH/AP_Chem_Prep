@@ -1,0 +1,120 @@
+% U6 WS3 -- enthalpy of reaction and Hess's law. Block 4.
+\documentclass{apchem-worksheet}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Worksheet 3 \textbullet\ Enthalpy of Reaction and Hess's Law}
+\apcsubtitle{CED 6.6, 6.9 \textbullet\ reverse a reaction, flip the sign --- every time}
+
+\begin{document}
+\wsheader[$\Delta H$ scales with the coefficients and flips sign when the
+reaction is reversed \textbullet\ enthalpy is a state function, so
+reactions and their $\Delta H$ values add.]
+
+\problem[]{\ced{6.6} For
+$\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}$, $\Delta H = -890.5$~kJ.}
+\begin{parts}
+  \item Energy released per mole of \ce{CH4}:
+        \answerblank[3cm]{\SI{890.5}{\kilo\joule}}
+  \item Energy released by \SI{0.500}{\mole} of \ce{CH4}:
+        \answerblank[3cm]{\SI{445.3}{\kilo\joule}}
+  \item $\Delta H$ for $\ce{2CH4 + 4O2 -> 2CO2 + 4H2O(l)}$:
+        \answerblank[3cm]{$-1781$ kJ}
+  \item $\Delta H$ for $\ce{CO2(g) + 2H2O(l) -> CH4(g) + 2O2(g)}$:
+        \answerblank[3cm]{$+890.5$ kJ}
+  \item Which of those three manipulations changed the \emph{sign}, and
+        which changed the \emph{magnitude}?
+        \answerlines[2]{Reversing changed the sign; doubling the
+        coefficients changed the magnitude. Taking half a mole changed the
+        amount of energy but is not a change to the thermochemical equation
+        itself.}
+\end{parts}
+
+\problem[]{\ced{6.6} For $\ce{2CO(g) + O2(g) -> 2CO2(g)}$,
+$\Delta H = -566$~kJ.}
+\begin{parts}
+  \item Energy released per mole of \ce{CO}:
+        \answerblank[3cm]{\SI{283}{\kilo\joule}}
+  \item $\Delta H$ for $\ce{2CO2(g) -> 2CO(g) + O2(g)}$:
+        \answerblank[3cm]{$+566$ kJ}
+  \item $\Delta H$ for $\ce{CO(g) + \tfrac{1}{2}O2(g) -> CO2(g)}$:
+        \answerblank[3cm]{$-283$ kJ}
+\end{parts}
+
+\problem[]{\ced{6.9} State Hess's law and say what property of enthalpy
+makes it valid.
+\answerlines[3]{The enthalpy change of a reaction is the same whether it
+happens in one step or several, so reactions can be added and their
+$\Delta H$ values add with them. It holds because enthalpy is a state
+function --- its value depends only on the initial and final states, not on
+the route between them.}}
+
+\problem[]{\ced{6.9} Given:
+\begin{center}
+(1) $\ce{C(gr) + O2(g) -> CO2(g)}$ \qquad $\Delta H = -393.5$~kJ \\
+(2) $\ce{CO(g) + \tfrac{1}{2}O2(g) -> CO2(g)}$ \qquad
+$\Delta H = -283.0$~kJ
+\end{center}
+find $\Delta H$ for $\ce{C(gr) + \tfrac{1}{2}O2(g) -> CO(g)}$.}
+\begin{parts}
+  \item Which equation must be reversed, and why?
+        \answerlines[2]{Equation (2). \ce{CO} must end up as a product of
+        the target, but it is a reactant in (2), so (2) has to be flipped
+        --- and its sign with it.}
+  \item Carry out the combination. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$(1)$ as written: $-393.5$. \\
+        $(2)$ reversed: $\ce{CO2 -> CO + \tfrac{1}{2}O2}$, $+283.0$. \\
+        Adding, \ce{CO2} cancels and half the \ce{O2} cancels:
+        $\Delta H = -393.5 + 283.0 =
+        \mathbf{-110.5}~\text{kJ}$\end{apcanswer}}
+  \item The tabulated $\Delta H_f^\circ$ of \ce{CO} is $-110.5$~kJ/mol.
+        What does the agreement confirm?
+        \answerlines[2]{That the combination was done correctly --- and,
+        more generally, that a formation enthalpy is simply the $\Delta H$
+        of forming one mole of the compound from its elements, which is
+        exactly what the target reaction is.}
+  \item Why is this reaction's $\Delta H$ hard to measure directly?
+        \answerlines[2]{Burning carbon in limited oxygen always produces
+        some \ce{CO2} alongside the \ce{CO}, so the measured heat is a
+        mixture of two reactions and cannot be cleanly attributed.}
+\end{parts}
+
+\problem[]{\ced{6.9} A student reverses one equation in a Hess's law
+problem but forgets to change its sign. The correct answer is $-110.5$~kJ.}
+\begin{parts}
+  \item What do they report? \answerblank[3cm]{$-676.5$ kJ}
+  \item By how much are they wrong, and how does that relate to the
+        equation they mis-signed? \answerlines[2]{By 566~kJ --- exactly
+        twice the magnitude of the $-283.0$~kJ reaction, because failing to
+        flip a sign changes a term by twice its own size.}
+\end{parts}
+
+\problem[]{\ced{6.9} Given
+$\ce{N2 + O2 -> 2NO}$, $\Delta H = +180$~kJ, and
+$\ce{2NO + O2 -> 2NO2}$, $\Delta H = -112$~kJ,
+find $\Delta H$ for $\ce{N2 + 2O2 -> 2NO2}$. \workspace[2.4cm]
+\keyonly{\begin{apcanswer}Both equations are used as written and simply
+added; \ce{NO} cancels.
+$\Delta H = +180 + (-112) = \mathbf{+68}~\text{kJ}$ --- endothermic
+overall.\end{apcanswer}}}
+
+\problem[]{\ced{6.6} A thermochemical equation is written with fractional
+coefficients: $\ce{H2(g) + \tfrac{1}{2}O2(g) -> H2O(l)}$,
+$\Delta H = -286$~kJ. Is that legitimate, and what does the value mean?
+\answerlines[3]{Yes. Fractional coefficients are allowed in thermochemical
+equations precisely so that $\Delta H$ can be quoted per mole of one chosen
+substance --- here per mole of water formed, which is what makes it the
+enthalpy of formation of \ce{H2O(l)}.}}
+
+\begin{spiralstrip}{Unit 6 \textbullet\ blocks 1--3}
+  \item $q = mc\Delta T$ applies when what changes?
+        \answerblank[2.6cm]{temperature}
+  \item $\Delta H_{\text{vap}}$ of water:
+        \answerblank[3cm]{\SI{40.7}{\kilo\joule\per\mole}}
+  \item Specific heat of water:
+        \answerblank[3.4cm]{\SI{4.18}{\joule\per\gram\per\celsius}}
+  \item Exothermic $\Delta H$ is: \answerblank[2cm]{negative}
+  \item During a phase change, $\Delta T$ is: \answerblank[1.6cm]{zero}
+\end{spiralstrip}
+
+\end{document}

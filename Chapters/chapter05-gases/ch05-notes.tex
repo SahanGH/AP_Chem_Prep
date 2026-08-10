@@ -1,0 +1,674 @@
+% Zumdahl Chapter 5 -- Gases. ELABORATED notes: fuller exposition, two or
+% more worked examples per idea. 5 block lessons.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S5.1--5.9 \textbullet\ PDF pp.~226--281 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+Most of this chapter you have already met: \S5.2--5.3, 5.5, 5.6, and
+5.8 are CED topics \textbf{3.4--3.6}, taught in Unit 3. Read those sections
+as \emph{deeper practice}, not new material.
+
+Two things here are genuinely new. \textbf{\S5.4 gas stoichiometry} closes
+the loop between Chapter 3's mole ratios and gas volumes --- it is the
+reason to work this chapter. And \textbf{collecting a gas over water}
+(\S5.5) is a standard laboratory technique that appears on the AP exam and
+is covered nowhere else.
+
+\S5.7 (Graham's law of effusion) is marked \textbf{ENRICHMENT} --- it is not
+on the current CED. \S5.10 (atmospheric chemistry) is skipped entirely.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Pressure and the Empirical Gas Laws}{Zumdahl \S5.1--5.2}
+
+\begin{objectives}
+  \item Explain what gas pressure is and convert among its units.
+  \item State Boyle's, Charles's, and Avogadro's laws and use each.
+\end{objectives}
+
+\reading{Zumdahl \S5.1--5.2}{227--235}
+
+\begin{warmup}[3]
+  \item Convert \SI{25}{\celsius} to kelvin: \answerblank[2.6cm]{\SI{298}{\kelvin}}
+  \item Moles in \SI{32.0}{\gram} \ce{O2}: \answerblank[2.6cm]{\SI{1.00}{\mole}}
+  \item KMT: average kinetic energy depends only on:
+        \answerblank[3cm]{temperature}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What pressure is, and how we measure it}
+
+\notesectionz{Pressure}{5.1}
+\practice{1}
+
+Pressure is \answerblank[3.9cm]{force per unit area}. For a gas it arises
+from countless particle collisions with the container walls --- each
+collision is tiny, but there are on the order of $10^{23}$ particles.
+
+Atmospheric pressure is literally the \answerblank[3.5cm]{weight of the
+air} above you, which is why it falls with altitude.
+
+\notesub{Torricelli's barometer}
+
+Invented in 1643: a tube of mercury inverted in a dish. Atmospheric pressure
+pushing down on the dish holds the column up. At sea level the column
+averages \answerblank[2cm]{\SI{760}{\milli\meter}} of mercury.
+
+\begin{apcnote}
+The famous crushed-can demonstration is the same physics. Boiling water
+fills a can with steam; capping and cooling condenses that steam to a few
+drops of liquid, leaving almost nothing inside to push outward. Atmospheric
+pressure --- which was always there --- then crushes the can. Nothing
+``sucked'' it; the inside simply stopped pushing back.
+\end{apcnote}
+
+\notesub{Units you must be able to convert}
+
+\[
+  \SI{1}{\atm} = \answerblank[2.2cm]{\SI{760}{\mmHg}}
+  = \answerblank[2.0cm]{\SI{760}{\torr}}
+  = \SI{101325}{\pascal} = \answerblank[2.6cm]{\SI{101.325}{\kilo\pascal}}
+\]
+
+\segment{GUIDED PRACTICE}{15}{Pressure conversions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \SI{2.50}{\atm} in torr: \answerblank[3cm]{\SI{1900}{\torr}}
+  \item \SI{380}{\mmHg} in atm: \answerblank[3cm]{\SI{0.500}{\atm}}
+  \item \SI{202.65}{\kilo\pascal} in atm: \answerblank[3cm]{\SI{2.000}{\atm}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Three empirical laws}
+
+\notesectionz{Boyle, Charles, and Avogadro}{5.2}
+\practice{5}
+
+Each law fixes two variables and relates the other two:
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{2.6cm}p{2.9cm}p{3.0cm}p{4.6cm}@{}}
+\toprule
+\textbf{Law} & \textbf{Held constant} & \textbf{Relationship} & \textbf{Working form}\\
+\midrule
+\term{Boyle} & $n$, $T$ &
+  $P$ and $V$ \answerblank[2.2cm]{inversely} &
+  \answerblank[2.6cm]{$P_1V_1 = P_2V_2$}\\
+\term{Charles} & $n$, $P$ &
+  $V$ and $T$ \answerblank[2.2cm]{directly} &
+  \answerblank[2.6cm]{$V_1/T_1 = V_2/T_2$}\\
+\term{Avogadro} & $P$, $T$ &
+  $V$ and $n$ \answerblank[2.2cm]{directly} &
+  \answerblank[2.6cm]{$V_1/n_1 = V_2/n_2$}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+Charles's and Avogadro's laws are ratios, so temperature \emph{must} be in
+kelvin. Celsius has an arbitrary zero: doubling from \SI{10}{\celsius} to
+\SI{20}{\celsius} is not doubling the absolute temperature at all --- it is
+283 K to 293 K, a 3.5\% rise.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 1: Boyle]
+A \SI{5.00}{\liter} sample at \SI{1.20}{\atm} is compressed to
+\SI{2.00}{\liter} at constant temperature.
+\[
+  P_2 = \frac{P_1V_1}{V_2} = \frac{(1.20)(5.00)}{2.00} = \SI{3.00}{\atm}
+\]
+Sanity check: the volume shrank, so the pressure must rise. It did.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: Charles]
+A balloon holds \SI{2.50}{\liter} at \SI{27}{\celsius}. What is its volume
+at \SI{127}{\celsius}, pressure constant?
+\[
+  V_2 = V_1\frac{T_2}{T_1} = 2.50 \times \frac{400.}{300.} = \SI{3.33}{\liter}
+\]
+Using Celsius would have given $2.50 \times 127/27 = \SI{11.8}{\liter}$ ---
+more than three times too large. This is why the conversion matters.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Combining the laws}
+
+Any two states of a fixed gas sample are related by the
+\term{combined gas law}:
+\[
+  \frac{P_1V_1}{T_1} = \answerblank[2.4cm]{$\dfrac{P_2V_2}{T_2}$}
+\]
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A gas occupies \SI{4.00}{\liter} at \SI{2.00}{\atm} and
+        \SI{300.}{\kelvin}. Find its volume at \SI{1.00}{\atm} and
+        \SI{450.}{\kelvin}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$V_2 = 4.00 \times \tfrac{2.00}{1.00}
+        \times \tfrac{450.}{300.} = \SI{12.0}{\liter}$\end{apcanswer}}
+  \item Explain, using particle collisions, why halving the volume at
+        constant temperature doubles the pressure.
+        \answerlines[3]{The same number of particles move at the same
+        average speed, but the wall area is halved and the distance between
+        collisions is shorter --- so each unit of wall area is struck twice
+        as often, doubling the force per area.}
+\end{enumerate}
+
+\begin{exitticket}
+A rigid steel cylinder of gas is heated from \SI{300}{\kelvin} to
+\SI{600}{\kelvin}. What happens to its volume and its pressure?
+\answerlines[2]{Volume is fixed by the rigid container. Pressure doubles ---
+with $V$ and $n$ constant, $P \propto T$ in kelvin.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Ideal Gas Law}{Zumdahl \S5.3}
+
+\begin{objectives}
+  \item Apply $PV = nRT$ in all rearrangements.
+  \item Compute gas density and molar mass from $P$, $T$, and $M$.
+\end{objectives}
+
+\reading{Zumdahl \S5.3}{235--241}
+
+\begin{warmup}[4]
+  \item \SI{1.50}{\atm} in torr: \answerblank[2.6cm]{\SI{1140}{\torr}}
+  \item Boyle's law relates which two variables?
+        \answerblank[2.6cm]{$P$ and $V$}
+  \item \SI{127}{\celsius} in kelvin: \answerblank[2.4cm]{\SI{400.}{\kelvin}}
+  \item Molar mass of \ce{CO2}: \answerblank[3cm]{\SI{44.01}{\gram\per\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{One equation containing all three laws}
+
+\notesectionz{$PV = nRT$}{5.3}
+\practice{5}
+
+\[
+  PV = nRT \qquad
+  R = \answerblank[4.2cm]{\SI{0.08206}{\liter\atm\per\mole\per\kelvin}}
+\]
+
+$R$ carries units, and those units dictate everything else: pressure in
+\answerblank[1.4cm]{atm}, volume in \answerblank[1.4cm]{L},
+temperature in \answerblank[1.4cm]{K}. Convert \emph{before} substituting,
+never after.
+
+\notesub{Standard temperature and pressure}
+
+STP is \answerblank[2.2cm]{\SI{0}{\celsius}} and
+\answerblank[1.6cm]{\SI{1}{\atm}}. At STP one mole of any ideal gas occupies
+the \term{molar volume}:
+\[
+  V = \frac{nRT}{P} = \frac{(1)(0.08206)(273.15)}{1} =
+  \answerblank[2.4cm]{\SI{22.42}{\liter}}
+\]
+
+\begin{apcnote}
+That 22.42 L applies \emph{only} at STP. Students who memorize it and then
+use it at \SI{25}{\celsius} get answers about 9\% low. When conditions are
+not STP, go back to $PV = nRT$.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Rearrangement drill}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Solve for $n$: \answerblank[3cm]{$n = PV/RT$}
+  \item Volume of \SI{2.50}{\mole} at \SI{1.50}{\atm}, \SI{300.}{\kelvin}:
+        \answerblank[3cm]{\SI{41.0}{\liter}}
+  \item Pressure of \SI{0.250}{\mole} in \SI{5.00}{\liter} at
+        \SI{273}{\kelvin}: \answerblank[3cm]{\SI{1.12}{\atm}}
+  \item Moles in \SI{10.0}{\liter} at \SI{2.00}{\atm} and
+        \SI{350.}{\kelvin}: \answerblank[3cm]{\SI{0.696}{\mole}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Density and molar mass}
+
+\notesectionz{Two useful derivations}{5.3}
+\practice{5}
+
+Since $n = m/M$, substituting into $PV = nRT$ gives
+\[
+  d = \frac{m}{V} = \answerblank[2.2cm]{$\dfrac{PM}{RT}$}
+  \qquad\text{and}\qquad
+  M = \answerblank[2.2cm]{$\dfrac{dRT}{P}$}
+\]
+
+You do not need to memorize these if you can derive them --- but you must be
+able to get there quickly.
+
+\begin{workedexample}[Worked example 1: density of a known gas]
+Find the density of \ce{CO2} at STP.
+\[
+  d = \frac{PM}{RT} = \frac{(1.00)(44.01)}{(0.08206)(273.15)} = \SI{1.96}{\gram\per\liter}
+\]
+Equivalently: one mole (\SI{44.01}{\gram}) occupies \SI{22.42}{\liter}, and
+$44.01/22.42 = 1.96$. Both routes should agree --- use the second as a
+check.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: identifying an unknown gas]
+An unknown gas has a density of \SI{1.34}{\gram\per\liter} at STP.
+\[
+  M = d \times 22.42 = 1.34 \times 22.42 = \SI{30.0}{\gram\per\mole}
+\]
+Candidates at 30 g/mol: \ce{NO} (30.01) or \ce{C2H6} (30.07). Density alone
+cannot distinguish them --- you would need another property.
+\end{workedexample}
+
+\begin{apctrap}
+Gas density depends on pressure and temperature, unlike the density of a
+solid or liquid. Quoting ``the density of \ce{CO2}'' without stating
+conditions is meaningless. Denser gas = higher molar mass \emph{only when
+$P$ and $T$ match}.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Working backwards}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A \SI{0.500}{\gram} sample of a gas occupies \SI{288}{\milli\liter}
+        at \SI{25}{\celsius} and \SI{1.00}{\atm}. Find its molar mass.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$n = PV/RT = (1.00)(0.288)/((0.08206)(298))
+        = \SI{0.01178}{\mole}$; $M = 0.500/0.01178 =
+        \SI{42.4}{\gram\per\mole}$ (about propane, \ce{C3H8})\end{apcanswer}}
+  \item Two identical balloons at the same $T$ and $P$ hold helium and
+        argon. Compare their masses and their densities, with reasoning.
+        \answerlines[3]{Equal moles (same $P$, $V$, $T$), so argon --- with
+        roughly ten times the molar mass --- has both the greater mass and
+        the greater density. Density scales with molar mass at fixed
+        conditions.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does a helium balloon rise while an identical balloon of \ce{CO2} sinks?
+Answer in terms of density. \answerlines[2]{At the same $T$ and $P$, density
+is proportional to molar mass. Helium (4.00) is far less dense than air
+($\approx$29), so it is buoyant; \ce{CO2} (44.01) is denser than air and
+sinks.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Gas Stoichiometry}{Zumdahl \S5.4}
+
+\begin{objectives}
+  \item Include gas volumes in stoichiometric calculations.
+  \item Choose correctly between the molar volume shortcut and $PV = nRT$.
+\end{objectives}
+
+\reading{Zumdahl \S5.4}{241--245}
+
+\begin{warmup}[3]
+  \item Molar volume at STP: \answerblank[2.6cm]{\SI{22.42}{\liter}}
+  \item $d$ of \ce{O2} at STP: \answerblank[3cm]{\SI{1.43}{\gram\per\liter}}
+  \item Moles in \SI{50.0}{\gram} \ce{CaCO3} ($M=100.09$):
+        \answerblank[2.8cm]{\SI{0.500}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Volumes join the mole map}
+
+\notesectionz{The extended road map}{5.4}
+\practice{5}
+
+Chapter 3 routed everything through moles. Gases simply add one more
+on-ramp and off-ramp:
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.3cm, font=\sffamily\small]
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm] (ga) {g A};
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm, right=of ga] (ma) {mol A};
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm, right=of ma] (mb) {mol B};
+  \node[draw=apcaccent, thick, rounded corners, minimum height=0.85cm, right=of mb] (vb) {L of gas B};
+  \draw[-{Stealth}, thick] (ga) -- node[above,font=\sffamily\scriptsize]{$\div M_A$} (ma);
+  \draw[-{Stealth}, thick] (ma) -- node[above,font=\sffamily\scriptsize]{ratio} (mb);
+  \draw[-{Stealth}, thick] (mb) -- node[above,font=\sffamily\scriptsize]{$PV{=}nRT$} (vb);
+\end{tikzpicture}
+\end{center}
+
+Only the middle arrow uses the balanced equation. The last arrow has two
+possible tools:
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item At STP: multiply by \answerblank[2.4cm]{\SI{22.42}{\liter\per\mole}}
+        --- fast.
+  \item Any other conditions: use \answerblank[2.2cm]{$V = nRT/P$}.
+\end{itemize}
+
+\begin{workedexample}[Worked example 1: Zumdahl's quicklime problem]
+Calculate the volume of \ce{CO2} at STP produced by decomposing
+\SI{152}{\gram} of \ce{CaCO3}:
+\[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \]
+\begin{align*}
+  n(\ce{CaCO3}) &= \frac{152}{100.09} = \SI{1.52}{\mole}\\
+  n(\ce{CO2}) &= \SI{1.52}{\mole} \quad (1{:}1)\\
+  V &= 1.52 \times 22.42 = \SI{34.1}{\liter}
+\end{align*}
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: not at STP]
+What volume of \ce{O2} at \SI{25}{\celsius} and \SI{1.00}{\atm} is needed to
+burn \SI{10.0}{\gram} of \ce{CH4}?
+\[ \ce{CH4 + 2 O2 -> CO2 + 2 H2O} \]
+\begin{align*}
+  n(\ce{CH4}) &= \frac{10.0}{16.04} = \SI{0.623}{\mole}\\
+  n(\ce{O2}) &= 2(0.623) = \SI{1.25}{\mole}\\
+  V &= \frac{nRT}{P} = \frac{(1.25)(0.08206)(298)}{1.00} = \SI{30.5}{\liter}
+\end{align*}
+The molar-volume shortcut would have given \SI{28.0}{\liter} --- wrong by
+8\%, because these are not standard conditions.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Gas stoichiometry drill}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{2 KClO3(s) -> 2 KCl(s) + 3 O2(g)}. What volume of \ce{O2} at
+        STP comes from \SI{12.25}{\gram} \ce{KClO3} ($M = 122.55$)?
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = 0.1000$ mol $\times \tfrac32 =
+        0.1500$ mol \ce{O2} $\times 22.42 =
+        \SI{3.36}{\liter}$\end{apcanswer}}
+  \item \ce{N2(g) + 3 H2(g) -> 2 NH3(g)}. All gases at the same $T$ and
+        $P$: what volume of \ce{H2} reacts with \SI{5.0}{\liter} of
+        \ce{N2}? \answerblank[3cm]{\SI{15}{\liter}}
+\end{enumerate}
+
+\begin{apcnote}
+That second problem needed no molar masses at all. At fixed $T$ and $P$,
+volume is proportional to moles (Avogadro), so gas volumes combine in the
+same ratio as the coefficients. This shortcut works \emph{only} when every
+substance involved is a gas at the same conditions.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Limiting reactant with gases}
+
+\SI{4.00}{\liter} of \ce{H2} and \SI{4.00}{\liter} of \ce{O2}, both at
+\SI{1.00}{\atm} and \SI{273}{\kelvin}, react to form water.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Write the balanced equation.
+        \answerblank[5cm]{\ce{2 H2 + O2 -> 2 H2O}}
+  \item Identify the limiting reactant using volumes directly.
+        \answerlines[2]{The ratio needed is 2 \ce{H2} : 1 \ce{O2}. Equal
+        volumes means equal moles, so hydrogen runs out first --- \ce{H2} is
+        limiting.}
+  \item What volume of \ce{O2} remains unreacted?
+        \answerblank[3cm]{\SI{2.00}{\liter}}
+\end{enumerate}
+
+\begin{exitticket}
+Why can you compare gas volumes directly to find a limiting reactant, but
+never compare gas masses that way? \answerlines[2]{At fixed $T$ and $P$,
+volume is proportional to moles, so volume ratios equal mole ratios. Mass
+ratios do not, because the gases have different molar masses.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Partial Pressures and Gas Collection}{Zumdahl \S5.5}
+
+\begin{objectives}
+  \item Apply Dalton's law and mole fractions.
+  \item Correct for water vapor when a gas is collected over water.
+\end{objectives}
+
+\reading{Zumdahl \S5.5}{245--251}
+
+\begin{warmup}[3]
+  \item Volume of \SI{0.500}{\mole} at STP:
+        \answerblank[2.8cm]{\SI{11.2}{\liter}}
+  \item \ce{N2 + 3 H2 -> 2 NH3}: \SI{6}{\liter} \ce{H2} needs how much
+        \ce{N2}? \answerblank[2.4cm]{\SI{2}{\liter}}
+  \item Molar mass from $d$ at STP: \answerblank[3.4cm]{$M = d \times 22.42$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Dalton's law}
+
+\notesectionz{Each gas acts independently}{5.5}
+\practice{5}
+
+In an ideal gas, particles do not interact --- so each component exerts
+pressure as if the others were absent:
+\[
+  P_{\text{total}} = \answerblank[4cm]{$P_1 + P_2 + P_3 + \cdots$}
+\]
+
+Zumdahl derives the mole-fraction relationship directly from $n = P(V/RT)$:
+since each $n_i$ is proportional to $P_i$ with the same constant,
+\[
+  \chi_1 = \frac{n_1}{n_{\text{total}}} = \answerblank[2.6cm]{$\dfrac{P_1}{P_{\text{total}}}$}
+  \qquad\Rightarrow\qquad
+  P_1 = \answerblank[2.6cm]{$\chi_1 P_{\text{total}}$}
+\]
+
+\begin{apcnote}
+The identity of the gases is irrelevant. Three moles of helium and three
+moles of \ce{SF6} --- molar masses 4 and 146 --- contribute exactly the same
+partial pressure at the same $T$ and $V$. Pressure counts
+\emph{particles}, not mass.
+\end{apcnote}
+
+\begin{workedexample}[Worked example 1]
+A vessel holds \SI{0.30}{\mole} \ce{N2}, \SI{0.20}{\mole} \ce{O2}, and
+\SI{0.50}{\mole} \ce{He} at a total pressure of \SI{2.00}{\atm}.
+\[
+  \chi_{\ce{N2}} = \frac{0.30}{1.00} = 0.30
+  \qquad P_{\ce{N2}} = 0.30 \times 2.00 = \SI{0.60}{\atm}
+\]
+Check: the three partial pressures (0.60, 0.40, 1.00) sum to 2.00. Always
+verify this.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Partial pressure drill}
+
+A \SI{10.0}{\liter} flask at \SI{300.}{\kelvin} contains \SI{0.400}{\mole}
+\ce{Ar} and \SI{0.600}{\mole} \ce{Ne}.
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Total pressure: \answerblank[3cm]{\SI{2.46}{\atm}}
+  \item $P_{\ce{Ar}}$: \answerblank[3cm]{\SI{0.985}{\atm}}
+  \item If all the Ne escaped, $P_{\ce{Ar}}$ would be:
+        \answerblank[4.4cm]{unchanged, \SI{0.985}{\atm}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Collecting a gas over water}
+
+\notesectionz{The laboratory correction}{5.5}
+\practice{4}
+
+A gas produced in a reaction is often collected by displacing water from an
+inverted container. The collected sample is then a
+\answerblank[2.2cm]{mixture}: the gas you made, plus
+\answerblank[2.6cm]{water vapour}.
+
+\[
+  P_{\text{total}} = P_{\text{gas}} + \answerblank[2.4cm]{$P_{\ce{H2O}}$}
+  \qquad\Rightarrow\qquad
+  P_{\text{gas}} = P_{\text{total}} - P_{\ce{H2O}}
+\]
+
+The vapour pressure of water depends only on
+\answerblank[2.7cm]{temperature} and is read from a table:
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+$T$ (\si{\celsius}) & 15 & 20 & 25 & 30 & 35\\
+$P_{\ce{H2O}}$ (torr) & 12.8 & 17.5 & 23.8 & 31.8 & 42.2\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{workedexample}[Worked example 2: hydrogen over water]
+Hydrogen is collected over water at \SI{25}{\celsius}. The total pressure is
+\SI{755}{\torr} and the volume is \SI{0.250}{\liter}. How many moles of
+\ce{H2} were collected?
+\begin{align*}
+  P_{\ce{H2}} &= 755 - 23.8 = \SI{731}{\torr} = \SI{0.962}{\atm}\\
+  n &= \frac{PV}{RT} = \frac{(0.962)(0.250)}{(0.08206)(298)} = \SI{9.83e-3}{\mole}
+\end{align*}
+Forgetting the correction would have overstated the answer by about 3\%.
+\end{workedexample}
+
+\begin{apctrap}
+The correction is always a \emph{subtraction} --- the water vapour is
+inflating your reading. Students who add it, or who skip it entirely, report
+too much gas. Any AP question mentioning ``collected over water'' is
+signalling that this step is required.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Full collection analysis}
+
+Oxygen from the decomposition of \ce{KClO3} is collected over water at
+\SI{20}{\celsius}. The total pressure is \SI{742}{\torr}; the volume is
+\SI{0.500}{\liter}.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Partial pressure of \ce{O2} in torr and atm:
+        \answerblank[5.5cm]{\SI{724.5}{\torr} $=$ \SI{0.9539}{\atm}}
+  \item Moles of \ce{O2} collected: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = (0.9539)(0.500)/((0.08206)(293)) =
+        \SI{0.01983}{\mole}$\end{apcanswer}}
+  \item Mass of \ce{KClO3} that decomposed, given
+        \ce{2 KClO3 -> 2 KCl + 3 O2} ($M = 122.55$). \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{KClO3}) = \tfrac23(0.01983) =
+        \SI{0.01322}{\mole}$; $m = 0.01322 \times 122.55 =
+        \SI{1.62}{\gram}$\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Why does the vapour pressure of water in a collection tube depend on
+temperature but not on which gas is being collected?
+\answerlines[2]{It is set by the equilibrium between liquid water and its
+own vapour, which depends only on temperature. The other gas exerts its
+pressure independently (Dalton's law).}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Kinetic Molecular Theory and Real Gases}{Zumdahl \S5.6--5.9}
+
+\begin{objectives}
+  \item State the KMT postulates and connect them to the gas laws.
+  \item Predict and explain deviations from ideal behaviour.
+\end{objectives}
+
+\reading{Zumdahl \S5.6--5.9}{251--264}
+
+\begin{warmup}[4]
+  \item $P_{\ce{H2O}}$ at \SI{25}{\celsius}: \answerblank[2.4cm]{\SI{23.8}{\torr}}
+  \item $P_A$ if $\chi_A = 0.25$, $P_{\text{tot}} = \SI{4.0}{\atm}$:
+        \answerblank[2.4cm]{\SI{1.0}{\atm}}
+  \item Volume of \SI{2.00}{\mole} at STP:
+        \answerblank[2.8cm]{\SI{44.8}{\liter}}
+  \item Gas collected over water: add or subtract $P_{\ce{H2O}}$?
+        \answerblank[2.4cm]{subtract}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The model}
+
+\notesectionz{KMT postulates}{5.6}
+\practice{1}
+
+An ideal gas consists of particles that:
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item are in constant \answerblank[2.2cm]{random} motion;
+  \item have \answerblank[3.7cm]{negligible volume} relative to the container;
+  \item exert \answerblank[4.0cm]{no attractive forces} on one another;
+  \item collide \answerblank[2.4cm]{elastically};
+  \item have average kinetic energy proportional to
+        \answerblank[4.5cm]{absolute temperature}.
+\end{enumerate}
+
+\[
+  KE_{\text{avg}} = \tfrac32 RT \ \text{per mole}
+  \qquad
+  u_{\text{rms}} = \answerblank[2.6cm]{$\sqrt{\dfrac{3RT}{M}}$}
+\]
+
+\begin{apcnote}
+Read the speed equation carefully: at a given temperature, every gas has the
+\emph{same} average kinetic energy, but speed depends on molar mass. Heavier
+molecules must move more slowly to carry the same energy --- speed scales as
+$1/\sqrt{M}$.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Explaining laws with the model}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Why does pressure rise when temperature rises at constant volume?
+        \answerlines[2]{Higher $T$ raises average speed, so collisions with
+        the walls are both more frequent and more forceful.}
+  \item Rank average speed at the same $T$: \ce{He}, \ce{N2}, \ce{CO2}.
+        \answerblank[5cm]{\ce{He} $>$ \ce{N2} $>$ \ce{CO2}}
+\end{enumerate}
+
+\begin{apcnote}[ENRICHMENT --- beyond the CED]
+\textbf{Graham's law of effusion} (\S5.7). Effusion is escape through a tiny
+hole. Graham found the rate varies inversely with the square root of molar
+mass:
+\[
+  \frac{\text{rate}_1}{\text{rate}_2} = \sqrt{\frac{M_2}{M_1}}
+\]
+Zumdahl's example: \ce{H2} (2.016) versus \ce{UF6} (352.02) gives
+$\sqrt{352.02/2.016} = 13.2$ --- hydrogen effuses about 13 times faster.
+This is not a current CED topic, though the underlying idea
+(lighter $\Rightarrow$ faster) certainly is.
+\end{apcnote}
+
+\segment{INSTRUCTION B}{20}{Where the ideal model fails}
+
+\notesectionz{Real gases}{5.8--5.9}
+\practice{6}
+
+Two postulates break under stress, and they push $PV/nRT$ in
+\emph{opposite} directions:
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.6cm}p{3.6cm}p{6.0cm}@{}}
+\toprule
+\textbf{Failed postulate} & \textbf{Conditions} & \textbf{Effect}\\
+\midrule
+Particles have no volume & \answerblank[2.6cm]{high pressure} &
+  gas cannot compress as predicted; $PV/nRT$
+  \answerblank[1.4cm]{$>1$}\\
+No attractive forces & \answerblank[3.5cm]{low temperature} &
+  attractions soften wall collisions, lowering $P$; $PV/nRT$
+  \answerblank[1.4cm]{$<1$}\\
+\bottomrule
+\end{tabular}
+
+Van der Waals corrects both:
+\[
+  \left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT
+\]
+where $a$ corrects for \answerblank[2.4cm]{attractions} and $b$ for
+\answerblank[3.3cm]{particle volume}. You will not compute with this, but
+you should be able to say which term fixes which failure.
+
+\segment{APPLICATION}{20}{Deviation reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Rank by expected deviation from ideality at the same conditions:
+        \ce{He}, \ce{N2}, \ce{H2O}. Justify.
+        \answerlines[3]{\ce{H2O} $>$ \ce{N2} $>$ \ce{He}. Water hydrogen
+        bonds strongly, so its attractive correction is large; \ce{N2} has
+        moderate dispersion forces; helium is tiny with almost no
+        attractions.}
+  \item A gas shows $PV/nRT = 0.95$ at moderate pressure and
+        \SI{200}{\kelvin}. Which postulate is failing, and what happens if
+        the sample is warmed to \SI{500}{\kelvin}?
+        \answerlines[3]{Attractions dominate, lowering the measured
+        pressure below ideal. Warming increases kinetic energy so molecules
+        overcome those attractions --- the ratio rises back toward 1.}
+\end{enumerate}
+
+\begin{exitticket}
+State the two conditions under which any real gas behaves most ideally, and
+give the reason for each. \answerlines[2]{High temperature --- fast
+molecules overcome intermolecular attractions. Low pressure --- particles
+are far apart, so their own volume is negligible compared with the
+container.}
+\end{exitticket}
+
+\end{document}

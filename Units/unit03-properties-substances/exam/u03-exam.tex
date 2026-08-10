@@ -1,0 +1,446 @@
+% Unit 3 exam -- double block. 30 MCQ (no calc) + 1 long + 1 short FRQ.
+\documentclass{apchem-exam}
+
+\apcunit{3}
+\apcunittitle{Properties of Substances and Mixtures}
+\apcdoctitle{Unit Exam}
+\apcsubtitle{Wed Sep 30 \textbullet\ double block, 76 minutes \textbullet\ periodic table and equations sheet provided}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{30 questions \textbullet\ 45 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- 3.1 IMFs (5) ----------------------------------------------------------
+\begin{mcq}
+  Which intermolecular force is present in \emph{all} molecular substances?
+  \choices
+    \choice{dipole--dipole}
+    \choice{hydrogen bonding}
+    \correct{London dispersion}
+    \choice{ion--dipole}
+\end{mcq}
+\why{Dispersion arises from instantaneous dipoles in any electron cloud.}
+
+\begin{mcq}
+  Which substance exhibits hydrogen bonding?
+  \choices
+    \choice{\ce{CH3F}}
+    \correct{\ce{CH3OH}}
+    \choice{\ce{CH3OCH3}}
+    \choice{\ce{H2S}}
+\end{mcq}
+\why{Requires H bonded directly to N, O, or F --- only methanol's O--H
+qualifies.}
+\distractor{C}{has O but no H attached to it}
+\distractor{A}{F is present but bonded to C, not H}
+
+\begin{mcq}
+  \ce{BI3} (nonpolar) boils at \SI{210}{\celsius} while \ce{NH3}
+  (hydrogen bonding) boils at \SI{-33}{\celsius}. The best explanation is
+  that
+  \choices
+    \correct{\ce{BI3} has far more electrons, giving very strong dispersion
+      forces}
+    \choice{\ce{NH3} does not actually hydrogen bond}
+    \choice{\ce{BI3} is ionic}
+    \choice{boiling point does not depend on intermolecular forces}
+\end{mcq}
+\why{Force magnitude, not force type, sets the ranking when sizes differ
+greatly.}
+
+\begin{mcq}
+  Which property \emph{decreases} as intermolecular forces get stronger?
+  \choices
+    \choice{boiling point}
+    \choice{viscosity}
+    \correct{vapor pressure}
+    \choice{surface tension}
+\end{mcq}
+\why{Strong IMFs keep molecules in the liquid, so fewer escape to the vapor.}
+
+% ---- 3.2-3.3 solids and phases (4) -----------------------------------------
+\begin{mcq}
+  A solid melts at \SI{1600}{\celsius}, is very hard, and does not conduct
+  electricity in any phase. It is best classified as
+  \choices
+    \choice{ionic}
+    \choice{metallic}
+    \correct{covalent network}
+    \choice{molecular}
+\end{mcq}
+\why{Covalent bonds throughout the lattice with no mobile charges.}
+\distractor{A}{ionic solids conduct when molten}
+
+\begin{mcq}
+  Melting solid \ce{CO2} requires overcoming
+  \choices
+    \choice{covalent C=O bonds}
+    \correct{London dispersion forces between molecules}
+    \choice{ionic attractions}
+    \choice{hydrogen bonds}
+\end{mcq}
+\why{Molecular solid: only intermolecular forces are disrupted.}
+\distractor{A}{would decompose the compound, not melt it}
+
+\begin{mcq}
+  During the melting of a pure substance at constant pressure, the added
+  heat causes
+  \choices
+    \choice{the temperature to rise steadily}
+    \correct{intermolecular forces to be overcome at constant temperature}
+    \choice{covalent bonds to break}
+    \choice{the substance to become less dense in all cases}
+\end{mcq}
+\why{Phase-change plateau: energy goes into separating particles.}
+
+\begin{mcq}
+  A liquid boils when its vapor pressure
+  \choices
+    \choice{reaches zero}
+    \choice{exceeds its critical pressure}
+    \correct{equals the external pressure}
+    \choice{equals its surface tension}
+\end{mcq}
+\why{Which is why water boils below \SI{100}{\celsius} at altitude.}
+
+% ---- 3.4 gas laws (6) ------------------------------------------------------
+\begin{mcq}
+  A gas occupies \SI{4.0}{\liter} at \SI{300}{\kelvin}. At constant
+  pressure, its volume at \SI{600}{\kelvin} is
+  \choices
+    \choice{\SI{2.0}{\liter}}
+    \correct{\SI{8.0}{\liter}}
+    \choice{\SI{4.0}{\liter}}
+    \choice{\SI{16}{\liter}}
+\end{mcq}
+\why{Charles's law: $V \propto T$ in kelvin.}
+
+\begin{mcq}
+  Which quantity must be expressed in kelvin in $PV = nRT$?
+  \choices
+    \choice{pressure}
+    \choice{volume}
+    \correct{temperature}
+    \choice{moles}
+\end{mcq}
+\why{Absolute temperature is required; Celsius has an arbitrary zero.}
+
+\begin{mcq}
+  A \SI{1.0}{\liter} flask contains \SI{0.20}{\mole} \ce{He} and
+  \SI{0.30}{\mole} \ce{Ne}. The mole fraction of helium is
+  \choices
+    \choice{0.20}
+    \correct{0.40}
+    \choice{0.50}
+    \choice{0.67}
+\end{mcq}
+\why{$0.20/0.50 = 0.40$.}
+
+\begin{mcq}
+  In a mixture of gases, the partial pressure of one component depends on
+  \choices
+    \choice{the identity of the other gases}
+    \choice{the molar mass of that gas}
+    \correct{its mole fraction and the total pressure}
+    \choice{the sizes of the gas molecules}
+\end{mcq}
+\why{$P_A = \chi_A P_{\text{total}}$ --- identity is irrelevant for an ideal
+gas.}
+
+\begin{mcq}
+  Two identical flasks at the same temperature and pressure contain \ce{H2}
+  and \ce{CO2}. Which statement is correct?
+  \choices
+    \correct{They contain the same number of molecules.}
+    \choice{They have the same mass.}
+    \choice{The \ce{H2} flask has more molecules.}
+    \choice{The \ce{CO2} flask has higher pressure.}
+\end{mcq}
+\why{Equal $P$, $V$, $T$ means equal $n$ (Avogadro's principle).}
+
+% ---- 3.5 KMT (5) -----------------------------------------------------------
+\begin{mcq}
+  According to kinetic molecular theory, the average kinetic energy of gas
+  particles is directly proportional to
+  \choices
+    \choice{pressure}
+    \choice{molar mass}
+    \correct{absolute temperature}
+    \choice{container volume}
+\end{mcq}
+\why{$KE_{\text{avg}} = \frac32 k_BT$.}
+
+\begin{mcq}
+  At the same temperature, which gas has the highest average molecular
+  speed?
+  \choices
+    \correct{\ce{H2}}
+    \choice{\ce{O2}}
+    \choice{\ce{CO2}}
+    \choice{\ce{Kr}}
+\end{mcq}
+\why{$u_{\text{rms}} = \sqrt{3RT/M}$ --- lightest moves fastest.}
+
+\begin{mcq}
+  As the temperature of a gas increases, its Maxwell--Boltzmann distribution
+  \choices
+    \choice{narrows and shifts left}
+    \correct{broadens, flattens, and shifts right}
+    \choice{keeps the same shape}
+    \choice{increases in total area}
+\end{mcq}
+\why{Total area is fixed by the number of molecules; the spread grows.}
+\distractor{D}{area equals total molecules, which does not change}
+
+\begin{mcq}
+  Which KMT assumption explains why gas pressure increases when the
+  container volume decreases at constant temperature?
+  \choices
+    \correct{particles are in constant motion and collide with the walls}
+    \choice{collisions are perfectly elastic}
+    \choice{particles have negligible volume}
+    \choice{particles exert no attractive forces}
+\end{mcq}
+\why{Smaller volume means more wall collisions per unit area per second.}
+
+\begin{mcq}
+  Helium and argon are held at the same temperature. Compared with argon,
+  helium has
+  \choices
+    \choice{greater average kinetic energy and greater speed}
+    \correct{equal average kinetic energy and greater speed}
+    \choice{equal average kinetic energy and equal speed}
+    \choice{lower average kinetic energy and greater speed}
+\end{mcq}
+\why{KE depends only on $T$; speed depends on molar mass.}
+
+% ---- 3.6 real gases (3) ----------------------------------------------------
+\begin{mcq}
+  Real gases behave most ideally at
+  \choices
+    \choice{low temperature and high pressure}
+    \correct{high temperature and low pressure}
+    \choice{low temperature and low pressure}
+    \choice{high temperature and high pressure}
+\end{mcq}
+\why{Far apart (volume negligible) and fast-moving (attractions negligible).}
+
+\begin{mcq}
+  At moderate pressure and low temperature, $PV/nRT$ for a real gas dips
+  below 1 primarily because
+  \choices
+    \correct{intermolecular attractions reduce the force of wall collisions}
+    \choice{the particles occupy significant volume}
+    \choice{the gas begins to decompose}
+    \choice{the temperature is not absolute}
+\end{mcq}
+\why{Attractions lower measured $P$ relative to ideal.}
+\distractor{B}{that effect pushes the ratio ABOVE 1 at high pressure}
+
+\begin{mcq}
+  Which gas is expected to deviate most from ideal behavior?
+  \choices
+    \choice{\ce{He}}
+    \choice{\ce{N2}}
+    \correct{\ce{H2O}}
+    \choice{\ce{Ne}}
+\end{mcq}
+\why{Strong hydrogen bonding gives large attractive corrections.}
+
+% ---- 3.7-3.8 solutions (3) -------------------------------------------------
+\begin{mcq}
+  What is the concentration of chloride ion in \SI{0.20}{\Molar} \ce{AlCl3}?
+  \choices
+    \choice{\SI{0.20}{\Molar}}
+    \choice{\SI{0.40}{\Molar}}
+    \correct{\SI{0.60}{\Molar}}
+    \choice{\SI{0.067}{\Molar}}
+\end{mcq}
+\why{Three chlorides per formula unit.}
+
+\begin{mcq}
+  Diluting \SI{50.0}{\milli\liter} of \SI{4.00}{\Molar} solution to
+  \SI{200.}{\milli\liter} gives a concentration of
+  \choices
+    \choice{\SI{0.500}{\Molar}}
+    \correct{\SI{1.00}{\Molar}}
+    \choice{\SI{2.00}{\Molar}}
+    \choice{\SI{16.0}{\Molar}}
+\end{mcq}
+\why{$M_1V_1 = M_2V_2$: $(4.00)(50.0)/200. = 1.00$.}
+
+\begin{mcq}
+  Which particulate drawing correctly represents aqueous \ce{K2SO4}?
+  \choices
+    \choice{intact \ce{K2SO4} units dispersed in water}
+    \correct{twice as many \ce{K+} particles as \ce{SO4^2-} particles, all
+      separated}
+    \choice{equal numbers of separated \ce{K+} and \ce{SO4^2-}}
+    \choice{\ce{K+} and \ce{S^2-} and \ce{O^2-} all separated}
+\end{mcq}
+\why{Complete dissociation in the 2:1 ratio; the sulfate ion stays intact.}
+\distractor{D}{polyatomic ions do not break apart on dissolving}
+
+% ---- 3.9-3.10 solubility/separation (3) ------------------------------------
+\begin{mcq}
+  Which is most soluble in water?
+  \choices
+    \choice{\ce{CCl4}}
+    \choice{\ce{C6H14}}
+    \correct{\ce{CH3OH}}
+    \choice{\ce{I2}}
+\end{mcq}
+\why{Methanol hydrogen bonds with water; the others are nonpolar.}
+
+\begin{mcq}
+  Distillation separates a mixture based on differences in
+  \choices
+    \choice{particle size}
+    \correct{boiling point}
+    \choice{color}
+    \choice{molar mass}
+\end{mcq}
+\why{The more volatile component vaporizes first.}
+
+\begin{mcq}
+  In paper chromatography with a polar stationary phase, a component that
+  travels only a short distance is best described as
+  \choices
+    \correct{strongly attracted to the stationary phase}
+    \choice{very soluble in the mobile phase}
+    \choice{the lightest component}
+    \choice{nonpolar}
+\end{mcq}
+\why{Strong stationary-phase attraction retards movement.}
+
+% ---- 3.11-3.13 spectroscopy (3) --------------------------------------------
+\begin{mcq}
+  Which type of radiation has the highest energy per photon?
+  \choices
+    \choice{microwave}
+    \choice{infrared}
+    \choice{visible}
+    \correct{ultraviolet}
+\end{mcq}
+\why{$E = hc/\lambda$ --- shortest wavelength has highest energy.}
+
+\begin{mcq}
+  Infrared radiation is absorbed by molecules primarily to cause
+  \choices
+    \choice{electronic transitions}
+    \correct{bond vibrations}
+    \choice{molecular rotation}
+    \choice{nuclear transitions}
+\end{mcq}
+\why{IR energies match vibrational spacings.}
+
+\begin{mcq}
+  In a Beer--Lambert calibration plot of absorbance versus concentration,
+  the slope of the line equals
+  \choices
+    \choice{the concentration of the unknown}
+    \correct{$\epsilon b$}
+    \choice{the absorbance of the unknown}
+    \choice{$1/\epsilon b$}
+\end{mcq}
+\why{$A = \epsilon bc$ is linear in $c$ with slope $\epsilon b$.}
+\distractor{A}{a very common slip --- you must DIVIDE $A$ by the slope}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 31 minutes}{\calculatorok}
+
+% ---- Long FRQ --------------------------------------------------------------
+\frq{long}{10}{CED 3.1--3.6 synthesis \textbullet\ SP 1, 4, 6}
+
+Answer all parts. The table gives data for three substances.
+
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Substance & Molar mass (\si{\gram\per\mole}) & Boiling point (\si{\celsius}) & Polarity\\
+\midrule
+\ce{CH4}   & 16.0 & $-164$ & nonpolar\\
+\ce{CH3OH} & 32.0 & $65$   & polar\\
+\ce{CH3SH} & 48.1 & $6$    & polar\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Identify all intermolecular forces present in each of the three
+        substances. \answerlines[3]{\ce{CH4}: LDF only. \ce{CH3OH}: LDF,
+        dipole--dipole, and hydrogen bonding (H on O). \ce{CH3SH}: LDF and
+        dipole--dipole (no H-bonding --- S is not N, O, or F).}
+  \item \ce{CH3SH} has the largest molar mass yet boils \SI{59}{\celsius}
+        below \ce{CH3OH}. Explain. \answerlines[3]{\ce{CH3OH} hydrogen
+        bonds, which is far stronger than \ce{CH3SH}'s dipole--dipole
+        attraction. That difference outweighs \ce{CH3SH}'s advantage in
+        dispersion forces from its larger electron cloud.}
+  \item Predict which of the three has the highest vapor pressure at
+        \SI{25}{\celsius} and justify. \answerlines[2]{\ce{CH4} --- weakest
+        IMFs (dispersion only) and by far the lowest boiling point, so the
+        greatest fraction of molecules escapes the liquid.}
+  \item A \SI{2.00}{\liter} vessel holds \SI{0.150}{\mole} of \ce{CH4} gas
+        at \SI{27}{\celsius}. Calculate the pressure in atm.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$T = \SI{300.}{\kelvin}$;
+        $P = nRT/V = (0.150)(0.08206)(300.)/2.00 =
+        \SI{1.85}{\atm}$\end{apcanswer}}
+  \item The vessel is cooled to \SI{-100}{\celsius} and the measured
+        pressure is found to be \emph{lower} than $PV = nRT$ predicts.
+        Explain in terms of the failed assumption.
+        \answerlines[3]{At low temperature the molecules move slowly enough
+        that intermolecular attractions become significant. Attractions pull
+        molecules away from the walls, softening collisions, so the measured
+        pressure falls below the ideal prediction ($PV/nRT < 1$).}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt for \ce{CH4} and \ce{CH3OH} correct; 1 pt for
+    \ce{CH3SH} WITHOUT hydrogen bonding --- listing H-bonding for S earns 0
+    for this point}
+  \rpoint{2}{(b) 1 pt names hydrogen bonding in \ce{CH3OH}; 1 pt states it
+    outweighs the dispersion advantage of \ce{CH3SH}}
+  \rpoint{1}{(c) \ce{CH4} with a weak-IMF justification}
+  \rpoint{2}{(d) 1 pt converts to \SI{300.}{\kelvin}; 1 pt
+    \SI{1.85}{\atm} with units}
+  \rpoint{3}{(e) 1 pt identifies attractions as the failed assumption; 1 pt
+    links attractions to softened wall collisions; 1 pt states measured $P$
+    is below ideal. ``Because it is a real gas'' earns 0}
+\end{rubric}
+
+% ---- Short FRQ -------------------------------------------------------------
+\frq{short}{4}{CED 3.13 Beer--Lambert \textbullet\ SP 4, 5}
+
+A student measures the absorbance of four standard solutions of a blue dye
+at \SI{630}{\nano\meter} in a \SI{1.00}{\centi\meter} cell and obtains a
+straight line through the origin with slope
+\SI{45.0}{\per\Molar}.
+
+\begin{parts}
+  \item Determine the molar absorptivity $\epsilon$, with units.
+        \answerlines[2]{$\epsilon = \text{slope}/b = 45.0/1.00 =
+        \SI{45.0}{\per\Molar\per\centi\meter}$.}
+  \item An unknown solution gives $A = 0.630$. Calculate its
+        concentration. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$c = A/(\epsilon b) = 0.630/45.0 =
+        \SI{0.0140}{\Molar}$\end{apcanswer}}
+  \item The student repeats the measurement at \SI{500}{\nano\meter} and
+        obtains a much smaller absorbance. Explain why the original
+        calibration line cannot be used at this new wavelength.
+        \answerlines[2]{Molar absorptivity is wavelength-dependent, so
+        $\epsilon$ --- and therefore the slope --- differs at
+        \SI{500}{\nano\meter}; a new calibration is required.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{45.0}{\per\Molar\per\centi\meter} with $b$ divided out}
+  \rpoint{2}{(b) 1 pt divides $A$ by the slope (multiplying earns 0);
+    1 pt \SI{0.0140}{\Molar} with units}
+  \rpoint{1}{(c) states that $\epsilon$ depends on wavelength}
+\end{rubric}
+
+\examtotal
+
+\end{document}

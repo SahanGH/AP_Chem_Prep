@@ -1,0 +1,749 @@
+% Zumdahl Chapter 4 -- Types of Chemical Reactions and Solution Stoichiometry.
+% ELABORATED notes: more exposition, multiple worked examples per idea, and
+% explicit reasoning chains. 5 block lessons.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{4}
+\apcunittitle{Types of Chemical Reactions and Solution Stoichiometry}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S4.1--4.11 \textbullet\ PDF pp.~168--225 \textbullet\ 5 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+This is the closest the textbook comes to covering an entire CED unit in one
+place: nearly all of \textbf{Unit 4 (Chemical Reactions)} lives here, and
+\S4.1--4.3 backfill the solution and molarity content of \textbf{Unit
+3.7--3.8}. Three skills introduced here are used continuously for the rest
+of the year --- writing \emph{net ionic equations}, assigning
+\emph{oxidation states}, and doing \emph{solution stoichiometry}, which
+becomes titration math in Unit 8.
+
+One caution: \S4.10's full half-reaction balancing in acidic and basic
+solution goes beyond what the CED requires. It is marked
+\textbf{ENRICHMENT} in Block 5 --- valuable, but not tested.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Water, Solutions, and Electrolytes}{Zumdahl \S4.1--4.3}
+
+\begin{objectives}
+  \item Explain why water dissolves ionic and polar substances, at the
+        particle level.
+  \item Classify solutes as strong electrolytes, weak electrolytes, or
+        nonelectrolytes and predict conductivity.
+  \item Calculate molarity, prepare solutions, and perform dilutions.
+\end{objectives}
+
+\reading{Zumdahl \S4.1--4.3}{169--182}
+
+\begin{warmup}[3]
+  \item Geometry and polarity of \ce{H2O}: \answerblank[4.5cm]{bent; polar}
+  \item Formula for ammonium sulfate: \answerblank[3cm]{\ce{(NH4)2SO4}}
+  \item Moles in \SI{58.44}{\gram} \ce{NaCl}: \answerblank[2.6cm]{\SI{1.000}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Why water is the universal solvent}
+
+\notesectionz{The structure behind the behavior}{4.1}
+\practice{1}
+
+Water's power as a solvent is a direct consequence of two structural facts
+you already know from Unit 2. First, each O--H bond is strongly
+\answerblank[2.4cm]{polar}, because oxygen's electronegativity far exceeds
+hydrogen's. Second, the molecule is \answerblank[1.6cm]{bent}, so those two
+bond dipoles do \emph{not} cancel --- water carries a substantial net
+dipole, with a partial negative charge on \answerblank[1.4cm]{oxygen} and
+partial positives on the hydrogens.
+
+That permanent dipole is the whole story. When an ionic solid is placed in
+water, the water molecules orient themselves around each ion: oxygen ends
+point toward \answerblank[2.4cm]{cations}, hydrogen ends point toward
+\answerblank[2.4cm]{anions}. The resulting \term{ion--dipole} attractions
+release enough energy to compete with the lattice energy holding the crystal
+together. If ion--dipole attraction wins, the solid
+\term{dissolves} and the ions become \term{hydrated} --- each surrounded by
+a shell of oriented water molecules.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize, scale=0.95]
+  % central cation
+  \node[circle, fill=black, text=white, inner sep=3pt] (ion) at (0,0) {$+$};
+  \foreach \a in {0,60,...,300}{
+    \begin{scope}[rotate=\a]
+      \node[circle, draw, thick, inner sep=2.2pt] (o) at (1.45,0) {};
+      \node[font=\tiny] at (1.45,0) {O};
+      \draw[thick] (o) -- ++(28:0.42);
+      \draw[thick] (o) -- ++(-28:0.42);
+    \end{scope}
+  }
+  \node[below=1.9cm of ion, font=\sffamily\footnotesize]
+    {oxygen ends turn toward the cation --- a hydrated ion};
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}
+Dissolving is a \emph{competition}, not a guarantee. The lattice must be
+pulled apart (costs energy) and the ions must be hydrated (releases energy).
+When hydration cannot pay for the lattice, the salt stays solid --- which is
+exactly what the solubility rules in Block 2 summarize empirically.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Predicting from structure}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Which end of a water molecule approaches a \ce{Cl-} ion, and why?
+        \answerlines[2]{The hydrogen end --- H carries $\delta^+$, which is
+        attracted to the negative chloride ion.}
+  \item Would you expect \ce{CCl4} to dissolve \ce{NaCl}? Justify.
+        \answerlines[2]{No --- \ce{CCl4} is nonpolar and offers no
+        ion--dipole attraction to compensate for \ce{NaCl}'s large lattice
+        energy.}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Electrolytes: three behaviors}
+
+\notesectionz{Strong, weak, and non}{4.2}
+\practice{1}
+
+Conductivity is a \emph{measurement of ion concentration}. A solution
+conducts only if mobile ions are present, so a conductivity test sorts
+solutes into three classes:
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{3.1cm}p{4.3cm}p{5.9cm}@{}}
+\toprule
+\textbf{Class} & \textbf{What happens in water} & \textbf{Examples}\\
+\midrule
+\term{Strong electrolyte} &
+  dissociates or ionizes \answerblank[2.2cm]{completely} &
+  soluble salts (\ce{NaCl}); strong acids (\ce{HCl}, \ce{HNO3},
+  \ce{H2SO4}); strong bases (\ce{NaOH}, \ce{KOH})\\
+\term{Weak electrolyte} &
+  ionizes only \answerblank[2.2cm]{slightly} --- an equilibrium &
+  weak acids (\ce{HC2H3O2}); weak bases (\ce{NH3})\\
+\term{Nonelectrolyte} &
+  dissolves as \answerblank[3.4cm]{intact molecules} &
+  sugar, ethanol; and \emph{water itself}\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example: two acids, two behaviors]
+\textbf{Hydrochloric acid} is a strong acid. In water:
+\[ \ce{HCl(aq) -> H+(aq) + Cl-(aq)} \]
+The single arrow means essentially every \ce{HCl} molecule has come apart.
+A \SI{0.10}{\Molar} solution contains \SI{0.10}{\Molar} \ce{H+}.
+
+\textbf{Acetic acid} is a weak acid. In water:
+\[ \ce{HC2H3O2(aq) <=> H+(aq) + C2H3O2-(aq)} \]
+The double arrow means the reaction reaches equilibrium with only about 1\%
+of the molecules ionized. A \SI{0.10}{\Molar} solution contains roughly
+\SI{0.001}{\Molar} \ce{H+} --- one hundred times less, and it lights the
+conductivity bulb only dimly.
+\end{workedexample}
+
+\begin{apctrap}
+``Strong'' and ``concentrated'' are unrelated words. \emph{Strong} describes
+the \emph{fraction} that ionizes (a property of the substance);
+\emph{concentrated} describes how much solute is present (a property of the
+solution). A dilute \ce{HCl} solution is still a strong acid; a concentrated
+acetic acid solution is still weak.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Molarity, dilution, and preparation}
+
+\notesectionz{Concentration}{4.3}
+\practice{5}
+
+\[
+  M = \answerblank[4.8cm]{$\dfrac{\text{moles of solute}}{\text{liters of solution}}$}
+\]
+
+Note carefully: liters of \emph{solution}, not liters of solvent. This is
+why you dissolve the solid first and \emph{then} add water up to the mark.
+
+\begin{workedexample}[Worked example: preparing a standard solution]
+Prepare \SI{500.0}{\milli\liter} of \SI{0.250}{\Molar} \ce{Na2CO3}
+($M = \SI{105.99}{\gram\per\mole}$).
+\begin{align*}
+  n &= (0.5000\ \text{L})(0.250\ \text{mol/L}) = \SI{0.125}{\mole}\\
+  m &= (0.125)(105.99) = \SI{13.2}{\gram}
+\end{align*}
+Weigh \SI{13.2}{\gram}, dissolve in roughly \SI{300}{\milli\liter} of water,
+transfer to a \SI{500}{\milli\liter} volumetric flask, then add water
+\emph{to} the calibration mark and invert to mix.
+\end{workedexample}
+
+\begin{workedexample}[Worked example: dilution from a stock solution]
+How much \SI{16}{\Molar} \ce{HNO3} is needed to make
+\SI{250.}{\milli\liter} of \SI{0.50}{\Molar}?
+\[
+  V_1 = \frac{M_2V_2}{M_1} = \frac{(0.50)(250.)}{16} = \SI{7.8}{\milli\liter}
+\]
+Dilution changes volume but not \answerblank[3.2cm]{moles of solute}, which
+is why $M_1V_1 = M_2V_2$ works. (Always add acid \emph{to} water, never the
+reverse.)
+\end{workedexample}
+
+\notesub{Ion concentrations in electrolyte solutions}
+
+Because strong electrolytes dissociate completely, the ion concentrations
+follow directly from the formula:
+\begin{enumerate}[leftmargin=*,itemsep=0.25em]
+  \item \SI{0.10}{\Molar} \ce{Na2SO4}: $[\ce{Na+}] =$
+        \answerblank[2cm]{\SI{0.20}{\Molar}}, $[\ce{SO4^2-}] =$
+        \answerblank[2cm]{\SI{0.10}{\Molar}}
+  \item \SI{0.25}{\Molar} \ce{Al(NO3)3}: $[\ce{NO3-}] =$
+        \answerblank[2cm]{\SI{0.75}{\Molar}}
+\end{enumerate}
+
+\begin{exitticket}
+A \SI{0.10}{\Molar} solution of substance X barely lights a conductivity
+bulb; \SI{0.10}{\Molar} of substance Y lights it brightly. What can you
+conclude about each, and what can you \emph{not} conclude?
+\answerlines[3]{X is a weak electrolyte (only slightly ionized); Y is a
+strong electrolyte (completely dissociated). You cannot conclude anything
+about their concentrations --- both are 0.10 M --- nor about whether either
+is an acid.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Precipitation Reactions and Solubility}{Zumdahl \S4.4--4.5, 4.7}
+
+\begin{objectives}
+  \item Use solubility rules to predict whether a precipitate forms.
+  \item Predict products by ion interchange and write balanced equations.
+  \item Carry out stoichiometry for precipitation reactions.
+\end{objectives}
+
+\reading{Zumdahl \S4.4--4.5, 4.7}{182--192}
+
+\begin{warmup}[4]
+  \item $[\ce{Cl-}]$ in \SI{0.20}{\Molar} \ce{CaCl2}:
+        \answerblank[2.6cm]{\SI{0.40}{\Molar}}
+  \item Strong or weak electrolyte: \ce{HNO3}?
+        \answerblank[2.6cm]{strong}
+  \item Dilute \SI{10.0}{\milli\liter} of \SI{6.0}{\Molar} to
+        \SI{60.0}{\milli\liter}: \answerblank[2.6cm]{\SI{1.0}{\Molar}}
+  \item Nonelectrolyte example: \answerblank[3cm]{sugar / ethanol}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The solubility rules}
+
+\notesectionz{Zumdahl's Table 4.1}{4.5}
+\practice{4}
+
+These rules are empirical --- they summarize what experiment shows, in
+rough order of reliability. Learn them in order; the later rules are the
+ones with the important exceptions.
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{0.5cm}p{6.2cm}p{6.4cm}@{}}
+\toprule
+ & \textbf{Soluble} & \textbf{Notable exceptions}\\
+\midrule
+1 & Most \answerblank[2.2cm]{nitrate} (\ce{NO3-}) salts & none worth
+  memorizing\\
+2 & Salts of alkali metals (\ce{Li+}, \ce{Na+}, \ce{K+}, \ce{Rb+},
+  \ce{Cs+}) and \answerblank[2.2cm]{\ce{NH4+}} & none\\
+3 & Most \ce{Cl-}, \ce{Br-}, \ce{I-} salts &
+  \answerblank[3.9cm]{\ce{Ag+}, \ce{Pb^2+}, \ce{Hg2^2+}}\\
+4 & Most \ce{SO4^2-} salts &
+  \answerblank[6.6cm]{\ce{BaSO4}, \ce{PbSO4}, \ce{Hg2SO4}, \ce{CaSO4}}\\
+5 & Most hydroxides are only \emph{slightly} soluble &
+  soluble: \answerblank[2.6cm]{\ce{NaOH}, \ce{KOH}}; marginal:
+  \ce{Ba(OH)2}, \ce{Sr(OH)2}, \ce{Ca(OH)2}\\
+6 & Most \ce{S^2-}, \ce{CO3^2-}, \ce{CrO4^2-}, \ce{PO4^3-} salts are only
+  slightly soluble & except those with the cations from
+  \answerblank[1.4cm]{rule 2}\\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}
+Rules 1 and 2 are the two you can lean on hardest: \emph{anything} paired
+with nitrate, an alkali metal, or ammonium dissolves. When scanning a
+possible product, check those two first --- they resolve most questions
+instantly.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Soluble or not?}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{KNO3}: \answerblank[4.5cm]{soluble (rules 1 and 2)}
+  \item \ce{AgCl}: \answerblank[5.6cm]{insoluble (rule 3 exception)}
+  \item \ce{BaSO4}: \answerblank[5.6cm]{insoluble (rule 4 exception)}
+  \item \ce{(NH4)2S}: \answerblank[5.7cm]{soluble (rule 2 beats rule 6)}
+  \item \ce{CaCO3}: \answerblank[4.5cm]{insoluble (rule 6)}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Predicting products by ion interchange}
+
+\notesectionz{What forms when solutions are mixed?}{4.5}
+\practice{4}
+
+Zumdahl is candid that predicting products is one of the hardest things a
+beginning student is asked to do. The procedure that makes it tractable:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.2em]
+  \item List the ions actually present after mixing (remember: strong
+        electrolytes are already \answerblank[2.2cm]{dissociated}).
+  \item Form the two possible new pairings by
+        \answerblank[3cm]{interchanging} cation and anion. A solid must be
+        electrically neutral, so pair cation with
+        \answerblank[1.6cm]{anion} only.
+  \item Check each possibility against the solubility rules.
+  \item Anything insoluble is the \term{precipitate}; the rest stays
+        dissolved.
+\end{enumerate}
+
+\begin{workedexample}[Worked example: Zumdahl's chromate reaction]
+Mix \ce{K2CrO4(aq)} and \ce{Ba(NO3)2(aq)}. Ions present:
+\ce{K+}, \ce{CrO4^2-}, \ce{Ba^2+}, \ce{NO3-}.
+
+Interchange gives two candidates: \ce{KNO3} and \ce{BaCrO4}.
+Rules 1 and 2 make \ce{KNO3} soluble. Rule 6 makes \ce{BaCrO4} insoluble
+(barium is not an alkali metal). So a yellow solid of \ce{BaCrO4} forms:
+\[ \ce{K2CrO4(aq) + Ba(NO3)2(aq) -> BaCrO4(s) + 2 KNO3(aq)} \]
+The \ce{K+} and \ce{NO3-} ions stay dispersed in solution. Remove the solid
+and evaporate the water, and they would reassemble into solid \ce{KNO3}.
+\end{workedexample}
+
+\begin{workedexample}[Worked example: no reaction]
+Mix \ce{NaCl(aq)} and \ce{KNO3(aq)}. Candidates: \ce{NaNO3} and \ce{KCl}.
+Both are soluble by rules 1--3. \textbf{No precipitate forms} --- the
+solution simply contains four kinds of ion. Write ``no reaction.'' Being
+willing to answer ``nothing happens'' is part of the skill.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Precipitation stoichiometry}
+
+The mass of precipitate is an ordinary stoichiometry problem --- with one
+extra front step: convert volume and molarity into
+\answerblank[1.6cm]{moles}.
+
+\begin{workedexample}[Worked example]
+What mass of \ce{AgCl} forms when \SI{50.0}{\milli\liter} of
+\SI{0.200}{\Molar} \ce{AgNO3} is mixed with excess \ce{NaCl}?
+\begin{align*}
+  n(\ce{Ag+}) &= (0.0500)(0.200) = \SI{0.0100}{\mole}\\
+  &\ce{Ag+ + Cl- -> AgCl(s)} \quad (1{:}1)\\
+  m(\ce{AgCl}) &= (0.0100)(143.32) = \SI{1.43}{\gram}
+\end{align*}
+\end{workedexample}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \SI{25.0}{\milli\liter} of \SI{0.100}{\Molar} \ce{BaCl2} is mixed
+        with excess \ce{Na2SO4}. Find the mass of \ce{BaSO4}
+        ($M = 233.39$). \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n = (0.0250)(0.100) = \SI{2.50e-3}{\mole}$;
+        1:1 $\to (2.50\times10^{-3})(233.39) =
+        \SI{0.583}{\gram}$\end{apcanswer}}
+  \item Explain why the answer does not depend on how much \ce{Na2SO4} was
+        added, provided it is in excess. \answerlines[2]{\ce{BaCl2} is the
+        limiting reactant; once all the \ce{Ba^2+} has precipitated, extra
+        sulfate has nothing left to react with.}
+\end{enumerate}
+
+\begin{exitticket}
+Predict whether mixing \ce{Pb(NO3)2(aq)} and \ce{KI(aq)} produces a
+precipitate. Name it and cite the rule.
+\answerlines[2]{Yes --- \ce{PbI2} is insoluble (rule 3 exception for
+\ce{Pb^2+}); \ce{KNO3} stays dissolved by rules 1 and 2.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Ionic Equations}{Zumdahl \S4.6}
+
+\begin{objectives}
+  \item Write formula, complete ionic, and net ionic equations.
+  \item Identify spectator ions and explain why they are omitted.
+\end{objectives}
+
+\reading{Zumdahl \S4.6}{188--190}
+
+\begin{warmup}[3]
+  \item Soluble or not: \ce{PbSO4}? \answerblank[3cm]{insoluble}
+  \item Products of \ce{AgNO3(aq) + KCl(aq)}:
+        \answerblank[4.5cm]{\ce{AgCl(s)} + \ce{KNO3(aq)}}
+  \item Moles of \ce{Ag+} in \SI{20.0}{\milli\liter} of
+        \SI{0.150}{\Molar} \ce{AgNO3}:
+        \answerblank[3cm]{\SI{3.00e-3}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Three equations, three levels of honesty}
+
+\notesectionz{From formula to net ionic}{4.6}
+\practice{1}
+
+The formula equation is convenient but, as Zumdahl puts it, ``does not give
+a correct picture of what actually occurs in solution.'' Three levels:
+
+\renewcommand{\arraystretch}{1.4}
+\noindent\begin{tabular}{@{}p{3.4cm}p{10.2cm}@{}}
+\toprule
+\textbf{Formula equation} & every substance written as a neutral compound\\
+\textbf{Complete ionic} & every \answerblank[3.4cm]{strong electrolyte}
+  written as separated ions\\
+\textbf{Net ionic} & only the species that
+  \answerblank[3cm]{actually react}\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example: the same reaction, three ways]
+\textbf{Formula:}
+\[ \ce{K2CrO4(aq) + Ba(NO3)2(aq) -> BaCrO4(s) + 2 KNO3(aq)} \]
+\textbf{Complete ionic} --- dissolve every strong electrolyte:
+\[ \ce{2 K+(aq) + CrO4^2-(aq) + Ba^2+(aq) + 2 NO3^-(aq) -> BaCrO4(s) + 2 K+(aq) + 2 NO3^-(aq)} \]
+\ce{K+} and \ce{NO3-} appear unchanged on both sides. They are
+\term{spectator ions}. Cancel them:\\
+\textbf{Net ionic:}
+\[ \ce{Ba^2+(aq) + CrO4^2-(aq) -> BaCrO4(s)} \]
+\end{workedexample}
+
+\notesub{The rule that governs everything: what gets split?}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \textbf{Split} (write as ions): soluble salts, strong acids, strong
+        bases --- i.e.\ all \answerblank[3.9cm]{strong electrolytes}.
+  \item \textbf{Keep together}: solids \ce{(s)}, liquids \ce{(l)}, gases
+        \ce{(g)}, \answerblank[3.6cm]{weak electrolytes}, and
+        nonelectrolytes.
+\end{itemize}
+
+\begin{apctrap}
+Water is a \emph{nonelectrolyte} --- never write it as \ce{H+ + OH-} in an
+ionic equation. And a weak acid such as \ce{HC2H3O2} stays intact even
+though it is aqueous, because it barely ionizes. Splitting a weak acid is
+the most common net-ionic error.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Write all three}
+
+For \ce{Pb(NO3)2(aq) + 2 NaI(aq) -> PbI2(s) + 2 NaNO3(aq)}:
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Complete ionic: \answerlines[2]{\ce{Pb^2+(aq) + 2 NO3^-(aq) +
+        2 Na+(aq) + 2 I^-(aq) -> PbI2(s) + 2 Na+(aq) + 2 NO3^-(aq)}}
+  \item Spectator ions: \answerblank[4cm]{\ce{Na+} and \ce{NO3-}}
+  \item Net ionic: \answerblank[6.6cm]{\ce{Pb^2+(aq) + 2 I^-(aq) -> PbI2(s)}}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Why net ionic equations matter}
+
+\notesectionz{The same reaction, many disguises}{4.6}
+\practice{6}
+
+The net ionic equation strips away everything incidental, which reveals that
+apparently different reactions are the \emph{same} reaction.
+
+\begin{workedexample}[Worked example: one net ionic, three formula equations]
+All three of these produce the identical net ionic equation
+\ce{Ag+(aq) + Cl^-(aq) -> AgCl(s)}:
+\begin{align*}
+  \ce{AgNO3(aq) + NaCl(aq) &-> AgCl(s) + NaNO3(aq)}\\
+  \ce{AgNO3(aq) + KCl(aq) &-> AgCl(s) + KNO3(aq)}\\
+  \ce{AgC2H3O2(aq) + NH4Cl(aq) &-> AgCl(s) + NH4C2H3O2(aq)}
+\end{align*}
+The spectators differ; the chemistry does not. This is why a chemist writes
+the net ionic equation --- it names the actual event.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Net ionic reasoning}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Write the net ionic equation for mixing \ce{Na2CO3(aq)} and
+        \ce{CaCl2(aq)}. \answerlines[2]{\ce{Ca^2+(aq) + CO3^2-(aq) ->
+        CaCO3(s)} --- \ce{Na+} and \ce{Cl-} are spectators.}
+  \item Mixing \ce{NaNO3(aq)} and \ce{KCl(aq)} gives no net ionic equation
+        at all. Explain what that means physically.
+        \answerlines[2]{Every possible product is soluble, so no ions
+        combine --- all four ion types remain dispersed. Nothing has
+        reacted.}
+  \item A student writes \ce{Ba^2+ + SO4^2- -> BaSO4(s)} for the reaction of
+        \ce{Ba(OH)2(aq)} with \ce{H2SO4(aq)}. What did they miss?
+        \answerlines[3]{Two reactions occur: the sulfate precipitates AND
+        \ce{H+} reacts with \ce{OH-} to form water. The full net ionic is
+        \ce{Ba^2+ + 2 OH^- + 2 H+ + SO4^2- -> BaSO4(s) + 2 H2O(l)}.}
+\end{enumerate}
+
+\begin{exitticket}
+Why is \ce{HC2H3O2(aq)} written as a whole molecule in a net ionic equation
+while \ce{HCl(aq)} is written as separated ions?
+\answerlines[2]{Acetic acid is a weak electrolyte --- only about 1\% ionizes,
+so the molecular form dominates. \ce{HCl} is a strong acid and ionizes
+essentially completely.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Acid--Base Reactions}{Zumdahl \S4.8}
+
+\begin{objectives}
+  \item Define acids and bases in Arrhenius and Bronsted--Lowry terms.
+  \item Write net ionic equations for strong and weak acid neutralizations.
+  \item Perform titration stoichiometry.
+\end{objectives}
+
+\reading{Zumdahl \S4.8}{192--199}
+
+\begin{warmup}[4]
+  \item Net ionic for \ce{AgNO3(aq) + NaCl(aq)}:
+        \answerblank[5.5cm]{\ce{Ag+ + Cl^- -> AgCl(s)}}
+  \item Do you split \ce{H2O} in an ionic equation?
+        \answerblank[2cm]{no}
+  \item Strong acid example: \answerblank[4.1cm]{\ce{HCl}, \ce{HNO3},
+        \ce{H2SO4}}
+  \item Moles in \SI{35.0}{\milli\liter} of \SI{0.200}{\Molar}:
+        \answerblank[3cm]{\SI{7.00e-3}{\mole}}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two definitions, one behavior}
+
+\notesectionz{Arrhenius and Bronsted--Lowry}{4.8}
+\practice{1}
+
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \term{Arrhenius}: an acid produces \answerblank[1.6cm]{\ce{H+}} in
+        water; a base produces \answerblank[2cm]{\ce{OH-}}.
+  \item \term{Bronsted--Lowry}: an acid is a proton
+        \answerblank[1.8cm]{donor}; a base is a proton
+        \answerblank[1.8cm]{acceptor}. This is broader --- it covers
+        \ce{NH3}, which produces \ce{OH-} without containing it.
+\end{itemize}
+
+\notesub{The strong acids and bases worth memorizing}
+
+Strong acids: \ce{HCl}, \ce{HBr}, \ce{HI}, \ce{HNO3}, \ce{H2SO4},
+\ce{HClO4}. \\
+Strong bases: hydroxides of \answerblank[3.6cm]{group 1} plus
+\ce{Ca(OH)2}, \ce{Sr(OH)2}, \ce{Ba(OH)2}. \\
+Everything else you meet this year is \answerblank[1.6cm]{weak}.
+
+\segment{GUIDED PRACTICE}{15}{Classify}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{HNO3}: \answerblank[3.4cm]{strong acid}
+  \item \ce{NH3}: \answerblank[3.4cm]{weak base}
+  \item \ce{HF}: \answerblank[3.4cm]{weak acid}
+  \item \ce{KOH}: \answerblank[3.4cm]{strong base}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Neutralization at the ion level}
+
+\notesectionz{Two cases, two net ionic equations}{4.8}
+\practice{6}
+
+\begin{workedexample}[Case 1: strong acid + strong base]
+Mix \ce{HCl(aq)} and \ce{NaOH(aq)}. The mixed solution contains
+\ce{H+}, \ce{Cl-}, \ce{Na+}, \ce{OH-}. Would \ce{NaCl} precipitate? Rules 2
+and 3 say no --- so \ce{Na+} and \ce{Cl-} are spectators. But \ce{H+} and
+\ce{OH-} cannot coexist in quantity, because water is a nonelectrolyte:
+\[ \ce{H+(aq) + OH^-(aq) -> H2O(l)} \]
+\textbf{Every} strong-acid/strong-base neutralization has this same net
+ionic equation.
+\end{workedexample}
+
+\begin{workedexample}[Case 2: weak acid + strong base]
+Mix \ce{HC2H3O2(aq)} and \ce{KOH(aq)}. Acetic acid is a weak electrolyte,
+so it stays intact:
+\[ \ce{HC2H3O2(aq) + OH^-(aq) -> C2H3O2^-(aq) + H2O(l)} \]
+The whole acid molecule appears, because the hydrogen is transferred
+directly rather than being freely available beforehand. Only \ce{K+} is a
+spectator.
+\end{workedexample}
+
+\begin{apctrap}
+The two cases give \emph{different} net ionic equations, and telling them
+apart requires knowing whether the acid is strong or weak. Memorize the six
+strong acids --- everything else is weak, and stays whole.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Titration stoichiometry}
+
+A \term{titration} adds a solution of known concentration (the
+\term{titrant}) until the reaction is exactly complete --- the
+\term{equivalence point}, signaled by an
+\answerblank[2.6cm]{indicator} colour change.
+
+\begin{workedexample}[Worked example]
+It takes \SI{27.4}{\milli\liter} of \SI{0.150}{\Molar} \ce{NaOH} to
+neutralize \SI{25.0}{\milli\liter} of \ce{HCl}. Find $[\ce{HCl}]$.
+\begin{align*}
+  n(\ce{OH-}) &= (0.0274)(0.150) = \SI{4.11e-3}{\mole}\\
+  &\ce{H+ + OH^- -> H2O} \quad (1{:}1) \Rightarrow n(\ce{H+}) = \SI{4.11e-3}{\mole}\\
+  [\ce{HCl}] &= \frac{4.11\times10^{-3}}{0.0250} = \SI{0.164}{\Molar}
+\end{align*}
+\end{workedexample}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \SI{20.0}{\milli\liter} of \ce{H2SO4} requires
+        \SI{32.0}{\milli\liter} of \SI{0.250}{\Molar} \ce{NaOH}. Find
+        $[\ce{H2SO4}]$. Careful with the ratio. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$n(\ce{OH-}) = (0.0320)(0.250) =
+        \SI{8.00e-3}{\mole}$. \ce{H2SO4} supplies 2 \ce{H+} per formula
+        unit, so $n(\ce{H2SO4}) = 4.00\times10^{-3}$ mol;
+        $[\ce{H2SO4}] = 4.00\times10^{-3}/0.0200 =
+        \SI{0.200}{\Molar}$\end{apcanswer}}
+  \item Why does the diprotic acid change the arithmetic?
+        \answerlines[2]{Each \ce{H2SO4} donates two protons, so it takes
+        twice as much base per mole of acid --- the mole ratio is 1:2, not
+        1:1.}
+\end{enumerate}
+
+\begin{exitticket}
+Write the net ionic equation for \ce{HF(aq)} reacting with \ce{NaOH(aq)},
+and explain why it differs from the \ce{HCl}/\ce{NaOH} case.
+\answerlines[2]{\ce{HF(aq) + OH^-(aq) -> F^-(aq) + H2O(l)}. HF is a weak
+acid, so it stays intact rather than appearing as \ce{H+}.}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Oxidation--Reduction Reactions}{Zumdahl \S4.9--4.11}
+
+\begin{objectives}
+  \item Assign oxidation states using the standard rules.
+  \item Identify what is oxidized, what is reduced, and name the agents.
+  \item Balance simple redox equations; perform redox titration
+        stoichiometry.
+\end{objectives}
+
+\reading{Zumdahl \S4.9--4.11}{199--212}
+
+\begin{warmup}[3]
+  \item Net ionic for strong acid + strong base:
+        \answerblank[5cm]{\ce{H+ + OH^- -> H2O}}
+  \item Moles of \ce{H+} in \SI{25.0}{\milli\liter} of \SI{0.100}{\Molar}
+        \ce{H2SO4}: \answerblank[3cm]{\SI{5.00e-3}{\mole}}
+  \item Charge on the sulfate ion: \answerblank[2cm]{$2-$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Oxidation states}
+
+\notesectionz{Bookkeeping for electrons}{4.9}
+\practice{5}
+
+An \term{oxidation state} is the \emph{imaginary} charge an atom would carry
+if every shared pair were awarded entirely to the more electronegative
+partner. It is a bookkeeping device, not a real charge --- but it lets us
+track where electrons go.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}p{0.5cm}p{6.6cm}p{6.0cm}@{}}
+\toprule
+ & \textbf{Rule} & \textbf{Note}\\
+\midrule
+1 & Free element: \answerblank[1.4cm]{0} & \ce{Na}, \ce{O2}, \ce{P4}\\
+2 & Monatomic ion: equal to its \answerblank[1.6cm]{charge} &
+  \ce{Na+} is $+1$\\
+3 & Oxygen: \answerblank[1.4cm]{$-2$} & except peroxides ($-1$)\\
+4 & Hydrogen: \answerblank[1.4cm]{$+1$} & except metal hydrides ($-1$)\\
+5 & Fluorine: \answerblank[1.4cm]{$-1$} & always\\
+6 & Sum $=$ \answerblank[1.2cm]{0} for a neutral compound, or the
+  \answerblank[2.4cm]{ion charge} for an ion & this is the equation you
+  actually solve\\
+\bottomrule
+\end{tabular}
+
+\begin{workedexample}[Worked example: three species, Zumdahl's own]
+\textbf{\ce{CO2}}: assign O first at $-2$ each ($-4$ total). The molecule is
+neutral, so C must be $+4$. \emph{Reality check:} $(+4) + 2(-2) = 0$.
+
+\textbf{\ce{SF6}}: no rule for sulfur, so start with F at $-1$ each ($-6$
+total). S must be $+6$. Check: $(+6) + 6(-1) = 0$.
+
+\textbf{\ce{NO3-}}: three O at $-2$ gives $-6$. The ion's charge is $-1$, so
+N must be $+5$. Check: $(+5) + 3(-2) = -1$. \checkmark
+\end{workedexample}
+
+\begin{apcnote}
+Non-integer oxidation states can occur. In \ce{Fe3O4}, four oxygens give
+$-8$, so three irons must total $+8$ --- each is $+8/3$. That looks strange,
+but the rules deliberately treat all three iron atoms as equivalent when the
+compound is really $2\,\ce{Fe^3+} + 1\,\ce{Fe^2+}$ per formula unit.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Assign the underlined element}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item S in \ce{H2SO4}: \answerblank[2cm]{$+6$}
+  \item Cr in \ce{Cr2O7^2-}: \answerblank[2cm]{$+6$}
+  \item Mn in \ce{MnO4-}: \answerblank[2cm]{$+7$}
+  \item N in \ce{NH3}: \answerblank[2cm]{$-3$}
+  \item C in \ce{CH4}: \answerblank[2cm]{$-4$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Identifying redox and naming agents}
+
+\notesectionz{Who lost, who gained}{4.9}
+\practice{6}
+
+A reaction is \term{redox} if any element's oxidation state
+\answerblank[2cm]{changes}.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}p{3.2cm}p{3.6cm}p{6.4cm}@{}}
+\toprule
+ & \textbf{Oxidation} & \textbf{Reduction}\\
+\midrule
+Electrons & \answerblank[1.4cm]{lost} & \answerblank[1.4cm]{gained}\\
+Oxidation state & \answerblank[1.8cm]{increases} &
+  \answerblank[1.8cm]{decreases}\\
+The species itself is the & \answerblank[3.2cm]{reducing agent} &
+  \answerblank[3.2cm]{oxidizing agent}\\
+\bottomrule
+\end{tabular}
+
+\begin{apctrap}
+The agent labels are counterintuitive by design: the substance that
+\emph{is oxidized} is the \emph{reducing} agent, because it hands its
+electrons to something else and thereby reduces it. Read the label as
+``the thing that causes reduction.'' \textbf{OIL RIG} --- Oxidation Is Loss,
+Reduction Is Gain.
+\end{apctrap}
+
+\begin{workedexample}[Worked example: full analysis]
+\[ \ce{2 Al(s) + 3 Cl2(g) -> 2 AlCl3(s)} \]
+Al goes $0 \to +3$: it \textbf{lost} electrons, so it was \textbf{oxidized}
+and is the \textbf{reducing agent}.
+Cl goes $0 \to -1$: it \textbf{gained} electrons, so it was
+\textbf{reduced} and is the \textbf{oxidizing agent}.
+Both reactants are free elements at $0$ --- a reliable sign that a reaction
+is redox.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Redox titration}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}, identify what is
+        oxidized, reduced, and both agents. \answerlines[3]{Zn: $0 \to +2$,
+        oxidized, reducing agent. Cu: $+2 \to 0$, reduced, oxidizing agent.}
+  \item In an iron analysis, \ce{Fe^2+} is titrated with \ce{MnO4-}:
+        \[ \ce{5 Fe^2+ + MnO4^- + 8 H+ -> 5 Fe^3+ + Mn^2+ + 4 H2O} \]
+        A sample requires \SI{18.0}{\milli\liter} of \SI{0.0200}{\Molar}
+        \ce{KMnO4}. Find the moles of \ce{Fe^2+}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n(\ce{MnO4-}) = (0.0180)(0.0200) =
+        \SI{3.60e-4}{\mole}$; ratio 5:1 $\to n(\ce{Fe^2+}) =
+        \SI{1.80e-3}{\mole}$\end{apcanswer}}
+  \item Verify that manganese is reduced in that equation by computing its
+        oxidation state on both sides.
+        \answerlines[2]{In \ce{MnO4-}: $x + 4(-2) = -1 \Rightarrow x = +7$.
+        As \ce{Mn^2+}: $+2$. It decreased, so Mn was reduced.}
+\end{enumerate}
+
+\begin{apcnote}[ENRICHMENT --- beyond the CED]
+Zumdahl \S4.10 develops full \emph{half-reaction balancing} in acidic and
+basic solution, adding \ce{H2O}, \ce{H+}, and \ce{OH-} to balance oxygen and
+hydrogen. The current AP framework does not require this --- it asks you to
+\emph{identify} redox and balance simple cases. Learn it if you want the
+complete picture (it is genuinely useful for Unit 9 electrochemistry), but
+do not spend exam-prep time on it.
+\end{apcnote}
+
+\begin{exitticket}
+In \ce{2 H2 + O2 -> 2 H2O}, identify the oxidizing agent and justify with
+oxidation states. \answerlines[2]{\ce{O2} --- oxygen goes from 0 to $-2$
+(gains electrons, is reduced), so it is the oxidizing agent. Hydrogen goes
+$0 \to +1$ and is the reducing agent.}
+\end{exitticket}
+
+\end{document}

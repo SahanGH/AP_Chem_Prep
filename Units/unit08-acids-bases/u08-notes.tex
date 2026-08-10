@@ -1,0 +1,874 @@
+% Unit 8 (Acids and Bases) guided notes -- 9 blocks, CED sequence.
+\documentclass{apchem-notes}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 8.1--8.11 \textbullet\ Zumdahl Ch 14--15, \S16.1 \textbullet\ 9 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[The question to ask before every calculation]
+This unit contains four situations, and nearly every lost mark comes from
+running the wrong one. Before touching a calculator, name the major species
+in solution and decide which case you are in:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{What is in solution} & \textbf{Case} & \textbf{Method} \\
+\hline
+strong acid or base alone & complete ionization & pH directly \\
+weak acid (or base) alone & one equilibrium & ICE with $K_a$ (or $K_b$) \\
+weak acid \emph{and} its conjugate & buffer &
+  Henderson--Hasselbalch \\
+strong reagent added & react to completion \emph{first} & then one of the
+  above \\
+\hline
+\end{tabular}
+\end{center}
+
+At \textbf{11--15\%} this is the second-heaviest unit on the exam. It is
+also the one where method selection, rather than arithmetic, decides the
+grade.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Br\o nsted--Lowry and Conjugate Pairs}{CED 8.1 \textbullet\ Zumdahl \S14.1--14.2}
+
+\begin{objectives}
+  \item Identify conjugate acid--base pairs.
+  \item Relate acid strength to $K_a$ and to conjugate base strength.
+\end{objectives}
+
+\reading{Zumdahl \S14.1--14.2}{697--705}
+
+\begin{warmup}[4]
+  \item Net ionic equation for strong acid $+$ strong base:
+        \answerblank[4.6cm]{\ce{H+ + OH^- -> H2O}}
+  \item Name two strong acids (there are six):
+        \answerblank[4cm]{\ce{HCl}, \ce{HNO3}}
+  \item $K$ expression for \ce{HA <=> H+ + A^-}:
+        \answerblank[4.2cm]{$[\ce{H+}][\ce{A^-}]/[\ce{HA}]$}
+  \item $K \ll 1$ favors: \answerblank[2.4cm]{reactants}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two models, one of which AP uses}
+
+\notesection{Proton donors and acceptors}{8.1}
+\practice{1}
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Arrhenius:} an acid produces \answerblank[2cm]{\ce{H+}} in
+        water; a base produces \answerblank[2cm]{\ce{OH-}}. Historically
+        important, but it applies only to aqueous solutions.
+  \item \textbf{Br\o nsted--Lowry:} an acid is a proton
+        \answerblank[2.2cm]{donor}; a base is a proton
+        \answerblank[2.4cm]{acceptor}. This is the model the CED uses.
+\end{itemize}
+
+Water acts as a base because its oxygen carries
+\answerblank[5cm]{unshared electron pairs}, either of which can bond to a
+proton. So \ce{H+} in solution is really \term{hydronium}, \ce{H3O+};
+writing \ce{H+} is accepted shorthand.
+
+\notesection{Conjugate pairs}{8.1}
+
+Every Br\o nsted--Lowry reaction contains \emph{two} pairs differing by one
+proton:
+\[ \ce{HC2H3O2 + H2O <=> H3O+ + C2H3O2^-} \]
+\ce{HC2H3O2}/\ce{C2H3O2^-} is one pair; \ce{H2O}/\ce{H3O+} is the other.
+
+\begin{apctrap}
+\textbf{The stronger the acid, the weaker its conjugate base.} \ce{HCl} is
+strong, so \ce{Cl-} is such a poor base it is effectively inert in water.
+\ce{HCN} is very weak, so \ce{CN-} is a base strong enough to matter.
+
+Quantitatively, $K_a \times K_b$ equals \answerblank[2cm]{$K_w$} for a
+conjugate pair --- adding the two reactions gives the autoionization of
+water.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Identifying pairs}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item Conjugate base of \ce{HNO2}: \answerblank[2.6cm]{\ce{NO2^-}}
+  \item Conjugate acid of \ce{NH3}: \answerblank[2.6cm]{\ce{NH4+}}
+  \item Conjugate base of \ce{H2PO4^-}:
+        \answerblank[2.6cm]{\ce{HPO4^2-}}
+  \item Conjugate acid of \ce{H2O}: \answerblank[2.6cm]{\ce{H3O+}}
+  \item Rank as bases, weakest first: \ce{Cl-}, \ce{F-}, \ce{CN-}
+        \answerblank[5cm]{\ce{Cl-} $<$ \ce{F-} $<$ \ce{CN-}}
+\end{enumerate}
+
+\segment{APPLICATION}{20}{Strength and $K_a$}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A larger $K_a$ means what about the acid, and about its conjugate
+        base? \answerlines[2]{A larger $K_a$ means a stronger acid --- more
+        of it ionizes. Its conjugate base is correspondingly weaker,
+        because an anion that gave up its proton readily has little
+        affinity for taking it back.}
+  \item Given $K_a(\ce{HC2H3O2}) = 1.8\times10^{-5}$, find $K_b$ for
+        acetate. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$K_b = K_w/K_a =
+        1.0\times10^{-14}/1.8\times10^{-5} =
+        \mathbf{5.6\times10^{-10}}$\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Explain why \ce{Cl-} does not act as a base in water but \ce{F-} does.
+\keyonly{\begin{apcanswer}\ce{HCl} is a strong acid, so \ce{Cl-} has
+essentially no affinity for protons and does not remove them from water.
+\ce{HF} is weak, so \ce{F-} readily accepts a proton from water, generating
+\ce{OH-} and making the solution basic.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{pH, pOH, and Strong Acids and Bases}{CED 8.2 \textbullet\ Zumdahl \S14.3--14.4, 14.6}
+
+\begin{objectives}
+  \item Convert among $[\ce{H+}]$, $[\ce{OH-}]$, pH and pOH.
+  \item Calculate the pH of strong acid and strong base solutions.
+\end{objectives}
+
+\reading{Zumdahl \S14.3--14.4, 14.6}{705--724}
+
+\begin{warmup}[3]
+  \item $K_aK_b = $ \answerblank[1.8cm]{$K_w$}
+  \item Conjugate base of \ce{HF}: \answerblank[2cm]{\ce{F-}}
+  \item $K_w$ at \SI{25}{\celsius}:
+        \answerblank[3cm]{$1.0\times10^{-14}$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The logarithmic scale}
+
+\notesection{pH, pOH, and $K_w$}{8.2}
+\practice{5}
+
+\[ \mathrm{pH} = -\log[\ce{H+}] \qquad
+   \mathrm{pOH} = -\log[\ce{OH-}] \qquad
+   \mathrm{pH} + \mathrm{pOH} = 14.00 \]
+
+Each pH unit is a factor of \answerblank[1.6cm]{10} in $[\ce{H+}]$, so
+pH 3 is \answerblank[2cm]{1000} times more acidic than pH 6.
+
+\begin{apctrap}
+\textbf{Neutral means $[\ce{H+}] = [\ce{OH-}]$, not pH 7.} $K_w$ rises with
+temperature, so pure water at \SI{50}{\celsius} has a pH below 7 and is
+still perfectly neutral. The number 7 applies only at \SI{25}{\celsius}.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{When ionization is complete}
+
+\notesection{Strong acids and bases}{8.2}
+\practice{5}
+
+For a strong acid, ionization is complete, so $[\ce{H+}]$ simply equals the
+\answerblank[4.2cm]{acid concentration}. No equilibrium calculation is
+needed.
+
+There are only \textbf{six strong acids}, worth memorizing outright:
+\[ \ce{HCl} \quad \ce{HBr} \quad \ce{HI} \quad \ce{HNO3} \quad
+   \ce{H2SO4} \quad \ce{HClO4} \]
+Note that \ce{HF} is \emph{not} among them. The strong bases are the Group 1
+hydroxides and \ce{Ca(OH)2}, \ce{Sr(OH)2}, \ce{Ba(OH)2}.
+
+\begin{workedexample}[Worked example 1: the factor everyone forgets]
+\SI{0.010}{\Molar} \ce{HCl}: $[\ce{H+}] = 0.010$, so
+$\mathrm{pH} = \mathbf{2.00}$.
+
+\SI{0.010}{\Molar} \ce{Ba(OH)2} produces \emph{two} hydroxides per formula
+unit:
+\[ [\ce{OH-}] = 2(0.010) = 0.020 \quad\Longrightarrow\quad
+   \mathrm{pOH} = 1.70,\ \mathrm{pH} = \mathbf{12.30} \]
+--- not 12.00. Always check the formula for how many ions are released.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Strong acid and base calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item pH of \SI{0.0025}{\Molar} \ce{HNO3}:
+        \answerblank[2.4cm]{2.60}
+  \item pH of \SI{0.050}{\Molar} \ce{KOH}:
+        \answerblank[2.4cm]{12.70}
+  \item pH of \SI{0.0050}{\Molar} \ce{Ca(OH)2}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$[\ce{OH-}] = 2(0.0050) = 0.010$;
+        pOH $= 2.00$; pH $= \mathbf{12.00}$\end{apcanswer}}
+  \item A student reports pH 12.00 for problem 3 by using
+        $[\ce{OH-}] = 0.0050$. Do they get the right answer by the right
+        method? \answerlines[2]{No --- they would get pOH $= 2.30$ and
+        pH $= 11.70$. The correct answer requires doubling the hydroxide
+        first, and the agreement of the final number here is
+        coincidental.}
+\end{enumerate}
+
+\begin{exitticket}
+Pure water at \SI{50}{\celsius} has pH 6.6. Is it acidic? Explain.
+\keyonly{\begin{apcanswer}No, it is neutral. $K_w$ increases with
+temperature, so both $[\ce{H+}]$ and $[\ce{OH-}]$ rise and the pH falls
+below 7 --- but they remain \emph{equal}, which is what neutrality
+means.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Weak Acid Equilibria}{CED 8.3 \textbullet\ Zumdahl \S14.5}
+
+\begin{objectives}
+  \item Calculate the pH of a weak acid solution.
+  \item Compute and interpret percent ionization.
+\end{objectives}
+
+\reading{Zumdahl \S14.5}{710--719}
+
+\begin{warmup}[3]
+  \item pH of \SI{0.010}{\Molar} \ce{HCl}: \answerblank[2cm]{2.00}
+  \item pH of \SI{0.010}{\Molar} \ce{Ba(OH)2}:
+        \answerblank[2cm]{12.30}
+  \item ICE stands for: \answerblank[5.8cm]{Initial, Change, Equilibrium}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{A weak acid problem is a Unit 7 problem}
+
+\notesection{$K_a$ and the ICE table}{8.3}
+\practice{5}
+
+\[ \ce{HA(aq) <=> H+(aq) + A^-(aq)} \qquad
+   K_a = \frac{[\ce{H+}][\ce{A^-}]}{[\ce{HA}]} \]
+
+Because $K_a$ is small, $x$ is usually negligible against $C_0$:
+\[ K_a \approx \frac{x^2}{C_0} \quad\Longrightarrow\quad
+   x = [\ce{H+}] = \sqrt{K_aC_0} \]
+
+\begin{apctrap}
+\textbf{The 5\% check is part of the answer.} Compute $x/C_0$ as a
+percentage and compare with 5\%. An FRQ that asks you to justify the
+approximation wants the number, not the assertion --- exactly as in Unit 7.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 2: strong is not concentrated]
+\SI{0.10}{\Molar} acetic acid, $K_a = 1.8\times10^{-5}$:
+\[ x = \sqrt{(1.8\times10^{-5})(0.10)} = 1.34\times10^{-3}
+   \quad\Longrightarrow\quad \mathrm{pH} = \mathbf{2.87} \]
+Check: $1.34\times10^{-3}/0.10 = 1.3\%$ \checkmark
+
+\textbf{Compare with \SI{0.10}{\Molar} \ce{HCl}, which has pH 1.00.} Same
+concentration; the difference is entirely \emph{strength} --- the fraction
+that ionizes. ``Strong'' and ``concentrated'' are different words describing
+different things.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Weak acid calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item pH of \SI{0.250}{\Molar} \ce{HF} ($K_a = 7.2\times10^{-4}$),
+        with the check. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(7.2\times10^{-4})(0.250)} =
+        1.34\times10^{-2}$; pH $= \mathbf{1.87}$.
+        Check: $5.4\%$ --- marginally above 5\%, so strictly the quadratic
+        should be used\end{apcanswer}}
+  \item Percent ionization of \SI{0.100}{\Molar} acetic acid:
+        \answerblank[2.4cm]{1.3\%}
+  \item Diluting a weak acid raises the percent ionization but also raises
+        the pH. Explain how both can be true.
+        \answerlines[3]{$x \approx \sqrt{K_aC_0}$ falls only as the square
+        root of concentration while $C_0$ falls linearly, so the
+        \emph{fraction} ionized grows on dilution. But the absolute
+        $[\ce{H+}]$ is still smaller, so the pH is higher.}
+\end{enumerate}
+
+\begin{exitticket}
+Two solutions both have \SI{0.10}{\Molar} concentration: one \ce{HCl}, one
+acetic acid. Which is more concentrated, and which is more acidic?
+\keyonly{\begin{apcanswer}They are equally concentrated --- that is what
+\SI{0.10}{\Molar} means. The \ce{HCl} is far more acidic, pH 1.00 against
+2.87, because it ionizes completely while acetic acid ionizes only about
+1.3\%.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Weak Bases and Polyprotic Acids}{CED 8.3 \textbullet\ Zumdahl \S14.6--14.7}
+
+\begin{objectives}
+  \item Calculate the pH of a weak base solution.
+  \item Explain why the first ionization dominates for a polyprotic acid.
+\end{objectives}
+
+\reading{Zumdahl \S14.6--14.7}{719--730}
+
+\begin{warmup}[3]
+  \item $[\ce{H+}]$ for a weak acid: \answerblank[2.6cm]{$\sqrt{K_aC_0}$}
+  \item The approximation threshold: \answerblank[1.6cm]{5\%}
+  \item pH of \SI{0.10}{\Molar} acetic acid: \answerblank[2cm]{2.87}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The same table, one extra step}
+
+\notesection{Weak bases and $K_b$}{8.3}
+\practice{5}
+
+\[ \ce{B(aq) + H2O(l) <=> BH+(aq) + OH^-(aq)} \qquad
+   K_b = \frac{[\ce{BH+}][\ce{OH^-}]}{[\ce{B}]} \]
+
+\begin{apctrap}
+\textbf{For a base, the ICE $x$ is $[\ce{OH-}]$, not $[\ce{H+}]$.} Taking
+$-\log x$ gives the \answerblank[1.6cm]{pOH}, and you must then subtract
+from 14.00.
+
+This is the single most-lost point in the unit. Reporting $-\log x$ as the
+pH turns a strongly basic answer into a strongly acidic one --- a swing of
+several units in the wrong direction, which any sanity check should catch.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 3: ammonia]
+\SI{0.100}{\Molar} \ce{NH3}, $K_b = 1.8\times10^{-5}$:
+\[ x = \sqrt{(1.8\times10^{-5})(0.100)} = 1.34\times10^{-3} = [\ce{OH-}] \]
+\[ \mathrm{pOH} = 2.87 \quad\Longrightarrow\quad
+   \mathrm{pH} = 14.00 - 2.87 = \mathbf{11.13} \]
+Note the pOH is numerically the same as acetic acid's pH --- the two have
+equal constants. The final answers are wildly different, and the conversion
+step is the only reason.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Polyprotic acids}
+
+\notesection{Why only the first ionization matters}{8.3}
+\practice{5}
+
+\ce{H3PO4} has $K_{a1} = 7.5\times10^{-3}$,
+$K_{a2} = 6.2\times10^{-8}$, $K_{a3} = 4.8\times10^{-13}$.
+
+Each successive constant is about $10^5$ times
+\answerblank[2cm]{smaller}, because each proton must be pulled from an
+increasingly \answerblank[2.4cm]{negative} anion. So the pH may be
+calculated from \answerblank[2.4cm]{$K_{a1}$ alone}.
+
+The exception is \ce{H2SO4}: its first ionization is
+\answerblank[1.8cm]{strong} and its second
+($K_{a2} = 1.2\times10^{-2}$) still contributes measurably.
+
+\segment{APPLICATION}{20}{Bases and polyprotics}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item pH of \SI{0.150}{\Molar} \ce{NH3}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(1.8\times10^{-5})(0.150)} =
+        1.64\times10^{-3}$; pOH $= 2.78$;
+        pH $= \mathbf{11.22}$\end{apcanswer}}
+  \item A student reports pH 2.78 for that problem. Identify the error.
+        \answerlines[2]{They reported the pOH as the pH. For a base the ICE
+        $x$ is $[\ce{OH-}]$, so $-\log x$ is the pOH and the pH is
+        $14.00 - 2.78 = 11.22$.}
+  \item Justify calculating \ce{H3PO4}'s pH from $K_{a1}$ alone.
+        \answerlines[2]{$K_{a2}$ is roughly $10^5$ times smaller, so the
+        second ionization contributes a negligible quantity of \ce{H+}
+        beside the first.}
+\end{enumerate}
+
+\begin{exitticket}
+Given $K_a$ for a weak acid, how do you find $K_b$ for its conjugate base,
+and why does the relationship hold?
+\keyonly{\begin{apcanswer}$K_b = K_w/K_a$. Adding the acid ionization to the
+conjugate base hydrolysis gives the autoionization of water, and adding
+reactions multiplies their equilibrium constants --- so
+$K_aK_b = K_w$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Structure, p$K_a$, and Salts}{CED 8.6--8.7 \textbullet\ Zumdahl \S14.8--14.9}
+
+\begin{objectives}
+  \item Explain acid strength trends from molecular structure.
+  \item Predict whether a salt solution is acidic, basic, or neutral.
+\end{objectives}
+
+\reading{Zumdahl \S14.8--14.9}{730--740}
+
+\begin{warmup}[3]
+  \item For a weak base, ICE $x$ is: \answerblank[2.2cm]{$[\ce{OH-}]$}
+  \item pH of \SI{0.100}{\Molar} \ce{NH3}: \answerblank[2cm]{11.13}
+  \item $K_b$ for acetate: \answerblank[3.2cm]{$5.6\times10^{-10}$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{p$K_a$ and structure}
+
+\notesection{p$K_a$}{8.7}
+\practice{5}
+
+\[ \mathrm{p}K_a = -\log K_a \]
+A \emph{lower} p$K_a$ means a \answerblank[2.2cm]{stronger} acid. Acetic
+acid's $K_a = 1.8\times10^{-5}$ gives p$K_a = \answerblank[1.6cm]{4.74}$.
+
+\notesection{Structure and acid strength}{8.6}
+\practice{6}
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Binary acids down a group:} \ce{HF} $<$ \ce{HCl} $<$
+        \ce{HBr} $<$ \ce{HI}. The controlling factor is
+        \answerblank[2.8cm]{bond strength} --- the H--X bond weakens down
+        the group.
+  \item \textbf{Oxyacids:} \ce{HClO} $<$ \ce{HClO2} $<$ \ce{HClO3} $<$
+        \ce{HClO4}. More electronegative oxygens withdraw electron density
+        from the O--H bond \emph{and} stabilize the conjugate base.
+\end{itemize}
+
+\begin{apctrap}
+\ce{HF} is the \emph{weakest} hydrohalic acid despite fluorine being the
+most electronegative element. Holding the proton tightly in a very strong
+H--F bond matters more than pulling electron density away from it. Do not
+reach for electronegativity when the trend is down a group.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{Salt solutions}
+
+\notesection{Trace each ion to its parent}{8.7}
+\practice{6}
+
+\begin{center}
+\begin{tabular}{@{}lllll@{}}
+\hline
+\textbf{Cation from} & \textbf{Anion from} & \textbf{Solution} &
+  \textbf{Example} \\
+\hline
+strong base & strong acid & \textbf{neutral} & \ce{NaCl} \\
+strong base & weak acid & \textbf{basic} & \ce{NaC2H3O2} \\
+weak base & strong acid & \textbf{acidic} & \ce{NH4Cl} \\
+\hline
+\end{tabular}
+\end{center}
+
+The logic is entirely conjugate-pair reasoning: an anion from a
+\emph{weak} acid is a meaningful base, while one from a \emph{strong} acid
+is not.
+
+\segment{APPLICATION}{20}{Structure and salts}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Classify and name the responsible ion: \ce{KNO3}, \ce{NH4NO3},
+        \ce{NaCN}. \answerlines[2]{\ce{KNO3} neutral --- neither ion
+        reacts. \ce{NH4NO3} acidic --- \ce{NH4+}. \ce{NaCN} basic ---
+        \ce{CN-}.}
+  \item Calculate the pH of \SI{0.30}{\Molar} \ce{NaF}
+        ($K_a(\ce{HF}) = 7.2\times10^{-4}$). \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$K_b = 1.0\times10^{-14}/7.2\times10^{-4}
+        = 1.4\times10^{-11}$;
+        $x = \sqrt{(1.4\times10^{-11})(0.30)} = 2.0\times10^{-6}$;
+        pOH $= 5.69$; pH $= \mathbf{8.31}$\end{apcanswer}}
+  \item Explain why \ce{NaCl} solutions are neutral but \ce{NaCN}
+        solutions are basic. \answerlines[3]{Both contain \ce{Na+}, from a
+        strong base, which does not react. \ce{Cl-} comes from the strong
+        acid \ce{HCl} and is a negligible base. \ce{CN-} comes from the
+        very weak acid \ce{HCN}, so it readily takes a proton from water
+        and generates \ce{OH-}.}
+\end{enumerate}
+
+\begin{exitticket}
+Rank \ce{HF}, \ce{HCl}, \ce{HBr}, \ce{HI} by increasing strength and name
+the controlling factor.
+\keyonly{\begin{apcanswer}\ce{HF} $<$ \ce{HCl} $<$ \ce{HBr} $<$ \ce{HI}.
+The H--X bond weakens down the group, so the proton is released more
+readily; bond strength outweighs electronegativity
+here.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Acid--Base Reactions and Buffers}{CED 8.4 \textbullet\ Zumdahl \S15.1--15.2}
+
+\begin{objectives}
+  \item Predict the products of an acid--base reaction.
+  \item Recognize a buffer and explain the common-ion effect.
+\end{objectives}
+
+\reading{Zumdahl \S15.1--15.2}{756--765}
+
+\begin{warmup}[3]
+  \item p$K_a$ of acetic acid: \answerblank[1.8cm]{4.74}
+  \item \ce{NH4Cl} solutions are: \answerblank[2cm]{acidic}
+  \item Adding a product shifts an equilibrium:
+        \answerblank[1.8cm]{left}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The common-ion effect}
+
+\notesection{Le Ch\^atelier applied to an acid}{8.4}
+\practice{6}
+
+\[ \ce{HF(aq) <=> H+(aq) + F^-(aq)} \]
+Dissolve \ce{NaF} in this solution and you have added a
+\answerblank[2cm]{product}, so the equilibrium shifts
+\answerblank[1.6cm]{left} and the acid ionizes \emph{less}.
+
+The algebra collapses to a ratio:
+\[ [\ce{H+}] = K_a\frac{[\ce{HA}]}{[\ce{A^-}]} \]
+No square root, no quadratic --- when both members of a conjugate pair are
+present in comparable amounts, $x$ is negligible against both.
+
+\segment{INSTRUCTION B}{20}{What makes a buffer}
+
+\notesection{Recognizing one}{8.4}
+\practice{6}
+
+A \term{buffer} contains significant amounts of \textbf{both members of a
+conjugate pair}. Three ways it appears:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.25em]
+  \item Stated outright --- \ce{HC2H3O2} plus \ce{NaC2H3O2}.
+  \item Made by \answerblank[4.6cm]{partial neutralization} of a weak acid
+        with strong base.
+  \item Hiding at the halfway point of a titration.
+\end{enumerate}
+
+\begin{apctrap}
+\ce{HCl} with \ce{NaCl} is \textbf{not} a buffer. \ce{Cl-} has no affinity
+for protons, so nothing absorbs added acid. A buffer needs a \emph{weak}
+conjugate pair --- reversibility is the whole point.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Recognition and prediction}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Buffer or not, with a reason: \ce{NH3} $+$ \ce{NH4Cl}
+        \answerblank[8.3cm]{yes --- weak base and its conjugate acid}
+  \item \ce{NaOH} $+$ \ce{NaCl}
+        \answerblank[8cm]{no --- no weak conjugate pair}
+  \item Find $[\ce{H+}]$ and pH for a solution \SI{0.10}{\Molar} in
+        \ce{HF} and \SI{0.30}{\Molar} in \ce{NaF}. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{H+}] = (7.2\times10^{-4})(0.10/0.30)
+        = 2.4\times10^{-4}$; pH $= \mathbf{3.62}$\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Explain why adding \ce{NaF} to an \ce{HF} solution raises its pH.
+\keyonly{\begin{apcanswer}\ce{F-} is a product of the \ce{HF} ionization, so
+adding it shifts that equilibrium to the left and suppresses the production
+of \ce{H+}. The hydrolysis of \ce{F-} contributes as well, but the dominant
+effect is the common-ion shift.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Henderson--Hasselbalch}{CED 8.8--8.9 \textbullet\ Zumdahl \S15.2}
+
+\begin{objectives}
+  \item Apply the Henderson--Hasselbalch equation.
+  \item Explain why the ratio, not the concentration, sets the pH.
+\end{objectives}
+
+\reading{Zumdahl \S15.2}{763--767}
+
+\begin{warmup}[3]
+  \item $[\ce{H+}] = K_a \times$
+        \answerblank[3.4cm]{$[\ce{HA}]/[\ce{A^-}]$}
+  \item A buffer contains: \answerblank[8.3cm]{both members of a conjugate
+        pair}
+  \item p$K_a$ of \ce{NH4+}: \answerblank[1.8cm]{9.25}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Taking the logarithm}
+
+\notesection{The equation}{8.9}
+\practice{5}
+
+\[ \boxed{\;\mathrm{pH} = \mathrm{p}K_a
+   + \log\frac{[\text{base}]}{[\text{acid}]}\;} \]
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Equal amounts $\Rightarrow$ log term is
+        \answerblank[1.4cm]{0}, so pH $=$
+        \answerblank[1.8cm]{p$K_a$}.
+  \item More base than acid $\Rightarrow$ pH
+        \answerblank[3cm]{above p$K_a$}.
+  \item More acid than base $\Rightarrow$ pH
+        \answerblank[3cm]{below p$K_a$}.
+\end{itemize}
+
+\begin{apctrap}
+\textbf{Base over acid, and the base is the anion.} Inverting the ratio
+flips the sign of the correction, landing the pH the same distance on the
+wrong side of p$K_a$. Before dividing, name the two species aloud:
+\ce{C2H3O2^-} is the base, \ce{HC2H3O2} is the acid.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{Why the ratio is what matters}
+
+\notesection{Dilution barely moves a buffer's pH}{8.8}
+\practice{5}
+
+Only the \emph{ratio} appears, so:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Diluting a buffer leaves the pH essentially
+        \answerblank[2.4cm]{unchanged} --- both concentrations fall by the
+        same factor. Contrast a weak acid alone, where dilution
+        \emph{does} raise the pH.
+  \item You may use \answerblank[1.8cm]{moles} instead of molarity, since
+        the shared volume cancels. This saves a step on nearly every
+        titration problem.
+\end{itemize}
+
+\begin{workedexample}[Worked example 4: two buffers, one pH]
+\SI{0.25}{\Molar} \ce{HC2H3O2} with \SI{0.15}{\Molar} \ce{NaC2H3O2}:
+\[ \mathrm{pH} = 4.74 + \log(0.15/0.25) = 4.74 - 0.22 = \mathbf{4.52} \]
+
+\SI{0.050}{\Molar} with \SI{0.030}{\Molar} gives the same ratio $0.60$ and
+therefore the \textbf{same pH, 4.52} --- at one fifth the concentration. The
+pH is identical; the \emph{capacity} is not.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Buffer calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item pH of \SI{0.20}{\Molar} \ce{NH3} with \SI{0.30}{\Molar}
+        \ce{NH4Cl}. \workspace[2cm]
+        \keyonly{\begin{apcanswer}pH $= 9.25 + \log(0.20/0.30) =
+        9.25 - 0.18 = \mathbf{9.07}$\end{apcanswer}}
+  \item What ratio $[\ce{A^-}]/[\ce{HA}]$ gives pH 5.00 for acetic acid?
+        \answerblank[2.4cm]{1.8}
+  \item Two acetate buffers: X is \SI{1.0}{\Molar} in each component,
+        Y is \SI{0.010}{\Molar} in each. Compare their pH values and their
+        usefulness. \answerlines[3]{Both have pH 4.74 --- the ratio is 1 in
+        each. X is far more useful: it holds 100 times as much of each
+        component, so it can absorb much more added acid or base before the
+        ratio moves appreciably.}
+\end{enumerate}
+
+\begin{exitticket}
+Why does diluting a buffer barely change its pH, while diluting a weak acid
+alone raises it noticeably?
+\keyonly{\begin{apcanswer}A buffer's pH depends on the \emph{ratio} of two
+concentrations, and dilution divides both by the same factor, leaving it
+unchanged. A weak acid alone has $[\ce{H+}] = \sqrt{K_aC_0}$, which depends
+on $C_0$ itself, so lowering $C_0$ lowers $[\ce{H+}]$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Buffer Action and Capacity}{CED 8.10 \textbullet\ Zumdahl \S15.2--15.3}
+
+\begin{objectives}
+  \item Calculate a buffer's pH after strong acid or base is added.
+  \item Compare buffering capacity and design a buffer.
+\end{objectives}
+
+\reading{Zumdahl \S15.2--15.3}{761--770}
+
+\begin{warmup}[3]
+  \item Henderson--Hasselbalch: pH $=$
+        \answerblank[5.4cm]{p$K_a + \log$(base/acid)}
+  \item pH when the ratio is 1: \answerblank[2cm]{p$K_a$}
+  \item Diluting a buffer changes the pH how?
+        \answerblank[3cm]{hardly at all}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Stoichiometry first, then equilibrium}
+
+\notesection{The two-step method}{8.10}
+\practice{5}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Stoichiometry.} The strong reagent reacts
+        \answerblank[2.6cm]{completely}. Added \ce{OH-} converts \ce{HA} to
+        \ce{A-}; added \ce{H+} does the reverse. Work in moles. No $K$
+        appears.
+  \item \textbf{Equilibrium.} Put the new amounts into
+        Henderson--Hasselbalch.
+\end{enumerate}
+
+\begin{apctrap}
+\textbf{Never put added strong base into an ICE table.} Strong base does not
+sit at equilibrium with a weak acid --- it consumes it. Mixing the two steps
+is the single most reliable way to lose an entire buffer question.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 5: a buffer absorbing a base]
+\SI{1.00}{\litre} of a buffer is \SI{0.50}{\Molar} in \ce{HC2H3O2} and
+\SI{0.50}{\Molar} in \ce{NaC2H3O2}. Add \SI{0.010}{\mole} \ce{NaOH}.
+
+\textbf{Start:} ratio 1, so pH $= 4.74$.
+
+\textbf{Step 1:} $\ce{OH^- + HC2H3O2 -> C2H3O2^- + H2O}$ leaves
+$0.49$ mol acid and $0.51$ mol base.
+
+\textbf{Step 2:} pH $= 4.74 + \log(0.51/0.49) = \mathbf{4.76}$.
+
+\textbf{For contrast,} the same \SI{0.010}{\mole} of \ce{NaOH} in
+\SI{1.00}{\litre} of pure water gives pH $\mathbf{12.00}$. The buffer moved
+\textbf{0.02}; water moved \textbf{5.00}.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Capacity and design}
+
+\notesection{Why equal amounts buffer best}{8.10}
+\practice{6}
+
+\term{Buffering capacity} depends on two things: how \emph{much} of each
+component is present, and how \emph{balanced} the ratio is.
+
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+Optimal buffering when $[\ce{HA}] = [\ce{A^-}]$, i.e.\ pH $=$ p$K_a$. \\
+Useful range: p$K_a \pm 1$.}}
+\end{center}
+
+To \textbf{design} a buffer, choose a weak acid whose p$K_a$ is as close as
+possible to the target pH, then set the ratio with
+Henderson--Hasselbalch.
+
+\segment{APPLICATION}{20}{Action and design}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Add \SI{0.010}{\mole} \ce{HCl} to the buffer in worked example 5
+        instead. New pH? \answerblank[2.4cm]{4.72}
+  \item Design a pH 4.00 buffer given p$K_a$ values \ce{HNO2} 3.40,
+        \ce{HC2H3O2} 4.74, \ce{HOCl} 7.46. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}\ce{HNO2} is closest (0.60 away).
+        $4.00 = 3.40 + \log r$, so $r = 10^{0.60} = \mathbf{4.0}$ --- four
+        times as much nitrite as nitrous acid.\end{apcanswer}}
+  \item Why would \ce{HOCl} be a poor choice there?
+        \answerlines[2]{Its p$K_a$ is 3.5 units away, so the required ratio
+        is about $10^{-3.5}$ --- almost no conjugate base present, and
+        therefore essentially no capacity against added acid.}
+\end{enumerate}
+
+\begin{exitticket}
+State the two steps for a buffer receiving strong base, and say what makes
+each different.
+\keyonly{\begin{apcanswer}First a stoichiometry step: the strong base reacts
+to completion, converting weak acid into conjugate base, worked in moles
+with no equilibrium constant. Then an equilibrium step: substitute the new
+amounts into Henderson--Hasselbalch.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Titrations, Indicators, and pH Effects}{CED 8.5, 8.11 \textbullet\ Zumdahl \S15.4--15.5, \S16.1}
+
+\begin{objectives}
+  \item Analyse a titration curve region by region.
+  \item Select an indicator and predict pH effects on solubility.
+\end{objectives}
+
+\reading{Zumdahl \S15.4--15.5}{770--792} \reading{Zumdahl \S16.1}{812--813}
+
+\begin{warmup}[3]
+  \item Buffer method step 1: \answerblank[7.3cm]{stoichiometry to
+        completion}
+  \item Optimal buffering ratio: \answerblank[1.6cm]{1}
+  \item Useful buffer range: \answerblank[2.4cm]{p$K_a \pm 1$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Four regions, four methods}
+
+\notesection{Weak acid titrated with strong base}{8.5}
+\practice{5}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}llp{5.4cm}@{}}
+\hline
+\textbf{Region} & \textbf{Major species} & \textbf{Method} \\
+\hline
+before any base & \ce{HA} only & weak-acid ICE \\
+before equivalence & \ce{HA} $+$ \ce{A-} & \textbf{buffer:} H--H \\
+at equivalence & \ce{A-} only & weak-\emph{base} ICE, $K_b = K_w/K_a$ \\
+after equivalence & excess \ce{OH-} & strong base alone \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apcnote}[Two landmarks worth a point each]
+\textbf{Halfway point:} $[\ce{HA}] = [\ce{A^-}]$, so pH $=$ p$K_a$. This is
+how $K_a$ is measured from a curve.
+
+\textbf{Equivalence point:} moles of base $=$ moles of acid. That is a
+\emph{stoichiometric} definition and says nothing about the pH being 7.
+\end{apcnote}
+
+\begin{apctrap}
+\textbf{A weak-acid equivalence point is not pH 7.} All the acid has become
+its conjugate base, which hydrolyses. Weak acid with strong base gives an
+equivalence pH \answerblank[2cm]{above 7}; weak base with strong acid gives
+one \answerblank[2cm]{below 7}. Only strong-with-strong lands on 7.00.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 6: acetic acid titration]
+\SI{50.0}{\milli\litre} of \SI{0.10}{\Molar} \ce{HC2H3O2}
+($= \SI{5.0}{\milli\mole}$) with \SI{0.10}{\Molar} \ce{NaOH}; equivalence
+at \SI{50.0}{\milli\litre}.
+
+\begin{center}
+\begin{tabular}{@{}rlr@{}}
+\hline
+\textbf{mL} & \textbf{Region} & \textbf{pH} \\
+\hline
+0 & weak acid & 2.87 \\
+25.0 & \textbf{halfway} --- pH $=$ p$K_a$ & \textbf{4.74} \\
+50.0 & \textbf{equivalence} --- \ce{A-} only & \textbf{8.72} \\
+60.0 & excess base & 11.96 \\
+\hline
+\end{tabular}
+\end{center}
+
+At equivalence, $[\ce{C2H3O2^-}] = 5.0/100.0 = 0.050$~M and
+$K_b = 5.6\times10^{-10}$, giving $[\ce{OH-}] = 5.3\times10^{-6}$,
+pOH $= 5.28$, pH $= 8.72$ --- basic, as it must be.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Indicators and pH effects}
+
+\notesection{Choosing an indicator}{8.5}
+\practice{6}
+
+An indicator is itself a weak acid whose two forms differ in colour. It
+changes over roughly \answerblank[2.6cm]{p$K_a \pm 1$}, so choose one whose
+range brackets the \answerblank[3.4cm]{equivalence pH}.
+
+The \term{equivalence point} is fixed by stoichiometry; the
+\term{end point} is where the indicator changes. A good choice makes them
+nearly coincide.
+
+\notesection{pH and solubility}{8.11}
+\practice{6}
+
+\begin{apcnote}[Qualitative only]
+CED topic 8.11 carries an \textbf{exclusion statement}: computations of
+solubility as a function of pH are never assessed. Predict the direction and
+justify with Le Ch\^atelier --- do not calculate.
+\end{apcnote}
+
+A salt is more soluble in acid when its anion is a
+\answerblank[3.6cm]{meaningful base} --- that is, when its conjugate acid is
+weak. \ce{CaCO3} dissolves in acid because \ce{CO3^2-} is consumed;
+\ce{AgCl} does not, because \ce{Cl-} comes from a strong acid and does not
+react.
+
+\segment{APPLICATION}{20}{Curves, indicators, and solubility}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A curve for a monoprotic acid shows equivalence at pH 9.1. Is the
+        acid strong or weak? Justify. \answerlines[2]{Weak. Strong with
+        strong gives exactly 7.00; a basic equivalence point means the
+        anion left behind hydrolyses, which happens only for the conjugate
+        base of a weak acid.}
+  \item Choose an indicator for that titration: methyl red (4.4--6.2) or
+        phenolphthalein (8.2--10.0)?
+        \answerblank[3.4cm]{phenolphthalein}
+  \item \ce{BaSO4} and \ce{CaCO3} are each treated with dilute acid.
+        Predict and justify. \answerlines[3]{\ce{CaCO3} becomes more
+        soluble --- \ce{CO3^2-} is the conjugate base of the weak acid
+        \ce{H2CO3}, so \ce{H+} removes it and the dissolution equilibrium
+        shifts right. \ce{BaSO4} is essentially unaffected, since
+        \ce{SO4^2-} comes from a strong acid and is a negligible base.}
+\end{enumerate}
+
+\begin{exitticket}
+Give the single question to ask before starting any calculation in this
+unit, and why it settles the method.
+\keyonly{\begin{apcanswer}``What are the major species after any strong
+reagent has reacted completely?'' The answer places you in one of four
+cases --- strong acid or base, weak acid or base alone, a buffer, or excess
+strong reagent --- and each has its own method. Choosing a method before
+identifying the species is how students end up applying
+Henderson--Hasselbalch at an equivalence point, where no buffer
+exists.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

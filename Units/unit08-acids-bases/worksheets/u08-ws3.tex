@@ -1,0 +1,119 @@
+% U8 WS3 -- structure, pKa, salts, common ion. Blocks 5-6.
+\documentclass{apchem-worksheet}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Worksheet 3 \textbullet\ Structure, p$K_a$, and Salts}
+\apcsubtitle{CED 8.6--8.7, 8.4 \textbullet\ trace every salt back to its parent acid and base}
+
+\begin{document}
+\wsheader[p$K_a = -\log K_a$; lower p$K_a$ means a stronger acid
+\textbullet\ $K_b = K_w/K_a$ \textbullet\ $K_a$: \ce{HF}
+$7.2\times10^{-4}$, \ce{HC2H3O2} $1.8\times10^{-5}$, \ce{HCN}
+$6.2\times10^{-10}$; $K_b(\ce{NH3}) = 1.8\times10^{-5}$.]
+
+\problem[]{\ced{8.7} p$K_a$ practice:}
+\begin{parts}
+  \item p$K_a$ of acetic acid: \answerblank[2.4cm]{4.74}
+  \item p$K_a$ of \ce{HCN}: \answerblank[2.4cm]{9.21}
+  \item p$K_a$ of \ce{HF}: \answerblank[2.4cm]{3.14}
+  \item Which is the strongest acid of the three, and how does p$K_a$ show
+        it? \answerlines[2]{\ce{HF} --- the lowest p$K_a$ corresponds to the
+        largest $K_a$ and therefore the greatest extent of ionization.}
+\end{parts}
+
+\problem[]{\ced{8.6} Structure and acid strength.}
+\begin{parts}
+  \item Rank \ce{HF}, \ce{HCl}, \ce{HBr}, \ce{HI} by increasing strength
+        and give the controlling factor.
+        \answerlines[2]{\ce{HF} $<$ \ce{HCl} $<$ \ce{HBr} $<$ \ce{HI}. The
+        H--X bond weakens down the group, so the proton is released more
+        readily; bond strength outweighs electronegativity.}
+  \item Explain why \ce{HF} is weakest despite fluorine being the most
+        electronegative element. \answerlines[2]{The H--F bond is by far the
+        strongest of the four, and holding the proton tightly matters more
+        than pulling electron density away from it.}
+  \item Rank \ce{HClO}, \ce{HClO2}, \ce{HClO3}, \ce{HClO4} and give both
+        reasons. \answerlines[3]{Strength increases with the number of
+        oxygens. Each additional electronegative oxygen withdraws electron
+        density from the O--H bond, weakening it, and spreads the negative
+        charge of the conjugate base, stabilizing it.}
+  \item Rank \ce{HOI}, \ce{HOBr}, \ce{HOCl}.
+        \answerblank[5cm]{\ce{HOI} $<$ \ce{HOBr} $<$ \ce{HOCl}}
+\end{parts}
+
+\problem[]{\ced{8.7} Classify each salt solution and name the responsible
+ion:}
+\begin{parts}
+  \item \ce{NaCl}: \answerblank[7.1cm]{neutral --- neither ion hydrolyses}
+  \item \ce{NH4Cl}: \answerblank[6.5cm]{acidic --- \ce{NH4+}}
+  \item \ce{NaCN}: \answerblank[6.5cm]{basic --- \ce{CN-}}
+  \item \ce{KNO3}: \answerblank[6.5cm]{neutral}
+  \item \ce{KF}: \answerblank[6.5cm]{basic --- \ce{F-}}
+\end{parts}
+
+\problem[]{\ced{8.7} Explain, in conjugate-pair terms, why \ce{NaCl}
+solutions are neutral but \ce{NaCN} solutions are basic.
+\answerlines[3]{Both contain \ce{Na+}, from the strong base \ce{NaOH},
+which does not react. \ce{Cl-} comes from the strong acid \ce{HCl}, so it is
+a negligible base. \ce{CN-} comes from the very weak acid \ce{HCN}, so it
+readily accepts a proton from water and generates \ce{OH-}.}}
+
+\problem[]{\ced{8.7} Calculate the pH of \SI{0.20}{\Molar}
+\ce{NaC2H3O2}.}
+\begin{parts}
+  \item Write the hydrolysis equation.
+        \answerlines[1]{\ce{C2H3O2^-(aq) + H2O(l) <=> HC2H3O2(aq) +
+        OH^-(aq)}}
+  \item Calculate $K_b$. \answerblank[3.2cm]{$5.6\times10^{-10}$}
+  \item Calculate the pH. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$x = \sqrt{(5.6\times10^{-10})(0.20)} =
+        1.06\times10^{-5} = [\ce{OH-}]$; pOH $= 4.98$;
+        pH $= \mathbf{9.02}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{\ced{8.7} Calculate the pH of \SI{0.30}{\Molar} \ce{NaF}.
+\workspace[2.8cm]
+\keyonly{\begin{apcanswer}$K_b = 1.0\times10^{-14}/7.2\times10^{-4} =
+1.4\times10^{-11}$; $x = \sqrt{(1.4\times10^{-11})(0.30)} =
+2.0\times10^{-6}$; pOH $= 5.69$; pH $=
+\mathbf{8.31}$\end{apcanswer}}}
+
+\problem[]{\ced{8.4} The common-ion effect. For \SI{1.0}{\Molar} \ce{HF}
+alone, $[\ce{H+}] = 2.7\times10^{-2}$ and the acid is 2.7\% ionized.}
+\begin{parts}
+  \item Calculate $[\ce{H+}]$ in a solution \SI{1.0}{\Molar} in \ce{HF} and
+        \SI{1.0}{\Molar} in \ce{NaF}. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$[\ce{H+}] = K_a[\ce{HF}]/[\ce{F-}] =
+        (7.2\times10^{-4})(1.0/1.0) = 7.2\times10^{-4}$;
+        pH $= \mathbf{3.14}$\end{apcanswer}}
+  \item Percent ionization now: \answerblank[2.6cm]{0.072\%}
+  \item Explain the suppression using Le Ch\^atelier.
+        \answerlines[3]{\ce{F-} is a product of the \ce{HF} ionization
+        equilibrium. Adding it shifts the equilibrium to the left, so less
+        \ce{HF} ionizes and $[\ce{H+}]$ falls --- here by a factor of about
+        37.}
+\end{parts}
+
+\problem[]{\ced{8.4} Buffer or not? Give a one-phrase reason.}
+\begin{parts}
+  \item \ce{HC2H3O2} $+$ \ce{NaC2H3O2}
+        \answerblank[8.9cm]{buffer --- weak acid and its conjugate base}
+  \item \ce{HCl} $+$ \ce{NaCl}
+        \answerblank[7cm]{not --- \ce{HCl} is strong, \ce{Cl-} inert}
+  \item \ce{NH3} $+$ \ce{NH4NO3}
+        \answerblank[8.9cm]{buffer --- weak base and its conjugate acid}
+  \item \ce{NaOH} $+$ \ce{NaC2H3O2}
+        \answerblank[8cm]{not --- no weak conjugate pair present}
+\end{parts}
+
+\begin{spiralstrip}{Unit 8 \textbullet\ blocks 1--4}
+  \item For a weak base, ICE $x$ is: \answerblank[2.2cm]{$[\ce{OH-}]$}
+  \item pH of \SI{0.100}{\Molar} \ce{NH3}: \answerblank[2cm]{11.13}
+  \item Which ionization dominates for \ce{H3PO4}?
+        \answerblank[2.4cm]{the first}
+  \item pH of \SI{0.10}{\Molar} acetic acid: \answerblank[2cm]{2.87}
+  \item \ce{NH4Cl} solutions are: \answerblank[2cm]{acidic}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,97 @@
+% Ch11 WS2 -- energetics of dissolving. Block 2. CED content.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{11}
+\apcunittitle{Properties of Solutions}
+\apcdoctitle{Worksheet 2 \textbullet\ The Energetics of Dissolving}
+\apcsubtitle{Zumdahl \S11.2 \textbullet\ three steps, two endothermic, one exothermic}
+
+\begin{document}
+\wsheader[Every explanation on this sheet should name which of the three
+steps is responsible. ``Like dissolves like'' is a conclusion, not a
+reason.]
+
+\problem[]{The three-step model of solution formation:}
+\begin{parts}
+  \item Name each step and give the sign of its $\Delta H$.
+        \answerlines[3]{(1) Separate the solute --- endothermic.
+        (2) Expand the solvent to make room --- endothermic.
+        (3) Let solute and solvent interact --- exothermic.}
+  \item Write the expression for $\Delta H_{\text{soln}}$.
+        \answerblank[5cm]{$\Delta H_1 + \Delta H_2 + \Delta H_3$}
+  \item For an ionic solute, what are steps 1 and 3 usually called?
+        \answerblank[6.5cm]{lattice energy; hydration energy}
+\end{parts}
+
+\problem[]{Predict the temperature change and identify a use:}
+\begin{parts}
+  \item \ce{NH4NO3}, $\Delta H_{\text{soln}} = \SI{+25.7}{\kilo\joule\per\mole}$:
+        \answerblank[6.0cm]{gets cold --- instant cold pack}
+  \item \ce{CaCl2}, $\Delta H_{\text{soln}} = \SI{-82.8}{\kilo\joule\per\mole}$:
+        \answerblank[6.7cm]{gets hot --- hand warmer, de-icer}
+  \item \ce{NaCl}, $\Delta H_{\text{soln}} = \SI{+3.9}{\kilo\joule\per\mole}$:
+        \answerblank[5.5cm]{very slightly cold}
+\end{parts}
+
+\problem[]{\ce{NaCl} has a very large lattice energy, yet it dissolves
+readily in water with $\Delta H_{\text{soln}}$ of only
+\SI{+3.9}{\kilo\joule\per\mole}. Explain how such a small net value arises
+from such large individual terms.
+\answerlines[3]{Step 1 requires an enormous input to break the lattice, and
+Step 3 releases an almost equally enormous amount as the ions are hydrated
+by ion--dipole attractions. The net is the small difference between two
+large numbers, so it comes out near zero.}}
+
+\problem[]{Use the three-step model to explain each observation:}
+\begin{parts}
+  \item Oil does not dissolve in water. \answerlines[3]{Step 2 requires
+        breaking water's hydrogen bonds --- strongly endothermic. Step 3
+        offers only weak dipole--induced dipole attractions between water and
+        nonpolar oil, which cannot repay Step 2. So
+        $\Delta H_{\text{soln}}$ is strongly positive.}
+  \item Ethanol mixes with water in all proportions.
+        \answerlines[3]{Steps 1 and 2 both break hydrogen bonds, but Step 3
+        forms new hydrogen bonds between ethanol's O--H and water --- the
+        same type and strength as those broken. The energy is essentially
+        repaid, so mixing is free.}
+  \item \ce{NaCl} does not dissolve in hexane.
+        \answerlines[2]{Step 1 still costs the full lattice energy, but
+        hexane can offer only weak dispersion interactions with ions in
+        Step 3 --- nowhere near enough to repay it.}
+\end{parts}
+
+\problem[]{A student states: ``Dissolving is always exothermic because new
+attractions form.'' Evaluate this claim.
+\answerlines[3]{False. Step 3 is exothermic, but Steps 1 and 2 are both
+endothermic, and either can exceed it. \ce{NH4NO3} dissolves endothermically
+enough to make a container noticeably cold.}}
+
+\problem[]{Some substances dissolve even though $\Delta H_{\text{soln}}$ is
+positive. What does this reveal about the driving force for dissolving?
+\answerlines[3]{Enthalpy alone does not determine whether a process occurs.
+Mixing increases disorder, and that increase can drive dissolving even when
+energy must be absorbed. Unit 9 makes this precise with entropy and free
+energy.}}
+
+\problem[]{Explain, energetically, why ``like dissolves like'' works ---
+without simply restating the phrase.
+\answerlines[3]{Step 3 can only repay Step 2 when the new solute--solvent
+attractions are of the same type and comparable strength as the
+solvent--solvent attractions that were broken. Matching polarity is what
+guarantees that.}}
+
+\begin{spiralstrip}{Chapter 11 \textbullet\ block 1}
+  \item Molality of \SI{0.25}{\mole} in \SI{250}{\gram} solvent:
+        \answerblank[3cm]{\SI{1.0}{\mole\per\kilo\gram}}
+  \item Which denominator does molarity use?
+        \answerblank[3.4cm]{L of solution}
+  \item Mass percent of \SI{10.0}{\gram} in \SI{200.0}{\gram} solution:
+        \answerblank[2.4cm]{5.00\%}
+  \item Which measure is temperature-independent?
+        \answerblank[2.4cm]{molality}
+  \item Mole fraction if $n_A = 0.20$, $n_B = 0.80$:
+        \answerblank[2cm]{0.20}
+\end{spiralstrip}
+
+\end{document}

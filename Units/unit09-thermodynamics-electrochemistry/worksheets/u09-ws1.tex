@@ -1,0 +1,124 @@
+% U9 WS1 -- entropy: sign prediction and absolute entropies. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Worksheet 1 \textbullet\ Entropy}
+\apcsubtitle{CED 9.1--9.2 \textbullet\ count the gas moles before anything else}
+
+\begin{document}
+\wsheader[$\Delta S^\circ = \sum nS^\circ_{\text{prod}} -
+\sum nS^\circ_{\text{react}}$ \textbullet\ $S^\circ$ in
+\si{\joule\per\kelvin\per\mole}: \ce{H2} 131 \textbullet\ \ce{O2} 205
+\textbullet\ \ce{N2} 192 \textbullet\ \ce{H2O(l)} 70 \textbullet\
+\ce{H2O(g)} 189 \textbullet\ \ce{NH3} 193 \textbullet\ \ce{NO2} 240
+\textbullet\ \ce{N2O4} 304 \textbullet\ \ce{CaCO3} 93 \textbullet\ \ce{CaO}
+40 \textbullet\ \ce{CO2} 214.]
+
+\problem[]{\ced{9.1} What entropy measures.}
+\begin{parts}
+  \item Complete: entropy measures how \answerblank[3.2cm]{dispersed} the
+        energy and matter of a system are.
+  \item Explain why ``a messy room has high entropy'' is a poor analogy.
+        \answerlines[3]{Entropy counts the microscopic arrangements
+        available to particles and their energy. Tidying a room rearranges
+        macroscopic objects without changing the number of molecular
+        arrangements at all, so the analogy describes appearance rather
+        than the quantity being measured.}
+  \item Rank by absolute entropy at the same temperature: \ce{H2O(s)},
+        \ce{H2O(l)}, \ce{H2O(g)}.
+        \answerblank[7cm]{\ce{H2O(s)} $<$ \ce{H2O(l)} $<$ \ce{H2O(g)}}
+\end{parts}
+
+\problem[]{\ced{9.1} Predict the sign of $\Delta S^\circ$ and give the
+controlling reason in three words or fewer:}
+\begin{parts}
+  \item \ce{2H2(g) + O2(g) -> 2H2O(l)}
+        \answerblank[6.4cm]{$-$; 3 mol gas to 0}
+  \item \ce{NH4NO3(s) -> NH4+(aq) + NO3^-(aq)}
+        \answerblank[6.4cm]{$+$; crystal disperses}
+  \item \ce{CO2(s) -> CO2(g)} \answerblank[6.4cm]{$+$; sublimation}
+  \item \ce{2SO2(g) + O2(g) -> 2SO3(g)}
+        \answerblank[6.4cm]{$-$; 3 mol gas to 2}
+  \item \ce{H2(g) + Cl2(g) -> 2HCl(g)}
+        \answerblank[6.4cm]{$\approx 0$; 2 mol gas to 2}
+\end{parts}
+
+\problem[]{\ced{9.1} Part (e) above has no change in the number of gas
+moles. Explain what that implies about the magnitude of $\Delta S^\circ$
+and why the sign is hard to predict by inspection.
+\answerlines[3]{With the gas count unchanged the dominant contribution
+vanishes, so $\Delta S^\circ$ is small --- a few
+\si{\joule\per\kelvin} either way. What remains are secondary differences
+in molecular complexity and mass, which inspection cannot reliably rank, so
+the value must be looked up rather than predicted.}}
+
+\problem[]{\ced{9.1} The second law.}
+\begin{parts}
+  \item State it as an inequality.
+        \answerblank[6.8cm]{$\Delta S_{\text{univ}} > 0$ for a favored
+        process}
+  \item Water freezing at \SI{-10}{\celsius} is favored, yet the water's
+        entropy falls. Resolve this. \answerlines[3]{Freezing releases heat
+        to the surroundings. Below \SI{0}{\celsius} the entropy gained by
+        the surroundings exceeds the entropy lost by the water, so
+        $\Delta S_{\text{univ}}$ remains positive.}
+  \item True or false: a reaction with $\Delta S_{\text{sys}} < 0$ can
+        never be favored. \answerblank[5.4cm]{false --- see part (b)}
+\end{parts}
+
+\problem[]{\ced{9.2} The third law.}
+\begin{parts}
+  \item A perfect crystal at \SI{0}{\kelvin} has entropy exactly
+        \answerblank[1.4cm]{zero}.
+  \item $S^\circ$ for \ce{O2(g)} is \SI{205}{\joule\per\kelvin\per\mole},
+        but $\Delta H_f^\circ$ for \ce{O2(g)} is zero. Explain why the two
+        conventions differ. \answerlines[3]{The third law gives entropy a
+        true zero, so absolute entropies can be measured --- and an element
+        has no reason to sit at that zero. Enthalpy has no natural origin,
+        so only changes are measurable, and elements in their standard
+        states are \emph{assigned} zero by convention.}
+\end{parts}
+
+\problem[]{\ced{9.2} Calculate $\Delta S^\circ$ for each:}
+\begin{parts}
+  \item \ce{CaCO3(s) -> CaO(s) + CO2(g)} \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(40 + 214) - 93 = \mathbf{+161}$~J/K
+        \end{apcanswer}}
+  \item \ce{N2(g) + 3H2(g) -> 2NH3(g)} \workspace[2cm]
+        \keyonly{\begin{apcanswer}$2(193) - [192 + 3(131)] = 386 - 585 =
+        \mathbf{-199}$~J/K\end{apcanswer}}
+  \item \ce{H2O(l) -> H2O(g)} \answerblank[3.4cm]{$+119$ J/K}
+  \item \ce{2NO2(g) -> N2O4(g)} \answerblank[3.4cm]{$-176$ J/K}
+  \item \ce{2H2(g) + O2(g) -> 2H2O(l)} \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$2(70) - [2(131) + 205] = 140 - 467 =
+        \mathbf{-327}$~J/K\end{apcanswer}}
+\end{parts}
+
+\problem[]{\ced{9.2} A student computes $\Delta S^\circ$ for the Haber
+process as $193 - (192 + 131) = -130$~J/K. Identify both errors and give
+the correct value.
+\answerlines[3]{They omitted the coefficient 2 on \ce{NH3} and the
+coefficient 3 on \ce{H2}. Correctly
+$2(193) - [192 + 3(131)] = \mathbf{-199}$~J/K.}}
+
+\problem[]{\ced{9.2} Check each sign you predicted in problem 2 against the
+value you calculated in problem 6 where both exist. State what this
+confirms about the gas-mole rule.
+\answerlines[3]{Every calculated sign matches the prediction made from the
+change in gas moles alone. Where the gas count changes, that term dominates
+and the sign can be read off without any table --- which is what makes the
+no-calculator multiple-choice questions answerable.}}
+
+\begin{spiralstrip}{Unit 8 \textbullet\ acids and bases}
+  \item pH of \SI{0.010}{\Molar} \ce{HCl}: \answerblank[2cm]{2.00}
+  \item Buffer method step 1: \answerblank[7.3cm]{stoichiometry to
+        completion}
+  \item pH $=$ p$K_a$ at which point of a titration?
+        \answerblank[3.6cm]{the halfway point}
+  \item $K_a \times K_b$ for a conjugate pair: \answerblank[1.6cm]{$K_w$}
+  \item Equivalence pH, weak acid $+$ strong base:
+        \answerblank[2.2cm]{above 7}
+\end{spiralstrip}
+
+\end{document}

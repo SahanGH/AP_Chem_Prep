@@ -1,0 +1,719 @@
+% Zumdahl Chapter 16 -- Solubility Equilibria. Elaborated notes, 4 blocks.
+% Only SS16.1 is examinable: it holds CED 7.11, 7.12 and 8.11.
+\documentclass{apchem-notes}
+
+\apcunitword{Chapter}
+\apcunit{16}
+\apcunittitle{Solubility Equilibria}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{Zumdahl \S16.1 \textbullet\ PDF pp.~805--813 \textbullet\ 4 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this chapter fits the AP course]
+\textbf{This short chapter completes the CED.} \S16.1 alone carries the last
+three topics not covered anywhere else in these materials:
+\textbf{7.11} (solubility equilibria and $K_{sp}$), \textbf{7.12} (the
+common-ion effect applied to solubility) and \textbf{8.11} (pH and
+solubility).
+
+\textbf{Skip the rest of the chapter.} \S16.2 (precipitation and qualitative
+analysis) and \S16.3 (complex ion equilibria) are not on the framework.
+A short treatment of $Q$ versus $K_{sp}$ closes Block 4 because the
+reasoning is Unit 7 material you already own --- but it is flagged as
+enrichment, and the chapter test does not assess it.
+
+\textbf{One CED boundary matters more than usual here.} Topic 8.11 carries
+an explicit \emph{exclusion statement}: \emph{computations of solubility as
+a function of pH will not be assessed}. So pH and solubility is taught
+\textbf{qualitatively}, by Le Ch\^atelier, and every quantitative
+common-ion problem in these materials uses an ion that is \emph{not}
+pH-sensitive. That is a deliberate choice, not an omission.
+
+Nothing here is a new kind of equilibrium. A saturated solution is a
+system at equilibrium with a solid, and $K_{sp}$ is its equilibrium
+constant with the solid left out --- exactly the rule from Chapter 13.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{$K_{sp}$ and the Solubility Product}{Zumdahl \S16.1}
+
+\begin{objectives}
+  \item Write the $K_{sp}$ expression for any sparingly soluble salt.
+  \item Calculate $K_{sp}$ from a measured solubility.
+\end{objectives}
+
+\reading{Zumdahl \S16.1}{805--810}
+
+\begin{warmup}[4]
+  \item Species omitted from any $K$ expression:
+        \answerblank[6cm]{pure solids and pure liquids}
+  \item $K$ for \ce{2A <=> B} in terms of concentrations:
+        \answerblank[3.4cm]{$[\ce{B}]/[\ce{A}]^2$}
+  \item Is \ce{AgCl} soluble or insoluble by the Unit 4 rules?
+        \answerblank[2.4cm]{insoluble}
+  \item If $Q < K$, the reaction shifts: \answerblank[2cm]{right}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{A saturated solution is an equilibrium}
+
+\notesectionz{Dissolving, run backwards}{16.1}
+\practice{6}
+
+Put more solid salt into water than can dissolve and two processes run at
+once: solid dissolving into ions, and ions returning to the solid. When
+their rates are equal the solution is \term{saturated} --- and that is a
+\answerblank[4.4cm]{dynamic equilibrium}, not a solution that has ``stopped
+dissolving.''
+
+\[ \ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)} \]
+
+The equilibrium constant for this process is the \term{solubility product},
+$K_{sp}$:
+\[ K_{sp} = [\ce{Ca^2+}][\ce{F^-}]^2 \]
+
+Two features to notice, both of which are old rules reappearing:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item The solid does \emph{not} appear --- it is a
+        \answerblank[2.6cm]{pure solid}, exactly as in Chapter 13.
+  \item Each ion is raised to the power of its
+        \answerblank[2.6cm]{coefficient}, so the 2 in \ce{2F^-} becomes an
+        exponent.
+\end{itemize}
+
+\begin{apcnote}[Why more solid does not mean more dissolved]
+It seems as though a bigger pile of solid --- more surface area --- ought to
+give a more concentrated solution. Zumdahl's answer is worth keeping:
+doubling the surface area doubles the rate of dissolving, but it
+\emph{equally} doubles the rate at which ions re-deposit on that surface.
+The two effects cancel and the equilibrium position does not move.
+
+Grinding the solid or stirring the mixture makes equilibrium arrive
+\emph{sooner}. Neither changes how much ends up dissolved.
+\end{apcnote}
+
+\begin{apctrap}
+\textbf{$K_{sp}$ is an equilibrium constant; solubility is an equilibrium
+position.} This one sentence organizes the whole chapter.
+
+$K_{sp}$ has a single value for a given solid at a given temperature.
+Solubility is how much actually dissolves, and it changes with what else is
+in the water --- add a common ion and the solubility falls, while $K_{sp}$
+does not move at all. Students who treat the two words as synonyms get
+every common-ion question wrong.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{Writing the expressions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{AgCl}: $K_{sp} = $
+        \answerblank[5cm]{$[\ce{Ag+}][\ce{Cl-}]$}
+  \item \ce{PbI2}: $K_{sp} = $
+        \answerblank[5cm]{$[\ce{Pb^2+}][\ce{I-}]^2$}
+  \item \ce{Ag2CrO4}: $K_{sp} = $
+        \answerblank[5cm]{$[\ce{Ag+}]^2[\ce{CrO4^2-}]$}
+  \item \ce{Mg(OH)2}: $K_{sp} = $
+        \answerblank[5cm]{$[\ce{Mg^2+}][\ce{OH-}]^2$}
+  \item \ce{Ca3(PO4)2}: $K_{sp} = $
+        \answerblank[5cm]{$[\ce{Ca^2+}]^3[\ce{PO4^3-}]^2$}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{From measured solubility to $K_{sp}$}
+
+\notesectionz{The ICE table is trivial --- the stoichiometry is not}{16.1}
+\practice{5}
+
+If $s$ moles of salt dissolve per litre, the ion concentrations follow
+directly from the coefficients. That is the only step where mistakes
+happen.
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\hline
+\textbf{Type} & \textbf{Example} & \textbf{Ions at equilibrium} &
+  \textbf{$K_{sp}$} \\
+\hline
+\ce{MX}   & \ce{AgCl}    & $s$, $s$   & $s^2$ \\
+\ce{MX2}  & \ce{CaF2}    & $s$, $2s$  & $(s)(2s)^2 = 4s^3$ \\
+\ce{M2X}  & \ce{Ag2CrO4} & $2s$, $s$  & $(2s)^2(s) = 4s^3$ \\
+\ce{M3X}  & \ce{Ag3PO4}  & $3s$, $s$  & $(3s)^3(s) = 27s^4$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Note that \ce{MX2} and \ce{M2X} give the \emph{same} formula, $4s^3$ ---
+which is why they can be compared with each other but not with an \ce{MX}
+salt.
+
+\begin{workedexample}[Worked example 1: Zumdahl's copper(I) bromide]
+\ce{CuBr} has a measured solubility of
+$2.0\times10^{-4}$~mol/L at \SI{25}{\celsius}. Find $K_{sp}$.
+
+\[ \ce{CuBr(s) <=> Cu+(aq) + Br^-(aq)} \qquad
+   K_{sp} = [\ce{Cu+}][\ce{Br-}] \]
+Each formula unit gives one of each ion, so
+$[\ce{Cu+}] = [\ce{Br-}] = 2.0\times10^{-4}$:
+\[ K_{sp} = (2.0\times10^{-4})(2.0\times10^{-4})
+   = \mathbf{4.0\times10^{-8}} \]
+Units are conventionally omitted.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: a 1:2 salt, and grams to moles]
+Lead(II) iodide dissolves to the extent of \SI{0.70}{\gram\per\litre} at
+\SI{25}{\celsius}. Find $K_{sp}$. ($M = \SI{461.0}{\gram\per\mole}$)
+
+\textbf{Convert first.} $s = 0.70/461.0 = 1.52\times10^{-3}$~mol/L.
+
+\textbf{Then the stoichiometry.}
+$\ce{PbI2(s) <=> Pb^2+(aq) + 2I^-(aq)}$, so $[\ce{Pb^2+}] = s$ and
+$[\ce{I-}] = 2s = 3.04\times10^{-3}$:
+\[ K_{sp} = (1.52\times10^{-3})(3.04\times10^{-3})^2
+   = \mathbf{1.4\times10^{-8}} \]
+
+Forgetting to double the iodide gives $3.5\times10^{-9}$ --- low by a
+factor of 4, and a guaranteed lost point.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Calculating $K_{sp}$}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{BaSO4} dissolves to $9.0\times10^{-3}$~g/L
+        ($M = \SI{233.4}{\gram\per\mole}$). Find $K_{sp}$.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$s = 9.0\times10^{-3}/233.4 =
+        3.86\times10^{-5}$~M; both ions equal $s$;
+        $K_{sp} = (3.86\times10^{-5})^2 =
+        \mathbf{1.5\times10^{-9}}$\end{apcanswer}}
+  \item \ce{Ag2CrO4} has a solubility of $1.3\times10^{-4}$~M. Find
+        $K_{sp}$. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$[\ce{Ag+}] = 2s = 2.6\times10^{-4}$,
+        $[\ce{CrO4^2-}] = s = 1.3\times10^{-4}$;
+        $K_{sp} = (2.6\times10^{-4})^2(1.3\times10^{-4}) =
+        \mathbf{8.8\times10^{-12}}$\end{apcanswer}}
+  \item A student computes $K_{sp}$ for \ce{CaF2} as $(s)(s)^2$. What did
+        they miss, and by what factor is the answer wrong?
+        \answerlines[2]{They failed to double the fluoride:
+        $[\ce{F-}] = 2s$, not $s$. The correct expression is
+        $(s)(2s)^2 = 4s^3$, so their answer is too small by a factor
+        of 4.}
+\end{enumerate}
+
+\begin{exitticket}
+A saturated solution of \ce{AgCl} sits over a pile of undissolved
+\ce{AgCl}. A student adds a second spoonful of solid \ce{AgCl}. What
+happens to $[\ce{Ag+}]$, and what happens to $K_{sp}$?
+\keyonly{\begin{apcanswer}Neither changes. The solid does not appear in the
+$K_{sp}$ expression, and adding more of it changes the rates of dissolving
+and re-depositing equally, so the equilibrium position does not move.
+$K_{sp}$ depends only on temperature.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Solubility from $K_{sp}$, and Comparing Salts}{Zumdahl \S16.1}
+
+\begin{objectives}
+  \item Calculate molar solubility from $K_{sp}$ for any stoichiometry.
+  \item Judge when $K_{sp}$ values may be compared directly and when they
+        may not.
+\end{objectives}
+
+\reading{Zumdahl \S16.1 (Relative Solubilities)}{808--811}
+
+\begin{warmup}[3]
+  \item $K_{sp}$ for an \ce{MX} salt in terms of $s$:
+        \answerblank[2cm]{$s^2$}
+  \item $K_{sp}$ for an \ce{MX2} salt in terms of $s$:
+        \answerblank[2cm]{$4s^3$}
+  \item $K_{sp}$ is a constant; solubility is a
+        \answerblank[7.6cm]{position (it varies with the solution)}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Running the calculation backwards}
+
+\notesectionz{Solving for $s$}{16.1}
+\practice{5}
+
+Going from $K_{sp}$ to solubility is the same relationship read the other
+way. Rearranged:
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{Type} & \textbf{Relation} & \textbf{Solubility} \\
+\hline
+\ce{MX}  & $K_{sp} = s^2$   & $s = \sqrt{K_{sp}}$ \\
+\ce{MX2} or \ce{M2X} & $K_{sp} = 4s^3$ &
+  $s = \sqrt[3]{K_{sp}/4}$ \\
+\ce{M3X} & $K_{sp} = 27s^4$ & $s = \sqrt[4]{K_{sp}/27}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{workedexample}[Worked example 3: two stoichiometries side by side]
+\textbf{\ce{AgCl}}, $K_{sp} = 1.6\times10^{-10}$.
+Let $s = [\ce{Ag+}] = [\ce{Cl-}]$:
+\[ 1.6\times10^{-10} = s^2 \;\Longrightarrow\;
+   s = \mathbf{1.3\times10^{-5}}~\text{M} \]
+
+\textbf{\ce{CaF2}}, $K_{sp} = 4.0\times10^{-11}$.
+Here $[\ce{Ca^2+}] = s$ and $[\ce{F-}] = 2s$:
+\[ 4.0\times10^{-11} = (s)(2s)^2 = 4s^3
+   \;\Longrightarrow\; s^3 = 1.0\times10^{-11}
+   \;\Longrightarrow\; s = \mathbf{2.2\times10^{-4}}~\text{M} \]
+
+Notice: \ce{CaF2} has the \emph{smaller} $K_{sp}$ but is over ten times
+\emph{more} soluble. Hold that thought.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{When you may compare $K_{sp}$ values}
+
+\notesectionz{The comparison trap}{16.1}
+\practice{6}
+
+\begin{center}
+\fbox{\parbox{0.88\linewidth}{\centering
+$K_{sp}$ values may be compared directly \textbf{only} for salts that
+produce the \textbf{same total number of ions}.}}
+\end{center}
+
+\textbf{Same stoichiometry --- comparison works.} All three of these are
+\ce{MX} salts, so $s = \sqrt{K_{sp}}$ for each and the order of $K_{sp}$ is
+the order of solubility:
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\hline
+\textbf{Salt} & $K_{sp}$ & \textbf{solubility (M)} \\
+\hline
+\ce{AgI}   & $1.5\times10^{-16}$ & $1.2\times10^{-8}$ \\
+\ce{CuI}   & $5.0\times10^{-12}$ & $2.2\times10^{-6}$ \\
+\ce{CaSO4} & $6.1\times10^{-5}$  & $7.8\times10^{-3}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Different stoichiometry --- the order can reverse outright.}
+Zumdahl's example is worth memorizing because it is so extreme:
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\hline
+\textbf{Salt} & \textbf{type} & $K_{sp}$ & \textbf{solubility (M)} \\
+\hline
+\ce{CuS}   & \ce{MX}    & $8.5\times10^{-45}$ & $9.2\times10^{-23}$ \\
+\ce{Ag2S}  & \ce{M2X}   & $1.6\times10^{-49}$ & $3.4\times10^{-17}$ \\
+\ce{Bi2S3} & \ce{M2X3}  & $1.1\times10^{-73}$ & $1.0\times10^{-15}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+$K_{sp}$ order: \ce{CuS} $>$ \ce{Ag2S} $>$ \ce{Bi2S3}. \\
+Solubility order: \answerblank[6cm]{\ce{Bi2S3} $>$ \ce{Ag2S} $>$ \ce{CuS}}
+--- \textbf{exactly reversed}.
+
+\begin{apctrap}
+The reversal is not mysterious. \ce{Bi2S3} produces \emph{five} ions per
+formula unit, so its $K_{sp}$ is a product of five concentration factors,
+each tiny. Multiplying five small numbers gives an absurdly small
+$K_{sp}$ even when a respectable amount of solid has dissolved.
+
+The rule to carry into the exam: \textbf{if the formulas do not have the
+same ion count, you must calculate $s$ before you may rank them.}
+\end{apctrap}
+
+\notesectionz{Connecting back to the Unit 4 solubility rules}{16.1}
+
+The solubility rules you memorized in Unit 4 are the qualitative version of
+this same idea. The CED makes the link explicit: a salt with
+$K_{sp} > 1$ is what those rules call
+\answerblank[2.4cm]{soluble}, and the very small $K_{sp}$ values in the
+table belong to the salts the rules call
+\answerblank[2.4cm]{insoluble}. ``Insoluble'' never meant zero --- it meant
+an equilibrium lying far to the left.
+
+\segment{APPLICATION}{20}{Ranking and calculating}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Calculate the molar solubility of \ce{Mg(OH)2},
+        $K_{sp} = 8.9\times10^{-12}$. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$[\ce{Mg^2+}] = s$, $[\ce{OH-}] = 2s$;
+        $8.9\times10^{-12} = 4s^3$; $s^3 = 2.2\times10^{-12}$;
+        $s = \mathbf{1.3\times10^{-4}}$~M\end{apcanswer}}
+  \item Rank \ce{BaSO4} ($1.5\times10^{-9}$), \ce{SrSO4}
+        ($3.2\times10^{-7}$) and \ce{PbSO4} ($1.3\times10^{-8}$) by
+        increasing solubility, and say why no calculation is needed.
+        \answerlines[2]{\ce{BaSO4} $<$ \ce{PbSO4} $<$ \ce{SrSO4}. All three
+        are \ce{MX} salts producing two ions, so $s = \sqrt{K_{sp}}$ and the
+        $K_{sp}$ order is already the solubility order.}
+  \item \ce{CaF2} ($K_{sp} = 4.0\times10^{-11}$) and \ce{BaCrO4}
+        ($K_{sp} = 8.5\times10^{-11}$). Which is more soluble?
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Calculation is required --- different ion
+        counts. \ce{CaF2}: $s = \sqrt[3]{4.0\times10^{-11}/4} =
+        2.2\times10^{-4}$. \ce{BaCrO4}: $s = \sqrt{8.5\times10^{-11}} =
+        9.2\times10^{-6}$. \textbf{\ce{CaF2} is about 24 times more
+        soluble}, despite the smaller $K_{sp}$.\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Salt A has a larger $K_{sp}$ than salt B. A student concludes A is more
+soluble. Under what condition are they right, and under what condition
+could they be badly wrong?
+\keyonly{\begin{apcanswer}They are right if A and B produce the same total
+number of ions, since then solubility is the same increasing function of
+$K_{sp}$ for both. They can be wrong whenever the ion counts differ --- a
+salt producing more ions can have a far smaller $K_{sp}$ and still be much
+more soluble, as \ce{Bi2S3} is compared with \ce{CuS}.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{The Common-Ion Effect on Solubility}{Zumdahl \S16.1}
+
+\begin{objectives}
+  \item Predict qualitatively how a common ion changes solubility.
+  \item Calculate solubility in a solution already containing a common ion.
+\end{objectives}
+
+\reading{Zumdahl \S16.1 (Common Ion Effect)}{811--812}
+
+\begin{warmup}[4]
+  \item Molar solubility of \ce{AgCl} in pure water
+        ($K_{sp} = 1.6\times10^{-10}$):
+        \answerblank[3cm]{$1.3\times10^{-5}$~M}
+  \item Adding a product shifts an equilibrium:
+        \answerblank[2cm]{left}
+  \item A common ion is one that is:
+        \answerblank[5.4cm]{already in the equilibrium}
+  \item Does adding a common ion change $K_{sp}$?
+        \answerblank[2cm]{no}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Le Ch\^atelier, one more time}
+
+\notesectionz{Why solubility falls}{16.1}
+\practice{6}
+
+\[ \ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)} \]
+
+Dissolve the salt in a solution that already contains \ce{F-} --- from
+\ce{NaF}, say --- and you have added a \answerblank[2cm]{product}. The
+equilibrium shifts \answerblank[2cm]{left}, so \emph{less} \ce{CaF2}
+dissolves.
+
+This is the identical mechanism you met in Chapter 15, where \ce{NaF}
+suppressed the ionization of \ce{HF}. Only the equilibrium has changed.
+
+\begin{apctrap}
+Say precisely what moved. The \emph{solubility} decreased; $K_{sp}$ did
+\textbf{not} change --- it cannot, because nothing about the temperature
+changed. The product $[\ce{Ca^2+}][\ce{F-}]^2$ still equals
+$4.0\times10^{-11}$; the two concentrations have simply redistributed, with
+much more fluoride and much less calcium.
+
+``The common ion lowers $K_{sp}$'' is marked wrong every time.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 4: Zumdahl's calcium fluoride]
+Find the solubility of \ce{CaF2} ($K_{sp} = 4.0\times10^{-11}$) in
+\SI{0.025}{\Molar} \ce{NaF}, and compare with pure water.
+
+Let $s$ be the moles of \ce{CaF2} that dissolve per litre.
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\hline
+ & $[\ce{Ca^2+}]$ & $[\ce{F-}]$ \\
+\hline
+initial     & 0 & 0.025 \\
+change      & $+s$ & $+2s$ \\
+equilibrium & $s$ & $0.025 + 2s$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\[ 4.0\times10^{-11} = (s)(0.025 + 2s)^2 \approx (s)(0.025)^2 \]
+because $K_{sp}$ is tiny, so $2s$ is negligible beside 0.025. Then
+\[ s = \frac{4.0\times10^{-11}}{6.25\times10^{-4}}
+     = \mathbf{6.4\times10^{-8}}~\text{M} \]
+
+In pure water the solubility was $2.2\times10^{-4}$~M. The fluoride already
+present cut it by a factor of about \textbf{3400}.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Which ion, and which power}
+
+The size of the effect depends on \emph{which} ion you add, because the two
+ions enter the expression with different exponents.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{AgCl} in \SI{0.10}{\Molar} \ce{NaCl}: $s = K_{sp}/[\ce{Cl-}] =$
+        \answerblank[3.2cm]{$1.6\times10^{-9}$~M}
+  \item \ce{AgCl} in \SI{0.020}{\Molar} \ce{AgNO3}:
+        \answerblank[3.2cm]{$8.0\times10^{-9}$~M}
+  \item \ce{BaSO4} ($1.5\times10^{-9}$) in \SI{0.010}{\Molar}
+        \ce{Na2SO4}: \answerblank[3.2cm]{$1.5\times10^{-7}$~M}
+  \item Would \ce{NaNO3} change the solubility of \ce{AgCl}? Why?
+        \answerblank[8cm]{no --- neither ion is in the equilibrium}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Adding the cation instead}
+
+\notesectionz{The exponent decides the sensitivity}{16.1}
+\practice{5}
+
+For \ce{CaF2}, adding \ce{F-} is far more effective than adding
+\ce{Ca^2+}, because fluoride is \answerblank[2.2cm]{squared} in the
+expression while calcium is not.
+
+\begin{workedexample}[Worked example 5: the same salt, the other ion]
+Find the solubility of \ce{CaF2} in \SI{0.10}{\Molar} \ce{Ca(NO3)2}.
+
+Now the \emph{calcium} is pre-loaded: $[\ce{Ca^2+}] = 0.10 + s \approx 0.10$
+and $[\ce{F-}] = 2s$.
+\[ 4.0\times10^{-11} = (0.10)(2s)^2 = 0.40s^2
+   \;\Longrightarrow\; s^2 = 1.0\times10^{-10}
+   \;\Longrightarrow\; s = \mathbf{1.0\times10^{-5}}~\text{M} \]
+
+Note that the \emph{fluoride is still doubled} even though calcium is the
+ion you added --- the $(2s)^2$ contributes a factor of 4. Writing
+$(0.10)(s)^2$ here is the commonest slip in the whole chapter.
+
+\textbf{Compare the three cases:}
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\hline
+\textbf{Solvent} & \textbf{solubility (M)} & \textbf{fall} \\
+\hline
+pure water                  & $2.2\times10^{-4}$ & --- \\
+\SI{0.10}{\Molar} \ce{Ca(NO3)2} & $1.0\times10^{-5}$ & $\times 22$ \\
+\SI{0.10}{\Molar} \ce{NaF}      & $4.0\times10^{-9}$ & $\times 54{,}000$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Same concentration of common ion, wildly different effect --- because the
+fluoride is squared.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Common-ion calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Calculate the solubility of \ce{PbI2}
+        ($K_{sp} = 1.4\times10^{-8}$) in \SI{0.10}{\Molar} \ce{NaI}.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$[\ce{I-}] \approx 0.10$;
+        $1.4\times10^{-8} = (s)(0.10)^2$;
+        $s = \mathbf{1.4\times10^{-6}}$~M --- about 1100 times less than
+        in pure water\end{apcanswer}}
+  \item Explain, without calculating, why \ce{BaSO4} is used as an X-ray
+        contrast agent despite barium ions being toxic.
+        \answerlines[3]{$K_{sp}$ is very small ($1.5\times10^{-9}$), so
+        almost no \ce{Ba^2+} enters solution. The suspension is also
+        administered with excess sulfate present, and by the common-ion
+        effect that suppresses the dissolution further still.}
+  \item A student says a common ion works by ``using up'' the solid.
+        Correct them. \answerlines[2]{Nothing is used up --- the common ion
+        shifts the position of the dissolution equilibrium to the left, so
+        less solid dissolves in the first place. More undissolved solid
+        remains, not less.}
+\end{enumerate}
+
+\begin{exitticket}
+\ce{CaF2} is dissolved to saturation in \SI{0.10}{\Molar} \ce{NaF}. State
+what happens to each of: the solubility of \ce{CaF2}, $[\ce{F-}]$,
+$[\ce{Ca^2+}]$, and $K_{sp}$ --- compared with pure water.
+\keyonly{\begin{apcanswer}Solubility: much lower. $[\ce{F-}]$: much higher
+(it is set by the \ce{NaF}). $[\ce{Ca^2+}]$: much lower, since it equals the
+solubility. $K_{sp}$: unchanged --- the product of the two still equals
+$4.0\times10^{-11}$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{pH and Solubility}{Zumdahl \S16.1--16.2}
+
+\begin{objectives}
+  \item Predict qualitatively how pH changes the solubility of a salt.
+  \item Use $Q$ against $K_{sp}$ to predict precipitation \emph{(enrichment)}.
+\end{objectives}
+
+\reading{Zumdahl \S16.1 (pH and Solubility)}{812--813}
+
+\begin{warmup}[3]
+  \item Common ion added $\Rightarrow$ solubility:
+        \answerblank[2cm]{falls}
+  \item Conjugate base of a \emph{weak} acid is a:
+        \answerblank[5.6cm]{meaningful (effective) base}
+  \item Conjugate base of a \emph{strong} acid is a:
+        \answerblank[4.4cm]{negligible base}
+\end{warmup}
+
+\begin{apcnote}[Read this before Block 4]
+CED topic 8.11 carries an \textbf{exclusion statement}:
+\emph{computations of solubility as a function of pH will not be assessed on
+the AP Exam.} Everything in this block is therefore \textbf{qualitative} ---
+predict the direction and justify it with Le Ch\^atelier. If a question ever
+asks you to \emph{calculate} a solubility at a given pH, it is not an AP
+question.
+\end{apcnote}
+
+\segment{INSTRUCTION A}{25}{When does pH matter?}
+
+\notesectionz{Only if the anion is a base}{16.1}
+\practice{6}
+
+\[ \ce{Mg(OH)2(s) <=> Mg^2+(aq) + 2OH^-(aq)} \]
+
+Add acid. The \ce{H+} reacts with \ce{OH-} and removes it from solution.
+That is removing a \answerblank[2cm]{product}, so the equilibrium shifts
+\answerblank[2.2cm]{right} and \emph{more} solid dissolves.
+
+This is why milk of magnesia --- a suspension of solid \ce{Mg(OH)2} ---
+dissolves in the stomach exactly as fast as it is needed to neutralize
+excess acid.
+
+Now the general principle. Adding acid can only pull an anion out of
+solution if that anion actually reacts with \ce{H+} --- that is, if it is a
+\term{meaningful base}, which happens when its conjugate acid \ce{HX} is
+\answerblank[2.4cm]{weak}.
+
+\begin{center}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.2cm}%
+                 >{\raggedright\arraybackslash}p{3.8cm}%
+                 >{\raggedright\arraybackslash}p{4.8cm}@{}}
+\hline
+\textbf{Anion} & \textbf{Conjugate acid} & \textbf{Solubility in acid} \\
+\hline
+\ce{OH-}, \ce{S^2-}, \ce{CO3^2-}, \ce{C2O4^2-}, \ce{CrO4^2-},
+  \ce{PO4^3-}, \ce{F-}
+  & \emph{weak} --- \ce{H2O}, \ce{H2S}, \ce{H2CO3}, \ce{HF}
+  & \textbf{increases}: the anion is consumed \\[0.7em]
+\ce{Cl-}, \ce{Br-}, \ce{I-}, \ce{NO3-}, \ce{ClO4-}
+  & \emph{strong} --- \ce{HCl}, \ce{HNO3}
+  & \textbf{unchanged}: the anion does not react \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{workedexample}[Worked example 6: three salts, three answers]
+\textbf{\ce{Ag3PO4} in acid --- more soluble.} \ce{PO4^3-} is a strong
+enough base to take a proton:
+\[ \ce{H+(aq) + PO4^3-(aq) -> HPO4^2-(aq)} \]
+That lowers $[\ce{PO4^3-}]$, so
+$\ce{Ag3PO4(s) <=> 3Ag+(aq) + PO4^3-(aq)}$ shifts right.
+
+\textbf{\ce{AgCl} in acid --- unchanged.} \ce{Cl-} is the conjugate base of
+\ce{HCl}, a strong acid, so it has essentially no affinity for protons. No
+\ce{HCl} molecules form, $[\ce{Cl-}]$ is untouched, and the equilibrium does
+not move.
+
+\textbf{\ce{Mg(OH)2} in \emph{base} --- less soluble.} Raising the pH adds
+\ce{OH-}, which is a product. This is the ordinary common-ion effect, and
+the solubility falls.
+\end{workedexample}
+
+\begin{apctrap}
+``Acids are reactive, so everything dissolves better in acid'' is false, and
+Zumdahl asks you to refute it directly. \ce{AgCl} is the counterexample:
+its solubility in \SI{1}{\Molar} \ce{HNO3} is the same as in pure water.
+The test is never how strong the acid is --- it is whether the
+\emph{anion} is a base.
+\end{apctrap}
+
+\segment{GUIDED PRACTICE}{15}{More soluble in acid?}
+
+For each salt, write \textbf{yes} or \textbf{no} and name the anion's
+conjugate acid:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \ce{CaCO3}: \answerblank[6cm]{yes --- \ce{H2CO3} is weak}
+  \item \ce{AgBr}: \answerblank[6cm]{no --- \ce{HBr} is strong}
+  \item \ce{CaF2}: \answerblank[6cm]{yes --- \ce{HF} is weak}
+  \item \ce{Fe(OH)3}: \answerblank[6cm]{yes --- \ce{H2O}, very weak}
+  \item \ce{PbI2}: \answerblank[6cm]{no --- \ce{HI} is strong}
+\end{enumerate}
+
+\notesectionz{Where limestone caves come from}{16.1}
+
+Rainwater dissolves atmospheric \ce{CO2}, which makes it slightly acidic.
+That acid attacks limestone:
+\[ \ce{CaCO3(s) + H+(aq) -> Ca^2+(aq) + HCO3^-(aq)} \]
+Over long times this hollows out caverns. Where the water drips into open
+air, dissolved \ce{CO2} escapes, the pH rises, and the reverse happens ---
+\ce{CaCO3} precipitates as stalactites and stalagmites. The same
+equilibrium, run in both directions by nothing more than a change in pH.
+
+\segment{APPLICATION}{20}{Predicting and justifying}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Predict the effect of lowering the pH on the solubility of
+        \ce{ZnS}, and justify with an equation.
+        \answerlines[3]{Solubility increases. \ce{S^2-} is the conjugate
+        base of the weak acid \ce{H2S}, so
+        $\ce{S^2-(aq) + H+(aq) -> HS^-(aq)}$ removes sulfide from solution.
+        By Le Ch\^atelier, $\ce{ZnS(s) <=> Zn^2+ + S^2-}$ shifts right.}
+  \item A solution is saturated with \ce{Mg(OH)2}. \ce{NaOH} is added.
+        State the effect on solubility, on $[\ce{Mg^2+}]$, and on
+        $K_{sp}$. \answerlines[2]{Solubility falls and $[\ce{Mg^2+}]$
+        falls, by the common-ion effect. $K_{sp}$ is unchanged --- only
+        temperature changes it.}
+  \item Two beakers hold saturated \ce{AgCl} and saturated \ce{CaCO3}.
+        Nitric acid is added to both. Describe and explain what differs.
+        \answerlines[3]{The \ce{CaCO3} dissolves further, because
+        \ce{CO3^2-} is a meaningful base and is consumed by \ce{H+},
+        shifting its equilibrium right. The \ce{AgCl} is unaffected,
+        because \ce{Cl-} is the conjugate base of a strong acid and does
+        not react with \ce{H+}.}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{$Q$ versus $K_{sp}$ \emph{(enrichment)}}
+
+\begin{apcnote}[Enrichment --- not on the chapter test]
+Predicting precipitation is Zumdahl \S16.2, which is off the CED as a topic.
+It is included here because the reasoning is nothing new: it is the
+$Q$-versus-$K$ comparison from Unit 7, applied to a dissolution.
+\end{apcnote}
+
+Compute the \term{ion product} $Q$ using the concentrations \emph{as mixed},
+before any reaction, then compare:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\hline
+$Q > K_{sp}$ & a precipitate forms, until the ions satisfy $K_{sp}$ \\
+$Q = K_{sp}$ & exactly saturated; no change \\
+$Q < K_{sp}$ & no precipitate; the solution is unsaturated \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{workedexample}[Worked example 7: does a precipitate form?]
+\SI{50.0}{\milli\litre} of \SI{0.0020}{\Molar} \ce{AgNO3} is mixed with
+\SI{50.0}{\milli\litre} of \SI{0.0020}{\Molar} \ce{NaCl}.
+$K_{sp}(\ce{AgCl}) = 1.6\times10^{-10}$.
+
+\textbf{Dilution first} --- the total volume is now
+\SI{100.0}{\milli\litre}, so each concentration is halved:
+$[\ce{Ag+}]_0 = [\ce{Cl-}]_0 = 1.0\times10^{-3}$~M.
+
+\[ Q = (1.0\times10^{-3})(1.0\times10^{-3}) = 1.0\times10^{-6} \]
+$Q = 1.0\times10^{-6}$ is far greater than
+$K_{sp} = 1.6\times10^{-10}$, so \textbf{a precipitate forms}.
+
+Skipping the dilution step is the usual error --- and it changes $Q$ by a
+factor of 4 here.
+\end{workedexample}
+
+\begin{exitticket}
+Give the single test that decides whether a salt's solubility depends on
+pH, and apply it to \ce{BaSO4} and to \ce{BaCO3}.
+\keyonly{\begin{apcanswer}Ask whether the anion is a meaningful base ---
+equivalently, whether its conjugate acid is weak. \ce{SO4^2-} comes from
+\ce{H2SO4}, essentially strong, so \ce{BaSO4} is insensitive to pH.
+\ce{CO3^2-} comes from the weak acid \ce{H2CO3}, so \ce{BaCO3} dissolves
+more readily as the pH falls.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

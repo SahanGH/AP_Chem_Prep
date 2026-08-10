@@ -1,0 +1,128 @@
+% Ch16 WS1 -- Ksp expressions and Ksp from measured solubility. Block 1.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{16}
+\apcunittitle{Solubility Equilibria}
+\apcdoctitle{Worksheet 1 \textbullet\ $K_{sp}$ Expressions and $K_{sp}$ from Solubility}
+\apcsubtitle{Zumdahl \S16.1 \textbullet\ the coefficient becomes an exponent \emph{and} a multiplier}
+
+\begin{document}
+\wsheader[$K_{sp}$ is an equilibrium constant; solubility is an equilibrium
+position. Molar masses: \ce{BaSO4} 233.4 \textbullet\ \ce{CaCO3} 100.1
+\textbullet\ \ce{PbI2} 461.0 \textbullet\ \ce{AgCl} 143.3
+\si{\gram\per\mole}.]
+
+\problem[]{Write the dissolution equation and the $K_{sp}$ expression for
+each solid:}
+\begin{parts}
+  \item \ce{BaSO4}: \answerlines[1]{\ce{BaSO4(s) <=> Ba^2+(aq) +
+        SO4^2-(aq)}; $K_{sp} = [\ce{Ba^2+}][\ce{SO4^2-}]$}
+  \item \ce{CaF2}: \answerlines[1]{\ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)};
+        $K_{sp} = [\ce{Ca^2+}][\ce{F-}]^2$}
+  \item \ce{Ag2CO3}: \answerlines[1]{\ce{Ag2CO3(s) <=> 2Ag+(aq) +
+        CO3^2-(aq)}; $K_{sp} = [\ce{Ag+}]^2[\ce{CO3^2-}]$}
+  \item \ce{Fe(OH)3}: \answerlines[1]{\ce{Fe(OH)3(s) <=> Fe^3+(aq) +
+        3OH^-(aq)}; $K_{sp} = [\ce{Fe^3+}][\ce{OH-}]^3$}
+  \item \ce{Ca3(PO4)2}: \answerlines[1]{\ce{Ca3(PO4)2(s) <=> 3Ca^2+(aq) +
+        2PO4^3-(aq)}; $K_{sp} = [\ce{Ca^2+}]^3[\ce{PO4^3-}]^2$}
+\end{parts}
+
+\problem[]{Why does the solid never appear in a $K_{sp}$ expression? Give
+the reason, not just the rule.
+\answerlines[3]{It is a pure solid, and pure solids have no meaningful
+concentration to vary --- their ``activity'' is fixed. Physically, adding
+more solid increases the surface area for dissolving and for re-depositing
+by the same factor, so the two rates change equally and the equilibrium
+position does not move.}}
+
+\problem[]{Complete the table relating molar solubility $s$ to $K_{sp}$:}
+\begin{parts}
+  \item \ce{MX} (e.g.\ \ce{AgCl}): ions are $s$ and $s$, so $K_{sp} = $
+        \answerblank[2.4cm]{$s^2$}
+  \item \ce{MX2} (e.g.\ \ce{PbI2}): ions are $s$ and $2s$, so $K_{sp} = $
+        \answerblank[3.4cm]{$(s)(2s)^2 = 4s^3$}
+  \item \ce{M2X} (e.g.\ \ce{Ag2CrO4}): ions are $2s$ and $s$, so
+        $K_{sp} = $ \answerblank[3.4cm]{$(2s)^2(s) = 4s^3$}
+  \item \ce{M3X} (e.g.\ \ce{Ag3PO4}): $K_{sp} = $
+        \answerblank[3.4cm]{$(3s)^3(s) = 27s^4$}
+  \item Why do \ce{MX2} and \ce{M2X} give the same formula?
+        \answerlines[2]{Both produce three ions per formula unit, one at
+        concentration $s$ and one at $2s$, and multiplication does not care
+        which of the two is squared.}
+\end{parts}
+
+\problem[]{Calculate $K_{sp}$ from each measured solubility:}
+\begin{parts}
+  \item \ce{AgBr}, $s = 7.1\times10^{-7}$~M. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$K_{sp} = (7.1\times10^{-7})^2 =
+        \mathbf{5.0\times10^{-13}}$\end{apcanswer}}
+  \item \ce{SrSO4}, $s = 5.7\times10^{-4}$~M.
+        \answerblank[3.4cm]{$3.2\times10^{-7}$}
+  \item \ce{CaF2}, $s = 2.2\times10^{-4}$~M. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{Ca^2+}] = 2.2\times10^{-4}$,
+        $[\ce{F-}] = 4.4\times10^{-4}$;
+        $K_{sp} = (2.2\times10^{-4})(4.4\times10^{-4})^2 =
+        \mathbf{4.3\times10^{-11}}$\end{apcanswer}}
+  \item \ce{Ag2CrO4}, $s = 1.3\times10^{-4}$~M. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{Ag+}] = 2.6\times10^{-4}$,
+        $[\ce{CrO4^2-}] = 1.3\times10^{-4}$;
+        $K_{sp} = (2.6\times10^{-4})^2(1.3\times10^{-4}) =
+        \mathbf{8.8\times10^{-12}}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Grams first, then moles.}
+\begin{parts}
+  \item \ce{BaSO4} dissolves to $9.0\times10^{-3}$~g/L. Convert to molar
+        solubility and find $K_{sp}$. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$s = 9.0\times10^{-3}/233.4 =
+        3.86\times10^{-5}$~M;
+        $K_{sp} = (3.86\times10^{-5})^2 =
+        \mathbf{1.5\times10^{-9}}$\end{apcanswer}}
+  \item \ce{PbI2} dissolves to \SI{0.70}{\gram\per\litre}. Find $K_{sp}$.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$s = 0.70/461.0 = 1.52\times10^{-3}$~M;
+        $[\ce{I-}] = 3.04\times10^{-3}$;
+        $K_{sp} = (1.52\times10^{-3})(3.04\times10^{-3})^2 =
+        \mathbf{1.4\times10^{-8}}$\end{apcanswer}}
+  \item \ce{CaCO3} dissolves to $9.3\times10^{-3}$~g/L. Find $K_{sp}$.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$s = 9.3\times10^{-3}/100.1 =
+        9.29\times10^{-5}$~M;
+        $K_{sp} = \mathbf{8.6\times10^{-9}}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{A student calculates $K_{sp}$ for \ce{PbI2} from
+$s = 1.5\times10^{-3}$~M as $(1.5\times10^{-3})^3 = 3.4\times10^{-9}$.}
+\begin{parts}
+  \item Identify the error. \answerlines[2]{They used $s$ for the iodide
+        concentration instead of $2s$. The correct expression is
+        $(s)(2s)^2 = 4s^3$, not $s^3$.}
+  \item By what factor is their answer wrong?
+        \answerblank[5cm]{a factor of 4 (too small)}
+  \item Give the correct value. \answerblank[3cm]{$1.4\times10^{-8}$}
+\end{parts}
+
+\problem[]{Explain the difference between these two statements, using
+\ce{AgCl} as your example:
+\emph{(i)} ``$K_{sp}$ for \ce{AgCl} is $1.6\times10^{-10}$'' and
+\emph{(ii)} ``the solubility of \ce{AgCl} is $1.3\times10^{-5}$~M.''
+\answerlines[4]{(i) states an equilibrium constant: a single number fixed by
+temperature alone, true of \ce{AgCl} in any aqueous solution. (ii) states an
+equilibrium position: how much actually dissolves, which is true only in
+pure water. Put the \ce{AgCl} into \SI{0.10}{\Molar} \ce{NaCl} and the
+solubility drops to $1.6\times10^{-9}$~M while $K_{sp}$ stays exactly
+where it was.}}
+
+\begin{spiralstrip}{Chapters 13--15 \textbullet\ spiral}
+  \item Species omitted from a $K$ expression:
+        \answerblank[4.8cm]{pure solids and liquids}
+  \item pH $=$ p$K_a$ when the buffer ratio is:
+        \answerblank[1.6cm]{1}
+  \item Equivalence pH, weak acid $+$ strong base:
+        \answerblank[2.2cm]{above 7}
+  \item Only what change alters $K$? \answerblank[2.6cm]{temperature}
+  \item $K_aK_b = $ \answerblank[1.8cm]{$K_w$}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,1187 @@
+% Unit 9 (Thermodynamics and Electrochemistry) guided notes -- 9 blocks.
+\documentclass{apchem-notes}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 9.1--9.11 \textbullet\ Zumdahl Ch 17--18 \textbullet\ 9 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[One quantity, three languages]
+Everything in this unit is a consequence of a single number, $\Delta G^\circ$,
+and of the three equations that compute it or convert it:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{Equation} & \textbf{Answers the question} & \textbf{From} \\
+\hline
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ &
+  is it favored, and at what $T$? & Unit 6 $+$ 9.1--9.2 \\
+$\Delta G^\circ = -RT\ln K$ &
+  how far does it go? & Unit 7 \\
+$\Delta G^\circ = -nFE^\circ_{\text{cell}}$ &
+  what voltage does it produce? & Unit 9 \\
+\hline
+\end{tabular}
+\end{center}
+
+Read across the middle column and you have the whole course: Unit 6 measured
+heat, Unit 7 measured extent, Unit 5 measured rate. $\Delta G^\circ$ is what
+connects the first two --- and topic 9.4 exists to insist that it says
+nothing at all about the third.
+
+\medskip
+Three signs travel together and are worth memorizing as one fact:
+\[ \Delta G^\circ < 0 \iff K > 1 \iff E^\circ_{\text{cell}} > 0 \]
+\end{apcnote}
+
+\begin{apctrap}[The word the CED retired]
+The 2024 CED replaced ``spontaneous'' with
+\textbf{thermodynamically favored} throughout, because ``spontaneous''
+misleads students into hearing ``happens quickly, by itself.'' A favored
+reaction may take geological time --- diamond turning into graphite is
+favored and has not troubled anyone's jewellery.
+
+Zumdahl's Chapter 17 is still titled ``Spontaneity, Entropy, and Free
+Energy.'' Read the chapter, write the CED's word.
+\end{apctrap}
+
+% =====================================================================
+\blocklesson{Entropy}{CED 9.1 \textbullet\ Zumdahl \S17.1}
+
+\begin{objectives}
+  \item State what entropy measures.
+  \item Predict the sign of $\Delta S^\circ$ from the change described.
+\end{objectives}
+
+\reading{Zumdahl \S17.1}{835--841}
+
+\segment{INSTRUCTION A}{25}{What entropy actually measures}
+
+\notesection{Dispersal, not disorder}{9.1}
+\practice{6}
+
+\term{Entropy}, $S$, measures how many microscopic arrangements produce the
+same macroscopic state --- how \answerblank[3cm]{dispersed} the energy and
+matter of a system are. More available arrangements means
+\answerblank[2.4cm]{higher} entropy.
+
+\begin{apctrap}
+``Disorder'' is the usual shorthand and it is a poor one. A messy room has
+no more entropy than a tidy one, because nothing about the energy of its
+molecules has changed. Argue from \textbf{how many ways the particles and
+their energy can be arranged}, and from the volume available to them ---
+that reasoning earns credit, and ``it looks messier'' does not.
+\end{apctrap}
+
+\notesection{The four situations to recognize}{9.1}
+
+Nearly every $\Delta S$ question on the exam is one of these:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \textbf{Phase change.}
+        solid $<$ liquid $\ll$ gas. Melting and boiling have
+        $\Delta S$ \answerblank[2cm]{positive}; freezing and condensing,
+        negative.
+  \item \textbf{Change in moles of gas.} Count gas molecules on each side.
+        More gas means $\Delta S$ \answerblank[2cm]{positive}. This
+        dominates every other consideration --- if the mole count of gas
+        changes, stop looking for other reasons.
+  \item \textbf{Dissolving.} A crystal becoming dispersed ions is normally
+        an \answerblank[2cm]{increase}.
+  \item \textbf{Temperature.} Heating anything raises its entropy;
+        molecules access more energy levels.
+\end{enumerate}
+
+\begin{apcnote}[The tie-breaker]
+When two of these compete, \textbf{gas wins}. In
+\ce{2H2(g) + O2(g) -> 2H2O(l)} three moles of gas become zero, so
+$\Delta S^\circ$ is strongly negative even though a liquid is arguably
+``more dispersed'' than a crystal would be.
+\end{apcnote}
+
+\segment{GUIDED PRACTICE}{15}{Predicting the sign}
+
+Predict the sign of $\Delta S^\circ$ and give the controlling reason.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{H2O(l) -> H2O(g)} \answerblank[6cm]{$+$; liquid becomes gas}
+  \item \ce{2NO2(g) -> N2O4(g)} \answerblank[6cm]{$-$; 2 mol gas to 1}
+  \item \ce{NaCl(s) -> Na+(aq) + Cl^-(aq)}
+        \answerblank[6cm]{$+$; crystal disperses}
+  \item \ce{CaCO3(s) -> CaO(s) + CO2(g)}
+        \answerblank[6cm]{$+$; a gas appears}
+  \item \ce{N2(g) + 3H2(g) -> 2NH3(g)}
+        \answerblank[6cm]{$-$; 4 mol gas to 2}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{The second law}
+
+\notesection{The universe, not the system}{9.1}
+\practice{6}
+
+The \term{second law of thermodynamics}: for any thermodynamically favored
+process,
+\[ \Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}}
+   > 0 \]
+
+The system's entropy is allowed to \emph{decrease} --- water freezes, ice
+crystals are more ordered than liquid --- provided the surroundings gain
+more than the system loses. Freezing releases heat to the surroundings, and
+that heat raises their entropy.
+
+\begin{apcnote}[Why this becomes Gibbs free energy]
+Tracking the surroundings is a nuisance. The next block folds them into a
+single system-only quantity, which is the entire reason $\Delta G$ is worth
+defining. If you understand $\Delta S_{\text{univ}} > 0$, you already
+understand $\Delta G^\circ < 0$ --- they are the same statement multiplied
+by $-T$.
+\end{apcnote}
+
+\segment{APPLICATION}{20}{Reasoning with the second law}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Water freezing at \SI{-10}{\celsius} is thermodynamically favored,
+        yet the water's entropy decreases. Explain how both are true.
+        \answerlines[3]{Freezing releases heat to the surroundings. Below
+        \SI{0}{\celsius} the entropy gained by the surroundings from that
+        released heat exceeds the entropy lost by the water, so
+        $\Delta S_{\text{univ}}$ is still positive and the second law is
+        satisfied.}
+  \item A student says a reaction with $\Delta S_{\text{sys}} < 0$ can
+        never happen. Correct them in one sentence.
+        \answerlines[2]{The second law constrains the entropy of the
+        \emph{universe}, not of the system; a system may lose entropy as
+        long as the surroundings gain more.}
+  \item Rank by absolute entropy at the same temperature: \ce{H2O(s)},
+        \ce{H2O(l)}, \ce{H2O(g)}. \answerblank[7cm]{\ce{H2O(s)} $<$
+        \ce{H2O(l)} $<$ \ce{H2O(g)}}
+\end{enumerate}
+
+\begin{exitticket}
+Predict the sign of $\Delta S^\circ$ for
+\ce{2SO2(g) + O2(g) -> 2SO3(g)} and justify in one sentence.
+\keyonly{\begin{apcanswer}Negative. Three moles of gas become two, and a
+decrease in the number of gas particles dominates any other
+contribution.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Absolute Entropy and $\Delta S^\circ$}{CED 9.2 \textbullet\ Zumdahl \S17.2, \S17.5--17.6}
+
+\begin{objectives}
+  \item Explain why entropy has an absolute scale but enthalpy does not.
+  \item Calculate $\Delta S^\circ$ from tabulated absolute entropies.
+\end{objectives}
+
+\reading{Zumdahl \S17.2, \S17.5--17.6}{841--842, 848--853}
+
+\begin{warmup}[4]
+  \item Sign of $\Delta S^\circ$ for \ce{2NO2(g) -> N2O4(g)}:
+        \answerblank[2cm]{negative}
+  \item Which has more entropy, \ce{H2O(l)} or \ce{H2O(g)}?
+        \answerblank[2.4cm]{\ce{H2O(g)}}
+  \item $\Delta S_{\text{univ}}$ for a favored process:
+        \answerblank[2cm]{$> 0$}
+  \item The AP term replacing ``spontaneous'':
+        \answerblank[5.4cm]{thermodynamically favored}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{A real zero}
+
+\notesection{The third law}{9.2}
+\practice{5}
+
+The \term{third law of thermodynamics} says a perfect crystal at
+\SI{0}{\kelvin} has entropy exactly \answerblank[1.4cm]{zero}. That gives
+entropy a genuine origin, so every substance has a tabulated
+\term{absolute entropy} $S^\circ$ --- always a positive number.
+
+\begin{apctrap}
+Contrast with enthalpy. There is no absolute $H$, so tables list
+$\Delta H_f^\circ$ and assign zero to elements in their standard states.
+
+Entropy tables are different: \textbf{$S^\circ$ of an element is not zero.}
+\ce{O2(g)} has $S^\circ = \SI{205}{\joule\per\kelvin\per\mole}$. Setting
+element entropies to zero out of habit is a reliable way to lose a point.
+\end{apctrap}
+
+\[ \boxed{\;\Delta S^\circ_{\text{rxn}} = \sum n S^\circ_{\text{products}}
+   - \sum n S^\circ_{\text{reactants}}\;} \]
+
+Coefficients multiply, exactly as in Hess's law. And note the units:
+$S^\circ$ is in \answerblank[2cm]{joules} while $\Delta H^\circ$ is in
+\answerblank[2.4cm]{kilojoules}.
+
+\begin{workedexample}[Worked example 1: decomposing limestone]
+\[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \]
+$S^\circ$: \ce{CaCO3} 93, \ce{CaO} 40, \ce{CO2} 214
+\si{\joule\per\kelvin\per\mole}.
+\[ \Delta S^\circ = (40 + 214) - 93 = \mathbf{+161}~\si{\joule\per\kelvin} \]
+Positive, as predicted --- a gas appeared where there was none.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 2: the Haber process]
+\[ \ce{N2(g) + 3H2(g) -> 2NH3(g)} \]
+$S^\circ$: \ce{N2} 192, \ce{H2} 131, \ce{NH3} 193.
+\[ \Delta S^\circ = 2(193) - [192 + 3(131)] = 386 - 585
+   = \mathbf{-199}~\si{\joule\per\kelvin} \]
+Four moles of gas became two, so the sign had to be negative. Dropping the
+coefficient 3 on hydrogen gives $-68$ --- wrong magnitude entirely.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Running the sums}
+
+$S^\circ$ (\si{\joule\per\kelvin\per\mole}): \ce{H2} 131, \ce{O2} 205,
+\ce{H2O(l)} 70, \ce{H2O(g)} 189, \ce{NO2} 240, \ce{N2O4} 304.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{2H2(g) + O2(g) -> 2H2O(l)}: \workspace[2cm]
+        \keyonly{\begin{apcanswer}$2(70) - [2(131) + 205] = 140 - 467
+        = \mathbf{-327}~\si{\joule\per\kelvin}$\end{apcanswer}}
+  \item \ce{H2O(l) -> H2O(g)}: \answerblank[3.4cm]{$+119$ J/K}
+  \item \ce{2NO2(g) -> N2O4(g)}: \answerblank[3.4cm]{$-176$ J/K}
+\end{enumerate}
+
+\segment{APPLICATION}{20}{Interpreting the numbers}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Why is $S^\circ$ for \ce{H2O(g)} nearly triple that of
+        \ce{H2O(l)}, when it is the same substance?
+        \answerlines[2]{In the gas the molecules occupy a far larger volume
+        and move independently, so vastly more microscopic arrangements
+        correspond to the same macroscopic state.}
+  \item A student computes the Haber $\Delta S^\circ$ as
+        $193 - (192 + 131) = -130$~J/K. Find both errors.
+        \answerlines[3]{They omitted the coefficient 2 on \ce{NH3} and the
+        coefficient 3 on \ce{H2}. Correctly,
+        $2(193) - [192 + 3(131)] = -199$~J/K.}
+  \item For \ce{H2O(l) -> H2O(g)}, $\Delta S^\circ = +119$~J/K and
+        $\Delta H^\circ = +44$~kJ. Say what each sign contributes to
+        favorability at \SI{25}{\celsius}.
+        \answerlines[3]{Entropy favors vaporization --- gas is far more
+        dispersed. Enthalpy opposes it, since hydrogen bonds must break. At
+        \SI{25}{\celsius} the enthalpy term wins, so water does not all
+        become vapour; raising $T$ grows the $T\Delta S$ term until it
+        does.}
+\end{enumerate}
+
+\begin{exitticket}
+Why can a table list an absolute $S^\circ$ for oxygen gas but not an
+absolute $H^\circ$?
+\keyonly{\begin{apcanswer}The third law fixes a true zero for entropy --- a
+perfect crystal at \SI{0}{\kelvin} has $S = 0$ --- so entropies are
+measurable on an absolute scale. Enthalpy has no such natural zero, so only
+\emph{changes} are measurable and tables use $\Delta H_f^\circ$ with
+elements assigned zero by convention.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Gibbs Free Energy}{CED 9.3 \textbullet\ Zumdahl \S17.3--17.4}
+
+\begin{objectives}
+  \item Calculate $\Delta G^\circ$ from $\Delta H^\circ$ and
+        $\Delta S^\circ$.
+  \item Determine the temperature range over which a process is favored.
+\end{objectives}
+
+\reading{Zumdahl \S17.3--17.4}{842--848}
+
+\begin{warmup}[4]
+  \item $\Delta S^\circ$ for \ce{CaCO3(s) -> CaO(s) + CO2(g)}:
+        \answerblank[2.6cm]{$+161$ J/K}
+  \item $\Delta S_{\text{univ}}$ must be what sign for a favored process?
+        \answerblank[2cm]{positive}
+  \item Units of $S^\circ$ versus $\Delta H^\circ$:
+        \answerblank[5.4cm]{J/(K$\cdot$mol) versus kJ/mol}
+  \item $S^\circ$ of an element in its standard state is:
+        \answerblank[3.4cm]{not zero}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{One number that decides}
+
+\notesection{Folding the surroundings in}{9.3}
+\practice{5}
+
+\term{Gibbs free energy} removes the need to track the surroundings:
+\[ G = H - TS \qquad\Longrightarrow\qquad
+   \boxed{\;\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\;} \]
+
+Dividing $\Delta G = \Delta H - T\Delta S$ by $-T$ returns exactly
+$\Delta S_{\text{surr}} + \Delta S_{\text{sys}} = \Delta S_{\text{univ}}$.
+So $\Delta G$ is the second law rewritten \emph{entirely in terms of the
+system}.
+
+\begin{center}
+\fbox{\parbox{0.8\linewidth}{\centering
+$\Delta G^\circ < 0$: \textbf{thermodynamically favored} \\
+$\Delta G^\circ > 0$: not favored (the reverse is) \\
+$\Delta G^\circ = 0$: at equilibrium}}
+\end{center}
+
+The sign flip is worth stating aloud: $\Delta S_{\text{univ}}$ must be
+\answerblank[1.8cm]{positive}, but $\Delta G^\circ$ must be
+\answerblank[1.8cm]{negative}, because of the $-T$ used in the derivation.
+
+\begin{apctrap}
+\textbf{Convert the entropy to kJ before subtracting.} $\Delta H^\circ$ is
+in kJ and $\Delta S^\circ$ in J/K. Forgetting the factor of 1000 is the
+single most common arithmetic error in this unit, and it produces answers
+wrong by roughly a factor of a thousand --- large enough to spot if you
+sanity-check the magnitude.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{When temperature decides}
+
+\notesection{The four cases}{9.3}
+\practice{5}
+
+Because $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, the two signs
+between them decide whether temperature matters at all:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}cccl@{}}
+\hline
+$\Delta H^\circ$ & $\Delta S^\circ$ & \textbf{Favored at} &
+  \textbf{Comment} \\
+\hline
+$-$ & $+$ & \textbf{all temperatures} & both terms help; no calculation
+  needed \\
+$+$ & $-$ & \textbf{no temperature} & both terms oppose; never favored \\
+$+$ & $+$ & \textbf{high $T$} & entropy wins once $T$ is large enough \\
+$-$ & $-$ & \textbf{low $T$} & enthalpy wins while $T$ is small \\
+\hline
+\end{tabular}
+\end{center}
+
+For the two mixed cases the \term{crossover temperature}, where
+$\Delta G^\circ = 0$, is
+\[ T = \frac{\Delta H^\circ}{\Delta S^\circ} \]
+
+\begin{workedexample}[Worked example 3: why limestone needs a kiln]
+\ce{CaCO3(s) -> CaO(s) + CO2(g)}: $\Delta H^\circ = +178.5$~kJ,
+$\Delta S^\circ = +161$~J/K. Both positive $\Rightarrow$ favored only at
+high temperature.
+
+\textbf{At \SI{298}{\kelvin}:}
+$\Delta G^\circ = 178.5 - 298(0.161) = +131$~kJ --- not favored, which is
+why limestone buildings do not crumble into quicklime.
+
+\textbf{Crossover:}
+\[ T = \frac{178.5}{0.161} = \mathbf{1109}~\si{\kelvin}
+   \quad (\approx \SI{836}{\celsius}) \]
+Which is about the temperature at which lime kilns are operated.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Predicting and calculating}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For the Haber process $\Delta H^\circ = -92$~kJ and
+        $\Delta S^\circ = -199$~J/K. Find $\Delta G^\circ$ at
+        \SI{298}{\kelvin} and the crossover temperature. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -92 - 298(-0.199)
+        = -92 + 59 = \mathbf{-33}$~kJ, so favored at \SI{298}{\kelvin}.
+        Crossover $T = 92/0.199 = \mathbf{462}$~K --- favored \emph{below}
+        462 K, since both terms are negative.\end{apcanswer}}
+  \item For \ce{H2O(l) -> H2O(g)}, $\Delta H^\circ = +44$~kJ and
+        $\Delta S^\circ = +119$~J/K. Find the crossover temperature and say
+        what it physically is. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$T = 44/0.119 = \mathbf{370}$~K
+        $\approx \SI{97}{\celsius}$ --- the \textbf{boiling point}. Above
+        it vaporization is favored at 1 atm; below it condensation is. The
+        tabulated value is 373 K; the gap is rounding in the
+        table.\end{apcanswer}}
+  \item Without calculating, say whether
+        \ce{2H2O2(l) -> 2H2O(l) + O2(g)} ($\Delta H^\circ < 0$) is favored,
+        and at what temperatures. \answerlines[2]{$\Delta H^\circ$ is
+        negative and $\Delta S^\circ$ positive (a gas forms from a liquid),
+        so both terms help and it is favored at \emph{all} temperatures. No
+        calculation is needed.}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction has $\Delta H^\circ = +50$~kJ and $\Delta S^\circ = +100$~J/K.
+Is it favored at \SI{298}{\kelvin}? Above what temperature does that change?
+\keyonly{\begin{apcanswer}$\Delta G^\circ = 50 - 298(0.100) = +20$~kJ, so
+not favored. Crossover at $T = 50/0.100 = \SI{500}{\kelvin}$; above
+\SI{500}{\kelvin} it becomes favored.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Formation Free Energies and Kinetic Control}{CED 9.3, 9.4 \textbullet\ Zumdahl \S17.4, \S17.7}
+
+\begin{objectives}
+  \item Calculate $\Delta G^\circ$ from free energies of formation.
+  \item Explain why a favored reaction may proceed immeasurably slowly.
+\end{objectives}
+
+\reading{Zumdahl \S17.4, \S17.7}{845--848, 853--859}
+
+\begin{warmup}[4]
+  \item $\Delta G^\circ = $ \answerblank[4cm]{$\Delta H^\circ -
+        T\Delta S^\circ$}
+  \item Favored means $\Delta G^\circ$ is: \answerblank[2cm]{negative}
+  \item $\Delta H^\circ < 0$ and $\Delta S^\circ > 0$: favored at
+        \answerblank[4cm]{all temperatures}
+  \item Crossover temperature $= $ \answerblank[3cm]{$\Delta H^\circ /
+        \Delta S^\circ$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The second route to $\Delta G^\circ$}
+
+\notesection{Free energies of formation}{9.3}
+\practice{5}
+
+Exactly as with enthalpy, $\Delta G^\circ$ can be assembled from tabulated
+formation values:
+\[ \Delta G^\circ_{\text{rxn}} = \sum n\Delta G_f^\circ{}_{\text{products}}
+   - \sum n\Delta G_f^\circ{}_{\text{reactants}} \]
+and $\Delta G_f^\circ$ of an element in its standard state is
+\answerblank[1.4cm]{zero} --- unlike $S^\circ$.
+
+\begin{workedexample}[Worked example 4: two routes, one answer]
+For \ce{2H2(g) + O2(g) -> 2H2O(l)}:
+
+\textbf{Route 1 --- from $\Delta H^\circ$ and $\Delta S^\circ$.}
+$\Delta H^\circ = 2(-286) = -572$~kJ;
+$\Delta S^\circ = -327$~J/K $= -0.327$~kJ/K.
+\[ \Delta G^\circ = -572 - 298(-0.327) = -572 + 97
+   = \mathbf{-475}~\text{kJ} \]
+
+\textbf{Route 2 --- from $\Delta G_f^\circ$.}
+$\Delta G^\circ = 2(-237) - 0 = \mathbf{-474}$~kJ.
+
+The two agree to within table rounding. Note again that the entropy had to
+be converted from J/K to kJ/K first.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Favored is not the same as fast}
+
+\notesection{Thermodynamic versus kinetic control}{9.4}
+\practice{6}
+
+This is the point of topic 9.4, and it is the one place where this unit and
+Unit 5 must be held apart:
+
+\begin{center}
+\fbox{\parbox{0.9\linewidth}{\centering
+$\Delta G^\circ$ tells you \textbf{whether} and \textbf{how far}. \\
+$E_a$ tells you \textbf{how fast}. \\
+They are independent.}}
+\end{center}
+
+A reaction that is thermodynamically favored but has a large
+\answerblank[3.6cm]{activation energy} proceeds too slowly to observe. It is
+said to be under \term{kinetic control}.
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Diamond to graphite.} $\Delta G^\circ$ is negative, so
+        graphite is the favored form at room conditions. The rearrangement
+        requires breaking a covalent network, so it does not measurably
+        occur.
+  \item \textbf{Petrol in air.} Combustion is strongly favored; a tank of
+        fuel is stable because the reaction needs a spark to clear
+        $E_a$.
+\end{itemize}
+
+\begin{apctrap}
+A \textbf{catalyst} lowers $E_a$ and speeds a reaction up. It does
+\emph{not} change $\Delta G^\circ$, $\Delta H^\circ$, $\Delta S^\circ$, or
+\answerblank[1.4cm]{$K$}. A catalyst cannot make an unfavorable reaction
+favorable --- it can only let an already-favored one arrive sooner.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Thermodynamics versus kinetics}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item A reaction has $\Delta G^\circ = -150$~kJ but no measurable rate at
+        room temperature. Is this a contradiction? Explain.
+        \answerlines[3]{No. $\Delta G^\circ$ describes the relative free
+        energies of reactants and products and says nothing about the
+        barrier between them. A large activation energy makes the reaction
+        slow while leaving it thermodynamically favored --- the reaction is
+        under kinetic control.}
+  \item Give two ways to speed that reaction up, and state the effect of
+        each on $K$. \answerlines[3]{Raise the temperature --- more
+        molecules exceed $E_a$; this does change $K$, since $K$ is
+        temperature-dependent. Add a catalyst --- this lowers $E_a$ and
+        leaves $K$ unchanged.}
+  \item Explain why ``spontaneous'' is a poor word for $\Delta G^\circ < 0$
+        using diamond as the example.
+        \answerlines[2]{It suggests the reaction happens by itself and
+        quickly. Diamond converting to graphite is thermodynamically
+        favored yet immeasurably slow, so ``thermodynamically favored'' is
+        the accurate description.}
+\end{enumerate}
+
+\begin{exitticket}
+State one thing a catalyst changes and two things it does not.
+\keyonly{\begin{apcanswer}It lowers the activation energy (and so raises
+the rate). It does not change $\Delta G^\circ$ or $K$ --- nor
+$\Delta H^\circ$ or $\Delta S^\circ$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Free Energy and Equilibrium}{CED 9.5 \textbullet\ Zumdahl \S17.9}
+
+\begin{objectives}
+  \item Relate $\Delta G^\circ$ to $K$ and estimate one from the other.
+  \item Distinguish $\Delta G$ from $\Delta G^\circ$ using $Q$.
+\end{objectives}
+
+\reading{Zumdahl \S17.9}{862--867}
+
+\begin{warmup}[4]
+  \item If $K > 1$, which side is favored? \answerblank[2.4cm]{products}
+  \item $Q$ is calculated like $K$ but with:
+        \answerblank[6.3cm]{non-equilibrium concentrations}
+  \item What raises a rate without changing $K$?
+        \answerblank[2.6cm]{a catalyst}
+  \item $\Delta G^\circ$ for a favored process is:
+        \answerblank[2cm]{negative}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Two languages for one fact}
+
+\notesection{$\Delta G^\circ$ and $K$}{9.5}
+\practice{5}
+
+You now have two ways of saying ``products are favored'': $K > 1$ from
+Unit 7, and $\Delta G^\circ < 0$ from this unit. They are the same
+statement:
+\[ \boxed{\;\Delta G^\circ = -RT\ln K\;}
+   \qquad\text{equivalently}\qquad K = e^{-\Delta G^\circ/RT} \]
+with $R = \SI{8.314}{\joule\per\mole\per\kelvin}$ --- note
+\answerblank[1.8cm]{joules}, so $\Delta G^\circ$ must be converted from kJ.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}ccl@{}}
+\hline
+$\Delta G^\circ$ & $K$ & \\
+\hline
+negative & $> 1$ & products favored at equilibrium \\
+zero     & $= 1$ & neither side favored \\
+positive & $< 1$ & reactants favored \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apcnote}[The MCQ half is no-calculator]
+You are not asked to evaluate logarithms by hand. You are asked to know
+which \emph{way} the relationship runs: more negative $\Delta G^\circ$ means
+larger $K$, and the dependence is exponential --- so a modest change in
+$\Delta G^\circ$ produces an enormous change in $K$. Reason with the sign
+and the direction, not with arithmetic.
+\end{apcnote}
+
+\segment{INSTRUCTION B}{20}{$\Delta G$ versus $\Delta G^\circ$}
+
+\notesection{Away from standard conditions}{9.5}
+\practice{6}
+
+$\Delta G^\circ$ is a fixed property of the reaction at a given temperature
+--- every species at standard conditions. $\Delta G$ is what the reaction
+mixture \emph{actually} has right now, and depends on the current
+composition through $Q$:
+\[ \Delta G = \Delta G^\circ + RT\ln Q \]
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item $Q < K$: the mixture shifts \answerblank[2.4cm]{forward} and
+        $\Delta G < 0$.
+  \item $Q = K$: \answerblank[3cm]{equilibrium}, and $\Delta G = 0$.
+  \item $Q > K$: the mixture shifts \answerblank[2.4cm]{reverse} and
+        $\Delta G > 0$.
+\end{itemize}
+
+\begin{apctrap}
+At equilibrium $\Delta G = 0$, \textbf{not} $\Delta G^\circ$. $\Delta G^\circ$
+is zero only in the special case $K = 1$. Writing ``$\Delta G^\circ = 0$ at
+equilibrium'' is a standard lost point --- and setting $\Delta G = 0$ in
+$\Delta G = \Delta G^\circ + RT\ln Q$ is precisely how
+$\Delta G^\circ = -RT\ln K$ is derived.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Connecting the two}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Reaction A has $\Delta G^\circ = -5$~kJ, reaction B has
+        $\Delta G^\circ = -50$~kJ. Compare their $K$ values qualitatively.
+        \answerlines[3]{Both have $K > 1$. B's is very much larger --- the
+        relationship is exponential, so a tenfold more negative
+        $\Delta G^\circ$ produces a vastly larger $K$, not a tenfold larger
+        one. A's is only modestly above 1.}
+  \item A reaction has $\Delta G^\circ = +20$~kJ. Can it ever proceed
+        forward? \answerlines[3]{Yes. $\Delta G^\circ$ refers to standard
+        conditions. If $Q$ is small enough --- very little product present
+        --- then $RT\ln Q$ is sufficiently negative to make
+        $\Delta G < 0$, and the reaction proceeds until $Q$ reaches $K$.}
+  \item At equilibrium, state the values of $\Delta G$ and of $Q$.
+        \answerblank[6cm]{$\Delta G = 0$ and $Q = K$}
+\end{enumerate}
+
+\begin{exitticket}
+A reaction has $K = 1$. What is $\Delta G^\circ$, and is the reaction
+favored?
+\keyonly{\begin{apcanswer}$\Delta G^\circ = -RT\ln(1) = 0$. Neither
+direction is favored --- at standard conditions the reaction is already at
+equilibrium.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Dissolution and Coupled Reactions}{CED 9.6, 9.7 \textbullet\ Zumdahl \S17.5, \S17.10}
+
+\begin{objectives}
+  \item Identify the enthalpy and entropy contributions to dissolution.
+  \item Explain how coupling or external energy drives an unfavorable
+        process.
+\end{objectives}
+
+\reading{Zumdahl \S17.5, \S17.10}{848--849, 867--869}
+
+\begin{warmup}[4]
+  \item $\Delta G^\circ = -RT\ln K$; $R$ is in:
+        \answerblank[2.4cm]{J/(mol$\cdot$K)}
+  \item At equilibrium $\Delta G = $ \answerblank[1.4cm]{0}
+  \item $\Delta S$ for dissolving a crystal is usually:
+        \answerblank[2cm]{positive}
+  \item A catalyst changes: \answerblank[3cm]{$E_a$ only}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Why some salts dissolve}
+
+\notesection{Three competing contributions}{9.6}
+\practice{4}
+
+Dissolving a salt is a free-energy balance with three parts:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Breaking up the lattice.} $\Delta H$ strongly
+        \answerblank[2cm]{positive}, $\Delta S$ positive.
+  \item \textbf{Reorganizing the solvent} around the ions. $\Delta S$
+        \answerblank[2cm]{negative} --- water becomes ordered in hydration
+        shells.
+  \item \textbf{Ion--solvent attraction} (hydration). $\Delta H$
+        \answerblank[2cm]{negative}.
+\end{enumerate}
+
+\begin{apcnote}[Why the CED does not ask you to predict the total]
+The framework says outright that predicting the overall $\Delta G^\circ$ of
+dissolution is challenging because of the cancellations among these three
+factors. The enthalpy terms are large and opposite; so are the entropy
+terms. What remains is a small difference between big numbers.
+
+You are expected to \textbf{identify the contributions and their signs},
+not to predict solubility from scratch. Reasoning through the three factors
+earns credit even where the net direction is uncertain.
+\end{apcnote}
+
+\begin{workedexample}[Worked example 5: dissolving that cools the beaker]
+\ce{NH4NO3} dissolves \emph{endothermically} --- the beaker gets cold, so
+$\Delta H^\circ > 0$. Yet it is very soluble. Why?
+
+Because $\Delta S^\circ$ is strongly positive: an ordered crystal becomes
+freely moving hydrated ions dispersed through the solvent. At room
+temperature $T\Delta S^\circ$ exceeds $\Delta H^\circ$, so
+$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ < 0$.
+
+\textbf{Entropy is driving this one alone}, with the enthalpy term working
+against it --- the case to remember whenever you are tempted to equate
+``exothermic'' with ``favored''.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Driving the unfavorable}
+
+\notesection{Coupling and external energy}{9.7}
+\practice{4}
+
+A process with $\Delta G^\circ > 0$ will not happen on its own. There are
+two ways to make it happen anyway.
+
+\textbf{1. Supply external energy.}
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+  \item \textbf{Electrical energy} driving an electrolytic cell or charging
+        a battery --- the subject of the next three blocks.
+  \item \textbf{Light} driving photosynthesis, which builds glucose from
+        \ce{CO2} and water with a hugely positive $\Delta G^\circ$.
+\end{itemize}
+
+\textbf{2. Couple it to a favorable reaction.} Because free energies
+\answerblank[2cm]{add}, an unfavorable step can be carried by a favorable
+one --- provided the two share a \answerblank[4.6cm]{common intermediate}
+and the \emph{sum} has $\Delta G^\circ < 0$.
+
+\begin{workedexample}[Worked example 6: how cells pay for chemistry]
+Phosphorylating glucose is unfavorable on its own:
+\[ \text{glucose} + \ce{P_i} \to \text{glucose-6-phosphate}
+   \qquad \Delta G^\circ = +13.8~\text{kJ/mol} \]
+Hydrolysing ATP is strongly favorable:
+\[ \ce{ATP} + \ce{H2O} \to \ce{ADP} + \ce{P_i}
+   \qquad \Delta G^\circ = -30.5~\text{kJ/mol} \]
+Coupled through the shared \ce{P_i}:
+\[ \Delta G^\circ = +13.8 + (-30.5) = \mathbf{-16.7}~\text{kJ/mol} \]
+and therefore favored. This is what ``ATP is the cell's energy currency''
+means --- not that ATP contains energy, but that its hydrolysis is
+favorable enough to pay for reactions that are not.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Putting free energy to work}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item \ce{NaCl} dissolves with $\Delta H^\circ$ very slightly positive
+        and still dissolves readily. Explain using the three contributions.
+        \answerlines[3]{The lattice energy absorbed and the hydration
+        energy released nearly cancel, leaving $\Delta H^\circ$ near zero.
+        The entropy increase from an ordered crystal becoming dispersed
+        hydrated ions is large enough that $-T\Delta S^\circ$ makes
+        $\Delta G^\circ$ negative.}
+  \item Reaction X has $\Delta G^\circ = +25$~kJ. It is coupled to
+        reaction Y with $\Delta G^\circ = -40$~kJ. Is the coupled process
+        favored, and what must the two share? \workspace[2cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = +25 + (-40) =
+        \mathbf{-15}$~kJ, so yes. They must share a \textbf{common
+        intermediate} --- a species produced by one and consumed by the
+        other --- or the coupling is only arithmetic, not
+        chemical.\end{apcanswer}}
+  \item Name the external energy source that drives each: electrolysis of
+        water; photosynthesis. \answerblank[6.2cm]{electrical; light}
+\end{enumerate}
+
+\begin{exitticket}
+State the one condition that makes coupling chemically real rather than
+just an addition of two numbers.
+\keyonly{\begin{apcanswer}The two reactions must share a \textbf{common
+intermediate}, so that the product of one is consumed by the other in the
+same system. Without it the free energies still add on paper, but nothing
+connects the two processes.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Galvanic and Electrolytic Cells}{CED 9.8 \textbullet\ Zumdahl \S18.1, \S18.7}
+
+\begin{objectives}
+  \item Identify anode, cathode, and the direction of electron flow.
+  \item Distinguish galvanic from electrolytic cells.
+\end{objectives}
+
+\reading{Zumdahl \S18.1, \S18.7}{882--884, 906--911}
+
+\begin{warmup}[4]
+  \item Oxidation is loss of: \answerblank[2cm]{electrons}
+  \item An unfavorable process has $\Delta G^\circ$:
+        \answerblank[2cm]{positive}
+  \item One way to drive an unfavorable reaction:
+        \answerblank[4.7cm]{supply external energy}
+  \item Oxidation number of \ce{Zn} in \ce{Zn^2+}:
+        \answerblank[1.4cm]{$+2$}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Separating the half-reactions}
+
+\notesection{Why a wire is involved at all}{9.8}
+\practice{1}
+
+Drop zinc into copper sulfate and electrons pass directly from zinc to
+\ce{Cu^2+}; the energy is released as \answerblank[1.6cm]{heat}. Separate
+the two half-reactions into different compartments and the electrons must
+travel through a \answerblank[1.6cm]{wire} instead --- and along the way
+they can do electrical work. That is the whole idea of a cell.
+
+\notesection{The parts, and what each does}{9.8}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}p{2.6cm}p{4.2cm}p{7.4cm}@{}}
+\hline
+\textbf{Part} & \textbf{Where} & \textbf{What happens} \\
+\hline
+Anode & one half-cell &
+  \answerblank[3.2cm]{oxidation}; electrons leave \\
+Cathode & the other half-cell &
+  \answerblank[3.2cm]{reduction}; electrons arrive \\
+Wire & between electrodes & carries electrons, anode $\to$ cathode \\
+Salt bridge & joins the solutions &
+  carries ions to keep both solutions neutral \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{An~Ox and Red~Cat} --- \textbf{An}ode \textbf{Ox}idation,
+\textbf{Red}uction \textbf{Cat}hode --- holds in every cell, galvanic or
+electrolytic. It is the one fact in this block that never changes.
+
+\begin{apcnote}[What the CED excludes here]
+Topic 9.8 \textbf{excludes} assigning positive and negative labels to the
+electrodes. The signs actually reverse between galvanic and electrolytic
+cells, which is exactly why the framework leaves them out. Identify
+electrodes by \emph{anode} and \emph{cathode} and by what happens there;
+never by charge.
+\end{apcnote}
+
+Without the salt bridge, oxidation at the anode would leave that solution
+building up \answerblank[3cm]{positive charge} and the cathode solution
+going negative. Charge separation halts electron flow almost immediately,
+so the cell stops.
+
+\segment{INSTRUCTION B}{20}{The same hardware, run backwards}
+
+\notesection{Galvanic against electrolytic}{9.8}
+\practice{1}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}p{3.2cm}p{5.2cm}p{5.2cm}@{}}
+\hline
+ & \textbf{Galvanic (voltaic)} & \textbf{Electrolytic} \\
+\hline
+$\Delta G^\circ$ & \answerblank[2.4cm]{negative} &
+  \answerblank[2.4cm]{positive} \\
+$E^\circ_{\text{cell}}$ & \answerblank[2.4cm]{positive} &
+  \answerblank[2.4cm]{negative} \\
+Drives itself? & yes --- it is a battery & no --- needs a power supply \\
+Energy & chemical $\to$ electrical & electrical $\to$ chemical \\
+Example & a AA cell discharging & electroplating; recharging \\
+\hline
+\end{tabular}
+\end{center}
+
+An electrolytic cell is CED topic 9.7's ``external energy source driving an
+unfavorable process,'' built in hardware.
+
+\segment{APPLICATION}{20}{Describing cells}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item In a galvanic cell made from \ce{Zn}/\ce{Zn^2+} and
+        \ce{Cu}/\ce{Cu^2+}, zinc is oxidized. Name the anode, the cathode,
+        and the direction of electron flow.
+        \answerlines[2]{Zinc is the anode (oxidation); copper is the
+        cathode (reduction). Electrons flow through the wire from the zinc
+        electrode to the copper electrode.}
+  \item State what happens to the mass of each electrode as that cell runs.
+        \answerlines[2]{The zinc anode loses mass as it is oxidized to
+        \ce{Zn^2+}. The copper cathode gains mass as \ce{Cu^2+} is reduced
+        and plates onto it.}
+  \item A student labels the anode ``negative'' on an exam question about
+        an electrolytic cell. Explain why the CED avoids this.
+        \answerlines[3]{The sign convention reverses between cell types:
+        the anode is negative in a galvanic cell but positive in an
+        electrolytic one, because in the latter it is connected to the
+        positive terminal of the supply. Since oxidation occurs at the
+        anode in both, identifying electrodes by process rather than charge
+        is unambiguous.}
+\end{enumerate}
+
+\begin{exitticket}
+Give the one statement about anode and cathode that is true in every cell,
+and one statement that is not.
+\keyonly{\begin{apcanswer}Always true: oxidation occurs at the anode and
+reduction at the cathode. Not always true: that the anode is the negative
+electrode --- that holds for galvanic cells and reverses for electrolytic
+ones.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Cell Potential and Free Energy}{CED 9.9 \textbullet\ Zumdahl \S18.2--18.3}
+
+\begin{objectives}
+  \item Calculate $E^\circ_{\text{cell}}$ from standard reduction
+        potentials.
+  \item Relate $E^\circ_{\text{cell}}$ to $\Delta G^\circ$ and to $K$.
+\end{objectives}
+
+\reading{Zumdahl \S18.2--18.3}{884--895}
+
+\begin{warmup}[4]
+  \item Oxidation occurs at the: \answerblank[2cm]{anode}
+  \item Galvanic cells have $E^\circ_{\text{cell}}$:
+        \answerblank[2cm]{positive}
+  \item Electrons flow from \answerblank[4cm]{anode to cathode}
+  \item $\Delta G^\circ$ for a galvanic cell is:
+        \answerblank[2cm]{negative}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{A scale built on an arbitrary zero}
+
+\notesection{Standard reduction potentials}{9.9}
+\practice{5}
+
+Only a \emph{difference} in potential is measurable, so one half-reaction is
+assigned a value by convention:
+\[ \ce{2H+(aq) + 2e^- -> H2(g)} \qquad E^\circ \equiv \mathbf{0.00}~\text{V} \]
+Every other half-reaction is measured against this
+\term{standard hydrogen electrode}. \textbf{Standard conditions} means all
+solutes at \SI{1}{\Molar}, gases at \SI{1}{\atm}, and \SI{25}{\celsius}.
+
+\begin{apctrap}
+\textbf{Every table is written as reductions.} Reversing a half-reaction
+\answerblank[2.8cm]{flips the sign} of $E^\circ$. But multiplying a
+half-reaction by a coefficient does \textbf{not} change $E^\circ$ at all ---
+potential is an \term{intensive} property, volts per unit charge, not volts
+per mole. Scaling a half-reaction to balance electrons is required; scaling
+its voltage is wrong.
+\end{apctrap}
+
+\[ \boxed{\;E^\circ_{\text{cell}} = E^\circ_{\text{cathode}}
+   - E^\circ_{\text{anode}}\;} \]
+with both values taken straight from the table as reductions. For a
+galvanic cell you want $E^\circ_{\text{cell}} > 0$, so the species with the
+\answerblank[3cm]{more positive} $E^\circ$ is the one reduced.
+
+\begin{workedexample}[Worked example 7: the Daniell cell]
+Combine \ce{Zn^2+}/\ce{Zn} ($-0.76$~V) and \ce{Cu^2+}/\ce{Cu} ($+0.34$~V).
+Copper is more positive, so copper is reduced (cathode) and zinc oxidized
+(anode):
+\[ \ce{Zn + Cu^2+ -> Zn^2+ + Cu} \qquad
+   E^\circ_{\text{cell}} = 0.34 - (-0.76) = \mathbf{+1.10}~\text{V} \]
+\end{workedexample}
+
+\begin{workedexample}[Worked example 8: when the electrons do not balance]
+Combine \ce{Ag+}/\ce{Ag} ($+0.80$~V) and \ce{Cu^2+}/\ce{Cu} ($+0.34$~V).
+Silver is reduced; balancing electrons needs \emph{two} silver
+half-reactions:
+\[ \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag} \qquad
+   E^\circ_{\text{cell}} = 0.80 - 0.34 = \mathbf{+0.46}~\text{V} \]
+The silver half-reaction was doubled; its $E^\circ$ was not. Writing
+$2(0.80) - 0.34 = 1.26$~V is the classic error here.
+\end{workedexample}
+
+\segment{GUIDED PRACTICE}{15}{Building cells from the table}
+
+$E^\circ$ (V): \ce{Ag+}/\ce{Ag} $+0.80$ \textbullet\ \ce{Cu^2+}/\ce{Cu}
+$+0.34$ \textbullet\ \ce{Pb^2+}/\ce{Pb} $-0.13$ \textbullet\
+\ce{Ni^2+}/\ce{Ni} $-0.23$ \textbullet\ \ce{Fe^2+}/\ce{Fe} $-0.44$
+\textbullet\ \ce{Zn^2+}/\ce{Zn} $-0.76$ \textbullet\ \ce{Mg^2+}/\ce{Mg}
+$-2.37$
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{Zn} and \ce{Ag+}: \answerblank[2.6cm]{$+1.56$ V}
+  \item \ce{Mg} and \ce{Cu^2+}: \answerblank[2.6cm]{$+2.71$ V}
+  \item \ce{Zn} and \ce{Ni^2+}: \answerblank[2.6cm]{$+0.53$ V}
+  \item \ce{Fe} and \ce{Cu^2+}: \answerblank[2.6cm]{$+0.78$ V}
+  \item \ce{Pb} and \ce{Ag+}: \answerblank[2.6cm]{$+0.93$ V}
+\end{enumerate}
+
+\segment{INSTRUCTION B}{20}{Volts into kilojoules, and on to $K$}
+
+\notesection{$\Delta G^\circ = -nFE^\circ$}{9.9}
+\practice{5}
+
+Electrical work is charge moved through a potential difference. With
+\term{Faraday's constant} $F = \SI{96485}{\coulomb\per\mole}$,
+\[ \boxed{\;\Delta G^\circ = -nFE^\circ_{\text{cell}}\;} \]
+
+\begin{apctrap}
+\textbf{Here is where $n$ finally matters.} Voltage does not depend on how
+many electrons are transferred; free energy does, because more electrons
+through the same potential means more energy. Two cells can share an
+$E^\circ$ and have very different $\Delta G^\circ$.
+
+And $n$ comes from the \textbf{balanced overall equation}, not from either
+half-reaction alone.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 9: the Daniell cell in kilojoules]
+$E^\circ = +1.10$~V and $n = 2$:
+\[ \Delta G^\circ = -(2)(96485)(1.10) = -212{,}267~\text{J}
+   = \mathbf{-212}~\text{kJ} \]
+The answer arrives in \textbf{joules} --- $F$ is coulombs per mole and a
+volt is a joule per coulomb --- so convert to kJ.
+\end{workedexample}
+
+Combining with $\Delta G^\circ = -RT\ln K$ gives the third link:
+\[ nFE^\circ = RT\ln K \qquad\Longrightarrow\qquad
+   \ln K = \frac{nFE^\circ}{RT} \]
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}cccl@{}}
+\hline
+$E^\circ_{\text{cell}}$ & $\Delta G^\circ$ & $K$ & \\
+\hline
+$> 0$ & $< 0$ & $> 1$ & favored; galvanic \\
+$= 0$ & $= 0$ & $= 1$ & at equilibrium; a dead battery \\
+$< 0$ & $> 0$ & $< 1$ & unfavored; electrolytic \\
+\hline
+\end{tabular}
+\end{center}
+
+\segment{APPLICATION}{20}{Moving between the three}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}, $E^\circ = +0.46$~V. Calculate
+        $\Delta G^\circ$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n = 2$;
+        $\Delta G^\circ = -(2)(96485)(0.46) = -88{,}766~\text{J}
+        = \mathbf{-89}~\text{kJ}$\end{apcanswer}}
+  \item Two cells both have $E^\circ = +0.50$~V; one transfers 1 electron
+        and the other 4. Compare their voltages and their $\Delta G^\circ$.
+        \answerlines[3]{The voltages are equal --- potential is intensive
+        and independent of $n$. The free energy changes are not: the
+        four-electron cell has four times the magnitude of
+        $\Delta G^\circ$, since four times as much charge moves through the
+        same potential.}
+  \item A battery is described as ``dead''. Give $E_{\text{cell}}$,
+        $\Delta G$, and the relationship between $Q$ and $K$.
+        \answerblank[7.4cm]{$E = 0$, $\Delta G = 0$, $Q = K$}
+\end{enumerate}
+
+\begin{exitticket}
+A student doubles a half-reaction to balance electrons and doubles its
+$E^\circ$ too. Explain why the second step is wrong.
+\keyonly{\begin{apcanswer}Potential is intensive --- energy per unit charge
+--- so it does not scale with amount. Doubling the half-reaction doubles
+both the energy and the charge, leaving the volts unchanged. Only $n$
+changes, and that enters later through
+$\Delta G^\circ = -nFE^\circ$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Nonstandard Conditions and Electrolysis}{CED 9.10, 9.11 \textbullet\ Zumdahl \S18.4, \S18.7}
+
+\begin{objectives}
+  \item Predict qualitatively how concentration changes a cell potential.
+  \item Apply Faraday's law to an electrolysis calculation.
+\end{objectives}
+
+\reading{Zumdahl \S18.4, \S18.7}{895--900, 906--911}
+
+\begin{warmup}[4]
+  \item $\Delta G^\circ = $ \answerblank[3cm]{$-nFE^\circ$}
+  \item $F = $ \answerblank[3.4cm]{\SI{96485}{\coulomb\per\mole}}
+  \item $Q > K$ means the reaction shifts:
+        \answerblank[2.4cm]{reverse}
+  \item $E^\circ_{\text{cell}}$ for a dead battery:
+        \answerblank[1.4cm]{0}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Voltage as distance from equilibrium}
+
+\notesection{Changing the concentrations}{9.10}
+\practice{6}
+
+A cell's voltage measures how far the reaction is from equilibrium. As it
+runs, reactants are consumed and products build up, so $Q$
+\answerblank[1.6cm]{rises} toward $K$ and the voltage
+\answerblank[1.6cm]{falls}. When $Q = K$ the cell is dead.
+
+\begin{apcnote}[What CED 9.10 does and does not require]
+Topic 9.10 lists \textbf{no equation}. The Nernst equation is not required,
+and it does not appear on the AP equation sheet. What is required is the
+\emph{direction} of the effect, argued from Le Ch\^atelier:
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item Increase a \textbf{reactant} concentration $\Rightarrow$ $Q$
+        decreases $\Rightarrow$ the cell is further from equilibrium
+        $\Rightarrow$ voltage \answerblank[1.8cm]{increases}.
+  \item Increase a \textbf{product} concentration $\Rightarrow$ $Q$
+        increases $\Rightarrow$ voltage \answerblank[1.8cm]{decreases}.
+\end{itemize}
+
+Reason with $Q$ against $K$. That argument earns full credit and needs no
+logarithms.
+\end{apcnote}
+
+A \term{concentration cell} has the \emph{same} species in both half-cells
+at different concentrations. $E^\circ_{\text{cell}} = $
+\answerblank[1.4cm]{0}, since both electrodes are identical, yet the cell
+still produces a voltage --- the system moves to equalize the two
+concentrations. The \answerblank[3.4cm]{dilute} half-cell is the anode
+(metal dissolves, raising its concentration) and the concentrated one is
+the cathode. The cell dies when the concentrations become equal.
+
+\segment{INSTRUCTION B}{20}{Counting electrons with an ammeter}
+
+\notesection{Faraday's law}{9.11}
+\practice{5}
+
+Electrolysis is stoichiometry in which one reagent is
+\answerblank[2.4cm]{the electron}. Current is how you count them:
+\[ I = \frac{q}{t} \qquad\text{so}\qquad q = It \]
+with $q$ in coulombs, $I$ in amperes, $t$ in
+\answerblank[1.8cm]{seconds}. Then
+$\text{mol e}^- = q/96485$.
+
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\centering
+current \& time $\to$ charge ($q = It$) $\to$ moles of electrons
+($\div F$) \\
+$\to$ moles of substance ($\div n$ from the half-reaction) $\to$ grams
+($\times$ molar mass)}}
+\end{center}
+
+\begin{apctrap}
+\textbf{The half-reaction supplies the electron ratio, and it is not always
+2.} One mole of electrons deposits one mole of \ce{Ag}, but only half a
+mole of \ce{Cu} and a third of a mole of \ce{Al}. Reading that number off
+the ion's charge is the step students skip.
+
+Also: \textbf{time must be in seconds.} A problem stated in minutes or
+hours is stated that way on purpose.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 10: silver plating]
+\SI{2.00}{\ampere} for \SI{30.0}{\minute} through \ce{AgNO3}.
+
+$t = 30.0 \times 60 = \SI{1800}{\second}$;
+$q = (2.00)(1800) = \SI{3600}{\coulomb}$;
+$\text{mol e}^- = 3600/96485 = 0.0373$.
+
+$\ce{Ag+ + e^- -> Ag}$ is one electron per atom, so
+$m = (0.0373)(107.87) = \mathbf{4.03}$~g.
+\end{workedexample}
+
+\begin{workedexample}[Worked example 11: the same current, a different ion]
+\SI{1.50}{\ampere} for \SI{1.00}{\hour} through \ce{CuSO4}.
+
+$q = (1.50)(3600) = \SI{5400}{\coulomb}$;
+$\text{mol e}^- = 5400/96485 = 0.0560$.
+
+But $\ce{Cu^2+ + 2e^- -> Cu}$ needs \emph{two} electrons per atom:
+\[ \text{mol Cu} = \frac{0.0560}{2} = 0.0280 \qquad
+   m = (0.0280)(63.55) = \mathbf{1.78}~\text{g} \]
+Forgetting to divide by 2 gives 3.56 g --- exactly double, and a lost
+point.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Predicting and scaling}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For \ce{Zn + Cu^2+ -> Zn^2+ + Cu}, predict the effect on
+        $E_{\text{cell}}$ of increasing $[\ce{Cu^2+}]$, and justify without
+        calculating. \answerlines[3]{\ce{Cu^2+} is a reactant, so raising
+        its concentration lowers $Q$ and moves the system further from
+        equilibrium. The driving force increases, so $E_{\text{cell}}$
+        increases.}
+  \item How long, in hours, to deposit \SI{5.00}{\gram} of copper at
+        \SI{2.00}{\ampere}? \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}mol Cu $= 5.00/63.55 = 0.0787$;
+        mol e$^- = 0.157$; $q = (0.157)(96485) = \SI{15183}{\coulomb}$;
+        $t = 15183/2.00 = \SI{7591}{\second} =
+        \mathbf{2.11}~\text{h}$\end{apcanswer}}
+  \item A concentration cell is built from two \ce{Cu} electrodes in
+        \SI{0.10}{\Molar} and \SI{1.0}{\Molar} \ce{Cu^2+}. Identify the
+        anode and say when the cell stops.
+        \answerlines[3]{The \SI{0.10}{\Molar} half-cell is the anode:
+        copper dissolves there, raising its concentration, while
+        \ce{Cu^2+} plates out in the concentrated half-cell. The cell stops
+        when the two concentrations become equal, at which point $Q = K$
+        and $E_{\text{cell}} = 0$.}
+\end{enumerate}
+
+\begin{exitticket}
+State the one question to ask before starting any calculation in this unit,
+and why it settles the method.
+\keyonly{\begin{apcanswer}``Which of $\Delta G^\circ$, $K$, and
+$E^\circ_{\text{cell}}$ am I given, and which is wanted?'' All three
+describe the same fact and are linked by
+$\Delta G^\circ = -RT\ln K = -nFE^\circ$, so naming the two endpoints
+selects the equation and leaves only unit conversion to get
+wrong.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}

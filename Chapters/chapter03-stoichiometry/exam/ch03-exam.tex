@@ -1,0 +1,306 @@
+% Zumdahl Chapter 3 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S3.1--3.11 \textbullet\ 50 minutes \textbullet\ periodic table provided}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- moles / molar mass ----------------------------------------------------
+\begin{mcq}
+  The molar mass of \ce{Ca(OH)2} is closest to
+  \choices
+    \choice{\SI{57}{\gram\per\mole}}
+    \correct{\SI{74}{\gram\per\mole}}
+    \choice{\SI{58}{\gram\per\mole}}
+    \choice{\SI{90}{\gram\per\mole}}
+\end{mcq}
+\why{$40.08 + 2(16.00 + 1.008) = 74.10$.}
+\distractor{A}{counted only one OH group}
+
+\begin{mcq}
+  How many moles are in \SI{88.0}{\gram} of \ce{CO2}?
+  \choices
+    \choice{\SI{1.00}{\mole}}
+    \correct{\SI{2.00}{\mole}}
+    \choice{\SI{4.00}{\mole}}
+    \choice{\SI{0.500}{\mole}}
+\end{mcq}
+\why{$88.0/44.01 = 2.00$.}
+
+\begin{mcq}
+  Which sample contains the largest number of atoms?
+  \choices
+    \choice{\SI{1.0}{\mole} of \ce{O2}}
+    \choice{\SI{1.0}{\mole} of \ce{H2O}}
+    \correct{\SI{1.0}{\mole} of \ce{C2H6}}
+    \choice{\SI{1.0}{\mole} of \ce{NaCl}}
+\end{mcq}
+\why{8 atoms per molecule beats 3, 2, and 2.}
+
+\begin{mcq}
+  A \SI{0.500}{\mole} sample of a compound has a mass of \SI{29.0}{\gram}.
+  Its molar mass is
+  \choices
+    \choice{\SI{14.5}{\gram\per\mole}}
+    \choice{\SI{29.0}{\gram\per\mole}}
+    \correct{\SI{58.0}{\gram\per\mole}}
+    \choice{\SI{116}{\gram\per\mole}}
+\end{mcq}
+\why{$M = m/n = 29.0/0.500$.}
+\distractor{A}{multiplied rather than divided}
+
+\begin{mcq}
+  How many oxygen atoms are in \SI{0.500}{\mole} of \ce{Al2(SO4)3}?
+  \choices
+    \choice{$3.01\times10^{23}$}
+    \choice{$1.81\times10^{24}$}
+    \correct{$3.61\times10^{24}$}
+    \choice{$7.23\times10^{24}$}
+\end{mcq}
+\why{12 O per formula unit: $0.500 \times 12 \times 6.022\times10^{23}$.}
+\distractor{B}{used 4 oxygens instead of 12}
+
+% ---- percent composition / formulas ----------------------------------------
+\begin{mcq}
+  The mass percent of nitrogen in \ce{NH4NO3} ($M = 80.05$) is closest to
+  \choices
+    \choice{17.5\%}
+    \correct{35.0\%}
+    \choice{28.0\%}
+    \choice{63.0\%}
+\end{mcq}
+\why{Two N atoms: $28.02/80.05 = 0.350$.}
+\distractor{A}{counted only one nitrogen}
+
+\begin{mcq}
+  A compound is 40.0\% C, 6.7\% H, and 53.3\% O by mass. Its empirical
+  formula is
+  \choices
+    \choice{\ce{C2H4O2}}
+    \correct{\ce{CH2O}}
+    \choice{\ce{CHO}}
+    \choice{\ce{C6H12O6}}
+\end{mcq}
+\why{Mole ratio $3.33 : 6.65 : 3.33 = 1{:}2{:}1$.}
+\distractor{D}{that's a molecular formula, not the simplest ratio}
+
+\begin{mcq}
+  A compound has the empirical formula \ce{CH2} and a molar mass of
+  \SI{70.1}{\gram\per\mole}. Its molecular formula is
+  \choices
+    \choice{\ce{C2H4}}
+    \choice{\ce{C4H8}}
+    \correct{\ce{C5H10}}
+    \choice{\ce{C6H12}}
+\end{mcq}
+\why{$70.1/14.03 = 5$.}
+
+\begin{mcq}
+  In determining an empirical formula, a student obtains the mole ratio
+  \ce{C}:\ce{O} $= 1 : 2.5$. The correct next step is to
+  \choices
+    \choice{round 2.5 to 3}
+    \choice{round 2.5 to 2}
+    \correct{multiply both values by 2}
+    \choice{divide both values by 2.5}
+\end{mcq}
+\why{A .5 ratio means the true subscripts are double; rounding changes the
+compound.}
+
+\begin{mcq}
+  In combustion analysis of a compound containing C, H, and O, the mass of
+  oxygen in the sample is found by
+  \choices
+    \choice{measuring the \ce{O2} consumed}
+    \choice{converting the \ce{CO2} mass to oxygen}
+    \correct{subtracting the C and H masses from the sample mass}
+    \choice{measuring the \ce{H2O} produced}
+\end{mcq}
+\why{Sample oxygen is indistinguishable from the \ce{O2} used to burn it, so
+it must be obtained by difference.}
+
+% ---- balancing -------------------------------------------------------------
+\begin{mcq}
+  When \ce{C4H10 + O2 -> CO2 + H2O} is balanced with the smallest whole-number
+  coefficients, the coefficient of \ce{O2} is
+  \choices
+    \choice{6}
+    \choice{10}
+    \correct{13}
+    \choice{8}
+\end{mcq}
+\why{\ce{2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O}: $16+10 = 26$ O atoms.}
+
+\begin{mcq}
+  Balancing a chemical equation is justified by the law of
+  \choices
+    \correct{conservation of mass}
+    \choice{multiple proportions}
+    \choice{definite proportion}
+    \choice{constant volume}
+\end{mcq}
+\why{Atoms are conserved, so mass is conserved.}
+
+\begin{mcq}
+  Which action is NEVER permitted when balancing an equation?
+  \choices
+    \choice{changing a coefficient}
+    \correct{changing a subscript}
+    \choice{multiplying all coefficients by 2}
+    \choice{adding a coefficient of 1}
+\end{mcq}
+\why{Subscripts define the substance; changing them makes a different
+compound.}
+
+% ---- stoichiometry ---------------------------------------------------------
+\begin{mcq}
+  For \ce{N2 + 3 H2 -> 2 NH3}, how many moles of \ce{H2} are needed to react
+  completely with \SI{4.0}{\mole} of \ce{N2}?
+  \choices
+    \choice{\SI{4.0}{\mole}}
+    \choice{\SI{8.0}{\mole}}
+    \correct{\SI{12}{\mole}}
+    \choice{\SI{1.3}{\mole}}
+\end{mcq}
+\why{3:1 ratio.}
+\distractor{D}{divided by 3 instead of multiplying}
+
+\begin{mcq}
+  For \ce{2 KClO3 -> 2 KCl + 3 O2}, \SI{0.400}{\mole} of \ce{KClO3} produces
+  how many moles of \ce{O2}?
+  \choices
+    \choice{\SI{0.267}{\mole}}
+    \choice{\SI{0.400}{\mole}}
+    \correct{\SI{0.600}{\mole}}
+    \choice{\SI{1.20}{\mole}}
+\end{mcq}
+\why{$0.400 \times 3/2$.}
+
+\begin{mcq}
+  In a mass-to-mass stoichiometry problem, the mole ratio from the balanced
+  equation is used to convert
+  \choices
+    \choice{grams of A to moles of A}
+    \correct{moles of A to moles of B}
+    \choice{moles of B to grams of B}
+    \choice{grams of A directly to grams of B}
+\end{mcq}
+\why{Coefficients relate moles only; molar masses do the gram conversions.}
+
+% ---- limiting reactant / yield ---------------------------------------------
+\begin{mcq}
+  For \ce{2 H2 + O2 -> 2 H2O}, a mixture of \SI{4.0}{\mole} \ce{H2} and
+  \SI{3.0}{\mole} \ce{O2} is ignited. The limiting reactant is
+  \choices
+    \correct{\ce{H2}}
+    \choice{\ce{O2}}
+    \choice{neither --- they are in exact ratio}
+    \choice{cannot be determined}
+\end{mcq}
+\why{\ce{H2} needs only 2.0 mol \ce{O2}; oxygen is in excess.}
+\distractor{B}{picks the smaller starting amount without using the ratio}
+
+\begin{mcq}
+  In the reaction above, how much \ce{O2} remains after the reaction is
+  complete?
+  \choices
+    \choice{\SI{0}{\mole}}
+    \correct{\SI{1.0}{\mole}}
+    \choice{\SI{2.0}{\mole}}
+    \choice{\SI{3.0}{\mole}}
+\end{mcq}
+\why{$3.0 - 2.0 = 1.0$ mol left.}
+
+\begin{mcq}
+  The theoretical yield of a reaction must always be calculated from
+  \choices
+    \choice{the reactant present in the greatest mass}
+    \choice{the reactant with the largest molar mass}
+    \correct{the limiting reactant}
+    \choice{the average of all reactants}
+\end{mcq}
+\why{Product stops forming when the limiting reactant is consumed.}
+
+\begin{mcq}
+  A reaction with a theoretical yield of \SI{25.0}{\gram} gives an actual
+  yield of \SI{20.0}{\gram}. The percent yield is
+  \choices
+    \choice{5.00\%}
+    \choice{125\%}
+    \correct{80.0\%}
+    \choice{45.0\%}
+\end{mcq}
+\why{$20.0/25.0 \times 100$.}
+\distractor{B}{inverted the ratio}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S3.6--3.7 \textbullet\ composition to formula}
+
+A compound contains only carbon, hydrogen, and oxygen. Analysis shows it is
+54.5\% C and 9.10\% H by mass, and its molar mass is
+\SI{88.11}{\gram\per\mole}.
+
+\begin{parts}
+  \item Determine the mass percent of oxygen.
+        \answerlines[1]{$100 - 54.5 - 9.10 = 36.4\%$}
+  \item Determine the empirical formula. Show your mole work.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}C: $54.5/12.01 = 4.54$;
+        H: $9.10/1.008 = 9.03$; O: $36.4/16.00 = 2.28$. Divide by 2.28:
+        $1.99 : 3.96 : 1.00 \to$ \ce{C2H4O}.\end{apcanswer}}
+  \item Determine the molecular formula.
+        \answerlines[2]{$M_{\text{emp}} = 44.05$; $88.11/44.05 = 2.00$;
+        molecular formula \ce{C4H8O2}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) 36.4\% oxygen}
+  \rpoint{1}{(b) converts all three percentages to moles correctly}
+  \rpoint{1}{(b) \ce{C2H4O} after dividing by the smallest}
+  \rpoint{1}{(c) \ce{C4H8O2} with the molar-mass ratio shown}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S3.10--3.11 \textbullet\ limiting reactant and yield}
+
+Aluminum reacts with chlorine: \ce{2 Al + 3 Cl2 -> 2 AlCl3}.
+A mixture of \SI{27.0}{\gram} Al and \SI{142}{\gram} \ce{Cl2} is allowed to
+react to completion.
+
+\begin{parts}
+  \item Determine the limiting reactant, showing the comparison that
+        justifies your choice. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Al: $27.0/26.98 = \SI{1.00}{\mole} \to
+        \SI{1.00}{\mole}$ \ce{AlCl3}. \ce{Cl2}: $142/70.90 =
+        \SI{2.00}{\mole} \to \tfrac23(2.00) = \SI{1.33}{\mole}$ \ce{AlCl3}.
+        Al gives less $\to$ Al is limiting.\end{apcanswer}}
+  \item Calculate the theoretical yield of \ce{AlCl3} in grams.
+        \answerlines[2]{$\SI{1.00}{\mole} \times \SI{133.33}{\gram\per\mole}
+        = \SI{133}{\gram}$.}
+  \item If \SI{112}{\gram} of \ce{AlCl3} is actually isolated, calculate the
+        percent yield. \answerlines[1]{$112/133 \times 100 = 84.2\%$}
+  \item State one reason a percent yield is typically less than 100\%.
+        \answerlines[1]{Product lost during transfer or purification;
+        incomplete reaction; competing side reactions.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) both reactants converted to moles AND compared using the
+    coefficient ratio --- comparing raw moles alone earns 0}
+  \rpoint{1}{(a) identifies Al as limiting}
+  \rpoint{1}{(b) \SI{133}{\gram} with work}
+  \rpoint{1}{(c) 84.2\% AND (d) any valid physical reason}
+\end{rubric}
+
+\examtotal
+
+\end{document}

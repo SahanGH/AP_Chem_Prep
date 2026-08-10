@@ -1,0 +1,305 @@
+% Zumdahl Chapter 4 test -- 20 MCQ + 2 FRQ. 50 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{4}
+\apcunittitle{Types of Chemical Reactions and Solution Stoichiometry}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S4.1--4.11 \textbullet\ 50 minutes \textbullet\ periodic table and solubility rules provided}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- solutions / electrolytes ---------------------------------------------
+\begin{mcq}
+  Which substance is a weak electrolyte in aqueous solution?
+  \choices
+    \choice{\ce{NaCl}}
+    \choice{\ce{HNO3}}
+    \correct{\ce{HC2H3O2}}
+    \choice{\ce{C6H12O6}}
+\end{mcq}
+\why{Acetic acid ionizes only slightly, reaching an equilibrium.}
+\distractor{D}{glucose is a nonelectrolyte --- it does not ionize at all}
+
+\begin{mcq}
+  A \SI{0.10}{\Molar} solution of HA conducts electricity poorly, while
+  \SI{0.10}{\Molar} HB conducts well. This shows that
+  \choices
+    \choice{HB is more concentrated than HA}
+    \correct{HB ionizes to a greater extent than HA}
+    \choice{HA has a larger molar mass}
+    \choice{HA is not an acid}
+\end{mcq}
+\why{Same concentration, different ion counts --- a strong/weak distinction.}
+\distractor{A}{both are 0.10 M; strong and concentrated are different ideas}
+
+\begin{mcq}
+  Water dissolves ionic solids primarily because water molecules
+  \choices
+    \choice{are nonpolar and slip between ions}
+    \correct{are polar and form ion--dipole attractions with the ions}
+    \choice{react chemically with the ions}
+    \choice{have low molar mass}
+\end{mcq}
+\why{Ion--dipole attraction compensates for the lattice energy.}
+
+\begin{mcq}
+  What is the concentration of nitrate ion in \SI{0.20}{\Molar}
+  \ce{Ca(NO3)2}?
+  \choices
+    \choice{\SI{0.10}{\Molar}}
+    \choice{\SI{0.20}{\Molar}}
+    \correct{\SI{0.40}{\Molar}}
+    \choice{\SI{0.60}{\Molar}}
+\end{mcq}
+\why{Two nitrates per formula unit.}
+
+\begin{mcq}
+  What volume of \SI{6.00}{\Molar} \ce{HCl} is needed to prepare
+  \SI{300.}{\milli\liter} of \SI{0.500}{\Molar} \ce{HCl}?
+  \choices
+    \choice{\SI{12.5}{\milli\liter}}
+    \correct{\SI{25.0}{\milli\liter}}
+    \choice{\SI{50.0}{\milli\liter}}
+    \choice{\SI{3.60}{\milli\liter}}
+\end{mcq}
+\why{$M_1V_1 = M_2V_2$: $(0.500)(300.)/6.00 = 25.0$.}
+
+% ---- solubility / precipitation -------------------------------------------
+\begin{mcq}
+  Which compound is insoluble in water?
+  \choices
+    \choice{\ce{KNO3}}
+    \choice{\ce{(NH4)2S}}
+    \correct{\ce{BaSO4}}
+    \choice{\ce{NaOH}}
+\end{mcq}
+\why{Rule 4 exception. \ce{(NH4)2S} is soluble because rule 2 overrides
+rule 6.}
+
+\begin{mcq}
+  Mixing which pair produces a precipitate?
+  \choices
+    \choice{\ce{NaCl(aq)} and \ce{KNO3(aq)}}
+    \correct{\ce{Pb(NO3)2(aq)} and \ce{KI(aq)}}
+    \choice{\ce{NaNO3(aq)} and \ce{NH4Cl(aq)}}
+    \choice{\ce{KCl(aq)} and \ce{Na2SO4(aq)}}
+\end{mcq}
+\why{\ce{PbI2} is insoluble (rule 3 exception); every other pairing is
+soluble.}
+
+\begin{mcq}
+  Silver nitrate solution is added to sodium chloride solution. The white
+  solid that forms is
+  \choices
+    \correct{\ce{AgCl}}
+    \choice{\ce{NaNO3}}
+    \choice{\ce{Ag2O}}
+    \choice{\ce{NaCl}}
+\end{mcq}
+\why{Ion interchange gives \ce{AgCl} (insoluble) and \ce{NaNO3} (soluble).}
+
+\begin{mcq}
+  Which ion makes essentially every compound it appears in soluble?
+  \choices
+    \correct{\ce{NO3-}}
+    \choice{\ce{SO4^2-}}
+    \choice{\ce{CO3^2-}}
+    \choice{\ce{OH-}}
+\end{mcq}
+\why{Rule 1 has no notable exceptions.}
+
+% ---- ionic equations -------------------------------------------------------
+\begin{mcq}
+  In a complete ionic equation, which species is NOT written as separated
+  ions?
+  \choices
+    \choice{\ce{NaCl(aq)}}
+    \choice{\ce{HNO3(aq)}}
+    \choice{\ce{KOH(aq)}}
+    \correct{\ce{CaCO3(s)}}
+\end{mcq}
+\why{Solids, liquids, gases, weak electrolytes, and nonelectrolytes stay
+intact.}
+
+\begin{mcq}
+  Ions present in solution both before and after a reaction are called
+  \choices
+    \choice{limiting ions}
+    \correct{spectator ions}
+    \choice{complex ions}
+    \choice{polyatomic ions}
+\end{mcq}
+\why{They are cancelled to give the net ionic equation.}
+
+\begin{mcq}
+  The net ionic equation for mixing \ce{BaCl2(aq)} and \ce{Na2SO4(aq)} is
+  \choices
+    \choice{\ce{BaCl2(aq) + Na2SO4(aq) -> BaSO4(s) + 2 NaCl(aq)}}
+    \correct{\ce{Ba^2+(aq) + SO4^2-(aq) -> BaSO4(s)}}
+    \choice{\ce{Na+(aq) + Cl^-(aq) -> NaCl(s)}}
+    \choice{\ce{Ba^2+(aq) + 2 Cl^-(aq) -> BaCl2(s)}}
+\end{mcq}
+\why{Only the ions forming the solid appear; \ce{Na+} and \ce{Cl-} are
+spectators.}
+\distractor{A}{that is the formula equation, not the net ionic}
+
+\begin{mcq}
+  In a net ionic equation, aqueous acetic acid is written as
+  \ce{HC2H3O2(aq)} rather than as ions because it is
+  \choices
+    \choice{insoluble}
+    \choice{a nonelectrolyte}
+    \correct{a weak electrolyte}
+    \choice{a spectator}
+\end{mcq}
+\why{Only a small fraction ionizes, so the molecular form dominates.}
+
+% ---- acid-base -------------------------------------------------------------
+\begin{mcq}
+  Which is a strong acid?
+  \choices
+    \choice{\ce{HF}}
+    \correct{\ce{HClO4}}
+    \choice{\ce{HC2H3O2}}
+    \choice{\ce{H2CO3}}
+\end{mcq}
+\why{Perchloric acid is one of the six common strong acids.}
+\distractor{A}{HF is the classic weak acid despite fluorine's
+electronegativity}
+
+\begin{mcq}
+  The net ionic equation for the reaction of \ce{HNO3(aq)} with
+  \ce{NaOH(aq)} is
+  \choices
+    \correct{\ce{H+(aq) + OH^-(aq) -> H2O(l)}}
+    \choice{\ce{HNO3(aq) + OH^-(aq) -> NO3^-(aq) + H2O(l)}}
+    \choice{\ce{Na+(aq) + NO3^-(aq) -> NaNO3(s)}}
+    \choice{\ce{H+(aq) + NaOH(aq) -> Na+(aq) + H2O(l)}}
+\end{mcq}
+\why{Both are strong; every strong-acid/strong-base neutralization reduces
+to this.}
+\distractor{B}{that form is correct only for a WEAK acid}
+
+\begin{mcq}
+  According to the Bronsted--Lowry definition, a base is a substance that
+  \choices
+    \choice{produces hydroxide ions}
+    \correct{accepts a proton}
+    \choice{donates a proton}
+    \choice{conducts electricity}
+\end{mcq}
+\why{Which is why \ce{NH3} counts as a base despite containing no
+\ce{OH-}.}
+
+\begin{mcq}
+  \SI{25.0}{\milli\liter} of \ce{HCl} is neutralized by
+  \SI{50.0}{\milli\liter} of \SI{0.100}{\Molar} \ce{NaOH}. The
+  concentration of the \ce{HCl} is
+  \choices
+    \choice{\SI{0.0500}{\Molar}}
+    \choice{\SI{0.100}{\Molar}}
+    \correct{\SI{0.200}{\Molar}}
+    \choice{\SI{0.400}{\Molar}}
+\end{mcq}
+\why{$n(\ce{OH-}) = 5.00\times10^{-3}$ mol; 1:1; $/0.0250 = 0.200$.}
+
+% ---- redox -----------------------------------------------------------------
+\begin{mcq}
+  The oxidation state of chromium in \ce{Cr2O7^2-} is
+  \choices
+    \choice{$+3$}
+    \choice{$+7$}
+    \correct{$+6$}
+    \choice{$+12$}
+\end{mcq}
+\why{$2x + 7(-2) = -2 \Rightarrow x = +6$.}
+\distractor{D}{that is the total for both chromiums, not per atom}
+
+\begin{mcq}
+  In \ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}, zinc is
+  \choices
+    \correct{oxidized and is the reducing agent}
+    \choice{oxidized and is the oxidizing agent}
+    \choice{reduced and is the reducing agent}
+    \choice{reduced and is the oxidizing agent}
+\end{mcq}
+\why{Zn goes $0 \to +2$ (loses electrons), so it is oxidized --- and by
+donating them it reduces the copper.}
+\distractor{B}{the agent labels are swapped; oxidized species = reducing
+agent}
+
+\begin{mcq}
+  Which reaction is NOT an oxidation--reduction reaction?
+  \choices
+    \choice{\ce{2 Mg + O2 -> 2 MgO}}
+    \correct{\ce{HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l)}}
+    \choice{\ce{Zn + 2 HCl -> ZnCl2 + H2}}
+    \choice{\ce{2 Na + Cl2 -> 2 NaCl}}
+\end{mcq}
+\why{In the neutralization every element keeps its oxidation state.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S4.5--4.8 \textbullet\ reactions in solution}
+
+Aqueous solutions of barium hydroxide and sulfuric acid are mixed.
+
+\begin{parts}
+  \item Write the balanced formula equation for the reaction.
+        \answerlines[2]{\ce{Ba(OH)2(aq) + H2SO4(aq) -> BaSO4(s) +
+        2 H2O(l)}}
+  \item Write the net ionic equation. Explain why, unusually, there are no
+        spectator ions. \answerlines[3]{\ce{Ba^2+(aq) + 2 OH^-(aq) +
+        2 H+(aq) + SO4^2-(aq) -> BaSO4(s) + 2 H2O(l)}. Every ion is
+        consumed: barium and sulfate form the precipitate, while hydrogen
+        and hydroxide form water.}
+  \item Predict what happens to the electrical conductivity of the mixture
+        as the reaction proceeds, and explain.
+        \answerlines[2]{It falls sharply --- essentially all ions are
+        removed into an insoluble solid and a nonelectrolyte, leaving very
+        few charge carriers.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) balanced formula equation with correct states}
+  \rpoint{1}{(b) correct net ionic equation}
+  \rpoint{1}{(b) explains that both products remove ions from solution}
+  \rpoint{1}{(c) conductivity decreases, tied to loss of mobile ions}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S4.3, 4.7 \textbullet\ solution stoichiometry}
+
+A student mixes \SI{50.0}{\milli\liter} of \SI{0.200}{\Molar} \ce{AgNO3}
+with \SI{50.0}{\milli\liter} of \SI{0.150}{\Molar} \ce{K2CrO4}. A red-brown
+precipitate of \ce{Ag2CrO4} ($M = \SI{331.7}{\gram\per\mole}$) forms.
+
+\begin{parts}
+  \item Write the net ionic equation for the reaction.
+        \answerlines[1]{\ce{2 Ag+(aq) + CrO4^2-(aq) -> Ag2CrO4(s)}}
+  \item Determine the limiting reactant, showing the comparison.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Ag+}) = (0.0500)(0.200) =
+        \SI{0.0100}{\mole}$; $n(\ce{CrO4^2-}) = (0.0500)(0.150) =
+        \SI{0.00750}{\mole}$. Silver could make $0.0100/2 = 0.00500$ mol of
+        solid; chromate could make $0.00750$ mol. \ce{Ag+} is
+        limiting.\end{apcanswer}}
+  \item Calculate the mass of \ce{Ag2CrO4} produced.
+        \answerlines[2]{$0.00500 \times 331.7 = \SI{1.66}{\gram}$}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct net ionic equation with the 2:1 coefficient}
+  \rpoint{2}{(b) 1 pt both mole counts; 1 pt comparison uses the 2:1 ratio
+    and names \ce{Ag+} --- comparing raw moles earns 0}
+  \rpoint{1}{(c) \SI{1.66}{\gram} with units}
+\end{rubric}
+
+\examtotal
+
+\end{document}

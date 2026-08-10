@@ -1,0 +1,320 @@
+% Zumdahl Chapter 12 test -- 20 MCQ + 2 FRQ. 50 min. All sections on-CED.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{12}
+\apcunittitle{Chemical Kinetics}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S12.1--12.7 \textbullet\ 50 minutes \textbullet\ kinetics equations provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- rates -----------------------------------------------------------------
+\begin{mcq}
+  For \ce{2 A -> 3 B}, if A disappears at \SI{0.10}{\Molar\per\second}, B
+  appears at
+  \choices
+    \choice{\SI{0.10}{\Molar\per\second}}
+    \correct{\SI{0.15}{\Molar\per\second}}
+    \choice{\SI{0.067}{\Molar\per\second}}
+    \choice{\SI{0.30}{\Molar\per\second}}
+\end{mcq}
+\why{$\tfrac32 \times 0.10$ --- three B for every two A.}
+\distractor{C}{inverted the ratio}
+
+\begin{mcq}
+  The instantaneous rate of a reaction at a given moment is
+  \choices
+    \choice{the slope of the line joining two points on the curve}
+    \correct{the slope of the tangent to the concentration--time curve}
+    \choice{always constant}
+    \choice{the same as the initial rate}
+\end{mcq}
+\why{Average rate uses a chord; instantaneous uses a tangent.}
+
+\begin{mcq}
+  Initial rates are used to determine rate laws because at $t = 0$
+  \choices
+    \correct{concentrations are known exactly and no products have
+      accumulated}
+    \choice{the rate is at its slowest}
+    \choice{the rate constant is largest}
+    \choice{temperature is lowest}
+\end{mcq}
+\why{Accumulated product could drive a reverse reaction and confound the
+measurement.}
+
+% ---- rate laws -------------------------------------------------------------
+\begin{mcq}
+  The exponents in a rate law are determined by
+  \choices
+    \choice{the coefficients in the balanced equation}
+    \correct{experiment}
+    \choice{the molar masses of the reactants}
+    \choice{the sign of $\Delta H$}
+\end{mcq}
+\why{The central rule of the chapter --- orders reflect the mechanism, not
+the stoichiometry.}
+
+\begin{mcq}
+  For rate $= k[\ce{A}]^2[\ce{B}]$, doubling both concentrations changes the
+  rate by a factor of
+  \choices
+    \choice{4}
+    \choice{6}
+    \correct{8}
+    \choice{2}
+\end{mcq}
+\why{$2^2 \times 2^1 = 8$.}
+
+\begin{mcq}
+  If doubling the concentration of a reactant leaves the rate unchanged, the
+  order with respect to that reactant is
+  \choices
+    \correct{0}
+    \choice{1}
+    \choice{2}
+    \choice{$-1$}
+\end{mcq}
+\why{Zero order means the rate is independent of that concentration.}
+
+\begin{mcq}
+  A reaction is first order in A and second order in B. The overall order is
+  \choices
+    \choice{1}
+    \choice{2}
+    \correct{3}
+    \choice{4}
+\end{mcq}
+\why{Orders add.}
+
+\begin{mcq}
+  \ce{2 N2O5 -> 4 NO2 + O2} is found to be first order in \ce{N2O5}. This
+  shows that
+  \choices
+    \choice{the balanced equation was written incorrectly}
+    \correct{reaction order cannot be predicted from coefficients}
+    \choice{the reaction has no mechanism}
+    \choice{the rate is constant}
+\end{mcq}
+\why{Coefficient 2, order 1 --- exactly the point.}
+
+% ---- integrated rate laws --------------------------------------------------
+\begin{mcq}
+  A plot of $\ln[\ce{A}]$ versus time gives a straight line. The reaction is
+  \choices
+    \choice{zero order}
+    \correct{first order}
+    \choice{second order}
+    \choice{third order}
+\end{mcq}
+\why{Each order has exactly one linear plot.}
+
+\begin{mcq}
+  A plot of $1/[\ce{A}]$ versus time gives a straight line. The slope equals
+  \choices
+    \correct{$k$}
+    \choice{$-k$}
+    \choice{$1/k$}
+    \choice{$\ln k$}
+\end{mcq}
+\why{$1/[\ce{A}]_t = kt + 1/[\ce{A}]_0$ --- positive slope for second
+order.}
+
+\begin{mcq}
+  For which order is the half-life independent of the initial
+  concentration?
+  \choices
+    \choice{zero}
+    \correct{first}
+    \choice{second}
+    \choice{all of them}
+\end{mcq}
+\why{$t_{1/2} = 0.693/k$ contains no concentration term.}
+
+\begin{mcq}
+  A first-order reaction has $t_{1/2} = \SI{25}{\second}$. What fraction of
+  the reactant remains after \SI{75}{\second}?
+  \choices
+    \choice{1/2}
+    \choice{1/4}
+    \correct{1/8}
+    \choice{1/16}
+\end{mcq}
+\why{Three half-lives.}
+
+\begin{mcq}
+  For a second-order reaction, each successive half-life is
+  \choices
+    \choice{shorter than the last}
+    \correct{longer than the last}
+    \choice{the same}
+    \choice{unpredictable}
+\end{mcq}
+\why{$t_{1/2} = 1/(k[\ce{A}]_0)$ --- as concentration falls, half-life
+grows.}
+
+\begin{mcq}
+  For a first-order reaction, which quantity is linear in time?
+  \choices
+    \choice{$[\ce{A}]$}
+    \correct{$\ln[\ce{A}]$}
+    \choice{$1/[\ce{A}]$}
+    \choice{$[\ce{A}]^2$}
+\end{mcq}
+\why{Which is why concentrations cannot be linearly interpolated.}
+
+% ---- mechanisms ------------------------------------------------------------
+\begin{mcq}
+  For the elementary step \ce{2 NO2 -> NO3 + NO}, the rate law is
+  \choices
+    \choice{$k[\ce{NO2}]$}
+    \correct{$k[\ce{NO2}]^2$}
+    \choice{$k[\ce{NO3}][\ce{NO}]$}
+    \choice{cannot be determined without data}
+\end{mcq}
+\why{For an elementary step --- and only then --- molecularity gives the
+order.}
+
+\begin{mcq}
+  A species produced in one step of a mechanism and consumed in a later step
+  is called
+  \choices
+    \choice{a catalyst}
+    \correct{an intermediate}
+    \choice{a reactant}
+    \choice{an activated complex}
+\end{mcq}
+\why{A catalyst is consumed first and regenerated later --- the reverse
+order.}
+
+\begin{mcq}
+  A reactant that appears in the balanced equation but not in the rate law
+  most likely
+  \choices
+    \correct{participates only after the rate-determining step}
+    \choice{is a catalyst}
+    \choice{is not really consumed}
+    \choice{indicates an experimental error}
+\end{mcq}
+\why{Speeding up a step past the bottleneck cannot change the overall rate.}
+
+% ---- collision model and catalysis -----------------------------------------
+\begin{mcq}
+  For a collision to result in reaction, the molecules must have sufficient
+  energy AND
+  \choices
+    \choice{equal masses}
+    \correct{proper orientation}
+    \choice{opposite charges}
+    \choice{the same velocity}
+\end{mcq}
+\why{Both conditions filter the enormous number of collisions that occur.}
+
+\begin{mcq}
+  A reaction is strongly exothermic yet proceeds imperceptibly slowly at
+  room temperature. This is possible because
+  \choices
+    \correct{$E_a$ and $\Delta H$ are independent quantities}
+    \choice{the reaction is not spontaneous}
+    \choice{$\Delta H$ must actually be positive}
+    \choice{no catalyst is present}
+\end{mcq}
+\why{A large $E_a$ makes a thermodynamically favourable reaction kinetically
+slow.}
+
+\begin{mcq}
+  A catalyst increases a reaction rate by
+  \choices
+    \choice{raising the temperature}
+    \choice{increasing $\Delta H$}
+    \correct{providing a pathway with lower activation energy}
+    \choice{shifting the equilibrium toward products}
+\end{mcq}
+\why{It changes the mechanism, not the thermodynamics.}
+\distractor{D}{a catalyst lowers $E_a$ in both directions equally, so
+equilibrium is unchanged}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 20 minutes}{\calculatorok}
+
+\begin{apcnote}[Kinetics equations]
+$\ln[\ce{A}]_t - \ln[\ce{A}]_0 = -kt$ \textbullet\
+$\dfrac{1}{[\ce{A}]_t} - \dfrac{1}{[\ce{A}]_0} = kt$ \textbullet\
+$t_{1/2} = \dfrac{0.693}{k}$ (first order) \textbullet\
+$\ln k = -\dfrac{E_a}{R}\left(\dfrac{1}{T}\right) + \ln A$ \textbullet\
+$R = \SI{8.314}{\joule\per\mole\per\kelvin}$
+\end{apcnote}
+
+% ---- FRQ 1 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S12.3--12.4 \textbullet\ rate law and integrated form}
+
+The decomposition \ce{2 H2O2(aq) -> 2 H2O(l) + O2(g)} is first order in
+\ce{H2O2}, with $k = \SI{7.30e-4}{\per\second}$ at \SI{20}{\celsius}. A
+solution is prepared with $[\ce{H2O2}]_0 = \SI{0.500}{\Molar}$.
+
+\begin{parts}
+  \item Calculate the half-life. \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$t_{1/2} = 0.693/7.30\times10^{-4} =
+        \SI{949}{\second}$\end{apcanswer}}
+  \item Calculate $[\ce{H2O2}]$ after \SI{1800}{\second}.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$\ln[\ce{A}] = -(7.30\times10^{-4})(1800)
+        + \ln(0.500) = -1.314 - 0.693 = -2.007$;
+        $[\ce{A}] = \SI{0.134}{\Molar}$\end{apcanswer}}
+  \item A student estimates the answer to (b) as \SI{0.125}{\Molar} by
+        noting that 1800 s is close to two half-lives. Comment on this
+        estimate. \answerlines[2]{It is a reasonable approximation --- two
+        half-lives is 1898 s, slightly longer than 1800 s, so slightly more
+        than one quarter should remain. The exact value 0.134 M is indeed a
+        little above 0.125 M.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{949}{\second}}
+  \rpoint{2}{(b) 1 pt correct use of the first-order integrated law;
+    1 pt \SI{0.134}{\Molar}}
+  \rpoint{1}{(c) recognizes the estimate is sound and explains the
+    direction of the small discrepancy}
+\end{rubric}
+
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S12.5--12.7 \textbullet\ mechanism and energy}
+
+The overall reaction \ce{2 NO2 + F2 -> 2 NO2F} has the experimental rate law
+rate $= k[\ce{NO2}][\ce{F2}]$. The proposed mechanism is
+\begin{align*}
+  \ce{NO2 + F2 &-> NO2F + F} &&\text{slow}\\
+  \ce{NO2 + F &-> NO2F} &&\text{fast}
+\end{align*}
+
+\begin{parts}
+  \item Show that the mechanism is consistent with both the overall
+        equation and the rate law. \answerlines[3]{The steps sum to
+        \ce{2 NO2 + F2 -> 2 NO2F} (F cancels). The slow step is bimolecular
+        in \ce{NO2} and \ce{F2}, predicting rate $=
+        k[\ce{NO2}][\ce{F2}]$ --- matching experiment.}
+  \item Identify the intermediate and explain how you know.
+        \answerlines[2]{F --- it is produced in the first step and consumed
+        in the second, so it does not appear in the overall equation.}
+  \item Explain why the rate law contains $[\ce{NO2}]$ to the first power
+        even though the balanced equation has a coefficient of 2.
+        \answerlines[3]{Only one \ce{NO2} is involved in the
+        rate-determining step. The second \ce{NO2} reacts in the fast step,
+        which occurs after the bottleneck and therefore does not influence
+        the overall rate.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) steps sum correctly, F shown cancelling}
+  \rpoint{1}{(a) slow-step rate law derived and matched to experiment}
+  \rpoint{1}{(b) identifies F with produced-then-consumed reasoning}
+  \rpoint{1}{(c) explains that only the rate-determining step sets the
+    order --- ``coefficients don't matter'' alone earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

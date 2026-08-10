@@ -1,0 +1,355 @@
+% Zumdahl Chapter 18 test -- 20 MCQ + 1 long FRQ + 1 short FRQ. 60 min.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{18}
+\apcunittitle{Electrochemistry}
+\apcdoctitle{Chapter Test}
+\apcsubtitle{Zumdahl \S18.1--18.4, 18.7--18.8 \textbullet\ 60 minutes \textbullet\ potentials provided with Section II}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope and format]
+Covers CED \textbf{9.8--9.11}. With Chapter 17 this completes Unit 9 and the
+whole framework.
+
+\textbf{Not assessed:} labelling an electrode positive or negative (excluded
+by the CED), the Nernst equation (topic 9.10 asks for reasoning about
+distance from equilibrium, not calculation), and \S18.5--18.6 (batteries and
+corrosion).
+
+This test carries \textbf{one long and one short free response}. A full
+electrochemical analysis --- half-reactions, $E^\circ$, $\Delta G^\circ$ and
+a Faraday calculation --- is a standard AP long-response task.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{20 questions \textbullet\ 30 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- cell anatomy ----------------------------------------------------------
+\begin{mcq}
+  In every electrochemical cell, oxidation occurs at the
+  \choices
+    \correct{anode}
+    \choice{cathode}
+    \choice{salt bridge}
+    \choice{anode in galvanic cells and the cathode in electrolytic cells}
+\end{mcq}
+\why{An Ox, Red Cat --- true regardless of cell type.}
+\distractor{D}{what reverses between cell types is the sign convention, not
+the definitions}
+
+\begin{mcq}
+  Electrons travel through the external wire
+  \choices
+    \correct{from anode to cathode}
+    \choice{from cathode to anode}
+    \choice{in whichever direction the salt bridge allows}
+    \choice{only in electrolytic cells}
+\end{mcq}
+\why{Oxidation releases them at the anode; reduction consumes them at the
+cathode.}
+
+\begin{mcq}
+  The function of the salt bridge is to
+  \choices
+    \correct{maintain electrical neutrality in each half-cell}
+    \choice{carry electrons between the half-cells}
+    \choice{supply the reacting ions}
+    \choice{prevent the reaction from reaching equilibrium}
+\end{mcq}
+\why{Without it charge builds up and the current stops within moments.}
+\distractor{B}{electrons travel through the wire, ions through the bridge}
+
+\begin{mcq}
+  As a galvanic cell operates, the mass of the anode
+  \choices
+    \correct{decreases}
+    \choice{increases}
+    \choice{stays the same}
+    \choice{increases then decreases}
+\end{mcq}
+\why{Atoms are oxidized and leave the electrode as ions.}
+
+\begin{mcq}
+  A cell with $E^\circ_{\text{cell}} = -0.62$~V is
+  \choices
+    \choice{galvanic and produces electrical energy}
+    \correct{electrolytic and requires an applied potential}
+    \choice{at equilibrium}
+    \choice{impossible}
+\end{mcq}
+\why{Negative $E^\circ$ means positive $\Delta G^\circ$.}
+
+% ---- reduction potentials --------------------------------------------------
+\begin{mcq}
+  Standard reduction potential tables assign
+  $\ce{2H+ + 2e^- -> H2}$ a value of
+  \choices
+    \correct{exactly 0.00 V, by convention}
+    \choice{1.00 V, measured directly}
+    \choice{a value that depends on the other half-cell}
+    \choice{$-0.76$ V}
+\end{mcq}
+\why{Only differences are measurable, so one reference must be fixed.}
+
+\begin{mcq}
+  Reversing a half-reaction
+  \choices
+    \correct{changes the sign of $E^\circ$}
+    \choice{doubles $E^\circ$}
+    \choice{leaves $E^\circ$ unchanged}
+    \choice{makes $E^\circ$ zero}
+\end{mcq}
+\why{Oxidation is the reverse of the tabulated reduction.}
+
+\begin{mcq}
+  Multiplying a half-reaction by 3 to balance electrons
+  \choices
+    \choice{triples $E^\circ$}
+    \correct{leaves $E^\circ$ unchanged}
+    \choice{divides $E^\circ$ by 3}
+    \choice{changes the sign of $E^\circ$}
+\end{mcq}
+\why{Potential is intensive --- energy per unit charge. Only $n$ changes.}
+\distractor{A}{the classic error in this chapter}
+
+\begin{mcq}
+  $E^\circ_{\text{cell}}$ is calculated as
+  \choices
+    \correct{$E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$}
+    \choice{$E^\circ_{\text{anode}} - E^\circ_{\text{cathode}}$}
+    \choice{$E^\circ_{\text{cathode}} + E^\circ_{\text{anode}}$}
+    \choice{$|E^\circ_{\text{cathode}}| + |E^\circ_{\text{anode}}|$}
+\end{mcq}
+\why{Both values taken from the table as reductions.}
+
+\begin{mcq}
+  Given \ce{Zn^2+/Zn} $=-0.76$~V and \ce{Cu^2+/Cu} $=+0.34$~V, the
+  standard cell potential for $\ce{Zn + Cu^2+ -> Zn^2+ + Cu}$ is
+  \choices
+    \choice{$-1.10$ V}
+    \correct{$+1.10$ V}
+    \choice{$+0.42$ V}
+    \choice{$-0.42$ V}
+\end{mcq}
+\why{$0.34 - (-0.76)$.}
+
+\begin{mcq}
+  The species with the most positive standard reduction potential is
+  \choices
+    \correct{the strongest oxidizing agent}
+    \choice{the strongest reducing agent}
+    \choice{always a metal}
+    \choice{always the anode}
+\end{mcq}
+\why{It is the most readily reduced, which is what an oxidizing agent
+does.}
+
+\begin{mcq}
+  Which metal will \emph{not} dissolve in \SI{1}{\Molar} \ce{HCl}?
+  \choices
+    \choice{\ce{Zn} ($-0.76$ V)}
+    \choice{\ce{Fe} ($-0.44$ V)}
+    \choice{\ce{Ni} ($-0.23$ V)}
+    \correct{\ce{Cu} ($+0.34$ V)}
+\end{mcq}
+\why{Only a metal below 0.00 V is oxidized by \ce{H+}.}
+
+% ---- G and K ---------------------------------------------------------------
+\begin{mcq}
+  The relationship between free energy and cell potential is
+  \choices
+    \correct{$\Delta G^\circ = -nFE^\circ$}
+    \choice{$\Delta G^\circ = nFE^\circ$}
+    \choice{$\Delta G^\circ = -E^\circ/nF$}
+    \choice{$\Delta G^\circ = -RT\ln E^\circ$}
+\end{mcq}
+\why{The minus sign makes positive voltage correspond to a favored
+reaction.}
+
+\begin{mcq}
+  Two cells have the same $E^\circ$ but transfer 1 and 4 electrons
+  respectively. Compared with the first, the second has
+  \choices
+    \correct{the same voltage and four times the magnitude of
+      $\Delta G^\circ$}
+    \choice{four times the voltage and the same $\Delta G^\circ$}
+    \choice{four times both}
+    \choice{the same for both}
+\end{mcq}
+\why{Voltage is intensive; free energy is an amount of energy.}
+
+\begin{mcq}
+  In $\Delta G^\circ = -nFE^\circ$, the value of $n$ comes from
+  \choices
+    \correct{the balanced overall equation}
+    \choice{the charge on the anode metal only}
+    \choice{the number of half-reactions}
+    \choice{Faraday's constant}
+\end{mcq}
+\why{Electrons must be balanced before $n$ can be read off.}
+
+\begin{mcq}
+  A cell with $E^\circ_{\text{cell}} > 0$ has
+  \choices
+    \correct{$\Delta G^\circ < 0$ and $K > 1$}
+    \choice{$\Delta G^\circ > 0$ and $K > 1$}
+    \choice{$\Delta G^\circ < 0$ and $K < 1$}
+    \choice{$\Delta G^\circ > 0$ and $K < 1$}
+\end{mcq}
+\why{All three are equivalent statements of ``products favored''.}
+
+% ---- nonstandard -----------------------------------------------------------
+\begin{mcq}
+  Standard conditions for a cell correspond to
+  \choices
+    \choice{$Q = 0$}
+    \correct{$Q = 1$}
+    \choice{$Q = K$}
+    \choice{$E = 0$}
+\end{mcq}
+\why{All species at unit concentration or pressure.}
+
+\begin{mcq}
+  A battery that has gone flat has reached the point where
+  \choices
+    \correct{$Q = K$ and $E = 0$}
+    \choice{all reactants are completely used up}
+    \choice{$E^\circ$ has become negative}
+    \choice{$K = 0$}
+\end{mcq}
+\why{Equilibrium, not exhaustion --- reactant generally remains.}
+\distractor{B}{a dead battery is at equilibrium, not empty}
+
+\begin{mcq}
+  For $\ce{Zn + Cu^2+ -> Zn^2+ + Cu}$, increasing $[\ce{Cu^2+}]$ causes the
+  cell potential to
+  \choices
+    \correct{increase, because the cell is now further from equilibrium}
+    \choice{decrease, because the equilibrium shifts right}
+    \choice{stay the same, because $E^\circ$ is a constant}
+    \choice{fall to zero}
+\end{mcq}
+\why{$Q = [\ce{Zn^2+}]/[\ce{Cu^2+}]$ decreases, moving the cell away from
+$K$.}
+\distractor{B}{Le Ch\^atelier arguments do not apply --- the cell is not at
+equilibrium}
+
+\begin{mcq}
+  In a concentration cell, the anode is the half-cell containing the
+  \choices
+    \correct{more dilute solution}
+    \choice{more concentrated solution}
+    \choice{larger electrode}
+    \choice{it has no anode, since $E^\circ = 0$}
+\end{mcq}
+\why{The dilute side must gain ions to reach equal concentrations, so
+oxidation occurs there.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 30 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+$E^\circ$ (V): \ce{Ag+/Ag} $+0.80$ \textbullet\ \ce{Cu^2+/Cu} $+0.34$
+\textbullet\ \ce{Ni^2+/Ni} $-0.23$ \textbullet\ \ce{Fe^2+/Fe} $-0.44$
+\textbullet\ \ce{Zn^2+/Zn} $-0.76$ \textbullet\ \ce{Al^3+/Al} $-1.66$. \\
+$E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} -
+E^\circ_{\text{anode}}$ \textbullet\ $\Delta G^\circ = -nFE^\circ$
+\textbullet\ $I = q/t$ \textbullet\
+$F = \SI{96485}{\coulomb\per\mole}$ \textbullet\
+$M(\ce{Ag}) = \SI{107.87}{\gram\per\mole}$,
+$M(\ce{Cu}) = \SI{63.55}{\gram\per\mole}$.
+\end{apcnote}
+
+% ---- FRQ 1 (long) ----------------------------------------------------------
+\frq{long}{10}{Zumdahl \S18.1--18.4 \textbullet\ a complete galvanic cell}
+
+A galvanic cell is constructed from a zinc electrode in
+\SI{1.0}{\Molar} \ce{Zn(NO3)2} and a silver electrode in
+\SI{1.0}{\Molar} \ce{AgNO3}, joined by a salt bridge.
+
+\begin{parts}
+  \item Write the two half-reactions, labelled as anode and cathode, and
+        the balanced overall equation.
+        \answerlines[3]{Anode (oxidation): \ce{Zn -> Zn^2+ + 2e^-}.
+        Cathode (reduction): \ce{Ag+ + e^- -> Ag}, doubled to balance
+        electrons. Overall:
+        \ce{Zn + 2Ag+ -> Zn^2+ + 2Ag}.}
+  \item Calculate $E^\circ_{\text{cell}}$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$E^\circ = 0.80 - (-0.76) =
+        \mathbf{+1.56}~\text{V}$\end{apcanswer}}
+  \item The silver half-reaction was doubled in part (a). Explain why
+        $E^\circ$ for it was not doubled.
+        \answerlines[3]{Potential is an intensive property --- energy per
+        unit charge --- so it does not depend on how much substance
+        reacts. Doubling the half-reaction doubles both the energy and the
+        charge, leaving the ratio unchanged. Only $n$ is affected.}
+  \item Calculate $\Delta G^\circ$ for the cell reaction.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n = 2$;
+        $\Delta G^\circ = -(2)(96485)(1.56) = -301{,}033~\text{J} =
+        \mathbf{-301}~\text{kJ}$\end{apcanswer}}
+  \item State what happens to the mass of each electrode as the cell runs,
+        and the direction anions move in the salt bridge.
+        \answerlines[3]{The zinc electrode loses mass as it is oxidized to
+        \ce{Zn^2+}; the silver electrode gains mass as \ce{Ag+} is reduced
+        onto it. Anions migrate through the salt bridge toward the anode,
+        the zinc compartment, to balance the positive charge accumulating
+        there.}
+  \item Some of the \SI{1.0}{\Molar} \ce{AgNO3} is replaced with water,
+        diluting it. Predict the effect on the cell potential and justify
+        \emph{without} using Le Ch\^atelier's principle.
+        \answerlines[3]{The potential decreases. Lowering $[\ce{Ag+}]$
+        raises $Q = [\ce{Zn^2+}]/[\ce{Ag+}]^2$, which moves the cell closer
+        to equilibrium, and a smaller distance from equilibrium means a
+        smaller driving force and hence a lower voltage.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both half-reactions correct and correctly labelled;
+    1 pt balanced overall equation with the silver doubled}
+  \rpoint{1}{(b) $E^\circ = +1.56$~V}
+  \rpoint{2}{(c) 1 pt states potential is intensive / independent of
+    amount; 1 pt notes that only $n$ changes --- ``because the table says
+    so'' earns 0}
+  \rpoint{2}{(d) 1 pt $n = 2$; 1 pt $\Delta G^\circ = -301$~kJ with the
+    unit conversion from J}
+  \rpoint{2}{(e) 1 pt both electrode mass changes; 1 pt anions move toward
+    the anode}
+  \rpoint{1}{(f) potential decreases, justified by $Q$ moving closer to
+    $K$ --- an answer invoking Le Ch\^atelier earns 0}
+\end{rubric}
+
+% ---- FRQ 2 (short) ---------------------------------------------------------
+\frq{short}{4}{Zumdahl \S18.7--18.8 \textbullet\ electrolysis}
+
+Copper is electroplated onto a metal object from \ce{CuSO4} solution using a
+current of \SI{2.50}{\ampere} for \SI{40.0}{\minute}.
+
+\begin{parts}
+  \item Write the half-reaction occurring at the cathode and explain why
+        the object must be the cathode.
+        \answerlines[3]{\ce{Cu^2+ + 2e^- -> Cu}. Plating requires reducing
+        copper ions to copper metal, and reduction always occurs at the
+        cathode --- in an electrolytic cell exactly as in a galvanic one.}
+  \item Calculate the mass of copper deposited. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$t = 40.0 \times 60 = 2400$~s;
+        $q = (2.50)(2400) = 6000$~C;
+        mol e$^- = 6000/96485 = 0.0622$;
+        mol Cu $= 0.0311$;
+        $m = (0.0311)(63.55) =
+        \mathbf{1.98}~\text{g}$\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct half-reaction with 2 electrons}
+  \rpoint{1}{(a) reduction occurs at the cathode --- an answer relying on
+    the electrode's sign earns 0}
+  \rpoint{2}{(b) 1 pt charge from $q = It$ with the time in seconds;
+    1 pt mass $= 1.98$~g, having divided the moles of electrons by 2 ---
+    an answer of 3.96 g earns 0 for this point}
+\end{rubric}
+
+\examtotal
+
+\end{document}

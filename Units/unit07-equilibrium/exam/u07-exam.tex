@@ -1,0 +1,438 @@
+% Unit 7 exam -- 30 MCQ + 1 short + 1 long FRQ = 44 pts, 76 min.
+\documentclass{apchem-exam}
+
+\apcunit{7}
+\apcunittitle{Equilibrium}
+\apcdoctitle{Unit Exam}
+\apcsubtitle{CED 7.1--7.12 \textbullet\ Mon Jan 25 \textbullet\ 76 minutes \textbullet\ 44 points}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Format]
+Section I: 30 multiple choice, \textbf{no calculator}, 45 minutes.
+Section II: one short and one long free response, calculator permitted,
+31 minutes. Constants are provided with Section II.
+\end{apcnote}
+
+\examsection{I}{Multiple Choice}{30 questions \textbullet\ 45 minutes \textbullet\ 1 point each}{\nocalculator}
+
+% ---- dynamic equilibrium ----------------------------------------------------
+\begin{mcq}
+  At equilibrium,
+  \choices
+    \correct{the forward and reverse rates are equal}
+    \choice{the concentrations of reactants and products are equal}
+    \choice{all reaction has ceased}
+    \choice{$Q$ is zero}
+\end{mcq}
+\why{Equal rates, not equal amounts, and nothing has stopped.}
+\distractor{B}{the single most common misconception in the unit}
+
+\begin{mcq}
+  On a concentration--time graph, equilibrium is reached when
+  \choices
+    \correct{both curves become horizontal}
+    \choice{the two curves cross}
+    \choice{the product curve reaches its maximum possible value}
+    \choice{the reactant curve reaches zero}
+\end{mcq}
+\why{Levelling off means concentrations have stopped changing.}
+
+\begin{mcq}
+  Starting from pure reactants, the reverse rate initially is
+  \choices
+    \correct{zero, and increases as product forms}
+    \choice{at its maximum}
+    \choice{equal to the forward rate}
+    \choice{constant throughout}
+\end{mcq}
+\why{No product means no reverse reaction yet.}
+
+% ---- writing K --------------------------------------------------------------
+\begin{mcq}
+  For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$, $K$ equals
+  \choices
+    \correct{$[\ce{SO3}]^2/([\ce{SO2}]^2[\ce{O2}])$}
+    \choice{$[\ce{SO3}]/([\ce{SO2}][\ce{O2}])$}
+    \choice{$([\ce{SO2}]^2[\ce{O2}])/[\ce{SO3}]^2$}
+    \choice{$[\ce{SO3}]^2/([\ce{SO2}][\ce{O2}])$}
+\end{mcq}
+\why{Products over reactants, each raised to its coefficient.}
+
+\begin{mcq}
+  For $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$, $K$ equals
+  \choices
+    \choice{$[\ce{CaO}][\ce{CO2}]/[\ce{CaCO3}]$}
+    \correct{$[\ce{CO2}]$}
+    \choice{$[\ce{CaO}][\ce{CO2}]$}
+    \choice{$1/[\ce{CO2}]$}
+\end{mcq}
+\why{Both solids are omitted.}
+
+\begin{mcq}
+  Water appears in the equilibrium expression when it is
+  \choices
+    \correct{a gas or a dissolved species, but not the pure liquid solvent}
+    \choice{always}
+    \choice{never}
+    \choice{only when it is a product}
+\end{mcq}
+\why{The state symbol decides.}
+
+\begin{mcq}
+  Pure solids are omitted from $K$ because
+  \choices
+    \correct{their concentration does not change as the reaction proceeds}
+    \choice{they do not react}
+    \choice{their concentration is zero}
+    \choice{they are always in excess}
+\end{mcq}
+\why{A larger lump is not more concentrated.}
+
+% ---- Q vs K -----------------------------------------------------------------
+\begin{mcq}
+  If $Q < K$, the reaction
+  \choices
+    \correct{proceeds to the right}
+    \choice{proceeds to the left}
+    \choice{is at equilibrium}
+    \choice{stops}
+\end{mcq}
+\why{Too few products relative to equilibrium.}
+
+\begin{mcq}
+  $Q$ differs from $K$ in that
+  \choices
+    \correct{$Q$ uses concentrations at any moment, $K$ uses equilibrium
+      ones}
+    \choice{$Q$ omits solids while $K$ includes them}
+    \choice{$Q$ applies only to gases}
+    \choice{$Q$ is the reciprocal of $K$}
+\end{mcq}
+\why{The algebraic form is identical.}
+
+\begin{mcq}
+  For $\ce{H2 + I2 <=> 2HI}$ with $K = 4.5$, a mixture with
+  $[\ce{H2}] = [\ce{I2}] = [\ce{HI}] = 0.50$~M will
+  \choices
+    \correct{shift right}
+    \choice{shift left}
+    \choice{be at equilibrium}
+    \choice{cannot be determined}
+\end{mcq}
+\why{$Q = 1.0 < 4.5$.}
+
+\begin{mcq}
+  Which tool works for a mixture that was never at equilibrium?
+  \choices
+    \correct{comparing $Q$ with $K$}
+    \choice{Le Ch\^atelier's principle}
+    \choice{neither}
+    \choice{both equally}
+\end{mcq}
+\why{Le Ch\^atelier describes disturbing an existing equilibrium.}
+
+% ---- magnitude and properties ----------------------------------------------
+\begin{mcq}
+  A reaction with $K = 3\times10^{-8}$
+  \choices
+    \correct{strongly favors reactants}
+    \choice{strongly favors products}
+    \choice{has appreciable amounts of both}
+    \choice{proceeds very slowly}
+\end{mcq}
+\why{A tiny $K$ says the equilibrium lies far left --- it says nothing
+about rate.}
+\distractor{D}{$K$ and rate are independent}
+
+\begin{mcq}
+  If $K = 4.0$ for a reaction, $K$ for its reverse is
+  \choices
+    \choice{$-4.0$}
+    \correct{0.25}
+    \choice{16}
+    \choice{2.0}
+\end{mcq}
+\why{$1/K$.}
+
+\begin{mcq}
+  If all coefficients in an equation are doubled, $K$ becomes
+  \choices
+    \choice{$2K$}
+    \correct{$K^2$}
+    \choice{$K/2$}
+    \choice{unchanged}
+\end{mcq}
+\why{Each concentration term is squared.}
+
+\begin{mcq}
+  Two reactions with constants $K_1$ and $K_2$ are added. The overall $K$
+  is
+  \choices
+    \correct{$K_1K_2$}
+    \choice{$K_1 + K_2$}
+    \choice{$K_1/K_2$}
+    \choice{$K_1 - K_2$}
+\end{mcq}
+\why{Constants multiply where enthalpies add.}
+
+\begin{mcq}
+  $K_p$ and $K_c$ are numerically equal when
+  \choices
+    \correct{$\Delta n = 0$}
+    \choice{the temperature is \SI{273}{\kelvin}}
+    \choice{$K = 1$}
+    \choice{all species are gases}
+\end{mcq}
+\why{$K_p = K_c(RT)^{\Delta n}$.}
+
+% ---- ICE --------------------------------------------------------------------
+\begin{mcq}
+  In an ICE table for $\ce{A <=> 2B}$, if A changes by $-x$, then B changes
+  by
+  \choices
+    \correct{$+2x$}
+    \choice{$+x$}
+    \choice{$-2x$}
+    \choice{$+x/2$}
+\end{mcq}
+\why{The change row follows the coefficients.}
+
+\begin{mcq}
+  The small-$x$ approximation is justified when
+  \choices
+    \correct{$x$ is less than about 5\% of the initial concentration}
+    \choice{$K$ is greater than 1}
+    \choice{the reaction is exothermic}
+    \choice{there is only one product}
+\end{mcq}
+\why{And the percentage must be reported, not assumed.}
+
+\begin{mcq}
+  Which situation makes the small-$x$ approximation most likely to fail?
+  \choices
+    \choice{$K = 10^{-10}$, $[\ce{A}]_0 = 1.0$~M}
+    \choice{$K = 10^{-8}$, $[\ce{A}]_0 = 0.50$~M}
+    \correct{$K = 1.0$, $[\ce{A}]_0 = 0.10$~M}
+    \choice{$K = 10^{-6}$, $[\ce{A}]_0 = 2.0$~M}
+\end{mcq}
+\why{It is the ratio $[\ce{A}]_0/K$ that matters, and here it is only
+0.1.}
+
+\begin{mcq}
+  For $\ce{H2 + I2 <=> 2HI}$ with equal starting concentrations, the
+  equilibrium expression can be solved without the quadratic formula
+  because
+  \choices
+    \correct{both sides are perfect squares}
+    \choice{$K$ is large}
+    \choice{$\Delta n = 0$}
+    \choice{the reaction is exothermic}
+\end{mcq}
+\why{Taking the square root gives a linear equation.}
+
+\begin{mcq}
+  A negative root of an equilibrium quadratic is discarded because
+  \choices
+    \correct{it would imply a negative concentration}
+    \choice{$K$ must be positive}
+    \choice{the quadratic formula only gives one root}
+    \choice{it corresponds to the reverse reaction}
+\end{mcq}
+\why{Only physically possible roots are kept.}
+
+% ---- Le Chatelier -----------------------------------------------------------
+\begin{mcq}
+  Adding more reactant to a system at equilibrium
+  \choices
+    \correct{shifts it right and leaves $K$ unchanged}
+    \choice{shifts it right and increases $K$}
+    \choice{shifts it left and decreases $K$}
+    \choice{has no effect}
+\end{mcq}
+\why{Only temperature changes $K$.}
+\distractor{B}{the most-repeated error on Le Ch\^atelier questions}
+
+\begin{mcq}
+  Adding an inert gas at constant volume
+  \choices
+    \correct{causes no shift, because no partial pressure changes}
+    \choice{shifts toward fewer moles of gas}
+    \choice{shifts toward more moles of gas}
+    \choice{increases $K$}
+\end{mcq}
+\why{Total pressure rises, but every partial pressure is unchanged.}
+
+\begin{mcq}
+  Compressing a gaseous equilibrium into a smaller volume shifts it
+  \choices
+    \correct{toward the side with fewer moles of gas}
+    \choice{toward the side with more moles of gas}
+    \choice{toward products always}
+    \choice{not at all}
+\end{mcq}
+\why{The system opposes the increase in pressure.}
+
+\begin{mcq}
+  A catalyst added to a system at equilibrium
+  \choices
+    \correct{changes neither the position nor $K$}
+    \choice{shifts the equilibrium right}
+    \choice{increases $K$}
+    \choice{shifts toward fewer moles of gas}
+\end{mcq}
+\why{It speeds both directions equally.}
+
+\begin{mcq}
+  For an exothermic forward reaction, raising the temperature
+  \choices
+    \correct{shifts it left and decreases $K$}
+    \choice{shifts it right and increases $K$}
+    \choice{shifts it left and leaves $K$ unchanged}
+    \choice{has no effect}
+\end{mcq}
+\why{Heat behaves as a product; adding it pushes back toward reactants.}
+
+\begin{mcq}
+  The only disturbance that changes the value of $K$ is a change in
+  \choices
+    \correct{temperature}
+    \choice{concentration}
+    \choice{pressure}
+    \choice{the amount of catalyst}
+\end{mcq}
+\why{Everything else changes $Q$, and the system returns to the same $K$.}
+
+% ---- solubility -------------------------------------------------------------
+\begin{mcq}
+  For a salt \ce{MX2} with molar solubility $s$, $K_{sp}$ equals
+  \choices
+    \choice{$s^2$}
+    \choice{$2s^3$}
+    \correct{$4s^3$}
+    \choice{$s^3$}
+\end{mcq}
+\why{$(s)(2s)^2$.}
+
+\begin{mcq}
+  Adding \ce{NaCl} to a saturated solution of \ce{AgCl} causes
+  \choices
+    \correct{the solubility to fall, with $K_{sp}$ unchanged}
+    \choice{both the solubility and $K_{sp}$ to fall}
+    \choice{the solubility to rise}
+    \choice{no change}
+\end{mcq}
+\why{The common ion raises $Q$ above $K_{sp}$; the constant does not
+move.}
+\distractor{B}{$K_{sp}$ depends only on temperature}
+
+\begin{mcq}
+  $K_{sp}$ values may be compared directly to rank solubilities only when
+  the salts
+  \choices
+    \correct{produce the same total number of ions}
+    \choice{share a common cation}
+    \choice{have similar molar masses}
+    \choice{are all insoluble}
+\end{mcq}
+\why{Otherwise $s$ enters raised to different powers.}
+
+\examsection{II}{Free Response}{2 questions \textbullet\ 31 minutes}{\calculatorok}
+
+\begin{apcnote}[Data]
+$K_p = K_c(RT)^{\Delta n}$ \textbullet\
+$R = \SI{0.08206}{\litre\atm\per\mole\per\kelvin}$ \textbullet\
+$K_{sp}$: \ce{AgCl} $1.6\times10^{-10}$ \textbullet\ \ce{CaF2}
+$4.0\times10^{-11}$.
+\end{apcnote}
+
+% ---- FRQ 1 (short) ---------------------------------------------------------
+\frq{short}{4}{CED 7.11--7.12 \textbullet\ solubility and the common ion}
+
+\begin{parts}
+  \item Write the dissolution equation and $K_{sp}$ expression for
+        \ce{CaF2}. \answerlines[2]{\ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)};
+        $K_{sp} = [\ce{Ca^2+}][\ce{F^-}]^2$}
+  \item Calculate its molar solubility in pure water. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$4s^3 = 4.0\times10^{-11}$;
+        $s^3 = 1.0\times10^{-11}$;
+        $s = \mathbf{2.2\times10^{-4}}$~M\end{apcanswer}}
+  \item Calculate its solubility in \SI{0.025}{\Molar} \ce{NaF}.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{F-}] \approx 0.025$;
+        $4.0\times10^{-11} = s(0.025)^2$;
+        $s = \mathbf{6.4\times10^{-8}}$~M\end{apcanswer}}
+  \item State what happened to $K_{sp}$ between (b) and (c) and why.
+        \answerlines[2]{Nothing --- $K_{sp}$ depends only on temperature.
+        Only the equilibrium position moved, toward less dissolved solid.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) equation and expression, with fluoride squared}
+  \rpoint{1}{(b) $s = 2.2\times10^{-4}$~M using $4s^3$}
+  \rpoint{1}{(c) $s = 6.4\times10^{-8}$~M}
+  \rpoint{1}{(d) $K_{sp}$ unchanged, attributed to temperature dependence
+    --- ``$K_{sp}$ decreased'' earns 0}
+\end{rubric}
+
+% ---- FRQ 2 (long) ----------------------------------------------------------
+\frq{long}{10}{CED 7.3, 7.7, 7.9, 7.10 \textbullet\ a complete equilibrium analysis}
+
+At \SI{700}{\kelvin}, $K = 50.0$ for
+$\ce{H2(g) + I2(g) <=> 2HI(g)}$. The forward reaction is exothermic.
+
+\begin{parts}
+  \item Write the equilibrium expression.
+        \answerblank[6cm]{$[\ce{HI}]^2/([\ce{H2}][\ce{I2}])$}
+  \item A flask is charged with \SI{1.00}{\Molar} \ce{H2} and
+        \SI{1.00}{\Molar} \ce{I2}. Construct an ICE table and determine all
+        three equilibrium concentrations. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Change: $-x$, $-x$, $+2x$.
+        $K = (2x)^2/(1.00-x)^2 = 50.0$. Both sides are perfect squares, so
+        $2x/(1.00-x) = 7.07$, giving $9.07x = 7.07$ and $x = 0.780$.
+        $[\ce{H2}] = [\ce{I2}] = \mathbf{0.220}$~M;
+        $[\ce{HI}] = \mathbf{1.56}$~M\end{apcanswer}}
+  \item Verify your answer by substituting back into the expression.
+        \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$(1.56)^2/(0.220)^2 = 2.43/0.0484
+        = \mathbf{50.2}$, which agrees with 50.0 to
+        rounding\end{apcanswer}}
+  \item A second flask at the same temperature contains
+        $[\ce{H2}] = 0.40$, $[\ce{I2}] = 0.30$, $[\ce{HI}] = 0.40$~M.
+        Calculate $Q$ and predict the direction of change, justifying your
+        answer. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$Q = (0.40)^2/[(0.40)(0.30)] =
+        \mathbf{1.3}$. Since $Q < K$, the mixture holds too few products
+        and the reaction proceeds to the \textbf{right} until $Q$ reaches
+        50.0.\end{apcanswer}}
+  \item Explain why Le Ch\^atelier's principle is not the appropriate tool
+        for part (d). \answerlines[2]{The second mixture was never at
+        equilibrium, and Le Ch\^atelier describes only the response to
+        disturbing an existing equilibrium. Comparing $Q$ with $K$ works
+        for any mixture.}
+  \item State the effect on the equilibrium position and on the value of
+        $K$ of (i) adding more \ce{H2} and (ii) raising the temperature.
+        \answerlines[3]{(i) The position shifts right; $K$ is unchanged,
+        because adding \ce{H2} lowers $Q$ and the system simply returns to
+        the same $K$. (ii) The position shifts left and $K$
+        \emph{decreases}, because the forward reaction is exothermic, so
+        heat behaves as a product.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct expression}
+  \rpoint{3}{(b) 1 pt ICE table with $+2x$ for \ce{HI}; 1 pt algebra to
+    $x = 0.780$; 1 pt all three concentrations}
+  \rpoint{1}{(c) substitution recovering $\approx 50$}
+  \rpoint{2}{(d) 1 pt $Q = 1.3$; 1 pt direction \emph{with} the $Q < K$
+    justification --- a bare ``shifts right'' earns 1}
+  \rpoint{1}{(e) notes the mixture was never at equilibrium}
+  \rpoint{2}{(f) 1 pt $K$ unchanged for the concentration change; 1 pt $K$
+    decreases on heating, with the exothermic reason --- saying $K$
+    increases earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

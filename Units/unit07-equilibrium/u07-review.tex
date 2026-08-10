@@ -1,0 +1,122 @@
+% Unit 7 review sheet -- 2 pages.
+\documentclass{apchem-worksheet}
+
+\apcunit{7}
+\apcunittitle{Equilibrium}
+\apcdoctitle{Review Sheet}
+\apcsubtitle{Everything on the exam traces to this page \textbullet\ exam Mon Jan 25}
+
+\begin{document}
+\apctitleblock
+
+\section*{\sffamily The five tools}
+
+\renewcommand{\arraystretch}{1.45}
+\noindent\begin{tabular}{@{}p{3.9cm}p{9.8cm}@{}}
+\toprule
+\textbf{$Q$ versus $K$} & $Q<K$ shift right, $Q=K$ at equilibrium, $Q>K$
+  shift left. Works for \emph{any} mixture, equilibrium or not --- the one
+  tool that answers ``which way?''\\
+\textbf{Writing $K$} & products over reactants, each raised to its
+  coefficient. Omit pure solids and pure liquids. \ce{H2O(l)} out,
+  \ce{H2O(g)} in\\
+\textbf{ICE} & change row follows the coefficients; approximate only if
+  justified, and \emph{report the percentage}. Perfect squares beat the
+  quadratic formula\\
+\textbf{Manipulating $K$} & reverse $\to 1/K$; $\times n$ coefficients
+  $\to K^n$; add reactions $\to K_1K_2$. Constants multiply where
+  enthalpies add\\
+\textbf{Le Ch\^atelier} & the system opposes the change. Only
+  \textbf{temperature} alters the value of $K$\\
+\bottomrule
+\end{tabular}
+
+\section*{\sffamily The disturbance table}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Disturbance} & \textbf{Shift} & \textbf{$K$?} \\
+\midrule
+add reactant / remove product & right & unchanged \\
+add product / remove reactant & left & unchanged \\
+compress (smaller volume) & toward fewer moles of gas & unchanged \\
+add inert gas at constant $V$ & none & unchanged \\
+add catalyst & none & unchanged \\
+raise $T$, forward endothermic & right & \textbf{increases} \\
+raise $T$, forward exothermic & left & \textbf{decreases} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{\sffamily Solubility, in four lines}
+
+\begin{itemize}[leftmargin=*,itemsep=0.18em]
+  \item \ce{MX}: $K_{sp} = s^2$. \ce{MX2} or \ce{M2X}:
+        $K_{sp} = 4s^3$.
+  \item $K_{sp}$ is a \emph{constant}; solubility is a \emph{position}
+        that changes with what else is dissolved.
+  \item Common ion $\Rightarrow$ $Q$ exceeds $K_{sp}$ $\Rightarrow$ less
+        dissolves. $K_{sp}$ itself never moves.
+  \item Compare $K_{sp}$ values directly \textbf{only} when the salts
+        release the same number of ions.
+\end{itemize}
+
+\section*{\sffamily The traps, one line each}
+
+\begin{itemize}[leftmargin=*,itemsep=0.22em]
+  \item Saying equilibrium means equal concentrations (it means equal
+        rates).
+  \item Including a pure solid or liquid in $K$.
+  \item Forgetting an exponent --- $(0.30)^3$ is $0.027$, not $0.90$.
+  \item Using the small-$x$ approximation without checking, or checking and
+        ignoring the result.
+  \item Claiming a catalyst or an inert gas shifts an equilibrium.
+  \item Saying a concentration change alters $K$.
+  \item Comparing $K_{sp}$ for salts with different ion counts.
+\end{itemize}
+
+\section*{\sffamily Self-check --- 12 questions, exam conditions}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.38em]
+  \item $K$ for $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$:
+        \answerblank[2.6cm]{$[\ce{CO2}]$}
+  \item $[\ce{H2}]=0.20$, $[\ce{I2}]=0.40$, $[\ce{HI}]=0.60$. Find $K$:
+        \answerblank[2cm]{4.5}
+  \item $K = 4.0$; give $K$ for the reverse:
+        \answerblank[2cm]{0.25}
+  \item $K = 4.0$; give $K$ with coefficients doubled:
+        \answerblank[2cm]{16}
+  \item $K = 4.5$ and $Q = 9.0$. Direction?
+        \answerblank[2.4cm]{shifts left}
+  \item Threshold for the small-$x$ approximation:
+        \answerblank[1.6cm]{5\%}
+  \item Adding argon at constant volume:
+        \answerblank[2.4cm]{no shift}
+  \item Forward reaction exothermic; raise $T$. What happens to $K$?
+        \answerblank[2.4cm]{decreases}
+  \item Molar solubility of \ce{AgCl}, $K_{sp} = 1.6\times10^{-10}$:
+        \answerblank[3cm]{$1.3\times10^{-5}$~M}
+  \item Solubility of \ce{AgCl} in \SI{0.10}{\Molar} \ce{NaCl}:
+        \answerblank[3cm]{$1.6\times10^{-9}$~M}
+  \item $K_{sp}$ for an \ce{MX2} salt in terms of $s$:
+        \answerblank[1.8cm]{$4s^3$}
+  \item Only what change alters $K$?
+        \answerblank[2.6cm]{temperature}
+\end{enumerate}
+
+\begin{apcnote}[How to study for this exam]
+This is a 44-point exam, one of the two largest in the course, so budget
+accordingly. Redo WS 5's FRQ cold --- the long free-response is its twin in
+shape, and it deliberately runs the full chain: expression $\to$ ICE $\to$
+solve $\to$ verify $\to$ $Q$ versus $K$ $\to$ effect of a disturbance.
+
+Two habits are worth more than any extra content. First, whenever you write
+``shifts right,'' add \emph{because $Q < K$} --- the quantitative
+justification is usually the point that the qualitative one is not. Second,
+whenever you approximate, write the percentage down. Both are cheap, and
+both are routinely omitted.
+\end{apcnote}
+
+\end{document}

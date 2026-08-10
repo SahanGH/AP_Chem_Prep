@@ -1,0 +1,97 @@
+% Ch4 WS3 -- acid-base reactions and titration. Block 4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{4}
+\apcunittitle{Types of Chemical Reactions and Solution Stoichiometry}
+\apcdoctitle{Worksheet 3 \textbullet\ Acids, Bases, and Titration}
+\apcsubtitle{Zumdahl \S4.8 \textbullet\ decide strong vs weak BEFORE writing the equation}
+
+\begin{document}
+\wsheader[Every net ionic equation here depends on whether the acid is
+strong or weak --- state that classification first, then write the
+equation.]
+
+\problem[]{Classify each as strong acid, weak acid, strong base, or weak
+base:}
+\begin{parts}
+  \item \ce{HClO4}: \answerblank[3.6cm]{strong acid}
+  \item \ce{HC2H3O2}: \answerblank[3.6cm]{weak acid}
+  \item \ce{Ba(OH)2}: \answerblank[3.6cm]{strong base}
+  \item \ce{NH3}: \answerblank[3.6cm]{weak base}
+  \item \ce{HBr}: \answerblank[3.6cm]{strong acid}
+  \item \ce{HF}: \answerblank[3.6cm]{weak acid}
+\end{parts}
+
+\problem[]{Write the net ionic equation for each neutralization:}
+\begin{parts}
+  \item \ce{HNO3(aq) + KOH(aq)}
+        \answerblank[6.5cm]{\ce{H+ + OH^- -> H2O(l)}}
+  \item \ce{HF(aq) + NaOH(aq)}
+        \answerblank[6.5cm]{\ce{HF + OH^- -> F^- + H2O}}
+  \item \ce{HCl(aq) + NH3(aq)}
+        \answerblank[6.5cm]{\ce{H+ + NH3 -> NH4+}}
+\end{parts}
+
+\problem[]{Explain why (a) and (b) above have different net ionic equations
+even though both are ``acid plus strong base.''
+\answerlines[3]{\ce{HNO3} is a strong acid, fully ionized, so the reacting
+species is free \ce{H+}. \ce{HF} is weak and remains almost entirely
+molecular, so the whole \ce{HF} molecule transfers its proton directly to
+hydroxide.}}
+
+\problem[]{Give the Bronsted--Lowry definitions and explain why they are
+more general than the Arrhenius definitions. Use \ce{NH3} as your example.
+\answerlines[3]{Bronsted--Lowry: an acid donates a proton, a base accepts
+one. This covers \ce{NH3}, which contains no \ce{OH-} yet acts as a base by
+accepting \ce{H+} to form \ce{NH4+} --- something the Arrhenius definition
+cannot explain.}}
+
+\problem[]{Titration calculations.}
+\begin{parts}
+  \item \SI{25.0}{\milli\liter} of \ce{HCl} requires
+        \SI{31.5}{\milli\liter} of \SI{0.200}{\Molar} \ce{NaOH}. Find
+        $[\ce{HCl}]$. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{OH-}) = (0.0315)(0.200) =
+        \SI{6.30e-3}{\mole}$; 1:1 $\to [\ce{HCl}] = 6.30\times10^{-3}/0.0250
+        = \SI{0.252}{\Molar}$\end{apcanswer}}
+  \item \SI{20.0}{\milli\liter} of \SI{0.150}{\Molar} \ce{H2SO4} is
+        titrated with \SI{0.100}{\Molar} \ce{NaOH}. What volume of base is
+        required? \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n(\ce{H2SO4}) = (0.0200)(0.150) =
+        \SI{3.00e-3}{\mole}$; diprotic $\to n(\ce{OH-}) =
+        \SI{6.00e-3}{\mole}$; $V = 6.00\times10^{-3}/0.100 =
+        \SI{60.0}{\milli\liter}$\end{apcanswer}}
+  \item \SI{0.500}{\gram} of an unknown monoprotic acid requires
+        \SI{22.8}{\milli\liter} of \SI{0.250}{\Molar} \ce{NaOH}. Find the
+        acid's molar mass. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$n = (0.0228)(0.250) = \SI{5.70e-3}{\mole}$;
+        $M = 0.500/5.70\times10^{-3} =
+        \SI{87.7}{\gram\per\mole}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Define the equivalence point and explain how an indicator signals
+it. \answerlines[2]{The equivalence point is where the moles of titrant
+added exactly satisfy the reaction stoichiometry of the analyte. An
+indicator is chosen to change colour at that point, giving a visible
+endpoint.}}
+
+\problem[]{A student titrating \ce{H2SO4} with \ce{NaOH} uses a 1:1 mole
+ratio and reports a concentration exactly half the true value. Explain the
+error. \answerlines[2]{\ce{H2SO4} is diprotic --- each mole supplies two
+moles of \ce{H+}, so it takes twice as much \ce{NaOH}. Using 1:1 attributes
+all that base to twice as much acid as is actually present.}}
+
+\begin{spiralstrip}{Chapter 4 \textbullet\ blocks 1--3}
+  \item Net ionic for \ce{AgNO3(aq) + KCl(aq)}:
+        \answerblank[5cm]{\ce{Ag+ + Cl^- -> AgCl(s)}}
+  \item Soluble? \ce{BaSO4} \answerblank[2.4cm]{no (rule 4)}
+  \item $[\ce{Na+}]$ in \SI{0.25}{\Molar} \ce{Na2CO3}:
+        \answerblank[2.6cm]{\SI{0.50}{\Molar}}
+  \item Strong electrolyte, weak, or non: glucose?
+        \answerblank[3cm]{nonelectrolyte}
+  \item Moles in \SI{50.0}{\milli\liter} of \SI{0.400}{\Molar}:
+        \answerblank[2.8cm]{\SI{0.0200}{\mole}}
+\end{spiralstrip}
+
+\end{document}

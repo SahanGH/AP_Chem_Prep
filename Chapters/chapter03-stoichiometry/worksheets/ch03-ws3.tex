@@ -1,0 +1,103 @@
+% Ch3 WS3 -- limiting reactant, BCA tables, percent yield. Block 4.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Worksheet 3 \textbullet\ Limiting Reactant and Yield}
+\apcsubtitle{Zumdahl \S3.11 \textbullet\ theoretical yield always comes from the limiting reactant}
+
+\begin{document}
+\wsheader[State which reactant is limiting \emph{and} how you decided,
+every time. A correct number with no identification of the limiting
+reactant is an incomplete answer.]
+
+\problem[]{A sandwich needs 2 slices of bread, 1 slice of cheese, and 3
+slices of meat. You have 10 bread, 7 cheese, 12 meat.}
+\begin{parts}
+  \item How many sandwiches? \answerblank[2cm]{4}
+  \item Limiting ingredient: \answerblank[2.4cm]{meat}
+  \item What is left over? \answerblank[5cm]{2 bread, 3 cheese}
+  \item You started with more meat than cheese. Explain how meat can still
+        be limiting. \answerlines[2]{Each sandwich consumes meat three times
+        faster than cheese; limiting depends on the required ratio, not the
+        starting amount.}
+\end{parts}
+
+\problem[]{Complete the BCA table for \ce{2 H2 + O2 -> 2 H2O} starting with
+7 mol \ce{H2} and 2 mol \ce{O2}.}
+
+\renewcommand{\arraystretch}{1.6}
+\noindent\begin{tabular}{@{}lccc@{}}
+\toprule
+ & \ce{2 H2} & \ce{O2} & \ce{2 H2O}\\
+\midrule
+\textbf{Before} & 7 & 2 & 0\\
+\textbf{Change} & \answerblank[1.5cm]{$-4$} & \answerblank[1.5cm]{$-2$} &
+  \answerblank[1.5cm]{$+4$}\\
+\textbf{After}  & \answerblank[1.5cm]{3} & \answerblank[1.5cm]{0} &
+  \answerblank[1.5cm]{4}\\
+\bottomrule
+\end{tabular}
+
+\vspace{0.4em}
+Limiting reactant: \answerblank[2.4cm]{\ce{O2}} --- identified because its
+After value is \answerblank[1.6cm]{zero}.
+
+\problem[]{\SI{50.0}{\gram} of \ce{N2} reacts with \SI{10.0}{\gram} of
+\ce{H2}: \ce{N2 + 3 H2 -> 2 NH3}.}
+\begin{parts}
+  \item Moles of each reactant: \answerblank[6cm]{\ce{N2} 1.78 mol;
+        \ce{H2} 4.96 mol}
+  \item Identify the limiting reactant, showing the comparison.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}\ce{N2} could make $2(1.78) =
+        \SI{3.57}{\mole}$ \ce{NH3}; \ce{H2} could make
+        $\tfrac23(4.96) = \SI{3.31}{\mole}$. \ce{H2} makes less $\to$
+        limiting.\end{apcanswer}}
+  \item Theoretical yield of \ce{NH3} in grams: \workspace[1.8cm]
+        \keyonly{\begin{apcanswer}$3.31 \times 17.03 =
+        \SI{56.3}{\gram}$\end{apcanswer}}
+  \item Mass of excess reactant left over: \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}\ce{N2} used $= \tfrac13(4.96) =
+        \SI{1.65}{\mole}$; left $= 1.78-1.65 = \SI{0.13}{\mole} \times 28.02
+        = \SI{3.6}{\gram}$\end{apcanswer}}
+  \item If \SI{48.0}{\gram} of \ce{NH3} is isolated, find the percent yield.
+        \answerblank[3cm]{85.3\%}
+\end{parts}
+
+\problem[]{\SI{10.0}{\gram} of \ce{CaCO3} is treated with \SI{10.0}{\gram}
+of \ce{HCl}: \ce{CaCO3 + 2 HCl -> CaCl2 + H2O + CO2}.}
+\begin{parts}
+  \item Limiting reactant (show the comparison): \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}\ce{CaCO3}: $10.0/100.09 =
+        \SI{0.0999}{\mole}$; \ce{HCl}: $10.0/36.46 = \SI{0.274}{\mole}$,
+        which needs only $0.137$ mol \ce{CaCO3}. \ce{CaCO3} is
+        limiting.\end{apcanswer}}
+  \item Theoretical mass of \ce{CO2}: \answerblank[3cm]{\SI{4.40}{\gram}}
+  \item Moles of \ce{HCl} left unreacted: \answerblank[3cm]{\SI{0.074}{\mole}}
+\end{parts}
+
+\problem[]{A reaction has a theoretical yield of \SI{12.5}{\gram}. A student
+reports an actual yield of \SI{13.1}{\gram} and a percent yield of 105\%.}
+\begin{parts}
+  \item Is a yield above 100\% chemically possible? Explain.
+        \answerlines[2]{No --- you cannot make more product than the
+        limiting reactant allows; conservation of mass forbids it.}
+  \item Give two plausible experimental explanations.
+        \answerlines[2]{Product still wet with solvent; product contaminated
+        with unreacted starting material or side product; balance
+        miscalibrated.}
+\end{parts}
+
+\begin{spiralstrip}{Chapter 3 \textbullet\ blocks 1--3}
+  \item Balance: \ce{Fe + Cl2 -> FeCl3}:
+        \answerblank[4.9cm]{\ce{2 Fe + 3 Cl2 -> 2 FeCl3}}
+  \item Moles in \SI{22.0}{\gram} \ce{CO2}: \answerblank[2.6cm]{\SI{0.500}{\mole}}
+  \item $\%\,\ce{N}$ in \ce{NH3}: \answerblank[2.4cm]{82.2\%}
+  \item Molecular formula: empirical \ce{CH2O}, $M = 90.08$:
+        \answerblank[2.6cm]{\ce{C3H6O3}}
+  \item Name \ce{Cu(NO3)2}: \answerblank[4.5cm]{copper(II) nitrate}
+\end{spiralstrip}
+
+\end{document}

@@ -1,0 +1,120 @@
+% Ch12 WS1 -- rates and rate laws. Blocks 1-2.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{12}
+\apcunittitle{Chemical Kinetics}
+\apcdoctitle{Worksheet 1 \textbullet\ Rates and Rate Laws}
+\apcsubtitle{Zumdahl \S12.1--12.3 \textbullet\ orders come from data, never from coefficients}
+
+\begin{document}
+\wsheader[For every rate-law determination, show which two trials you
+compared and what was held constant. An order stated without that comparison
+cannot earn credit.]
+
+\problem[]{For \ce{2 N2O5 -> 4 NO2 + O2}, write the rate of reaction in
+terms of each species.
+\answerlines[2]{rate $= -\tfrac12\Delta[\ce{N2O5}]/\Delta t =
+\tfrac14\Delta[\ce{NO2}]/\Delta t = \Delta[\ce{O2}]/\Delta t$}}
+
+\problem[]{For \ce{4 NH3 + 5 O2 -> 4 NO + 6 H2O}, \ce{O2} disappears at
+\SI{0.050}{\Molar\per\second}.}
+\begin{parts}
+  \item Rate of \ce{NH3} disappearance:
+        \answerblank[3.2cm]{\SI{0.040}{\Molar\per\second}}
+  \item Rate of \ce{H2O} formation:
+        \answerblank[3.2cm]{\SI{0.060}{\Molar\per\second}}
+  \item Rate of the reaction:
+        \answerblank[3.2cm]{\SI{0.010}{\Molar\per\second}}
+\end{parts}
+
+\problem[]{Explain the difference between average rate, instantaneous rate,
+and initial rate, and state why initial rates are used to determine rate
+laws. \answerlines[4]{Average rate is the slope of the line joining two
+points on a concentration--time curve; instantaneous rate is the slope of the
+tangent at one moment; initial rate is the instantaneous rate at $t=0$.
+Initial rates are used because concentrations are known exactly and no
+products have accumulated to interfere or drive a reverse reaction.}}
+
+\problem[]{For rate $= k[\ce{A}][\ce{B}]^2$, state the effect on the rate
+of each change:}
+\begin{parts}
+  \item Doubling [A]: \answerblank[3cm]{doubles}
+  \item Doubling [B]: \answerblank[3cm]{quadruples}
+  \item Doubling both: \answerblank[3cm]{$\times 8$}
+  \item Halving [B]: \answerblank[3cm]{quarters}
+  \item Overall order: \answerblank[2cm]{3}
+\end{parts}
+
+\problem[]{Determine the rate law for \ce{2 NO + Cl2 -> 2 NOCl} from these
+data:}
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Trial & $[\ce{NO}]$ (M) & $[\ce{Cl2}]$ (M) & initial rate (\si{\Molar\per\second})\\
+\midrule
+1 & 0.10 & 0.10 & $1.8\times10^{-4}$\\
+2 & 0.20 & 0.10 & $7.2\times10^{-4}$\\
+3 & 0.10 & 0.20 & $3.6\times10^{-4}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Order in \ce{NO} (state the trials compared):
+        \answerlines[2]{Trials 1 and 2: [NO] doubled, rate $\times 4$, so
+        second order.}
+  \item Order in \ce{Cl2}: \answerlines[2]{Trials 1 and 3:
+        $[\ce{Cl2}]$ doubled, rate doubled, so first order.}
+  \item Rate law: \answerblank[5cm]{rate $= k[\ce{NO}]^2[\ce{Cl2}]$}
+  \item Calculate $k$ with units. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$k = 1.8\times10^{-4}/[(0.10)^2(0.10)] =
+        \SI{0.18}{\per\Molar\squared\per\second}$\end{apcanswer}}
+\end{parts}
+
+\problem[]{Determine the rate law from these data for \ce{A + 2B -> C}:}
+
+\renewcommand{\arraystretch}{1.25}
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Trial & $[\ce{A}]$ (M) & $[\ce{B}]$ (M) & rate (\si{\Molar\per\second})\\
+\midrule
+1 & 0.20 & 0.20 & $6.0\times10^{-3}$\\
+2 & 0.40 & 0.20 & $1.2\times10^{-2}$\\
+3 & 0.40 & 0.40 & $1.2\times10^{-2}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Rate law: \answerblank[4.5cm]{rate $= k[\ce{A}]$}
+  \item Value of $k$ with units:
+        \answerblank[4cm]{\SI{0.030}{\per\second}}
+  \item The coefficient of B is 2, yet B is zero order. Explain how both can
+        be true. \answerlines[3]{Orders are experimental and reflect the
+        rate-determining step, not the overall stoichiometry. B being zero
+        order means it does not participate in that step --- it must react
+        in a later, faster one.}
+\end{parts}
+
+\problem[]{A student writes the rate law for \ce{2 N2O5 -> 4 NO2 + O2} as
+rate $= k[\ce{N2O5}]^2$, reasoning from the coefficient. Zumdahl's data show
+that halving $[\ce{N2O5}]$ halves the rate. Identify the error and give the
+correct rate law. \answerlines[3]{Orders cannot be read from coefficients.
+Halving the concentration halving the rate means the reaction is first
+order: rate $= k[\ce{N2O5}]$.}}
+
+\begin{spiralstrip}{Chapters 10--11 \textbullet\ spiral}
+  \item $\Delta H_{\text{vap}}$ of water:
+        \answerblank[3.2cm]{\SI{40.7}{\kilo\joule\per\mole}}
+  \item Molality formula: \answerblank[4.8cm]{mol solute / kg solvent}
+  \item Type of solid: graphite? \answerblank[3.4cm]{network covalent}
+  \item Gas solubility and temperature:
+        \answerblank[3.5cm]{inversely related}
+  \item Why does ice float? \answerblank[4.6cm]{open H-bonded lattice}
+\end{spiralstrip}
+
+\end{document}

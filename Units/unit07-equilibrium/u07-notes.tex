@@ -1,0 +1,824 @@
+% Unit 7 (Equilibrium) guided notes -- 8 blocks, CED sequence.
+\documentclass{apchem-notes}
+
+\apcunit{7}
+\apcunittitle{Equilibrium}
+\apcdoctitle{Guided Notes}
+\apcsubtitle{CED 7.1--7.12 \textbullet\ Zumdahl Ch 13, \S16.1 \textbullet\ 8 blocks}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[The comparison this whole unit runs on]
+One question answers almost everything in this unit:
+\textbf{how does $Q$ compare with $K$?}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\hline
+$Q < K$ & too few products & shifts \textbf{right} \\
+$Q = K$ & at equilibrium & no net change \\
+$Q > K$ & too many products & shifts \textbf{left} \\
+\hline
+\end{tabular}
+\end{center}
+
+That single comparison tells you which way a fresh mixture will move,
+whether a system has arrived, what a disturbance will do, and --- in the
+last block --- whether a precipitate forms. Le Ch\^atelier's principle is a
+shortcut for it, not a separate idea.
+\end{apcnote}
+
+% =====================================================================
+\blocklesson{Dynamic Equilibrium}{CED 7.1--7.2 \textbullet\ Zumdahl \S13.1}
+
+\begin{objectives}
+  \item Describe equilibrium as equal forward and reverse rates.
+  \item Interpret concentration-time graphs approaching equilibrium.
+\end{objectives}
+
+\reading{Zumdahl \S13.1}{651--654}
+
+\begin{warmup}[4]
+  \item A reversible reaction is written with what symbol?
+        \answerblank[2.6cm]{$\rightleftharpoons$}
+  \item Rate depends on: \answerblank[3cm]{concentration}
+  \item As reactant is consumed, the forward rate:
+        \answerblank[2.4cm]{decreases}
+  \item As product builds up, the reverse rate:
+        \answerblank[2.4cm]{increases}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What ``equilibrium'' actually means}
+
+\notesection{Equal rates, not equal amounts}{7.1}
+\practice{6}
+
+Start with pure reactants. The forward rate is at its
+\answerblank[2cm]{maximum} and the reverse rate is
+\answerblank[1.6cm]{zero}. As the reaction proceeds:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Reactant concentration falls, so the forward rate
+        \answerblank[2.2cm]{falls}.
+  \item Product concentration rises, so the reverse rate
+        \answerblank[2.2cm]{rises}.
+  \item When the two rates become \answerblank[2cm]{equal}, concentrations
+        stop changing. That is \term{dynamic equilibrium}.
+\end{itemize}
+
+\begin{apctrap}
+\textbf{Equilibrium does not mean equal concentrations.} It means equal
+\emph{rates}. The concentrations at equilibrium are almost never equal ---
+their ratio is fixed by $K$, which can be $10^{-10}$ or $10^{10}$.
+
+It also does not mean the reaction has stopped. Both directions continue at
+the same rate, which is why the word is \emph{dynamic}. A question asking
+``what is happening at equilibrium?'' wants that sentence.
+\end{apctrap}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=10.2cm, height=4.8cm,
+    xlabel={time}, ylabel={concentration},
+    xtick=\empty, ytick=\empty, xmin=0, xmax=10, ymin=0, ymax=10,
+    axis lines=left, legend style={draw=none, font=\sffamily\scriptsize,
+      at={(0.98,0.6)}, anchor=east}]
+  \addplot[seriesA, samples=120, domain=0:10] {2 + 6*exp(-0.55*x)};
+  \addlegendentry{reactant}
+  \addplot[seriesB, samples=120, domain=0:10] {8 - 6*exp(-0.55*x)};
+  \addlegendentry{product}
+  \draw[densely dotted] (axis cs:6,0) -- (axis cs:6,8.5);
+  \node[font=\scriptsize,anchor=south] at (axis cs:7.6,8.6)
+    {equilibrium reached};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Both curves \answerblank[2.4cm]{level off} --- and they level off at
+\emph{different} heights, which is the graphical version of the trap above.
+
+\segment{APPLICATION}{20}{Reading the graph}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item At the moment equilibrium is reached, compare the forward and
+        reverse rates, and compare the concentrations.
+        \answerlines[3]{The rates are equal --- that is the definition. The
+        concentrations are generally unequal and simply stop changing;
+        their ratio is whatever $K$ requires.}
+  \item A student says ``the reaction stopped.'' Correct them.
+        \answerlines[2]{Nothing stopped. Both reactions continue at equal
+        rates, so every product molecule formed is matched by one
+        converting back, and no net change is observable.}
+  \item How would the graph differ for a reaction with a very large $K$?
+        \answerlines[2]{The product curve would level off much higher and
+        the reactant curve much lower --- the plateau heights encode the
+        magnitude of $K$.}
+\end{enumerate}
+
+\begin{exitticket}
+Give two things that are equal at equilibrium and one thing that generally
+is not.
+\keyonly{\begin{apcanswer}Equal: the forward and reverse rates, and (by
+consequence) the rates of change of every concentration, which are all
+zero. Not equal: the concentrations themselves, whose ratio is set by
+$K$.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{$Q$, $K$, and Calculating Them}{CED 7.3--7.4 \textbullet\ Zumdahl \S13.2--13.4}
+
+\begin{objectives}
+  \item Write $K$ and $Q$ expressions correctly.
+  \item Calculate $K$ from equilibrium data.
+\end{objectives}
+
+\reading{Zumdahl \S13.2--13.4}{654--662}
+
+\begin{warmup}[3]
+  \item Equilibrium means equal: \answerblank[2cm]{rates}
+  \item Coefficients become what in a $K$ expression?
+        \answerblank[2.6cm]{exponents}
+  \item Which species are omitted from $K$?
+        \answerblank[4.8cm]{pure solids and liquids}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Writing the expression}
+
+\notesection{$K$ and $Q$ have the same form}{7.3}
+\practice{5}
+
+For $\ce{aA + bB <=> cC + dD}$:
+\[ K = \frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b} \]
+
+$Q$ has the \emph{identical} form but uses concentrations at
+\answerblank[3.4cm]{any moment}, not necessarily equilibrium ones.
+
+\begin{apctrap}
+\textbf{Omit pure solids and pure liquids.} Their ``concentration'' does not
+vary --- a bigger lump of solid is not more concentrated --- so they carry
+no term. Aqueous species and gases always appear.
+
+Watch for water: \ce{H2O(l)} as a solvent is omitted, but \ce{H2O(g)} in a
+gas-phase reaction is \emph{included}. The state symbol is doing real work
+and is not decoration.
+\end{apctrap}
+
+\begin{workedexample}[Worked example 1: expressions]
+\begin{align*}
+  \ce{N2(g) + 3H2(g) &<=> 2NH3(g)}
+    &K &= \frac{[\ce{NH3}]^2}{[\ce{N2}][\ce{H2}]^3} \\[0.3em]
+  \ce{CaCO3(s) &<=> CaO(s) + CO2(g)}
+    &K &= [\ce{CO2}] \\[0.3em]
+  \ce{2H2O(l) &<=> 2H2(g) + O2(g)}
+    &K &= [\ce{H2}]^2[\ce{O2}]
+\end{align*}
+The second has only one term --- both solids drop out. The third omits
+liquid water but would keep it if it were steam.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Calculating $K$}
+
+\notesection{From equilibrium concentrations}{7.4}
+\practice{5}
+
+\begin{workedexample}[Worked example 2: substituting into $K$]
+At equilibrium a vessel contains $[\ce{N2}] = 0.50$,
+$[\ce{H2}] = 0.30$, $[\ce{NH3}] = 0.20$~M for
+$\ce{N2 + 3H2 <=> 2NH3}$.
+
+\[ K = \frac{(0.20)^2}{(0.50)(0.30)^3}
+     = \frac{0.040}{(0.50)(0.027)} = \frac{0.040}{0.0135}
+     = \mathbf{3.0} \]
+
+The cube on hydrogen is where marks are lost --- $(0.30)^3 = 0.027$, not
+$0.90$.
+\end{workedexample}
+
+\notesection{$K_p$ and $K_c$}{7.4}
+
+For gases, $K$ may be written with partial pressures:
+\[ K_p = K_c(RT)^{\Delta n} \qquad
+   \Delta n = \text{mol gas products} - \text{mol gas reactants} \]
+
+When $\Delta n = 0$, $K_p$ and $K_c$ are \answerblank[2cm]{equal}.
+
+\begin{workedexample}[Worked example 3: converting]
+For $\ce{N2 + 3H2 <=> 2NH3}$ at \SI{500}{\kelvin} with
+$K_c = 0.50$: $\Delta n = 2 - 4 = -2$.
+\[ K_p = (0.50)[(0.08206)(500)]^{-2} = \frac{0.50}{(41.03)^2}
+   = \mathbf{3.0\times10^{-4}} \]
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Expressions and values}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Write $K$ for $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$.
+        \answerblank[6cm]{$[\ce{SO3}]^2/([\ce{SO2}]^2[\ce{O2}])$}
+  \item Write $K$ for $\ce{Fe3O4(s) + 4H2(g) <=> 3Fe(s) + 4H2O(g)}$.
+        \answerblank[6cm]{$[\ce{H2O}]^4/[\ce{H2}]^4$}
+  \item At equilibrium $[\ce{H2}] = 0.20$, $[\ce{I2}] = 0.40$,
+        $[\ce{HI}] = 0.60$~M. Find $K$ for
+        $\ce{H2 + I2 <=> 2HI}$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}$K = (0.60)^2/[(0.20)(0.40)] =
+        0.36/0.080 = \mathbf{4.5}$\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Why do pure solids and liquids not appear in $K$, and what determines
+whether water appears?
+\keyonly{\begin{apcanswer}Their concentration is a fixed property of the
+substance and does not change as the reaction proceeds, so including them
+would add a constant. Water appears when it is a gas or a dissolved
+reactant, and is omitted when it is the pure liquid solvent --- the state
+symbol decides.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Magnitude and Properties of $K$}{CED 7.5--7.6 \textbullet\ Zumdahl \S13.3--13.5}
+
+\begin{objectives}
+  \item Interpret the size of $K$.
+  \item Adjust $K$ when a reaction is manipulated.
+\end{objectives}
+
+\reading{Zumdahl \S13.3--13.5}{658--671}
+
+\begin{warmup}[3]
+  \item $K$ for $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$:
+        \answerblank[2.6cm]{$[\ce{CO2}]$}
+  \item $K_p = K_c(RT)^{?}$: \answerblank[2cm]{$\Delta n$}
+  \item Only what change alters the value of $K$?
+        \answerblank[2.6cm]{temperature}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{What the number tells you}
+
+\notesection{Reading the magnitude}{7.5}
+\practice{5}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\hline
+$K \gg 1$ (say $> 10^2$) & \textbf{products} strongly favored \\
+$K \approx 1$ & appreciable amounts of both \\
+$K \ll 1$ (say $< 10^{-2}$) & \textbf{reactants} strongly favored \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apctrap}
+$K$ says \emph{how far}, never \emph{how fast}. A reaction with
+$K = 10^{40}$ can be immeasurably slow --- that is the kinetic control you
+met in Unit 5. The two questions are independent, and the exam likes pairing
+them to see whether you have separated them.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{Manipulating $K$}
+
+\notesection{Four rules}{7.6}
+\practice{5}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\hline
+\textbf{Change to the equation} & \textbf{New $K$} \\
+\hline
+reverse it & $1/K$ \\
+multiply the coefficients by $n$ & $K^n$ \\
+divide the coefficients by $n$ & $K^{1/n}$ \\
+add two reactions & $K_1 \times K_2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{workedexample}[Worked example 4: one reaction, four values]
+If $K = 4.0$ for $\ce{A + B <=> C}$, then:
+
+\begin{itemize}[leftmargin=*,itemsep=0.2em]
+  \item $\ce{C <=> A + B}$ has $K = 1/4.0 = \mathbf{0.25}$.
+  \item $\ce{2A + 2B <=> 2C}$ has $K = (4.0)^2 = \mathbf{16}$.
+  \item $\ce{\tfrac{1}{2}A + \tfrac{1}{2}B <=> \tfrac{1}{2}C}$ has
+        $K = \sqrt{4.0} = \mathbf{2.0}$.
+  \item Added to a second reaction with $K = 3.0$, the overall $K$ is
+        $(4.0)(3.0) = \mathbf{12}$.
+\end{itemize}
+
+Notice these are \emph{multiplicative} operations, unlike $\Delta H$ in
+Unit 6, which was additive. Equilibrium constants multiply where enthalpies
+add.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Using the rules}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item $K = 2.5\times10^{-3}$ for a reaction. Give $K$ for the reverse.
+        \answerblank[3cm]{$4.0\times10^{2}$}
+  \item Classify each as products-favored, reactants-favored, or mixed:
+        $K = 1\times10^{-10}$, $K = 1.5$, $K = 3\times10^{6}$.
+        \answerlines[2]{Reactants strongly favored; appreciable amounts of
+        both; products strongly favored.}
+  \item A reaction has $K = 10^{35}$ but no observable change occurs when
+        the reactants are mixed. Is the value wrong? Explain.
+        \answerlines[3]{No. $K$ describes the position of equilibrium, not
+        the rate of reaching it. A very large activation energy can make the
+        reaction immeasurably slow --- it is under kinetic control, and the
+        thermodynamic prediction is untouched.}
+\end{enumerate}
+
+\begin{exitticket}
+State what happens to $K$ when a reaction is reversed and when its
+coefficients are doubled, and name the one change that alters $K$ for a
+given reaction.
+\keyonly{\begin{apcanswer}Reversing gives $1/K$; doubling the coefficients
+gives $K^2$. Only a change in \emph{temperature} alters $K$ for a given
+reaction as written --- concentration, pressure and catalysts do
+not.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{ICE Tables}{CED 7.7 \textbullet\ Zumdahl \S13.6}
+
+\begin{objectives}
+  \item Set up and solve an ICE table.
+  \item Apply and test the small-$x$ approximation.
+\end{objectives}
+
+\reading{Zumdahl \S13.6}{671--676}
+
+\begin{warmup}[3]
+  \item Reversing a reaction gives $K =$ \answerblank[1.8cm]{$1/K$}
+  \item $K \ll 1$ favors: \answerblank[2.4cm]{reactants}
+  \item BCA tables from Unit 4 tracked what?
+        \answerblank[4.2cm]{moles, to completion}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The table you already know}
+
+\notesection{ICE is BCA with an unknown}{7.7}
+\practice{5}
+
+\term{ICE} stands for \answerblank[5.8cm]{Initial, Change, Equilibrium}. It
+is the Before/Change/After table from stoichiometry, with one difference:
+the reaction stops partway, so the change is an unknown
+\answerblank[1.4cm]{$x$}.
+
+The change row is still driven by the \answerblank[2.6cm]{coefficients} ---
+if A has coefficient 1 and C has coefficient 2, then A changes by $-x$ and
+C by $+2x$.
+
+\begin{workedexample}[Worked example 5: the small-$x$ approximation]
+$\ce{A <=> B + C}$ with $K = 1.0\times10^{-5}$ and
+$[\ce{A}]_0 = \SI{0.100}{\Molar}$.
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\hline
+ & \ce{A} & \ce{B} & \ce{C} \\
+\hline
+Initial & 0.100 & 0 & 0 \\
+Change & $-x$ & $+x$ & $+x$ \\
+Equilibrium & $0.100 - x$ & $x$ & $x$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\[ K = \frac{x^2}{0.100 - x} = 1.0\times10^{-5} \]
+
+Because $K$ is very small, very little A reacts, so
+$0.100 - x \approx 0.100$:
+\[ x^2 \approx (1.0\times10^{-5})(0.100) = 1.0\times10^{-6}
+   \qquad x = \mathbf{1.0\times10^{-3}} \]
+
+\textbf{Test it:} $x/[\ce{A}]_0 = 1.0\%$, comfortably under 5\%, so the
+approximation is justified. \checkmark
+\end{workedexample}
+
+\begin{apctrap}
+\textbf{The 5\% check is part of the answer, not a formality.} An FRQ that
+asks you to justify an approximation wants the \emph{number} and the
+comparison, not the assertion. ``$x$ is small compared with 0.100'' with no
+percentage earns nothing.
+
+Rule of thumb: the approximation is safe when $K$ is small relative to the
+initial concentration --- roughly $[\ce{A}]_0/K > 400$.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Running the table}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item $\ce{A <=> 2B}$, $K = 4.0\times10^{-6}$,
+        $[\ce{A}]_0 = \SI{0.50}{\Molar}$. Find $[\ce{B}]$ at equilibrium.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$K = (2x)^2/(0.50-x) \approx
+        4x^2/0.50$; $4x^2 = 2.0\times10^{-6}$;
+        $x = 7.1\times10^{-4}$;
+        $[\ce{B}] = 2x = \mathbf{1.4\times10^{-3}}$~M. Check:
+        $x/0.50 = 0.14\%$ \checkmark\end{apcanswer}}
+  \item Why does a small $K$ make the approximation safe, in one sentence?
+        \answerlines[2]{A small $K$ means the equilibrium lies far to the
+        left, so only a tiny fraction of the reactant is consumed and
+        subtracting $x$ barely changes the initial value.}
+\end{enumerate}
+
+\begin{exitticket}
+State the two steps that must appear in a complete small-$x$ solution.
+\keyonly{\begin{apcanswer}Solve using the approximation, then compute
+$x/[\ce{A}]_0$ as a percentage and compare it with 5\%. Omitting the second
+step leaves the answer unjustified.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{When the Approximation Fails}{CED 7.7 \textbullet\ Zumdahl \S13.6}
+
+\begin{objectives}
+  \item Recognize when the small-$x$ approximation is invalid.
+  \item Solve the resulting quadratic or perfect square.
+\end{objectives}
+
+\reading{Zumdahl \S13.6}{671--676}
+
+\begin{warmup}[3]
+  \item The approximation threshold: \answerblank[1.6cm]{5\%}
+  \item ICE stands for: \answerblank[5.8cm]{Initial, Change, Equilibrium}
+  \item Large $K$ means the approximation is likely to be:
+        \answerblank[2cm]{invalid}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The check that saves you}
+
+\notesection{A failed approximation, quantified}{7.7}
+\practice{5}
+
+\begin{workedexample}[Worked example 6: the same setup, a bigger $K$]
+$\ce{A <=> B + C}$ with $[\ce{A}]_0 = 0.100$ but now $K = 0.20$.
+
+\textbf{Try the approximation:}
+$x^2 \approx (0.20)(0.100)$ gives $x = 0.141$.
+
+\textbf{Test it:} $x/[\ce{A}]_0 = 141\%$ --- the ``small'' $x$ is larger
+than the entire initial concentration. \textbf{Invalid.}
+
+\textbf{Solve properly:} $x^2 = 0.20(0.100 - x)$, so
+$x^2 + 0.20x - 0.020 = 0$ and
+\[ x = \frac{-0.20 + \sqrt{0.040 + 0.080}}{2} = \mathbf{0.073} \]
+
+The approximation was wrong by about \textbf{93\%}. This is why the check
+is not optional.
+\end{workedexample}
+
+\segment{INSTRUCTION B}{20}{Perfect squares}
+
+\notesection{When both sides are squares, take the root}{7.7}
+\practice{5}
+
+Some ICE expressions avoid the quadratic formula entirely.
+
+\begin{workedexample}[Worked example 7: hydrogen iodide]
+$\ce{H2 + I2 <=> 2HI}$, $K = 50.0$, both reactants starting at
+\SI{1.00}{\Molar}.
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\hline
+ & \ce{H2} & \ce{I2} & \ce{HI} \\
+\hline
+Initial & 1.00 & 1.00 & 0 \\
+Change & $-x$ & $-x$ & $+2x$ \\
+Equilibrium & $1.00-x$ & $1.00-x$ & $2x$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\[ K = \frac{(2x)^2}{(1.00-x)(1.00-x)}
+     = \left(\frac{2x}{1.00-x}\right)^2 = 50.0 \]
+
+Both sides are perfect squares, so take the square root:
+\[ \frac{2x}{1.00-x} = \sqrt{50.0} = 7.07 \]
+\[ 2x = 7.07 - 7.07x \quad\Longrightarrow\quad 9.07x = 7.07
+   \quad\Longrightarrow\quad x = \mathbf{0.780} \]
+
+So $[\ce{H2}] = [\ce{I2}] = \mathbf{0.220}$ and
+$[\ce{HI}] = \mathbf{1.56}$~M.
+
+\textbf{Check:} $(1.56)^2/(0.220)^2 = 50.0$ \checkmark\ --- always worth
+30 seconds.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Choosing a method}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item For each, say whether the small-$x$ approximation is likely valid:
+        (i) $K = 10^{-8}$, $[\ce{A}]_0 = 1.0$;
+        (ii) $K = 2.0$, $[\ce{A}]_0 = 0.10$;
+        (iii) $K = 10^{-6}$, $[\ce{A}]_0 = 10^{-5}$.
+        \answerlines[3]{(i) Valid --- $K$ is minute against the initial
+        concentration. (ii) Invalid --- $K$ is comparable to $[\ce{A}]_0$.
+        (iii) Invalid --- although $K$ is small, so is $[\ce{A}]_0$, and it
+        is the \emph{ratio} that matters.}
+  \item Solve $\ce{A <=> 2B}$ with $K = 0.50$ and
+        $[\ce{A}]_0 = 1.00$~M, using the quadratic.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}$K = 4x^2/(1.00-x) = 0.50$, so
+        $4x^2 + 0.50x - 0.50 = 0$.
+        $x = [-0.50 + \sqrt{0.25 + 8.0}]/8 = (-0.50+2.872)/8 =
+        \mathbf{0.297}$;
+        $[\ce{B}] = 0.593$, $[\ce{A}] = 0.703$~M\end{apcanswer}}
+\end{enumerate}
+
+\begin{exitticket}
+Why is it the \emph{ratio} $[\ce{A}]_0/K$, rather than $K$ alone, that
+decides whether the approximation works?
+\keyonly{\begin{apcanswer}The approximation requires $x$ to be small
+compared with $[\ce{A}]_0$, and $x$ scales with $K$ while the thing it is
+compared against is $[\ce{A}]_0$. A small $K$ with an even smaller starting
+concentration still gives a large percentage, so only the ratio
+settles it.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Representations and Le Ch\^atelier}{CED 7.8--7.9 \textbullet\ Zumdahl \S13.1, \S13.7}
+
+\begin{objectives}
+  \item Interpret particulate and graphical representations of equilibrium.
+  \item Predict the effect of a disturbance.
+\end{objectives}
+
+\reading{Zumdahl \S13.1, \S13.7}{651--654, 676--683}
+
+\begin{warmup}[3]
+  \item Failed approximation $\Rightarrow$ use the:
+        \answerblank[2.6cm]{quadratic}
+  \item At equilibrium, $Q$ equals: \answerblank[1.6cm]{$K$}
+  \item Only what changes $K$? \answerblank[2.6cm]{temperature}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{Le Ch\^atelier's principle}
+
+\notesection{A system opposes the change imposed on it}{7.9}
+\practice{6}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{Disturbance} & \textbf{Shift} & \textbf{Does $K$ change?} \\
+\hline
+add reactant & right & no \\
+add product & left & no \\
+remove product & right & no \\
+compress (smaller $V$) & toward fewer moles of gas & no \\
+expand (larger $V$) & toward more moles of gas & no \\
+add inert gas at constant $V$ & \textbf{no shift} & no \\
+add a catalyst & \textbf{no shift} & no \\
+raise $T$, endothermic forward & right & \textbf{yes, increases} \\
+raise $T$, exothermic forward & left & \textbf{yes, decreases} \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apctrap}
+\textbf{Only temperature changes the value of $K$.} Everything else moves
+the system \emph{along} the same curve until $Q$ returns to the unchanged
+$K$. A response saying ``adding more reactant increases $K$'' is marked
+wrong every time.
+
+Two more that recur: an \textbf{inert gas} added at constant volume changes
+the total pressure but not any partial pressure or concentration, so
+nothing shifts. And a \textbf{catalyst} speeds both directions equally ---
+equilibrium arrives sooner, in the same place.
+\end{apctrap}
+
+\notesection{Temperature as a reactant or product}{7.9}
+
+Treat energy as a term in the equation. For an exothermic reaction, write
+heat as a \answerblank[2cm]{product}; adding heat then pushes the
+equilibrium \answerblank[1.8cm]{left}, exactly as adding any other product
+would.
+
+\segment{INSTRUCTION B}{20}{Particulate representations}
+
+\notesection{Reading a picture of an equilibrium}{7.8}
+\practice{1}
+
+When a question shows before-and-after particle diagrams:
+
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Count particles and check that atoms are
+        \answerblank[2.4cm]{conserved}.
+  \item Compare the ratio of products to reactants against
+        \answerblank[1.6cm]{$K$}.
+  \item Two diagrams showing \emph{no change in counts} between successive
+        times indicate the system has reached
+        \answerblank[2.6cm]{equilibrium}.
+\end{itemize}
+
+\segment{APPLICATION}{20}{Predicting shifts}
+
+For $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$, $\Delta H = -92$~kJ:
+
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Add \ce{N2}: \answerblank[3cm]{shifts right}
+  \item Remove \ce{NH3}: \answerblank[3cm]{shifts right}
+  \item Compress the vessel: \answerblank[5.4cm]{right --- 4 mol gas to 2}
+  \item Add argon at constant volume:
+        \answerblank[3cm]{no shift}
+  \item Raise the temperature:
+        \answerlines[2]{Shifts left, and $K$ decreases. The forward reaction
+        is exothermic, so heat behaves as a product; adding heat pushes the
+        system back toward reactants.}
+  \item Add a catalyst: \answerblank[5.8cm]{no shift; equilibrium sooner}
+\end{enumerate}
+
+\begin{exitticket}
+Name the only disturbance that changes the value of $K$, and explain why
+the others do not.
+\keyonly{\begin{apcanswer}Temperature. The others move concentrations or
+pressures, which changes $Q$; the system then shifts until $Q$ returns to
+the same $K$. Temperature instead changes the constant itself, so the
+system settles at a genuinely different ratio.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{$Q$ versus $K$ Quantitatively}{CED 7.10 \textbullet\ Zumdahl \S13.7}
+
+\begin{objectives}
+  \item Calculate $Q$ and compare it with $K$ to predict direction.
+  \item Justify a Le Ch\^atelier prediction quantitatively.
+\end{objectives}
+
+\reading{Zumdahl \S13.7}{676--683}
+
+\begin{warmup}[3]
+  \item Adding a product shifts the equilibrium:
+        \answerblank[1.8cm]{left}
+  \item An inert gas at constant volume causes:
+        \answerblank[2.4cm]{no shift}
+  \item Compressing shifts toward:
+        \answerblank[4cm]{fewer moles of gas}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The calculation behind the principle}
+
+\notesection{$Q$ is the answer to ``which way?''}{7.10}
+\practice{5}
+
+Le Ch\^atelier tells you the direction; $Q$ \emph{proves} it. On an FRQ,
+the quantitative justification is usually worth the point that the
+qualitative one is not.
+
+\begin{workedexample}[Worked example 8: predicting with $Q$]
+For $\ce{H2 + I2 <=> 2HI}$, $K = 4.5$. A vessel is charged with
+$[\ce{H2}] = 0.40$, $[\ce{I2}] = 0.30$, $[\ce{HI}] = 0.40$~M.
+
+\[ Q = \frac{(0.40)^2}{(0.40)(0.30)} = \frac{0.16}{0.12} = 1.3 \]
+
+$Q = 1.3 < K = 4.5$, so there are \emph{too few products}: the reaction
+proceeds \textbf{to the right} until $Q$ rises to 4.5.
+
+Note that this required no Le Ch\^atelier reasoning at all --- the
+comparison settles it directly, and it works even for a fresh mixture that
+was never at equilibrium.
+\end{workedexample}
+
+\begin{apctrap}
+Le Ch\^atelier applies to \emph{disturbing a system already at
+equilibrium}. $Q$ versus $K$ works for \textbf{any} mixture, equilibrium or
+not. When a question gives you arbitrary starting concentrations, $Q$ is the
+tool --- Le Ch\^atelier has nothing to say about a mixture that was never at
+equilibrium in the first place.
+\end{apctrap}
+
+\segment{APPLICATION}{20}{Direction from data}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item $K = 4.5$ for $\ce{H2 + I2 <=> 2HI}$. For each mixture, calculate
+        $Q$ and state the direction:
+        \begin{enumerate}[leftmargin=1.4em,itemsep=0.2em]
+          \item $[\ce{H2}]=[\ce{I2}]=[\ce{HI}]=0.50$
+                \answerblank[5cm]{$Q = 1.0$; shifts right}
+          \item $[\ce{H2}]=0.10$, $[\ce{I2}]=0.10$, $[\ce{HI}]=0.30$
+                \answerblank[5cm]{$Q = 9.0$; shifts left}
+        \end{enumerate}
+  \item A system at equilibrium has extra product added. Explain, using
+        $Q$, why it shifts left. \answerlines[3]{Adding product increases
+        the numerator of $Q$ without changing $K$, so $Q$ becomes greater
+        than $K$. A system with $Q > K$ has too many products relative to
+        equilibrium, so the reverse reaction dominates until $Q$ falls back
+        to $K$.}
+\end{enumerate}
+
+\begin{exitticket}
+When is $Q$ the right tool and Le Ch\^atelier's principle the wrong one?
+\keyonly{\begin{apcanswer}When the mixture was never at equilibrium --- for
+instance an arbitrary set of starting concentrations. Le Ch\^atelier
+describes the response to disturbing an existing equilibrium; comparing $Q$
+with $K$ works for any mixture at all.\end{apcanswer}}
+\end{exitticket}
+
+% =====================================================================
+\blocklesson{Solubility Equilibria}{CED 7.11--7.12 \textbullet\ Zumdahl \S16.1}
+
+\begin{objectives}
+  \item Relate $K_{sp}$ to molar solubility.
+  \item Explain and calculate the common-ion effect.
+\end{objectives}
+
+\reading{Zumdahl \S16.1}{805--812}
+
+\begin{warmup}[3]
+  \item $Q < K$ means the reaction shifts:
+        \answerblank[1.8cm]{right}
+  \item Pure solids appear in $K$? \answerblank[1.6cm]{no}
+  \item Adding a product shifts equilibrium:
+        \answerblank[1.8cm]{left}
+\end{warmup}
+
+\segment{INSTRUCTION A}{25}{The same machinery, applied to a solid}
+
+\notesection{$K_{sp}$ is just $K$}{7.11}
+\practice{5}
+
+A saturated solution is a system at equilibrium with undissolved solid:
+\[ \ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)} \qquad
+   K_{sp} = [\ce{Ca^2+}][\ce{F^-}]^2 \]
+
+The solid is omitted for the reason you already know --- it is a
+\answerblank[2.4cm]{pure solid}.
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\hline
+\textbf{Type} & \textbf{$K_{sp}$ in terms of $s$} & \textbf{Solubility} \\
+\hline
+\ce{MX} & $s^2$ & $s = \sqrt{K_{sp}}$ \\
+\ce{MX2} or \ce{M2X} & $4s^3$ & $s = \sqrt[3]{K_{sp}/4}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{apctrap}
+\textbf{$K_{sp}$ is a constant; solubility is a position.} $K_{sp}$ has one
+value at a given temperature; the solubility changes with whatever else is
+in the water.
+
+And \textbf{$K_{sp}$ values may be compared directly only for salts
+producing the same number of ions.} \ce{CaF2}
+($K_{sp} = 4.0\times10^{-11}$) is far more soluble than \ce{BaCrO4}
+($8.5\times10^{-11}$) despite the smaller constant, because $s$ enters to
+different powers.
+\end{apctrap}
+
+\segment{INSTRUCTION B}{20}{The common-ion effect}
+
+\notesection{Le Ch\^atelier, one last time}{7.12}
+\practice{6}
+
+Dissolve a salt in a solution already containing one of its ions and you
+have added a \answerblank[2cm]{product}. The equilibrium shifts
+\answerblank[1.8cm]{left}, so \emph{less} dissolves --- while $K_{sp}$
+stays exactly the same.
+
+\begin{workedexample}[Worked example 9: silver chloride]
+$K_{sp}(\ce{AgCl}) = 1.6\times10^{-10}$.
+
+\textbf{In pure water:} $s = \sqrt{1.6\times10^{-10}} =
+\mathbf{1.3\times10^{-5}}$~M.
+
+\textbf{In \SI{0.10}{\Molar} \ce{NaCl}:} the chloride is essentially all
+from the \ce{NaCl}, so
+\[ s = \frac{K_{sp}}{[\ce{Cl^-}]} = \frac{1.6\times10^{-10}}{0.10}
+   = \mathbf{1.6\times10^{-9}}~\text{M} \]
+
+Suppressed by a factor of about \textbf{7900} --- and $K_{sp}$ never moved.
+\end{workedexample}
+
+\segment{APPLICATION}{20}{Solubility calculations}
+
+\begin{enumerate}[leftmargin=*,itemsep=0.4em]
+  \item Calculate the molar solubility of \ce{CaF2}
+        ($K_{sp} = 4.0\times10^{-11}$) in pure water.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$4s^3 = 4.0\times10^{-11}$;
+        $s^3 = 1.0\times10^{-11}$;
+        $s = \mathbf{2.2\times10^{-4}}$~M\end{apcanswer}}
+  \item Calculate it in \SI{0.025}{\Molar} \ce{NaF}.
+        \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}$[\ce{F-}] \approx 0.025$;
+        $4.0\times10^{-11} = s(0.025)^2$;
+        $s = \mathbf{6.4\times10^{-8}}$~M\end{apcanswer}}
+  \item State what happened to $K_{sp}$ between (a) and (b), and why.
+        \answerlines[2]{Nothing --- $K_{sp}$ depends only on temperature.
+        Only the equilibrium position moved, with much more fluoride and
+        much less calcium in solution.}
+\end{enumerate}
+
+\begin{exitticket}
+Explain the common-ion effect using $Q$ rather than Le Ch\^atelier.
+\keyonly{\begin{apcanswer}Adding the common ion raises the ion product $Q$
+above $K_{sp}$. A system with $Q > K$ shifts toward the reactant side ---
+here, toward the undissolved solid --- until $Q$ falls back to $K_{sp}$,
+which leaves less of the salt dissolved.\end{apcanswer}}
+\end{exitticket}
+
+\end{document}
