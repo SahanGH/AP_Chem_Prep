@@ -1,0 +1,345 @@
+% Ch4 self-study (part 2) -- "I do / You do" ladder for Zumdahl 4.7-4.11.
+% Each YOUR TURN carries FOUR questions; bare answers visible in every
+% edition (\selfcheck), full solutions key-only. Examples disjoint from
+% ch04-notes/worksheets (which own BaSO4, AgCl, and the MnO4-/Fe2+
+% titration).
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{4}
+\apcunittitle{Types of Chemical Reactions and Solution Stoichiometry}
+\apcdoctitle{Self-Study \textbullet\ \S4.7--4.11, I~do / You~do}
+\apcsubtitle{Zumdahl \S4.7--4.11 \textbullet\ PDF pp.\ 190--212 \textbullet\ four YOUR TURN questions per ladder}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Same ladder rules as part 1: work \textbf{all four} YOUR TURN questions
+before checking the gray \emph{check:} line; a tracker tick requires all
+four right on the first attempt; full solutions live in the teacher key.
+
+Everything here is Chapter 3 stoichiometry wearing solution clothing:
+molarity turns volumes into moles, and from there the balanced equation
+takes over exactly as before.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Precipitation stoichiometry}
+\zsec{4.7}
+
+The spine gains one new entrance ramp:
+\[ \text{volume} \times M \to \text{moles}
+   \xrightarrow{\text{mole ratio}} \text{moles} \to \text{grams} \]
+When \emph{two} solution amounts are given, it is a limiting-reactant
+problem --- same as Chapter 3.
+
+\begin{workedexample}[I do: lead iodide, the whole problem]
+\SI{50.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{Pb(NO3)2} is mixed with
+\SI{75.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaI}. Find the mass of
+precipitate and the concentration of \ce{Pb^2+} left in solution.
+
+\textbf{Net ionic first} (rule 2 exception):
+$\ce{Pb^2+ + 2I- -> PbI2(s)}$, $M_{\ce{PbI2}} = \SI{461.0}{\gram\per\mole}$
+
+\textbf{Moles of each reactant:}
+\[ \ce{Pb^2+}: 0.0500 \times 0.200 = \SI{0.0100}{\mole} \qquad
+   \ce{I-}: 0.0750 \times 0.100 = \SI{0.00750}{\mole} \]
+
+\textbf{Limiting?} The lead present would need $2 \times 0.0100 =
+\SI{0.0200}{\mole}$ of iodide; only 0.00750 is there, so \textbf{\ce{I-}
+is limiting}.
+
+\textbf{Precipitate} (from the limiting reactant only):
+\[ 0.00750 \times \tfrac{1}{2} = \SI{0.00375}{\mole}~\ce{PbI2}
+   \;\Rightarrow\; 0.00375 \times 461.0 = \mathbf{1.73~g} \]
+
+\textbf{Leftover \ce{Pb^2+}} --- and here is the solution-specific step:
+the total volume is now $50.0 + 75.0 = \SI{125.0}{\milli\litre}$:
+\[ n = 0.0100 - 0.00375 = \SI{0.00625}{\mole} \qquad
+   [\ce{Pb^2+}] = \frac{0.00625}{0.1250} = \mathbf{0.0500~M} \]
+Dividing by the \emph{combined} volume, not the original 50.0 mL, is the
+step exams test.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Mass of \ce{CaCO3} ($M = \SI{100.09}{\gram\per\mole}$) formed
+        when \SI{100.0}{\milli\litre} of \SI{0.150}{\Molar} \ce{Na2CO3}
+        reacts with excess \ce{CaCl2}: \workspace[1.8cm]
+  \item Mass of \ce{SrSO4} ($M = \SI{183.7}{\gram\per\mole}$) from
+        \SI{40.0}{\milli\litre} of \SI{0.250}{\Molar} \ce{Sr(NO3)2} with
+        excess \ce{K2SO4}: \workspace[1.8cm]
+  \item Volume of \SI{0.100}{\Molar} \ce{AgNO3} required to precipitate
+        every chloride ion from \SI{25.0}{\milli\litre} of
+        \SI{0.0400}{\Molar} \ce{MgCl2}: \workspace[2cm]
+  \item In the worked example, $[\ce{NO3-}]$ after mixing:
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{1.50}{\gram} \quad (b) \SI{1.84}{\gram} \quad
+(c) \SI{20.0}{\milli\litre} \quad (d) \SI{0.160}{\Molar}}
+\keyonly{\begin{apcanswer}(a) $0.1000 \times 0.150 = 0.0150$~mol
+$\to$ 1:1 $\to$ $0.0150 \times 100.09 = \mathbf{1.50}$~g.
+(b) $0.0400 \times 0.250 = 0.0100$~mol $\to$ $0.0100 \times 183.7 =
+\mathbf{1.84}$~g. (c) \ce{Cl-}: $0.0250 \times 0.0400 \times 2 =
+0.00200$~mol, 1:1 with \ce{Ag+}: $V = 0.00200/0.100 = \mathbf{20.0}$~mL.
+(d) Nitrate is a spectator: $n = 2 \times 0.0100 = 0.0200$~mol in
+$\SI{125.0}{\milli\litre}$ $\Rightarrow 0.0200/0.1250 =
+\mathbf{0.160}$~M.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Neutralization stoichiometry}
+\zsec{4.8}
+
+Strong acid meets strong base and the net ionic equation is always the
+same: $\ce{H+(aq) + OH-(aq) -> H2O(l)}$. The only bookkeeping trap is a
+formula that delivers more than one \ce{H+} or \ce{OH-}.
+
+\begin{workedexample}[I do: how much base kills the acid]
+What volume of \SI{0.150}{\Molar} \ce{NaOH} neutralizes
+\SI{35.0}{\milli\litre} of \SI{0.0900}{\Molar} \ce{H2SO4}?
+
+\textbf{Moles of acid, then of \ce{H+}} --- sulfuric acid is diprotic:
+\[ 0.0350 \times 0.0900 = \SI{0.00315}{\mole}~\ce{H2SO4}
+   \;\Rightarrow\; 2 \times 0.00315 = \SI{0.00630}{\mole}~\ce{H+} \]
+
+\textbf{\ce{OH-} required} (1:1 with \ce{H+}): \SI{0.00630}{\mole}
+
+\textbf{Volume of base:}
+\[ V = \frac{0.00630}{0.150} = \SI{0.0420}{\litre} = \mathbf{42.0~mL} \]
+
+The factor of 2 is the whole exam question. Skip it and every downstream
+number is exactly half right --- which is to say, wrong.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Volume of \SI{0.100}{\Molar} \ce{HCl} to neutralize
+        \SI{20.0}{\milli\litre} of \SI{0.0500}{\Molar} \ce{Ba(OH)2}:
+        \workspace[1.8cm]
+  \item Molarity of an \ce{HNO3} solution if \SI{25.0}{\milli\litre} of
+        it is neutralized by \SI{18.4}{\milli\litre} of
+        \SI{0.150}{\Molar} \ce{KOH}: \workspace[1.8cm]
+  \item Mass of \ce{Mg(OH)2} ($M = \SI{58.33}{\gram\per\mole}$) needed to
+        neutralize \SI{250.}{\milli\litre} of \SI{0.100}{\Molar}
+        stomach-acid \ce{HCl}: \workspace[2cm]
+  \item Why did question (a) need a factor of 2 while question (b) did
+        not? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{20.0}{\milli\litre} \quad (b) \SI{0.110}{\Molar} \quad
+(c) \SI{0.729}{\gram} \quad (d) \ce{Ba(OH)2} delivers two \ce{OH-};
+\ce{HNO3} and \ce{KOH} are 1:1}
+\keyonly{\begin{apcanswer}(a) \ce{OH-}: $0.0200 \times 0.0500 \times 2 =
+0.00200$~mol $\Rightarrow V = 0.00200/0.100 = \mathbf{20.0}$~mL.
+(b) $n_{\ce{KOH}} = 0.0184 \times 0.150 = 0.00276$~mol $= n_{\ce{HNO3}}$;
+$M = 0.00276/0.0250 = \mathbf{0.110}$~M.
+(c) $n_{\ce{HCl}} = 0.250 \times 0.100 = 0.0250$~mol; \ce{Mg(OH)2}
+neutralizes two each: $0.0125 \times 58.33 = \mathbf{0.729}$~g.
+(d) The stoichiometry lives in the formula: \ce{Ba(OH)2} releases two
+hydroxides per unit; \ce{HNO3}/\ce{KOH} exchange one proton for one
+hydroxide.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Titration}
+\zsec{4.8}
+
+A titration is a neutralization run \emph{backward}: the known solution
+(the titrant) is added until the indicator changes, and the measured
+volume reveals the unknown. Vocabulary that gets tested:
+\term{equivalence point} (moles of \ce{H+} $=$ moles of \ce{OH-}, set by
+stoichiometry) versus \term{endpoint} (where the indicator changes ---
+chosen to coincide).
+
+\begin{workedexample}[I do: standardizing a sodium hydroxide solution]
+\ce{NaOH} solutions cannot be made to a precise concentration by weighing
+(the pellets absorb water), so they are \emph{standardized} against a
+weighable acid, potassium hydrogen phthalate (KHP,
+$M = \SI{204.22}{\gram\per\mole}$, one acidic H). A \SI{0.6745}{\gram}
+KHP sample requires \SI{27.85}{\milli\litre} of the \ce{NaOH} solution.
+Find the base's molarity.
+
+\textbf{Moles of acid, from the balance:}
+\[ \frac{0.6745}{204.22} = \SI{3.303e-3}{\mole}~\text{KHP} \]
+
+\textbf{At the endpoint, moles of \ce{NaOH} delivered $=$ moles of KHP}
+(1:1, one acidic H):
+\[ M_{\ce{NaOH}} = \frac{3.303\times10^{-3}}{0.02785}
+   = \mathbf{0.1186~M} \]
+
+The mass was weighed to four figures and the volume read to four, so the
+answer honestly carries four.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{25.00}{\milli\litre} of an \ce{H2SO4} solution requires
+        \SI{33.20}{\milli\litre} of \SI{0.1500}{\Molar} \ce{NaOH}. Find
+        the acid's molarity: \workspace[2cm]
+  \item Vinegar: \SI{25.00}{\milli\litre} requires
+        \SI{34.90}{\milli\litre} of \SI{0.1000}{\Molar} \ce{NaOH}. Find
+        the mass of acetic acid ($M = \SI{60.05}{\gram\per\mole}$, one
+        acidic H) in the sample: \workspace[2cm]
+  \item Distinguish the equivalence point from the endpoint in one
+        sentence each: \workspace[1.8cm]
+  \item Your buret reading at the endpoint was recorded one drop
+        ($\approx\SI{0.05}{\milli\litre}$) late. Is the reported acid
+        molarity in (a) too high or too low? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.0996}{\Molar} \quad (b) \SI{0.2096}{\gram} \quad
+(c) stoichiometric equality vs.\ indicator change \quad (d) too high}
+\keyonly{\begin{apcanswer}(a) $n_{\ce{NaOH}} = 0.03320 \times 0.1500 =
+4.980\times10^{-3}$; diprotic, so $n_{\ce{H2SO4}} = 2.490\times10^{-3}$;
+$M = 2.490\times10^{-3}/0.02500 = \mathbf{0.0996}$~M.
+(b) $n = 0.03490 \times 0.1000 = 3.490\times10^{-3}$~mol acid $\times\,
+60.05 = \mathbf{0.2096}$~g. (c) Equivalence: exactly enough titrant to
+consume the analyte, fixed by stoichiometry. Endpoint: where the
+indicator visibly changes; a good indicator puts it at the equivalence
+point. (d) A late reading overstates the base volume, overstating the
+moles of acid --- reported molarity is \textbf{too
+high}.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Oxidation states; spotting
+redox}
+\zsec{4.9}
+
+Oxidation states are electron bookkeeping. The rules, in priority order:
+element 0; monatomic ion $=$ its charge; F $-1$; O $-2$ (except
+peroxides); H $+1$ with nonmetals, $-1$ with metals; everything must sum
+to the species' overall charge. Then:
+
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+\textbf{OIL RIG} --- Oxidation Is Loss, Reduction Is Gain (of
+electrons). The substance \emph{containing} the oxidized atom is the
+\textbf{reducing agent}, and vice versa.}}
+\end{center}
+
+\begin{workedexample}[I do: assigning states, then judging a reaction]
+\textbf{(a) Chromium in \ce{K2Cr2O7}:} K is $+1$ ($\times 2 = +2$), O is
+$-2$ ($\times 7 = -14$); the compound is neutral, so
+$2x + 2 - 14 = 0 \Rightarrow x = \mathbf{+6}$.
+
+\textbf{(b) Sulfur in \ce{SO3^2-}:} O contributes $-6$; the ion carries
+$2-$, so $x - 6 = -2 \Rightarrow x = \mathbf{+4}$.
+
+\textbf{(c) Is $\ce{Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)}$ redox?}
+Zn: $0 \to +2$ --- lost electrons, \textbf{oxidized}, so zinc metal is
+the \textbf{reducing agent}. Cu: $+2 \to 0$ --- gained electrons,
+\textbf{reduced}, so \ce{CuSO4} (the \ce{Cu^2+} in it) is the
+\textbf{oxidizing agent}. S and O never change ($+6$, $-2$): sulfate is
+along for the ride.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Oxidation state of Cl in \ce{ClO3-}: \workspace[1.2cm]
+  \item Oxidation state of P in \ce{PO4^3-}: \workspace[1.2cm]
+  \item In $\ce{2Al(s) + 3Br2(l) -> 2AlBr3(s)}$, identify what is
+        oxidized, what is reduced, and both agents: \workspace[1.8cm]
+  \item Is $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$ a redox reaction? Prove
+        your answer with oxidation states: \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $+5$ \quad (b) $+5$ \quad (c) Al oxidized (reducing
+agent); \ce{Br2} reduced (oxidizing agent) \quad (d) no --- no state
+changes}
+\keyonly{\begin{apcanswer}(a) $x - 6 = -1 \Rightarrow \mathbf{+5}$.
+(b) $x - 8 = -3 \Rightarrow \mathbf{+5}$.
+(c) Al: $0 \to +3$, oxidized $\Rightarrow$ Al is the reducing agent.
+Br: $0 \to -1$, reduced $\Rightarrow$ \ce{Br2} is the oxidizing agent.
+(d) \textbf{No.} Ca stays $+2$, C stays $+4$, O stays $-2$ in every
+species --- decomposition without electron transfer is not
+redox.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Balancing redox; a redox
+titration}
+\zsec{4.10--4.11}
+
+Balancing by \textbf{oxidation states}: find the per-atom electron loss
+and gain, choose coefficients so total loss $=$ total gain, then finish
+the non-redox atoms by inspection.
+
+\begin{workedexample}[I do: copper dissolving in dilute nitric acid]
+\[ \ce{Cu(s) + HNO3(aq) -> Cu(NO3)2(aq) + NO(g) + H2O(l)}
+   \qquad\text{(unbalanced)} \]
+
+\textbf{Find the changes:} Cu $0 \to +2$: loses 2. N $+5 \to +2$ (in the
+NO only): gains 3.
+
+\textbf{Equalize electrons:} $3 \times \text{Cu}$ loses 6;
+$2 \times \text{N}$ gains 6:
+\[ \ce{3Cu + HNO3 -> 3Cu(NO3)2 + 2NO + H2O} \]
+
+\textbf{Finish by inspection.} The right side now holds $6 + 2 = 8$ N,
+so 8 \ce{HNO3}; 8 H makes 4 \ce{H2O}:
+\[ \boxed{\;\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 2NO + 4H2O}\;} \]
+
+\textbf{Count everything:} Cu $3=3$; N $8 = 6+2$; H $8 = 8$; O
+$24 = 18 + 2 + 4$. Note only 2 of the 8 nitrogens changed state --- the
+other 6 became spectator nitrate.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Balance the thermite reaction by electron counting:
+        $\ce{Al + Fe2O3 -> Al2O3 + Fe}$ \workspace[1.8cm]
+  \item Balance by electron counting: $\ce{Mg + N2 -> Mg3N2}$
+        \workspace[1.8cm]
+  \item A \SI{25.00}{\milli\litre} sample of hydrogen peroxide solution
+        requires \SI{31.25}{\milli\litre} of \SI{0.0400}{\Molar}
+        \ce{KMnO4}:
+        $\ce{2MnO4- + 5H2O2 + 6H+ -> 2Mn^2+ + 5O2 + 8H2O}$.
+        Find $[\ce{H2O2}]$: \workspace[2.2cm]
+  \item In that titration no indicator is added. What signals the
+        endpoint? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{2Al + Fe2O3 -> Al2O3 + 2Fe} \quad
+(b) \ce{3Mg + N2 -> Mg3N2} \quad (c) \SI{0.125}{\Molar} \quad
+(d) the first drop of permanganate that stays purple}
+\keyonly{\begin{apcanswer}(a) Al $0 \to +3$ loses 3; Fe $+3 \to 0$ gains
+3: two of each. \ce{2Al + Fe2O3 -> Al2O3 + 2Fe}.
+(b) Mg loses 2, N gains 3; equalize at 6: \ce{3Mg + N2 -> Mg3N2}.
+(c) $n_{\ce{MnO4-}} = 0.03125 \times 0.0400 = 1.250\times10^{-3}$~mol
+$\times \tfrac{5}{2} = 3.125\times10^{-3}$~mol \ce{H2O2};
+$M = 3.125\times10^{-3}/0.02500 = \mathbf{0.125}$~M.
+(d) While peroxide remains, added \ce{MnO4-} is consumed to nearly
+colorless \ce{Mn^2+}; when the analyte is gone, the next drop keeps its
+purple color --- permanganate is its own indicator.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}c p{6.6cm} c p{4.4cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & precipitation stoichiometry & 1 & combined-volume step \\
+$\square$ & neutralization amounts & 2 & the diprotic factor of 2 \\
+$\square$ & titration calculations & 3 & KHP standardization \\
+$\square$ & oxidation states; redox ID & 4 & the priority rules; OIL RIG \\
+$\square$ & balancing redox; redox titration & 5 & loss $=$ gain first \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+5/5: you have finished Chapter 4's calculations --- the end-of-chapter
+problem set is now practice, not new learning. 3--4: redo the missed
+ladders tomorrow. 2 or fewer: the recurring root causes here are (1)
+molarity $\times$ litres \emph{before} any ratio, (2) the per-formula
+count of \ce{H+}, \ce{OH-}, or electrons, and (3) dividing leftover
+moles by the \emph{combined} volume. Fix the habit and rerun the
+ladders.
+\end{apcnote}
+
+\end{document}
