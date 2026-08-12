@@ -1,0 +1,416 @@
+% Ch3 self-study -- "I do / You do" ladder for Zumdahl 3.7-3.11. Every
+% concept: one fully worked example, then a twin problem with new numbers
+% for the student, whose bare final answer is visible in every edition
+% (\selfcheck) while the full solution stays key-only. Compounds differ
+% from ch03-notes and ch03-examples.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Self-Study \textbullet\ \S3.7--3.11, I~do / You~do}
+\apcsubtitle{Zumdahl \S3.7--3.11 \textbullet\ PDF pp.\ 125--153 \textbullet\ work every YOUR TURN before moving on}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill comes as a \textbf{ladder} with two rungs. The solid-framed box
+is the \textbf{worked example}: read it slowly, with a pencil, reproducing
+each step. The dashed box is \textbf{YOUR TURN}: the same problem with new
+numbers, and no help.
+
+The rules that make this work as self-study:
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item \textbf{Attempt the YOUR TURN completely} before looking at
+        anything. Write real work in the workspace, not fragments.
+  \item Check your result against the small gray \emph{check:} line. Right
+        first try? Tick it on the tracker (last page) and climb on.
+  \item Wrong? \textbf{Re-read the worked example, then redo} --- do not
+        stare at your first attempt. Full solutions are in the teacher
+        key if you are stuck after two tries.
+\end{enumerate}
+The tracker at the end tells you what to re-study. Done honestly, this
+document grades itself.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Formula from percent composition}
+\zsec{3.7}
+
+The four steps, always the same: assume \SI{100}{\gram} so percents become
+grams; convert each element to moles; divide everything by the smallest;
+multiply to whole numbers if needed. The molecular formula is the
+empirical formula times $M/M_{\text{empirical}}$.
+
+\begin{workedexample}[I do: caffeine]
+A stimulant is 49.47\% C, 5.19\% H, 28.86\% N, and 16.48\% O, with molar
+mass \SI{194.20}{\gram\per\mole}. Find both formulas.
+
+\textbf{Assume \SI{100}{\gram}, convert to moles:}
+\[ \ce{C}: \frac{49.47}{12.01} = 4.119 \qquad
+   \ce{H}: \frac{5.19}{1.008} = 5.15 \qquad
+   \ce{N}: \frac{28.86}{14.01} = 2.060 \qquad
+   \ce{O}: \frac{16.48}{16.00} = 1.030 \]
+
+\textbf{Divide by the smallest (1.030):}
+\[ \ce{C}: 4.00 \qquad \ce{H}: 5.00 \qquad \ce{N}: 2.00 \qquad
+   \ce{O}: 1.00 \]
+
+\textbf{Empirical} \ce{C4H5N2O}, with
+$M_{\text{emp}} = 4(12.01) + 5(1.008) + 2(14.01) + 16.00
+= \SI{97.10}{\gram\per\mole}$.
+
+\textbf{Molecular:} $194.20 / 97.10 = 2.00$, so
+$\boxed{\ce{C8H10N4O2}}$ --- caffeine.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1]
+A fertilizer compound is 20.00\% C, 6.71\% H, 46.65\% N, and 26.64\% O,
+with molar mass \SI{60.06}{\gram\per\mole}. Find both formulas.
+\workspace[3.6cm]
+\selfcheck{empirical \ce{CH4N2O}; multiplier $= 1$, so molecular also
+\ce{CH4N2O} (urea)}
+\keyonly{\begin{apcanswer}C: $20.00/12.01 = 1.665$;
+H: $6.71/1.008 = 6.66$; N: $46.65/14.01 = 3.330$;
+O: $26.64/16.00 = 1.665$. Divide by 1.665: $1 : 4 : 2 : 1 \to$
+\ce{CH4N2O}, $M_{\text{emp}} = 60.06 = M$, so the molecular formula is the
+empirical formula. The multiplier is 1 --- as in the pentane example
+later, never assume it is bigger.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Combustion analysis, C and H
+only}
+\zsec{3.7}
+
+In excess oxygen every C atom lands in a \ce{CO2} and every H atom in an
+\ce{H2O} --- so count the atoms there. Two H per water is the step most
+often dropped.
+
+\begin{workedexample}[I do: an unknown fuel gas]
+Burning \SI{0.5812}{\gram} of a compound of C and H gives
+\SI{1.760}{\gram} \ce{CO2} and \SI{0.901}{\gram} \ce{H2O}; the molar mass
+is \SI{58.12}{\gram\per\mole}.
+
+\textbf{Carbon:}
+$\dfrac{1.760}{44.01} = \SI{0.03999}{\mole}~\ce{CO2} \Rightarrow
+\SI{0.03999}{\mole}~\ce{C} \Rightarrow \SI{0.4803}{\gram}$
+
+\textbf{Hydrogen} (two per water):
+$\dfrac{0.901}{18.02} = \SI{0.05000}{\mole}~\ce{H2O} \Rightarrow
+\SI{0.1000}{\mole}~\ce{H} \Rightarrow \SI{0.1008}{\gram}$
+
+\textbf{Mass check:} $0.4803 + 0.1008 = \SI{0.5811}{\gram}$ --- the whole
+sample. C and H really are all there is.
+
+\textbf{Ratio:} $\ce{H}/\ce{C} = 0.1000/0.03999 = 2.50 = 5/2$, so the
+empirical formula is \ce{C2H5}, $M_{\text{emp}} = \SI{29.06}{\gram\per\mole}$.
+Then $58.12/29.06 = 2.00$: $\boxed{\ce{C4H10}}$, butane. Note the 2.50 was
+an instruction to multiply by 2, never to round.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2]
+Burning \SI{0.3007}{\gram} of a C,H compound gives \SI{0.880}{\gram}
+\ce{CO2} and \SI{0.541}{\gram} \ce{H2O}; the molar mass is
+\SI{30.07}{\gram\per\mole}. Find both formulas. \workspace[3.6cm]
+\selfcheck{$\ce{H}/\ce{C} = 3.00 \to$ empirical \ce{CH3}; $30.07/15.03 =
+2 \to$ molecular \ce{C2H6} (ethane)}
+\keyonly{\begin{apcanswer}C: $0.880/44.01 = 0.02000$~mol
+$\to 0.2402$~g. H: $2(0.541/18.02) = 0.06004$~mol $\to 0.0605$~g. Mass
+check $0.2402 + 0.0605 = 0.3007$~g --- complete.
+$\ce{H}/\ce{C} = 3.00 \to$ \ce{CH3},
+$M_{\text{emp}} = 15.03$; $30.07/15.03 = 2.00 \to$
+\ce{C2H6}.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Combustion analysis with oxygen
+in the compound}
+\zsec{3.7}
+
+Oxygen in the sample cannot be measured directly --- it ends up in the
+same \ce{CO2} and \ce{H2O} as the oxygen from the air. Find C and H as
+before; \textbf{oxygen is whatever sample mass is left}.
+
+\begin{workedexample}[I do: a compound of C, H, and O]
+Burning \SI{1.000}{\gram} of a compound of C, H, and O gives
+\SI{1.911}{\gram} \ce{CO2} and \SI{1.174}{\gram} \ce{H2O}; the molar mass
+is \SI{46.07}{\gram\per\mole}.
+
+\textbf{C and H first:}
+\[ \ce{C}: \frac{1.911}{44.01} = \SI{0.04342}{\mole} \to \SI{0.5215}{\gram}
+   \qquad
+   \ce{H}: 2 \times \frac{1.174}{18.02} = \SI{0.1303}{\mole}
+   \to \SI{0.1313}{\gram} \]
+
+\textbf{Oxygen by difference:}
+\[ m_{\ce{O}} = 1.000 - 0.5215 - 0.1313 = \SI{0.347}{\gram}
+   \Rightarrow \frac{0.347}{16.00} = \SI{0.0217}{\mole} \]
+
+\textbf{Divide by the smallest (0.0217):}
+$\ce{C}: 2.00$, $\ce{H}: 6.00$, $\ce{O}: 1.00$ --- empirical \ce{C2H6O},
+$M_{\text{emp}} = \SI{46.07}{\gram\per\mole} = M$, so
+$\boxed{\ce{C2H6O}}$, ethanol. Multiplier 1 again.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3]
+Burning \SI{1.500}{\gram} of a compound of C, H, and O gives
+\SI{2.199}{\gram} \ce{CO2} and \SI{0.900}{\gram} \ce{H2O}; the molar mass
+is \SI{90.08}{\gram\per\mole}. Find both formulas. \workspace[4.2cm]
+\selfcheck{empirical \ce{CH2O}; $90.08/30.03 = 3 \to$ molecular
+\ce{C3H6O3} (lactic acid)}
+\keyonly{\begin{apcanswer}C: $2.199/44.01 = 0.04997$~mol $\to 0.6001$~g;
+H: $2(0.900/18.02) = 0.0999$~mol $\to 0.1007$~g;
+O: $1.500 - 0.6001 - 0.1007 = 0.799$~g $\to 0.04996$~mol. Ratio
+$1 : 2 : 1 \to$ \ce{CH2O}, $M_{\text{emp}} = 30.03$;
+$90.08/30.03 = 3.00 \to$ \ce{C3H6O3}.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Reading a chemical equation}
+\zsec{3.8}
+
+An equation states how \emph{atoms rearrange}. Coefficients are
+\textbf{ratios} --- of molecules, or equally of moles --- never an
+inventory of what you have. Atoms and mass are conserved; molecules and
+moles need not be. And balancing is done only with coefficients: changing
+a subscript changes the substance.
+
+\begin{workedexample}[I do: reading an equation aloud]
+\[ \ce{4NH3(g) + 5O2(g) -> 4NO(g) + 6H2O(g)} \]
+Everything this equation asserts:
+\begin{itemize}[leftmargin=*,itemsep=0.15em]
+  \item Four ammonia molecules react with five oxygen molecules to give
+        four nitrogen monoxide molecules and six water molecules --- all
+        as gases.
+  \item Equally: 4 mol \ce{NH3} react with 5 mol \ce{O2} per 4 mol \ce{NO}
+        and 6 mol \ce{H2O}. Or 1 mol \ce{NH3} per $\tfrac{5}{4}$ mol
+        \ce{O2} --- the ratio is the content, not the absolute numbers.
+  \item Atom check: N $4 = 4$; H $12 = 12$; O $10 = 4 + 6$. Conserved.
+  \item Nine molecules become ten. Fine --- molecule count is not
+        conserved; atoms are.
+\end{itemize}
+What it does \emph{not} assert: that 4 grams of ammonia react with 5 grams
+of oxygen. Coefficients never count grams.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4]
+For $\ce{2C2H6(g) + 7O2(g) -> 4CO2(g) + 6H2O(g)}$, mark each claim true or
+false, with one reason:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item \SI{2}{\gram} of ethane react with \SI{7}{\gram} of oxygen.
+        \answerlines[1]{False --- coefficients are mole (or molecule)
+        ratios, never gram amounts.}
+  \item One mole of ethane requires 3.5 mol of \ce{O2}.
+        \answerlines[1]{True --- $7/2 = 3.5$; ratios scale.}
+  \item The equation is unbalanced, because 9 molecules become 10.
+        \answerlines[1]{False --- every atom balances (C $4=4$, H
+        $12=12$, O $14 = 8+6$); molecule count is not conserved.}
+\end{enumerate}
+\selfcheck{F, T, F}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Balancing by inspection}
+\zsec{3.9}
+
+Strategy: start from the most complicated molecule; save lone elements
+(\ce{O2}, metals) for last, because their coefficient can be set freely;
+if an odd atom count forces a fraction, use it, then double everything.
+Count every atom at the end.
+
+\begin{workedexample}[I do: methanol combustion]
+\[ \ce{CH3OH(l) + O2(g) -> CO2(g) + H2O(g)} \qquad\text{(unbalanced)} \]
+
+\textbf{Methanol first} --- 1 C gives $1\,\ce{CO2}$; 4 H give
+$2\,\ce{H2O}$:
+\[ \ce{CH3OH + O2 -> CO2 + 2H2O} \]
+
+\textbf{Oxygen last:} right side $2 + 2 = 4$ O; methanol already carries
+1, so \ce{O2} must supply 3 atoms $= \tfrac{3}{2}$ molecules:
+\[ \ce{CH3OH + \tfrac{3}{2}O2 -> CO2 + 2H2O} \]
+
+\textbf{Clear the fraction --- double \emph{every} coefficient:}
+\[ \boxed{\;\ce{2CH3OH(l) + 3O2(g) -> 2CO2(g) + 4H2O(g)}\;} \]
+Count: C $2 = 2$; H $8 = 8$; O $2 + 6 = 4 + 4$. Balanced.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5]
+Balance propanol combustion, then the three quick ones (smallest whole
+coefficients):
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item \ce{C3H7OH(l) + O2(g) -> CO2(g) + H2O(g)} \workspace[2cm]
+  \item \ce{Al(s) + O2(g) -> Al2O3(s)}
+        \answerblank[5.4cm]{\ce{4Al + 3O2 -> 2Al2O3}}
+  \item \ce{C2H4(g) + O2(g) -> CO2(g) + H2O(g)}
+        \answerblank[6.6cm]{\ce{C2H4 + 3O2 -> 2CO2 + 2H2O}}
+  \item \ce{Fe2O3(s) + C(s) -> Fe(l) + CO2(g)}
+        \answerblank[7cm]{\ce{2Fe2O3 + 3C -> 4Fe + 3CO2}}
+\end{enumerate}
+\selfcheck{(a) \ce{2C3H7OH + 9O2 -> 6CO2 + 8H2O} --- the $\tfrac{9}{2}$
+had to be cleared by doubling all four coefficients}
+\keyonly{\begin{apcanswer}(a) Propanol sets C ($3\,\ce{CO2}$) and H
+($4\,\ce{H2O}$); the right side then holds $6 + 4 = 10$ O against
+propanol's 1, so \ce{O2} supplies 9 atoms $= \tfrac{9}{2}$ molecules;
+doubling everything gives \ce{2C3H7OH + 9O2 -> 6CO2 + 8H2O}. Count: C
+$6=6$, H $16=16$, O $2 + 18 = 12 + 8$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Mass-to-mass stoichiometry}
+\zsec{3.10}
+
+\begin{center}
+\fbox{\parbox{0.9\linewidth}{\centering
+grams of A $\xrightarrow{\;\div M_A\;}$ moles of A
+$\xrightarrow{\;\text{coefficients}\;}$ moles of B
+$\xrightarrow{\;\times M_B\;}$ grams of B}}
+\end{center}
+
+Grams never talk to grams directly --- the equation's coefficients only
+convert \emph{moles}.
+
+\begin{workedexample}[I do: oxygen from potassium chlorate, both directions]
+Heating potassium chlorate releases oxygen:
+$\ce{2KClO3(s) -> 2KCl(s) + 3O2(g)}$, with
+$M_{\ce{KClO3}} = \SI{122.55}{\gram\per\mole}$.
+
+\textbf{(a) Mass of \ce{O2} from \SI{12.25}{\gram} \ce{KClO3}:}
+\[ \frac{12.25}{122.55} = \SI{0.09996}{\mole}~\ce{KClO3}
+   \;\xrightarrow{\times 3/2}\; \SI{0.1499}{\mole}~\ce{O2}
+   \;\xrightarrow{\times 32.00}\; \mathbf{4.80~g} \]
+
+\textbf{(b) Mass of \ce{KClO3} needed for \SI{1.00}{\gram} \ce{O2}} ---
+same machine, run backward:
+\[ \frac{1.00}{32.00} = \SI{0.03125}{\mole}~\ce{O2}
+   \;\xrightarrow{\times 2/3}\; \SI{0.02083}{\mole}~\ce{KClO3}
+   \;\xrightarrow{\times 122.55}\; \mathbf{2.55~g} \]
+
+The ratio flipped from $\tfrac{3}{2}$ to $\tfrac{2}{3}$ when the direction
+flipped --- read it off the coefficients each time; never guess a
+direction.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6]
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Hydrogen peroxide decomposes:
+        $\ce{2H2O2(aq) -> 2H2O(l) + O2(g)}$,
+        $M_{\ce{H2O2}} = \SI{34.02}{\gram\per\mole}$. What mass of
+        \ce{O2} comes from \SI{6.80}{\gram} of \ce{H2O2}?
+        \workspace[2.4cm]
+  \item Limestone decomposes: $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$,
+        $M_{\ce{CaCO3}} = \SI{100.09}{\gram\per\mole}$. What mass of
+        \ce{CaCO3} must decompose to release \SI{5.00}{\gram} of
+        \ce{CO2}? \workspace[2.4cm]
+\end{enumerate}
+\selfcheck{(a) \SI{3.20}{\gram} \ce{O2} \quad (b) \SI{11.4}{\gram}
+\ce{CaCO3}}
+\keyonly{\begin{apcanswer}(a) $6.80/34.01 = 0.2000$~mol \ce{H2O2}
+$\times \tfrac{1}{2} = 0.1000$~mol \ce{O2} $\times 32.00 =
+\mathbf{3.20}$~g. (b) $5.00/44.01 = 0.1136$~mol \ce{CO2}
+$\times \tfrac{1}{1} = 0.1136$~mol \ce{CaCO3} $\times 100.09 =
+\mathbf{11.4}$~g.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Limiting reactant, yield, and
+leftovers}
+\zsec{3.11}
+
+When amounts of \emph{two} reactants are given: convert both to moles,
+then use the mole ratio to ask whether what is present covers what is
+required. The limiting reactant fixes everything --- theoretical yield
+comes from it alone, and the leftover is
+$(\text{present}) - (\text{consumed})$. The reactant with fewer grams, or
+even fewer moles, is \emph{not} automatically the limiting one.
+
+\begin{workedexample}[I do: burning magnesium, the whole problem]
+\SI{4.50}{\gram} of Mg burns in \SI{6.00}{\gram} of \ce{O2}:
+$\ce{2Mg(s) + O2(g) -> 2MgO(s)}$. Limiting reactant, theoretical yield,
+leftover mass --- and then the percent yield if \SI{6.50}{\gram} of MgO is
+actually collected.
+
+\textbf{Moles first:}
+\[ \ce{Mg}: \frac{4.50}{24.31} = \SI{0.1851}{\mole} \qquad
+   \ce{O2}: \frac{6.00}{32.00} = \SI{0.1875}{\mole} \]
+
+\textbf{Limiting?} The Mg present needs
+$0.1851 \times \tfrac{1}{2} = \SI{0.0926}{\mole}$ of \ce{O2}; 0.1875 mol
+is available --- plenty. So \textbf{Mg is limiting} even though the two
+mole amounts are nearly equal: the $2{:}1$ ratio decides, not the raw
+numbers.
+
+\textbf{Theoretical yield} (from Mg only):
+$0.1851 \times \tfrac{2}{2} = \SI{0.1851}{\mole}$ \ce{MgO}
+$\times\, 40.31 = \mathbf{7.46~g}$.
+
+\textbf{Leftover \ce{O2}:} $0.1875 - 0.0926 = \SI{0.0949}{\mole}$
+$\times\, 32.00 = \mathbf{3.04~g}$.
+
+\textbf{Mass check:} in $4.50 + 6.00 = 10.50$~g; out
+$7.46 + 3.04 = 10.50$~g. Books balanced.
+
+\textbf{Percent yield:}
+$\dfrac{6.50}{7.46} \times 100 = \mathbf{87.1\%}$ --- actual over
+theoretical, always.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7]
+\SI{10.0}{\gram} of Al reacts with \SI{30.0}{\gram} of CuO:
+$\ce{2Al(s) + 3CuO(s) -> Al2O3(s) + 3Cu(s)}$,
+$M_{\ce{CuO}} = \SI{79.55}{\gram\per\mole}$.
+\begin{enumerate}[leftmargin=*,itemsep=0.35em]
+  \item Which reactant is limiting? \workspace[2.6cm]
+  \item Theoretical yield of Cu, in grams: \workspace[2.2cm]
+  \item Mass of the excess reactant left over: \workspace[2.4cm]
+  \item If \SI{21.5}{\gram} of Cu is collected, the percent yield:
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) CuO \quad (b) \SI{24.0}{\gram} \quad (c) \SI{3.22}{\gram}
+Al left \quad (d) 89.7\%}
+\keyonly{\begin{apcanswer}(a) Al: $10.0/26.98 = 0.3706$~mol; CuO:
+$30.0/79.55 = 0.3771$~mol. The Al present would need
+$0.3706 \times \tfrac{3}{2} = 0.556$~mol CuO; only 0.3771 is there, so
+\textbf{CuO is limiting}. (b) Cu $= 0.3771 \times \tfrac{3}{3} =
+0.3771$~mol $\times\, 63.55 = \mathbf{24.0}$~g. (c) Al consumed
+$= 0.3771 \times \tfrac{2}{3} = 0.2514$~mol; left
+$= 0.3706 - 0.2514 = 0.1192$~mol $\times\, 26.98 = \mathbf{3.22}$~g.
+(d) $21.5/23.97 \times 100 = \mathbf{89.7\%}$ --- divide by the unrounded
+theoretical yield.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if your YOUR TURN was right on the \emph{first} attempt.
+Any unticked row: re-study that ladder's worked example before the next
+session, then redo the problem from a blank page.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}c p{6.6cm} c p{4.4cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & formula from percent composition & 1 & the four steps; caffeine \\
+$\square$ & combustion analysis, C and H & 2 & two H per water; butane \\
+$\square$ & combustion with O by difference & 3 & O by difference; ethanol \\
+$\square$ & reading an equation & 4 & coefficients are ratios \\
+$\square$ & balancing, incl.\ fractions & 5 & methanol; double everything \\
+$\square$ & mass-to-mass, both directions & 6 & the three-step spine \\
+$\square$ & limiting reactant + yield & 7 & required vs available \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+7/7 first-try: move on to the end-of-chapter problems. 5--6: solid ---
+redo the missed ladders tomorrow, not today (spacing beats cramming).
+4 or fewer: the gap is usually one of three habits, not seven separate
+problems --- check whether you (1) converted grams to moles before using
+any ratio, (2) doubled the H from \ce{H2O}, and (3) took ratios from
+coefficients rather than subscripts. Fix the habit and the ladders fall
+together.
+\end{apcnote}
+
+\end{document}

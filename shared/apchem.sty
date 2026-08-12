@@ -385,6 +385,32 @@
   before skip=6pt, after skip=8pt,
 }
 
+% ---------------------------------------------- self-study "I do / You do"
+% yourturn -- the "You do" rung of a worked-example ladder: a twin problem
+% the student attempts alone. Dashed frame distinguishes it from
+% workedexample in grayscale print. Deliberately UNBREAKABLE: the problem,
+% its workspace, and its check line must never be split across a page turn,
+% or the self-check ritual falls apart. Keep each yourturn under a page.
+\newtcolorbox{yourturn}[1][Your turn]{
+  enhanced,
+  colback=white, colframe=white, boxrule=0pt,
+  borderline={0.8pt}{0pt}{apcgray, dash pattern=on 3pt off 2pt},
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  title={\sffamily\bfseries\small #1},
+  coltitle=apcbannertext, colbacktitle=apcbannergray,
+  before skip=6pt, after skip=8pt,
+}
+
+% \selfcheck{answer} -- self-study feedback: the bare final answer, small
+% and gray, visible in EVERY edition, because a self-studier must be able
+% to check their own work. Full worked solutions still go through
+% \keyonly/apcanswer. Identical in student and key builds by construction,
+% so the footprint invariant is untouched.
+\newcommand{\selfcheck}[1]{%
+  \par\nopagebreak\vspace{0.15em}%
+  {\small\itshape\color{apcgray}check: #1}\par
+}
+
 % Spaced retrieval: every worksheet's back page pulls from earlier units.
 \newenvironment{spiralstrip}[1]{%
   \needspace{5\baselineskip}%
