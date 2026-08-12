@@ -1,0 +1,321 @@
+% Ch3 self-study (part 1) -- "I do / You do" ladder for Zumdahl 3.1-3.6.
+% Companion to ch03-selfstudy (3.7-3.11). Same format: worked example,
+% then a twin problem whose bare final answer is visible in every edition
+% (\selfcheck) while the full solution stays key-only. Examples disjoint
+% from ch03-notes and both other Ch3 documents.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Self-Study \textbullet\ \S3.1--3.6, I~do / You~do}
+\apcsubtitle{Zumdahl \S3.1--3.6 \textbullet\ PDF pp.\ 111--124 \textbullet\ work every YOUR TURN before moving on}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill comes as a \textbf{ladder} with two rungs. The solid-framed box
+is the \textbf{worked example}: read it slowly, with a pencil, reproducing
+each step. The dashed box is \textbf{YOUR TURN}: the same problem with new
+numbers, and no help.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item \textbf{Attempt the YOUR TURN completely} before looking at
+        anything. Write real work in the workspace, not fragments.
+  \item Check your result against the small gray \emph{check:} line. Right
+        first try? Tick it on the tracker (last page) and climb on.
+  \item Wrong? \textbf{Re-read the worked example, then redo} --- do not
+        stare at your first attempt. Full solutions are in the teacher key
+        if you are stuck after two tries.
+\end{enumerate}
+These six sections build one idea: the \textbf{mole} is how chemists count
+particles by weighing --- and everything else in Chapter 3 stands on it.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Counting by weighing; average
+atomic mass}
+\zsec{3.1--3.2}
+
+You cannot count atoms one at a time, but you can \emph{weigh} them in
+bulk --- and if you know the average mass of one unit, a mass \emph{is} a
+count. That is the whole trick of the chapter. For atoms the ``average
+mass of one unit'' is the tabulated atomic mass: a
+\textbf{weighted average} over the natural isotopes,
+\[ \bar m = \sum (\text{fractional abundance} \times \text{isotope mass}), \]
+measured by a mass spectrometer, where \textbf{peak height gives
+abundance}. No single atom has the average mass --- there is no chlorine
+atom weighing 35.45 u.
+
+\begin{workedexample}[I do: the atomic mass of silver]
+Natural silver is 51.839\% \ce{^{107}Ag} (106.905 u) and 48.161\%
+\ce{^{109}Ag} (108.905 u). Compute the tabulated atomic mass.
+
+\[ \bar m = (0.51839)(106.905) + (0.48161)(108.905) \]
+\[ \phantom{\bar m} = 55.418 + 52.450 = \mathbf{107.87~u} \]
+
+\textbf{Sanity checks, always both:} the result lies \emph{between} the
+two isotope masses, and it leans toward \ce{^{107}Ag} --- the more
+abundant isotope. An answer outside 106.905--108.905 means an abundance
+was dropped; an answer leaning the wrong way means the abundances were
+swapped.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1]
+Natural gallium is 60.108\% \ce{^{69}Ga} (68.926 u) and 39.892\%
+\ce{^{71}Ga} (70.925 u). Compute the atomic mass, and state both sanity
+checks. \workspace[3cm]
+\selfcheck{\SI{69.72}{u} --- between the isotope masses, leaning toward
+\ce{^{69}Ga}}
+\keyonly{\begin{apcanswer}$(0.60108)(68.926) + (0.39892)(70.925)
+= 41.430 + 28.294 = \mathbf{69.72}$~u. Between 68.926 and 70.925, and
+closer to 68.926 because \ce{^{69}Ga} is the more abundant
+isotope.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Working backward to an
+abundance}
+\zsec{3.2}
+
+Given the average and the isotope masses, the abundances follow from one
+equation: if $x$ is the fraction of the lighter isotope, the fractions
+must sum to 1, so the heavier one is $(1-x)$.
+
+\begin{workedexample}[I do: the isotopes of boron]
+Boron has two isotopes, \ce{^{10}B} (10.013 u) and \ce{^{11}B}
+(11.009 u), and a tabulated mass of 10.81 u. Find the percent abundances.
+
+\textbf{Set up} with $x$ = fraction of \ce{^{10}B}:
+\[ x(10.013) + (1 - x)(11.009) = 10.81 \]
+
+\textbf{Solve:}
+\[ 11.009 - 0.996\,x = 10.81 \quad\Longrightarrow\quad
+   x = \frac{11.009 - 10.81}{11.009 - 10.013} = \frac{0.199}{0.996}
+   = 0.200 \]
+
+So boron is \textbf{20.0\% \ce{^{10}B} and 80.0\% \ce{^{11}B}}.
+
+\textbf{Sanity check:} 10.81 sits much closer to 11.009 than to 10.013,
+so the heavy isotope had to dominate --- and it does, four to one.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2]
+Rubidium has two isotopes, \ce{^{85}Rb} (84.912 u) and \ce{^{87}Rb}
+(86.909 u), and a tabulated mass of 85.47 u. Find both percent
+abundances. \workspace[3.4cm]
+\selfcheck{72.1\% \ce{^{85}Rb}, 27.9\% \ce{^{87}Rb}}
+\keyonly{\begin{apcanswer}$x(84.912) + (1-x)(86.909) = 85.47
+\Rightarrow x = (86.909 - 85.47)/(86.909 - 84.912) = 1.439/1.997 =
+0.721$. So \textbf{72.1\%} \ce{^{85}Rb} and \textbf{27.9\%} \ce{^{87}Rb}.
+Sanity: 85.47 is near 84.912, so the light isotope dominates ---
+consistent.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ The mole}
+\zsec{3.3}
+
+One mole is $6.022\times10^{23}$ of anything --- chosen so that one mole
+of an element has a mass in grams numerically equal to its atomic mass in
+u. Two conversions, and only two:
+\[ \text{grams} \xrightarrow{\;\div M\;} \text{moles}
+   \xrightarrow{\;\times N_A\;} \text{particles} \]
+and each arrow reverses ($\times M$; $\div N_A$) to run the other way.
+Avogadro's number converts \textbf{moles to particles}, never grams to
+particles directly.
+
+\begin{workedexample}[I do: atoms in a foil strip]
+How many aluminum atoms are in a \SI{10.0}{\gram} strip of foil
+($M_{\ce{Al}} = \SI{26.98}{\gram\per\mole}$)?
+
+\textbf{Grams to moles first:}
+\[ \frac{10.0}{26.98} = \SI{0.371}{\mole}~\ce{Al} \]
+
+\textbf{Then moles to atoms:}
+\[ 0.371 \times 6.022\times10^{23} = \mathbf{2.23\times10^{23}~atoms} \]
+
+\textbf{Sense check:} a hand-sized object should hold a substantial
+fraction of a mole --- $10^{23}$ is the right neighbourhood. An answer
+like $10^{2}$ or $10^{46}$ means a conversion was skipped or doubled.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3]
+What is the mass of a sample containing $1.00\times10^{22}$ copper atoms
+($M_{\ce{Cu}} = \SI{63.55}{\gram\per\mole}$)? \workspace[2.8cm]
+\selfcheck{\SI{1.06}{\gram}}
+\keyonly{\begin{apcanswer}$1.00\times10^{22} / 6.022\times10^{23} =
+\SI{0.0166}{\mole}$; $0.0166 \times 63.55 = \mathbf{1.06}$~g. The chain
+ran particles $\to$ moles $\to$ grams --- the reverse of the worked
+example, same two conversions.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Molar mass of a compound}
+\zsec{3.4}
+
+A compound's molar mass is the sum over the formula, \emph{every
+subscript honoured} --- and once you have moles of the compound, the
+subscripts also convert to moles of each element inside it.
+
+\begin{workedexample}[I do: aluminum sulfate, down to the atoms]
+For \ce{Al2(SO4)3}: (a) the molar mass, (b) the moles in
+\SI{10.0}{\gram}, (c) the number of oxygen \emph{atoms} in that sample.
+
+\textbf{(a)} The parentheses multiply everything inside:
+\[ M = 2(26.98) + 3(32.07) + 12(16.00)
+     = 53.96 + 96.21 + 192.0 = \SI{342.2}{\gram\per\mole} \]
+(12 oxygens --- $4 \times 3$ --- not 4. Mis-reading parentheses is the
+single commonest molar-mass error.)
+
+\textbf{(b)} $\dfrac{10.0}{342.2} = \SI{0.0292}{\mole}$
+
+\textbf{(c)} Each formula unit carries 12 O atoms:
+\[ 0.0292 \times 12 = \SI{0.351}{\mole}~\ce{O}
+   \;\Rightarrow\; 0.351 \times 6.022\times10^{23}
+   = \mathbf{2.11\times10^{23}~atoms} \]
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4]
+For \ce{K2Cr2O7} ($M_{\ce{K}} = 39.10$, $M_{\ce{Cr}} = 52.00$):
+(a) the molar mass, (b) the moles in \SI{5.00}{\gram}, (c) the number of
+oxygen atoms in that sample. \workspace[3.4cm]
+\selfcheck{(a) \SI{294.2}{\gram\per\mole} \quad (b) \SI{0.0170}{\mole}
+\quad (c) $7.16\times10^{22}$ O atoms}
+\keyonly{\begin{apcanswer}(a) $2(39.10) + 2(52.00) + 7(16.00) = 78.20 +
+104.0 + 112.0 = \mathbf{294.2}$~g/mol. (b) $5.00/294.2 =
+\mathbf{0.0170}$~mol. (c) $0.0170 \times 7 = 0.119$~mol O $\times\,
+6.022\times10^{23} = \mathbf{7.16\times10^{22}}$
+atoms.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Zumdahl's three questions}
+\zsec{3.5}
+
+Section 3.5 teaches no chemistry --- it teaches the \emph{approach} that
+every multi-step problem in this book expects:
+
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+\textbf{Where am I going?} \quad \textbf{What do I know?} \quad
+\textbf{Does my answer make sense?}}}
+\end{center}
+
+Plan the route \emph{before} touching the calculator, and check the
+result \emph{after}. The middle --- arithmetic --- is the easy part.
+
+\begin{workedexample}[I do: the three questions, worked visibly]
+How many hydrogen atoms are in \SI{8.52}{\gram} of ammonia, \ce{NH3}?
+
+\textbf{Where am I going?} From grams of a compound to \emph{atoms of one
+element inside it}. Route: grams $\to$ mol \ce{NH3} $\to$ mol H (via the
+subscript) $\to$ atoms (via $N_A$). Three hops, planned before any
+arithmetic.
+
+\textbf{What do I know?} $M_{\ce{NH3}} = 14.01 + 3(1.008) =
+\SI{17.03}{\gram\per\mole}$; each \ce{NH3} carries 3 H.
+
+\textbf{Execute the plan:}
+\[ \frac{8.52}{17.03} = \SI{0.500}{\mole}~\ce{NH3}
+   \;\xrightarrow{\times 3}\; \SI{1.50}{\mole}~\ce{H}
+   \;\xrightarrow{\times N_A}\; \mathbf{9.04\times10^{23}~atoms} \]
+
+\textbf{Does it make sense?} Half a mole of molecules, three H each ---
+about 1.5 moles of H, so a bit more than $N_A$ atoms. Yes.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5]
+What mass of oxygen is contained in \SI{0.750}{\mole} of \ce{CO2}?
+\textbf{First write the route as arrows} (no numbers), then execute, then
+state why the size of the answer is reasonable. \workspace[3.2cm]
+\selfcheck{route: mol \ce{CO2} $\to$ mol O $\to$ g O; answer
+\SI{24.0}{\gram}}
+\keyonly{\begin{apcanswer}Route: mol \ce{CO2}
+$\xrightarrow{\times 2}$ mol O $\xrightarrow{\times 16.00}$ g O.
+$0.750 \times 2 = 1.50$~mol O $\times\, 16.00 = \mathbf{24.0}$~g. Sense:
+0.750 mol of \ce{CO2} is about 33 g, and oxygen is $32/44$ of the
+compound's mass --- roughly 24 g. Consistent.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Percent composition}
+\zsec{3.6}
+
+Each element's mass percent is its share of the molar mass:
+\[ \%~\text{element} =
+   \frac{n \times M_{\text{element}}}{M_{\text{compound}}} \times 100 \]
+where $n$ is the subscript. The percents must total 100 (within
+rounding) --- that check is free, so always run it.
+
+\begin{workedexample}[I do: aspirin, and a real tablet]
+Aspirin is \ce{C9H8O4}. Find the mass percent of each element, then the
+mass of carbon in one \SI{500.0}{\milli\gram} tablet.
+
+\textbf{Molar mass:}
+$M = 9(12.01) + 8(1.008) + 4(16.00) = 108.09 + 8.064 + 64.00 =
+\SI{180.15}{\gram\per\mole}$
+
+\textbf{Each element's share:}
+\[ \%\ce{C} = \frac{108.09}{180.15} \times 100 = 60.00\% \qquad
+   \%\ce{H} = \frac{8.064}{180.15} \times 100 = 4.48\% \]
+\[ \%\ce{O} = \frac{64.00}{180.15} \times 100 = 35.53\% \]
+
+\textbf{Total check:} $60.00 + 4.48 + 35.53 = 100.01$ --- within rounding
+of 100 (each percent was rounded to two decimals). A total off by more
+than about $\pm 0.05$ is not rounding; it is an arithmetic slip.
+
+\textbf{The tablet:} percent composition is a recipe for \emph{any}
+sample size:
+\[ m_{\ce{C}} = 0.5000 \times 0.6000 = \SI{0.300}{\gram}~\text{of carbon} \]
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6]
+Ammonium nitrate fertilizer is \ce{NH4NO3}
+($M = \SI{80.05}{\gram\per\mole}$). Find the mass percent of each
+element (run the total check), then the mass of nitrogen in a
+\SI{25.0}{\gram} scoop. \workspace[4cm]
+\selfcheck{35.00\% N, 5.04\% H, 59.96\% O (total 100.00); N in the scoop
+\SI{8.75}{\gram}}
+\keyonly{\begin{apcanswer}$\%\ce{N} = 2(14.01)/80.05 = 35.00\%$;
+$\%\ce{H} = 4(1.008)/80.05 = 5.04\%$;
+$\%\ce{O} = 3(16.00)/80.05 = 59.96\%$. Total $100.00$.
+$m_{\ce{N}} = 25.0 \times 0.3500 = \mathbf{8.75}$~g. Note both N atoms
+count --- the subscripts are read across the whole formula, ammonium and
+nitrate alike.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if your YOUR TURN was right on the \emph{first} attempt.
+Any unticked row: re-study that ladder's worked example before the next
+session, then redo the problem from a blank page.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}c p{6.6cm} c p{4.4cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & weighted-average atomic mass & 1 & silver; both sanity checks \\
+$\square$ & abundances from the average & 2 & boron; the $(1-x)$ setup \\
+$\square$ & grams--moles--particles & 3 & the two-conversion chain \\
+$\square$ & molar mass; atoms inside a sample & 4 & the parentheses rule \\
+$\square$ & planning before calculating & 5 & the three questions \\
+$\square$ & percent composition & 6 & aspirin; the total check \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+6/6 first-try: go straight on to the \S3.7--3.11 self-study --- these six
+skills are exactly what it assumes. 4--5: solid; redo the missed ladders
+tomorrow, not today. 3 or fewer: the gap is usually one of three habits
+--- (1) grams never convert to particles directly, only through moles;
+(2) subscripts multiply, including through parentheses; (3) every answer
+gets a does-it-make-sense pass before you write it down. Fix the habit
+and the ladders fall together.
+\end{apcnote}
+
+\end{document}
