@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 • Self-Study • §3.7–3.11, I do / You do</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 3 • Stoichiometry</p>
+  <h1>Self-Study • §3.7–3.11, I do / You do</h1>
+  <p class="subtitle">Zumdahl §3.7–3.11 • PDF pp. 125–153 • work every YOUR TURN before moving on</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill comes as a <strong>ladder</strong> with two rungs. The solid-framed box
+is the <strong>worked example</strong>: read it slowly, with a pencil, reproducing
+each step. The dashed box is <strong>YOUR TURN</strong>: the same problem with new
+numbers, and no help.</p>
+
+The rules that make this work as self-study:
+<ol>
+
+<li><strong>Attempt the YOUR TURN completely</strong> before looking at
+        anything. Write real work in the workspace, not fragments.
+
+<li>Check your result against the small gray <em>check:</em> line. Right
+        first try? Tick it on the tracker (last page) and climb on.
+
+<li>Wrong? <strong>Re-read the worked example, then redo</strong> — do not
+        stare at your first attempt. Full solutions are in the teacher
+        key if you are stuck after two tries.
+</ol>
+The tracker at the end tells you what to re-study. Done honestly, this
+document grades itself.
+
+</div>
+
+<h2> Ladder 1 • Formula from percent composition</h2>
+<span class="badge">ZUM §3.7</span>
+
+<p>The four steps, always the same: assume 100&thinsp;g so percents become
+grams; convert each element to moles; divide everything by the smallest;
+multiply to whole numbers if needed. The molecular formula is the
+empirical formula times \(M/M_{\text{empirical}}\).</p>
+
+<div class="box we"><div class="box-title">I do: caffeine</div>
+
+<p>A stimulant is 49.47% C, 5.19% H, 28.86% N, and 16.48% O, with molar
+mass 194.20&thinsp;g/mol. Find both formulas.</p>
+
+<strong>Assume 100&thinsp;g, convert to moles:</strong>
+\[ \ce{C}: \frac{49.47}{12.01} = 4.119 \qquad
+   \ce{H}: \frac{5.19}{1.008} = 5.15 \qquad
+   \ce{N}: \frac{28.86}{14.01} = 2.060 \qquad
+   \ce{O}: \frac{16.48}{16.00} = 1.030 \]
+
+<strong>Divide by the smallest (1.030):</strong>
+\[ \ce{C}: 4.00 \qquad \ce{H}: 5.00 \qquad \ce{N}: 2.00 \qquad
+   \ce{O}: 1.00 \]
+
+<strong>Empirical</strong> \(\ce{C4H5N2O}\), with
+\(M_{\text{emp}} = 4(12.01) + 5(1.008) + 2(14.01) + 16.00
+= 97.10\,\mathrm{g/mol}\).
+
+<strong>Molecular:</strong> \(194.20 / 97.10 = 2.00\), so
+\(\boxed{\ce{C8H10N4O2}}\) — caffeine.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1</div>
+
+A fertilizer compound is 20.00% C, 6.71% H, 46.65% N, and 26.64% O,
+with molar mass 60.06&thinsp;g/mol. Find both formulas.
+<div class="workspace" style="height:3.6cm"></div>
+<p class="selfcheck"><em>check:</em> empirical \(\ce{CH4N2O}\); multiplier \(= 1\), so molecular also
+\(\ce{CH4N2O}\) (urea)</p>
+
+</div>
+
+<h2> Ladder 2 • Combustion analysis, C and H
+only</h2>
+<span class="badge">ZUM §3.7</span>
+
+<p>In excess oxygen every C atom lands in a \(\ce{CO2}\) and every H atom in an
+\(\ce{H2O}\) — so count the atoms there. Two H per water is the step most
+often dropped.</p>
+
+<div class="box we"><div class="box-title">I do: an unknown fuel gas</div>
+
+<p>Burning 0.5812&thinsp;g of a compound of C and H gives
+1.760&thinsp;g \(\ce{CO2}\) and 0.901&thinsp;g \(\ce{H2O}\); the molar mass
+is 58.12&thinsp;g/mol.</p>
+
+<strong>Carbon:</strong>
+\(\dfrac{1.760}{44.01} = 0.03999\,\mathrm{mol}~\ce{CO2} \Rightarrow
+0.03999\,\mathrm{mol}~\ce{C} \Rightarrow 0.4803\,\mathrm{g}\)
+
+<strong>Hydrogen</strong> (two per water):
+\(\dfrac{0.901}{18.02} = 0.05000\,\mathrm{mol}~\ce{H2O} \Rightarrow
+0.1000\,\mathrm{mol}~\ce{H} \Rightarrow 0.1008\,\mathrm{g}\)
+
+<strong>Mass check:</strong> \(0.4803 + 0.1008 = 0.5811\,\mathrm{g}\) — the whole
+sample. C and H really are all there is.
+
+<strong>Ratio:</strong> \(\ce{H}/\ce{C} = 0.1000/0.03999 = 2.50 = 5/2\), so the
+empirical formula is \(\ce{C2H5}\), \(M_{\text{emp}} = 29.06\,\mathrm{g/mol}\).
+Then \(58.12/29.06 = 2.00\): \(\boxed{\ce{C4H10}}\), butane. Note the 2.50 was
+an instruction to multiply by 2, never to round.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2</div>
+
+Burning 0.3007&thinsp;g of a C,H compound gives 0.880&thinsp;g
+\(\ce{CO2}\) and 0.541&thinsp;g \(\ce{H2O}\); the molar mass is
+30.07&thinsp;g/mol. Find both formulas. <div class="workspace" style="height:3.6cm"></div>
+<p class="selfcheck"><em>check:</em> \(\ce{H}/\ce{C} = 3.00 \to\) empirical \(\ce{CH3}\); \(30.07/15.03 =
+2 \to\) molecular \(\ce{C2H6}\) (ethane)</p>
+
+</div>
+
+<h2> Ladder 3 • Combustion analysis with oxygen
+in the compound</h2>
+<span class="badge">ZUM §3.7</span>
+
+<p>Oxygen in the sample cannot be measured directly — it ends up in the
+same \(\ce{CO2}\) and \(\ce{H2O}\) as the oxygen from the air. Find C and H as
+before; <strong>oxygen is whatever sample mass is left</strong>.</p>
+
+<div class="box we"><div class="box-title">I do: a compound of C, H, and O</div>
+
+<p>Burning 1.000&thinsp;g of a compound of C, H, and O gives
+1.911&thinsp;g \(\ce{CO2}\) and 1.174&thinsp;g \(\ce{H2O}\); the molar mass
+is 46.07&thinsp;g/mol.</p>
+
+<strong>C and H first:</strong>
+\[ \ce{C}: \frac{1.911}{44.01} = 0.04342\,\mathrm{mol} \to 0.5215\,\mathrm{g}
+   \qquad
+   \ce{H}: 2 \times \frac{1.174}{18.02} = 0.1303\,\mathrm{mol}
+   \to 0.1313\,\mathrm{g} \]
+
+<strong>Oxygen by difference:</strong>
+\[ m_{\ce{O}} = 1.000 - 0.5215 - 0.1313 = 0.347\,\mathrm{g}
+   \Rightarrow \frac{0.347}{16.00} = 0.0217\,\mathrm{mol} \]
+
+<strong>Divide by the smallest (0.0217):</strong>
+\(\ce{C}: 2.00\), \(\ce{H}: 6.00\), \(\ce{O}: 1.00\) — empirical \(\ce{C2H6O}\),
+\(M_{\text{emp}} = 46.07\,\mathrm{g/mol} = M\), so
+\(\boxed{\ce{C2H6O}}\), ethanol. Multiplier 1 again.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3</div>
+
+Burning 1.500&thinsp;g of a compound of C, H, and O gives
+2.199&thinsp;g \(\ce{CO2}\) and 0.900&thinsp;g \(\ce{H2O}\); the molar mass
+is 90.08&thinsp;g/mol. Find both formulas. <div class="workspace" style="height:4.2cm"></div>
+<p class="selfcheck"><em>check:</em> empirical \(\ce{CH2O}\); \(90.08/30.03 = 3 \to\) molecular
+\(\ce{C3H6O3}\) (lactic acid)</p>
+
+</div>
+
+<h2> Ladder 4 • Reading a chemical equation</h2>
+<span class="badge">ZUM §3.8</span>
+
+<p>An equation states how <em>atoms rearrange</em>. Coefficients are
+<strong>ratios</strong> — of molecules, or equally of moles — never an
+inventory of what you have. Atoms and mass are conserved; molecules and
+moles need not be. And balancing is done only with coefficients: changing
+a subscript changes the substance.</p>
+
+<div class="box we"><div class="box-title">I do: reading an equation aloud</div>
+
+\[ \ce{4NH3(g) + 5O2(g) -> 4NO(g) + 6H2O(g)} \]
+Everything this equation asserts:
+<ul>
+
+<li>Four ammonia molecules react with five oxygen molecules to give
+        four nitrogen monoxide molecules and six water molecules — all
+        as gases.
+
+<li>Equally: 4 mol \(\ce{NH3}\) react with 5 mol \(\ce{O2}\) per 4 mol \(\ce{NO}\)
+        and 6 mol \(\ce{H2O}\). Or 1 mol \(\ce{NH3}\) per \(\tfrac{5}{4}\) mol
+        \(\ce{O2}\) — the ratio is the content, not the absolute numbers.
+
+<li>Atom check: N \(4 = 4\); H \(12 = 12\); O \(10 = 4 + 6\). Conserved.
+
+<li>Nine molecules become ten. Fine — molecule count is not
+        conserved; atoms are.
+</ul>
+What it does <em>not</em> assert: that 4 grams of ammonia react with 5 grams
+of oxygen. Coefficients never count grams.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4</div>
+
+For \(\ce{2C2H6(g) + 7O2(g) -> 4CO2(g) + 6H2O(g)}\), mark each claim true or
+false, with one reason:
+<ol>
+
+<li>2&thinsp;g of ethane react with 7&thinsp;g of oxygen.
+        <div class="lines"><div class="rule"></div></div>
+
+<li>One mole of ethane requires 3.5 mol of \(\ce{O2}\).
+        <div class="lines"><div class="rule"></div></div>
+
+<li>The equation is unbalanced, because 9 molecules become 10.
+        <div class="lines"><div class="rule"></div></div>
+</ol>
+<p class="selfcheck"><em>check:</em> F, T, F</p>
+
+</div>
+
+<h2> Ladder 5 • Balancing by inspection</h2>
+<span class="badge">ZUM §3.9</span>
+
+<p>Strategy: start from the most complicated molecule; save lone elements
+(\(\ce{O2}\), metals) for last, because their coefficient can be set freely;
+if an odd atom count forces a fraction, use it, then double everything.
+Count every atom at the end.</p>
+
+<div class="box we"><div class="box-title">I do: methanol combustion</div>
+
+\[ \ce{CH3OH(l) + O2(g) -> CO2(g) + H2O(g)} \qquad\text{(unbalanced)} \]
+
+<strong>Methanol first</strong> — 1 C gives \(1\,\ce{CO2}\); 4 H give
+\(2\,\ce{H2O}\):
+\[ \ce{CH3OH + O2 -> CO2 + 2H2O} \]
+
+<strong>Oxygen last:</strong> right side \(2 + 2 = 4\) O; methanol already carries
+1, so \(\ce{O2}\) must supply 3 atoms \(= \tfrac{3}{2}\) molecules:
+\[ \ce{CH3OH + \tfrac{3}{2}O2 -> CO2 + 2H2O} \]
+
+<strong>Clear the fraction — double <em>every</em> coefficient:</strong>
+\[ \boxed{\;\ce{2CH3OH(l) + 3O2(g) -> 2CO2(g) + 4H2O(g)}\;} \]
+Count: C \(2 = 2\); H \(8 = 8\); O \(2 + 6 = 4 + 4\). Balanced.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5</div>
+
+Balance propanol combustion, then the three quick ones (smallest whole
+coefficients):
+<ol>
+
+<li>\(\ce{C3H7OH(l) + O2(g) -> CO2(g) + H2O(g)}\) <div class="workspace" style="height:2cm"></div>
+
+<li>\(\ce{Al(s) + O2(g) -> Al2O3(s)}\)
+        <span class="blank" style="min-width:5.4cm"></span>
+
+<li>\(\ce{C2H4(g) + O2(g) -> CO2(g) + H2O(g)}\)
+        <span class="blank" style="min-width:6.6cm"></span>
+
+<li>\(\ce{Fe2O3(s) + C(s) -> Fe(l) + CO2(g)}\)
+        <span class="blank" style="min-width:7cm"></span>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) \(\ce{2C3H7OH + 9O2 -> 6CO2 + 8H2O}\) — the \(\tfrac{9}{2}\)
+had to be cleared by doubling all four coefficients</p>
+
+</div>
+
+<h2> Ladder 6 • Mass-to-mass stoichiometry</h2>
+<span class="badge">ZUM §3.10</span>
+
+<div class="center">
+<div class="fbox">
+grams of A \(\xrightarrow{\;\div M_A\;}\) moles of A
+\(\xrightarrow{\;\text{coefficients}\;}\) moles of B
+\(\xrightarrow{\;\times M_B\;}\) grams of B</div>
+</div>
+
+<p>Grams never talk to grams directly — the equation's coefficients only
+convert <em>moles</em>.</p>
+
+<div class="box we"><div class="box-title">I do: oxygen from potassium chlorate, both directions</div>
+
+<p>Heating potassium chlorate releases oxygen:
+\(\ce{2KClO3(s) -> 2KCl(s) + 3O2(g)}\), with
+\(M_{\ce{KClO3}} = 122.55\,\mathrm{g/mol}\).</p>
+
+<strong>(a) Mass of \(\ce{O2}\) from 12.25&thinsp;g \(\ce{KClO3}\):</strong>
+\[ \frac{12.25}{122.55} = 0.09996\,\mathrm{mol}~\ce{KClO3}
+   \;\xrightarrow{\times 3/2}\; 0.1499\,\mathrm{mol}~\ce{O2}
+   \;\xrightarrow{\times 32.00}\; \mathbf{4.80~g} \]
+
+<strong>(b) Mass of \(\ce{KClO3}\) needed for 1.00&thinsp;g \(\ce{O2}\)</strong> —
+same machine, run backward:
+\[ \frac{1.00}{32.00} = 0.03125\,\mathrm{mol}~\ce{O2}
+   \;\xrightarrow{\times 2/3}\; 0.02083\,\mathrm{mol}~\ce{KClO3}
+   \;\xrightarrow{\times 122.55}\; \mathbf{2.55~g} \]
+
+<p>The ratio flipped from \(\tfrac{3}{2}\) to \(\tfrac{2}{3}\) when the direction
+flipped — read it off the coefficients each time; never guess a
+direction.</p>
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6</div>
+
+<ol>
+
+<li>Hydrogen peroxide decomposes:
+        \(\ce{2H2O2(aq) -> 2H2O(l) + O2(g)}\),
+        \(M_{\ce{H2O2}} = 34.02\,\mathrm{g/mol}\). What mass of
+        \(\ce{O2}\) comes from 6.80&thinsp;g of \(\ce{H2O2}\)?
+        <div class="workspace" style="height:2.4cm"></div>
+
+<li>Limestone decomposes: \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\),
+        \(M_{\ce{CaCO3}} = 100.09\,\mathrm{g/mol}\). What mass of
+        \(\ce{CaCO3}\) must decompose to release 5.00&thinsp;g of
+        \(\ce{CO2}\)? <div class="workspace" style="height:2.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 3.20&thinsp;g \(\ce{O2}\)  &emsp;  (b) 11.4&thinsp;g
+\(\ce{CaCO3}\)</p>
+
+</div>
+
+<h2> Ladder 7 • Limiting reactant, yield, and
+leftovers</h2>
+<span class="badge">ZUM §3.11</span>
+
+<p>When amounts of <em>two</em> reactants are given: convert both to moles,
+then use the mole ratio to ask whether what is present covers what is
+required. The limiting reactant fixes everything — theoretical yield
+comes from it alone, and the leftover is
+\((\text{present}) - (\text{consumed})\). The reactant with fewer grams, or
+even fewer moles, is <em>not</em> automatically the limiting one.</p>
+
+<div class="box we"><div class="box-title">I do: burning magnesium, the whole problem</div>
+
+<p>4.50&thinsp;g of Mg burns in 6.00&thinsp;g of \(\ce{O2}\):
+\(\ce{2Mg(s) + O2(g) -> 2MgO(s)}\). Limiting reactant, theoretical yield,
+leftover mass — and then the percent yield if 6.50&thinsp;g of MgO is
+actually collected.</p>
+
+<strong>Moles first:</strong>
+\[ \ce{Mg}: \frac{4.50}{24.31} = 0.1851\,\mathrm{mol} \qquad
+   \ce{O2}: \frac{6.00}{32.00} = 0.1875\,\mathrm{mol} \]
+
+<strong>Limiting?</strong> The Mg present needs
+\(0.1851 \times \tfrac{1}{2} = 0.0926\,\mathrm{mol}\) of \(\ce{O2}\); 0.1875 mol
+is available — plenty. So <strong>Mg is limiting</strong> even though the two
+mole amounts are nearly equal: the \(2{:}1\) ratio decides, not the raw
+numbers.
+
+<strong>Theoretical yield</strong> (from Mg only):
+\(0.1851 \times \tfrac{2}{2} = 0.1851\,\mathrm{mol}\) \(\ce{MgO}\)
+\(\times\, 40.31 = \mathbf{7.46~g}\).
+
+<strong>Leftover \(\ce{O2}\):</strong> \(0.1875 - 0.0926 = 0.0949\,\mathrm{mol}\)
+\(\times\, 32.00 = \mathbf{3.04~g}\).
+
+<strong>Mass check:</strong> in \(4.50 + 6.00 = 10.50\)&nbsp;g; out
+\(7.46 + 3.04 = 10.50\)&nbsp;g. Books balanced.
+
+<strong>Percent yield:</strong>
+\(\dfrac{6.50}{7.46} \times 100 = \mathbf{87.1\%}\) — actual over
+theoretical, always.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7</div>
+
+10.0&thinsp;g of Al reacts with 30.0&thinsp;g of CuO:
+\(\ce{2Al(s) + 3CuO(s) -> Al2O3(s) + 3Cu(s)}\),
+\(M_{\ce{CuO}} = 79.55\,\mathrm{g/mol}\).
+<ol>
+
+<li>Which reactant is limiting? <div class="workspace" style="height:2.6cm"></div>
+
+<li>Theoretical yield of Cu, in grams: <div class="workspace" style="height:2.2cm"></div>
+
+<li>Mass of the excess reactant left over: <div class="workspace" style="height:2.4cm"></div>
+
+<li>If 21.5&thinsp;g of Cu is collected, the percent yield:
+        <div class="workspace" style="height:1.8cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) CuO  &emsp;  (b) 24.0&thinsp;g  &emsp;  (c) 3.22&thinsp;g
+Al left  &emsp;  (d) 89.7%</p>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if your YOUR TURN was right on the <em>first</em> attempt.
+Any unticked row: re-study that ladder's worked example before the next
+session, then redo the problem from a blank page.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>formula from percent composition</td><td>1</td><td>the four steps; caffeine</td></tr>
+<tr><td>\(\square\)</td><td>combustion analysis, C and H</td><td>2</td><td>two H per water; butane</td></tr>
+<tr><td>\(\square\)</td><td>combustion with O by difference</td><td>3</td><td>O by difference; ethanol</td></tr>
+<tr><td>\(\square\)</td><td>reading an equation</td><td>4</td><td>coefficients are ratios</td></tr>
+<tr><td>\(\square\)</td><td>balancing, incl. fractions</td><td>5</td><td>methanol; double everything</td></tr>
+<tr><td>\(\square\)</td><td>mass-to-mass, both directions</td><td>6</td><td>the three-step spine</td></tr>
+<tr><td>\(\square\)</td><td>limiting reactant + yield</td><td>7</td><td>required vs available</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>7/7 first-try: move on to the end-of-chapter problems. 5–6: solid —
+redo the missed ladders tomorrow, not today (spacing beats cramming).
+4 or fewer: the gap is usually one of three habits, not seven separate
+problems — check whether you (1) converted grams to moles before using
+any ratio, (2) doubled the H from \(\ce{H2O}\), and (3) took ratios from
+coefficients rather than subscripts. Fix the habit and the ladders fall
+together.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

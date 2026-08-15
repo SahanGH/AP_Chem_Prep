@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 1 • Chemical Foundations</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §1.3–1.5, 1.7–1.10 • PDF pp. 27–68 • 1 block (Day 1)</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">Why this chapter exists, and why it is only one block</div>
+
+<strong>None of this is a CED topic. All of it is assumed on every CED
+topic.</strong> Significant figures, dimensional analysis and density never appear
+in the framework as learning objectives — and they appear in almost every
+free-response question you will ever write.
+
+<p>That is why this is the <strong>Day 1 launch block</strong> rather than a unit:
+one block to establish the conventions, a scored diagnostic to find out who
+actually has them, and a remediation sheet for whoever needs it. There is no
+chapter test.</p>
+
+<strong>Skipped:</strong> §1.1–1.2 (overview and the scientific method) and
+§1.6 (a general problem-solving essay). Read them if you like; nothing
+is examined from them.
+
+<strong>Where this bites on the real exam:</strong> AP readers deduct for
+significant-figure errors on calculated FRQ answers. It is one of the few
+places you can reason perfectly and still lose the point.
+
+</div>
+
+<h2 class="block">Measurement, Uncertainty, and Units <span class="sub">Zumdahl §1.3–1.5, 1.7–1.10</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Count significant figures and apply them to calculations.
+
+<li>Convert units by dimensional analysis and use density as a
+        conversion factor.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §1.3–1.5, 1.7–1.10 • PDF pp. 35–56</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>How many significant figures in \(0.0025\)?
+        <span class="blank" style="min-width:1.8cm"></span>
+
+<li>How many in \(1.008\)? <span class="blank" style="min-width:1.8cm"></span>
+
+<li>\(25\,\mathrm{{}^\circ C}\) in kelvin: <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Density \(=\) <span class="blank" style="min-width:3.4cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Every measurement carries uncertainty <span class="sub">25 min</span></h4>
+
+<h3>Precision is not accuracy <span class="badge">ZUM §1.4</span></h3>
+<span class="badge">SP 2</span>
+
+<ul>
+
+<li><strong class="term">Accuracy</strong> is how close a measurement is to the
+        <span class="blank" style="min-width:2.6cm"></span>.
+
+<li><strong class="term">Precision</strong> is how close repeated measurements are to
+        <span class="blank" style="min-width:3cm"></span>.
+</ul>
+
+<div class="box note"><div class="box-title">Zumdahl's graduated cylinder</div>
+
+<p>A student fills a cylinder to its 25-mL mark five times and measures what
+was actually delivered with a buret: 26.54, 26.51, 26.60, 26.49,
+26.57&thinsp;mL. Average: 26.54&thinsp;mL.</p>
+
+<p>The five readings agree closely — <strong>excellent precision</strong>, good
+technique. But every one is about 1.5&thinsp;mL above 25, so the
+cylinder is <strong>not accurate</strong>. That constant offset is a
+<strong class="term">systematic error</strong>.</p>
+
+<strong>Precision indicates accuracy only when there is no systematic
+error.</strong> A well-behaved set of repeated results can be reliably, repeatably
+wrong — which is why calibration matters and why AP asks about it in
+experimental-design questions.
+
+</div>
+
+<h3>Counting significant figures <span class="badge">ZUM §1.5</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Zumdahl's rules, which are the ones AP uses:</p>
+
+<ol>
+
+<li><strong>Nonzero digits</strong> always count.
+
+<li><strong>Leading zeros</strong> (before all nonzero digits) are
+        <span class="blank" style="min-width:2.4cm"></span> significant — they only place the
+        decimal. \(0.0025\) has <span class="blank" style="min-width:1.4cm"></span>.
+
+<li><strong>Captive zeros</strong> (between nonzero digits) are
+        <span class="blank" style="min-width:2.4cm"></span> significant. \(1.008\) has
+        <span class="blank" style="min-width:1.4cm"></span>.
+
+<li><strong>Trailing zeros</strong> are significant <em>only if there is a
+        decimal point</em>. \(100\) has <span class="blank" style="min-width:1.4cm"></span>;
+        \(100.\) has <span class="blank" style="min-width:1.4cm"></span>; \(1.00\times10^{2}\) has
+        <span class="blank" style="min-width:1.4cm"></span>.
+
+<li><strong>Exact numbers</strong> — from counting (8 molecules) or from
+        definitions (\(1~\text{in} \equiv 2.54~\text{cm}\)) — have
+        <span class="blank" style="min-width:3.4cm"></span> significant figures and never limit a
+        result.
+</ol>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Scientific notation removes the ambiguity, so use it.</strong> Written as
+\(2500\), the number could mean two, three or four significant figures and
+the reader cannot tell. Written as \(2.5\times10^{3}\), \(2.50\times10^{3}\) or
+\(2.500\times10^{3}\), it is unambiguous.
+
+<p>When a question gives you a bare number like \(100\), take it at the rules'
+word: one significant figure.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Counting <span class="sub">15 min</span></h4>
+
+<p>Give the number of significant figures:</p>
+
+<ol>
+
+<li>\(0.0105\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(0.050080\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(8.050\times10^{-3}\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(45.20\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(1200\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(1.20\times10^{3}\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(0.00300\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>\(6.0\times10^{-5}\) <span class="blank" style="min-width:1.6cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Significant figures in calculations <span class="sub">20 min</span></h4>
+
+<h3>Two different rules — do not mix them <span class="badge">ZUM §1.5</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">
+<div class="fbox">
+<strong>Multiply or divide:</strong> the result keeps the fewest
+<strong>significant figures</strong> of any factor. <br>
+<strong>Add or subtract:</strong> the result keeps the fewest
+<strong>decimal places</strong> of any term.</div>
+</div>
+
+<p>These are genuinely different rules, and using the multiplication rule on a
+sum is the most common significant-figure error there is.</p>
+
+<div class="box we"><div class="box-title">Worked example 1: the two rules side by side</div>
+
+<strong>Multiplication.</strong> \(4.56 \times 1.4 = 6.384\). The limiting factor
+\(1.4\) has two significant figures, so the answer is \(\mathbf{6.4}\).
+
+<strong>Addition.</strong> \(12.11 + 18.0 + 1.013 = 31.123\). The limiting term
+\(18.0\) has one decimal place, so the answer is \(\mathbf{31.1}\) — which
+still has three significant figures. <em>Counting significant figures
+here would have given the wrong answer.</em>
+
+<strong>Subtraction, where it gets dramatic.</strong>
+\(25.64 - 25.6 = 0.04\). One decimal place, so the answer is
+\(\mathbf{0.0}\). Two four-figure measurements produced a result with
+essentially no significant figures at all — subtracting nearly equal
+numbers destroys precision, which is exactly why titration and
+calorimetry procedures are designed to avoid it.
+
+</div>
+
+<h3>Dimensional analysis <span class="badge">ZUM §1.7</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Multiply by conversion factors arranged so unwanted units
+<span class="blank" style="min-width:2cm"></span>. The factor you need is whichever way up makes
+that happen.</p>
+
+<div class="box we"><div class="box-title">Worked example 2: a multi-step conversion</div>
+
+<p>Convert 5.00 miles to kilometres, given
+\(1~\text{mi} = 5280~\text{ft}\), \(1~\text{ft} = 12~\text{in}\),
+\(1~\text{in} = 2.54~\text{cm}\).</p>
+
+\[ 5.00~\text{mi} \times
+   \frac{5280~\text{ft}}{1~\text{mi}} \times
+   \frac{12~\text{in}}{1~\text{ft}} \times
+   \frac{2.54~\text{cm}}{1~\text{in}} \times
+   \frac{1~\text{m}}{100~\text{cm}} \times
+   \frac{1~\text{km}}{1000~\text{m}} = 8.0467\ldots \]
+
+<p>Track the cancellation by reading down the fractions: <strong>mi</strong> on top
+meets mi on the bottom, then ft meets ft, in meets in, cm meets cm, m meets
+m — each unit appears once above the line and once below, so all of them
+divide out and only <strong>km</strong> survives. If a unit does not appear on both
+sides, the factor is upside down.</p>
+
+<p>Every conversion factor here is a <em>definition</em>, so all are exact and
+none limits the answer. Only the measured \(5.00\) does, giving three
+significant figures: \(\mathbf{8.05}~\text{km}\).</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Density, temperature, and matter <span class="sub">20 min</span></h4>
+
+<h3>Density is a conversion factor <span class="badge">ZUM §1.9</span></h3>
+<span class="badge">SP 5</span>
+
+\[ d = \frac{m}{V} \]
+Treat it as a conversion factor between mass and volume, not as a formula to
+memorize — that is how it is used in every real problem.
+
+<ol>
+
+<li>Aluminium has \(d = 2.70\,\mathrm{g/cm^3}\). Find
+        the mass of 15.0&thinsp;cm&sup3;. <div class="workspace" style="height:1.8cm"></div>
+
+<li>A metal sample has mass 45.2&thinsp;g. Dropped into a cylinder,
+        the water level rises from 25.0&thinsp;mL to
+        41.7&thinsp;mL. Find the density. <div class="workspace" style="height:2.4cm"></div>
+
+</ol>
+
+<h3>Temperature and classification <span class="badge">ZUM §1.8, 1.10</span></h3>
+
+\[ K = {}^\circ\text{C} + 273.15 \]
+Kelvin is the scale that matters: it appears in the gas laws, in
+\(\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\), and in every
+equilibrium expression. 25&thinsp;&deg;C, the standard temperature, is
+<span class="blank" style="min-width:2cm"></span>.
+
+<div class="center">
+
+<table>
+<tr><th><strong>Matter</strong></th><th></th></tr>
+<tr><td> &emsp;  Pure substances</td><td><strong>elements</strong> (one kind of atom) and
+  <strong>compounds</strong> (fixed ratio)</td></tr>
+<tr><td> &emsp;  Mixtures</td><td><strong>homogeneous</strong> (uniform; a solution) and
+  <strong>heterogeneous</strong> (visibly non-uniform)</td></tr>
+</table>
+
+</div>
+
+<p>A <strong class="term">physical change</strong> alters form but not identity (melting, dissolving);
+a <strong class="term">chemical change</strong> produces a
+<span class="blank" style="min-width:3cm"></span>.</p>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>A student computes \(100.0 + 0.005\) and reports \(1\times10^{2}\), reasoning
+that “\(0.005\) has only one significant figure, so the answer gets one.”
+Identify the error and give the correct answer.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

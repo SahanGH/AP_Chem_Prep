@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 8 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 8 • Bonding: General Concepts</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §8.1–8.13 • PDF pp. 390–453 • 5 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How this chapter fits the AP course</div>
+
+<p>A high-value chapter: nearly all of <strong>CED Unit 2</strong> lives here, and it
+also supplies two topics that belong to other units —
+<strong>§8.4</strong> (ions and ionic radii) is CED 1.8, and
+<strong>§8.8</strong> (bond energies) is CED 6.7, the bond-enthalpy topic Unit 6
+borrows from this chapter.</p>
+
+<p>Blocks 4 and 5 cover Lewis structures, resonance, and VSEPR, which you
+worked in Unit 2. Treat those as consolidation; the genuinely new material
+for most students is <strong>lattice energy</strong> (Block 2) and
+<strong>computing \(\Delta H\) from bond energies</strong> (Block 3).</p>
+
+<p>§8.6 (partial ionic character) is background reading only.</p>
+
+</div>
+
+<h2 class="block">Bond Types, Electronegativity, and Polarity <span class="sub">Zumdahl §8.1–8.3</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Classify bonds using electronegativity difference.
+
+<li>Distinguish bond polarity from molecular polarity.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §8.1–8.3 • PDF pp. 391–400</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Which is more electronegative, N or O?
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>Geometry of \(\ce{CO2}\): <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Configuration of \(\ce{Mg^2+}\): <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Electronegativity <span class="sub">25 min</span></h4>
+
+<h3>The property that decides bond type <span class="badge">ZUM §8.2</span></h3>
+<span class="badge">SP 6</span>
+
+<strong class="term">Electronegativity</strong> is an atom's ability to attract shared electrons in
+a bond. On the Pauling scale it runs from
+<span class="blank" style="min-width:1.8cm"></span> for fluorine down to <span class="blank" style="min-width:1.8cm"></span> for
+caesium.
+
+<p>The trend follows the same Coulombic engine as everything in Unit 1: it
+<span class="blank" style="min-width:2cm"></span> across a period (rising \(Z_{\text{eff}}\)) and
+<span class="blank" style="min-width:2cm"></span> down a group (greater distance and shielding).</p>
+
+<table>
+<tr><th><strong>Bond type</strong></th><th><strong>\(\Delta\)EN</strong></th><th><strong>Electron behaviour</strong></th></tr>
+<tr><td>Nonpolar covalent</td><td><span class="blank" style="min-width:1.4cm"></span></td><td>shared equally; no partial charges</td></tr>
+<tr><td>Polar covalent</td><td>intermediate</td><td>shared <span class="blank" style="min-width:2.2cm"></span>; \(\delta^+\) and \(\delta^-\) appear</td></tr>
+<tr><td>Ionic</td><td>large</td><td><span class="blank" style="min-width:2.4cm"></span> to form ions</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>These are regions on a <em>continuum</em>, not three separate boxes. Zumdahl
+is explicit about this: as \(\Delta\)EN grows, bonds acquire progressively
+more ionic character. Do not argue about where the boundary sits — argue
+with the \(\Delta\)EN value.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example: ranking bond polarity</div>
+
+<p>Order \(\ce{H-H}\), \(\ce{S-H}\), \(\ce{Cl-H}\), \(\ce{O-H}\), \(\ce{F-H}\) by polarity.</p>
+
+<p>Electronegativities: H 2.1, S 2.5, Cl 3.0, O 3.5, F 4.0. So
+\(\Delta\)EN \(=\) 0, 0.4, 0.9, 1.4, 1.9 respectively:
+\[ \ce{H-H} < \ce{S-H} < \ce{Cl-H} < \ce{O-H} < \ce{F-H} \]</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Classify and rank <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(\ce{K-Br}\): <span class="blank" style="min-width:5cm"></span>
+
+<li>\(\ce{N-N}\): <span class="blank" style="min-width:5cm"></span>
+
+<li>\(\ce{C-O}\): <span class="blank" style="min-width:5cm"></span>
+
+<li>Most polar of \(\ce{C-N}\), \(\ce{C-O}\), \(\ce{C-F}\):
+        <span class="blank" style="min-width:3cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • From bond dipoles to molecular dipoles <span class="sub">20 min</span></h4>
+
+<h3>Dipole moments <span class="badge">ZUM §8.3</span></h3>
+<span class="badge">SP 1</span>
+
+<p>A polar bond has a <strong class="term">bond dipole</strong> — a vector pointing toward the more
+electronegative atom. Whether the <em>molecule</em> is polar depends on
+whether those vectors <span class="blank" style="min-width:1.8cm"></span>.</p>
+
+Two conditions, both required for a polar molecule:
+<ol>
+
+<li>at least one <span class="blank" style="min-width:2.4cm"></span>, and
+
+<li>a geometry that does <em>not</em> produce
+        <span class="blank" style="min-width:2.6cm"></span>.
+</ol>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>“It has polar bonds, so it is polar” is the single most common error on
+this topic. \(\ce{CO2}\) has two strongly polar C=O bonds and is
+<strong>nonpolar</strong>, because its linear geometry points them exactly opposite.
+Same story for \(\ce{BF3}\) (trigonal planar) and \(\ce{CCl4}\) (tetrahedral).</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Polarity decisions <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>\(\ce{CCl4}\) and \(\ce{CHCl3}\) both contain polar C–Cl bonds, yet only
+        one is a polar molecule. Identify it and explain.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>\(\ce{NH3}\) is polar but \(\ce{BF3}\) is not, even though both are
+        “\(\ce{XY3}\).” Explain in terms of geometry.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Can a molecule containing only nonpolar bonds be polar? Explain.
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Ions and Lattice Energy <span class="sub">Zumdahl §8.4–8.5</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Predict ion configurations and rank ionic radii, including
+        isoelectronic series.
+
+<li>Use Coulomb's law to rank lattice energies.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §8.4–8.5 • PDF pp. 400–408</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta\)EN of \(\ce{H-F}\) given H 2.1, F 4.0:
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>Is \(\ce{BF3}\) polar? <span class="blank" style="min-width:2cm"></span>
+
+<li>Configuration of \(\ce{S^2-}\): <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Ion sizes <span class="sub">25 min</span></h4>
+
+<h3>How ions differ from their parent atoms <span class="badge">ZUM §8.4</span></h3>
+<span class="badge">SP 6</span>
+
+<ul>
+
+<li>A <strong class="term">cation</strong> is always <span class="blank" style="min-width:2cm"></span> than its parent
+        atom — electrons are removed (often emptying a whole shell) while
+        the nuclear charge is unchanged, so the remainder is pulled in
+        tightly.
+
+<li>An <strong class="term">anion</strong> is always <span class="blank" style="min-width:2cm"></span> — added
+        electrons increase mutual repulsion with no extra protons to
+        compensate.
+</ul>
+
+<h4>Isoelectronic series</h4>
+
+<p>Ions with the same electron count differ only in nuclear charge. Zumdahl's
+rule: for a series of isoelectronic ions, size
+<span class="blank" style="min-width:2.2cm"></span> as \(Z\) increases.</p>
+
+<div class="box we"><div class="box-title">Worked example: Zumdahl's krypton series</div>
+
+<p>Rank \(\ce{Se^2-}\), \(\ce{Br-}\), \(\ce{Rb+}\), \(\ce{Sr^2+}\) by decreasing size.</p>
+
+<p>All four have the krypton configuration — 36 electrons each — so
+repulsions are comparable. Their nuclear charges are \(Z = 34, 35, 37, 38\).
+More protons pulling the same 36 electrons means a smaller ion:
+\[ \ce{Se^2-} > \ce{Br-} > \ce{Rb+} > \ce{Sr^2+} \]</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Rank the ions <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Larger: \(\ce{Cl}\) or \(\ce{Cl-}\)? <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Larger: \(\ce{Fe^2+}\) or \(\ce{Fe^3+}\)? <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Rank by size: \(\ce{O^2-}\), \(\ce{F-}\), \(\ce{Na+}\), \(\ce{Mg^2+}\)
+        <span class="blank" style="min-width:6cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Lattice energy <span class="sub">20 min</span></h4>
+
+<h3>Coulomb's law, applied to a crystal <span class="badge">ZUM §8.5</span></h3>
+<span class="badge">SP 5</span>
+
+<strong class="term">Lattice energy</strong> is the energy change when gaseous ions assemble into
+an ionic solid. Zumdahl writes it as a modified Coulomb's law:
+\[
+  \text{Lattice energy} = k\!\left(\answerblank[1.8cm]{$\dfrac{Q_1Q_2}{r}$}\right)
+\]
+where \(Q_1\) and \(Q_2\) are the ionic <span class="blank" style="min-width:1.6cm"></span> and \(r\) is
+the distance between ion <span class="blank" style="min-width:1.6cm"></span>.
+
+<h4>The ranking procedure</h4>
+
+<ol>
+
+<li>Compare the <span class="blank" style="min-width:3.4cm"></span> \(|Q_1Q_2|\) first
+        — they dominate.
+
+<li>Only if those tie, compare <span class="blank" style="min-width:2cm"></span>: smaller
+        ions sit closer, giving a stronger lattice.
+</ol>
+
+<div class="box we"><div class="box-title">Worked example: three-way ranking</div>
+
+<p>Rank \(\ce{NaCl}\), \(\ce{MgO}\), and \(\ce{NaF}\) by lattice energy magnitude.</p>
+
+<p>Charge products: \(\ce{MgO}\) is \((2)(2) = 4\); \(\ce{NaCl}\) and \(\ce{NaF}\) are both
+\((1)(1) = 1\). So \(\ce{MgO}\) is far strongest.</p>
+
+<p>Tiebreak \(\ce{NaF}\) vs \(\ce{NaCl}\): \(\ce{F-}\) is smaller than \(\ce{Cl-}\), so \(r\) is
+shorter and the attraction stronger.
+\[ \ce{MgO} \gg \ce{NaF} > \ce{NaCl} \]</p>
+
+</div>
+
+<h4>Why this matters structurally</h4>
+
+<p>In the \(\ce{LiF}\) lattice each \(\ce{Li+}\) is surrounded by
+<span class="blank" style="min-width:1.2cm"></span> \(\ce{F-}\) ions and vice versa — the sodium chloride
+structure. That packing maximizes attractions between opposite charges while
+minimizing repulsions between like charges.</p>
+
+<h4 class="segment">APPLICATION • Lattice energy reasoning <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>\(\ce{MgO}\) melts at 2852&thinsp;&deg;C but \(\ce{NaF}\) at
+        993&thinsp;&deg;C, despite similar ion sizes. Explain
+        quantitatively. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Rank \(\ce{CaO}\), \(\ce{KCl}\), \(\ce{KBr}\), \(\ce{SrO}\) by lattice energy and
+        justify. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why is \(\ce{Al2O3}\) used as a furnace lining while \(\ce{NaCl}\) is not?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Bond Energies <span class="sub">Zumdahl §8.7–8.8</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate bond order to bond length and bond energy.
+
+<li>Estimate \(\Delta H\) for a reaction from bond energies.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §8.7–8.8 • PDF pp. 409–415</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Lattice energy depends on charges and what else?
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Larger: \(\ce{K+}\) or \(\ce{Ca^2+}\)? <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Stronger lattice: \(\ce{LiF}\) or \(\ce{KI}\)?
+        <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Sign of \(\Delta H\) for an exothermic reaction:
+        <span class="blank" style="min-width:2.2cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • What a bond energy is <span class="sub">25 min</span></h4>
+
+<h3>Breaking bonds always costs energy <span class="badge">ZUM §8.8</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The <strong class="term">bond energy</strong> is the energy required to break one mole of a
+particular bond in the gas phase. It is always
+<span class="blank" style="min-width:1.8cm"></span> — breaking a bond is always
+<span class="blank" style="min-width:2.7cm"></span>, and forming one always releases energy.</p>
+
+<table>
+<tr><th></th><th><strong>Bond order</strong></th><th><strong>Length</strong></th><th><strong>Energy (kJ/mol)</strong></th></tr>
+<tr><td>\(\ce{C-C}\)</td><td>1</td><td>longest</td><td>347</td></tr>
+<tr><td>\(\ce{C=C}\)</td><td>2</td><td>middle</td><td>614</td></tr>
+<tr><td>\(\ce{C#C}\)</td><td>3</td><td><span class="blank" style="min-width:1.6cm"></span></td><td><span class="blank" style="min-width:1.4cm"></span></td></tr>
+</table>
+
+<p>Higher bond order \(\to\) <span class="blank" style="min-width:1.8cm"></span> and
+<span class="blank" style="min-width:1.8cm"></span>. Note that the triple bond is not three times
+the single — the increments shrink.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Bond order reasoning <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Shortest N–O bond: \(\ce{NO3-}\), \(\ce{NO2-}\), or \(\ce{NO+}\)?
+        <span class="blank" style="min-width:3.2cm"></span>
+
+<li>Which requires more energy to break, \(\ce{O2}\) or \(\ce{N2}\)? Why?
+        <span class="blank" style="min-width:5.5cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Computing \(\Delta H\) from bonds <span class="sub">20 min</span></h4>
+
+<h3>The bookkeeping <span class="badge">ZUM §8.8</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Imagine the reaction proceeding in two stages: tear every reactant apart
+into atoms, then assemble the products.
+\[
+  \Delta H = \answerblank[8.2cm]{$\sum D(\text{bonds broken}) - \sum D(\text{bonds formed})$}
+\]</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>The order is <strong>broken minus formed</strong> — the reverse of the formation
+enthalpy equation from Chapter 6, which is products minus reactants.
+Reversing them flips your sign. A quick sanity check: if the products have
+stronger bonds, the reaction should come out exothermic.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 1: Zumdahl's HF synthesis</div>
+
+\[ \ce{H2(g) + F2(g) -> 2 HF(g)} \]
+Bonds broken: one \(\ce{H-H}\) (432) and one \(\ce{F-F}\) (154).
+Bonds formed: two \(\ce{H-F}\) (565 each).
+\[
+  \Delta H = (432 + 154) - 2(565) = 586 - 1130 = -544\,\mathrm{kJ}
+\]
+Compare with formation data: \(2 \times (-271) = -542\,\mathrm{kJ}\).
+The two methods agree to within 2 kJ.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 2: HCl synthesis</div>
+
+\[ \ce{H2(g) + Cl2(g) -> 2 HCl(g)} \]
+Broken: \(\ce{H-H}\) 432 \(+\) \(\ce{Cl-Cl}\) 239 \(= 671\).
+Formed: \(2 \times \ce{H-Cl}\) 427 \(= 854\).
+\[ \Delta H = 671 - 854 = -183\,\mathrm{kJ} \]
+Formation data give \(2(-92.3) = -184.6\,\mathrm{kJ}\) — again close.
+
+</div>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Bond energies give <em>estimates</em>, not exact values, because tabulated
+figures are averages over many compounds. A C–H bond in methane is not
+identical to one in ethanol. Expect agreement within a few percent, and say
+so if a question asks why the two methods differ.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Full calculation <span class="sub">20 min</span></h4>
+
+<p>Bond energies (kJ/mol): \(\ce{N#N}\) 941, \(\ce{H-H}\) 432, \(\ce{N-H}\) 391.</p>
+
+<ol>
+
+<li>Compute \(\Delta H\) for \(\ce{N2(g) + 3 H2(g) -> 2 NH3(g)}\).
+        <div class="workspace" style="height:2.6cm"></div>
+
+<li>The accepted value is -92.2&thinsp;kJ. Explain the
+        discrepancy. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Which contributed more to the exothermicity: breaking the triple
+        bond, or forming the six N–H bonds? Explain.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why is breaking a bond always endothermic? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Lewis Structures and Octet Exceptions <span class="sub">Zumdahl §8.9–8.11</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Draw Lewis structures reliably.
+
+<li>Recognize the three classes of octet exception.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §8.9–8.11 • PDF pp. 415–423</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta H\) formula from bond energies:
+        <span class="blank" style="min-width:4.6cm"></span>
+
+<li>Valence electrons in \(\ce{SO4^2-}\):
+        <span class="blank" style="min-width:2.9cm"></span>
+
+<li>Bond order of \(\ce{N2}\): <span class="blank" style="min-width:1.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • The procedure <span class="sub">25 min</span></h4>
+
+<h3>Five steps <span class="badge">ZUM §8.10</span></h3>
+<span class="badge">SP 1</span>
+
+<ol>
+
+<li>Count total valence electrons —
+        <span class="blank" style="min-width:7.1cm"></span>.
+
+<li>Choose the central atom: the
+        <span class="blank" style="min-width:4.2cm"></span> one, never H.
+
+<li>Connect with single bonds; complete the
+        <span class="blank" style="min-width:2.6cm"></span> octets (H takes 2).
+
+<li>Place any remaining electrons on the
+        <span class="blank" style="min-width:2.8cm"></span>.
+
+<li>If the central atom is short, convert lone pairs into
+        <span class="blank" style="min-width:3.2cm"></span>.
+</ol>
+
+<p>Always finish with a two-part check: the total electron count <em>and</em>
+every octet.</p>
+
+<div class="box we"><div class="box-title">Worked example: \(\ce{HCN}\)</div>
+
+<p>Count: \(1 + 4 + 5 = 10\) electrons. Carbon is least electronegative (H can
+never be central), so the skeleton is H–C–N.</p>
+
+<p>Single bonds use 4; putting the remaining 6 on N gives N an octet but leaves
+C with only 4. Convert two of nitrogen's lone pairs into bonds:
+\[ \ce{H-C#N} \]
+with one lone pair left on N. Check: 10 electrons, C and N both have
+octets, H has 2. ✓</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Draw four <span class="sub">15 min</span></h4>
+
+Give the electron count, then the structure: \(\ce{PH3}\), \(\ce{CO2}\),
+\(\ce{SO2}\), \(\ce{ClO4-}\).
+<div class="workspace" style="height:4.4cm"></div>
+
+<h4 class="segment">INSTRUCTION B • When the octet rule fails <span class="sub">20 min</span></h4>
+
+<h3>Three classes of exception <span class="badge">ZUM §8.11</span></h3>
+<span class="badge">SP 1</span>
+
+<table>
+<tr><th><strong>Class</strong></th><th><strong>Examples</strong></th><th><strong>Why</strong></th></tr>
+<tr><td>Odd number of electrons</td><td>\(\ce{NO}\), \(\ce{NO2}\)</td><td>one electron must remain <span class="blank" style="min-width:1.8cm"></span></td></tr>
+<tr><td>Fewer than an octet</td><td>\(\ce{BF3}\), \(\ce{BeH2}\)</td><td>B and Be are content with <span class="blank" style="min-width:1.6cm"></span> and 4</td></tr>
+<tr><td>Expanded octet</td><td>\(\ce{SF6}\), \(\ce{PCl5}\), \(\ce{XeF2}\)</td><td>central atom is in period <span class="blank" style="min-width:1.4cm"></span> or beyond</td></tr>
+</table>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Only period 3 and beyond can expand. Nitrogen <em>cannot</em> hold more than
+eight electrons, so structures like “\(\ce{NF5}\)” do not exist. If a
+structure needs an expanded octet on a period-2 atom, the structure is
+wrong.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Diagnose the structures <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>A student draws \(\ce{BF3}\) with one B=F double bond to give boron an
+        octet. Evaluate. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Explain why \(\ce{SF6}\) can exist but \(\ce{OF6}\) cannot.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Give the electron count for \(\ce{PO4^3-}\) and state whether an expanded octet
+is required. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Resonance, Formal Charge, and VSEPR <span class="sub">Zumdahl §8.12–8.13</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Use formal charge to select the best structure.
+
+<li>Draw resonance sets and state their physical meaning.
+
+<li>Predict geometry and bond angles with VSEPR.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §8.12–8.13 • PDF pp. 423–440</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Electrons in \(\ce{NO3-}\): <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Can nitrogen expand its octet? <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Which class of exception is \(\ce{BF3}\)?
+        <span class="blank" style="min-width:4.1cm"></span>
+
+<li>Central atom of \(\ce{OCS}\): <span class="blank" style="min-width:1.8cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Formal charge and resonance <span class="sub">25 min</span></h4>
+
+<h3>Choosing among candidate structures <span class="badge">ZUM §8.12</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  FC = \text{valence} - \answerblank[5cm]{$\text{nonbonding} - \tfrac12(\text{bonding})$}
+\]
+
+<p>The best structure has formal charges closest to
+<span class="blank" style="min-width:1.2cm"></span>, with any negative charge on the
+<span class="blank" style="min-width:4.3cm"></span> atom. The formal charges must sum
+to the species' overall charge — that is a check, not a preference.</p>
+
+<h4>Resonance</h4>
+
+<p>When the electrons could be arranged in more than one equivalent way, draw
+all forms joined by <span class="blank" style="min-width:4.5cm"></span>. The real
+molecule is the <strong class="term">hybrid</strong> — a single averaged structure, not a
+molecule flipping between forms.</p>
+
+<div class="box we"><div class="box-title">Worked example: nitrate</div>
+
+\(\ce{NO3-}\) has 24 electrons and three equivalent forms, with the double bond
+on each oxygen in turn.
+
+<p>The evidence that this is an average rather than an alternation: all three
+N–O bonds are measured to be <em>identical</em> in length, intermediate
+between a single and a double bond. Bond order is
+\(4/3\), and each oxygen carries an average charge of \(-2/3\).</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>“The double bond moves back and forth” scores zero. Cite the experimental
+evidence instead: equal bond lengths, fractional bond order, delocalized
+charge.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Formal charge practice <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>FC on S in \(\ce{SO4^2-}\) drawn with four single bonds:
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>FC on each O in that structure: <span class="blank" style="min-width:2cm"></span>
+
+<li>Bond order of C–O in \(\ce{CO3^2-}\): <span class="blank" style="min-width:2cm"></span>
+
+<li>Bond order of O–O in \(\ce{O3}\): <span class="blank" style="min-width:2cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • VSEPR <span class="sub">20 min</span></h4>
+
+<h3>Geometry from electron-domain repulsion <span class="badge">ZUM §8.13</span></h3>
+<span class="badge">SP 1</span>
+
+<p>Electron domains — bonding groups plus lone pairs — arrange themselves
+to maximize separation. A multiple bond counts as
+<span class="blank" style="min-width:2.4cm"></span>.</p>
+
+<table>
+<tr><th><strong>Domains</strong></th><th><strong>Domain geometry</strong></th><th><strong>Angle</strong></th><th><strong>Example</strong></th></tr>
+<tr><td>2</td><td><span class="blank" style="min-width:2.6cm"></span></td><td>180\(^\circ\)</td><td>\(\ce{CO2}\)</td></tr>
+<tr><td>3</td><td><span class="blank" style="min-width:3cm"></span></td><td>120\(^\circ\)</td><td>\(\ce{BF3}\)</td></tr>
+<tr><td>4</td><td><span class="blank" style="min-width:2.6cm"></span></td><td>109.5\(^\circ\)</td><td>\(\ce{CH4}\)</td></tr>
+<tr><td>5</td><td>trigonal bipyramidal</td><td>90/120\(^\circ\)</td><td>\(\ce{PCl5}\)</td></tr>
+<tr><td>6</td><td>octahedral</td><td>90\(^\circ\)</td><td>\(\ce{SF6}\)</td></tr>
+</table>
+
+<p>Molecular geometry names only the <em>atom</em> positions, so lone pairs
+change the name: 4 domains with 1 lone pair is
+<span class="blank" style="min-width:3.9cm"></span>; with 2 lone pairs it is
+<span class="blank" style="min-width:1.6cm"></span>.</p>
+
+<p>Lone pairs also compress angles, because they repel
+<span class="blank" style="min-width:3.0cm"></span> than bonding pairs — hence
+\(\ce{CH4}\) 109.5\(^\circ\), \(\ce{NH3}\) \(\approx107^\circ\), \(\ce{H2O}\)
+\(\approx104.5^\circ\).</p>
+
+<h4 class="segment">APPLICATION • The full chain <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{SO2}\): electron count, domains, geometry, angle, polarity.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>\(\ce{CO2}\) and \(\ce{SO2}\) are both triatomic oxides, yet one is linear
+        and one is bent. Explain the difference completely.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Predict the geometry and approximate bond angle of \(\ce{NF3}\), and state
+whether it is polar. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

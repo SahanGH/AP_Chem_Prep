@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 9 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 9 • Covalent Bonding: Orbitals</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §9.1 (CED) $+$ §9.2–9.3 (enrichment) • PDF pp. 454–490 • 3 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">Read this before you open the chapter — it is mostly off-syllabus</div>
+
+<p>This is the <strong>thinnest chapter in the book for AP purposes</strong>. Only
+<strong>§9.1</strong> is examinable — hybridization and \(\sigma\)/\(\pi\) bonding,
+which are CED 2.7.</p>
+
+<strong>§9.2–9.5 develop molecular orbital theory</strong> — MO diagrams, bond
+order from filled orbitals, homonuclear and heteronuclear diatomics. None of
+it is on the current CED. Rather than pretend otherwise, this chapter is
+built as two examinable blocks plus <strong>one clearly marked enrichment
+block</strong>. Work Blocks 1–2 properly; treat Block 3 as optional reading.
+
+<p>One more scope note: the CED assesses only <strong>sp, sp\(^2\), and sp\(^3\)</strong>.
+Zumdahl's §9.1 also covers dsp\(^3\) and d\(^2\)sp\(^3\) for expanded octets —
+and he himself notes that this model “does not give an accurate picture”
+and that newer work does not use \(d\) orbitals at all. You still assign
+<em>shapes</em> to \(\ce{PCl5}\) and \(\ce{SF6}\) with VSEPR; you are simply not asked
+for their hybridization.</p>
+
+</div>
+
+<h2 class="block">Hybridization and the Localized Electron Model <span class="sub">Zumdahl §9.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain why hybrid orbitals are proposed at all.
+
+<li>Assign sp, sp\(^2\), or sp\(^3\) from the electron-domain count.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §9.1 • PDF pp. 455–466</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Electron domains around C in \(\ce{CH4}\): <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Geometry of \(\ce{BF3}\): <span class="blank" style="min-width:3.4cm"></span>
+
+<li>Does a double bond count as one domain or two?
+        <span class="blank" style="min-width:2cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • The problem hybridization solves <span class="sub">25 min</span></h4>
+
+<h3>Why plain atomic orbitals are not enough <span class="badge">ZUM §9.1</span></h3>
+<span class="badge">SP 1</span>
+
+<p>Carbon's ground-state configuration is \([\ce{He}]\,2s^2\,2p^2\) — one
+filled \(s\) orbital and two half-filled \(p\) orbitals, pointing at
+90\(^\circ\) to each other. Taken literally, that predicts carbon should form
+<span class="blank" style="min-width:1.4cm"></span> bonds at <span class="blank" style="min-width:1.6cm"></span>.</p>
+
+<p>Methane is observed to have <span class="blank" style="min-width:1.4cm"></span> identical C–H bonds
+at <span class="blank" style="min-width:2cm"></span>. The atomic-orbital picture is simply
+wrong about the molecule.</p>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Zumdahl's resolution, and the key idea of the whole chapter: <em>start
+with the molecule, not the atoms</em>. A molecule's tendency to minimize its
+energy matters more than preserving the orbital arrangement the free atom
+happened to have. So we assume the atom <strong class="term">hybridizes</strong> — its \(2s\) and
+three \(2p\) orbitals combine into four identical orbitals pointing at the
+corners of a tetrahedron.</p>
+
+<p>Hybridization is a <em>model built to fit observed geometry</em>, not a
+physical event that happens to atoms. Nothing “hybridizes” in time.</p>
+
+</div>
+
+<h4>The three hybridizations you are responsible for</h4>
+
+<table>
+<tr><th><strong>Domains</strong></th><th><strong>Hybrid</strong></th><th><strong>Built from</strong></th><th><strong>Geometry</strong></th><th><strong>Leftover \(p\)</strong></th></tr>
+<tr><td>2</td><td><span class="blank" style="min-width:1.4cm"></span></td><td>one \(s\), one \(p\)</td><td><span class="blank" style="min-width:1.8cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td></tr>
+<tr><td>3</td><td><span class="blank" style="min-width:1.4cm"></span></td><td>one \(s\), two \(p\)</td><td><span class="blank" style="min-width:3.2cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td></tr>
+<tr><td>4</td><td><span class="blank" style="min-width:1.4cm"></span></td><td>one \(s\), three \(p\)</td><td><span class="blank" style="min-width:2.5cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td></tr>
+</table>
+
+<p>The count is the whole trick: <strong>the number of hybrid orbitals always
+equals the number of atomic orbitals combined</strong>, and equals the number of
+electron <span class="blank" style="min-width:1.6cm"></span>.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Zumdahl's three-step procedure <span class="sub">15 min</span></h4>
+
+Always in this order:
+<ol>
+
+<li>Draw the <span class="blank" style="min-width:3.3cm"></span>.
+
+<li>Determine the electron-pair arrangement using
+        <span class="blank" style="min-width:1.6cm"></span>.
+
+<li>Assign the <span class="blank" style="min-width:3.2cm"></span> that match.
+</ol>
+
+Apply it:
+<ol>
+
+<li>C in \(\ce{CH4}\): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>B in \(\ce{BF3}\): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>C in \(\ce{CO2}\): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>N in \(\ce{NH3}\): <span class="blank" style="min-width:5.0cm"></span>
+
+<li>O in \(\ce{H2O}\): <span class="blank" style="min-width:5.0cm"></span>
+</ol>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Count <em>domains</em>, not bonds. Water's oxygen has only two bonds but two
+lone pairs as well — four domains, so sp\(^3\). Students who count bonds
+report sp for water and get both the hybridization and the bent geometry
+wrong.</p>
+
+</div>
+
+<h4 class="segment">INSTRUCTION B • The model's limits <span class="sub">20 min</span></h4>
+
+<h3>Where the simple picture strains <span class="badge">ZUM §9.1</span></h3>
+<span class="badge">SP 6</span>
+
+<p>For \(\ce{PCl5}\), five electron pairs require a trigonal bipyramidal
+arrangement, and Zumdahl introduces <strong class="term">dsp\(^3\)</strong> hybridization to supply
+five orbitals. But he immediately adds a caution worth taking seriously:</p>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Zumdahl's own words are that this model “does not give an accurate picture
+of the actual bonding,” and that recent research shows a better model
+<em>does not use \(d\) orbitals at all</em>. He keeps it only for convenience.</p>
+
+<p>This is a good general lesson: the simple models in an introductory course
+are chosen for usefulness, not truth, and a well-taught course tells you
+which is which. It is also why the CED stops at sp\(^3\) — you assign
+\(\ce{PCl5}\) and \(\ce{SF6}\) their <em>shapes</em> with VSEPR and leave their
+hybridization alone.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Assign hybridization in real molecules <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>In methanol, \(\ce{CH3OH}\), give the hybridization of both the carbon
+        and the oxygen, with domain counts.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>In formaldehyde, \(\ce{H2CO}\), give the carbon's hybridization and
+        predict the H–C–H angle. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>\(\ce{SO2}\) and \(\ce{SO3}\) both have sulfur as the central atom, yet only
+        one is bent. Give each hybridization and explain.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Both \(\ce{CH4}\) and \(\ce{H2O}\) have sp\(^3\) hybridized central atoms, yet their
+bond angles differ. Explain. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Sigma and Pi Bonds <span class="sub">Zumdahl §9.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Distinguish \(\sigma\) from \(\pi\) bonds by how orbitals overlap.
+
+<li>Count \(\sigma\) and \(\pi\) bonds, and explain restricted rotation.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §9.1 • PDF pp. 455–466</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Hybridization of C in \(\ce{C2H6}\): <span class="blank" style="min-width:2cm"></span>
+
+<li>How many hybrid orbitals does sp\(^2\) produce?
+        <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Leftover unhybridized \(p\) orbitals on an sp carbon:
+        <span class="blank" style="min-width:1.4cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Two ways for orbitals to overlap <span class="sub">25 min</span></h4>
+
+<h3>Sigma and pi <span class="badge">ZUM §9.1</span></h3>
+<span class="badge">SP 1</span>
+
+<table>
+<tr><th></th><th><strong>\(\sigma\) (sigma) bond</strong></th><th><strong>\(\pi\) (pi) bond</strong></th></tr>
+<tr><td>Overlap</td><td><span class="blank" style="min-width:2.4cm"></span>, along the internuclear axis</td><td><span class="blank" style="min-width:2.6cm"></span>, above and below the axis</td></tr>
+<tr><td>Built from</td><td>hybrid orbitals</td><td>leftover <span class="blank" style="min-width:3.2cm"></span> orbitals</td></tr>
+<tr><td>Electron density</td><td>concentrated <span class="blank" style="min-width:3.9cm"></span></td><td>in two lobes off the axis</td></tr>
+<tr><td>Rotation</td><td><span class="blank" style="min-width:1.8cm"></span></td><td><span class="blank" style="min-width:2cm"></span></td></tr>
+</table>
+
+<div class="center">
+
+<figure><img src="fig-ch09-notes-1.png" alt="figure"></figure>
+
+</div>
+
+<h4>Counting rule</h4>
+
+<ul>
+
+<li>Single bond \(=\) <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Double bond \(=\) <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Triple bond \(=\) <span class="blank" style="min-width:2.6cm"></span>
+</ul>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>The <em>first</em> bond between two atoms is always \(\sigma\); every additional
+bond is \(\pi\). That is because head-on overlap is more effective than
+side-by-side, so it happens first — and it is also why \(\pi\) bonds are
+generally weaker and more reactive.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Count them <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(\ce{C2H6}\) (ethane): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>\(\ce{C2H4}\) (ethene): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>\(\ce{C2H2}\) (ethyne): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>\(\ce{HCN}\): <span class="blank" style="min-width:4.5cm"></span>
+
+<li>\(\ce{N2}\): <span class="blank" style="min-width:4.5cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Why double bonds cannot rotate <span class="sub">20 min</span></h4>
+
+<h3>Restricted rotation <span class="badge">ZUM §9.1</span></h3>
+<span class="badge">SP 6</span>
+
+<p>A \(\sigma\) bond is cylindrically symmetric about the internuclear axis, so
+the two ends can spin freely — rotation costs essentially nothing.</p>
+
+<p>A \(\pi\) bond is different. Its two lobes must stay
+<span class="blank" style="min-width:2.4cm"></span> to overlap at all. Rotating one end by
+90\(^\circ\) would set the \(p\) orbitals perpendicular, destroying the overlap
+and <span class="blank" style="min-width:3.9cm"></span>. That takes a large amount of
+energy, so at ordinary temperatures a double bond is
+<span class="blank" style="min-width:1.6cm"></span>.</p>
+
+<div class="box we"><div class="box-title">Worked example: why cis and trans exist</div>
+
+<p>In \(\ce{C2H4Cl2}\) with one Cl on each carbon, the two chlorines can sit on the
+same side of the double bond (<em>cis</em>) or opposite sides
+(<em>trans</em>). Because the \(\pi\) bond blocks rotation, these are
+<strong>different compounds</strong> — separable, with different melting points
+and dipole moments.</p>
+
+<p>Do the same with ethane (\(\ce{C2H4Cl2}\) with a single C–C bond) and the two
+arrangements interconvert freely billions of times a second. They are not
+distinguishable substances at all.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Structure and bonding together <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{H2C=CH-C#N}\): give the hybridization of each carbon and the
+        total \(\sigma\) and \(\pi\) counts.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Explain why ethyne (\(\ce{C2H2}\)) is linear while ethene
+        (\(\ce{C2H4}\)) is planar but not linear.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A molecule has 4 \(\sigma\) and 2 \(\pi\) bonds between its heavy atoms. What
+kind of multiple bonding must it contain? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">ENRICHMENT: The Molecular Orbital Model <span class="sub">Zumdahl §9.2–9.3 — NOT on the CED</span></h2>
+
+<div class="box note"><div class="box-title">This block is optional</div>
+
+<p>Nothing in this block is assessed on the AP exam. It is included because
+molecular orbital theory answers one question the Lewis model cannot —
+and knowing where a model <em>fails</em> is worth an hour of anyone's time.
+Skip it entirely without penalty.</p>
+
+</div>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain what a molecular orbital is and compute bond order.
+
+<li>Describe the oxygen paramagnetism problem and its resolution.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §9.2–9.3 • PDF pp. 466–476</p>
+
+<h4 class="segment">INSTRUCTION A • Orbitals that belong to the molecule <span class="sub">25 min</span></h4>
+
+<h3>Bonding and antibonding <span class="badge">ZUM §9.2</span></h3>
+<span class="badge">SP 1</span>
+
+<p>The localized electron model treats bonds as belonging to <em>pairs</em> of
+atoms. Molecular orbital theory instead combines atomic orbitals into
+orbitals that span the <em>whole molecule</em>.</p>
+
+Combining two atomic orbitals always produces two molecular orbitals:
+<ul>
+
+<li>a <strong class="term">bonding</strong> MO — lower in energy, with electron density
+        <span class="blank" style="min-width:3.9cm"></span>;
+
+<li>an <strong class="term">antibonding</strong> MO (\(\sigma^*\), \(\pi^*\)) — higher in energy,
+        with a <span class="blank" style="min-width:1.6cm"></span> between the nuclei.
+</ul>
+
+\[
+  \text{Bond order} =
+  \answerblank[6.5cm]{$\dfrac{(\text{bonding e}^-) - (\text{antibonding e}^-)}{2}$}
+\]
+
+<p>A bond order of zero means <span class="blank" style="min-width:3cm"></span> — which is
+exactly why \(\ce{He2}\) does not exist.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Bond order practice <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(\ce{H2}\): 2 bonding, 0 antibonding \(\to\) bond order
+        <span class="blank" style="min-width:1.4cm"></span>
+
+<li>\(\ce{He2}\): 2 bonding, 2 antibonding \(\to\) bond order
+        <span class="blank" style="min-width:1.4cm"></span>
+
+<li>\(\ce{O2}\): 10 bonding, 6 antibonding \(\to\) bond order
+        <span class="blank" style="min-width:1.4cm"></span>
+
+<li>\(\ce{N2}\): 10 bonding, 4 antibonding \(\to\) bond order
+        <span class="blank" style="min-width:1.4cm"></span>
+</ol>
+
+<p>Zumdahl notes the payoff: across the period-2 diatomics, as MO bond order
+rises, bond energy <span class="blank" style="min-width:1.8cm"></span> and bond length
+<span class="blank" style="min-width:1.8cm"></span> — strong evidence the model is capturing
+something real.</p>
+
+<h4 class="segment">INSTRUCTION B • The oxygen problem <span class="sub">20 min</span></h4>
+
+<h3>Where Lewis structures fail <span class="badge">ZUM §9.3</span></h3>
+<span class="badge">SP 6</span>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Draw the Lewis structure of \(\ce{O2}\) and you get \(\ce{O=O}\) with two lone pairs
+on each oxygen — <strong>every electron paired</strong>. That structure predicts
+oxygen should be <strong class="term">diamagnetic</strong>, weakly repelled by a magnet.</p>
+
+<p>Liquid oxygen is <strong class="term">paramagnetic</strong>. Pour it between the poles of a magnet
+and it visibly sticks. It has <strong>two unpaired electrons</strong>.</p>
+
+<p>The Lewis model cannot account for this. It is not a small discrepancy or a
+measurement issue — the model simply gets it wrong.</p>
+
+</div>
+
+<p>The MO model resolves it cleanly. Filling oxygen's molecular orbitals places
+the last two electrons in <em>separate</em> degenerate \(\pi^*\) orbitals, with
+parallel spins by Hund's rule. Result: bond order 2 (agreeing with the
+double bond) <em>and</em> two <span class="blank" style="min-width:2.2cm"></span> electrons,
+matching the magnetic evidence exactly.</p>
+
+<h4 class="segment">APPLICATION • Comparing the two models <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>State one thing the localized electron model does better than MO
+        theory, and one thing MO does better.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Both models agree that \(\ce{O2}\) has a bond order of 2. Why is that
+        agreement reassuring rather than trivial?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why does \(\ce{He2}\) not exist, in MO terms? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

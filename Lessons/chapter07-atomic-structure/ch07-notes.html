@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 7 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 7 • Atomic Structure and Periodicity</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §7.1–7.2, 7.5, 7.8–7.9, 7.11–7.12 • PDF pp. 331–389 • 4 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">Read this before you open the chapter</div>
+
+<p>Chapter 7 splits across <em>two</em> CED units and carries more off-syllabus
+material than any chapter you have worked so far — roughly a third of it.
+Reading straight through would cost you hours on topics the exam never asks
+about.</p>
+
+<strong>What feeds the CED:</strong>
+§7.1–7.2 \(\to\) Unit 3.11–3.12 (spectroscopy, photons);
+§7.5, 7.8–7.9, 7.11 \(\to\) Unit 1.5 (electron configuration);
+§7.12 \(\to\) Unit 1.6–1.7 (PES and periodic trends).
+
+<strong>What to skip:</strong> §7.3 (hydrogen line spectrum), §7.4 (Bohr model),
+§7.6 (quantum numbers), §7.7 (orbital shapes and energies in detail),
+§7.10 (history of the periodic table), §7.13 (alkali metals). These are
+classic first-year-college content that AP dropped in the 2019 redesign.
+They are interesting; they are not tested.
+
+</div>
+
+<h2 class="block">Light and the Nature of Matter <span class="sub">Zumdahl §7.1–7.2</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate wavelength, frequency, and photon energy.
+
+<li>Explain the photoelectric effect and what it proved about light.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.1–7.2 • PDF pp. 332–340</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Which has more energy per photon, red or violet light?
+        <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Configuration of \(\ce{Ne}\): <span class="blank" style="min-width:3.4cm"></span>
+
+<li>Which is larger, Na or \(\ce{Na+}\)? <span class="blank" style="min-width:2cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Waves and their arithmetic <span class="sub">25 min</span></h4>
+
+<h3>Electromagnetic radiation <span class="badge">ZUM §7.1</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Light is characterized by three interlocking quantities:</p>
+
+<ul>
+
+<li><strong class="term">Wavelength</strong> \(\lambda\) — distance between successive peaks,
+        in metres.
+
+<li><strong class="term">Frequency</strong> \(\nu\) — cycles per second, in
+        <span class="blank" style="min-width:1.8cm"></span> (Hz).
+
+<li><strong class="term">Speed</strong> — all electromagnetic radiation travels at
+        \(c = \answerblank[3cm]{3.00e8\,\mathrm{m/s}}\) in a vacuum.
+</ul>
+
+\[
+  c = \answerblank[1.6cm]{$\lambda\nu$}
+  \qquad\Rightarrow\qquad
+  \nu = \answerblank[1.6cm]{$c/\lambda$}
+\]
+
+<p>Because \(c\) is fixed, \(\lambda\) and \(\nu\) are
+<span class="blank" style="min-width:2.4cm"></span> related — short wavelength means high
+frequency.</p>
+
+<h4>Energy comes in packets</h4>
+
+<p>Planck's insight was that energy is not continuous but
+<strong class="term">quantized</strong> — transferred in discrete units. For a single photon:
+\[
+  E = \answerblank[1.4cm]{$h\nu$} = \answerblank[1.8cm]{$\dfrac{hc}{\lambda}$}
+  \qquad h = 6.626e-34\,\mathrm{J\cdot s}
+\]</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>The AP equations sheet gives you \(E = h\nu\) but <em>not</em> \(\nu = c/\lambda\).
+When a problem hands you a wavelength, you must supply that step yourself.
+And \(\lambda\) must be in <em>metres</em> — nanometres are the most common
+unit-conversion casualty on this topic.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 1: from wavelength to energy</div>
+
+<p>Find the energy of one photon of 400.&thinsp;nm light.
+\begin{align*}
+  \nu &= \frac{c}{\lambda} = \frac{3.00\times10^{8}}{400.\times10^{-9}}
+       = 7.50e14\,\mathrm{/s}\\
+  E &= h\nu = (6.626\times10^{-34})(7.50\times10^{14})
+     = 4.97e-19\,\mathrm{J}
+\end{align*}
+Per mole: \(\times 6.022\times10^{23} = 299\,\mathrm{kJ/mol}\) —
+comparable to a chemical bond energy, which is why UV light breaks bonds.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Photon arithmetic <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Frequency of 600.&thinsp;nm light:
+        <span class="blank" style="min-width:3.4cm"></span>
+
+<li>Energy of one such photon:
+        <span class="blank" style="min-width:3.4cm"></span>
+
+<li>A photon of 200&thinsp;nm light has how many times the
+        energy of one at 800&thinsp;nm? (No calculator.)
+        <span class="blank" style="min-width:2.4cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The photoelectric effect <span class="sub">20 min</span></h4>
+
+<h3>Evidence that light is particulate <span class="badge">ZUM §7.2</span></h3>
+<span class="badge">SP 6</span>
+
+<p>Shine light on a metal surface and electrons are ejected — but only under
+specific conditions. Zumdahl lists three observations:</p>
+
+<ol>
+
+<li>Below a <strong class="term">threshold frequency</strong> \(\nu_0\),
+        <span class="blank" style="min-width:3cm"></span> are emitted.
+
+<li>Below \(\nu_0\), increasing the <span class="blank" style="min-width:2.2cm"></span>
+        changes nothing — still no electrons.
+
+<li>Above \(\nu_0\), the <em>number</em> of electrons emitted rises with
+        <span class="blank" style="min-width:2.2cm"></span>.
+</ol>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Observation 2 is the decisive one. A pure wave model predicts that
+<em>any</em> frequency should work if you shine it brightly enough — energy
+would simply accumulate until an electron breaks free. It never happens.</p>
+
+<p>Einstein's resolution: light arrives as <strong class="term">photons</strong>, discrete packets of
+energy \(h\nu\). One photon ejects one electron, or it does not. Brighter
+light means <em>more photons</em>, not more energetic ones. Frequency sets
+the energy per packet; intensity sets the number of packets.</p>
+
+</div>
+
+<p>This is exactly the physics behind <strong>photoelectron spectroscopy</strong> in
+Block 4: a high-energy photon ejects an electron, and measuring what is left
+over tells you how tightly that electron was held.</p>
+
+<div class="box note"><div class="box-title">ENRICHMENT — beyond the CED</div>
+
+<p>§7.2 also develops <strong>de Broglie's relation</strong> \(\lambda = h/(mv)\),
+assigning a wavelength to matter, and §7.3–7.4 use the hydrogen line
+spectrum to build the <strong>Bohr model</strong>. Both are historically important
+and neither is on the current CED. Read them for interest, not for the
+exam.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Reasoning from the model <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>A metal has a threshold frequency of
+        6.0e14&thinsp;/s. Predict what happens with (a) intense
+        red light at 4.0e14&thinsp;/s and (b) dim violet light
+        at 7.5e14&thinsp;/s.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Explain why microwave radiation warms food but does not cause
+        sunburn, while ultraviolet does the reverse.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Two beams of light deliver the same total energy per second. One is red, one
+is blue. Which delivers more photons, and why? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Orbitals and Polyelectronic Atoms <span class="sub">Zumdahl §7.5, 7.8–7.9</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Describe what an orbital is — and is not.
+
+<li>Explain shielding and penetration, and why 2s lies below 2p.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.5, 7.8–7.9 • PDF pp. 346–356</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(E\) of a 500&thinsp;nm photon:
+        <span class="blank" style="min-width:3.2cm"></span>
+
+<li>Below the threshold frequency, brighter light does what?
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Max electrons in a \(p\) subshell: <span class="blank" style="min-width:1.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • What an orbital actually is <span class="sub">25 min</span></h4>
+
+<h3>The quantum mechanical model <span class="badge">ZUM §7.5</span></h3>
+<span class="badge">SP 1</span>
+
+<p>An <strong class="term">orbital</strong> is not a path or an orbit. It is a
+<span class="blank" style="min-width:4.8cm"></span> — a region of space where an
+electron is likely to be found. We cannot say where an electron <em>is</em>,
+only where it probably is.</p>
+
+<h4>The Pauli exclusion principle</h4>
+
+<p>An orbital holds at most <span class="blank" style="min-width:1.2cm"></span> electrons, and those two
+must have <span class="blank" style="min-width:3.0cm"></span>.</p>
+
+<p>Combined with the subshell capacities you already know:</p>
+
+<table>
+<tr><th>Subshell</th><th>\(s\)</th><th>\(p\)</th><th>\(d\)</th><th>\(f\)</th></tr>
+<tr><td>Orbitals</td><td><span class="blank" style="min-width:1cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td></tr>
+<tr><td>Max electrons</td><td><span class="blank" style="min-width:1cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td><td><span class="blank" style="min-width:1cm"></span></td></tr>
+</table>
+
+<h4 class="segment">GUIDED PRACTICE • Orbital counting <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Total orbitals in the \(n = 3\) shell:
+        <span class="blank" style="min-width:3.0cm"></span>
+
+<li>Maximum electrons in \(n = 3\): <span class="blank" style="min-width:2cm"></span>
+
+<li>Can two electrons in the same orbital have the same spin? Why?
+        <span class="blank" style="min-width:6.4cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Why multi-electron atoms are harder <span class="sub">20 min</span></h4>
+
+<h3>Shielding and penetration <span class="badge">ZUM §7.9</span></h3>
+<span class="badge">SP 6</span>
+
+<p>In hydrogen, all orbitals of a given \(n\) have the <em>same</em> energy. In any
+atom with more than one electron, they do not — and the reason is
+electron–electron interaction.</p>
+
+<ul>
+
+<li><strong class="term">Shielding</strong>: inner electrons partly block the nuclear charge,
+        so a valence electron feels an <strong class="term">effective nuclear charge</strong>
+        \[ Z_{\text{eff}} \approx Z - \answerblank[2.6cm]{$S$ (shielding)} \]
+
+<li><strong class="term">Penetration</strong>: some orbitals let an electron spend a small but
+        significant fraction of its time <span class="blank" style="min-width:4.5cm"></span>.
+</ul>
+
+<div class="box we"><div class="box-title">Worked example: why 2s lies below 2p</div>
+
+<p>Zumdahl's argument from the radial probability profiles. The 2\(p\) orbital
+actually has its <em>maximum</em> probability closer to the nucleus than the
+2\(s\) does — which naively suggests 2\(p\) should be lower in energy.</p>
+
+<p>But the 2\(s\) profile has a small extra hump of electron density very close
+to the nucleus. So although a 2\(s\) electron spends most of its time slightly
+farther out, it spends a small and very significant amount of time
+<em>inside</em> the shielding of the core.</p>
+
+<p>That penetration means the 2\(s\) electron is attracted more strongly overall.
+Result: in any polyelectronic atom,
+\[ E(2s) < E(2p) \]
+The same pattern holds for 3\(s\) \(<\) 3\(p\) \(<\) 3\(d\).</p>
+
+</div>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>This single fact — penetration ordering \(s < p < d\) within a shell — is
+what makes the aufbau filling order work, and it is what you will
+<em>measure directly</em> with photoelectron spectroscopy in Block 4. PES peak
+positions are the experimental proof of this energy ordering.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Reasoning with \(Z_{\text{eff}}\) <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Which experiences a larger \(Z_{\text{eff}}\): a 2\(p\) electron in
+        oxygen or a 2\(p\) electron in fluorine? Explain.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Sodium's 3\(s\) electron is far easier to remove than any of its 2\(p\)
+        electrons. Give both reasons.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+In hydrogen, 2\(s\) and 2\(p\) have identical energies; in lithium they do not.
+Explain what changed. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Electron Configurations <span class="sub">Zumdahl §7.11</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Write ground-state configurations for atoms and ions.
+
+<li>Connect configuration to position on the periodic table.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.11 • PDF pp. 358–364</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Why is 2\(s\) lower in energy than 2\(p\)?
+        <span class="blank" style="min-width:5.7cm"></span>
+
+<li>Max electrons in \(n = 2\): <span class="blank" style="min-width:1.6cm"></span>
+
+<li>An orbital is best described as a:
+        <span class="blank" style="min-width:4.8cm"></span>
+
+<li>\(Z_{\text{eff}}\) means: <span class="blank" style="min-width:4.8cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Three rules <span class="sub">25 min</span></h4>
+
+<h3>Building ground states <span class="badge">ZUM §7.11</span></h3>
+<span class="badge">SP 1</span>
+
+<ol>
+
+<li><strong class="term">Aufbau</strong>: fill orbitals from
+        <span class="blank" style="min-width:4.5cm"></span>.
+
+<li><strong class="term">Pauli</strong>: at most <span class="blank" style="min-width:4.6cm"></span>,
+        opposite spins.
+
+<li><strong class="term">Hund</strong>: within a subshell, occupy orbitals
+        <span class="blank" style="min-width:4.3cm"></span>, with parallel spins.
+</ol>
+
+<p>Filling order: \(1s\,2s\,2p\,3s\,3p\,\mathbf{4s}\,3d\,4p\,5s\,4d\,5p\)… —
+note that <span class="blank" style="min-width:1.4cm"></span> fills before 3\(d\), a direct consequence of
+the penetration effect from Block 2.</p>
+
+<div class="box we"><div class="box-title">Worked example 1: three notations for sulfur</div>
+
+<p>Sulfur, 16 electrons.<br>
+<strong>Full:</strong> \(1s^2\,2s^2\,2p^6\,3s^2\,3p^4\)<br>
+<strong>Noble-gas core:</strong> \([\ce{Ne}]\,3s^2\,3p^4\)<br>
+<strong>Orbital diagram, 3\(p\) only:</strong>
+\(\uparrow\downarrow\ \ \uparrow\ \ \uparrow\) — Hund's rule requires the
+last two electrons to occupy separate orbitals, leaving two unpaired.</p>
+
+</div>
+
+<h4>Reading configurations off the table</h4>
+
+<p>The periodic table <em>is</em> a configuration map: groups 1–2 are the
+<span class="blank" style="min-width:1.2cm"></span> block, 13–18 the <span class="blank" style="min-width:1.2cm"></span> block,
+the transition metals the <span class="blank" style="min-width:1.2cm"></span> block. An element's
+period number gives the valence <span class="blank" style="min-width:1.2cm"></span>.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Write them <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(\ce{P}\): <span class="blank" style="min-width:4.2cm"></span>
+
+<li>\(\ce{Ca}\): <span class="blank" style="min-width:4.2cm"></span>
+
+<li>\(\ce{Br}\): <span class="blank" style="min-width:4.2cm"></span>
+
+<li>\(\ce{Fe}\): <span class="blank" style="min-width:4.2cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Ions and exceptions <span class="sub">20 min</span></h4>
+
+<h3>Cations, anions, and two anomalies <span class="badge">ZUM §7.11</span></h3>
+<span class="badge">SP 1</span>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>For an ion, adjust the electron count <em>first</em>, then write the
+configuration — do not write the atom's configuration and label it.
+\(\ce{Ca^2+}\) is \([\ce{Ar}]\), not \([\ce{Ar}]4s^2\).</p>
+
+<p>And for transition metals, electrons leave the <span class="blank" style="min-width:1.4cm"></span>
+orbital before the 3\(d\), even though 4\(s\) filled first. \(\ce{Fe^2+}\) is
+\([\ce{Ar}]3d^6\), not \([\ce{Ar}]4s^2 3d^4\).</p>
+
+</div>
+
+<h4>The two exceptions worth knowing</h4>
+
+<ul>
+
+<li>\(\ce{Cr}\): expected \([\ce{Ar}]4s^2 3d^4\), actual
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>\(\ce{Cu}\): expected \([\ce{Ar}]4s^2 3d^9\), actual
+        <span class="blank" style="min-width:3cm"></span>
+</ul>
+
+<p>Half-filled and filled \(d\) subshells are slightly more stable, and the 4\(s\)
+and 3\(d\) energies are close enough that promoting one electron pays off.</p>
+
+<h4 class="segment">APPLICATION • Configurations in context <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Write configurations for \(\ce{S^2-}\), \(\ce{K+}\), and \(\ce{Ar}\). What do
+        you notice? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>How many unpaired electrons does a ground-state Fe atom have?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Distinguish ground state, excited state, and impossible:
+        \(1s^2 2s^2 2p^5 3s^1\) (10 electrons).
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Write the configuration of \(\ce{Fe^3+}\) and state how many unpaired electrons
+it has. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Periodic Trends and PES <span class="sub">Zumdahl §7.12</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain trends in ionization energy, radius, and electronegativity
+        using Coulombic reasoning.
+
+<li>Interpret successive ionization energies and PES spectra.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.12 • PDF pp. 364–371</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Configuration of \(\ce{Cr}\): <span class="blank" style="min-width:3.6cm"></span>
+
+<li>Unpaired electrons in ground-state N: <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Which is removed first from Fe, a 4\(s\) or 3\(d\) electron?
+        <span class="blank" style="min-width:1.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Ionization energy <span class="sub">25 min</span></h4>
+
+<h3>Successive ionization energies <span class="badge">ZUM §7.12</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The <strong class="term">first ionization energy</strong> \(I_1\) removes the
+<span class="blank" style="min-width:3.6cm"></span> (least tightly bound) electron.</p>
+
+<div class="box we"><div class="box-title">Worked example 1: Zumdahl's aluminium</div>
+
+<p>Al is \([\ce{Ne}]3s^2 3p^1\). Removing electrons one at a time:</p>
+
+<div class="center">
+
+<table>
+<tr><th></th><th>\(I_1\)</th><th>\(I_2\)</th><th>\(I_3\)</th><th>\(I_4\)</th></tr>
+<tr><th>kJ/mol</th><th>580</th><th>1815</th><th>2740</th><th>11600</th></tr>
+</table>
+
+</div>
+\(I_1\) removes the lone 3\(p\) electron. \(I_2\) then removes a 3\(s\) electron —
+harder, and not only because 3\(s\) lies lower. The dominant reason is
+<strong>charge</strong>: the second electron is being pulled from a
+<em>positive ion</em> rather than a neutral atom, and Coulomb's law says a
+greater positive charge binds electrons more firmly.
+
+<p>The enormous jump at \(I_4\) marks the point where you begin removing
+<span class="blank" style="min-width:2.2cm"></span> electrons — confirming aluminium has
+<span class="blank" style="min-width:1.4cm"></span> valence electrons.</p>
+
+</div>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>This is the AP tool: locate the <em>big jump</em> in a successive-ionization
+table and count how many electrons came off before it. That number is the
+group's valence count, which identifies the group.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Read the jump <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(I\) values 738, 1451, 7733 kJ/mol \(\to\) group:
+        <span class="blank" style="min-width:2.4cm"></span>
+
+<li>\(I\) values 1012, 1907, 2914, 4964, 6274, 21,267 \(\to\) group:
+        <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Why is \(I_2\) always larger than \(I_1\) for any element?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Trends and PES <span class="sub">20 min</span></h4>
+
+<h3>The three trends, one engine <span class="badge">ZUM §7.12</span></h3>
+<span class="badge">SP 6</span>
+
+<table>
+<tr><th><strong>Property</strong></th><th><strong>Across a period</strong></th><th><strong>Coulombic reason</strong></th></tr>
+<tr><td>Atomic radius</td><td><span class="blank" style="min-width:2.1cm"></span></td><td>rising \(Z_{\text{eff}}\) pulls the same shell inward</td></tr>
+<tr><td>Ionization energy</td><td><span class="blank" style="min-width:2.0cm"></span></td><td>valence electron held more tightly</td></tr>
+<tr><td>Electronegativity</td><td><span class="blank" style="min-width:2.0cm"></span></td><td>same engine: more charge, less distance</td></tr>
+</table>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Two period-2 anomalies in ionization energy: B \(<\) Be (boron's outer
+electron is in a higher-energy 2\(p\)) and O \(<\) N (oxygen's fourth 2\(p\)
+electron is <em>paired</em>, and the repulsion makes it easier to remove).
+Both are standard AP items.</p>
+
+</div>
+
+<h4>Photoelectron spectroscopy</h4>
+
+<p>Zumdahl §7.12 (pp.&nbsp;368–369) applies the photoelectric effect from Block 1
+as a measuring instrument. A high-energy photon ejects an electron; the
+kinetic energy left over reveals how tightly it was bound:
+\[
+  E_{\text{electron}} = h\nu - KE
+\]
+Helium is the usual source, emitting at 58.4&thinsp;nm
+(21.2&thinsp;eV) — energetic enough to eject electrons from most
+atoms.</p>
+
+<p>On the spectrum: peak <em>position</em> gives
+<span class="blank" style="min-width:3.2cm"></span>; peak <em>area</em> gives the
+<span class="blank" style="min-width:4.2cm"></span> in that subshell.</p>
+
+<div class="box we"><div class="box-title">Worked example 2: reading magnesium</div>
+
+<p>Peaks at 126, 9.07, 5.31, and 0.74 MJ/mol with relative areas
+\(2 : 2 : 6 : 2\).</p>
+
+<p>Areas total 12 electrons \(\to\) \(1s^2 2s^2 2p^6 3s^2\) \(\to\) magnesium.
+Note that the 2\(p\) peak (5.31) sits at <em>lower</em> binding energy than
+2\(s\) (9.07), exactly as the penetration argument in Block 2 predicts. PES
+is the experimental confirmation of that energy ordering.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Trends and spectra together <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>The 1\(s\) binding energy of boron is 19.3 MJ/mol; of fluorine, 67.2
+        MJ/mol. Explain the difference without using the word “shell.”
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Predict two specific differences between the PES spectra of
+        phosphorus and sulfur. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Rank first ionization energy: Na, Mg, Al. Explain any anomaly.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A PES spectrum shows peaks with areas \(2:2:6:2:3\). Identify the element and
+state which peak's electrons are lost first on ionization.
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

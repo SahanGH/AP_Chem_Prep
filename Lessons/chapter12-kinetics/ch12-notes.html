@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 12 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 12 • Chemical Kinetics</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §12.1–12.7 • PDF pp. 593–632 • 5 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How this chapter fits the AP course</div>
+
+<strong>Nothing here is off-syllabus.</strong> Chapter 12 maps onto CED Unit 5
+(Kinetics) section by section, in the textbook's own order — the cleanest
+one-to-one match in the book alongside Chapter 6. You can assign “read
+Chapter 12” and mean it.
+
+<p>§12.1 \(\to\) 5.1 • §12.2–12.3 \(\to\) 5.2 •\
+§12.4 \(\to\) 5.3 • §12.5 \(\to\) 5.4, 5.7–5.9 •\
+§12.6 \(\to\) 5.5, 5.6, 5.10 • §12.7 \(\to\) 5.11.</p>
+
+<p>One idea governs the whole chapter and is worth holding onto from the start:
+<strong>everything about a rate must be determined by experiment.</strong> You
+cannot read a rate law off a balanced equation. Thermodynamics tells you
+whether a reaction <em>can</em> happen; kinetics tells you how fast, and the
+two are independent.</p>
+
+</div>
+
+<h2 class="block">Reaction Rates <span class="sub">Zumdahl §12.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Express reaction rate in terms of any reactant or product.
+
+<li>Distinguish average from instantaneous rate.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §12.1 • PDF pp. 594–598</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Balance: \(\ce{N2O5 -> NO2 + O2}\):
+        <span class="blank" style="min-width:4.9cm"></span>
+
+<li>Molarity units: <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Does a negative \(\Delta H\) mean a reaction is fast?
+        <span class="blank" style="min-width:1.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Defining rate <span class="sub">25 min</span></h4>
+
+<h3>Concentration change per unit time <span class="badge">ZUM §12.1</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  \text{rate} = \answerblank[4cm]{$-\dfrac{\Delta[\text{reactant}]}{\Delta t}$}
+  = \answerblank[3.8cm]{$+\dfrac{\Delta[\text{product}]}{\Delta t}$}
+\]
+
+<p>The minus sign on the reactant term exists so the rate comes out
+<span class="blank" style="min-width:1.8cm"></span> — reactant concentration is falling, and a
+negative rate would be meaningless.</p>
+
+<h4>Stoichiometry relates the rates</h4>
+
+<p>For \(\ce{2 N2O5 -> 4 NO2 + O2}\), \(\ce{NO2}\) appears four times as fast as
+\(\ce{O2}\). To get one number for the whole reaction, divide each rate by its
+<span class="blank" style="min-width:2.2cm"></span>:
+\[
+  \text{rate} = -\frac{1}{2}\frac{\Delta[\ce{N2O5}]}{\Delta t}
+  = \frac{1}{4}\frac{\Delta[\ce{NO2}]}{\Delta t}
+  = \frac{\Delta[\ce{O2}]}{\Delta t}
+\]</p>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>This is why a question must say <em>which</em> species it means. “The rate of
+the reaction” and “the rate of disappearance of \(\ce{N2O5}\)” differ by a
+factor of two here. Read the wording carefully before computing.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Relating rates <span class="sub">15 min</span></h4>
+
+For \(\ce{2 NO + O2 -> 2 NO2}\), if \(\ce{O2}\) disappears at
+0.020&thinsp;M/s:
+<ol>
+
+<li>Rate of \(\ce{NO}\) disappearance:
+        <span class="blank" style="min-width:3.2cm"></span>
+
+<li>Rate of \(\ce{NO2}\) formation:
+        <span class="blank" style="min-width:3.2cm"></span>
+
+<li>Rate of the reaction: <span class="blank" style="min-width:3.2cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Average versus instantaneous <span class="sub">20 min</span></h4>
+
+<h3>Reading a concentration–time curve <span class="badge">ZUM §12.1</span></h3>
+<span class="badge">SP 4</span>
+
+<div class="center">
+
+<figure><img src="fig-ch12-notes-1.png" alt="figure"></figure>
+
+</div>
+
+<ul>
+
+<li>The <strong class="term">average rate</strong> over an interval is the slope of the
+        <span class="blank" style="min-width:2.4cm"></span> joining two points.
+
+<li>The <strong class="term">instantaneous rate</strong> at one moment is the slope of the
+        <span class="blank" style="min-width:1.8cm"></span> at that point.
+
+<li>The <strong class="term">initial rate</strong> is the instantaneous rate at
+        <span class="blank" style="min-width:1.4cm"></span> — the value used in rate-law
+        experiments, because no products have accumulated to complicate
+        things.
+</ul>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>The curve is steepest at the start and flattens out. That means the rate is
+<em>not constant</em> — it decreases as reactants are consumed. Reporting an
+average rate over a long interval as though it were the rate throughout is a
+standard error.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Rate reasoning <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Explain why the initial rate is preferred for determining a rate
+        law. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>A reaction's rate decreases steadily over time even at constant
+        temperature. Explain why.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+For \(\ce{N2 + 3 H2 -> 2 NH3}\), if \(\ce{H2}\) is consumed at
+0.30&thinsp;M/s, at what rate is \(\ce{NH3}\) formed?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Rate Laws and the Method of Initial Rates <span class="sub">Zumdahl §12.2–12.3</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Write a rate law and interpret reaction orders.
+
+<li>Determine orders experimentally from initial-rate data.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §12.2–12.3 • PDF pp. 598–604</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Rate of the reaction \(\ce{2 A -> B}\) in terms of A:
+        <span class="blank" style="min-width:3.6cm"></span>
+
+<li>Instantaneous rate is the slope of what?
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Why use initial rates? <span class="blank" style="min-width:4.9cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • The rate law <span class="sub">25 min</span></h4>
+
+<h3>Form and meaning <span class="badge">ZUM §12.2</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  \text{rate} = k[\ce{A}]^n[\ce{B}]^m
+\]
+
+\(k\) is the <strong class="term">rate constant</strong>; \(n\) and \(m\) are the
+<strong class="term">reaction orders</strong>. The <strong class="term">overall order</strong> is
+<span class="blank" style="min-width:1.4cm"></span>.
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The exponents are not the coefficients.</strong> They must be determined
+experimentally and frequently disagree with the balanced equation. Zumdahl's
+\(\ce{2 N2O5 -> 4 NO2 + O2}\) has a coefficient of 2 but is
+<em>first</em> order in \(\ce{N2O5}\). Any answer that reads orders off the
+equation is guessing.
+
+</div>
+
+<h4>What each order means physically</h4>
+
+<table>
+<tr><th><strong>Order in A</strong></th><th><strong>Double [A] and the rate…</strong></th><th><strong>Meaning</strong></th></tr>
+<tr><td>0</td><td><span class="blank" style="min-width:3.4cm"></span></td><td>rate independent of [A]</td></tr>
+<tr><td>1</td><td><span class="blank" style="min-width:1.8cm"></span></td><td>rate proportional to [A]</td></tr>
+<tr><td>2</td><td><span class="blank" style="min-width:2.4cm"></span></td><td>rate proportional to [A]\(^2\)</td></tr>
+</table>
+
+<div class="box we"><div class="box-title">Worked example: Zumdahl's dinitrogen pentoxide</div>
+
+<p>For \(\ce{2 N2O5 -> 4 NO2 + O2}\) at 45&thinsp;&deg;C, tangent slopes give:</p>
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{N2O5}]\)</th><th>rate (mol/L/s)</th></tr>
+<tr><td>0.90 M</td><td>\(5.4\times10^{-4}\)</td></tr>
+<tr><td>0.45 M</td><td>\(2.7\times10^{-4}\)</td></tr>
+</table>
+
+</div>
+Halving the concentration halves the rate, so the reaction is
+<strong>first order</strong> in \(\ce{N2O5}\):
+\[ \text{rate} = k[\ce{N2O5}] \]
+even though the coefficient is 2.
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Interpreting orders <span class="sub">15 min</span></h4>
+
+For rate \(= k[\ce{A}]^2[\ce{B}]\):
+<ol>
+
+<li>Overall order: <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Effect of doubling [A]: <span class="blank" style="min-width:3cm"></span>
+
+<li>Effect of doubling [B]: <span class="blank" style="min-width:3cm"></span>
+
+<li>Effect of doubling both: <span class="blank" style="min-width:3cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The method of initial rates <span class="sub">20 min</span></h4>
+
+<h3>Changing one thing at a time <span class="badge">ZUM §12.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The procedure: run several trials, changing <em>one</em> concentration
+between two of them while holding the others
+<span class="blank" style="min-width:1.8cm"></span>. The ratio of rates then reveals that
+reactant's order.</p>
+
+<div class="box we"><div class="box-title">Worked example: determining a full rate law</div>
+
+<p>For \(\ce{2 NO + O2 -> 2 NO2}\):</p>
+
+<div class="center">
+
+<table>
+<tr><th>Trial</th><th>\([\ce{NO}]\)</th><th>\([\ce{O2}]\)</th><th>initial rate (M/s)</th></tr>
+<tr><td>1</td><td>0.010</td><td>0.010</td><td>\(2.5\times10^{-5}\)</td></tr>
+<tr><td>2</td><td>0.020</td><td>0.010</td><td>\(1.0\times10^{-4}\)</td></tr>
+<tr><td>3</td><td>0.010</td><td>0.020</td><td>\(5.0\times10^{-5}\)</td></tr>
+</table>
+
+</div>
+
+<strong>Order in NO</strong> (trials 1 and 2, \([\ce{O2}]\) fixed): [NO] doubled and
+the rate went up by a factor of \(1.0\times10^{-4}/2.5\times10^{-5} = 4\).
+Since \(2^n = 4\), \(n = 2\).
+
+<strong>Order in \(\ce{O2}\)</strong> (trials 1 and 3, [NO] fixed): \([\ce{O2}]\) doubled
+and the rate doubled. \(2^m = 2\), so \(m = 1\).
+\[ \text{rate} = k[\ce{NO}]^2[\ce{O2}] \]
+
+<strong>Rate constant</strong> (any trial):
+\[
+  k = \frac{2.5\times10^{-5}}{(0.010)^2(0.010)}
+    = 25\,\mathrm{/M^2/s}
+\]
+
+</div>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>The units of \(k\) depend on the overall order — they are whatever makes the
+right side come out as M/s. Third order here gives
+/M&sup2;/s. If you are unsure of an order, checking
+that the units of \(k\) work is a reliable diagnostic.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Determine a rate law <span class="sub">20 min</span></h4>
+
+<p>For \(\ce{A + B -> C}\):</p>
+
+<div class="center">
+
+<table>
+<tr><th>Trial</th><th>\([\ce{A}]\)</th><th>\([\ce{B}]\)</th><th>rate (M/s)</th></tr>
+<tr><td>1</td><td>0.10</td><td>0.10</td><td>\(4.0\times10^{-3}\)</td></tr>
+<tr><td>2</td><td>0.20</td><td>0.10</td><td>\(8.0\times10^{-3}\)</td></tr>
+<tr><td>3</td><td>0.20</td><td>0.20</td><td>\(8.0\times10^{-3}\)</td></tr>
+</table>
+
+</div>
+
+<ol>
+
+<li>Order in A: <span class="blank" style="min-width:1.6cm"></span> &emsp; 
+        Order in B: <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Write the rate law and the overall order.
+        <span class="blank" style="min-width:6.0cm"></span>
+
+<li>Calculate \(k\) with units. <div class="workspace" style="height:1.8cm"></div>
+
+<li>What does it mean physically that B is zero order?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why can a rate law never be written from a balanced equation alone?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Integrated Rate Laws and Half-Life <span class="sub">Zumdahl §12.4</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Use integrated rate laws for zero, first, and second order.
+
+<li>Identify order from which plot is linear; compute half-life.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §12.4 • PDF pp. 604–615</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Rate law for a first-order reaction in A:
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>If doubling [A] quadruples the rate, the order is:
+        <span class="blank" style="min-width:1.4cm"></span>
+
+<li>Units of \(k\) for a first-order reaction:
+        <span class="blank" style="min-width:2cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Three integrated forms <span class="sub">25 min</span></h4>
+
+<h3>Concentration as a function of time <span class="badge">ZUM §12.4</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The rate law tells you the rate <em>now</em>; the integrated rate law tells
+you the concentration <em>later</em>.</p>
+
+<table>
+<tr><th><strong>Order</strong></th><th><strong>Integrated form</strong></th><th><strong>Linear plot</strong></th><th><strong>Half-life</strong></th></tr>
+<tr><td>0</td><td>\([\ce{A}]_t = -kt + [\ce{A}]_0\)</td><td><span class="blank" style="min-width:2.2cm"></span></td><td>\(t_{1/2} = [\ce{A}]_0/2k\)</td></tr>
+<tr><td>1</td><td>\(\ln[\ce{A}]_t = -kt + \ln[\ce{A}]_0\)</td><td><span class="blank" style="min-width:2.4cm"></span></td><td><span class="blank" style="min-width:2.7cm"></span></td></tr>
+<tr><td>2</td><td>\(\dfrac{1}{[\ce{A}]_t} = kt + \dfrac{1}{[\ce{A}]_0}\)</td><td><span class="blank" style="min-width:2.2cm"></span></td><td>\(t_{1/2} = 1/(k[\ce{A}]_0)\)</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Each is a straight line \(y = mx + b\) with slope \(\pm k\). That is the
+practical test: given concentration–time data, plot all three and see
+<em>which one is linear</em>. That plot identifies the order, and its slope
+gives \(k\). The AP equations sheet supplies the first- and second-order
+forms.</p>
+
+</div>
+
+<h4>Why first-order half-life is special</h4>
+
+<p>Only for first order is \(t_{1/2}\) <span class="blank" style="min-width:6.0cm"></span>. A first-order reaction takes the same time to go from
+1.00 M to 0.50 M as from 0.50 M to 0.25 M — which is why radioactive decay
+and drug elimination are described by half-lives at all.</p>
+
+<div class="box we"><div class="box-title">Worked example: Zumdahl's \(\ce{N2O5}\) data</div>
+
+<p>Starting at \([\ce{N2O5}]_0 = 0.1000\,\mathrm{M}\), the concentration is
+0.0500&thinsp;M at 100&thinsp;s and 0.0250&thinsp;M at
+200&thinsp;s. Equal successive halvings confirm
+<strong>first order</strong> with \(t_{1/2} = 100\,\mathrm{s}\):
+\[
+  k = \frac{0.693}{100.} = 6.93e-3\,\mathrm{/s}
+\]</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example: the tempting wrong answer</div>
+
+<p>What is \([\ce{N2O5}]\) at 150&thinsp;s?</p>
+
+<p>It is tempting to average 0.0500 and 0.0250 to get 0.0375. <strong>That is
+wrong.</strong> It is \(\ln[\ce{A}]\), not \([\ce{A}]\), that is linear in time.
+\begin{align*}
+  \ln[\ce{A}]_{150} &= -(6.93\times10^{-3})(150.) + \ln(0.1000)\\
+  &= -1.040 - 2.303 = -3.343\\
+  [\ce{A}]_{150} &= e^{-3.343} = 0.0353\,\mathrm{M}
+\end{align*}
+Not halfway between — and the gap between 0.0375 and 0.0353 is exactly the
+error that linear thinking introduces.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Half-life and order <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>First-order with \(k = 0.0231\,\mathrm{/s}\). Find \(t_{1/2}\):
+        <span class="blank" style="min-width:2.8cm"></span>
+
+<li>After three half-lives, what fraction remains?
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>A plot of \(1/[\ce{A}]\) versus \(t\) is linear. The order is:
+        <span class="blank" style="min-width:1.4cm"></span>
+
+<li>A plot of \([\ce{A}]\) versus \(t\) is linear. The order is:
+        <span class="blank" style="min-width:1.4cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Identifying order from data <span class="sub">20 min</span></h4>
+
+<h3>The graphical method <span class="badge">ZUM §12.4</span></h3>
+<span class="badge">SP 4</span>
+
+<div class="center">
+
+<figure><img src="fig-ch12-notes-2.png" alt="figure"></figure>
+
+</div>
+
+<p>Procedure: tabulate \([\ce{A}]\), \(\ln[\ce{A}]\), and \(1/[\ce{A}]\) against
+time. Exactly one column will plot as a straight line, and that identifies
+the <span class="blank" style="min-width:1.4cm"></span>. The magnitude of the slope is
+<span class="blank" style="min-width:1.2cm"></span>.</p>
+
+<h4 class="segment">APPLICATION • Full analysis <span class="sub">20 min</span></h4>
+
+<p>A reaction is first order in A with \(k = 0.0450\,\mathrm{/s}\) and
+\([\ce{A}]_0 = 0.800\,\mathrm{M}\).</p>
+
+<ol>
+
+<li>Find \(t_{1/2}\). <span class="blank" style="min-width:3cm"></span>
+
+<li>Find \([\ce{A}]\) after 30.0&thinsp;s. <div class="workspace" style="height:2.2cm"></div>
+
+<li>How long until \([\ce{A}] = 0.100\,\mathrm{M}\)? <div class="workspace" style="height:2.2cm"></div>
+
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A first-order reaction has \(t_{1/2} = 20\,\mathrm{min}\). If you start with
+8.0&thinsp;g, how much remains after 60&thinsp;min?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Reaction Mechanisms <span class="sub">Zumdahl §12.5</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Write rate laws for elementary steps from their molecularity.
+
+<li>Use the rate-determining step to test a proposed mechanism.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §12.5 • PDF pp. 615–620</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(t_{1/2}\) for first order with \(k = 0.0693\,\mathrm{/s}\):
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Which plot is linear for second order?
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Fraction left after 2 half-lives: <span class="blank" style="min-width:1.6cm"></span>
+
+<li>Rate law exponents come from: <span class="blank" style="min-width:3cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Elementary steps <span class="sub">25 min</span></h4>
+
+<h3>What actually happens, collision by collision <span class="badge">ZUM §12.5</span></h3>
+<span class="badge">SP 1</span>
+
+<p>A <strong class="term">mechanism</strong> is the series of <strong class="term">elementary steps</strong> by which a
+reaction really occurs. For an elementary step — and <em>only</em> for an
+elementary step — the rate law can be written directly from the
+<strong class="term">molecularity</strong>:</p>
+
+<table>
+<tr><th><strong>Molecularity</strong></th><th><strong>Step</strong></th><th><strong>Rate law</strong></th></tr>
+<tr><td>Unimolecular</td><td>\(\ce{A -> products}\)</td><td><span class="blank" style="min-width:2.4cm"></span></td></tr>
+<tr><td>Bimolecular</td><td>\(\ce{A + B -> products}\)</td><td><span class="blank" style="min-width:3cm"></span></td></tr>
+<tr><td>Bimolecular</td><td>\(\ce{2A -> products}\)</td><td><span class="blank" style="min-width:2.6cm"></span></td></tr>
+</table>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>This is the one place coefficients <em>do</em> become exponents — because an
+elementary step describes an actual collision. Never do this for an overall
+balanced equation. Knowing which is which is the whole skill.</p>
+
+</div>
+
+<h4>Two requirements for a valid mechanism</h4>
+
+<ol>
+
+<li>The steps must sum to the <span class="blank" style="min-width:3.4cm"></span>.
+
+<li>The predicted rate law must match the
+        <span class="blank" style="min-width:3.4cm"></span> rate law.
+</ol>
+
+<p>An <strong class="term">intermediate</strong> is produced in one step and consumed in a later one,
+so it <span class="blank" style="min-width:2.6cm"></span> in the sum and never appears in the
+overall equation.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Write step rate laws <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(\ce{O3 -> O2 + O}\): <span class="blank" style="min-width:4cm"></span>
+
+<li>\(\ce{NO2 + NO2 -> NO3 + NO}\):
+        <span class="blank" style="min-width:4cm"></span>
+
+<li>\(\ce{O + O3 -> 2 O2}\):
+        <span class="blank" style="min-width:4.4cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The rate-determining step <span class="sub">20 min</span></h4>
+
+<h3>The slow step controls everything <span class="badge">ZUM §12.5</span></h3>
+<span class="badge">SP 6</span>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Zumdahl's analogy: pouring water rapidly through a funnel into a container.
+The container fills at a rate set by the <em>funnel opening</em>, not by how
+fast you pour. In the same way, an overall reaction can be no faster than
+its <span class="blank" style="min-width:2.6cm"></span> — the
+<strong class="term">rate-determining step</strong>.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example: Zumdahl's \(\ce{NO2}\) \(+\) \(\ce{CO}\)</div>
+
+<p>Overall: \(\ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}\).
+Experimentally, rate \(= k[\ce{NO2}]^2\) — note that \(\ce{CO}\) does not appear
+at all.</p>
+
+<p>Proposed mechanism:
+\begin{align*}
+  \ce{NO2 + NO2 &-> NO3 + NO} &&\text{slow (rate-determining)}\\
+  \ce{NO3 + CO &-> NO2 + CO2} &&\text{fast}
+\end{align*}</p>
+
+<strong>Check 1 — do the steps sum correctly?</strong> \(\ce{NO3}\) cancels, and one
+\(\ce{NO2}\) appears on both sides and cancels, leaving
+\(\ce{NO2 + CO -> NO + CO2}\). ✓
+
+<strong>Check 2 — does the predicted rate law match?</strong> The slow step is
+bimolecular in \(\ce{NO2}\), so rate \(= k[\ce{NO2}]^2\). ✓
+
+<p>The mechanism also explains the puzzle: \(\ce{CO}\) is absent from the rate law
+because it appears only <em>after</em> the rate-determining step. Speeding up
+a step that comes after the bottleneck changes nothing.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Evaluate a mechanism <span class="sub">20 min</span></h4>
+
+<p>Overall: \(\ce{2 NO + O2 -> 2 NO2}\), with experimental
+rate \(= k[\ce{NO}]^2[\ce{O2}]\). Proposed:
+\begin{align*}
+  \ce{NO + NO &-> N2O2} &&\text{fast equilibrium}\\
+  \ce{N2O2 + O2 &-> 2 NO2} &&\text{slow}
+\end{align*}</p>
+
+<ol>
+
+<li>Identify the intermediate.
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Verify the steps sum to the overall equation.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>The slow step gives rate \(= k[\ce{N2O2}][\ce{O2}]\), but
+        \(\ce{N2O2}\) is an intermediate and cannot appear in a rate law.
+        Using the fast equilibrium \([\ce{N2O2}] \propto [\ce{NO}]^2\),
+        show that the mechanism predicts the observed rate law.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why can a proposed mechanism never be <em>proved</em> correct?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Collision Model, Activation Energy, and Catalysis <span class="sub">Zumdahl §12.6–12.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain rate in terms of collisions, energy, and orientation.
+
+<li>Interpret energy profiles and use the Arrhenius relationship.
+
+<li>Explain how catalysts work.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §12.6–12.7 • PDF pp. 620–632</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Rate law for the elementary step \(\ce{2 A -> B}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>A species made then consumed is called an:
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>The slowest step is called the:
+        <span class="blank" style="min-width:4.5cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Why most collisions do nothing <span class="sub">25 min</span></h4>
+
+<h3>The collision model <span class="badge">ZUM §12.6</span></h3>
+<span class="badge">SP 1</span>
+
+<p>Molecules collide constantly, yet reactions proceed far more slowly than
+collision frequency alone would predict. Two requirements filter them:</p>
+
+<ol>
+
+<li>Sufficient <span class="blank" style="min-width:3.0cm"></span> — at least the
+        <strong class="term">activation energy</strong> \(E_a\).
+
+<li>Correct <span class="blank" style="min-width:2.4cm"></span> — the reacting atoms must
+        meet.
+</ol>
+
+<div class="center">
+
+<figure><img src="fig-ch12-notes-3.png" alt="figure"></figure>
+
+</div>
+
+<p>The peak is the <strong class="term">activated complex</strong> (transition state). Note that
+\(E_a\) and \(\Delta H\) are <span class="blank" style="min-width:2.4cm"></span> — a very
+exothermic reaction can still be extremely slow if \(E_a\) is large, which is
+why diamond does not spontaneously become graphite.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+\(E_a\) controls the <em>rate</em>; \(\Delta H\) controls the <em>energy
+released</em>. Confusing them produces the classic wrong claim that exothermic
+reactions must be fast. They are unrelated quantities.
+
+</div>
+
+<h4>Temperature and the Arrhenius relationship</h4>
+
+\[
+  k = Ae^{-E_a/RT}
+  \qquad\Longleftrightarrow\qquad
+  \ln k = \answerblank[3.4cm]{$-\dfrac{E_a}{R}\left(\dfrac1T\right) + \ln A$}
+\]
+
+<p>A plot of \(\ln k\) versus \(1/T\) is a straight line of slope
+<span class="blank" style="min-width:1.8cm"></span>. Raising the temperature increases \(k\) because
+a larger <em>fraction</em> of molecules exceeds \(E_a\) — connect this to the
+Maxwell–Boltzmann curves from Unit 3.</p>
+
+<div class="box we"><div class="box-title">Worked example: finding \(E_a\)</div>
+
+<p>For \(\ce{2 N2O5 -> 4 NO2 + O2}\): \(k = 2.0\times10^{-5}\ \mathrm{/s}\) at
+20&thinsp;&deg;C and \(k = 2.9\times10^{-3}\ \mathrm{/s}\) at
+60&thinsp;&deg;C.
+\begin{align*}
+  \ln\frac{k_2}{k_1} &= -\frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)\\
+  \ln\frac{2.9\times10^{-3}}{2.0\times10^{-5}} &= \ln(145) = 4.98\\
+  \frac{1}{333}-\frac{1}{293} &= -4.10\times10^{-4}\\
+  E_a &= \frac{(8.314)(4.98)}{4.10\times10^{-4}} = 1.0e5\,\mathrm{J/mol}
+       = 100\,\mathrm{kJ/mol}
+\end{align*}
+A 40-degree rise multiplied the rate constant by roughly 145.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Energy profile reading <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(E_a\) is measured from which point to which?
+        <span class="blank" style="min-width:5cm"></span>
+
+<li>\(\Delta H\) is measured from which to which?
+        <span class="blank" style="min-width:5cm"></span>
+
+<li>If the peak lies above the reactants and the products lie below,
+        the reaction is: <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Catalysis <span class="sub">20 min</span></h4>
+
+<h3>A different path <span class="badge">ZUM §12.7</span></h3>
+<span class="badge">SP 6</span>
+
+<p>A <strong class="term">catalyst</strong> increases the rate by providing an alternative pathway
+with a <span class="blank" style="min-width:2cm"></span>. It is
+<span class="blank" style="min-width:3.0cm"></span> — it is regenerated by the end.</p>
+
+<table>
+<tr><th></th><th><strong>Catalyst</strong></th><th><strong>Intermediate</strong></th></tr>
+<tr><td>Appears first as a</td><td><span class="blank" style="min-width:1.8cm"></span></td><td><span class="blank" style="min-width:1.6cm"></span></td></tr>
+<tr><td>Net effect</td><td>regenerated, unchanged</td><td>consumed later</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>The distinction is a favourite exam item and comes down to <em>order of
+appearance</em>. A catalyst is used in an early step and regenerated in a later
+one; an intermediate is created in an early step and used up in a later one.
+Both cancel from the overall equation — so look at which side each appears
+on first.</p>
+
+</div>
+
+<h4>What a catalyst does and does not change</h4>
+
+<ul>
+
+<li>Changes: the <span class="blank" style="min-width:2.4cm"></span>, \(E_a\), and the rate.
+
+<li>Does <em>not</em> change: \(\Delta H\), the position of
+        <span class="blank" style="min-width:2.5cm"></span>, or the identity of the products.
+</ul>
+
+<p>Types: <strong class="term">homogeneous</strong> (same phase as reactants) and
+<strong class="term">heterogeneous</strong> (different phase — typically a solid surface, as in a
+catalytic converter). <strong class="term">Enzymes</strong> are biological catalysts.</p>
+
+<h4 class="segment">APPLICATION • Catalysis reasoning <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>On an energy profile, sketch how a catalyst changes the curve and
+        state what stays the same. <div class="workspace" style="height:3.2cm"></div>
+
+<li>A catalyst speeds up a reaction. Does it produce more product at
+        equilibrium? Explain. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>In this mechanism, classify \(\ce{Cl}\) and \(\ce{ClO}\):
+        \(\ce{Cl + O3 -> ClO + O2}\); \(\ce{ClO + O -> Cl + O2}\).
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why does a modest temperature rise often produce a large increase in rate?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

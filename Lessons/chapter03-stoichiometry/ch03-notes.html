@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 3 • Stoichiometry</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §3.1–3.11 • PDF pp. 110–167 • 4 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How this chapter fits the AP course</div>
+
+<p>The front half (§3.1–3.7) is CED Unit 1 territory — moles, molar mass,
+percent composition, empirical formulas. The back half (§3.8–3.11) is
+<em>Unit 4</em> content you won't formally meet until much later: balancing,
+mass-to-mass calculations, limiting reactant, percent yield. Working the
+whole chapter now front-loads the single most reusable skill in chemistry.
+Every unit from 4 onward assumes you can do stoichiometry without thinking.</p>
+
+</div>
+
+<h2 class="block">Counting by Weighing <span class="sub">Zumdahl §3.1–3.5</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain why chemists count particles by weighing them.
+
+<li>Convert fluently among mass, moles, and number of particles.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §3.1–3.5 • PDF pp. 110–123</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Neutrons in \(\ce{^{65}Cu}\): <span class="blank" style="min-width:2cm"></span>
+
+<li>Formula for calcium phosphate: <span class="blank" style="min-width:3cm"></span>
+
+<li>Sig figs in 0.03060&thinsp;g: <span class="blank" style="min-width:1.5cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • The mole and molar mass <span class="sub">25 min</span></h4>
+
+<h3>Counting by weighing <span class="badge">ZUM §3.1–3.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>You cannot count atoms individually, so you count them the way a bank counts
+pennies — by <span class="blank" style="min-width:2.2cm"></span>. That requires knowing the
+average mass of one particle, which is what the periodic table gives you.</p>
+
+<p>The <strong class="term">mole</strong> is a counting unit:
+\[
+  1\ \text{mol} = \answerblank[4.6cm]{$6.022\times10^{23}$ particles}
+  \qquad (N_A,\ \text{Avogadro's number})
+\]</p>
+
+<h4>Atomic mass is a weighted average</h4>
+
+<p>Because elements are mixtures of isotopes, the tabulated mass is
+\[
+  \bar m = \answerblank[6.4cm]{$\sum(\text{fractional abundance}\times\text{mass})$}
+\]</p>
+
+\(\ce{^{63}Cu}\) (62.93 u, 69.15%) and \(\ce{^{65}Cu}\) (64.93 u, 30.85%) give
+<span class="blank" style="min-width:2.6cm"></span> — closer to 63 because that isotope
+dominates.
+
+<h4>Molar mass</h4>
+
+<p>The <strong class="term">molar mass</strong> \(M\) in g/mol is numerically the atomic
+(or formula) mass. Build it by summing:</p>
+
+\(\ce{Ca(NO3)2}\): \(40.08 + 2(14.01) + 6(16.00) =\)
+<span class="blank" style="min-width:3.2cm"></span>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Count the atoms <em>inside</em> parentheses times the subscript outside.
+\(\ce{Ca(NO3)2}\) has 2 N and 6 O, not 1 N and 3 O. This single slip wrecks more
+stoichiometry problems than any other.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Conversions in both directions <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Moles in 36.0&thinsp;g of \(\ce{H2O}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Mass of 0.500&thinsp;mol of \(\ce{NaCl}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Molecules in 2.00&thinsp;mol of \(\ce{CO2}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Moles of O atoms in 1.00&thinsp;mol of \(\ce{Ca(NO3)2}\):
+        <span class="blank" style="min-width:3cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Solving problems systematically <span class="sub">20 min</span></h4>
+
+<h3>Where are we going? How do we get there? <span class="badge">ZUM §3.5</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Zumdahl's framing, worth adopting: before computing, write
+<em>where are we going</em> (the target quantity and unit) and <em>what do
+we know</em>. Then build the path.</p>
+
+<div class="box we"><div class="box-title">Worked example: multi-step conversion</div>
+
+<p>How many hydrogen atoms are in 25.0&thinsp;g of \(\ce{C3H8}\)?
+\begin{align*}
+  M(\ce{C3H8}) &= 3(12.01) + 8(1.008) = 44.09\,\mathrm{g/mol}\\
+  n &= \frac{25.0}{44.09} = 0.567\,\mathrm{mol}\ \ce{C3H8}\\
+  n_{\ce{H}} &= 8 \times 0.567 = 4.54\,\mathrm{mol}\ \ce{H}\\
+  N_{\ce{H}} &= 4.54 \times 6.022\times10^{23} = 2.73\times10^{24}\ \text{atoms}
+\end{align*}
+Every step passes through moles. There is no shortcut from grams to atoms.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Reverse problems <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>A sample of \(\ce{N2}\) contains \(3.01\times10^{23}\) molecules. Find its
+        mass. <div class="workspace" style="height:2.2cm"></div>
+
+<li>A 5.00&thinsp;g sample of an unknown metal contains
+        \(4.58\times10^{22}\) atoms. Identify the metal.
+        <div class="workspace" style="height:2.4cm"></div>
+
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Which contains more atoms: 10.0&thinsp;g of He or 10.0&thinsp;g of Ne?
+Justify without a calculator. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Formulas from Composition Data <span class="sub">Zumdahl §3.6–3.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Compute percent composition from a formula.
+
+<li>Determine empirical and molecular formulas from percent composition
+        or combustion data.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §3.6–3.7 • PDF pp. 123–132</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Molar mass of \(\ce{(NH4)2SO4}\):
+        <span class="blank" style="min-width:3.2cm"></span>
+
+<li>Moles in 4.4&thinsp;g \(\ce{CO2}\): <span class="blank" style="min-width:2.5cm"></span>
+
+<li>Atoms in 0.25&thinsp;mol Fe: <span class="blank" style="min-width:3cm"></span>
+
+<li>Mass of 2.0&thinsp;mol \(\ce{O2}\): <span class="blank" style="min-width:2.5cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Percent composition <span class="sub">25 min</span></h4>
+
+<h3>From formula to percentages <span class="badge">ZUM §3.6</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  \%\ \text{element} =
+  \answerblank[7.5cm]{$\dfrac{\text{mass of that element in 1 mol}}{\text{molar mass}}\times100\%$}
+\]
+
+\(\ce{C2H5OH}\) (\(M = 46.07\)): \(\%\,\ce{C} = \dfrac{24.02}{46.07}\times100 =\)
+<span class="blank" style="min-width:2.4cm"></span>
+
+<p>A useful check: the percentages must total
+<span class="blank" style="min-width:1.8cm"></span>.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Percent composition drill <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>\(\%\,\ce{N}\) in \(\ce{NH3}\): <span class="blank" style="min-width:2.6cm"></span>
+
+<li>\(\%\,\ce{O}\) in \(\ce{H2SO4}\): <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Mass of Fe in 100.0&thinsp;g of \(\ce{Fe2O3}\):
+        <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Empirical and molecular formulas <span class="sub">20 min</span></h4>
+
+<h3>The four-step determination <span class="badge">ZUM §3.7</span></h3>
+<span class="badge">SP 5</span>
+
+<ol>
+
+<li>Assume <span class="blank" style="min-width:2cm"></span> — percents become grams.
+
+<li>Convert each mass to <span class="blank" style="min-width:1.8cm"></span>.
+
+<li>Divide all by the <span class="blank" style="min-width:2cm"></span>.
+
+<li>Not whole numbers? Multiply all by a small
+        <span class="blank" style="min-width:1.8cm"></span>.
+</ol>
+
+<div class="box we"><div class="box-title">Worked example: a phosphorus oxide</div>
+
+<p>43.64% P, 56.36% O; molar mass 283.88&thinsp;g/mol.
+\begin{align*}
+  \ce{P}&: \frac{43.64}{30.97} = 1.409 &
+  \ce{O}&: \frac{56.36}{16.00} = 3.523\\
+  \ce{P}&: \frac{1.409}{1.409} = 1 &
+  \ce{O}&: \frac{3.523}{1.409} = 2.5
+\end{align*}
+\(\times2 \to\) empirical \(\ce{P2O5}\) (\(M_{\text{emp}} = 141.94\)).
+\(\dfrac{283.88}{141.94} = 2\), so the molecular formula is \(\ce{P4O10}\).</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Zumdahl states the rounding rule explicitly: values like 9.92 and 1.08
+<em>should</em> be rounded; values like 2.25, 4.33, and 2.72
+<em>should not</em>. Those are signals to multiply by 4, 3, and 4
+respectively — never round a .25/.33/.5/.67/.75.</p>
+
+</div>
+
+<h4>Molecular from empirical</h4>
+
+\[
+  \text{multiplier} = \answerblank[4.6cm]{$\dfrac{\text{molar mass}}{\text{empirical formula mass}}$}
+\]
+
+<h4 class="segment">APPLICATION • Combustion analysis <span class="sub">20 min</span></h4>
+
+<p>Burning a hydrocarbon in excess \(\ce{O2}\) converts all C to \(\ce{CO2}\) and all H
+to \(\ce{H2O}\). Working backward gives the formula.</p>
+
+<p>A 0.1000&thinsp;g sample of a compound containing only C, H, and O burns
+to give 0.1466&thinsp;g \(\ce{CO2}\) and 0.0600&thinsp;g \(\ce{H2O}\). Its
+molar mass is 60.05&thinsp;g/mol.</p>
+
+<ol>
+
+<li>Mass of C (all of it came from the \(\ce{CO2}\)):
+        <span class="blank" style="min-width:3.4cm"></span>
+
+<li>Mass of H (from the \(\ce{H2O}\)):
+        <span class="blank" style="min-width:3.4cm"></span>
+
+<li>Mass of O — explain why it must be found <em>by difference</em>.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Empirical and molecular formulas: <div class="workspace" style="height:2.6cm"></div>
+
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A compound is 40.0% C, 6.7% H, 53.3% O with molar mass
+180&thinsp;g/mol. Find both formulas.
+<div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Equations and Mass Relationships <span class="sub">Zumdahl §3.8–3.10</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Balance chemical equations and state what the coefficients mean.
+
+<li>Carry out mass-to-mass stoichiometric calculations.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §3.8–3.10 • PDF pp. 132–142</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Empirical formula of \(\ce{C6H12O6}\): <span class="blank" style="min-width:2.4cm"></span>
+
+<li>\(\%\,\ce{H}\) in \(\ce{CH4}\): <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Moles in 9.0&thinsp;g \(\ce{Al}\): <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Balancing and what it means <span class="sub">25 min</span></h4>
+
+<h3>Chemical equations <span class="badge">ZUM §3.8–3.9</span></h3>
+<span class="badge">SP 1</span>
+
+<p>A balanced equation expresses conservation of
+<span class="blank" style="min-width:2.2cm"></span> (hence mass). You may change
+<span class="blank" style="min-width:2.2cm"></span> but never
+<span class="blank" style="min-width:2.2cm"></span> — changing a subscript changes the
+substance.</p>
+
+<h4>Coefficients are mole ratios</h4>
+
+\(\ce{2 H2 + O2 -> 2 H2O}\) reads: 2 mol \(\ce{H2}\) react with
+<span class="blank" style="min-width:1.4cm"></span> mol \(\ce{O2}\) to give <span class="blank" style="min-width:1.4cm"></span> mol
+\(\ce{H2O}\). It does <em>not</em> say 2 grams.
+
+<div class="box we"><div class="box-title">Worked example: combustion of propane</div>
+
+<p>Balance \(\ce{C3H8 + O2 -> CO2 + H2O}\).<br>
+Carbon first: 3 C on the left \(\to\) \(\ce{3 CO2}\). Hydrogen: 8 H \(\to\)
+\(\ce{4 H2O}\). Now count oxygen on the right: \(3(2) + 4(1) = 10\) O \(\to\)
+\(\ce{5 O2}\).
+\[
+  \ce{C3H8 + 5 O2 -> 3 CO2 + 4 H2O}
+\]
+Strategy: save the element that appears in the most compounds (usually O)
+for last.</p>
+
+</div>
+
+Balance these:
+<ol>
+
+<li>\(\ce{Fe + O2 -> Fe2O3}\):
+        <span class="blank" style="min-width:5.4cm"></span>
+
+<li>\(\ce{Al + HCl -> AlCl3 + H2}\):
+        <span class="blank" style="min-width:6.4cm"></span>
+
+<li>\(\ce{C2H6 + O2 -> CO2 + H2O}\):
+        <span class="blank" style="min-width:6.8cm"></span>
+</ol>
+
+<h4 class="segment">GUIDED PRACTICE • Mole-ratio reasoning <span class="sub">15 min</span></h4>
+
+For \(\ce{N2 + 3 H2 -> 2 NH3}\):
+<ol>
+
+<li>Moles of \(\ce{H2}\) needed for 2.0&thinsp;mol \(\ce{N2}\):
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Moles of \(\ce{NH3}\) from 0.50&thinsp;mol \(\ce{N2}\):
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Moles of \(\ce{N2}\) needed for 5.0&thinsp;mol \(\ce{NH3}\):
+        <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The mass-to-mass road <span class="sub">20 min</span></h4>
+
+<h3>Stoichiometric calculations <span class="badge">ZUM §3.10</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">
+
+<figure><img src="fig-ch03-notes-1.png" alt="figure"></figure>
+
+</div>
+
+<p>The middle arrow is the only step that uses the
+<span class="blank" style="min-width:3.8cm"></span>. Everything else is molar mass.</p>
+
+<div class="box we"><div class="box-title">Worked example: mass to mass</div>
+
+<p>What mass of \(\ce{O2}\) is needed to burn 22.0&thinsp;g of \(\ce{C3H8}\)?
+\[
+  22.0\ \text{g} \times \frac{1\ \text{mol}}{44.09\ \text{g}}
+  \times \frac{5\ \text{mol } \ce{O2}}{1\ \text{mol } \ce{C3H8}}
+  \times \frac{32.00\ \text{g}}{1\ \text{mol}} = 79.8\,\mathrm{g}
+\]</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Full stoichiometry <span class="sub">20 min</span></h4>
+
+For \(\ce{2 Al + 3 Cl2 -> 2 AlCl3}\):
+<ol>
+
+<li>Mass of \(\ce{AlCl3}\) from 5.40&thinsp;g Al (excess \(\ce{Cl2}\)):
+        <div class="workspace" style="height:2.4cm"></div>
+
+<li>Mass of \(\ce{Cl2}\) consumed: <div class="workspace" style="height:2.2cm"></div>
+
+<li>Check your two answers against conservation of mass.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why can't you convert grams of A directly to grams of B using the
+coefficients? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Limiting Reactant and Percent Yield <span class="sub">Zumdahl §3.11</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Identify the limiting reactant and compute theoretical yield.
+
+<li>Use a BCA table to track a reaction to completion.
+
+<li>Calculate percent yield.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §3.11 • PDF pp. 142–153</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Balance: \(\ce{H2 + O2 -> H2O}\):
+        <span class="blank" style="min-width:4.4cm"></span>
+
+<li>Moles in 28.0&thinsp;g \(\ce{N2}\): <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Mole ratio \(\ce{O2}\):\(\ce{CO2}\) in \(\ce{C3H8 + 5 O2 -> 3 CO2 + 4 H2O}\):
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>Molar mass of \(\ce{NH3}\): <span class="blank" style="min-width:3cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • The sandwich problem <span class="sub">25 min</span></h4>
+
+<h3>Limiting reactant <span class="badge">ZUM §3.11</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Zumdahl's analogy: with 8 slices of bread, 9 slices of meat, and 5 slices of
+cheese, and a sandwich needing 2 bread \(+\) 3 meat \(+\) 1 cheese, you can make
+<span class="blank" style="min-width:1.4cm"></span> sandwiches. The
+<span class="blank" style="min-width:2.6cm"></span> runs out first — even though you started with
+<em>more</em> of it than anything else.</p>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>The limiting reactant is not the one with the smallest amount. It is the one
+that runs out first <em>given the ratio the reaction demands</em>. You must
+compare against the coefficients.</p>
+
+</div>
+
+<h4>Method: compare moles of product each reactant could make</h4>
+
+<p>Whichever reactant yields <span class="blank" style="min-width:2cm"></span> product is limiting, and
+that smaller number is the <strong class="term">theoretical yield</strong>.</p>
+
+<div class="box we"><div class="box-title">Worked example: ammonia synthesis</div>
+
+<p>25.0&thinsp;g \(\ce{N2}\) and 5.00&thinsp;g \(\ce{H2}\) react:
+\(\ce{N2 + 3 H2 -> 2 NH3}\).
+\begin{align*}
+  n(\ce{N2}) &= 25.0/28.02 = 0.892\,\mathrm{mol} \to 2(0.892) = 1.78\,\mathrm{mol}\ \ce{NH3}\\
+  n(\ce{H2}) &= 5.00/2.016 = 2.48\,\mathrm{mol} \to \tfrac23(2.48) = 1.65\,\mathrm{mol}\ \ce{NH3}
+\end{align*}
+\(\ce{H2}\) gives less \(\to\) \(\ce{H2}\) is limiting; theoretical yield
+\(= 1.65 \times 17.03 = 28.1\,\mathrm{g}\) \(\ce{NH3}\).</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • BCA tables <span class="sub">15 min</span></h4>
+
+<p>A <strong class="term">BCA table</strong> (Before / Change / After) tracks moles through a
+reaction. Changes are always in the coefficient ratio.</p>
+
+<p>For \(\ce{N2 + 3 H2 -> 2 NH3}\) starting with 5 mol \(\ce{N2}\) and 9 mol \(\ce{H2}\):</p>
+
+<table>
+<tr><th></th><th>\(\ce{N2}\)</th><th>\(\ce{3 H2}\)</th><th>\(\ce{2 NH3}\)</th></tr>
+<tr><td><strong>Before</strong></td><td>5</td><td>9</td><td>0</td></tr>
+<tr><td><strong>Change</strong></td><td><span class="blank" style="min-width:1.4cm"></span></td><td><span class="blank" style="min-width:1.4cm"></span></td><td><span class="blank" style="min-width:1.4cm"></span></td></tr>
+<tr><td><strong>After</strong></td><td><span class="blank" style="min-width:1.4cm"></span></td><td><span class="blank" style="min-width:1.4cm"></span></td><td><span class="blank" style="min-width:1.4cm"></span></td></tr>
+</table>
+
+<p>The limiting reactant is the one whose <strong>After</strong> value is
+<span class="blank" style="min-width:1.4cm"></span> — here, <span class="blank" style="min-width:1.6cm"></span>.</p>
+
+<h4 class="segment">INSTRUCTION B • Percent yield <span class="sub">20 min</span></h4>
+
+<h3>Theoretical vs actual <span class="badge">ZUM §3.11</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  \%\ \text{yield} = \answerblank[5cm]{$\dfrac{\text{actual yield}}{\text{theoretical yield}}\times100\%$}
+\]
+
+<p>Real yields fall short because of side reactions, incomplete reaction, and
+losses during <span class="blank" style="min-width:4.2cm"></span>.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Percent yield above 100% is not a triumph — it signals impure or wet
+product, or a measurement error. And theoretical yield must always come from
+the <em>limiting</em> reactant; computing it from the excess reactant is the
+most common error on this topic.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Complete analysis <span class="sub">20 min</span></h4>
+
+<p>15.0&thinsp;g \(\ce{Fe}\) reacts with 12.0&thinsp;g \(\ce{S}\):
+\(\ce{Fe + S -> FeS}\).</p>
+
+<ol>
+
+<li>Identify the limiting reactant. <div class="workspace" style="height:2.4cm"></div>
+
+<li>Theoretical yield of \(\ce{FeS}\): <div class="workspace" style="height:1.8cm"></div>
+
+<li>Mass of excess reactant remaining: <div class="workspace" style="height:1.8cm"></div>
+
+<li>If 20.1&thinsp;g \(\ce{FeS}\) is actually isolated, find the percent
+        yield. <div class="workspace" style="height:1.8cm"></div>
+
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A student computes theoretical yield from the excess reactant and gets a
+percent yield of 68%. Is the true percent yield higher or lower than 68%?
+Explain. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

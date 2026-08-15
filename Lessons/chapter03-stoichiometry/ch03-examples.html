@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 • Study Notes • §3.7–3.11 in Worked Examples</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 3 • Stoichiometry</p>
+  <h1>Study Notes • §3.7–3.11 in Worked Examples</h1>
+  <p class="subtitle">Zumdahl §3.7–3.11 • PDF pp. 125–153 • read with a pencil</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">What these five sections are, as one story</div>
+
+<p>Section 3.7 answers “what <em>is</em> this compound?” — turning measured
+percentages or combustion data into a formula. Sections 3.8–3.9 give the
+grammar for writing what compounds <em>do</em>: the balanced equation.
+Sections 3.10–3.11 then use that equation as a conversion factor: given an
+amount of one substance, find the amount of any other — including the
+case where one reactant runs out first.</p>
+
+<p>Every calculation in this span is the same three-step spine:
+\[ \text{grams} \xrightarrow{\;\div M\;} \text{moles}
+   \xrightarrow{\;\text{mole ratio}\;} \text{moles}
+   \xrightarrow{\;\times M\;} \text{grams} \]
+Only the middle step ever uses the chemical equation. Grams never talk to
+grams directly.</p>
+
+</div>
+
+<h2> §3.7 • Determining the formula of a
+compound</h2>
+<span class="badge">ZUM §3.7</span>
+
+<p>A formula determination always runs the same four steps:</p>
+
+<ol>
+
+<li>Assume a 100&thinsp;g sample, so percentages become grams.
+
+<li>Convert each element's mass to moles.
+
+<li>Divide every mole number by the smallest one.
+
+<li>If the ratios are not whole, multiply <em>all</em> of them by the
+        same small integer. The result is the <strong class="term">empirical formula</strong>;
+        the molecular formula is the empirical formula times
+        \(M / M_{\text{empirical}}\).
+</ol>
+
+<div class="box we"><div class="box-title">Worked example 1: from percentages — nicotine</div>
+
+<p>Nicotine is 74.03% C, 8.70% H, and 17.27% N, with a molar mass of
+162.23&thinsp;g/mol. Find both formulas.</p>
+
+<strong>Step 1 — take 100&thinsp;g:</strong> 74.03 g C, 8.70 g H, 17.27 g N.
+
+<strong>Step 2 — to moles:</strong>
+\[ \ce{C}: \frac{74.03}{12.01} = 6.164 \qquad
+   \ce{H}: \frac{8.70}{1.008} = 8.63 \qquad
+   \ce{N}: \frac{17.27}{14.01} = 1.233 \]
+
+<strong>Step 3 — divide by the smallest (1.233):</strong>
+\[ \ce{C}: 5.00 \qquad \ce{H}: 7.00 \qquad \ce{N}: 1.00 \]
+
+<strong>Step 4 — already whole:</strong> empirical formula \(\ce{C5H7N}\),
+\(M_{\text{emp}} = 5(12.01) + 7(1.008) + 14.01 =
+81.12\,\mathrm{g/mol}\).
+\[ \frac{162.23}{81.12} = 2.00 \qquad\Longrightarrow\qquad
+   \textbf{molecular formula } \ce{C10H14N2} \]
+
+<p>Note what the molar mass was <em>for</em>: the percentages alone can never
+distinguish \(\ce{C5H7N}\) from \(\ce{C10H14N2}\) — both have identical
+composition. The empirical formula is what analysis gives; the molar mass
+picks the molecule.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 2: combustion analysis — a hydrocarbon</div>
+
+<p>Burning 0.7210&thinsp;g of a compound containing only C and H produces
+2.201&thinsp;g of \(\ce{CO2}\) and 1.081&thinsp;g of \(\ce{H2O}\). The molar
+mass is 72.15&thinsp;g/mol. Find both formulas.</p>
+
+<strong>The idea:</strong> in excess oxygen, every carbon atom ends up in a
+\(\ce{CO2}\) and every hydrogen atom in an \(\ce{H2O}\). Count them there.
+
+<strong>Carbon</strong> (one C per \(\ce{CO2}\)):
+\[ \frac{2.201}{44.01} = 0.05001\,\mathrm{mol}~\ce{CO2}
+   \;\Rightarrow\; 0.05001\,\mathrm{mol}~\ce{C}
+   \;\Rightarrow\; 0.05001 \times 12.01 = 0.6006\,\mathrm{g}~\ce{C} \]
+
+<strong>Hydrogen</strong> (<em>two</em> H per \(\ce{H2O}\) — the factor everyone
+forgets):
+\[ \frac{1.081}{18.02} = 0.05999\,\mathrm{mol}~\ce{H2O}
+   \;\Rightarrow\; 0.1200\,\mathrm{mol}~\ce{H}
+   \;\Rightarrow\; 0.1200 \times 1.008 = 0.1210\,\mathrm{g}~\ce{H} \]
+
+<strong>Mass check:</strong> \(0.6006 + 0.1210 = 0.7216\,\mathrm{g}\) — the whole
+sample is accounted for, so C and H really are the only elements.
+
+<strong>Ratio:</strong> \(\ce{H}/\ce{C} = 0.1200/0.05001 = 2.40 = 12/5\), so the
+empirical formula is \(\ce{C5H12}\) with
+\(M_{\text{emp}} = 72.15\,\mathrm{g/mol}\) — equal to the molar mass,
+so the <strong>molecular formula is also \(\ce{C5H12}\)</strong> (pentane). The
+multiplier can be 1; do not assume it is bigger.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 3: combustion with oxygen in the compound</div>
+
+<p>Burning 2.000&thinsp;g of a compound containing C, H, and O gives
+2.868&thinsp;g \(\ce{CO2}\) and 1.566&thinsp;g \(\ce{H2O}\). The molar mass
+is 92.09&thinsp;g/mol. Find both formulas.</p>
+
+<strong>C and H exactly as before:</strong>
+\[ \ce{C}: \frac{2.868}{44.01} = 0.06517\,\mathrm{mol}
+   \to 0.7827\,\mathrm{g} \qquad
+   \ce{H}: 2 \times \frac{1.566}{18.02} = 0.1738\,\mathrm{mol}
+   \to 0.1752\,\mathrm{g} \]
+
+<strong>Oxygen must come by difference.</strong> The sample's own oxygen atoms end
+up in the same \(\ce{CO2}\) and \(\ce{H2O}\) as the oxygen from the air, so no
+measurement can see them separately:
+\[ m_{\ce{O}} = 2.000 - 0.7827 - 0.1752 = 1.042\,\mathrm{g}
+   \;\Rightarrow\; \frac{1.042}{16.00} = 0.06513\,\mathrm{mol} \]
+
+<strong>Divide by the smallest (0.06513):</strong>
+\[ \ce{C}: 1.00 \qquad \ce{H}: 2.67 \qquad \ce{O}: 1.00 \]
+
+<p>2.67 is \(8/3\) — a value like this must <strong>not</strong> be rounded. Multiply
+all three by 3:
+\[ \text{empirical } \ce{C3H8O3}, \quad M_{\text{emp}} = 92.09\,\mathrm{g/mol}
+   = M \;\Rightarrow\; \textbf{molecular } \ce{C3H8O3}~\text{(glycerol)} \]</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>The rounding rule, stated once and used forever: ratios such as 1.99 or
+3.02 round to whole numbers; ratios sitting near a simple fraction —
+2.25 (\(=9/4\)), 2.33 (\(=7/3\)), 2.50, 2.67 (\(=8/3\)), 2.75 — are
+instructions to <em>multiply</em>, by 4, 3, 2, 3, 4 respectively. Rounding
+2.67 to 3 produces a wrong formula that no later step can rescue.</p>
+
+</div>
+
+<h3> Check yourself — §3.7</h3>
+
+<ol>
+
+<li>A compound is 92.26% C and 7.74% H with molar mass
+        78.11&thinsp;g/mol. Both formulas: <div class="workspace" style="height:2.2cm"></div>
+
+<li>Why does combustion analysis measure oxygen by difference rather
+        than directly? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>A mole-ratio calculation gives C 1.00, H 1.33, O 1.00. The
+        empirical formula is: <span class="blank" style="min-width:3.2cm"></span>
+</ol>
+
+<h2> §3.8 • What a chemical equation says</h2>
+<span class="badge">ZUM §3.8</span>
+
+<p>A chemical equation is a statement about <em>atoms rearranging</em>:</p>
+
+\[ \ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)} \]
+
+<div class="center">
+
+<table>
+<tr><th><strong>Symbol</strong></th><th><strong>Means</strong></th><th></th></tr>
+<tr><td>\(\ce{(s)}\), \(\ce{(l)}\), \(\ce{(g)}\)</td><td>solid, liquid, gas</td><td></td></tr>
+<tr><td>\(\ce{(aq)}\)</td><td>dissolved in water</td><td></td></tr>
+<tr><td>coefficient</td><td><em>relative</em> number of molecules or moles</td><td>never a fixed amount</td></tr>
+</table>
+
+</div>
+
+<p>What the equation above claims: one \(\ce{CH4}\) molecule and two \(\ce{O2}\)
+molecules always rearrange into one \(\ce{CO2}\) and two \(\ce{H2O}\). The same
+sentence read in moles: 1 mol \(\ce{CH4}\) reacts with 2 mol \(\ce{O2}\). It does
+<em>not</em> claim you have 1 mol of anything — coefficients are ratios,
+not inventory.</p>
+
+<strong>Conserved:</strong> atoms of each element, and therefore total mass.
+<strong>Not conserved:</strong> molecules (3 become 3 here, but 4 become 3 in
+ammonia synthesis) and moles. Only atoms are bookkept.
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>A coefficient multiplies the whole formula; a subscript is part of
+the substance's identity.</strong> Balancing is done <em>only</em> with
+coefficients. “Fixing” \(\ce{H2O}\) to \(\ce{H2O2}\) to balance oxygen does not
+balance the equation — it changes water into hydrogen peroxide and
+describes a different reaction altogether.
+
+</div>
+
+<h3> Check yourself — §3.8</h3>
+
+<ol>
+
+<li>In \(\ce{2H2 + O2 -> 2H2O}\), four molecules become two. Is mass
+        conserved? Explain in one sentence.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Write what \(\ce{2Na(s) + 2H2O(l) -> 2NaOH(aq) + H2(g)}\) says about
+        states. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h2> §3.9 • Balancing chemical equations</h2>
+<span class="badge">ZUM §3.9</span>
+
+<p>Balancing is done <strong>by inspection</strong>, but inspection with a strategy:</p>
+
+<ol>
+
+<li>Start from the <em>most complicated</em> molecule.
+
+<li>Balance elements that appear in only one place on each side first.
+
+<li>Leave lone elements (\(\ce{O2}\), \(\ce{H2}\), metals) for <em>last</em> —
+        their coefficient can be set freely without unbalancing anything
+        else.
+
+<li>Count every atom on both sides at the end. Always.
+</ol>
+
+<div class="box we"><div class="box-title">Worked example 4: ethanol combustion, step by step</div>
+
+\[ \ce{C2H5OH(l) + O2(g) -> CO2(g) + H2O(g)} \qquad \text{(unbalanced)} \]
+
+<strong>Start with ethanol</strong> (most complex, sets C and H):
+carbon first — 2 C on the left forces
+\[ \ce{C2H5OH + O2 -> 2CO2 + H2O} \]
+hydrogen next — 6 H on the left (\(5+1\)) forces
+\[ \ce{C2H5OH + O2 -> 2CO2 + 3H2O} \]
+
+<strong>Oxygen last</strong>, because \(\ce{O2}\) stands alone. The right side now has
+\(2(2) + 3(1) = 7\) O; the left has 1 in the ethanol, so \(\ce{O2}\) must supply
+6 atoms \(= 3\) molecules:
+\[ \boxed{\;\ce{C2H5OH(l) + 3O2(g) -> 2CO2(g) + 3H2O(g)}\;} \]
+
+<strong>Final count:</strong> C \(2 = 2\); H \(6 = 6\); O \(1 + 6 = 4 + 3\). Balanced.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 5: when a fraction appears — hexane</div>
+
+\[ \ce{C6H14(l) + O2(g) -> CO2(g) + H2O(g)} \]
+C and H from the hexane: \(6\,\ce{CO2}\) and \(7\,\ce{H2O}\). The right side
+then carries \(12 + 7 = 19\) oxygen atoms — an <em>odd</em> number, which a
+whole coefficient on \(\ce{O2}\) cannot supply. Balance with a fraction first:
+\[ \ce{C6H14 + \tfrac{19}{2}O2 -> 6CO2 + 7H2O} \]
+then clear it by doubling <strong>every</strong> coefficient:
+\[ \boxed{\;\ce{2C6H14(l) + 19O2(g) -> 12CO2(g) + 14H2O(g)}\;} \]
+Count: C \(12 = 12\); H \(28 = 28\); O \(38 = 24 + 14\). The doubling step must
+touch all four coefficients — doubling only the \(\ce{O2}\) is the standard
+error.
+
+</div>
+
+<h3> Check yourself — §3.9</h3>
+
+<p>Balance each (smallest whole coefficients):</p>
+
+<ol>
+
+<li>\(\ce{Fe(s) + O2(g) -> Fe2O3(s)}\)
+        <span class="blank" style="min-width:6cm"></span>
+
+<li>\(\ce{C3H8(g) + O2(g) -> CO2(g) + H2O(g)}\)
+        <span class="blank" style="min-width:7.2cm"></span>
+
+<li>\(\ce{Al(s) + HCl(aq) -> AlCl3(aq) + H2(g)}\)
+        <span class="blank" style="min-width:7.2cm"></span>
+
+<li>\(\ce{C4H10(g) + O2(g) -> CO2(g) + H2O(g)}\)
+        <span class="blank" style="min-width:8cm"></span>
+</ol>
+
+<h2> §3.10 • Stoichiometric calculations</h2>
+<span class="badge">ZUM §3.10</span>
+
+<p>The balanced equation is a <em>mole-to-mole</em> conversion factor and
+nothing more. Every mass problem is the same three moves:</p>
+
+<div class="center">
+<div class="fbox">
+grams of A \(\xrightarrow{\;\div M_A\;}\) moles of A
+\(\xrightarrow{\;\text{coefficients}\;}\) moles of B
+\(\xrightarrow{\;\times M_B\;}\) grams of B</div>
+</div>
+
+<div class="box we"><div class="box-title">Worked example 6: burning propane end to end</div>
+
+<p>A grill burns 25.0&thinsp;g of propane:
+\(\ce{C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(g)}\).
+What mass of \(\ce{O2}\) is consumed, and what mass of \(\ce{CO2}\) is produced?</p>
+
+<strong>To moles once, at the start:</strong>
+\[ \frac{25.0}{44.09} = 0.567\,\mathrm{mol}~\ce{C3H8} \]
+
+<strong>Mole ratios, straight off the coefficients:</strong>
+\[ \ce{O2}: 0.567 \times \frac{5}{1} = 2.835\,\mathrm{mol} \qquad
+   \ce{CO2}: 0.567 \times \frac{3}{1} = 1.701\,\mathrm{mol} \]
+
+<strong>Back to grams at the end:</strong>
+\[ m_{\ce{O2}} = 2.835 \times 32.00 = \mathbf{90.7~g} \qquad
+   m_{\ce{CO2}} = 1.701 \times 44.01 = \mathbf{74.9~g} \]
+
+<strong>Sanity check by conservation of mass:</strong> reactants
+\(25.0 + 90.7 = 115.7\)&nbsp;g; products \(74.9 + \) water. Water:
+\(0.567 \times 4 = 2.268\)&nbsp;mol \(\times\, 18.02 = 40.9\)&nbsp;g, and
+\(74.9 + 40.9 = 115.8\)&nbsp;g. The books balance (0.1 g is rounding). Thirty
+seconds of checking catches almost every slip in this chapter.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 7: working backward — iron from ore</div>
+
+<p>Iron is produced in a blast furnace by
+\(\ce{Fe2O3(s) + 3CO(g) -> 2Fe(l) + 3CO2(g)}\).
+What mass of \(\ce{Fe2O3}\) is required for 1.00&thinsp;kg of iron?</p>
+
+\[ \frac{1000}{55.85} = 17.91\,\mathrm{mol}~\ce{Fe}
+   \;\xrightarrow{\times 1/2}\; 8.953\,\mathrm{mol}~\ce{Fe2O3}
+   \;\xrightarrow{\times 159.70}\; \mathbf{1.43\times10^{3}~g}
+   = \mathbf{1.43~kg} \]
+
+<p>The ratio ran “backwards” (product to reactant) with no change in
+method — the equation converts in either direction. Note the ratio is
+\(\tfrac{1~\ce{Fe2O3}}{2~\ce{Fe}}\), taken <em>from the coefficients</em>,
+never from the formulas' subscripts.</p>
+
+</div>
+
+<h3> Check yourself — §3.10</h3>
+
+<ol>
+
+<li>Using worked example 6's equation, what mass of water forms when
+        10.0&thinsp;g of propane burns? <div class="workspace" style="height:2.2cm"></div>
+
+<li>In \(\ce{2Al + 3Cl2 -> 2AlCl3}\), how many moles of \(\ce{Cl2}\) react
+        with 0.40&thinsp;mol Al? <span class="blank" style="min-width:2.6cm"></span>
+
+<li>A student converts 25.0&thinsp;g \(\ce{C3H8}\) to grams of
+        \(\ce{CO2}\) by \(25.0 \times \tfrac{3}{1}\). Name the two omitted
+        steps. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h2> §3.11 • Limiting reactant and percent
+yield</h2>
+<span class="badge">ZUM §3.11</span>
+
+<p>Real mixtures are not delivered in perfect stoichiometric ratio. Whichever
+reactant runs out first — the <strong class="term">limiting reactant</strong> — fixes how much
+product can form; everything else is <strong class="term">in excess</strong> and some of it is
+left over.</p>
+
+<strong>To find the limiting reactant</strong>, convert every reactant to moles,
+then pick either test:
+
+<ol>
+
+<li><strong>Required-vs-available.</strong> Use the mole ratio to compute how
+        much of B reactant A would need; compare with what is present.
+
+<li><strong>Smallest-product.</strong> Compute the product each reactant could
+        make alone; the smaller answer is the truth, and the reactant that
+        produced it is limiting.
+</ol>
+
+<p>Both always agree. Use whichever reads more naturally, but <em>never</em>
+compare raw masses or raw moles of the reactants — the comparison only
+means anything after the coefficients are involved.</p>
+
+<div class="box we"><div class="box-title">Worked example 8: ammonia synthesis, complete</div>
+
+<p>50.0&thinsp;g of \(\ce{N2}\) is mixed with 15.0&thinsp;g of \(\ce{H2}\):
+\(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\). Find the limiting reactant, the
+theoretical yield of \(\ce{NH3}\), and the mass of the excess reactant left
+over.</p>
+
+<strong>Everything to moles first:</strong>
+\[ \ce{N2}: \frac{50.0}{28.02} = 1.784\,\mathrm{mol} \qquad
+   \ce{H2}: \frac{15.0}{2.016} = 7.44\,\mathrm{mol} \]
+
+<strong>Test 1 (required vs available):</strong> the \(\ce{N2}\) present would need
+\(1.784 \times 3 = 5.35\,\mathrm{mol}\) of \(\ce{H2}\). Available: 7.44 mol —
+more than needed, so \(\ce{H2}\) is in excess and <strong>\(\ce{N2}\) is
+limiting</strong>. (Notice the raw moles pointed the other way: there is
+<em>more</em> \(\ce{H2}\) by moles, yet \(\ce{N2}\) still limits. The 3:1 ratio is
+what decides.)
+
+<strong>Theoretical yield</strong> — from the limiting reactant only:
+\[ 1.784 \times \frac{2~\ce{NH3}}{1~\ce{N2}} = 3.569\,\mathrm{mol}
+   \;\Rightarrow\; 3.569 \times 17.03 = \mathbf{60.8~g~\ce{NH3}} \]
+
+<strong>Leftover excess:</strong> \(\ce{H2}\) consumed \(= 5.35\)&nbsp;mol, so
+\[ 7.44 - 5.35 = 2.09\,\mathrm{mol} \;\Rightarrow\;
+   2.09 \times 2.016 = \mathbf{4.21~g~\ce{H2}~left} \]
+
+<strong>Mass check:</strong> in \(50.0 + 15.0 = 65.0\)&nbsp;g; out
+\(60.8 + 4.21 = 65.0\)&nbsp;g. Balanced books again.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 9: percent yield</div>
+
+<p>The synthesis in worked example 8 is run and 48.0&thinsp;g of \(\ce{NH3}\)
+is actually collected.
+\[ \%~\text{yield} = \frac{\text{actual}}{\text{theoretical}} \times 100
+   = \frac{48.0}{60.8} \times 100 = \mathbf{78.9\%} \]
+The <strong class="term">theoretical yield</strong> is a calculation; the <strong class="term">actual yield</strong> is
+a measurement, and it is smaller for ordinary reasons — side reactions,
+incomplete reaction, product lost in handling. A percent yield over 100%
+is not good news: it means the product is wet or impure, or the
+bookkeeping is wrong.</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Three habits that prevent nearly every limiting-reactant error:
+theoretical yield is computed from the <strong>limiting</strong> reactant only,
+never from both; the leftover is
+\((\text{present}) - (\text{consumed})\), where consumed comes through the
+mole ratio; and the limiting reactant is <strong>not</strong> the one with fewer
+grams or fewer moles — 50.0&thinsp;g of \(\ce{N2}\) limited against
+15.0&thinsp;g of \(\ce{H2}\) above.</p>
+
+</div>
+
+<h3> Check yourself — §3.11</h3>
+
+<ol>
+
+<li>5.40&thinsp;g Al and 8.10&thinsp;g \(\ce{Cl2}\) react:
+        \(\ce{2Al + 3Cl2 -> 2AlCl3}\). Identify the limiting reactant and the
+        theoretical yield of \(\ce{AlCl3}\). <div class="workspace" style="height:3cm"></div>
+
+<li>For that mixture, the mass of aluminum left over:
+        <div class="workspace" style="height:2.2cm"></div>
+
+<li>If 9.20&thinsp;g of \(\ce{AlCl3}\) is collected, the percent
+        yield (divide by the <em>unrounded</em> theoretical yield):
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>True or false, with a reason: the reactant present in the
+        smaller mass is the limiting reactant.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">The whole span in four sentences</div>
+
+<p>A formula comes from mole ratios of elements (§3.7). A reaction is
+written as a balanced equation, using coefficients only (§3.8–3.9). The
+equation's coefficients convert moles of anything into moles of anything
+else, with grams only at the edges (§3.10). When amounts of two reactants
+are given, the mole ratio decides which one limits, and everything —
+yield and leftovers — follows from that one reactant (§3.11).</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

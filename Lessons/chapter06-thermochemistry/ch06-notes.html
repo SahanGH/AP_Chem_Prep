@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 6 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 6 • Thermochemistry</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §6.1–6.4 • PDF pp. 282–308 • 4 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How this chapter fits the AP course</div>
+
+<p>This is the <strong>cleanest chapter-to-unit match in the book</strong>. Sections
+6.1–6.4 are essentially all of CED Unit 6, in the textbook's own order —
+you can read straight through without untangling anything.</p>
+
+<p>Unit 6 adds only two topics from elsewhere, and you have already met both:
+<strong>energy of phase changes</strong> (CED 6.5, Zumdahl §10.8) came up in Unit 3
+Block 2, and <strong>bond enthalpies</strong> (CED 6.7, Zumdahl §8.8) in Unit 2
+Block 1. Treat those as callbacks to your own notes.</p>
+
+<p>§6.5–6.6 (present and new energy sources) are skipped — off-syllabus.</p>
+
+</div>
+
+<h2 class="block">The Nature of Energy <span class="sub">Zumdahl §6.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Define system and surroundings, and apply the sign conventions for
+        heat and work.
+
+<li>Use the first law, \(\Delta E = q + w\), including \(w = -P\Delta V\).
+
+<li>Explain what makes a quantity a state function.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.1 • PDF pp. 283–290</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Convert 25&thinsp;&deg;C to kelvin: <span class="blank" style="min-width:2.6cm"></span>
+
+<li>KMT: temperature measures what?
+        <span class="blank" style="min-width:4.6cm"></span>
+
+<li>Moles in 16.04&thinsp;g \(\ce{CH4}\): <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Energy, heat, and work <span class="sub">25 min</span></h4>
+
+<h3>Defining the boundary <span class="badge">ZUM §6.1</span></h3>
+<span class="badge">SP 1</span>
+
+<p>Before any energy bookkeeping, you must decide what you are keeping books
+<em>on</em>:</p>
+
+<ul>
+
+<li>The <strong class="term">system</strong> is the part of the universe you are studying —
+        usually the <span class="blank" style="min-width:2.4cm"></span> itself.
+
+<li>The <strong class="term">surroundings</strong> are <span class="blank" style="min-width:3.6cm"></span> —
+        the solvent, the container, the room.
+</ul>
+
+<p>Energy crosses that boundary in exactly two ways:</p>
+
+<table>
+<tr><th></th><th><strong>Definition</strong></th><th><strong>Sign convention (system's view)</strong></th></tr>
+<tr><td><strong class="term">Heat</strong> (\(q\))</td><td>transfer driven by a
+  <span class="blank" style="min-width:4.7cm"></span></td><td>\(q > 0\): heat flows <span class="blank" style="min-width:1.6cm"></span> the system (endothermic)<br>
+  \(q < 0\): heat flows <span class="blank" style="min-width:1.6cm"></span> (exothermic)</td></tr>
+<tr><td><strong class="term">Work</strong> (\(w\))</td><td>transfer by force acting through a distance</td><td>\(w > 0\): work done <span class="blank" style="min-width:2.2cm"></span> the system<br>
+  \(w < 0\): system does work on the surroundings</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Every sign is written from the <em>system's</em> point of view — treat the
+system as an account and ask whether energy is being deposited or withdrawn.
+Heat flowing out of a reaction is negative for the reaction even though the
+room got warmer. Students who reason from the surroundings invert every
+sign.</p>
+
+</div>
+
+<h4>How heat transfer actually happens</h4>
+
+<p>Zumdahl's picture: two gas samples at different temperatures separated by a
+thin membrane. Temperature measures average kinetic energy, so the
+fast-moving particles on the hot side transfer energy through collisions to
+the slower particles on the cold side. Energy always flows from
+<span class="blank" style="min-width:1.6cm"></span> to <span class="blank" style="min-width:1.6cm"></span>, until both reach the
+same <span class="blank" style="min-width:2.6cm"></span> temperature.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Assign the signs <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>A reaction warms the beaker it is in.
+        <span class="blank" style="min-width:5cm"></span>
+
+<li>An ice pack cools your skin.
+        <span class="blank" style="min-width:6.4cm"></span>
+
+<li>A gas is compressed by a piston.
+        <span class="blank" style="min-width:5.9cm"></span>
+
+<li>A gas expands and pushes the piston out.
+        <span class="blank" style="min-width:5cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The first law <span class="sub">20 min</span></h4>
+
+<h3>Conservation of energy, written down <span class="badge">ZUM §6.1</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  \Delta E = \answerblank[2cm]{$q + w$}
+\]
+
+\(\Delta E\) is the change in <strong class="term">internal energy</strong> — the total kinetic and
+potential energy of everything in the system. The first law says energy is
+neither created nor destroyed; it only moves or changes form.
+
+<h4>Pressure–volume work</h4>
+
+<p>When a gas expands against a constant external pressure:
+\[
+  w = \answerblank[2.4cm]{$-P\Delta V$}
+\]</p>
+
+<p>The minus sign is not decoration. If the gas <em>expands</em>, \(\Delta V\) is
+positive, so \(w\) is <span class="blank" style="min-width:1.8cm"></span> — the system spent
+energy pushing the surroundings back. If it is compressed, \(\Delta V < 0\)
+and \(w > 0\).</p>
+
+<div class="box we"><div class="box-title">Worked example 1: combining heat and work</div>
+
+<p>A gas absorbs 450&thinsp;J of heat and expands, doing 120&thinsp;J
+of work on its surroundings.
+\[
+  \Delta E = q + w = (+450) + (-120) = +330\,\mathrm{J}
+\]
+The system gained 450 J but spent 120 J pushing outward, so its internal
+energy rose by only 330 J.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 2: \(P\Delta V\) with units</div>
+
+<p>A gas expands from 2.0&thinsp;L to 5.0&thinsp;L against a constant
+1.5&thinsp;atm.
+\[
+  w = -P\Delta V = -(1.5)(5.0-2.0) = -4.5\,\mathrm{L\cdot atm}
+\]
+Converting with 1&thinsp;L&middot;atm \(=\) 101.3&thinsp;J:
+\(w = -456\,\mathrm{J}\). Negative, as expected for expansion.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • State functions <span class="sub">20 min</span></h4>
+
+<h3>Path independence <span class="badge">ZUM §6.1</span></h3>
+<span class="badge">SP 6</span>
+
+<p>A <strong class="term">state function</strong> depends only on the current state, not on how you
+got there. Energy (\(E\)) and enthalpy (\(H\)) are state functions;
+\(q\) and \(w\) individually are <span class="blank" style="min-width:1.6cm"></span>.</p>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Altitude is a state function; distance walked is not. Two hikers reaching
+the same summit have identical altitude change but may have walked wildly
+different distances. Likewise, two routes from the same reactants to the
+same products give identical \(\Delta E\) — even though the heat and work
+split differently along the way. Block 3 turns this fact into a calculation
+tool.</p>
+
+</div>
+
+<ol>
+
+<li>A system releases 200&thinsp;J of heat while
+        75&thinsp;J of work is done on it. Find \(\Delta E\).
+        <span class="blank" style="min-width:3.2cm"></span>
+
+<li>Explain why \(\Delta E\) for converting graphite to diamond is the
+        same whether done in one step or ten.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A reaction in a beaker makes the beaker feel cold. State the sign of \(q\) for
+the reaction and name the process. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Enthalpy and Calorimetry <span class="sub">Zumdahl §6.2</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate enthalpy change to heat at constant pressure.
+
+<li>Use \(q = mc\Delta T\) and interpret calorimetry data.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.2 • PDF pp. 290–297</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Sign of \(q\) for an exothermic reaction:
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>First law equation: <span class="blank" style="min-width:2.4cm"></span>
+
+<li>\(w\) when a gas expands: <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Is enthalpy a state function? <span class="blank" style="min-width:2cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Enthalpy <span class="sub">25 min</span></h4>
+
+<h3>Why chemists use \(H\) instead of \(E\) <span class="badge">ZUM §6.2</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Enthalpy is defined as \(H = E + PV\). Its value comes from one consequence:
+at <em>constant pressure</em> — which is how nearly every reaction in an
+open beaker runs —
+\[
+  \Delta H = \answerblank[1.6cm]{$q_P$}
+\]</p>
+
+<p>So the heat you measure in an open container <em>is</em> the enthalpy change.
+That is the whole reason enthalpy exists as a bookkeeping quantity.</p>
+
+<table>
+<tr><th></th><th><strong>\(\Delta H\) sign</strong></th><th><strong>Surroundings</strong></th></tr>
+<tr><td><strong class="term">Exothermic</strong></td><td><span class="blank" style="min-width:1.9cm"></span></td><td>get <span class="blank" style="min-width:1.6cm"></span></td></tr>
+<tr><td><strong class="term">Endothermic</strong></td><td><span class="blank" style="min-width:1.6cm"></span></td><td>get <span class="blank" style="min-width:1.6cm"></span></td></tr>
+</table>
+
+<h4>\(\Delta H\) scales with amount</h4>
+
+<p>A thermochemical equation's \(\Delta H\) belongs to the coefficients as
+written:
+\[ \ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \qquad \Delta H = -890\,\mathrm{kJ} \]</p>
+
+<div class="box we"><div class="box-title">Worked example 1: scaling</div>
+
+<p>How much heat is released when 5.8&thinsp;g of \(\ce{CH4}\) burns at constant
+pressure?
+\begin{align*}
+  n &= \frac{5.8}{16.04} = 0.36\,\mathrm{mol}\\
+  \Delta H &= 0.36 \times (-890) = -320\,\mathrm{kJ}
+\end{align*}
+<em>Reality check:</em> less than one mole burned, so less than 890 kJ should
+be released. It is.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Enthalpy scaling <span class="sub">15 min</span></h4>
+
+Using \(\Delta H = -890\,\mathrm{kJ}\) per mole of \(\ce{CH4}\):
+<ol>
+
+<li>Heat from 2.00&thinsp;mol \(\ce{CH4}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Heat from 32.08&thinsp;g \(\ce{CH4}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>\(\Delta H\) for the <em>reverse</em> reaction:
+        <span class="blank" style="min-width:3cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Calorimetry <span class="sub">20 min</span></h4>
+
+<h3>Measuring heat by measuring temperature <span class="badge">ZUM §6.2</span></h3>
+<span class="badge">SP 4</span>
+
+<p>A <strong class="term">calorimeter</strong> determines heat by watching a temperature change. The
+central equation:
+\[
+  q = \answerblank[2.2cm]{$mc\Delta T$}
+  \qquad \Delta T = T_{\text{final}} - T_{\text{initial}}
+\]</p>
+
+<p>The <strong class="term">specific heat capacity</strong> \(c\) is the energy needed to raise
+1&thinsp;g by 1&thinsp;&deg;C. For water,
+\(c = \answerblank[3.2cm]{4.184\,\mathrm{J/g/{}^\circ C}}\) — unusually
+large, which is why water moderates temperature so effectively.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>The heat absorbed by the <em>solution</em> and the heat released by the
+<em>reaction</em> are equal in magnitude and opposite in sign:
+\(q_{\text{rxn}} = -q_{\text{solution}}\). Students routinely report an
+exothermic reaction with a positive \(\Delta H\) because they forgot to flip
+the sign after computing \(mc\Delta T\) for the water.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 2: neutralization in a coffee cup</div>
+
+<p>50.0&thinsp;mL of 1.00&thinsp;M \(\ce{HCl}\) and
+50.0&thinsp;mL of 1.00&thinsp;M \(\ce{NaOH}\), both at
+25.0&thinsp;&deg;C, are mixed. The temperature rises to
+31.9&thinsp;&deg;C. Assume the solution has the density and specific heat
+of water.
+\begin{align*}
+  m &= 100.0\,\mathrm{g}, \qquad \Delta T = 6.9\,\mathrm{{}^\circ C}\\
+  q_{\text{soln}} &= (100.0)(4.184)(6.9) = 2887\,\mathrm{J} = 2.89\,\mathrm{kJ}\\
+  q_{\text{rxn}} &= -2.89\,\mathrm{kJ}\\
+  n &= (0.0500)(1.00) = 0.0500\,\mathrm{mol}\\
+  \Delta H &= \frac{-2.89}{0.0500} = -57.8\,\mathrm{kJ/mol}
+\end{align*}
+The accepted value is about -57.3&thinsp;kJ/mol — close, with
+the difference explained by heat lost to the cup and thermometer.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Determining a specific heat <span class="sub">20 min</span></h4>
+
+<p>A 55.0&thinsp;g piece of metal is heated to 99.0&thinsp;&deg;C and
+dropped into 100.0&thinsp;g of water at 21.0&thinsp;&deg;C. The final
+temperature is 24.8&thinsp;&deg;C.</p>
+
+<ol>
+
+<li>Heat gained by the water: <div class="workspace" style="height:1.8cm"></div>
+
+<li>Specific heat of the metal: <div class="workspace" style="height:2.2cm"></div>
+
+<li>Suggest the metal's identity.
+        <span class="blank" style="min-width:4cm"></span>
+
+<li>Why does the water's temperature rise far less than the metal's
+        falls? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A student computes \(q_{\text{solution}} = +3.2\,\mathrm{kJ}\) for a
+reaction and reports \(\Delta H = +3.2\,\mathrm{kJ}\). What did they get
+wrong? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Hess's Law <span class="sub">Zumdahl §6.3</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>State Hess's law and explain why it follows from \(H\) being a state
+        function.
+
+<li>Combine thermochemical equations to obtain an unknown \(\Delta H\).
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.3 • PDF pp. 297–301</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta H\) equals \(q\) under what condition?
+        <span class="blank" style="min-width:3.4cm"></span>
+
+<li>\(q\) for 25.0&thinsp;g water warmed 10.0&thinsp;&deg;C:
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Sign of \(\Delta H\) for an endothermic process:
+        <span class="blank" style="min-width:2.2cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • The law and why it must be true <span class="sub">25 min</span></h4>
+
+<h3>Hess's law <span class="badge">ZUM §6.3</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<strong>Hess's law:</strong> if a reaction is carried out in a series of steps,
+\(\Delta H\) for the overall reaction equals the <span class="blank" style="min-width:2cm"></span> of the
+\(\Delta H\) values for the individual steps.
+
+<p>This is not a separate discovery — it is a direct consequence of enthalpy
+being a <span class="blank" style="min-width:3.0cm"></span>. If \(\Delta H\) depended on the
+route, you could build a machine that created energy by going one way and
+returning another.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 1: Zumdahl's nitrogen oxides</div>
+
+<p>The direct reaction:
+\[ \ce{N2(g) + 2 O2(g) -> 2 NO2(g)} \qquad \Delta H_1 = 68\,\mathrm{kJ} \]
+The same change in two steps:
+\begin{align*}
+  \ce{N2(g) + O2(g) &-> 2 NO(g)}   &\Delta H_2 &= 180\,\mathrm{kJ}\\
+  \ce{2 NO(g) + O2(g) &-> 2 NO2(g)} &\Delta H_3 &= -112\,\mathrm{kJ}
+\end{align*}
+Adding the steps cancels the \(\ce{2 NO}\) and reproduces the overall equation,
+and indeed \(180 + (-112) = 68\,\mathrm{kJ} = \Delta H_1\).</p>
+
+</div>
+
+<h4>The two manipulation rules</h4>
+
+<ol>
+
+<li>Reverse a reaction \(\Rightarrow\) <span class="blank" style="min-width:3.3cm"></span>
+        of \(\Delta H\).
+
+<li>Multiply the coefficients by a factor \(\Rightarrow\)
+        <span class="blank" style="min-width:3.4cm"></span> by the same factor.
+</ol>
+
+<p>Rule 1 follows because \(\Delta H\)'s sign records the direction of heat flow;
+run the change backwards and the flow reverses. Rule 2 follows because
+enthalpy is <strong class="term">extensive</strong> — twice the reaction releases twice the heat.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Manipulate <span class="sub">15 min</span></h4>
+
+Given \(\ce{2 H2(g) + O2(g) -> 2 H2O(l)}\), \(\Delta H = -572\,\mathrm{kJ}\):
+<ol>
+
+<li>\(\Delta H\) for \(\ce{H2(g) + 1/2 O2(g) -> H2O(l)}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>\(\Delta H\) for \(\ce{2 H2O(l) -> 2 H2(g) + O2(g)}\):
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>\(\Delta H\) for \(\ce{4 H2(g) + 2 O2(g) -> 4 H2O(l)}\):
+        <span class="blank" style="min-width:3cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The working method <span class="sub">20 min</span></h4>
+
+<h3>A reliable procedure <span class="badge">ZUM §6.3</span></h3>
+<span class="badge">SP 5</span>
+
+<ol>
+
+<li>Write the <span class="blank" style="min-width:3.3cm"></span> first.
+
+<li>Find a substance that appears in only <em>one</em> given equation and
+        place it correctly — reverse or scale that equation as needed.
+
+<li>Repeat for the next such substance.
+
+<li>Add everything; confirm the intermediates
+        <span class="blank" style="min-width:1.6cm"></span>.
+
+<li>Sum the adjusted \(\Delta H\) values.
+</ol>
+
+<div class="box we"><div class="box-title">Worked example 2: a two-step target</div>
+
+<p>Target: \(\ce{C(s) + 1/2 O2(g) -> CO(g)}\), given
+\begin{align*}
+  \text{(i)}\ \ce{C(s) + O2(g) &-> CO2(g)} &\Delta H &= -393.5\,\mathrm{kJ}\\
+  \text{(ii)}\ \ce{2 CO(g) + O2(g) &-> 2 CO2(g)} &\Delta H &= -566.0\,\mathrm{kJ}
+\end{align*}
+CO appears only in (ii), but on the wrong side and with the wrong
+coefficient. Reverse (ii) and halve it:
+\[ \ce{CO2(g) -> CO(g) + 1/2 O2(g)} \qquad \Delta H = +283.0\,\mathrm{kJ} \]
+Add to (i): the \(\ce{CO2}\) cancels, giving the target with
+\[ \Delta H = -393.5 + 283.0 = -110.5\,\mathrm{kJ} \]</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Build it yourself <span class="sub">20 min</span></h4>
+
+<p>Determine \(\Delta H\) for \(\ce{2 C(s) + H2(g) -> C2H2(g)}\) given:
+\begin{align*}
+  \text{(i)}\ \ce{C2H2(g) + 5/2 O2(g) &-> 2 CO2(g) + H2O(l)} &\Delta H &= -1300.\,\mathrm{kJ}\\
+  \text{(ii)}\ \ce{C(s) + O2(g) &-> CO2(g)} &\Delta H &= -393.5\,\mathrm{kJ}\\
+  \text{(iii)}\ \ce{H2(g) + 1/2 O2(g) &-> H2O(l)} &\Delta H &= -286\,\mathrm{kJ}
+\end{align*}</p>
+
+<div class="workspace" style="height:4.4cm"></div>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why does reversing a reaction reverse the sign of \(\Delta H\)?
+<div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+
+<h2 class="block">Standard Enthalpies of Formation <span class="sub">Zumdahl §6.4</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Define \(\Delta H^\circ_f\) and standard state.
+
+<li>Compute \(\Delta H^\circ_{\text{rxn}}\) from tabulated formation
+        enthalpies.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.4 • PDF pp. 301–308</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Hess's law depends on \(H\) being a what?
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Reverse a reaction: \(\Delta H\) does what?
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Halve the coefficients: \(\Delta H\) does what?
+        <span class="blank" style="min-width:2.4cm"></span>
+
+<li>\(q\) for 50.0&thinsp;g water cooled 4.00&thinsp;&deg;C:
+        <span class="blank" style="min-width:3cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • A universal reference point <span class="sub">25 min</span></h4>
+
+<h3>Standard enthalpy of formation <span class="badge">ZUM §6.4</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The <strong class="term">standard enthalpy of formation</strong> \(\Delta H^\circ_f\) is the enthalpy
+change when <span class="blank" style="min-width:1.4cm"></span> of a compound forms from its
+<span class="blank" style="min-width:2cm"></span>, with everything in its
+<strong class="term">standard state</strong>.</p>
+
+<p>Standard state means the substance's most stable form at
+1&thinsp;atm and (conventionally) 25&thinsp;&deg;C — so
+\(\ce{O2(g)}\), \(\ce{Br2(l)}\), \(\ce{C(graphite)}\).</p>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>It follows directly from the definition that
+\(\Delta H^\circ_f\) of an <em>element in its standard state</em> is
+<span class="blank" style="min-width:1.2cm"></span> — forming an element from itself is no change at
+all. That is why \(\ce{O2(g)}\) contributes nothing to a calculation while
+\(\ce{O3(g)}\) (not the standard form) contributes \(+143\) kJ/mol.</p>
+
+</div>
+
+<h4>Why the tables exist</h4>
+
+<p>Some enthalpy changes cannot be measured directly. Zumdahl's example:
+converting graphite to diamond is far too slow for a calorimeter. But if
+every compound's formation enthalpy is tabulated once, any reaction's
+\(\Delta H\) can be assembled from them — Hess's law industrialized.</p>
+
+<h4 class="segment">GUIDED PRACTICE • Writing formation equations <span class="sub">15 min</span></h4>
+
+Write the formation equation (1 mol of product, elements in standard states):
+<ol>
+
+<li>\(\ce{NH3(g)}\):
+        <span class="blank" style="min-width:6cm"></span>
+
+<li>\(\ce{CO2(g)}\):
+        <span class="blank" style="min-width:6.7cm"></span>
+
+<li>\(\Delta H^\circ_f\) of \(\ce{N2(g)}\): <span class="blank" style="min-width:2cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • The master equation <span class="sub">20 min</span></h4>
+
+<h3>Computing \(\Delta H^\circ_{\text{rxn}}\) <span class="badge">ZUM §6.4</span></h3>
+<span class="badge">SP 5</span>
+
+\[
+  \Delta H^\circ_{\text{rxn}} =
+  \answerblank[8.0cm]{$\sum n\,\Delta H^\circ_f(\text{products}) - \sum n\,\Delta H^\circ_f(\text{reactants})$}
+\]
+
+<p>Note the two easy losses: multiply each value by its
+<span class="blank" style="min-width:2cm"></span>, and subtract in the right order —
+<span class="blank" style="min-width:5.2cm"></span>.</p>
+
+<div class="box we"><div class="box-title">Worked example 1: methane combustion</div>
+
+\[ \ce{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \]
+Using \(\Delta H^\circ_f\): \(\ce{CH4}\) \(-74.8\), \(\ce{O2}\) \(0\), \(\ce{CO2}\) \(-393.5\),
+\(\ce{H2O(l)}\) \(-285.8\) kJ/mol.
+\begin{align*}
+  \Delta H^\circ &= [(-393.5) + 2(-285.8)] - [(-74.8) + 2(0)]\\
+  &= (-965.1) - (-74.8) = -890.3\,\mathrm{kJ}
+\end{align*}
+This matches the experimental \(-890\) kJ used in Block 2 — a good check
+that the method and the table agree.
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Watch the physical state. \(\Delta H^\circ_f\) for \(\ce{H2O(l)}\) is \(-285.8\) but
+for \(\ce{H2O(g)}\) it is \(-241.8\) — a 44 kJ/mol difference, exactly the heat
+of vaporization. Using the wrong state is worth 88 kJ of error in the
+example above.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Full calculations <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Compute \(\Delta H^\circ\) for
+        \(\ce{2 NH3(g) -> N2(g) + 3 H2(g)}\), given
+        \(\Delta H^\circ_f(\ce{NH3}) = -46.1\,\mathrm{kJ/mol}\).
+        <div class="workspace" style="height:2.2cm"></div>
+
+<li>Compute \(\Delta H^\circ\) for the thermite reaction
+        \(\ce{2 Al(s) + Fe2O3(s) -> Al2O3(s) + 2 Fe(s)}\), given
+        \(\Delta H^\circ_f\): \(\ce{Fe2O3}\) \(-826\), \(\ce{Al2O3}\) \(-1676\)
+        kJ/mol. <div class="workspace" style="height:2.4cm"></div>
+
+<li>In problem 2, why do \(\ce{Al(s)}\) and \(\ce{Fe(s)}\) contribute nothing?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A reaction has \(\Delta H^\circ = -1250\,\mathrm{kJ}\). State whether it
+is exothermic or endothermic, and what happens to the temperature of the
+surroundings. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

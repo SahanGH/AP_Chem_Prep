@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 18 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 18 • Electrochemistry</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">Zumdahl §18.1–18.4, 18.7–18.8 • PDF pp. 881–930 • 5 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How this chapter fits the AP course</div>
+
+<strong>This is the last chapter of the course, and it completes the CED.</strong>
+§18.1 \(\to\) CED 9.8, §18.2–18.3 \(\to\) 9.9, §18.4 \(\to\) 9.10,
+§18.7–18.8 \(\to\) 9.11. With Chapter 17 it finishes Unit 9, and with it the
+entire framework.
+
+<strong>Skip:</strong> §18.5 (batteries) and §18.6 (corrosion) are applications,
+not framework topics — interesting, and referenced in passing, but not
+examined.
+
+<p>Electrochemistry is where three earlier units meet. Redox bookkeeping comes
+from <strong>Unit 4</strong>, the \(Q\)-versus-\(K\) argument from <strong>Unit 7</strong>, and
+\(\Delta G^\circ\) from <strong>Chapter 17</strong>. The single new idea is that a
+favored redox reaction can be made to push electrons through a wire, and
+that the push is measurable as a voltage.</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Two CED boundaries that change what you should study.</strong>
+
+<strong>1. Do not label electrodes “positive” or “negative.”</strong> Topic 9.8
+carries an explicit exclusion: <em>labeling an electrode as positive or
+negative will not be assessed on the AP Exam.</em> The sign convention differs
+between galvanic and electrolytic cells and is a reliable source of
+confusion, so the exam simply avoids it. Learn <strong>anode</strong> and
+<strong>cathode</strong> instead — those never change meaning.
+
+<strong>2. The Nernst equation is not required.</strong> Topic 9.10 asks you to
+<em>reason</em> about how a cell potential changes when conditions move away
+from standard — using \(Q\) against \(K\) — and it lists no equation.
+Zumdahl §18.4 works through the full Nernst calculation; that is beyond the
+framework. Block 4 teaches the reasoning the CED actually asks for, and
+flags the algebra as enrichment.
+
+</div>
+
+<h2 class="block">Galvanic Cells: How They Work <span class="sub">Zumdahl §18.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Identify each component of an electrochemical cell and its role.
+
+<li>Determine the direction of electron and ion flow.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.1 • PDF pp. 882–886</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Oxidation is the <span class="blank" style="min-width:3cm"></span> of electrons.
+
+<li>Reduction is the <span class="blank" style="min-width:3cm"></span> of electrons.
+
+<li>Oxidation number of \(\ce{Zn}\) in \(\ce{Zn(s)}\):
+        <span class="blank" style="min-width:1.6cm"></span>
+
+<li>A reaction with \(\Delta G^\circ < 0\) is:
+        <span class="blank" style="min-width:5.4cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Separating the half-reactions <span class="sub">25 min</span></h4>
+
+<h3>Why a wire is involved at all <span class="badge">ZUM §18.1</span></h3>
+<span class="badge">SP 2</span>
+
+<p>Drop zinc metal into copper(II) sulfate and the reaction
+\[ \ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)} \]
+happens immediately, releasing energy as <span class="blank" style="min-width:1.6cm"></span>. The
+electrons pass directly from zinc atoms to copper ions at the point of
+contact, and nothing useful is captured.</p>
+
+<p>A <strong class="term">galvanic cell</strong> (also called a voltaic cell) does the same chemistry
+with the two halves <strong>physically separated</strong>, so the electrons are
+forced to travel through an external wire to get from one to the other.
+That flow is an electric current, and it can do work.</p>
+
+<h3>The parts, and what each one does <span class="badge">ZUM §18.1</span></h3>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Component</strong></th><th><strong>Role</strong></th></tr>
+<tr><td>Anode</td><td>where <strong>oxidation</strong> happens; electrons are released here</td></tr>
+<tr><td>Cathode</td><td>where <strong>reduction</strong> happens; electrons are consumed here</td></tr>
+<tr><td>Salt bridge</td><td>lets ions migrate to keep each half-cell electrically
+  neutral; without it the cell stops almost immediately</td></tr>
+<tr><td>External wire</td><td>carries electrons from anode to cathode</td></tr>
+<tr><td>Voltmeter</td><td>measures the potential difference driving that flow</td></tr>
+</table>
+
+</div>
+
+<div class="center">
+<div class="fbox">
+<strong>An Ox</strong> — <strong>An</strong>ode, <strong>Ox</strong>idation <br>
+<strong>Red Cat</strong> — <strong>Red</strong>uction, <strong>Cat</strong>hode <br>
+True in <em>every</em> cell, galvanic and electrolytic alike.</div>
+</div>
+
+<p>Electrons always flow from <span class="blank" style="min-width:2.4cm"></span> to
+<span class="blank" style="min-width:2.4cm"></span> through the wire — alphabetical order, which
+is worth noticing because it never changes.</p>
+
+<div class="box note"><div class="box-title">What the salt bridge is actually for</div>
+
+<p>As the cell runs, the anode compartment accumulates positive ions
+(\(\ce{Zn^2+}\) entering solution) and the cathode compartment loses them
+(\(\ce{Cu^2+}\) plating out). Charge would build up on both sides within
+moments and the electron flow would stop.</p>
+
+<p>The salt bridge prevents that by letting spectator ions migrate: anions move
+<em>toward the anode</em> and cations <em>toward the cathode</em>, cancelling
+the charge imbalance. It completes the circuit without letting the two
+solutions mix.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Reading a cell <span class="sub">15 min</span></h4>
+
+<p>For \(\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}\) run as a galvanic cell:</p>
+
+<ol>
+
+<li>Oxidation half-reaction:
+        <span class="blank" style="min-width:6cm"></span>
+
+<li>Reduction half-reaction:
+        <span class="blank" style="min-width:6cm"></span>
+
+<li>The anode is made of: <span class="blank" style="min-width:3cm"></span>
+
+<li>The cathode is made of: <span class="blank" style="min-width:3cm"></span>
+
+<li>Electrons flow from <span class="blank" style="min-width:5.4cm"></span>
+
+<li>The zinc electrode's mass <span class="blank" style="min-width:2.4cm"></span>; the
+        copper electrode's mass <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Anions in the salt bridge move toward:
+        <span class="blank" style="min-width:3.6cm"></span>
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Galvanic against electrolytic <span class="sub">20 min</span></h4>
+
+<h3>The same hardware, run backwards <span class="badge">ZUM §18.7</span></h3>
+<span class="badge">SP 2</span>
+
+<div class="center">
+
+<table>
+<tr><th></th><th><strong>Galvanic (voltaic)</strong></th><th><strong>Electrolytic</strong></th></tr>
+<tr><td>Reaction</td><td>thermodynamically <strong>favored</strong></td><td>thermodynamically
+  <strong>unfavored</strong></td></tr>
+<tr><td>\(E^\circ_{\text{cell}}\)</td><td>positive</td><td>negative</td></tr>
+<tr><td>\(\Delta G^\circ\)</td><td>negative</td><td>positive</td></tr>
+<tr><td>Energy</td><td><em>produces</em> electrical energy</td><td><em>consumes</em> it from an
+  external source</td></tr>
+<tr><td>Anode</td><td>oxidation</td><td>oxidation</td></tr>
+<tr><td>Cathode</td><td>reduction</td><td>reduction</td></tr>
+</table>
+
+</div>
+
+<p>The bottom two rows are the point of the table: <strong>anode and cathode
+mean the same thing in both</strong>. What reverses is which direction the reaction
+is being pushed, and whether energy comes out or must be put in.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>This is exactly Chapter 17's “driving an unfavorable process with an
+external energy source,” in hardware. An electrolytic cell is CED topic
+9.7 made physical — and it is why electrolysis was one of the CED's two
+named examples of external energy.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Describing cells <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>A student builds a cell and finds the silver electrode gains mass
+        while the copper electrode dissolves. Identify the anode, the
+        cathode, and the direction of electron flow.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Why does a galvanic cell stop working if the salt bridge is
+        removed? <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>A cell has \(E^\circ_{\text{cell}} = -0.46\)&nbsp;V. Is it galvanic or
+        electrolytic, and what must be supplied?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>State the one rule about anodes and cathodes that is true in every
+electrochemical cell, and one thing the exam will <em>not</em> ask you to
+label.</p>
+
+</div>
+
+<h2 class="block">Standard Reduction Potentials <span class="sub">Zumdahl §18.2</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Calculate \(E^\circ_{\text{cell}}\) from standard reduction
+        potentials.
+
+<li>Predict which species is oxidized and which is reduced.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.2 • PDF pp. 886–892</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Oxidation occurs at the: <span class="blank" style="min-width:2.4cm"></span>
+
+<li>Electrons flow from anode to:
+        <span class="blank" style="min-width:2.4cm"></span>
+
+<li>A favored reaction has \(E^\circ_{\text{cell}}\):
+        <span class="blank" style="min-width:2.4cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • A scale built on an arbitrary zero <span class="sub">25 min</span></h4>
+
+<h3>The standard hydrogen electrode <span class="badge">ZUM §18.2</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Only a <em>difference</em> in potential can be measured — there is no way to
+measure one half-cell alone. So one half-reaction is assigned a value by
+convention:
+\[ \ce{2H+(aq) + 2e^- -> H2(g)} \qquad E^\circ \equiv
+   \mathbf{0.00}~\text{V} \]
+Every other half-reaction is then measured against this
+<strong class="term">standard hydrogen electrode</strong>. Zumdahl's zinc cell reads 0.76 V against
+it, so \(\ce{Zn^2+ + 2e^- -> Zn}\) is assigned \(E^\circ = -0.76\)&nbsp;V.</p>
+
+<strong>Standard conditions</strong> means all solutes at 1&thinsp;M, all gases
+at 1&thinsp;atm, and 25&thinsp;&deg;C.
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Every table is written as reductions.</strong> That is a universal
+convention, and it means the table does not tell you which way a reaction
+runs — you decide that.
+
+<p>Reversing a half-reaction <strong>flips the sign</strong> of \(E^\circ\). But
+multiplying a half-reaction by a coefficient does <strong>not</strong> change
+\(E^\circ\) at all. Potential is an intensive property — volts per charge,
+not volts per mole. Scaling a half-reaction to balance electrons is
+required, and scaling its voltage is wrong.</p>
+
+</div>
+
+<h3>Computing the cell potential <span class="badge">ZUM §18.2</span></h3>
+
+\[ \boxed{\;E^\circ_{\text{cell}} = E^\circ_{\text{cathode}}
+   - E^\circ_{\text{anode}}\;} \]
+where both values are taken <em>straight from the table as reductions</em> —
+no sign flipping needed if you use this form.
+
+<p>For a <strong>galvanic</strong> cell you want \(E^\circ_{\text{cell}} > 0\), so the
+species with the <span class="blank" style="min-width:3cm"></span> \(E^\circ\) is reduced (it
+is the cathode) and the other is oxidized.</p>
+
+<div class="box we"><div class="box-title">Worked example 1: the Daniell cell</div>
+
+<p>Combine \(\ce{Zn^2+/Zn}\) (\(-0.76\)&nbsp;V) and \(\ce{Cu^2+/Cu}\) (\(+0.34\)&nbsp;V).</p>
+
+<p>Copper has the more positive reduction potential, so <strong>copper is
+reduced</strong> (cathode) and <strong>zinc is oxidized</strong> (anode):
+\begin{align*}
+  \text{cathode:} &\quad \ce{Cu^2+ + 2e^- -> Cu} \\
+  \text{anode:}   &\quad \ce{Zn -> Zn^2+ + 2e^-} \\
+  \text{overall:} &\quad \ce{Zn + Cu^2+ -> Zn^2+ + Cu}
+\end{align*}
+\[ E^\circ_{\text{cell}} = 0.34 - (-0.76) = \mathbf{+1.10}~\text{V} \]
+Positive, so the cell is galvanic — and 1.10 V is exactly what a
+voltmeter reads on this cell.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 2: when the electrons do not balance</div>
+
+<p>Combine \(\ce{Ag+/Ag}\) (\(+0.80\)&nbsp;V) and \(\ce{Cu^2+/Cu}\) (\(+0.34\)&nbsp;V).</p>
+
+<p>Silver is more positive, so silver is reduced and copper oxidized. Balancing
+electrons requires <em>two</em> silver half-reactions:
+\begin{align*}
+  \text{cathode:} &\quad \ce{2Ag+ + 2e^- -> 2Ag} \\
+  \text{anode:}   &\quad \ce{Cu -> Cu^2+ + 2e^-} \\
+  \text{overall:} &\quad \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}
+\end{align*}
+\[ E^\circ_{\text{cell}} = 0.80 - 0.34 = \mathbf{+0.46}~\text{V} \]</p>
+
+<strong>Note what did not happen:</strong> the silver half-reaction was doubled, but
+its \(E^\circ\) was <em>not</em>. Writing \(2(0.80) - 0.34 = 1.26\)&nbsp;V is the
+classic error in this chapter.
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Building cells from the table <span class="sub">15 min</span></h4>
+
+\(E^\circ\) (V): \(\ce{Ag+/Ag}\) \(+0.80\) • \(\ce{Cu^2+/Cu}\) \(+0.34\)
+• \(\ce{Pb^2+/Pb}\) \(-0.13\) • \(\ce{Ni^2+/Ni}\) \(-0.23\)
+• \(\ce{Fe^2+/Fe}\) \(-0.44\) • \(\ce{Zn^2+/Zn}\) \(-0.76\)
+• \(\ce{Mg^2+/Mg}\) \(-2.37\)
+
+<ol>
+
+<li>\(\ce{Zn}\) and \(\ce{Ag+}\): \(E^\circ_{\text{cell}} = \)
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>\(\ce{Mg}\) and \(\ce{Cu^2+}\): \(E^\circ_{\text{cell}} = \)
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>\(\ce{Zn}\) and \(\ce{Ni^2+}\): \(E^\circ_{\text{cell}} = \)
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>\(\ce{Fe}\) and \(\ce{Cu^2+}\): \(E^\circ_{\text{cell}} = \)
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>\(\ce{Pb}\) and \(\ce{Ag+}\): \(E^\circ_{\text{cell}} = \)
+        <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+
+<h4 class="segment">APPLICATION • Reading the table as a ranking <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Which is the stronger oxidizing agent, \(\ce{Ag+}\) or \(\ce{Zn^2+}\)?
+        Justify. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Which is the stronger reducing agent, \(\ce{Mg}\) or \(\ce{Cu}\)?
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Will \(\ce{Cu(s)}\) react with 1&thinsp;M \(\ce{HCl}\)? Support your
+        answer with a cell potential. <div class="workspace" style="height:2.4cm"></div>
+
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>A student doubles a half-reaction to balance electrons and doubles its
+\(E^\circ\) as well. Explain why the second step is wrong.</p>
+
+</div>
+
+<h2 class="block">Cell Potential, Free Energy, and \(K\) <span class="sub">Zumdahl §18.3</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate \(E^\circ_{\text{cell}}\) to \(\Delta G^\circ\) and to \(K\).
+
+<li>Explain why \(n\) matters for free energy but not for voltage.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.3 • PDF pp. 892–895</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(E^\circ_{\text{cell}} = \)
+        <span class="blank" style="min-width:5cm"></span>
+
+<li>Reversing a half-reaction does what to \(E^\circ\)?
+        <span class="blank" style="min-width:3cm"></span>
+
+<li>Doubling a half-reaction does what to \(E^\circ\)?
+        <span class="blank" style="min-width:2.6cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Connecting volts to kilojoules <span class="sub">25 min</span></h4>
+
+<h3>\(\Delta G^\circ = -nFE^\circ\) <span class="badge">ZUM §18.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Electrical work is charge moved through a potential difference. For \(n\)
+moles of electrons carrying <strong class="term">Faraday's constant</strong>
+\(F = 96485\,\mathrm{C/mol}\) of charge each,
+\[ \boxed{\;\Delta G^\circ = -nFE^\circ_{\text{cell}}\;} \]</p>
+
+<p>Read off the consequences:</p>
+
+<ul>
+
+<li>\(E^\circ > 0 \Rightarrow \Delta G^\circ\)
+        <span class="blank" style="min-width:2cm"></span> \(\Rightarrow\) favored, galvanic.
+
+<li>\(E^\circ < 0 \Rightarrow \Delta G^\circ\)
+        <span class="blank" style="min-width:2cm"></span> \(\Rightarrow\) unfavored, electrolytic.
+
+<li>The negative sign is what makes “positive voltage” and
+        “favored” line up.
+</ul>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Here is where \(n\) finally matters.</strong> Voltage does not depend on how
+many electrons are transferred, but free energy does — because
+\(\Delta G^\circ\) is an amount of energy, and more electrons moving through
+the same potential means more energy.
+
+<p>So two cells can have the same \(E^\circ\) and very different
+\(\Delta G^\circ\). Getting \(n\) wrong is the most common way to lose a point
+on this calculation, and \(n\) comes from the <em>balanced overall
+equation</em>, not from either half-reaction alone.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 3: the Daniell cell in kilojoules</div>
+
+\(E^\circ = +1.10\)&nbsp;V and \(n = 2\) (two electrons per zinc atom):
+\[ \Delta G^\circ = -(2)(96485)(1.10) = -212{,}267~\text{J}
+   = \mathbf{-212}~\text{kJ} \]
+Strongly favored, as the positive voltage already told us. Note the answer
+comes out in <strong>joules</strong> — \(F\) is in coulombs per mole and volts are
+joules per coulomb — so it must be converted to kJ.
+
+</div>
+
+<h4 class="segment">INSTRUCTION B • And on to the equilibrium constant <span class="sub">20 min</span></h4>
+
+<h3>Three descriptions of one thing <span class="badge">ZUM §18.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Combining \(\Delta G^\circ = -nFE^\circ\) with Chapter 17's
+\(\Delta G^\circ = -RT\ln K\):
+\[ nFE^\circ = RT\ln K \qquad\Longrightarrow\qquad
+   \ln K = \frac{nFE^\circ}{RT} \]</p>
+
+<p>You now have <em>three</em> equivalent ways to say “products are favored”:</p>
+
+<div class="center">
+
+<table>
+<tr><th>\(E^\circ_{\text{cell}}\)</th><th>\(\Delta G^\circ\)</th><th>\(K\)</th><th></th></tr>
+<tr><td>\(> 0\)</td><td>\(< 0\)</td><td>\(> 1\)</td><td>favored; galvanic</td></tr>
+<tr><td>\(= 0\)</td><td>\(= 0\)</td><td>\(= 1\)</td><td>at equilibrium; a dead battery</td></tr>
+<tr><td>\(< 0\)</td><td>\(> 0\)</td><td>\(< 1\)</td><td>unfavored; electrolytic</td></tr>
+</table>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 4: how far does the Daniell cell go?</div>
+
+<p>With \(E^\circ = 1.10\)&nbsp;V and \(n = 2\):
+\[ \ln K = \frac{(2)(96485)(1.10)}{(8.314)(298)} = 85.7
+   \qquad K = e^{85.7} \approx \mathbf{2\times10^{37}} \]
+Effectively complete. A modest-looking 1.10 V corresponds to an equilibrium
+constant of \(10^{37}\) — because \(E^\circ\) is multiplied by \(nF\), a very
+large number, before it enters an exponential.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Moving between the three <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}\), \(E^\circ = +0.46\)&nbsp;V.
+        Calculate \(\Delta G^\circ\). <div class="workspace" style="height:2.2cm"></div>
+
+<li>A cell has \(E^\circ = -1.10\)&nbsp;V with \(n = 2\). Find
+        \(\Delta G^\circ\) and state what it means practically.
+        <div class="workspace" style="height:2.4cm"></div>
+
+<li>Two cells both have \(E^\circ = +0.50\)&nbsp;V, but one transfers 1
+        electron and the other 4. Compare their voltages and their
+        \(\Delta G^\circ\) values. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>A battery is described as “dead.” Give the value of \(E_{\text{cell}}\), of
+\(\Delta G\), and the relationship between \(Q\) and \(K\) at that moment.</p>
+
+</div>
+
+<h2 class="block">Nonstandard Conditions <span class="sub">Zumdahl §18.4</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Predict how a change in concentration changes the cell potential.
+
+<li>Explain how a concentration cell produces a voltage.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.4 • PDF pp. 895–901</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta G^\circ = \) <span class="blank" style="min-width:3cm"></span>
+
+<li>\(Q = K\) means the system is at:
+        <span class="blank" style="min-width:2.6cm"></span>
+
+<li>Faraday's constant: <span class="blank" style="min-width:3.4cm"></span>
+</ol>
+</div>
+
+<div class="box note"><div class="box-title">What the CED asks for here</div>
+
+<p>Topic 9.10 lists <strong>no equation</strong>. It asks you to <em>reason</em> about
+how the cell potential responds when conditions leave standard state, using
+the distance from equilibrium. The Nernst equation in Zumdahl §18.4 is
+<strong>enrichment</strong> — useful, but not required, and not on this chapter's
+test.</p>
+
+</div>
+
+<h4 class="segment">INSTRUCTION A • Voltage as distance from equilibrium <span class="sub">25 min</span></h4>
+
+<h3>The one idea in this block <span class="badge">ZUM §18.4</span></h3>
+<span class="badge">SP 6</span>
+
+<div class="center">
+<div class="fbox">
+The cell potential is a <strong>driving force toward equilibrium</strong>. <br>
+The further the cell is from equilibrium, the <strong>larger</strong> \(|E|\). <br>
+At equilibrium, \(Q = K\) and \(E = \mathbf{0}\).</div>
+</div>
+
+<p>Standard conditions correspond to \(Q = \answerblank[1.4cm]{1}\), which is
+where \(E = E^\circ\). So to decide whether a change raises or lowers the
+voltage, ask one question: <strong>does the change move \(Q\) further from
+\(K\), or closer to it?</strong></p>
+
+<div class="center">
+
+<table>
+<tr><th>Change takes the cell <em>further</em> from equilibrium</th><th>\(|E|\)
+  <strong>increases</strong></th></tr>
+<tr><th>Change takes the cell <em>closer</em> to equilibrium</th><th>\(|E|\)
+  <strong>decreases</strong></th></tr>
+</table>
+
+</div>
+
+<p>For a favored cell, \(K\) is large, so \(Q\) starts below it. Then:
+<em>increasing reactant</em> concentration lowers \(Q\), moving it
+<span class="blank" style="min-width:2.4cm"></span> from \(K\), so the voltage
+<span class="blank" style="min-width:2cm"></span>. <em>Increasing product</em> concentration raises
+\(Q\), moving it closer to \(K\), so the voltage
+<span class="blank" style="min-width:2cm"></span>.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Do not invoke Le Ch\^atelier here.</strong> The CED says so outright:
+equilibrium arguments such as Le Ch\^atelier's principle <em>do not apply
+to electrochemical systems, because the systems are not at equilibrium</em>.
+
+<p>A running cell is deliberately held away from equilibrium — that is where
+its voltage comes from. Reason with \(Q\) against \(K\) and with distance from
+equilibrium, not with “the equilibrium shifts.”</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 5: which way does the voltage move?</div>
+
+<p>For the Daniell cell,
+\(\ce{Zn(s) + Cu^2+(aq) -> Zn^2+(aq) + Cu(s)}\), so
+\(Q = [\ce{Zn^2+}]/[\ce{Cu^2+}]\).</p>
+
+<strong>Raise \([\ce{Cu^2+}]\).</strong> \(Q\) gets <em>smaller</em>, so the cell is
+further from equilibrium and \(E\) <strong>increases</strong> above 1.10 V.
+
+<strong>Raise \([\ce{Zn^2+}]\).</strong> \(Q\) gets <em>larger</em>, closer to \(K\), so
+\(E\) <strong>decreases</strong>.
+
+<strong>Add more zinc metal.</strong> No change at all — \(\ce{Zn(s)}\) is a pure
+solid and does not appear in \(Q\).
+
+</div>
+
+<h4 class="segment">INSTRUCTION B • Concentration cells <span class="sub">20 min</span></h4>
+
+<h3>A voltage from nothing but a difference <span class="badge">ZUM §18.4</span></h3>
+<span class="badge">SP 6</span>
+
+<p>A <strong class="term">concentration cell</strong> has the <em>same</em> half-reaction on both sides,
+differing only in concentration. Since both electrodes are identical,
+\[ E^\circ_{\text{cell}} = 0.34 - 0.34 = \mathbf{0}~\text{V} \]
+and yet the cell produces a measurable voltage. The reason is that it is not
+at equilibrium: equilibrium here means <strong>equal concentrations</strong>.</p>
+
+<div class="box we"><div class="box-title">Worked example 6: reasoning out the direction</div>
+
+\[ \ce{Cu} \mid \ce{Cu^2+}~(0.010\,\mathrm{M}) \parallel
+   \ce{Cu^2+}~(1.0\,\mathrm{M}) \mid \ce{Cu} \]
+
+<p>Ask what has to happen for the two sides to become equal:</p>
+
+<ul>
+
+<li>The <strong>dilute</strong> side must become more concentrated, so
+        \(\ce{Cu^2+}\) must be <em>produced</em> there:
+        \(\ce{Cu -> Cu^2+ + 2e^-}\). That is oxidation, so the dilute side is
+        the <strong>anode</strong>.
+
+<li>The <strong>concentrated</strong> side must become more dilute, so
+        \(\ce{Cu^2+}\) must be <em>consumed</em>:
+        \(\ce{Cu^2+ + 2e^- -> Cu}\). Reduction — the <strong>cathode</strong>.
+</ul>
+
+<p>Electrons therefore flow from the dilute half-cell to the concentrated one.
+The voltage is small but positive, and it falls to <strong>zero</strong> once the
+two concentrations match.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Predicting the response <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{Zn + Cu^2+ -> Zn^2+ + Cu}\), state and justify the effect
+        on \(E\) of (i) diluting the \(\ce{Cu^2+}\) solution, (ii) adding
+        \(\ce{Na2S}\) to the cathode compartment to precipitate \(\ce{CuS}\).
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>A concentration cell is built from \(\ce{Ag}\) electrodes in
+        0.10&thinsp;M and 2.0&thinsp;M \(\ce{AgNO3}\). Identify the
+        anode and predict what happens to \(E\) over time.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+
+<li>Explain why a student who answers “by Le Ch\^atelier's principle,
+        the equilibrium shifts right” would not receive credit here.
+        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>A cell's voltage has fallen to zero. State what is true of \(Q\), of \(K\), and
+of \(\Delta G\), and whether any reactant remains.</p>
+
+</div>
+
+<h2 class="block">Electrolysis and Faraday's Law <span class="sub">Zumdahl §18.7–18.8</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate current, time, charge and moles of electrons.
+
+<li>Calculate the mass deposited or dissolved at an electrode.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.7–18.8 • PDF pp. 913–925</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Electrolytic cells have \(E^\circ\):
+        <span class="blank" style="min-width:2cm"></span>
+
+<li>Faraday's constant: <span class="blank" style="min-width:3.4cm"></span>
+
+<li>Reduction still occurs at the:
+        <span class="blank" style="min-width:2.4cm"></span>
+</ol>
+</div>
+
+<h4 class="segment">INSTRUCTION A • Counting electrons with an ammeter <span class="sub">25 min</span></h4>
+
+<h3>The bridge from electricity to moles <span class="badge">ZUM §18.8</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Electrolysis is stoichiometry in which one of the reagents is
+<span class="blank" style="min-width:2.4cm"></span>. The whole calculation rests on being able
+to count electrons, and current is how you do it:</p>
+
+\[ \boxed{\;I = \frac{q}{t}\;} \qquad\text{so}\qquad
+   q = It \]
+with \(q\) in coulombs, \(I\) in amperes and \(t\) in
+<span class="blank" style="min-width:1.8cm"></span>. Then Faraday's constant converts charge to
+moles of electrons:
+\[ \text{mol e}^- = \frac{q}{96485} \]
+
+The full chain, worth memorizing as a sequence:
+<div class="center">
+<div class="fbox">
+current &amp; time \(\to\) charge (\(q = It\)) \(\to\) moles of electrons
+(\(\div F\)) <br>
+\(\to\) moles of substance (\(\div n\) from the half-reaction) \(\to\) grams
+(\(\times\) molar mass)</div>
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The half-reaction supplies the electron ratio, and it is not always
+2.</strong> Depositing one mole of metal takes one mole of electrons for
+\(\ce{Ag+}\), two for \(\ce{Cu^2+}\), three for \(\ce{Al^3+}\). Reading that number off
+the charge of the ion is the step students skip.
+
+<p>Also: <strong>time must be in seconds</strong>. A problem stated in minutes or hours
+is stated that way on purpose.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 7: silver plating</div>
+
+<p>A current of 2.00&thinsp;A runs for 30.0&thinsp;min through a
+solution of \(\ce{AgNO3}\). What mass of silver plates out?</p>
+
+<strong>Charge:</strong> \(t = 30.0 \times 60 = 1800\,\mathrm{s}\), so
+\(q = (2.00)(1800) = 3600\,\mathrm{C}\).
+
+<strong>Moles of electrons:</strong>
+\(3600 / 96485 = 0.0373\,\mathrm{mol}\).
+
+<strong>Moles of silver:</strong> the half-reaction is
+\(\ce{Ag+ + e^- -> Ag}\), one electron per atom, so
+\(0.0373\,\mathrm{mol}\) of \(\ce{Ag}\).
+
+<strong>Mass:</strong> \((0.0373)(107.87) = \mathbf{4.03}~\text{g}\)
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 8: the same current, a different ion</div>
+
+<p>Now 1.50&thinsp;A for 1.00&thinsp;h through \(\ce{CuSO4}\).</p>
+
+\(q = (1.50)(3600) = 5400\,\mathrm{C}\);
+\(\text{mol e}^- = 5400/96485 = 0.0560\).
+
+<p>But \(\ce{Cu^2+ + 2e^- -> Cu}\) needs <em>two</em> electrons per atom:
+\[ \text{mol Cu} = \frac{0.0560}{2} = 0.0280
+   \qquad m = (0.0280)(63.55) = \mathbf{1.78}~\text{g} \]</p>
+
+<p>Forgetting to divide by 2 gives 3.56 g — exactly double, and a lost point.</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Running the chain <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>How long, in hours, to deposit 5.00&thinsp;g of copper at
+        2.00&thinsp;A? <div class="workspace" style="height:2.6cm"></div>
+
+<li>What current deposits 10.0&thinsp;g of silver in
+        1.00&thinsp;h? <div class="workspace" style="height:2.4cm"></div>
+
+</ol>
+
+<h4 class="segment">INSTRUCTION B • Where this is used <span class="sub">20 min</span></h4>
+
+<h3>Electrolysis in industry <span class="badge">ZUM §18.8</span></h3>
+<span class="badge">SP 2</span>
+
+<ul>
+
+<li><strong>Producing aluminium</strong> (the Hall–H\'eroult process).
+        \(\ce{Al^3+}\) needs three electrons per atom, and aluminium sits at
+        \(-1.66\)&nbsp;V, so the process is enormously energy-hungry — which is
+        why aluminium smelters are built next to power stations and why
+        recycling aluminium saves so much energy.
+
+<li><strong>Electroplating</strong> — depositing a thin layer of one metal
+        onto another, controlled precisely by current and time.
+
+<li><strong>Electrorefining</strong> — purifying copper by dissolving the
+        impure metal at the anode and depositing pure metal at the cathode.
+
+<li><strong>Electrolysis of water</strong>, which has
+        \(E^\circ = -1.23\)&nbsp;V and so requires an applied potential. This was
+        Chapter 17's “external energy source driving an unfavorable
+        process,” realized in hardware.
+</ul>
+
+<h4 class="segment">APPLICATION • Scaling up <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Chromium is plated from \(\ce{Cr^3+}\) at 5.00&thinsp;A for
+        2.00&thinsp;h. Find the mass deposited. <div class="workspace" style="height:2.8cm"></div>
+
+<li>How much charge is needed to produce 1.00&thinsp;kg of
+        aluminium? <div class="workspace" style="height:2.6cm"></div>
+
+<li>Two cells are wired in series so the same current passes through
+        both: one plates \(\ce{Ag}\) from \(\ce{Ag+}\), the other \(\ce{Cu}\) from
+        \(\ce{Cu^2+}\). After the same time, which has more <em>moles</em> of
+        metal deposited, and why? <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>List the four conversion steps between a measured current and a mass of
+plated metal, in order.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>
