@@ -229,6 +229,28 @@ FIGURE_PREAMBLE = r"""
 """
 
 
+_MACROS = None
+
+
+def project_macros() -> set:
+    r"""Every macro name this project defines in shared\ -- \newcommand,
+    \renewcommand, \DeclareRobustCommand, \newtcolorbox, \NewEnviron. These
+    are exactly the names MathJax cannot know, so any of them surviving into
+    a math span is a defect."""
+    global _MACROS
+    if _MACROS is None:
+        _MACROS = set()
+        for f in (ROOT / "shared").glob("*"):
+            if f.suffix not in (".sty", ".cls"):
+                continue
+            txt = f.read_text(encoding="utf-8")
+            _MACROS |= set(re.findall(
+                r"\\(?:new|renew|provide)command\*?\{?\\([a-zA-Z@]+)", txt))
+            _MACROS |= set(re.findall(r"\\DeclareRobustCommand\*?\{?\\([a-zA-Z@]+)",
+                                      txt))
+    return _MACROS
+
+
 def palette_lines() -> str:
     """First (screen) palette block + any tikz/pgfplots styles from apchem.sty."""
     sty = (ROOT / "shared" / "apchem.sty").read_text(encoding="utf-8")
@@ -293,10 +315,55 @@ def render_figures(tex_path: Path, blocks, chapter_dir: Path, log):
 
 MATH = []
 
+# Commands that may sit INSIDE a math span but must become HTML, not math.
+# \answerblank's argument is the answer, so the student edition discards it
+# and emits an empty rule; \workspace and \answerlines are blank space by
+# definition. Leaving any of these inside the stashed math is what makes
+# MathJax print a red "\answerblank" -- the defect this exists to prevent.
+ESCAPES = {
+    "answerblank": (1, 1, lambda o, r:
+                    f'<span class="blank" style="min-width:{o[0] or "4cm"}"></span>'),
+    "answerlines": (1, 1, lambda o, r:
+                    '<div class="lines">' +
+                    '<div class="rule"></div>' * (int(o[0]) if o[0] else 3) +
+                    '</div>'),
+    "workspace": (1, 0, lambda o, r:
+                  f'<div class="workspace" style="height:{o[0] or "2cm"}"></div>'),
+}
+ESCAPE_RE = re.compile(r"\\(" + "|".join(ESCAPES) + r")(?![a-zA-Z])")
+
 
 def stash_math(s: str) -> str:
     MATH.append(convert_si(s, in_math=True))
     return f"\x00M{len(MATH)-1}\x00"
+
+
+def math_span(content: str, display: bool) -> str:
+    r"""Turn one math span into HTML, splitting it around any embedded
+    \answerblank / \workspace / \answerlines. A display span that contains a
+    blank is emitted as inline pieces inside a centred div, so the line reads
+    "M = ____" rather than breaking into two display blocks."""
+    if not ESCAPE_RE.search(content):
+        d = (r"\[", r"\]") if display else (r"\(", r"\)")
+        return stash_math(d[0] + content + d[1])
+
+    out, i = [], 0
+    for m in ESCAPE_RE.finditer(content):
+        if m.start() < i:
+            continue
+        name = m.group(1)
+        n_opt, n_req, fn = ESCAPES[name]
+        opts, reqs, end = take_args(content, m.end(), n_opt, n_req)
+        chunk = content[i:m.start()].strip()
+        if chunk:
+            out.append(stash_math(r"\(" + chunk + r"\)"))
+        out.append(fn(opts, reqs))
+        i = end
+    tail = content[i:].strip()
+    if tail:
+        out.append(stash_math(r"\(" + tail + r"\)"))
+    html = " ".join(out)
+    return f'<div class="center">{html}</div>' if display else html
 
 
 def protect_math(src: str) -> str:
@@ -305,18 +372,18 @@ def protect_math(src: str) -> str:
         if not f:
             break
         a, b, _, inner = f
-        src = src[:a] + stash_math(r"\begin{align*}" + inner + r"\end{align*}") + src[b:]
+        src = (src[:a] +
+               stash_math(r"\begin{align*}" + inner + r"\end{align*}") +
+               src[b:])
     # The lookbehind matters: a line break with spacing, \\[0.3em], ends in a
     # "\[" that must NOT be read as display math -- doing so swallows
     # everything up to the next \], including \end{...} tokens.
     src = re.sub(r"(?<!\\)\\\[(.*?)\\\]",
-                 lambda m: stash_math(r"\[" + m.group(1) + r"\]"),
-                 src, flags=re.S)
+                 lambda m: math_span(m.group(1), True), src, flags=re.S)
     src = re.sub(r"(?<!\\)\\\((.*?)\\\)",
-                 lambda m: stash_math(r"\(" + m.group(1) + r"\)"),
-                 src, flags=re.S)
-    src = re.sub(r"\$([^$]+)\$", lambda m: stash_math(r"\(" + m.group(1) + r"\)"),
-                 src, flags=re.S)
+                 lambda m: math_span(m.group(1), False), src, flags=re.S)
+    src = re.sub(r"\$([^$]+)\$",
+                 lambda m: math_span(m.group(1), False), src, flags=re.S)
     return src
 
 
@@ -568,10 +635,18 @@ def convert_body(body: str, meta: dict, fig_names, log):
     body = re.sub(r"\\\\(\[[^\]]*\])?", "<br>", body)
     body = body.replace("~", "&nbsp;")
 
-    # ---- audit BEFORE math restore ----
-    leftovers = sorted(set(re.findall(r"\\[a-zA-Z]+", body)))
-    for cmd in leftovers:
+    # ---- audit ----
+    # Outside math: anything still backslashed was not translated.
+    for cmd in sorted(set(re.findall(r"\\[a-zA-Z]+", body))):
         log.append(f"  ?? unconverted: {cmd}")
+    # Inside math: MathJax knows TeX and mhchem but nothing about THIS
+    # project's macros, and renders an unknown one as red error text.
+    # Auditing only outside math is how a red \answerblank reached 54 pages.
+    # The watch list is read from shared\ so it can never drift out of date.
+    for chunk in MATH:
+        for cmd in sorted(set(re.findall(r"\\[a-zA-Z]+", chunk))):
+            if cmd[1:] in project_macros():
+                log.append(f"  ?? project macro inside math: {cmd}")
 
     # strip remaining lone braces
     body = re.sub(r"(?<!\\)[{}]", "", body)
