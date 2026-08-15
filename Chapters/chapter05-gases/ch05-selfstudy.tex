@@ -1,0 +1,515 @@
+% Ch5 self-study -- "I do / You do" ladder for Zumdahl 5.1-5.10, four
+% YOUR TURN questions per worked example. Values chosen disjoint from
+% ch05-notes and the ch05 worksheets.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Self-Study \textbullet\ \S5.1--5.10, I~do / You~do}
+\apcsubtitle{Zumdahl \S5.1--5.10 \textbullet\ PDF pp.\ 227--268 \textbullet\ four YOUR TURN questions per ladder}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item \textbf{Work all four} before checking anything.
+  \item Check against the gray \emph{check:} line. All four right on the
+        first try earns the tick on the tracker (last page).
+  \item Any misses: re-read the worked example, then redo the missed ones
+        from a blank page.
+\end{enumerate}
+
+\textbf{Two rules that prevent most lost marks in this chapter.}
+Temperature in any gas calculation is \textbf{always in kelvin} ---
+$T(\mathrm{K}) = T(^\circ\mathrm{C}) + 273.15$. And the value of $R$ you
+choose dictates every other unit: with
+$R = \SI{0.08206}{\litre\atm\per\mole\per\kelvin}$, pressure must be atm
+and volume litres.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Pressure and its units}
+\zsec{5.1}
+
+Pressure is force per unit area. A barometer balances the atmosphere
+against a mercury column, so pressure is quoted as the height that column
+supports:
+\[ \SI{1}{\atm} = \SI{760}{\mmHg} = \SI{760}{\torr}
+   = \SI{101325}{\pascal} = \SI{101.325}{\kilo\pascal} \]
+
+\begin{workedexample}[I do: one reading, four units]
+A weather station reports \SI{745}{\torr}. Express it in atm, kPa, and
+mmHg.
+
+\textbf{To atm} --- divide by the number of torr in an atm:
+\[ \frac{745}{760} = \mathbf{0.980~atm} \]
+
+\textbf{To kPa} --- go through atm, or use the direct ratio:
+\[ 0.980 \times 101.325 = \mathbf{99.3~kPa} \]
+
+\textbf{To mmHg} --- no work at all: the torr and the mmHg are the
+\emph{same size}, so \SI{745}{\torr} $= \mathbf{745~mmHg}$.
+
+\textbf{Sense check:} the reading is slightly below one atmosphere, so
+every converted value should sit slightly below its 1-atm counterpart
+(1 atm, 101.3 kPa, 760 mmHg). All three do.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{2.50}{\atm} in torr: \workspace[1.4cm]
+  \item \SI{88.0}{\kilo\pascal} in atm: \workspace[1.4cm]
+  \item \SI{0.335}{\atm} in mmHg: \workspace[1.4cm]
+  \item A gauge reads \SI{950}{\torr}. Is the gas above or below
+        atmospheric pressure, and by what factor? \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) \SI{1900}{\torr} \quad (b) \SI{0.868}{\atm} \quad
+(c) \SI{255}{\mmHg} \quad (d) above; $950/760 = 1.25$ times}
+\keyonly{\begin{apcanswer}(a) $2.50 \times 760 = \mathbf{1900}$~torr.
+(b) $88.0/101.325 = \mathbf{0.868}$~atm.
+(c) $0.335 \times 760 = \mathbf{255}$~mmHg.
+(d) Above --- 950 torr exceeds 760; $950/760 = \mathbf{1.25}$
+times atmospheric.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ The combined gas law}
+\zsec{5.2}
+
+Boyle ($P_1V_1 = P_2V_2$), Charles ($V_1/T_1 = V_2/T_2$), and
+Gay-Lussac ($P_1/T_1 = P_2/T_2$) are all one relationship with the
+unchanged variables cancelled:
+\[ \boxed{\;\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}\;} \]
+Learn this one and delete anything held constant --- there is no need to
+memorize four separate laws.
+
+\begin{workedexample}[I do: a weather balloon rising]
+A balloon holds \SI{4.50}{\litre} at \SI{1.00}{\atm} and
+\SI{22}{\celsius}. It rises to where the pressure is \SI{0.450}{\atm} and
+the temperature \SI{-25}{\celsius}. Find the new volume.
+
+\textbf{Kelvin first --- always:}
+\[ T_1 = 22 + 273 = \SI{295}{\kelvin} \qquad
+   T_2 = -25 + 273 = \SI{248}{\kelvin} \]
+
+\textbf{Rearrange for $V_2$:}
+\[ V_2 = V_1 \times \frac{P_1}{P_2} \times \frac{T_2}{T_1}
+       = 4.50 \times \frac{1.00}{0.450} \times \frac{248}{295}
+       = \mathbf{8.41~L} \]
+
+\textbf{Sense check, factor by factor:} the pressure fell to less than
+half, which should roughly double the volume; the temperature dropped,
+which should shrink it a little. Up by $2.22$, down by $0.841$ ---
+net roughly $\times 1.87$. The balloon expands, as balloons do at
+altitude.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{2.00}{\litre} at \SI{1.50}{\atm} is compressed to
+        \SI{0.750}{\litre} at constant $T$. New pressure?
+        \workspace[1.4cm]
+  \item \SI{500.}{\milli\litre} at \SI{27}{\celsius} is warmed to
+        \SI{127}{\celsius} at constant $P$. New volume? \workspace[1.6cm]
+  \item A rigid can at \SI{1.00}{\atm} and \SI{20}{\celsius} is heated to
+        \SI{300}{\celsius}. New pressure? \workspace[1.6cm]
+  \item \SI{6.00}{\litre} at \SI{2.00}{\atm} and \SI{300}{\kelvin} moves
+        to \SI{1.50}{\atm} and \SI{400}{\kelvin}. New volume?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{4.00}{\atm} \quad (b) \SI{667}{\milli\litre} \quad
+(c) \SI{1.96}{\atm} \quad (d) \SI{10.7}{\litre}}
+\keyonly{\begin{apcanswer}(a) $P_2 = 1.50(2.00/0.750) =
+\mathbf{4.00}$~atm. (b) $300 \to 400$~K: $500. \times 400/300 =
+\mathbf{667}$~mL. (c) $293 \to 573$~K: $1.00 \times 573/293 =
+\mathbf{1.96}$~atm --- why sealed cans must not be heated.
+(d) $6.00 \times (2.00/1.50) \times (400/300) =
+\mathbf{10.7}$~L.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ The ideal gas law}
+\zsec{5.3}
+
+\[ \boxed{\;PV = nRT\;} \qquad
+   R = \SI{0.08206}{\litre\atm\per\mole\per\kelvin} \]
+
+Use $PV = nRT$ for \textbf{one state} of a gas; use the combined law when
+a sample \emph{changes} from one state to another. Choosing between them
+is most of the skill.
+
+\begin{workedexample}[I do: moles, then mass]
+What mass of oxygen occupies \SI{7.50}{\litre} at \SI{1.20}{\atm} and
+\SI{35}{\celsius}?
+
+\textbf{Kelvin:} $35 + 273 = \SI{308}{\kelvin}$
+
+\textbf{Solve for $n$:}
+\[ n = \frac{PV}{RT} = \frac{(1.20)(7.50)}{(0.08206)(308)}
+     = \frac{9.00}{25.27} = \SI{0.356}{\mole} \]
+
+\textbf{Moles to grams:} $0.356 \times 32.00 = \mathbf{11.4~g}$
+
+\textbf{Sense check:} at room conditions a mole of gas fills about 24 L,
+so 7.5 L should be roughly a third of a mole. It is.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Moles of gas in \SI{10.0}{\litre} at \SI{2.00}{\atm} and
+        \SI{273}{\kelvin}: \workspace[1.6cm]
+  \item Pressure of \SI{0.500}{\mole} of gas in \SI{5.00}{\litre} at
+        \SI{25}{\celsius}: \workspace[1.6cm]
+  \item Volume of \SI{16.04}{\gram} of \ce{CH4}
+        ($M = \SI{16.04}{\gram\per\mole}$) at \SI{1.00}{\atm} and
+        \SI{0}{\celsius}: \workspace[1.8cm]
+  \item A \SI{2.00}{\litre} flask holds \SI{0.150}{\mole} at
+        \SI{1.85}{\atm}. Find the temperature in \si{\celsius}.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.893}{\mole} \quad (b) \SI{2.45}{\atm} \quad
+(c) \SI{22.4}{\litre} \quad (d) \SI{28}{\celsius}}
+\keyonly{\begin{apcanswer}(a) $n = (2.00)(10.0)/[(0.08206)(273)] =
+\mathbf{0.893}$~mol. (b) $P = (0.500)(0.08206)(298)/5.00 =
+\mathbf{2.45}$~atm. (c) $n = 16.04/16.04 = 1.000$~mol;
+$V = (1.000)(0.08206)(273)/1.00 = \mathbf{22.4}$~L --- exactly the molar
+volume, because the sample is exactly one mole and the conditions are
+STP. (d) $T = PV/nR = (1.85)(2.00)/[(0.150)(0.08206)] = 301$~K
+$= \mathbf{28}$~\si{\celsius}.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Molar mass and density}
+\zsec{5.3}
+
+Substituting $n = m/M$ into $PV = nRT$ gives the two most useful
+rearrangements in the chapter:
+\[ M = \frac{mRT}{PV} = \frac{dRT}{P} \qquad\text{and}\qquad
+   d = \frac{PM}{RT} \]
+Read the second one: at fixed $P$ and $T$, \textbf{density is
+proportional to molar mass} --- which is why a balloon of \ce{He} rises
+and one of \ce{CO2} sinks.
+
+\begin{workedexample}[I do: identifying an unknown gas]
+A \SI{0.582}{\gram} sample of an unknown gas occupies
+\SI{0.500}{\litre} at \SI{1.00}{\atm} and \SI{100}{\celsius}. What is it?
+
+\textbf{Kelvin:} $100 + 273 = \SI{373}{\kelvin}$
+
+\[ M = \frac{mRT}{PV} = \frac{(0.582)(0.08206)(373)}{(1.00)(0.500)}
+     = \frac{17.81}{0.500} = \mathbf{35.6~g/mol} \]
+
+\textbf{Identify:} \ce{Cl2} is 70.90, \ce{HCl} is 36.46, \ce{O2} is
+32.00. The value points to \textbf{\ce{HCl}} --- and note the
+\emph{measurement} decides, not a guess; 35.6 against 36.46 is within
+ordinary experimental error, while the alternatives are far off.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Density of \ce{CO2} ($M = 44.01$) at \SI{1.00}{\atm} and
+        \SI{0}{\celsius}: \workspace[1.6cm]
+  \item A gas has density \SI{1.34}{\gram\per\litre} at
+        \SI{1.00}{\atm} and \SI{25}{\celsius}. Find $M$.
+        \workspace[1.8cm]
+  \item \SI{1.25}{\gram} of a gas fills \SI{1.00}{\litre} at
+        \SI{0.980}{\atm} and \SI{20}{\celsius}. Find $M$.
+        \workspace[1.8cm]
+  \item Without calculating: at the same $P$ and $T$, which is denser,
+        \ce{N2} or \ce{Ar}? Why? \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) \SI{1.96}{\gram\per\litre} \quad (b)
+\SI{32.8}{\gram\per\mole} \quad (c) \SI{30.7}{\gram\per\mole} \quad
+(d) \ce{Ar} --- larger molar mass at the same $P$, $T$}
+\keyonly{\begin{apcanswer}(a) $d = PM/RT = (1.00)(44.01)/[(0.08206)(273)]
+= \mathbf{1.96}$~g/L. (b) $M = dRT/P = (1.34)(0.08206)(298)/1.00 =
+\mathbf{32.8}$~g/mol (oxygen). (c) $M = mRT/PV =
+(1.25)(0.08206)(293)/[(0.980)(1.00)] = \mathbf{30.7}$~g/mol.
+(d) \ce{Ar} ($M = 39.95$) beats \ce{N2} ($M = 28.02$): with $d = PM/RT$,
+density tracks molar mass when $P$ and $T$ are
+fixed.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Gas stoichiometry}
+\zsec{5.4}
+
+Chapter 3's spine gains a gas entrance and a gas exit:
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\centering
+$P$, $V$, $T$ $\to$ moles (via $PV=nRT$) $\to$ mole ratio $\to$ moles
+$\to$ $P$, $V$, $T$ or grams}}
+\end{center}
+At \textbf{STP} (\SI{0}{\celsius}, \SI{1}{\atm}) only, one mole of any
+gas occupies \SI{22.4}{\litre} --- a shortcut that is wrong at every
+other condition.
+
+\begin{workedexample}[I do: hydrogen from a metal and acid]
+What volume of \ce{H2}, collected at \SI{25}{\celsius} and
+\SI{1.00}{\atm}, forms when \SI{5.00}{\gram} of zinc
+($M = \SI{65.38}{\gram\per\mole}$) reacts completely?
+\[ \ce{Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)} \]
+
+\textbf{Grams to moles:}
+$\dfrac{5.00}{65.38} = \SI{0.0765}{\mole}~\ce{Zn}$
+
+\textbf{Mole ratio} (1:1): $\SI{0.0765}{\mole}~\ce{H2}$
+
+\textbf{Moles to volume, at the stated conditions --- not STP:}
+\[ V = \frac{nRT}{P} = \frac{(0.0765)(0.08206)(298)}{1.00}
+     = \mathbf{1.87~L} \]
+
+Using 22.4 L/mol here would give 1.71 L, which is wrong by 9\%: the gas
+is at \SI{25}{\celsius}, not \SI{0}{\celsius}.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Volume of \ce{CO2} at STP from decomposing \SI{25.0}{\gram} of
+        \ce{CaCO3} ($M = 100.09$): $\ce{CaCO3 -> CaO + CO2}$
+        \workspace[1.8cm]
+  \item Volume of \ce{O2} at \SI{1.00}{\atm}, \SI{25}{\celsius} from
+        \SI{0.500}{\mole} of \ce{KClO3}:
+        $\ce{2KClO3 -> 2KCl + 3O2}$ \workspace[1.8cm]
+  \item Mass of \ce{NH3} formed from \SI{5.00}{\litre} of \ce{N2} at
+        \SI{2.00}{\atm} and \SI{300}{\kelvin} with excess \ce{H2}:
+        $\ce{N2 + 3H2 -> 2NH3}$ \workspace[2cm]
+  \item Why is 22.4 L/mol usable in (a) but not in (b)?
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) \SI{5.60}{\litre} \quad (b) \SI{18.3}{\litre} \quad
+(c) \SI{13.8}{\gram} \quad (d) only (a) is at STP}
+\keyonly{\begin{apcanswer}(a) $25.0/100.09 = 0.2498$~mol $\to$ 1:1 $\to$
+$0.2498 \times 22.4 = \mathbf{5.60}$~L. (b) $0.500 \times \tfrac{3}{2} =
+0.750$~mol \ce{O2}; $V = (0.750)(0.08206)(298)/1.00 = \mathbf{18.3}$~L.
+(c) $n_{\ce{N2}} = (2.00)(5.00)/[(0.08206)(300)] = 0.406$~mol
+$\times 2 = 0.812$~mol \ce{NH3} $\times\, 17.03 = \mathbf{13.8}$~g.
+(d) The molar volume 22.4 L/mol is defined at STP --- \SI{0}{\celsius}
+and \SI{1}{\atm}. Question (a) states STP; (b) is at \SI{25}{\celsius},
+so it needs $PV = nRT$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Partial pressures}
+\zsec{5.5}
+
+In a mixture each gas behaves as if alone:
+\[ P_{\text{total}} = P_1 + P_2 + \cdots \qquad
+   P_i = X_i P_{\text{total}}, \quad
+   X_i = \frac{n_i}{n_{\text{total}}} \]
+Mole fractions are dimensionless and sum to 1. A gas
+\textbf{collected over water} is wet, so
+$P_{\text{gas}} = P_{\text{total}} - P_{\ce{H2O}}$.
+
+\begin{workedexample}[I do: a three-gas mixture, then a wet gas]
+\textbf{(a)} A vessel holds \SI{0.200}{\mole} \ce{N2},
+\SI{0.300}{\mole} \ce{O2}, and \SI{0.500}{\mole} \ce{He} at a total
+pressure of \SI{2.40}{\atm}. Find each partial pressure.
+
+$n_{\text{total}} = 1.000$~mol, so the mole fractions are 0.200, 0.300,
+0.500, and
+\[ P_{\ce{N2}} = 0.200(2.40) = \mathbf{0.480~atm} \quad
+   P_{\ce{O2}} = \mathbf{0.720~atm} \quad
+   P_{\ce{He}} = \mathbf{1.20~atm} \]
+They sum to 2.40 atm --- always check that.
+
+\textbf{(b)} Hydrogen collected over water at \SI{25}{\celsius} has a
+total pressure of \SI{755}{\torr}. The vapour pressure of water at
+\SI{25}{\celsius} is \SI{23.8}{\torr}. The dry hydrogen pressure is
+\[ 755 - 23.8 = \mathbf{731~torr} \]
+Forgetting to subtract the water overstates the gas by about 3\%.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A mixture is \SI{1.00}{\mole} \ce{N2} and \SI{3.00}{\mole}
+        \ce{H2} at \SI{4.00}{\atm}. Find both partial pressures.
+        \workspace[1.6cm]
+  \item Dry air is about 78\% \ce{N2} by moles. Find $P_{\ce{N2}}$ at
+        \SI{1.00}{\atm}. \workspace[1.4cm]
+  \item Oxygen collected over water at \SI{20}{\celsius}
+        ($P_{\ce{H2O}} = \SI{17.5}{\torr}$) reads \SI{745}{\torr} total.
+        Find the dry \ce{O2} pressure. \workspace[1.4cm]
+  \item In question (a), which gas has the larger partial pressure, and
+        does it have the larger \emph{mass}? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{N2} \SI{1.00}{\atm}, \ce{H2} \SI{3.00}{\atm} \quad
+(b) \SI{0.78}{\atm} \quad (c) \SI{728}{\torr} \quad (d) \ce{H2} has the
+larger pressure but the smaller mass}
+\keyonly{\begin{apcanswer}(a) $X_{\ce{N2}} = 0.250 \to
+\mathbf{1.00}$~atm; $X_{\ce{H2}} = 0.750 \to \mathbf{3.00}$~atm.
+(b) $0.78 \times 1.00 = \mathbf{0.78}$~atm.
+(c) $745 - 17.5 = \mathbf{728}$~torr.
+(d) \ce{H2} --- partial pressure follows the \emph{mole} fraction, and
+there are three times as many moles. But mass is
+$3.00 \times 2.016 = 6.05$~g of \ce{H2} against
+$1.00 \times 28.02 = 28.0$~g of \ce{N2}, so the nitrogen is far heavier.
+Pressure counts particles, not
+grams.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Kinetic molecular theory;
+effusion}
+\zsec{5.6--5.7}
+
+KMT explains \emph{why} the gas laws hold. Its postulates: particles are
+point-like with negligible volume; they move randomly; collisions are
+perfectly elastic; there are no attractive or repulsive forces; and the
+\textbf{average kinetic energy is proportional to the absolute
+temperature}.
+
+That last point carries the consequences:
+\[ \mathrm{KE}_{\text{avg}} = \tfrac{3}{2}RT \quad\text{(per mole)}
+   \qquad u_{\text{rms}} = \sqrt{\frac{3RT}{M}} \]
+At a given temperature \emph{all} gases share the same average kinetic
+energy --- so the lighter gas must move faster. Graham's law follows:
+\[ \frac{\text{rate}_1}{\text{rate}_2} = \sqrt{\frac{M_2}{M_1}} \]
+
+\begin{workedexample}[I do: comparing two gases at one temperature]
+Compare \ce{He} ($M = 4.003$) and \ce{Ar} ($M = 39.95$) at
+\SI{300}{\kelvin}.
+
+\textbf{Average kinetic energy:} identical --- it depends only on $T$.
+This is the answer students most often get wrong by assuming the light
+gas has more energy.
+
+\textbf{Relative speed / effusion rate:}
+\[ \frac{\text{rate}_{\ce{He}}}{\text{rate}_{\ce{Ar}}}
+   = \sqrt{\frac{39.95}{4.003}} = \sqrt{9.98} = \mathbf{3.16} \]
+Helium effuses about 3.2 times faster. Note the molar masses go
+\emph{opposite} the rates --- heavier means slower --- which is why $M_2$
+sits on top.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Rate ratio of \ce{H2} ($M = 2.016$) to \ce{O2} ($M = 32.00$):
+        \workspace[1.6cm]
+  \item An unknown gas effuses 0.500 times as fast as \ce{He}
+        ($M = 4.003$). Find its molar mass. \workspace[1.8cm]
+  \item Two flasks at the same temperature hold \ce{N2} and \ce{CO2}.
+        Which has the greater average kinetic energy? \workspace[1.4cm]
+  \item Which KMT postulate fails first as a gas is compressed to high
+        pressure? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) 3.98 \quad (b) \SI{16.0}{\gram\per\mole} \quad (c) equal
+--- same $T$ \quad (d) negligible particle volume}
+\keyonly{\begin{apcanswer}(a) $\sqrt{32.00/2.016} = \sqrt{15.87} =
+\mathbf{3.98}$. (b) $0.500 = \sqrt{4.003/M} \Rightarrow 0.250 = 4.003/M
+\Rightarrow M = \mathbf{16.0}$~g/mol (methane).
+(c) \textbf{Equal} --- average kinetic energy depends only on
+temperature, not identity. \ce{N2} moves faster, but that is speed, not
+energy. (d) The assumption that particle \textbf{volume is negligible}:
+squeezed together, the molecules' own volume becomes a real fraction of
+the container, which is the first correction in
+\S5.8.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Real gases, and the atmosphere}
+\zsec{5.8--5.10}
+
+Real gases deviate from ideality where the two ignored facts bite:
+\begin{itemize}[leftmargin=*,itemsep=0.15em]
+  \item \textbf{High pressure} --- particle volume is no longer
+        negligible, so the real volume exceeds the ideal prediction.
+  \item \textbf{Low temperature} --- attractions have time to act,
+        pulling particles together so the real pressure falls below the
+        ideal prediction.
+\end{itemize}
+So gases behave \emph{most} ideally at \textbf{low pressure and high
+temperature}, and a gas with weak intermolecular forces and small size
+(\ce{He}, \ce{H2}) is closer to ideal than a large, polar one
+(\ce{NH3}, \ce{H2O}). Van der Waals corrects both terms:
+\[ \left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT \]
+with $a$ for attractions and $b$ for particle volume.
+
+\begin{workedexample}[I do: reading the corrections]
+Two gases have van der Waals constants
+\ce{He}: $a = 0.0341$, $b = 0.0237$; \quad
+\ce{NH3}: $a = 4.17$, $b = 0.0371$
+(in \si{\litre\squared\atm\per\mole\squared} and
+\si{\litre\per\mole}).
+
+\textbf{Which is closer to ideal, and why?} \ce{He}. Its $a$ is more than
+a hundred times smaller, meaning almost no intermolecular attraction --- a
+tiny nonpolar atom. Ammonia is polar and hydrogen-bonds, so its $a$ is
+large.
+
+\textbf{Which correction dominates for \ce{NH3} at moderate pressure?}
+The $a$ term. Attractions reduce the force of wall collisions, so the
+measured pressure is \emph{lower} than ideal --- and the correction adds
+$an^2/V^2$ back on.
+
+\textbf{Where does \ce{NH3} behave most ideally?} At low pressure (far
+apart, so attractions rarely act) and high temperature (moving too fast
+to be captured).
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item State the two conditions under which any real gas behaves most
+        ideally: \workspace[1.4cm]
+  \item Which deviates less from ideal at the same $P$ and $T$: \ce{H2}
+        or \ce{H2O} vapour? Why? \workspace[1.6cm]
+  \item In the van der Waals equation, which constant corrects for
+        particle volume, and does it make $V$ effectively larger or
+        smaller? \workspace[1.6cm]
+  \item Ozone in the stratosphere absorbs ultraviolet light. Name the
+        class of pollutant blamed for destroying it. \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) low pressure, high temperature \quad (b) \ce{H2} --- no
+hydrogen bonding \quad (c) $b$; it makes the free volume smaller \quad
+(d) chlorofluorocarbons (CFCs)}
+\keyonly{\begin{apcanswer}(a) \textbf{Low pressure and high
+temperature} --- particles far apart and moving too fast for attractions
+to matter. (b) \textbf{\ce{H2}}: nonpolar with only weak dispersion
+forces, whereas water vapour hydrogen-bonds strongly, giving it a much
+larger $a$. (c) \textbf{$b$}, subtracted as $(V - nb)$ --- the particles'
+own volume is unavailable, so the free volume is \emph{smaller} than the
+container. (d) \textbf{Chlorofluorocarbons}, whose Cl atoms catalyse
+ozone destruction. (Zumdahl \S5.10 is descriptive; the CED does not
+assess it, so read it for context.)\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}c p{6.4cm} c p{4.6cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & pressure units & 1 & 1 atm $=$ 760 torr $=$ 101.325 kPa \\
+$\square$ & combined gas law & 2 & kelvin first, then cancel \\
+$\square$ & ideal gas law & 3 & one state vs.\ a change of state \\
+$\square$ & molar mass and density & 4 & $M = dRT/P$; $d = PM/RT$ \\
+$\square$ & gas stoichiometry & 5 & 22.4 L/mol is STP only \\
+$\square$ & partial pressures & 6 & mole fractions; subtract water \\
+$\square$ & KMT and effusion & 7 & same $T$ $\Rightarrow$ same KE \\
+$\square$ & real gases & 8 & low $P$, high $T$; $a$ and $b$ \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+8/8: move on to the end-of-chapter problems. 6--7: solid --- redo the
+missed ladders tomorrow, not today. 5 or fewer: the recurring root causes
+in this chapter are exactly three --- (1) temperature left in
+\si{\celsius}, (2) using 22.4 L/mol when the gas is not at STP, and
+(3) confusing \emph{speed} with \emph{kinetic energy} at a given
+temperature. Fix those three habits and most of the ladders fall
+together.
+\end{apcnote}
+
+\end{document}

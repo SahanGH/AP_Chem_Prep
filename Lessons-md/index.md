@@ -42,6 +42,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 5 • Gases
 
 - [Guided Notes](chapter05-gases/ch05-notes.md)
+- [Self-Study • §5.1–5.10, I do / You do](chapter05-gases/ch05-selfstudy.md)
 - [Worksheet 1 • Gas Laws and the Ideal Gas Equation](chapter05-gases/ch05-ws1.md)
 - [Worksheet 2 • Gas Stoichiometry and Partial Pressures](chapter05-gases/ch05-ws2.md)
 - [Worksheet 3 • KMT, Real Gases & FRQ](chapter05-gases/ch05-ws3.md)
