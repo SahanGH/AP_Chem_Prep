@@ -28,6 +28,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "Lessons"
+OUT_MD = ROOT / "Lessons-md"
 
 # ------------------------------------------------------------ tex utilities
 
@@ -453,7 +454,7 @@ def convert_mcq(inner: str, n: int) -> str:
             f'\n<ol class="choices" type="A">\n{lis}\n</ol></div>\n')
 
 
-def convert_body(body: str, meta: dict, fig_names, log):
+def convert_body(body: str, meta: dict, fig_names, log, restore=True):
     counters = {"problem": 0, "mcq": 0, "frq": 0, "fig": 0}
 
     # ---- drop key-only content ----
@@ -665,8 +666,9 @@ def convert_body(body: str, meta: dict, fig_names, log):
             blocks_out.append(f"<p>{c}</p>")
     body = "\n\n".join(blocks_out)
 
-    # ---- restore math ----
-    body = re.sub(r"\x00M(\d+)\x00", lambda m: MATH[int(m.group(1))], body)
+    # ---- restore math (callers may defer, to render per output format) ----
+    if restore:
+        body = re.sub(r"\x00M(\d+)\x00", lambda m: MATH[int(m.group(1))], body)
     return body
 
 
@@ -727,7 +729,7 @@ def clean_meta(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def convert_file(tex_path: Path, no_figures: bool, log):
+def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
     global MATH
     MATH = []
     src = strip_comments(tex_path.read_text(encoding="utf-8"))
@@ -754,11 +756,32 @@ def convert_file(tex_path: Path, no_figures: bool, log):
     elif fig_blocks:
         fig_names = [None] * len(fig_blocks)
 
-    html_body = convert_body(body, meta, fig_names, log)
+    # convert_body leaves \x00Mn\x00 placeholders; render them per format.
+    raw = convert_body(body, meta, fig_names, log, restore=False)
     title = f"{meta['unitword']} {meta['unit']} \u2022 {meta['doctitle']}"
-    page = PAGE.format(title=title, body=html_body, **meta)
-    out = chapter_dir / (tex_path.stem + ".html")
-    out.write_text(page, encoding="utf-8")
+    stash = list(MATH)
+
+    out = None
+    if fmt in ("html", "both"):
+        html_body = re.sub(r"\x00M(\d+)\x00",
+                           lambda m: stash[int(m.group(1))], raw)
+        out = chapter_dir / (tex_path.stem + ".html")
+        out.write_text(PAGE.format(title=title, body=html_body, **meta),
+                       encoding="utf-8")
+    if fmt in ("md", "both"):
+        md_dir = OUT_MD / rel.parts[0]
+        md_dir.mkdir(parents=True, exist_ok=True)
+        html_for_md = re.sub(r"\x00M(\d+)\x00",
+                             lambda m: math_to_md(stash[int(m.group(1))]), raw)
+        page = PAGE.format(title=title, body=html_for_md, **meta)
+        md = html_to_md(page, meta)
+        md_out = md_dir / (tex_path.stem + ".md")
+        md_out.write_text(md, encoding="utf-8")
+        for png in chapter_dir.glob("*.png"):
+            tgt = md_dir / png.name
+            if not tgt.exists() or tgt.stat().st_mtime < png.stat().st_mtime:
+                tgt.write_bytes(png.read_bytes())
+        out = out or md_out
     return out, meta
 
 
@@ -837,22 +860,189 @@ footer { border-top: 1px solid var(--rule); color: var(--gray);
 """
 
 
+# ------------------------------------------------------- HTML -> Markdown
+# Translating our own generated HTML is safe for the same reason the LaTeX
+# converter is: the vocabulary is closed, because this file emitted it.
+
+SUB = str.maketrans("0123456789", "\u2080\u2081\u2082\u2083\u2084\u2085"
+                                  "\u2086\u2087\u2088\u2089")
+SUP = str.maketrans("0123456789+-", "\u2070\u00b9\u00b2\u00b3\u2074\u2075"
+                                    "\u2076\u2077\u2078\u2079\u207a\u207b")
+
+
+def ce_to_unicode(f: str) -> str:
+    r"""\ce{H2SO4} -> H₂SO₄, \ce{SO4^2-} -> SO₄²⁻. Markdown viewers cannot be
+    relied on to load the mhchem extension, and Unicode reads correctly even
+    in a plain-text editor."""
+    f = f.replace("<=>", " \u21cc ").replace("->", " \u2192 ")
+    f = f.replace("<-", " \u2190 ")
+    out, i = [], 0
+    while i < len(f):
+        c = f[i]
+        if c == "^":                      # charge / superscript
+            j = i + 1
+            if j < len(f) and f[j] == "{":
+                k = f.index("}", j)
+                out.append(f[j + 1:k].translate(SUP)); i = k + 1; continue
+            while j < len(f) and f[j] in "0123456789+-":
+                j += 1
+            out.append(f[i + 1:j].translate(SUP)); i = j; continue
+        if c == "_":
+            j = i + 1
+            if j < len(f) and f[j] == "{":
+                k = f.index("}", j)
+                out.append(f[j + 1:k].translate(SUB)); i = k + 1; continue
+            out.append(f[j].translate(SUB)); i = j + 1; continue
+        if c.isdigit() and out and (out[-1][-1:].isalpha() or out[-1][-1:] == ")"):
+            j = i
+            while j < len(f) and f[j].isdigit():
+                j += 1
+            out.append(f[i:j].translate(SUB)); i = j; continue
+        if c in "$\\":                     # drop stray math markup
+            i += 1; continue
+        out.append(c); i += 1
+    return "".join(out).replace("  ", " ").strip()
+
+
+def math_to_md(m: str) -> str:
+    """Stashed math -> Markdown. \\ce{} becomes Unicode; the rest stays TeX
+    between $ delimiters, which GitHub renders."""
+    disp = m.startswith(r"\[") or m.startswith(r"\begin{align")
+    body = m
+    for a, b in ((r"\[", ""), (r"\]", ""), (r"\(", ""), (r"\)", "")):
+        body = body.replace(a, b)
+    body = body.strip()
+    only_ce = re.fullmatch(r"\\ce\{((?:[^{}]|\{[^{}]*\})*)\}", body)
+    if only_ce:
+        return ce_to_unicode(only_ce.group(1))
+    body = re.sub(r"\\ce\{((?:[^{}]|\{[^{}]*\})*)\}",
+                  lambda x: r"\text{" + ce_to_unicode(x.group(1)) + "}", body)
+    body = body.replace("\n", " ").strip()
+    return f"\n\n$$ {body} $$\n\n" if disp else f"${body}$"
+
+
+def html_to_md(html: str, meta: dict) -> str:
+    s = re.search(r"<main>(.*)</main>", html, re.S).group(1)
+
+    s = re.sub(r'<figure><img src="([^"]+)"[^>]*></figure>',
+               r"\n\n![figure](\1)\n\n", s)
+    s = re.sub(r'<span class="badge">(.*?)</span>', r"`\1`", s, flags=re.S)
+    s = re.sub(r'<span class="blank"[^>]*></span>', "**\\_\\_\\_\\_\\_\\_**", s)
+    s = re.sub(r'<div class="lines">(?:<div class="rule"></div>)+</div>',
+               "\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n", s)
+    s = re.sub(r'<div class="workspace"[^>]*></div>',
+               "\n\n*(working space)*\n\n", s)
+    s = re.sub(r'<p class="selfcheck"><em>check:</em>(.*?)</p>',
+               r"\n\n> **check:**\1\n\n", s, flags=re.S)
+
+    # boxes -> blockquotes with a bold title
+    def box_md(m):
+        cls, inner = m.group(1), m.group(2)
+        t = re.search(r'<div class="box-title">(.*?)</div>', inner, re.S)
+        title = t.group(1).strip() if t else ""
+        inner = re.sub(r'<div class="box-title">.*?</div>', "", inner, flags=re.S)
+        mark = {"we": "\U0001f4d8", "yt": "\u270f\ufe0f", "trap": "\u26a0\ufe0f"}.get(cls, "\U0001f4cc")
+        head = f"**{mark} {title}**\n>\n" if title else ""
+        body = "\n".join("> " + ln for ln in
+                         html_to_md_inner(inner).strip().split("\n"))
+        return f"\n\n> {head[2:] if head else ''}{body.lstrip('> ')}\n\n" \
+            if False else f"\n\n> {mark} **{title}**\n>\n{body}\n\n"
+    while True:
+        m = re.search(r'<div class="box (\w+)">(.*?)</div>\s*(?=<|$)', s, re.S)
+        prev = s
+        s = re.sub(r'<div class="box (\w+)">(.*?)\n</div>', box_md, s,
+                   count=1, flags=re.S)
+        if s == prev:
+            break
+
+    s = html_to_md_inner(s)
+    front = (f"# {meta['doctitle']}\n\n"
+             f"*{meta['unitword']} {meta['unit']} \u2022 {meta['unittitle']}*  \n"
+             f"{meta['subtitle']}\n\n[\u2190 all lessons](../index.md)\n\n---\n\n")
+    tail = ("\n\n---\n\n*AP Chemistry course materials \u2022 student edition "
+            "\u2022 CC BY-NC-SA 4.0*\n")
+    return front + s.strip() + tail
+
+
+def html_to_md_inner(s: str) -> str:
+    def table_md(m):
+        rows = re.findall(r"<tr>(.*?)</tr>", m.group(1), re.S)
+        out, header_done = [], False
+        for r in rows:
+            cells = [re.sub(r"</?t[hd][^>]*>", "", c).strip()
+                     for c in re.findall(r"<t[hd][^>]*>.*?</t[hd]>", r, re.S)]
+            cells = [c.replace("|", "\\|") for c in cells]
+            out.append("| " + " | ".join(cells) + " |")
+            if not header_done:
+                out.append("|" + "---|" * len(cells))
+                header_done = True
+        return "\n\n" + "\n".join(out) + "\n\n"
+    s = re.sub(r"<table>(.*?)</table>", table_md, s, flags=re.S)
+
+    def list_md(m, marker):
+        items = re.split(r"<li>", m.group(1))[1:]
+        out = []
+        for k, it in enumerate(items, 1):
+            it = re.sub(r"</li>", "", it).strip()
+            bullet = f"{k}." if marker == "1" else "-"
+            lines = it.split("\n")
+            out.append(f"{bullet} " + lines[0])
+            out += ["   " + ln.strip() for ln in lines[1:] if ln.strip()]
+        return "\n\n" + "\n".join(out) + "\n\n"
+    for _ in range(6):
+        s = re.sub(r'<ol[^>]*>(.*?)</ol>', lambda m: list_md(m, "1"), s,
+                   count=1, flags=re.S)
+        s = re.sub(r"<ul>(.*?)</ul>", lambda m: list_md(m, "-"), s,
+                   count=1, flags=re.S)
+
+    s = re.sub(r'<h2[^>]*>(.*?)</h2>', r"\n\n## \1\n\n", s, flags=re.S)
+    s = re.sub(r"<h3[^>]*>(.*?)</h3>", r"\n\n### \1\n\n", s, flags=re.S)
+    s = re.sub(r"<h4[^>]*>(.*?)</h4>", r"\n\n#### \1\n\n", s, flags=re.S)
+    s = re.sub(r"<strong>(.*?)</strong>", r"**\1**", s, flags=re.S)
+    s = re.sub(r"<em>(.*?)</em>", r"*\1*", s, flags=re.S)
+    s = re.sub(r"<u>(.*?)</u>", r"\1", s, flags=re.S)
+    s = re.sub(r"<code>(.*?)</code>", r"`\1`", s, flags=re.S)
+    s = re.sub(r'<span class="qnum">(.*?)</span>', r"**\1**", s, flags=re.S)
+    s = re.sub(r"<blockquote>(.*?)</blockquote>",
+               lambda m: "\n\n" + "\n".join("> " + l for l in
+                                            m.group(1).strip().split("\n")) + "\n\n",
+               s, flags=re.S)
+    s = re.sub(r'<div class="fbox">(.*?)</div>', r"\n\n> \1\n\n", s, flags=re.S)
+    s = re.sub(r"<br\s*/?>", "  \n", s)
+    s = re.sub(r"</?(p|div|span|figure|header|main|footer)[^>]*>", "", s)
+    s = re.sub(r"<[^>]+>", "", s)
+
+    ent = {"&thinsp;": "\u2009", "&nbsp;": " ", "&middot;": "\u00b7",
+           "&deg;": "\u00b0", "&micro;": "\u00b5", "&sup2;": "\u00b2",
+           "&sup3;": "\u00b3", "&amp;": "&", "&emsp;": " ", "&lt;": "<",
+           "&gt;": ">"}
+    for a, b in ent.items():
+        s = s.replace(a, b)
+    s = re.sub(r"\n{3,}", "\n\n", s)
+    s = re.sub(r"^(#{2,4}) +", r"\1 ", s, flags=re.M)   # \sffamily left a gap
+    return s
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("target", nargs="?", default="Chapters")
     ap.add_argument("--no-figures", action="store_true")
+    ap.add_argument("--format", choices=["html", "md", "both"], default="both")
     args = ap.parse_args()
 
     target = ROOT / args.target
     files = sorted(target.rglob("*.tex")) if target.is_dir() else [target]
-    OUT.mkdir(exist_ok=True)
-    (OUT / "style.css").write_text(CSS, encoding="utf-8")
+    if args.format in ("html", "both"):
+        OUT.mkdir(exist_ok=True)
+        (OUT / "style.css").write_text(CSS, encoding="utf-8")
+    if args.format in ("md", "both"):
+        OUT_MD.mkdir(exist_ok=True)
 
     log, index = [], {}
     for f in files:
         entry = []
         try:
-            out, meta = convert_file(f, args.no_figures, entry)
+            out, meta = convert_file(f, args.no_figures, entry, args.format)
             index.setdefault(f.relative_to(ROOT / "Chapters").parts[0], []).append(
                 (out.name, meta))
             status = "ok" if not any("??" in e or "!!" in e for e in entry) else "WARN"
@@ -864,29 +1054,46 @@ def main():
             log.append(f.name)
             log.extend(entry)
 
-    # index page
-    items = []
+    # index pages
+    order = {"notes": 0, "examples": 1, "selfstudy": 2, "selfstudy2": 3,
+             "ws": 4, "exam": 9}
+
+    def key(t):
+        stem = t[0].rsplit(".", 1)[0]
+        suffix = stem.split("-", 1)[1] if "-" in stem else stem
+        return (order.get(re.sub(r"\d+$", "", suffix), 5), suffix)
+
+    items, md_items = [], [
+        "# AP Chemistry \u2014 Lessons\n",
+        "Student edition, generated from the LaTeX sources. "
+        "The printable PDFs (with teacher keys) are built separately with "
+        "`build.ps1`.\n",
+    ]
     for chap in sorted(index):
         first_meta = index[chap][0][1]
-        items.append(f'<h2>{first_meta["unitword"]} {first_meta["unit"]} '
-                     f'\u2022 {first_meta["unittitle"]}</h2>\n<ul>')
-        order = {"notes": 0, "examples": 1, "selfstudy": 2, "selfstudy2": 3,
-                 "ws": 4, "exam": 9}
-        def key(t):
-            stem = t[0].rsplit(".", 1)[0]
-            suffix = stem.split("-", 1)[1] if "-" in stem else stem
-            return (order.get(re.sub(r"\d+$", "", suffix), 5), suffix)
+        head = (f'{first_meta["unitword"]} {first_meta["unit"]} '
+                f'\u2022 {first_meta["unittitle"]}')
+        items.append(f"<h2>{head}</h2>\n<ul>")
+        md_items.append(f"\n## {head}\n")
         for name, meta in sorted(index[chap], key=key):
-            items.append(f'<li><a href="{chap}/{name}">{meta["doctitle"]}</a></li>')
+            stem = name.rsplit(".", 1)[0]
+            items.append(f'<li><a href="{chap}/{stem}.html">'
+                         f'{meta["doctitle"]}</a></li>')
+            md_items.append(f'- [{meta["doctitle"]}]({chap}/{stem}.md)')
         items.append("</ul>")
-    idx = PAGE.format(title="AP Chemistry \u2022 Lessons",
-                      unitword="", unit="", unittitle="AP Chemistry",
-                      doctitle="Lessons", subtitle="student edition \u2022 "
-                      "HTML companions to the printable PDFs",
-                      body="\n".join(items)).replace('href="../', 'href="')
-    (OUT / "index.html").write_text(idx, encoding="utf-8")
+    if args.format in ("md", "both"):
+        (OUT_MD / "index.md").write_text("\n".join(md_items) + "\n",
+                                         encoding="utf-8")
+    if args.format in ("html", "both"):
+        idx = PAGE.format(title="AP Chemistry \u2022 Lessons",
+                          unitword="", unit="", unittitle="AP Chemistry",
+                          doctitle="Lessons", subtitle="student edition \u2022 "
+                          "HTML companions to the printable PDFs",
+                          body="\n".join(items)).replace('href="../', 'href="')
+        (OUT / "index.html").write_text(idx, encoding="utf-8")
 
-    report = OUT / "conversion-report.txt"
+    report = (OUT if args.format in ("html", "both") else OUT_MD) \
+        / "conversion-report.txt"
     report.write_text("\n".join(log) + ("\n" if log else ""), encoding="utf-8")
     if UNKNOWN_UNITS:
         print(f"unknown units: {sorted(UNKNOWN_UNITS)}")
