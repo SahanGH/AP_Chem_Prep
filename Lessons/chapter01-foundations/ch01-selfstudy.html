@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 • Self-Study • Chapter 1, I do / You do</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 1 • Chemical Foundations</p>
+  <h1>Self-Study • Chapter 1, I do / You do</h1>
+  <p class="subtitle">Zumdahl §1.1–1.10 • PDF pp. 31–57 • four YOUR TURN questions per ladder</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help.</p>
+
+<ol>
+
+<li><strong>Work all four</strong> before checking anything.
+
+<li>Check against the gray <em>check:</em> line. All four right on the
+        first try earns the tick on the tracker (last page).
+
+<li>Any misses: re-read the worked example, then redo the missed ones
+        from a blank page.
+</ol>
+
+<strong>Why this chapter deserves real effort.</strong> Nothing here is
+difficult, and that is exactly the trap: these are the habits every later
+chapter assumes. A stoichiometry answer with the wrong number of
+significant figures, or a gas law worked in &deg;C, loses the mark
+no matter how good the chemistry was. Get these seven skills automatic
+now and they cost you nothing for the rest of the year.
+
+</div>
+
+<h2> Ladder 1 • Units, prefixes, and scientific
+notation</h2>
+<span class="badge">ZUM §1.3</span>
+
+<p>SI gives each quantity one base unit; prefixes scale it by powers of ten.</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Prefix</strong></th><th><strong>Symbol</strong></th><th><strong>Factor</strong></th><th><strong>Example</strong></th></tr>
+<tr><td>kilo</td><td>k</td><td>\(10^{3}\)</td><td>1</td><td>thinsp;kg \(= 1000\,\mathrm{g}\)</td></tr>
+<tr><td>centi</td><td>c</td><td>\(10^{-2}\)</td><td>1</td><td>thinsp;cm \(= 0.01\,\mathrm{m}\)</td></tr>
+<tr><td>milli</td><td>m</td><td>\(10^{-3}\)</td><td>1</td><td>thinsp;mL \(= 0.001\,\mathrm{L}\)</td></tr>
+<tr><td>micro</td><td>\(\mu\)</td><td>\(10^{-6}\)</td><td></td><td>micro;L</td></tr>
+<tr><td>nano</td><td>n</td><td>\(10^{-9}\)</td><td>—</td></tr>
+</table>
+
+</div>
+
+<p>Volume has a useful identity worth memorizing outright:
+\[ 1\,\mathrm{mL} = 1\,\mathrm{cm^3} \]</p>
+
+<div class="box we"><div class="box-title">I do: moving between prefixes</div>
+
+<strong>(a) Convert 4.50&thinsp;kg to milligrams.</strong> Go through the
+base unit rather than guessing an exponent:
+\[ 4.50~\text{kg} \times \frac{1000~\text{g}}{1~\text{kg}}
+   \times \frac{1000~\text{mg}}{1~\text{g}}
+   = \mathbf{4.50\times10^{6}~mg} \]
+
+<strong>(b) Convert 250&thinsp;nm to metres.</strong>
+\[ 250 \times 10^{-9} = \mathbf{2.50\times10^{-7}~m} \]
+
+<strong>(c) Express 0.0000345&thinsp;L in scientific notation and
+in microlitres.</strong> Move the point until one non-zero digit sits to its
+left:
+\[ 3.45\times10^{-5}~\text{L}
+   = 3.45\times10^{-5} \times 10^{6}~\mathrm{\mu L}
+   = \mathbf{34.5}~\mathrm{\mu L} \]
+
+<strong>The check that catches sign errors:</strong> a <em>smaller</em> unit must
+give a <em>bigger</em> number. Milligrams are tiny, so (a) had to grow;
+metres are large, so (b) had to shrink.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>3.20&thinsp;cm in metres: <div class="workspace" style="height:1.2cm"></div>
+
+<li>75&thinsp;mL in litres, and in cm&sup3;:
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>0.00845&thinsp;g in scientific notation, and in milligrams:
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>2.6&thinsp;km in centimetres: <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 0.0320&thinsp;m  &emsp;  (b) 0.075&thinsp;L \(=\)
+75&thinsp;cm&sup3;  &emsp;  (c) \(8.45\times10^{-3}\)&nbsp;g \(=\)
+8.45&thinsp;mg  &emsp;  (d) \(2.6\times10^{5}\)&nbsp;cm</p>
+
+</div>
+
+<h2> Ladder 2 • Precision, accuracy, and
+uncertainty</h2>
+<span class="badge">ZUM §1.4</span>
+
+<p>Two words that are not synonyms:</p>
+
+<div class="center">
+
+<table>
+<tr><th></th><th><strong>Definition</strong></th><th><strong>Poor when</strong></th></tr>
+<tr><td><strong>Accuracy</strong></td><td>closeness to the <em>true</em> value</td><td>there is a systematic error</td></tr>
+<tr><td><strong>Precision</strong></td><td>closeness of repeats to <em>each other</em></td><td>there is random scatter</td></tr>
+</table>
+
+</div>
+
+<p>A miscalibrated balance gives readings that agree beautifully with each
+other and are all wrong: <strong>precise but inaccurate</strong>. That
+combination is the signature of <strong class="term">systematic error</strong>, and no amount of
+repeating fixes it — only recalibration does.</p>
+
+<p>Every measurement carries one <strong>estimated</strong> final digit. Reading a
+burette marked every 0.1&thinsp;mL, you record
+23.46&thinsp;mL: three certain digits and one estimated.</p>
+
+<div class="box we"><div class="box-title">I do: judging a data set</div>
+
+Three students each mass the same object four times. The true mass is
+4.000&thinsp;g.
+<div class="center">
+
+<table>
+<tr><th><strong>Student</strong></th><th><strong>Readings (g)</strong></th><th><strong>Mean</strong></th><th><strong>Verdict</strong></th></tr>
+<tr><td>A</td><td>3.998, 4.001, 3.999, 4.002</td><td>4.000</td><td>accurate <em>and</em> precise</td></tr>
+<tr><td>B</td><td>4.512, 4.510, 4.511, 4.513</td><td>4.512</td><td>precise, not accurate</td></tr>
+<tr><td>C</td><td>3.85, 4.15, 3.92, 4.08</td><td>4.00</td><td>accurate on average, not precise</td></tr>
+</table>
+
+</div>
+
+<strong>Student B</strong> is the instructive case: the readings agree to
+0.001&thinsp;g, so the technique is excellent, but every one is high
+by about 0.51&thinsp;g. That is a systematic error — a balance that
+was not zeroed. Repeating the measurement a hundred times would not
+reveal it; only checking against a known standard would.
+
+<strong>Student C</strong> shows why a good mean is not proof of a good
+experiment: the average lands on 4.00 by luck of cancellation, while no
+individual reading is close.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+<ol>
+
+<li>A thermometer reads 2.0&thinsp;&deg;C too high every time. Which
+        is affected, accuracy or precision? <div class="workspace" style="height:1.2cm"></div>
+
+<li>Readings 25.1, 25.9, 24.8, 25.6 with a true value of
+        25.4&thinsp;&deg;C: describe both qualities.
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>A burette is marked every 0.1&thinsp;mL. How many
+        decimal places should you record, and why? <div class="workspace" style="height:1.4cm"></div>
+
+<li>Which type of error can be reduced by averaging more trials, and
+        which cannot? <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) accuracy only  &emsp;  (b) accurate on average, imprecise
+ &emsp;  (c) two — estimate one digit past the smallest marking  &emsp; 
+(d) random can be averaged down; systematic cannot</p>
+
+</div>
+
+<h2> Ladder 3 • Counting significant figures</h2>
+<span class="badge">ZUM §1.5</span>
+
+<ol>
+
+<li>Non-zero digits always count.
+
+<li>Zeros <em>between</em> non-zeros count (captive): 1005 has 4.
+
+<li>Leading zeros never count — they only place the decimal:
+        0.0042 has 2.
+
+<li>Trailing zeros count <strong>only if a decimal point is
+        present</strong>: 100 has 1, but 100. has 3 and 100.0 has 4.
+
+<li><strong>Exact numbers</strong> — counted objects and definitions — have
+        infinite significant figures and never limit an answer.
+</ol>
+
+<div class="box we"><div class="box-title">I do: counting, including the awkward cases</div>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Number</strong></th><th><strong>Sig figs</strong></th><th><strong>Why</strong></th></tr>
+<tr><td>0.00560</td><td>3</td><td>leading zeros place only; the trailing 0 counts</td></tr>
+<tr><td>9004</td><td>4</td><td>captive zeros count</td></tr>
+<tr><td>2500</td><td>2</td><td>no decimal point, so trailing zeros do not count</td></tr>
+<tr><td>2500.</td><td>4</td><td>the decimal point makes them count</td></tr>
+<tr><td>\(2.50\times10^{3}\)</td><td>3</td><td>scientific notation removes all ambiguity</td></tr>
+<tr><td>12 eggs</td><td>exact</td><td>counted, not measured</td></tr>
+<tr><td>1</td><td>thinsp;kg \(=\) 1000</td><td>thinsp;g</td><td>exact</td><td>a definition</td></tr>
+</table>
+
+</div>
+
+<strong>The lesson in rows 3–5:</strong> “2500” is genuinely ambiguous in
+ordinary writing. Scientific notation is not decoration — it is how you
+say precisely how many digits you mean.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+Give the number of significant figures:
+<ol>
+
+<li>0.03080  &emsp;  and  &emsp;  40.0 <div class="workspace" style="height:1.2cm"></div>
+
+<li>6000  &emsp;  and  &emsp;  6000. <div class="workspace" style="height:1.2cm"></div>
+
+<li>\(7.20\times10^{-4}\)  &emsp;  and  &emsp;  1.0090 <div class="workspace" style="height:1.2cm"></div>
+
+<li>How many significant figures does the “60” carry in
+        “1&thinsp;min \(=\) 60&thinsp;s”? Explain.
+        <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 4 and 3  &emsp;  (b) 1 and 4  &emsp;  (c) 3 and 5  &emsp; 
+(d) exact — infinite, because it is a definition</p>
+
+</div>
+
+<h2> Ladder 4 • Calculating with significant
+figures</h2>
+<span class="badge">ZUM §1.5</span>
+
+<p>Two rules, and they are different. Mixing them is the single commonest
+error in this chapter.</p>
+
+<div class="center">
+<div class="fbox">
+<strong>Multiply / divide</strong> \(\Rightarrow\) count <strong>significant
+figures</strong>; the answer takes the fewest.<br>
+<strong>Add / subtract</strong> \(\Rightarrow\) count <strong>decimal places</strong>; the
+answer takes the fewest.</div>
+</div>
+
+<p>And one procedural rule: in a multi-step calculation, <strong>round only
+at the end</strong>. Rounding intermediates lets error accumulate.</p>
+
+<div class="box we"><div class="box-title">I do: both rules, and a subtraction that surprises</div>
+
+<strong>(a) \(6.221 \times 5.2\).</strong> Multiplication, so count sig figs:
+4 and 2, fewest is 2.
+\[ 6.221 \times 5.2 = 32.3492 \to \mathbf{32} \]
+
+<strong>(b) \(18.7 + 2.34 + 0.891\).</strong> Addition, so count <em>decimal
+places</em>: 1, 2, 3 — fewest is 1.
+\[ 18.7 + 2.34 + 0.891 = 21.931 \to \mathbf{21.9} \]
+Note the answer has 3 sig figs while one input had only 3 and another had
+4 — with addition, sig figs are not what governs.
+
+<strong>(c) \(8.55 - 8.32\).</strong> Both inputs have 3 sig figs, but subtraction
+counts decimal places (2 each):
+\[ 8.55 - 8.32 = \mathbf{0.23} \]
+The answer has only <strong>2</strong> significant figures. Subtracting nearby
+numbers destroys precision — which is why a titration's
+<em>difference</em> of two burette readings is the weak link in the
+measurement.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+<ol>
+
+<li>\(4.12 \times 0.20\) <div class="workspace" style="height:1.2cm"></div>
+
+<li>\(105.6 + 3.27\) <div class="workspace" style="height:1.2cm"></div>
+
+<li>\(\dfrac{27.9}{1.3}\) <div class="workspace" style="height:1.2cm"></div>
+
+<li>\(12.00 - 11.61\) — give the answer and say how many significant
+        figures survived. <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 0.82  &emsp;  (b) 108.9  &emsp;  (c) 21  &emsp;  (d) 0.39, only
+2 sig figs</p>
+
+</div>
+
+<h2> Ladder 5 • Dimensional analysis</h2>
+<span class="badge">ZUM §1.6–1.7</span>
+
+<p>Write every conversion as a fraction, arranged so the unit you have
+cancels. If the units come out right, the arithmetic is almost certainly
+right too — and if they do not, no amount of correct arithmetic will
+save the answer.</p>
+
+<div class="box we"><div class="box-title">I do: a two-step conversion, units first</div>
+
+<p>A car's fuel use is 7.60&thinsp;L per 100&thinsp;km. How many
+litres for a 450&thinsp;km trip? Then: how many millilitres per
+kilometre?</p>
+
+<strong>Set up so kilometres cancel:</strong>
+\[ 450~\text{km} \times \frac{7.60~\text{L}}{100~\text{km}}
+   = \mathbf{34.2~L} \]
+The kilometres cancel top and bottom, leaving litres — which is what
+was asked, so the setup is right.
+
+<strong>Second part, chaining two factors:</strong>
+\[ \frac{7.60~\text{L}}{100~\text{km}}
+   \times \frac{1000~\text{mL}}{1~\text{L}}
+   = \mathbf{76.0~mL/km} \]
+
+<strong>Sense check:</strong> 450 km is 4.5 times the 100 km reference, and
+\(4.5 \times 7.60 = 34.2\). The dimensional setup and the mental estimate
+agree.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+Use 1 inch \(=\) 2.54&thinsp;cm (exact) where needed.
+<ol>
+
+<li>Convert 12.0 inches to centimetres: <div class="workspace" style="height:1.2cm"></div>
+
+<li>Convert 5.00&thinsp;m to inches: <div class="workspace" style="height:1.4cm"></div>
+
+<li>A tap fills 2.5&thinsp;L in 40&thinsp;s. How long to
+        fill 15&thinsp;L? <div class="workspace" style="height:1.6cm"></div>
+
+<li>In question (b), which unit had to cancel, and where did you
+        place it to make that happen? <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 30.5&thinsp;cm  &emsp;  (b) 197 in  &emsp; 
+(c) 240&thinsp;s (4.0 min)  &emsp;  (d) centimetres, placed in the
+denominator</p>
+
+</div>
+
+<h2> Ladder 6 • Temperature and density</h2>
+<span class="badge">ZUM §1.8–1.9</span>
+
+\[ T_{\text{K}} = T_{^\circ\text{C}} + 273.15 \qquad
+   T_{^\circ\text{C}} = \frac{5}{9}\left(T_{^\circ\text{F}} - 32\right)
+   \qquad d = \frac{m}{V} \]
+
+<p>Celsius and Kelvin degrees are the <em>same size</em> — only the zero
+moves — so a temperature <em>difference</em> is numerically identical in
+both. Fahrenheit degrees are a different size, which is why its
+conversion needs both a factor and an offset.</p>
+
+<p>Density is a conversion factor between mass and volume, usable in either
+direction. Water is 1.00&thinsp;g/mL, which makes it the
+reference for whether something floats.</p>
+
+<div class="box we"><div class="box-title">I do: temperature, then density both ways</div>
+
+<strong>(a) Convert -40&thinsp;&deg;C to kelvin and to Fahrenheit.</strong>
+\[ T_{\text{K}} = -40 + 273.15 = \mathbf{233~K} \]
+\[ T_{^\circ\text{F}} = \frac{9}{5}(-40) + 32 = -72 + 32 =
+   \mathbf{-40~^\circ F} \]
+The famous coincidence: \(-40\) is the one temperature where the two
+scales read alike.
+
+<strong>(b) A metal cube of side 2.00&thinsp;cm has a mass of
+86.4&thinsp;g. Find its density.</strong>
+\[ V = (2.00)^3 = 8.00\,\mathrm{cm^3} \qquad
+   d = \frac{86.4}{8.00} = \mathbf{10.8~g/cm^3} \]
+
+<strong>(c) What volume would 250.&thinsp;g of that metal occupy?</strong>
+Run the density backward:
+\[ V = \frac{m}{d} = \frac{250.}{10.8} = \mathbf{23.1~cm^3} \]
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+<ol>
+
+<li>Convert 25&thinsp;&deg;C to kelvin, and 350&thinsp;K to
+        &deg;C: <div class="workspace" style="height:1.4cm"></div>
+
+<li>A liquid has mass 45.0&thinsp;g and volume
+        57.0&thinsp;mL. Find its density, and say whether it
+        floats on water. <div class="workspace" style="height:1.6cm"></div>
+
+<li>Find the mass of 125&thinsp;mL of ethanol
+        (\(d = 0.789\,\mathrm{g/mL}\)): <div class="workspace" style="height:1.6cm"></div>
+
+<li>A reaction warms a solution by 12&thinsp;&deg;C. By how many
+        kelvin did it warm? Explain in one line. <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 298&thinsp;K; 77&thinsp;&deg;C  &emsp;  (b)
+0.789&thinsp;g/mL, floats  &emsp;  (c) 98.6&thinsp;g
+ &emsp;  (d) 12 K — the degrees are the same size</p>
+
+</div>
+
+<h2> Ladder 7 • Classifying matter</h2>
+<span class="badge">ZUM §1.10</span>
+
+<div class="center">
+<div class="fbox">
+matter \(\to\) <strong>pure substance</strong> (element or compound)
+ &emsp;  or  &emsp;  <strong>mixture</strong> (homogeneous or heterogeneous)</div>
+</div>
+
+<p>The dividing question is whether the sample has <strong>fixed
+composition</strong>. A compound always has it; a mixture does not — brass can
+be any proportion of copper and zinc.</p>
+
+<p>A <strong class="term">homogeneous</strong> mixture (a solution) is uniform throughout;
+a <strong class="term">heterogeneous</strong> one has visibly distinct regions. And the way you
+separate them tells you which you had: mixtures come apart by
+<strong>physical</strong> means (filtration, distillation, chromatography),
+compounds only by <strong>chemical</strong> means.</p>
+
+<div class="box we"><div class="box-title">I do: classify, then justify by separation</div>
+
+<strong>Air</strong> — a homogeneous <em>mixture</em>. Its composition varies
+with place and altitude, and it separates by fractional distillation,
+which is physical.
+
+<strong>Water</strong> — a <em>compound</em>. Always 11.2% hydrogen by mass
+wherever it comes from, and splitting it needs electrolysis, which is
+chemical.
+
+<strong>Sand in water</strong> — a heterogeneous <em>mixture</em>: the regions
+are visible, and filtration separates them.
+
+<strong>Copper wire</strong> — an <em>element</em>: it cannot be broken into
+anything simpler by any means.
+
+<strong>The reasoning to imitate:</strong> name the category, then justify it
+twice — once by composition, once by how it separates.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+Classify each and give the separation method or reason:
+<ol>
+
+<li>table salt, \(\ce{NaCl}\) <div class="workspace" style="height:1.2cm"></div>
+
+<li>Italian salad dressing <div class="workspace" style="height:1.2cm"></div>
+
+<li>filtered seawater <div class="workspace" style="height:1.4cm"></div>
+
+<li>Is dissolving sugar in water a physical or chemical change?
+        Justify. <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) compound  &emsp;  (b) heterogeneous mixture  &emsp; 
+(c) homogeneous mixture — separate by distillation  &emsp; 
+(d) physical — the sugar is unchanged and recoverable</p>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>units, prefixes, scientific notation</td><td>1</td><td>smaller unit,
+  bigger number</td></tr>
+<tr><td>\(\square\)</td><td>precision vs. accuracy</td><td>2</td><td>the systematic-error case</td></tr>
+<tr><td>\(\square\)</td><td>counting significant figures</td><td>3</td><td>the trailing-zero rule</td></tr>
+<tr><td>\(\square\)</td><td>calculating with sig figs</td><td>4</td><td>sig figs vs. decimal
+  places</td></tr>
+<tr><td>\(\square\)</td><td>dimensional analysis</td><td>5</td><td>arrange so units cancel</td></tr>
+<tr><td>\(\square\)</td><td>temperature and density</td><td>6</td><td>differences vs. values</td></tr>
+<tr><td>\(\square\)</td><td>classifying matter</td><td>7</td><td>fixed composition?</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>7/7: you are ready for Chapter 2 — and, more usefully, for every
+calculation in the course. 5–6: redo the missed ladders tomorrow, not
+today. 4 or fewer: the misses are almost certainly in Ladders 3–4,
+which is worth knowing, because significant figures cost marks in every
+later chapter and are the cheapest marks in the course to secure. Redo
+those two before anything else.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

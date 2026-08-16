@@ -6,6 +6,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 1 • Chemical Foundations
 
 - [Guided Notes](chapter01-foundations/ch01-notes.md)
+- [Self-Study • Chapter 1, I do / You do](chapter01-foundations/ch01-selfstudy.md)
 - [Day 1 Diagnostic • 25 marks](chapter01-foundations/ch01-ws1.md)
 - [Worksheet 2 • Remediation Practice](chapter01-foundations/ch01-ws2.md)
 
