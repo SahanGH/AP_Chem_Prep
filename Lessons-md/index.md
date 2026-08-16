@@ -51,6 +51,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 6 • Thermochemistry
 
 - [Guided Notes](chapter06-thermochemistry/ch06-notes.md)
+- [Self-Study • Chapter 6, I do / You do](chapter06-thermochemistry/ch06-selfstudy.md)
 - [Worksheet 1 • Energy, Enthalpy, Calorimetry](chapter06-thermochemistry/ch06-ws1.md)
 - [Worksheet 2 • Hess's Law](chapter06-thermochemistry/ch06-ws2.md)
 - [Worksheet 3 • Formation Enthalpies & FRQ](chapter06-thermochemistry/ch06-ws3.md)

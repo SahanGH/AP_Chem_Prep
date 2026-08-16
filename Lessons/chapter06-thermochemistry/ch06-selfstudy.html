@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 6 • Self-Study • Chapter 6, I do / You do</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 6 • Thermochemistry</p>
+  <h1>Self-Study • Chapter 6, I do / You do</h1>
+  <p class="subtitle">Zumdahl §6.1–6.6 • PDF pp. 283–312 • four YOUR TURN questions per ladder</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help.</p>
+
+<ol>
+
+<li><strong>Work all four</strong> before checking anything.
+
+<li>Check against the gray <em>check:</em> line. All four right on the
+        first try earns the tick on the tracker (last page).
+
+<li>Any misses: re-read the worked example, then redo the missed ones
+        from a blank page.
+</ol>
+
+<strong>The one habit that decides this chapter: track the sign.</strong> Every
+quantity here is signed, and the sign always answers the same question
+— <em>did the system gain energy or lose it?</em> Gained is positive,
+lost is negative. A correct magnitude with the wrong sign earns no marks
+and describes the opposite of what happened.
+
+</div>
+
+<h2> Ladder 1 • System, surroundings, and the
+first law</h2>
+<span class="badge">ZUM §6.1</span>
+
+<p>Draw a boundary. Inside is the <strong class="term">system</strong> (the reaction); everything
+outside is the <strong class="term">surroundings</strong>. Energy crosses that boundary two
+ways:
+\[ \boxed{\;\Delta E = q + w\;} \qquad w = -P\,\Delta V \]</p>
+
+<p>Signs, from the <strong>system's</strong> point of view — always:</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Quantity</strong></th><th><strong>Positive when</strong></th><th><strong>Negative when</strong></th></tr>
+<tr><td>\(q\)</td><td>heat flows <em>in</em> (endothermic)</td><td>heat flows <em>out</em>
+  (exothermic)</td></tr>
+<tr><td>\(w\)</td><td>surroundings compress the system</td><td>the system expands and
+  <em>does</em> work</td></tr>
+</table>
+
+</div>
+
+<p>The minus sign in \(w = -P\Delta V\) exists so that an expanding gas
+(\(\Delta V > 0\)) reports negative work: it spent energy pushing the
+atmosphere back.</p>
+
+<div class="box we"><div class="box-title">I do: a gas that absorbs heat and expands</div>
+
+<p>A gas absorbs 575&thinsp;J of heat and expands from
+1.20&thinsp;L to 3.40&thinsp;L against a constant external
+pressure of 1.00&thinsp;atm. Find \(w\) and \(\Delta E\).</p>
+
+<strong>Work</strong> — expansion, so expect a negative value:
+\[ w = -P\,\Delta V = -(1.00)(3.40 - 1.20) = -2.20\,\mathrm{L\cdot atm} \]
+Convert, because L&middot;atm is not a joule:
+\[ -2.20 \times 101.3 = -223\,\mathrm{J} \]
+
+<strong>First law:</strong>
+\[ \Delta E = q + w = 575 + (-223) = \mathbf{+352~J} \]
+
+<strong>Read the answer back:</strong> the gas took in 575 J, spent 223 J of it
+pushing the atmosphere aside, and kept the remaining 352 J as internal
+energy. The bookkeeping is the physics.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>A system releases 125&thinsp;J of heat and has
+        75&thinsp;J of work done <em>on</em> it. Find \(\Delta E\).
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>A gas is compressed from 5.00&thinsp;L to
+        2.00&thinsp;L at 2.00&thinsp;atm. Find \(w\) in
+        L&middot;atm and in joules. <div class="workspace" style="height:1.8cm"></div>
+
+<li>A reaction absorbs 40.&thinsp;kJ of heat while doing
+        12&thinsp;kJ of work on the surroundings. Find
+        \(\Delta E\). <div class="workspace" style="height:1.6cm"></div>
+
+<li>For a reaction run in a <em>rigid sealed</em> vessel, what is \(w\),
+        and what does \(\Delta E\) then equal? <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) -50.&thinsp;J  &emsp;  (b) \(+6.00\) L atm \(=\)
++608&thinsp;J  &emsp;  (c) +28&thinsp;kJ  &emsp;  (d) \(w = 0\), so
+\(\Delta E = q\)</p>
+
+</div>
+
+<h2> Ladder 2 • Enthalpy, and why chemists use
+it</h2>
+<span class="badge">ZUM §6.2</span>
+
+<p>At constant pressure — a beaker open to the room, which is nearly every
+reaction you will run — the heat is given its own name:
+\[ \boxed{\;\Delta H = q_P\;} \]
+That is the whole reason \(H\) exists: it is the energy change you can
+measure with a thermometer, without tracking the work of expansion
+separately.</p>
+
+<div class="center">
+
+<table>
+<tr><th></th><th><strong>\(\Delta H < 0\)</strong></th><th><strong>\(\Delta H > 0\)</strong></th></tr>
+<tr><td>Name</td><td>exothermic</td><td>endothermic</td></tr>
+<tr><td>Heat</td><td>released to surroundings</td><td>absorbed from surroundings</td></tr>
+<tr><td>Surroundings feel</td><td>warmer</td><td>colder</td></tr>
+<tr><td>Products' enthalpy</td><td>lower than reactants</td><td>higher than reactants</td></tr>
+</table>
+
+</div>
+
+\(\Delta H\) is an <strong>extensive</strong> quantity: double the amounts and you
+double the enthalpy change. So a thermochemical equation's \(\Delta H\)
+belongs to <em>exactly</em> the coefficients written.
+
+<div class="box we"><div class="box-title">I do: scaling and reversing a thermochemical equation</div>
+
+<p>Given
+\[ \ce{2SO2(g) + O2(g) -> 2SO3(g)} \qquad
+   \Delta H = -198\,\mathrm{kJ} \]</p>
+
+<strong>(a) Heat released when 1.00&thinsp;mol of \(\ce{SO2}\) reacts.</strong> The
+\(-198\) kJ belongs to <em>two</em> moles of \(\ce{SO2}\):
+\[ \frac{-198}{2} = \mathbf{-99.0~kJ} \]
+
+<strong>(b) \(\Delta H\) for the reverse reaction.</strong> Reversing flips the
+sign:
+\[ \ce{2SO3(g) -> 2SO2(g) + O2(g)} \qquad
+   \Delta H = \mathbf{+198~kJ} \]
+
+<strong>(c) \(\Delta H\) when 32.0&thinsp;g of \(\ce{SO2}\)
+(\(M = 64.07\,\mathrm{g/mol}\)) reacts.</strong>
+\[ n = \frac{32.0}{64.07} = 0.4995\,\mathrm{mol}
+   \;\Rightarrow\; 0.4995 \times (-99.0) = \mathbf{-49.4~kJ} \]
+Carry the unrounded moles into the multiplication: rounding to 0.500
+first would give \(-49.5\), and that last digit is the one being asked
+for.
+
+<p>Every one of these is the same idea: \(\Delta H\) scales with amount and
+flips with direction.</p>
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+Use \(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\), \(\Delta H = -92.2\,\mathrm{kJ}\).
+<ol>
+
+<li>Heat released per mole of \(\ce{NH3}\) formed: <div class="workspace" style="height:1.4cm"></div>
+
+<li>\(\Delta H\) for \(\ce{2NH3(g) -> N2(g) + 3H2(g)}\):
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>\(\Delta H\) when 10.0&thinsp;g of \(\ce{H2}\)
+        (\(M = 2.016\)) reacts completely: <div class="workspace" style="height:1.8cm"></div>
+
+<li>Is the container warmer or colder to the touch as this runs, and
+        what does that say about the sign of \(q_{\text{surroundings}}\)?
+        <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) -46.1&thinsp;kJ  &emsp;  (b) +92.2&thinsp;kJ
+ &emsp;  (c) -152&thinsp;kJ  &emsp;  (d) warmer; \(q\) of the
+surroundings is positive</p>
+
+</div>
+
+<h2> Ladder 3 • Specific heat</h2>
+<span class="badge">ZUM §6.2</span>
+
+\[ \boxed{\;q = m\,c\,\Delta T\;} \qquad
+   \Delta T = T_{\text{final}} - T_{\text{initial}} \]
+\(c\) is the <strong class="term">specific heat capacity</strong> — the energy needed to raise
+one gram by one degree. Water's is unusually large,
+4.18&thinsp;J/g/&deg;C, which is why lakes moderate
+climate and why water is the coolant of choice.
+
+<p>Because \(\Delta T\) is a <em>difference</em>, a change of 1&thinsp;&deg;C
+equals a change of 1&thinsp;K — so specific-heat problems are the
+one place in this course where you may leave temperatures in
+&deg;C.</p>
+
+<div class="box we"><div class="box-title">I do: heating a metal, then finding its identity</div>
+
+<strong>(a)</strong> How much heat raises 125&thinsp;g of copper
+(\(c = 0.385\,\mathrm{J/g/{}^\circ C}\)) from 22.0&thinsp;&deg;C
+to 88.5&thinsp;&deg;C?
+\[ q = (125)(0.385)(88.5 - 22.0) = (125)(0.385)(66.5)
+     = \mathbf{3200~J} = 3.20\,\mathrm{kJ} \]
+
+<strong>(b)</strong> A 45.0&thinsp;g sample of an unknown metal absorbs
+326&thinsp;J while warming from 25.0&thinsp;&deg;C to
+58.0&thinsp;&deg;C. Find \(c\), and identify the metal.
+\[ c = \frac{q}{m\,\Delta T} = \frac{326}{(45.0)(33.0)}
+     = \mathbf{0.220~J/g\cdot^\circ C} \]
+Compare: \(\ce{Ag}\) 0.235, \(\ce{Cu}\) 0.385, \(\ce{Fe}\) 0.449. The value points to
+<strong>silver</strong> — 0.220 against 0.235 is ordinary experimental error,
+while the alternatives are far off.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>Heat to warm 250.&thinsp;g of water
+        (\(c = 4.18\)) from 20.0&thinsp;&deg;C to 75.0&thinsp;&deg;C:
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Final temperature when 2.50&thinsp;kJ is added to
+        150.&thinsp;g of water starting at 18.0&thinsp;&deg;C:
+        <div class="workspace" style="height:1.8cm"></div>
+
+<li>Specific heat of a 80.0&thinsp;g metal that loses
+        1250&thinsp;J while cooling from 95.0&thinsp;&deg;C to
+        35.0&thinsp;&deg;C: <div class="workspace" style="height:1.8cm"></div>
+
+<li>Equal masses of water and copper absorb the same heat. Which
+        warms more, and why? <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 57.5&thinsp;kJ  &emsp;  (b) 22.0&thinsp;&deg;C
+ &emsp;  (c) 0.260&thinsp;J/g/&deg;C  &emsp;  (d) copper —
+its specific heat is far smaller</p>
+
+</div>
+
+<h2> Ladder 4 • Calorimetry</h2>
+<span class="badge">ZUM §6.2</span>
+
+<p>A calorimeter measures the <em>surroundings</em> and infers the system:
+\[ q_{\text{reaction}} = -q_{\text{solution}}
+   = -m\,c\,\Delta T \]
+That minus sign is the entire technique. The thermometer sits in the
+water, so a temperature <em>rise</em> means the water gained heat, which
+means the reaction <em>lost</em> it.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Two habits that protect the answer. Use the mass of the
+<strong>solution</strong>, not of the solute — in a coffee-cup calorimeter the
+water is what warms. And convert to <strong>kJ per mole</strong> at the end:
+\(q\) is the heat for the sample you used, while \(\Delta H\) is quoted per
+mole.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: a coffee-cup neutralization</div>
+
+<p>50.0&thinsp;mL of 1.00&thinsp;M \(\ce{HCl}\) is mixed with
+50.0&thinsp;mL of 1.00&thinsp;M \(\ce{NaOH}\), both at
+21.0&thinsp;&deg;C. The temperature rises to 27.7&thinsp;&deg;C. Take
+the solution's density as 1.00&thinsp;g/mL and
+\(c = 4.18\). Find \(\Delta H\) per mole of water formed.</p>
+
+<strong>Heat gained by the solution</strong> — total mass 100.0&thinsp;g:
+\[ q_{\text{soln}} = (100.0)(4.18)(6.7) = 2801\,\mathrm{J} \]
+
+<strong>Flip the sign for the reaction:</strong>
+\(q_{\text{rxn}} = -2801\,\mathrm{J} = -2.80\,\mathrm{kJ}\)
+
+<strong>Moles of water formed:</strong>
+\((0.0500)(1.00) = 0.0500\,\mathrm{mol}\) — 1:1, and neither reagent is in
+excess.
+
+<strong>Per mole:</strong>
+\[ \Delta H = \frac{-2.80}{0.0500} = \mathbf{-56.0~kJ/mol} \]
+The accepted value for strong acid \(+\) strong base is about
+\(-57.3\) kJ/mol, so the experiment is good to about 2%.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+<ol>
+
+<li>5.00&thinsp;g of a salt dissolves in 95.0&thinsp;g of
+        water; the temperature falls from 22.4&thinsp;&deg;C to
+        16.9&thinsp;&deg;C. Find \(q\) for the dissolving, with its sign.
+        <div class="workspace" style="height:1.8cm"></div>
+
+<li>Is that process endothermic or exothermic? <div class="workspace" style="height:1.2cm"></div>
+
+<li>A 100.0&thinsp;g water sample in a calorimeter rises
+        4.50&thinsp;&deg;C when 0.0250&thinsp;mol of a reagent reacts.
+        Find \(\Delta H\) in kJ/mol. <div class="workspace" style="height:2cm"></div>
+
+<li>Why is the mass in these calculations the mass of the
+        <em>solution</em> rather than of the reacting solute?
+        <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) +2.30&thinsp;kJ  &emsp;  (b) endothermic  &emsp; 
+(c) -75.2&thinsp;kJ/mol  &emsp;  (d) the solution is the
+surroundings the thermometer reads</p>
+
+</div>
+
+<h2> Ladder 5 • Hess's law</h2>
+<span class="badge">ZUM §6.3</span>
+
+<p>Enthalpy is a <strong class="term">state function</strong>: it depends only on the initial and
+final states, never on the route. So known reactions can be added like
+algebra to reach an unknown one.</p>
+
+<ol>
+
+<li><strong>Reverse</strong> a step \(\Rightarrow\) flip the sign of
+        \(\Delta H\).
+
+<li><strong>Multiply</strong> a step \(\Rightarrow\) multiply \(\Delta H\) by the
+        same factor.
+
+<li>Add the manipulated steps; species on opposite sides cancel.
+</ol>
+
+<p>Work <em>backward</em> from the target: put each target species on the side
+where it belongs, and the manipulations reveal themselves.</p>
+
+<div class="box we"><div class="box-title">I do: forming nitrogen dioxide in two steps</div>
+
+<p>Target: \(\ce{N2(g) + 2O2(g) -> 2NO2(g)}\), \(\Delta H = ?\)</p>
+
+<p>Given:
+\begin{align*}
+  \text{(i)}\quad & \ce{N2(g) + O2(g) -> 2NO(g)}
+    & \Delta H_1 &= +180\,\mathrm{kJ}\\
+  \text{(ii)}\quad & \ce{2NO2(g) -> 2NO(g) + O2(g)}
+    & \Delta H_2 &= +112\,\mathrm{kJ}
+\end{align*}</p>
+
+<strong>Step (i):</strong> \(\ce{N2}\) is already a reactant in the target —
+<em>use as written</em>, \(+180\) kJ.
+
+<strong>Step (ii):</strong> the target needs \(\ce{2NO2}\) as a <em>product</em>, but
+(ii) has it as a reactant — <strong>reverse it</strong>:
+\[ \ce{2NO(g) + O2(g) -> 2NO2(g)} \qquad \Delta H = -112\,\mathrm{kJ} \]
+
+<strong>Add, and watch \(\ce{2NO}\) cancel</strong> (product of the first, reactant
+of the second):
+\[ \ce{N2 + O2 + O2 -> 2NO2} \quad\text{i.e.}\quad
+   \ce{N2 + 2O2 -> 2NO2} \]
+\[ \Delta H = 180 + (-112) = \mathbf{+68~kJ} \]
+
+<p>The \(\ce{2NO}\) cancelling is the check that the manipulations were right:
+if an intermediate survives, something is wrong.</p>
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+Given
+\(\ce{C(s) + O2(g) -> CO2(g)}\), \(\Delta H = -393.5\,\mathrm{kJ}\)
+and
+\(\ce{2CO(g) + O2(g) -> 2CO2(g)}\), \(\Delta H = -566.0\,\mathrm{kJ}\):
+<ol>
+
+<li>How must the second equation be manipulated to place \(\ce{CO}\) on
+        the product side? <div class="workspace" style="height:1.4cm"></div>
+
+<li>Find \(\Delta H\) for \(\ce{2C(s) + O2(g) -> 2CO(g)}\).
+        <div class="workspace" style="height:2.2cm"></div>
+
+<li>Find \(\Delta H\) for \(\ce{C(s) + \tfrac{1}{2}O2(g) -> CO(g)}\).
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Which species cancels in question (b), and why is that a useful
+        check? <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) reverse it (\(\Delta H = +566.0\,\mathrm{kJ}\))  &emsp; 
+(b) -221.0&thinsp;kJ  &emsp;  (c) -110.5&thinsp;kJ  &emsp; 
+(d) \(\ce{CO2}\) cancels</p>
+
+</div>
+
+<h2> Ladder 6 • Standard enthalpies of
+formation</h2>
+<span class="badge">ZUM §6.4</span>
+
+\(\Delta H_f^\circ\) is the enthalpy change forming <strong>one mole</strong> of a
+compound from its elements in their standard states. Two consequences do
+all the work:
+
+<ul>
+
+<li>An <strong>element in its standard state has
+        \(\Delta H_f^\circ = 0\)</strong> — \(\ce{O2(g)}\), \(\ce{C(graphite)}\),
+        \(\ce{Br2(l)}\), \(\ce{Na(s)}\). Nothing needs to happen to make it.
+
+<li>\[ \boxed{\;\Delta H^\circ_{\text{rxn}}
+        = \sum n\Delta H_f^\circ(\text{products})
+        - \sum n\Delta H_f^\circ(\text{reactants})\;} \]
+</ul>
+
+<p>Products minus reactants — in that order. Reversing it flips the sign
+of the answer, which is the commonest error on this calculation.</p>
+
+<div class="box we"><div class="box-title">I do: burning ethanol</div>
+
+\[ \ce{C2H5OH(l) + 3O2(g) -> 2CO2(g) + 3H2O(l)} \]
+\(\Delta H_f^\circ\) (kJ/mol): \(\ce{C2H5OH(l)}\) \(-277.7\),
+\(\ce{CO2(g)}\) \(-393.5\), \(\ce{H2O(l)}\) \(-285.8\), \(\ce{O2(g)}\) \(0\).
+
+<strong>Products:</strong>
+\[ 2(-393.5) + 3(-285.8) = -787.0 + (-857.4) = -1644.4\,\mathrm{kJ} \]
+
+<strong>Reactants</strong> — and note the oxygen contributes nothing:
+\[ (-277.7) + 3(0) = -277.7\,\mathrm{kJ} \]
+
+<strong>Subtract:</strong>
+\[ \Delta H^\circ = -1644.4 - (-277.7) = \mathbf{-1366.7~kJ} \]
+
+<strong>Sense check:</strong> a combustion must be strongly exothermic, and it
+is. A positive answer here would mean the arithmetic ran
+reactants-minus-products.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+\(\Delta H_f^\circ\) (kJ/mol): \(\ce{CH4(g)}\) \(-74.8\), \(\ce{CO2(g)}\) \(-393.5\),
+\(\ce{H2O(g)}\) \(-241.8\), \(\ce{H2O(l)}\) \(-285.8\), \(\ce{NH3(g)}\) \(-46.1\),
+\(\ce{NO(g)}\) \(+90.3\), \(\ce{O2(g)}\) \(0\).
+<ol>
+
+<li>\(\Delta H_f^\circ\) of \(\ce{N2(g)}\), and why: <div class="workspace" style="height:1.2cm"></div>
+
+<li>\(\Delta H^\circ\) for
+        \(\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\): <div class="workspace" style="height:2cm"></div>
+
+<li>\(\Delta H^\circ\) for
+        \(\ce{4NH3(g) + 5O2(g) -> 4NO(g) + 6H2O(g)}\): <div class="workspace" style="height:2.2cm"></div>
+
+<li>Question (b) used \(\ce{H2O(g)}\). Would the answer be more or less
+        negative with \(\ce{H2O(l)}\)? Explain without recalculating.
+        <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 0 — an element in its standard state  &emsp; 
+(b) -802.3&thinsp;kJ  &emsp;  (c) -905.4&thinsp;kJ  &emsp; 
+(d) more negative</p>
+
+</div>
+
+<h2> Ladder 7 • Energy sources and fuel values</h2>
+<span class="badge">ZUM §6.5–6.6</span>
+
+<p>Sections 6.5–6.6 are descriptive, and the CED does not assess them —
+read for context. The one quantitative idea worth carrying is
+<strong>fuel value</strong>: energy released per <em>gram</em>, which is what
+matters when a fuel must be carried.</p>
+
+<div class="box we"><div class="box-title">I do: comparing two fuels by mass</div>
+
+<p>Methane releases 890.&thinsp;kJ/mol
+(\(M = 16.04\,\mathrm{g/mol}\)); octane releases
+5470&thinsp;kJ/mol (\(M = 114.2\,\mathrm{g/mol}\)).
+Which is the better fuel per gram?</p>
+
+\[ \ce{CH4}: \frac{890.}{16.04} = \mathbf{55.5~kJ/g} \qquad
+   \ce{C8H18}: \frac{5470}{114.2} = \mathbf{47.9~kJ/g} \]
+
+<strong>Methane wins per gram</strong> — it is the most hydrogen-rich
+hydrocarbon, and hydrogen carries more energy per gram than carbon. Yet
+cars burn octane, because methane is a gas: per <em>litre of tank</em>,
+the liquid wins easily. Which figure of merit you use depends on what is
+scarce — mass or volume.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+<ol>
+
+<li>Fuel value of hydrogen, which releases
+        286&thinsp;kJ/mol (\(M = 2.016\)):
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Fuel value of ethanol, 1367&thinsp;kJ/mol
+        (\(M = 46.07\)): <div class="workspace" style="height:1.6cm"></div>
+
+<li>Which of the fuels mentioned so far has the highest energy per
+        gram, and what feature explains it? <div class="workspace" style="height:1.6cm"></div>
+
+<li>Hydrogen has by far the best fuel value yet powers almost no
+        cars. Give the practical objection. <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 142&thinsp;kJ/g  &emsp;  (b)
+29.7&thinsp;kJ/g  &emsp;  (c) hydrogen — no carbon to
+carry  &emsp;  (d) it is a gas, so storage is the problem</p>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>first law; signs of \(q\) and \(w\)</td><td>1</td><td>the sign table</td></tr>
+<tr><td>\(\square\)</td><td>enthalpy; scaling and reversing</td><td>2</td><td>\(\Delta H\) is
+  extensive</td></tr>
+<tr><td>\(\square\)</td><td>specific heat</td><td>3</td><td>\(q = mc\Delta T\)</td></tr>
+<tr><td>\(\square\)</td><td>calorimetry</td><td>4</td><td>the minus sign; mass of solution</td></tr>
+<tr><td>\(\square\)</td><td>Hess's law</td><td>5</td><td>work backward from the target</td></tr>
+<tr><td>\(\square\)</td><td>enthalpies of formation</td><td>6</td><td>products minus reactants</td></tr>
+<tr><td>\(\square\)</td><td>fuel values</td><td>7</td><td>energy per gram</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>7/7: move on to the end-of-chapter problems. 5–6: solid — redo the
+missed ladders tomorrow, not today. 4 or fewer: the root cause is almost
+always one of three sign habits — (1) \(q\) and \(w\) are written from the
+<em>system's</em> point of view, (2) the calorimeter measures the
+surroundings, so \(q_{\text{rxn}} = -q_{\text{soln}}\), and
+(3) formation enthalpies go <em>products minus reactants</em>. Fix the
+signs and the magnitudes were probably already right.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>
