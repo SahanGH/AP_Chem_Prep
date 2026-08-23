@@ -800,7 +800,11 @@ def scratch(height: str) -> str:
 
 
 def answer_row(label: str, disp: str, spec) -> str:
-    lab = f"({label})" if label else ""
+    # The (a)..(d) letters drive pairing with the check line, but the
+    # questions are already numbered, so showing them again is duplicate
+    # labelling. Keep them for screen readers only.
+    n = ord(label) - ord("a") + 1 if label else 0
+    aria = f"answer to question {n}" if n else "answer"
     if spec is not None:
         data = (f' data-check="num" data-val="{spec["value"]!r}"'
                 f' data-sig="{spec["sig"]}"'
@@ -815,9 +819,9 @@ def answer_row(label: str, disp: str, spec) -> str:
         data = ' data-check="none"'
         btn = '<button class="ansshow" type="button">Show answer</button>'
         rev = f'<span class="ansreveal" hidden>{disp}</span>'
-    return (f'<div class="ansrow"><span class="anslab">{lab}</span>'
+    return (f'<div class="ansrow">'
             f'<input type="text" class="ansinput" autocomplete="off"'
-            f' placeholder="your answer"{data}>'
+            f' aria-label="{aria}" placeholder="your answer"{data}>'
             f'{btn}<span class="ansfeedback" role="status"></span>{rev}</div>')
 
 
@@ -1088,7 +1092,6 @@ footer { border-top: 1px solid var(--rule); color: var(--gray);
 .scratch::placeholder { color: var(--gray); opacity: .55; }
 .ansrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
           margin: .4rem 0 .9rem; font-family: system-ui, sans-serif; }
-.anslab { font-weight: 700; color: var(--gray); min-width: 1.6rem; }
 .ansinput { flex: 1 1 11rem; max-width: 16rem; padding: .35rem .5rem;
             border: 1px solid var(--rule); border-radius: 4px;
             font: inherit; font-size: 1rem; background: #fff; color: inherit; }
