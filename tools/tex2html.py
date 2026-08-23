@@ -790,6 +790,15 @@ def esc_attr(s: str) -> str:
              .replace("<", "&lt;").replace(">", "&gt;"))
 
 
+def scratch(height: str) -> str:
+    r"""\workspace is handwriting space in the PDF. On screen an empty dashed
+    div is dead weight -- you cannot write in it -- so it becomes a real
+    textarea. Scratch only: nothing reads it, and it clears on reload."""
+    return (f'<textarea class="scratch" style="height:{height}" rows="2"'
+            f' spellcheck="false" aria-label="working space"'
+            f' placeholder="working (optional)"></textarea>')
+
+
 def answer_row(label: str, disp: str, spec) -> str:
     lab = f"({label})" if label else ""
     if spec is not None:
@@ -861,8 +870,8 @@ def add_interactivity(body: str, kind: str, stem: str, log) -> str:
             for k in range(len(slots) - 1, -1, -1):      # back to front
                 sl = slots[k]
                 label, disp, spec = answers[k]
-                region = (region[:sl.end()] + answer_row(label, disp, spec)
-                          + region[sl.end():])
+                region = (region[:sl.start()] + scratch(sl.group(1))
+                          + answer_row(label, disp, spec) + region[sl.end():])
             paired += len(answers)
         elif answers:
             skipped += 1
@@ -873,7 +882,10 @@ def add_interactivity(body: str, kind: str, stem: str, log) -> str:
                           "answers"))
         pos = m.end()
     out.append(body[pos:])
-    return wrap_explanations("".join(out))
+    # Ladders we declined to pair still get usable working space, so the
+    # page does not mix live textareas with inert dashed boxes.
+    body = WORKSPACE_RE.sub(lambda m: scratch(m.group(1)), "".join(out))
+    return wrap_explanations(body)
 
 
 PAGE = """<!doctype html>
@@ -1066,6 +1078,14 @@ footer { border-top: 1px solid var(--rule); color: var(--gray);
 @media print { .selfcheck { display: none; } }
 
 /* --- answer checking (screen only; print keeps the blank workspace) --- */
+.scratch { display: block; width: 100%; box-sizing: border-box;
+           margin: .3rem 0 .15rem; padding: .45rem .6rem;
+           border: 1px dashed var(--rule); border-radius: 4px;
+           font: inherit; font-size: .95rem; color: inherit; background: #fff;
+           resize: vertical; min-height: 2.2rem; }
+.scratch:focus { outline: 2px solid var(--accent); outline-offset: 1px;
+                 border-style: solid; }
+.scratch::placeholder { color: var(--gray); opacity: .55; }
 .ansrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
           margin: .4rem 0 .9rem; font-family: system-ui, sans-serif; }
 .anslab { font-weight: 700; color: var(--gray); min-width: 1.6rem; }

@@ -88,6 +88,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 10 • Liquids and Solids
 
 - [Guided Notes](chapter10-liquids-solids/ch10-notes.md)
+- [Self-Study • Chapter 10, I do / You do](chapter10-liquids-solids/ch10-selfstudy.md)
 - [Worksheet 1 • Forces and Liquids](chapter10-liquids-solids/ch10-ws1.md)
 - [Worksheet 2 • Solids](chapter10-liquids-solids/ch10-ws2.md)
 - [Worksheet 3 • Vapour Pressure and Phase Changes](chapter10-liquids-solids/ch10-ws3.md)
