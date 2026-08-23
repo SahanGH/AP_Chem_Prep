@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 16 • Self-Study • Chapter 16, I do / You do</title>
+<link rel="stylesheet" href="../style.css?v=28190c55">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=28190c55"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 16 • Solubility Equilibria</p>
+  <h1>Self-Study • Chapter 16, I do / You do</h1>
+  <p class="subtitle">Zumdahl §16.1 $+$ §16.2 (Q vs $K_sp$) • PDF pp. 805–819</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help. Work all four before checking
+the gray <em>check:</em> line; a tracker tick needs all four right first
+time. A ten-question <strong>mixed set</strong> follows Ladder 9.</p>
+
+<strong>What is in and what is out — checked against the CED
+itself.</strong> §16.1 (\(K_{sp}\), molar solubility, the common-ion effect, pH
+and solubility) is fully assessed: CED topics 7.11, 7.12 and 8.11.
+From §16.2, predicting whether a <strong>precipitate forms</strong> by
+comparing \(Q\) with \(K_{sp}\) is assessed — it is Chapter 13's \(Q\)
+machinery applied to dissolving. The rest of §16.2 (selective
+precipitation schemes, qualitative analysis) and all of §16.3
+(complex ions) do not appear anywhere in the CED and are not treated
+here.
+
+<strong>What you must bring with you.</strong> Chapter 13, again. A \(K_{sp}\)
+problem is an equilibrium problem where the ICE table is so simple it
+barely deserves the name — the initial concentrations are zero and
+everything is written in one unknown. If heterogeneous equilibria
+(Chapter 13, Ladder 4) and \(Q\) versus \(K\) (Ladder 6) are solid, this
+chapter is two ideas and some algebra.
+
+<strong>The one idea underneath everything.</strong> A “saturated” solution
+is not a solution where dissolving has stopped — it is a
+<strong>dynamic equilibrium</strong> where dissolving and precipitating run at
+equal rates, and \(K_{sp}\) is just the equilibrium constant for it.
+
+</div>
+
+<h2> Ladder 1 • The dissolution equilibrium
+and \(K_{sp}\)</h2>
+<span class="badge">ZUM §16.1</span>
+
+<p>Drop solid \(\ce{AgCl}\) into water. A little dissolves, then the solution
+saturates — and from that moment ions leave the crystal exactly as
+fast as they return to it.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-1.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+\(K_{sp}\) expressions have <strong>no denominator</strong>. The only thing on
+the left of the dissolution equation is a pure solid, and pure solids
+are omitted — so nothing is left to divide by. Writing
+\([\ce{Ag+}][\ce{Cl-}]/[\ce{AgCl}]\) is the error this ladder exists to
+prevent.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: three expressions, mind the exponents</div>
+
+<strong>(a) \(\ce{BaSO4(s) <=> Ba^2+(aq) + SO4^2-(aq)}\)</strong>
+\[ K_{sp} = [\ce{Ba^2+}][\ce{SO4^2-}] \]
+
+<strong>(b) \(\ce{PbI2(s) <=> Pb^2+(aq) + 2I-(aq)}\)</strong>
+\[ K_{sp} = [\ce{Pb^2+}][\ce{I-}]^{2} \]
+The coefficient 2 on iodide becomes an exponent — exactly as in every
+equilibrium expression since Chapter 13.
+
+<strong>(c) \(\ce{Ca3(PO4)2(s) <=> 3Ca^2+(aq) + 2PO4^3-(aq)}\)</strong>
+\[ K_{sp} = [\ce{Ca^2+}]^{3}[\ce{PO4^3-}]^{2} \]
+
+<strong>The procedure is always the same two steps.</strong> Write the
+dissolution equation — solid on the left, ions on the right, with the
+subscripts of the formula becoming the coefficients of the ions. Then
+write the product of the ion concentrations, each raised to its
+coefficient. There is nothing else to it, and there is no denominator.
+
+<strong>Why \(K_{sp}\) values are so small.</strong> These are all salts your
+solubility rules call “insoluble”. Insoluble does not mean zero
+dissolves — it means the equilibrium lies far to the left, which is
+exactly the statement \(K_{sp} \ll 1\). The solubility rules of Chapter 4
+are the qualitative shadow of this chapter's numbers: \(K_{sp} > 1\)
+corresponds to the salts the rules call soluble.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+Write the dissolution equation and the \(K_{sp}\) expression.
+<ol>
+
+<li>\(\ce{AgBr}\) <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:1" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{Ag+}][\ce{Br-}]\)</span></div>
+
+<li>\(\ce{CaF2}\) <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:2" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{Ca^2+}][\ce{F-}]^{2}\)</span></div>
+
+<li>\(\ce{Ag2CrO4}\) <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:3" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{Ag+}]^{2}[\ce{CrO4^2-}]\)</span></div>
+
+<li>Why does the solid not appear in the expression?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:4" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>pure solids are omitted</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \([\ce{Ag+}][\ce{Br-}]\)  &emsp;  (b)
+\([\ce{Ca^2+}][\ce{F-}]^{2}\)  &emsp;  (c)
+\([\ce{Ag+}]^{2}[\ce{CrO4^2-}]\)  &emsp;  (d) pure solids are omitted</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\ce{AgBr(s) <=> Ag+(aq) + Br-(aq)}\);
+\(K_{sp} = [\ce{Ag+}][\ce{Br-}]\). (b)
+\(\ce{CaF2(s) <=> Ca^2+(aq) + 2F-(aq)}\);
+\(K_{sp} = [\ce{Ca^2+}][\ce{F-}]^{2}\). (c)
+\(\ce{Ag2CrO4(s) <=> 2Ag+(aq) + CrO4^2-(aq)}\);
+\(K_{sp} = [\ce{Ag+}]^{2}[\ce{CrO4^2-}]\). (d) Because a <strong>pure
+solid's concentration is fixed</strong> (density over molar mass) and cannot
+change — constants are folded into \(K\), so the solid is omitted. Same
+rule, same reason, as Chapter 13 Ladder 4.</div></div>
+
+</div>
+
+<h2> Ladder 2 • Molar solubility — one
+unknown does everything</h2>
+<span class="badge">ZUM §16.1</span>
+
+<strong>Molar solubility</strong>, \(s\), is the number of moles of the solid
+that dissolve per litre of saturated solution. Every ion concentration
+is a multiple of it.
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-2.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>“Doubled AND squared” feels like counting twice. It is not.</strong>
+\([\ce{I-}] = 2s\) because each formula unit releases two iodides —
+that is stoichiometry. \([\ce{I-}]\) is then <em>squared</em> because the
+equilibrium expression demands the coefficient as an exponent — that
+is the law of mass action. Two different rules, applied once each.
+Dropping either one is the most common \(K_{sp}\) error on the exam.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: from measured solubility to \(K_{sp}\)</div>
+
+<strong>(a) The molar solubility of \(\ce{AgCl}\) is
+1.3e-5&thinsp;M at 25&thinsp;&deg;C. Find \(K_{sp}\).</strong>
+
+<p>Each dissolved formula unit gives one \(\ce{Ag+}\) and one \(\ce{Cl-}\):
+\[ [\ce{Ag+}] = [\ce{Cl-}] = s = 1.3e-5 \]
+\[ K_{sp} = s^{2} = (1.3e-5)^{2} = \mathbf{1.7e-10} \]</p>
+
+<strong>(b) The molar solubility of \(\ce{PbI2}\) is
+1.5e-3&thinsp;M. Find \(K_{sp}\).</strong>
+
+<p>Here \([\ce{Pb^2+}] = s\) and \([\ce{I-}] = 2s = 3.0e-3\):
+\[ K_{sp} = s(2s)^{2} = 4s^{3}
+          = 4(1.5e-3)^{3}
+          = 4 \times 3.375e-9
+          = \mathbf{1.4e-8} \]</p>
+
+<strong>Check the setup before the arithmetic.</strong> The commonest wrong
+answer here is \(s \times (2s)\) without the square, or
+\(s \times s^{2}\) without the doubling. Write the two ion
+concentrations explicitly first — \(s\) and \(2s\) — then substitute
+into the \(K_{sp}\) expression you wrote in Ladder 1. Setup first,
+numbers second.
+
+<strong>Where these measurements come from.</strong> Evaporate a litre of the
+saturated solution and weigh what is left, or measure the conductivity,
+or use a spectrometer — molar solubility is an experimental quantity,
+and \(K_{sp}\) tables are built from exactly this calculation.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+<ol>
+
+<li>The molar solubility of \(\ce{AgBr}\) is 7.1e-7&thinsp;M.
+        Find \(K_{sp}\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:5" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="5e-13" data-sig="2" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>The molar solubility of \(\ce{PbF2}\) is 2.0e-3&thinsp;M.
+        Find \(K_{sp}\). <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:6" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="3.2e-08" data-sig="2" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>For \(\ce{CaF2}\) dissolving with molar solubility \(s\), give
+        \([\ce{Ca^2+}]\) and \([\ce{F-}]\) in terms of \(s\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:7" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(s\) and
+\(2s\)</span></div>
+
+<li>In the \(\ce{PbF2}\) calculation, why is the fluoride concentration
+        both doubled and squared? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:8" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>stoichiometry doubles it; the mass-action law squares it</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 5.0e-13  &emsp;  (b) 3.2e-8  &emsp;  (c) \(s\) and
+\(2s\)  &emsp;  (d) stoichiometry doubles it; the mass-action law squares it</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(K_{sp} = s^{2} = (7.1e-7)^{2} =
+\mathbf{5.0e-13}\). (b) \(K_{sp} = 4s^{3} = 4(2.0e-3)^{3} =
+4 \times 8.0e-9 = \mathbf{3.2e-8}\). (c) \([\ce{Ca^2+}] =
+\mathbf{s}\) and \([\ce{F-}] = \mathbf{2s}\). (d) Two separate rules:
+<strong>stoichiometry</strong> says each formula unit releases two fluorides,
+so \([\ce{F-}] = 2s\); the <strong>equilibrium expression</strong> raises
+\([\ce{F-}]\) to the power of its coefficient, so that \(2s\) is then
+squared. Applying each rule once gives \(4s^{3}\); skipping either gives
+a wrong answer.</div></div>
+
+</div>
+
+<h2> Ladder 3 • From \(K_{sp}\) to solubility</h2>
+<span class="badge">ZUM §16.1</span>
+
+<p>The reverse direction: given the tabulated constant, how much actually
+dissolves?</p>
+
+<div class="box we"><div class="box-title">I do: two stoichiometries, two algebra shapes</div>
+
+<strong>(a) \(K_{sp}(\ce{BaSO4}) = 1.5e-9\). Find the molar
+solubility.</strong>
+
+<p>1:1 salt, so \(K_{sp} = s^{2}\):
+\[ s = \sqrt{1.5e-9} = \mathbf{3.9e-5\,\mathrm{M}} \]</p>
+
+<strong>(b) \(K_{sp}(\ce{CaF2}) = 4.0e-11\). Find the molar
+solubility.</strong>
+
+<p>1:2 salt, so \(K_{sp} = 4s^{3}\):
+\[ s^{3} = \frac{4.0e-11}{4} = 1.0e-11
+   \qquad
+   s = \sqrt[3]{1.0e-11} = \mathbf{2.2e-4\,\mathrm{M}} \]</p>
+
+<strong>The no-calculator cube root.</strong> \(1.0e-11 =
+10e-12\), and \(\sqrt[3]{10e-12} = \sqrt[3]{10} \times
+10^{-4} \approx 2.2 \times 10^{-4}\). Rewriting so the exponent is a
+multiple of 3 is the whole trick, and MCQ items are built to allow it.
+
+<strong>Convert to grams if asked.</strong> For \(\ce{BaSO4}\)
+(\(M = 233.4\,\mathrm{g/mol}\)):
+\[ 3.9e-5 \times 233.4 \approx 9.0e-3\,\mathrm{g/L} \]
+— about nine milligrams dissolving in a litre, which is why barium
+sulfate can be swallowed for X-ray imaging even though barium ion is
+toxic: the \(K_{sp}\) keeps almost all of it solid.
+
+<strong>And note which direction is which.</strong> Ladder 2 went measurement
+\(\to\) constant. This ladder goes constant \(\to\) prediction. The exam
+asks both, in both stoichiometries — four variants of one skill.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>A 1:1 salt has \(K_{sp} = 4.0e-12\). Find its molar
+        solubility. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:9" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="2e-06" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A 1:2 salt \(\ce{MX2}\) has \(K_{sp} = 3.2e-11\). Find its
+        molar solubility. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:10" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="0.0002" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>For the salt in (a), find \([\ce{M+}]\) in the saturated
+        solution. <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:11" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="2e-06" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Which algebra shape — \(s^{2}\) or \(4s^{3}\) — goes with which
+        formula type, and what decides it? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:12" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>1:1 gives \(s^{2}\); 1:2 gives
+\(4s^{3}\) — the formula's stoichiometry</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 2.0e-6&thinsp;M  &emsp;  (b) 2.0e-4&thinsp;M  &emsp; 
+(c) 2.0e-6&thinsp;M  &emsp;  (d) 1:1 gives \(s^{2}\); 1:2 gives
+\(4s^{3}\) — the formula's stoichiometry</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(s = \sqrt{4.0e-12} =
+\mathbf{2.0e-6\,\mathrm{M}}\). (b) \(s^{3} = 3.2e-11/4 =
+8.0e-12\), so \(s = \sqrt[3]{8.0e-12} =
+\mathbf{2.0e-4\,\mathrm{M}}\) — note \(8.0e-12\) was chosen to
+have an exact cube root. (c) A 1:1 salt gives one cation per formula
+unit, so \([\ce{M+}] = s = \mathbf{2.0e-6\,\mathrm{M}}\). (d) The
+<strong>formula's stoichiometry</strong> decides: a 1:1 salt (\(\ce{AgCl}\),
+\(\ce{BaSO4}\)) gives \(K_{sp} = s^{2}\); a 1:2 or 2:1 salt (\(\ce{CaF2}\),
+\(\ce{Ag2CrO4}\)) gives \(K_{sp} = 4s^{3}\). Write the ion concentrations in
+terms of \(s\) first and the shape falls out.</div></div>
+
+</div>
+
+<h2> Ladder 4 • Comparing solubilities —
+the trap in the tables</h2>
+<span class="badge">ZUM §16.1</span>
+
+<p>“Which salt is more soluble?” sounds like “which \(K_{sp}\) is
+bigger?” — and <em>that is only true when the formulas have the
+same shape.</em></p>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-3.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: when you may compare, and when you must
+calculate</div>
+
+<strong>Rule 1 — same formula type: compare \(K_{sp}\) directly.</strong>
+\(\ce{AgCl}\) (\(1.6e-10\)), \(\ce{AgBr}\) (\(5.0e-13\)), \(\ce{AgI}\)
+(\(1.5e-16\)) are all 1:1, so the ranking of \(K_{sp}\) <em>is</em> the
+ranking of solubility: \(\ce{AgCl} > \ce{AgBr} > \ce{AgI}\). No
+calculation needed — and this is CED 7.11.A.2's “predict the
+relative solubility” skill.
+
+<strong>Rule 2 — different formula types: you must compute \(s\) for
+each.</strong> Compare \(\ce{AgCl}\) with \(\ce{Ag2CrO4}\):
+\[ s(\ce{AgCl}) = \sqrt{1.6e-10} = 1.3e-5 \]
+\[ s(\ce{Ag2CrO4}) = \sqrt[3]{\frac{9.0e-12}{4}}
+   = \sqrt[3]{2.25e-12} = 1.3e-4 \]
+
+<p>The chromate is <strong>ten times more soluble</strong> despite a \(K_{sp}\)
+eighteen times smaller. A bare comparison of the constants gives the
+<em>wrong</em> answer here, which is precisely why exam writers love this
+pairing.</p>
+
+<strong>Why the inversion happens.</strong> For a 1:1 salt \(s\) scales as
+\(K_{sp}^{1/2}\); for a 2:1 salt it scales as \(K_{sp}^{1/3}\). A cube
+root climbs much faster than a square root at these tiny values, so a
+2:1 salt squeezes more dissolution out of a smaller constant. You do
+not need that sentence on the exam — you need the habit it protects:
+<strong>different shapes, do the arithmetic.</strong>
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+<ol>
+
+<li>Rank \(\ce{AgCl}\) (\(K_{sp} = 1.6e-10\)), \(\ce{AgBr}\)
+        (\(5.0e-13\)), \(\ce{AgI}\) (\(1.5e-16\)) by solubility.
+        Justify the shortcut. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:13" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{AgCl}\) \(>\) \(\ce{AgBr}\) \(>\) \(\ce{AgI}\) — same type</span></div>
+
+<li>May you rank \(\ce{BaSO4}\) (\(1.5e-9\)) against \(\ce{CaF2}\)
+        (\(4.0e-11\)) by comparing the constants? Why or why not?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:14" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — different types</span></div>
+
+<li>Compute both molar solubilities from question 2 and give the
+        ranking. <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:15" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{CaF2}\) (\(2.2e-4\)) \(>\)
+\(\ce{BaSO4}\) (\(3.9e-5\))</span></div>
+
+<li>A student concludes \(\ce{Ag2CrO4}\) is less soluble than \(\ce{AgCl}\)
+        “because its \(K_{sp}\) is smaller”. What went wrong?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:16" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>compared constants across
+formula types</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{AgCl}\) \(>\) \(\ce{AgBr}\) \(>\) \(\ce{AgI}\) — same type  &emsp; 
+(b) no — different types  &emsp;  (c) \(\ce{CaF2}\) (\(2.2e-4\)) \(>\)
+\(\ce{BaSO4}\) (\(3.9e-5\))  &emsp;  (d) compared constants across
+formula types</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\ce{AgCl} > \ce{AgBr} > \ce{AgI}\). All
+three are <strong>1:1 salts</strong>, so \(s = \sqrt{K_{sp}}\) for each and the
+\(K_{sp}\) order is the solubility order. (b) <strong>No.</strong> \(\ce{BaSO4}\) is
+1:1 but \(\ce{CaF2}\) is 1:2 — different algebra shapes, so the constants
+are not directly comparable. (c) \(s(\ce{BaSO4}) = \sqrt{1.5e-9} =
+3.9e-5\); \(s(\ce{CaF2}) = \sqrt[3]{4.0e-11/4} =
+\sqrt[3]{1.0e-11} = 2.2e-4\). <strong>\(\ce{CaF2}\) is more
+soluble</strong> — despite the smaller \(K_{sp}\), the same inversion as the
+worked example. (d) They <strong>compared \(K_{sp}\) values across
+different formula types</strong>. \(\ce{Ag2CrO4}\) is 2:1 and \(\ce{AgCl}\) is 1:1;
+computing \(s\) shows the chromate is ten times <em>more</em>
+soluble.</div></div>
+
+</div>
+
+<h2> Ladder 5 • The common-ion effect</h2>
+<span class="badge">ZUM §16.1</span>
+
+<p>Dissolve \(\ce{AgCl}\) not in pure water but in salt water — water that
+already contains \(\ce{Cl-}\). Le Ch\^atelier says the equilibrium is
+pushed back toward the solid, and the arithmetic says by how much.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-4.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: solubility with a common ion</div>
+
+<strong>Find the molar solubility of \(\ce{AgCl}\)
+(\(K_{sp} = 1.6e-10\)) in 0.10&thinsp;M \(\ce{NaCl}\).</strong>
+
+<strong>Set up the equilibrium with the chloride head start.</strong> Let \(s\)
+dissolve. Then \([\ce{Ag+}] = s\), but chloride starts at 0.10:
+\[ K_{sp} = [\ce{Ag+}][\ce{Cl-}] = s\,(0.10 + s) \]
+
+<strong>Approximate, Chapter 13 style.</strong> \(s\) will be tiny against 0.10
+(the \(K_{sp}\) is \(10^{-10}\)), so \(0.10 + s \approx 0.10\):
+\[ 1.6e-10 = s \times 0.10
+   \qquad\Longrightarrow\qquad
+   s = \mathbf{1.6e-9\,\mathrm{M}} \]
+Check: \(1.6e-9/0.10 \times 100\) is far below 5% — the
+approximation is comfortably valid.
+
+<strong>Compare with pure water.</strong> There \(s = 1.3e-5\); here
+\(s = 1.6e-9\) — the common ion suppressed the solubility by a
+factor of about <strong>8000</strong>. Qualitatively that is Le Ch\^atelier
+(added product pushes the equilibrium left); quantitatively it falls
+straight out of the \(K_{sp}\) expression, because \([\ce{Cl-}]\) is pinned
+at 0.10 and \([\ce{Ag+}]\) must shrink until the product is back to
+\(K_{sp}\).
+
+<strong>The setup difference is the whole skill.</strong> In pure water both
+ions are written in terms of \(s\). With a common ion, one concentration
+has a <em>head start</em> that dwarfs \(s\). Notice which ion the added
+salt supplies, give it the head start, and the rest is Chapter 13.
+
+<strong>Both directions of the CED skill.</strong> 7.12 also asks it backwards:
+given the measured solubility in a solution of known common-ion
+concentration, recover \(K_{sp} = s \times c\). Same equation, solved for
+the other symbol.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+<ol>
+
+<li>In which does \(\ce{BaSO4}\) dissolve more: pure water or
+        0.10&thinsp;M \(\ce{Na2SO4}\)? Explain with
+        Le Ch\^atelier. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:17" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>pure water — added sulfate pushes left</span></div>
+
+<li>Find the molar solubility of \(\ce{BaSO4}\)
+        (\(K_{sp} = 1.5e-9\)) in 0.10&thinsp;M \(\ce{Na2SO4}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:18" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="1.5e-08" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find the molar solubility of \(\ce{AgBr}\)
+        (\(K_{sp} = 5.0e-13\)) in 0.010&thinsp;M \(\ce{NaBr}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:19" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="5e-11" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Does the common ion change \(K_{sp}\)? Explain.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:20" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no —
+only temperature changes \(K_{sp}\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) pure water — added sulfate pushes left  &emsp;  (b)
+1.5e-8&thinsp;M  &emsp;  (c) 5.0e-11&thinsp;M  &emsp;  (d) no —
+only temperature changes \(K_{sp}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Pure water.</strong> In \(\ce{Na2SO4}\)
+solution the added \(\ce{SO4^2-}\) is a product of the dissolution
+equilibrium, so the system shifts <strong>left</strong> and less dissolves.
+(b) \(s \times 0.10 = 1.5e-9\), so \(s =
+\mathbf{1.5e-8\,\mathrm{M}}\) (against \(3.9e-5\) in pure water).
+(c) \(s \times 0.010 = 5.0e-13\), so \(s =
+\mathbf{5.0e-11\,\mathrm{M}}\). (d) <strong>No.</strong> \(K_{sp}\) is an
+equilibrium constant and changes only with <strong>temperature</strong>. The
+common ion moves the <em>position</em> of the equilibrium — how much
+dissolves — while the product \([\ce{Ag+}][\ce{Cl-}]\) at saturation
+stays exactly \(K_{sp}\).</div></div>
+
+</div>
+
+<h2> Ladder 6 • pH and solubility —
+qualitative by decree</h2>
+<span class="badge">ZUM §16.1</span>
+
+<p>Some salts dissolve better in acid. Which ones, and why, is assessed;
+<em>how much better</em> is explicitly not.</p>
+
+<div class="box note"><div class="box-title">AP scope: this ladder is deliberately non-numerical</div>
+
+<p>CED topic 8.11's exclusion: <em>“Computations of solubility as a
+function of pH will not be assessed on the AP Exam.”</em> What is
+assessed is the <strong>qualitative</strong> call — identifying <em>whether</em>
+a salt's solubility is pH-sensitive and <em>which way</em> it moves,
+argued through Le Ch\^atelier. That is exactly what this ladder
+practises, and no more.</p>
+
+</div>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-5.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: why acid dissolves limestone but not
+silver chloride</div>
+
+<strong>\(\ce{CaCO3}\) in acid.</strong> The dissolution equilibrium is
+\(\ce{CaCO3(s) <=> Ca^2+ + CO3^2-}\). Carbonate is the conjugate base of
+the weak acid \(\ce{HCO3-}\), so added \(\ce{H+}\) reacts with it:
+\(\ce{CO3^2- + H+ -> HCO3-}\). That <strong>removes a product</strong> of the
+dissolution equilibrium, and by Le Ch\^atelier the system shifts
+right — more limestone dissolves. This is why acid rain eats marble
+statues and why geologists drip \(\ce{HCl}\) on rocks to identify
+carbonates by the fizz.
+
+<strong>\(\ce{AgCl}\) in acid.</strong> Chloride is the conjugate base of the
+<em>strong</em> acid \(\ce{HCl}\) — which is to say, essentially no base at
+all. Added \(\ce{H+}\) does not react with it, nothing is removed from the
+equilibrium, and the solubility does not change. \(\ce{AgCl}\) is as
+insoluble in acid as in water.
+
+<strong>The one-sentence exam answer.</strong> “The anion is the conjugate
+base of a weak acid, so \(\ce{H+}\) reacts with it and removes it from
+solution; by Le Ch\^atelier the dissolution equilibrium shifts toward
+the ions, increasing solubility.” Name the anion, name the removal,
+name the shift — three clauses, full credit.
+
+<strong>\(\ce{Mg(OH)2}\) is the cleanest case of all:</strong> the anion <em>is</em>
+hydroxide, and \(\ce{H+ + OH- -> H2O}\) is the most familiar removal
+reaction in the course. Milk of magnesia dissolving in stomach acid is
+this ladder in your medicine cabinet.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+<ol>
+
+<li>Is \(\ce{CaF2}\) more soluble in acid than in water? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:21" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes — \(\ce{F-}\) is a weak-acid conjugate</span></div>
+
+<li>Is \(\ce{AgBr}\) more soluble in acid than in water? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:22" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no
+— \(\ce{Br-}\) is a strong-acid conjugate</span></div>
+
+<li>Write the reaction by which \(\ce{H+}\) increases the solubility of
+        \(\ce{Mg(OH)2}\). <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:23" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{H+ + OH- -> H2O}\)</span></div>
+
+<li>What single question about the anion decides pH sensitivity?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:24" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>is it the conjugate base of a weak
+acid?</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) yes — \(\ce{F-}\) is a weak-acid conjugate  &emsp;  (b) no
+— \(\ce{Br-}\) is a strong-acid conjugate  &emsp;  (c)
+\(\ce{H+ + OH- -> H2O}\)  &emsp;  (d) is it the conjugate base of a weak
+acid?</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Yes.</strong> \(\ce{F-}\) is the conjugate
+base of the weak acid \(\ce{HF}\), so \(\ce{H+}\) converts it to \(\ce{HF}\),
+removing a product of the dissolution equilibrium; the system shifts
+right and more dissolves. (b) <strong>No.</strong> \(\ce{Br-}\) is the conjugate
+base of the strong acid \(\ce{HBr}\) — far too weak a base to react with
+\(\ce{H+}\) — so nothing is removed and the solubility is unchanged.
+(c) \(\ce{Mg(OH)2(s) <=> Mg^2+ + 2OH-}\) followed by
+\(\mathbf{\ce{H+ + OH- -> H2O}}\) — the acid consumes the hydroxide and
+the equilibrium shifts right. (d) <strong>Is the anion the conjugate
+base of a weak acid?</strong> If yes, \(\ce{H+}\) can remove it and solubility
+rises at low pH; if it comes from a strong acid, pH has no
+effect.</div></div>
+
+</div>
+
+<h2> Ladder 7 • \(Q\) versus \(K_{sp}\) — will
+a precipitate form?</h2>
+<span class="badge">ZUM §16.2</span>
+
+<p>Chapter 13's reaction quotient, pointed at dissolution. Compute the ion
+product from the concentrations you actually have and compare it with
+\(K_{sp}\).</p>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-6.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: three verdicts on one salt</div>
+
+<strong>\(K_{sp}(\ce{AgCl}) = 1.6e-10\). For each mixture, decide
+what happens.</strong>
+
+<strong>(a) \([\ce{Ag+}] = 1.0e-6\), \([\ce{Cl-}] =
+1.0e-6\).</strong>
+\[ Q = (1.0e-6)(1.0e-6) = 1.0e-12 \]
+\(Q < K_{sp}\): <strong>no precipitate</strong>. The solution is unsaturated —
+if solid \(\ce{AgCl}\) were present it would keep dissolving.
+
+<strong>(b) \([\ce{Ag+}] = 4.0e-5\), \([\ce{Cl-}] =
+4.0e-5\).</strong>
+\[ Q = 1.6e-9 \]
+\(Q > K_{sp}\) by a factor of ten: <strong>a precipitate forms</strong>, and it
+keeps forming — consuming ions — until the product of what remains
+in solution has fallen back to \(1.6e-10\).
+
+<strong>(c) \([\ce{Ag+}] = 1.6e-5\), \([\ce{Cl-}] =
+1.0e-5\).</strong>
+\[ Q = 1.6e-10 = K_{sp} \]
+Exactly saturated: the solution sits at equilibrium, holding as much as
+it ever will. Note the two concentrations are <em>not equal</em> — only
+their product matters.
+
+<strong>Two habits from Chapter 13 carry over unchanged.</strong> First, \(Q\)
+uses the same expression as \(K\) — coefficients as exponents, solids
+omitted. Second, the system always moves so as to push \(Q\) toward
+\(K_{sp}\): too big, precipitate (removes ions, lowers \(Q\)); too small,
+dissolve (adds ions, raises \(Q\)). You never memorise which way —
+you read it off the fraction.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+\(K_{sp}(\ce{BaSO4}) = 1.5e-9\).
+<ol>
+
+<li>\([\ce{Ba^2+}] = 1.0e-5\) and \([\ce{SO4^2-}] =
+        1.0e-5\). Precipitate? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:25" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(Q = 1.0e-10\), no</span></div>
+
+<li>\([\ce{Ba^2+}] = 1.0e-4\) and \([\ce{SO4^2-}] =
+        1.0e-4\). Precipitate? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:26" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(Q = 1.0e-8\),
+yes</span></div>
+
+<li>For \(\ce{PbI2}\) (\(K_{sp} = 1.4e-8\)):
+        \([\ce{Pb^2+}] = 1.0e-5\), \([\ce{I-}] = 1.0e-3\).
+        Precipitate? (Mind the exponent.) <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:27" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(Q = 1.0e-11\), no</span></div>
+
+<li>What physically happens, and to which quantity, when
+        \(Q > K_{sp}\)? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:28" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>ions leave solution as
+solid until \(Q\) falls to \(K_{sp}\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(Q = 1.0e-10\), no  &emsp;  (b) \(Q = 1.0e-8\),
+yes  &emsp;  (c) \(Q = 1.0e-11\), no  &emsp;  (d) ions leave solution as
+solid until \(Q\) falls to \(K_{sp}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(Q = (1.0e-5)^{2} =
+1.0e-10 < 1.5e-9\): <strong>no precipitate</strong>. (b)
+\(Q = (1.0e-4)^{2} = 1.0e-8 > 1.5e-9\):
+<strong>precipitate forms</strong>. (c) \(Q = [\ce{Pb^2+}][\ce{I-}]^{2} =
+(1.0e-5)(1.0e-3)^{2} = 1.0e-11 < 1.4e-8\):
+<strong>no precipitate</strong> — squaring the iodide is the step the
+question is testing. (d) Ions pair up and <strong>leave the solution as
+solid</strong> — precipitation — which lowers the ion concentrations and
+therefore lowers \(Q\), continuing until \(Q = K_{sp}\) and the system is
+at equilibrium.</div></div>
+
+</div>
+
+<h2> Ladder 8 • The mixing problem</h2>
+<span class="badge">ZUM §16.2</span>
+
+<p>The exam's favourite disguise for Ladder 7: two solutions are poured
+together. Mixing <strong>dilutes both</strong> before any chemistry happens,
+and forgetting the dilution is the built-in trap.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-7.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: mix, dilute, decide</div>
+
+<strong>100.&thinsp;mL of 4.0e-4&thinsp;M \(\ce{AgNO3}\) is
+mixed with 100.&thinsp;mL of 4.0e-4&thinsp;M \(\ce{NaCl}\).
+Does \(\ce{AgCl}\) precipitate? (\(K_{sp} = 1.6e-10\))</strong>
+
+<strong>Step 1 — dilution.</strong> The total volume is
+200.&thinsp;mL, so each ion's concentration halves:
+\[ [\ce{Ag+}] = [\ce{Cl-}]
+   = 4.0e-4 \times \frac{100.}{200.}
+   = 2.0e-4\;\mathrm{M} \]
+
+<strong>Step 2 — compute \(Q\).</strong>
+\[ Q = (2.0e-4)(2.0e-4) = 4.0e-8 \]
+
+<strong>Step 3 — compare.</strong>
+\[ 4.0e-8 > 1.6e-10
+   \qquad\Longrightarrow\qquad
+   \textbf{a precipitate forms} \]
+\(Q\) exceeds \(K_{sp}\) by a factor of 250, so most of the silver ends up
+as solid \(\ce{AgCl}\).
+
+<strong>The trap, run deliberately.</strong> Skip the dilution and you compute
+\(Q = (4.0e-4)^{2} = 1.6e-7\) — still a “yes” here, but
+four times too large, and on a question built closer to the boundary
+the undiluted \(Q\) gives the <em>wrong verdict</em>. The dilution step is
+where the marks live; distractors are manufactured from exactly this
+omission.
+
+<strong>Sig-fig sanity.</strong> Everything here is two significant figures,
+and the comparison spans two orders of magnitude — so no rounding
+choice can flip the answer. Exam items are built with that same
+robustness, which is why a clean setup matters more than calculator
+precision.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 8 — four questions</div>
+
+<ol>
+
+<li>Equal volumes of 2.0e-3&thinsp;M \(\ce{Pb(NO3)2}\) and
+        2.0e-3&thinsp;M \(\ce{KI}\) are mixed. Give the diluted
+        \([\ce{Pb^2+}]\) and \([\ce{I-}]\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:29" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.001" data-sig="2" data-unit="each"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Compute \(Q\) for \(\ce{PbI2}\) from those diluted values.
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:30" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(Q = 1.0e-9\)</span></div>
+
+<li>\(K_{sp}(\ce{PbI2}) = 1.4e-8\). Does a precipitate form?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:31" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — \(Q < K_{sp}\)</span></div>
+
+<li>Why must the dilution come <em>before</em> the \(Q\) calculation?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:32" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>mixing changes the concentrations
+\(Q\) must be computed from</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.0e-3 each  &emsp;  (b) \(Q = 1.0e-9\)  &emsp; 
+(c) no — \(Q < K_{sp}\)  &emsp;  (d) mixing changes the concentrations
+\(Q\) must be computed from</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) Equal volumes halve both:
+\([\ce{Pb^2+}] = [\ce{I-}] = \mathbf{1.0e-3}\;\mathrm{M}\).
+(b) \(Q = [\ce{Pb^2+}][\ce{I-}]^{2} = (1.0e-3)(1.0e-3)^{2}
+= \mathbf{1.0e-9}\). (c) \(1.0e-9 < 1.4e-8\):
+<strong>no precipitate</strong> — despite both solutions sounding
+“concentrated enough”, the cube of a millimolar number is small.
+Without the dilution step the verdict would flip: \((2.0e-3)^{3}
+= 8.0e-9\)… still under, but \(Q\) computed wrongly by a
+factor of 8. (d) Because \(Q\) is defined by the concentrations
+<strong>in the actual mixture</strong>, and pouring the solutions together
+changed every concentration. Computing \(Q\) from the bottle
+concentrations describes a solution that no longer
+exists.</div></div>
+
+</div>
+
+<h2> Ladder 9 • Reading and representing
+saturation</h2>
+<span class="badge">ZUM §16.1–16.2</span>
+
+<p>CED 7.8's “representations” skill, applied to solubility: particulate
+diagrams, and the vocabulary of saturation, said precisely.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch16-selfstudy-8.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: the sentences that earn credit</div>
+
+<strong>FRQ prompts in this unit ask you to <em>explain</em>, and partial
+sentences lose partial credit. Four statements, said exactly.</strong>
+
+<strong>What “saturated” means.</strong> “The solution is in dynamic
+equilibrium with the solid: dissolution and precipitation continue at
+equal rates, so the ion concentrations remain constant and
+\([\ce{Ag+}][\ce{Cl-}] = K_{sp}\).” The word <em>dynamic</em> — and the
+equal-rates clause backing it — is the same mark as Chapter 13,
+Ladder 1.
+
+<strong>Why adding more solid changes nothing.</strong> “The solid does not
+appear in the equilibrium expression; as long as some solid is present,
+adding more changes neither the ion concentrations nor the position of
+equilibrium.” (Chapter 13, Ladder 4 — now in its natural habitat.)
+
+<strong>What a particulate diagram must show for <em>saturated</em>.</strong>
+Free ions in the ratio of the formula — two \(\ce{Ag+}\) drawn for every
+\(\ce{CrO4^2-}\) if the salt is \(\ce{Ag2CrO4}\) — with excess solid drawn as
+a lattice at the bottom. Drawing intact “\(\ce{AgCl}\) molecules”
+floating in solution is the standard wrong answer: a dissolved ionic
+compound is <em>ions</em>, full stop.
+
+<strong>What happens on evaporation.</strong> “Removing water raises the ion
+concentrations, so \(Q\) rises above \(K_{sp}\) and solid precipitates
+until \(Q\) returns to \(K_{sp}\).” Evaporation questions are Ladder 7
+wearing a lab coat: the comparison, not the water, is the chemistry.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 9 — four questions</div>
+
+<ol>
+
+<li>A saturated \(\ce{AgCl}\) solution sits over excess solid. Are
+        dissolution and precipitation still occurring? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:33" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes — at equal rates</span></div>
+
+<li>In a particulate diagram of saturated \(\ce{CaF2}\) solution, what
+        ratio of free ions must appear? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:34" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>two \(\ce{F-}\) per
+\(\ce{Ca^2+}\)</span></div>
+
+<li>Half the water in a saturated \(\ce{BaSO4}\) solution (no excess
+        solid) evaporates. What happens, in \(Q\)-versus-\(K_{sp}\)
+        language? <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:35" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>concentrations double, \(Q > K_{sp}\), precipitate
+forms</span></div>
+
+<li>Why is drawing dissolved “\(\ce{NaCl}\) units” in a particulate
+        diagram wrong? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:36" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>dissolved ionic compounds exist as separate ions</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) yes — at equal rates  &emsp;  (b) two \(\ce{F-}\) per
+\(\ce{Ca^2+}\)  &emsp;  (c) concentrations double, \(Q > K_{sp}\), precipitate
+forms  &emsp;  (d) dissolved ionic compounds exist as separate ions</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Yes.</strong> Equilibrium is dynamic:
+ions leave the crystal and redeposit on it continuously, at
+<strong>equal rates</strong>, which is why nothing appears to change. (b)
+<strong>Two fluorides for every calcium</strong> — the diagram must show the
+formula's stoichiometry among the free ions. (c) Halving the water
+<strong>doubles both concentrations</strong>, so \(Q = (2[\ce{Ba^2+}])
+(2[\ce{SO4^2-}]) = 4K_{sp} > K_{sp}\) — solid precipitates until the
+remaining ion product falls back to \(K_{sp}\). (d) Because a dissolved
+ionic compound exists as <strong>separate, independent hydrated ions</strong>,
+not as neutral pairs. Particulate diagrams are graded on exactly this
+point.</div></div>
+
+</div>
+
+<h2> Mixed set • ten questions, no labels</h2>
+
+<div class="box note"><div class="box-title">Why this section exists</div>
+
+<p>Every question so far told you which ladder it belonged to. These ten
+do not — deciding <em>which</em> skill a solubility question wants is
+most of the difficulty on the real exam.</p>
+
+</div>
+
+<div class="box yt"><div class="box-title">MIXED SET — first five</div>
+
+<ol>
+
+<li>Write the \(K_{sp}\) expression for \(\ce{Fe(OH)3}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:37" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{Fe^3+}][\ce{OH-}]^{3}\)</span></div>
+
+<li>A 1:1 salt has molar solubility 2.0e-4&thinsp;M. Find
+        \(K_{sp}\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:38" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="4e-08" data-sig="2" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\(K_{sp}(\ce{MX2}) = 4.0e-9\). Find the molar solubility.
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:39" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.001" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Salt A (1:1) has \(K_{sp} = 1.0e-10\); salt B (1:2) has
+        \(K_{sp} = 1.0e-11\). May you conclude A is more soluble?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:40" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — different formula
+types</span></div>
+
+<li>Is \(\ce{SrCO3}\) more soluble at pH 4 than at pH 7? One sentence.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:41" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 5" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes — carbonate is a weak-acid conjugate</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \([\ce{Fe^3+}][\ce{OH-}]^{3}\)  &emsp;  (b) 4.0e-8
+ &emsp;  (c) 1.0e-3&thinsp;M  &emsp;  (d) no — different formula
+types  &emsp;  (e) yes — carbonate is a weak-acid conjugate</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> \(K_{sp} =
+[\ce{Fe^3+}][\ce{OH-}]^{3}\) — coefficient 3 becomes the exponent.
+<strong>(b)</strong> \(K_{sp} = s^{2} = (2.0e-4)^{2} =
+\mathbf{4.0e-8}\). <strong>(c)</strong> \(4s^{3} = 4.0e-9\), so
+\(s^{3} = 1.0e-9\) and \(s = \mathbf{1.0e-3\,\mathrm{M}}\).
+<strong>(d)</strong> <strong>No</strong> — the formulas have different shapes
+(\(s^{2}\) versus \(4s^{3}\)), so the constants are not directly
+comparable; compute both solubilities. <strong>(e)</strong> <strong>Yes</strong>:
+\(\ce{CO3^2-}\) is the conjugate base of a weak acid, so at pH 4 the
+\(\ce{H+}\) removes it from solution and the dissolution equilibrium
+shifts right.</div></div>
+
+</div>
+
+<div class="box yt"><div class="box-title">MIXED SET — last five</div>
+
+<ol>
+
+<li>Find the molar solubility of \(\ce{AgCl}\)
+        (\(K_{sp} = 1.6e-10\)) in 0.20&thinsp;M \(\ce{KCl}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:42" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="8e-10" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\([\ce{Ca^2+}] = 2.0e-4\) and \([\ce{F-}] = 2.0e-4\)
+        in a mixture; \(K_{sp}(\ce{CaF2}) = 4.0e-11\). Precipitate?
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:43" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(Q = 8.0e-12\), no</span></div>
+
+<li>Equal volumes of 2.0e-4&thinsp;M \(\ce{AgNO3}\) and
+        2.0e-4&thinsp;M \(\ce{NaBr}\) are mixed;
+        \(K_{sp}(\ce{AgBr}) = 5.0e-13\). Precipitate?
+        <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:44" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(Q = 1.0e-8\), yes</span></div>
+
+<li>Adding solid \(\ce{NaCl}\) to a saturated \(\ce{AgCl}\) solution makes
+        more \(\ce{AgCl}\) precipitate. Explain in one sentence.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:45" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>common ion pushes the
+equilibrium left</span></div>
+
+<li>A saturated solution of \(\ce{Ag2CrO4}\) has \([\ce{CrO4^2-}] =
+        1.3e-4\). What is \([\ce{Ag+}]\), and what \(K_{sp}\) does
+        this give? <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch16-selfstudy:46" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 5" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>2.6e-4; \(K_{sp} \approx 8.8e-12\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 8.0e-10&thinsp;M  &emsp;  (b) \(Q = 8.0e-12\), no
+ &emsp;  (c) \(Q = 1.0e-8\), yes  &emsp;  (d) common ion pushes the
+equilibrium left  &emsp;  (e) 2.6e-4; \(K_{sp} \approx 8.8e-12\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> The chloride head start is 0.20,
+so \(s \times 0.20 = 1.6e-10\) and \(s =
+\mathbf{8.0e-10\,\mathrm{M}}\). <strong>(b)</strong> \(Q =
+(2.0e-4)(2.0e-4)^{2} = 8.0e-12 < 4.0e-11\):
+<strong>no precipitate</strong>. <strong>(c)</strong> Halve both: 1.0e-4 each;
+\(Q = 1.0e-8 > 5.0e-13\): <strong>precipitate forms</strong> — by
+four orders of magnitude. <strong>(d)</strong> The added \(\ce{Cl-}\) is a common
+ion, so the product \([\ce{Ag+}][\ce{Cl-}]\) exceeds \(K_{sp}\) and the
+equilibrium shifts left, precipitating \(\ce{AgCl}\) until the product
+returns to \(K_{sp}\). <strong>(e)</strong> The formula gives two silvers per
+chromate: \([\ce{Ag+}] = 2 \times 1.3e-4 =
+\mathbf{2.6e-4}\); then \(K_{sp} = (2.6e-4)^{2}
+(1.3e-4) = \mathbf{8.8e-12}\) — close to the tabulated
+\(9.0e-12\), the gap being rounding in
+\(s\).</div></div>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt. Every row is assessed — the off-CED parts of this
+chapter (selective precipitation, qualitative analysis, complex ions)
+were cut rather than included, and Ladder 6 is deliberately qualitative
+because the CED excludes the computation.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>writing \(K_{sp}\) expressions</td><td>1</td><td>no denominator</td></tr>
+<tr><td>\(\square\)</td><td>solubility \(\to\) \(K_{sp}\)</td><td>2</td><td>doubled AND squared</td></tr>
+<tr><td>\(\square\)</td><td>\(K_{sp}\) \(\to\) solubility</td><td>3</td><td>\(s^{2}\) or \(4s^{3}\)</td></tr>
+<tr><td>\(\square\)</td><td>comparing solubilities</td><td>4</td><td>same type, or compute</td></tr>
+<tr><td>\(\square\)</td><td>the common-ion effect</td><td>5</td><td>give one ion a head start</td></tr>
+<tr><td>\(\square\)</td><td>pH and solubility</td><td>6</td><td>weak-acid conjugate anions</td></tr>
+<tr><td>\(\square\)</td><td>\(Q\) versus \(K_{sp}\)</td><td>7</td><td>the verdict is a comparison</td></tr>
+<tr><td>\(\square\)</td><td>the mixing problem</td><td>8</td><td>dilute first, always</td></tr>
+<tr><td>\(\square\)</td><td>representing saturation</td><td>9</td><td>dynamic, ions, ratio</td></tr>
+<tr><td>\(\square\)</td><td><strong>mixed set</strong> (8 of 10)</td><td>—</td><td>whichever it exposed</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>9/9 and the mixed set: solubility equilibria are banked — and note
+how little was genuinely new. Ladders 1 and 9 were Chapter 13 restated;
+5 was the small-\(x\) approximation; 7 and 8 were \(Q\) versus \(K\). This
+chapter is a reunion, not a new subject.</p>
+
+<p>6–8: if the misses are Ladders 2–4, the issue is the \(s\)/\(2s\)/\(4s^{3}\)
+algebra — redo those three in sequence, writing the ion
+concentrations explicitly every time. If the misses are 7–8, go back
+to Chapter 13 Ladder 6, because \(Q\) reasoning is upstream of both.</p>
+
+<p>5 or fewer: re-read Chapter 13 Ladders 4 and 6 before touching this
+chapter again — every difficulty here is one of those two in
+disguise.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>
