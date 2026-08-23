@@ -2,17 +2,3 @@ ch03-selfstudy.tex
   ?? check line with 1 parts but 0 workspace slots -- left non-interactive
 ch03-selfstudy2.tex
   ?? check line with 3 parts but 1 workspace slots -- left non-interactive
-ch11-selfstudy.tex
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-1.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-2.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-3.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-4.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-5.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-6.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-7.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-8.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-9.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-10.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-11.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-12.png
-  figure rendered: chapter11-solutions\fig-ch11-selfstudy-13.png
