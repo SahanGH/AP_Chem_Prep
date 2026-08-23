@@ -1,6 +1,12 @@
 # Build outputs (regenerate with .\build.ps1 -All)
 build/
 
+# Static-site deploy bundle (regenerate from Lessons/)
+apchem-site.zip
+
+# Deploy credentials (host, user, key path) -- local only
+tools/deploy.config.ps1
+
 # LaTeX detritus
 *.aux
 *.log
