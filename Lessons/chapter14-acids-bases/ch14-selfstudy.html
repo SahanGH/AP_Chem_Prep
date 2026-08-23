@@ -1,0 +1,1496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 14 • Self-Study • Chapter 14, I do / You do</title>
+<link rel="stylesheet" href="../style.css?v=28190c55">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=28190c55"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 14 • Acids and Bases</p>
+  <h1>Self-Study • Chapter 14, I do / You do</h1>
+  <p class="subtitle">Zumdahl §14.1–14.11 • PDF pp. 697–740</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help. Work all four before checking
+the gray <em>check:</em> line; a tracker tick needs all four right first
+time. After Ladder 16 there is a <strong>mixed set</strong> of twelve further
+questions that do not tell you which ladder they came from.</p>
+
+<strong>This is the longest document in the series, on purpose.</strong> Unit 8
+is <strong>11–15%</strong> of the exam, second only to Unit 3, and this
+chapter is most of it. Sixteen ladders, 76 questions.
+
+<strong>What you must bring with you.</strong> Chapter 13. A weak acid problem
+<em>is</em> an equilibrium problem — same ICE table, same small-\(x\)
+approximation, same 5% check. If Ladders 9–10 of Chapter 13 are not
+automatic, stop and go back; nothing here will stick otherwise.
+
+<strong>The one habit that decides this chapter.</strong> Before any
+calculation, ask: <strong>is it strong or weak?</strong> Strong means it comes
+apart completely and the arithmetic is one line. Weak means an
+equilibrium and an ICE table. Answering that question first prevents
+most of the errors this chapter can produce.
+
+<strong>Not covered here.</strong> Buffers and titration curves (CED 8.4–8.5)
+are Chapter 15. Do not go looking for them.
+
+</div>
+
+<h2> Ladder 1 • Three definitions</h2>
+<span class="badge">ZUM §14.1, 14.11</span>
+
+<p>Three models, each broader than the last. Each is useful; none is wrong.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-1.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: classifying under each model</div>
+
+<strong>Which model do you need for each of these?</strong>
+
+<strong>\(\ce{HCl(aq) -> H+(aq) + Cl-(aq)}\).</strong> Arrhenius is enough:
+\(\ce{HCl}\) produces \(\ce{H+}\) in water. It is also Brønsted–Lowry (it
+donates a proton) and Lewis. All three agree.
+
+<strong>\(\ce{NH3(aq) + H2O(l) <=> NH4+(aq) + OH-(aq)}\).</strong> \(\ce{NH3}\)
+contains no \(\ce{OH-}\) at all, so Arrhenius cannot call it a base. But it
+<em>accepts</em> a proton from water, so Brønsted–Lowry can. This is
+exactly why the broader definition was needed.
+
+<strong>\(\ce{BF3 + NH3 -> F3B-NH3}\).</strong> No proton moves anywhere, so
+Brønsted–Lowry has nothing to say. \(\ce{NH3}\) donates its lone pair and
+\(\ce{BF3}\), which is electron-deficient at boron, accepts it. Only the
+Lewis model covers this.
+
+<strong>The relationship to keep straight.</strong> Every Brønsted acid is a
+Lewis acid, but not every Lewis acid is a Brønsted acid. The models
+nest; the later ones do not replace the earlier ones.
+
+<strong>For the exam.</strong> Brønsted–Lowry is the workhorse and is what
+almost every question means by “acid”. Recognise Lewis when a question
+shows a reaction with no proton transfer — typically a metal cation or
+an electron-deficient species such as \(\ce{BF3}\) or \(\ce{AlCl3}\).
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>Define a Brønsted–Lowry acid. <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:1" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>proton donor</span></div>
+
+<li>Define a Lewis base. <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:2" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>electron-pair donor</span></div>
+
+<li>Why can Arrhenius not classify \(\ce{NH3}\) as a base?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:3" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>it
+contains no \(\ce{OH-}\)</span></div>
+
+<li>Is every Lewis acid a Brønsted acid? Give an example to
+        support your answer. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:4" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — \(\ce{BF3}\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) proton donor  &emsp;  (b) electron-pair donor  &emsp;  (c) it
+contains no \(\ce{OH-}\)  &emsp;  (d) no — \(\ce{BF3}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) A <strong>proton (\(\ce{H+}\)) donor</strong>.
+(b) An <strong>electron-pair donor</strong>. (c) Because the Arrhenius
+definition requires a base to <strong>produce \(\ce{OH-}\)</strong>, and \(\ce{NH3}\)
+contains no hydroxide. It generates \(\ce{OH-}\) only indirectly, by taking
+a proton from water — which the Brønsted–Lowry definition
+describes and the Arrhenius one cannot. (d) <strong>No.</strong> \(\ce{BF3}\) is a
+Lewis acid because boron has an empty orbital and accepts an electron
+pair, but it has <strong>no hydrogen to donate</strong>, so it is not a
+Brønsted acid. The reverse does hold: every Brønsted acid is a Lewis
+acid.</div></div>
+
+</div>
+
+<h2> Ladder 2 • Conjugate acid–base pairs</h2>
+<span class="badge">ZUM §14.1</span>
+
+<p>Every Brønsted reaction moves one proton, and that creates
+<strong>two</strong> pairs. A conjugate pair differs by exactly one \(\ce{H+}\).</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-2.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>A conjugate pair differs by <em>one</em> proton — and by one
+unit of charge.</strong> \(\ce{H2SO4}\) and \(\ce{SO4^2-}\) are <strong>not</strong> a
+conjugate pair: they differ by two protons. The conjugate base of
+\(\ce{H2SO4}\) is \(\ce{HSO4-}\). Check the charge as well as the hydrogen
+count and you will not get this wrong.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: finding conjugates</div>
+
+<strong>Rule: to get a conjugate <em>base</em>, remove one \(\ce{H+}\)
+(charge goes down by one). To get a conjugate <em>acid</em>, add one
+\(\ce{H+}\) (charge goes up by one).</strong>
+
+<strong>Conjugate base of \(\ce{HNO3}\):</strong> remove \(\ce{H+}\) from \(\ce{HNO3}\)
+(charge 0) to get \(\ce{NO3-}\) (charge \(-1\)). ✓
+
+<strong>Conjugate acid of \(\ce{NH3}\):</strong> add \(\ce{H+}\) to \(\ce{NH3}\) (charge 0)
+to get \(\ce{NH4+}\) (charge \(+1\)). ✓
+
+<strong>Conjugate base of \(\ce{H2PO4^-}\):</strong> remove \(\ce{H+}\) from charge
+\(-1\) to get \(\ce{HPO4^2-}\), charge \(-2\). ✓
+
+<strong>Now the interesting one — \(\ce{HCO3-}\).</strong> Its conjugate base is
+\(\ce{CO3^2-}\) and its conjugate acid is \(\ce{H2CO3}\). A species that can do
+both is <strong>amphoteric</strong>, and water is the most important example:
+\(\ce{H2O}\) has conjugate base \(\ce{OH-}\) and conjugate acid \(\ce{H3O+}\).
+
+<strong>The pattern worth internalising.</strong> Strong acid, weak conjugate
+base. \(\ce{HCl}\) is a strong acid, so \(\ce{Cl-}\) is such a weak base that it
+does nothing in water. Weak acid, appreciable conjugate base: acetic
+acid is weak, so acetate is a genuine base — which is exactly why
+sodium acetate solutions are basic (Ladder 14).
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+<ol>
+
+<li>Give the conjugate base of \(\ce{HCN}\). <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:5" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{CN-}\)</span></div>
+
+<li>Give the conjugate acid of \(\ce{HPO4^2-}\). <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:6" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{H2PO4^-}\)</span></div>
+
+<li>In \(\ce{HCl + H2O -> Cl- + H3O+}\), name both conjugate pairs.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:7" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HCl}\)/
+\(\ce{Cl-}\) and \(\ce{H2O}\)/\(\ce{H3O+}\)</span></div>
+
+<li>Why are \(\ce{H2SO4}\) and \(\ce{SO4^2-}\) not a conjugate pair?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:8" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>they differ by two protons</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{CN-}\)  &emsp;  (b) \(\ce{H2PO4^-}\)  &emsp;  (c) \(\ce{HCl}\)/
+\(\ce{Cl-}\) and \(\ce{H2O}\)/\(\ce{H3O+}\)  &emsp;  (d) they differ by two protons</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>\(\ce{CN-}\)</strong>. (b)
+<strong>\(\ce{H2PO4^-}\)</strong> — add one \(\ce{H+}\), charge rises from \(-2\) to
+\(-1\). (c) <strong>\(\ce{HCl}\)/\(\ce{Cl-}\)</strong> and
+<strong>\(\ce{H2O}\)/\(\ce{H3O+}\)</strong>. (d) Because they differ by <strong>two</strong>
+protons, not one. The conjugate base of \(\ce{H2SO4}\) is \(\ce{HSO4-}\), and
+the conjugate base of <em>that</em> is \(\ce{SO4^2-}\).</div></div>
+
+</div>
+
+<h2> Ladder 3 • Strong versus weak</h2>
+<span class="badge">ZUM §14.2</span>
+
+<p>“Strong” has one meaning only: it ionises <strong>completely</strong>. It has
+nothing to do with concentration.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-3.png" alt="figure"></figure>
+
+</div>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-4.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Strong is not the same as concentrated.</strong> A
+0.001&thinsp;M \(\ce{HCl}\) solution is <em>dilute</em> but the acid is
+<em>strong</em>; a 10&thinsp;M acetic acid solution is
+<em>concentrated</em> but the acid is <em>weak</em>. Strong/weak describes
+the substance and how completely it ionises; dilute/concentrated
+describes how much of it you put in the water. The two words answer
+different questions.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: what “complete” actually buys you</div>
+
+<strong>Compare 0.10&thinsp;M \(\ce{HCl}\) with 0.10&thinsp;M
+\(\ce{CH3COOH}\).</strong>
+
+<strong>\(\ce{HCl}\) is strong.</strong> It ionises completely, so
+\[ \ce{HCl -> H+ + Cl-} \]
+is written with a <em>one-way</em> arrow, and \([\ce{H+}] =
+0.10\,\mathrm{M}\) exactly. There is no equilibrium and no ICE table:
+whatever you put in, you get out as ions.
+
+<strong>Acetic acid is weak.</strong> It reaches an equilibrium,
+\[ \ce{CH3COOH <=> H+ + CH3COO-} \]
+written with a <em>double</em> arrow, and only about 1% of it comes
+apart. \([\ce{H+}]\) is around 1.3e-3&thinsp;M — about
+seventy-five times smaller than for the \(\ce{HCl}\), at the same nominal
+concentration.
+
+<strong>So the arrow you draw is a claim.</strong> A single arrow asserts
+complete ionisation; a double arrow asserts an equilibrium. Drawing the
+wrong one is a chemistry error, not a notation slip, and examiners treat
+it as such.
+
+<strong>And the practical consequence.</strong> For a strong acid you can go
+straight to pH in one step (Ladder 6). For a weak acid you must build an
+ICE table and use \(K_{a}\) (Ladder 9). Deciding strong-or-weak is
+therefore always your first move, before any arithmetic at all.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>Is \(\ce{HF}\) a strong or a weak acid? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:9" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>weak</span></div>
+
+<li>Which is more acidic: 0.10&thinsp;M \(\ce{HCl}\) or
+        0.10&thinsp;M \(\ce{HF}\)? Why? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:10" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HCl}\) — it ionises completely</span></div>
+
+<li>Explain the difference between “strong” and
+        “concentrated”. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:11" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>extent of ionisation vs amount dissolved</span></div>
+
+<li>Which arrow, single or double, do you draw for
+        \(\ce{HNO3}\) in water? Why? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:12" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>single —
+\(\ce{HNO3}\) is strong</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) weak  &emsp;  (b) \(\ce{HCl}\) — it ionises completely  &emsp; 
+(c) extent of ionisation vs amount dissolved  &emsp;  (d) single —
+\(\ce{HNO3}\) is strong</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Weak</strong> — the only hydrohalic acid
+that is. (b) <strong>\(\ce{HCl}\)</strong>. It is strong and ionises completely, so
+\([\ce{H+}] = 0.10\,\mathrm{M}\); \(\ce{HF}\) is weak and only partly
+ionises, giving a much smaller \([\ce{H+}]\) at the same nominal
+concentration. (c) <strong>Strong</strong> describes <em>how completely the
+substance ionises</em> — a property of the acid itself.
+<strong>Concentrated</strong> describes <em>how much was dissolved</em> — a
+property of the solution. A dilute solution of a strong acid and a
+concentrated solution of a weak acid are both perfectly ordinary. (d)
+A <strong>single</strong> arrow, because \(\ce{HNO3}\) is one of the six strong
+acids and ionisation is complete — there is no equilibrium to
+represent.</div></div>
+
+</div>
+
+<h2> Ladder 4 • Water, \(K_{w}\), and
+autoionisation</h2>
+<span class="badge">ZUM §14.2–14.3</span>
+
+<p>Water ionises slightly on its own, and that single equilibrium underlies
+the entire pH scale.</p>
+
+\[ \ce{2H2O(l) <=> H3O+(aq) + OH-(aq)}
+   \qquad
+   K_{w} = [\ce{H+}][\ce{OH-}] = 1.0e-14
+   \text{ at 25\,\mathrm{{}^\circ C}} \]
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-5.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>“pH 7 is neutral” is only true at 25&thinsp;&deg;C.</strong> \(K_{w}\)
+grows with temperature, so at 50&thinsp;&deg;C neutral water has
+pH \(\approx 6.6\) — and it is still <em>neutral</em>, because
+\([\ce{H+}]\) still equals \([\ce{OH-}]\). Neutral means the two are equal,
+not that pH is 7. Any question that gives you a temperature other than
+25&thinsp;&deg;C is testing exactly this.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: moving around the wheel</div>
+
+<strong>A solution has \([\ce{H+}] = 2.0e-4\,\mathrm{M}\) at
+25&thinsp;&deg;C. Find \([\ce{OH-}]\), pH and pOH.</strong>
+
+<strong>\([\ce{OH-}]\) from \(K_{w}\):</strong>
+\[ [\ce{OH-}] = \frac{1.0e-14}{2.0e-4}
+   = 5.0e-11\,\mathrm{M} \]
+
+<strong>pH by definition:</strong>
+\[ \text{pH} = -\log(2.0e-4) = \mathbf{3.70} \]
+
+<strong>pOH two ways, and they must agree:</strong>
+\[ \text{pOH} = 14.00 - 3.70 = \mathbf{10.30}
+   \qquad\text{or}\qquad
+   -\log(5.0e-11) = 10.30 \quad\checkmark \]
+
+<strong>Is the answer sensible?</strong> pH 3.70 is below 7, so the solution is
+acidic — consistent with \([\ce{H+}]\) being far larger than
+\([\ce{OH-}]\). That one-line check catches an inverted \(K_{w}\) division,
+which is the usual slip here.
+
+<strong>Note about significant figures in logs.</strong> Only the digits
+<em>after</em> the decimal point in a pH are significant; the part before
+it just records the power of ten. \([\ce{H+}] = 2.0e-4\) has two
+significant figures, so the pH is written with <strong>two decimal
+places</strong>: 3.70. Writing “3.7” understates your precision and “3.6990”
+overstates it.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+All at 25&thinsp;&deg;C.
+<ol>
+
+<li>\([\ce{H+}] = 1.0e-5\,\mathrm{M}\). Find \([\ce{OH-}]\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:13" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="1e-09" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\([\ce{OH-}] = 1.0e-3\,\mathrm{M}\). Find \([\ce{H+}]\) and pH.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:14" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>1.0e-11&thinsp;M,
+pH 11.00</span></div>
+
+<li>Pure water at 25&thinsp;&deg;C: give \([\ce{H+}]\) and pH.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:15" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>1.0e-7&thinsp;M, pH 7.00</span></div>
+
+<li>At 50&thinsp;&deg;C neutral water has pH 6.6. Is it acidic?
+        Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:16" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — it is
+neutral</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.0e-9&thinsp;M  &emsp;  (b) 1.0e-11&thinsp;M,
+pH 11.00  &emsp;  (c) 1.0e-7&thinsp;M, pH 7.00  &emsp;  (d) no — it is
+neutral</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(1.0e-14/1.0e-5 =
+\mathbf{1.0e-9\,\mathrm{M}}\). (b) \([\ce{H+}] =
+1.0e-14/1.0e-3 = \mathbf{1.0e-11\,\mathrm{M}}\), so
+pH \(= \mathbf{11.00}\) — basic, as a large \([\ce{OH-}]\) requires. (c)
+\([\ce{H+}] = [\ce{OH-}] = \mathbf{1.0e-7\,\mathrm{M}}\) and pH
+\(= \mathbf{7.00}\). (d) <strong>No — it is neutral.</strong> Neutral means
+\([\ce{H+}] = [\ce{OH-}]\), and that is still true at
+50&thinsp;&deg;C. What has changed is \(K_{w}\), which grows with
+temperature, so the neutral point moves below 7. pH 7 is the neutral
+value only at 25&thinsp;&deg;C.</div></div>
+
+</div>
+
+<h2> Ladder 5 • The pH scale</h2>
+<span class="badge">ZUM §14.3</span>
+
+<p>pH is a logarithm, so every whole unit is a <strong>factor of ten</strong> in
+\([\ce{H+}]\).</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-6.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: what a difference of pH units means</div>
+
+<strong>How much more acidic is a pH 2 solution than a pH 5 one?</strong>
+
+<p>The difference is \(5 - 2 = 3\) pH units, and each unit is a factor of
+ten:
+\[ 10^{3} = \mathbf{1000 \text{ times}} \]</p>
+
+<strong>Verify it directly.</strong> pH 2 means \([\ce{H+}] =
+1e-2\,\mathrm{M}\); pH 5 means \([\ce{H+}] = 1e-5\,\mathrm{M}\). The
+ratio is \(10^{-2}/10^{-5} = 10^{3}\). Same answer, and this is the
+version to fall back on whenever the shortcut feels slippery.
+
+<strong>The direction that catches people.</strong> <em>Lower</em> pH means
+<em>more</em> acidic, because of the minus sign in \(\text{pH} =
+-\log[\ce{H+}]\). Higher \([\ce{H+}]\) gives lower pH. If your answer has a
+pH 5 solution more acidic than a pH 2 one, you dropped the sign.
+
+<strong>Going backwards, from pH to concentration.</strong>
+\[ [\ce{H+}] = 10^{-\text{pH}} \]
+So pH 3.70 gives \([\ce{H+}] = 10^{-3.70} = 2.0e-4\,\mathrm{M}\) —
+which is exactly where Ladder 4's worked example started. The two
+operations are inverses, and being fluent in both directions is
+assumed from here on.
+
+<strong>Why the scale runs about 0 to 14.</strong> It is not a hard boundary
+— concentrated strong acids genuinely have negative pH. The range
+simply reflects that \(K_{w} = 10^{-14}\), so ordinary aqueous solutions
+land inside it.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+<ol>
+
+<li>How many times more acidic is pH 3 than pH 6?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:17" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="1000.0" data-sig="1" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A solution has pH 4.00. Find \([\ce{H+}]\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:18" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="0.0001" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A solution has pOH 3.00. Find its pH and say whether it is
+        acidic or basic. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:19" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>pH 11.00,
+basic</span></div>
+
+<li>Which is more acidic, pH 2.5 or pH 4.5? By what factor?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:20" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>pH 2.5, by 100</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1000  &emsp;  (b) 1.0e-4&thinsp;M  &emsp;  (c) pH 11.00,
+basic  &emsp;  (d) pH 2.5, by 100</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(10^{3} = \mathbf{1000}\) times.
+(b) \([\ce{H+}] = 10^{-4.00} = \mathbf{1.0e-4\,\mathrm{M}}\).
+(c) pH \(= 14.00 - 3.00 = \mathbf{11.00}\), which is above 7, so the
+solution is <strong>basic</strong>. (d) <strong>pH 2.5</strong>, by a factor of
+\(10^{(4.5-2.5)} = 10^{2} = \mathbf{100}\). Lower pH always means more
+acidic.</div></div>
+
+</div>
+
+<h2> Ladder 6 • pH of a strong acid</h2>
+<span class="badge">ZUM §14.4</span>
+
+<p>The one-line calculation. Complete ionisation means \([\ce{H+}]\) equals
+the acid concentration, and you take a logarithm.</p>
+
+<div class="box we"><div class="box-title">I do: two strong acids</div>
+
+<strong>(a) Find the pH of 0.010&thinsp;M \(\ce{HCl}\).</strong>
+
+\(\ce{HCl}\) is strong, so ionisation is complete and one \(\ce{HCl}\) gives one
+\(\ce{H+}\):
+\[ [\ce{H+}] = 0.010\,\mathrm{M}
+   \qquad
+   \text{pH} = -\log(0.010) = \mathbf{2.00} \]
+
+<strong>(b) Find the pH of 0.0025&thinsp;M \(\ce{HNO3}\).</strong>
+\[ [\ce{H+}] = 0.0025\,\mathrm{M}
+   \qquad
+   \text{pH} = -\log(2.5e-3) = \mathbf{2.60} \]
+
+<strong>Check the sig figs.</strong> 2.5e-3 has two significant figures,
+so the pH carries two decimal places: 2.60, not 2.6 and not 2.602.
+
+<strong>The trap in this ladder is \(\ce{H2SO4}\).</strong> It is the one strong
+acid on the list that is diprotic, and only its <em>first</em> proton is
+strong — the second comes off a weak acid, \(\ce{HSO4-}\)
+(\(K_{a2} = 1.2e-2\)). So 0.010&thinsp;M \(\ce{H2SO4}\) gives at
+least 0.010&thinsp;M \(\ce{H+}\) from the first ionisation, and a bit
+more from the second. Unless a question tells you otherwise, treat only
+the first proton as complete and say so.
+
+<strong>And a boundary worth knowing.</strong> For extremely dilute strong acid
+— below about 1e-7&thinsp;M — water's own autoionisation
+contributes as much \(\ce{H+}\) as the acid does, and \(\text{pH} =
+-\log(c)\) breaks down. A 1e-10&thinsp;M \(\ce{HCl}\) solution is not
+pH 10; it is very slightly below 7. Adding acid can never make water
+basic.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+<ol>
+
+<li>Find the pH of 0.100&thinsp;M \(\ce{HCl}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:21" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="1.0" data-sig="4" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find the pH of 0.0010&thinsp;M \(\ce{HBr}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:22" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="3.0" data-sig="3" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find \([\ce{H+}]\) in a strong acid solution of pH 1.50.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:23" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.032" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why can you not simply write \(\text{pH} = -\log(c)\) for
+        1e-10&thinsp;M \(\ce{HCl}\)? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:24" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>water's own \(\ce{H+}\) dominates</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.000  &emsp;  (b) 3.00  &emsp;  (c) 0.032&thinsp;M  &emsp; 
+(d) water's own \(\ce{H+}\) dominates</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \([\ce{H+}] = 0.100\,\mathrm{M}\), so
+pH \(= \mathbf{1.000}\) (three sig figs in the concentration, three
+decimals in the pH). (b) \(-\log(1.0e-3) = \mathbf{3.00}\).
+(c) \([\ce{H+}] = 10^{-1.50} = \mathbf{0.032\,\mathrm{M}}\). (d) Because
+at that concentration the acid supplies far less \(\ce{H+}\) than
+<strong>water's own autoionisation</strong> does (\(1e-7\,\mathrm{M}\)). The
+formula would give pH 10 — a basic solution produced by adding acid,
+which is impossible. The true pH is just below 7.</div></div>
+
+</div>
+
+<h2> Ladder 7 • pH of a strong base</h2>
+<span class="badge">ZUM §14.6</span>
+
+<p>Same idea, one extra step — and one place where the formula unit
+matters.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-7.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: the factor of two</div>
+
+<strong>(a) Find the pH of 0.010&thinsp;M \(\ce{NaOH}\).</strong>
+\[ [\ce{OH-}] = 0.010\,\mathrm{M}
+   \;\Rightarrow\;
+   \text{pOH} = 2.00
+   \;\Rightarrow\;
+   \text{pH} = 14.00 - 2.00 = \mathbf{12.00} \]
+
+<strong>(b) Find the pH of 0.0050&thinsp;M \(\ce{Ca(OH)2}\).</strong>
+
+<p>Each formula unit releases <em>two</em> hydroxides:
+\[ [\ce{OH-}] = 2 \times 0.0050 = 0.010\,\mathrm{M} \]
+\[ \text{pOH} = 2.00
+   \;\Rightarrow\;
+   \text{pH} = \mathbf{12.00} \]</p>
+
+<strong>Notice that (a) and (b) give the same pH</strong> from different
+concentrations — 0.0050&thinsp;M \(\ce{Ca(OH)2}\) and
+0.010&thinsp;M \(\ce{NaOH}\) are equally basic, because what matters is
+\([\ce{OH-}]\), not the concentration written on the bottle. Forgetting
+the 2 would have given pOH 2.30 and pH 11.70, an error of 0.30 pH
+units.
+
+<strong>Where the factor does <em>not</em> apply.</strong> It applies to strong
+bases because they dissociate completely. It does <em>not</em> apply to
+weak polyprotic acids, whose successive ionisations are separate
+equilibria of wildly different strengths (Ladder 13). Complete
+dissociation is what lets you simply multiply.
+
+<strong>One caution about \(\ce{Ca(OH)2}\) in practice:</strong> it is only
+sparingly soluble, so you cannot actually make a concentrated solution
+of it. The calculation is fine for the concentrations exam questions
+use.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+<ol>
+
+<li>Find the pH of 0.100&thinsp;M \(\ce{KOH}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:25" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="13.0" data-sig="5" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find the pH of 0.0010&thinsp;M \(\ce{Ba(OH)2}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:26" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="11.3" data-sig="4" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find \([\ce{OH-}]\) in a solution of pH 13.00.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:27" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.1" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why does \(\ce{Ca(OH)2}\) need a factor of 2 but \(\ce{NaOH}\) does
+        not? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:28" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>two \(\ce{OH-}\) per formula unit</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 13.000  &emsp;  (b) 11.30  &emsp;  (c) 0.10&thinsp;M  &emsp; 
+(d) two \(\ce{OH-}\) per formula unit</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \([\ce{OH-}] = 0.100\,\mathrm{M}\),
+pOH \(= 1.000\), pH \(= \mathbf{13.000}\). (b) \([\ce{OH-}] = 2 \times
+0.0010 = 0.0020\,\mathrm{M}\); pOH \(= -\log(2.0e-3) = 2.70\); pH
+\(= 14.00 - 2.70 = \mathbf{11.30}\). (c) pOH \(= 14.00 - 13.00 = 1.00\), so
+\([\ce{OH-}] = 10^{-1.00} = \mathbf{0.10\,\mathrm{M}}\). (d) Because one
+formula unit of \(\ce{Ca(OH)2}\) releases <strong>two</strong> hydroxide ions on
+dissociating, while \(\ce{NaOH}\) releases one. The factor counts hydroxides
+per formula unit.</div></div>
+
+</div>
+
+<h2> Ladder 8 • \(K_{a}\) and what “weak”
+measures</h2>
+<span class="badge">ZUM §14.5</span>
+
+\(K_{a}\) is just an equilibrium constant, applied to one particular
+reaction: an acid giving up its proton to water.
+
+\[ \ce{HA <=> H+ + A-}
+   \qquad
+   K_{a} = \frac{[\ce{H+}][\ce{A-}]}{[\ce{HA}]} \]
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-8.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: reading \(K_{a}\) values</div>
+
+<strong>\(K_{a}\) answers “how far does this acid ionise?” — exactly
+the question \(K\) answered in Chapter 13, for one specific reaction.</strong>
+
+<strong>Acetic acid, \(K_{a} = 1.8e-5\).</strong> Far below 1, so the
+equilibrium lies well to the left and the acid is mostly intact in
+solution. Weak.
+
+<strong>\(\ce{HF}\), \(K_{a} = 7.2e-4\).</strong> Also below 1, so also weak —
+but about forty times larger than acetic acid's, so \(\ce{HF}\) is the
+stronger of the two. Compare \(K_{a}\) values directly; the bigger number
+is the stronger acid, every time.
+
+<strong>\(\ce{HCN}\), \(K_{a} = 6.2e-10\).</strong> Extremely weak. A
+0.1&thinsp;M solution is barely acidic at all.
+
+<strong>And strong acids?</strong> Their \(K_{a}\) values are enormous — for
+\(\ce{HCl}\), roughly \(10^{6}\) — which is why we do not tabulate them.
+When \(K_{a}\) is that large the equilibrium is so far right that treating
+ionisation as complete is not an approximation worth apologising for.
+
+<strong>The link to the conjugate base, which Ladder 12 makes exact.</strong>
+The stronger the acid, the weaker its conjugate base. \(\ce{HCN}\) is
+feeble, so \(\ce{CN-}\) is a genuinely strong base — strong enough that
+sodium cyanide solutions are distinctly alkaline. \(\ce{HCl}\) is powerful,
+so \(\ce{Cl-}\) is so weak a base that it does nothing at all in water.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 8 — four questions</div>
+
+Use the \(K_{a}\) values in the figure above.
+<ol>
+
+<li>Which is the stronger acid, \(\ce{HF}\) or \(\ce{HClO}\)?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:29" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HF}\)</span></div>
+
+<li>Write the \(K_{a}\) expression for \(\ce{HCN}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:30" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{H+}][\ce{CN-}]/[\ce{HCN}]\)</span></div>
+
+<li>Which has the stronger conjugate base, \(\ce{HF}\) or \(\ce{HCN}\)?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:31" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HCN}\)</span></div>
+
+<li>Why are \(K_{a}\) values not tabulated for \(\ce{HCl}\)?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:32" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>it is strong — \(K_{a}\) is enormous</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{HF}\)  &emsp;  (b) \([\ce{H+}][\ce{CN-}]/[\ce{HCN}]\)  &emsp; 
+(c) \(\ce{HCN}\)  &emsp;  (d) it is strong — \(K_{a}\) is enormous</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>\(\ce{HF}\)</strong>: \(7.2e-4\) against
+\(\ce{HClO}\)'s \(3.5e-8\), about twenty thousand times larger. (b)
+\(K_{a} = \dfrac{[\ce{H+}][\ce{CN-}]}{[\ce{HCN}]}\). (c)
+<strong>\(\ce{HCN}\)'s</strong> conjugate base, \(\ce{CN-}\). The weaker the acid, the
+stronger its conjugate base — and \(\ce{HCN}\) is by far the weaker of the
+two. (d) Because \(\ce{HCl}\) is a <strong>strong</strong> acid: its \(K_{a}\) is so
+large (around \(10^{6}\)) that ionisation is effectively complete, and
+there is no useful equilibrium to describe. A tabulated value would
+never be used.</div></div>
+
+</div>
+
+<h2> Ladder 9 • pH of a weak acid</h2>
+<span class="badge">ZUM §14.5</span>
+
+<p>The central calculation of Unit 8. It is Chapter 13's ICE table with
+\(K_{a}\) in place of \(K\).</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-9.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: acetic acid from scratch</div>
+
+<strong>Find the pH of 0.500&thinsp;M acetic acid,
+\(K_{a} = 1.8e-5\).</strong>
+
+<strong>Step 1 — equation and expression.</strong>
+\[ \ce{CH3COOH <=> H+ + CH3COO-}
+   \qquad
+   K_{a} = \frac{[\ce{H+}][\ce{CH3COO-}]}{[\ce{CH3COOH}]} \]
+
+<strong>Step 2 — ICE table.</strong>
+<div class="center">
+
+<table>
+<tr><th></th><th>\([\ce{CH3COOH}]\)</th><th>\([\ce{H+}]\)</th><th>\([\ce{CH3COO-}]\)</th></tr>
+<tr><td><strong>I</strong></td><td>0.500</td><td>0</td><td>0</td></tr>
+<tr><td><strong>C</strong></td><td>\(-x\)</td><td>\(+x\)</td><td>\(+x\)</td></tr>
+<tr><td><strong>E</strong></td><td>\(0.500-x\)</td><td>\(x\)</td><td>\(x\)</td></tr>
+</table>
+
+</div>
+
+<strong>Step 3 — substitute and approximate.</strong>
+\[ 1.8e-5 = \frac{x^{2}}{0.500-x}
+   \;\approx\; \frac{x^{2}}{0.500} \]
+\[ x^{2} = 9.0e-6
+   \;\Longrightarrow\;
+   x = 3.0e-3\,\mathrm{M} \]
+
+<strong>Step 4 — justify the approximation.</strong>
+\[ \frac{3.0e-3}{0.500} \times 100 = 0.60\%
+   \quad<\quad 5\% \quad\checkmark \]
+
+<strong>Step 5 — convert to pH.</strong> Because \(x\) <em>is</em> \([\ce{H+}]\):
+\[ \text{pH} = -\log(3.0e-3) = \mathbf{2.52} \]
+
+<strong>Sanity check.</strong> A strong acid at 0.500&thinsp;M would have
+pH 0.30. Our weak acid comes out at 2.52 — much less acidic, as it
+must be. If a weak-acid pH ever comes out <em>lower</em> than the strong
+acid equivalent, something is wrong.
+
+<strong>The single commonest error in this ladder</strong> is stopping at \(x\)
+and reporting it as the answer. \(x\) is a concentration; the question
+asked for pH. Take the logarithm.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 9 — four questions</div>
+
+<ol>
+
+<li>Find the pH of 1.00&thinsp;M acetic acid
+        (\(K_{a} = 1.8e-5\)). <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:33" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="2.37" data-sig="3" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>In the ICE table for a weak acid, what does \(x\) represent
+        physically? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:34" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{H+}]\) at equilibrium</span></div>
+
+<li>Why must you check the 5% rule?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:35" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>to
+confirm dropping \(x\) was legitimate</span></div>
+
+<li>A weak acid and a strong acid are both at
+        0.10&thinsp;M. Which has the lower pH, and why?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:36" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the strong acid</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 2.37  &emsp;  (b) \([\ce{H+}]\) at equilibrium  &emsp;  (c) to
+confirm dropping \(x\) was legitimate  &emsp;  (d) the strong acid</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(x^{2}/1.00 \approx 1.8e-5\), so
+\(x = 4.2e-3\) and pH \(= -\log(4.2e-3) = \mathbf{2.37}\).
+(Check: \(4.2e-3/1.00 = 0.42\% < 5\%\) ✓) (b) \(x\) is the
+<strong>equilibrium \([\ce{H+}]\)</strong> — and also the equilibrium
+\([\ce{A-}]\), since the acid produces them one for one. (c) Because
+dropping \(x\) from \(c - x\) is only valid when \(x\) is genuinely negligible
+against \(c\). If the check fails, the simplification introduced real
+error and you must solve the quadratic instead. Examiners award the mark
+for performing the check. (d) The <strong>strong acid</strong>. It ionises
+completely, giving \([\ce{H+}] = 0.10\,\mathrm{M}\) and pH 1.00, while
+the weak acid gives far less \(\ce{H+}\) and therefore a higher
+pH.</div></div>
+
+</div>
+
+<h2> Ladder 10 • Percent ionisation</h2>
+<span class="badge">ZUM §14.5</span>
+
+\[ \text{percent ionisation}
+   = \frac{[\ce{H+}]_{\text{equilibrium}}}{[\ce{HA}]_{0}} \times 100 \]
+
+<p>This is the same fraction as the 5% check — but here it is the
+answer, not a validity test.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-10.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Diluting a weak acid raises its percent ionisation but
+<em>lowers</em> its \([\ce{H+}]\).</strong> Both are true at once and they sound
+contradictory. A larger <em>fraction</em> of a smaller <em>amount</em> still
+gives less acid in total — so the solution gets less acidic (pH rises)
+even as the percentage climbs. And \(K_{a}\) itself never moves; only
+temperature changes that.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: the same acid at three concentrations</div>
+
+<strong>Acetic acid, \(K_{a} = 1.8e-5\), at three
+concentrations.</strong>
+
+<strong>1.00&thinsp;M:</strong> \(x = \sqrt{1.8e-5 \times 1.00} =
+4.24e-3\), so
+\[ \frac{4.24e-3}{1.00} \times 100 = \mathbf{0.42\%} \]
+
+<strong>0.100&thinsp;M:</strong> \(x = 1.34e-3\), so
+\[ \frac{1.34e-3}{0.100} \times 100 = \mathbf{1.3\%} \]
+
+<strong>0.0100&thinsp;M:</strong> \(x = 4.24e-4\), so
+\[ \frac{4.24e-4}{0.0100} \times 100 = \mathbf{4.2\%} \]
+
+<strong>Read the pattern.</strong> A tenfold dilution multiplies the percent
+ionisation by about \(\sqrt{10} \approx 3.2\) — from 0.42 to 1.3 to 4.2.
+That square-root behaviour follows straight from \(x = \sqrt{K_{a}c}\):
+percent ionisation is \(x/c = \sqrt{K_{a}/c}\), so it rises as \(c\) falls.
+
+<strong>But check what happened to the acidity.</strong> \([\ce{H+}]\) went
+<em>down</em> at every step, from 4.24e-3 to 4.24e-4, so the
+pH rose from about 2.4 to about 3.4. The solution became <em>less</em>
+acidic while becoming <em>more</em> ionised. Both statements are correct,
+and a question that asks for one while implying the other is testing
+whether you can hold them apart.
+
+<strong>Why dilution pushes ionisation up.</strong> Le Ch\^atelier, from
+Chapter 13: adding water dilutes everything, and the equilibrium shifts
+toward the side with <em>more</em> dissolved particles — the ionised
+side, since one \(\ce{HA}\) becomes two ions.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 10 — four questions</div>
+
+<ol>
+
+<li>A 0.20&thinsp;M weak acid has \([\ce{H+}] =
+        2.0e-3\,\mathrm{M}\). Find its percent ionisation.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:37" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="1.0" data-sig="2" data-unit="%"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Does diluting a weak acid raise or lower its percent
+        ionisation? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:38" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>raises it</span></div>
+
+<li>Does diluting a weak acid raise or lower its pH?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:39" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>raises it (less
+acidic)</span></div>
+
+<li>Does diluting a weak acid change its \(K_{a}\)? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:40" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — only temperature does</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.0%  &emsp;  (b) raises it  &emsp;  (c) raises it (less
+acidic)  &emsp;  (d) no — only temperature does</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\dfrac{2.0e-3}{0.20} \times 100 =
+\mathbf{1.0\%}\). (b) <strong>Raises</strong> it — a larger fraction of the
+acid comes apart. (c) <strong>Raises</strong> the pH, meaning the solution
+becomes <em>less</em> acidic. \([\ce{H+}]\) falls even though the
+<em>percentage</em> ionised rises, because a bigger fraction of a much
+smaller amount is still less acid. (d) <strong>No.</strong> \(K_{a}\) is an
+equilibrium constant and depends only on <strong>temperature</strong>. Dilution
+moves the position of the equilibrium, not the constant that describes
+it.</div></div>
+
+</div>
+
+<h2> Ladder 11 • Weak bases and \(K_{b}\)</h2>
+<span class="badge">ZUM §14.6</span>
+
+<p>Identical machinery, one substitution: the base takes a proton
+<em>from water</em>, so what you solve for is \([\ce{OH-}]\), and you must
+finish by converting to pH.</p>
+
+\[ \ce{B + H2O <=> BH+ + OH-}
+   \qquad
+   K_{b} = \frac{[\ce{BH+}][\ce{OH-}]}{[\ce{B}]} \]
+
+<div class="box we"><div class="box-title">I do: ammonia, and the extra step</div>
+
+<strong>Find the pH of 0.500&thinsp;M \(\ce{NH3}\),
+\(K_{b} = 1.8e-5\).</strong>
+
+<strong>ICE gives the same algebra as Ladder 9:</strong>
+\[ 1.8e-5 \approx \frac{x^{2}}{0.500}
+   \;\Longrightarrow\;
+   x = 3.0e-3\,\mathrm{M} \]
+Check: \(0.60\% < 5\%\) ✓
+
+<strong>Now the step that separates bases from acids.</strong> Here \(x\) is
+\([\ce{OH-}]\), not \([\ce{H+}]\), so it gives you <strong>pOH</strong> first:
+\[ \text{pOH} = -\log(3.0e-3) = 2.52 \]
+\[ \text{pH} = 14.00 - 2.52 = \mathbf{11.48} \]
+
+<strong>Compare with Ladder 9 deliberately.</strong> Acetic acid at
+0.500&thinsp;M with \(K_{a} = 1.8e-5\) gave pH 2.52. Ammonia at
+0.500&thinsp;M with the same numerical \(K_{b}\) gives pH 11.48. The
+two are mirror images about 7 — \(2.52 + 11.48 = 14.00\) — because the
+constants are numerically equal. That symmetry is worth noticing, and it
+is a fast way to spot a forgotten conversion.
+
+<strong>Which is exactly the error to watch for.</strong> Stopping at
+\(\text{pH} = -\log x = 2.52\) would report a strongly <em>acidic</em>
+ammonia solution. Ammonia is a base; its pH must exceed 7. Always ask
+whether the sign of your answer matches the chemistry before you write
+it down.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 11 — four questions</div>
+
+<ol>
+
+<li>Write the \(K_{b}\) expression for methylamine, \(\ce{CH3NH2}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:41" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\([\ce{CH3NH3+}][\ce{OH-}]/[\ce{CH3NH2}]\)</span></div>
+
+<li>For 0.100&thinsp;M of a base with \(K_{b} = 1.0e-5\),
+        find \([\ce{OH-}]\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:42" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="0.001" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Convert that \([\ce{OH-}]\) to a pH. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:43" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="11.0" data-sig="4" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why does a weak-base ICE table give pOH rather than pH
+        directly? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:44" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(x\) is \([\ce{OH-}]\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \([\ce{CH3NH3+}][\ce{OH-}]/[\ce{CH3NH2}]\)  &emsp;  (b)
+1.0e-3&thinsp;M  &emsp;  (c) 11.00  &emsp;  (d) \(x\) is \([\ce{OH-}]\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(K_{b} =
+\dfrac{[\ce{CH3NH3+}][\ce{OH-}]}{[\ce{CH3NH2}]}\). (b)
+\(x^{2}/0.100 \approx 1.0e-5\), so \(x^{2} = 1.0e-6\) and
+\([\ce{OH-}] = \mathbf{1.0e-3\,\mathrm{M}}\). (c) pOH \(=
+-\log(1.0e-3) = 3.00\), so pH \(= 14.00 - 3.00 = \mathbf{11.00}\) —
+basic, as required. (d) Because the base reacts with <strong>water</strong>,
+producing \(\ce{OH-}\). The \(x\) you solve for is therefore
+<strong>\([\ce{OH-}]\)</strong>, which gives pOH directly; pH requires the extra
+step pH \(= 14.00 - \text{pOH}\).</div></div>
+
+</div>
+
+<h2> Ladder 12 • \(K_{a} \times K_{b} = K_{w}\)</h2>
+<span class="badge">ZUM §14.6</span>
+
+<p>For a <strong>conjugate pair</strong> — and only for a conjugate pair — the
+two constants multiply to \(K_{w}\).</p>
+
+\[ K_{a} \times K_{b} = K_{w} = 1.0e-14
+   \qquad\text{equivalently}\qquad
+   \text{p}K_{a} + \text{p}K_{b} = 14.00 \]
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-11.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: converting between the two</div>
+
+<strong>Acetic acid has \(K_{a} = 1.8e-5\). Find \(K_{b}\) for
+acetate, \(\ce{CH3COO-}\).</strong>
+\[ K_{b} = \frac{K_{w}}{K_{a}}
+         = \frac{1.0e-14}{1.8e-5}
+         = \mathbf{5.6e-10} \]
+
+<strong>Sense-check the size.</strong> \(5.6e-10\) is small, so acetate is a
+weak base — but not a negligible one, and that is precisely why sodium
+acetate solutions come out basic (Ladder 14).
+
+<strong>Now the other direction. Ammonia has \(K_{b} = 1.8e-5\);
+find \(K_{a}\) for the ammonium ion, \(\ce{NH4+}\).</strong>
+\[ K_{a} = \frac{1.0e-14}{1.8e-5} = 5.6e-10 \]
+So \(\ce{NH4+}\) is a weak acid — which is why ammonium chloride
+solutions are acidic.
+
+<strong>The relationship must be used on a conjugate pair.</strong> \(K_{a}\) for
+acetic acid and \(K_{b}\) for ammonia do <em>not</em> multiply to \(K_{w}\);
+they are unrelated species. Pair the acid with <em>its own</em> conjugate
+base, differing by exactly one proton.
+
+<strong>Why the rule holds at all.</strong> Add the two equilibria:
+\[ \ce{HA <=> H+ + A-}
+   \qquad
+   \ce{A- + H2O <=> HA + OH-} \]
+Everything cancels except \(\ce{H2O <=> H+ + OH-}\), whose constant is
+\(K_{w}\) — and from Chapter 13, adding equations multiplies their
+constants. It is Ladder 7 of Chapter 13, reused.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 12 — four questions</div>
+
+<ol>
+
+<li>\(\ce{HF}\) has \(K_{a} = 7.2e-4\). Find \(K_{b}\) for \(\ce{F-}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:45" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="1.4e-11" data-sig="2" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A base has \(K_{b} = 1.0e-6\). Find \(K_{a}\) for its
+        conjugate acid. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:46" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="1e-08" data-sig="2" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>An acid has p\(K_{a} = 4.00\). Find p\(K_{b}\) for its conjugate
+        base. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:47" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="10.0" data-sig="4" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why do \(K_{a}\) for acetic acid and \(K_{b}\) for ammonia
+        <em>not</em> multiply to \(K_{w}\)? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:48" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>they are not a conjugate pair</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.4e-11  &emsp;  (b) 1.0e-8  &emsp;  (c) 10.00
+ &emsp;  (d) they are not a conjugate pair</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(K_{b} = K_{w}/K_{a}\), which is
+\(1.0e-14/7.2e-4 = \mathbf{1.4e-11}\). (b) The same
+move gives \(1.0e-14/1.0e-6 = \mathbf{1.0e-8}\).
+(c) \(14.00 - 4.00 = \mathbf{10.00}\). (d) Because
+they are <strong>not a conjugate pair</strong> — acetate is the conjugate base
+of acetic acid, and ammonia is not. The relationship only holds for two
+species differing by exactly one proton.</div></div>
+
+</div>
+
+<h2> Ladder 13 • Polyprotic acids</h2>
+<span class="badge">ZUM §14.7</span>
+
+<p>Acids with more than one ionisable proton give them up in stages, and
+each stage is far weaker than the one before.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-12.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: why only the first step matters</div>
+
+<strong>Why does \(K_{a2}\) drop so far below \(K_{a1}\)?</strong>
+
+<strong>Because of charge.</strong> Pulling \(\ce{H+}\) away from neutral
+\(\ce{H3PO4}\) is one thing. Pulling a <em>positive</em> \(\ce{H+}\) away from an
+already <em>negative</em> \(\ce{H2PO4-}\) means fighting an electrostatic
+attraction — and it gets harder again for the \(2-\) ion. Each
+successive proton leaves behind a more negative species, so each is
+harder to remove.
+
+<strong>The consequence for calculations.</strong> \(K_{a1}\) exceeds \(K_{a2}\) by
+about \(10^{5}\), so the second ionisation contributes a hundred-thousandth
+as much \(\ce{H+}\) as the first. For pH purposes you can ignore everything
+after the first step and treat the acid as an ordinary weak monoprotic
+acid.
+
+<strong>Worked: the pH of 0.100&thinsp;M \(\ce{H2CO3}\),
+\(K_{a1} = 4.3e-7\).</strong>
+\[ x^{2}/0.100 \approx 4.3e-7
+   \;\Longrightarrow\;
+   x^{2} = 4.3e-8
+   \;\Longrightarrow\;
+   x = 2.07e-4 \]
+\[ \text{pH} = -\log(2.07e-4) = \mathbf{3.68} \]
+Check: \(2.07e-4/0.100 = 0.21\% < 5\%\) ✓. And
+\(K_{a2} = 5.6e-11\) is nearly four orders of magnitude smaller, so
+ignoring it was safe.
+
+<strong>The one exception on the strong-acid list.</strong> \(\ce{H2SO4}\)'s first
+ionisation is <em>strong</em> and its second is weak but not negligible
+(\(K_{a2} = 1.2e-2\)). It is the polyprotic acid where the second
+step genuinely matters, and it is the one an exam question will use if
+it wants to test this.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 13 — four questions</div>
+
+<ol>
+
+<li>Why is \(K_{a2}\) always smaller than \(K_{a1}\)?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:49" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>removing \(\ce{H+}\) from a negative ion is harder</span></div>
+
+<li>Which \(K\) do you use to find the pH of 0.10&thinsp;M
+        \(\ce{H3PO4}\)? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:50" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(K_{a1}\)</span></div>
+
+<li>Write the equation for the second ionisation of \(\ce{H2CO3}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:51" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HCO3^- <=> H+ + CO3^2-}\)</span></div>
+
+<li>Why is \(\ce{H2SO4}\) the exception among polyprotic acids?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:52" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>its first
+ionisation is strong</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) removing \(\ce{H+}\) from a negative ion is harder  &emsp;  (b)
+\(K_{a1}\)  &emsp;  (c) \(\ce{HCO3^- <=> H+ + CO3^2-}\)  &emsp;  (d) its first
+ionisation is strong</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) Because the second proton must be pulled
+away from an <strong>already negatively charged</strong> species, and the
+electrostatic attraction between the \(\ce{H+}\) and that negative ion makes
+removal much harder. Each successive step leaves a more negative
+residue. (b) <strong>\(K_{a1}\) alone.</strong> It is roughly \(10^{5}\) times
+larger than \(K_{a2}\), so the first ionisation supplies essentially all
+the \(\ce{H+}\). (c) \(\ce{HCO3^- <=> H+ + CO3^2-}\). (d) Because its
+<strong>first ionisation is strong</strong> (complete), while its second is a
+weak equilibrium with \(K_{a2} = 1.2e-2\) — large enough that it
+cannot simply be ignored. Every other common polyprotic acid is weak at
+every step.</div></div>
+
+</div>
+
+<h2> Ladder 14 • Acid–base properties of
+salts</h2>
+<span class="badge">ZUM §14.8</span>
+
+<p>Dissolve a salt and its ions may react with water. Whether the solution
+comes out acidic, basic or neutral depends on which parent acid and base
+the salt came from.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-13.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: three salts, one method</div>
+
+<strong>The method: split the salt into its ions, ask where each came
+from, and let the ion from the weak parent decide.</strong>
+
+<strong>\(\ce{NaCl}\).</strong> \(\ce{Na+}\) is from \(\ce{NaOH}\), a strong base;
+\(\ce{Cl-}\) is from \(\ce{HCl}\), a strong acid. Both conjugates are so weak
+they do nothing at all. <strong>Neutral</strong>, pH 7.
+
+<strong>\(\ce{NH4Cl}\).</strong> \(\ce{Cl-}\) is again a spectator. \(\ce{NH4+}\) is the
+conjugate acid of the <em>weak</em> base ammonia, so it is a weak acid and
+donates a proton to water. <strong>Acidic</strong>.
+
+<strong>\(\ce{NaCH3COO}\).</strong> \(\ce{Na+}\) is a spectator. Acetate is the
+conjugate base of the <em>weak</em> acid acetic acid, so it takes a
+proton from water and releases \(\ce{OH-}\). <strong>Basic</strong>.
+
+<strong>Worked calculation.</strong> Find the pH of a 0.10&thinsp;M
+solution of sodium acetate. From Ladder 12 we have
+\(K_{b}(\ce{CH3COO-}) = 5.6e-10\), so:
+\[ x^{2}/0.10 \approx 5.6e-10
+   \;\Longrightarrow\;
+   x = 7.5e-6 = [\ce{OH-}] \]
+\[ \text{pOH} = 5.13
+   \;\Longrightarrow\;
+   \text{pH} = 14.00 - 5.13 = \mathbf{8.87} \]
+Basic, as predicted — and only mildly so, which is what a \(K_{b}\) of
+\(10^{-10}\) should give.
+
+<strong>The fourth box.</strong> When <em>both</em> ions come from weak parents,
+as in ammonium acetate, you must compare \(K_{a}\) of the cation with
+\(K_{b}\) of the anion; the larger one wins. For ammonium acetate both are
+\(5.6e-10\), so the solution is very nearly neutral — a
+coincidence of that particular pair, not a general rule.
+
+<strong>One more class worth recognising:</strong> small, highly charged metal
+cations such as \(\ce{Al^3+}\) and \(\ce{Fe^3+}\) make solutions acidic, because
+they polarise the water molecules bound to them enough to release
+\(\ce{H+}\). \(\ce{AlCl3}\) solutions are noticeably acidic despite containing
+no obvious acid.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 14 — four questions</div>
+
+<ol>
+
+<li>Is a \(\ce{KNO3}\) solution acidic, basic or neutral? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:53" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>neutral</span></div>
+
+<li>Is a \(\ce{NaCN}\) solution acidic, basic or neutral? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:54" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>basic</span></div>
+
+<li>Is a \(\ce{NH4NO3}\) solution acidic, basic or neutral? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:55" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>acidic</span></div>
+
+<li>Which ion in \(\ce{NaF}\) reacts with water, and what does it
+        produce? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:56" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{F-}\), producing \(\ce{OH-}\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) neutral  &emsp;  (b) basic  &emsp;  (c) acidic  &emsp;  (d)
+\(\ce{F-}\), producing \(\ce{OH-}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Neutral.</strong> \(\ce{K+}\) comes from the
+strong base \(\ce{KOH}\) and \(\ce{NO3-}\) from the strong acid \(\ce{HNO3}\); both
+are spectators. (b) <strong>Basic.</strong> \(\ce{CN-}\) is the conjugate base of
+the very weak acid \(\ce{HCN}\), so it is a relatively strong base and takes
+a proton from water, releasing \(\ce{OH-}\). (c) <strong>Acidic.</strong> \(\ce{NH4+}\)
+is the conjugate acid of the weak base ammonia and donates a proton to
+water; \(\ce{NO3-}\) is a spectator. (d) <strong>\(\ce{F-}\)</strong>, the conjugate
+base of the weak acid \(\ce{HF}\). It reacts as
+\(\ce{F- + H2O <=> HF + OH-}\), producing <strong>\(\ce{OH-}\)</strong> and making
+the solution basic.</div></div>
+
+</div>
+
+<h2> Ladder 15 • Structure and acid strength</h2>
+<span class="badge">ZUM §14.9–14.10</span>
+
+<p>Why is \(\ce{HI}\) strong and \(\ce{HF}\) weak? Why is \(\ce{HClO4}\) the strongest
+common acid? Two families, two different explanations.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-14.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: two rules, two reasons</div>
+
+<strong>Binary acids down a group: \(\ce{HF}\) \(<\) \(\ce{HCl}\) \(<\) \(\ce{HBr}\)
+\(<\) \(\ce{HI}\).</strong>
+
+<p>You might expect fluorine, the most electronegative element, to give the
+strongest acid. It does not, and the reason is <strong>bond strength</strong>.
+Iodine is large, so the \(\ce{H-I}\) bond is long and weak and the proton
+leaves easily. The \(\ce{H-F}\) bond is short and very strong, and holding
+onto the proton is exactly what makes \(\ce{HF}\) weak. Going down a group,
+bond strength beats electronegativity.</p>
+
+<strong>Binary acids across a period: \(\ce{CH4}\) \(<\) \(\ce{NH3}\) \(<\)
+\(\ce{H2O}\) \(<\) \(\ce{HF}\).</strong> Here the sizes are similar, so bond strength no
+longer dominates and <strong>electronegativity</strong> takes over. A more
+electronegative X pulls the bonding electrons toward itself, leaving the
+hydrogen more positive and easier to remove — and stabilising the
+anion left behind.
+
+<strong>Oxyacids, more oxygens: \(\ce{HClO}\) \(<\) \(\ce{HClO2}\) \(<\) \(\ce{HClO3}\)
+\(<\) \(\ce{HClO4}\).</strong> Each extra oxygen is highly electronegative and pulls
+electron density away from the \(\ce{O-H}\) bond, weakening it. It also
+spreads the negative charge of the anion over more atoms, which
+stabilises the conjugate base. Both effects push in the same direction.
+
+<strong>Oxyacids, same oxygens: \(\ce{HIO}\) \(<\) \(\ce{HBrO}\) \(<\) \(\ce{HClO}\).</strong>
+Same argument with the central atom instead: chlorine is the most
+electronegative of the three and withdraws the most.
+
+<strong>Say it in terms of the conjugate base.</strong> “The more the negative
+charge is delocalised, the more stable the conjugate base, so the
+stronger the acid.” That single sentence answers most structure
+questions in this ladder, and it earns marks where “it has more
+oxygens” does not.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 15 — four questions</div>
+
+<ol>
+
+<li>Which is the stronger acid, \(\ce{HBr}\) or \(\ce{HCl}\)? Why?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:57" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HBr}\) — weaker bond</span></div>
+
+<li>Which is the stronger acid, \(\ce{HClO3}\) or \(\ce{HClO}\)? Why?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:58" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{HClO3}\) — more
+oxygens</span></div>
+
+<li>Which is the stronger acid, \(\ce{H2O}\) or \(\ce{NH3}\)? Why?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:59" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{H2O}\) — O is more electronegative</span></div>
+
+<li>Why is \(\ce{HF}\) weak when \(\ce{F}\) is the most electronegative
+        element? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:60" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the
+\(\ce{H-F}\) bond is very strong</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{HBr}\) — weaker bond  &emsp;  (b) \(\ce{HClO3}\) — more
+oxygens  &emsp;  (c) \(\ce{H2O}\) — O is more electronegative  &emsp;  (d) the
+\(\ce{H-F}\) bond is very strong</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>\(\ce{HBr}\)</strong>. Bromine is larger than
+chlorine, so the \(\ce{H-Br}\) bond is longer and <strong>weaker</strong> and the
+proton is released more easily. Down a group, bond strength decides.
+(b) <strong>\(\ce{HClO3}\)</strong>. Its two extra oxygens withdraw electron density
+from the \(\ce{O-H}\) bond and <strong>delocalise the negative charge</strong> of
+the conjugate base over more atoms, stabilising it. (c)
+<strong>\(\ce{H2O}\)</strong>. Across a period the atoms are of similar size, so
+<strong>electronegativity</strong> decides, and oxygen is more electronegative
+than nitrogen. (d) Because down a group <strong>bond strength matters
+more than electronegativity</strong>. The \(\ce{H-F}\) bond is short and unusually
+strong, so despite fluorine's electronegativity the proton is held
+tightly and \(\ce{HF}\) does not ionise completely.</div></div>
+
+</div>
+
+<h2> Ladder 16 • pH and p\(K_{a}\)</h2>
+<span class="badge">ZUM §14.8</span>
+
+<p>p\(K_{a} = -\log K_{a}\), exactly as pH is \(-\log[\ce{H+}]\). Comparing the
+two tells you which form of the acid dominates.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch14-selfstudy-15.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: p\(K_{a}\) and which form you have</div>
+
+<strong>Acetic acid has \(K_{a} = 1.8e-5\). Find p\(K_{a}\).</strong>
+\[ \text{p}K_{a} = -\log(1.8e-5) = \mathbf{4.74} \]
+
+<strong>Now compare acids by p\(K_{a}\).</strong> \(\ce{HF}\) has
+\(K_{a} = 7.2e-4\), so p\(K_{a} = 3.14\); \(\ce{HCN}\) has
+\(K_{a} = 6.2e-10\), so p\(K_{a} = 9.21\). The order of strength is
+\(\ce{HF} > \ce{CH3COOH} > \ce{HCN}\), and the p\(K_{a}\) values 3.14,
+4.74, 9.21 rise in exactly the reverse order. <strong>Lower p\(K_{a}\),
+stronger acid.</strong>
+
+<strong>Now use pH against p\(K_{a}\).</strong> Put acetic acid
+(p\(K_{a} = 4.74\)) into a solution buffered at pH 2.00. Since pH \(<\)
+p\(K_{a}\), the solution is more acidic than the acid's own crossover
+point, and the <strong>protonated</strong> form \(\ce{CH3COOH}\) dominates.
+
+<p>At pH 7.00, pH \(>\) p\(K_{a}\), so the <strong>deprotonated</strong> form
+\(\ce{CH3COO-}\) dominates. And at pH 4.74 exactly, the two are present in
+equal amounts.</p>
+
+<strong>Why this matters beyond the exam.</strong> It is how a drug's behaviour
+is predicted: aspirin has p\(K_{a} \approx 3.5\), so in stomach acid
+(pH \(\approx 2\)) it is neutral and crosses membranes easily, while in
+blood (pH 7.4) it is ionised and stays put. Same molecule, two
+environments, opposite behaviour — read off a comparison of pH with
+p\(K_{a}\).
+
+<strong>The rule in one line:</strong> <em>low pH protonates, high pH
+deprotonates</em>, and p\(K_{a}\) is the pH at which the balance tips.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 16 — four questions</div>
+
+<ol>
+
+<li>An acid has \(K_{a} = 1.0e-3\). Find p\(K_{a}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:61" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="3.0" data-sig="3" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Acid A has p\(K_{a} = 3.0\) and acid B has p\(K_{a} = 6.0\). Which
+        is stronger? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:62" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>A</span></div>
+
+<li>An acid with p\(K_{a} = 5.0\) sits in a solution at pH 8.0. Which
+        form dominates? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:63" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{A-}\)</span></div>
+
+<li>At what pH are \([\ce{HA}]\) and \([\ce{A-}]\) equal?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:64" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>pH \(=\)
+p\(K_{a}\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 3.00  &emsp;  (b) A  &emsp;  (c) \(\ce{A-}\)  &emsp;  (d) pH \(=\)
+p\(K_{a}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(-\log(1.0e-3) = \mathbf{3.00}\).
+(b) <strong>A.</strong> A lower p\(K_{a}\) means a larger \(K_{a}\) and therefore a
+stronger acid. (c) <strong>\(\ce{A-}\)</strong>, the deprotonated form. pH 8.0 is
+above the p\(K_{a}\) of 5.0, so the solution is less acidic than the
+crossover point and the conjugate base dominates. (d) When
+<strong>pH \(=\) p\(K_{a}\)</strong> — that is what p\(K_{a}\)
+marks.</div></div>
+
+</div>
+
+<h2> Mixed set • twelve questions, no labels</h2>
+
+<div class="box note"><div class="box-title">Why this section exists</div>
+
+<p>Every question so far arrived with its ladder attached, so you always
+knew which method to use. On the exam you will not. These twelve are
+deliberately unlabelled and out of order — the first decision, every
+time, is <em>which kind of problem is this?</em></p>
+
+</div>
+
+<div class="box yt"><div class="box-title">MIXED SET — first six</div>
+
+<ol>
+
+<li>Find the pH of 0.020&thinsp;M \(\ce{HNO3}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:65" data-math="1"></textarea>
+
+<li>Find the pH of 0.020&thinsp;M \(\ce{NaOH}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:66" data-math="1"></textarea>
+
+<li>Give the conjugate base of \(\ce{H2PO4^-}\) and the conjugate acid
+        of \(\ce{HCO3^-}\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:67" data-math="1"></textarea>
+
+<li>Is a solution of \(\ce{K2CO3}\) acidic, basic or neutral? Explain
+        in one sentence. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:68" data-math="1"></textarea>
+
+<li>A weak acid has \(K_{a} = 4.0e-6\). Find \(K_{b}\) for its
+        conjugate base. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:69" data-math="1"></textarea>
+
+<li>Which is the stronger acid, \(\ce{HBrO}\) or \(\ce{HBrO3}\)? Give the
+        reason. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:70" data-math="1"></textarea>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.70  &emsp;  (b) 12.30  &emsp;  (c) \(\ce{HPO4^2-}\) and \(\ce{H2CO3}\)
+ &emsp;  4. basic  &emsp;  5. 2.5e-9  &emsp;  6. \(\ce{HBrO3}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> \(\ce{HNO3}\) is strong, so
+\([\ce{H+}] = 0.020\,\mathrm{M}\) and pH \(= -\log(2.0e-2) =
+\mathbf{1.70}\). <strong>(b)</strong> \(\ce{NaOH}\) is strong with one \(\ce{OH-}\) per
+formula unit, so pOH \(= 1.70\) and pH \(= 14.00 - 1.70 = \mathbf{12.30}\).
+<strong>(c)</strong> Conjugate base of \(\ce{H2PO4^-}\) is <strong>\(\ce{HPO4^2-}\)</strong>;
+conjugate acid of \(\ce{HCO3^-}\) is <strong>\(\ce{H2CO3}\)</strong>. <strong>(d)</strong>
+<strong>Basic</strong> — \(\ce{K+}\) is a spectator from the strong base \(\ce{KOH}\),
+while \(\ce{CO3^2-}\) is the conjugate base of the weak acid \(\ce{HCO3^-}\) and
+takes a proton from water. <strong>(e)</strong> \(K_{b} =
+1.0e-14/4.0e-6 = \mathbf{2.5e-9}\). <strong>(f)</strong>
+<strong>\(\ce{HBrO3}\)</strong> — more oxygens withdraw electron density from the
+\(\ce{O-H}\) bond and delocalise the conjugate base's negative
+charge.</div></div>
+
+</div>
+
+<div class="box yt"><div class="box-title">MIXED SET — last six</div>
+
+<ol>
+
+<li>Find the pH of 0.250&thinsp;M of a weak acid with
+        \(K_{a} = 4.0e-5\). <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:71" data-math="1"></textarea>
+
+<li>Find the percent ionisation for question 7.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:72" data-math="1"></textarea>
+
+<li>Find the pH of 0.0050&thinsp;M \(\ce{Ba(OH)2}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:73" data-math="1"></textarea>
+
+<li>A solution has pOH 4.20. Find its pH and \([\ce{H+}]\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:74" data-math="1"></textarea>
+
+<li>An acid has p\(K_{a} = 7.2\) and sits at pH 5.0. Which form
+        dominates? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:75" data-math="1"></textarea>
+
+<li>Explain in one sentence why 0.10&thinsp;M \(\ce{HCl}\) and
+        0.10&thinsp;M \(\ce{CH3COOH}\) have different pH values.
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch14-selfstudy:76" data-math="1"></textarea>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 2.50  &emsp;  (b) 1.3%  &emsp;  (c) 12.00  &emsp;  (d) pH 9.80,
+1.6e-10&thinsp;M  &emsp;  1(a) \(\ce{HA}\)  &emsp;  1(b) one is strong, one
+weak</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> \(x^{2}/0.250 \approx
+4.0e-5\), so \(x^{2} = 1.0e-5\) and \(x =
+3.16e-3\); pH \(= \mathbf{2.50}\). (Check: \(1.3\% < 5\%\)
+✓) <strong>(b)</strong> \(3.16e-3/0.250 \times 100 =
+\mathbf{1.3\%}\). <strong>(c)</strong> \([\ce{OH-}] = 2 \times 0.0050 =
+0.010\,\mathrm{M}\), pOH \(= 2.00\), pH \(= \mathbf{12.00}\).
+<strong>(d)</strong> pH \(= 14.00 - 4.20 = \mathbf{9.80}\); \([\ce{H+}] =
+10^{-9.80} = \mathbf{1.6e-10\,\mathrm{M}}\). <strong>(e)</strong>
+<strong>\(\ce{HA}\)</strong>, the protonated form — pH 5.0 is <em>below</em> the
+p\(K_{a}\) of 7.2. <strong>(f)</strong> \(\ce{HCl}\) is a <strong>strong</strong> acid and
+ionises completely, so \([\ce{H+}] = 0.10\,\mathrm{M}\), whereas acetic
+acid is <strong>weak</strong> and only about 1% ionises, giving far less
+\(\ce{H+}\) and a much higher pH.</div></div>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt. Every row is assessed — Chapter 14 has no
+off-syllabus sections.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>the three definitions</td><td>1</td><td>the models nest</td></tr>
+<tr><td>\(\square\)</td><td>conjugate pairs</td><td>2</td><td>one proton, one charge</td></tr>
+<tr><td>\(\square\)</td><td>strong versus weak</td><td>3</td><td>not the same as concentrated</td></tr>
+<tr><td>\(\square\)</td><td>\(K_{w}\) and autoionisation</td><td>4</td><td>pH 7 only at 25 C</td></tr>
+<tr><td>\(\square\)</td><td>the pH scale</td><td>5</td><td>one unit is tenfold</td></tr>
+<tr><td>\(\square\)</td><td>pH of a strong acid</td><td>6</td><td>one line, no ICE</td></tr>
+<tr><td>\(\square\)</td><td>pH of a strong base</td><td>7</td><td>count the hydroxides</td></tr>
+<tr><td>\(\square\)</td><td>\(K_{a}\) and weakness</td><td>8</td><td>bigger \(K_{a}\), stronger acid</td></tr>
+<tr><td>\(\square\)</td><td>pH of a weak acid</td><td>9</td><td>ICE, then take the log</td></tr>
+<tr><td>\(\square\)</td><td>percent ionisation</td><td>10</td><td>dilution raises it</td></tr>
+<tr><td>\(\square\)</td><td>weak bases and \(K_{b}\)</td><td>11</td><td>\(x\) is \([\ce{OH-}]\)</td></tr>
+<tr><td>\(\square\)</td><td>\(K_{a}K_{b} = K_{w}\)</td><td>12</td><td>conjugate pairs only</td></tr>
+<tr><td>\(\square\)</td><td>polyprotic acids</td><td>13</td><td>\(K_{a1}\) dominates</td></tr>
+<tr><td>\(\square\)</td><td>salts</td><td>14</td><td>the weak parent decides</td></tr>
+<tr><td>\(\square\)</td><td>structure and strength</td><td>15</td><td>stabilise the conjugate base</td></tr>
+<tr><td>\(\square\)</td><td>pH and p\(K_{a}\)</td><td>16</td><td>low pH protonates</td></tr>
+<tr><td>\(\square\)</td><td><strong>mixed set</strong> (10 of 12)</td><td>—</td><td>whichever it exposed</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>16/16 and the mixed set: you have the bulk of an 11–15% unit, and
+Chapter 15 — buffers and titrations — will feel like a
+continuation rather than a new subject.</p>
+
+<p>12–15: look at <em>which</em> ladders missed. Ladders 1–8 are
+definitions and one-line arithmetic; they repair fast. Ladders 9–14 are
+the calculation core, and a miss there is the one to fix now.</p>
+
+<p>Under 12, or a weak mixed set with strong ladders: that specific
+pattern means you can execute each method but cannot yet <em>choose</em>
+between them — which is what the exam actually tests. The repair is
+not more of the same practice; it is to go back through the ladders
+asking only “what tells me this is a weak-acid problem rather than a
+strong-acid one?” Build the decision, not the arithmetic.</p>
+
+<strong>One thing to carry into Chapter 15.</strong> Every buffer calculation
+starts from a weak acid and its conjugate base — Ladders 9, 12 and 16
+combined. If those three are solid, buffers are mostly bookkeeping.
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>
