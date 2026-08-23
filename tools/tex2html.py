@@ -38,11 +38,11 @@ OUT_MD = ROOT / "Lessons-md"
 EXPLAIN_KINDS = {"selfstudy", "selfstudy2"}
 INTERACTIVE_KINDS = {"selfstudy", "selfstudy2"}
 
-# Prototype: only these stems load the MathLive equation editor into their
-# scratch pads. It is ~1 MB, fetched lazily on first focus, so a page that
-# nobody types maths into never pays for it. Widen once it has been tried
-# on a real device.
-MATHFIELD_STEMS = {"ch05-selfstudy"}
+# Doc kinds whose scratch pads load the MathLive equation editor. It is
+# ~1 MB, fetched lazily on the first focus of a pad, so a page nobody
+# types maths into never pays for it. Keyed on kind rather than stem so
+# new self-study files are covered without editing this.
+MATHFIELD_KINDS = {"selfstudy", "selfstudy2"}
 
 
 def doc_kind(stem: str) -> str:
@@ -912,7 +912,7 @@ def add_interactivity(body: str, kind: str, stem: str, log) -> str:
     # Ladders we declined to pair still get usable working space, so the
     # page does not mix live textareas with inert dashed boxes.
     body = WORKSPACE_RE.sub(lambda m: scratch(m.group(1)), "".join(out))
-    body = number_pads(body, stem, stem in MATHFIELD_STEMS)
+    body = number_pads(body, stem, kind in MATHFIELD_KINDS)
     return wrap_explanations(body)
 
 
