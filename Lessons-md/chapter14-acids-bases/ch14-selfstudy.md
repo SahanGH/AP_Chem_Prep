@@ -64,10 +64,13 @@ Three models, each broader than the last. Each is useful; none is wrong.
 > Lewis acid, but not every Lewis acid is a Brønsted acid. The models
 > nest; the later ones do not replace the earlier ones.
 > 
-> **For the exam.** Brønsted–Lowry is the workhorse and is what
-> almost every question means by “acid”. Recognise Lewis when a question
-> shows a reaction with no proton transfer — typically a metal cation or
-> an electron-deficient species such as BF₃ or AlCl₃.
+> **For the exam.** Brønsted–Lowry is the *only* model
+> assessed — the CED's topic 4.8 exclusion says outright that
+> *“Lewis acid–base concepts will not be assessed on the AP
+> Exam”*, and Arrhenius appears only as history. The Lewis model stays
+> in this ladder because Zumdahl teaches it and it is the only way to
+> understand species like BF₃ and hydrated metal cations — but if
+> you are triaging, Brønsted–Lowry is the definition to own.
 
 > ✏️ **YOUR TURN 1 — four questions**
 >
@@ -1016,8 +1019,9 @@ two tells you which form of the acid dominates.
 ## Mastery tracker
 
 Tick a row only if **all four** YOUR TURN questions were right on
-the first attempt. Every row is assessed — Chapter 14 has no
-off-syllabus sections.
+the first attempt. Every row is assessed except the Lewis model inside
+Ladder 1 (see its “For the exam” note) — Brønsted–Lowry is the
+exam's model.
 
 | **First try?** | **Skill** | **Ladder** | **If not, re-read…** |
 |---|---|---|---|

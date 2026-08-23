@@ -169,6 +169,18 @@ with $R = 0.08206\;\mathrm{L\,atm\,mol^{-1}\,K^{-1}}$ and $T$ in
 
 ![figure](fig-ch13-selfstudy-4.png)
 
+> 📌 **AP scope: know the difference, skip the conversion**
+>
+> The CED's topic 7.3 exclusion: *“Conversion between $K_{c}$ and
+> $K_{p}$ will not be assessed on the AP Exam. Students should be aware
+> of the conceptual differences and pay attention to whether $K_{c}$ or
+> $K_{p}$ is used in an exam question.”* So what this ladder is really
+> for: knowing the two constants exist, that they describe the same
+> equilibrium in different currencies, and that they are numerically
+> equal only when $\Delta n = 0$. The $(RT)^{\Delta n}$ conversion below
+> is Zumdahl's, kept for completeness — an exam question will hand you
+> whichever constant it wants you to use.
+
 > 📘 **I do: converting between the two**
 >
 > **A gas-phase reaction has $K_{c} = 0.500$ at 400 K
@@ -755,8 +767,9 @@ only one that changes the value of $K$ itself.
 ## Mastery tracker
 
 Tick a row only if **all four** YOUR TURN questions were right on
-the first attempt. Every row is assessed — Chapter 13 has no
-off-syllabus sections.
+the first attempt. Every row is assessed except the $K_{p}$/$K_{c}$
+*conversion* inside Ladder 3 (see its scope note) — knowing the
+two constants differ is required; converting between them is not.
 
 | **First try?** | **Skill** | **Ladder** | **If not, re-read…** |
 |---|---|---|---|

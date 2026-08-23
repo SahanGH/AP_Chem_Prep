@@ -164,6 +164,16 @@ $$ \text{mass \%} =    \frac{\text{mass of solute}}{\text{mass of \textbf{soluti
 > 150 g solution, so the answer is $15/150$, not $15/135$. The
 > same total-versus-part trap as molarity, one ladder later.
 
+> 📌 **AP scope: these units are read, not computed**
+>
+> The CED's topic 3.8 exclusion: *“Calculations of molality,
+> percent by mass, and percent by volume for solutions will not be
+> assessed on the AP Exam.”* The units still appear on labels, in data
+> tables and in water-quality contexts, so you must be able to read and
+> interpret them — and lab work uses them constantly. Learn the
+> arithmetic here for the lab and for later courses; expect exam
+> calculations to test **molarity** (Ladders 1–2) instead.
+
 > 📘 **I do: mass percent and ppm**
 >
 > **(a) 15.0 g of NaCl is dissolved in
@@ -223,9 +233,11 @@ one idea.
 > 📌 **Where molality actually gets used — read this once**
 >
 > Molality exists mainly to support **colligative properties**, and
-> those are §11.4–11.7, which this course skips. So learn the definition
-> and learn how it differs from molarity — that distinction is fair game
-> — but do not expect to apply it. Two reasons it is defined against
+> those are §11.4–11.7, which this course skips. The CED goes further
+> and names it directly: *“calculations of molality … will not
+> be assessed on the AP Exam”* (topic 3.8 exclusion). So learn the
+> definition and how it differs from molarity, but do not expect to
+> compute with it. Two reasons it is defined against
 > solvent *mass* rather than solution *volume*: mass does not
 > change with temperature, whereas volume does, so molality is
 > temperature-independent where molarity is not.
@@ -658,8 +670,10 @@ $$ C = kP \qquad\text{or, comparing two conditions,}\qquad    \frac{C_{1}}{P_{1}
 ## Mastery tracker
 
 Tick a row only if **all four** YOUR TURN questions were right on
-the first attempt. Every row here is assessed — there is no optional
-ladder in this chapter, because the optional material was cut instead.
+the first attempt. Ladders 1–2 carry the exam weight directly; the CED
+excludes mass-percent and molality *calculations* from the exam
+(see the scope notes in Ladders 3–4), so treat those two rows as
+lab-and-later-courses material.
 
 | **First try?** | **Skill** | **Ladder** | **If not, re-read…** |
 |---|---|---|---|

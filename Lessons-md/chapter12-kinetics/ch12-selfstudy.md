@@ -680,6 +680,18 @@ equation is meaningless in celsius. And $R = 8.314\,\mathrm{}$ gives
 $E_{\mathrm{a}}$ in joules, so divide by 1000 at the end; forgetting to
 is the single most common slip here.
 
+> 📌 **AP scope: the calculation above is enrichment**
+>
+> The CED's topic 5.6 exclusion: *“Calculations involving the
+> Arrhenius equation will not be assessed on the AP Exam.”* What
+> **is** assessed: the collision-model reasoning, the
+> Maxwell–Boltzmann tail argument, and *interpreting* a $\ln k$
+> versus $1/T$ plot — that it is linear, that its slope is
+> $-E_{\mathrm{a}}/R$, and that a steeper line means a larger activation
+> energy. The two-point calculation is kept because Zumdahl teaches it
+> and it cements the relationship; on the exam, the qualitative version
+> carries the marks.
+
 > ✏️ **YOUR TURN 10 — four questions**
 >
 > 1. State the two requirements for a collision to lead to reaction.
@@ -838,8 +850,9 @@ destination.
 ## Mastery tracker
 
 Tick a row only if **all four** YOUR TURN questions were right on
-the first attempt. Every row is assessed — Chapter 12 has no
-off-syllabus sections.
+the first attempt. Every row is assessed except the Arrhenius
+*calculation* inside Ladder 10 (see its scope note) — the
+collision model and the graph reading are fully fair game.
 
 | **First try?** | **Skill** | **Ladder** | **If not, re-read…** |
 |---|---|---|---|
