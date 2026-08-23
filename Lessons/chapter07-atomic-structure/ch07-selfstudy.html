@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 7 • Self-Study • Chapter 7, I do / You do</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 7 • Atomic Structure and Periodicity</p>
+  <h1>Self-Study • Chapter 7, I do / You do</h1>
+  <p class="subtitle">Zumdahl §7.1–7.13 • PDF pp. 331–390 • four YOUR TURN questions per ladder</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help.</p>
+
+<ol>
+
+<li><strong>Work all four</strong> before checking anything.
+
+<li>Check against the gray <em>check:</em> line. All four right on the
+        first try earns the tick on the tracker (last page).
+
+<li>Any misses: re-read the worked example, then redo the missed ones
+        from a blank page.
+</ol>
+
+<strong>The one sentence this chapter is built on.</strong> Every property in
+Ladders 5–8 — orbital energy, ionization energy, atomic radius,
+electronegativity — is decided by <strong>Coulomb's law</strong>: how strongly
+the nucleus pulls on an electron, which depends on the nuclear charge,
+the distance, and how much shielding sits in between. If you can say
+those three things about any electron, you can predict every trend
+without memorizing a single arrow.
+
+<strong>Constants:</strong> \(c = 3.00e8\,\mathrm{m/s}\),
+\(h = 6.626e-34\,\mathrm{J\cdot s}\),
+\(N_A = 6.022e23\,\mathrm{/mol}\).
+
+</div>
+
+<h2> Ladder 1 • Wavelength, frequency, energy</h2>
+<span class="badge">ZUM §7.1–7.2</span>
+
+\[ c = \lambda\nu \qquad E = h\nu = \frac{hc}{\lambda} \]
+
+<p>Read the second equation as a sentence: <strong>short wavelength means
+high frequency means high energy</strong>. Gamma rays sit at one end, radio waves
+at the other, and visible light occupies a narrow band from about
+400&thinsp;nm (violet) to 700&thinsp;nm (red).</p>
+
+<p>A photon's energy is per <em>photon</em>. Multiply by \(N_A\) to reach the
+per-<em>mole</em> figures chemists quote.</p>
+
+<div class="box we"><div class="box-title">I do: one photon, three quantities</div>
+
+<p>Green light has a wavelength of 525&thinsp;nm. Find its
+frequency, the energy of one photon, and the energy per mole.</p>
+
+<strong>Metres first — always convert before substituting:</strong>
+\[ 525~\text{nm} = 5.25e-7\,\mathrm{m} \]
+
+<strong>Frequency:</strong>
+\[ \nu = \frac{c}{\lambda} = \frac{3.00\times10^{8}}{5.25\times10^{-7}}
+   = 5.71e14\,\mathrm{/s} \]
+
+<strong>Energy per photon:</strong>
+\[ E = h\nu = (6.626\times10^{-34})(5.71\times10^{14})
+   = 3.78e-19\,\mathrm{J} \]
+
+<strong>Per mole:</strong>
+\[ (3.78\times10^{-19})(6.022\times10^{23})
+   = 2.28e5\,\mathrm{J/mol} = 228\,\mathrm{kJ/mol} \]
+
+<strong>Two sense checks worth thirty seconds.</strong> A single photon carries
+around \(10^{-19}\) J — if your answer is \(10^{-30}\) or \(10^{-5}\), a
+conversion went wrong. And a mole of visible photons carries a couple of
+hundred kJ, comparable to a chemical bond energy, which is precisely why
+visible light can drive chemistry.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>Frequency of light with \(\lambda = 650\,\mathrm{nm}\):
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Energy of one photon of that light: <div class="workspace" style="height:1.6cm"></div>
+
+<li>Wavelength, in nm, of a photon carrying
+        4.50e-19&thinsp;J: <div class="workspace" style="height:1.8cm"></div>
+
+<li>Which has more energy per photon, a 200&thinsp;nm
+        ultraviolet photon or a 700&thinsp;nm red one? Answer
+        without calculating. <div class="workspace" style="height:1.4cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 4.62e14&thinsp;/s  &emsp;  (b)
+3.06e-19&thinsp;J  &emsp;  (c) 442&thinsp;nm  &emsp;  (d) the
+ultraviolet one — shorter wavelength</p>
+
+</div>
+
+<h2> Ladder 2 • The photoelectric effect</h2>
+<span class="badge">ZUM §7.2</span>
+
+<p>Shine light on a metal and electrons are ejected — but only if the
+light's <strong>frequency</strong> exceeds a threshold. Brighter light below that
+threshold ejects nothing, however long you wait.</p>
+
+<p>That single observation is what forced the particle picture. A wave would
+let energy accumulate, so any colour should eventually work. A stream of
+photons would not: one photon hits one electron, and if that photon is
+too weak, nothing happens no matter how many arrive.</p>
+
+\[ E_{\text{photon}} = \Phi + \mathrm{KE}_{\text{electron}} \]
+where \(\Phi\) (the <strong class="term">work function</strong>) is the minimum energy to free an
+electron. Energy above the work function becomes kinetic energy.
+
+<div class="box we"><div class="box-title">I do: reading the energy budget</div>
+
+<p>A metal has a work function of 3.20e-19&thinsp;J. Light of
+wavelength 400.&thinsp;nm strikes it.</p>
+
+<strong>Photon energy:</strong>
+\[ E = \frac{hc}{\lambda}
+   = \frac{(6.626\times10^{-34})(3.00\times10^{8})}{4.00\times10^{-7}}
+   = 4.97e-19\,\mathrm{J} \]
+
+<strong>Is it above the threshold?</strong> \(4.97 > 3.20\), so yes — electrons
+are ejected.
+
+<strong>Kinetic energy of each ejected electron:</strong>
+\[ \mathrm{KE} = 4.97\times10^{-19} - 3.20\times10^{-19}
+   = 1.77e-19\,\mathrm{J} \]
+
+<strong>Now the conceptual half.</strong> What if we doubled the
+<em>intensity</em> at the same wavelength? Twice as many photons arrive, so
+twice as many electrons are ejected — but each still receives exactly
+one photon's worth of energy, so the kinetic energy per electron is
+<strong>unchanged</strong>. Intensity controls how many; frequency controls how
+energetic. Confusing those two is the classic error here.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+A metal has work function 4.00e-19&thinsp;J.
+<ol>
+
+<li>Energy of a 450&thinsp;nm photon: <div class="workspace" style="height:1.6cm"></div>
+
+<li>Are electrons ejected, and if so with what kinetic energy?
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>What is the longest wavelength that will eject any electron from
+        this metal? <div class="workspace" style="height:1.8cm"></div>
+
+<li>Very intense 600&thinsp;nm light is shone on the metal
+        for an hour. Predict what happens, and why. <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 4.42e-19&thinsp;J  &emsp;  (b) yes, KE \(=\)
+4.2e-20&thinsp;J  &emsp;  (c) 497&thinsp;nm  &emsp;  (d) nothing
+— each photon is below the work function</p>
+
+</div>
+
+<h2> Ladder 3 • Line spectra and the Bohr model</h2>
+<span class="badge">ZUM §7.3–7.4</span>
+
+<p>Heat hydrogen and it emits only <em>certain</em> wavelengths — a line
+spectrum, not a continuous rainbow. That is the direct evidence that
+electron energies are <strong>quantized</strong>: an electron can occupy only
+allowed levels, and a photon is emitted with exactly the energy of the
+gap it falls across.</p>
+
+<p>For hydrogen only:
+\[ E_n = -2.178\times10^{-18}\left(\frac{1}{n^{2}}\right)~\text{J}
+   \qquad
+   \Delta E = E_{\text{final}} - E_{\text{initial}} \]</p>
+
+<p>The negative sign means bound. \(n = \infty\) is zero energy — the
+electron just barely free — so every bound level lies below it.</p>
+
+<div class="box we"><div class="box-title">I do: an emission line, end to end</div>
+
+<p>Find the wavelength emitted when a hydrogen electron falls from
+\(n = 4\) to \(n = 2\).</p>
+
+<strong>The two levels:</strong>
+\[ E_4 = \frac{-2.178\times10^{-18}}{16} = -1.361e-19\,\mathrm{J}
+   \qquad
+   E_2 = \frac{-2.178\times10^{-18}}{4} = -5.445e-19\,\mathrm{J} \]
+
+<strong>The change:</strong>
+\[ \Delta E = E_2 - E_4 = -5.445\times10^{-19} - (-1.361\times10^{-19})
+   = -4.084e-19\,\mathrm{J} \]
+
+<p>Negative because the atom <em>lost</em> energy. The photon carries that
+energy away, so use its magnitude:</p>
+
+\[ \lambda = \frac{hc}{|\Delta E|}
+   = \frac{(6.626\times10^{-34})(3.00\times10^{8})}{4.084\times10^{-19}}
+   = 4.87\times10^{-7}~\text{m} = \mathbf{487~nm} \]
+
+<strong>Check against reality:</strong> 487 nm is blue-green, and the
+\(4 \to 2\) line is indeed one of the visible hydrogen lines. Any
+transition ending at \(n = 2\) lands in or near the visible; those ending
+at \(n = 1\) are far more energetic and fall in the ultraviolet.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>Energy of the \(n = 3\) level in hydrogen: <div class="workspace" style="height:1.4cm"></div>
+
+<li>\(\Delta E\) for an electron falling from \(n = 3\) to \(n = 2\):
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Wavelength of the photon emitted in (b): <div class="workspace" style="height:1.8cm"></div>
+
+<li>Is energy absorbed or emitted for \(n = 1 \to n = 3\), and how do
+        you know from the sign? <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) -2.420e-19&thinsp;J  &emsp;  (b)
+-3.025e-19&thinsp;J  &emsp;  (c) 657&thinsp;nm  &emsp; 
+(d) absorbed — \(\Delta E\) is positive</p>
+
+</div>
+
+<h2> Ladder 4 • Quantum numbers</h2>
+<span class="badge">ZUM §7.6–7.8</span>
+
+<p>Four numbers address one electron, and each answers a different question.</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Symbol</strong></th><th><strong>Name</strong></th><th><strong>Allowed values</strong></th><th><strong>What it fixes</strong></th></tr>
+<tr><td>\(n\)</td><td>principal</td><td>\(1, 2, 3, \ldots\)</td><td>shell; size and energy</td></tr>
+<tr><td>\(\ell\)</td><td>angular momentum</td><td>\(0\) to \(n-1\)</td><td>subshell shape
+  (\(0=s\), \(1=p\), \(2=d\), \(3=f\))</td></tr>
+<tr><td>\(m_\ell\)</td><td>magnetic</td><td>\(-\ell\) to \(+\ell\)</td><td>which orbital, i.e.\
+  orientation</td></tr>
+<tr><td>\(m_s\)</td><td>spin</td><td>\(+\tfrac{1}{2}\) or \(-\tfrac{1}{2}\)</td><td>which of the two
+  electrons</td></tr>
+</table>
+
+</div>
+
+<p>The <strong class="term">Pauli exclusion principle</strong> says no two electrons in an atom
+share all four — which is exactly why an orbital holds two electrons
+and no more.</p>
+
+<div class="box we"><div class="box-title">I do: counting, then judging legality</div>
+
+<strong>(a) How many orbitals are in the \(n = 3\) shell, and how many
+electrons can it hold?</strong>
+
+\(\ell\) runs \(0, 1, 2\) — so \(3s\), \(3p\), \(3d\). Counting orbitals by
+\(m_\ell\): \(s\) has 1, \(p\) has 3, \(d\) has 5, total \(\mathbf{9}\) orbitals.
+Two electrons each gives \(\mathbf{18}\) — and \(2n^{2} = 2(9) = 18\)
+confirms it.
+
+<strong>(b) Is \(n = 2\), \(\ell = 2\) legal?</strong> No. \(\ell\) may run only to
+\(n - 1 = 1\), so there is no \(2d\) subshell — the first \(d\) subshell is
+\(3d\).
+
+<strong>(c) Is \(n = 3\), \(\ell = 1\), \(m_\ell = -2\) legal?</strong> No. With
+\(\ell = 1\), \(m_\ell\) is limited to \(-1, 0, +1\); the value \(-2\) lies
+outside that range.
+
+<strong>The procedure:</strong> check the numbers <em>in order</em>. \(\ell\) is
+constrained by \(n\), and \(m_\ell\) is constrained by \(\ell\) — so an
+illegal set usually breaks at the first constraint you test.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+<ol>
+
+<li>How many orbitals and how many electrons in the \(n = 4\) shell?
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Which subshell is \(n = 4\), \(\ell = 2\), and how many orbitals does
+        it contain? <div class="workspace" style="height:1.4cm"></div>
+
+<li>Is \(n = 2\), \(\ell = 1\), \(m_\ell = 0\),
+        \(m_s = +\tfrac{1}{2}\) a legal set? <div class="workspace" style="height:1.4cm"></div>
+
+<li>Explain, using the Pauli principle, why an orbital holds at most
+        two electrons. <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 16 orbitals, 32 electrons  &emsp;  (b) \(4d\), 5 orbitals
+ &emsp;  (c) yes  &emsp;  (d) only two \(m_s\) values exist, so a third electron
+would duplicate all four numbers</p>
+
+</div>
+
+<h2> Ladder 5 • Electron configurations</h2>
+<span class="badge">ZUM §7.11</span>
+
+Fill in order of increasing energy, obeying three rules:
+<ul>
+
+<li><strong class="term">Aufbau</strong>: lowest-energy subshell first.
+
+<li><strong class="term">Pauli</strong>: two electrons per orbital, opposite spins.
+
+<li><strong class="term">Hund</strong>: within a subshell, occupy every orbital singly
+        before pairing — electrons repel, so they spread out first.
+</ul>
+
+<p>The periodic table <em>is</em> the filling order: read across the rows and
+the blocks give you the sequence without memorizing a diagonal diagram.</p>
+
+<div class="box we"><div class="box-title">I do: an atom, an ion, and an anomaly</div>
+
+<strong>(a) Sulfur (Z = 16).</strong>
+\[ 1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{4}
+   \qquad\text{or}\qquad [\ce{Ne}]\,3s^{2}\,3p^{4} \]
+Check the electron count: \(2+2+6+2+4 = 16\). Always run that sum.
+
+<strong>(b) The \(\ce{S^2-}\) ion.</strong> Two extra electrons complete the \(3p\):
+\[ [\ce{Ne}]\,3s^{2}\,3p^{6} = [\ce{Ar}] \]
+
+<strong>(c) Copper (Z = 29), an anomaly.</strong> Aufbau predicts
+\([\ce{Ar}]\,4s^{2}\,3d^{9}\), but the actual configuration is
+\[ [\ce{Ar}]\,4s^{1}\,3d^{10} \]
+A filled \(d\) subshell is low enough in energy to be worth promoting one
+\(4s\) electron. Chromium does the same thing for a half-filled shell:
+\([\ce{Ar}]\,4s^{1}\,3d^{5}\). These two are the anomalies worth knowing.
+
+<strong>The trap in (b) that catches everyone:</strong> for a transition-metal
+<em>cation</em>, electrons leave the \(4s\) <em>before</em> the \(3d\), even
+though \(4s\) filled first. \(\ce{Fe^2+}\) is \([\ce{Ar}]\,3d^{6}\), not
+\([\ce{Ar}]\,4s^{2}\,3d^{4}\).
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+<ol>
+
+<li>Write the full configuration for calcium (Z = 20).
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Write the noble-gas configuration for bromine (Z = 35).
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Write the configuration for \(\ce{Fe^3+}\) (Fe is Z = 26).
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>How many unpaired electrons does nitrogen (Z = 7) have, and
+        which rule decides it? <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) \(1s^{2}2s^{2}2p^{6}3s^{2}3p^{6}4s^{2}\)  &emsp;  (b)
+\([\ce{Ar}]4s^{2}3d^{10}4p^{5}\)  &emsp;  (c) \([\ce{Ar}]3d^{5}\)  &emsp; 
+(d) three, by Hund's rule</p>
+
+</div>
+
+<h2> Ladder 6 • Photoelectron spectroscopy</h2>
+<span class="badge">ZUM §7.9</span>
+
+<p>A PES spectrum is a direct picture of an atom's subshells. Read it with
+two rules and nothing else:</p>
+
+<div class="center">
+<div class="fbox">
+<strong>Peak position</strong> \(=\) binding energy \(=\) how tightly that subshell
+is held.<br>
+<strong>Peak area (height)</strong> \(=\) <em>how many electrons</em> are in that
+subshell.</div>
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Do not confuse this with a <strong>mass spectrum</strong>, where height gives
+isotope <em>abundance</em>. In PES the vertical axis counts
+<em>electrons in a subshell</em>, and the ratios come out as
+\(2:2:6:2:\ldots\) — exactly the subshell populations of a
+configuration.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: identifying an element from its spectrum</div>
+
+<p>A PES spectrum shows peaks at 1.36, 0.10, and 0.06 MJ/mol with relative
+areas \(2 : 2 : 1\).</p>
+
+<strong>Read the areas as electron counts.</strong> \(2 : 2 : 1\) means 2, 2, and
+1 electrons — five in total, so \(Z = 5\): <strong>boron</strong>.
+
+<strong>Assign the peaks.</strong> The largest binding energy belongs to the
+electrons closest to the nucleus and least shielded:
+\[ 1.36 = 1s^{2} \qquad 0.10 = 2s^{2} \qquad 0.06 = 2p^{1} \]
+Configuration \(1s^{2}2s^{2}2p^{1}\) — boron, confirmed twice over.
+
+<strong>Why 1.36 is so much larger than the rest.</strong> The \(1s\) electrons
+sit closest to the \(+5\) nucleus with essentially nothing between them
+and it. The \(n = 2\) electrons are further out <em>and</em> shielded by
+the \(1s\) pair, so the nucleus pulls on them far more weakly — a
+Coulombic argument, and the only kind that earns credit.
+
+<strong>And why \(2s\) exceeds \(2p\):</strong> the \(2s\) orbital penetrates closer
+to the nucleus, so a \(2s\) electron spends more time inside the shielding
+and is held more tightly.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+A PES spectrum shows peaks at 6.84, 0.68, 0.40 MJ/mol with relative
+areas \(2 : 2 : 4\).
+<ol>
+
+<li>How many electrons in total, and which element is it?
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>Assign each peak to a subshell. <div class="workspace" style="height:1.6cm"></div>
+
+<li>Explain, in Coulombic terms, why the 6.84 peak is so much larger
+        than the others. <div class="workspace" style="height:1.8cm"></div>
+
+<li>In a PES spectrum, what does peak <em>height</em> represent — and
+        what does it represent in a mass spectrum? <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) 8 electrons — oxygen  &emsp;  (b) \(1s^{2}\), \(2s^{2}\),
+\(2p^{4}\)  &emsp;  (c) closest to the nucleus and unshielded  &emsp; 
+(d) electrons per subshell; isotope abundance</p>
+
+</div>
+
+<h2> Ladder 7 • Successive ionization energies</h2>
+<span class="badge">ZUM §7.12</span>
+
+<p>Removing electrons one at a time gives IE\(_1\), IE\(_2\), IE\(_3\), … —
+each larger than the last, because pulling a negative electron away from
+an increasingly positive ion is harder every time.</p>
+
+<p>The information is in the <strong>jump</strong>. A sudden large increase means
+the next electron had to come from a <em>new, inner</em> shell — much
+closer to the nucleus and much less shielded. Count the electrons removed
+before the jump and you have the number of valence electrons, hence the
+group.</p>
+
+<div class="box we"><div class="box-title">I do: identifying a group from the jumps</div>
+
+<p>An element has successive ionization energies, in MJ/mol, of
+\[ 0.74,\quad 1.45,\quad 7.73,\quad 10.5 \]
+Which group does it belong to?</p>
+
+<strong>Look at the ratios, not the differences.</strong>
+\[ \frac{1.45}{0.74} = 2.0 \qquad
+   \frac{7.73}{1.45} = 5.3 \qquad
+   \frac{10.5}{7.73} = 1.4 \]
+
+<strong>The jump is from IE\(_2\) to IE\(_3\)</strong> — a factor of more than
+five, against modest steps either side.
+
+<strong>Interpretation.</strong> Two electrons came off comparatively easily;
+the third was drastically harder. So the atom has <strong>two valence
+electrons</strong> and is in <strong>group 2A</strong>. (The values are magnesium's.)
+
+<strong>Say why in Coulombic terms.</strong> The first two electrons came from
+the \(3s\) subshell — far from the nucleus and shielded by the \(n = 1\)
+and \(n = 2\) electrons. The third had to come from \(n = 2\): much closer
+to the nucleus and shielded only by the \(1s\) pair, so the attraction to
+overcome is several times greater.
+
+<strong>What earns zero here:</strong> “the ion had a full octet and wanted to
+stay stable.” That names the pattern instead of explaining it. Every
+ionization-energy explanation must cite nuclear charge, distance, or
+shielding.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+An element has IEs, in MJ/mol, of \(1.01\), \(1.91\), \(2.91\), \(4.96\),
+\(6.27\), \(21.3\), \(25.4\).
+<ol>
+
+<li>Between which two ionizations is the large jump?
+        <div class="workspace" style="height:1.4cm"></div>
+
+<li>How many valence electrons, and which group? <div class="workspace" style="height:1.4cm"></div>
+
+<li>Explain the jump in Coulombic terms — no octet language.
+        <div class="workspace" style="height:2cm"></div>
+
+<li>Why is IE\(_2\) always larger than IE\(_1\) for any element?
+        <div class="workspace" style="height:1.6cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) between IE\(_5\) and IE\(_6\)  &emsp;  (b) five valence
+electrons, group 5A  &emsp;  (c) the sixth comes from an inner shell —
+closer, less shielded  &emsp;  (d) removing from a more positive ion</p>
+
+</div>
+
+<h2> Ladder 8 • Periodic trends, one engine</h2>
+<span class="badge">ZUM §7.12–7.13</span>
+
+<p>Three trends, and they all run on the same Coulombic reasoning:</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Trend</strong></th><th><strong>Across a period (\(\to\))</strong></th><th><strong>Down a group (\(\downarrow\))</strong></th></tr>
+<tr><td>Atomic radius</td><td>decreases</td><td>increases</td></tr>
+<tr><td>Ionization energy</td><td>increases</td><td>decreases</td></tr>
+<tr><td>Electronegativity</td><td>increases</td><td>decreases</td></tr>
+</table>
+
+</div>
+
+<strong>Why, in one paragraph.</strong> Across a period, protons are added while
+electrons enter the <em>same</em> shell, so shielding barely changes: the
+effective nuclear charge rises, the electrons are pulled in tighter, and
+the atom shrinks while holding its electrons more strongly. Down a
+group, each element adds a whole new shell: the outer electrons are much
+<em>further</em> from the nucleus and shielded by every inner shell, so
+they are held far more loosely.
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The language rule for this entire chapter.</strong> Every trend
+explanation must cite <strong>nuclear charge, distance, or shielding</strong>.
+Answers built on “full shells”, “octets”, or “wanting to be
+stable” describe the pattern rather than explaining it, and earn
+<strong>zero</strong> on this course's rubrics — however confidently they are
+written.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: comparisons, each justified Coulombically</div>
+
+<strong>(a) Which has the larger radius, \(\ce{Na}\) or \(\ce{Mg}\)?</strong>
+<strong>\(\ce{Na}\)</strong>. Magnesium has one more proton pulling on electrons in
+the same \(n = 3\) shell with essentially the same shielding, so its
+effective nuclear charge is higher and its electron cloud is drawn in
+tighter.
+
+<strong>(b) Which has the higher first ionization energy, \(\ce{Li}\) or
+\(\ce{Cs}\)?</strong> <strong>\(\ce{Li}\)</strong>. Its outer electron sits in \(n = 2\), close to
+the nucleus and shielded only by the \(1s\) pair. Caesium's outer electron
+is in \(n = 6\), far away and shielded by five inner shells, so it is held
+weakly and easily removed — which is exactly why caesium is so
+reactive.
+
+<strong>(c) Which is larger, \(\ce{Cl}\) or \(\ce{Cl-}\)?</strong> <strong>\(\ce{Cl-}\)</strong>.
+The added electron does not change the nuclear charge, but it increases
+electron–electron repulsion in the valence shell, so the cloud expands.
+Anions are always larger than their parent atoms; cations are always
+smaller, for the mirror-image reason.
+
+<strong>Notice what none of these answers mentioned:</strong> octets, full
+shells, or stability. Each one named a charge, a distance, or a
+shielding difference.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 8 — four questions</div>
+
+Answer each with a Coulombic justification.
+<ol>
+
+<li>Larger radius: \(\ce{K}\) or \(\ce{Br}\)? <div class="workspace" style="height:1.6cm"></div>
+
+<li>Higher first ionization energy: \(\ce{Ne}\) or \(\ce{Na}\)?
+        <div class="workspace" style="height:1.6cm"></div>
+
+<li>Larger: \(\ce{Mg}\) or \(\ce{Mg^2+}\)? <div class="workspace" style="height:1.6cm"></div>
+
+<li>\(\ce{Na+}\) and \(\ce{F-}\) both have 10 electrons. Which is smaller,
+        and why? <div class="workspace" style="height:1.8cm"></div>
+</ol>
+<p class="selfcheck"><em>check:</em> (a) \(\ce{K}\)  &emsp;  (b) \(\ce{Ne}\)  &emsp;  (c) \(\ce{Mg}\)  &emsp; 
+(d) \(\ce{Na+}\) — more protons pulling on the same ten electrons</p>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>wavelength, frequency, energy</td><td>1</td><td>convert to metres first</td></tr>
+<tr><td>\(\square\)</td><td>the photoelectric effect</td><td>2</td><td>intensity vs. frequency</td></tr>
+<tr><td>\(\square\)</td><td>line spectra and Bohr levels</td><td>3</td><td>sign of \(\Delta E\)</td></tr>
+<tr><td>\(\square\)</td><td>quantum numbers</td><td>4</td><td>check them in order</td></tr>
+<tr><td>\(\square\)</td><td>electron configurations</td><td>5</td><td>\(4s\) leaves before \(3d\)</td></tr>
+<tr><td>\(\square\)</td><td>photoelectron spectroscopy</td><td>6</td><td>area \(=\) electron count</td></tr>
+<tr><td>\(\square\)</td><td>successive ionization energies</td><td>7</td><td>find the jump</td></tr>
+<tr><td>\(\square\)</td><td>periodic trends</td><td>8</td><td>charge, distance, shielding</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>8/8: this chapter feeds Units 1 and 2 directly, so you are in good shape
+for both. 6–7: redo the missed ladders tomorrow, not today.
+5 or fewer: check where the misses fall. Ladders 1–3 are
+<em>arithmetic</em> — almost always a unit conversion, usually nm to m.
+Ladders 6–8 are <em>explanation</em>, and there the failure is nearly
+always reaching for octets and stability instead of naming a nuclear
+charge, a distance, or a shielding difference. Those are two different
+problems with two different fixes; diagnose which one you have before
+redoing anything.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

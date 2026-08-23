@@ -62,6 +62,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 7 • Atomic Structure and Periodicity
 
 - [Guided Notes](chapter07-atomic-structure/ch07-notes.md)
+- [Self-Study • Chapter 7, I do / You do](chapter07-atomic-structure/ch07-selfstudy.md)
 - [Worksheet 1 • Light, Photons, and Orbitals](chapter07-atomic-structure/ch07-ws1.md)
 - [Worksheet 2 • Electron Configurations](chapter07-atomic-structure/ch07-ws2.md)
 - [Worksheet 3 • Trends, Ionization Energy & PES](chapter07-atomic-structure/ch07-ws3.md)
