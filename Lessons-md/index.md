@@ -13,6 +13,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 2 • Atoms, Molecules, and Ions
 
 - [Guided Notes](chapter02-atoms-molecules-ions/ch02-notes.md)
+- [Self-Study • Chapter 2, I do / You do](chapter02-atoms-molecules-ions/ch02-selfstudy.md)
 - [Worksheet 1 • Laws, Experiments, Isotopes](chapter02-atoms-molecules-ions/ch02-ws1.md)
 - [Worksheet 2 • Nomenclature Drill](chapter02-atoms-molecules-ions/ch02-ws2.md)
 - [Worksheet 3 • Naming Simple Compounds — Extra Practice](chapter02-atoms-molecules-ions/ch02-ws3.md)
