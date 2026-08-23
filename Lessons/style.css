@@ -80,6 +80,12 @@ footer { border-top: 1px solid var(--rule); color: var(--gray);
 .scratch:focus { outline: 2px solid var(--accent); outline-offset: 1px;
                  border-style: solid; }
 .scratch::placeholder { color: var(--gray); opacity: .55; }
+math-field.mathfield { display: block; width: 100%; box-sizing: border-box;
+    margin: .3rem 0 .15rem; padding: .35rem .5rem;
+    border: 1px solid var(--accent); border-radius: 4px; background: #fff;
+    font-size: 1.05rem; }
+math-field.mathfield:focus { outline: 2px solid var(--accent);
+    outline-offset: 1px; }
 .ansrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
           margin: .4rem 0 .9rem; font-family: system-ui, sans-serif; }
 .ansinput { flex: 1 1 11rem; max-width: 16rem; padding: .35rem .5rem;

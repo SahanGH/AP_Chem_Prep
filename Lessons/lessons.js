@@ -112,4 +112,97 @@
     if (e.target.getAttribute("data-check") === "num") { check(e.target); }
     else { showAnswer(e.target.parentNode); }
   });
+
+  /* ---- scratch pads: persistence, and an optional equation editor ----
+
+     Saved per browser under a stable pad id, so a refresh mid-ladder does
+     not lose a student's working. Never leaves their device.
+
+     Pads flagged data-math upgrade to a MathLive <math-field> the first
+     time they are focused. The library is ~1 MB, so it is fetched only on
+     that first focus: a student who works on paper and just types answers
+     downloads none of it. */
+
+  var PAD_KEY = "apchem:scratch:";
+  var MATHLIVE_URL =
+    "https://cdn.jsdelivr.net/npm/mathlive@0.104.2/dist/mathlive.min.mjs";
+  var mathlivePromise = null;
+
+  function padKey(el) { return PAD_KEY + el.getAttribute("data-pad"); }
+
+  function save(el) {
+    var k = el.getAttribute("data-pad");
+    if (!k) { return; }
+    try {
+      if (el.value) { localStorage.setItem(padKey(el), el.value); }
+      else { localStorage.removeItem(padKey(el)); }
+    } catch (e) { /* private mode, quota, storage disabled -- ignore */ }
+  }
+
+  function restore(el) {
+    try {
+      var v = localStorage.getItem(padKey(el));
+      if (v) { el.value = v; }
+    } catch (e) { /* ignore */ }
+  }
+
+  function loadMathLive() {
+    if (!mathlivePromise) {
+      mathlivePromise = import(MATHLIVE_URL).then(function (m) {
+        /* Sounds are another ~227 KB and a keyclick in a quiet room is not
+           what anyone wants. */
+        if (m.MathfieldElement) { m.MathfieldElement.soundsDirectory = null; }
+        return m;
+      });
+    }
+    return mathlivePromise;
+  }
+
+  function upgrade(ta) {
+    ta.setAttribute("data-upgrading", "1");
+    loadMathLive().then(function () {
+      var mf = document.createElement("math-field");
+      mf.className = "scratch mathfield";
+      mf.setAttribute("data-pad", ta.getAttribute("data-pad"));
+      mf.setAttribute("aria-label", "working space");
+      if (ta.style.height) { mf.style.minHeight = ta.style.height; }
+      mf.value = ta.value || "";
+      mf.addEventListener("input", function () { save(mf); });
+      ta.parentNode.replaceChild(mf, ta);
+      mf.focus();
+    }).catch(function () {
+      /* Offline, or a filter blocking the CDN. The textarea still works --
+         leave it alone rather than break the pad. */
+      ta.removeAttribute("data-math");
+      ta.removeAttribute("data-upgrading");
+    });
+  }
+
+  function initPads() {
+    var pads = document.querySelectorAll("textarea.scratch[data-pad]");
+    for (var i = 0; i < pads.length; i++) { restore(pads[i]); }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPads);
+  } else {
+    initPads();
+  }
+
+  document.addEventListener("input", function (e) {
+    if (e.target.classList && e.target.classList.contains("scratch")) {
+      save(e.target);
+    }
+  });
+
+  document.addEventListener("focusin", function (e) {
+    var t = e.target;
+    if (!t.classList || !t.classList.contains("scratch")) { return; }
+    if (t.tagName !== "TEXTAREA") { return; }
+    if (!t.getAttribute("data-math") || t.getAttribute("data-upgrading")) {
+      return;
+    }
+    upgrade(t);
+  });
+
 })();
