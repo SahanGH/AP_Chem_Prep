@@ -1,0 +1,1182 @@
+% Ch13 self-study -- "I do / You do" ladder for Zumdahl chapter 13.
+% Twelve ladders, 48 questions, fourteen figures.
+%
+% SCOPE: nothing skipped. TEXTBOOK-MAP maps 13.1-13.7 onto CED 7.1
+% through 7.10 -- the whole of Unit 7 -- and the skip list contains no
+% part of this chapter.
+%
+% Unit conventions: R is written in math mode rather than through
+% siunitx, since L atm mol^-1 K^-1 has no clean \SI spelling here.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{13}
+\apcunittitle{Chemical Equilibrium}
+\apcdoctitle{Self-Study \textbullet\ Chapter 13, I~do / You~do}
+\apcsubtitle{Zumdahl \S13.1--13.7 \textbullet\ PDF pp.\ 651--683}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help. Work all four before checking
+the gray \emph{check:} line; a tracker tick needs all four right first
+time.
+
+\textbf{Nothing in this chapter is skipped.} \S13.1--13.7 maps onto CED
+topics 7.1 to 7.10, the whole of Unit 7.
+
+\textbf{And this chapter pays twice.} Unit 8 --- acids and bases, at
+11--15\% the second-heaviest unit on the exam --- is almost entirely
+equilibrium applied to one particular reaction. Every ICE table you
+build here you will build again for a weak acid. A shaky Chapter 13
+does not cost you one unit; it costs you two.
+
+\textbf{The single idea underneath everything.} At equilibrium the
+forward and reverse reactions have not stopped --- they are running at
+\emph{equal rates}, so nothing appears to change. ``Dynamic'' is the
+word that earns marks, and ``the reaction has stopped'' is the sentence
+that loses them.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ The equilibrium condition}
+\zsec{13.1}
+
+Equilibrium is reached when the forward and reverse rates become equal.
+From that moment concentrations stop changing --- but the reactions
+themselves keep going.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=7.4cm, height=5.2cm,
+  xlabel={time}, ylabel={concentration},
+  xmin=0, xmax=100, ymin=0, ymax=1.15,
+  xtick=\empty, ytick=\empty,
+  axis lines=left, label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, domain=0:100, samples=80]
+  {0.25+0.75*exp(-x/22)};
+\addplot[seriesB, thick, domain=0:100, samples=80]
+  {0.70-0.70*exp(-x/22)};
+\draw[densely dashed, apcgray] (axis cs:62,0) -- (axis cs:62,1.15);
+\node[font=\footnotesize,anchor=west] at (axis cs:64,1.02)
+  {constant};
+\node[font=\footnotesize,anchor=west] at (axis cs:22,0.92)
+  {reactant};
+\node[font=\footnotesize,anchor=west] at (axis cs:22,0.30)
+  {product};
+\end{axis}
+\end{tikzpicture}
+% No \hspace here: tex2html.py does not know the macro and emits it as
+% literal "hspace0.3cm" text on the web page. The newline between the
+% two pictures supplies the gap by itself.
+\begin{tikzpicture}
+\begin{axis}[
+  width=7.4cm, height=5.2cm,
+  xlabel={time}, ylabel={rate},
+  xmin=0, xmax=100, ymin=0, ymax=1.15,
+  xtick=\empty, ytick=\empty,
+  axis lines=left, label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, domain=0:100, samples=80] {0.45+0.55*exp(-x/22)};
+\addplot[seriesB, thick, domain=0:100, samples=80] {0.45-0.45*exp(-x/22)};
+\draw[densely dashed, apcgray] (axis cs:62,0) -- (axis cs:62,1.15);
+\node[font=\footnotesize,anchor=west] at (axis cs:64,1.02)
+  {rates \textbf{equal}};
+\node[font=\footnotesize,anchor=west] at (axis cs:16,0.90)
+  {forward};
+\node[font=\footnotesize,anchor=west] at (axis cs:16,0.13)
+  {reverse};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{Equal rates, not equal concentrations.} At equilibrium there is
+no requirement whatever that $[\text{reactant}] = [\text{product}]$ ---
+usually they are wildly different. What is equal is the \emph{rate} at
+which each side is being consumed and re-formed. Writing ``the
+concentrations become equal'' is the classic wrong answer here.
+\end{apctrap}
+
+\begin{workedexample}[I do: what is and is not true at equilibrium]
+\textbf{Sort these statements about a system at equilibrium.}
+
+\textbf{``The forward and reverse reactions have stopped.''}
+\textbf{False}, and it is the error the whole chapter is built to
+prevent. Both reactions continue at full speed. Equilibrium is
+\textbf{dynamic}: label a few reactant molecules and you would find them
+turning into product and back again indefinitely.
+
+\textbf{``The concentrations are constant.''} \textbf{True} --- this is
+what you observe. Each species is being formed exactly as fast as it is
+consumed, so the net change is zero.
+
+\textbf{``The concentrations are equal.''} \textbf{False.} Nothing
+requires that, and for most reactions they differ by orders of
+magnitude.
+
+\textbf{``The amounts of reactant and product no longer change.''}
+\textbf{True}, and it is just the second statement restated.
+
+\textbf{How you would know experimentally.} Equilibrium can be
+approached from \emph{either} direction --- start with pure reactants
+or with pure products and, at the same temperature, you arrive at the
+same equilibrium mixture. That two-way approach is the strongest
+evidence that the system is genuinely at equilibrium rather than simply
+having run out of something.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item True or false: at equilibrium the forward reaction stops.
+        Explain. \workspace[1.6cm]
+  \item True or false: at equilibrium $[\text{reactant}] =
+        [\text{product}]$. Explain. \workspace[1.6cm]
+  \item What quantity is equal at equilibrium? \workspace[1.4cm]
+  \item What would you observe that tells you equilibrium has been
+        reached? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) false --- both continue \quad (b) false --- no such
+requirement \quad (c) the forward and reverse rates \quad (d)
+concentrations stop changing}
+\keyonly{\begin{apcanswer}(a) \textbf{False.} Both reactions continue
+at equal rates --- equilibrium is \textbf{dynamic}, not static. Nothing
+has stopped; the two processes simply cancel. (b) \textbf{False.} There
+is no requirement that concentrations be equal, and usually they are
+very different. What the equilibrium constant fixes is their
+\emph{ratio}, not their equality. (c) The \textbf{forward and reverse
+reaction rates}. (d) That the \textbf{concentrations (or pressures, or
+colour) stop changing} and then remain constant --- while the
+temperature is held fixed and nothing is added or removed.
+\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Writing the equilibrium
+expression}
+\zsec{13.2}
+
+For $a\ce{A} + b\ce{B} \rightleftharpoons c\ce{C} + d\ce{D}$:
+
+\[ K_{c} = \frac{[\ce{C}]^{c}\,[\ce{D}]^{d}}
+                {[\ce{A}]^{a}\,[\ce{B}]^{b}} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,3.1)
+    {three rules, and they never change};
+  \foreach \y/\n/\t in {%
+      2.4/{1}/{\textbf{products} on top, \textbf{reactants} underneath},
+      1.8/{2}/{each concentration raised to the power of its
+        \textbf{coefficient}},
+      1.2/{3}/{pure \textbf{solids} and pure \textbf{liquids} are
+        \emph{omitted} (Ladder 4)}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.3,\y) {\n.};
+    \node[anchor=west] at (0.85,\y) {\t};}
+  \draw[apcgray] (0.2,0.85) -- (10.3,0.85);
+  \node[anchor=west] at (0.3,0.4)
+    {$K$ has \textbf{no units} at this level, and it depends only on
+     \textbf{temperature}};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: three expressions]
+\textbf{(a) $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$}
+\[ K_{c} = \frac{[\ce{NH3}]^{2}}{[\ce{N2}][\ce{H2}]^{3}} \]
+The 3 on \ce{H2} is an exponent, not a multiplier --- $[\ce{H2}]^{3}$,
+never $3[\ce{H2}]$. That single confusion accounts for a startling share
+of lost marks.
+
+\textbf{(b) $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$}
+\[ K_{c} = \frac{[\ce{SO3}]^{2}}{[\ce{SO2}]^{2}[\ce{O2}]} \]
+
+\textbf{(c) $\ce{H2(g) + I2(g) <=> 2HI(g)}$}
+\[ K_{c} = \frac{[\ce{HI}]^{2}}{[\ce{H2}][\ce{I2}]} \]
+
+\textbf{What $K$ does and does not depend on.} It depends on the
+temperature and on nothing else. Changing concentrations, changing the
+pressure, or adding a catalyst does \emph{not} change $K$ --- those
+shift the position of equilibrium, which is a different thing entirely
+and is Ladders 11 and 12. Only a change in temperature changes the
+number itself.
+
+\textbf{Why $K$ carries no units here.} Strictly it is built from
+activities, which are ratios and therefore dimensionless. At this level
+just report $K$ as a bare number --- an answer with units attached is
+not what the CED expects.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+Write the $K_{c}$ expression.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$ \workspace[1.6cm]
+  \item $\ce{2NO(g) + O2(g) <=> 2NO2(g)}$ \workspace[1.6cm]
+  \item $\ce{4NH3(g) + 5O2(g) <=> 4NO(g) + 6H2O(g)}$
+        \workspace[1.8cm]
+  \item Name the only variable that changes the value of $K$.
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) $[\ce{PCl3}][\ce{Cl2}]/[\ce{PCl5}]$ \quad (b)
+$[\ce{NO2}]^{2}/([\ce{NO}]^{2}[\ce{O2}])$ \quad (c)
+$[\ce{NO}]^{4}[\ce{H2O}]^{6}/([\ce{NH3}]^{4}[\ce{O2}]^{5})$ \quad (d)
+temperature}
+\keyonly{\begin{apcanswer}(a) $K_{c} =
+\dfrac{[\ce{PCl3}][\ce{Cl2}]}{[\ce{PCl5}]}$.
+(b) $K_{c} = \dfrac{[\ce{NO2}]^{2}}{[\ce{NO}]^{2}[\ce{O2}]}$.
+(c) $K_{c} =
+\dfrac{[\ce{NO}]^{4}[\ce{H2O}]^{6}}{[\ce{NH3}]^{4}[\ce{O2}]^{5}}$.
+(d) \textbf{Temperature}, and nothing else. Changing a concentration or
+a pressure shifts where the system sits along the equilibrium, and a
+catalyst changes only how fast it gets there --- none of them alters
+$K$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ $K_{p}$ and $K_{c}$}
+\zsec{13.3}
+
+For gases you may build $K$ out of partial pressures instead of
+concentrations. The two are related through the change in the number of
+moles of \emph{gas}.
+
+\[ K_{p} = K_{c}\,(RT)^{\Delta n}
+   \qquad
+   \Delta n = \big(\text{mol gas products}\big)
+            - \big(\text{mol gas reactants}\big) \]
+
+with $R = 0.08206\;\mathrm{L\,atm\,mol^{-1}\,K^{-1}}$ and $T$ in
+\textbf{kelvin}.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,2.75)
+    {$\Delta n$ counts gas moles only --- solids and liquids do not
+     count};
+  \foreach \y/\rx/\dn/\rel in {%
+      2.05/{$\ce{H2 + I2 <=> 2HI}$}/{$2-2 = 0$}/{$K_{p} = K_{c}$},
+      1.4/{$\ce{PCl5 <=> PCl3 + Cl2}$}/{$2-1 = +1$}/{$K_{p} =
+        K_{c}(RT)$},
+      0.75/{$\ce{N2 + 3H2 <=> 2NH3}$}/{$2-4 = -2$}/{$K_{p} =
+        K_{c}(RT)^{-2}$}} {
+    \node[anchor=west] at (0.3,\y) {\rx};
+    \node[anchor=west] at (4.4,\y) {\dn};
+    \node[anchor=west] at (6.6,\y) {\rel};}
+  \draw[apcgray] (0.2,2.45) -- (10.3,2.45);
+  \draw[apcgray] (0.2,0.4) -- (10.3,0.4);
+  \node[anchor=west,font=\sffamily\itshape] at (0.3,0.0)
+    {when $\Delta n = 0$ the two constants are numerically identical};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: converting between the two]
+\textbf{A gas-phase reaction has $K_{c} = 0.500$ at \SI{400}{\kelvin}
+and $\Delta n = +1$. Find $K_{p}$.}
+
+\[ K_{p} = K_{c}(RT)^{\Delta n}
+         = 0.500 \times (0.08206 \times 400)^{1} \]
+\[ = 0.500 \times 32.82 = \mathbf{16.4} \]
+
+\textbf{Check the direction of the change.} $\Delta n$ is positive, so
+$(RT)^{\Delta n}$ is a factor larger than 1 and $K_{p} > K_{c}$. If
+$\Delta n$ had been negative, $K_{p}$ would have come out smaller. A
+quick look at the sign tells you whether your answer should have grown
+or shrunk before you compute anything.
+
+\textbf{The two things that go wrong here.} $T$ must be in
+\textbf{kelvin} --- the equation is meaningless in celsius. And
+$\Delta n$ counts \textbf{gas moles only}: in
+$\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$, $\Delta n = 1 - 0 = +1$, because
+neither solid contributes.
+
+\textbf{When you can skip the conversion entirely.} If $\Delta n = 0$
+then $(RT)^{0} = 1$ and $K_{p} = K_{c}$ exactly. Count the gas moles on
+each side first --- if they match, there is nothing to calculate.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $\Delta n$ for $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$.
+        \workspace[1.4cm]
+  \item For that reaction, is $K_{p}$ larger or smaller than $K_{c}$?
+        \workspace[1.6cm]
+  \item Find $\Delta n$ for $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$.
+        \workspace[1.6cm]
+  \item A reaction has $K_{c} = 2.0$ and $\Delta n = 0$. Give $K_{p}$.
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) $-1$ \quad (b) smaller \quad (c) $+1$ \quad (d) 2.0}
+\keyonly{\begin{apcanswer}(a) $2 - 3 = \mathbf{-1}$.
+(b) \textbf{Smaller.} $\Delta n$ is negative, so $(RT)^{-1}$ is less
+than 1 (at ordinary temperatures $RT$ is well above 1), and multiplying
+by it shrinks $K_{c}$. (c) $\mathbf{+1}$ --- only \ce{CO2} is a gas;
+both solids are ignored. (d) $K_{p} = K_{c}(RT)^{0} = K_{c} \times 1 =
+\mathbf{2.0}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Heterogeneous equilibria}
+\zsec{13.4}
+
+Pure solids and pure liquids are left out of the equilibrium
+expression. Not set to zero --- \emph{left out}.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,2.9)
+    {which phases appear in $K$?};
+  \foreach \x/\ph/\inn in {%
+      1.1/{gas (g)}/{\textbf{yes}},
+      3.6/{aqueous (aq)}/{\textbf{yes}},
+      6.4/{pure solid (s)}/{\emph{no}},
+      9.1/{pure liquid (l)}/{\emph{no}}} {
+    \node[font=\sffamily\bfseries] at (\x,2.25) {\ph};
+    \node at (\x,1.75) {\inn};}
+  \draw[apcgray] (0.2,1.35) -- (10.3,1.35);
+  \node[anchor=west] at (0.3,0.85)
+    {a pure solid or liquid has a fixed density, so its
+     ``concentration'' cannot change};
+  \node[anchor=west] at (0.3,0.3)
+    {--- a constant folded into $K$ contributes nothing, so it is simply
+     omitted};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: why a solid drops out]
+\textbf{For $\ce{CaCO3(s) <=> CaO(s) + CO2(g)}$, the expression is
+just}
+\[ K_{c} = [\ce{CO2}]
+   \qquad\text{and}\qquad
+   K_{p} = P_{\ce{CO2}} \]
+
+\textbf{Why the solids vanish.} The ``concentration'' of a pure solid
+is its density divided by its molar mass --- a fixed property of the
+substance. Adding more \ce{CaCO3} gives you a bigger lump, not a more
+concentrated one. Since the quantity never changes, it is a constant;
+constants get absorbed into $K$, and what is left is the expression
+above.
+
+\textbf{The consequence students find surprising.} Adding more solid
+\ce{CaCO3} to this system does \textbf{nothing} --- it does not shift
+the equilibrium and does not change the \ce{CO2} pressure. Nor does
+removing some, as long as \emph{some} remains. What matters is that the
+solid is present at all; how much is irrelevant.
+
+\textbf{But do not confuse pure liquids with solutions.} Water as a pure
+liquid solvent is omitted. Water as a \emph{gas} is included. And a
+dissolved species is always included, however dilute --- ``(aq)'' means
+it counts.
+
+\textbf{A second example to fix the pattern:}
+$\ce{Fe3O4(s) + 4H2(g) <=> 3Fe(s) + 4H2O(g)}$ gives
+\[ K_{c} = \frac{[\ce{H2O}]^{4}}{[\ce{H2}]^{4}} \]
+Both solids are gone; only the two gases survive.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+Write the $K_{c}$ expression.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\ce{2NaHCO3(s) <=> Na2CO3(s) + CO2(g) + H2O(g)}$
+        \workspace[1.6cm]
+  \item $\ce{C(s) + CO2(g) <=> 2CO(g)}$ \workspace[1.6cm]
+  \item $\ce{AgCl(s) <=> Ag+(aq) + Cl-(aq)}$ \workspace[1.6cm]
+  \item Does adding more solid to a heterogeneous equilibrium shift it?
+        Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $[\ce{CO2}][\ce{H2O}]$ \quad (b)
+$[\ce{CO}]^{2}/[\ce{CO2}]$ \quad (c) $[\ce{Ag+}][\ce{Cl-}]$ \quad (d)
+no --- its concentration is fixed}
+\keyonly{\begin{apcanswer}(a) $K_{c} = [\ce{CO2}][\ce{H2O}]$ --- both
+solids omitted. (b) $K_{c} = \dfrac{[\ce{CO}]^{2}}{[\ce{CO2}]}$ ---
+carbon is a pure solid. (c) $K_{c} = [\ce{Ag+}][\ce{Cl-}]$; the solid is
+omitted, and both ions are aqueous so both count. (You will meet this
+one again as $K_{sp}$.) (d) \textbf{No.} A pure solid's concentration is
+its density over its molar mass, which is fixed --- adding more makes a
+larger pile, not a more concentrated one. Since the solid does not
+appear in $K$, changing how much of it is present cannot shift anything,
+provided at least some remains.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ What the size of $K$ tells you}
+\zsec{13.5}
+
+$K$ is a statement about \emph{where} the equilibrium sits --- how far
+the reaction goes before it balances.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.4,2.1) -- (10.9,2.1);
+  \foreach \x/\v in {1.4/{$K \ll 1$}, 5.6/{$K \approx 1$},
+                     9.6/{$K \gg 1$}} {
+    \fill (\x,2.1) circle (0.09);
+    \node[font=\sffamily\bfseries] at (\x,2.6) {\v};}
+  \node[align=center] at (1.4,1.5) {\textbf{reactants}\\favoured};
+  \node[align=center] at (5.6,1.5) {comparable\\amounts};
+  \node[align=center] at (9.6,1.5) {\textbf{products}\\favoured};
+  \draw[apcgray] (0.3,0.95) -- (10.9,0.95);
+  \node[anchor=west,font=\sffamily\footnotesize] at (0.4,0.5)
+    {$\ce{N2 + O2 <=> 2NO}$ at room temperature: $K \approx 10^{-30}$
+     --- which is why air is not nitrogen oxides};
+  \node[anchor=west,font=\sffamily\footnotesize] at (0.4,0.0)
+    {$\ce{2H2 + O2 <=> 2H2O}$: $K \approx 10^{80}$ --- yet a
+     hydrogen--oxygen mixture sits unchanged without a spark};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{$K$ says nothing about speed.} A reaction with $K = 10^{80}$ can
+be immeasurably slow, and hydrogen and oxygen sitting together in a
+flask are the standard demonstration: enormously product-favoured, and
+nothing happens for years without a spark. $K$ is thermodynamics ---
+\emph{how far}. Chapter 12 was kinetics --- \emph{how fast}. Confusing
+them is the commonest conceptual error across Units 5 and 7 together.
+\end{apctrap}
+
+\begin{workedexample}[I do: reading three values of $K$]
+\textbf{$\ce{H2 + I2 <=> 2HI}$ has $K_{c} = 54.3$ at
+\SI{698}{\kelvin}.} Greater than 1, so products are favoured --- but
+only modestly. A value of 54 means a substantial amount of \ce{H2} and
+\ce{I2} is still present at equilibrium. This is a genuinely
+\emph{reversible} reaction in the everyday sense.
+
+\textbf{$\ce{N2 + O2 <=> 2NO}$ has $K \approx 10^{-30}$ at room
+temperature.} Overwhelmingly reactant-favoured. The air you are
+breathing is roughly 78\% \ce{N2} and 21\% \ce{O2}, and the equilibrium
+amount of \ce{NO} is negligible. Raise the temperature to that of a car
+engine, however, and $K$ climbs --- which is exactly why internal
+combustion produces \ce{NO_x} pollution.
+
+\textbf{$\ce{2H2 + O2 <=> 2H2O}$ has $K \approx 10^{80}$.} So
+product-favoured that for practical purposes the reaction goes to
+completion --- yet it needs a spark, because its activation energy is
+large. Thermodynamically inevitable, kinetically stalled.
+
+\textbf{The rule of thumb worth carrying.} $K > 10^{3}$: treat as
+essentially complete. $K < 10^{-3}$: treat as barely proceeding.
+Between those, both sides are present in meaningful amounts and you
+will need an ICE table (Ladder 9) to say anything quantitative.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A reaction has $K = \num{2e-8}$. Which side is favoured?
+        \workspace[1.4cm]
+  \item A reaction has $K = \num{4e6}$. Which side is favoured?
+        \workspace[1.4cm]
+  \item Does a large $K$ mean the reaction is fast? Explain.
+        \workspace[1.8cm]
+  \item Reaction A has $K = 10$ and reaction B has $K = 1000$. Which
+        proceeds further toward products? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) reactants \quad (b) products \quad (c) no --- $K$ is not
+about rate \quad (d) B}
+\keyonly{\begin{apcanswer}(a) \textbf{Reactants}, heavily --- $K$ is far
+below 1. (b) \textbf{Products}, heavily. (c) \textbf{No.} $K$ describes
+\emph{how far} a reaction proceeds before balancing, not \emph{how
+fast} it gets there. $\ce{2H2 + O2 <=> 2H2O}$ has $K \approx 10^{80}$
+and yet does not react at all at room temperature without a spark,
+because its activation energy is high. Rate is Chapter 12; extent is
+Chapter 13. (d) \textbf{B.} A larger $K$ means the equilibrium lies
+further toward products.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ The reaction quotient $Q$}
+\zsec{13.5}
+
+$Q$ is calculated exactly like $K$ --- same expression --- but from
+\emph{whatever concentrations you happen to have}, equilibrium or not.
+Comparing $Q$ with $K$ tells you which way the reaction must go.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.5,2.3) -- (10.7,2.3);
+  \node[font=\sffamily\bfseries] at (5.6,2.75) {$K$};
+  \fill (5.6,2.3) circle (0.11);
+  % Short tick only, from the axis dot down to just above the "Q = K"
+  % label.  Running it to y=0.7 put the line straight through the label,
+  % which rendered the equals sign as a division sign.
+  \draw[densely dashed,apcgray] (5.6,2.02) -- (5.6,2.25);
+  % Q < K
+  \node[font=\sffamily\bfseries] at (2.4,1.85) {$Q < K$};
+  \draw[-{Stealth[length=2.5mm]},very thick] (1.5,1.35) -- (3.3,1.35);
+  \node[align=center] at (2.4,0.85) {too much reactant\\shifts
+    \textbf{right}};
+  % Q > K
+  \node[font=\sffamily\bfseries] at (8.8,1.85) {$Q > K$};
+  \draw[{Stealth[length=2.5mm]}-,very thick] (7.9,1.35) -- (9.7,1.35);
+  \node[align=center] at (8.8,0.85) {too much product\\shifts
+    \textbf{left}};
+  \node[font=\sffamily\bfseries] at (5.6,1.85) {$Q = K$};
+  \node[align=center] at (5.6,0.85) {at\\equilibrium};
+  \node[font=\sffamily\footnotesize] at (5.6,0.2)
+    {the reaction always moves so as to bring $Q$ toward $K$};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: predicting the direction]
+\textbf{For $\ce{H2 + I2 <=> 2HI}$, $K_{c} = 54.3$. A flask contains
+$[\ce{H2}] = [\ce{I2}] = [\ce{HI}] = \SI{0.100}{\Molar}$. Which way
+does the reaction go?}
+
+\textbf{Build $Q$ with exactly the expression you would use for $K$:}
+\[ Q = \frac{[\ce{HI}]^{2}}{[\ce{H2}][\ce{I2}]}
+     = \frac{(0.100)^{2}}{(0.100)(0.100)}
+     = \frac{0.0100}{0.0100} = 1.00 \]
+
+\textbf{Compare.} $Q = 1.00$ and $K = 54.3$, so $Q < K$.
+
+\textbf{Interpret.} There is too little product relative to
+equilibrium, so the reaction runs \textbf{forward} --- \ce{HI} is
+produced and \ce{H2} and \ce{I2} are consumed --- until $Q$ climbs to
+54.3.
+
+\textbf{The mental model that makes this automatic.} $Q$ has the
+products on top. If $Q$ is too \emph{small}, the top is too small, so
+the reaction makes more product --- it goes right. If $Q$ is too
+\emph{large}, the top is too big, so it consumes product --- it goes
+left. You never need to memorise a rule; you just read the fraction.
+
+\textbf{And note what $Q$ is for.} It answers ``which way?'' before you
+do any hard work. If a question hands you a set of concentrations and
+asks for the direction of change, computing $Q$ is the whole answer ---
+no ICE table required.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+For $\ce{A <=> B}$ with $K = 4.0$:
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $[\ce{A}] = \SI{1.0}{\Molar}$, $[\ce{B}] = \SI{1.0}{\Molar}$.
+        Find $Q$ and the direction. \workspace[1.8cm]
+  \item $[\ce{A}] = \SI{0.10}{\Molar}$, $[\ce{B}] = \SI{0.80}{\Molar}$.
+        Find $Q$ and the direction. \workspace[1.8cm]
+  \item $[\ce{A}] = \SI{0.50}{\Molar}$, $[\ce{B}] = \SI{2.0}{\Molar}$.
+        Find $Q$ and the direction. \workspace[1.8cm]
+  \item In one sentence, what does $Q$ tell you that $K$ cannot?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $Q = 1.0$, right \quad (b) $Q = 8.0$, left \quad (c)
+$Q = 4.0$, at equilibrium \quad (d) which way a particular mixture must
+move}
+\keyonly{\begin{apcanswer}(a) $Q = 1.0/1.0 = \mathbf{1.0}$; $Q < K$, so
+the reaction shifts \textbf{right} (toward \ce{B}). (b) $Q = 0.80/0.10 =
+\mathbf{8.0}$; $Q > K$, so it shifts \textbf{left} (toward \ce{A}). (c)
+$Q = 2.0/0.50 = \mathbf{4.0}$; $Q = K$, so the mixture is already
+\textbf{at equilibrium} and does not change. (d) $Q$ tells you
+\textbf{which direction a particular, non-equilibrium mixture must move}
+--- $K$ alone only says where the system will end up, not where it
+currently stands relative to that.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Manipulating $K$}
+\zsec{13.2}
+
+Rewrite an equation and $K$ changes in a predictable way. Three
+operations cover everything the exam asks.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,2.85)
+    {if you do this to the equation\ldots\ do this to $K$};
+  \foreach \y/\op/\eff in {%
+      2.2/{\textbf{reverse} it}/{$K' = \dfrac{1}{K}$},
+      1.4/{multiply all coefficients by $n$}/{$K' = K^{n}$},
+      0.6/{\textbf{add} two equations}/{$K' = K_{1} \times K_{2}$}} {
+    \node[anchor=west] at (0.4,\y) {\op};
+    \node[anchor=west] at (6.4,\y) {\eff};}
+  \draw[apcgray] (0.3,2.6) -- (10.3,2.6);
+  \draw[apcgray] (0.3,0.15) -- (10.3,0.15);
+  \node[anchor=west,font=\sffamily\itshape] at (0.4,-0.3)
+    {note: add equations, \emph{multiply} their constants ---
+     never add $K$ values};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: one $K$, four questions]
+\textbf{For $\ce{A <=> B}$, $K = 4.0$. Find $K$ for each rewriting.}
+
+\textbf{(a) $\ce{B <=> A}$.} Reversed, so take the reciprocal:
+\[ K' = \frac{1}{4.0} = \mathbf{0.25} \]
+
+\textbf{(b) $\ce{2A <=> 2B}$.} Coefficients doubled, so square:
+\[ K' = (4.0)^{2} = \mathbf{16} \]
+
+\textbf{(c) $\ce{2B <=> 2A}$.} Both operations --- reverse
+\emph{and} double:
+\[ K' = \left(\frac{1}{4.0}\right)^{2} = \mathbf{0.0625} \]
+Order does not matter; you may square then invert, or invert then
+square, and get the same number.
+
+\textbf{(d) Why reversing inverts.} Look at the expression.
+For $\ce{A <=> B}$, $K = [\ce{B}]/[\ce{A}]$. For $\ce{B <=> A}$, the
+products and reactants swap, so $K' = [\ce{A}]/[\ce{B}]$ --- the same
+fraction upside down. And doubling the coefficients squares every
+concentration in the expression, so the whole fraction is squared. Both
+rules fall straight out of the definition; there is nothing extra to
+remember.
+
+\textbf{Adding equations.} If $\ce{A <=> B}$ has $K_{1}$ and
+$\ce{B <=> C}$ has $K_{2}$, then $\ce{A <=> C}$ has
+$K = K_{1}K_{2}$, because
+\[ \frac{[\ce{B}]}{[\ce{A}]} \times \frac{[\ce{C}]}{[\ce{B}]}
+   = \frac{[\ce{C}]}{[\ce{A}]} \]
+--- the intermediate cancels, exactly as it does in a Hess's law
+calculation. Same bookkeeping, multiplication instead of addition.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+For $\ce{X <=> Y}$, $K = 9.0$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $K$ for $\ce{Y <=> X}$. \workspace[1.4cm]
+  \item Find $K$ for $\ce{3X <=> 3Y}$. \workspace[1.6cm]
+  \item $\ce{X <=> Y}$ has $K = 9.0$ and $\ce{Y <=> Z}$ has $K = 2.0$.
+        Find $K$ for $\ce{X <=> Z}$. \workspace[1.6cm]
+  \item Why do you multiply rather than add the constants when adding
+        two equations? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 0.11 \quad (b) 729 \quad (c) 18 \quad (d) the
+expressions multiply and the intermediate cancels}
+\keyonly{\begin{apcanswer}(a) $1/9.0 = \mathbf{0.11}$. (b)
+$(9.0)^{3} = \mathbf{729}$. (c) $9.0 \times 2.0 = \mathbf{18}$. (d)
+Because $K$ is a \textbf{product} of concentration terms, not a sum.
+Writing the two expressions side by side,
+$\frac{[\ce{Y}]}{[\ce{X}]} \times \frac{[\ce{Z}]}{[\ce{Y}]} =
+\frac{[\ce{Z}]}{[\ce{X}]}$ --- the intermediate cancels only under
+multiplication. It is the same bookkeeping as Hess's law, except that
+Hess's law adds $\Delta H$ values because enthalpy is a sum.
+\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Finding $K$ from equilibrium
+concentrations}
+\zsec{13.2}
+
+The easiest calculation in the chapter, and worth being fast at: you
+are handed equilibrium values and simply substitute.
+
+\begin{workedexample}[I do: substitute and check]
+\textbf{For $\ce{H2(g) + I2(g) <=> 2HI(g)}$ a flask at equilibrium
+contains $[\ce{H2}] = \SI{0.0075}{\Molar}$, $[\ce{I2}] =
+\SI{0.0075}{\Molar}$ and $[\ce{HI}] = \SI{0.055}{\Molar}$. Find
+$K_{c}$.}
+
+\textbf{Write the expression first, always.}
+\[ K_{c} = \frac{[\ce{HI}]^{2}}{[\ce{H2}][\ce{I2}]} \]
+
+\textbf{Substitute.}
+\[ K_{c} = \frac{(0.055)^{2}}{(0.0075)(0.0075)}
+         = \frac{\num{3.025e-3}}{\num{5.625e-5}}
+         = \mathbf{54} \]
+
+\textbf{Is the answer sensible?} $K > 1$, so products are favoured ---
+consistent with the fact that $[\ce{HI}]$ is far larger than either
+reactant. If you had got a number less than 1 from these figures, you
+would have inverted the fraction.
+
+\textbf{The one condition that must hold.} Every value you substitute
+must be an \textbf{equilibrium} concentration. If a question gives you
+\emph{initial} concentrations, you cannot substitute them --- you must
+first work out the equilibrium values, which is what the ICE table of
+Ladder 9 exists to do. Reading ``initial'' as ``equilibrium'' is the
+most expensive misreading in this chapter.
+
+\textbf{A cross-check worth knowing:} the accepted value for this
+reaction at \SI{698}{\kelvin} is $K_{c} = 54.3$, so our 54 is right.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item For $\ce{A <=> B}$, equilibrium gives $[\ce{A}] =
+        \SI{0.20}{\Molar}$ and $[\ce{B}] = \SI{0.60}{\Molar}$. Find
+        $K$. \workspace[1.6cm]
+  \item For $\ce{2A <=> B}$, equilibrium gives $[\ce{A}] =
+        \SI{0.10}{\Molar}$ and $[\ce{B}] = \SI{0.50}{\Molar}$. Find
+        $K$. \workspace[1.8cm]
+  \item For $\ce{N2 + 3H2 <=> 2NH3}$, equilibrium gives $[\ce{N2}] =
+        \SI{0.10}{\Molar}$, $[\ce{H2}] = \SI{0.20}{\Molar}$,
+        $[\ce{NH3}] = \SI{0.40}{\Molar}$. Find $K_{c}$.
+        \workspace[2.0cm]
+  \item Why may you not substitute \emph{initial} concentrations into
+        $K$? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) 3.0 \quad (b) 50 \quad (c) 200 \quad (d) $K$ is defined
+only at equilibrium}
+\keyonly{\begin{apcanswer}(a) $K = 0.60/0.20 = \mathbf{3.0}$.
+(b) $K = \dfrac{0.50}{(0.10)^{2}} = \dfrac{0.50}{0.010} = \mathbf{50}$.
+(c) $K_{c} = \dfrac{(0.40)^{2}}{(0.10)(0.20)^{3}} =
+\dfrac{0.16}{(0.10)(0.0080)} = \dfrac{0.16}{\num{8.0e-4}} =
+\mathbf{200}$. (d) Because $K$ is \textbf{defined only in terms of
+equilibrium concentrations}. Substituting initial values gives you $Q$,
+not $K$ --- a perfectly meaningful number, but one that tells you which
+way the reaction will move rather than where it ends
+up.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ ICE tables}
+\zsec{13.6}
+
+When you are given \emph{initial} concentrations and $K$, and asked for
+the equilibrium ones, you need an ICE table --- Initial, Change,
+Equilibrium.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,3.15)
+    {the three rows, and what goes in each};
+  \foreach \y/\r/\t in {%
+      2.5/{\textbf{I}nitial}/{what you start with, before any reaction},
+      1.85/{\textbf{C}hange}/{$-x$ or $+x$, each scaled by its
+        \textbf{coefficient}},
+      1.2/{\textbf{E}quilibrium}/{the sum of the two rows above ---
+        substitute these into $K$}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.4,\y) {\r};
+    \node[anchor=west] at (2.6,\y) {\t};}
+  \draw[apcgray] (0.3,2.9) -- (10.3,2.9);
+  \draw[apcgray] (0.3,0.85) -- (10.3,0.85);
+  \node[anchor=west] at (0.4,0.4)
+    {reactants lose ($-$), products gain ($+$); the coefficient is the
+     multiplier on $x$};
+  \node[anchor=west,font=\sffamily\itshape] at (0.4,-0.1)
+    {so for $\ce{A + 3B <=> 2C}$ the changes are $-x$, $-3x$, $+2x$};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: a full ICE calculation]
+\textbf{For $\ce{H2 + I2 <=> 2HI}$, $K_{c} = 54.3$. A flask starts with
+\SI{1.00}{\Molar} each of \ce{H2} and \ce{I2} and no \ce{HI}. Find all
+three equilibrium concentrations.}
+
+\textbf{Build the table.} \ce{H2} and \ce{I2} each lose $x$; \ce{HI}
+gains $2x$, because its coefficient is 2.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+& $[\ce{H2}]$ & $[\ce{I2}]$ & $[\ce{HI}]$ \\
+\midrule
+\textbf{I} & 1.00 & 1.00 & 0 \\
+\textbf{C} & $-x$ & $-x$ & $+2x$ \\
+\textbf{E} & $1.00-x$ & $1.00-x$ & $2x$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Substitute the E row into $K$.}
+\[ 54.3 = \frac{(2x)^{2}}{(1.00-x)(1.00-x)}
+        = \frac{4x^{2}}{(1.00-x)^{2}} \]
+
+\textbf{Take the square root of both sides} --- legitimate here because
+both sides are perfect squares, and far quicker than the quadratic
+formula:
+\[ \sqrt{54.3} = \frac{2x}{1.00-x}
+   \qquad\Longrightarrow\qquad
+   7.369 = \frac{2x}{1.00-x} \]
+
+\textbf{Solve.}
+\[ 7.369(1.00-x) = 2x
+   \;\Longrightarrow\;
+   7.369 = 9.369x
+   \;\Longrightarrow\;
+   x = 0.787 \]
+
+\textbf{Read off the answers.}
+\[ [\ce{H2}] = [\ce{I2}] = 1.00 - 0.787 = \SI{0.213}{\Molar}
+   \qquad
+   [\ce{HI}] = 2(0.787) = \SI{1.57}{\Molar} \]
+
+\textbf{Always check by substituting back:}
+\[ \frac{(1.57)^{2}}{(0.213)^{2}} = 54.3 \quad\checkmark \]
+That check costs one line and catches every algebra slip. And note that
+$x$ came out large --- 79\% of the starting material reacted --- which
+is what a $K$ of 54 should do. Do not be alarmed by a large $x$ when $K$
+is large.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item For $\ce{A + B <=> 2C}$, give the Change row in terms of $x$.
+        \workspace[1.6cm]
+  \item For $\ce{N2 + 3H2 <=> 2NH3}$, give the Change row.
+        \workspace[1.6cm]
+  \item $\ce{A <=> B}$ has $K = 3.0$ and starts at $[\ce{A}] =
+        \SI{1.00}{\Molar}$, $[\ce{B}] = 0$. Find $x$ and both
+        equilibrium concentrations. \workspace[2.2cm]
+  \item Why must you substitute the \textbf{E} row, not the
+        \textbf{I} row, into $K$? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $-x$, $-x$, $+2x$ \quad (b) $-x$, $-3x$, $+2x$ \quad
+(c) $x = 0.75$; \SI{0.25}{} and \SI{0.75}{\Molar} \quad (d) $K$ is
+defined at equilibrium}
+\keyonly{\begin{apcanswer}(a) $\mathbf{-x,\; -x,\; +2x}$. (b)
+$\mathbf{-x,\; -3x,\; +2x}$ --- each change is scaled by that species'
+coefficient. (c) E row is $1.00-x$ and $x$, so
+$3.0 = \dfrac{x}{1.00-x}$, giving $3.0 - 3.0x = x$, so $4.0x = 3.0$ and
+$x = \mathbf{0.75}$. Then $[\ce{A}] = \mathbf{\SI{0.25}{\Molar}}$ and
+$[\ce{B}] = \mathbf{\SI{0.75}{\Molar}}$. Check: $0.75/0.25 = 3.0$
+\checkmark\ (d) Because $K$ is defined in terms of \textbf{equilibrium}
+concentrations. Substituting the I row would give $Q$ at the start of
+the experiment --- which for these problems is usually 0, and tells you
+only that the reaction runs forward.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ The small-$x$ approximation}
+\zsec{13.6}
+
+When $K$ is very small, barely any reaction occurs, and the algebra
+simplifies enormously --- provided you check that you were entitled to
+simplify it.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,3.2)
+    {when may you drop the $x$?};
+  \node[anchor=west] at (0.4,2.55)
+    {$K$ is small (roughly $K < 10^{-4}$) \quad$\Longrightarrow$\quad
+     assume $[\ce{A}]_{0} - x \approx [\ce{A}]_{0}$};
+  \draw[-{Stealth[length=2.5mm]},thick] (5.2,2.25) -- (5.2,1.8);
+  \node[anchor=west] at (0.4,1.45)
+    {solve the simplified equation, then \textbf{test} the answer:};
+  \node[font=\sffamily\bfseries] at (5.2,0.9)
+    {$\dfrac{x}{[\ce{A}]_{0}} \times 100 < 5\%$};
+  \draw[apcgray] (0.3,0.4) -- (10.3,0.4);
+  \node[anchor=west] at (0.4,-0.05)
+    {passes: keep the answer \quad\textbullet\quad fails: go back and
+     use the quadratic formula};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: approximate, then justify]
+\textbf{For $\ce{A <=> B + C}$, $K = \num{1.0e-5}$ and $[\ce{A}]_{0} =
+\SI{0.100}{\Molar}$. Find the equilibrium concentrations.}
+
+\textbf{The ICE row is} $0.100-x$, $x$, $x$, so
+\[ K = \frac{x^{2}}{0.100-x} = \num{1.0e-5} \]
+which is a quadratic --- solvable, but tedious.
+
+\textbf{Make the approximation.} $K$ is tiny, so almost no \ce{A}
+reacts and $x$ must be very small compared with 0.100. Drop it from the
+denominator:
+\[ \frac{x^{2}}{0.100} \approx \num{1.0e-5}
+   \;\Longrightarrow\;
+   x^{2} = \num{1.0e-6}
+   \;\Longrightarrow\;
+   x = \num{1.0e-3} \]
+
+\textbf{Now justify it --- this step is not optional.}
+\[ \frac{\num{1.0e-3}}{0.100} \times 100 = 1.0\% \]
+That is comfortably under 5\%, so the approximation was valid and the
+answer stands.
+
+\[ [\ce{A}] = \SI{0.099}{\Molar}
+   \qquad
+   [\ce{B}] = [\ce{C}] = \SI{1.0e-3}{\Molar} \]
+
+\textbf{How good was it, really?} Solving the full quadratic gives
+$x = \num{9.95e-4}$ against our \num{1.0e-3} --- an error of about
+0.5\%, far smaller than the precision of the data. The shortcut cost
+nothing.
+
+\textbf{And when it fails.} If the 5\% test comes out at, say, 12\%,
+the approximation is not merely imprecise, it is wrong, and you must
+return to the quadratic. Examiners award the mark for \emph{performing
+the check}, so show it even when it obviously passes.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item For $\ce{A <=> B + C}$ with $K = \num{4.0e-6}$ and
+        $[\ce{A}]_{0} = \SI{1.00}{\Molar}$, find $x$ using the
+        approximation. \workspace[1.8cm]
+  \item Test that approximation with the 5\% rule.
+        \workspace[1.8cm]
+  \item If the test gives 9\%, what must you do?
+        \workspace[1.6cm]
+  \item Why is the approximation safe when $K$ is very small?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $x = \num{2.0e-3}$ \quad (b) 0.20\% --- valid \quad (c)
+solve the quadratic \quad (d) barely any reactant is consumed}
+\keyonly{\begin{apcanswer}(a) $x^{2}/1.00 \approx \num{4.0e-6}$, so
+$x^{2} = \num{4.0e-6}$ and $x = \mathbf{\num{2.0e-3}}$. (b)
+$\dfrac{\num{2.0e-3}}{1.00} \times 100 = \mathbf{0.20\%}$, far below
+5\%, so the approximation is \textbf{valid}. (c) \textbf{Discard the
+approximation and solve the full quadratic} --- 9\% exceeds the 5\%
+threshold, so $x$ is not negligible against $[\ce{A}]_{0}$. (d) Because
+a very small $K$ means the equilibrium lies far toward the reactants, so
+only a tiny fraction of \ce{A} is consumed. Subtracting that tiny $x$
+from $[\ce{A}]_{0}$ changes it by less than the precision of the data,
+so leaving it out introduces negligible error.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Le Ch\^{a}telier:
+concentration and pressure}
+\zsec{13.7}
+
+Disturb a system at equilibrium and it shifts so as to \emph{partly
+counteract} the disturbance. Note ``partly'' --- it never fully undoes
+what you did.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,3.35)
+    {concentration changes};
+  \foreach \y/\st/\sh in {%
+      2.75/{add a \textbf{reactant}}/{shifts \textbf{right}},
+      2.2/{remove a \textbf{reactant}}/{shifts \textbf{left}},
+      1.65/{add a \textbf{product}}/{shifts \textbf{left}},
+      1.1/{remove a \textbf{product}}/{shifts \textbf{right}}} {
+    \node[anchor=west] at (0.6,\y) {\st};
+    \draw[-{Stealth[length=2mm]},thick] (4.3,\y) -- (5.1,\y);
+    \node[anchor=west] at (5.3,\y) {\sh};}
+  \draw[apcgray] (0.4,0.75) -- (10.2,0.75);
+  \node[anchor=west] at (0.6,0.3)
+    {in every case the system moves to \emph{use up} what you added, or
+     \emph{replace} what you removed};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,3.3)
+    {pressure changes (by changing the volume)};
+  \node[anchor=west] at (0.6,2.65)
+    {\textbf{increase} pressure \;$\Longrightarrow$\; shifts toward the
+     side with \textbf{fewer} moles of gas};
+  \node[anchor=west] at (0.6,2.1)
+    {\textbf{decrease} pressure \;$\Longrightarrow$\; shifts toward the
+     side with \textbf{more} moles of gas};
+  \draw[apcgray] (0.4,1.7) -- (10.2,1.7);
+  \node[anchor=west] at (0.6,1.25)
+    {$\ce{N2 + 3H2 <=> 2NH3}$ \quad 4 mol $\to$ 2 mol, so higher
+     pressure favours \ce{NH3}};
+  \node[anchor=west] at (0.6,0.7)
+    {$\ce{H2 + I2 <=> 2HI}$ \quad 2 mol $\to$ 2 mol, so pressure has
+     \textbf{no effect} at all};
+  \node[anchor=west,font=\sffamily\itshape] at (0.6,0.1)
+    {adding an inert gas at constant volume also does nothing ---
+     no partial pressure changes};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: four disturbances, one reaction]
+\textbf{For $\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$, predict the effect of
+each change.}
+
+\textbf{(a) Add \ce{N2}.} $Q$ falls below $K$ (the denominator grew), so
+the system shifts \textbf{right}, consuming some of the added \ce{N2}
+and making more \ce{NH3}.
+
+\textbf{(b) Remove \ce{NH3} as it forms.} $Q$ falls below $K$ again, so
+the system shifts \textbf{right} to replace it. This is why industrial
+plants condense ammonia out continuously --- it drives the reaction
+forward indefinitely.
+
+\textbf{(c) Compress the vessel to half its volume.} All partial
+pressures double, so the system shifts toward \textbf{fewer moles of
+gas}. The left side has $1 + 3 = 4$; the right has 2. It shifts
+\textbf{right}.
+
+\textbf{(d) Add argon at constant volume.} \textbf{No shift.} The total
+pressure rises, but the partial pressures of \ce{N2}, \ce{H2} and
+\ce{NH3} are unchanged --- none of them is in a smaller volume than
+before, and argon appears nowhere in $Q$. This is the disturbance
+students most often get wrong.
+
+\textbf{The rigorous way to answer any of these.} Do not reason from a
+slogan; compute what happened to $Q$. If the change made $Q < K$, the
+reaction goes right; if $Q > K$, left; if $Q$ is untouched, nothing
+happens. Le Ch\^{a}telier's principle is a shortcut for that comparison,
+and when the shortcut feels ambiguous, $Q$ never is.
+
+\textbf{And note what did \emph{not} happen in any of (a)--(d):} $K$
+never changed. Only temperature does that --- Ladder 12.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+For $\ce{2SO2(g) + O2(g) <=> 2SO3(g)}$:
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which way does it shift if \ce{O2} is added?
+        \workspace[1.6cm]
+  \item Which way does it shift if \ce{SO3} is removed?
+        \workspace[1.6cm]
+  \item Which way does it shift if the volume is decreased?
+        \workspace[1.8cm]
+  \item Which way does it shift if helium is added at constant volume?
+        Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) right \quad (b) right \quad (c) right --- 3 mol to
+2 mol \quad (d) no shift}
+\keyonly{\begin{apcanswer}(a) \textbf{Right}, to consume the added
+\ce{O2}. (b) \textbf{Right}, to replace the removed \ce{SO3}. (c)
+\textbf{Right.} Decreasing the volume raises the pressure, and the
+system shifts toward the side with fewer moles of gas --- the left has
+$2+1 = 3$, the right has 2. (d) \textbf{No shift.} Helium raises the
+\emph{total} pressure but does not change the partial pressure of any
+reacting gas, since the volume is unchanged. $Q$ is therefore unaltered
+and the system is still at equilibrium. An inert gas added at constant
+volume never shifts an equilibrium.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ Le Ch\^{a}telier:
+temperature and catalysts}
+\zsec{13.7}
+
+Temperature is different in kind from every other disturbance: it is the
+only one that changes the value of $K$ itself.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,3.4)
+    {treat heat as a reagent, and the rest follows};
+  \node[anchor=west] at (0.5,2.75)
+    {\textbf{exothermic} ($\Delta H < 0$): \quad
+     reactants $\rightleftharpoons$ products $+$ \textbf{heat}};
+  \node[anchor=west] at (0.9,2.2)
+    {raise $T$ $\Longrightarrow$ shifts \textbf{left}, and $K$
+     \textbf{decreases}};
+  \node[anchor=west] at (0.5,1.55)
+    {\textbf{endothermic} ($\Delta H > 0$): \quad
+     reactants $+$ \textbf{heat} $\rightleftharpoons$ products};
+  \node[anchor=west] at (0.9,1.0)
+    {raise $T$ $\Longrightarrow$ shifts \textbf{right}, and $K$
+     \textbf{increases}};
+  \draw[apcgray] (0.4,0.6) -- (10.2,0.6);
+  \node[anchor=west,font=\sffamily\bfseries] at (0.5,0.15)
+    {temperature is the \emph{only} disturbance that changes $K$};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,2.75)
+    {a catalyst: both rates rise equally};
+  \node[anchor=west] at (0.6,2.1)
+    {speeds up the forward reaction \quad\checkmark};
+  \node[anchor=west] at (0.6,1.6)
+    {speeds up the reverse reaction \emph{by the same factor}
+     \quad\checkmark};
+  \node[anchor=west] at (0.6,1.1)
+    {changes $K$ \quad$\times$\qquad shifts the equilibrium
+     \quad$\times$\qquad changes the yield \quad$\times$};
+  \draw[apcgray] (0.4,0.7) -- (10.2,0.7);
+  \node[anchor=west] at (0.6,0.25)
+    {equilibrium is reached \textbf{sooner}, at exactly the same
+     position};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: the Haber process, where it all collides]
+\textbf{$\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$, $\Delta H =
+\SI{-92}{\kilo\joule\per\mole}$. What conditions maximise the yield of
+ammonia, and what does industry actually use?}
+
+\textbf{Pressure.} Four moles of gas become two, so \textbf{high
+pressure} shifts the equilibrium toward ammonia. Industry uses roughly
+\SI{200}{\atm} --- limited by what the vessels can withstand rather
+than by chemistry.
+
+\textbf{Temperature.} The reaction is exothermic, so heat is a product
+and \textbf{low temperature} shifts toward ammonia and raises $K$. But
+here chemistry and reality collide: at low temperature the reaction is
+far too slow to be useful. Thermodynamics wants it cold; kinetics needs
+it hot.
+
+\textbf{The compromise.} Industry runs at about
+\SI{450}{\celsius} --- hot enough to be fast, cool enough that the
+yield is not ruinous --- and adds an \textbf{iron catalyst}, which
+raises the rate without touching the equilibrium position at all.
+Ammonia is then condensed out continuously, which by Ladder 11 keeps
+pulling the reaction to the right.
+
+\textbf{This is the exam question in disguise.} ``Why not just use a low
+temperature, since the reaction is exothermic?'' The answer is that
+$K$ and rate pull in opposite directions, and a working plant must
+satisfy both. Notice how many chapters are in play at once: equilibrium
+position (13.7), the size of $K$ (13.5), reaction rate and catalysis
+(Chapter 12), and $\Delta H$ (Chapter 6).
+
+\textbf{One caution.} The catalyst is there for rate alone. Writing that
+it ``increases the yield'' is wrong and is specifically penalised.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item An endothermic reaction is heated. Which way does it shift, and
+        what happens to $K$? \workspace[1.8cm]
+  \item An exothermic reaction is cooled. Which way does it shift?
+        \workspace[1.6cm]
+  \item Does a catalyst change $K$? Explain. \workspace[1.8cm]
+  \item Name the only disturbance that changes the value of $K$.
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) right; $K$ increases \quad (b) right \quad (c) no ---
+both rates rise equally \quad (d) temperature}
+\keyonly{\begin{apcanswer}(a) Heat behaves as a reactant for an
+endothermic reaction, so adding it shifts the system \textbf{right}, and
+$K$ \textbf{increases}. (b) \textbf{Right.} For an exothermic reaction
+heat is a product, so removing heat shifts the system toward products.
+(c) \textbf{No.} A catalyst lowers the activation energy of the forward
+and reverse reactions by the same amount, so both rates rise by the same
+factor and their ratio --- which is what $K$ expresses --- is unchanged.
+Equilibrium is reached sooner, in exactly the same place. (d)
+\textbf{Temperature}, and only temperature.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt. Every row is assessed --- Chapter 13 has no
+off-syllabus sections.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}c p{5.9cm} c p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & the equilibrium condition & 1 & dynamic, not stopped \\
+$\square$ & writing $K$ expressions & 2 & products over reactants \\
+$\square$ & $K_{p}$ and $K_{c}$ & 3 & $\Delta n$ counts gas only \\
+$\square$ & heterogeneous equilibria & 4 & solids and liquids drop out \\
+$\square$ & the magnitude of $K$ & 5 & extent, never rate \\
+$\square$ & the reaction quotient $Q$ & 6 & compare $Q$ with $K$ \\
+$\square$ & manipulating $K$ & 7 & reverse, power, multiply \\
+$\square$ & $K$ from concentrations & 8 & must be equilibrium values \\
+$\square$ & ICE tables & 9 & scale $x$ by the coefficient \\
+$\square$ & the small-$x$ approximation & 10 & always run the 5\% test \\
+$\square$ & shifts: concentration, pressure & 11 & count moles of gas \\
+$\square$ & shifts: temperature, catalyst & 12 & only $T$ changes $K$ \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+12/12: you have Unit 7 --- and, more importantly, you have the
+machinery Unit 8 is built from. Weak acids, buffers and titration curves
+are all this chapter applied to one reaction.
+
+9--11: check where the misses sit. Ladders 1--8 are definitions and
+substitution, and they repair quickly. Ladders 9--10 are the ICE
+machinery, and a miss there must be fixed \emph{now} rather than later
+--- Unit 8 assumes it cold, and you will be building these tables under
+time pressure with weak-acid numbers that are far less friendly.
+
+8 or fewer: the likeliest single cause is confusing $Q$ with $K$, or
+substituting initial concentrations where equilibrium ones belong.
+Re-read Ladders 6 and 8 together, then redo Ladder 9. Everything after
+that depends on those three being automatic.
+\end{apcnote}
+
+\end{document}
