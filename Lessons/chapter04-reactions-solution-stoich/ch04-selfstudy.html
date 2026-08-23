@@ -11,6 +11,7 @@ MathJax = { loader: { load: ['[tex]/mhchem'] },
          inlineMath: [['\\(', '\\)']] } };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js"></script>
 </head>
 <body>
 <header>
@@ -89,17 +90,26 @@ Classify each solute (strong / weak / non) and name the particles in
 solution:
 <ol>
 
-<li>\(\ce{K2SO4}\) <div class="workspace" style="height:1.2cm"></div>
+<li>\(\ce{K2SO4}\) <div class="workspace" style="height:1.2cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>strong — \(\ce{K+}\) and \(\ce{SO4^2-}\)</span></div>
 
-<li>\(\ce{HF}\) <div class="workspace" style="height:1.2cm"></div>
+<li>\(\ce{HF}\) <div class="workspace" style="height:1.2cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>weak —
+mostly \(\ce{HF}\) molecules</span></div>
 
-<li>methanol, \(\ce{CH3OH}\) <div class="workspace" style="height:1.2cm"></div>
+<li>methanol, \(\ce{CH3OH}\) <div class="workspace" style="height:1.2cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>non — molecules only</span></div>
 
-<li>\(\ce{NH3}\) <div class="workspace" style="height:1.2cm"></div>
+<li>\(\ce{NH3}\) <div class="workspace" style="height:1.2cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>weak
+— mostly \(\ce{NH3}\) molecules</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) strong — \(\ce{K+}\) and \(\ce{SO4^2-}\)  &emsp;  (b) weak —
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) strong — \(\ce{K+}\) and \(\ce{SO4^2-}\)  &emsp;  (b) weak —
 mostly \(\ce{HF}\) molecules  &emsp;  (c) non — molecules only  &emsp;  (d) weak
-— mostly \(\ce{NH3}\) molecules</p>
+— mostly \(\ce{NH3}\) molecules</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) Soluble salt \(\to\) strong; two \(\ce{K+}\) and
+one \(\ce{SO4^2-}\) per formula unit, no intact \(\ce{K2SO4}\). (b) Acid but not
+one of the six strong ones \(\to\) weak; mostly intact \(\ce{HF}\), a little
+\(\ce{H+}\) and \(\ce{F-}\). (c) An alcohol — molecular, not an acid or base
+\(\to\) nonelectrolyte; hydrated \(\ce{CH3OH}\) molecules only. (d) Weak base
+\(\to\) weak electrolyte; mostly \(\ce{NH3}\) molecules with a little
+\(\ce{NH4+}\) and \(\ce{OH-}\).</div></div>
 
 </div>
 
@@ -138,20 +148,26 @@ strong electrolyte exists in solution only as its ions.
 <ol>
 
 <li>Molarity when 0.250&thinsp;mol of \(\ce{KBr}\) is dissolved to make
-        750.0&thinsp;mL: <div class="workspace" style="height:1.4cm"></div>
+        750.0&thinsp;mL: <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.333" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Moles of \(\ce{NaOH}\) in 125&thinsp;mL of a
-        0.400&thinsp;M solution: <div class="workspace" style="height:1.4cm"></div>
+        0.400&thinsp;M solution: <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.05" data-sig="3" data-unit="mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Mass of glucose, \(\ce{C6H12O6}\)
         (\(M = 180.16\,\mathrm{g/mol}\)), needed for
         500.0&thinsp;mL of 0.0250&thinsp;M solution:
-        <div class="workspace" style="height:1.8cm"></div>
+        <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="2.25" data-sig="3" data-unit="g"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
-<li>\([\ce{Cl-}]\) in 0.150&thinsp;M \(\ce{AlCl3}\): <div class="workspace" style="height:1.2cm"></div>
+<li>\([\ce{Cl-}]\) in 0.150&thinsp;M \(\ce{AlCl3}\): <div class="workspace" style="height:1.2cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.45" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 0.333&thinsp;M  &emsp;  (b) 0.0500&thinsp;mol  &emsp; 
-(c) 2.25&thinsp;g  &emsp;  (d) 0.450&thinsp;M</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.333&thinsp;M  &emsp;  (b) 0.0500&thinsp;mol  &emsp; 
+(c) 2.25&thinsp;g  &emsp;  (d) 0.450&thinsp;M</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(0.250/0.7500 = \mathbf{0.333}\)&nbsp;M.
+(b) \(0.125 \times 0.400 = \mathbf{0.0500}\)&nbsp;mol.
+(c) \(0.5000 \times 0.0250 = 0.0125\)&nbsp;mol \(\times\, 180.16 =
+\mathbf{2.25}\)&nbsp;g.
+(d) Three \(\ce{Cl-}\) per \(\ce{AlCl3}\): \(3 \times 0.150 =
+\mathbf{0.450}\)&nbsp;M.</div></div>
 
 </div>
 
@@ -186,21 +202,27 @@ which would overshoot the volume and undershoot the concentration.
 
 <li>Volume of 6.00&thinsp;M \(\ce{NaOH}\) stock needed for
         250.0&thinsp;mL of 0.150&thinsp;M solution:
-        <div class="workspace" style="height:1.6cm"></div>
+        <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="6.25" data-sig="3" data-unit="mL"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Final molarity when 15.0&thinsp;mL of
         4.00&thinsp;M \(\ce{KCl}\) is diluted to
-        250.0&thinsp;mL: <div class="workspace" style="height:1.6cm"></div>
+        250.0&thinsp;mL: <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.24" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>To what final volume must 10.0&thinsp;mL of
         2.50&thinsp;M \(\ce{HNO3}\) be diluted to give
-        0.125&thinsp;M? <div class="workspace" style="height:1.6cm"></div>
+        0.125&thinsp;M? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="200.0" data-sig="1" data-unit=". mL"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>In every dilution, which quantity is unchanged, and why does that
-        make \(M_1V_1 = M_2V_2\) true? <div class="workspace" style="height:1.6cm"></div>
+        make \(M_1V_1 = M_2V_2\) true? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>moles of solute</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 6.25&thinsp;mL  &emsp;  (b) 0.240&thinsp;M  &emsp; 
-(c) 200.&thinsp;mL  &emsp;  (d) moles of solute</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 6.25&thinsp;mL  &emsp;  (b) 0.240&thinsp;M  &emsp; 
+(c) 200.&thinsp;mL  &emsp;  (d) moles of solute</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(V_1 = (0.150)(250.0)/6.00 =
+\mathbf{6.25}\)&nbsp;mL. (b) \(M_2 = (4.00)(15.0)/250.0 = \mathbf{0.240}\)&nbsp;M.
+(c) \(V_2 = (2.50)(10.0)/0.125 = \mathbf{200.}\)&nbsp;mL.
+(d) The <strong>moles of solute</strong> — water adds volume but no solute, and
+since \(n = MV\) on both sides of the event, \(M_1V_1 = M_2V_2\) is just
+“\(n\) before \(=\) \(n\) after.”</div></div>
 
 </div>
 
@@ -255,16 +277,23 @@ compound is the whole point of the exercise.</p>
 Precipitate or no reaction? Give the formula and phase of any solid.
 <ol>
 
-<li>\(\ce{NaBr(aq) + Pb(NO3)2(aq)}\) <div class="workspace" style="height:1.4cm"></div>
+<li>\(\ce{NaBr(aq) + Pb(NO3)2(aq)}\) <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{PbBr2(s)}\)</span></div>
 
-<li>\(\ce{NH4Cl(aq) + K2SO4(aq)}\) <div class="workspace" style="height:1.4cm"></div>
+<li>\(\ce{NH4Cl(aq) + K2SO4(aq)}\) <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no reaction</span></div>
 
-<li>\(\ce{Ni(NO3)2(aq) + NaOH(aq)}\) <div class="workspace" style="height:1.4cm"></div>
+<li>\(\ce{Ni(NO3)2(aq) + NaOH(aq)}\) <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{Ni(OH)2(s)}\)</span></div>
 
-<li>\(\ce{Na3PO4(aq) + CaCl2(aq)}\) <div class="workspace" style="height:1.4cm"></div>
+<li>\(\ce{Na3PO4(aq) + CaCl2(aq)}\) <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{Ca3(PO4)2(s)}\)</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) \(\ce{PbBr2(s)}\)  &emsp;  (b) no reaction  &emsp; 
-(c) \(\ce{Ni(OH)2(s)}\)  &emsp;  (d) \(\ce{Ca3(PO4)2(s)}\)</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{PbBr2(s)}\)  &emsp;  (b) no reaction  &emsp; 
+(c) \(\ce{Ni(OH)2(s)}\)  &emsp;  (d) \(\ce{Ca3(PO4)2(s)}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) Bromide meets \(\ce{Pb^2+}\) — one of the
+three exceptions: <strong>\(\ce{PbBr2(s)}\)</strong>. (b) Candidates \(\ce{NH4+}\)/
+\(\ce{SO4^2-}\) and \(\ce{K+}\)/\(\ce{Cl-}\) are all soluble combinations:
+<strong>no reaction</strong> — all four ions stay in solution. (c) Hydroxide
+with a non-1A metal: <strong>\(\ce{Ni(OH)2(s)}\)</strong>. (d) Phosphate with
+calcium: <strong>\(\ce{Ca3(PO4)2(s)}\)</strong> — note the charge-balanced
+formula, \(3(2+)\) against \(2(3-)\).</div></div>
 
 </div>
 
@@ -303,20 +332,26 @@ plus <em>any</em> soluble carbonate gives this same equation. Charge check:
 <ol>
 
 <li>Net ionic equation for \(\ce{NaBr(aq) + Pb(NO3)2(aq)}\):
-        <div class="workspace" style="height:1.6cm"></div>
+        <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{Pb^2+ + 2Br- -> PbBr2(s)}\)</span></div>
 
 <li>Net ionic equation for \(\ce{Ni(NO3)2(aq) + NaOH(aq)}\):
-        <div class="workspace" style="height:1.6cm"></div>
+        <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{Ni^2+ + 2OH- -> Ni(OH)2(s)}\)</span></div>
 
-<li>List the spectator ions in question (a): <div class="workspace" style="height:1.2cm"></div>
+<li>List the spectator ions in question (a): <div class="workspace" style="height:1.2cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{Na+}\) and \(\ce{NO3-}\)</span></div>
 
 <li>Why does \(\ce{K+}\) never appear in any net ionic equation in this
-        chapter? <div class="workspace" style="height:1.6cm"></div>
+        chapter? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>every potassium salt is soluble, so \(\ce{K+}\) is always a spectator</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) \(\ce{Pb^2+ + 2Br- -> PbBr2(s)}\)  &emsp; 
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{Pb^2+ + 2Br- -> PbBr2(s)}\)  &emsp; 
 (b) \(\ce{Ni^2+ + 2OH- -> Ni(OH)2(s)}\)  &emsp; 
 (c) \(\ce{Na+}\) and \(\ce{NO3-}\)  &emsp; 
-(d) every potassium salt is soluble, so \(\ce{K+}\) is always a spectator</p>
+(d) every potassium salt is soluble, so \(\ce{K+}\) is always a spectator</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\ce{Pb^2+(aq) + 2Br-(aq) -> PbBr2(s)}\) —
+the 2 is required for charge balance. (b) \(\ce{Ni^2+(aq) + 2OH-(aq) ->
+Ni(OH)2(s)}\). (c) \(\ce{Na+}\) and \(\ce{NO3-}\) appear unchanged on both sides.
+(d) Group 1A salts are soluble without exception, so \(\ce{K+}\) always
+enters and leaves as a free aqueous ion — a permanent
+spectator.</div></div>
 
 </div>
 

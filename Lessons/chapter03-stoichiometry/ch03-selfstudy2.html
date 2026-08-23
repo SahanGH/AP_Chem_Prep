@@ -11,6 +11,7 @@ MathJax = { loader: { load: ['[tex]/mhchem'] },
          inlineMath: [['\\(', '\\)']] } };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js"></script>
 </head>
 <body>
 <header>
@@ -78,9 +79,14 @@ swapped.
 
 Natural gallium is 60.108% \(\ce{^{69}Ga}\) (68.926 u) and 39.892%
 \(\ce{^{71}Ga}\) (70.925 u). Compute the atomic mass, and state both sanity
-checks. <div class="workspace" style="height:3cm"></div>
-<p class="selfcheck"><em>check:</em> 69.72&thinsp; — between the isotope masses, leaning toward
-\(\ce{^{69}Ga}\)</p>
+checks. <div class="workspace" style="height:3cm"></div><div class="ansrow"><span class="anslab"></span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>69.72&thinsp; — between the isotope masses, leaning toward
+\(\ce{^{69}Ga}\)</span></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> 69.72&thinsp; — between the isotope masses, leaning toward
+\(\ce{^{69}Ga}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\((0.60108)(68.926) + (0.39892)(70.925)
+= 41.430 + 28.294 = \mathbf{69.72}\)&nbsp;u. Between 68.926 and 70.925, and
+closer to 68.926 because \(\ce{^{69}Ga}\) is the more abundant
+isotope.</div></div>
 
 </div>
 
@@ -116,8 +122,13 @@ so the heavy isotope had to dominate — and it does, four to one.
 
 Rubidium has two isotopes, \(\ce{^{85}Rb}\) (84.912 u) and \(\ce{^{87}Rb}\)
 (86.909 u), and a tabulated mass of 85.47 u. Find both percent
-abundances. <div class="workspace" style="height:3.4cm"></div>
-<p class="selfcheck"><em>check:</em> 72.1% \(\ce{^{85}Rb}\), 27.9% \(\ce{^{87}Rb}\)</p>
+abundances. <div class="workspace" style="height:3.4cm"></div><div class="ansrow"><span class="anslab"></span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>72.1% \(\ce{^{85}Rb}\), 27.9% \(\ce{^{87}Rb}\)</span></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> 72.1% \(\ce{^{85}Rb}\), 27.9% \(\ce{^{87}Rb}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(x(84.912) + (1-x)(86.909) = 85.47
+\Rightarrow x = (86.909 - 85.47)/(86.909 - 84.912) = 1.439/1.997 =
+0.721\). So <strong>72.1%</strong> \(\ce{^{85}Rb}\) and <strong>27.9%</strong> \(\ce{^{87}Rb}\).
+Sanity: 85.47 is near 84.912, so the light isotope dominates —
+consistent.</div></div>
 
 </div>
 
@@ -153,8 +164,12 @@ like \(10^{2}\) or \(10^{46}\) means a conversion was skipped or doubled.
 <div class="box yt"><div class="box-title">YOUR TURN 3</div>
 
 What is the mass of a sample containing \(1.00\times10^{22}\) copper atoms
-(\(M_{\ce{Cu}} = 63.55\,\mathrm{g/mol}\))? <div class="workspace" style="height:2.8cm"></div>
-<p class="selfcheck"><em>check:</em> 1.06&thinsp;g</p>
+(\(M_{\ce{Cu}} = 63.55\,\mathrm{g/mol}\))? <div class="workspace" style="height:2.8cm"></div><div class="ansrow"><span class="anslab"></span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="1.06" data-sig="3" data-unit="g"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> 1.06&thinsp;g</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(1.00\times10^{22} / 6.022\times10^{23} =
+0.0166\,\mathrm{mol}\); \(0.0166 \times 63.55 = \mathbf{1.06}\)&nbsp;g. The chain
+ran particles \(\to\) moles \(\to\) grams — the reverse of the worked
+example, same two conversions.</div></div>
 
 </div>
 
@@ -190,8 +205,13 @@ single commonest molar-mass error.)
 For \(\ce{K2Cr2O7}\) (\(M_{\ce{K}} = 39.10\), \(M_{\ce{Cr}} = 52.00\)):
 (a) the molar mass, (b) the moles in 5.00&thinsp;g, (c) the number of
 oxygen atoms in that sample. <div class="workspace" style="height:3.4cm"></div>
-<p class="selfcheck"><em>check:</em> (a) 294.2&thinsp;g/mol  &emsp;  (b) 0.0170&thinsp;mol
- &emsp;  (c) \(7.16\times10^{22}\) O atoms</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 294.2&thinsp;g/mol  &emsp;  (b) 0.0170&thinsp;mol
+ &emsp;  (c) \(7.16\times10^{22}\) O atoms</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(2(39.10) + 2(52.00) + 7(16.00) = 78.20 +
+104.0 + 112.0 = \mathbf{294.2}\)&nbsp;g/mol. (b) \(5.00/294.2 =
+\mathbf{0.0170}\)&nbsp;mol. (c) \(0.0170 \times 7 = 0.119\)&nbsp;mol O \(\times\,
+6.022\times10^{23} = \mathbf{7.16\times10^{22}}\)
+atoms.</div></div>
 
 </div>
 
@@ -236,9 +256,15 @@ about 1.5 moles of H, so a bit more than \(N_A\) atoms. Yes.
 
 What mass of oxygen is contained in 0.750&thinsp;mol of \(\ce{CO2}\)?
 <strong>First write the route as arrows</strong> (no numbers), then execute, then
-state why the size of the answer is reasonable. <div class="workspace" style="height:3.2cm"></div>
-<p class="selfcheck"><em>check:</em> route: mol \(\ce{CO2}\) \(\to\) mol O \(\to\) g O; answer
-24.0&thinsp;g</p>
+state why the size of the answer is reasonable. <div class="workspace" style="height:3.2cm"></div><div class="ansrow"><span class="anslab"></span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>route: mol \(\ce{CO2}\) \(\to\) mol O \(\to\) g O; answer
+24.0&thinsp;g</span></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> route: mol \(\ce{CO2}\) \(\to\) mol O \(\to\) g O; answer
+24.0&thinsp;g</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Route: mol \(\ce{CO2}\)
+\(\xrightarrow{\times 2}\) mol O \(\xrightarrow{\times 16.00}\) g O.
+\(0.750 \times 2 = 1.50\)&nbsp;mol O \(\times\, 16.00 = \mathbf{24.0}\)&nbsp;g. Sense:
+0.750 mol of \(\ce{CO2}\) is about 33 g, and oxygen is \(32/44\) of the
+compound's mass — roughly 24 g. Consistent.</div></div>
 
 </div>
 
@@ -280,9 +306,16 @@ sample size:
 Ammonium nitrate fertilizer is \(\ce{NH4NO3}\)
 (\(M = 80.05\,\mathrm{g/mol}\)). Find the mass percent of each
 element (run the total check), then the mass of nitrogen in a
-25.0&thinsp;g scoop. <div class="workspace" style="height:4cm"></div>
-<p class="selfcheck"><em>check:</em> 35.00% N, 5.04% H, 59.96% O (total 100.00); N in the scoop
-8.75&thinsp;g</p>
+25.0&thinsp;g scoop. <div class="workspace" style="height:4cm"></div><div class="ansrow"><span class="anslab"></span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>35.00% N, 5.04% H, 59.96% O (total 100.00); N in the scoop
+8.75&thinsp;g</span></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> 35.00% N, 5.04% H, 59.96% O (total 100.00); N in the scoop
+8.75&thinsp;g</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\%\ce{N} = 2(14.01)/80.05 = 35.00\%\);
+\(\%\ce{H} = 4(1.008)/80.05 = 5.04\%\);
+\(\%\ce{O} = 3(16.00)/80.05 = 59.96\%\). Total \(100.00\).
+\(m_{\ce{N}} = 25.0 \times 0.3500 = \mathbf{8.75}\)&nbsp;g. Note both N atoms
+count — the subscripts are read across the whole formula, ammonium and
+nitrate alike.</div></div>
 
 </div>
 

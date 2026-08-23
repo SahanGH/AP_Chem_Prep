@@ -30,6 +30,18 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "Lessons"
 OUT_MD = ROOT / "Lessons-md"
 
+# Doc kinds that get answer-checking inputs and revealable explanations.
+# Keyed on the stem suffix: "ch05-selfstudy" -> "selfstudy". Exams are
+# deliberately absent -- self-grading defeats an assessment. Worksheets
+# ("ws1".."ws4") are phase 2; adding them here is the whole switch.
+EXPLAIN_KINDS = {"selfstudy", "selfstudy2"}
+INTERACTIVE_KINDS = {"selfstudy", "selfstudy2"}
+
+
+def doc_kind(stem: str) -> str:
+    return stem.split("-", 1)[1] if "-" in stem else stem
+
+
 # ------------------------------------------------------------ tex utilities
 
 def strip_comments(src: str) -> str:
@@ -454,7 +466,7 @@ def convert_mcq(inner: str, n: int) -> str:
             f'\n<ol class="choices" type="A">\n{lis}\n</ol></div>\n')
 
 
-def convert_body(body: str, meta: dict, fig_names, log, restore=True):
+def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
     counters = {"problem": 0, "mcq": 0, "frq": 0, "fig": 0}
 
     # ---- drop key-only content ----
@@ -463,8 +475,15 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True):
         if not f:
             break
         body = body[:f[0]] + body[f[1]:]
-    for cmd, o, r in (("keyonly", 0, 1), ("why", 0, 1), ("distractor", 0, 2),
-                      ("rpoint", 0, 2), ("examtotal", 0, 0)):
+    drops = [("why", 0, 1), ("distractor", 0, 2),
+             ("rpoint", 0, 2), ("examtotal", 0, 0)]
+    if kind in EXPLAIN_KINDS:
+        # Keep the worked explanation; apcanswer (below) becomes the block
+        # that add_interactivity() hides behind a button.
+        body = sub_command(body, "keyonly", 0, 1, lambda o_, r_: r_[0])
+    else:
+        drops.insert(0, ("keyonly", 0, 1))
+    for cmd, o, r in drops:
         body = sub_command(body, cmd, o, r, lambda o_, r_: "")
 
     # ---- math / chemistry / units ----
@@ -495,6 +514,7 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True):
 
     # ---- generic environments, innermost first ----
     ENV = {
+        "apcanswer": lambda o, x: f'<div class="explain-body">{x}</div>',
         "workedexample": lambda o, x: box("we", o or "Worked example", x),
         "yourturn": lambda o, x: box("yt", o or "Your turn", x),
         "apcnote": lambda o, x: box("note", o or "Note", x),
@@ -672,6 +692,189 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True):
     return body
 
 
+# ------------------------------------------------- answer checking (HTML)
+#
+# Self-study ladders already print their answers in a gray \selfcheck line,
+# so making them checkable exposes nothing new -- it just replaces an
+# honour-system glance with a real self-test. The pairing rule: the N
+# \workspace slots between one \selfcheck and the previous one are that
+# ladder's N questions, matched in order to the (a)..(d) parts of the check
+# line. If the counts disagree we leave the ladder alone and log it rather
+# than guess -- a mispaired answer is worse than no answer.
+
+NUM = r"[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?"
+SELFCHECK_RE = re.compile(r'<p class="selfcheck"><em>check:</em>(.*?)</p>', re.S)
+WORKSPACE_RE = re.compile(r'<div class="workspace" style="height:([^"]*)"></div>')
+PART_RE = re.compile(r"\(([a-h])\)")
+ENTS = {"&thinsp;": " ", "&emsp;": " ", "&ensp;": " ", "&nbsp;": " ",
+        "&times;": " x ", "&minus;": "-", "&deg;": " deg", "&amp;": "&",
+        "&lt;": "<", "&gt;": ">", "&mdash;": "-", "&ndash;": "-"}
+
+
+def clean_answer(h: str) -> str:
+    """HTML fragment -> flat text suitable for parsing/compare."""
+    h = re.sub(r"\\\((.*?)\\\)", r"\1", h, flags=re.S)   # inline math -> content
+    h = re.sub(r"\\mathrm\{(.*?)\}", r"\1", h)
+    h = re.sub(r"\\text\{(.*?)\}", r"\1", h)
+    h = re.sub(r"<[^>]+>", "", h)
+    for a, b in ENTS.items():
+        h = h.replace(a, b)
+    return re.sub(r"\s+", " ", h).strip()
+
+
+def sigfigs(s: str) -> int:
+    """Significant digits of a number as written. Trailing zeros with no
+    decimal point are treated as not significant (1900 -> 2)."""
+    s = s.strip().lstrip("+-")
+    if "e" in s.lower():
+        s = re.split(r"[eE]", s)[0]
+    if "." in s:
+        digits = s.replace(".", "").lstrip("0")
+        return len(digits) if digits else 1
+    digits = s.lstrip("0")
+    return len(digits.rstrip("0")) or 1
+
+
+def numeric_spec(text: str):
+    """Return {value, unit, sig} if `text` is a number (optionally with a
+    unit or written in scientific notation), else None."""
+    t = text.strip().rstrip(".").strip()
+    m = re.fullmatch(r"(" + NUM + r")\s*(?:\\times|x|\u00d7|\*)\s*10\^?\{?([-+]?\d+)\}?\s*(.*)",
+                     t)
+    if m:
+        unit = m.group(3).strip()
+        if re.fullmatch(r"[A-Za-z\u00b0%/\u00b7^\d\s.\-]{0,15}", unit):
+            return {"value": float(m.group(1)) * (10 ** int(m.group(2))),
+                    "unit": unit, "sig": sigfigs(m.group(1))}
+        return None
+    m = re.fullmatch(r"(" + NUM + r")\s*(.*)", t)
+    if m:
+        unit = m.group(2).strip()
+        if re.fullmatch(r"[A-Za-z\u00b0%/\u00b7^\d\s.\-]{0,15}", unit):
+            return {"value": float(m.group(1)), "unit": unit,
+                    "sig": sigfigs(m.group(1))}
+    return None
+
+
+def parse_selfcheck(inner: str):
+    """Check-line HTML -> [(label, display_html, spec_or_None)]."""
+    # Only count (a),(b),(c)... running in sequence. Answers cross-reference
+    # each other ("(d) only (a) is at STP"), and a naive split turns that
+    # citation into a fifth part.
+    marks = []
+    for m in PART_RE.finditer(inner):
+        if m.group(1) == chr(ord("a") + len(marks)):
+            marks.append(m)
+    chunks = []
+    if marks:
+        for k, m in enumerate(marks):
+            end = marks[k + 1].start() if k + 1 < len(marks) else len(inner)
+            chunks.append((m.group(1), inner[m.end():end]))
+    else:
+        chunks.append(("", inner))
+    out = []
+    for label, frag in chunks:
+        # Trailing separators (\quad -> &emsp;) are layout, not answer. Strip
+        # them as whole entities: a bare .strip(";") bites the semicolon off
+        # "&emsp;" and leaves "&emsp" glued to the answer, which then fails
+        # to parse as a number.
+        frag = re.sub(r"(?:&(?:emsp|ensp|nbsp|thinsp|quad);|\s)+$", "", frag)
+        disp = frag.strip().rstrip(",").strip()
+        out.append((label, disp, numeric_spec(clean_answer(disp))))
+    return out
+
+
+def esc_attr(s: str) -> str:
+    return (s.replace("&", "&amp;").replace('"', "&quot;")
+             .replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def answer_row(label: str, disp: str, spec) -> str:
+    lab = f"({label})" if label else ""
+    if spec is not None:
+        data = (f' data-check="num" data-val="{spec["value"]!r}"'
+                f' data-sig="{spec["sig"]}"'
+                f' data-unit="{esc_attr(spec["unit"])}"')
+        btn = '<button class="anscheck" type="button">Check</button>'
+        rev = ""
+    else:
+        # Prose, ratios, comparisons -- no reliable machine check. Offer the
+        # answer, never a verdict: a wrong "incorrect" costs more than none.
+        # It goes in the DOM rather than an attribute so MathJax typesets the
+        # \ce{} formulas instead of showing raw LaTeX.
+        data = ' data-check="none"'
+        btn = '<button class="ansshow" type="button">Show answer</button>'
+        rev = f'<span class="ansreveal" hidden>{disp}</span>'
+    return (f'<div class="ansrow"><span class="anslab">{lab}</span>'
+            f'<input type="text" class="ansinput" autocomplete="off"'
+            f' placeholder="your answer"{data}>'
+            f'{btn}<span class="ansfeedback" role="status"></span>{rev}</div>')
+
+
+def reveal(button: str, inner: str, cls: str) -> str:
+    return (f'<div class="reveal"><button class="reveal-btn" type="button"'
+            f' aria-expanded="false" data-show="Show {button}"'
+            f' data-hide="Hide {button}">Show {button}</button>'
+            f'<div class="reveal-body {cls}" hidden>{inner}</div></div>')
+
+
+def find_div(s: str, start: int) -> int:
+    """Index just past the </div> closing the <div ...> that starts at
+    `start`. Counts nested divs."""
+    i = s.index(">", start) + 1
+    depth = 1
+    while depth and i < len(s):
+        nxt = s.find("<div", i)
+        end = s.find("</div>", i)
+        if end == -1:
+            return len(s)
+        if nxt != -1 and nxt < end:
+            depth += 1
+            i = nxt + 4
+        else:
+            depth -= 1
+            i = end + 6
+    return i
+
+
+def wrap_explanations(body: str) -> str:
+    """<div class="explain-body">X</div> -> collapsed reveal block."""
+    while True:
+        m = re.search(r'<div class="explain-body">', body)
+        if not m:
+            return body
+        end = find_div(body, m.start())
+        inner = body[m.end():end - 6]
+        body = body[:m.start()] + reveal("explanation", inner, "explain") + body[end:]
+
+
+def add_interactivity(body: str, kind: str, stem: str, log) -> str:
+    if kind not in INTERACTIVE_KINDS:
+        return body
+    out, pos, paired, skipped = [], 0, 0, 0
+    for m in SELFCHECK_RE.finditer(body):
+        region = body[pos:m.start()]
+        answers = parse_selfcheck(m.group(1))
+        slots = list(WORKSPACE_RE.finditer(region))
+        if answers and len(slots) == len(answers):
+            for k in range(len(slots) - 1, -1, -1):      # back to front
+                sl = slots[k]
+                label, disp, spec = answers[k]
+                region = (region[:sl.end()] + answer_row(label, disp, spec)
+                          + region[sl.end():])
+            paired += len(answers)
+        elif answers:
+            skipped += 1
+            log.append(f"  ?? check line with {len(answers)} parts but "
+                       f"{len(slots)} workspace slots -- left non-interactive")
+        out.append(region)
+        out.append(reveal("answers", f'<p class="selfcheck">{m.group(1)}</p>',
+                          "answers"))
+        pos = m.end()
+    out.append(body[pos:])
+    return wrap_explanations("".join(out))
+
+
 PAGE = """<!doctype html>
 <html lang="en">
 <head>
@@ -685,6 +888,7 @@ MathJax = {{ loader: {{ load: ['[tex]/mhchem'] }},
          inlineMath: [['\\\\(', '\\\\)']] }} }};
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js"></script>
 </head>
 <body>
 <header>
@@ -757,7 +961,8 @@ def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
         fig_names = [None] * len(fig_blocks)
 
     # convert_body leaves \x00Mn\x00 placeholders; render them per format.
-    raw = convert_body(body, meta, fig_names, log, restore=False)
+    kind = doc_kind(tex_path.stem)
+    raw = convert_body(body, meta, fig_names, log, restore=False, kind=kind)
     title = f"{meta['unitword']} {meta['unit']} \u2022 {meta['doctitle']}"
     stash = list(MATH)
 
@@ -765,6 +970,7 @@ def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
     if fmt in ("html", "both"):
         html_body = re.sub(r"\x00M(\d+)\x00",
                            lambda m: stash[int(m.group(1))], raw)
+        html_body = add_interactivity(html_body, kind, tex_path.stem, log)
         out = chapter_dir / (tex_path.stem + ".html")
         out.write_text(PAGE.format(title=title, body=html_body, **meta),
                        encoding="utf-8")
@@ -857,6 +1063,38 @@ footer { border-top: 1px solid var(--rule); color: var(--gray);
          font-size: .85rem; font-family: system-ui, sans-serif; }
 .figure-missing { color: var(--gray); font-style: italic; }
 @media print { .selfcheck { display: none; } }
+
+/* --- answer checking (screen only; print keeps the blank workspace) --- */
+.ansrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+          margin: .4rem 0 .9rem; font-family: system-ui, sans-serif; }
+.anslab { font-weight: 700; color: var(--gray); min-width: 1.6rem; }
+.ansinput { flex: 1 1 11rem; max-width: 16rem; padding: .35rem .5rem;
+            border: 1px solid var(--rule); border-radius: 4px;
+            font: inherit; font-size: 1rem; background: #fff; color: inherit; }
+.ansinput:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.ansinput.ok { border-color: #2E7D32; background: #F1F8F2; }
+.ansinput.no { border-color: var(--ans); background: #FDF3F3; }
+.ansinput.warn { border-color: var(--warn); background: #FDF9EE; }
+.anscheck, .ansshow, .reveal-btn {
+    font-family: system-ui, sans-serif; font-size: .82rem;
+    padding: .32rem .75rem; border: 1px solid var(--rule);
+    border-radius: 999px; background: var(--light); color: var(--accent);
+    cursor: pointer; }
+.anscheck:hover, .ansshow:hover, .reveal-btn:hover { background: #E2EBF5; }
+.anscheck:focus-visible, .ansshow:focus-visible, .reveal-btn:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px; }
+.ansfeedback { font-size: .85rem; font-family: system-ui, sans-serif; }
+.ansfeedback.ok { color: #2E7D32; font-weight: 600; }
+.ansfeedback.no { color: var(--ans); }
+.ansfeedback.hint { color: var(--warn); }
+.ansreveal { font-size: .9rem; color: var(--ans);
+             font-family: system-ui, sans-serif; }
+.reveal { margin: .6rem 0 1rem; }
+.reveal-body { margin-top: .5rem; padding: .6rem .85rem;
+               border-left: 3px solid var(--rule); background: var(--light);
+               border-radius: 0 4px 4px 0; }
+.reveal-body .selfcheck { display: block; margin: 0; }
+@media print { .ansrow, .reveal-btn, .reveal-body { display: none; } }
 """
 
 
@@ -868,6 +1106,124 @@ SUB = str.maketrans("0123456789", "\u2080\u2081\u2082\u2083\u2084\u2085"
                                   "\u2086\u2087\u2088\u2089")
 SUP = str.maketrans("0123456789+-", "\u2070\u00b9\u00b2\u00b3\u2074\u2075"
                                     "\u2076\u2077\u2078\u2079\u207a\u207b")
+
+
+LESSONS_JS = r"""/* Answer checking for the self-study ladders. Generated by
+   tools/tex2html.py -- edit that, not this file.
+
+   Deliberately forgiving: a student who has the chemistry right should not
+   lose the exchange to formatting. Units are optional, commas and spaces in
+   numbers are ignored, and scientific notation is accepted in three
+   spellings. Significant figures never make an answer wrong -- they earn a
+   nudge, because this is practice material, not the exam. */
+(function () {
+  "use strict";
+  var TOL = 0.01;                       // 1% relative tolerance
+
+  function sigfigs(s) {
+    s = String(s).trim().replace(/^[+-]/, "");
+    if (/e/i.test(s)) s = s.split(/e/i)[0];
+    if (s.indexOf(".") >= 0) {
+      return s.replace(".", "").replace(/^0+/, "").length || 1;
+    }
+    return s.replace(/^0+/, "").replace(/0+$/, "").length || 1;
+  }
+
+  /* First number in free text: "1900", "1,900 torr", "1.9e3", "1.2 x 10^24" */
+  function parseEntry(raw) {
+    var t = String(raw).trim().replace(/,/g, "");
+    var m = t.match(/^([+-]?\d*\.?\d+(?:[eE][+-]?\d+)?)\s*(?:x|X|\*|\u00d7)\s*10\s*\^?\s*\{?([+-]?\d+)\}?\s*(.*)$/);
+    if (m) {
+      return { value: parseFloat(m[1]) * Math.pow(10, parseInt(m[2], 10)),
+               sig: sigfigs(m[1]), unit: m[3].trim() };
+    }
+    m = t.match(/^([+-]?\d*\.?\d+(?:[eE][+-]?\d+)?)\s*(.*)$/);
+    if (m) {
+      return { value: parseFloat(m[1]), sig: sigfigs(m[1]), unit: m[2].trim() };
+    }
+    return null;
+  }
+
+  function normUnit(u) {
+    return String(u).toLowerCase().replace(/[.\s]/g, "")
+             .replace(/^degrees?/, "deg").replace(/celcius$/, "celsius");
+  }
+
+  function feedback(el, cls, msg) {
+    el.className = "ansfeedback " + cls;
+    el.textContent = msg;
+  }
+
+  function check(input) {
+    var fb = input.parentNode.querySelector(".ansfeedback");
+    var raw = input.value.trim();
+    input.classList.remove("ok", "no", "warn");
+    if (!raw) { feedback(fb, "", ""); return; }
+
+    var got = parseEntry(raw);
+    if (!got) { feedback(fb, "hint", "enter a number"); return; }
+
+    var exp = parseFloat(input.getAttribute("data-val"));
+    var expSig = parseInt(input.getAttribute("data-sig"), 10);
+    var expUnit = (input.getAttribute("data-unit") || "").trim();
+    var rel = Math.abs(got.value - exp) / Math.max(Math.abs(exp), 1e-12);
+
+    if (rel > TOL) {
+      input.classList.add("no");
+      feedback(fb, "no", "not right \u2014 try again");
+      return;
+    }
+    /* Right number, wrong unit is not "correct" -- but calling it wrong
+       would punish a student who typed "atmospheres" for "atm". Third
+       state: neither green nor red, and name the unit we wanted. */
+    if (expUnit && got.unit && normUnit(got.unit) !== normUnit(expUnit)) {
+      input.classList.add("warn");
+      feedback(fb, "hint",
+               "right number \u2014 check your units (expected " + expUnit + ")");
+      return;
+    }
+    input.classList.add("ok");
+    /* Sig figs nudge only when the value was ROUNDED differently. An exact
+       match written to more places (1.90e3 for 1900) is not an error. */
+    if (rel > 1e-9 && got.sig !== expSig) {
+      feedback(fb, "hint", "correct \u2014 check your significant figures");
+    } else {
+      feedback(fb, "ok", "correct");
+    }
+  }
+
+  function showAnswer(row) {
+    var rev = row.querySelector(".ansreveal");
+    if (rev) { rev.removeAttribute("hidden"); }
+  }
+
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    if (!t.classList) { return; }
+    if (t.classList.contains("anscheck")) {
+      check(t.parentNode.querySelector(".ansinput"));
+    } else if (t.classList.contains("ansshow")) {
+      showAnswer(t.parentNode);
+    } else if (t.classList.contains("reveal-btn")) {
+      var body = t.nextElementSibling;
+      var opening = body.hasAttribute("hidden");
+      if (opening) { body.removeAttribute("hidden"); }
+      else { body.setAttribute("hidden", ""); }
+      t.setAttribute("aria-expanded", opening ? "true" : "false");
+      t.textContent = opening ? t.getAttribute("data-hide")
+                              : t.getAttribute("data-show");
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter" || !e.target.classList) { return; }
+    if (!e.target.classList.contains("ansinput")) { return; }
+    e.preventDefault();
+    if (e.target.getAttribute("data-check") === "num") { check(e.target); }
+    else { showAnswer(e.target.parentNode); }
+  });
+})();
+"""
 
 
 def ce_to_unicode(f: str) -> str:
@@ -923,6 +1279,14 @@ def math_to_md(m: str) -> str:
 
 def html_to_md(html: str, meta: dict) -> str:
     s = re.search(r"<main>(.*)</main>", html, re.S).group(1)
+
+    # The Markdown mirror stays a plain student edition -- the revealable
+    # explanations are a website affordance and have no button here.
+    while True:
+        m = re.search(r'<div class="explain-body">', s)
+        if not m:
+            break
+        s = s[:m.start()] + s[find_div(s, m.start()):]
 
     s = re.sub(r'<figure><img src="([^"]+)"[^>]*></figure>',
                r"\n\n![figure](\1)\n\n", s)
@@ -1035,6 +1399,7 @@ def main():
     if args.format in ("html", "both"):
         OUT.mkdir(exist_ok=True)
         (OUT / "style.css").write_text(CSS, encoding="utf-8")
+        (OUT / "lessons.js").write_text(LESSONS_JS, encoding="utf-8")
     if args.format in ("md", "both"):
         OUT_MD.mkdir(exist_ok=True)
 
@@ -1089,7 +1454,7 @@ def main():
                           unitword="", unit="", unittitle="AP Chemistry",
                           doctitle="Lessons", subtitle="student edition \u2022 "
                           "HTML companions to the printable PDFs",
-                          body="\n".join(items)).replace('href="../', 'href="')
+                          body="\n".join(items)).replace('href="../', 'href="').replace('src="../', 'src="')
         (OUT / "index.html").write_text(idx, encoding="utf-8")
 
     report = (OUT if args.format in ("html", "both") else OUT_MD) \

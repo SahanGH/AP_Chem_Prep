@@ -80,6 +80,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 9 • Covalent Bonding: Orbitals
 
 - [Guided Notes](chapter09-covalent-orbitals/ch09-notes.md)
+- [Self-Study • Chapter 9, I do / You do](chapter09-covalent-orbitals/ch09-selfstudy.md)
 - [Worksheet 1 • Hybridization and $$/$$ Bonds](chapter09-covalent-orbitals/ch09-ws1.md)
 - [Worksheet 2 • FRQ Practice $+$ Optional Enrichment](chapter09-covalent-orbitals/ch09-ws2.md)
 - [Chapter Test](chapter09-covalent-orbitals/ch09-exam.md)

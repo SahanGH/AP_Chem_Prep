@@ -70,3 +70,35 @@ footer { border-top: 1px solid var(--rule); color: var(--gray);
          font-size: .85rem; font-family: system-ui, sans-serif; }
 .figure-missing { color: var(--gray); font-style: italic; }
 @media print { .selfcheck { display: none; } }
+
+/* --- answer checking (screen only; print keeps the blank workspace) --- */
+.ansrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+          margin: .4rem 0 .9rem; font-family: system-ui, sans-serif; }
+.anslab { font-weight: 700; color: var(--gray); min-width: 1.6rem; }
+.ansinput { flex: 1 1 11rem; max-width: 16rem; padding: .35rem .5rem;
+            border: 1px solid var(--rule); border-radius: 4px;
+            font: inherit; font-size: 1rem; background: #fff; color: inherit; }
+.ansinput:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.ansinput.ok { border-color: #2E7D32; background: #F1F8F2; }
+.ansinput.no { border-color: var(--ans); background: #FDF3F3; }
+.ansinput.warn { border-color: var(--warn); background: #FDF9EE; }
+.anscheck, .ansshow, .reveal-btn {
+    font-family: system-ui, sans-serif; font-size: .82rem;
+    padding: .32rem .75rem; border: 1px solid var(--rule);
+    border-radius: 999px; background: var(--light); color: var(--accent);
+    cursor: pointer; }
+.anscheck:hover, .ansshow:hover, .reveal-btn:hover { background: #E2EBF5; }
+.anscheck:focus-visible, .ansshow:focus-visible, .reveal-btn:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px; }
+.ansfeedback { font-size: .85rem; font-family: system-ui, sans-serif; }
+.ansfeedback.ok { color: #2E7D32; font-weight: 600; }
+.ansfeedback.no { color: var(--ans); }
+.ansfeedback.hint { color: var(--warn); }
+.ansreveal { font-size: .9rem; color: var(--ans);
+             font-family: system-ui, sans-serif; }
+.reveal { margin: .6rem 0 1rem; }
+.reveal-body { margin-top: .5rem; padding: .6rem .85rem;
+               border-left: 3px solid var(--rule); background: var(--light);
+               border-radius: 0 4px 4px 0; }
+.reveal-body .selfcheck { display: block; margin: 0; }
+@media print { .ansrow, .reveal-btn, .reveal-body { display: none; } }

@@ -11,6 +11,7 @@ MathJax = { loader: { load: ['[tex]/mhchem'] },
          inlineMath: [['\\(', '\\)']] } };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js"></script>
 </head>
 <body>
 <header>
@@ -79,17 +80,22 @@ every converted value should sit slightly below its 1-atm counterpart
 
 <ol>
 
-<li>2.50&thinsp;atm in torr: <div class="workspace" style="height:1.4cm"></div>
+<li>2.50&thinsp;atm in torr: <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="1900.0" data-sig="2" data-unit="torr"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
-<li>88.0&thinsp;kPa in atm: <div class="workspace" style="height:1.4cm"></div>
+<li>88.0&thinsp;kPa in atm: <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.868" data-sig="3" data-unit="atm"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
-<li>0.335&thinsp;atm in mmHg: <div class="workspace" style="height:1.4cm"></div>
+<li>0.335&thinsp;atm in mmHg: <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="255.0" data-sig="3" data-unit="mmHg"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>A gauge reads 950&thinsp;torr. Is the gas above or below
-        atmospheric pressure, and by what factor? <div class="workspace" style="height:1.4cm"></div>
+        atmospheric pressure, and by what factor? <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>above; \(950/760 = 1.25\) times</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 1900&thinsp;torr  &emsp;  (b) 0.868&thinsp;atm  &emsp; 
-(c) 255&thinsp;mmHg  &emsp;  (d) above; \(950/760 = 1.25\) times</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1900&thinsp;torr  &emsp;  (b) 0.868&thinsp;atm  &emsp; 
+(c) 255&thinsp;mmHg  &emsp;  (d) above; \(950/760 = 1.25\) times</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(2.50 \times 760 = \mathbf{1900}\)&nbsp;torr.
+(b) \(88.0/101.325 = \mathbf{0.868}\)&nbsp;atm.
+(c) \(0.335 \times 760 = \mathbf{255}\)&nbsp;mmHg.
+(d) Above — 950 torr exceeds 760; \(950/760 = \mathbf{1.25}\)
+times atmospheric.</div></div>
 
 </div>
 
@@ -132,20 +138,26 @@ altitude.
 
 <li>2.00&thinsp;L at 1.50&thinsp;atm is compressed to
         0.750&thinsp;L at constant \(T\). New pressure?
-        <div class="workspace" style="height:1.4cm"></div>
+        <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="4.0" data-sig="3" data-unit="atm"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>500.&thinsp;mL at 27&thinsp;&deg;C is warmed to
-        127&thinsp;&deg;C at constant \(P\). New volume? <div class="workspace" style="height:1.6cm"></div>
+        127&thinsp;&deg;C at constant \(P\). New volume? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="667.0" data-sig="3" data-unit="mL"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>A rigid can at 1.00&thinsp;atm and 20&thinsp;&deg;C is heated to
-        300&thinsp;&deg;C. New pressure? <div class="workspace" style="height:1.6cm"></div>
+        300&thinsp;&deg;C. New pressure? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="1.96" data-sig="3" data-unit="atm"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>6.00&thinsp;L at 2.00&thinsp;atm and 300&thinsp;K moves
         to 1.50&thinsp;atm and 400&thinsp;K. New volume?
-        <div class="workspace" style="height:1.8cm"></div>
+        <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="10.7" data-sig="3" data-unit="L"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 4.00&thinsp;atm  &emsp;  (b) 667&thinsp;mL  &emsp; 
-(c) 1.96&thinsp;atm  &emsp;  (d) 10.7&thinsp;L</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 4.00&thinsp;atm  &emsp;  (b) 667&thinsp;mL  &emsp; 
+(c) 1.96&thinsp;atm  &emsp;  (d) 10.7&thinsp;L</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(P_2 = 1.50(2.00/0.750) =
+\mathbf{4.00}\)&nbsp;atm. (b) \(300 \to 400\)&nbsp;K: \(500. \times 400/300 =
+\mathbf{667}\)&nbsp;mL. (c) \(293 \to 573\)&nbsp;K: \(1.00 \times 573/293 =
+\mathbf{1.96}\)&nbsp;atm — why sealed cans must not be heated.
+(d) \(6.00 \times (2.00/1.50) \times (400/300) =
+\mathbf{10.7}\)&nbsp;L.</div></div>
 
 </div>
 
@@ -182,21 +194,28 @@ so 7.5 L should be roughly a third of a mole. It is.
 <ol>
 
 <li>Moles of gas in 10.0&thinsp;L at 2.00&thinsp;atm and
-        273&thinsp;K: <div class="workspace" style="height:1.6cm"></div>
+        273&thinsp;K: <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.893" data-sig="3" data-unit="mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Pressure of 0.500&thinsp;mol of gas in 5.00&thinsp;L at
-        25&thinsp;&deg;C: <div class="workspace" style="height:1.6cm"></div>
+        25&thinsp;&deg;C: <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="2.45" data-sig="3" data-unit="atm"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Volume of 16.04&thinsp;g of \(\ce{CH4}\)
         (\(M = 16.04\,\mathrm{g/mol}\)) at 1.00&thinsp;atm and
-        0&thinsp;&deg;C: <div class="workspace" style="height:1.8cm"></div>
+        0&thinsp;&deg;C: <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="22.4" data-sig="3" data-unit="L"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>A 2.00&thinsp;L flask holds 0.150&thinsp;mol at
         1.85&thinsp;atm. Find the temperature in &deg;C.
-        <div class="workspace" style="height:1.8cm"></div>
+        <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="28.0" data-sig="2" data-unit="degC"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 0.893&thinsp;mol  &emsp;  (b) 2.45&thinsp;atm  &emsp; 
-(c) 22.4&thinsp;L  &emsp;  (d) 28&thinsp;&deg;C</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.893&thinsp;mol  &emsp;  (b) 2.45&thinsp;atm  &emsp; 
+(c) 22.4&thinsp;L  &emsp;  (d) 28&thinsp;&deg;C</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(n = (2.00)(10.0)/[(0.08206)(273)] =
+\mathbf{0.893}\)&nbsp;mol. (b) \(P = (0.500)(0.08206)(298)/5.00 =
+\mathbf{2.45}\)&nbsp;atm. (c) \(n = 16.04/16.04 = 1.000\)&nbsp;mol;
+\(V = (1.000)(0.08206)(273)/1.00 = \mathbf{22.4}\)&nbsp;L — exactly the molar
+volume, because the sample is exactly one mole and the conditions are
+STP. (d) \(T = PV/nR = (1.85)(2.00)/[(0.150)(0.08206)] = 301\)&nbsp;K
+\(= \mathbf{28}\)&nbsp;&deg;C.</div></div>
 
 </div>
 
@@ -233,22 +252,29 @@ ordinary experimental error, while the alternatives are far off.
 <ol>
 
 <li>Density of \(\ce{CO2}\) (\(M = 44.01\)) at 1.00&thinsp;atm and
-        0&thinsp;&deg;C: <div class="workspace" style="height:1.6cm"></div>
+        0&thinsp;&deg;C: <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="1.96" data-sig="3" data-unit="g/L"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>A gas has density 1.34&thinsp;g/L at
         1.00&thinsp;atm and 25&thinsp;&deg;C. Find \(M\).
-        <div class="workspace" style="height:1.8cm"></div>
+        <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="32.8" data-sig="3" data-unit="g/mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>1.25&thinsp;g of a gas fills 1.00&thinsp;L at
         0.980&thinsp;atm and 20&thinsp;&deg;C. Find \(M\).
-        <div class="workspace" style="height:1.8cm"></div>
+        <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="30.7" data-sig="3" data-unit="g/mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Without calculating: at the same \(P\) and \(T\), which is denser,
-        \(\ce{N2}\) or \(\ce{Ar}\)? Why? <div class="workspace" style="height:1.4cm"></div>
+        \(\ce{N2}\) or \(\ce{Ar}\)? Why? <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{Ar}\) — larger molar mass at the same \(P\), \(T\)</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 1.96&thinsp;g/L  &emsp;  (b)
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1.96&thinsp;g/L  &emsp;  (b)
 32.8&thinsp;g/mol  &emsp;  (c) 30.7&thinsp;g/mol  &emsp; 
-(d) \(\ce{Ar}\) — larger molar mass at the same \(P\), \(T\)</p>
+(d) \(\ce{Ar}\) — larger molar mass at the same \(P\), \(T\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(d = PM/RT = (1.00)(44.01)/[(0.08206)(273)]
+= \mathbf{1.96}\)&nbsp;g/L. (b) \(M = dRT/P = (1.34)(0.08206)(298)/1.00 =
+\mathbf{32.8}\)&nbsp;g/mol (oxygen). (c) \(M = mRT/PV =
+(1.25)(0.08206)(293)/[(0.980)(1.00)] = \mathbf{30.7}\)&nbsp;g/mol.
+(d) \(\ce{Ar}\) (\(M = 39.95\)) beats \(\ce{N2}\) (\(M = 28.02\)): with \(d = PM/RT\),
+density tracks molar mass when \(P\) and \(T\) are
+fixed.</div></div>
 
 </div>
 
@@ -292,21 +318,29 @@ is at 25&thinsp;&deg;C, not 0&thinsp;&deg;C.</p>
 
 <li>Volume of \(\ce{CO2}\) at STP from decomposing 25.0&thinsp;g of
         \(\ce{CaCO3}\) (\(M = 100.09\)): \(\ce{CaCO3 -> CaO + CO2}\)
-        <div class="workspace" style="height:1.8cm"></div>
+        <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="5.6" data-sig="3" data-unit="L"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Volume of \(\ce{O2}\) at 1.00&thinsp;atm, 25&thinsp;&deg;C from
         0.500&thinsp;mol of \(\ce{KClO3}\):
-        \(\ce{2KClO3 -> 2KCl + 3O2}\) <div class="workspace" style="height:1.8cm"></div>
+        \(\ce{2KClO3 -> 2KCl + 3O2}\) <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="18.3" data-sig="3" data-unit="L"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Mass of \(\ce{NH3}\) formed from 5.00&thinsp;L of \(\ce{N2}\) at
         2.00&thinsp;atm and 300&thinsp;K with excess \(\ce{H2}\):
-        \(\ce{N2 + 3H2 -> 2NH3}\) <div class="workspace" style="height:2cm"></div>
+        \(\ce{N2 + 3H2 -> 2NH3}\) <div class="workspace" style="height:2cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="13.8" data-sig="3" data-unit="g"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Why is 22.4 L/mol usable in (a) but not in (b)?
-        <div class="workspace" style="height:1.4cm"></div>
+        <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>only (a) is at STP</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 5.60&thinsp;L  &emsp;  (b) 18.3&thinsp;L  &emsp; 
-(c) 13.8&thinsp;g  &emsp;  (d) only (a) is at STP</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 5.60&thinsp;L  &emsp;  (b) 18.3&thinsp;L  &emsp; 
+(c) 13.8&thinsp;g  &emsp;  (d) only (a) is at STP</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(25.0/100.09 = 0.2498\)&nbsp;mol \(\to\) 1:1 \(\to\)
+\(0.2498 \times 22.4 = \mathbf{5.60}\)&nbsp;L. (b) \(0.500 \times \tfrac{3}{2} =
+0.750\)&nbsp;mol \(\ce{O2}\); \(V = (0.750)(0.08206)(298)/1.00 = \mathbf{18.3}\)&nbsp;L.
+(c) \(n_{\ce{N2}} = (2.00)(5.00)/[(0.08206)(300)] = 0.406\)&nbsp;mol
+\(\times 2 = 0.812\)&nbsp;mol \(\ce{NH3}\) \(\times\, 17.03 = \mathbf{13.8}\)&nbsp;g.
+(d) The molar volume 22.4 L/mol is defined at STP — 0&thinsp;&deg;C
+and 1&thinsp;atm. Question (a) states STP; (b) is at 25&thinsp;&deg;C,
+so it needs \(PV = nRT\).</div></div>
 
 </div>
 
@@ -348,21 +382,32 @@ Forgetting to subtract the water overstates the gas by about 3%.
 
 <li>A mixture is 1.00&thinsp;mol \(\ce{N2}\) and 3.00&thinsp;mol
         \(\ce{H2}\) at 4.00&thinsp;atm. Find both partial pressures.
-        <div class="workspace" style="height:1.6cm"></div>
+        <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{N2}\) 1.00&thinsp;atm, \(\ce{H2}\) 3.00&thinsp;atm</span></div>
 
 <li>Dry air is about 78% \(\ce{N2}\) by moles. Find \(P_{\ce{N2}}\) at
-        1.00&thinsp;atm. <div class="workspace" style="height:1.4cm"></div>
+        1.00&thinsp;atm. <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="0.78" data-sig="2" data-unit="atm"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Oxygen collected over water at 20&thinsp;&deg;C
         (\(P_{\ce{H2O}} = 17.5\,\mathrm{torr}\)) reads 745&thinsp;torr total.
-        Find the dry \(\ce{O2}\) pressure. <div class="workspace" style="height:1.4cm"></div>
+        Find the dry \(\ce{O2}\) pressure. <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="728.0" data-sig="3" data-unit="torr"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>In question (a), which gas has the larger partial pressure, and
-        does it have the larger <em>mass</em>? <div class="workspace" style="height:1.6cm"></div>
+        does it have the larger <em>mass</em>? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{H2}\) has the
+larger pressure but the smaller mass</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) \(\ce{N2}\) 1.00&thinsp;atm, \(\ce{H2}\) 3.00&thinsp;atm  &emsp; 
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{N2}\) 1.00&thinsp;atm, \(\ce{H2}\) 3.00&thinsp;atm  &emsp; 
 (b) 0.78&thinsp;atm  &emsp;  (c) 728&thinsp;torr  &emsp;  (d) \(\ce{H2}\) has the
-larger pressure but the smaller mass</p>
+larger pressure but the smaller mass</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(X_{\ce{N2}} = 0.250 \to
+\mathbf{1.00}\)&nbsp;atm; \(X_{\ce{H2}} = 0.750 \to \mathbf{3.00}\)&nbsp;atm.
+(b) \(0.78 \times 1.00 = \mathbf{0.78}\)&nbsp;atm.
+(c) \(745 - 17.5 = \mathbf{728}\)&nbsp;torr.
+(d) \(\ce{H2}\) — partial pressure follows the <em>mole</em> fraction, and
+there are three times as many moles. But mass is
+\(3.00 \times 2.016 = 6.05\)&nbsp;g of \(\ce{H2}\) against
+\(1.00 \times 28.02 = 28.0\)&nbsp;g of \(\ce{N2}\), so the nitrogen is far heavier.
+Pressure counts particles, not
+grams.</div></div>
 
 </div>
 
@@ -406,19 +451,29 @@ sits on top.
 <ol>
 
 <li>Rate ratio of \(\ce{H2}\) (\(M = 2.016\)) to \(\ce{O2}\) (\(M = 32.00\)):
-        <div class="workspace" style="height:1.6cm"></div>
+        <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="3.98" data-sig="3" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>An unknown gas effuses 0.500 times as fast as \(\ce{He}\)
-        (\(M = 4.003\)). Find its molar mass. <div class="workspace" style="height:1.8cm"></div>
+        (\(M = 4.003\)). Find its molar mass. <div class="workspace" style="height:1.8cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="num" data-val="16.0" data-sig="3" data-unit="g/mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
 
 <li>Two flasks at the same temperature hold \(\ce{N2}\) and \(\ce{CO2}\).
-        Which has the greater average kinetic energy? <div class="workspace" style="height:1.4cm"></div>
+        Which has the greater average kinetic energy? <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>equal
+— same \(T\)</span></div>
 
 <li>Which KMT postulate fails first as a gas is compressed to high
-        pressure? <div class="workspace" style="height:1.6cm"></div>
+        pressure? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>negligible particle volume</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) 3.98  &emsp;  (b) 16.0&thinsp;g/mol  &emsp;  (c) equal
-— same \(T\)  &emsp;  (d) negligible particle volume</p>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 3.98  &emsp;  (b) 16.0&thinsp;g/mol  &emsp;  (c) equal
+— same \(T\)  &emsp;  (d) negligible particle volume</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\sqrt{32.00/2.016} = \sqrt{15.87} =
+\mathbf{3.98}\). (b) \(0.500 = \sqrt{4.003/M} \Rightarrow 0.250 = 4.003/M
+\Rightarrow M = \mathbf{16.0}\)&nbsp;g/mol (methane).
+(c) <strong>Equal</strong> — average kinetic energy depends only on
+temperature, not identity. \(\ce{N2}\) moves faster, but that is speed, not
+energy. (d) The assumption that particle <strong>volume is negligible</strong>:
+squeezed together, the molecules' own volume becomes a real fraction of
+the container, which is the first correction in
+§5.8.</div></div>
 
 </div>
 
@@ -471,21 +526,31 @@ to be captured).
 <ol>
 
 <li>State the two conditions under which any real gas behaves most
-        ideally: <div class="workspace" style="height:1.4cm"></div>
+        ideally: <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(a)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>low pressure, high temperature</span></div>
 
 <li>Which deviates less from ideal at the same \(P\) and \(T\): \(\ce{H2}\)
-        or \(\ce{H2O}\) vapour? Why? <div class="workspace" style="height:1.6cm"></div>
+        or \(\ce{H2O}\) vapour? Why? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(b)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{H2}\) — no
+hydrogen bonding</span></div>
 
 <li>In the van der Waals equation, which constant corrects for
         particle volume, and does it make \(V\) effectively larger or
-        smaller? <div class="workspace" style="height:1.6cm"></div>
+        smaller? <div class="workspace" style="height:1.6cm"></div><div class="ansrow"><span class="anslab">(c)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(b\); it makes the free volume smaller</span></div>
 
 <li>Ozone in the stratosphere absorbs ultraviolet light. Name the
-        class of pollutant blamed for destroying it. <div class="workspace" style="height:1.4cm"></div>
+        class of pollutant blamed for destroying it. <div class="workspace" style="height:1.4cm"></div><div class="ansrow"><span class="anslab">(d)</span><input type="text" class="ansinput" autocomplete="off" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>chlorofluorocarbons (CFCs)</span></div>
 </ol>
-<p class="selfcheck"><em>check:</em> (a) low pressure, high temperature  &emsp;  (b) \(\ce{H2}\) — no
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) low pressure, high temperature  &emsp;  (b) \(\ce{H2}\) — no
 hydrogen bonding  &emsp;  (c) \(b\); it makes the free volume smaller  &emsp; 
-(d) chlorofluorocarbons (CFCs)</p>
+(d) chlorofluorocarbons (CFCs)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Low pressure and high
+temperature</strong> — particles far apart and moving too fast for attractions
+to matter. (b) <strong>\(\ce{H2}\)</strong>: nonpolar with only weak dispersion
+forces, whereas water vapour hydrogen-bonds strongly, giving it a much
+larger \(a\). (c) <strong>\(b\)</strong>, subtracted as \((V - nb)\) — the particles'
+own volume is unavailable, so the free volume is <em>smaller</em> than the
+container. (d) <strong>Chlorofluorocarbons</strong>, whose Cl atoms catalyse
+ozone destruction. (Zumdahl §5.10 is descriptive; the CED does not
+assess it, so read it for context.)</div></div>
 
 </div>
 

@@ -1,10 +1,4 @@
-ch08-selfstudy.tex
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-1.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-2.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-3.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-4.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-5.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-6.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-7.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-8.png
-  figure rendered: chapter08-bonding\fig-ch08-selfstudy-9.png
+ch03-selfstudy.tex
+  ?? check line with 1 parts but 0 workspace slots -- left non-interactive
+ch03-selfstudy2.tex
+  ?? check line with 3 parts but 1 workspace slots -- left non-interactive
