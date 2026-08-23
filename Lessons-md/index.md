@@ -71,6 +71,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 8 • Bonding: General Concepts
 
 - [Guided Notes](chapter08-bonding/ch08-notes.md)
+- [Self-Study • Chapter 8, I do / You do](chapter08-bonding/ch08-selfstudy.md)
 - [Worksheet 1 • Polarity, Ions, and Lattice Energy](chapter08-bonding/ch08-ws1.md)
 - [Worksheet 2 • Bond Energies](chapter08-bonding/ch08-ws2.md)
 - [Worksheet 3 • Structures, Resonance, VSEPR & FRQ](chapter08-bonding/ch08-ws3.md)

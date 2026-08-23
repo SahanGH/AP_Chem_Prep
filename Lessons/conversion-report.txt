@@ -1,0 +1,10 @@
+ch08-selfstudy.tex
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-1.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-2.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-3.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-4.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-5.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-6.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-7.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-8.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-9.png
