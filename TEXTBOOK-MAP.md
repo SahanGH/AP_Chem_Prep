@@ -132,8 +132,17 @@ Cleanest mapping in the course — Ch 12 end to end, PDF 593–632.
 
 **§16 section boundaries, verified against the page cache** (the whole chapter
 runs 804–833): §16.1 = 805–812 · §16.2 = 813–819 · §16.3 = 820–825.
-Only §16.1 is examinable — §16.2 (precipitation and qualitative analysis)
-and §16.3 (complex ions) are off the current CED.
+
+**§16 scope, re-verified against the CED PDF (2026-08-23):** §16.1 is fully
+examinable (7.11, 7.12, 8.11). §16.2 is **partially** examinable: predicting
+whether a precipitate forms by comparing Q with *K*sp is supported — the CED's
+own 7.11 instructional activity has students "calculate whether the precipitate
+should have formed," and it is 7.3's Q machinery applied to dissolution
+(7.1.A.1 names precipitation as a canonical reversible process). The
+*selective-precipitation / qualitative-analysis scheme* portion of §16.2 stays
+off ("qualitative analysis" appears nowhere in the CED). §16.3 stays off
+("complex ion" appears in none of the CED's 238 pages). An earlier revision of
+this note excluded all of §16.2; that was too aggressive.
 
 ## Unit 8 — Acids and Bases (8 blocks, **11–15%**)
 
@@ -183,6 +192,7 @@ Roughly **300 pages** of this book are off-syllabus. Assigning them costs time y
 | §11.8 | Colloids | 579–581 |
 | §5.10 | Chemistry in the Atmosphere | 264–267 |
 | §6.5–6.6 | Present and New Energy Sources | 308–319 |
+| §16.2 (part) | Selective precipitation & qualitative-analysis schemes only — Q-vs-*K*sp precipitate prediction IS in scope, see §16 note above | 816–819 |
 | §16.3 | Complex Ion Equilibria | 820–825 |
 | §18.5–18.6, §18.8 | Batteries, corrosion, commercial electrolysis | 900–906, 911–916 |
 | **Ch 19** | The Nucleus | 931–966 |
@@ -205,3 +215,31 @@ Small and specific, now that the map is accurate:
 3. **Beer–Lambert problem sets.** Appendix 3 explains it; no end-of-chapter exercises attach to it.
 4. **Connective tissue for Unit 3.** Seven scattered sources need one coherent narrative. This is the largest single writing job in the course.
 5. **AP-style FRQ items** across all units — Zumdahl's exercises are not in AP FRQ format.
+
+---
+
+## CED exclusion statements — verified against the CED PDF, 2026-08-23
+
+Extracted programmatically from `Reference/ap-chemistry-course-and-exam-description.pdf`
+(all 22 "Exclusion Statement" boxes, 2024 CED). The ones that touch this
+corpus, with the required action:
+
+| Topic | Excluded from the AP Exam | Corpus impact |
+|:-----:|---------------------------|---------------|
+| 1.5 | Assigning quantum numbers to electrons | check Ch7 materials |
+| 1.7 | Electron configs of aufbau exceptions | check Ch7 materials |
+| 2.3 | Specific crystal structures | Ch10 unit cells = enrichment depth |
+| 2.7 | **Hybridization involving d orbitals** (sp³d, sp³d²) — only the *shape* is required for >4 domains | **Ch9 teaches sp³d/sp³d² naming as assessed — relabel** |
+| 2.7 | Derivation/depiction of hybrid orbitals; MO theory | Ch9 Ladder 9 already labelled ✓ |
+| 3.3 | Phase diagrams | Ch10 Ladder 12 already labelled ✓ |
+| 3.8 | Colligative properties; **calculations of molality, percent by mass, percent by volume** | **Ch11 Ladders 3–4 teach mass % and molality as assessed — relabel** |
+| 4.7 | "Reducing/oxidizing agent" terminology; rote solubility rules beyond 4.7.A.5 | check Ch4 materials |
+| 4.8 | **Lewis acid–base concepts** | **Ch14 Ladder 1 presents Lewis as required — relabel** |
+| 5.6 | **Calculations involving the Arrhenius equation** | **Ch12 Ladder 10 has a full two-point Eₐ calculation — relabel** (graph reading + qualitative reasoning stay) |
+| 6.6 / 6.9 | Enthalpy-vs-internal-energy distinction; state functions | fine |
+| 7.3 | **Conversion between Kc and Kp** (conceptual difference only) | **Ch13 Ladder 3 teaches the conversion as assessed — relabel** |
+| 7.3 | Dissolved-species/gas-phase coupled equilibria | fine |
+| 8.5 | Polyprotic titration-curve species computations | Ch15 (when written) |
+| 8.9 | pH change from adding acid/base to a buffer; H–H derivation | Ch15 (when written) |
+| 8.11 | Computations of solubility as a function of pH (qualitative only) | Ch16 self-study: keep pH–solubility qualitative |
+| 9.8 | Labeling an electrode positive/negative | Ch18 (when written) |
