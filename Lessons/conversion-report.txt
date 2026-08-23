@@ -2,3 +2,21 @@ ch03-selfstudy.tex
   ?? check line with 1 parts but 0 workspace slots -- left non-interactive
 ch03-selfstudy2.tex
   ?? check line with 3 parts but 1 workspace slots -- left non-interactive
+ch10-selfstudy.tex
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-1.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-2.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-3.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-4.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-5.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-6.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-7.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-8.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-9.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-10.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-11.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-12.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-13.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-14.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-15.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-16.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-17.png
