@@ -1,0 +1,1225 @@
+% Ch11 self-study -- "I do / You do" ladder for Zumdahl 11.1-11.3 only.
+% Ten ladders, 40 questions, thirteen figures.
+%
+% SCOPE: the teacher ruled 11.4-11.8 out (2026-08-23), which matches
+% TEXTBOOK-MAP's skip list -- colligative properties (11.4-11.7) and
+% colloids (11.8) both left the CED in the 2019 redesign. What remains,
+% 11.1-11.3, feeds CED 3.7 (Solutions and Mixtures) and 3.10
+% (Solubility), pp. 545-563. Unlike ch 9, there is no enrichment coda
+% here: the skipped material is genuinely skipped.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{11}
+\apcunittitle{Properties of Solutions}
+\apcdoctitle{Self-Study \textbullet\ Chapter 11, I~do / You~do}
+\apcsubtitle{Zumdahl \S11.1--11.3 \textbullet\ PDF pp.\ 545--563}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help. Work all four before checking
+the gray \emph{check:} line; a tracker tick needs all four right first
+time.
+
+\textbf{This document covers \S11.1--11.3 and stops there.}
+Zumdahl's \S11.4--11.7 --- vapour pressure lowering, boiling point
+elevation, freezing point depression, osmotic pressure, the whole of
+colligative properties --- and \S11.8 on colloids are \textbf{not on the
+AP CED} and are not treated here at all. That is not an oversight; it
+is most of a chapter you do not have to learn.
+
+\textbf{What is left is not small.} \S11.1--11.3 feeds CED topic
+\textbf{3.7} (Solutions and Mixtures) and \textbf{3.10} (Solubility),
+both inside Unit 3 --- the heaviest unit on the exam at 18--22\%.
+Concentration calculations in particular turn up everywhere: in
+titrations, in equilibrium, in kinetics, in electrochemistry.
+
+\textbf{The chapter in one sentence.} A solution is a mixture at the
+particle level, and every question about one is either \emph{how much
+is in there} (\S11.1) or \emph{why did it dissolve at all}
+(\S11.2--11.3).
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Molarity}
+\zsec{11.1}
+
+Molarity is moles of solute per litre of \textbf{solution} --- not per
+litre of solvent. The distinction is the whole of Ladder 1.
+
+\[ M = \frac{\text{moles of solute}}{\text{litres of \textbf{solution}}} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % RIGHT WAY
+  \node[font=\sffamily\small\bfseries] at (2.0,4.5) {how you actually do it};
+  % Volumetric flask: round bulb + narrow neck.  Drawn as a circle with
+  % a white band punched through the top to erase the arc where the
+  % neck joins, leaving the shoulders.  (The previous arc swept
+  % 150->30 degrees, which opened upward and produced an hourglass.)
+  \fill[apcgray!30] (2.0,1.30) circle (0.70);
+  \draw[very thick] (2.0,1.30) circle (0.70);
+  \fill[white] (1.83,1.72) rectangle (2.17,3.25);
+  \fill[apcgray!30] (1.83,1.72) rectangle (2.17,2.70);
+  \draw[very thick] (1.83,1.88) -- (1.83,3.25);
+  \draw[very thick] (2.17,1.88) -- (2.17,3.25);
+  \draw[very thick] (1.70,2.70) -- (2.30,2.70);
+  \node[anchor=west,font=\tiny] at (2.38,2.70) {mark};
+  \node[align=center] at (2.0,0.35)
+    {solute first, then solvent\\\textbf{up to} the mark};
+  \node[align=center,font=\sffamily\footnotesize] at (2.0,-0.55)
+    {final \emph{solution} volume\\is exactly \SI{1.00}{\litre}};
+
+  % WRONG WAY
+  \begin{scope}[xshift=7.4cm]
+    \node[font=\sffamily\small\bfseries] at (2.0,4.5) {what it is
+      \textbf{not}};
+    % fill BEFORE stroke -- the other way round the liquid paints over
+    % the beaker walls and only the rim survives.
+    \fill[apcgray!30] (0.55,1.35) rectangle (1.75,2.95);
+    \draw[very thick] (0.55,3.2) rectangle (1.75,1.35);
+    \node[font=\tiny] at (1.15,3.55) {\SI{1.00}{\litre} water};
+    \node[font=\large] at (2.25,2.2) {$+$};
+    \fill[apcgray!60] (3.0,1.9) circle (0.34);
+    \node[font=\tiny] at (3.0,1.4) {solute};
+    \draw[very thick,apcgray] (0.3,0.75) -- (3.6,3.6);
+    \node[align=center] at (2.0,0.35)
+      {a mole of solute added \emph{to}\\\SI{1.00}{\litre} of water};
+    \node[align=center,font=\sffamily\footnotesize] at (2.0,-0.55)
+      {the solute takes up room ---\\the volume is now
+       \textbf{more} than \SI{1}{\litre}};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: molarity from a mass]
+\textbf{What is the molarity of a solution made by dissolving
+\SI{25.0}{\gram} of \ce{NaCl} in enough water to make
+\SI{500.}{\milli\litre} of solution?}
+
+\textbf{Step 1 --- grams to moles.} You can never put grams into a
+molarity; the definition demands moles.
+\[ M(\ce{NaCl}) = 22.99 + 35.45 = \SI{58.44}{\gram\per\mole} \]
+\[ n = \frac{\SI{25.0}{\gram}}{\SI{58.44}{\gram\per\mole}}
+     = \SI{0.428}{\mole} \]
+
+\textbf{Step 2 --- millilitres to litres.} \SI{500.}{\milli\litre}
+$= \SI{0.500}{\litre}$.
+
+\textbf{Step 3 --- divide.}
+\[ M = \frac{\SI{0.428}{\mole}}{\SI{0.500}{\litre}}
+     = \mathbf{\SI{0.856}{\Molar}} \]
+
+\textbf{Two habits worth building now.} Convert to moles and litres
+\emph{before} you divide, every time --- most lost marks here are unit
+slips, not concept failures. And read the wording: ``dissolved in enough
+water to make \SI{500.}{\milli\litre}'' is a solution volume;
+``dissolved in \SI{500.}{\milli\litre} of water'' is a solvent volume,
+and the two are not the same quantity.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find the molarity of \SI{0.500}{\mole} of \ce{KCl} in
+        \SI{2.00}{\litre} of solution. \workspace[1.6cm]
+  \item Find the molarity of \SI{40.0}{\gram} of \ce{NaOH}
+        ($M = \SI{40.00}{\gram\per\mole}$) in \SI{250.}{\milli\litre}
+        of solution. \workspace[1.8cm]
+  \item How many moles of solute are in \SI{50.0}{\milli\litre} of
+        \SI{2.00}{\Molar} \ce{HCl}? \workspace[1.6cm]
+  \item Why is molarity defined per litre of solution rather than per
+        litre of solvent? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.250}{\Molar} \quad (b) \SI{4.00}{\Molar} \quad
+(c) \SI{0.100}{\mole} \quad (d) the solute itself occupies volume}
+\keyonly{\begin{apcanswer}(a) $0.500 / 2.00 = \mathbf{\SI{0.250}{\Molar}}$.
+(b) $n = 40.0/40.00 = \SI{1.00}{\mole}$; $1.00/0.250 =
+\mathbf{\SI{4.00}{\Molar}}$. (c) $n = MV = 2.00 \times 0.0500 =
+\mathbf{\SI{0.100}{\mole}}$. (d) Because the \textbf{solute takes up
+space of its own}. Adding a mole of solute to exactly one litre of
+solvent gives a total volume larger than one litre --- and by an amount
+that differs from solute to solute, so it could not be predicted.
+Defining molarity against the final solution volume makes it something
+you can measure directly with a volumetric flask.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Dilution}
+\zsec{11.1}
+
+Adding solvent changes the volume and the concentration but
+\textbf{not} the number of moles of solute. That single conserved
+quantity is the whole calculation.
+
+\[ \underbrace{M_{1}V_{1}}_{\text{moles before}}
+   \;=\;
+   \underbrace{M_{2}V_{2}}_{\text{moles after}} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % concentrated
+  \node[font=\sffamily\small\bfseries] at (1.3,3.5) {concentrated};
+  \fill[apcgray!22] (0.5,0.4) rectangle (2.1,1.5);
+  \draw[very thick] (0.5,2.6) -- (0.5,0.4) -- (2.1,0.4) -- (2.1,2.6);
+  \foreach \x/\y in {0.75/0.65, 1.15/0.62, 1.55/0.7, 1.9/0.6,
+                     0.7/1.0, 1.1/0.95, 1.5/1.05, 1.85/0.98,
+                     0.9/1.32, 1.35/1.28, 1.75/1.35, 0.62/1.28} {
+    \fill (\x,\y) circle (0.075);}
+  \node at (1.3,-0.15) {12 particles};
+  \node at (1.3,-0.6) {small volume};
+
+  \draw[-{Stealth[length=3mm]},very thick] (2.6,1.3) -- (4.0,1.3);
+  \node[above,align=center,font=\sffamily\footnotesize] at (3.3,1.45)
+    {add\\solvent};
+
+  % dilute
+  \begin{scope}[xshift=4.5cm]
+    \node[font=\sffamily\small\bfseries] at (1.3,3.5) {dilute};
+    \fill[apcgray!22] (0.5,0.4) rectangle (2.1,2.35);
+    \draw[very thick] (0.5,2.6) -- (0.5,0.4) -- (2.1,0.4) -- (2.1,2.6);
+    \foreach \x/\y in {0.75/0.7, 1.45/0.62, 1.95/0.85,
+                       0.62/1.25, 1.15/1.1, 1.8/1.35,
+                       0.85/1.65, 1.55/1.75, 1.98/1.6,
+                       0.68/2.05, 1.25/2.15, 1.85/2.2} {
+      \fill (\x,\y) circle (0.075);}
+    \node at (1.3,-0.15) {\textbf{still} 12 particles};
+    \node at (1.3,-0.6) {larger volume};
+  \end{scope}
+
+  \node[anchor=west,align=left,font=\sffamily\footnotesize]
+    at (7.5,1.55)
+    {the \textbf{number} of solute particles\\
+     never changes --- only how much\\
+     room they are spread through};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: two directions of the same equation]
+\textbf{(a) What is the concentration when \SI{50.0}{\milli\litre} of
+\SI{6.00}{\Molar} \ce{HCl} is diluted to \SI{250.}{\milli\litre}?}
+
+Rearrange for what you want, then substitute:
+\[ M_{2} = \frac{M_{1}V_{1}}{V_{2}}
+         = \frac{6.00 \times 50.0}{250.}
+         = \mathbf{\SI{1.20}{\Molar}} \]
+
+\textbf{Note the units did not need converting.} $V_{1}$ and $V_{2}$
+appear as a ratio, so as long as both are in the same unit the
+millilitres cancel. This is the one place in solution work where you may
+safely leave millilitres alone.
+
+\textbf{(b) What volume of \SI{6.00}{\Molar} \ce{HCl} is needed to make
+\SI{2.00}{\litre} of \SI{0.150}{\Molar} \ce{HCl}?}
+\[ V_{1} = \frac{M_{2}V_{2}}{M_{1}}
+         = \frac{0.150 \times 2.00}{6.00}
+         = \SI{0.0500}{\litre} = \mathbf{\SI{50.0}{\milli\litre}} \]
+
+\textbf{And the safety rule that goes with it.} You would measure that
+\SI{50.0}{\milli\litre} of acid and add it \emph{to} water already in
+the flask --- never water to concentrated acid. Dissolving concentrated
+acid is strongly exothermic, and adding water to it can boil the surface
+and spit acid out of the container.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{25.0}{\milli\litre} of \SI{12.0}{\Molar} \ce{HCl} is diluted
+        to \SI{500.}{\milli\litre}. Find the new molarity.
+        \workspace[1.6cm]
+  \item What volume of \SI{2.00}{\Molar} stock makes
+        \SI{100.}{\milli\litre} of \SI{0.400}{\Molar} solution?
+        \workspace[1.6cm]
+  \item \SI{100.}{\milli\litre} of \SI{0.50}{\Molar} \ce{NaCl} has
+        \SI{100.}{\milli\litre} of water added. Find the new molarity.
+        \workspace[1.8cm]
+  \item Does diluting a solution change the number of moles of solute?
+        Explain. \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.600}{\Molar} \quad (b) \SI{20.0}{\milli\litre}
+\quad (c) \SI{0.25}{\Molar} \quad (d) no --- only the volume changes}
+\keyonly{\begin{apcanswer}(a) $M_{2} = (12.0 \times 25.0)/500. =
+\mathbf{\SI{0.600}{\Molar}}$. (b) $V_{1} = (0.400 \times 100.)/2.00 =
+\mathbf{\SI{20.0}{\milli\litre}}$. (c) The final volume is
+$100. + 100. = \SI{200.}{\milli\litre}$, so $M_{2} = (0.50 \times
+100.)/200. = \mathbf{\SI{0.25}{\Molar}}$ --- the concentration halves
+because the volume doubled. (d) \textbf{No.} Dilution adds only solvent,
+so every solute particle that was there before is still there
+afterwards. What changes is the volume they are distributed
+through, and therefore the concentration. That conservation is exactly
+what $M_{1}V_{1} = M_{2}V_{2}$ states.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Mass percent, ppm and ppb}
+\zsec{11.1}
+
+When the solute is very dilute, molarity produces awkward numbers.
+These units exist to make small amounts readable.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.3,2.2) -- (11.6,2.2);
+  \foreach \x/\u/\f/\e in {%
+      1.3/{mass \%}/{parts per hundred}/{salt in seawater, 3.5\%},
+      5.0/{ppm}/{parts per million}/{fluoride in tap water, 1 ppm},
+      8.9/{ppb}/{parts per billion}/{lead limit, 15 ppb}} {
+    \fill (\x,2.2) circle (0.09);
+    \node[font=\sffamily\bfseries] at (\x,2.75) {\u};
+    \node at (\x,1.72) {\f};
+    \node[font=\sffamily\footnotesize\itshape] at (\x,1.25) {\e};}
+  % Raised to 3.35: at 2.65 this ran straight into the "ppb" label,
+  % printing as "ppb_more dilute".
+  \node[anchor=east,font=\sffamily\footnotesize] at (11.6,3.35)
+    {more dilute $\longrightarrow$};
+  \draw[apcgray] (0.3,0.72) -- (11.6,0.72);
+  \node[anchor=west,font=\sffamily\footnotesize] at (0.4,0.3)
+    {each is a \textbf{mass ratio} $\times$ a scaling factor:
+     $\times 10^{2}$, $\times 10^{6}$, $\times 10^{9}$};
+\end{tikzpicture}
+\end{center}
+
+\[ \text{mass \%} =
+   \frac{\text{mass of solute}}{\text{mass of \textbf{solution}}}
+   \times 100 \]
+
+\begin{apctrap}
+The denominator is the mass of the \textbf{solution}, meaning
+solute $+$ solvent --- not the mass of the solvent alone. Dissolving
+\SI{15}{\gram} in \SI{135}{\gram} of water gives a
+\SI{150}{\gram} solution, so the answer is $15/150$, not $15/135$. The
+same total-versus-part trap as molarity, one ladder later.
+\end{apctrap}
+
+\begin{workedexample}[I do: mass percent and ppm]
+\textbf{(a) \SI{15.0}{\gram} of \ce{NaCl} is dissolved in
+\SI{135.0}{\gram} of water. Find the mass percent.}
+
+Total solution mass $= 15.0 + 135.0 = \SI{150.0}{\gram}$.
+\[ \text{mass \%} = \frac{15.0}{150.0} \times 100
+                  = \mathbf{10.0\%} \]
+
+\textbf{(b) A water sample contains \SI{2.5}{\milli\gram} of fluoride
+per \SI{1.0}{\kilo\gram} of water. Express this in ppm.}
+
+Parts per million is the same ratio scaled by $10^{6}$. Put both masses
+in the same unit first: \SI{2.5}{\milli\gram} $=
+\SI{2.5e-3}{\gram}$ and \SI{1.0}{\kilo\gram} $= \SI{1.0e3}{\gram}$.
+\[ \frac{\num{2.5e-3}}{\num{1.0e3}} \times 10^{6}
+   = \mathbf{2.5 \text{ ppm}} \]
+
+\textbf{The shortcut worth memorising.} For dilute \emph{aqueous}
+solutions the density is essentially \SI{1.00}{\gram\per\milli\litre},
+so \SI{1}{\kilo\gram} of solution is \SI{1}{\litre} and
+\[ 1 \text{ ppm} \;\approx\; \SI{1}{\milli\gram\per\litre} \]
+That is why water-quality reports quote mg/L and ppm interchangeably.
+It is an approximation that holds only because the solution is mostly
+water --- do not use it for concentrated solutions or non-aqueous
+solvents.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find the mass percent of \SI{5.0}{\gram} of sugar in
+        \SI{95.0}{\gram} of water. \workspace[1.6cm]
+  \item A solution is 2.0\% by mass. How much solute is in
+        \SI{250}{\gram} of it? \workspace[1.6cm]
+  \item Convert \SI{0.0025}{\gram} of solute per \SI{1000}{\gram} of
+        solution to ppm. \workspace[1.6cm]
+  \item Why is the denominator the mass of solution rather than of
+        solvent? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) 5.0\% \quad (b) \SI{5.0}{\gram} \quad (c) 2.5 ppm \quad
+(d) it is a fraction of the whole mixture}
+\keyonly{\begin{apcanswer}(a) Total $= 5.0 + 95.0 = \SI{100.0}{\gram}$,
+so $5.0/100.0 \times 100 = \mathbf{5.0\%}$. (b) $0.020 \times 250 =
+\mathbf{\SI{5.0}{\gram}}$. (c) $(0.0025/1000) \times 10^{6} =
+\mathbf{2.5}$ \textbf{ppm}. (d) Because these units express what
+\textbf{fraction of the whole mixture} is solute. A 10\% solution means
+ten grams in every hundred grams of \emph{solution}; if the denominator
+were the solvent, two solutions with the same label would contain
+different amounts of solute per gram of liquid you actually pour, and
+the number would not mean anything consistent.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Mole fraction and molality}
+\zsec{11.1}
+
+Four concentration units, and what separates them is entirely
+\textbf{what sits in the denominator}. Get that right and all four are
+one idea.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.5)
+    {same numerator idea --- four different denominators};
+  \foreach \y/\n/\sym/\num/\den in {%
+      2.7/{molarity}/{$M$}/{mol solute}/{\textbf{litres of solution}},
+      2.0/{molality}/{$m$}/{mol solute}/{\textbf{kg of solvent}},
+      1.3/{mole fraction}/{$\chi$}/{mol solute}/{\textbf{total mol,
+        solute $+$ solvent}},
+      0.6/{mass percent}/{---}/{mass solute}/{\textbf{mass of
+        solution}}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.2,\y) {\n};
+    \node[anchor=west] at (2.6,\y) {\sym};
+    \node[anchor=west] at (3.3,\y) {\num};
+    \node[anchor=west] at (5.6,\y) {$\div$};
+    \node[anchor=west] at (6.2,\y) {\den};}
+  \draw[apcgray] (0.1,3.1) -- (11.4,3.1);
+  \draw[apcgray] (0.1,0.25) -- (11.4,0.25);
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[Where molality actually gets used --- read this once]
+Molality exists mainly to support \textbf{colligative properties}, and
+those are \S11.4--11.7, which this course skips. So learn the definition
+and learn how it differs from molarity --- that distinction is fair game
+--- but do not expect to apply it. Two reasons it is defined against
+solvent \emph{mass} rather than solution \emph{volume}: mass does not
+change with temperature, whereas volume does, so molality is
+temperature-independent where molarity is not.
+\end{apcnote}
+
+\begin{workedexample}[I do: mole fraction, then molality]
+\textbf{(a) A solution contains \SI{46.0}{\gram} of ethanol
+(\ce{C2H5OH}, $M = \SI{46.07}{\gram\per\mole}$) and \SI{54.0}{\gram}
+of water ($M = \SI{18.02}{\gram\per\mole}$). Find the mole fraction of
+ethanol.}
+
+\textbf{Everything must be in moles} --- a mole fraction cannot be built
+from grams.
+\[ n_{\text{ethanol}} = \frac{46.0}{46.07} = \SI{0.998}{\mole}
+   \qquad
+   n_{\text{water}} = \frac{54.0}{18.02} = \SI{3.00}{\mole} \]
+\[ \chi_{\text{ethanol}}
+   = \frac{0.998}{0.998 + 3.00}
+   = \frac{0.998}{4.00}
+   = \mathbf{0.250} \]
+
+\textbf{Check it the free way.} Mole fractions of everything present
+must sum to exactly 1, so $\chi_{\text{water}} = 1 - 0.250 = 0.750$.
+If your fractions do not sum to 1, you have made an arithmetic error and
+the check has just caught it.
+
+\textbf{Note what happened to the masses.} Nearly equal masses
+(\SI{46.0}{} and \SI{54.0}{\gram}) gave wildly unequal mole counts
+(\SI{0.998}{} and \SI{3.00}{\mole}), because a water molecule is so much
+lighter. Mass ratios and mole ratios are not interchangeable.
+
+\textbf{(b) Find the molality of \SI{18.0}{\gram} of glucose
+(\ce{C6H12O6}, $M = \SI{180.16}{\gram\per\mole}$) dissolved in
+\SI{250.}{\gram} of water.}
+\[ n = \frac{18.0}{180.16} = \SI{0.0999}{\mole}
+   \qquad
+   m = \frac{0.0999}{\SI{0.250}{\kilo\gram}}
+     = \mathbf{\SI{0.400}{\molal}} \]
+The denominator is \SI{0.250}{\kilo\gram} of \emph{water}, not of
+solution --- for molality the solute mass never enters the bottom.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A mixture holds \SI{2.00}{\mole} of \ce{A} and
+        \SI{6.00}{\mole} of \ce{B}. Find $\chi_{\ce{A}}$.
+        \workspace[1.6cm]
+  \item If $\chi_{\ce{A}} = 0.35$ in a two-component mixture, what is
+        $\chi_{\ce{B}}$? \workspace[1.4cm]
+  \item Find the molality of \SI{0.500}{\mole} of solute in
+        \SI{2.00}{\kilo\gram} of solvent. \workspace[1.6cm]
+  \item State the one difference between molarity and molality, and say
+        why molality does not change with temperature.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 0.250 \quad (b) 0.65 \quad (c) \SI{0.250}{\molal} \quad
+(d) litres of solution vs kg of solvent; mass is
+temperature-independent}
+\keyonly{\begin{apcanswer}(a) $2.00/(2.00+6.00) = \mathbf{0.250}$.
+(b) Mole fractions sum to 1, so $1 - 0.35 = \mathbf{0.65}$.
+(c) $0.500/2.00 = \mathbf{\SI{0.250}{\molal}}$. (d) Molarity divides by
+\textbf{litres of solution}; molality divides by \textbf{kilograms of
+solvent}. Molality is temperature-independent because \textbf{mass does
+not change with temperature} --- but volume does, since liquids expand
+when heated. Warm a solution and its molarity falls slightly (same moles,
+larger volume) while its molality is unchanged.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ The energetics of dissolving}
+\zsec{11.2}
+
+Dissolving is not one event but three, and only the third releases
+energy. Whether a solution forms --- and whether the beaker gets warm or
+cold --- is the sum.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \foreach \i/\lab/\desc/\sign in {%
+      0/{Step 1}/{separate the\\\textbf{solute} particles}/{endo, $+$},
+      4.0/{Step 2}/{separate the\\\textbf{solvent} particles}/{endo, $+$},
+      8.0/{Step 3}/{let solute and solvent\\\textbf{attract} each
+        other}/{exo, $-$}} {
+    \begin{scope}[xshift=\i cm]
+      \node[font=\sffamily\small\bfseries] at (1.6,3.35) {\lab};
+      \node[align=center] at (1.6,2.7) {\desc};
+      % Sign sits BELOW the art at 1.15.  At 1.55 it was inside the
+      % particle sketches -- the step-1 arrow ran straight through
+      % "endo, +" and step 3's solvation shell through "exo, -".
+      \node[font=\sffamily\bfseries] at (1.6,1.15) {\sign};
+    \end{scope}}
+  % step 1 art: clump -> spread
+  \foreach \p in {(0.75,2.0),(1.05,2.0),(0.75,1.75),(1.05,1.75)} {
+    \fill[apcgray!65] \p circle (0.1);}
+  \draw[-{Stealth[length=2mm]}] (1.35,1.88) -- (1.75,1.88);
+  \foreach \p in {(2.0,2.1),(2.4,1.95),(2.15,1.65),(2.55,2.2)} {
+    \fill[apcgray!65] \p circle (0.1);}
+  % step 2 art
+  \begin{scope}[xshift=4.0cm]
+    \foreach \p in {(0.75,2.0),(1.05,2.0),(0.75,1.75),(1.05,1.75)} {
+      \fill[apcgray!25] \p circle (0.1);
+      \draw[apcgray] \p circle (0.1);}
+    \draw[-{Stealth[length=2mm]}] (1.35,1.88) -- (1.75,1.88);
+    \foreach \p in {(2.0,2.1),(2.4,1.95),(2.15,1.65),(2.55,2.2)} {
+      \fill[apcgray!25] \p circle (0.1);
+      \draw[apcgray] \p circle (0.1);}
+  \end{scope}
+  % step 3 art: solute surrounded by solvent
+  \begin{scope}[xshift=8.0cm]
+    \fill[apcgray!65] (1.6,1.95) circle (0.15);
+    \foreach \a in {0,72,144,216,288} {
+      \fill[apcgray!25] ([shift={(1.6,1.95)}]\a:0.36) circle (0.11);
+      \draw[apcgray] ([shift={(1.6,1.95)}]\a:0.36) circle (0.11);}
+  \end{scope}
+  \draw[apcgray] (0.2,0.72) -- (11.2,0.72);
+  \node[font=\sffamily\small] at (5.7,0.28)
+    {$\Delta H_{\text{soln}} \;=\; \Delta H_{1} \;+\; \Delta H_{2}
+     \;+\; \Delta H_{3}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % EXOTHERMIC
+  \node[font=\sffamily\small\bfseries] at (2.1,3.5) {exothermic
+    ($\Delta H_{\text{soln}} < 0$)};
+  \draw[-{Stealth[length=2.5mm]},thick] (0.35,0.4) -- (0.35,3.0)
+    node[above,font=\tiny] {$H$};
+  \draw[very thick] (0.8,2.5) -- (2.1,2.5);
+  \node[anchor=west,font=\tiny] at (2.2,2.5) {separated};
+  \draw[very thick] (0.8,1.75) -- (2.1,1.75);
+  \node[anchor=west,font=\tiny] at (2.2,1.75) {start};
+  \draw[very thick] (0.8,0.85) -- (2.1,0.85);
+  \node[anchor=west,font=\tiny] at (2.2,0.85) {solution};
+  \draw[-{Stealth[length=2mm]},thick] (1.45,1.75) -- (1.45,0.85);
+  \node[align=center] at (2.1,-0.4)
+    {step 3 releases more than\\steps 1 and 2 cost ---
+     \textbf{warms up}};
+
+  % ENDOTHERMIC
+  \begin{scope}[xshift=6.6cm]
+    \node[font=\sffamily\small\bfseries] at (2.1,3.5) {endothermic
+      ($\Delta H_{\text{soln}} > 0$)};
+    \draw[-{Stealth[length=2.5mm]},thick] (0.35,0.4) -- (0.35,3.0)
+      node[above,font=\tiny] {$H$};
+    \draw[very thick] (0.8,2.5) -- (2.1,2.5);
+    \node[anchor=west,font=\tiny] at (2.2,2.5) {separated};
+    \draw[very thick] (0.8,0.85) -- (2.1,0.85);
+    \node[anchor=west,font=\tiny] at (2.2,0.85) {start};
+    \draw[very thick] (0.8,1.6) -- (2.1,1.6);
+    \node[anchor=west,font=\tiny] at (2.2,1.6) {solution};
+    \draw[-{Stealth[length=2mm]},thick] (1.45,0.85) -- (1.45,1.6);
+    \node[align=center] at (2.1,-0.4)
+      {step 3 releases less than\\steps 1 and 2 cost ---
+       \textbf{cools down}};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: why \ce{NaCl} dissolves at all]
+\textbf{Breaking the \ce{NaCl} lattice costs
+\SI{+786}{\kilo\joule\per\mole}. Hydrating the resulting ions releases
+\SI{-783}{\kilo\joule\per\mole}. Find $\Delta H_{\text{soln}}$ and
+comment.}
+
+\[ \Delta H_{\text{soln}} = (+786) + (-783)
+   = \mathbf{\SI{+3}{\kilo\joule\per\mole}} \]
+
+\textbf{So dissolving salt is slightly endothermic} --- a beaker of
+water cools very slightly as salt dissolves. And yet \ce{NaCl} is
+famously soluble. Why does an uphill process happen at all?
+
+\textbf{Because enthalpy is not the only driver.} A dissolved solute is
+enormously more disordered than a crystal: the ions go from fixed
+lattice sites to wandering freely through the liquid. That increase in
+\textbf{entropy} is what drives dissolving here, and it is large enough
+to overwhelm a \SI{3}{\kilo\joule\per\mole} enthalpy penalty.
+
+\textbf{Look at the two numbers again.} \SI{786}{} and \SI{783}{} ---
+each enormous, and their difference tiny. Solubility is decided by the
+small residue left when two large opposing quantities nearly cancel,
+which is why it is so hard to predict from first principles and why
+chemists rely on measured solubility data instead.
+
+\textbf{Two contrasting cases worth knowing.}
+\ce{NH4NO3} has $\Delta H_{\text{soln}} =
+\SI{+25.7}{\kilo\joule\per\mole}$ --- strongly endothermic, and the
+active ingredient of an instant \emph{cold} pack.
+\ce{CaCl2} has $\Delta H_{\text{soln}} =
+\SI{-82.8}{\kilo\joule\per\mole}$ --- strongly exothermic, and used in
+instant \emph{hot} packs and to melt road ice.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which of the three steps is exothermic, and why?
+        \workspace[1.6cm]
+  \item Lattice breaking costs \SI{+700}{\kilo\joule\per\mole} and
+        hydration releases \SI{-750}{\kilo\joule\per\mole}. Find
+        $\Delta H_{\text{soln}}$ and say whether the beaker warms or
+        cools. \workspace[1.8cm]
+  \item A cold pack contains \ce{NH4NO3}. What is the sign of its
+        $\Delta H_{\text{soln}}$? \workspace[1.4cm]
+  \item \ce{NaCl} dissolving is endothermic, yet it dissolves readily.
+        Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) step 3 --- attractions form \quad (b)
+\SI{-50}{\kilo\joule\per\mole}, warms \quad (c) positive \quad (d)
+entropy drives it}
+\keyonly{\begin{apcanswer}(a) \textbf{Step 3}, in which solute and
+solvent particles attract one another. Forming an attraction always
+releases energy; breaking one always costs energy, which is why steps 1
+and 2 are both endothermic. (b) $(+700) + (-750) =
+\mathbf{\SI{-50}{\kilo\joule\per\mole}}$ --- negative, so the process is
+exothermic and the beaker \textbf{warms}. (c) \textbf{Positive}
+(endothermic). The pack gets cold because dissolving absorbs energy from
+its surroundings, which include your skin. (d) Because dissolving is
+driven by \textbf{entropy} as well as enthalpy. The ions move from fixed
+positions in an ordered lattice to moving freely through the solution, an
+enormous increase in disorder, and that is more than enough to overcome
+an enthalpy cost of only about
+\SI{3}{\kilo\joule\per\mole}.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Like dissolves like}
+\zsec{11.2--11.3}
+
+Step 3 of Ladder 5 only pays for steps 1 and 2 when the new
+solute--solvent attractions resemble the ones that were broken. That is
+the whole content of the slogan.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (4.4,4.3) {will it dissolve?};
+  % column headings
+  \node[font=\sffamily\bfseries,align=center] at (3.3,3.5)
+    {\textbf{polar} solvent\\(water)};
+  \node[font=\sffamily\bfseries,align=center] at (6.6,3.5)
+    {\textbf{nonpolar} solvent\\(hexane)};
+  % row headings
+  \node[anchor=east,font=\sffamily\bfseries,align=right] at (1.9,2.35)
+    {\textbf{polar} or ionic solute\\(\ce{NaCl}, sugar)};
+  \node[anchor=east,font=\sffamily\bfseries,align=right] at (1.9,1.0)
+    {\textbf{nonpolar} solute\\(\ce{I2}, oil)};
+  % grid
+  \draw[apcgray] (2.1,3.0) -- (8.2,3.0);
+  \draw[apcgray] (2.1,1.68) -- (8.2,1.68);
+  \draw[apcgray] (4.95,3.15) -- (4.95,0.35);
+  % cells
+  \node[font=\Large] at (3.3,2.35) {\checkmark};
+  \node[font=\Large] at (6.6,2.35) {$\times$};
+  \node[font=\Large] at (3.3,1.0) {$\times$};
+  \node[font=\Large] at (6.6,1.0) {\checkmark};
+  \node[font=\sffamily\footnotesize] at (5.15,-0.3)
+    {the diagonal fails --- \emph{unlike} does \textbf{not} dissolve
+     \emph{unlike}};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: why oil and water refuse]
+\textbf{Water is strongly hydrogen bonded. Oil is a nonpolar
+hydrocarbon with dispersion forces only. Work through the three steps.}
+
+\textbf{Step 1 --- separate the oil.} Cheap. Only weak dispersion forces
+have to be overcome, so this costs little.
+
+\textbf{Step 2 --- separate the water.} \emph{Expensive.} Every water
+molecule is hydrogen bonded to its neighbours, and opening a cavity big
+enough for an oil molecule means breaking a great many of those bonds.
+
+\textbf{Step 3 --- oil attracts water.} Cheap and useless. An oil
+molecule cannot hydrogen-bond, so all it offers water in return is weak
+dispersion --- nowhere near enough to repay what step 2 cost.
+
+\textbf{The books do not balance,} so the mixture separates and the
+water re-forms its hydrogen-bond network with itself.
+
+\textbf{Now reverse the pairing and watch it work.} Ethanol,
+\ce{CH3CH2OH}, has an \ce{-OH} group and hydrogen-bonds to water just
+as water does to itself. Step 2 is still expensive, but step 3 now
+repays it in the same currency --- so ethanol and water are
+\textbf{miscible} in all proportions.
+
+\textbf{Say it precisely on an exam.} Not ``like dissolves like'', which
+earns nothing, but: ``the solute--solvent attractions are comparable in
+strength to the solvent--solvent attractions that must be broken.''
+Naming the forces is what scores.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Will \ce{I2} dissolve better in water or in \ce{CCl4}? Why?
+        \workspace[1.8cm]
+  \item Will \ce{NaCl} dissolve in hexane? Why not?
+        \workspace[1.8cm]
+  \item Why is ethanol miscible with water in all proportions?
+        \workspace[1.8cm]
+  \item Which step of the cycle is the expensive one when a nonpolar
+        solute meets water? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{CCl4} --- both nonpolar \quad (b) no --- hexane
+cannot solvate ions \quad (c) it hydrogen-bonds \quad (d) step 2}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{CCl4}}. Both \ce{I2} and
+\ce{CCl4} are nonpolar with dispersion forces only, so the attractions
+broken and formed are of the same kind and comparable strength. In
+water, \ce{I2} could not repay the cost of breaking water's hydrogen
+bonds. (b) \textbf{No.} Separating the \ce{NaCl} lattice costs an
+enormous amount of energy, and hexane is nonpolar --- it can offer the
+ions only weak dispersion forces, nothing like the ion--dipole
+attractions water provides. Step 3 cannot pay for step 1.
+(c) Because ethanol's \ce{-OH} group lets it \textbf{hydrogen-bond to
+water}, so the ethanol--water attractions formed are as strong as the
+water--water attractions broken. (d) \textbf{Step 2}, separating the
+solvent. Water's hydrogen-bond network is strong, and opening a space
+for the solute means breaking a lot of it --- a cost a nonpolar solute
+has no way to repay.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Structure: chains, heads and
+tails}
+\zsec{11.3}
+
+Most real molecules are neither purely polar nor purely nonpolar. They
+have a \textbf{hydrophilic} part that water likes and a
+\textbf{hydrophobic} part it does not, and solubility follows whichever
+wins.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.6)
+    {straight-chain alcohols: one \ce{-OH}, longer and longer tails};
+  \node[font=\sffamily\footnotesize] at (5.6,3.15)
+    {dark circle $=$ the \ce{-OH} head \textbullet\ pale circles $=$
+     carbons of the tail};
+  \foreach \i/\nm/\n/\sol in {%
+      0/{methanol}/1/{miscible},
+      2.4/{ethanol}/2/{miscible},
+      4.8/{1-butanol}/4/{7.9},
+      7.2/{1-hexanol}/6/{0.6},
+      9.6/{1-octanol}/8/{0.054}} {
+    \begin{scope}[xshift=\i cm]
+      \node[font=\sffamily\footnotesize] at (0.9,2.85) {\nm};
+      % OH head.  No lettering inside: "OH" even at \tiny is wider than
+      % the circle and rendered as an illegible smudge.  The key below
+      % the title identifies it instead.
+      \fill[apcgray!75] (0.25,2.2) circle (0.15);
+      % tail
+      \foreach \k in {1,...,\n} {
+        \fill[apcgray!30] (0.25+\k*0.16,2.2) circle (0.085);}
+      \node[font=\sffamily\footnotesize] at (0.9,1.45) {\sol};
+    \end{scope}}
+  \node[anchor=east,font=\sffamily\footnotesize] at (-0.1,2.2)
+    {structure};
+  \node[anchor=east,font=\sffamily\footnotesize,align=right]
+    at (-0.1,1.45) {solubility\\g/100 g water};
+  \draw[-{Stealth[length=3mm]},thick,apcgray] (0.3,0.85) -- (10.9,0.85);
+  \node[font=\sffamily\footnotesize] at (5.6,0.42)
+    {the hydrophobic tail grows, the single hydrophilic head does not
+     --- solubility collapses};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (2.4,3.7) {a soap molecule};
+  \fill[apcgray!70] (0.6,2.4) circle (0.24);
+  \draw[very thick,decorate,decoration={snake,amplitude=1.2pt,
+    segment length=5pt}] (0.86,2.4) -- (3.9,2.4);
+  \node[align=center,font=\sffamily\footnotesize] at (0.6,1.75)
+    {ionic \textbf{head}\\hydrophilic};
+  \node[align=center,font=\sffamily\footnotesize] at (2.6,1.75)
+    {hydrocarbon \textbf{tail}\\hydrophobic};
+
+  % micelle
+  \begin{scope}[xshift=7.6cm]
+    \node[font=\sffamily\small\bfseries] at (1.9,3.7) {a micelle};
+    \fill[apcgray!12] (1.9,2.15) circle (1.35);
+    \foreach \a in {0,30,...,330} {
+      \fill[apcgray!70] ([shift={(1.9,2.15)}]\a:1.28) circle (0.13);
+      \draw[thick] ([shift={(1.9,2.15)}]\a:1.13)
+                -- ([shift={(1.9,2.15)}]\a:0.42);}
+    \node[font=\tiny,align=center] at (1.9,2.15) {grease\\inside};
+    \node[align=center,font=\sffamily\footnotesize] at (1.9,0.35)
+      {heads face the water, tails\\trap the grease --- how soap works};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: reading a solubility collapse]
+\textbf{Methanol is miscible with water in all proportions.
+1-octanol dissolves to only \SI{0.054}{\gram} per \SI{100}{\gram} of
+water --- a difference of orders of magnitude. Both have exactly one
+\ce{-OH} group.}
+
+\textbf{What stayed the same.} Each molecule has a single \ce{-OH}, so
+each can form roughly the same number of hydrogen bonds to water. The
+hydrophilic contribution is essentially constant across the series.
+
+\textbf{What changed.} The hydrocarbon tail grew from one carbon to
+eight. That tail cannot hydrogen-bond, so it forces water to break its
+own hydrogen bonds and open a cavity, paying step 2's cost with nothing
+in return. The longer the tail, the bigger the unpaid bill.
+
+\textbf{So the ratio decides.} In methanol the \ce{-OH} dominates the
+molecule and it behaves like water. By octanol the tail dominates and
+the molecule behaves like a hydrocarbon. The crossover sits around four
+carbons, which is why 1-butanol is only partly soluble
+(\SI{7.9}{\gram}/\SI{100}{\gram}) --- it is the molecule where the two
+halves are most nearly matched.
+
+\textbf{Where this shows up outside chemistry class.} Vitamin C is
+studded with \ce{-OH} groups and is water soluble, so the body cannot
+store it and you need it regularly. Vitamin A is mostly hydrocarbon and
+is fat soluble, so it accumulates in body fat --- which is why an
+overdose of vitamin A is possible and an overdose of vitamin C is
+largely just expensive.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which is more soluble in water, 1-propanol or 1-heptanol? Why?
+        \workspace[1.8cm]
+  \item Which part of a soap molecule dissolves grease?
+        \workspace[1.6cm]
+  \item Why is vitamin A stored in body fat but vitamin C is not?
+        \workspace[1.8cm]
+  \item Would you expect ethanoic acid (\ce{CH3COOH}) to be water
+        soluble? Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 1-propanol --- shorter tail \quad (b) the hydrocarbon
+tail \quad (c) A is hydrophobic, C is hydrophilic \quad (d) yes ---
+short chain, polar \ce{-COOH}}
+\keyonly{\begin{apcanswer}(a) \textbf{1-propanol.} Both have one
+\ce{-OH}, so both hydrogen-bond to water about equally, but propanol's
+three-carbon tail is far shorter than heptanol's seven. Less hydrophobic
+tail means less of water's hydrogen-bond network has to be broken for
+nothing in return. (b) The \textbf{hydrocarbon tail}. It is nonpolar, so
+it mixes with nonpolar grease by dispersion forces, while the ionic head
+stays in the water --- letting one molecule bridge two phases that
+otherwise refuse to mix. (c) \textbf{Vitamin A} is mostly hydrocarbon
+and therefore hydrophobic, so it dissolves in fatty tissue and
+accumulates there. \textbf{Vitamin C} carries several \ce{-OH} groups,
+is hydrophilic, dissolves in the body's water and is excreted --- so it
+must be replaced regularly. (d) \textbf{Yes.} It has a very short
+(one-carbon) hydrophobic tail and a \ce{-COOH} group that both donates
+and accepts hydrogen bonds. The hydrophilic part dominates, and ethanoic
+acid is in fact miscible with water --- as anyone who has used vinegar
+has observed.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Saturated, unsaturated,
+supersaturated}
+\zsec{11.3}
+
+Solubility is a \emph{limit}, and a solution is classified by where it
+sits relative to that limit.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \foreach \i/\nm/\desc in {%
+      0/{unsaturated}/{below the limit\\more \emph{would} dissolve},
+      4.2/{saturated}/{at the limit\\undissolved solid remains},
+      8.4/{supersaturated}/{\emph{above} the limit\\unstable}} {
+    \begin{scope}[xshift=\i cm]
+      \node[font=\sffamily\small\bfseries] at (1.5,3.5) {\nm};
+      \fill[apcgray!22] (0.55,0.5) rectangle (2.45,2.35);
+      \draw[very thick] (0.55,2.9) -- (0.55,0.5) -- (2.45,0.5)
+        -- (2.45,2.9);
+      \node[align=center] at (1.5,-0.35) {\desc};
+    \end{scope}}
+  % unsaturated: few dissolved particles, no solid
+  \foreach \p in {(0.85,0.9),(1.4,1.3),(1.95,0.85),(1.1,1.9),
+                  (2.15,1.7),(0.75,1.5)} {
+    \fill \p circle (0.075);}
+  % saturated: many dissolved + solid at the bottom
+  \begin{scope}[xshift=4.2cm]
+    \foreach \p in {(0.8,1.0),(1.25,1.45),(1.7,0.95),(2.1,1.35),
+                    (0.95,1.95),(1.55,2.1),(2.2,1.85),(0.7,1.6)} {
+      \fill \p circle (0.075);}
+    \fill[apcgray!75] (0.9,0.5) rectangle (1.35,0.68);
+    \fill[apcgray!75] (1.5,0.5) rectangle (2.0,0.64);
+  \end{scope}
+  % supersaturated: very many dissolved, no solid
+  \begin{scope}[xshift=8.4cm]
+    \foreach \p in {(0.75,0.85),(1.15,1.05),(1.6,0.85),(2.05,1.05),
+                    (0.9,1.4),(1.35,1.55),(1.8,1.35),(2.2,1.6),
+                    (0.75,1.9),(1.25,2.1),(1.75,1.95),(2.15,2.2)} {
+      \fill \p circle (0.075);}
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+A \textbf{supersaturated} solution holds more solute than it should be
+able to. It is made by saturating a solution hot and then cooling it
+slowly and undisturbed, so the excess has no site on which to
+crystallise. Drop in a single seed crystal --- or scratch the glass ---
+and the whole excess crystallises at once, releasing its heat of
+crystallisation. That is exactly how a reusable sodium acetate hand
+warmer works, and why clicking its metal disc turns it solid and hot in
+seconds.
+\end{apctrap}
+
+\begin{workedexample}[I do: how much crystallises out on cooling]
+\textbf{\SI{100}{\gram} of water at \SI{60}{\celsius} is saturated with
+\ce{KNO3}, which dissolves to \SI{110}{\gram}/\SI{100}{\gram} at that
+temperature. The solution is cooled to \SI{20}{\celsius}, where the
+solubility is \SI{31.6}{\gram}/\SI{100}{\gram}. How much solid appears?}
+
+\textbf{What is dissolved at the start.} Saturated at
+\SI{60}{\celsius}, so \SI{110}{\gram} of \ce{KNO3} is in solution.
+
+\textbf{What can stay dissolved at the end.} At \SI{20}{\celsius} the
+same \SI{100}{\gram} of water can hold only \SI{31.6}{\gram}.
+
+\textbf{The difference has nowhere to go.}
+\[ 110 - 31.6 = \mathbf{\SI{78.4}{\gram}}\text{ of \ce{KNO3}
+   crystallises out} \]
+
+\textbf{This is how recrystallisation purifies a compound.} Dissolve
+the impure solid in hot solvent, cool it, and the bulk of your compound
+comes out as crystals while the impurities --- present in far smaller
+amounts, and so still below \emph{their} solubility limits --- stay
+behind in solution. Filter, and what is on the paper is purer than what
+you started with.
+
+\textbf{One caution about the wording.} The question said cooled, not
+cooled \emph{slowly and undisturbed}. Cooled carefully, this solution
+could instead have become supersaturated and dropped nothing at all
+until it was seeded.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+Use \ce{KNO3} solubilities of \SI{31.6}{\gram}/\SI{100}{\gram} at
+\SI{20}{\celsius} and \SI{169}{\gram}/\SI{100}{\gram} at
+\SI{80}{\celsius}.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{50}{\gram} of \ce{KNO3} is stirred into \SI{100}{\gram} of
+        water at \SI{20}{\celsius}. Is the solution saturated?
+        \workspace[1.8cm]
+  \item How much \ce{KNO3} crystallises if a solution saturated at
+        \SI{80}{\celsius} is cooled to \SI{20}{\celsius}?
+        \workspace[1.8cm]
+  \item How would you tell a supersaturated solution from a saturated
+        one? \workspace[1.8cm]
+  \item Why does recrystallisation purify a compound?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) yes, with \SI{18.4}{\gram} undissolved \quad (b)
+\SI{137.4}{\gram} \quad (c) add a seed crystal \quad (d) impurities stay
+below their own limits}
+\keyonly{\begin{apcanswer}(a) \textbf{Yes.} Only \SI{31.6}{\gram} can
+dissolve, so the solution is saturated and $50 - 31.6 =
+\mathbf{\SI{18.4}{\gram}}$ remains as undissolved solid at the bottom.
+(b) $169 - 31.6 = \mathbf{\SI{137.4}{\gram}}$. (c) \textbf{Add a single
+seed crystal.} In a saturated solution it simply sits there; in a
+supersaturated one it triggers rapid crystallisation of the whole
+excess, and the solution warms as it solidifies. (d) Because the
+compound is present in a large amount and its solubility limit is
+exceeded on cooling, so it crystallises out --- while the
+\textbf{impurities are present in much smaller amounts} and stay below
+their own solubility limits, so they remain dissolved and are washed
+away with the filtrate.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ Temperature and solubility}
+\zsec{11.3}
+
+Two rules, and they point in opposite directions --- which is why you
+must know which kind of solute you have before you answer.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=11.2cm, height=6.4cm,
+  xlabel={temperature (\si{\celsius})},
+  ylabel={solubility (\si{\gram} per \SI{100}{\gram} water)},
+  xmin=0, xmax=100, ymin=0, ymax=270,
+  xtick={0,20,40,60,80,100}, ytick={0,50,100,150,200,250},
+  grid=major, grid style={apcgray!25},
+  legend pos=north west, legend style={font=\footnotesize,
+    cells={anchor=west}},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, mark=*, mark size=1.4pt]
+  coordinates {(0,13.3) (20,31.6) (40,63.9) (60,110) (80,169) (100,246)};
+\addlegendentry{\ce{KNO3} --- rises steeply}
+\addplot[seriesB, thick, mark=square*, mark size=1.4pt]
+  coordinates {(0,28.0) (20,34.2) (40,40.1) (60,45.8) (80,51.3)
+               (100,56.3)};
+\addlegendentry{\ce{KCl} --- rises gently}
+\addplot[seriesC, thick, mark=triangle*, mark size=1.8pt]
+  coordinates {(0,35.7) (20,35.9) (40,36.4) (60,37.1) (80,38.0)
+               (100,39.2)};
+\addlegendentry{\ce{NaCl} --- almost flat}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=9.6cm, height=4.8cm,
+  xlabel={temperature (\si{\celsius})},
+  ylabel={\ce{O2} dissolved (mg/L)},
+  xmin=0, xmax=50, ymin=0, ymax=16,
+  xtick={0,10,20,30,40,50}, ytick={0,4,8,12,16},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, mark=*, mark size=1.4pt]
+  coordinates {(0,14.6) (10,11.3) (20,9.1) (30,7.6) (40,6.4) (50,5.6)};
+\node[font=\footnotesize,anchor=west] at (axis cs:22,12.5)
+  {\textbf{gases go the other way}};
+\node[font=\footnotesize,anchor=west] at (axis cs:22,10.6)
+  {heat drives dissolved gas out};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: reading a solubility curve]
+\textbf{Most solids get more soluble as temperature rises} --- but by
+wildly differing amounts, and a curve is the only reliable source. Read
+the graph above:
+
+\textbf{\ce{KNO3}} climbs from \SI{13.3}{} to
+\SI{246}{\gram}/\SI{100}{\gram} --- nearly twentyfold. It is the classic
+recrystallisation solute precisely because so much drops out on cooling.
+
+\textbf{\ce{NaCl}} climbs from \SI{35.7}{} to only
+\SI{39.2}{\gram}/\SI{100}{\gram} over the same \SI{100}{\celsius}. You
+cannot usefully purify salt by recrystallisation from water --- cooling
+a saturated solution recovers almost nothing --- which is why sea salt
+is obtained by \emph{evaporating} the water instead.
+
+\textbf{Gases always go the other way.} Every gas becomes
+\emph{less} soluble as temperature rises, with no exceptions. Warming
+gives dissolved gas molecules enough kinetic energy to escape the
+liquid, and there is no lattice to break in the first place.
+
+\textbf{Two consequences you can observe.} Bubbles form on the inside of
+a pan of water long before it boils --- that is dissolved air coming out
+of solution as the water warms. And a power station returning warm
+cooling water to a river lowers its dissolved oxygen; a river at
+\SI{30}{\celsius} holds only \SI{7.6}{\milli\gram\per\litre} against
+\SI{14.6}{} at \SI{0}{\celsius}, which is why \emph{thermal} pollution
+kills fish without a single toxic chemical being released.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+Read values from the curves above.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Roughly how much \ce{KNO3} dissolves in \SI{100}{\gram} of
+        water at \SI{40}{\celsius}? \workspace[1.4cm]
+  \item Which solid's solubility changes least with temperature?
+        \workspace[1.4cm]
+  \item What happens to the solubility of a gas as temperature rises?
+        \workspace[1.6cm]
+  \item Why does warm river water threaten fish even when it is
+        chemically clean? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) about \SI{64}{\gram} \quad (b) \ce{NaCl} \quad (c) it
+falls \quad (d) less dissolved oxygen}
+\keyonly{\begin{apcanswer}(a) About \textbf{\SI{64}{\gram}}
+(\SI{63.9}{\gram} from the table). (b) \textbf{\ce{NaCl}} --- it rises
+only from \SI{35.7}{} to \SI{39.2}{\gram}/\SI{100}{\gram} across the whole
+range, which is why salt is recovered by evaporation rather than by
+cooling. (c) It \textbf{falls}. Warming gives dissolved gas molecules
+enough kinetic energy to escape the liquid, so less stays in solution.
+This is true of every gas, without exception. (d) Because warm water
+holds \textbf{less dissolved oxygen} --- about \SI{7.6}{} against
+\SI{14.6}{\milli\gram\per\litre} between \SI{30}{} and
+\SI{0}{\celsius} --- and fish extract oxygen from the water through
+their gills. Warming the river suffocates them even though nothing toxic
+has been added.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Pressure and Henry's law}
+\zsec{11.3}
+
+Pressure changes the solubility of \textbf{gases} and, for practical
+purposes, nothing else. Solids and liquids are already close-packed and
+barely compressible, so squeezing them changes very little.
+
+\[ C = kP \qquad\text{or, comparing two conditions,}\qquad
+   \frac{C_{1}}{P_{1}} = \frac{C_{2}}{P_{2}} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % LOW pressure
+  \node[font=\sffamily\small\bfseries] at (1.75,3.85) {low pressure};
+  \fill[apcgray!22] (0.7,0.4) rectangle (2.8,1.75);
+  \draw[very thick] (0.7,3.2) -- (0.7,0.4) -- (2.8,0.4) -- (2.8,3.2);
+  % gas above
+  \foreach \p in {(1.0,2.2),(1.7,2.5),(2.4,2.15),(1.35,2.9),(2.15,2.8)} {
+    \fill \p circle (0.07);}
+  % dissolved
+  \foreach \p in {(1.1,0.75),(1.9,1.1),(2.5,0.8)} {
+    \fill \p circle (0.07);}
+  \draw[-{Stealth[length=2mm]},thick] (1.75,1.9) -- (1.75,1.62);
+  \node[align=center] at (1.75,-0.3)
+    {few gas particles above\\\textbf{few} dissolved};
+
+  % HIGH pressure
+  \begin{scope}[xshift=5.2cm]
+    \node[font=\sffamily\small\bfseries] at (1.75,3.85) {high pressure};
+    \fill[apcgray!22] (0.7,0.4) rectangle (2.8,1.75);
+    \draw[very thick] (0.7,3.2) -- (0.7,0.4) -- (2.8,0.4) -- (2.8,3.2);
+    \fill[apcgray!45] (0.7,2.55) rectangle (2.8,2.85);
+    \draw[very thick] (0.7,2.55) -- (2.8,2.55);
+    \draw[-{Stealth[length=2.5mm]},very thick] (1.75,3.35) -- (1.75,2.95);
+    \foreach \p in {(0.95,2.0),(1.35,2.35),(1.8,2.05),(2.25,2.35),
+                    (2.6,2.05),(1.15,2.25),(2.0,2.42)} {
+      \fill \p circle (0.07);}
+    \foreach \p in {(0.95,0.7),(1.35,1.15),(1.75,0.75),(2.2,1.25),
+                    (2.6,0.85),(1.15,1.5),(1.95,1.5),(2.5,1.45)} {
+      \fill \p circle (0.07);}
+    \draw[-{Stealth[length=2mm]},thick] (1.75,1.9) -- (1.75,1.62);
+    \node[align=center] at (1.75,-0.3)
+      {many gas particles above\\\textbf{many} dissolved};
+  \end{scope}
+
+  \node[anchor=west,align=left,font=\sffamily\footnotesize]
+    at (9.0,1.9)
+    {more collisions with the\\
+     surface per second, so more\\
+     gas is forced into solution};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: the soda can]
+\textbf{The solubility of a gas is \SI{1.3e-3}{\Molar} under
+\SI{1.0}{\atm} of that gas. What is it under
+\SI{4.0}{\atm}?}
+
+Solubility is directly proportional to partial pressure, so
+\[ C_{2} = C_{1} \times \frac{P_{2}}{P_{1}}
+        = \num{1.3e-3} \times \frac{4.0}{1.0}
+        = \mathbf{\SI{5.2e-3}{\Molar}} \]
+Four times the pressure, four times the dissolved gas. No other
+variable enters.
+
+\textbf{Now the everyday version.} A sealed can of fizzy drink is
+bottled under \ce{CO2} at several atmospheres, so a lot of \ce{CO2} is
+dissolved. Open it, and the pressure above the liquid drops to the
+\ce{CO2} partial pressure of ordinary air --- about
+\SI{0.0004}{\atm}. The solubility collapses by a factor of
+thousands, the drink is now hugely supersaturated, and the excess
+\ce{CO2} escapes as bubbles. Leave it open and it goes flat, because
+the process runs to completion.
+
+\textbf{Use partial pressure, not total.} Henry's law depends on the
+partial pressure of \emph{that gas} alone. Air is \SI{21}{\percent}
+oxygen, so water open to the atmosphere at \SI{1.0}{\atm} total
+experiences an oxygen partial pressure of only
+\SI{0.21}{\atm} --- which is why dissolved oxygen in a lake is
+so much lower than what pure \ce{O2} at \SI{1}{\atm} would give.
+
+\textbf{And why divers care.} At depth the total pressure is far above
+\SI{1}{\atm}, so far more nitrogen dissolves in the blood.
+Surface too quickly and it comes out of solution as bubbles inside the
+body --- decompression sickness, Henry's law applied to a diver.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A gas dissolves to \SI{0.020}{\Molar} at \SI{1.0}{\atm}.
+        Find its solubility at \SI{3.0}{\atm}.
+        \workspace[1.6cm]
+  \item A gas dissolves to \SI{0.050}{\Molar} at
+        \SI{2.5}{\atm}. Find its solubility at
+        \SI{1.0}{\atm}. \workspace[1.6cm]
+  \item Why does an open drink go flat? \workspace[1.8cm]
+  \item Does raising the pressure increase the solubility of a solid?
+        Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.060}{\Molar} \quad (b) \SI{0.020}{\Molar} \quad
+(c) the \ce{CO2} partial pressure above it collapses \quad (d) no ---
+solids are barely compressible}
+\keyonly{\begin{apcanswer}(a) $0.020 \times 3.0/1.0 =
+\mathbf{\SI{0.060}{\Molar}}$. (b) $0.050 \times 1.0/2.5 =
+\mathbf{\SI{0.020}{\Molar}}$. (c) Because opening it drops the \ce{CO2}
+partial pressure above the liquid from several atmospheres to the
+roughly \SI{0.0004}{\atm} of ordinary air. By Henry's law the
+solubility falls in proportion, the drink is left far
+\textbf{supersaturated}, and the excess \ce{CO2} leaves as bubbles until
+almost none remains. (d) \textbf{No --- essentially not at all.} Solids
+and liquids are already close-packed and nearly incompressible, so
+pressure barely changes the spacing of their particles. Henry's law
+applies to \textbf{gases}, whose volume and therefore whose rate of
+collision with the liquid surface pressure genuinely does
+change.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt. Every row here is assessed --- there is no optional
+ladder in this chapter, because the optional material was cut instead.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}c p{5.9cm} c p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & molarity & 1 & per litre of \emph{solution} \\
+$\square$ & dilution & 2 & moles are conserved \\
+$\square$ & mass percent, ppm, ppb & 3 & mass of \emph{solution} \\
+$\square$ & mole fraction and molality & 4 & check the denominator \\
+$\square$ & energetics of dissolving & 5 & three steps, one exothermic \\
+$\square$ & like dissolves like & 6 & can step 3 pay for step 2? \\
+$\square$ & chains, heads and tails & 7 & the ratio decides \\
+$\square$ & saturated to supersaturated & 8 & solubility is a limit \\
+$\square$ & temperature and solubility & 9 & gases go the other way \\
+$\square$ & pressure and Henry's law & 10 & partial pressure, gases only \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+10/10: you have Chapter 11's assessed content. It is a short chapter
+only because most of Zumdahl's Chapter 11 was cut from the CED --- what
+remains is dense and heavily used elsewhere.
+
+7--9: check \emph{which} ladders missed. Ladders 1--4 are arithmetic and
+repair quickly with practice. Ladders 5--7 are conceptual, and a miss
+there usually means the three-step cycle has not clicked; that one takes
+a re-read rather than more problems.
+
+6 or fewer: start with Ladders 1--3 and do nothing else until they are
+automatic. Concentration calculations are not really Chapter 11 content
+--- they are the arithmetic of Units 4, 5, 6, 7 and 8 as well. Every
+titration, every equilibrium table, every rate law and every cell
+potential problem you meet for the rest of the year begins by putting a
+concentration into a formula. Time spent here is repaid many times over.
+\end{apcnote}
+
+\end{document}

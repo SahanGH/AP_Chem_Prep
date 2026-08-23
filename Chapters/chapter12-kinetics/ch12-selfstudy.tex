@@ -1,0 +1,1444 @@
+% Ch12 self-study -- "I do / You do" ladder for Zumdahl chapter 12.
+% Twelve ladders, 48 questions, sixteen figures.
+%
+% SCOPE: nothing here is skipped. TEXTBOOK-MAP maps 12.1-12.7 onto CED
+% 5.1 through 5.11 -- the whole of Unit 5 -- and the skip list contains
+% no part of this chapter. It is the first chapter in the self-study
+% series that is assessed end to end.
+%
+% Unit conventions in this file: rate constants are written in math
+% mode ($\mathrm{M^{-1}\,s^{-1}}$) rather than through siunitx, because
+% \per\Molar\squared ordering is a trap and k units change with order.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{12}
+\apcunittitle{Chemical Kinetics}
+\apcdoctitle{Self-Study \textbullet\ Chapter 12, I~do / You~do}
+\apcsubtitle{Zumdahl \S12.1--12.7 \textbullet\ PDF pp.\ 594--632}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help. Work all four before checking
+the gray \emph{check:} line; a tracker tick needs all four right first
+time.
+
+\textbf{Nothing in this chapter is skipped.} Every section, \S12.1
+through \S12.7, is assessed --- they map onto CED topics 5.1 to 5.11,
+which is the whole of Unit 5. This is the first chapter in the series
+you have to learn end to end.
+
+\textbf{The one idea the whole chapter turns on.} Thermodynamics tells
+you \emph{whether} a reaction can happen. Kinetics tells you
+\emph{how fast}, and the two are independent. Diamond turning into
+graphite is thermodynamically downhill and yet takes longer than the age
+of the Earth --- because the rate, not the favourability, is what you
+observe.
+
+\textbf{The habit that prevents most lost marks.} Orders come from
+\textbf{experiment}, never from the balanced equation. Write that on the
+inside of your eyelids. The single commonest error in Unit 5 is reading
+a rate law off the coefficients of an overall equation.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Reaction rate and
+stoichiometry}
+\zsec{12.1}
+
+Rate is a change in concentration per unit time. Because the species in
+a reaction are consumed and produced at different speeds, we divide by
+the coefficient so that \emph{one} number describes the reaction.
+
+For $a\ce{A} + b\ce{B} \longrightarrow c\ce{C} + d\ce{D}$:
+\[ \text{rate}
+   = -\frac{1}{a}\frac{\Delta[\ce{A}]}{\Delta t}
+   = -\frac{1}{b}\frac{\Delta[\ce{B}]}{\Delta t}
+   = +\frac{1}{c}\frac{\Delta[\ce{C}]}{\Delta t}
+   = +\frac{1}{d}\frac{\Delta[\ce{D}]}{\Delta t} \]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=10.5cm, height=6.2cm,
+  xlabel={time (s)}, ylabel={concentration (\si{\Molar})},
+  xmin=0, xmax=100, ymin=0, ymax=1.05,
+  xtick={0,20,40,60,80,100}, ytick={0,0.2,0.4,0.6,0.8,1.0},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+% No legend: 'east' is not a valid pgfplots legend pos, and every corner
+% of this plot already has a curve running through it. The two curves
+% are labelled inline instead, in the empty band between them.
+\addplot[seriesA, thick, domain=0:100, samples=80] {exp(-x/32)};
+\addplot[seriesB, thick, domain=0:100, samples=80] {1-exp(-x/32)};
+% tangent at t = 30 to the decay curve: y = e^{-30/32} = 0.3916,
+% slope = -0.3916/32 = -0.01224
+\addplot[black, dashed, domain=6:54, samples=2] {0.3916-0.01224*(x-30)};
+\addplot[only marks, mark=*, mark size=1.6pt, black]
+  coordinates {(30,0.3916)};
+\node[font=\footnotesize,anchor=west] at (axis cs:56,0.70)
+  {product --- \textbf{rises}};
+\node[font=\footnotesize,anchor=west] at (axis cs:56,0.32)
+  {reactant --- \textbf{falls}};
+% Anchored WEST at x=24, in the empty band above both curves.  Anchored
+% east at 29 these ran off the left edge and were clipped to
+% "e of the tangent" / "stantaneous rate".
+\node[font=\footnotesize,anchor=west] at (axis cs:24,0.97)
+  {slope of the \textbf{tangent}};
+\node[font=\footnotesize,anchor=west] at (axis cs:24,0.87)
+  {$=$ instantaneous rate};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{Rate is always reported as a positive number.} A reactant's
+concentration falls, so $\Delta[\ce{A}]/\Delta t$ is negative --- the
+minus sign in the definition is there to cancel that, not to make the
+rate negative. An answer of $\SI{-2.0e-3}{\Molar\per\second}$ for a rate
+is wrong on sight.
+\end{apctrap}
+
+\begin{workedexample}[I do: one rate, four different species]
+\textbf{For $\ce{2N2O5 -> 4NO2 + O2}$, \ce{N2O5} disappears at
+\SI{4.0e-3}{\Molar\per\second}. Find the reaction rate and the rate of
+appearance of each product.}
+
+\textbf{Step 1 --- get the reaction rate.} Divide the disappearance of
+\ce{N2O5} by its coefficient, 2:
+\[ \text{rate} = \frac{1}{2}\left(\SI{4.0e-3}{\Molar\per\second}\right)
+   = \SI{2.0e-3}{\Molar\per\second} \]
+
+\textbf{Step 2 --- multiply back out for each species.} Each species
+changes at (rate $\times$ its own coefficient):
+\[ \frac{\Delta[\ce{NO2}]}{\Delta t}
+   = 4 \times \SI{2.0e-3}{} = \SI{8.0e-3}{\Molar\per\second} \]
+\[ \frac{\Delta[\ce{O2}]}{\Delta t}
+   = 1 \times \SI{2.0e-3}{} = \SI{2.0e-3}{\Molar\per\second} \]
+
+\textbf{Sanity-check against the chemistry.} Four \ce{NO2} appear for
+every two \ce{N2O5} consumed, so \ce{NO2} should appear twice as fast as
+\ce{N2O5} disappears --- \SI{8.0e-3}{} against \SI{4.0e-3}{}. It does.
+That ratio check catches almost every slip in this ladder.
+
+\textbf{Average versus instantaneous.} Concentration-versus-time curves
+are curved, so the rate is not constant. A rate taken between two times
+is an \textbf{average} rate (the slope of a straight line joining two
+points); a rate at one instant is the slope of the \textbf{tangent}
+there. Unless a question says otherwise, ``the rate'' means the
+instantaneous rate, and the \textbf{initial rate} --- the tangent at
+$t = 0$ --- is the one Ladder 3 depends on.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+For $\ce{2NO + O2 -> 2NO2}$, \ce{O2} disappears at
+\SI{0.020}{\Molar\per\second}.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item What is the reaction rate? \workspace[1.4cm]
+  \item How fast does \ce{NO} disappear? \workspace[1.4cm]
+  \item How fast does \ce{NO2} appear? \workspace[1.4cm]
+  \item Why is there a minus sign in front of $\Delta[\ce{A}]/\Delta t$
+        for a reactant? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.020}{\Molar\per\second} \quad (b)
+\SI{0.040}{\Molar\per\second} \quad (c)
+\SI{0.040}{\Molar\per\second} \quad (d) to make the rate come out
+positive}
+\keyonly{\begin{apcanswer}(a) \ce{O2} has coefficient 1, so the rate is
+$\mathbf{\SI{0.020}{\Molar\per\second}}$. (b) \ce{NO} has coefficient 2,
+so it disappears at $2 \times 0.020 =
+\mathbf{\SI{0.040}{\Molar\per\second}}$. (c) \ce{NO2} also has
+coefficient 2, so it appears at
+$\mathbf{\SI{0.040}{\Molar\per\second}}$. (d) Because a reactant's
+concentration \textbf{decreases}, so $\Delta[\ce{A}]$ is negative and
+$\Delta[\ce{A}]/\Delta t$ is negative. Rate is defined as a positive
+quantity, so the minus sign cancels that --- it is a bookkeeping device,
+not a statement that anything is negative.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Rate laws and reaction order}
+\zsec{12.2--12.3}
+
+A rate law says how the rate depends on concentration:
+\[ \text{rate} = k[\ce{A}]^{m}[\ce{B}]^{n} \]
+$m$ and $n$ are the \textbf{orders}; $m + n$ is the \textbf{overall
+order}; $k$ is the \textbf{rate constant}.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=10.6cm, height=5.4cm,
+  xlabel={$[\ce{A}]$}, ylabel={rate},
+  xmin=0, xmax=1.05, ymin=0, ymax=1.15,
+  xtick=\empty, ytick=\empty,
+  axis lines=left,
+  legend pos=north west, legend style={font=\footnotesize,
+    cells={anchor=west}},
+  label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, domain=0:1, samples=2] {0.55};
+\addlegendentry{zero order --- rate independent of $[\ce{A}]$}
+\addplot[seriesB, thick, domain=0:1, samples=2] {x};
+\addlegendentry{first order --- straight line through the origin}
+\addplot[seriesC, thick, domain=0:1, samples=60] {x^2};
+\addlegendentry{second order --- upward curve}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{Orders are found by experiment. They are not the coefficients.}
+For $\ce{2N2O5 -> 4NO2 + O2}$ the measured rate law is
+rate $= k[\ce{N2O5}]$ --- \emph{first} order, not second, despite the
+coefficient of 2. The only time coefficients give orders is for a single
+\textbf{elementary step} (Ladder 7), and an overall balanced equation is
+almost never one.
+\end{apctrap}
+
+\begin{workedexample}[I do: reading a rate law]
+\textbf{A reaction has rate $= k[\ce{A}]^{2}[\ce{B}]$. Answer four
+questions about it.}
+
+\textbf{What is the order in each reactant?} Second order in \ce{A},
+first order in \ce{B}. Read the exponents; a missing exponent means 1.
+
+\textbf{What is the overall order?} $2 + 1 = \mathbf{3}$. Add the
+exponents.
+
+\textbf{What happens if $[\ce{A}]$ is doubled?} Rate changes by
+$2^{2} = \mathbf{4}$ --- it quadruples. Raise the factor to the power of
+the order.
+
+\textbf{What happens if $[\ce{B}]$ is tripled?} Rate changes by
+$3^{1} = \mathbf{3}$ --- it triples.
+
+\textbf{And both at once?} Multiply the effects: $4 \times 3 = 12$.
+Doubling \ce{A} and tripling \ce{B} makes the reaction twelve times
+faster.
+
+\textbf{A zero-order reactant is worth understanding, not memorising.}
+If rate $= k[\ce{A}]^{0}[\ce{B}] = k[\ce{B}]$, then changing
+$[\ce{A}]$ does nothing at all. That is not a trick --- it usually means
+\ce{A} is not involved in the slow step, or that a surface or enzyme is
+already saturated with it, so adding more has nowhere to go.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+A reaction has rate $= k[\ce{X}][\ce{Y}]^{2}$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item What is the overall order? \workspace[1.4cm]
+  \item By what factor does the rate change if $[\ce{Y}]$ is doubled?
+        \workspace[1.4cm]
+  \item By what factor does the rate change if $[\ce{X}]$ is halved?
+        \workspace[1.4cm]
+  \item A different reaction is $\ce{2A + B -> C}$ with measured rate
+        $= k[\ce{A}][\ce{B}]$. Is the order in \ce{A} equal to 2?
+        Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 3 \quad (b) $4\times$ \quad (c) halves \quad (d) no ---
+orders come from experiment}
+\keyonly{\begin{apcanswer}(a) $1 + 2 = \mathbf{3}$. (b)
+$2^{2} = \mathbf{4}$ --- the rate quadruples. (c)
+$(1/2)^{1} = \mathbf{1/2}$ --- the rate \textbf{halves}. (d)
+\textbf{No.} The measured order in \ce{A} is \textbf{1}, because the
+rate law says so. The coefficient 2 in the balanced equation is
+irrelevant to the rate law --- orders are determined experimentally and
+match coefficients only for an elementary step, which an overall
+equation almost never is.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ The method of initial rates}
+\zsec{12.2--12.3}
+
+The standard experimental route to a rate law. Change \emph{one}
+concentration at a time and watch what the rate does.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,2.6)
+    {compare two experiments that differ in only one concentration};
+  \node[anchor=west,align=left] at (0.2,1.9)
+    {concentration changes by a factor of $f$};
+  \node[anchor=west,align=left] at (0.2,1.35)
+    {rate changes by a factor of $r$};
+  \draw[apcgray] (0.1,0.95) -- (10.3,0.95);
+  % The examples get their OWN line.  Both of these used to sit at
+  % y=0.35, one anchored west and one east, and they printed straight
+  % through each other in the middle of the figure.
+  \node[anchor=west,font=\sffamily\bfseries] at (0.2,0.5)
+    {then the order is the power that solves $f^{\,\text{order}} = r$};
+  \node[anchor=west,font=\sffamily\footnotesize\itshape] at (0.2,-0.05)
+    {$2 \to 2$: order 1 \textbullet\ $2 \to 4$: order 2 \textbullet\
+     $2 \to 1$: order 0};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: extract a rate law from a data table]
+\textbf{For $\ce{A + B -> products}$:}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{Exp} & $[\ce{A}]_{0}$ (\si{\Molar}) & $[\ce{B}]_{0}$
+  (\si{\Molar}) & \textbf{initial rate}
+  (\si{\Molar\per\second}) \\
+\midrule
+1 & 0.10 & 0.10 & \num{2.0e-3} \\
+2 & 0.20 & 0.10 & \num{8.0e-3} \\
+3 & 0.10 & 0.20 & \num{4.0e-3} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Order in \ce{A} --- use experiments 1 and 2}, because
+$[\ce{B}]$ is the same in both. $[\ce{A}]$ doubles
+($0.10 \to 0.20$) and the rate goes from \num{2.0e-3} to \num{8.0e-3},
+a factor of 4.
+\[ 2^{m} = 4 \;\Longrightarrow\; m = \mathbf{2} \]
+
+\textbf{Order in \ce{B} --- use experiments 1 and 3}, where $[\ce{A}]$
+is held fixed. $[\ce{B}]$ doubles and the rate doubles
+(\num{2.0e-3} to \num{4.0e-3}).
+\[ 2^{n} = 2 \;\Longrightarrow\; n = \mathbf{1} \]
+
+\textbf{So the rate law is} $\text{rate} = k[\ce{A}]^{2}[\ce{B}]$,
+overall order 3.
+
+\textbf{Now find $k$} by substituting any one experiment --- use
+experiment 1:
+\[ k = \frac{\text{rate}}{[\ce{A}]^{2}[\ce{B}]}
+     = \frac{\num{2.0e-3}}{(0.10)^{2}(0.10)}
+     = \frac{\num{2.0e-3}}{\num{1.0e-3}}
+     = 2.0\;\mathrm{M^{-2}\,s^{-1}} \]
+
+\textbf{Then check $k$ against a different row} --- this is free and it
+catches errors. Experiment 2:
+$2.0 \times (0.20)^{2} \times 0.10 = 2.0 \times 0.040 \times 0.10 =
+\num{8.0e-3}$. Matches. If $k$ does not come out the same from every
+row, an order is wrong.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+For $\ce{X + Y -> products}$:
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{Exp} & $[\ce{X}]_{0}$ (\si{\Molar}) & $[\ce{Y}]_{0}$
+  (\si{\Molar}) & \textbf{initial rate} (\si{\Molar\per\second}) \\
+\midrule
+1 & 0.10 & 0.10 & \num{1.5e-3} \\
+2 & 0.20 & 0.10 & \num{3.0e-3} \\
+3 & 0.10 & 0.20 & \num{1.5e-3} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find the order in \ce{X}. \workspace[1.6cm]
+  \item Find the order in \ce{Y}. \workspace[1.6cm]
+  \item Write the rate law and give the overall order.
+        \workspace[1.6cm]
+  \item Calculate $k$, with units. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 1 \quad (b) 0 \quad (c) rate $= k[\ce{X}]$, first order
+\quad (d) \SI{1.5e-2}{\per\second}}
+\keyonly{\begin{apcanswer}(a) Experiments 1 and 2 hold $[\ce{Y}]$
+fixed. $[\ce{X}]$ doubles and the rate doubles, so
+$2^{m} = 2$ and $m = \mathbf{1}$. (b) Experiments 1 and 3 hold
+$[\ce{X}]$ fixed. $[\ce{Y}]$ doubles and the rate does
+\textbf{not change}, so $2^{n} = 1$ and $n = \mathbf{0}$. (c)
+$\text{rate} = k[\ce{X}]$, overall order \textbf{1} --- \ce{Y} does not
+appear, because raising it changes nothing. (d) $k =
+\text{rate}/[\ce{X}] = \num{1.5e-3}/0.10 =
+\mathbf{\SI{1.5e-2}{\per\second}}$. A first-order rate constant always
+has units of $\mathrm{s^{-1}}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ The units of $k$}
+\zsec{12.2}
+
+The units of $k$ are not fixed --- they are whatever makes the rate law
+come out in \si{\Molar\per\second}. That makes them a free check on
+your order.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.2,2.9)
+    {units of $k$ for overall order $n$};
+  \foreach \x/\o/\u in {%
+      0.6/{0}/{$\mathrm{M\,s^{-1}}$},
+      3.2/{1}/{$\mathrm{s^{-1}}$},
+      5.8/{2}/{$\mathrm{M^{-1}\,s^{-1}}$},
+      8.4/{3}/{$\mathrm{M^{-2}\,s^{-1}}$}} {
+    \node[font=\sffamily\bfseries] at (\x,2.25) {order \o};
+    \node at (\x,1.65) {\u};}
+  \draw[apcgray] (0.1,1.2) -- (10.3,1.2);
+  \node[anchor=west] at (0.2,0.75)
+    {the pattern: $\mathrm{M^{\,1-n}\,s^{-1}}$ --- each extra order
+     removes one power of M};
+  \node[anchor=west,font=\sffamily\itshape] at (0.2,0.25)
+    {so if you are told the units of $k$, you already know the overall
+     order};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: derive the units instead of memorising them]
+\textbf{Never memorise this table. Derive it in five seconds.}
+
+Rate always has units \si{\Molar\per\second}, i.e.\
+$\mathrm{M\,s^{-1}}$. For a second-order reaction,
+rate $= k[\ce{A}]^{2}$, so
+\[ k = \frac{\text{rate}}{[\ce{A}]^{2}}
+     = \frac{\mathrm{M\,s^{-1}}}{\mathrm{M^{2}}}
+     = \mathrm{M^{-1}\,s^{-1}} \]
+
+\textbf{The same move for any order.} Divide $\mathrm{M\,s^{-1}}$ by
+$\mathrm{M}^{n}$, giving $\mathrm{M^{\,1-n}\,s^{-1}}$. For $n=0$ that is
+$\mathrm{M\,s^{-1}}$; for $n=1$, $\mathrm{s^{-1}}$; for $n=3$,
+$\mathrm{M^{-2}\,s^{-1}}$.
+
+\textbf{Now use it backwards, which is where the marks are.} If a
+question hands you $k = 0.045\;\mathrm{M^{-1}\,s^{-1}}$, you already
+know the reaction is \textbf{second order overall} before reading
+anything else. Examiners use this to test whether you understand the
+relationship or merely memorised a table.
+
+\textbf{And use it as a check.} If you determine orders from a data
+table and then compute a $k$ whose units disagree with your overall
+order, one of the two is wrong --- go back before continuing.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Give the units of $k$ for a first-order reaction.
+        \workspace[1.4cm]
+  \item $k = 0.020\;\mathrm{M^{-1}\,s^{-1}}$. What is the overall
+        order? \workspace[1.4cm]
+  \item $k = 3.5\;\mathrm{M\,s^{-1}}$. What is the overall order?
+        \workspace[1.4cm]
+  \item Derive the units of $k$ for a reaction that is first order in
+        \ce{A} and second order in \ce{B}. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $\mathrm{s^{-1}}$ \quad (b) 2 \quad (c) 0 \quad (d)
+$\mathrm{M^{-2}\,s^{-1}}$}
+\keyonly{\begin{apcanswer}(a) $\mathbf{\mathrm{s^{-1}}}$. (b)
+\textbf{Second order} --- $\mathrm{M^{-1}}$ means $1-n = -1$, so
+$n = 2$. (c) \textbf{Zero order} --- $\mathrm{M^{1}}$ means $1-n = 1$,
+so $n = 0$, and the rate does not depend on concentration at all.
+(d) Overall order is $1 + 2 = 3$, so $k = \mathrm{M\,s^{-1}} /
+\mathrm{M^{3}} = \mathbf{\mathrm{M^{-2}\,s^{-1}}}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Integrated rate laws}
+\zsec{12.4}
+
+A rate law relates rate to concentration. An \emph{integrated} rate law
+relates concentration to \textbf{time} --- which is what you actually
+need to answer ``how much is left after ten minutes?''
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Order} & \textbf{Integrated law} &
+  \textbf{Linear plot} & \textbf{Slope} \\
+\midrule
+0 & $[\ce{A}] = -kt + [\ce{A}]_{0}$ &
+  $[\ce{A}]$ vs $t$ & $-k$ \\
+1 & $\ln[\ce{A}] = -kt + \ln[\ce{A}]_{0}$ &
+  $\ln[\ce{A}]$ vs $t$ & $-k$ \\
+2 & $\dfrac{1}{[\ce{A}]} = kt + \dfrac{1}{[\ce{A}]_{0}}$ &
+  $1/[\ce{A}]$ vs $t$ & $+k$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \foreach \i/\ttl/\yl in {%
+      0/{zero order}/{$[\ce{A}]$},
+      3.9/{first order}/{$\ln[\ce{A}]$},
+      7.8/{second order}/{$1/[\ce{A}]$}} {
+    \begin{scope}[xshift=\i cm]
+      \node[font=\sffamily\small\bfseries] at (1.5,3.15) {\ttl};
+      \draw[-{Stealth[length=2.2mm]},thick] (0.35,0.4) -- (0.35,2.65);
+      \draw[-{Stealth[length=2.2mm]},thick] (0.35,0.4) -- (2.85,0.4);
+      \node[anchor=east,font=\footnotesize] at (0.25,1.55) {\yl};
+      \node[anchor=north,font=\footnotesize] at (1.6,0.3) {$t$};
+    \end{scope}}
+  % straight lines: 0 and 1 fall, 2 rises
+  \draw[very thick] (0.55,2.35) -- (2.65,0.65);
+  \begin{scope}[xshift=3.9cm]
+    \draw[very thick] (0.55,2.35) -- (2.65,0.65);
+  \end{scope}
+  \begin{scope}[xshift=7.8cm]
+    \draw[very thick] (0.55,0.65) -- (2.65,2.35);
+  \end{scope}
+  \node[font=\sffamily\footnotesize] at (5.3,-0.25)
+    {plot all three; \textbf{whichever comes out straight} tells you the
+     order};
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[Why this is really a graphing skill]
+On the exam you are far more likely to be \emph{given} data and asked
+which order it is than to be told the order outright. The method is
+always the same: make the three plots (or inspect three columns of
+numbers) and find the one that is linear. A straight
+$\ln[\ce{A}]$-versus-$t$ plot \textbf{is} the evidence for first order,
+and saying so is what earns the mark --- not asserting the order and
+moving on.
+\end{apcnote}
+
+\begin{workedexample}[I do: a first-order calculation]
+\textbf{A first-order reaction has $k = \SI{0.0250}{\per\second}$ and
+$[\ce{A}]_{0} = \SI{0.800}{\Molar}$. Find $[\ce{A}]$ after
+\SI{60.0}{\second}.}
+
+\textbf{Use the first-order integrated law} in its exponential form,
+which is easier than the logarithmic one when you want a concentration:
+\[ [\ce{A}] = [\ce{A}]_{0}\,e^{-kt} \]
+\[ [\ce{A}] = 0.800 \times e^{-(0.0250)(60.0)}
+            = 0.800 \times e^{-1.500}
+            = 0.800 \times 0.2231
+            = \mathbf{\SI{0.179}{\Molar}} \]
+
+\textbf{Check it with half-lives, which is quicker than it looks.}
+\[ t_{1/2} = \frac{0.693}{k} = \frac{0.693}{0.0250}
+           = \SI{27.7}{\second} \]
+\SI{60.0}{\second} is about \textbf{2.2} half-lives --- so a little more
+than two, and roughly a quarter of the material should be left, with a
+bit more decay on top. $0.800/4 = 0.200$, and our answer of
+\SI{0.179}{\Molar} sits just below it. Consistent.
+
+\textbf{That cross-check is worth doing every time.} It costs one line
+and catches sign errors in the exponent, which are the commonest failure
+here. A positive exponent would have given \SI{3.58}{\Molar} --- more
+than you started with, and obviously impossible.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which plot is linear for a second-order reaction?
+        \workspace[1.4cm]
+  \item A plot of $\ln[\ce{A}]$ against $t$ is a straight line with
+        slope $\SI{-0.0400}{\per\second}$. Give the order and $k$.
+        \workspace[1.8cm]
+  \item For a first-order reaction with $k = \SI{0.100}{\per\second}$
+        and $[\ce{A}]_{0} = \SI{1.00}{\Molar}$, find $[\ce{A}]$ after
+        \SI{10.0}{\second}. \workspace[1.8cm]
+  \item You are given concentration-versus-time data and no order.
+        Describe how you would find the order. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $1/[\ce{A}]$ vs $t$ \quad (b) first order,
+$k = \SI{0.0400}{\per\second}$ \quad (c) \SI{0.368}{\Molar} \quad (d)
+plot all three, find the straight one}
+\keyonly{\begin{apcanswer}(a) $\mathbf{1/[\ce{A}]}$ \textbf{against}
+$t$, with slope $+k$. (b) A linear $\ln[\ce{A}]$ plot means
+\textbf{first order}; the slope is $-k$, so
+$k = \mathbf{\SI{0.0400}{\per\second}}$ (positive). (c)
+$[\ce{A}] = 1.00 \times e^{-(0.100)(10.0)} = e^{-1.00} =
+\mathbf{\SI{0.368}{\Molar}}$. (d) Make \textbf{all three} plots ---
+$[\ce{A}]$, $\ln[\ce{A}]$ and $1/[\ce{A}]$, each against $t$ --- and see
+which one is a straight line. That plot identifies the order, and its
+slope gives $k$ ($-k$ for zero and first order, $+k$ for
+second).\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Half-life}
+\zsec{12.4}
+
+The half-life $t_{1/2}$ is the time for half the reactant to be
+consumed. Its behaviour differs sharply between orders, and that
+difference is itself a way to identify the order.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=10.5cm, height=5.8cm,
+  xlabel={time (s)}, ylabel={$[\ce{A}]$ (\si{\Molar})},
+  xmin=0, xmax=120, ymin=0, ymax=1.1,
+  xtick={0,30,60,90,120}, ytick={0,0.25,0.5,0.75,1.0},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, very thick, domain=0:120, samples=90] {exp(-0.0231*x)};
+\foreach \t/\c in {30/0.5, 60/0.25, 90/0.125} {
+  \addplot[black, dotted, thick, domain=0:\t, samples=2] {\c};
+}
+\draw[dotted, thick] (axis cs:30,0) -- (axis cs:30,0.5);
+\draw[dotted, thick] (axis cs:60,0) -- (axis cs:60,0.25);
+\draw[dotted, thick] (axis cs:90,0) -- (axis cs:90,0.125);
+\node[font=\footnotesize,anchor=west] at (axis cs:44,0.86)
+  {each drop by half takes the \textbf{same} \SI{30}{\second}};
+\node[font=\footnotesize,anchor=west] at (axis cs:44,0.74)
+  {--- the signature of \textbf{first order}};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.3,2.55)
+    {how successive half-lives behave};
+  \foreach \y/\o/\f/\b in {%
+      1.85/{zero order}/{$t_{1/2} = \dfrac{[\ce{A}]_{0}}{2k}$}/{each one
+        is \textbf{shorter}},
+      1.0/{first order}/{$t_{1/2} = \dfrac{0.693}{k}$}/{all
+        \textbf{the same}},
+      0.15/{second order}/{$t_{1/2} = \dfrac{1}{k[\ce{A}]_{0}}$}/{each
+        one is \textbf{longer}}} {
+    % formula column at 3.0, not 2.5: "second order" in bold sans is
+    % wider than 2.3cm and touched the formula beside it.
+    \node[anchor=west,font=\sffamily\bfseries] at (0.2,\y) {\o};
+    \node[anchor=west] at (3.0,\y) {\f};
+    \node[anchor=west] at (7.0,\y) {\b};}
+  \draw[apcgray] (0.1,2.3) -- (10.4,2.3);
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{Only the first-order half-life is independent of
+concentration.} That is why $t_{1/2} = 0.693/k$ contains no
+$[\ce{A}]_{0}$ --- and why radioactive decay, which is always first
+order, has a fixed half-life you can quote for an isotope. Quoting a
+single half-life for a second-order reaction is meaningless, because it
+doubles every time round.
+\end{apctrap}
+
+\begin{workedexample}[I do: half-lives without a calculator]
+\textbf{A first-order reaction has $t_{1/2} = \SI{25}{\second}$. What
+fraction of the reactant remains after \SI{100}{\second}?}
+
+\textbf{Count half-lives rather than using the exponential.}
+\[ \frac{\SI{100}{\second}}{\SI{25}{\second}} = 4
+   \text{ half-lives} \]
+Each one leaves half of what was there, so after four:
+\[ \left(\tfrac{1}{2}\right)^{4} = \tfrac{1}{16}
+   = \mathbf{0.0625} = 6.25\% \]
+
+\textbf{This is exactly why MCQ sections can be no-calculator.} Whole
+numbers of half-lives are meant to be done in your head: 1 half-life
+leaves $1/2$, then $1/4$, $1/8$, $1/16$. If a question gives you a time
+that is a neat multiple of $t_{1/2}$, it is telling you to count rather
+than compute.
+
+\textbf{Going the other way.} If a first-order reaction is 87.5\%
+complete, then $12.5\% = 1/8$ remains, which is three half-lives.
+Recognising $1/2$, $1/4$, $1/8$, $1/16$ as one, two, three and four
+half-lives turns a calculation into a glance.
+
+\textbf{And the link back to $k$:} $t_{1/2} = 0.693/k$, so a large $k$
+means a short half-life. The two are just different ways of stating the
+same speed.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A first-order reaction has $k = \SI{0.0350}{\per\second}$. Find
+        $t_{1/2}$. \workspace[1.6cm]
+  \item What fraction remains after 3 half-lives?
+        \workspace[1.4cm]
+  \item A first-order reaction is 75\% complete. How many half-lives
+        have passed? \workspace[1.6cm]
+  \item Successive half-lives of a reaction get longer each time. What
+        order is it? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{19.8}{\second} \quad (b) $1/8$ \quad (c) 2 \quad
+(d) second order}
+\keyonly{\begin{apcanswer}(a) $t_{1/2} = 0.693/0.0350 =
+\mathbf{\SI{19.8}{\second}}$. (b) $(1/2)^{3} = \mathbf{1/8}$, or
+12.5\%. (c) 75\% complete means \textbf{25\% remains}, and
+$1/4 = (1/2)^{2}$, so \textbf{2} half-lives. (d) \textbf{Second order.}
+Its half-life is $1/(k[\ce{A}]_{0})$, so as the concentration falls the
+half-life rises --- it doubles each time. A first-order half-life would
+stay constant and a zero-order one would
+shorten.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Elementary steps and
+molecularity}
+\zsec{12.5}
+
+An \textbf{elementary step} is a single collision event --- what
+actually happens, not a summary. For an elementary step, and only for an
+elementary step, the coefficients \emph{are} the orders.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \foreach \i/\nm/\eq/\rl in {%
+      0/{unimolecular}/{$\ce{A -> products}$}/{rate $= k[\ce{A}]$},
+      3.8/{bimolecular}/{$\ce{A + B -> products}$}/{rate $=
+        k[\ce{A}][\ce{B}]$},
+      7.6/{termolecular}/{$\ce{A + B + C -> products}$}/{rate $=
+        k[\ce{A}][\ce{B}][\ce{C}]$}} {
+    \begin{scope}[xshift=\i cm]
+      \node[font=\sffamily\small\bfseries] at (1.6,3.15) {\nm};
+      \node[font=\footnotesize] at (1.6,1.05) {\eq};
+      \node[font=\footnotesize] at (1.6,0.5) {\rl};
+    \end{scope}}
+  % art: 1 particle / 2 colliding / 3 colliding
+  \fill[apcgray!65] (1.6,2.2) circle (0.2);
+  \draw[-{Stealth[length=2mm]}] (1.6,1.85) -- (1.6,1.5);
+  \begin{scope}[xshift=3.8cm]
+    \fill[apcgray!65] (1.25,2.2) circle (0.2);
+    \fill[apcgray!30] (1.95,2.2) circle (0.2);
+    \draw[-{Stealth[length=2mm]}] (1.42,2.2) -- (1.62,2.2);
+    \draw[{Stealth[length=2mm]}-] (1.58,2.2) -- (1.78,2.2);
+  \end{scope}
+  \begin{scope}[xshift=7.6cm]
+    \fill[apcgray!65] (1.05,2.2) circle (0.19);
+    \fill[apcgray!30] (1.6,2.2) circle (0.19);
+    \fill[apcgray!45] (2.15,2.2) circle (0.19);
+  \end{scope}
+  % Note moved BELOW the rate law.  At y=1.75 its top line ran into the
+  % three circles sitting at y=2.2.
+  \node[font=\sffamily\footnotesize,align=center] at (9.2,-0.2)
+    {\emph{rare} --- three particles meeting\\
+     at once is highly improbable};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: the one place coefficients give orders]
+\textbf{Why can you read a rate law off an elementary step but not off
+an overall equation?}
+
+\textbf{Because an elementary step describes an actual collision.} If
+the step is $\ce{NO2 + NO2 -> NO3 + NO}$, then the event is literally
+two \ce{NO2} molecules meeting. Double $[\ce{NO2}]$ and each molecule
+has twice as many partners available while there are twice as many
+molecules looking --- so the collision frequency, and the rate, goes up
+by $2 \times 2 = 4$. That is second order, and it follows from the
+coefficient 2 because the coefficient is counting colliding particles.
+
+\textbf{An overall equation summarises, and summaries lose
+information.} $\ce{2N2O5 -> 4NO2 + O2}$ does not mean two \ce{N2O5}
+molecules collide. It means that when the whole multi-step process is
+tallied up, two are consumed. The measured rate law is
+$k[\ce{N2O5}]$ --- first order --- because the slow step involves only
+one molecule.
+
+\textbf{Why termolecular steps are essentially never proposed.} Getting
+two particles to meet with enough energy and the right orientation is
+already demanding. Requiring a third to arrive at the same instant makes
+the probability vanishingly small. If you write a mechanism with a
+termolecular step, expect to be asked to justify it --- and you usually
+cannot.
+
+\textbf{The test to apply:} has the question told you the step is
+elementary (or is it labelled ``slow''/``fast'' inside a mechanism)? If
+yes, use the coefficients. If it is an overall equation, you need
+experimental data.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Give the rate law for the elementary step
+        $\ce{2NO2 -> N2O4}$. \workspace[1.6cm]
+  \item Give the molecularity of the elementary step
+        $\ce{O3 -> O2 + O}$. \workspace[1.4cm]
+  \item Give the rate law for the elementary step
+        $\ce{NO + O3 -> NO2 + O2}$. \workspace[1.6cm]
+  \item Why are termolecular steps rare? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) rate $= k[\ce{NO2}]^{2}$ \quad (b) unimolecular \quad
+(c) rate $= k[\ce{NO}][\ce{O3}]$ \quad (d) three-body collisions are
+improbable}
+\keyonly{\begin{apcanswer}(a) $\text{rate} =
+\mathbf{k[\ce{NO2}]^{2}}$ --- for an elementary step the coefficient
+becomes the order. (b) \textbf{Unimolecular}: one particle decomposes
+on its own. (c) $\text{rate} = \mathbf{k[\ce{NO}][\ce{O3}]}$,
+bimolecular and first order in each. (d) Because they require
+\textbf{three particles to collide simultaneously} with sufficient
+energy and correct orientation. Two-body collisions are already
+relatively infrequent; the chance of a third arriving at the same
+instant is so small that termolecular steps are almost never a
+plausible part of a mechanism.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Mechanisms and the
+rate-determining step}
+\zsec{12.5}
+
+A mechanism is the list of elementary steps. The \textbf{slowest} step
+sets the pace for the whole reaction, exactly as the narrowest point on
+a road sets the traffic speed.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.3,3.5)
+    {a valid mechanism must pass three tests};
+  \foreach \y/\n/\t in {%
+      2.75/{1}/{the steps must add up to the overall equation},
+      2.1/{2}/{the rate law from the slow step must match the measured
+        one},
+      1.45/{3}/{every intermediate must be produced, then consumed}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.3,\y) {\n.};
+    \node[anchor=west] at (0.85,\y) {\t};}
+  \draw[apcgray] (0.2,1.05) -- (10.4,1.05);
+  \node[anchor=west,align=left] at (0.3,0.5)
+    {\textbf{intermediate}: made in an early step, used up later ---
+     never in the overall equation};
+  \node[anchor=west,align=left] at (0.3,0.0)
+    {\textbf{catalyst}: used in an early step, \emph{regenerated}
+     later --- also never in the overall equation};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.0,2.95)
+    {$\ce{NO2 + CO -> NO + CO2}$};
+  % Equations start at 3.3, not 2.6 -- the bold sans label is wider than
+  % 2.4cm and printed straight into the equation ("Step 1 (slow):NO2...").
+  \node[anchor=west,font=\sffamily\bfseries] at (0.2,2.2)
+    {Step 1 (\textbf{slow}):};
+  \node[anchor=west] at (3.3,2.2) {$\ce{NO2 + NO2 -> NO3 + NO}$};
+  \node[anchor=west,font=\sffamily\bfseries] at (0.2,1.55)
+    {Step 2 (fast):};
+  \node[anchor=west] at (3.3,1.55) {$\ce{NO3 + CO -> NO2 + CO2}$};
+  \draw[apcgray] (0.2,1.15) -- (10.0,1.15);
+  \node[anchor=west] at (0.2,0.7)
+    {\ce{NO3} is made in step 1 and consumed in step 2 --- an
+     \textbf{intermediate}};
+  \node[anchor=west] at (0.2,0.15)
+    {the slow step is bimolecular in \ce{NO2}, so
+     $\text{rate} = k[\ce{NO2}]^{2}$};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: check a mechanism, then get its rate law]
+\textbf{Test the two-step mechanism above against all three
+requirements.}
+
+\textbf{Test 1 --- do the steps add to the overall equation?} Add them:
+\[ \ce{2NO2 + NO3 + CO -> NO3 + NO + NO2 + CO2} \]
+Cancel \ce{NO3} from both sides and one \ce{NO2} from both sides:
+\[ \ce{NO2 + CO -> NO + CO2} \quad\checkmark \]
+
+\textbf{Test 2 --- what rate law does it predict?} The slow step is
+$\ce{NO2 + NO2 -> NO3 + NO}$, which is elementary, so its coefficients
+give its orders:
+\[ \text{rate} = k[\ce{NO2}]^{2} \]
+This is the experimentally measured rate law for this reaction, so the
+mechanism survives.
+
+\textbf{Test 3 --- is the intermediate handled properly?} \ce{NO3} is
+produced in step 1 and consumed in step 2, and it does not appear in the
+overall equation. \quad\checkmark
+
+\textbf{Now notice what the rate law does \emph{not} contain: \ce{CO}.}
+Carbon monoxide is a reactant in the overall equation, yet the rate does
+not depend on it at all --- because \ce{CO} appears only in the
+\emph{fast} step, after the bottleneck. Adding more \ce{CO} cannot speed
+up a process that is already waiting on step 1.
+
+\textbf{And notice the order in \ce{NO2} is 2} while its coefficient in
+the overall equation is 1. Both observations are the same lesson from
+Ladder 2, now with a mechanism to explain \emph{why}.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+Consider this mechanism for $\ce{2NO2 + F2 -> 2NO2F}$:
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+Step 1 (slow): & $\ce{NO2 + F2 -> NO2F + F}$ \\
+Step 2 (fast): & $\ce{NO2 + F -> NO2F}$ \\
+\end{tabular}
+\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Show the steps add to the overall equation.
+        \workspace[1.8cm]
+  \item Identify the intermediate. \workspace[1.4cm]
+  \item Write the predicted rate law. \workspace[1.6cm]
+  \item Would doubling $[\ce{NO2}]$ double the rate? Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) they sum correctly \quad (b) \ce{F} atoms \quad (c) rate
+$= k[\ce{NO2}][\ce{F2}]$ \quad (d) yes --- first order in \ce{NO2}}
+\keyonly{\begin{apcanswer}(a) Adding gives $\ce{2NO2 + F2 + F -> 2NO2F +
+F}$; cancelling the \ce{F} that appears on both sides leaves
+$\ce{2NO2 + F2 -> 2NO2F}$. \checkmark\ (b) The \textbf{fluorine atom},
+\ce{F} --- produced in step 1 and consumed in step 2, and absent from the
+overall equation. (c) From the slow elementary step:
+$\text{rate} = \mathbf{k[\ce{NO2}][\ce{F2}]}$. (d) \textbf{Yes.} The
+rate law is first order in \ce{NO2}, so doubling it doubles the rate ---
+even though \ce{NO2} has a coefficient of 2 in the overall equation. Only
+one \ce{NO2} takes part in the rate-determining step; the second is
+consumed later, in the fast step, where it cannot affect the
+rate.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ A fast first step:
+pre-equilibrium}
+\zsec{12.5}
+
+When the \emph{first} step is fast and reversible, the rate-determining
+step contains an intermediate --- and a rate law may not contain an
+intermediate, because you cannot measure its concentration. This ladder
+is how you get rid of it.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.0,3.15)
+    {$\ce{2NO + O2 -> 2NO2}$};
+  % Equations start at 4.9.  At 4.3 the long bold label overprinted the
+  % equation and swallowed the leading coefficient, so "2NO <=> N2O2"
+  % printed as "NO <=> N2O2" -- a chemistry error caused by a layout bug.
+  \node[anchor=west,font=\sffamily\bfseries] at (0.2,2.45)
+    {Step 1 (fast, \emph{reversible}):};
+  \node[anchor=west] at (4.9,2.45)
+    {$\ce{2NO <=> N2O2}$};
+  \node[anchor=west,font=\sffamily\bfseries] at (0.2,1.8)
+    {Step 2 (\textbf{slow}):};
+  \node[anchor=west] at (4.9,1.8)
+    {$\ce{N2O2 + O2 -> 2NO2}$};
+  \draw[apcgray] (0.2,1.4) -- (10.4,1.4);
+  \node[anchor=west] at (0.2,0.9)
+    {slow step gives $\text{rate} = k_{2}[\ce{N2O2}][\ce{O2}]$ ---
+     but \ce{N2O2} is an intermediate};
+  \node[anchor=west] at (0.2,0.15)
+    {step 1 at equilibrium gives
+     $K = \dfrac{[\ce{N2O2}]}{[\ce{NO}]^{2}}$, so
+     $[\ce{N2O2}] = K[\ce{NO}]^{2}$};
+  \node[anchor=west,font=\sffamily\bfseries] at (0.2,-0.6)
+    {substitute: $\text{rate} = k_{2}K[\ce{NO}]^{2}[\ce{O2}]
+     = k[\ce{NO}]^{2}[\ce{O2}]$};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: eliminating an intermediate]
+\textbf{The rule that forces this whole procedure: a rate law may
+contain only species whose concentrations you can control or measure ---
+reactants, products, catalysts. Never an intermediate.}
+
+\textbf{Start where the bottleneck is.} The slow step is
+$\ce{N2O2 + O2 -> 2NO2}$, elementary, so
+\[ \text{rate} = k_{2}[\ce{N2O2}][\ce{O2}] \]
+This is correct but useless: \ce{N2O2} exists only fleetingly and you
+cannot put a number on its concentration.
+
+\textbf{Use the fast step to express it in measurable terms.} Step 1 is
+fast and reversible, so it reaches equilibrium long before step 2 gets
+anywhere. For $\ce{2NO <=> N2O2}$,
+\[ K = \frac{[\ce{N2O2}]}{[\ce{NO}]^{2}}
+   \quad\Longrightarrow\quad
+   [\ce{N2O2}] = K[\ce{NO}]^{2} \]
+
+\textbf{Substitute and fold the constants together.}
+\[ \text{rate} = k_{2}K[\ce{NO}]^{2}[\ce{O2}]
+               = k[\ce{NO}]^{2}[\ce{O2}] \]
+where $k = k_{2}K$ is what an experiment actually measures. You cannot
+separate $k_{2}$ from $K$ by measuring the rate --- only their product.
+
+\textbf{Check against reality.} The experimentally observed rate law for
+$\ce{2NO + O2 -> 2NO2}$ is third order overall, second in \ce{NO} and
+first in \ce{O2}. The mechanism reproduces it exactly.
+
+\textbf{And note the payoff.} A simple one-step collision of
+$\ce{2NO + O2}$ would be \emph{termolecular} --- three particles at
+once, which Ladder 7 said is implausible. The pre-equilibrium mechanism
+gets the same third-order rate law out of two ordinary bimolecular
+steps. That is why chemists proposed it.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Why may a rate law not contain an intermediate?
+        \workspace[1.8cm]
+  \item In the mechanism above, which species is the intermediate?
+        \workspace[1.4cm]
+  \item A mechanism has fast $\ce{A <=> B}$ then slow
+        $\ce{B + C -> D}$. Write the rate law in terms of \ce{A} and
+        \ce{C}. \workspace[1.8cm]
+  \item Why is a termolecular one-step route for
+        $\ce{2NO + O2 -> 2NO2}$ considered implausible?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) its concentration cannot be measured or controlled \quad
+(b) \ce{N2O2} \quad (c) rate $= k[\ce{A}][\ce{C}]$ \quad (d) it needs a
+three-body collision}
+\keyonly{\begin{apcanswer}(a) Because an intermediate is formed and
+consumed inside the mechanism, so you \textbf{cannot measure or set its
+concentration}. A rate law has to be usable, which means it may contain
+only reactants, products or catalysts. (b) \textbf{\ce{N2O2}} --- made
+in step 1, consumed in step 2, absent from the overall equation. (c)
+Slow step gives $\text{rate} = k_{2}[\ce{B}][\ce{C}]$. From the fast
+equilibrium, $K = [\ce{B}]/[\ce{A}]$, so $[\ce{B}] = K[\ce{A}]$.
+Substituting: $\text{rate} = \mathbf{k[\ce{A}][\ce{C}]}$ with
+$k = k_{2}K$. (d) Because it would require \textbf{three particles to
+collide at the same instant} with enough energy and the right
+orientation --- overwhelmingly improbable. The two-step
+pre-equilibrium route reproduces the same third-order rate law using
+only bimolecular collisions.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ The collision model}
+\zsec{12.6}
+
+For a reaction to occur, particles must collide --- with
+\textbf{enough energy} and in the \textbf{right orientation}. Almost
+every collision fails one test or the other, which is why reactions are
+so much slower than collision frequencies alone would suggest.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (2.4,3.2) {right orientation};
+  \fill[apcgray!65] (0.9,2.1) circle (0.2);
+  \fill[apcgray!25] (1.45,2.1) circle (0.15);
+  \draw[-{Stealth[length=2mm]},thick] (2.0,2.1) -- (2.6,2.1);
+  \fill[apcgray!25] (3.3,2.1) circle (0.15);
+  \fill[apcgray!65] (3.85,2.1) circle (0.2);
+  \node[align=center] at (2.4,1.2) {reactive ends meet\\
+    \textbf{reaction happens}};
+
+  \begin{scope}[xshift=6.0cm]
+    \node[font=\sffamily\small\bfseries] at (2.4,3.2)
+      {wrong orientation};
+    \fill[apcgray!65] (0.9,2.1) circle (0.2);
+    \fill[apcgray!25] (1.45,2.1) circle (0.15);
+    \draw[-{Stealth[length=2mm]},thick] (2.0,2.1) -- (2.6,2.1);
+    \fill[apcgray!65] (3.3,2.1) circle (0.2);
+    \fill[apcgray!25] (3.85,2.1) circle (0.15);
+    \node[align=center] at (2.4,1.2) {wrong ends meet\\
+      \textbf{they simply bounce}};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=11.2cm, height=6.2cm,
+  xlabel={kinetic energy}, ylabel={fraction of particles},
+  xmin=0, xmax=120, ymin=0, ymax=3.4,
+  xtick=\empty, ytick=\empty,
+  axis lines=left,
+  legend pos=north east, legend style={font=\footnotesize,
+    cells={anchor=west}},
+  label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, domain=0.05:120, samples=110]
+  {100*sqrt(x)*exp(-x/15)/58.09};
+\addlegendentry{lower temperature}
+\addplot[seriesB, thick, domain=0.05:120, samples=110]
+  {100*sqrt(x)*exp(-x/28)/148.2};
+\addlegendentry{higher temperature}
+\draw[very thick, densely dashed] (axis cs:60,0) -- (axis cs:60,2.6);
+\node[font=\footnotesize,anchor=south] at (axis cs:60,2.62)
+  {$E_{\mathrm{a}}$};
+\node[font=\footnotesize,anchor=west] at (axis cs:63,1.15)
+  {only particles out \emph{here}};
+\node[font=\footnotesize,anchor=west] at (axis cs:63,0.85)
+  {can react at all};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[Why a small temperature rise does so much]
+Heating does \emph{not} shift the whole distribution up --- it flattens
+and stretches it to the right. The peak barely moves, but the
+\textbf{tail beyond $E_{\mathrm{a}}$} grows enormously, and it is only
+the tail that reacts. For a typical activation energy near
+\SI{50}{\kilo\joule\per\mole}, warming from \SI{25}{\celsius} to
+\SI{35}{\celsius} roughly \emph{doubles} the rate --- a
+\SI{10}{\celsius} change producing a 100\% change in speed. Say
+``the fraction of collisions with energy $\ge E_{\mathrm{a}}$
+increases'', not ``the particles have more energy'': the second earns
+nothing.
+\end{apcnote}
+
+\begin{workedexample}[I do: the Arrhenius equation]
+\[ k = A\,e^{-E_{\mathrm{a}}/RT}
+   \qquad\text{or, taking logs,}\qquad
+   \ln k = -\frac{E_{\mathrm{a}}}{R}\cdot\frac{1}{T} + \ln A \]
+
+\textbf{Read the second form as $y = mx + c$.} Plotting $\ln k$ against
+$1/T$ gives a straight line of slope $-E_{\mathrm{a}}/R$ --- which is
+how activation energies are actually measured.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=8.4cm, height=4.4cm,
+  xlabel={$1/T$ (\si{\per\kelvin})}, ylabel={$\ln k$},
+  xmin=0.0029, xmax=0.0035, ymin=-0.4, ymax=3.2,
+  xtick={0.0030,0.0032,0.0034},
+  scaled x ticks=false, x tick label style={/pgf/number format/fixed,
+    /pgf/number format/precision=4, font=\footnotesize},
+  ytick={0,1,2,3},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, thick, mark=*, mark size=1.5pt]
+  coordinates {(0.0030,2.66) (0.0032,1.37) (0.0034,0.08)};
+\node[font=\footnotesize,anchor=west] at (axis cs:0.00305,0.6)
+  {slope $= -E_{\mathrm{a}}/R$};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Worked: the rate constant doubles when the temperature rises
+from \SI{300}{\kelvin} to \SI{310}{\kelvin}. Find $E_{\mathrm{a}}$.}
+
+Use the two-point form:
+\[ \ln\!\left(\frac{k_{2}}{k_{1}}\right)
+   = -\frac{E_{\mathrm{a}}}{R}
+     \left(\frac{1}{T_{2}} - \frac{1}{T_{1}}\right) \]
+\[ \ln 2 = -\frac{E_{\mathrm{a}}}{8.314}
+   \left(\frac{1}{310} - \frac{1}{300}\right)
+   = -\frac{E_{\mathrm{a}}}{8.314}\left(\num{-1.075e-4}\right) \]
+\[ 0.693 = E_{\mathrm{a}} \times \num{1.293e-5}
+   \quad\Longrightarrow\quad
+   E_{\mathrm{a}} = \SI{53600}{\joule\per\mole}
+   = \mathbf{\SI{53.6}{\kilo\joule\per\mole}} \]
+
+\textbf{Two habits.} Temperature must be in \textbf{kelvin} --- the
+equation is meaningless in celsius. And $R = \SI{8.314}{}$ gives
+$E_{\mathrm{a}}$ in joules, so divide by 1000 at the end; forgetting to
+is the single most common slip here.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item State the two requirements for a collision to lead to reaction.
+        \workspace[1.6cm]
+  \item Why does raising the temperature increase the rate so sharply?
+        \workspace[1.8cm]
+  \item What does the slope of a plot of $\ln k$ against $1/T$ equal?
+        \workspace[1.6cm]
+  \item Does raising the temperature change $E_{\mathrm{a}}$? Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) enough energy, correct orientation \quad (b) the
+fraction exceeding $E_{\mathrm{a}}$ rises steeply \quad (c)
+$-E_{\mathrm{a}}/R$ \quad (d) no --- it changes how many particles clear
+it}
+\keyonly{\begin{apcanswer}(a) The colliding particles must have
+\textbf{kinetic energy of at least $E_{\mathrm{a}}$}, and they must meet
+in the \textbf{correct orientation}. Failing either means they simply
+bounce apart. (b) Because heating stretches the
+Maxwell--Boltzmann distribution to the right, and the
+\textbf{fraction of particles with energy $\ge E_{\mathrm{a}}$} --- the
+area under the tail --- grows very steeply. A modest temperature rise
+produces a large change in that fraction, which is why roughly
+\SI{10}{\celsius} can double a rate. (c)
+$\mathbf{-E_{\mathrm{a}}/R}$. (d) \textbf{No.} $E_{\mathrm{a}}$ is a
+property of the reaction pathway itself and is unchanged by temperature.
+What changes is the \emph{fraction of collisions that clear the
+barrier}. Only a catalyst, which supplies a different pathway, lowers
+$E_{\mathrm{a}}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Reaction energy profiles}
+\zsec{12.6}
+
+An energy profile is the reaction drawn as a landscape: reactants on one
+side, products on the other, and a hill in between whose height is the
+activation energy.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=2.5mm]},thick] (0.5,0.3) -- (0.5,4.3)
+    node[above,font=\footnotesize] {energy};
+  \draw[-{Stealth[length=2.5mm]},thick] (0.5,0.3) -- (9.6,0.3)
+    node[right,font=\footnotesize] {reaction progress};
+  % curve: reactants 2.2, peak 3.7, products 1.2
+  \draw[very thick] (1.1,2.2) -- (2.2,2.2)
+    .. controls (3.3,2.2) and (3.5,3.7) .. (4.4,3.7)
+    .. controls (5.3,3.7) and (5.5,1.2) .. (6.6,1.2) -- (8.6,1.2);
+  % levels
+  \draw[dotted,thick] (1.1,2.2) -- (8.9,2.2);
+  \draw[dotted,thick] (1.1,1.2) -- (8.9,1.2);
+  \draw[dotted,thick] (2.6,3.7) -- (8.9,3.7);
+  % Ea forward
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (7.4,2.2) -- (7.4,3.7);
+  \node[anchor=west,font=\footnotesize] at (7.5,2.95)
+    {$E_{\mathrm{a}}$ forward};
+  % Ea reverse
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (8.75,1.2) -- (8.75,3.7);
+  \node[anchor=west,font=\footnotesize] at (8.85,2.45)
+    {$E_{\mathrm{a}}$ rev.};
+  % dH
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (1.55,2.2) -- (1.55,1.2);
+  \node[anchor=east,font=\footnotesize] at (1.45,1.7) {$\Delta H$};
+  \node[anchor=south,font=\footnotesize] at (1.6,2.25) {reactants};
+  \node[anchor=north,font=\footnotesize] at (5.9,1.15) {products};
+  \node[anchor=south,font=\footnotesize] at (4.4,3.75)
+    {transition state};
+\end{tikzpicture}
+\end{center}
+
+\[ E_{\mathrm{a}}(\text{forward}) - E_{\mathrm{a}}(\text{reverse})
+   = \Delta H \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.0,4.35)
+    {a two-step mechanism has \textbf{two} humps};
+  \draw[-{Stealth[length=2.5mm]},thick] (0.5,0.3) -- (0.5,4.0);
+  \draw[-{Stealth[length=2.5mm]},thick] (0.5,0.3) -- (9.4,0.3)
+    node[right,font=\footnotesize] {progress};
+  % reactants 1.6, peak1 3.4, intermediate 2.1, peak2 2.9, products 1.0
+  \draw[very thick] (1.0,1.6) -- (1.7,1.6)
+    .. controls (2.5,1.6) and (2.6,3.4) .. (3.3,3.4)
+    .. controls (4.0,3.4) and (4.1,2.1) .. (4.8,2.1)
+    .. controls (5.5,2.1) and (5.6,2.9) .. (6.3,2.9)
+    .. controls (7.0,2.9) and (7.1,1.0) .. (7.9,1.0) -- (8.8,1.0);
+  \node[anchor=south,font=\footnotesize] at (3.3,3.45) {peak 1};
+  \node[anchor=south,font=\footnotesize] at (6.3,2.95) {peak 2};
+  \node[anchor=north,font=\footnotesize] at (4.8,2.05) {intermediate};
+  \node[anchor=south,font=\footnotesize] at (1.3,1.65) {reactants};
+  \node[anchor=north,font=\footnotesize] at (8.3,0.95) {products};
+  % Moved to a caption line below the axis: at y=3.75 this ran straight
+  % through the "peak 1" label.
+  \node[font=\sffamily\footnotesize] at (4.9,-0.35)
+    {the \textbf{higher} barrier is the rate-determining step};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: reading numbers off a profile]
+\textbf{A one-step reaction has $E_{\mathrm{a}}(\text{forward}) =
+\SI{80}{\kilo\joule\per\mole}$ and $\Delta H =
+\SI{-30}{\kilo\joule\per\mole}$. Find $E_{\mathrm{a}}$ for the reverse
+reaction.}
+
+\textbf{Put the reactants at zero and work up.} The peak is
+\SI{80}{\kilo\joule\per\mole} above the reactants. The products are
+\SI{30}{\kilo\joule\per\mole} \emph{below} them, because $\Delta H$ is
+negative.
+
+\textbf{The reverse barrier is measured from the products to the same
+peak:}
+\[ E_{\mathrm{a}}(\text{rev}) = 80 - (-30)
+   = \mathbf{\SI{110}{\kilo\joule\per\mole}} \]
+
+\textbf{Sanity check.} An exothermic reaction always has a
+\emph{larger} reverse barrier than forward one --- the products sit in a
+deeper valley, so climbing back out costs more. If your reverse
+$E_{\mathrm{a}}$ came out smaller for an exothermic reaction, you
+subtracted the wrong way.
+
+\textbf{Now the two-step profile above.} Take reactants at 0, peak 1 at
+75, the intermediate at 20, peak 2 at 50, products at $-25$
+(\si{\kilo\joule\per\mole}).
+\begin{itemize}[leftmargin=1.4em,itemsep=0.15em]
+  \item $E_{\mathrm{a}}$ of step 1 $= 75 - 0 = \SI{75}{}$
+  \item $E_{\mathrm{a}}$ of step 2 $= 50 - 20 = \SI{30}{}$
+  \item overall $\Delta H = -25 - 0 = \SI{-25}{\kilo\joule\per\mole}$
+\end{itemize}
+\textbf{Step 1 is rate-determining} because its barrier is the larger.
+Each step's activation energy is measured from \emph{its own} starting
+valley, not from the reactants --- for step 2 that means from the
+intermediate at 20, not from 0.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+Use reactants $=0$, peak 1 $=\SI{60}{}$, intermediate $=\SI{15}{}$,
+peak 2 $=\SI{45}{}$, products $=\SI{-20}{\kilo\joule\per\mole}$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $E_{\mathrm{a}}$ for step 1. \workspace[1.4cm]
+  \item Find $E_{\mathrm{a}}$ for step 2. \workspace[1.4cm]
+  \item Which step is rate-determining? \workspace[1.4cm]
+  \item Give the overall $\Delta H$, and say whether the reaction is
+        exothermic or endothermic. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{60}{\kilo\joule\per\mole} \quad (b)
+\SI{30}{\kilo\joule\per\mole} \quad (c) step 1 \quad (d)
+\SI{-20}{\kilo\joule\per\mole}, exothermic}
+\keyonly{\begin{apcanswer}(a) $60 - 0 =
+\mathbf{\SI{60}{\kilo\joule\per\mole}}$. (b) $45 - 15 =
+\mathbf{\SI{30}{\kilo\joule\per\mole}}$ --- measured from the
+intermediate, not from the reactants. (c) \textbf{Step 1}, because its
+activation energy (\SI{60}{}) is the larger of the two, so it is the
+bottleneck. (d) $-20 - 0 =
+\mathbf{\SI{-20}{\kilo\joule\per\mole}}$, and a negative $\Delta H$
+means the reaction is \textbf{exothermic} --- the products lie below the
+reactants.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ Catalysis}
+\zsec{12.7}
+
+A catalyst speeds a reaction by offering a \textbf{different pathway}
+with a lower activation energy. It changes the route, not the
+destination.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=2.5mm]},thick] (0.5,0.3) -- (0.5,4.2)
+    node[above,font=\footnotesize] {energy};
+  \draw[-{Stealth[length=2.5mm]},thick] (0.5,0.3) -- (9.3,0.3)
+    node[right,font=\footnotesize] {progress};
+  % uncatalysed: reactants 1.9, peak 3.6, products 1.0
+  \draw[seriesA, very thick] (1.0,1.9) -- (1.9,1.9)
+    .. controls (2.8,1.9) and (3.0,3.6) .. (3.9,3.6)
+    .. controls (4.8,3.6) and (5.0,1.0) .. (6.0,1.0) -- (8.4,1.0);
+  % catalysed: same start and end, lower peak
+  \draw[seriesB, very thick] (1.0,1.9) -- (1.9,1.9)
+    % peak lowered 2.7 -> 2.55 to open a real gap for its own label,
+    % which the flat top of this curve was grazing.
+    .. controls (2.8,1.9) and (3.0,2.55) .. (3.9,2.55)
+    .. controls (4.8,2.55) and (5.0,1.0) .. (6.0,1.0) -- (8.4,1.0);
+  \node[anchor=south,font=\footnotesize] at (3.9,3.65) {uncatalysed};
+  % Above its own peak, not below it: anchored north at 2.62 the
+  % descending catalysed curve cut through the end of the word.
+  \node[anchor=south,font=\footnotesize] at (3.9,2.68) {catalysed};
+  \draw[dotted,thick] (1.0,1.9) -- (8.9,1.9);
+  \draw[dotted,thick] (1.0,1.0) -- (8.9,1.0);
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (8.7,1.0) -- (8.7,1.9);
+  \node[anchor=west,font=\footnotesize] at (8.8,1.45) {$\Delta H$};
+  % Caption line below the axis: at y=3.9 the "uncatalysed" curve label
+  % (anchored south at y=3.65) printed through it.
+  \node[font=\sffamily\footnotesize] at (4.9,-0.35)
+    {same start, same finish, \textbf{same $\Delta H$} --- only the hill
+     is lower};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{A catalyst does not change $\Delta H$, and it does not shift the
+equilibrium position.} It lowers the barrier for the forward
+\emph{and} the reverse reaction by exactly the same amount, so both
+speed up equally and equilibrium is simply reached sooner. An answer
+saying a catalyst ``increases the yield'' or ``makes the reaction more
+exothermic'' scores zero.
+\end{apctrap}
+
+\begin{workedexample}[I do: catalyst or intermediate?]
+\textbf{Both appear inside a mechanism and neither appears in the
+overall equation. Telling them apart is a standard exam question, and
+the test is the order in which they show up.}
+
+\textbf{An intermediate is produced first, then consumed.} It appears as
+a \emph{product} of an earlier step and a \emph{reactant} of a later
+one. It did not exist before the reaction started.
+
+\textbf{A catalyst is consumed first, then regenerated.} It appears as a
+\emph{reactant} of an earlier step and a \emph{product} of a later one.
+It was there at the start and is still there at the end --- which is why
+a tiny amount can process an unlimited quantity of reactant.
+
+\textbf{Worked case.} In the mechanism
+\[ \ce{Cl + O3 -> ClO + O2}
+   \qquad
+   \ce{ClO + O -> Cl + O2} \]
+\ce{Cl} is used in step 1 and \textbf{regenerated} in step 2 --- a
+\textbf{catalyst}. \ce{ClO} is made in step 1 and \textbf{consumed} in
+step 2 --- an \textbf{intermediate}. Adding the steps gives
+$\ce{O3 + O -> 2O2}$, with neither appearing. This is the real
+chemistry of chlorine-catalysed ozone destruction, and the reason a
+single chlorine atom can destroy many thousands of ozone molecules
+before it is finally removed.
+
+\textbf{Two kinds of catalyst, distinguished by phase.}
+\textbf{Homogeneous} catalysts are in the same phase as the reactants
+--- as \ce{Cl} above, a gas among gases. \textbf{Heterogeneous}
+catalysts are in a different phase, usually a solid surface on which gas
+or liquid reactants adsorb, react and then leave; the platinum in a car's
+catalytic converter is the standard example. \textbf{Enzymes} are
+biological catalysts, and their extraordinary specificity comes from an
+active site shaped to hold one substrate in exactly the right
+orientation --- solving the orientation half of Ladder 10's problem
+rather than the energy half.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item How does a catalyst increase the rate? \workspace[1.6cm]
+  \item Does a catalyst change $\Delta H$? Explain.
+        \workspace[1.8cm]
+  \item Distinguish an intermediate from a catalyst.
+        \workspace[1.8cm]
+  \item Does a catalyst shift the position of equilibrium? Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) it lowers $E_{\mathrm{a}}$ via a new pathway \quad (b)
+no \quad (c) intermediate is made then used; catalyst is used then
+remade \quad (d) no --- both directions speed up equally}
+\keyonly{\begin{apcanswer}(a) By providing an \textbf{alternative
+pathway with a lower activation energy}, so a much larger fraction of
+collisions has enough energy to react. It does not give the particles
+more energy. (b) \textbf{No.} $\Delta H$ depends only on the energies of
+the reactants and products, and a catalyst changes neither --- it alters
+only the height of the barrier between them. (c) An
+\textbf{intermediate} is \emph{produced} in an earlier step and
+\emph{consumed} in a later one; a \textbf{catalyst} is \emph{consumed}
+in an earlier step and \emph{regenerated} in a later one. Neither
+appears in the overall equation, but the catalyst exists before the
+reaction begins and survives it. (d) \textbf{No.} A catalyst lowers the
+activation energy of the forward and reverse reactions by the
+\textbf{same amount}, so both rates increase by the same factor.
+Equilibrium is reached \emph{sooner} but sits in exactly the same
+place.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt. Every row is assessed --- Chapter 12 has no
+off-syllabus sections.
+
+\renewcommand{\arraystretch}{1.3}
+\noindent\begin{tabular}{@{}c p{5.9cm} c p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & rate and stoichiometry & 1 & divide by the coefficient \\
+$\square$ & rate laws and order & 2 & orders are experimental \\
+$\square$ & method of initial rates & 3 & change one thing at a time \\
+$\square$ & units of $k$ & 4 & $\mathrm{M^{\,1-n}\,s^{-1}}$ \\
+$\square$ & integrated rate laws & 5 & which plot is straight? \\
+$\square$ & half-life & 6 & only first order is constant \\
+$\square$ & elementary steps & 7 & coefficients work only here \\
+$\square$ & mechanisms and the RDS & 8 & the slow step sets the rate \\
+$\square$ & pre-equilibrium & 9 & eliminate the intermediate \\
+$\square$ & the collision model & 10 & energy \emph{and} orientation \\
+$\square$ & energy profiles & 11 & measure from its own valley \\
+$\square$ & catalysis & 12 & new pathway, same $\Delta H$ \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+12/12: you have Unit 5. This chapter is unusually self-contained ---
+almost nothing in it depends on the rest of the course --- so a clean
+sweep here is genuinely banked.
+
+9--11: look at \emph{where} the misses fall. Ladders 1--6 are the
+computational half and repair with practice. Ladders 7--9 are the
+mechanism half, and a miss there is nearly always the same root cause:
+still reading orders off coefficients. Re-read Ladder 7 before
+attempting more problems.
+
+8 or fewer: go back to Ladder 2 and hold one sentence in mind ---
+\emph{orders come from experiment, not from the balanced equation}. Most
+wrong answers in this unit are that error wearing a different hat.
+Ladder 3 (initial rates) and Ladder 8 (mechanisms) are the two that
+appear most often on the exam; if time is short, make those two
+automatic first.
+\end{apcnote}
+
+\end{document}

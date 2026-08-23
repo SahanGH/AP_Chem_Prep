@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 11 • Self-Study • Chapter 11, I do / You do</title>
+<link rel="stylesheet" href="../style.css?v=28190c55">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=28190c55"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 11 • Properties of Solutions</p>
+  <h1>Self-Study • Chapter 11, I do / You do</h1>
+  <p class="subtitle">Zumdahl §11.1–11.3 • PDF pp. 545–563</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help. Work all four before checking
+the gray <em>check:</em> line; a tracker tick needs all four right first
+time.</p>
+
+<strong>This document covers §11.1–11.3 and stops there.</strong>
+Zumdahl's §11.4–11.7 — vapour pressure lowering, boiling point
+elevation, freezing point depression, osmotic pressure, the whole of
+colligative properties — and §11.8 on colloids are <strong>not on the
+AP CED</strong> and are not treated here at all. That is not an oversight; it
+is most of a chapter you do not have to learn.
+
+<strong>What is left is not small.</strong> §11.1–11.3 feeds CED topic
+<strong>3.7</strong> (Solutions and Mixtures) and <strong>3.10</strong> (Solubility),
+both inside Unit 3 — the heaviest unit on the exam at 18–22%.
+Concentration calculations in particular turn up everywhere: in
+titrations, in equilibrium, in kinetics, in electrochemistry.
+
+<strong>The chapter in one sentence.</strong> A solution is a mixture at the
+particle level, and every question about one is either <em>how much
+is in there</em> (§11.1) or <em>why did it dissolve at all</em>
+(§11.2–11.3).
+
+</div>
+
+<h2> Ladder 1 • Molarity</h2>
+<span class="badge">ZUM §11.1</span>
+
+<p>Molarity is moles of solute per litre of <strong>solution</strong> — not per
+litre of solvent. The distinction is the whole of Ladder 1.</p>
+
+\[ M = \frac{\text{moles of solute}}{\text{litres of \textbf{solution}}} \]
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-1.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: molarity from a mass</div>
+
+<strong>What is the molarity of a solution made by dissolving
+25.0&thinsp;g of \(\ce{NaCl}\) in enough water to make
+500.&thinsp;mL of solution?</strong>
+
+<strong>Step 1 — grams to moles.</strong> You can never put grams into a
+molarity; the definition demands moles.
+\[ M(\ce{NaCl}) = 22.99 + 35.45 = 58.44\,\mathrm{g/mol} \]
+\[ n = \frac{25.0\,\mathrm{g}}{58.44\,\mathrm{g/mol}}
+     = 0.428\,\mathrm{mol} \]
+
+<strong>Step 2 — millilitres to litres.</strong> 500.&thinsp;mL
+\(= 0.500\,\mathrm{L}\).
+
+<strong>Step 3 — divide.</strong>
+\[ M = \frac{0.428\,\mathrm{mol}}{0.500\,\mathrm{L}}
+     = \mathbf{0.856\,\mathrm{M}} \]
+
+<strong>Two habits worth building now.</strong> Convert to moles and litres
+<em>before</em> you divide, every time — most lost marks here are unit
+slips, not concept failures. And read the wording: “dissolved in enough
+water to make 500.&thinsp;mL” is a solution volume;
+“dissolved in 500.&thinsp;mL of water” is a solvent volume,
+and the two are not the same quantity.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>Find the molarity of 0.500&thinsp;mol of \(\ce{KCl}\) in
+        2.00&thinsp;L of solution. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:1" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.25" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find the molarity of 40.0&thinsp;g of \(\ce{NaOH}\)
+        (\(M = 40.00\,\mathrm{g/mol}\)) in 250.&thinsp;mL
+        of solution. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:2" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="4.0" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>How many moles of solute are in 50.0&thinsp;mL of
+        2.00&thinsp;M \(\ce{HCl}\)? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:3" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.1" data-sig="3" data-unit="mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why is molarity defined per litre of solution rather than per
+        litre of solvent? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:4" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the solute itself occupies volume</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.250&thinsp;M  &emsp;  (b) 4.00&thinsp;M  &emsp; 
+(c) 0.100&thinsp;mol  &emsp;  (d) the solute itself occupies volume</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(0.500 / 2.00 = \mathbf{0.250\,\mathrm{M}}\).
+(b) \(n = 40.0/40.00 = 1.00\,\mathrm{mol}\); \(1.00/0.250 =
+\mathbf{4.00\,\mathrm{M}}\). (c) \(n = MV = 2.00 \times 0.0500 =
+\mathbf{0.100\,\mathrm{mol}}\). (d) Because the <strong>solute takes up
+space of its own</strong>. Adding a mole of solute to exactly one litre of
+solvent gives a total volume larger than one litre — and by an amount
+that differs from solute to solute, so it could not be predicted.
+Defining molarity against the final solution volume makes it something
+you can measure directly with a volumetric flask.</div></div>
+
+</div>
+
+<h2> Ladder 2 • Dilution</h2>
+<span class="badge">ZUM §11.1</span>
+
+<p>Adding solvent changes the volume and the concentration but
+<strong>not</strong> the number of moles of solute. That single conserved
+quantity is the whole calculation.</p>
+
+\[ \underbrace{M_{1}V_{1}}_{\text{moles before}}
+   \;=\;
+   \underbrace{M_{2}V_{2}}_{\text{moles after}} \]
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-2.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: two directions of the same equation</div>
+
+<strong>(a) What is the concentration when 50.0&thinsp;mL of
+6.00&thinsp;M \(\ce{HCl}\) is diluted to 250.&thinsp;mL?</strong>
+
+<p>Rearrange for what you want, then substitute:
+\[ M_{2} = \frac{M_{1}V_{1}}{V_{2}}
+         = \frac{6.00 \times 50.0}{250.}
+         = \mathbf{1.20\,\mathrm{M}} \]</p>
+
+<strong>Note the units did not need converting.</strong> \(V_{1}\) and \(V_{2}\)
+appear as a ratio, so as long as both are in the same unit the
+millilitres cancel. This is the one place in solution work where you may
+safely leave millilitres alone.
+
+<strong>(b) What volume of 6.00&thinsp;M \(\ce{HCl}\) is needed to make
+2.00&thinsp;L of 0.150&thinsp;M \(\ce{HCl}\)?</strong>
+\[ V_{1} = \frac{M_{2}V_{2}}{M_{1}}
+         = \frac{0.150 \times 2.00}{6.00}
+         = 0.0500\,\mathrm{L} = \mathbf{50.0\,\mathrm{mL}} \]
+
+<strong>And the safety rule that goes with it.</strong> You would measure that
+50.0&thinsp;mL of acid and add it <em>to</em> water already in
+the flask — never water to concentrated acid. Dissolving concentrated
+acid is strongly exothermic, and adding water to it can boil the surface
+and spit acid out of the container.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+<ol>
+
+<li>25.0&thinsp;mL of 12.0&thinsp;M \(\ce{HCl}\) is diluted
+        to 500.&thinsp;mL. Find the new molarity.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:5" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.6" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>What volume of 2.00&thinsp;M stock makes
+        100.&thinsp;mL of 0.400&thinsp;M solution?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:6" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="20.0" data-sig="3" data-unit="mL"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>100.&thinsp;mL of 0.50&thinsp;M \(\ce{NaCl}\) has
+        100.&thinsp;mL of water added. Find the new molarity.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:7" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.25" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Does diluting a solution change the number of moles of solute?
+        Explain. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:8" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — only the volume changes</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.600&thinsp;M  &emsp;  (b) 20.0&thinsp;mL
+ &emsp;  (c) 0.25&thinsp;M  &emsp;  (d) no — only the volume changes</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(M_{2} = (12.0 \times 25.0)/500. =
+\mathbf{0.600\,\mathrm{M}}\). (b) \(V_{1} = (0.400 \times 100.)/2.00 =
+\mathbf{20.0\,\mathrm{mL}}\). (c) The final volume is
+\(100. + 100. = 200.\,\mathrm{mL}\), so \(M_{2} = (0.50 \times
+100.)/200. = \mathbf{0.25\,\mathrm{M}}\) — the concentration halves
+because the volume doubled. (d) <strong>No.</strong> Dilution adds only solvent,
+so every solute particle that was there before is still there
+afterwards. What changes is the volume they are distributed
+through, and therefore the concentration. That conservation is exactly
+what \(M_{1}V_{1} = M_{2}V_{2}\) states.</div></div>
+
+</div>
+
+<h2> Ladder 3 • Mass percent, ppm and ppb</h2>
+<span class="badge">ZUM §11.1</span>
+
+<p>When the solute is very dilute, molarity produces awkward numbers.
+These units exist to make small amounts readable.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-3.png" alt="figure"></figure>
+
+</div>
+
+\[ \text{mass \%} =
+   \frac{\text{mass of solute}}{\text{mass of \textbf{solution}}}
+   \times 100 \]
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>The denominator is the mass of the <strong>solution</strong>, meaning
+solute \(+\) solvent — not the mass of the solvent alone. Dissolving
+15&thinsp;g in 135&thinsp;g of water gives a
+150&thinsp;g solution, so the answer is \(15/150\), not \(15/135\). The
+same total-versus-part trap as molarity, one ladder later.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: mass percent and ppm</div>
+
+<strong>(a) 15.0&thinsp;g of \(\ce{NaCl}\) is dissolved in
+135.0&thinsp;g of water. Find the mass percent.</strong>
+
+<p>Total solution mass \(= 15.0 + 135.0 = 150.0\,\mathrm{g}\).
+\[ \text{mass \%} = \frac{15.0}{150.0} \times 100
+                  = \mathbf{10.0\%} \]</p>
+
+<strong>(b) A water sample contains 2.5&thinsp;mg of fluoride
+per 1.0&thinsp;kg of water. Express this in ppm.</strong>
+
+<p>Parts per million is the same ratio scaled by \(10^{6}\). Put both masses
+in the same unit first: 2.5&thinsp;mg \(=
+2.5e-3\,\mathrm{g}\) and 1.0&thinsp;kg \(= 1.0e3\,\mathrm{g}\).
+\[ \frac{2.5e-3}{1.0e3} \times 10^{6}
+   = \mathbf{2.5 \text{ ppm}} \]</p>
+
+<strong>The shortcut worth memorising.</strong> For dilute <em>aqueous</em>
+solutions the density is essentially 1.00&thinsp;g/mL,
+so 1&thinsp;kg of solution is 1&thinsp;L and
+\[ 1 \text{ ppm} \;\approx\; 1\,\mathrm{mg/L} \]
+That is why water-quality reports quote mg/L and ppm interchangeably.
+It is an approximation that holds only because the solution is mostly
+water — do not use it for concentrated solutions or non-aqueous
+solvents.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>Find the mass percent of 5.0&thinsp;g of sugar in
+        95.0&thinsp;g of water. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:9" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="5.0" data-sig="2" data-unit="%"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A solution is 2.0% by mass. How much solute is in
+        250&thinsp;g of it? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:10" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="5.0" data-sig="2" data-unit="g"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Convert 0.0025&thinsp;g of solute per 1000&thinsp;g of
+        solution to ppm. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:11" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="2.5" data-sig="2" data-unit="ppm"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why is the denominator the mass of solution rather than of
+        solvent? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:12" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>it is a fraction of the whole mixture</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 5.0%  &emsp;  (b) 5.0&thinsp;g  &emsp;  (c) 2.5 ppm  &emsp; 
+(d) it is a fraction of the whole mixture</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) Total \(= 5.0 + 95.0 = 100.0\,\mathrm{g}\),
+so \(5.0/100.0 \times 100 = \mathbf{5.0\%}\). (b) \(0.020 \times 250 =
+\mathbf{5.0\,\mathrm{g}}\). (c) \((0.0025/1000) \times 10^{6} =
+\mathbf{2.5}\) <strong>ppm</strong>. (d) Because these units express what
+<strong>fraction of the whole mixture</strong> is solute. A 10% solution means
+ten grams in every hundred grams of <em>solution</em>; if the denominator
+were the solvent, two solutions with the same label would contain
+different amounts of solute per gram of liquid you actually pour, and
+the number would not mean anything consistent.</div></div>
+
+</div>
+
+<h2> Ladder 4 • Mole fraction and molality</h2>
+<span class="badge">ZUM §11.1</span>
+
+<p>Four concentration units, and what separates them is entirely
+<strong>what sits in the denominator</strong>. Get that right and all four are
+one idea.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-4.png" alt="figure"></figure>
+
+</div>
+
+<div class="box note"><div class="box-title">Where molality actually gets used — read this once</div>
+
+<p>Molality exists mainly to support <strong>colligative properties</strong>, and
+those are §11.4–11.7, which this course skips. So learn the definition
+and learn how it differs from molarity — that distinction is fair game
+— but do not expect to apply it. Two reasons it is defined against
+solvent <em>mass</em> rather than solution <em>volume</em>: mass does not
+change with temperature, whereas volume does, so molality is
+temperature-independent where molarity is not.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: mole fraction, then molality</div>
+
+<strong>(a) A solution contains 46.0&thinsp;g of ethanol
+(\(\ce{C2H5OH}\), \(M = 46.07\,\mathrm{g/mol}\)) and 54.0&thinsp;g
+of water (\(M = 18.02\,\mathrm{g/mol}\)). Find the mole fraction of
+ethanol.</strong>
+
+<strong>Everything must be in moles</strong> — a mole fraction cannot be built
+from grams.
+\[ n_{\text{ethanol}} = \frac{46.0}{46.07} = 0.998\,\mathrm{mol}
+   \qquad
+   n_{\text{water}} = \frac{54.0}{18.02} = 3.00\,\mathrm{mol} \]
+\[ \chi_{\text{ethanol}}
+   = \frac{0.998}{0.998 + 3.00}
+   = \frac{0.998}{4.00}
+   = \mathbf{0.250} \]
+
+<strong>Check it the free way.</strong> Mole fractions of everything present
+must sum to exactly 1, so \(\chi_{\text{water}} = 1 - 0.250 = 0.750\).
+If your fractions do not sum to 1, you have made an arithmetic error and
+the check has just caught it.
+
+<strong>Note what happened to the masses.</strong> Nearly equal masses
+(46.0&thinsp; and 54.0&thinsp;g) gave wildly unequal mole counts
+(0.998&thinsp; and 3.00&thinsp;mol), because a water molecule is so much
+lighter. Mass ratios and mole ratios are not interchangeable.
+
+<strong>(b) Find the molality of 18.0&thinsp;g of glucose
+(\(\ce{C6H12O6}\), \(M = 180.16\,\mathrm{g/mol}\)) dissolved in
+250.&thinsp;g of water.</strong>
+\[ n = \frac{18.0}{180.16} = 0.0999\,\mathrm{mol}
+   \qquad
+   m = \frac{0.0999}{0.250\,\mathrm{kg}}
+     = \mathbf{0.400\,\mathrm{molal}} \]
+The denominator is 0.250&thinsp;kg of <em>water</em>, not of
+solution — for molality the solute mass never enters the bottom.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+<ol>
+
+<li>A mixture holds 2.00&thinsp;mol of \(\ce{A}\) and
+        6.00&thinsp;mol of \(\ce{B}\). Find \(\chi_{\ce{A}}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:13" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.25" data-sig="3" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>If \(\chi_{\ce{A}} = 0.35\) in a two-component mixture, what is
+        \(\chi_{\ce{B}}\)? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:14" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="0.65" data-sig="2" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find the molality of 0.500&thinsp;mol of solute in
+        2.00&thinsp;kg of solvent. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:15" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.25" data-sig="3" data-unit="molal"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>State the one difference between molarity and molality, and say
+        why molality does not change with temperature.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:16" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>litres of solution vs kg of solvent; mass is
+temperature-independent</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.250  &emsp;  (b) 0.65  &emsp;  (c) 0.250&thinsp;molal  &emsp; 
+(d) litres of solution vs kg of solvent; mass is
+temperature-independent</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(2.00/(2.00+6.00) = \mathbf{0.250}\).
+(b) Mole fractions sum to 1, so \(1 - 0.35 = \mathbf{0.65}\).
+(c) \(0.500/2.00 = \mathbf{0.250\,\mathrm{molal}}\). (d) Molarity divides by
+<strong>litres of solution</strong>; molality divides by <strong>kilograms of
+solvent</strong>. Molality is temperature-independent because <strong>mass does
+not change with temperature</strong> — but volume does, since liquids expand
+when heated. Warm a solution and its molarity falls slightly (same moles,
+larger volume) while its molality is unchanged.</div></div>
+
+</div>
+
+<h2> Ladder 5 • The energetics of dissolving</h2>
+<span class="badge">ZUM §11.2</span>
+
+<p>Dissolving is not one event but three, and only the third releases
+energy. Whether a solution forms — and whether the beaker gets warm or
+cold — is the sum.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-5.png" alt="figure"></figure>
+
+</div>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-6.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: why \(\ce{NaCl}\) dissolves at all</div>
+
+<strong>Breaking the \(\ce{NaCl}\) lattice costs
++786&thinsp;kJ/mol. Hydrating the resulting ions releases
+-783&thinsp;kJ/mol. Find \(\Delta H_{\text{soln}}\) and
+comment.</strong>
+
+\[ \Delta H_{\text{soln}} = (+786) + (-783)
+   = \mathbf{+3\,\mathrm{kJ/mol}} \]
+
+<strong>So dissolving salt is slightly endothermic</strong> — a beaker of
+water cools very slightly as salt dissolves. And yet \(\ce{NaCl}\) is
+famously soluble. Why does an uphill process happen at all?
+
+<strong>Because enthalpy is not the only driver.</strong> A dissolved solute is
+enormously more disordered than a crystal: the ions go from fixed
+lattice sites to wandering freely through the liquid. That increase in
+<strong>entropy</strong> is what drives dissolving here, and it is large enough
+to overwhelm a 3&thinsp;kJ/mol enthalpy penalty.
+
+<strong>Look at the two numbers again.</strong> 786&thinsp; and 783&thinsp; —
+each enormous, and their difference tiny. Solubility is decided by the
+small residue left when two large opposing quantities nearly cancel,
+which is why it is so hard to predict from first principles and why
+chemists rely on measured solubility data instead.
+
+<strong>Two contrasting cases worth knowing.</strong>
+\(\ce{NH4NO3}\) has \(\Delta H_{\text{soln}} =
++25.7\,\mathrm{kJ/mol}\) — strongly endothermic, and the
+active ingredient of an instant <em>cold</em> pack.
+\(\ce{CaCl2}\) has \(\Delta H_{\text{soln}} =
+-82.8\,\mathrm{kJ/mol}\) — strongly exothermic, and used in
+instant <em>hot</em> packs and to melt road ice.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+<ol>
+
+<li>Which of the three steps is exothermic, and why?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:17" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>step 3 — attractions form</span></div>
+
+<li>Lattice breaking costs +700&thinsp;kJ/mol and
+        hydration releases -750&thinsp;kJ/mol. Find
+        \(\Delta H_{\text{soln}}\) and say whether the beaker warms or
+        cools. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:18" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>-50&thinsp;kJ/mol, warms</span></div>
+
+<li>A cold pack contains \(\ce{NH4NO3}\). What is the sign of its
+        \(\Delta H_{\text{soln}}\)? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:19" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>positive</span></div>
+
+<li>\(\ce{NaCl}\) dissolving is endothermic, yet it dissolves readily.
+        Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:20" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>entropy drives it</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) step 3 — attractions form  &emsp;  (b)
+-50&thinsp;kJ/mol, warms  &emsp;  (c) positive  &emsp;  (d)
+entropy drives it</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Step 3</strong>, in which solute and
+solvent particles attract one another. Forming an attraction always
+releases energy; breaking one always costs energy, which is why steps 1
+and 2 are both endothermic. (b) \((+700) + (-750) =
+\mathbf{-50\,\mathrm{kJ/mol}}\) — negative, so the process is
+exothermic and the beaker <strong>warms</strong>. (c) <strong>Positive</strong>
+(endothermic). The pack gets cold because dissolving absorbs energy from
+its surroundings, which include your skin. (d) Because dissolving is
+driven by <strong>entropy</strong> as well as enthalpy. The ions move from fixed
+positions in an ordered lattice to moving freely through the solution, an
+enormous increase in disorder, and that is more than enough to overcome
+an enthalpy cost of only about
+3&thinsp;kJ/mol.</div></div>
+
+</div>
+
+<h2> Ladder 6 • Like dissolves like</h2>
+<span class="badge">ZUM §11.2–11.3</span>
+
+<p>Step 3 of Ladder 5 only pays for steps 1 and 2 when the new
+solute–solvent attractions resemble the ones that were broken. That is
+the whole content of the slogan.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-7.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: why oil and water refuse</div>
+
+<strong>Water is strongly hydrogen bonded. Oil is a nonpolar
+hydrocarbon with dispersion forces only. Work through the three steps.</strong>
+
+<strong>Step 1 — separate the oil.</strong> Cheap. Only weak dispersion forces
+have to be overcome, so this costs little.
+
+<strong>Step 2 — separate the water.</strong> <em>Expensive.</em> Every water
+molecule is hydrogen bonded to its neighbours, and opening a cavity big
+enough for an oil molecule means breaking a great many of those bonds.
+
+<strong>Step 3 — oil attracts water.</strong> Cheap and useless. An oil
+molecule cannot hydrogen-bond, so all it offers water in return is weak
+dispersion — nowhere near enough to repay what step 2 cost.
+
+<strong>The books do not balance,</strong> so the mixture separates and the
+water re-forms its hydrogen-bond network with itself.
+
+<strong>Now reverse the pairing and watch it work.</strong> Ethanol,
+\(\ce{CH3CH2OH}\), has an \(\ce{-OH}\) group and hydrogen-bonds to water just
+as water does to itself. Step 2 is still expensive, but step 3 now
+repays it in the same currency — so ethanol and water are
+<strong>miscible</strong> in all proportions.
+
+<strong>Say it precisely on an exam.</strong> Not “like dissolves like”, which
+earns nothing, but: “the solute–solvent attractions are comparable in
+strength to the solvent–solvent attractions that must be broken.”
+Naming the forces is what scores.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+<ol>
+
+<li>Will \(\ce{I2}\) dissolve better in water or in \(\ce{CCl4}\)? Why?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:21" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{CCl4}\) — both nonpolar</span></div>
+
+<li>Will \(\ce{NaCl}\) dissolve in hexane? Why not?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:22" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — hexane
+cannot solvate ions</span></div>
+
+<li>Why is ethanol miscible with water in all proportions?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:23" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>it hydrogen-bonds</span></div>
+
+<li>Which step of the cycle is the expensive one when a nonpolar
+        solute meets water? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:24" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>step 2</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{CCl4}\) — both nonpolar  &emsp;  (b) no — hexane
+cannot solvate ions  &emsp;  (c) it hydrogen-bonds  &emsp;  (d) step 2</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>\(\ce{CCl4}\)</strong>. Both \(\ce{I2}\) and
+\(\ce{CCl4}\) are nonpolar with dispersion forces only, so the attractions
+broken and formed are of the same kind and comparable strength. In
+water, \(\ce{I2}\) could not repay the cost of breaking water's hydrogen
+bonds. (b) <strong>No.</strong> Separating the \(\ce{NaCl}\) lattice costs an
+enormous amount of energy, and hexane is nonpolar — it can offer the
+ions only weak dispersion forces, nothing like the ion–dipole
+attractions water provides. Step 3 cannot pay for step 1.
+(c) Because ethanol's \(\ce{-OH}\) group lets it <strong>hydrogen-bond to
+water</strong>, so the ethanol–water attractions formed are as strong as the
+water–water attractions broken. (d) <strong>Step 2</strong>, separating the
+solvent. Water's hydrogen-bond network is strong, and opening a space
+for the solute means breaking a lot of it — a cost a nonpolar solute
+has no way to repay.</div></div>
+
+</div>
+
+<h2> Ladder 7 • Structure: chains, heads and
+tails</h2>
+<span class="badge">ZUM §11.3</span>
+
+<p>Most real molecules are neither purely polar nor purely nonpolar. They
+have a <strong>hydrophilic</strong> part that water likes and a
+<strong>hydrophobic</strong> part it does not, and solubility follows whichever
+wins.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-8.png" alt="figure"></figure>
+
+</div>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-9.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: reading a solubility collapse</div>
+
+<strong>Methanol is miscible with water in all proportions.
+1-octanol dissolves to only 0.054&thinsp;g per 100&thinsp;g of
+water — a difference of orders of magnitude. Both have exactly one
+\(\ce{-OH}\) group.</strong>
+
+<strong>What stayed the same.</strong> Each molecule has a single \(\ce{-OH}\), so
+each can form roughly the same number of hydrogen bonds to water. The
+hydrophilic contribution is essentially constant across the series.
+
+<strong>What changed.</strong> The hydrocarbon tail grew from one carbon to
+eight. That tail cannot hydrogen-bond, so it forces water to break its
+own hydrogen bonds and open a cavity, paying step 2's cost with nothing
+in return. The longer the tail, the bigger the unpaid bill.
+
+<strong>So the ratio decides.</strong> In methanol the \(\ce{-OH}\) dominates the
+molecule and it behaves like water. By octanol the tail dominates and
+the molecule behaves like a hydrocarbon. The crossover sits around four
+carbons, which is why 1-butanol is only partly soluble
+(7.9&thinsp;g/100&thinsp;g) — it is the molecule where the two
+halves are most nearly matched.
+
+<strong>Where this shows up outside chemistry class.</strong> Vitamin C is
+studded with \(\ce{-OH}\) groups and is water soluble, so the body cannot
+store it and you need it regularly. Vitamin A is mostly hydrocarbon and
+is fat soluble, so it accumulates in body fat — which is why an
+overdose of vitamin A is possible and an overdose of vitamin C is
+largely just expensive.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+<ol>
+
+<li>Which is more soluble in water, 1-propanol or 1-heptanol? Why?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:25" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>1-propanol — shorter tail</span></div>
+
+<li>Which part of a soap molecule dissolves grease?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:26" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the hydrocarbon
+tail</span></div>
+
+<li>Why is vitamin A stored in body fat but vitamin C is not?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:27" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>A is hydrophobic, C is hydrophilic</span></div>
+
+<li>Would you expect ethanoic acid (\(\ce{CH3COOH}\)) to be water
+        soluble? Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:28" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes —
+short chain, polar \(\ce{-COOH}\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 1-propanol — shorter tail  &emsp;  (b) the hydrocarbon
+tail  &emsp;  (c) A is hydrophobic, C is hydrophilic  &emsp;  (d) yes —
+short chain, polar \(\ce{-COOH}\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>1-propanol.</strong> Both have one
+\(\ce{-OH}\), so both hydrogen-bond to water about equally, but propanol's
+three-carbon tail is far shorter than heptanol's seven. Less hydrophobic
+tail means less of water's hydrogen-bond network has to be broken for
+nothing in return. (b) The <strong>hydrocarbon tail</strong>. It is nonpolar, so
+it mixes with nonpolar grease by dispersion forces, while the ionic head
+stays in the water — letting one molecule bridge two phases that
+otherwise refuse to mix. (c) <strong>Vitamin A</strong> is mostly hydrocarbon
+and therefore hydrophobic, so it dissolves in fatty tissue and
+accumulates there. <strong>Vitamin C</strong> carries several \(\ce{-OH}\) groups,
+is hydrophilic, dissolves in the body's water and is excreted — so it
+must be replaced regularly. (d) <strong>Yes.</strong> It has a very short
+(one-carbon) hydrophobic tail and a \(\ce{-COOH}\) group that both donates
+and accepts hydrogen bonds. The hydrophilic part dominates, and ethanoic
+acid is in fact miscible with water — as anyone who has used vinegar
+has observed.</div></div>
+
+</div>
+
+<h2> Ladder 8 • Saturated, unsaturated,
+supersaturated</h2>
+<span class="badge">ZUM §11.3</span>
+
+<p>Solubility is a <em>limit</em>, and a solution is classified by where it
+sits relative to that limit.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-10.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>A <strong>supersaturated</strong> solution holds more solute than it should be
+able to. It is made by saturating a solution hot and then cooling it
+slowly and undisturbed, so the excess has no site on which to
+crystallise. Drop in a single seed crystal — or scratch the glass —
+and the whole excess crystallises at once, releasing its heat of
+crystallisation. That is exactly how a reusable sodium acetate hand
+warmer works, and why clicking its metal disc turns it solid and hot in
+seconds.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: how much crystallises out on cooling</div>
+
+<strong>100&thinsp;g of water at 60&thinsp;&deg;C is saturated with
+\(\ce{KNO3}\), which dissolves to 110&thinsp;g/100&thinsp;g at that
+temperature. The solution is cooled to 20&thinsp;&deg;C, where the
+solubility is 31.6&thinsp;g/100&thinsp;g. How much solid appears?</strong>
+
+<strong>What is dissolved at the start.</strong> Saturated at
+60&thinsp;&deg;C, so 110&thinsp;g of \(\ce{KNO3}\) is in solution.
+
+<strong>What can stay dissolved at the end.</strong> At 20&thinsp;&deg;C the
+same 100&thinsp;g of water can hold only 31.6&thinsp;g.
+
+<strong>The difference has nowhere to go.</strong>
+\[ 110 - 31.6 = \mathbf{78.4\,\mathrm{g}}\text{ of \ce{KNO3}
+   crystallises out} \]
+
+<strong>This is how recrystallisation purifies a compound.</strong> Dissolve
+the impure solid in hot solvent, cool it, and the bulk of your compound
+comes out as crystals while the impurities — present in far smaller
+amounts, and so still below <em>their</em> solubility limits — stay
+behind in solution. Filter, and what is on the paper is purer than what
+you started with.
+
+<strong>One caution about the wording.</strong> The question said cooled, not
+cooled <em>slowly and undisturbed</em>. Cooled carefully, this solution
+could instead have become supersaturated and dropped nothing at all
+until it was seeded.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 8 — four questions</div>
+
+Use \(\ce{KNO3}\) solubilities of 31.6&thinsp;g/100&thinsp;g at
+20&thinsp;&deg;C and 169&thinsp;g/100&thinsp;g at
+80&thinsp;&deg;C.
+<ol>
+
+<li>50&thinsp;g of \(\ce{KNO3}\) is stirred into 100&thinsp;g of
+        water at 20&thinsp;&deg;C. Is the solution saturated?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:29" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes, with 18.4&thinsp;g undissolved</span></div>
+
+<li>How much \(\ce{KNO3}\) crystallises if a solution saturated at
+        80&thinsp;&deg;C is cooled to 20&thinsp;&deg;C?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:30" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="137.4" data-sig="4" data-unit="g"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>How would you tell a supersaturated solution from a saturated
+        one? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:31" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>add a seed crystal</span></div>
+
+<li>Why does recrystallisation purify a compound?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:32" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>impurities stay
+below their own limits</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) yes, with 18.4&thinsp;g undissolved  &emsp;  (b)
+137.4&thinsp;g  &emsp;  (c) add a seed crystal  &emsp;  (d) impurities stay
+below their own limits</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Yes.</strong> Only 31.6&thinsp;g can
+dissolve, so the solution is saturated and \(50 - 31.6 =
+\mathbf{18.4\,\mathrm{g}}\) remains as undissolved solid at the bottom.
+(b) \(169 - 31.6 = \mathbf{137.4\,\mathrm{g}}\). (c) <strong>Add a single
+seed crystal.</strong> In a saturated solution it simply sits there; in a
+supersaturated one it triggers rapid crystallisation of the whole
+excess, and the solution warms as it solidifies. (d) Because the
+compound is present in a large amount and its solubility limit is
+exceeded on cooling, so it crystallises out — while the
+<strong>impurities are present in much smaller amounts</strong> and stay below
+their own solubility limits, so they remain dissolved and are washed
+away with the filtrate.</div></div>
+
+</div>
+
+<h2> Ladder 9 • Temperature and solubility</h2>
+<span class="badge">ZUM §11.3</span>
+
+<p>Two rules, and they point in opposite directions — which is why you
+must know which kind of solute you have before you answer.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-11.png" alt="figure"></figure>
+
+</div>
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-12.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: reading a solubility curve</div>
+
+<strong>Most solids get more soluble as temperature rises</strong> — but by
+wildly differing amounts, and a curve is the only reliable source. Read
+the graph above:
+
+<strong>\(\ce{KNO3}\)</strong> climbs from 13.3&thinsp; to
+246&thinsp;g/100&thinsp;g — nearly twentyfold. It is the classic
+recrystallisation solute precisely because so much drops out on cooling.
+
+<strong>\(\ce{NaCl}\)</strong> climbs from 35.7&thinsp; to only
+39.2&thinsp;g/100&thinsp;g over the same 100&thinsp;&deg;C. You
+cannot usefully purify salt by recrystallisation from water — cooling
+a saturated solution recovers almost nothing — which is why sea salt
+is obtained by <em>evaporating</em> the water instead.
+
+<strong>Gases always go the other way.</strong> Every gas becomes
+<em>less</em> soluble as temperature rises, with no exceptions. Warming
+gives dissolved gas molecules enough kinetic energy to escape the
+liquid, and there is no lattice to break in the first place.
+
+<strong>Two consequences you can observe.</strong> Bubbles form on the inside of
+a pan of water long before it boils — that is dissolved air coming out
+of solution as the water warms. And a power station returning warm
+cooling water to a river lowers its dissolved oxygen; a river at
+30&thinsp;&deg;C holds only 7.6&thinsp;mg/L against
+14.6&thinsp; at 0&thinsp;&deg;C, which is why <em>thermal</em> pollution
+kills fish without a single toxic chemical being released.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 9 — four questions</div>
+
+Read values from the curves above.
+<ol>
+
+<li>Roughly how much \(\ce{KNO3}\) dissolves in 100&thinsp;g of
+        water at 40&thinsp;&deg;C? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:33" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>about 64&thinsp;g</span></div>
+
+<li>Which solid's solubility changes least with temperature?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:34" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{NaCl}\)</span></div>
+
+<li>What happens to the solubility of a gas as temperature rises?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:35" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>it
+falls</span></div>
+
+<li>Why does warm river water threaten fish even when it is
+        chemically clean? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:36" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>less dissolved oxygen</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) about 64&thinsp;g  &emsp;  (b) \(\ce{NaCl}\)  &emsp;  (c) it
+falls  &emsp;  (d) less dissolved oxygen</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) About <strong>64&thinsp;g</strong>
+(63.9&thinsp;g from the table). (b) <strong>\(\ce{NaCl}\)</strong> — it rises
+only from 35.7&thinsp; to 39.2&thinsp;g/100&thinsp;g across the whole
+range, which is why salt is recovered by evaporation rather than by
+cooling. (c) It <strong>falls</strong>. Warming gives dissolved gas molecules
+enough kinetic energy to escape the liquid, so less stays in solution.
+This is true of every gas, without exception. (d) Because warm water
+holds <strong>less dissolved oxygen</strong> — about 7.6&thinsp; against
+14.6&thinsp;mg/L between 30&thinsp; and
+0&thinsp;&deg;C — and fish extract oxygen from the water through
+their gills. Warming the river suffocates them even though nothing toxic
+has been added.</div></div>
+
+</div>
+
+<h2> Ladder 10 • Pressure and Henry's law</h2>
+<span class="badge">ZUM §11.3</span>
+
+<p>Pressure changes the solubility of <strong>gases</strong> and, for practical
+purposes, nothing else. Solids and liquids are already close-packed and
+barely compressible, so squeezing them changes very little.</p>
+
+\[ C = kP \qquad\text{or, comparing two conditions,}\qquad
+   \frac{C_{1}}{P_{1}} = \frac{C_{2}}{P_{2}} \]
+
+<div class="center">
+
+<figure><img src="fig-ch11-selfstudy-13.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: the soda can</div>
+
+<strong>The solubility of a gas is 1.3e-3&thinsp;M under
+1.0&thinsp;atm of that gas. What is it under
+4.0&thinsp;atm?</strong>
+
+<p>Solubility is directly proportional to partial pressure, so
+\[ C_{2} = C_{1} \times \frac{P_{2}}{P_{1}}
+        = 1.3e-3 \times \frac{4.0}{1.0}
+        = \mathbf{5.2e-3\,\mathrm{M}} \]
+Four times the pressure, four times the dissolved gas. No other
+variable enters.</p>
+
+<strong>Now the everyday version.</strong> A sealed can of fizzy drink is
+bottled under \(\ce{CO2}\) at several atmospheres, so a lot of \(\ce{CO2}\) is
+dissolved. Open it, and the pressure above the liquid drops to the
+\(\ce{CO2}\) partial pressure of ordinary air — about
+0.0004&thinsp;atm. The solubility collapses by a factor of
+thousands, the drink is now hugely supersaturated, and the excess
+\(\ce{CO2}\) escapes as bubbles. Leave it open and it goes flat, because
+the process runs to completion.
+
+<strong>Use partial pressure, not total.</strong> Henry's law depends on the
+partial pressure of <em>that gas</em> alone. Air is 21&thinsp;%
+oxygen, so water open to the atmosphere at 1.0&thinsp;atm total
+experiences an oxygen partial pressure of only
+0.21&thinsp;atm — which is why dissolved oxygen in a lake is
+so much lower than what pure \(\ce{O2}\) at 1&thinsp;atm would give.
+
+<strong>And why divers care.</strong> At depth the total pressure is far above
+1&thinsp;atm, so far more nitrogen dissolves in the blood.
+Surface too quickly and it comes out of solution as bubbles inside the
+body — decompression sickness, Henry's law applied to a diver.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 10 — four questions</div>
+
+<ol>
+
+<li>A gas dissolves to 0.020&thinsp;M at 1.0&thinsp;atm.
+        Find its solubility at 3.0&thinsp;atm.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:37" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.06" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A gas dissolves to 0.050&thinsp;M at
+        2.5&thinsp;atm. Find its solubility at
+        1.0&thinsp;atm. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:38" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="0.02" data-sig="2" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why does an open drink go flat? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:39" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the \(\ce{CO2}\) partial pressure above it collapses</span></div>
+
+<li>Does raising the pressure increase the solubility of a solid?
+        Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch11-selfstudy:40" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no —
+solids are barely compressible</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.060&thinsp;M  &emsp;  (b) 0.020&thinsp;M  &emsp; 
+(c) the \(\ce{CO2}\) partial pressure above it collapses  &emsp;  (d) no —
+solids are barely compressible</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(0.020 \times 3.0/1.0 =
+\mathbf{0.060\,\mathrm{M}}\). (b) \(0.050 \times 1.0/2.5 =
+\mathbf{0.020\,\mathrm{M}}\). (c) Because opening it drops the \(\ce{CO2}\)
+partial pressure above the liquid from several atmospheres to the
+roughly 0.0004&thinsp;atm of ordinary air. By Henry's law the
+solubility falls in proportion, the drink is left far
+<strong>supersaturated</strong>, and the excess \(\ce{CO2}\) leaves as bubbles until
+almost none remains. (d) <strong>No — essentially not at all.</strong> Solids
+and liquids are already close-packed and nearly incompressible, so
+pressure barely changes the spacing of their particles. Henry's law
+applies to <strong>gases</strong>, whose volume and therefore whose rate of
+collision with the liquid surface pressure genuinely does
+change.</div></div>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt. Every row here is assessed — there is no optional
+ladder in this chapter, because the optional material was cut instead.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>molarity</td><td>1</td><td>per litre of <em>solution</em></td></tr>
+<tr><td>\(\square\)</td><td>dilution</td><td>2</td><td>moles are conserved</td></tr>
+<tr><td>\(\square\)</td><td>mass percent, ppm, ppb</td><td>3</td><td>mass of <em>solution</em></td></tr>
+<tr><td>\(\square\)</td><td>mole fraction and molality</td><td>4</td><td>check the denominator</td></tr>
+<tr><td>\(\square\)</td><td>energetics of dissolving</td><td>5</td><td>three steps, one exothermic</td></tr>
+<tr><td>\(\square\)</td><td>like dissolves like</td><td>6</td><td>can step 3 pay for step 2?</td></tr>
+<tr><td>\(\square\)</td><td>chains, heads and tails</td><td>7</td><td>the ratio decides</td></tr>
+<tr><td>\(\square\)</td><td>saturated to supersaturated</td><td>8</td><td>solubility is a limit</td></tr>
+<tr><td>\(\square\)</td><td>temperature and solubility</td><td>9</td><td>gases go the other way</td></tr>
+<tr><td>\(\square\)</td><td>pressure and Henry's law</td><td>10</td><td>partial pressure, gases only</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>10/10: you have Chapter 11's assessed content. It is a short chapter
+only because most of Zumdahl's Chapter 11 was cut from the CED — what
+remains is dense and heavily used elsewhere.</p>
+
+<p>7–9: check <em>which</em> ladders missed. Ladders 1–4 are arithmetic and
+repair quickly with practice. Ladders 5–7 are conceptual, and a miss
+there usually means the three-step cycle has not clicked; that one takes
+a re-read rather than more problems.</p>
+
+<p>6 or fewer: start with Ladders 1–3 and do nothing else until they are
+automatic. Concentration calculations are not really Chapter 11 content
+— they are the arithmetic of Units 4, 5, 6, 7 and 8 as well. Every
+titration, every equilibrium table, every rate law and every cell
+potential problem you meet for the rest of the year begins by putting a
+concentration into a formula. Time spent here is repaid many times over.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>
