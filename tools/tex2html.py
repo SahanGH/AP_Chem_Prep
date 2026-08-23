@@ -49,10 +49,20 @@ def _is_ws(kind: str) -> bool:
     return bool(re.fullmatch(r"ws\d+", kind))
 
 
+# Notes and the examples sheet are fill-in documents too: their blanks
+# carry real answers, they just group under headings rather than numbered
+# problems. Exams stay out -- self-grading defeats an assessment.
+FILLIN_KINDS = {"notes", "examples"}
+
+
+def _is_fillin(kind: str) -> bool:
+    return _is_ws(kind) or kind in FILLIN_KINDS
+
+
 def wants(kind: str, base: set) -> bool:
     """Worksheets get the same treatment as self-study, matched by pattern
     rather than listed, so a future ws5 is not silently left out."""
-    return kind in base or _is_ws(kind)
+    return kind in base or _is_fillin(kind)
 
 
 def doc_kind(stem: str) -> str:
@@ -350,9 +360,18 @@ MATH = []
 # and emits an empty rule; \workspace and \answerlines are blank space by
 # definition. Leaving any of these inside the stashed math is what makes
 # MathJax print a red "\answerblank" -- the defect this exists to prevent.
+# Blanks inside a math span are emitted here, not by the command table in
+# convert_body, so this second implementation has to agree with it. It has
+# no kind in scope, hence the module-level CURRENT_KIND -- the same pattern
+# the MATH stash already uses. Getting this wrong left 54 blanks inert.
+CURRENT_KIND = ""
+
 ESCAPES = {
-    "answerblank": (1, 1, lambda o, r:
-                    f'<span class="blank" style="min-width:{o[0] or "4cm"}"></span>'),
+    "answerblank": (1, 1, lambda o, r: (
+        f'<span class="blank" style="min-width:{o[0] or "4cm"}">'
+        f'<span class="ansdata" hidden>{r[0]}</span></span>'
+        if _is_fillin(CURRENT_KIND) else
+        f'<span class="blank" style="min-width:{o[0] or "4cm"}"></span>')),
     "answerlines": (1, 1, lambda o, r:
                     '<div class="lines">' +
                     '<div class="rule"></div>' * (int(o[0]) if o[0] else 3) +
@@ -484,6 +503,8 @@ def convert_mcq(inner: str, n: int) -> str:
 
 
 def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
+    global CURRENT_KIND
+    CURRENT_KIND = kind
     counters = {"problem": 0, "mcq": 0, "frq": 0, "fig": 0}
 
     # ---- drop key-only content ----
@@ -585,7 +606,7 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
 
     def answerlines(o, r):
         n = int(o[0]) if o[0] else 3
-        if _is_ws(kind):
+        if _is_fillin(kind):
             # Ruled lines are for writing on paper. On screen they become a
             # real textarea, sized to the space the print version reserved.
             return (f'<textarea class="scratch" style="height:{n * 1.6:.1f}em"'
@@ -599,7 +620,7 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
          lambda o, r: (
              f'<span class="blank" style="min-width:{o[0] or "4cm"}">'
              f'<span class="ansdata" hidden>{r[0]}</span></span>'
-             if _is_ws(kind) else
+             if _is_fillin(kind) else
              f'<span class="blank" style="min-width:{o[0] or "4cm"}"></span>')),
         ("answerlines", 1, 1, answerlines),
         ("workspace", 1, 0,
@@ -906,6 +927,14 @@ BLANK_RE = re.compile(
     r'<span class="blank" style="min-width:([^"]*)">'
     r'<span class="ansdata" hidden>(.*?)</span></span>', re.S)
 PROBLEM_RE = re.compile(r'<div class="problem">')
+# Notes have no numbered problems; their natural unit is the heading a
+# group of blanks sits under (about two blanks each, close to the 2.6 a
+# worksheet problem carries).
+SECTION_RE = re.compile(r'<h[34][^>]*>')
+
+
+def group_re(kind: str):
+    return PROBLEM_RE if _is_ws(kind) else SECTION_RE
 
 
 def blank_input(width: str, disp: str, grp: int) -> str:
@@ -932,18 +961,19 @@ def reveal_blanks_button(grp: int) -> str:
             'Show answers</button></div>')
 
 
-def worksheet_pass(body: str) -> str:
-    """Turn every \answerblank into a checkable field, grouped by problem."""
-    starts = [m.start() for m in PROBLEM_RE.finditer(body)]
-    if not starts:
-        return BLANK_RE.sub(
-            lambda m: blank_input(m.group(1), m.group(2), 0), body)
-
-    out = [body[:starts[0]]]
-    for i, st in enumerate(starts):
-        end = starts[i + 1] if i + 1 < len(starts) else len(body)
-        seg = body[st:end]
-        grp = i + 1
+def fillin_pass(body: str, kind: str) -> str:
+    """Turn every \answerblank into a checkable field, grouped so answers
+    reveal a problem (or a heading) at a time rather than all at once."""
+    # Region boundaries INCLUDE the text before the first heading. Notes
+    # open with blanks in a warm-up box above any h3, and treating that as
+    # dead space left them inert with their answers still in the markup.
+    bounds = [0] + [m.start() for m in group_re(kind).finditer(body)] + [len(body)]
+    out, grp = [], 0
+    for i in range(len(bounds) - 1):
+        seg = body[bounds[i]:bounds[i + 1]]
+        if not seg:
+            continue
+        grp += 1
         found = [0]
 
         def rep(m, grp=grp, found=found):
@@ -1001,8 +1031,8 @@ def add_interactivity(body: str, kind: str, stem: str, log) -> str:
     # Ladders we declined to pair still get usable working space, so the
     # page does not mix live textareas with inert dashed boxes.
     body = WORKSPACE_RE.sub(lambda m: scratch(m.group(1)), "".join(out))
-    if _is_ws(kind):
-        body = worksheet_pass(body)
+    if _is_fillin(kind):
+        body = fillin_pass(body, kind)
     body = number_pads(body, stem, wants(kind, MATHFIELD_KINDS))
     return wrap_explanations(body)
 
