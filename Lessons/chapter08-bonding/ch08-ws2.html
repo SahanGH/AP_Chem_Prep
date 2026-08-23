@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chapter 8 • Worksheet 2 • Bond Energies</title>
-<link rel="stylesheet" href="../style.css?v=a55f47a2">
+<link rel="stylesheet" href="../style.css?v=d1b38dcd">
 <script>
 MathJax = { loader: { load: ['[tex]/mhchem'] },
   tex: { packages: {'[+]': ['mhchem']},
          inlineMath: [['\\(', '\\)']] } };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script defer src="../lessons.js?v=a55f47a2"></script>
+<script defer src="../lessons.js?v=d1b38dcd"></script>
 </head>
 <body>
 <header>
@@ -36,25 +36,33 @@ Bond energies (kJ/mol) for all problems:
 <ol class="parts" type="a">
 
 <li>Rank \(\ce{C-C}\), \(\ce{C=C}\), \(\ce{C#C}\) by increasing bond length.
-        <span class="blank" style="min-width:5cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">\(\ce{C#C}\) \(<\) \(\ce{C=C}\) \(<\) \(\ce{C-C}\)</span></span>
 
 <li>Is a triple bond three times as strong as a single bond? Support
-        with the data. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        with the data. <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch08-ws2:1" data-math="1"></textarea>
 
 <li>Explain why breaking a bond is always endothermic.
-        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch08-ws2:2" data-math="1"></textarea>
 </ol>
 
-<div class="problem"><span class="qnum">2.</span> Compute \(\Delta H\) from bond energies:</div>
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="1" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><div class="problem"><span class="qnum">2.</span> Compute \(\Delta H\) from bond energies:</div>
 
 <ol class="parts" type="a">
 
-<li>\(\ce{H2(g) + Br2(g) -> 2 HBr(g)}\) <div class="workspace" style="height:2cm"></div>
+<li>\(\ce{H2(g) + Br2(g) -> 2 HBr(g)}\) <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch08-ws2:3" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Broken \(432 + 193 = 625\); formed
+        \(2(363) = 726\); \(\Delta H = 625 - 726 =
+        -101\,\mathrm{kJ}\)</div></div>
 
-<li>\(\ce{N2(g) + 3 H2(g) -> 2 NH3(g)}\) <div class="workspace" style="height:2.2cm"></div>
+<li>\(\ce{N2(g) + 3 H2(g) -> 2 NH3(g)}\) <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch08-ws2:4" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Broken \(941 + 3(432) = 2237\); formed
+        \(6(391) = 2346\); \(\Delta H =
+        -109\,\mathrm{kJ}\)</div></div>
 
-<li>\(\ce{2 H2(g) + O2(g) -> 2 H2O(g)}\) <div class="workspace" style="height:2.2cm"></div>
-
+<li>\(\ce{2 H2(g) + O2(g) -> 2 H2O(g)}\) <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch08-ws2:5" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Broken \(2(432) + 495 = 1359\); formed
+        \(4(467) = 1868\); \(\Delta H =
+        -509\,\mathrm{kJ}\)</div></div>
 </ol>
 
 <div class="problem"><span class="qnum">3.</span> The accepted value for problem 2(b) is
@@ -62,45 +70,51 @@ Bond energies (kJ/mol) for all problems:
 
 <ol class="parts" type="a">
 
-<li>Explain the discrepancy. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+<li>Explain the discrepancy. <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch08-ws2:6" data-math="1"></textarea>
 
 <li>Would you expect better or worse agreement for
         \(\ce{H2 + F2 -> 2 HF}\), where every species is diatomic? Explain.
-        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch08-ws2:7" data-math="1"></textarea>
 </ol>
 
 <div class="problem"><span class="qnum">4.</span> Compute \(\Delta H\) for the hydrogenation of ethene,
 \(\ce{C2H4(g) + H2(g) -> C2H6(g)}\). Ethene contains one \(\ce{C=C}\) and four
 \(\ce{C-H}\); ethane contains one \(\ce{C-C}\) and six \(\ce{C-H}\).
-<div class="workspace" style="height:3cm"></div>
-</div>
+<textarea class="scratch" style="height:3cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch08-ws2:8" data-math="1"></textarea>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Broken: \(\ce{C=C}\) 614 \(+\) 4 \(\ce{C-H}\) \(1652\) \(+\)
+\(\ce{H-H}\) 432 \(= 2698\). Formed: \(\ce{C-C}\) 347 \(+\) 6 \(\ce{C-H}\) \(2478 = 2825\).
+\(\Delta H = 2698 - 2825 = -127\,\mathrm{kJ}\).
+
+<p>Shortcut: only the C=C\(\to\)C–C change and two new C–H bonds matter:
+\((614 + 432) - (347 + 2 \times 413) = 1046 - 1173 =
+-127\,\mathrm{kJ}\)</div></div></div></p>
 
 <div class="problem"><span class="qnum">5.</span> A student computes \(\Delta H\) as “bonds formed minus bonds
 broken” and reports +109&thinsp;kJ for ammonia synthesis. Explain
 the error and how to catch it without redoing the arithmetic.
-<div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div></div>
+<textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch08-ws2:9" data-math="1"></textarea></div>
 
 <div class="problem"><span class="qnum">6.</span> Predict, without calculating, whether
 \(\ce{2 HCl(g) -> H2(g) + Cl2(g)}\) is exothermic or endothermic. Justify from
-the bond energies alone. <div class="lines"><div class="rule"></div><div class="rule"></div></div></div>
+the bond energies alone. <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch08-ws2:10" data-math="1"></textarea></div>
 
 <div class="box note"><div class="box-title">Spiral review • Chapter 8 • blocks 1–2</div>
 <ol>
 
 <li>Most polar bond: \(\ce{C-N}\), \(\ce{C-O}\), or \(\ce{C-F}\)?
-        <span class="blank" style="min-width:2.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">\(\ce{C-F}\)</span></span>
 
-<li>Larger: \(\ce{S^2-}\) or \(\ce{Cl-}\)? <span class="blank" style="min-width:2.4cm"></span>
+<li>Larger: \(\ce{S^2-}\) or \(\ce{Cl-}\)? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">\(\ce{S^2-}\)</span></span>
 
 <li>Higher lattice energy: \(\ce{NaF}\) or \(\ce{MgO}\)?
-        <span class="blank" style="min-width:2.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">\(\ce{MgO}\)</span></span>
 
-<li>Is \(\ce{CCl4}\) polar? <span class="blank" style="min-width:2cm"></span>
+<li>Is \(\ce{CCl4}\) polar? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">no</span></span>
 
 <li>Lattice energy depends on charges and:
-        <span class="blank" style="min-width:2.6cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">ionic radii</span></span>
 </ol>
-</div>
+</div><div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="6" data-show="Show answers" data-hide="Hide answers">Show answers</button></div>
 </main>
 <footer><p>AP Chemistry course materials • student edition •
 CC BY-NC-SA 4.0</p></footer>

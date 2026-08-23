@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chapter 17 • Worksheet 3 • Temperature, $K$, and Kinetic Control</title>
-<link rel="stylesheet" href="../style.css?v=a55f47a2">
+<link rel="stylesheet" href="../style.css?v=d1b38dcd">
 <script>
 MathJax = { loader: { load: ['[tex]/mhchem'] },
   tex: { packages: {'[+]': ['mhchem']},
          inlineMath: [['\\(', '\\)']] } };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script defer src="../lessons.js?v=a55f47a2"></script>
+<script defer src="../lessons.js?v=d1b38dcd"></script>
 </head>
 <body>
 <header>
@@ -34,37 +34,42 @@ using \(R\).
 <ol class="parts" type="a">
 
 <li>\(\Delta H^\circ < 0\), \(\Delta S^\circ > 0\): favored at
-        <span class="blank" style="min-width:5.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">all temperatures</span></span>
 
 <li>\(\Delta H^\circ > 0\), \(\Delta S^\circ < 0\): favored at
-        <span class="blank" style="min-width:5.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">no temperature</span></span>
 
 <li>\(\Delta H^\circ > 0\), \(\Delta S^\circ > 0\): favored at
-        <span class="blank" style="min-width:5.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">high temperature</span></span>
 
 <li>\(\Delta H^\circ < 0\), \(\Delta S^\circ < 0\): favored at
-        <span class="blank" style="min-width:5.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">low temperature</span></span>
 
 <li>In which two cases is no calculation needed at all, and why?
-        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:1" data-math="1"></textarea>
 </ol>
 
-<div class="problem"><span class="qnum">2.</span> The crossover temperature is where \(\Delta G^\circ = 0\).</div>
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="1" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><div class="problem"><span class="qnum">2.</span> The crossover temperature is where \(\Delta G^\circ = 0\).</div>
 
 <ol class="parts" type="a">
 
 <li>Derive the expression for it from
         \(\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\).
-        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:2" data-math="1"></textarea>
 
 <li>A reaction has \(\Delta H^\circ = +30\)&nbsp;kJ and
         \(\Delta S^\circ = +80\)&nbsp;J/K. Find the crossover temperature and say
-        on which side it is favored. <div class="workspace" style="height:2.2cm"></div>
+        on which side it is favored. <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:3" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T = 30/0.080 = \mathbf{375}\)&nbsp;K
+        (\(\approx102\,\mathrm{{}^\circ C}\)). Both terms positive, so it is
+        favored <strong>above</strong> 375 K.</div></div>
 
 <li>A reaction has \(\Delta H^\circ = -40\)&nbsp;kJ and
         \(\Delta S^\circ = -120\)&nbsp;J/K. Find the crossover temperature and
-        the favored side. <div class="workspace" style="height:2.2cm"></div>
-
+        the favored side. <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:4" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T = -40/-0.120 = \mathbf{333}\)&nbsp;K
+        (\(\approx60\,\mathrm{{}^\circ C}\)). Both terms negative, so it is
+        favored <strong>below</strong> 333 K.</div></div>
 </ol>
 
 <div class="problem"><span class="qnum">3.</span> Vaporization of water has \(\Delta H^\circ = +44\)&nbsp;kJ and
@@ -73,104 +78,120 @@ using \(R\).
 <ol class="parts" type="a">
 
 <li>Calculate \(\Delta G^\circ\) at 298&thinsp;K and interpret it.
-        <div class="workspace" style="height:2.2cm"></div>
+        <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:5" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(44 - 298(0.119) = 44 - 35.5 =
+        \mathbf{+8.5}\)&nbsp;kJ — not favored, which is why a glass of water
+        does not all become vapour at room
+        temperature.</div></div>
 
 <li>Calculate the crossover temperature and identify what it physically
-        is. <div class="workspace" style="height:2.2cm"></div>
+        is. <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:6" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T = 44/0.119 = \mathbf{370}\)&nbsp;K
+        \(\approx97\,\mathrm{{}^\circ C}\) — the <strong>normal boiling
+        point</strong></div></div>
 
 <li>Water actually boils at 373&thinsp;K. Account for the
-        discrepancy. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        discrepancy. <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:7" data-math="1"></textarea>
 </ol>
 
 <div class="problem"><span class="qnum">4.</span> Convert between \(\Delta G^\circ\) and \(K\) at 298&thinsp;K:</div>
 
 <ol class="parts" type="a">
 
-<li>\(\Delta G^\circ = -20\)&nbsp;kJ. Find \(K\). <div class="workspace" style="height:2cm"></div>
+<li>\(\Delta G^\circ = -20\)&nbsp;kJ. Find \(K\). <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:8" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ln K = 20{,}000/[(8.314)(298)] = 8.07\);
+        \(K = e^{8.07} = \mathbf{3.2\times10^{3}}\)</div></div>
 
 <li>\(\Delta G^\circ = +20\)&nbsp;kJ. Find \(K\).
-        <span class="blank" style="min-width:3.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.00031" data-sig="2" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">\(3.1\times10^{-4}\)</span></span>
 
-<li>\(K = 25\). Find \(\Delta G^\circ\). <div class="workspace" style="height:2cm"></div>
+<li>\(K = 25\). Find \(\Delta G^\circ\). <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:9" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\Delta G^\circ = -RT\ln K =
+        -(8.314)(298)\ln 25 = -(2477)(3.22) = -7977~\text{J} =
+        \mathbf{-8.0}~\text{kJ}\)</div></div>
 
 <li>\(K = 1.0\times10^{-5}\). Find \(\Delta G^\circ\).
-        <span class="blank" style="min-width:3cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="28.5" data-sig="3" data-unit="kJ"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">\(+28.5\) kJ</span></span>
 </ol>
 
-<div class="problem"><span class="qnum">5.</span> Estimation without a calculator. Fill in “greater than 1,”
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="4" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><div class="problem"><span class="qnum">5.</span> Estimation without a calculator. Fill in “greater than 1,”
 “close to 1,” or “less than 1”:</div>
 
 <ol class="parts" type="a">
 
 <li>\(\Delta G^\circ = -45\)&nbsp;kJ: \(K\) is
-        <span class="blank" style="min-width:4.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">much greater than 1</span></span>
 
 <li>\(\Delta G^\circ = +45\)&nbsp;kJ: \(K\) is
-        <span class="blank" style="min-width:4.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">much less than 1</span></span>
 
 <li>\(\Delta G^\circ \approx 0\): \(K\) is
-        <span class="blank" style="min-width:4.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">close to 1</span></span>
 
 <li>Why does a change of only a few kJ in \(\Delta G^\circ\) swing \(K\) so
-        violently? <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+        violently? <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:10" data-math="1"></textarea>
 </ol>
 
-<div class="problem"><span class="qnum">6.</span> For \(\ce{N2O4(g) -> 2NO2(g)}\), \(\Delta H^\circ = +58\)&nbsp;kJ and
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="5" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><div class="problem"><span class="qnum">6.</span> For \(\ce{N2O4(g) -> 2NO2(g)}\), \(\Delta H^\circ = +58\)&nbsp;kJ and
 \(\Delta S^\circ = +176\)&nbsp;J/K.</div>
 
 <ol class="parts" type="a">
 
 <li>Calculate \(\Delta G^\circ\) at 298&thinsp;K.
-        <span class="blank" style="min-width:3cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="5.6" data-sig="2" data-unit="kJ"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">\(+5.6\) kJ</span></span>
 
-<li>Calculate \(K\) at 298&thinsp;K. <div class="workspace" style="height:2.2cm"></div>
+<li>Calculate \(K\) at 298&thinsp;K. <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-ws3:11" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ln K = -5600/[(8.314)(298)] = -2.26\);
+        \(K = \mathbf{0.10}\) — reactant-favored, but only
+        modestly</div></div>
 
 <li>Find the crossover temperature and explain what a student would
         observe on warming a sealed tube of this mixture.
-        <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:12" data-math="1"></textarea>
 </ol>
 
-<div class="problem"><span class="qnum">7.</span> Kinetic control.</div>
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="6" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><div class="problem"><span class="qnum">7.</span> Kinetic control.</div>
 
 <ol class="parts" type="a">
 
 <li>Define kinetic control and give the usual cause.
-        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:13" data-math="1"></textarea>
 
 <li>The conversion of diamond to graphite has
         \(\Delta G^\circ < 0\) at 298&thinsp;K. Explain why diamonds
-        persist. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+        persist. <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:14" data-math="1"></textarea>
 
 <li>A mixture of \(\ce{H2}\) and \(\ce{O2}\) sits unchanged for years, yet the
         combustion has \(\Delta G^\circ = -474\)&nbsp;kJ. What does a spark change,
-        and what does it not? <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+        and what does it not? <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:15" data-math="1"></textarea>
 
 <li>A catalyst is added to a favored but slow reaction. State the
         effect on the rate and on \(K\).
-        <span class="blank" style="min-width:6.4cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="7">rate increases; \(K\) unchanged</span></span>
 </ol>
 
-<div class="problem"><span class="qnum">8.</span> A student writes: “The reaction has a large negative
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="7" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><div class="problem"><span class="qnum">8.</span> A student writes: “The reaction has a large negative
 \(\Delta G^\circ\), so it must go quickly and go to completion.” Identify
-both errors. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div></div></div>
+both errors. <textarea class="scratch" style="height:6.4em" rows="4" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="ch17-ws3:16" data-math="1"></textarea></div>
 
 <div class="box note"><div class="box-title">Spiral review • Chapter 17 • blocks 1–2</div>
 <ol>
 
 <li>\(\Delta S^\circ_{\text{rxn}} = \)
-        <span class="blank" style="min-width:4.6cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">\(\sum S^\circ_{\text{prod}} -
+        \sum S^\circ_{\text{react}}\)</span></span>
 
-<li>\(S^\circ\) for an element is: <span class="blank" style="min-width:2cm"></span>
+<li>\(S^\circ\) for an element is: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">not zero</span></span>
 
 <li>Sign of \(\Delta S^\circ\) when gas moles rise:
-        <span class="blank" style="min-width:1.8cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">positive</span></span>
 
-<li>Units of \(S^\circ\): <span class="blank" style="min-width:3.4cm"></span>
+<li>Units of \(S^\circ\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">J/(K\(\cdot\)mol)</span></span>
 
 <li>\(\Delta S_{\text{surr}}\) matters most at what temperature?
-        <span class="blank" style="min-width:2cm"></span>
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">low</span></span>
 </ol>
-</div>
+</div><div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="8" data-show="Show answers" data-hide="Hide answers">Show answers</button></div>
 </main>
 <footer><p>AP Chemistry course materials • student edition •
 CC BY-NC-SA 4.0</p></footer>

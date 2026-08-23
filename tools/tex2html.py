@@ -45,6 +45,16 @@ INTERACTIVE_KINDS = {"selfstudy", "selfstudy2"}
 MATHFIELD_KINDS = {"selfstudy", "selfstudy2"}
 
 
+def _is_ws(kind: str) -> bool:
+    return bool(re.fullmatch(r"ws\d+", kind))
+
+
+def wants(kind: str, base: set) -> bool:
+    """Worksheets get the same treatment as self-study, matched by pattern
+    rather than listed, so a future ws5 is not silently left out."""
+    return kind in base or _is_ws(kind)
+
+
 def doc_kind(stem: str) -> str:
     return stem.split("-", 1)[1] if "-" in stem else stem
 
@@ -484,7 +494,7 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
         body = body[:f[0]] + body[f[1]:]
     drops = [("why", 0, 1), ("distractor", 0, 2),
              ("rpoint", 0, 2), ("examtotal", 0, 0)]
-    if kind in EXPLAIN_KINDS:
+    if wants(kind, EXPLAIN_KINDS):
         # Keep the worked explanation; apcanswer (below) becomes the block
         # that add_interactivity() hides behind a button.
         body = sub_command(body, "keyonly", 0, 1, lambda o_, r_: r_[0])
@@ -575,12 +585,22 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
 
     def answerlines(o, r):
         n = int(o[0]) if o[0] else 3
+        if _is_ws(kind):
+            # Ruled lines are for writing on paper. On screen they become a
+            # real textarea, sized to the space the print version reserved.
+            return (f'<textarea class="scratch" style="height:{n * 1.6:.1f}em"'
+                    f' rows="{n}" spellcheck="false" aria-label="answer space"'
+                    f' placeholder="your answer"></textarea>')
         return '<div class="lines">' + '<div class="rule"></div>' * n + '</div>'
 
     C = [
         ("problem", 1, 1, problem),
         ("answerblank", 1, 1,
-         lambda o, r: f'<span class="blank" style="min-width:{o[0] or "4cm"}"></span>'),
+         lambda o, r: (
+             f'<span class="blank" style="min-width:{o[0] or "4cm"}">'
+             f'<span class="ansdata" hidden>{r[0]}</span></span>'
+             if _is_ws(kind) else
+             f'<span class="blank" style="min-width:{o[0] or "4cm"}"></span>')),
         ("answerlines", 1, 1, answerlines),
         ("workspace", 1, 0,
          lambda o, r: f'<div class="workspace" style="height:{o[0] or "2cm"}"></div>'),
@@ -709,7 +729,9 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
 # line. If the counts disagree we leave the ladder alone and log it rather
 # than guess -- a mispaired answer is worse than no answer.
 
-NUM = r"[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?"
+# "950." is three significant figures, not "950" followed by a stray
+# period -- the trailing point must be part of the number.
+NUM = r"[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?"
 SELFCHECK_RE = re.compile(r'<p class="selfcheck"><em>check:</em>(.*?)</p>', re.S)
 WORKSPACE_RE = re.compile(r'<div class="workspace" style="height:([^"]*)"></div>')
 PART_RE = re.compile(r"\(([a-h])\)")
@@ -868,6 +890,73 @@ def wrap_explanations(body: str) -> str:
         body = body[:m.start()] + reveal("explanation", inner, "explain") + body[end:]
 
 
+# ---------------------------------------------- worksheets (HTML)
+#
+# Worksheets carry their answer inside \answerblank{...} itself, so unlike
+# the self-study ladders there is nothing to pair -- each blank already
+# knows what it is worth. The answer rides through conversion as a hidden
+# span rather than an attribute, so math and \ce{} survive the restore
+# pass intact and can be shown rendered rather than as raw LaTeX.
+#
+# Blanks check on Enter or on leaving the field; there is no button per
+# blank, because 1044 of them would drown the page. Answers are revealed a
+# problem at a time, matching the rhythm of working through a worksheet.
+
+BLANK_RE = re.compile(
+    r'<span class="blank" style="min-width:([^"]*)">'
+    r'<span class="ansdata" hidden>(.*?)</span></span>', re.S)
+PROBLEM_RE = re.compile(r'<div class="problem">')
+
+
+def blank_input(width: str, disp: str, grp: int) -> str:
+    spec = numeric_spec(clean_answer(disp))
+    if spec is not None:
+        data = (f' data-check="num" data-val="{spec["value"]!r}"'
+                f' data-sig="{spec["sig"]}"'
+                f' data-unit="{esc_attr(spec["unit"])}"')
+    else:
+        data = ' data-check="none"'
+    return (f'<span class="blankwrap">'
+            f'<input type="text" class="ansinput blank-in"'
+            f' style="width:{width}" autocomplete="off"'
+            f' aria-label="answer"{data}>'
+            f'<span class="ansfeedback" role="status"></span>'
+            f'<span class="ansreveal" hidden data-grp="{grp}">{disp}</span>'
+            f'</span>')
+
+
+def reveal_blanks_button(grp: int) -> str:
+    return ('<div class="reveal"><button class="reveal-btn revealblanks"'
+            f' type="button" aria-expanded="false" data-grp="{grp}"'
+            ' data-show="Show answers" data-hide="Hide answers">'
+            'Show answers</button></div>')
+
+
+def worksheet_pass(body: str) -> str:
+    """Turn every \answerblank into a checkable field, grouped by problem."""
+    starts = [m.start() for m in PROBLEM_RE.finditer(body)]
+    if not starts:
+        return BLANK_RE.sub(
+            lambda m: blank_input(m.group(1), m.group(2), 0), body)
+
+    out = [body[:starts[0]]]
+    for i, st in enumerate(starts):
+        end = starts[i + 1] if i + 1 < len(starts) else len(body)
+        seg = body[st:end]
+        grp = i + 1
+        found = [0]
+
+        def rep(m, grp=grp, found=found):
+            found[0] += 1
+            return blank_input(m.group(1), m.group(2), grp)
+
+        seg = BLANK_RE.sub(rep, seg)
+        if found[0]:
+            seg += reveal_blanks_button(grp)
+        out.append(seg)
+    return "".join(out)
+
+
 def number_pads(body: str, stem: str, math_on: bool) -> str:
     """Give every scratch pad a stable id so its contents can be restored on
     a later visit, and flag the ones that may upgrade to an equation editor.
@@ -882,11 +971,11 @@ def number_pads(body: str, stem: str, math_on: bool) -> str:
             extra += ' data-math="1"'
         return m.group(0)[:-1] + extra + ">"
 
-    return re.sub(r'<textarea class="scratch"[^>]*>', tag, body)
+    return re.sub(r'<textarea class="scratch[^"]*"[^>]*>', tag, body)
 
 
 def add_interactivity(body: str, kind: str, stem: str, log) -> str:
-    if kind not in INTERACTIVE_KINDS:
+    if not wants(kind, INTERACTIVE_KINDS):
         return body
     out, pos, paired, skipped = [], 0, 0, 0
     for m in SELFCHECK_RE.finditer(body):
@@ -912,7 +1001,9 @@ def add_interactivity(body: str, kind: str, stem: str, log) -> str:
     # Ladders we declined to pair still get usable working space, so the
     # page does not mix live textareas with inert dashed boxes.
     body = WORKSPACE_RE.sub(lambda m: scratch(m.group(1)), "".join(out))
-    body = number_pads(body, stem, kind in MATHFIELD_KINDS)
+    if _is_ws(kind):
+        body = worksheet_pass(body)
+    body = number_pads(body, stem, wants(kind, MATHFIELD_KINDS))
     return wrap_explanations(body)
 
 
@@ -1137,6 +1228,11 @@ math-field.mathfield:focus { outline: 2px solid var(--accent);
 .anscheck:hover, .ansshow:hover, .reveal-btn:hover { background: #E2EBF5; }
 .anscheck:focus-visible, .ansshow:focus-visible, .reveal-btn:focus-visible {
     outline: 2px solid var(--accent); outline-offset: 2px; }
+.blankwrap { display: inline-flex; align-items: baseline; gap: .3rem;
+             flex-wrap: wrap; }
+.blank-in { flex: none; min-width: 0; padding: .15rem .4rem;
+            font-size: .95rem; }
+.blankwrap .ansfeedback { font-size: .78rem; }
 .ansfeedback { font-size: .85rem; font-family: system-ui, sans-serif; }
 .ansfeedback.ok { color: #2E7D32; font-weight: 600; }
 .ansfeedback.no { color: var(--ans); }
@@ -1186,12 +1282,12 @@ LESSONS_JS = r"""/* Answer checking for the self-study ladders. Generated by
   /* First number in free text: "1900", "1,900 torr", "1.9e3", "1.2 x 10^24" */
   function parseEntry(raw) {
     var t = String(raw).trim().replace(/,/g, "");
-    var m = t.match(/^([+-]?\d*\.?\d+(?:[eE][+-]?\d+)?)\s*(?:x|X|\*|\u00d7)\s*10\s*\^?\s*\{?([+-]?\d+)\}?\s*(.*)$/);
+    var m = t.match(/^([+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)\s*(?:x|X|\*|\u00d7)\s*10\s*\^?\s*\{?([+-]?\d+)\}?\s*(.*)$/);
     if (m) {
       return { value: parseFloat(m[1]) * Math.pow(10, parseInt(m[2], 10)),
                sig: sigfigs(m[1]), unit: m[3].trim() };
     }
-    m = t.match(/^([+-]?\d*\.?\d+(?:[eE][+-]?\d+)?)\s*(.*)$/);
+    m = t.match(/^([+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)\s*(.*)$/);
     if (m) {
       return { value: parseFloat(m[1]), sig: sigfigs(m[1]), unit: m[2].trim() };
     }
@@ -1258,6 +1354,21 @@ LESSONS_JS = r"""/* Answer checking for the self-study ladders. Generated by
       check(t.parentNode.querySelector(".ansinput"));
     } else if (t.classList.contains("ansshow")) {
       showAnswer(t.parentNode);
+    } else if (t.classList.contains("revealblanks")) {
+      /* Worksheet answers are revealed a problem at a time. The button
+         and its blanks share a group number assigned at build time, so
+         nothing has to be inferred by walking the DOM. */
+      var g = t.getAttribute("data-grp");
+      var spans = document.querySelectorAll(
+        '.ansreveal[data-grp="' + g + '"]');
+      var showing = t.getAttribute("aria-expanded") !== "true";
+      for (var j = 0; j < spans.length; j++) {
+        if (showing) { spans[j].removeAttribute("hidden"); }
+        else { spans[j].setAttribute("hidden", ""); }
+      }
+      t.setAttribute("aria-expanded", showing ? "true" : "false");
+      t.textContent = showing ? t.getAttribute("data-hide")
+                              : t.getAttribute("data-show");
     } else if (t.classList.contains("reveal-btn")) {
       var body = t.nextElementSibling;
       var opening = body.hasAttribute("hidden");
@@ -1367,6 +1478,18 @@ LESSONS_JS = r"""/* Answer checking for the self-study ladders. Generated by
       return;
     }
     upgrade(t);
+  });
+
+
+  /* Inline worksheet blanks have no Check button -- 1044 of them would
+     drown the page -- so they verify when you leave the field. Enter is
+     handled by the shared keydown listener above. */
+  document.addEventListener("focusout", function (e) {
+    var t = e.target;
+    if (!t.classList || !t.classList.contains("blank-in")) { return; }
+    if (t.getAttribute("data-check") !== "num") { return; }
+    if (!t.value.trim()) { return; }
+    check(t);
   });
 
 })();

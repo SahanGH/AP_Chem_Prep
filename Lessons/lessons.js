@@ -22,12 +22,12 @@
   /* First number in free text: "1900", "1,900 torr", "1.9e3", "1.2 x 10^24" */
   function parseEntry(raw) {
     var t = String(raw).trim().replace(/,/g, "");
-    var m = t.match(/^([+-]?\d*\.?\d+(?:[eE][+-]?\d+)?)\s*(?:x|X|\*|\u00d7)\s*10\s*\^?\s*\{?([+-]?\d+)\}?\s*(.*)$/);
+    var m = t.match(/^([+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)\s*(?:x|X|\*|\u00d7)\s*10\s*\^?\s*\{?([+-]?\d+)\}?\s*(.*)$/);
     if (m) {
       return { value: parseFloat(m[1]) * Math.pow(10, parseInt(m[2], 10)),
                sig: sigfigs(m[1]), unit: m[3].trim() };
     }
-    m = t.match(/^([+-]?\d*\.?\d+(?:[eE][+-]?\d+)?)\s*(.*)$/);
+    m = t.match(/^([+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)\s*(.*)$/);
     if (m) {
       return { value: parseFloat(m[1]), sig: sigfigs(m[1]), unit: m[2].trim() };
     }
@@ -94,6 +94,21 @@
       check(t.parentNode.querySelector(".ansinput"));
     } else if (t.classList.contains("ansshow")) {
       showAnswer(t.parentNode);
+    } else if (t.classList.contains("revealblanks")) {
+      /* Worksheet answers are revealed a problem at a time. The button
+         and its blanks share a group number assigned at build time, so
+         nothing has to be inferred by walking the DOM. */
+      var g = t.getAttribute("data-grp");
+      var spans = document.querySelectorAll(
+        '.ansreveal[data-grp="' + g + '"]');
+      var showing = t.getAttribute("aria-expanded") !== "true";
+      for (var j = 0; j < spans.length; j++) {
+        if (showing) { spans[j].removeAttribute("hidden"); }
+        else { spans[j].setAttribute("hidden", ""); }
+      }
+      t.setAttribute("aria-expanded", showing ? "true" : "false");
+      t.textContent = showing ? t.getAttribute("data-hide")
+                              : t.getAttribute("data-show");
     } else if (t.classList.contains("reveal-btn")) {
       var body = t.nextElementSibling;
       var opening = body.hasAttribute("hidden");
@@ -203,6 +218,18 @@
       return;
     }
     upgrade(t);
+  });
+
+
+  /* Inline worksheet blanks have no Check button -- 1044 of them would
+     drown the page -- so they verify when you leave the field. Enter is
+     handled by the shared keydown listener above. */
+  document.addEventListener("focusout", function (e) {
+    var t = e.target;
+    if (!t.classList || !t.classList.contains("blank-in")) { return; }
+    if (t.getAttribute("data-check") !== "num") { return; }
+    if (!t.value.trim()) { return; }
+    check(t);
   });
 
 })();
