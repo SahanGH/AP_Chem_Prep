@@ -1,0 +1,1385 @@
+% Ch18 self-study -- "I do / You do" ladder for Zumdahl 18.1-18.4 and
+% 18.7. FOURTEEN ladders (56 questions) plus a ten-question mixed set
+% = 66 questions, fourteen figures.
+%
+% SCOPE, verified against the CED PDF on 2026-08-23:
+%   IN  -- 18.1-18.4, 18.7 -> CED 9.8, 9.9, 9.10, 9.11
+%   OUT -- 18.5-18.6 (batteries, corrosion) and 18.8 (commercial
+%          electrolysis) are on TEXTBOOK-MAP's skip list.
+%   TWO EXCLUSION STATEMENTS bind this chapter and are honoured from
+%   the start rather than patched later:
+%     9.8 "Labeling an electrode as positive or negative will not be
+%          assessed on the AP Exam."
+%     4.7 "The meaning of the terms 'reducing agent' and 'oxidizing
+%          agent' will not be assessed on the AP Exam."  -- which is
+%          why there is no agent-ranking ladder here, though Zumdahl
+%          builds one.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{18}
+\apcunittitle{Electrochemistry}
+\apcdoctitle{Self-Study \textbullet\ Chapter 18, I~do / You~do}
+\apcsubtitle{Zumdahl \S18.1--18.4, \S18.7 \textbullet\ PDF pp.\ 882--911}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help. Work all four before checking
+the gray \emph{check:} line; a tracker tick needs all four right first
+time. A ten-question \textbf{mixed set} follows Ladder 14.
+
+\textbf{What is in and what is out.} \S18.1--18.4 and \S18.7 are
+assessed (CED 9.8--9.11). \S18.5--18.6 (batteries, corrosion) and
+\S18.8 (commercial electrolysis) are not on the CED and are not treated
+here --- skip those pages of Zumdahl.
+
+\textbf{Two things the CED explicitly will not ask you.} First:
+\emph{``Labeling an electrode as positive or negative will not be
+assessed''} (9.8). Learn \textbf{anode} and \textbf{cathode}, which are
+always assessed; the $+$/$-$ signs flip between cell types and the exam
+sensibly avoids them. Second: \emph{``The meaning of the terms
+`reducing agent' and `oxidizing agent' will not be assessed''} (4.7).
+Say ``\ce{Zn} is oxidised'' rather than ``\ce{Zn} is the reducing
+agent'' and you are always safe.
+
+\textbf{This chapter is Chapter 17 in different units.} $\Delta G^{\circ}
+= -nFE^{\circ}$ is the bridge, and once you have it, every
+``is this favoured?'' question you already know how to answer in free
+energy you can answer in volts. Ladder 9 is the hinge of the whole
+chapter.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Oxidation numbers}
+\zsec{18.1}
+
+Everything in this chapter starts with knowing which atoms changed.
+Oxidation numbers are the bookkeeping that tells you.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.6)
+    {apply in order --- earlier rules win when two conflict};
+  \foreach \y/\num/\rule in {%
+      3.0/{1}/{a free element is \textbf{0} --- \ce{Zn}, \ce{O2},
+        \ce{Cl2}},
+      2.5/{2}/{a monatomic ion equals its \textbf{charge} ---
+        \ce{Na+} is $+1$, \ce{S^2-} is $-2$},
+      2.0/{3}/{fluorine is always \textbf{$-1$}},
+      1.5/{4}/{hydrogen is \textbf{$+1$} (except $-1$ in metal
+        hydrides)},
+      1.0/{5}/{oxygen is \textbf{$-2$} (except $-1$ in peroxides)},
+      0.5/{6}/{the sum equals the \textbf{overall charge} of the
+        species}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.5,\y) {\num.};
+    \node[anchor=west] at (1.05,\y) {\rule};}
+  \draw[apcgray] (0.4,3.35) -- (11.0,3.35);
+  \draw[apcgray] (0.4,0.15) -- (11.0,0.15);
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: three assignments]
+\textbf{(a) Find the oxidation number of Mn in \ce{MnO4-}.}
+
+Oxygen is $-2$ and there are four of them, so they contribute $-8$. The
+whole ion carries $-1$, so by rule 6:
+\[ x + (-8) = -1 \quad\Longrightarrow\quad x = \mathbf{+7} \]
+
+\textbf{(b) Find the oxidation number of Cr in \ce{Cr2O7^2-}.}
+
+Seven oxygens give $-14$; the ion is $-2$:
+\[ 2x - 14 = -2 \quad\Longrightarrow\quad 2x = 12
+   \quad\Longrightarrow\quad x = \mathbf{+6} \]
+Note the division by 2 --- the answer is per chromium atom, not for
+both together.
+
+\textbf{(c) Find the oxidation number of S in \ce{H2SO4}.}
+
+Two hydrogens give $+2$, four oxygens give $-8$, and the molecule is
+neutral:
+\[ 2 + x - 8 = 0 \quad\Longrightarrow\quad x = \mathbf{+6} \]
+
+\textbf{Why this matters here.} An element whose oxidation number
+\emph{rises} has been \textbf{oxidised}; one whose number \emph{falls}
+has been \textbf{reduced}. That is the only definition you need, and it
+works even when no oxygen or hydrogen is involved.
+
+\textbf{The mnemonic, if you want one.} \textbf{OIL RIG}: Oxidation Is
+Loss of electrons, Reduction Is Gain. Losing electrons makes an atom
+more positive, which is exactly why its oxidation number rises.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find the oxidation number of N in \ce{NO3-}.
+        \workspace[1.6cm]
+  \item Find the oxidation number of S in \ce{SO3^2-}.
+        \workspace[1.6cm]
+  \item Find the oxidation number of Cl in \ce{ClO4-}.
+        \workspace[1.6cm]
+  \item An element's oxidation number goes from $+2$ to $+4$. Was it
+        oxidised or reduced? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $+5$ \quad (b) $+4$ \quad (c) $+7$ \quad (d) oxidised}
+\keyonly{\begin{apcanswer}(a) $x - 6 = -1$, so $x = \mathbf{+5}$.
+(b) $x - 6 = -2$, so $x = \mathbf{+4}$. (c) $x - 8 = -1$, so
+$x = \mathbf{+7}$. (d) \textbf{Oxidised} --- the number \emph{rose},
+which means electrons were lost.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Half-reactions and balancing
+in acid}
+\zsec{18.1}
+
+Split the reaction into the part that loses electrons and the part that
+gains them, balance each separately, then recombine.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.5)
+    {the five steps, in this order};
+  \foreach \y/\num/\stp in {%
+      2.9/{1}/{split into two \textbf{half-reactions}},
+      2.4/{2}/{balance all atoms \emph{except} O and H},
+      1.9/{3}/{balance \textbf{O} by adding \ce{H2O}},
+      1.4/{4}/{balance \textbf{H} by adding \ce{H+}},
+      0.9/{5}/{balance \textbf{charge} by adding \ce{e-}, then scale
+        so the electrons cancel}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.5,\y) {\num.};
+    \node[anchor=west] at (1.05,\y) {\stp};}
+  \draw[apcgray] (0.4,3.25) -- (11.0,3.25);
+  \draw[apcgray] (0.4,0.55) -- (11.0,0.55);
+  \node[anchor=west,font=\sffamily\itshape] at (0.5,0.1)
+    {O before H before charge --- doing them out of order is what makes
+     this feel hard};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: permanganate and iron(II) in acid]
+\textbf{Balance $\ce{MnO4- + Fe^2+ -> Mn^2+ + Fe^3+}$ in acidic
+solution.}
+
+\textbf{Step 1 --- split.} Manganese goes from $+7$ to $+2$ (reduced);
+iron goes from $+2$ to $+3$ (oxidised).
+\[ \ce{MnO4- -> Mn^2+}
+   \qquad
+   \ce{Fe^2+ -> Fe^3+} \]
+
+\textbf{Steps 2--4 on the manganese half.} Mn is already balanced. Four
+oxygens on the left need four waters on the right; that puts eight
+hydrogens on the right, so add eight \ce{H+} on the left:
+\[ \ce{MnO4- + 8H+ -> Mn^2+ + 4H2O} \]
+
+\textbf{Step 5 --- charge.} Left is $-1 + 8 = +7$; right is $+2$. Add
+five electrons to the left:
+\[ \ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O} \]
+
+\textbf{The iron half is short.} $\ce{Fe^2+ -> Fe^3+ + e-}$.
+
+\textbf{Scale and add.} The manganese half needs five electrons, the
+iron half supplies one --- so multiply the iron half by 5:
+\[ \ce{MnO4- + 8H+ + 5Fe^2+ -> Mn^2+ + 4H2O + 5Fe^3+} \]
+
+\textbf{Check both, always.} Atoms: 1 Mn, 4 O, 8 H, 5 Fe on each side.
+\checkmark\ Charge: left $= -1 + 8 + 10 = +17$; right $= +2 + 0 + 15 =
++17$. \checkmark\ A balanced redox equation must balance
+\emph{charge} as well as atoms, and checking it catches almost every
+error this ladder can produce.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Balance the half-reaction $\ce{Cr2O7^2- -> Cr^3+}$ in acid.
+        \workspace[2.0cm]
+  \item How many electrons appear in that half-reaction, and on which
+        side? \workspace[1.6cm]
+  \item Balance $\ce{Zn -> Zn^2+}$ as a half-reaction.
+        \workspace[1.4cm]
+  \item Why must charge balance as well as atoms?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}$ \quad (b)
+6, on the left \quad (c) $\ce{Zn -> Zn^2+ + 2e-}$ \quad (d) electrons
+are conserved}
+\keyonly{\begin{apcanswer}(a) $\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ +
+7H2O}$. Check charge: left $= -2 + 14 - 6 = +6$; right $= +6$.
+\checkmark\ (b) \textbf{Six}, on the \textbf{left} --- chromium is
+reduced (from $+6$ to $+3$, two atoms, three electrons each). (c)
+$\ce{Zn -> Zn^2+ + 2e-}$. (d) Because \textbf{electrons are
+conserved} --- they are real particles, not bookkeeping. If charge does
+not balance, electrons have been created or destroyed
+somewhere.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Balancing in base}
+\zsec{18.1}
+
+One extra move at the end: neutralise the \ce{H+} you added.
+
+\begin{workedexample}[I do: the add-hydroxide trick]
+\textbf{Balance $\ce{MnO4- + I- -> MnO2 + I2}$ in basic solution.}
+
+\textbf{First balance it as though it were acidic.} The manganese half:
+\[ \ce{MnO4- + 4H+ + 3e- -> MnO2 + 2H2O} \]
+The iodide half:
+\[ \ce{2I- -> I2 + 2e-} \]
+Scale by 2 and 3 so six electrons cancel:
+\[ \ce{2MnO4- + 8H+ + 6I- -> 2MnO2 + 4H2O + 3I2} \]
+
+\textbf{Now convert to base.} There are eight \ce{H+}, so add eight
+\ce{OH-} to \emph{both} sides:
+\[ \ce{2MnO4- + 8H+ + 8OH- + 6I- -> 2MnO2 + 4H2O + 3I2 + 8OH-} \]
+
+\textbf{Combine.} On the left, $\ce{8H+ + 8OH-}$ becomes
+$\ce{8H2O}$:
+\[ \ce{2MnO4- + 8H2O + 6I- -> 2MnO2 + 4H2O + 3I2 + 8OH-} \]
+
+\textbf{Cancel the water that appears on both sides.} Eight on the
+left, four on the right --- subtract four from each:
+\[ \ce{2MnO4- + 4H2O + 6I- -> 2MnO2 + 3I2 + 8OH-} \]
+
+\textbf{Check.} Charge: left $= -2 + 0 - 6 = -8$; right $= 0 + 0 - 8 =
+-8$. \checkmark\ Atoms: Mn 2, I 6, O $8+4 = 12$ on the left against
+$4 + 8 = 12$ on the right, H 8 against 8. \checkmark
+
+\textbf{Why the trick works.} Adding the same thing to both sides never
+changes an equation. You are simply using $\ce{H+ + OH- -> H2O}$ to
+convert an acidic form into an equivalent basic one --- which is
+legitimate because in basic solution \ce{H+} is not available in any
+meaningful quantity.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item After acid-balancing, an equation has 6 \ce{H+} on the left.
+        How many \ce{OH-} do you add, and where?
+        \workspace[1.6cm]
+  \item What do the \ce{H+} and \ce{OH-} combine to form?
+        \workspace[1.4cm]
+  \item Why is it valid to add \ce{OH-} to both sides?
+        \workspace[1.6cm]
+  \item In basic solution, which species should \emph{not} appear in
+        your final answer? \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) 6, to both sides \quad (b) \ce{H2O} \quad (c) adding
+equally to both sides preserves the equation \quad (d) \ce{H+}}
+\keyonly{\begin{apcanswer}(a) \textbf{Six}, added to \textbf{both}
+sides. (b) \textbf{Water}, \ce{H2O}. (c) Because adding the
+\textbf{same quantity to both sides} of an equation leaves it balanced
+and equivalent --- it is the same move as adding the same number to both
+sides of an algebraic equation. (d) \textbf{\ce{H+}}. A basic solution
+has negligible \ce{H+}, so a final answer containing it has not been
+converted.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ The galvanic cell}
+\zsec{18.1}
+
+A galvanic (voltaic) cell separates the two half-reactions so the
+electrons must travel through a wire --- which is what makes it useful.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % left beaker -- anode (fill before stroke)
+  \fill[apcgray!22] (0.7,0.5) rectangle (3.3,2.4);
+  \draw[very thick] (0.7,3.0) -- (0.7,0.5) -- (3.3,0.5) -- (3.3,3.0);
+  \fill[apcgray!70] (1.8,1.1) rectangle (2.1,3.4);
+  % label to the SIDE, so the wire can run down to the electrode top
+  \node[anchor=east,font=\sffamily\bfseries] at (1.65,3.05) {\ce{Zn}};
+  \node at (1.4,0.85) {\ce{Zn^2+}};
+  \node[align=center,font=\sffamily\bfseries] at (2.0,-0.15)
+    {ANODE\\oxidation};
+
+  % right beaker -- cathode
+  \fill[apcgray!22] (6.7,0.5) rectangle (9.3,2.4);
+  \draw[very thick] (6.7,3.0) -- (6.7,0.5) -- (9.3,0.5) -- (9.3,3.0);
+  \fill[apcgray!70] (7.9,1.1) rectangle (8.2,3.4);
+  \node[anchor=west,font=\sffamily\bfseries] at (8.35,3.05) {\ce{Cu}};
+  \node at (8.8,0.85) {\ce{Cu^2+}};
+  \node[align=center,font=\sffamily\bfseries] at (8.0,-0.15)
+    {CATHODE\\reduction};
+
+  % wire
+  % wire runs down to y=3.4, the electrode tops -- stopping at 3.9 left
+  % a visible gap and the circuit read as disconnected
+  \draw[very thick] (1.95,3.4) -- (1.95,4.3) -- (8.05,4.3)
+    -- (8.05,3.4);
+  \draw[-{Stealth[length=2.5mm]},very thick] (4.4,4.3) -- (5.6,4.3);
+  \node[anchor=south,font=\sffamily\bfseries] at (5.0,4.4)
+    {\ce{e-} flow};
+
+  % salt bridge
+  \fill[apcgray!45] (3.3,2.0) rectangle (6.7,2.4);
+  \draw[very thick] (3.3,2.0) rectangle (6.7,2.4);
+  \node[font=\sffamily\bfseries] at (5.0,2.2) {salt bridge};
+  \node[align=center,font=\sffamily\footnotesize] at (5.0,1.5)
+    {carries ions to keep\\each beaker neutral};
+
+  \node[font=\sffamily\footnotesize] at (5.0,-1.0)
+    {electrons always flow \textbf{anode $\to$ cathode} through the
+     wire --- never through the salt bridge};
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[AP scope: learn anode and cathode, not $+$ and $-$]
+CED topic 9.8's exclusion: \emph{``Labeling an electrode as positive or
+negative will not be assessed on the AP Exam.''} Good --- the signs
+reverse between galvanic and electrolytic cells and cause more
+confusion than they resolve. What \textbf{is} assessed, and never
+changes: \textbf{oxidation always happens at the anode, reduction
+always at the cathode}, in every cell of every kind. Learn that pair and
+you never need the signs.
+\end{apcnote}
+
+\begin{workedexample}[I do: reading a cell]
+\textbf{Take the zinc--copper cell above. Identify each part and say
+why it is there.}
+
+\textbf{The anode is zinc}, because zinc is oxidised:
+$\ce{Zn -> Zn^2+ + 2e-}$. The electrode slowly dissolves and the solution
+gains \ce{Zn^2+}.
+
+\textbf{The cathode is copper}, because copper(II) is reduced:
+$\ce{Cu^2+ + 2e- -> Cu}$. Copper metal plates onto the electrode, which
+gains mass, and the blue colour of the solution fades as \ce{Cu^2+} is
+consumed.
+
+\textbf{Electrons flow from anode to cathode} through the external
+wire. They are produced where oxidation happens and consumed where
+reduction happens, so the direction is forced.
+
+\textbf{The salt bridge exists because of charge build-up.} Without it,
+the anode compartment would accumulate positive charge (\ce{Zn^2+}
+entering solution) and the cathode compartment negative charge
+(\ce{Cu^2+} leaving). Within seconds that imbalance would stop the
+reaction. The bridge lets spectator ions migrate --- anions toward the
+anode, cations toward the cathode --- keeping both sides neutral.
+
+\textbf{Two memory hooks worth having.} \textbf{An~Ox} and
+\textbf{Red~Cat}: \emph{An}ode--\emph{Ox}idation, \emph{Red}uction--%
+\emph{Cat}hode. And both words in each pair start with the same kind of
+letter --- \textbf{a}node and \textbf{o}xidation are both vowels,
+\textbf{c}athode and \textbf{r}eduction both consonants.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item At which electrode does oxidation occur, in \emph{any} cell?
+        \workspace[1.4cm]
+  \item Which way do electrons flow through the external wire?
+        \workspace[1.4cm]
+  \item What would happen without a salt bridge?
+        \workspace[1.8cm]
+  \item Does the anode of a zinc--copper cell gain or lose mass?
+        Explain. \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) the anode \quad (b) anode to cathode \quad (c) charge
+builds up and the reaction stops \quad (d) loses --- \ce{Zn} dissolves}
+\keyonly{\begin{apcanswer}(a) The \textbf{anode} --- in every cell,
+galvanic or electrolytic. (b) From \textbf{anode to cathode}: they are
+produced by oxidation and consumed by reduction. (c) \textbf{Charge
+would build up} --- positive in the anode compartment, negative in the
+cathode compartment --- and within moments that imbalance would stop
+electron flow and the reaction. (d) It \textbf{loses} mass: zinc metal
+is oxidised to \ce{Zn^2+} and dissolves into the
+solution.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Cell notation}
+\zsec{18.1}
+
+A one-line shorthand for a whole cell diagram. It has a fixed grammar.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small] at (5.6,3.2)
+    {$\ce{Zn(s)}\;\big|\;\ce{Zn^2+}(aq)\;\big\|\;
+     \ce{Cu^2+}(aq)\;\big|\;\ce{Cu(s)}$};
+  \node[font=\sffamily\bfseries] at (2.0,2.55) {ANODE side};
+  \node[font=\sffamily\bfseries] at (9.0,2.55) {CATHODE side};
+  \node[font=\sffamily\bfseries] at (5.6,2.55) {salt bridge};
+  \draw[apcgray] (0.5,2.2) -- (11.0,2.2);
+  \foreach \y/\sym/\mean in {%
+      1.7/{$|$}/{a \textbf{phase boundary} --- solid meets solution},
+      1.15/{$\|$}/{the \textbf{salt bridge} --- separates the two
+        half-cells},
+      0.6/{order}/{\textbf{anode on the left}, cathode on the right,
+        always}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.7,\y) {\sym};
+    \node[anchor=west] at (2.2,\y) {\mean};}
+  \draw[apcgray] (0.5,0.25) -- (11.0,0.25);
+  \node[anchor=west] at (0.7,-0.2)
+    {read it left to right and you are reading the electrons' journey};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: writing and reading notation]
+\textbf{(a) Write the notation for a cell in which
+$\ce{Mg -> Mg^2+ + 2e-}$ and $\ce{Ag+ + e- -> Ag}$.}
+
+Magnesium is oxidised, so it is the anode and goes on the left; silver
+is reduced, so it is the cathode and goes on the right:
+\[ \ce{Mg(s)} \;\big|\; \ce{Mg^2+}(aq) \;\big\|\;
+   \ce{Ag+}(aq) \;\big|\; \ce{Ag(s)} \]
+
+\textbf{(b) Read $\ce{Fe(s)}|\ce{Fe^2+}\|\ce{Cu^2+}|\ce{Cu(s)}$.}
+
+Iron is on the left, so iron is the anode and is oxidised:
+$\ce{Fe -> Fe^2+ + 2e-}$. Copper is on the right, so \ce{Cu^2+} is
+reduced: $\ce{Cu^2+ + 2e- -> Cu}$. Overall:
+$\ce{Fe + Cu^2+ -> Fe^2+ + Cu}$.
+
+\textbf{When a species is not a solid, you need an inert electrode.}
+For a half-cell like $\ce{Fe^3+}/\ce{Fe^2+}$ --- both species dissolved
+--- there is no metal to serve as the electrode, so platinum is used and
+written into the notation:
+\[ \ce{Pt(s)} \;\big|\; \ce{Fe^2+}, \ce{Fe^3+} \;\big\|\; \ldots \]
+The comma separates two species in the \emph{same} phase; the single
+bar is reserved for a genuine phase boundary.
+
+\textbf{The one rule that prevents most errors:} anode on the left.
+Everything else follows from it --- and if you write the cell backwards,
+your $E^{\circ}_{\text{cell}}$ in Ladder 7 will come out negative for a
+reaction that is actually favoured.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item In cell notation, which electrode is written on the left?
+        \workspace[1.4cm]
+  \item What does the double bar represent? \workspace[1.4cm]
+  \item Write the notation for a cell with $\ce{Ni -> Ni^2+ + 2e-}$ and
+        $\ce{Ag+ + e- -> Ag}$. \workspace[1.8cm]
+  \item Why is an inert platinum electrode sometimes needed?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) the anode \quad (b) the salt bridge \quad (c)
+$\ce{Ni}|\ce{Ni^2+}\|\ce{Ag+}|\ce{Ag}$ \quad (d) when no solid is
+present to conduct}
+\keyonly{\begin{apcanswer}(a) The \textbf{anode}. (b) The \textbf{salt
+bridge} separating the two half-cells. (c)
+$\ce{Ni(s)}\,|\,\ce{Ni^2+}(aq)\,\|\,\ce{Ag+}(aq)\,|\,\ce{Ag(s)}$.
+(d) Because some half-cells contain \textbf{no solid conductor} --- for
+example $\ce{Fe^2+}/\ce{Fe^3+}$, where both species are dissolved.
+Platinum provides a surface for electron transfer without taking part in
+the reaction.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Standard reduction potentials}
+\zsec{18.2}
+
+Every half-reaction is tabulated as a \textbf{reduction}, measured
+against the hydrogen electrode, which is defined as exactly zero.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (1.6,0.4) -- (1.6,4.2);
+  \node[anchor=south,font=\sffamily\bfseries] at (1.6,4.25)
+    {more easily reduced};
+  \foreach \y/\hr/\ev in {%
+      3.7/{$\ce{F2 + 2e- -> 2F-}$}/{$+2.87$},
+      3.2/{$\ce{Cl2 + 2e- -> 2Cl-}$}/{$+1.36$},
+      2.7/{$\ce{Ag+ + e- -> Ag}$}/{$+0.80$},
+      2.2/{$\ce{Cu^2+ + 2e- -> Cu}$}/{$+0.34$},
+      1.7/{$\ce{2H+ + 2e- -> H2}$}/{$0.00$},
+      1.2/{$\ce{Fe^2+ + 2e- -> Fe}$}/{$-0.44$},
+      0.7/{$\ce{Zn^2+ + 2e- -> Zn}$}/{$-0.76$}} {
+    \fill (1.6,\y) circle (0.07);
+    \node[anchor=west] at (1.9,\y) {\hr};
+    \node[anchor=west] at (6.6,\y) {\ev\ V};}
+  \node[anchor=west,font=\sffamily\bfseries] at (8.1,1.7)
+    {$\leftarrow$ defined as 0};
+  \node[anchor=west,align=left,font=\sffamily\footnotesize]
+    at (8.1,3.2)
+    {a \textbf{more positive} $E^{\circ}$\\
+     means that species is\\
+     reduced more readily};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{When you reverse a half-reaction, flip the sign of
+$E^{\circ}$ --- but do \emph{not} multiply it when you scale the
+coefficients.} Doubling $\ce{Zn -> Zn^2+ + 2e-}$ does not double its
+potential. $E^{\circ}$ is an \emph{intensive} property, like density or
+temperature: it does not depend on how much you have. This is the one
+place where electrochemistry breaks the Hess's-law habit of scaling
+everything.
+\end{apctrap}
+
+\begin{workedexample}[I do: what the table is telling you]
+\textbf{Everything in the table is written as a reduction, so a
+positive value means ``this happens readily as written''.}
+
+\textbf{Fluorine, $+2.87$ V.} The most positive value on any standard
+table --- \ce{F2} is reduced with enormous willingness, which is why
+elemental fluorine is so ferociously reactive.
+
+\textbf{Zinc, $-0.76$ V.} Negative, so $\ce{Zn^2+ -> Zn}$ is
+\emph{unfavourable} as written. Run it backwards ---
+$\ce{Zn -> Zn^2+ + 2e-}$, oxidation --- and the sign flips to $+0.76$ V,
+which is favourable. Zinc prefers to be oxidised.
+
+\textbf{Hydrogen, exactly $0.00$ V.} Not measured but \emph{defined}:
+every other potential is measured relative to the standard hydrogen
+electrode. Same logical move as $\Delta H_{f}^{\circ}$ of an element
+being zero in Chapter 6 --- a reference point, not a physical fact.
+
+\textbf{How to use the table for a spontaneity question.} The species
+higher on the table (more positive) is reduced; the one lower down runs
+in reverse and is oxidised. In a zinc--copper cell, copper is higher, so
+\ce{Cu^2+} is reduced and zinc is oxidised. That single reading gives
+you the anode, the cathode, and the direction --- before you compute
+anything.
+
+\textbf{The terminology caution.} You may see this table described as
+ranking ``oxidising agents''. The CED's topic 4.7 exclusion states that
+\emph{``the meaning of the terms `reducing agent' and `oxidising agent'
+will not be assessed''}, so phrase your answers as ``\ce{Cu^2+} is
+reduced'' rather than ``\ce{Cu^2+} is the oxidising agent''. The
+chemistry is identical; only the wording is safer.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+Use the table above.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which is more readily reduced, \ce{Ag+} or \ce{Cu^2+}?
+        \workspace[1.4cm]
+  \item Give $E^{\circ}$ for $\ce{Zn -> Zn^2+ + 2e-}$.
+        \workspace[1.4cm]
+  \item Give $E^{\circ}$ for $\ce{2Zn -> 2Zn^2+ + 4e-}$.
+        \workspace[1.6cm]
+  \item Why is the hydrogen half-reaction exactly $0.00$ V?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{Ag+} \quad (b) $+0.76$ V \quad (c) still $+0.76$ V
+\quad (d) it is a defined reference}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{Ag+}} --- $+0.80$ V against
+copper's $+0.34$ V. (b) $\mathbf{+0.76}$ \textbf{V}: reversing the
+tabulated reduction flips the sign. (c) \textbf{Still $+0.76$ V.}
+Scaling the coefficients does \emph{not} scale $E^{\circ}$ --- it is an
+intensive property. (d) Because it is \textbf{defined} as the
+reference point; every other potential is measured relative to the
+standard hydrogen electrode. It is a convention, like
+$\Delta H_{f}^{\circ} = 0$ for an element.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Calculating
+$E^{\circ}_{\text{cell}}$}
+\zsec{18.2}
+
+\[ E^{\circ}_{\text{cell}}
+   = E^{\circ}_{\text{cathode}} - E^{\circ}_{\text{anode}} \]
+
+where both values are read straight off the table as \emph{reductions}
+--- no sign flipping needed.
+
+\begin{workedexample}[I do: the Daniell cell, two ways]
+\textbf{Find $E^{\circ}_{\text{cell}}$ for the zinc--copper cell.}
+
+\textbf{Method 1 --- cathode minus anode.} Copper is reduced (cathode,
+$+0.34$ V); zinc is oxidised (anode, tabulated as $-0.76$ V):
+\[ E^{\circ}_{\text{cell}} = 0.34 - (-0.76)
+   = \mathbf{+1.10\;\text{V}} \]
+Note you subtract the \emph{tabulated} anode value, minus sign and all.
+Do not flip it first --- the formula already does that.
+
+\textbf{Method 2 --- flip and add, if you prefer.} Write the oxidation
+explicitly and flip its sign:
+\[ \ce{Zn -> Zn^2+ + 2e-} \qquad +0.76\;\text{V} \]
+\[ \ce{Cu^2+ + 2e- -> Cu} \qquad +0.34\;\text{V} \]
+\[ E^{\circ}_{\text{cell}} = 0.76 + 0.34 = +1.10\;\text{V} \]
+Same answer. Use whichever you find harder to get wrong --- but never
+mix them, which is where sign errors come from.
+
+\textbf{The electrons must cancel, and they do so without scaling
+$E^{\circ}$.} Both half-reactions here involve two electrons, so nothing
+needs multiplying. Even if they had not --- say a silver half-cell
+needing $\times 2$ --- you would scale the \emph{equation} but leave
+$E^{\circ}$ untouched.
+
+\textbf{Sanity check.} A positive $E^{\circ}_{\text{cell}}$ means the
+cell as written runs on its own, which is exactly what a battery does.
+If your answer is negative, either you have the anode and cathode
+swapped, or the reaction genuinely needs to be driven (Ladder 13).
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+Use $E^{\circ}$: \ce{Ag+}/\ce{Ag} $= +0.80$, \ce{Cu^2+}/\ce{Cu} $=
++0.34$, \ce{Fe^2+}/\ce{Fe} $= -0.44$, \ce{Zn^2+}/\ce{Zn} $= -0.76$ V.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $E^{\circ}_{\text{cell}}$ for a \ce{Zn}/\ce{Ag} cell.
+        \workspace[1.8cm]
+  \item Find $E^{\circ}_{\text{cell}}$ for a \ce{Fe}/\ce{Cu} cell.
+        \workspace[1.8cm]
+  \item In the \ce{Fe}/\ce{Cu} cell, which metal is the anode?
+        \workspace[1.4cm]
+  \item If you doubled every coefficient, what happens to
+        $E^{\circ}_{\text{cell}}$? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $+1.56$ V \quad (b) $+0.78$ V \quad (c) iron \quad (d)
+nothing --- it is unchanged}
+\keyonly{\begin{apcanswer}(a) Silver is higher, so it is the cathode:
+$0.80 - (-0.76) = \mathbf{+1.56}$ \textbf{V}. (b) Copper is higher, so
+it is the cathode: $0.34 - (-0.44) = \mathbf{+0.78}$ \textbf{V}. (c)
+\textbf{Iron} --- it is lower on the table, so it is oxidised. (d)
+\textbf{Nothing.} $E^{\circ}$ is intensive and does not scale with the
+amount of substance.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Spontaneity from
+$E^{\circ}_{\text{cell}}$}
+\zsec{18.3}
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.6,2.2) -- (10.9,2.2);
+  \node[font=\sffamily\bfseries] at (5.7,2.7) {$E^{\circ} = 0$};
+  \fill (5.7,2.2) circle (0.11);
+  \draw[densely dashed,apcgray] (5.7,1.92) -- (5.7,2.15);
+  \node[font=\sffamily\bfseries] at (2.6,1.75) {$E^{\circ} > 0$};
+  \node[align=center] at (2.6,1.0)
+    {thermodynamically\\\textbf{favoured} --- a galvanic cell};
+  \node[align=center] at (5.7,1.0) {at\\equilibrium};
+  \node[font=\sffamily\bfseries] at (8.8,1.75) {$E^{\circ} < 0$};
+  \node[align=center] at (8.8,1.0)
+    {must be \textbf{driven} ---\\an electrolytic cell};
+  \draw[apcgray] (0.5,0.45) -- (11.0,0.45);
+  \node[anchor=west] at (0.6,0.0)
+    {note the sign convention is \emph{opposite} to $\Delta G$: positive
+     $E^{\circ}$ and negative $\Delta G^{\circ}$ both mean favoured};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{The signs run opposite ways, and that is the trap.} Favoured
+means $\Delta G^{\circ} < 0$ but $E^{\circ} > 0$. The minus sign in
+$\Delta G^{\circ} = -nFE^{\circ}$ is what flips them, and mixing the two
+conventions is the commonest error in Unit 9. When in doubt, remember a
+battery: it works on its own, and it has a \emph{positive} voltage.
+\end{apctrap}
+
+\begin{workedexample}[I do: predicting whether a reaction happens]
+\textbf{Will copper metal dissolve in a solution of \ce{Zn^2+}?}
+
+\textbf{Write the proposed reaction.} If it happened, copper would be
+oxidised and zinc(II) reduced:
+\[ \ce{Cu + Zn^2+ -> Cu^2+ + Zn} \]
+
+\textbf{Assign the electrodes as proposed.} Zinc is being reduced, so it
+would be the cathode ($-0.76$ V); copper is oxidised, so the anode
+($+0.34$ V):
+\[ E^{\circ}_{\text{cell}} = -0.76 - 0.34 = -1.10\;\text{V} \]
+
+\textbf{Negative, so it does not happen.} Copper will not dissolve in
+zinc(II) solution. And note the answer is exactly the negative of
+Ladder 7's $+1.10$ V --- because it is the same reaction written
+backwards.
+
+\textbf{Now the reverse, which does happen.} Drop zinc metal into
+\ce{Cu^2+} solution and $E^{\circ} = +1.10$ V: the zinc dissolves, copper
+plates onto it, and the blue colour fades. This is a standard
+demonstration and a standard exam question.
+
+\textbf{The shortcut, once you trust the table.} A metal will displace
+any metal ion \emph{below} it in the table. Zinc is below copper, so
+zinc displaces \ce{Cu^2+}; copper does not displace \ce{Zn^2+}. That
+single reading answers most ``will this reaction occur'' questions
+without arithmetic.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+Use the $E^{\circ}$ values from Ladder 7.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Will zinc metal displace \ce{Ag+} from solution? Show the
+        potential. \workspace[1.8cm]
+  \item Will silver metal displace \ce{Cu^2+}? Show the potential.
+        \workspace[1.8cm]
+  \item What is the sign of $\Delta G^{\circ}$ when $E^{\circ}$ is
+        positive? \workspace[1.4cm]
+  \item Why do a positive $E^{\circ}$ and a negative $\Delta G^{\circ}$
+        mean the same thing? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) yes, $+1.56$ V \quad (b) no, $-0.46$ V \quad (c)
+negative \quad (d) the minus sign in $\Delta G = -nFE$}
+\keyonly{\begin{apcanswer}(a) \textbf{Yes}: $0.80 - (-0.76) =
+\mathbf{+1.56}$ \textbf{V}, favoured. (b) \textbf{No}: silver would be
+oxidised and \ce{Cu^2+} reduced, giving $0.34 - 0.80 = \mathbf{-0.46}$
+\textbf{V}. (c) \textbf{Negative}. (d) Because $\Delta G^{\circ} =
+-nFE^{\circ}$, and $n$ and $F$ are both positive --- the
+\textbf{minus sign} converts a positive potential into a negative free
+energy. They are the same statement in different
+units.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ $\Delta G^{\circ} =
+-nFE^{\circ}$}
+\zsec{18.3}
+
+The hinge of the chapter --- the equation that makes electrochemistry a
+branch of Chapter 17.
+
+\[ \Delta G^{\circ} = -n F E^{\circ}
+   \qquad
+   F = \SI{96485}{\coulomb\per\mole} \]
+
+$n$ is the number of moles of electrons transferred in the balanced
+equation.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.0)
+    {three descriptions of one fact};
+  \node[font=\sffamily\bfseries] at (1.9,2.2) {$E^{\circ}_{\text{cell}}$};
+  \node[font=\sffamily\bfseries] at (5.6,2.2) {$\Delta G^{\circ}$};
+  \node[font=\sffamily\bfseries] at (9.3,2.2) {$K$};
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (2.6,2.2) -- (4.9,2.2);
+  \node[font=\sffamily\footnotesize,anchor=south] at (3.75,2.3)
+    {$-nF$};
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (6.3,2.2) -- (8.6,2.2);
+  \node[font=\sffamily\footnotesize,anchor=south] at (7.45,2.3)
+    {$-RT\ln$};
+  \draw[apcgray] (0.5,1.7) -- (11.0,1.7);
+  \foreach \y/\e/\g/\kk in {%
+      1.2/{$E^{\circ} > 0$}/{$\Delta G^{\circ} < 0$}/{$K > 1$},
+      0.7/{$E^{\circ} = 0$}/{$\Delta G^{\circ} = 0$}/{$K = 1$},
+      0.2/{$E^{\circ} < 0$}/{$\Delta G^{\circ} > 0$}/{$K < 1$}} {
+    \node at (1.9,\y) {\e};
+    \node at (5.6,\y) {\g};
+    \node at (9.3,\y) {\kk};}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: volts to kilojoules and back]
+\textbf{(a) The zinc--copper cell has $E^{\circ} = +1.10$ V and
+transfers 2 mol of electrons. Find $\Delta G^{\circ}$.}
+\[ \Delta G^{\circ} = -nFE^{\circ}
+   = -(2)(96485)(1.10) \]
+\[ = \SI{-212000}{\joule} = \mathbf{\SI{-212}{\kilo\joule}} \]
+
+Negative, as a positive $E^{\circ}$ requires --- and large, which is why
+this cell is a usable battery.
+
+\textbf{Units check.} A volt is a joule per coulomb, so
+$\text{mol} \times \text{C/mol} \times \text{J/C}$ leaves joules.
+Convert to kilojoules at the end; forgetting to leaves an answer a
+thousand times too large.
+
+\textbf{(b) A reaction transferring 2 mol of electrons has
+$\Delta G^{\circ} = \SI{-96.5}{\kilo\joule}$. Find $E^{\circ}$.}
+
+Rearrange:
+\[ E^{\circ} = \frac{-\Delta G^{\circ}}{nF}
+   = \frac{96500}{(2)(96485)}
+   = \mathbf{+0.500\;\text{V}} \]
+Note the numbers were chosen so $F$ nearly cancels --- exam items often
+are.
+
+\textbf{Finding $n$ is the step people skip.} It is the number of
+electrons that actually cancel when you combine the half-reactions ---
+\emph{not} the number in either half alone. For
+$\ce{2Al + 3Cu^2+ -> 2Al^3+ + 3Cu}$, aluminium gives up 3 each and
+copper takes 2 each, so the balanced equation transfers
+$2 \times 3 = 6$ moles of electrons: $n = 6$.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+Use $F = \SI{96485}{\coulomb\per\mole}$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $E^{\circ} = +0.50$ V and $n = 2$. Find $\Delta G^{\circ}$ in
+        kJ. \workspace[2.0cm]
+  \item $E^{\circ} = -0.25$ V and $n = 1$. Find $\Delta G^{\circ}$ and
+        say whether it is favoured. \workspace[2.0cm]
+  \item For $\ce{2Al + 3Cu^2+ -> 2Al^3+ + 3Cu}$, what is $n$?
+        \workspace[1.6cm]
+  \item Why does a positive $E^{\circ}$ always give a negative
+        $\Delta G^{\circ}$? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{-96.5}{\kilo\joule} \quad (b)
+\SI{+24.1}{\kilo\joule}, not favoured \quad (c) 6 \quad (d) the minus
+sign, with $n$ and $F$ positive}
+\keyonly{\begin{apcanswer}(a) $-(2)(96485)(0.50) = \SI{-96485}{\joule}
+= \mathbf{\SI{-96.5}{\kilo\joule}}$. (b) $-(1)(96485)(-0.25) =
+\SI{+24121}{\joule} = \mathbf{\SI{+24.1}{\kilo\joule}}$ ---
+\textbf{not favoured}. (c) Aluminium loses 3 electrons each and there
+are 2 of them, so $n = \mathbf{6}$; equivalently 3 copper ions gain 2
+each. (d) Because $n$ and $F$ are both \textbf{positive} constants, so
+the \textbf{minus sign} in $-nFE^{\circ}$ inverts the sign of
+$E^{\circ}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ $E^{\circ}$ and $K$}
+\zsec{18.3}
+
+Combine Ladder 9 with Chapter 17's $\Delta G^{\circ} = -RT\ln K$ and the
+free energy drops out:
+
+\[ E^{\circ} = \frac{0.0592}{n}\,\log K
+   \qquad\text{at \SI{298}{\kelvin}} \]
+
+\begin{workedexample}[I do: how far does a battery reaction go?]
+\textbf{Find $K$ for the zinc--copper cell, where $E^{\circ} = 1.10$ V
+and $n = 2$.}
+
+Rearrange for $\log K$:
+\[ \log K = \frac{n E^{\circ}}{0.0592}
+          = \frac{(2)(1.10)}{0.0592}
+          = \frac{2.20}{0.0592} = 37.2 \]
+\[ K = 10^{37.2} \approx \mathbf{10^{37}} \]
+
+\textbf{That is an enormous number}, and it should be. A cell potential
+of 1.10 V is large, so the reaction runs essentially to completion ---
+which is why the cell delivers current until one reactant is exhausted
+rather than fading to an equilibrium mixture.
+
+\textbf{Notice how little voltage it takes.} Just 1.10 V corresponds to
+$K \approx 10^{37}$. The logarithm compresses ferociously: every
+$0.0592/n$ volts is one power of ten in $K$. A cell with
+$E^{\circ} = 0.10$ V and $n = 2$ has $\log K = 3.4$, so $K \approx
+10^{3}$ --- still product-favoured, but a billion billion billion times
+less so.
+
+\textbf{Where the $0.0592$ comes from.} It is $2.303\,RT/F$ evaluated at
+\SI{25}{\celsius} --- that is \SI{298.15}{\kelvin}, which is why the
+constant is $0.0592$ and not the $0.0591$ you get from a rounded
+\SI{298}{\kelvin}. It is a temperature-specific shortcut, so state the
+assumption if a question gives you a different temperature.
+
+\textbf{Sanity check, always.} Positive $E^{\circ}$ gives
+$\log K > 0$, so $K > 1$ and products are favoured. Negative
+$E^{\circ}$ gives $K < 1$. The three-way consistency of Ladder 9's
+figure means any two of $E^{\circ}$, $\Delta G^{\circ}$ and $K$ let you
+check the third.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+Use $E^{\circ} = (0.0592/n)\log K$ at \SI{298}{\kelvin}.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $E^{\circ} = +0.0592$ V and $n = 1$. Find $\log K$ and $K$.
+        \workspace[1.8cm]
+  \item $E^{\circ} = +0.30$ V and $n = 2$. Find $\log K$.
+        \workspace[1.8cm]
+  \item If $E^{\circ}$ is negative, is $K$ greater or less than 1?
+        \workspace[1.4cm]
+  \item Why is the constant $0.0592$ only valid at
+        \SI{298}{\kelvin}? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $\log K = 1$, $K = 10$ \quad (b) $\log K = 10.1$ \quad
+(c) less than 1 \quad (d) it contains $T$}
+\keyonly{\begin{apcanswer}(a) $\log K = (1)(0.0592)/0.0592 =
+\mathbf{1}$, so $K = \mathbf{10}$. (b) $\log K = (2)(0.30)/0.0592 =
+\mathbf{10.1}$, so $K \approx 10^{10}$. (c) \textbf{Less than 1} ---
+a negative $E^{\circ}$ gives a negative $\log K$. (d) Because
+$0.0592$ is $2.303\,RT/F$ \textbf{evaluated at \SI{298}{\kelvin}} ---
+it contains the temperature, so it changes if the temperature
+does.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ The Nernst equation}
+\zsec{18.4}
+
+Real cells rarely sit at standard conditions. The Nernst equation
+corrects $E^{\circ}$ for the concentrations you actually have.
+
+\[ E = E^{\circ} - \frac{0.0592}{n}\,\log Q
+   \qquad\text{at \SI{298}{\kelvin}} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,2.85)
+    {the same $Q$-versus-$K$ logic as Chapter 13, in volts};
+  \foreach \y/\cond/\eff in {%
+      2.2/{$Q < K$ (excess reactant)}/{$E > E^{\circ}$ --- more
+        driving force},
+      1.65/{$Q = K$}/{$E = 0$ --- the cell is \textbf{dead}},
+      1.1/{$Q > K$ (excess product)}/{$E < 0$ --- it would run
+        backwards}} {
+    \node[anchor=west] at (0.8,\y) {\cond};
+    \node[anchor=west] at (5.6,\y) {\eff};}
+  \draw[apcgray] (0.6,2.6) -- (11.0,2.6);
+  \draw[apcgray] (0.6,0.75) -- (11.0,0.75);
+  \node[anchor=west] at (0.8,0.3)
+    {a flat battery is a cell that has reached equilibrium --- $E = 0$
+     is the definition of dead};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: a cell away from standard conditions]
+\textbf{For the zinc--copper cell ($E^{\circ} = 1.10$ V, $n = 2$), find
+$E$ when $[\ce{Zn^2+}] = \SI{0.10}{\Molar}$ and $[\ce{Cu^2+}] =
+\SI{1.0}{\Molar}$.}
+
+\textbf{Write $Q$ for the cell reaction} $\ce{Zn + Cu^2+ -> Zn^2+ +
+Cu}$. Solids are omitted, exactly as in Chapter 13:
+\[ Q = \frac{[\ce{Zn^2+}]}{[\ce{Cu^2+}]}
+     = \frac{0.10}{1.0} = 0.10 \]
+
+\textbf{Substitute.}
+\[ E = 1.10 - \frac{0.0592}{2}\log(0.10)
+     = 1.10 - (0.0296)(-1) \]
+\[ = 1.10 + 0.0296 = \mathbf{+1.13\;\text{V}} \]
+
+\textbf{Higher than standard, and that makes sense.} There is less
+product (\ce{Zn^2+}) than standard and a full complement of reactant, so
+the reaction has further to go and pushes harder. Le Ch\^{a}telier, read
+as a voltage.
+
+\textbf{The two things to get right.} First, \textbf{solids and pure
+liquids do not appear in $Q$} --- so \ce{Zn} and \ce{Cu} metal are
+absent. Second, watch the sign: $\log$ of a number below 1 is negative,
+and subtracting a negative \emph{raises} $E$. Sign slips here are the
+main source of wrong answers.
+
+\textbf{And the limiting case.} As the cell runs, \ce{Zn^2+} builds up
+and \ce{Cu^2+} is consumed, so $Q$ rises. When $Q$ finally reaches $K$,
+the correction term exactly cancels $E^{\circ}$ and $E = 0$. The battery
+is flat --- not because it ran out of chemicals, but because it reached
+equilibrium.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+Use $E^{\circ} = 1.10$ V, $n = 2$ for the \ce{Zn}/\ce{Cu} cell.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $E$ when $[\ce{Zn^2+}] = \SI{1.0}{\Molar}$ and
+        $[\ce{Cu^2+}] = \SI{0.010}{\Molar}$. \workspace[2.2cm]
+  \item Does raising $[\ce{Cu^2+}]$ raise or lower $E$? Why?
+        \workspace[1.8cm]
+  \item What is $E$ when the cell reaches equilibrium?
+        \workspace[1.4cm]
+  \item Which species are omitted from $Q$, and why?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $+1.04$ V \quad (b) raises it --- more reactant \quad
+(c) 0 \quad (d) solids and pure liquids}
+\keyonly{\begin{apcanswer}(a) $Q = 1.0/0.010 = 100$, so
+$E = 1.10 - (0.0296)\log(100) = 1.10 - (0.0296)(2) = 1.10 - 0.0592 =
+\mathbf{+1.04}$ \textbf{V}. (b) \textbf{Raises} it: more reactant means
+a smaller $Q$, a more negative $\log Q$, and therefore a larger $E$.
+(c) \textbf{Zero} --- a cell at equilibrium is a flat battery.
+(d) \textbf{Solids and pure liquids}, because their concentrations are
+fixed and cannot change --- the same rule as every equilibrium
+expression since Chapter 13.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ Concentration cells}
+\zsec{18.4}
+
+The strangest cell in the course: identical electrodes, identical
+chemistry on both sides, and it still produces a voltage.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % dilute side
+  \fill[apcgray!22] (0.7,0.5) rectangle (3.3,2.3);
+  \draw[very thick] (0.7,2.9) -- (0.7,0.5) -- (3.3,0.5) -- (3.3,2.9);
+  \fill[apcgray!70] (1.8,1.0) rectangle (2.1,3.3);
+  \foreach \p in {(1.2,0.9),(2.6,1.2)} {\fill \p circle (0.07);}
+  \node[align=center] at (2.0,-0.2)
+    {\textbf{dilute} \ce{Cu^2+}\\\SI{0.010}{\Molar}};
+  \node[font=\sffamily\bfseries] at (2.0,3.55) {\ce{Cu}};
+
+  % concentrated side
+  \fill[apcgray!22] (6.7,0.5) rectangle (9.3,2.3);
+  \draw[very thick] (6.7,2.9) -- (6.7,0.5) -- (9.3,0.5) -- (9.3,2.9);
+  \fill[apcgray!70] (7.9,1.0) rectangle (8.2,3.3);
+  \foreach \p in {(7.1,0.85),(7.5,1.4),(8.6,0.95),(8.9,1.7),
+                  (7.3,1.95),(8.5,2.0)} {\fill \p circle (0.07);}
+  \node[align=center] at (8.0,-0.2)
+    {\textbf{concentrated} \ce{Cu^2+}\\\SI{1.0}{\Molar}};
+  \node[font=\sffamily\bfseries] at (8.0,3.55) {\ce{Cu}};
+
+  \fill[apcgray!45] (3.3,1.9) rectangle (6.7,2.3);
+  \draw[very thick] (3.3,1.9) rectangle (6.7,2.3);
+  \node[font=\sffamily\footnotesize] at (5.0,2.1) {salt bridge};
+  % Only the short symbol fits in the 3.4cm gap between the beakers;
+  % the explanation ran over both beaker walls, so it moved to the
+  % caption block below the figure.
+  \node[font=\sffamily\footnotesize] at (5.0,1.3) {$E^{\circ} = 0$};
+  \node[font=\sffamily\footnotesize] at (5.0,-1.0)
+    {both half-cells run the same reaction, so $E^{\circ} = 0$};
+  \node[font=\sffamily\footnotesize] at (5.0,-1.5)
+    {the \textbf{dilute} side is the anode --- the cell runs to even
+     the two concentrations out};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: voltage from concentration alone]
+\textbf{A copper concentration cell has \SI{0.010}{\Molar} \ce{Cu^2+}
+on one side and \SI{1.0}{\Molar} on the other. Find $E$.}
+
+\textbf{Start with $E^{\circ} = 0$.} Both half-reactions are
+$\ce{Cu^2+ + 2e- -> Cu}$, so the cathode and anode values are identical
+and cancel exactly. Whatever voltage appears comes entirely from the
+Nernst correction.
+
+\textbf{Decide which side is the anode.} The cell will act to
+\emph{reduce} the difference, so the dilute side must gain \ce{Cu^2+}
+--- meaning copper dissolves there. Dilute side is the anode; the
+concentrated side is the cathode, where \ce{Cu^2+} plates out.
+
+\textbf{Write $Q$ as (anode concentration) over (cathode
+concentration)}, since the anode species is the product:
+\[ Q = \frac{0.010}{1.0} = 0.010 \]
+
+\textbf{Apply Nernst with $n = 2$.}
+\[ E = 0 - \frac{0.0592}{2}\log(0.010)
+     = -(0.0296)(-2) = \mathbf{+0.0592\;\text{V}} \]
+
+\textbf{Small but real.} Concentration cells produce tens of millivolts,
+not volts --- but they are the principle behind the pH meter, where a
+known reference concentration is compared against an unknown one and the
+voltage reports the difference.
+
+\textbf{The check that costs nothing.} $E$ must come out
+\emph{positive} if you assigned the anode correctly. A negative answer
+means you put the concentrated side as the anode; swap them. And when
+the two concentrations become equal, $Q = 1$, $\log Q = 0$ and
+$E = 0$ --- the cell dies exactly when the difference disappears.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item What is $E^{\circ}$ for any concentration cell? Why?
+        \workspace[1.6cm]
+  \item In a concentration cell, which side is the anode?
+        \workspace[1.6cm]
+  \item Find $E$ for a copper concentration cell with
+        \SI{0.10}{\Molar} and \SI{1.0}{\Molar} ($n = 2$).
+        \workspace[2.0cm]
+  \item What happens to $E$ as the two concentrations approach each
+        other? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) 0 --- both half-cells are identical \quad (b) the dilute
+side \quad (c) $+0.0296$ V \quad (d) it falls to zero}
+\keyonly{\begin{apcanswer}(a) $\mathbf{0}$, because both half-cells
+carry the \textbf{same half-reaction}, so their standard potentials are
+identical and cancel. (b) The \textbf{dilute} side --- the cell runs so
+as to raise the dilute concentration, which requires the electrode there
+to dissolve. (c) $Q = 0.10/1.0 = 0.10$, so
+$E = -(0.0296)\log(0.10) = -(0.0296)(-1) = \mathbf{+0.0296}$ \textbf{V}.
+(d) It \textbf{falls to zero}: when the concentrations are equal
+$Q = 1$, $\log Q = 0$, and there is no longer any difference to
+exploit.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 13 \textbullet\ Electrolytic cells}
+\zsec{18.7}
+
+Run electricity \emph{into} a cell and you can force an unfavourable
+reaction to happen. Same vocabulary, opposite energetics.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\bfseries] at (3.4,3.3) {GALVANIC};
+  \node[font=\sffamily\bfseries] at (8.6,3.3) {ELECTROLYTIC};
+  \draw[apcgray] (0.5,3.0) -- (11.0,3.0);
+  \draw[apcgray] (6.0,3.45) -- (6.0,0.15);
+  \foreach \y/\lab/\gal/\ele in {%
+      2.5/{$E^{\circ}_{\text{cell}}$}/{positive}/{negative},
+      2.0/{$\Delta G^{\circ}$}/{negative}/{positive},
+      1.5/{energy}/{\textbf{produces} it}/{\textbf{consumes} it},
+      1.0/{driven by}/{the reaction itself}/{an external supply},
+      0.5/{oxidation at}/{the \textbf{anode}}/{the \textbf{anode}}} {
+    \node[anchor=east,font=\sffamily\bfseries] at (2.0,\y) {\lab};
+    \node at (3.9,\y) {\gal};
+    \node at (8.6,\y) {\ele};}
+  \node[font=\sffamily\footnotesize] at (5.6,-0.1)
+    {the last row never changes --- which is why anode/cathode is worth
+     learning and $+$/$-$ is not};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: forcing a reaction uphill]
+\textbf{The zinc--copper reaction has $E^{\circ} = +1.10$ V. What
+happens if you apply an external voltage greater than 1.10 V in the
+opposite direction?}
+
+\textbf{You drive the reaction backwards.} Copper dissolves and zinc
+plates out --- the exact reverse of what the cell does on its own. This
+is electrolysis: using electrical energy to force a thermodynamically
+unfavourable reaction.
+
+\textbf{Why more than 1.10 V?} You must overcome the cell's own
+tendency to run forward. Applying less than 1.10 V lets the cell keep
+discharging; applying exactly 1.10 V holds it at balance; applying more
+overpowers it.
+
+\textbf{Three examples that matter industrially.} Electroplating
+deposits a thin metal layer on an object at the cathode. The
+Hall--H\'{e}roult process reduces \ce{Al^3+} to aluminium metal ---
+impossible chemically, because aluminium is so easily oxidised, and the
+reason aluminium was once more precious than gold. And electrolysing
+water gives hydrogen and oxygen, which will not form from water on their
+own.
+
+\textbf{What does \emph{not} change.} Oxidation still happens at the
+anode and reduction still at the cathode. The electrode \emph{signs}
+reverse between cell types, which is precisely why the CED excludes them
+and why you should reason with anode/cathode instead.
+
+\textbf{And note the scope boundary.} Zumdahl's \S18.8 covers commercial
+electrolysis in detail --- the Downs cell, chlor-alkali, aluminium
+production. That section is not on the CED. Understand the
+\emph{principle} of electrolysis, which is 9.11; do not memorise
+industrial plant designs.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 13 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item What is the sign of $E^{\circ}_{\text{cell}}$ for an
+        electrolytic cell? \workspace[1.4cm]
+  \item At which electrode does reduction occur in an electrolytic
+        cell? \workspace[1.4cm]
+  \item Why must the applied voltage exceed the cell's own potential?
+        \workspace[1.8cm]
+  \item Give one reason aluminium is produced electrolytically rather
+        than chemically. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) negative \quad (b) the cathode \quad (c) to overpower
+the reverse tendency \quad (d) \ce{Al^3+} is too hard to reduce
+chemically}
+\keyonly{\begin{apcanswer}(a) \textbf{Negative} --- the reaction is not
+favoured and must be driven. (b) The \textbf{cathode}, exactly as in a
+galvanic cell; only the signs differ, not the definitions. (c) Because
+the cell has its own tendency to run \emph{forward}; the applied voltage
+must \textbf{overpower} that tendency before the reaction can be pushed
+in reverse. (d) Because \ce{Al^3+} has a very negative reduction
+potential ($-1.66$ V) --- aluminium is so readily oxidised that no
+practical chemical reducing process will reduce it, so electrical
+energy must supply the difference.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 14 \textbullet\ Faraday's law}
+\zsec{18.7}
+
+The quantitative side of electrolysis: how much substance a given
+current deposits in a given time.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,2.6)
+    {the conversion chain --- never skip a link};
+  \foreach \x/\qty in {0.9/{current $\times$ time},
+                       3.9/{charge (C)},
+                       6.3/{mol \ce{e-}},
+                       8.5/{mol substance},
+                       10.6/{grams}} {
+    \node[align=center] at (\x,1.9) {\qty};}
+  \foreach \x/\op in {2.5/{$It$}, 5.2/{$\div F$},
+                      7.5/{$\div n$}, 9.6/{$\times M$}} {
+    \draw[-{Stealth[length=2mm]},thick] (\x-0.5,1.45) -- (\x+0.5,1.45);
+    \node[font=\sffamily\footnotesize,anchor=north] at (\x,1.4) {\op};}
+  \draw[apcgray] (0.4,0.75) -- (11.2,0.75);
+  \node[anchor=west] at (0.5,0.3)
+    {$F = \SI{96485}{\coulomb\per\mole}$ \textbullet\ time must be in
+     \textbf{seconds} \textbullet\ $n$ is electrons per formula unit};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: electroplating silver]
+\textbf{A current of \SI{2.00}{\ampere} runs for \SI{30.0}{\minute}
+through a solution of \ce{Ag+}. What mass of silver plates out?}
+
+\textbf{Step 1 --- time to seconds.}
+\[ 30.0\;\text{min} \times 60 = \SI{1800}{\second} \]
+
+\textbf{Step 2 --- charge.}
+\[ Q = It = (2.00)(1800) = \SI{3600}{\coulomb} \]
+
+\textbf{Step 3 --- moles of electrons.}
+\[ \frac{3600}{96485} = \SI{0.0373}{\mole}\;\ce{e-} \]
+
+\textbf{Step 4 --- moles of silver.} The half-reaction is
+$\ce{Ag+ + e- -> Ag}$, so one electron per silver:
+\[ 0.0373\;\text{mol}\;\ce{Ag} \]
+
+\textbf{Step 5 --- grams.}
+\[ 0.0373 \times 107.87 = \mathbf{\SI{4.02}{\gram}} \]
+
+\textbf{The step that separates silver from copper.} For
+$\ce{Cu^2+ + 2e- -> Cu}$ you would divide the moles of electrons by
+\textbf{two}, because each copper needs two. Getting $n$ from the
+half-reaction --- not guessing it --- is the whole skill.
+
+\textbf{Two unit traps.} Time must be in \textbf{seconds}; a current in
+amperes is coulombs per second, so minutes or hours must be converted
+first. And an ampere-hour is not a coulomb --- multiply by 3600 if a
+question gives you one.
+
+\textbf{Sanity check by scale.} Roughly \SI{96500}{\coulomb} deposits
+one mole of a singly charged metal. We passed \SI{3600}{\coulomb},
+about 1/27 of that, so we should get about 1/27 of a mole of silver ---
+roughly \SI{4}{\gram}. It does.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 14 --- four questions]
+Use $F = \SI{96485}{\coulomb\per\mole}$, $M(\ce{Cu}) =
+\SI{63.55}{\gram\per\mole}$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item How many coulombs pass in \SI{20.0}{\minute} at
+        \SI{1.50}{\ampere}? \workspace[1.8cm]
+  \item How many moles of electrons is that? \workspace[1.8cm]
+  \item What mass of copper plates out from \ce{Cu^2+}?
+        \workspace[2.0cm]
+  \item Why must you divide by 2 for copper but not for silver?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{1800}{\coulomb} \quad (b) \SI{0.0187}{\mole} \quad
+(c) \SI{0.593}{\gram} \quad (d) \ce{Cu^2+} needs two electrons}
+\keyonly{\begin{apcanswer}(a) $t = 1200\;\text{s}$, so
+$Q = (1.50)(1200) = \mathbf{\SI{1800}{\coulomb}}$. (b)
+$1800/96485 = \mathbf{\SI{0.0187}{\mole}}\;\ce{e-}$. (c)
+$\ce{Cu^2+ + 2e- -> Cu}$, so $0.0187/2 = \SI{0.00933}{\mole}$ of copper;
+$0.00933 \times 63.55 = \mathbf{\SI{0.593}{\gram}}$. (d) Because the
+half-reaction $\ce{Cu^2+ + 2e- -> Cu}$ requires \textbf{two electrons
+per copper atom}, whereas $\ce{Ag+ + e- -> Ag}$ requires only one. The
+divisor comes from the half-reaction, never from
+guesswork.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mixed set \textbullet\ ten questions, no labels}
+
+\begin{apcnote}[Why this section exists]
+Every question so far arrived with its ladder attached. These ten do
+not --- and in this chapter the first decision is usually \emph{which
+relationship}: the table, $E^{\circ}_{\text{cell}}$, $-nFE^{\circ}$,
+$(0.0592/n)\log K$, Nernst, or Faraday.
+\end{apcnote}
+
+\begin{yourturn}[MIXED SET --- first five]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em,label=(\alph*)]
+  \item Find the oxidation number of Mn in \ce{MnO2}.
+        \workspace[1.6cm]
+  \item Using $E^{\circ}$: \ce{Ag+}/\ce{Ag} $= +0.80$,
+        \ce{Ni^2+}/\ce{Ni} $= -0.25$ V, find
+        $E^{\circ}_{\text{cell}}$ for a \ce{Ni}/\ce{Ag} cell.
+        \workspace[2.0cm]
+  \item For that cell, $n = 2$. Find $\Delta G^{\circ}$ in kJ.
+        \workspace[2.0cm]
+  \item Which electrode is written on the left in cell notation, and
+        what happens there? \workspace[1.8cm]
+  \item A cell has $E^{\circ} = -0.40$ V. Is it galvanic or
+        electrolytic? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $+4$ \quad (b) $+1.05$ V \quad (c)
+\SI{-203}{\kilo\joule} \quad (d) the anode; oxidation \quad (e)
+electrolytic}
+\keyonly{\begin{apcanswer}\textbf{(a)} $x - 4 = 0$, so
+$\mathbf{+4}$. \textbf{(b)} Silver is higher, so it is the cathode:
+$0.80 - (-0.25) = \mathbf{+1.05}$ \textbf{V}. \textbf{(c)}
+$-(2)(96485)(1.05) = \SI{-202600}{\joule} \approx
+\mathbf{\SI{-203}{\kilo\joule}}$. \textbf{(d)} The \textbf{anode}, where
+\textbf{oxidation} occurs. \textbf{(e)} \textbf{Electrolytic} --- a
+negative $E^{\circ}$ means the reaction must be
+driven.\end{apcanswer}}
+\end{yourturn}
+
+\begin{yourturn}[MIXED SET --- last five]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em,label=(\alph*)]
+  \item A cell has $E^{\circ} = +0.0592$ V with $n = 2$. Find
+        $\log K$. \workspace[1.8cm]
+  \item Balance $\ce{Cr2O7^2- -> Cr^3+}$ in acid.
+        \workspace[2.0cm]
+  \item A \ce{Zn}/\ce{Cu} cell ($E^{\circ} = 1.10$ V, $n = 2$) has
+        $[\ce{Zn^2+}] = \SI{1.0}{\Molar}$ and $[\ce{Cu^2+}] =
+        \SI{0.10}{\Molar}$. Find $E$. \workspace[2.2cm]
+  \item \SI{1.00}{\ampere} flows for \SI{96485}{\second} through
+        \ce{Ag+}. How many moles of silver plate out?
+        \workspace[2.0cm]
+  \item In an electrolytic cell, where does reduction occur?
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) 2 \quad (b) $\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ +
+7H2O}$ \quad (c) $+1.07$ V \quad (d) \SI{1.00}{\mole} \quad (e) the
+cathode}
+\keyonly{\begin{apcanswer}\textbf{(a)} $\log K = nE^{\circ}/0.0592 =
+(2)(0.0592)/0.0592 = \mathbf{2}$, so $K = 100$. \textbf{(b)}
+$\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}$; charge checks as
+$-2+14-6 = +6$ on both sides. \textbf{(c)} $Q = 1.0/0.10 = 10$, so
+$E = 1.10 - (0.0296)(1) = \mathbf{+1.07}$ \textbf{V} --- lower than
+standard, because product is in excess. \textbf{(d)}
+$Q = (1.00)(96485) = \SI{96485}{\coulomb}$, which is exactly one mole of
+electrons; $\ce{Ag+ + e- -> Ag}$ needs one each, so
+$\mathbf{\SI{1.00}{\mole}}$ of silver. \textbf{(e)} At the
+\textbf{cathode} --- the same as in a galvanic cell.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt. Every row is assessed, within the scope stated at the
+top: \S18.5--18.6 and \S18.8 are off the CED and are not here, and the
+two exclusion statements (electrode $+$/$-$ labelling, agent
+terminology) are honoured throughout.
+
+\renewcommand{\arraystretch}{1.25}
+\noindent\begin{tabular}{@{}c p{5.7cm} c p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & oxidation numbers & 1 & the sum equals the charge \\
+$\square$ & balancing in acid & 2 & O, then H, then charge \\
+$\square$ & balancing in base & 3 & add \ce{OH-} to both sides \\
+$\square$ & the galvanic cell & 4 & An Ox, Red Cat \\
+$\square$ & cell notation & 5 & anode on the left \\
+$\square$ & reduction potentials & 6 & do not scale $E^{\circ}$ \\
+$\square$ & $E^{\circ}_{\text{cell}}$ & 7 & cathode minus anode \\
+$\square$ & spontaneity & 8 & signs run opposite to $\Delta G$ \\
+$\square$ & $\Delta G^{\circ} = -nFE^{\circ}$ & 9 & find $n$ properly \\
+$\square$ & $E^{\circ}$ and $K$ & 10 & $(0.0592/n)\log K$ \\
+$\square$ & the Nernst equation & 11 & solids omitted from $Q$ \\
+$\square$ & concentration cells & 12 & $E^{\circ} = 0$, dilute is anode \\
+$\square$ & electrolytic cells & 13 & driven, not driving \\
+$\square$ & Faraday's law & 14 & seconds, and $n$ per formula unit \\
+\midrule
+$\square$ & \textbf{mixed set} (8 of 10) & --- & whichever it exposed \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+14/14 and the mixed set: Unit 9 is complete, and with it the whole
+course. Every self-study chapter is now behind you.
+
+10--13: check where the misses fall. Ladders 1--3 are redox bookkeeping
+carried over from Chapter 4 and repair with practice. Ladders 6--8 are
+sign conventions, and almost every error there is a \textbf{sign} rather
+than a misunderstanding --- write ``cathode minus anode'' at the top of
+your working every time. Ladders 9--12 are Chapter 17 in new units; if
+they missed, the problem may be upstream.
+
+9 or fewer: the likeliest single cause is the opposite sign conventions
+of $E^{\circ}$ and $\Delta G^{\circ}$. Re-read Ladders 8 and 9 together
+and fix one sentence in your head --- \emph{a battery works on its own
+and has a positive voltage, so favoured means $E^{\circ} > 0$ and
+$\Delta G^{\circ} < 0$.} Nearly everything else in this chapter follows
+from getting that pair the right way round.
+
+\textbf{Where this sits in the course.} Unit 9 combines thermodynamics
+(Chapter 17) and electrochemistry (this one) into a single 7--9\% unit.
+If both chapters are solid, you have finished the content and what
+remains is review.
+\end{apcnote}
+
+\end{document}
