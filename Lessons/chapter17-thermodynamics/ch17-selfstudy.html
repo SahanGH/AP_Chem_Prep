@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 17 • Self-Study • Chapter 17, I do / You do</title>
+<link rel="stylesheet" href="../style.css?v=28190c55">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=28190c55"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Chapter 17 • Spontaneity, Entropy, and Free Energy</p>
+  <h1>Self-Study • Chapter 17, I do / You do</h1>
+  <p class="subtitle">Zumdahl §17.1–17.10 • PDF pp. 835–869</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a fully worked example in the
+solid-framed box, then <strong>four</strong> YOUR TURN questions in the dashed
+box — same skill, new numbers, no help. Work all four before checking
+the gray <em>check:</em> line; a tracker tick needs all four right first
+time. A ten-question <strong>mixed set</strong> follows Ladder 15.</p>
+
+<strong>Nothing in this chapter is skipped, and nothing is excluded.</strong>
+CED topics 9.1 to 9.7 carry no exclusion statements at all — unusual,
+and worth knowing. Where other chapters have material you can safely
+skim, this one does not.
+
+<strong>The question this chapter answers.</strong> Chapter 12 asked
+<em>how fast</em>. Chapter 13 asked <em>how far</em>. This chapter asks the
+one underneath both: <strong>why does anything happen at all?</strong> Why does
+ice melt in a warm room and never freeze in one? Why do gases mix and
+never unmix?
+
+<strong>The vocabulary warning that will cost you marks if ignored.</strong>
+The CED says <strong>“thermodynamically favoured”</strong>, not
+“spontaneous”. Zumdahl says spontaneous. They mean the same thing —
+\(\Delta G < 0\) — but “spontaneous” misleads, because it sounds like
+“happens immediately” and a thermodynamically favoured reaction can
+take geological time (Ladder 11). Use the CED's phrase in answers.
+
+</div>
+
+<h2> Ladder 1 • What entropy actually is</h2>
+<span class="badge">ZUM §17.1</span>
+
+<p>Entropy, \(S\), measures how many ways the energy and matter of a system
+can be arranged. More available arrangements means higher entropy.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-1.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>“Entropy is disorder” is a slogan, not a definition, and it
+misleads.</strong> A crystal growing from solution looks more ordered, yet the
+total entropy still rises — because the heat released disperses into
+the surroundings. Say <strong>“the number of ways energy and matter
+can be arranged”</strong> or <strong>“dispersal of energy”</strong>. Answers built on
+“messiness” lose marks the moment a question involves the
+surroundings.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: why the gas never goes back</div>
+
+<strong>Remove the barrier above and the gas fills the container. Wait
+a year and it never returns to one side. Why not?</strong>
+
+<strong>Nothing forbids it.</strong> No law of motion prevents every molecule
+from happening to be on the left at the same instant. The molecules do
+not know where the barrier used to be.
+
+<strong>It is overwhelmingly improbable.</strong> For one molecule the chance
+of being on the left is \(1/2\). For \(n\) molecules all being on the left
+at once, it is \((1/2)^{n}\). For a mole — \(6 \times 10^{23}\) molecules
+— that probability is zero for every practical purpose.
+
+<strong>So entropy is a counting statement.</strong> The spread-out
+arrangement is not <em>preferred</em> by any force; there are simply
+vastly more ways to be spread out than to be bunched. Systems drift
+toward the arrangement with the most ways of happening, and with \(10^{23}\)
+particles that drift is irreversible.
+
+<strong>Three consequences worth carrying.</strong> Gases expanding into a
+vacuum, two gases mixing, and heat flowing from hot to cold are all the
+same phenomenon: energy and matter spreading over more available
+arrangements. None of the three requires a force pushing them; each is
+just the more numerous outcome winning.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>Define entropy without using the word “disorder”.
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:1" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the number of ways energy and matter can be arranged</span></div>
+
+<li>Two gases in connected flasks mix and never unmix. Explain
+        using arrangements. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:2" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>far more mixed arrangements exist</span></div>
+
+<li>Does anything physically <em>forbid</em> the gas returning to one
+        side? Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:3" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — it is
+merely overwhelmingly improbable</span></div>
+
+<li>Which has higher entropy: 1&thinsp;mol of \(\ce{Ar}\) in
+        1&thinsp;L or in 10&thinsp;L? Why?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:4" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>10&thinsp;L — more
+positions available</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) the number of ways energy and matter can be arranged
+ &emsp;  (b) far more mixed arrangements exist  &emsp;  (c) no — it is
+merely overwhelmingly improbable  &emsp;  (d) 10&thinsp;L — more
+positions available</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) The <strong>number of ways the energy and
+matter of a system can be arranged</strong> — equivalently, how far energy is
+dispersed. (b) There are <strong>vastly more arrangements</strong> in which the
+two gases are intermingled than in which they are separated, so the
+mixed state is overwhelmingly the more probable one; nothing pulls them
+together again. (c) <strong>No.</strong> No physical law forbids it — it is
+simply so improbable (\((1/2)^{n}\) for \(n\) molecules) that with a mole of
+gas it never happens. (d) <strong>10&thinsp;L</strong>. A larger volume
+offers each atom far more available positions, so there are more
+arrangements and \(S\) is higher.</div></div>
+
+</div>
+
+<h2> Ladder 2 • Predicting the sign of
+\(\Delta S\)</h2>
+<span class="badge">ZUM §17.1</span>
+
+<p>You can call the sign of \(\Delta S\) without a single number, and the
+exam asks you to constantly.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-2.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: four calls, no calculations</div>
+
+<strong>Give the sign of \(\Delta S\) for each.</strong>
+
+<strong>(a) \(\ce{2NO2(g) -> N2O4(g)}\).</strong> Two moles of gas become one.
+Fewer gas particles means fewer arrangements: \(\Delta S\) is
+<strong>negative</strong>. Counting gas moles is the first thing to check and
+usually the last thing you need.
+
+<strong>(b) \(\ce{H2O(l) -> H2O(g)}\).</strong> A liquid becomes a gas —
+molecules go from touching to flying free. Strongly <strong>positive</strong>,
+and this is the single biggest entropy change in ordinary chemistry.
+
+<strong>(c) \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\).</strong> No gas on the left,
+one mole of gas on the right. <strong>Positive</strong> — and note that the
+two solids barely matter. Creating gas from no gas is decisive.
+
+<strong>(d) \(\ce{2H2(g) + O2(g) -> 2H2O(l)}\).</strong> Three moles of gas
+become zero. Strongly <strong>negative</strong>.
+
+<strong>The hierarchy is what makes this fast.</strong> If the number of gas
+moles changes, that answers the question — stop there. Only when gas
+moles are equal on both sides do you go looking at phases, particle
+counts or dissolving. Students who weigh all five factors equally get
+slow and get it wrong.
+
+<strong>And when gas moles are equal, expect a small \(\Delta S\).</strong> For
+\(\ce{H2(g) + I2(g) -> 2HI(g)}\), two moles of gas become two: whatever
+\(\Delta S\) turns out to be, it will be near zero, and you should be
+suspicious of any calculation that says otherwise.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+Give the sign of \(\Delta S\) and one-line reasoning.
+<ol>
+
+<li>\(\ce{2SO2(g) + O2(g) -> 2SO3(g)}\) <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:5" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>negative — 3 gas mol to 2</span></div>
+
+<li>\(\ce{H2O(s) -> H2O(l)}\) <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:6" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>positive — solid
+to liquid</span></div>
+
+<li>\(\ce{NH4NO3(s) -> NH4+(aq) + NO3-(aq)}\)
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:7" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>positive — solid to dissolved ions</span></div>
+
+<li>\(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\) <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:8" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>negative — 4 gas mol to 2</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) negative — 3 gas mol to 2  &emsp;  (b) positive — solid
+to liquid  &emsp;  (c) positive — solid to dissolved ions  &emsp;  (d)
+negative — 4 gas mol to 2</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Negative</strong>: three moles of gas
+become two. (b) <strong>Positive</strong>: melting frees molecules from fixed
+lattice positions. (c) <strong>Positive</strong>: an ordered solid becomes two
+kinds of freely moving hydrated ion — and note this is the entropy
+that drives cold packs (Ladder 14). (d) <strong>Negative</strong>: four moles of
+gas become two.</div></div>
+
+</div>
+
+<h2> Ladder 3 • The third law and absolute
+entropies</h2>
+<span class="badge">ZUM §17.2</span>
+
+<p>Entropy has something enthalpy does not: a true zero. That makes \(S\)
+values <strong>absolute</strong>, not relative.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-3.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>\(S^{\circ}\) for an element is not zero.</strong> \(\Delta H_{f}^{\circ}\)
+of \(\ce{O2(g)}\) is zero by definition; \(S^{\circ}\) of \(\ce{O2(g)}\) is
+205.1&thinsp;J/mol/K, a measured quantity. Setting
+element entropies to zero in a \(\Delta S^{\circ}\) calculation is the
+standard wrong answer in Ladder 4, and it comes from carrying a
+Chapter 6 habit into Chapter 17.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: reading an \(S^{\circ}\) table</div>
+
+<strong>Three patterns you can predict before looking anything up.</strong>
+
+<strong>Phase dominates.</strong> For water: \(S^{\circ}(\text{s}) = 41\),
+\(S^{\circ}(\text{l}) = 69.9\), \(S^{\circ}(\text{g}) =
+188.8\,\mathrm{J/mol/K}\). The gas is nearly three times
+the liquid. Whenever you compare two substances, check the phases
+first.
+
+<strong>Bigger and more complex means higher.</strong> \(S^{\circ}(\ce{CH4}) =
+186\) but \(S^{\circ}(\ce{C2H6}) =
+229.5\,\mathrm{J/mol/K}\). More atoms means more ways to
+vibrate and rotate, so more arrangements of the same energy.
+
+<strong>Harder solids have lower entropy.</strong> Diamond sits at
+2.4&thinsp;J/mol/K — almost nothing — because its
+rigid covalent network leaves atoms very few ways to move. Graphite,
+with its sliding sheets, is 5.7&thinsp;. The Chapter 10 structure
+argument reappears as a number.
+
+<strong>Why this matters for the third law.</strong> A perfect crystal at
+0&thinsp;K has exactly one arrangement, so \(S = 0\) exactly. Every
+other state has more, so every real \(S^{\circ}\) is positive. That is
+what makes entropy absolute — and it is why you never see a negative
+\(S^{\circ}\) in a table, though \(\Delta S^{\circ}\) for a reaction is
+negative all the time.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>State the third law of thermodynamics. <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:9" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>a perfect crystal at 0&thinsp;K has \(S = 0\)</span></div>
+
+<li>Why is \(S^{\circ}(\ce{O2}) \neq 0\) when
+        \(\Delta H_{f}^{\circ}(\ce{O2}) = 0\)? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:10" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(S\) is absolute; \(\Delta H_{f}\) is a defined reference</span></div>
+
+<li>Which is larger, \(S^{\circ}(\ce{H2O(l)})\) or
+        \(S^{\circ}(\ce{H2O(g)})\)? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:11" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the gas</span></div>
+
+<li>Which is larger, \(S^{\circ}(\ce{CH4})\) or
+        \(S^{\circ}(\ce{C3H8})\)? Why? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:12" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{C3H8}\) — more atoms, more arrangements</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) a perfect crystal at 0&thinsp;K has \(S = 0\)  &emsp; 
+(b) \(S\) is absolute; \(\Delta H_{f}\) is a defined reference  &emsp;  (c)
+the gas  &emsp;  (d) \(\ce{C3H8}\) — more atoms, more arrangements</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) The entropy of a <strong>perfect crystal
+at 0&thinsp;K is zero</strong> — there is exactly one way to arrange it.
+(b) Because entropy has a <strong>true zero</strong> and is measured
+<em>absolutely</em> from it, whereas \(\Delta H_{f}^{\circ}\) is a
+<em>defined reference point</em> — elements are assigned zero by
+convention, not by measurement. (c) <strong>The gas</strong>, by a large margin
+(188.8 against 69.9&thinsp;J/mol/K). (d)
+<strong>\(\ce{C3H8}\)</strong>: more atoms give more ways to vibrate and rotate, so
+more arrangements at a given energy.</div></div>
+
+</div>
+
+<h2> Ladder 4 • Calculating
+\(\Delta S^{\circ}_{\text{rxn}}\)</h2>
+<span class="badge">ZUM §17.6</span>
+
+<p>Same shape as Hess's law from Chapter 6 — products minus reactants,
+each scaled by its coefficient.</p>
+
+\[ \Delta S^{\circ}_{\text{rxn}}
+   = \sum n\,S^{\circ}(\text{products})
+   - \sum n\,S^{\circ}(\text{reactants}) \]
+
+<div class="box we"><div class="box-title">I do: a calculation whose sign you already knew</div>
+
+<strong>For \(\ce{2H2(g) + O2(g) -> 2H2O(l)}\), find
+\(\Delta S^{\circ}\). Use \(S^{\circ}\): \(\ce{H2(g)}\) \(= 130.7\),
+\(\ce{O2(g)}\) \(= 205.1\), \(\ce{H2O(l)}\) \(=
+69.9\,\mathrm{J/mol/K}\).</strong>
+
+<strong>Predict the sign first.</strong> Three moles of gas become zero moles
+of gas. \(\Delta S^{\circ}\) must be strongly negative — so if the
+arithmetic comes out positive, the arithmetic is wrong.
+
+<strong>Products:</strong>
+\[ 2 \times 69.9 = 139.8\,\mathrm{J/K} \]
+
+<strong>Reactants:</strong>
+\[ 2 \times 130.7 + 205.1 = 261.4 + 205.1
+   = 466.5\,\mathrm{J/K} \]
+
+<strong>Subtract:</strong>
+\[ \Delta S^{\circ} = 139.8 - 466.5
+   = \mathbf{-326.7\,\mathrm{J/K}} \]
+
+<p>Negative, as predicted, and large — consistent with destroying three
+moles of gas.</p>
+
+<strong>Two habits.</strong> Predict the sign before you compute; it costs five
+seconds and catches every subtraction reversal. And watch the
+<strong>units</strong>: \(S^{\circ}\) is tabulated in
+J/mol/K while \(\Delta H\) is in
+kJ/mol. Ladder 7 mixes the two in one equation, and
+that unit mismatch is the most expensive error in this chapter.
+
+<strong>Do not set element entropies to zero.</strong> \(\ce{H2}\) and \(\ce{O2}\) are
+elements, but their \(S^{\circ}\) values are 130.7 and 205.1, not 0.
+Dropping them here would give \(\Delta S^{\circ} =
++139.8\,\mathrm{J/K}\) — positive, for a reaction that
+destroys three moles of gas. The sign check catches it instantly.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+Use \(S^{\circ}\) (J/mol/K): \(\ce{N2(g)}\) \(= 191.6\),
+\(\ce{H2(g)}\) \(= 130.7\), \(\ce{NH3(g)}\) \(= 192.5\), \(\ce{CaCO3(s)}\) \(= 92.9\),
+\(\ce{CaO(s)}\) \(= 39.8\), \(\ce{CO2(g)}\) \(= 213.7\).
+<ol>
+
+<li>Predict the sign of \(\Delta S^{\circ}\) for
+        \(\ce{N2 + 3H2 -> 2NH3}\). <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:13" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>negative</span></div>
+
+<li>Compute it. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:14" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="-198.7" data-sig="4" data-unit="J/K"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Compute \(\Delta S^{\circ}\) for
+        \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\). <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:15" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="160.6" data-sig="4" data-unit="J/K"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why may you not treat \(S^{\circ}(\ce{N2})\) as zero?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:16" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(S^{\circ}\) is absolute,
+not a defined reference</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) negative  &emsp;  (b) -198.7&thinsp;J/K  &emsp; 
+(c) +160.6&thinsp;J/K  &emsp;  (d) \(S^{\circ}\) is absolute,
+not a defined reference</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Negative</strong> — four moles of gas
+become two. (b) Products \(2 \times 192.5 = 385.0\); reactants
+\(191.6 + 3 \times 130.7 = 191.6 + 392.1 = 583.7\); so
+\(\Delta S^{\circ} = 385.0 - 583.7 =
+\mathbf{-198.7\,\mathrm{J/K}}\) — negative, as predicted.
+(c) Products \(39.8 + 213.7 = 253.5\); reactant \(92.9\); so
+\(\Delta S^{\circ} = 253.5 - 92.9 =
+\mathbf{+160.6\,\mathrm{J/K}}\) — positive, because a gas is
+created from none. (d) Because \(S^{\circ}\) values are <strong>absolute</strong>,
+measured from the third-law zero. Only \(\Delta H_{f}^{\circ}\) uses
+elements as a defined zero.</div></div>
+
+</div>
+
+<h2> Ladder 5 • The second law:
+\(\Delta S_{\text{universe}}\)</h2>
+<span class="badge">ZUM §17.2</span>
+
+<p>The actual criterion for a favoured process is not about the system at
+all.</p>
+
+\[ \Delta S_{\text{univ}}
+   = \Delta S_{\text{sys}} + \Delta S_{\text{surr}} > 0
+   \quad\text{for a thermodynamically favoured process} \]
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-4.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: how order can increase</div>
+
+<strong>Water freezing at -10&thinsp;&deg;C is thermodynamically
+favoured. Yet liquid becomes solid — \(\Delta S_{\text{sys}}\) is
+clearly negative. How can that be?</strong>
+
+<strong>Because the system is not the universe.</strong> Freezing releases heat
+— the enthalpy of fusion, outward — and that heat disperses into the
+surrounding air. Dispersing energy into the surroundings <em>raises</em>
+\(\Delta S_{\text{surr}}\).
+
+<strong>Below 0&thinsp;&deg;C the surroundings win.</strong> The heat released
+raises \(\Delta S_{\text{surr}}\) by more than \(\Delta S_{\text{sys}}\)
+falls, so \(\Delta S_{\text{univ}} > 0\) and freezing is favoured.
+
+<strong>Above 0&thinsp;&deg;C it does not.</strong> Ladder 6 shows why:
+\(\Delta S_{\text{surr}} = -\Delta H/T\), so the same released heat buys
+<em>less</em> entropy in warmer surroundings. At high enough \(T\) the
+surroundings' gain no longer covers the system's loss, and melting —
+the reverse — becomes the favoured direction instead.
+
+<strong>So 0&thinsp;&deg;C is not a magic temperature.</strong> It is simply
+where the two terms exactly cancel, \(\Delta S_{\text{univ}} = 0\), and
+neither direction is favoured. That is the definition of a phase
+equilibrium, and it is the same idea as \(\Delta G = 0\) in Ladder 7.
+
+<strong>The exam version of this idea:</strong> whenever a question shows an
+apparently order-increasing process happening on its own — freezing,
+crystallising, a protein folding — the answer involves heat released
+to the surroundings.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+<ol>
+
+<li>State the second law in terms of \(\Delta S_{\text{univ}}\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:17" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\Delta S_{\text{univ}} > 0\) for a favoured process</span></div>
+
+<li>Can a favoured process have \(\Delta S_{\text{sys}} < 0\)?
+        Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:18" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes, if \(\Delta S_{\text{surr}}\) is more positive</span></div>
+
+<li>Water freezes at -10&thinsp;&deg;C. Give the signs of
+        \(\Delta S_{\text{sys}}\) and \(\Delta S_{\text{surr}}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:19" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>sys negative, surr positive</span></div>
+
+<li>What is \(\Delta S_{\text{univ}}\) for a system exactly at
+        equilibrium? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:20" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>zero</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\Delta S_{\text{univ}} > 0\) for a favoured process
+ &emsp;  (b) yes, if \(\Delta S_{\text{surr}}\) is more positive  &emsp;  (c)
+sys negative, surr positive  &emsp;  (d) zero</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) For any thermodynamically favoured
+process, \(\Delta S_{\text{univ}} > 0\); the entropy of the universe
+increases. (b) <strong>Yes.</strong> Only the sum must be positive, so a
+system's entropy may fall provided the surroundings gain more — which
+happens whenever the process releases enough heat. (c)
+\(\Delta S_{\text{sys}}\) is <strong>negative</strong> (liquid to solid);
+\(\Delta S_{\text{surr}}\) is <strong>positive</strong> (heat released disperses
+into the surroundings) and larger in magnitude. (d)
+<strong>Zero</strong> — neither direction is favoured, which is what
+equilibrium means.</div></div>
+
+</div>
+
+<h2> Ladder 6 • \(\Delta S_{\text{surr}}\) from
+\(\Delta H\)</h2>
+<span class="badge">ZUM §17.2</span>
+
+<p>The surroundings only ever see the heat the system gives or takes, so
+their entropy change follows one small equation.</p>
+
+\[ \Delta S_{\text{surr}} = \frac{-\Delta H_{\text{sys}}}{T} \]
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-5.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: the temperature in the denominator</div>
+
+<strong>The Haber reaction has \(\Delta H =
+-92.2\,\mathrm{kJ/mol}\). Find \(\Delta S_{\text{surr}}\) at
+298&thinsp;K.</strong>
+
+<strong>Convert to joules first</strong> — \(\Delta S\) is always in joules per
+kelvin, never kilojoules:
+\[ \Delta S_{\text{surr}}
+   = \frac{-(-92200\;\mathrm{J/mol})}{298\,\mathrm{K}}
+   = \mathbf{+309\,\mathrm{J/mol/K}} \]
+
+<p>Positive, because an exothermic reaction dumps heat into the
+surroundings and spreads it there.</p>
+
+<strong>Now the same reaction at 700&thinsp;K:</strong>
+\[ \Delta S_{\text{surr}} = \frac{92200}{700}
+   = +132\,\mathrm{J/mol/K} \]
+
+<strong>Less than half, from identical heat.</strong> That is the whole content
+of the \(T\) in the denominator: hot surroundings are already full of
+dispersed energy, so a given quantity of heat adds proportionally fewer
+new arrangements.
+
+<strong>And this is why exothermic reactions stop being favoured when
+heated.</strong> \(\Delta S_{\text{sys}}\) does not care much about temperature,
+but \(\Delta S_{\text{surr}}\) shrinks as \(T\) rises. Eventually it can no
+longer carry a negative \(\Delta S_{\text{sys}}\), and the reaction
+reverses — exactly the Haber-process compromise from Chapter 13,
+Ladder 12, now derived rather than asserted.
+
+<strong>This equation is also where \(\Delta G\) comes from.</strong> Multiply
+\(\Delta S_{\text{univ}} = \Delta S_{\text{sys}} - \Delta H/T\) through by
+\(-T\) and you get \(-T\Delta S_{\text{univ}} = \Delta H - T\Delta S\) —
+the right-hand side is \(\Delta G\). Ladder 7 uses it; it is not a new
+idea, just a rearrangement.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+<ol>
+
+<li>A reaction has \(\Delta H = -50.0\,\mathrm{kJ/mol}\).
+        Find \(\Delta S_{\text{surr}}\) at 250&thinsp;K.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:21" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="200.0" data-sig="1" data-unit="J/mol/K"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Same reaction at 500&thinsp;K. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:22" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="100.0" data-sig="1" data-unit="J/mol/K"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Give the sign of \(\Delta S_{\text{surr}}\) for an endothermic
+        process. <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:23" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>negative</span></div>
+
+<li>Why does the same released heat produce a larger
+        \(\Delta S_{\text{surr}}\) at low temperature?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:24" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>cold
+surroundings hold less dispersed energy already</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) +200&thinsp;J/mol/K  &emsp;  (b)
++100&thinsp;J/mol/K  &emsp;  (c) negative  &emsp;  (d) cold
+surroundings hold less dispersed energy already</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(-(-50000)/250 =
+\mathbf{+200\,\mathrm{J/mol/K}}\). (b) \(50000/500 =
+\mathbf{+100\,\mathrm{J/mol/K}}\) — exactly half, since
+the temperature doubled. (c) <strong>Negative</strong>: an endothermic process
+draws heat <em>out</em> of the surroundings, reducing their entropy. (d)
+Because cold surroundings already contain relatively little dispersed
+energy, so a given quantity of heat represents a proportionally
+<strong>larger</strong> increase in the number of available arrangements. The
+\(T\) in the denominator says exactly this.</div></div>
+
+</div>
+
+<h2> Ladder 7 • Gibbs free energy</h2>
+<span class="badge">ZUM §17.3–17.4</span>
+
+\(\Delta G\) bundles the system and the surroundings into a single
+number you can compute from system properties alone.
+
+\[ \Delta G = \Delta H - T\,\Delta S \]
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-6.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The unit mismatch is the single most expensive error in this
+chapter.</strong> \(\Delta H\) is tabulated in <strong>kilojoules</strong>;
+\(\Delta S\) in <strong>joules</strong> per kelvin. In \(\Delta H - T\Delta S\) you
+must convert one to match the other. Forget, and \(T\Delta S\) comes out a
+thousand times too large — which usually flips the sign of \(\Delta G\)
+and therefore the entire conclusion.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: is limestone decomposition favoured at room
+temperature?</div>
+
+<strong>For \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\), \(\Delta H^{\circ} =
++178.3\,\mathrm{kJ}\) and \(\Delta S^{\circ} =
++160.6\,\mathrm{J/K}\). Find \(\Delta G^{\circ}\) at
+298&thinsp;K.</strong>
+
+<strong>Convert \(\Delta S\) to kilojoules</strong> so both terms match:
+\[ \Delta S^{\circ} = 160.6\,\mathrm{J/K}
+   = 0.1606\,\mathrm{kJ/K} \]
+
+<strong>Substitute:</strong>
+\[ \Delta G^{\circ} = 178.3 - (298)(0.1606)
+   = 178.3 - 47.9 = \mathbf{+130.4\,\mathrm{kJ}} \]
+
+<strong>Positive, so not favoured at 298&thinsp;K</strong> — limestone
+does not spontaneously crumble into quicklime on a shelf, which
+matches every cathedral still standing.
+
+<strong>But look at the structure of the answer.</strong> \(\Delta H\) is
+positive (unfavourable) and \(\Delta S\) is positive (favourable). They
+oppose each other, and at 298&thinsp;K the enthalpy term is nearly
+four times larger, so enthalpy wins.
+
+<strong>Raise the temperature and that changes.</strong> \(T\Delta S\) grows in
+proportion to \(T\) while \(\Delta H\) barely moves — so at some
+temperature the entropy term overtakes and \(\Delta G\) turns negative.
+Ladder 9 finds exactly where. This is why lime kilns are heated: not to
+make the reaction faster, but to make it <em>favoured at all</em>.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+<ol>
+
+<li>\(\Delta H = -100.0\,\mathrm{kJ}\), \(\Delta S =
+        +50.0\,\mathrm{J/K}\), \(T = 298\,\mathrm{K}\). Find
+        \(\Delta G\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:25" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="-114.9" data-sig="4" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\(\Delta H = +40.0\,\mathrm{kJ}\), \(\Delta S =
+        +100.0\,\mathrm{J/K}\), \(T = 298\,\mathrm{K}\). Find
+        \(\Delta G\) and say whether it is favoured. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:26" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>+10.2&thinsp;kJ, not favoured</span></div>
+
+<li>What does \(\Delta G = 0\) mean? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:27" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>equilibrium</span></div>
+
+<li>Before computing, why must you convert units?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:28" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\Delta H\) is in kJ, \(\Delta S\) in J</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) -114.9&thinsp;kJ  &emsp;  (b)
++10.2&thinsp;kJ, not favoured  &emsp;  (c) equilibrium  &emsp;  (d)
+\(\Delta H\) is in kJ, \(\Delta S\) in J</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\Delta G = -100.0 - (298)(0.0500) =
+-100.0 - 14.9 = \mathbf{-114.9\,\mathrm{kJ}}\) — favoured, with
+both terms helping. (b) \(\Delta G = 40.0 - (298)(0.1000) = 40.0 - 29.8
+= \mathbf{+10.2\,\mathrm{kJ}}\): <strong>not favoured</strong> at this
+temperature, though it would be at higher \(T\) (Ladder 9). (c) The system
+is at <strong>equilibrium</strong> — neither direction is favoured. (d)
+Because \(\Delta H\) is tabulated in <strong>kilojoules</strong> and \(\Delta S\) in
+<strong>joules</strong> per kelvin; subtracting without converting makes the
+\(T\Delta S\) term a thousand times too large and usually flips the sign
+of the answer.</div></div>
+
+</div>
+
+<h2> Ladder 8 • The four sign combinations</h2>
+<span class="badge">ZUM §17.4</span>
+
+<p>Two signs, four cases, and only two of them depend on temperature.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-7.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: reading the table without memorising it</div>
+
+<strong>You never need to memorise these four boxes. Read them off
+\(\Delta G = \Delta H - T\Delta S\) directly.</strong>
+
+<strong>\(\Delta H < 0\), \(\Delta S > 0\).</strong> The first term is negative and
+\(-T\Delta S\) is also negative. Both terms push \(\Delta G\) negative, so
+it is negative at every temperature. <em>Example:</em> combustion.
+
+<strong>\(\Delta H > 0\), \(\Delta S < 0\).</strong> Both terms are positive, so
+\(\Delta G\) is positive at every temperature. Nothing you do to \(T\) can
+help. <em>Example:</em> the reverse of combustion — which is why fires
+do not un-burn.
+
+<strong>\(\Delta H < 0\), \(\Delta S < 0\).</strong> Enthalpy helps, entropy hurts,
+and the entropy term grows with \(T\). So it is favoured while \(T\) is
+<strong>small</strong> enough. <em>Example:</em> freezing, or the Haber process.
+
+<strong>\(\Delta H > 0\), \(\Delta S > 0\).</strong> Enthalpy hurts, entropy helps
+and grows with \(T\). Favoured once \(T\) is <strong>large</strong> enough.
+<em>Example:</em> limestone decomposition (Ladder 7), or ice melting.
+
+<strong>The one-line rule that regenerates the whole table:</strong>
+<em>\(T\) multiplies only the entropy term, so raising the temperature
+always strengthens whatever entropy is arguing for.</em> If \(\Delta S\) is
+positive, heat helps; if negative, heat hurts. Everything else follows.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 8 — four questions</div>
+
+<ol>
+
+<li>\(\Delta H < 0\), \(\Delta S > 0\): at what temperatures is it
+        favoured? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:29" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>all</span></div>
+
+<li>\(\Delta H > 0\), \(\Delta S > 0\): at what temperatures?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:30" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>high \(T\) only</span></div>
+
+<li>A reaction is favoured only below 400&thinsp;K. Give the
+        signs of \(\Delta H\) and \(\Delta S\). <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:31" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>both negative</span></div>
+
+<li>Why does raising \(T\) always favour whatever \(\Delta S\) is
+        arguing for? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:32" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(T\) multiplies only the entropy term</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) all  &emsp;  (b) high \(T\) only  &emsp;  (c) both negative
+ &emsp;  (d) \(T\) multiplies only the entropy term</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>All temperatures</strong> — both terms
+push \(\Delta G\) negative. (b) <strong>High temperatures only</strong>: the
+positive \(\Delta H\) must be overcome by \(T\Delta S\), which requires a
+large \(T\). (c) Both <strong>negative</strong>: enthalpy favours it, entropy
+opposes it, so it succeeds only while \(T\Delta S\) is small — that is,
+at low temperature. (d) Because in \(\Delta G = \Delta H - T\Delta S\),
+temperature multiplies <strong>only</strong> the entropy term. Raising \(T\)
+magnifies \(\Delta S\)'s contribution without changing \(\Delta H\)'s, so
+whatever entropy wants, heat gives it more of.</div></div>
+
+</div>
+
+<h2> Ladder 9 • The crossover temperature</h2>
+<span class="badge">ZUM §17.4</span>
+
+<p>For the two temperature-dependent cases, there is one temperature where
+\(\Delta G\) passes through zero. Set \(\Delta G = 0\) and solve.</p>
+
+\[ 0 = \Delta H - T\Delta S
+   \qquad\Longrightarrow\qquad
+   T = \frac{\Delta H}{\Delta S} \]
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-8.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: at what temperature will limestone
+decompose?</div>
+
+<strong>Using \(\Delta H^{\circ} = +178.3\,\mathrm{kJ}\) and
+\(\Delta S^{\circ} = +160.6\,\mathrm{J/K}\) from Ladder 7,
+find the crossover temperature.</strong>
+
+<strong>Set \(\Delta G = 0\) and solve, converting units as always:</strong>
+\[ T = \frac{\Delta H}{\Delta S}
+     = \frac{178300\,\mathrm{J}}{160.6\,\mathrm{J/K}}
+     = \mathbf{1110\,\mathrm{K}} \]
+
+<p>That is about 837&thinsp;&deg;C.</p>
+
+<strong>Check it against reality.</strong> Industrial lime kilns run at roughly
+900&thinsp;&deg;C — just above our crossover, as they must be. The
+calculation predicted a real engineering constraint from two tabulated
+numbers.
+
+<strong>Now say which side is which.</strong> \(\Delta S\) is positive, so the
+entropy term grows with \(T\); the reaction is therefore favoured
+<em>above</em> 1110&thinsp;K and not below. If \(\Delta S\) had been
+negative, the inequality would flip and the reaction would be favoured
+<em>below</em> the crossover.
+
+<strong>Two cautions.</strong> First, \(T = \Delta H / \Delta S\) only makes sense
+when \(\Delta H\) and \(\Delta S\) have the <em>same</em> sign — otherwise
+there is no crossover, because the reaction is favoured either always or
+never (Ladder 8), and the formula returns a meaningless negative
+temperature. Second, the answer is in <strong>kelvin</strong>, always; convert
+to celsius only if the question asks.
+
+<strong>And a caveat worth stating on an FRQ:</strong> this assumes
+\(\Delta H^{\circ}\) and \(\Delta S^{\circ}\) are temperature-independent.
+They are not exactly, but over ordinary ranges the approximation is
+good, and it is what the exam expects.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 9 — four questions</div>
+
+<ol>
+
+<li>\(\Delta H = +30.0\,\mathrm{kJ}\), \(\Delta S =
+        +100.0\,\mathrm{J/K}\). Find the crossover
+        temperature. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:33" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="300.0" data-sig="1" data-unit="K"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Is that reaction favoured above or below it? Why?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:34" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>above — \(\Delta S\) is
+positive</span></div>
+
+<li>\(\Delta H = -40.0\,\mathrm{kJ}\), \(\Delta S =
+        -80.0\,\mathrm{J/K}\). Find the crossover and say
+        which side is favoured. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:35" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>500&thinsp;K, favoured below</span></div>
+
+<li>Why does \(T = \Delta H/\Delta S\) give nothing useful when the
+        two signs differ? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:36" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>there is
+no crossover; it is favoured always or never</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 300&thinsp;K  &emsp;  (b) above — \(\Delta S\) is
+positive  &emsp;  (c) 500&thinsp;K, favoured below  &emsp;  (d) there is
+no crossover; it is favoured always or never</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(T = 30000/100.0 =
+\mathbf{300\,\mathrm{K}}\). (b) <strong>Above.</strong> \(\Delta S\) is positive,
+so the \(T\Delta S\) term grows with temperature and eventually overcomes
+the positive \(\Delta H\). (c) \(T = -40000/(-80.0) =
+\mathbf{500\,\mathrm{K}}\), and since \(\Delta S\) is <strong>negative</strong>
+the reaction is favoured <strong>below</strong> 500&thinsp;K. (d) Because
+with opposite signs both terms of \(\Delta G = \Delta H - T\Delta S\)
+point the same way at every temperature — the reaction is favoured
+either always or never, and there is no crossing point. The formula then
+returns a negative temperature, which is physically
+meaningless.</div></div>
+
+</div>
+
+<h2> Ladder 10 • \(\Delta G^{\circ}\) from
+formation values</h2>
+<span class="badge">ZUM §17.4</span>
+
+<p>A second route to \(\Delta G^{\circ}\), identical in shape to Hess's law
+and to Ladder 4.</p>
+
+\[ \Delta G^{\circ}_{\text{rxn}}
+   = \sum n\,\Delta G_{f}^{\circ}(\text{products})
+   - \sum n\,\Delta G_{f}^{\circ}(\text{reactants}) \]
+
+<div class="box we"><div class="box-title">I do: two routes, one answer</div>
+
+<strong>You now have two ways to reach \(\Delta G^{\circ}\), and knowing
+which to use is half the skill.</strong>
+
+<strong>Route 1 — \(\Delta G^{\circ} = \Delta H^{\circ} -
+T\Delta S^{\circ}\).</strong> Use this when the question gives you \(\Delta H\)
+and \(\Delta S\), or when it asks about a temperature <em>other than</em>
+298&thinsp;K. It is the only route that can handle a temperature
+change.
+
+<strong>Route 2 — formation values.</strong> Use this when the question hands
+you a \(\Delta G_{f}^{\circ}\) table. It works only at
+298&thinsp;K, because that is the temperature the table was
+compiled at.
+
+<strong>Worked: \(\ce{Fe2O3(s) + 3CO(g) -> 2Fe(s) + 3CO2(g)}\)</strong>, with
+\(\Delta G_{f}^{\circ}\) (kJ/mol):
+\(\ce{Fe2O3}\) \(= -742.2\), \(\ce{CO}\) \(= -137.2\), \(\ce{CO2}\) \(= -394.4\),
+\(\ce{Fe}\) \(= 0\).
+
+<strong>Products:</strong>
+\[ 2(0) + 3(-394.4) = -1183.2\,\mathrm{kJ} \]
+
+<strong>Reactants:</strong>
+\[ -742.2 + 3(-137.2) = -742.2 - 411.6 = -1153.8\,\mathrm{kJ} \]
+
+<strong>Subtract:</strong>
+\[ \Delta G^{\circ} = -1183.2 - (-1153.8)
+   = \mathbf{-29.4\,\mathrm{kJ}} \]
+
+<p>Negative, so iron smelting in a blast furnace is thermodynamically
+favoured — as several thousand years of ironworking suggest.</p>
+
+<strong>Elements are zero here.</strong> \(\Delta G_{f}^{\circ}(\ce{Fe}) = 0\)
+because iron in its standard state is the reference — exactly like
+\(\Delta H_{f}^{\circ}\) in Chapter 6. This is the <em>opposite</em> of
+Ladder 4's rule for \(S^{\circ}\), and keeping the two straight is what
+this ladder tests.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 10 — four questions</div>
+
+\(\Delta G_{f}^{\circ}\) (kJ/mol): \(\ce{NH3(g)}\) \(=
+-16.4\), \(\ce{NO(g)}\) \(= +86.6\), \(\ce{H2O(g)}\) \(= -228.6\), elements \(= 0\).
+<ol>
+
+<li>Find \(\Delta G^{\circ}\) for \(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:37" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="-32.8" data-sig="3" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Find \(\Delta G^{\circ}\) for \(\ce{N2(g) + O2(g) -> 2NO(g)}\).
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:38" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="173.2" data-sig="4" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Which of the two is thermodynamically favoured at
+        298&thinsp;K? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:39" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the first</span></div>
+
+<li>Why is \(\Delta G_{f}^{\circ}\) of an element zero when
+        \(S^{\circ}\) of an element is not? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:40" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\Delta G_{f}\) is a defined reference; \(S\) is absolute</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) -32.8&thinsp;kJ  &emsp;  (b)
++173.2&thinsp;kJ  &emsp;  (c) the first  &emsp;  (d)
+\(\Delta G_{f}\) is a defined reference; \(S\) is absolute</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(2(-16.4) - [0 + 3(0)] =
+\mathbf{-32.8\,\mathrm{kJ}}\). (b) \(2(+86.6) - [0 + 0] =
+\mathbf{+173.2\,\mathrm{kJ}}\). (c) <strong>The first</strong>, ammonia
+synthesis — \(\Delta G^{\circ}\) is negative. The second is strongly
+positive, which is why atmospheric \(\ce{N2}\) and \(\ce{O2}\) coexist without
+reacting (Chapter 13, Ladder 5, where \(K \approx 10^{-30}\) said the same
+thing). (d) Because \(\Delta G_{f}^{\circ}\) is defined <em>relative</em> to
+elements in their standard states — a chosen reference — while
+\(S^{\circ}\) is measured <em>absolutely</em> from the third-law zero. Two
+different kinds of quantity that happen to appear in similar-looking
+tables.</div></div>
+
+</div>
+
+<h2> Ladder 11 • Thermodynamic versus kinetic
+control</h2>
+<span class="badge">ZUM §17.7</span>
+
+\(\Delta G\) says whether a reaction <em>can</em> go. It says nothing at all
+about whether it <em>will</em> in your lifetime.
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-9.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: diamonds are not forever, technically</div>
+
+<strong>\(\ce{C(diamond) -> C(graphite)}\) has \(\Delta G^{\circ} =
+-2.9\,\mathrm{kJ/mol}\). Every diamond in existence is
+thermodynamically unstable. Why do jewellers sleep at night?</strong>
+
+<strong>Because \(\Delta G\) is not a rate.</strong> A negative \(\Delta G\) says
+the products sit lower in free energy, so the conversion is favoured. It
+says nothing about the barrier between them.
+
+<strong>And that barrier is enormous.</strong> Converting diamond to graphite
+means breaking a rigid three-dimensional network of covalent bonds and
+rebuilding it as sheets. The activation energy is so large that at room
+temperature the rate is immeasurably slow — far slower than the age of
+the universe.
+
+<strong>So the reaction is under <em>kinetic control</em>.</strong> What you
+observe is decided by the barrier, not by the free-energy difference.
+The diamond is not stable; it is <strong>metastable</strong> — trapped behind
+a hill it cannot climb.
+
+<strong>Two more cases of the same thing.</strong> A hydrogen–oxygen mixture
+has \(\Delta G^{\circ} \approx -457\,\mathrm{kJ/mol}\) and sits
+unchanged for years without a spark (Chapter 13, Ladder 5, said this in
+\(K\) language). Petrol in air is likewise wildly favoured and entirely
+safe until ignited.
+
+<strong>The exam sentence.</strong> “The reaction is thermodynamically
+favoured (\(\Delta G < 0\)) but kinetically controlled: the activation
+energy is large, so the rate is negligible at this temperature.” Both
+halves, or you have only answered half the question.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 11 — four questions</div>
+
+<ol>
+
+<li>A reaction has \(\Delta G^{\circ} = -200\,\mathrm{kJ}\) but
+        no observable change occurs. Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:41" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>large \(E_{\mathrm{a}}\) — kinetic control</span></div>
+
+<li>Does a catalyst change \(\Delta G^{\circ}\)? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:42" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no
+— it changes only the rate</span></div>
+
+<li>What does “metastable” mean? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:43" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>favoured but trapped behind a
+barrier</span></div>
+
+<li>Which quantity would you change to make the reaction in (a)
+        actually proceed? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:44" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(E_{\mathrm{a}}\), via a catalyst or heat</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) large \(E_{\mathrm{a}}\) — kinetic control  &emsp;  (b) no
+— it changes only the rate  &emsp;  (c) favoured but trapped behind a
+barrier  &emsp;  (d) \(E_{\mathrm{a}}\), via a catalyst or heat</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) The reaction is <strong>thermodynamically
+favoured but kinetically controlled</strong>: the activation energy is so large
+that the rate is negligible at this temperature. \(\Delta G\) describes
+extent, not speed. (b) <strong>No.</strong> A catalyst lowers \(E_{\mathrm{a}}\)
+and so raises the rate, but \(\Delta G^{\circ}\) depends only on the free
+energies of reactants and products, which a catalyst does not touch —
+the same argument as Chapter 12, Ladder 12. (c) A state that is
+<strong>thermodynamically unfavoured relative to some other state but
+kinetically trapped</strong> behind a large activation barrier — favoured to
+change, but unable to. (d) The <strong>activation energy</strong>: add a
+catalyst, or raise the temperature so more collisions clear the
+existing barrier. Neither changes \(\Delta G^{\circ}\).</div></div>
+
+</div>
+
+<h2> Ladder 12 • \(\Delta G^{\circ}\) and \(K\)</h2>
+<span class="badge">ZUM §17.9</span>
+
+<p>Chapter 13's equilibrium constant and this chapter's free energy are
+the same information in two currencies.</p>
+
+\[ \Delta G^{\circ} = -RT \ln K
+   \qquad
+   R = 8.314\;\mathrm{J\,mol^{-1}\,K^{-1}} \]
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-10.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: both directions of the translation</div>
+
+<strong>(a) A reaction has \(K = 1.0e6\) at 298&thinsp;K. Find
+\(\Delta G^{\circ}\).</strong>
+\[ \Delta G^{\circ} = -RT \ln K
+   = -(8.314)(298)\ln(1.0e6) \]
+\[ = -(2478)(13.82) = -34200\,\mathrm{J}
+   = \mathbf{-34.2\,\mathrm{kJ}} \]
+
+<p>Large \(K\), negative \(\Delta G^{\circ}\) — the two statements agree, as
+they must.</p>
+
+<strong>(b) A reaction has \(\Delta G^{\circ} =
++20.0\,\mathrm{kJ}\) at 298&thinsp;K. Find \(K\).</strong>
+
+<p>Rearrange:
+\[ \ln K = \frac{-\Delta G^{\circ}}{RT}
+         = \frac{-20000}{(8.314)(298)}
+         = \frac{-20000}{2478} = -8.07 \]
+\[ K = e^{-8.07} = \mathbf{3.1e-4} \]</p>
+
+<p>Positive \(\Delta G^{\circ}\), \(K\) well below 1 — reactants favoured,
+consistent again.</p>
+
+<strong>The sign check that catches everything.</strong> Before computing,
+decide which side of 1 the answer should fall on. Negative
+\(\Delta G^{\circ}\) gives \(K > 1\); positive gives \(K < 1\). A \(K\) of
+3.1e-4 for a positive \(\Delta G^{\circ}\) passes; a \(K\) of 3200
+would not, and would mean a dropped minus sign.
+
+<strong>Units, again.</strong> \(R\) is in <strong>joules</strong>, so \(\Delta G^{\circ}\)
+must be in joules too. Feeding kilojoules into this equation is the same
+mistake as Ladder 7's, in a new place.
+
+<strong>Why the relationship exists at all.</strong> \(\Delta G^{\circ}\) is the
+free-energy difference between pure reactants and pure products, and \(K\)
+measures where the mixture settles between them. They are two
+descriptions of one thing — which is why Chapter 13, Ladder 5's
+“\(K \gg 1\) means products favoured” and this chapter's
+“\(\Delta G^{\circ} < 0\) means favoured” were always the same
+sentence.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 12 — four questions</div>
+
+Use \(T = 298\,\mathrm{K}\), \(RT = 2478\,\mathrm{J/mol}\).
+<ol>
+
+<li>\(K = 1.0\). Find \(\Delta G^{\circ}\). <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:45" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.0" data-sig="1" data-unit=""><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\(\Delta G^{\circ} = -10.0\,\mathrm{kJ}\). Is \(K\) greater or
+        less than 1? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:46" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>greater than 1</span></div>
+
+<li>\(K = 1.0e-3\). Find \(\Delta G^{\circ}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:47" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="17.1" data-sig="3" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A student computes \(K = 500\) from \(\Delta G^{\circ} =
+        +15\,\mathrm{kJ}\). What went wrong?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:48" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>sign error — positive
+\(\Delta G^{\circ}\) needs \(K < 1\)</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0  &emsp;  (b) greater than 1  &emsp;  (c)
++17.1&thinsp;kJ  &emsp;  (d) sign error — positive
+\(\Delta G^{\circ}\) needs \(K < 1\)</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\ln 1 = 0\), so \(\Delta G^{\circ} =
+\mathbf{0}\). (b) <strong>Greater than 1</strong> — a negative
+\(\Delta G^{\circ}\) always corresponds to \(K > 1\). (c)
+\(\Delta G^{\circ} = -(2478)\ln(1.0e-3) = -(2478)(-6.908) =
+17120\,\mathrm{J} = \mathbf{+17.1\,\mathrm{kJ}}\). (d) A
+<strong>sign error</strong>. A positive \(\Delta G^{\circ}\) must give
+\(K < 1\); getting 500 means the minus sign in
+\(\ln K = -\Delta G^{\circ}/RT\) was dropped. The correct answer is
+\(K = e^{-15000/2478} = 2.3e-3\).</div></div>
+
+</div>
+
+<h2> Ladder 13 • \(\Delta G\) versus
+\(\Delta G^{\circ}\)</h2>
+<span class="badge">ZUM §17.9</span>
+
+<p>The degree symbol matters. \(\Delta G^{\circ}\) describes standard
+conditions; \(\Delta G\) describes the mixture you actually have.</p>
+
+\[ \Delta G = \Delta G^{\circ} + RT \ln Q \]
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-11.png" alt="figure"></figure>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>\(\Delta G^{\circ} = 0\) and \(\Delta G = 0\) mean completely
+different things.</strong> \(\Delta G = 0\) means <em>this particular mixture</em>
+is at equilibrium — extremely common. \(\Delta G^{\circ} = 0\) means
+\(K = 1\) exactly — rare, and a much stronger claim. A reaction with
+\(\Delta G^{\circ} = +50\,\mathrm{kJ}\) still reaches equilibrium;
+it just does so with very little product.
+
+</div>
+
+<div class="box we"><div class="box-title">I do: why a positive \(\Delta G^{\circ}\) still
+produces something</div>
+
+<strong>A reaction has \(\Delta G^{\circ} = +20.0\,\mathrm{kJ}\), so
+\(K = 3.1e-4\) (Ladder 12). Start with pure reactants and no
+product. What happens?</strong>
+
+<strong>At the very start, \(Q = 0\).</strong> And \(\ln Q \to -\infty\), so
+\[ \Delta G = \Delta G^{\circ} + RT\ln Q \]
+is enormously negative. <strong>The reaction runs forward</strong> — even
+though \(\Delta G^{\circ}\) is positive.
+
+<strong>As product accumulates, \(Q\) rises</strong> and \(RT \ln Q\) climbs from
+\(-\infty\) toward zero and beyond. \(\Delta G\) becomes less and less
+negative.
+
+<strong>When \(Q\) reaches \(K\), \(\Delta G\) hits zero</strong> and the reaction
+stops changing. Because \(K\) is small, that happens with very little
+product formed — but it is not zero product.
+
+<strong>So the standard confusion resolves like this.</strong> A positive
+\(\Delta G^{\circ}\) does <em>not</em> mean nothing happens. It means the
+equilibrium position lies toward reactants. Some product always forms,
+because starting from \(Q = 0\) the forward direction is always initially
+favoured.
+
+<strong>And the reverse case.</strong> A reaction with a large negative
+\(\Delta G^{\circ}\) started with mostly <em>product</em> will run
+<em>backwards</em> — because \(Q > K\) makes \(\Delta G\) positive. Which
+direction a mixture moves is a \(Q\)-versus-\(K\) question (Chapter 13,
+Ladder 6), and this equation is that comparison written in energy
+units.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 13 — four questions</div>
+
+<ol>
+
+<li>State the difference between \(\Delta G\) and
+        \(\Delta G^{\circ}\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:49" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>standard conditions vs the actual mixture</span></div>
+
+<li>What is \(\Delta G\) at equilibrium? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:50" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>zero</span></div>
+
+<li>A reaction has \(\Delta G^{\circ} > 0\) and starts with pure
+        reactants. Does any product form? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:51" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes — at \(Q = 0\), \(\Delta G\) is negative</span></div>
+
+<li>If \(Q > K\), what is the sign of \(\Delta G\), and which way does
+        the reaction run? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:52" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>positive; it runs in reverse</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) standard conditions vs the actual mixture  &emsp;  (b) zero
+ &emsp;  (c) yes — at \(Q = 0\), \(\Delta G\) is negative  &emsp;  (d)
+positive; it runs in reverse</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\Delta G^{\circ}\) applies at
+<strong>standard conditions</strong> and is a fixed number tied to \(K\);
+\(\Delta G\) applies to <strong>the mixture you actually have</strong> and changes
+as the reaction proceeds, tied to \(Q\). (b) <strong>Zero</strong>. (c)
+<strong>Yes.</strong> With pure reactants \(Q = 0\), so \(RT\ln Q \to -\infty\) and
+\(\Delta G\) is strongly negative — the reaction runs forward until
+\(Q = K\). A positive \(\Delta G^{\circ}\) only means the equilibrium lies
+toward reactants, not that nothing happens. (d) \(\Delta G\) is
+<strong>positive</strong>, so the forward reaction is not favoured and the
+system runs <strong>in reverse</strong> until \(Q\) falls back to
+\(K\).</div></div>
+
+</div>
+
+<h2> Ladder 14 • Free energy of dissolution</h2>
+<span class="badge">ZUM §17.5</span>
+
+<p>Chapter 11's question — why does anything dissolve? — finally gets
+its quantitative answer.</p>
+
+<div class="box we"><div class="box-title">I do: the salt that dissolves while cooling the
+beaker</div>
+
+<strong>\(\ce{NaCl}\) dissolving has \(\Delta H =
++3.9\,\mathrm{kJ/mol}\) and \(\Delta S =
++43\,\mathrm{J/mol/K}\). Is it favoured at
+298&thinsp;K?</strong>
+
+\[ \Delta G = 3.9 - (298)(0.043)
+   = 3.9 - 12.8 = \mathbf{-8.9\,\mathrm{kJ/mol}} \]
+
+<p>Negative, so yes — and note <em>how</em> it is negative. The enthalpy
+term is unfavourable; the entropy term carries the whole reaction.</p>
+
+<strong>This is the answer Chapter 11 owed you.</strong> Ladder 5 there showed
+that dissolving \(\ce{NaCl}\) is slightly endothermic — the beaker cools
+— and asked why it happens anyway. The answer is that ions going from
+a rigid lattice to freely moving hydrated particles is a large entropy
+increase, and \(T\Delta S\) beats a small positive \(\Delta H\).
+
+<strong>The three-step cycle, now in free-energy terms.</strong> Breaking the
+lattice and opening the solvent both cost enthalpy; solvation returns
+it. Whatever small residue is left over, the entropy term usually
+overwhelms — which is why most salts dissolve at all.
+
+<strong>When it fails.</strong> For a salt with a large lattice energy and a
+strongly positive \(\Delta H_{\text{soln}}\), the entropy term cannot
+cover it and \(\Delta G > 0\) — the salt is insoluble. That is
+Chapter 16's \(K_{sp} \ll 1\), and via \(\Delta G^{\circ} = -RT\ln K\)
+it is literally the same statement: a positive \(\Delta G^{\circ}\) for
+dissolution <em>is</em> a small \(K_{sp}\).
+
+<strong>And the temperature prediction.</strong> Since \(\Delta S\) is usually
+positive for dissolving, \(T\Delta S\) grows with heat, so most solids
+become more soluble when warmed — Chapter 10, Ladder 9's solubility
+curves, predicted rather than tabulated.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 14 — four questions</div>
+
+<ol>
+
+<li>A salt dissolves with \(\Delta H = +25.0\,\mathrm{kJ/mol}\)
+        and \(\Delta S = +100.0\,\mathrm{J/mol/K}\). Find
+        \(\Delta G\) at 298&thinsp;K. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:53" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="-4.8" data-sig="2" data-unit="kJ/mol"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Is it favoured? What is driving it? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:54" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes —
+entropy</span></div>
+
+<li>Why is \(\Delta S\) almost always positive for dissolving a
+        solid? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:55" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>lattice to free hydrated ions</span></div>
+
+<li>A salt has \(\Delta G^{\circ} > 0\) for dissolution. What does
+        that say about \(K_{sp}\)? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:56" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(K_{sp} < 1\) — sparingly soluble</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) -4.8&thinsp;kJ/mol  &emsp;  (b) yes —
+entropy  &emsp;  (c) lattice to free hydrated ions  &emsp;  (d)
+\(K_{sp} < 1\) — sparingly soluble</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\Delta G = 25.0 - (298)(0.1000) =
+25.0 - 29.8 = \mathbf{-4.8\,\mathrm{kJ/mol}}\). (b)
+<strong>Yes, favoured</strong>, and <strong>entropy</strong> is driving it — the
+enthalpy term is strongly unfavourable and is overcome by \(T\Delta S\).
+(c) Because ions or molecules go from <strong>fixed positions in a rigid
+lattice to moving freely through the solvent</strong>, an enormous increase in
+the number of available arrangements. (d) That \(K_{sp} < 1\), and the
+more positive \(\Delta G^{\circ}\) is the smaller \(K_{sp}\) becomes —
+by \(\Delta G^{\circ} = -RT\ln K\), a positive \(\Delta G^{\circ}\) for
+dissolution <em>is</em> a sparingly soluble salt.</div></div>
+
+</div>
+
+<h2> Ladder 15 • Coupled reactions</h2>
+<span class="badge">ZUM §17.10</span>
+
+<p>An unfavourable reaction can be driven by attaching it to a favourable
+one — provided they share a common species.</p>
+
+<div class="center">
+
+<figure><img src="fig-ch17-selfstudy-12.png" alt="figure"></figure>
+
+</div>
+
+<div class="box we"><div class="box-title">I do: how your cells cheat thermodynamics</div>
+
+<strong>Phosphorylating glucose is uphill:</strong>
+\[ \ce{glucose + P_i -> glucose-6-phosphate}
+   \qquad \Delta G^{\circ} = +13.8\,\mathrm{kJ/mol} \]
+On its own it essentially does not happen.
+
+<strong>ATP hydrolysis is downhill:</strong>
+\[ \ce{ATP + H2O -> ADP + P_i}
+   \qquad \Delta G^{\circ} = -30.5\,\mathrm{kJ/mol} \]
+
+<strong>Couple them — they share \(\ce{P_i}\)</strong> — and add:
+\[ \ce{glucose + ATP -> glucose-6-phosphate + ADP} \]
+\[ \Delta G^{\circ} = +13.8 - 30.5
+   = \mathbf{-16.7\,\mathrm{kJ/mol}} \]
+
+<p>Negative, so the coupled reaction is favoured, and this is the first
+step of glycolysis — happening in your cells right now.</p>
+
+<strong>No law was broken.</strong> The uphill reaction did not become
+favourable; it was <em>paid for</em> by a larger downhill one. The
+combined process still has \(\Delta G < 0\), so the second law is
+satisfied. Coupling is bookkeeping, not magic.
+
+<strong>The two requirements.</strong> The reactions must <strong>share a
+common species</strong> — here \(\ce{P_i}\), which cancels when you add them —
+and the favourable \(\Delta G^{\circ}\) must be <strong>larger in
+magnitude</strong> than the unfavourable one.
+
+<strong>The industrial version</strong> appeared in Ladder 10: iron oxide
+reduction on its own is hugely unfavourable
+(\(\Delta G^{\circ} = +742\,\mathrm{kJ}\)), but coupled to carbon
+monoxide oxidation it comes out at -29.4&thinsp;kJ. A blast
+furnace is a coupled reaction the size of a building.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 15 — four questions</div>
+
+<ol>
+
+<li>Reaction A has \(\Delta G^{\circ} = +25\,\mathrm{kJ}\) and
+        reaction B has \(-40\,\mathrm{kJ}\). Find \(\Delta G^{\circ}\)
+        for the coupled process. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:57" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="-15.0" data-sig="2" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Is the coupled process favoured? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:58" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes</span></div>
+
+<li>What two conditions must hold for coupling to work?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:59" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>a shared
+species, and the favourable \(\Delta G\) must be larger</span></div>
+
+<li>Does coupling violate the second law? Explain.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:60" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no —
+the total \(\Delta G\) is still negative</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) -15&thinsp;kJ  &emsp;  (b) yes  &emsp;  (c) a shared
+species, and the favourable \(\Delta G\) must be larger  &emsp;  (d) no —
+the total \(\Delta G\) is still negative</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(+25 - 40 =
+\mathbf{-15\,\mathrm{kJ}}\). (b) <strong>Yes</strong> —
+\(\Delta G^{\circ}\) is negative. (c) The two reactions must
+<strong>share a common species</strong> so that adding them produces a sensible
+overall equation, and the favourable reaction's \(\Delta G^{\circ}\) must
+be <strong>larger in magnitude</strong> than the unfavourable one's. (d)
+<strong>No.</strong> The uphill reaction is paid for by a larger downhill one,
+and the combined process still has \(\Delta G < 0\) — so
+\(\Delta S_{\text{univ}}\) still increases. Coupling is bookkeeping, not a
+loophole.</div></div>
+
+</div>
+
+<h2> Mixed set • ten questions, no labels</h2>
+
+<div class="box note"><div class="box-title">Why this section exists</div>
+
+<p>Every question so far arrived with its ladder attached. These ten do
+not — and in this chapter the first decision is usually <em>which
+equation</em>: \(\Delta H - T\Delta S\), formation values, \(-RT\ln K\), or
+\(\Delta G^{\circ} + RT\ln Q\).</p>
+
+</div>
+
+<div class="box yt"><div class="box-title">MIXED SET — first five</div>
+
+<ol>
+
+<li>Give the sign of \(\Delta S\) for
+        \(\ce{2H2O2(l) -> 2H2O(l) + O2(g)}\). <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:61" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>positive</span></div>
+
+<li>\(\Delta H = -80.0\,\mathrm{kJ}\), \(\Delta S =
+        -200.0\,\mathrm{J/K}\). Find \(\Delta G\) at
+        298&thinsp;K. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:62" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="-20.4" data-sig="3" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>For that reaction, find the crossover temperature and say
+        which side is favoured. <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:63" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>400&thinsp;K, favoured below</span></div>
+
+<li>\(K = 2.0e-5\) at 298&thinsp;K
+        (\(RT = 2478\,\mathrm{J/mol}\)). Find \(\Delta G^{\circ}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:64" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="num" data-val="26.8" data-sig="3" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A reaction has \(\Delta G^{\circ} = -150\,\mathrm{kJ}\) yet
+        nothing observable happens. Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:65" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 5" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>kinetic control</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) positive  &emsp;  (b) -20.4&thinsp;kJ  &emsp;  (c)
+400&thinsp;K, favoured below  &emsp;  (d)
++26.8&thinsp;kJ  &emsp;  (e) kinetic control</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> <strong>Positive</strong> — a gas is
+produced where there was none. <strong>(b)</strong> \(\Delta G = -80.0 -
+(298)(-0.2000) = -80.0 + 59.6 =
+\mathbf{-20.4\,\mathrm{kJ}}\) — note the double negative.
+<strong>(c)</strong> \(T = -80000/(-200.0) = \mathbf{400\,\mathrm{K}}\);
+\(\Delta S\) is negative, so it is favoured <strong>below</strong>
+400&thinsp;K. <strong>(d)</strong> \(\Delta G^{\circ} = -(2478)
+\ln(2.0e-5) = -(2478)(-10.82) = 26800\,\mathrm{J} =
+\mathbf{+26.8\,\mathrm{kJ}}\). <strong>(e)</strong> It is
+<strong>thermodynamically favoured but kinetically controlled</strong> — the
+activation energy is large, so the rate is negligible.
+\(\Delta G\) describes extent, not speed.</div></div>
+
+</div>
+
+<div class="box yt"><div class="box-title">MIXED SET — last five</div>
+
+<ol>
+
+<li>Using \(S^{\circ}\) (J/mol/K):
+        \(\ce{N2O4(g)}\) \(= 304.3\), \(\ce{NO2(g)}\) \(= 240.1\), find
+        \(\Delta S^{\circ}\) for \(\ce{N2O4(g) -> 2NO2(g)}\).
+        <textarea class="scratch" style="height:2.0cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:66" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="175.9" data-sig="4" data-unit="J/K"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>A reaction has \(\Delta H > 0\) and \(\Delta S < 0\). At what
+        temperatures is it favoured? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:67" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>never</span></div>
+
+<li>Reaction A (\(\Delta G^{\circ} = +18\,\mathrm{kJ}\)) is
+        coupled to B (\(-45\,\mathrm{kJ}\)). Find the coupled
+        \(\Delta G^{\circ}\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:68" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="-27.0" data-sig="2" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\(\Delta G^{\circ} = 0\) for a reaction. What is \(K\)?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:69" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(K = 1\)</span></div>
+
+<li>A salt dissolves endothermically yet the process is favoured.
+        Which term is responsible, and why? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="ch17-selfstudy:70" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 5" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(T\Delta S\) —
+lattice to free ions</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) +175.9&thinsp;J/K  &emsp;  (b) never  &emsp; 
+(c) -27&thinsp;kJ  &emsp;  (d) \(K = 1\)  &emsp;  (e) \(T\Delta S\) —
+lattice to free ions</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> \(2(240.1) - 304.3 = 480.2 -
+304.3 = \mathbf{+175.9\,\mathrm{J/K}}\) — positive, as one
+mole of gas becoming two requires. <strong>(b)</strong> <strong>Never.</strong> Both
+terms of \(\Delta H - T\Delta S\) are positive at every temperature.
+<strong>(c)</strong> \(+18 - 45 = \mathbf{-27\,\mathrm{kJ}}\) — favoured.
+<strong>(d)</strong> \(\mathbf{K = 1}\), since \(\ln K = 0\). <strong>(e)</strong> The
+<strong>entropy term \(T\Delta S\)</strong>. Dissolving takes ions from fixed
+lattice positions to freely moving hydrated ions, a large entropy
+increase, and \(T\Delta S\) outweighs the positive \(\Delta H\)
+(Ladder 14).</div></div>
+
+</div>
+
+<h2> Mastery tracker</h2>
+
+<p>Tick a row only if <strong>all four</strong> YOUR TURN questions were right on
+the first attempt. Every row is assessed — CED topics 9.1 to 9.7
+carry no exclusion statements at all, so nothing here is optional.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>what entropy is</td><td>1</td><td>arrangements, not mess</td></tr>
+<tr><td>\(\square\)</td><td>predicting the sign of \(\Delta S\)</td><td>2</td><td>count gas moles first</td></tr>
+<tr><td>\(\square\)</td><td>the third law, absolute \(S\)</td><td>3</td><td>elements are not zero</td></tr>
+<tr><td>\(\square\)</td><td>calculating \(\Delta S^{\circ}\)</td><td>4</td><td>predict the sign first</td></tr>
+<tr><td>\(\square\)</td><td>the second law</td><td>5</td><td>only the sum must rise</td></tr>
+<tr><td>\(\square\)</td><td>\(\Delta S_{\text{surr}}\) from \(\Delta H\)</td><td>6</td><td>\(-\Delta H/T\)</td></tr>
+<tr><td>\(\square\)</td><td>Gibbs free energy</td><td>7</td><td>convert kJ and J</td></tr>
+<tr><td>\(\square\)</td><td>the four sign cases</td><td>8</td><td>\(T\) scales entropy only</td></tr>
+<tr><td>\(\square\)</td><td>the crossover temperature</td><td>9</td><td>\(T = \Delta H/\Delta S\)</td></tr>
+<tr><td>\(\square\)</td><td>\(\Delta G^{\circ}\) from formation</td><td>10</td><td>elements ARE zero here</td></tr>
+<tr><td>\(\square\)</td><td>thermodynamic vs kinetic</td><td>11</td><td>extent is not speed</td></tr>
+<tr><td>\(\square\)</td><td>\(\Delta G^{\circ}\) and \(K\)</td><td>12</td><td>\(-RT\ln K\), joules</td></tr>
+<tr><td>\(\square\)</td><td>\(\Delta G\) versus \(\Delta G^{\circ}\)</td><td>13</td><td>\(Q\) versus \(K\)</td></tr>
+<tr><td>\(\square\)</td><td>free energy of dissolution</td><td>14</td><td>entropy usually wins</td></tr>
+<tr><td>\(\square\)</td><td>coupled reactions</td><td>15</td><td>the values add</td></tr>
+<tr><td>\(\square\)</td><td><strong>mixed set</strong> (8 of 10)</td><td>—</td><td>whichever it exposed</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>15/15 and the mixed set: you have Unit 9's thermodynamics half, and
+Chapter 18 will lean on Ladders 12 and 13 constantly — cell potential
+is free energy wearing different units.</p>
+
+<p>11–14: check where the misses fall. Ladders 1–6 are conceptual and
+repair by re-reading. Ladders 7–10 are the calculation core, and the
+overwhelming majority of errors there are the <strong>kJ/J unit
+mismatch</strong> rather than any misunderstanding. If that is your pattern,
+the fix is mechanical: write the units next to every number before
+substituting.</p>
+
+<p>10 or fewer: the likeliest single cause is treating \(\Delta G\) as a
+statement about <em>speed</em>. Re-read Ladders 7 and 11 together, then
+Ladder 12 — “favoured” means the equilibrium lies toward products,
+and nothing more. Everything else in this chapter is arithmetic on top
+of that one distinction.</p>
+
+<strong>One thing to carry into Chapter 18.</strong> \(\Delta G^{\circ} =
+-nFE^{\circ}\) is coming, and it is Ladder 12 with a different constant.
+If \(\Delta G^{\circ} = -RT\ln K\) is solid, electrochemistry's
+thermodynamics is already half learned.
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

@@ -1,0 +1,1541 @@
+% Ch17 self-study -- "I do / You do" ladder for Zumdahl chapter 17.
+% FIFTEEN ladders (60 questions) plus a ten-question mixed set = 70
+% questions, fifteen figures.
+%
+% SCOPE: nothing skipped, and -- verified against the CED PDF on
+% 2026-08-23 -- CED topics 9.1 through 9.7 carry NO exclusion
+% statements at all. This is the only large chapter in the series with
+% a completely clean scope: everything Zumdahl 17.1-17.10 teaches that
+% maps to Unit 9 is assessable as written.
+%
+% Every number here was recomputed in Python (see the fact-check
+% script), including the CaCO3 crossover temperature, which is checked
+% against the real decomposition temperature of limestone.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Spontaneity, Entropy, and Free Energy}
+\apcdoctitle{Self-Study \textbullet\ Chapter 17, I~do / You~do}
+\apcsubtitle{Zumdahl \S17.1--17.10 \textbullet\ PDF pp.\ 835--869}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help. Work all four before checking
+the gray \emph{check:} line; a tracker tick needs all four right first
+time. A ten-question \textbf{mixed set} follows Ladder 15.
+
+\textbf{Nothing in this chapter is skipped, and nothing is excluded.}
+CED topics 9.1 to 9.7 carry no exclusion statements at all --- unusual,
+and worth knowing. Where other chapters have material you can safely
+skim, this one does not.
+
+\textbf{The question this chapter answers.} Chapter 12 asked
+\emph{how fast}. Chapter 13 asked \emph{how far}. This chapter asks the
+one underneath both: \textbf{why does anything happen at all?} Why does
+ice melt in a warm room and never freeze in one? Why do gases mix and
+never unmix?
+
+\textbf{The vocabulary warning that will cost you marks if ignored.}
+The CED says \textbf{``thermodynamically favoured''}, not
+``spontaneous''. Zumdahl says spontaneous. They mean the same thing ---
+$\Delta G < 0$ --- but ``spontaneous'' misleads, because it sounds like
+``happens immediately'' and a thermodynamically favoured reaction can
+take geological time (Ladder 11). Use the CED's phrase in answers.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ What entropy actually is}
+\zsec{17.1}
+
+Entropy, $S$, measures how many ways the energy and matter of a system
+can be arranged. More available arrangements means higher entropy.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % confined gas
+  \node[font=\sffamily\small\bfseries] at (1.9,3.3) {confined};
+  \fill[apcgray!22] (0.6,0.5) rectangle (3.2,2.7);
+  \draw[very thick] (0.6,2.7) rectangle (3.2,0.5);
+  \draw[very thick,dashed] (1.9,0.5) -- (1.9,2.7);
+  \foreach \p in {(0.95,0.9),(1.35,1.5),(0.85,2.1),(1.55,2.35),
+                  (1.15,1.15),(1.6,0.75)} {
+    \fill \p circle (0.075);}
+  \node[align=center] at (1.9,-0.15)
+    {all particles on one side\\\textbf{few} arrangements --- low $S$};
+
+  \draw[-{Stealth[length=3mm]},very thick] (3.7,1.6) -- (5.0,1.6);
+  \node[above,font=\sffamily\footnotesize] at (4.35,1.75) {remove};
+  \node[below,font=\sffamily\footnotesize] at (4.35,1.45) {the barrier};
+
+  % spread gas
+  \begin{scope}[xshift=5.5cm]
+    \node[font=\sffamily\small\bfseries] at (1.9,3.3) {spread out};
+    \fill[apcgray!22] (0.6,0.5) rectangle (3.2,2.7);
+    \draw[very thick] (0.6,2.7) rectangle (3.2,0.5);
+    \foreach \p in {(0.95,1.1),(1.7,1.9),(2.4,0.85),(2.9,1.7),
+                    (1.3,2.35),(2.15,2.3)} {
+      \fill \p circle (0.075);}
+    \node[align=center] at (1.9,-0.15)
+      {particles anywhere\\\textbf{many} arrangements --- high $S$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{``Entropy is disorder'' is a slogan, not a definition, and it
+misleads.} A crystal growing from solution looks more ordered, yet the
+total entropy still rises --- because the heat released disperses into
+the surroundings. Say \textbf{``the number of ways energy and matter
+can be arranged''} or \textbf{``dispersal of energy''}. Answers built on
+``messiness'' lose marks the moment a question involves the
+surroundings.
+\end{apctrap}
+
+\begin{workedexample}[I do: why the gas never goes back]
+\textbf{Remove the barrier above and the gas fills the container. Wait
+a year and it never returns to one side. Why not?}
+
+\textbf{Nothing forbids it.} No law of motion prevents every molecule
+from happening to be on the left at the same instant. The molecules do
+not know where the barrier used to be.
+
+\textbf{It is overwhelmingly improbable.} For one molecule the chance
+of being on the left is $1/2$. For $n$ molecules all being on the left
+at once, it is $(1/2)^{n}$. For a mole --- $6 \times 10^{23}$ molecules
+--- that probability is zero for every practical purpose.
+
+\textbf{So entropy is a counting statement.} The spread-out
+arrangement is not \emph{preferred} by any force; there are simply
+vastly more ways to be spread out than to be bunched. Systems drift
+toward the arrangement with the most ways of happening, and with $10^{23}$
+particles that drift is irreversible.
+
+\textbf{Three consequences worth carrying.} Gases expanding into a
+vacuum, two gases mixing, and heat flowing from hot to cold are all the
+same phenomenon: energy and matter spreading over more available
+arrangements. None of the three requires a force pushing them; each is
+just the more numerous outcome winning.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Define entropy without using the word ``disorder''.
+        \workspace[1.6cm]
+  \item Two gases in connected flasks mix and never unmix. Explain
+        using arrangements. \workspace[1.8cm]
+  \item Does anything physically \emph{forbid} the gas returning to one
+        side? Explain. \workspace[1.8cm]
+  \item Which has higher entropy: \SI{1}{\mole} of \ce{Ar} in
+        \SI{1}{\litre} or in \SI{10}{\litre}? Why?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) the number of ways energy and matter can be arranged
+\quad (b) far more mixed arrangements exist \quad (c) no --- it is
+merely overwhelmingly improbable \quad (d) \SI{10}{\litre} --- more
+positions available}
+\keyonly{\begin{apcanswer}(a) The \textbf{number of ways the energy and
+matter of a system can be arranged} --- equivalently, how far energy is
+dispersed. (b) There are \textbf{vastly more arrangements} in which the
+two gases are intermingled than in which they are separated, so the
+mixed state is overwhelmingly the more probable one; nothing pulls them
+together again. (c) \textbf{No.} No physical law forbids it --- it is
+simply so improbable ($(1/2)^{n}$ for $n$ molecules) that with a mole of
+gas it never happens. (d) \textbf{\SI{10}{\litre}}. A larger volume
+offers each atom far more available positions, so there are more
+arrangements and $S$ is higher.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Predicting the sign of
+$\Delta S$}
+\zsec{17.1}
+
+You can call the sign of $\Delta S$ without a single number, and the
+exam asks you to constantly.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.5)
+    {check these in order --- the first that applies decides};
+  \foreach \y/\n/\t in {%
+      2.85/{1}/{\textbf{moles of gas} change? more gas $=$ higher $S$
+        --- this dominates everything},
+      2.3/{2}/{\textbf{phase} change? solid $<$ liquid $\ll$ gas},
+      1.75/{3}/{\textbf{dissolving} a solid? usually higher $S$
+        (Ladder 14)},
+      1.2/{4}/{\textbf{temperature} rising? always higher $S$},
+      0.65/{5}/{more \textbf{particles} on one side? usually higher
+        $S$}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.5,\y) {\n.};
+    \node[anchor=west] at (1.05,\y) {\t};}
+  \draw[apcgray] (0.4,3.2) -- (11.0,3.2);
+  \draw[apcgray] (0.4,0.3) -- (11.0,0.3);
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: four calls, no calculations]
+\textbf{Give the sign of $\Delta S$ for each.}
+
+\textbf{(a) $\ce{2NO2(g) -> N2O4(g)}$.} Two moles of gas become one.
+Fewer gas particles means fewer arrangements: $\Delta S$ is
+\textbf{negative}. Counting gas moles is the first thing to check and
+usually the last thing you need.
+
+\textbf{(b) $\ce{H2O(l) -> H2O(g)}$.} A liquid becomes a gas ---
+molecules go from touching to flying free. Strongly \textbf{positive},
+and this is the single biggest entropy change in ordinary chemistry.
+
+\textbf{(c) $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$.} No gas on the left,
+one mole of gas on the right. \textbf{Positive} --- and note that the
+two solids barely matter. Creating gas from no gas is decisive.
+
+\textbf{(d) $\ce{2H2(g) + O2(g) -> 2H2O(l)}$.} Three moles of gas
+become zero. Strongly \textbf{negative}.
+
+\textbf{The hierarchy is what makes this fast.} If the number of gas
+moles changes, that answers the question --- stop there. Only when gas
+moles are equal on both sides do you go looking at phases, particle
+counts or dissolving. Students who weigh all five factors equally get
+slow and get it wrong.
+
+\textbf{And when gas moles are equal, expect a small $\Delta S$.} For
+$\ce{H2(g) + I2(g) -> 2HI(g)}$, two moles of gas become two: whatever
+$\Delta S$ turns out to be, it will be near zero, and you should be
+suspicious of any calculation that says otherwise.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+Give the sign of $\Delta S$ and one-line reasoning.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\ce{2SO2(g) + O2(g) -> 2SO3(g)}$ \workspace[1.6cm]
+  \item $\ce{H2O(s) -> H2O(l)}$ \workspace[1.6cm]
+  \item $\ce{NH4NO3(s) -> NH4+(aq) + NO3-(aq)}$
+        \workspace[1.6cm]
+  \item $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$ \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) negative --- 3 gas mol to 2 \quad (b) positive --- solid
+to liquid \quad (c) positive --- solid to dissolved ions \quad (d)
+negative --- 4 gas mol to 2}
+\keyonly{\begin{apcanswer}(a) \textbf{Negative}: three moles of gas
+become two. (b) \textbf{Positive}: melting frees molecules from fixed
+lattice positions. (c) \textbf{Positive}: an ordered solid becomes two
+kinds of freely moving hydrated ion --- and note this is the entropy
+that drives cold packs (Ladder 14). (d) \textbf{Negative}: four moles of
+gas become two.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ The third law and absolute
+entropies}
+\zsec{17.2}
+
+Entropy has something enthalpy does not: a true zero. That makes $S$
+values \textbf{absolute}, not relative.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.8,0.6) -- (0.8,3.4)
+    node[above,font=\sffamily\footnotesize] {$S$};
+  \draw[very thick] (0.65,0.9) -- (0.95,0.9);
+  \node[anchor=east,font=\sffamily\bfseries] at (0.55,0.9) {0};
+  \node[anchor=west] at (1.15,0.9)
+    {a \textbf{perfect crystal at \SI{0}{\kelvin}} --- one arrangement
+     only};
+  \node[anchor=west] at (1.15,1.7)
+    {every real substance sits \emph{above} zero};
+  \node[anchor=west] at (1.15,2.5)
+    {so tabulated $S^{\circ}$ values are \textbf{positive}, even for
+     elements};
+  % Separator sits BELOW the body, before the closing note. At y=3.05
+  % it was above every line and read as a stray top border.
+  \draw[apcgray] (0.6,0.45) -- (10.9,0.45);
+  \node[anchor=west,font=\sffamily\bfseries] at (0.8,-0.05)
+    {contrast: $\Delta H_{f}^{\circ}$ of an element is \emph{defined}
+     as 0 --- $S^{\circ}$ of an element is \emph{measured} and is not};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{$S^{\circ}$ for an element is not zero.} $\Delta H_{f}^{\circ}$
+of \ce{O2(g)} is zero by definition; $S^{\circ}$ of \ce{O2(g)} is
+\SI{205.1}{\joule\per\mole\per\kelvin}, a measured quantity. Setting
+element entropies to zero in a $\Delta S^{\circ}$ calculation is the
+standard wrong answer in Ladder 4, and it comes from carrying a
+Chapter 6 habit into Chapter 17.
+\end{apctrap}
+
+\begin{workedexample}[I do: reading an $S^{\circ}$ table]
+\textbf{Three patterns you can predict before looking anything up.}
+
+\textbf{Phase dominates.} For water: $S^{\circ}(\text{s}) = 41$,
+$S^{\circ}(\text{l}) = 69.9$, $S^{\circ}(\text{g}) =
+\SI{188.8}{\joule\per\mole\per\kelvin}$. The gas is nearly three times
+the liquid. Whenever you compare two substances, check the phases
+first.
+
+\textbf{Bigger and more complex means higher.} $S^{\circ}(\ce{CH4}) =
+186$ but $S^{\circ}(\ce{C2H6}) =
+\SI{229.5}{\joule\per\mole\per\kelvin}$. More atoms means more ways to
+vibrate and rotate, so more arrangements of the same energy.
+
+\textbf{Harder solids have lower entropy.} Diamond sits at
+\SI{2.4}{\joule\per\mole\per\kelvin} --- almost nothing --- because its
+rigid covalent network leaves atoms very few ways to move. Graphite,
+with its sliding sheets, is \SI{5.7}{}. The Chapter 10 structure
+argument reappears as a number.
+
+\textbf{Why this matters for the third law.} A perfect crystal at
+\SI{0}{\kelvin} has exactly one arrangement, so $S = 0$ exactly. Every
+other state has more, so every real $S^{\circ}$ is positive. That is
+what makes entropy absolute --- and it is why you never see a negative
+$S^{\circ}$ in a table, though $\Delta S^{\circ}$ for a reaction is
+negative all the time.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item State the third law of thermodynamics. \workspace[1.6cm]
+  \item Why is $S^{\circ}(\ce{O2}) \neq 0$ when
+        $\Delta H_{f}^{\circ}(\ce{O2}) = 0$? \workspace[1.8cm]
+  \item Which is larger, $S^{\circ}(\ce{H2O(l)})$ or
+        $S^{\circ}(\ce{H2O(g)})$? \workspace[1.4cm]
+  \item Which is larger, $S^{\circ}(\ce{CH4})$ or
+        $S^{\circ}(\ce{C3H8})$? Why? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) a perfect crystal at \SI{0}{\kelvin} has $S = 0$ \quad
+(b) $S$ is absolute; $\Delta H_{f}$ is a defined reference \quad (c)
+the gas \quad (d) \ce{C3H8} --- more atoms, more arrangements}
+\keyonly{\begin{apcanswer}(a) The entropy of a \textbf{perfect crystal
+at \SI{0}{\kelvin} is zero} --- there is exactly one way to arrange it.
+(b) Because entropy has a \textbf{true zero} and is measured
+\emph{absolutely} from it, whereas $\Delta H_{f}^{\circ}$ is a
+\emph{defined reference point} --- elements are assigned zero by
+convention, not by measurement. (c) \textbf{The gas}, by a large margin
+(188.8 against \SI{69.9}{\joule\per\mole\per\kelvin}). (d)
+\textbf{\ce{C3H8}}: more atoms give more ways to vibrate and rotate, so
+more arrangements at a given energy.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Calculating
+$\Delta S^{\circ}_{\text{rxn}}$}
+\zsec{17.6}
+
+Same shape as Hess's law from Chapter 6 --- products minus reactants,
+each scaled by its coefficient.
+
+\[ \Delta S^{\circ}_{\text{rxn}}
+   = \sum n\,S^{\circ}(\text{products})
+   - \sum n\,S^{\circ}(\text{reactants}) \]
+
+\begin{workedexample}[I do: a calculation whose sign you already knew]
+\textbf{For $\ce{2H2(g) + O2(g) -> 2H2O(l)}$, find
+$\Delta S^{\circ}$. Use $S^{\circ}$: \ce{H2(g)} $= 130.7$,
+\ce{O2(g)} $= 205.1$, \ce{H2O(l)} $=
+\SI{69.9}{\joule\per\mole\per\kelvin}$.}
+
+\textbf{Predict the sign first.} Three moles of gas become zero moles
+of gas. $\Delta S^{\circ}$ must be strongly negative --- so if the
+arithmetic comes out positive, the arithmetic is wrong.
+
+\textbf{Products:}
+\[ 2 \times 69.9 = \SI{139.8}{\joule\per\kelvin} \]
+
+\textbf{Reactants:}
+\[ 2 \times 130.7 + 205.1 = 261.4 + 205.1
+   = \SI{466.5}{\joule\per\kelvin} \]
+
+\textbf{Subtract:}
+\[ \Delta S^{\circ} = 139.8 - 466.5
+   = \mathbf{\SI{-326.7}{\joule\per\kelvin}} \]
+
+Negative, as predicted, and large --- consistent with destroying three
+moles of gas.
+
+\textbf{Two habits.} Predict the sign before you compute; it costs five
+seconds and catches every subtraction reversal. And watch the
+\textbf{units}: $S^{\circ}$ is tabulated in
+\si{\joule\per\mole\per\kelvin} while $\Delta H$ is in
+\si{\kilo\joule\per\mole}. Ladder 7 mixes the two in one equation, and
+that unit mismatch is the most expensive error in this chapter.
+
+\textbf{Do not set element entropies to zero.} \ce{H2} and \ce{O2} are
+elements, but their $S^{\circ}$ values are 130.7 and 205.1, not 0.
+Dropping them here would give $\Delta S^{\circ} =
+\SI{+139.8}{\joule\per\kelvin}$ --- positive, for a reaction that
+destroys three moles of gas. The sign check catches it instantly.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+Use $S^{\circ}$ (\si{\joule\per\mole\per\kelvin}): \ce{N2(g)} $= 191.6$,
+\ce{H2(g)} $= 130.7$, \ce{NH3(g)} $= 192.5$, \ce{CaCO3(s)} $= 92.9$,
+\ce{CaO(s)} $= 39.8$, \ce{CO2(g)} $= 213.7$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Predict the sign of $\Delta S^{\circ}$ for
+        $\ce{N2 + 3H2 -> 2NH3}$. \workspace[1.4cm]
+  \item Compute it. \workspace[2.0cm]
+  \item Compute $\Delta S^{\circ}$ for
+        $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$. \workspace[2.0cm]
+  \item Why may you not treat $S^{\circ}(\ce{N2})$ as zero?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) negative \quad (b) \SI{-198.7}{\joule\per\kelvin} \quad
+(c) \SI{+160.6}{\joule\per\kelvin} \quad (d) $S^{\circ}$ is absolute,
+not a defined reference}
+\keyonly{\begin{apcanswer}(a) \textbf{Negative} --- four moles of gas
+become two. (b) Products $2 \times 192.5 = 385.0$; reactants
+$191.6 + 3 \times 130.7 = 191.6 + 392.1 = 583.7$; so
+$\Delta S^{\circ} = 385.0 - 583.7 =
+\mathbf{\SI{-198.7}{\joule\per\kelvin}}$ --- negative, as predicted.
+(c) Products $39.8 + 213.7 = 253.5$; reactant $92.9$; so
+$\Delta S^{\circ} = 253.5 - 92.9 =
+\mathbf{\SI{+160.6}{\joule\per\kelvin}}$ --- positive, because a gas is
+created from none. (d) Because $S^{\circ}$ values are \textbf{absolute},
+measured from the third-law zero. Only $\Delta H_{f}^{\circ}$ uses
+elements as a defined zero.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ The second law:
+$\Delta S_{\text{universe}}$}
+\zsec{17.2}
+
+The actual criterion for a favoured process is not about the system at
+all.
+
+\[ \Delta S_{\text{univ}}
+   = \Delta S_{\text{sys}} + \Delta S_{\text{surr}} > 0
+   \quad\text{for a thermodynamically favoured process} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \fill[apcgray!12] (0.5,0.4) rectangle (7.4,3.1);
+  \draw[very thick] (0.5,0.4) rectangle (7.4,3.1);
+  \node[anchor=north west,font=\sffamily\bfseries] at (0.7,2.95)
+    {the universe};
+  \fill[apcgray!35] (1.4,0.9) rectangle (4.2,2.3);
+  \draw[very thick] (1.4,0.9) rectangle (4.2,2.3);
+  \node[font=\sffamily\bfseries] at (2.8,1.9) {the system};
+  \node at (2.8,1.35) {$\Delta S_{\text{sys}}$};
+  \node[font=\sffamily\bfseries] at (5.9,1.9) {the surroundings};
+  \node at (5.9,1.35) {$\Delta S_{\text{surr}}$};
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (4.35,1.6) -- (4.95,1.6);
+  \node[anchor=west,align=left] at (8.0,1.9)
+    {only the \textbf{sum} must};
+  \node[anchor=west,align=left] at (8.0,1.5)
+    {be positive --- either};
+  \node[anchor=west,align=left] at (8.0,1.1)
+    {piece may be negative};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: how order can increase]
+\textbf{Water freezing at \SI{-10}{\celsius} is thermodynamically
+favoured. Yet liquid becomes solid --- $\Delta S_{\text{sys}}$ is
+clearly negative. How can that be?}
+
+\textbf{Because the system is not the universe.} Freezing releases heat
+--- the enthalpy of fusion, outward --- and that heat disperses into the
+surrounding air. Dispersing energy into the surroundings \emph{raises}
+$\Delta S_{\text{surr}}$.
+
+\textbf{Below \SI{0}{\celsius} the surroundings win.} The heat released
+raises $\Delta S_{\text{surr}}$ by more than $\Delta S_{\text{sys}}$
+falls, so $\Delta S_{\text{univ}} > 0$ and freezing is favoured.
+
+\textbf{Above \SI{0}{\celsius} it does not.} Ladder 6 shows why:
+$\Delta S_{\text{surr}} = -\Delta H/T$, so the same released heat buys
+\emph{less} entropy in warmer surroundings. At high enough $T$ the
+surroundings' gain no longer covers the system's loss, and melting ---
+the reverse --- becomes the favoured direction instead.
+
+\textbf{So \SI{0}{\celsius} is not a magic temperature.} It is simply
+where the two terms exactly cancel, $\Delta S_{\text{univ}} = 0$, and
+neither direction is favoured. That is the definition of a phase
+equilibrium, and it is the same idea as $\Delta G = 0$ in Ladder 7.
+
+\textbf{The exam version of this idea:} whenever a question shows an
+apparently order-increasing process happening on its own --- freezing,
+crystallising, a protein folding --- the answer involves heat released
+to the surroundings.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item State the second law in terms of $\Delta S_{\text{univ}}$.
+        \workspace[1.6cm]
+  \item Can a favoured process have $\Delta S_{\text{sys}} < 0$?
+        Explain. \workspace[1.8cm]
+  \item Water freezes at \SI{-10}{\celsius}. Give the signs of
+        $\Delta S_{\text{sys}}$ and $\Delta S_{\text{surr}}$.
+        \workspace[1.8cm]
+  \item What is $\Delta S_{\text{univ}}$ for a system exactly at
+        equilibrium? \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) $\Delta S_{\text{univ}} > 0$ for a favoured process
+\quad (b) yes, if $\Delta S_{\text{surr}}$ is more positive \quad (c)
+sys negative, surr positive \quad (d) zero}
+\keyonly{\begin{apcanswer}(a) For any thermodynamically favoured
+process, $\Delta S_{\text{univ}} > 0$; the entropy of the universe
+increases. (b) \textbf{Yes.} Only the sum must be positive, so a
+system's entropy may fall provided the surroundings gain more --- which
+happens whenever the process releases enough heat. (c)
+$\Delta S_{\text{sys}}$ is \textbf{negative} (liquid to solid);
+$\Delta S_{\text{surr}}$ is \textbf{positive} (heat released disperses
+into the surroundings) and larger in magnitude. (d)
+\textbf{Zero} --- neither direction is favoured, which is what
+equilibrium means.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ $\Delta S_{\text{surr}}$ from
+$\Delta H$}
+\zsec{17.2}
+
+The surroundings only ever see the heat the system gives or takes, so
+their entropy change follows one small equation.
+
+\[ \Delta S_{\text{surr}} = \frac{-\Delta H_{\text{sys}}}{T} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,2.9)
+    {read the equation twice --- the sign, then the temperature};
+  \node[anchor=west] at (0.5,2.25)
+    {\textbf{exothermic} ($\Delta H < 0$): heat flows \emph{out}, so
+     $\Delta S_{\text{surr}}$ is \textbf{positive}};
+  \node[anchor=west] at (0.5,1.7)
+    {\textbf{endothermic} ($\Delta H > 0$): heat flows \emph{in}, so
+     $\Delta S_{\text{surr}}$ is \textbf{negative}};
+  \draw[apcgray] (0.4,1.35) -- (11.0,1.35);
+  \node[anchor=west] at (0.5,0.85)
+    {and the $T$ in the denominator: the \emph{same} heat matters
+     \textbf{more} to cold surroundings};
+  \node[anchor=west,font=\sffamily\itshape] at (0.5,0.3)
+    {a coin means more to a beggar than to a millionaire --- same
+     energy, different context};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: the temperature in the denominator]
+\textbf{The Haber reaction has $\Delta H =
+\SI{-92.2}{\kilo\joule\per\mole}$. Find $\Delta S_{\text{surr}}$ at
+\SI{298}{\kelvin}.}
+
+\textbf{Convert to joules first} --- $\Delta S$ is always in joules per
+kelvin, never kilojoules:
+\[ \Delta S_{\text{surr}}
+   = \frac{-(\num{-92200}\;\si{\joule\per\mole})}{\SI{298}{\kelvin}}
+   = \mathbf{\SI{+309}{\joule\per\mole\per\kelvin}} \]
+
+Positive, because an exothermic reaction dumps heat into the
+surroundings and spreads it there.
+
+\textbf{Now the same reaction at \SI{700}{\kelvin}:}
+\[ \Delta S_{\text{surr}} = \frac{92200}{700}
+   = \SI{+132}{\joule\per\mole\per\kelvin} \]
+
+\textbf{Less than half, from identical heat.} That is the whole content
+of the $T$ in the denominator: hot surroundings are already full of
+dispersed energy, so a given quantity of heat adds proportionally fewer
+new arrangements.
+
+\textbf{And this is why exothermic reactions stop being favoured when
+heated.} $\Delta S_{\text{sys}}$ does not care much about temperature,
+but $\Delta S_{\text{surr}}$ shrinks as $T$ rises. Eventually it can no
+longer carry a negative $\Delta S_{\text{sys}}$, and the reaction
+reverses --- exactly the Haber-process compromise from Chapter 13,
+Ladder 12, now derived rather than asserted.
+
+\textbf{This equation is also where $\Delta G$ comes from.} Multiply
+$\Delta S_{\text{univ}} = \Delta S_{\text{sys}} - \Delta H/T$ through by
+$-T$ and you get $-T\Delta S_{\text{univ}} = \Delta H - T\Delta S$ ---
+the right-hand side is $\Delta G$. Ladder 7 uses it; it is not a new
+idea, just a rearrangement.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A reaction has $\Delta H = \SI{-50.0}{\kilo\joule\per\mole}$.
+        Find $\Delta S_{\text{surr}}$ at \SI{250}{\kelvin}.
+        \workspace[1.8cm]
+  \item Same reaction at \SI{500}{\kelvin}. \workspace[1.8cm]
+  \item Give the sign of $\Delta S_{\text{surr}}$ for an endothermic
+        process. \workspace[1.4cm]
+  \item Why does the same released heat produce a larger
+        $\Delta S_{\text{surr}}$ at low temperature?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{+200}{\joule\per\mole\per\kelvin} \quad (b)
+\SI{+100}{\joule\per\mole\per\kelvin} \quad (c) negative \quad (d) cold
+surroundings hold less dispersed energy already}
+\keyonly{\begin{apcanswer}(a) $-(\num{-50000})/250 =
+\mathbf{\SI{+200}{\joule\per\mole\per\kelvin}}$. (b) $50000/500 =
+\mathbf{\SI{+100}{\joule\per\mole\per\kelvin}}$ --- exactly half, since
+the temperature doubled. (c) \textbf{Negative}: an endothermic process
+draws heat \emph{out} of the surroundings, reducing their entropy. (d)
+Because cold surroundings already contain relatively little dispersed
+energy, so a given quantity of heat represents a proportionally
+\textbf{larger} increase in the number of available arrangements. The
+$T$ in the denominator says exactly this.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Gibbs free energy}
+\zsec{17.3--17.4}
+
+$\Delta G$ bundles the system and the surroundings into a single
+number you can compute from system properties alone.
+
+\[ \Delta G = \Delta H - T\,\Delta S \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.6,2.0) -- (10.9,2.0);
+  \node[font=\sffamily\bfseries] at (5.7,2.5) {$\Delta G = 0$};
+  \fill (5.7,2.0) circle (0.11);
+  \draw[densely dashed,apcgray] (5.7,1.72) -- (5.7,1.95);
+  \node[font=\sffamily\bfseries] at (2.6,1.55) {$\Delta G < 0$};
+  \node[align=center] at (2.6,0.9)
+    {thermodynamically\\\textbf{favoured}};
+  \node[align=center] at (5.7,0.9) {at\\equilibrium};
+  \node[font=\sffamily\bfseries] at (8.8,1.55) {$\Delta G > 0$};
+  \node[align=center] at (8.8,0.9)
+    {\textbf{not} favoured\\(the reverse is)};
+  \draw[apcgray] (0.5,0.35) -- (11.0,0.35);
+  \node[anchor=west] at (0.6,-0.1)
+    {$\Delta H$ in \si{\kilo\joule}, $\Delta S$ in
+     \si{\joule\per\kelvin} --- \textbf{convert one} before
+     subtracting};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{The unit mismatch is the single most expensive error in this
+chapter.} $\Delta H$ is tabulated in \textbf{kilojoules};
+$\Delta S$ in \textbf{joules} per kelvin. In $\Delta H - T\Delta S$ you
+must convert one to match the other. Forget, and $T\Delta S$ comes out a
+thousand times too large --- which usually flips the sign of $\Delta G$
+and therefore the entire conclusion.
+\end{apctrap}
+
+\begin{workedexample}[I do: is limestone decomposition favoured at room
+temperature?]
+\textbf{For $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$, $\Delta H^{\circ} =
+\SI{+178.3}{\kilo\joule}$ and $\Delta S^{\circ} =
+\SI{+160.6}{\joule\per\kelvin}$. Find $\Delta G^{\circ}$ at
+\SI{298}{\kelvin}.}
+
+\textbf{Convert $\Delta S$ to kilojoules} so both terms match:
+\[ \Delta S^{\circ} = \SI{160.6}{\joule\per\kelvin}
+   = \SI{0.1606}{\kilo\joule\per\kelvin} \]
+
+\textbf{Substitute:}
+\[ \Delta G^{\circ} = 178.3 - (298)(0.1606)
+   = 178.3 - 47.9 = \mathbf{\SI{+130.4}{\kilo\joule}} \]
+
+\textbf{Positive, so not favoured at \SI{298}{\kelvin}} --- limestone
+does not spontaneously crumble into quicklime on a shelf, which
+matches every cathedral still standing.
+
+\textbf{But look at the structure of the answer.} $\Delta H$ is
+positive (unfavourable) and $\Delta S$ is positive (favourable). They
+oppose each other, and at \SI{298}{\kelvin} the enthalpy term is nearly
+four times larger, so enthalpy wins.
+
+\textbf{Raise the temperature and that changes.} $T\Delta S$ grows in
+proportion to $T$ while $\Delta H$ barely moves --- so at some
+temperature the entropy term overtakes and $\Delta G$ turns negative.
+Ladder 9 finds exactly where. This is why lime kilns are heated: not to
+make the reaction faster, but to make it \emph{favoured at all}.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\Delta H = \SI{-100.0}{\kilo\joule}$, $\Delta S =
+        \SI{+50.0}{\joule\per\kelvin}$, $T = \SI{298}{\kelvin}$. Find
+        $\Delta G$. \workspace[1.8cm]
+  \item $\Delta H = \SI{+40.0}{\kilo\joule}$, $\Delta S =
+        \SI{+100.0}{\joule\per\kelvin}$, $T = \SI{298}{\kelvin}$. Find
+        $\Delta G$ and say whether it is favoured. \workspace[2.0cm]
+  \item What does $\Delta G = 0$ mean? \workspace[1.4cm]
+  \item Before computing, why must you convert units?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{-114.9}{\kilo\joule} \quad (b)
+\SI{+10.2}{\kilo\joule}, not favoured \quad (c) equilibrium \quad (d)
+$\Delta H$ is in kJ, $\Delta S$ in J}
+\keyonly{\begin{apcanswer}(a) $\Delta G = -100.0 - (298)(0.0500) =
+-100.0 - 14.9 = \mathbf{\SI{-114.9}{\kilo\joule}}$ --- favoured, with
+both terms helping. (b) $\Delta G = 40.0 - (298)(0.1000) = 40.0 - 29.8
+= \mathbf{\SI{+10.2}{\kilo\joule}}$: \textbf{not favoured} at this
+temperature, though it would be at higher $T$ (Ladder 9). (c) The system
+is at \textbf{equilibrium} --- neither direction is favoured. (d)
+Because $\Delta H$ is tabulated in \textbf{kilojoules} and $\Delta S$ in
+\textbf{joules} per kelvin; subtracting without converting makes the
+$T\Delta S$ term a thousand times too large and usually flips the sign
+of the answer.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ The four sign combinations}
+\zsec{17.4}
+
+Two signs, four cases, and only two of them depend on temperature.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.9,3.7)
+    {when is $\Delta G = \Delta H - T\Delta S$ negative?};
+  \node[font=\sffamily\bfseries] at (4.3,3.05) {$\Delta S > 0$};
+  \node[font=\sffamily\bfseries] at (8.3,3.05) {$\Delta S < 0$};
+  \node[anchor=east,font=\sffamily\bfseries] at (2.5,2.25)
+    {$\Delta H < 0$};
+  \node[anchor=east,font=\sffamily\bfseries] at (2.5,1.15)
+    {$\Delta H > 0$};
+  \draw[apcgray] (2.7,2.7) -- (10.2,2.7);
+  \draw[apcgray] (2.7,1.65) -- (10.2,1.65);
+  \draw[apcgray] (6.3,3.3) -- (6.3,0.55);
+  \node[align=center] at (4.3,2.25)
+    {\textbf{always favoured}\\at every $T$};
+  \node[align=center] at (8.3,2.25)
+    {favoured at\\\textbf{low} $T$};
+  \node[align=center] at (4.3,1.15)
+    {favoured at\\\textbf{high} $T$};
+  \node[align=center] at (8.3,1.15)
+    {\textbf{never} favoured\\at any $T$};
+  \node[font=\sffamily\footnotesize] at (5.9,0.1)
+    {the two diagonal boxes are temperature-dependent --- those are the
+     ones Ladder 9 is for};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: reading the table without memorising it]
+\textbf{You never need to memorise these four boxes. Read them off
+$\Delta G = \Delta H - T\Delta S$ directly.}
+
+\textbf{$\Delta H < 0$, $\Delta S > 0$.} The first term is negative and
+$-T\Delta S$ is also negative. Both terms push $\Delta G$ negative, so
+it is negative at every temperature. \emph{Example:} combustion.
+
+\textbf{$\Delta H > 0$, $\Delta S < 0$.} Both terms are positive, so
+$\Delta G$ is positive at every temperature. Nothing you do to $T$ can
+help. \emph{Example:} the reverse of combustion --- which is why fires
+do not un-burn.
+
+\textbf{$\Delta H < 0$, $\Delta S < 0$.} Enthalpy helps, entropy hurts,
+and the entropy term grows with $T$. So it is favoured while $T$ is
+\textbf{small} enough. \emph{Example:} freezing, or the Haber process.
+
+\textbf{$\Delta H > 0$, $\Delta S > 0$.} Enthalpy hurts, entropy helps
+and grows with $T$. Favoured once $T$ is \textbf{large} enough.
+\emph{Example:} limestone decomposition (Ladder 7), or ice melting.
+
+\textbf{The one-line rule that regenerates the whole table:}
+\emph{$T$ multiplies only the entropy term, so raising the temperature
+always strengthens whatever entropy is arguing for.} If $\Delta S$ is
+positive, heat helps; if negative, heat hurts. Everything else follows.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\Delta H < 0$, $\Delta S > 0$: at what temperatures is it
+        favoured? \workspace[1.4cm]
+  \item $\Delta H > 0$, $\Delta S > 0$: at what temperatures?
+        \workspace[1.4cm]
+  \item A reaction is favoured only below \SI{400}{\kelvin}. Give the
+        signs of $\Delta H$ and $\Delta S$. \workspace[1.6cm]
+  \item Why does raising $T$ always favour whatever $\Delta S$ is
+        arguing for? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) all \quad (b) high $T$ only \quad (c) both negative
+\quad (d) $T$ multiplies only the entropy term}
+\keyonly{\begin{apcanswer}(a) \textbf{All temperatures} --- both terms
+push $\Delta G$ negative. (b) \textbf{High temperatures only}: the
+positive $\Delta H$ must be overcome by $T\Delta S$, which requires a
+large $T$. (c) Both \textbf{negative}: enthalpy favours it, entropy
+opposes it, so it succeeds only while $T\Delta S$ is small --- that is,
+at low temperature. (d) Because in $\Delta G = \Delta H - T\Delta S$,
+temperature multiplies \textbf{only} the entropy term. Raising $T$
+magnifies $\Delta S$'s contribution without changing $\Delta H$'s, so
+whatever entropy wants, heat gives it more of.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ The crossover temperature}
+\zsec{17.4}
+
+For the two temperature-dependent cases, there is one temperature where
+$\Delta G$ passes through zero. Set $\Delta G = 0$ and solve.
+
+\[ 0 = \Delta H - T\Delta S
+   \qquad\Longrightarrow\qquad
+   T = \frac{\Delta H}{\Delta S} \]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=10.6cm, height=5.8cm,
+  xlabel={temperature (\si{\kelvin})}, ylabel={$\Delta G$
+    (\si{\kilo\joule})},
+  xmin=0, xmax=1600, ymin=-90, ymax=200,
+  xtick={0,400,800,1110,1600},
+  xticklabels={0,400,800,1110,1600},
+  ytick={-50,0,50,100,150},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, very thick, domain=0:1600, samples=2]
+  {178.3 - 0.1606*x};
+\addplot[black, dashed, domain=0:1600, samples=2] {0};
+\addplot[only marks, mark=*, mark size=1.8pt, black]
+  coordinates {(1110,0)};
+\node[font=\footnotesize,anchor=west] at (axis cs:120,150)
+  {$\Delta G = 178.3 - 0.1606\,T$};
+% Both annotations moved clear of the descending line. The line reaches
+% y=-40 at x=1359 (inside the old caption's span) and y=45 at x=830
+% (inside the old "crossover" label), so each was crossed by it.
+\node[font=\footnotesize,anchor=east] at (axis cs:1040,-58)
+  {favoured only beyond \SI{1110}{\kelvin}};
+\node[font=\footnotesize,anchor=west] at (axis cs:1150,28)
+  {crossover};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: at what temperature will limestone
+decompose?]
+\textbf{Using $\Delta H^{\circ} = \SI{+178.3}{\kilo\joule}$ and
+$\Delta S^{\circ} = \SI{+160.6}{\joule\per\kelvin}$ from Ladder 7,
+find the crossover temperature.}
+
+\textbf{Set $\Delta G = 0$ and solve, converting units as always:}
+\[ T = \frac{\Delta H}{\Delta S}
+     = \frac{\SI{178300}{\joule}}{\SI{160.6}{\joule\per\kelvin}}
+     = \mathbf{\SI{1110}{\kelvin}} \]
+
+That is about \SI{837}{\celsius}.
+
+\textbf{Check it against reality.} Industrial lime kilns run at roughly
+\SI{900}{\celsius} --- just above our crossover, as they must be. The
+calculation predicted a real engineering constraint from two tabulated
+numbers.
+
+\textbf{Now say which side is which.} $\Delta S$ is positive, so the
+entropy term grows with $T$; the reaction is therefore favoured
+\emph{above} \SI{1110}{\kelvin} and not below. If $\Delta S$ had been
+negative, the inequality would flip and the reaction would be favoured
+\emph{below} the crossover.
+
+\textbf{Two cautions.} First, $T = \Delta H / \Delta S$ only makes sense
+when $\Delta H$ and $\Delta S$ have the \emph{same} sign --- otherwise
+there is no crossover, because the reaction is favoured either always or
+never (Ladder 8), and the formula returns a meaningless negative
+temperature. Second, the answer is in \textbf{kelvin}, always; convert
+to celsius only if the question asks.
+
+\textbf{And a caveat worth stating on an FRQ:} this assumes
+$\Delta H^{\circ}$ and $\Delta S^{\circ}$ are temperature-independent.
+They are not exactly, but over ordinary ranges the approximation is
+good, and it is what the exam expects.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\Delta H = \SI{+30.0}{\kilo\joule}$, $\Delta S =
+        \SI{+100.0}{\joule\per\kelvin}$. Find the crossover
+        temperature. \workspace[1.8cm]
+  \item Is that reaction favoured above or below it? Why?
+        \workspace[1.6cm]
+  \item $\Delta H = \SI{-40.0}{\kilo\joule}$, $\Delta S =
+        \SI{-80.0}{\joule\per\kelvin}$. Find the crossover and say
+        which side is favoured. \workspace[2.0cm]
+  \item Why does $T = \Delta H/\Delta S$ give nothing useful when the
+        two signs differ? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{300}{\kelvin} \quad (b) above --- $\Delta S$ is
+positive \quad (c) \SI{500}{\kelvin}, favoured below \quad (d) there is
+no crossover; it is favoured always or never}
+\keyonly{\begin{apcanswer}(a) $T = 30000/100.0 =
+\mathbf{\SI{300}{\kelvin}}$. (b) \textbf{Above.} $\Delta S$ is positive,
+so the $T\Delta S$ term grows with temperature and eventually overcomes
+the positive $\Delta H$. (c) $T = \num{-40000}/(-80.0) =
+\mathbf{\SI{500}{\kelvin}}$, and since $\Delta S$ is \textbf{negative}
+the reaction is favoured \textbf{below} \SI{500}{\kelvin}. (d) Because
+with opposite signs both terms of $\Delta G = \Delta H - T\Delta S$
+point the same way at every temperature --- the reaction is favoured
+either always or never, and there is no crossing point. The formula then
+returns a negative temperature, which is physically
+meaningless.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ $\Delta G^{\circ}$ from
+formation values}
+\zsec{17.4}
+
+A second route to $\Delta G^{\circ}$, identical in shape to Hess's law
+and to Ladder 4.
+
+\[ \Delta G^{\circ}_{\text{rxn}}
+   = \sum n\,\Delta G_{f}^{\circ}(\text{products})
+   - \sum n\,\Delta G_{f}^{\circ}(\text{reactants}) \]
+
+\begin{workedexample}[I do: two routes, one answer]
+\textbf{You now have two ways to reach $\Delta G^{\circ}$, and knowing
+which to use is half the skill.}
+
+\textbf{Route 1 --- $\Delta G^{\circ} = \Delta H^{\circ} -
+T\Delta S^{\circ}$.} Use this when the question gives you $\Delta H$
+and $\Delta S$, or when it asks about a temperature \emph{other than}
+\SI{298}{\kelvin}. It is the only route that can handle a temperature
+change.
+
+\textbf{Route 2 --- formation values.} Use this when the question hands
+you a $\Delta G_{f}^{\circ}$ table. It works only at
+\SI{298}{\kelvin}, because that is the temperature the table was
+compiled at.
+
+\textbf{Worked: $\ce{Fe2O3(s) + 3CO(g) -> 2Fe(s) + 3CO2(g)}$}, with
+$\Delta G_{f}^{\circ}$ (\si{\kilo\joule\per\mole}):
+\ce{Fe2O3} $= -742.2$, \ce{CO} $= -137.2$, \ce{CO2} $= -394.4$,
+\ce{Fe} $= 0$.
+
+\textbf{Products:}
+\[ 2(0) + 3(-394.4) = \SI{-1183.2}{\kilo\joule} \]
+
+\textbf{Reactants:}
+\[ -742.2 + 3(-137.2) = -742.2 - 411.6 = \SI{-1153.8}{\kilo\joule} \]
+
+\textbf{Subtract:}
+\[ \Delta G^{\circ} = -1183.2 - (-1153.8)
+   = \mathbf{\SI{-29.4}{\kilo\joule}} \]
+
+Negative, so iron smelting in a blast furnace is thermodynamically
+favoured --- as several thousand years of ironworking suggest.
+
+\textbf{Elements are zero here.} $\Delta G_{f}^{\circ}(\ce{Fe}) = 0$
+because iron in its standard state is the reference --- exactly like
+$\Delta H_{f}^{\circ}$ in Chapter 6. This is the \emph{opposite} of
+Ladder 4's rule for $S^{\circ}$, and keeping the two straight is what
+this ladder tests.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+$\Delta G_{f}^{\circ}$ (\si{\kilo\joule\per\mole}): \ce{NH3(g)} $=
+-16.4$, \ce{NO(g)} $= +86.6$, \ce{H2O(g)} $= -228.6$, elements $= 0$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $\Delta G^{\circ}$ for $\ce{N2(g) + 3H2(g) -> 2NH3(g)}$.
+        \workspace[1.8cm]
+  \item Find $\Delta G^{\circ}$ for $\ce{N2(g) + O2(g) -> 2NO(g)}$.
+        \workspace[1.8cm]
+  \item Which of the two is thermodynamically favoured at
+        \SI{298}{\kelvin}? \workspace[1.4cm]
+  \item Why is $\Delta G_{f}^{\circ}$ of an element zero when
+        $S^{\circ}$ of an element is not? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{-32.8}{\kilo\joule} \quad (b)
+\SI{+173.2}{\kilo\joule} \quad (c) the first \quad (d)
+$\Delta G_{f}$ is a defined reference; $S$ is absolute}
+\keyonly{\begin{apcanswer}(a) $2(-16.4) - [0 + 3(0)] =
+\mathbf{\SI{-32.8}{\kilo\joule}}$. (b) $2(+86.6) - [0 + 0] =
+\mathbf{\SI{+173.2}{\kilo\joule}}$. (c) \textbf{The first}, ammonia
+synthesis --- $\Delta G^{\circ}$ is negative. The second is strongly
+positive, which is why atmospheric \ce{N2} and \ce{O2} coexist without
+reacting (Chapter 13, Ladder 5, where $K \approx 10^{-30}$ said the same
+thing). (d) Because $\Delta G_{f}^{\circ}$ is defined \emph{relative} to
+elements in their standard states --- a chosen reference --- while
+$S^{\circ}$ is measured \emph{absolutely} from the third-law zero. Two
+different kinds of quantity that happen to appear in similar-looking
+tables.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Thermodynamic versus kinetic
+control}
+\zsec{17.7}
+
+$\Delta G$ says whether a reaction \emph{can} go. It says nothing at all
+about whether it \emph{will} in your lifetime.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=2.5mm]},thick] (0.6,0.4) -- (0.6,3.9)
+    node[above,font=\footnotesize] {$G$};
+  \draw[-{Stealth[length=2.5mm]},thick] (0.6,0.4) -- (9.6,0.4)
+    node[right,font=\footnotesize] {progress};
+  \draw[very thick] (1.1,2.2) -- (2.0,2.2)
+    .. controls (3.0,2.2) and (3.2,3.5) .. (4.2,3.5)
+    .. controls (5.2,3.5) and (5.4,1.7) .. (6.4,1.7) -- (8.6,1.7);
+  \draw[dotted,thick] (1.1,2.2) -- (8.9,2.2);
+  \draw[dotted,thick] (1.1,1.7) -- (8.9,1.7);
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (8.75,1.7) -- (8.75,2.2);
+  \node[anchor=west,font=\footnotesize] at (8.85,1.95)
+    {$\Delta G < 0$};
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]},thick]
+    (2.5,2.2) -- (2.5,3.5);
+  \node[anchor=east,font=\footnotesize] at (2.4,2.85)
+    {huge $E_{\mathrm{a}}$};
+  \node[anchor=south,font=\footnotesize] at (1.5,2.25) {diamond};
+  \node[anchor=north,font=\footnotesize] at (7.4,1.65) {graphite};
+  \node[font=\sffamily\footnotesize] at (5.0,-0.15)
+    {favoured, and yet it never happens --- kinetics, not
+     thermodynamics, is in charge};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: diamonds are not forever, technically]
+\textbf{$\ce{C(diamond) -> C(graphite)}$ has $\Delta G^{\circ} =
+\SI{-2.9}{\kilo\joule\per\mole}$. Every diamond in existence is
+thermodynamically unstable. Why do jewellers sleep at night?}
+
+\textbf{Because $\Delta G$ is not a rate.} A negative $\Delta G$ says
+the products sit lower in free energy, so the conversion is favoured. It
+says nothing about the barrier between them.
+
+\textbf{And that barrier is enormous.} Converting diamond to graphite
+means breaking a rigid three-dimensional network of covalent bonds and
+rebuilding it as sheets. The activation energy is so large that at room
+temperature the rate is immeasurably slow --- far slower than the age of
+the universe.
+
+\textbf{So the reaction is under \emph{kinetic control}.} What you
+observe is decided by the barrier, not by the free-energy difference.
+The diamond is not stable; it is \textbf{metastable} --- trapped behind
+a hill it cannot climb.
+
+\textbf{Two more cases of the same thing.} A hydrogen--oxygen mixture
+has $\Delta G^{\circ} \approx \SI{-457}{\kilo\joule\per\mole}$ and sits
+unchanged for years without a spark (Chapter 13, Ladder 5, said this in
+$K$ language). Petrol in air is likewise wildly favoured and entirely
+safe until ignited.
+
+\textbf{The exam sentence.} ``The reaction is thermodynamically
+favoured ($\Delta G < 0$) but kinetically controlled: the activation
+energy is large, so the rate is negligible at this temperature.'' Both
+halves, or you have only answered half the question.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A reaction has $\Delta G^{\circ} = \SI{-200}{\kilo\joule}$ but
+        no observable change occurs. Explain. \workspace[1.8cm]
+  \item Does a catalyst change $\Delta G^{\circ}$? Explain.
+        \workspace[1.8cm]
+  \item What does ``metastable'' mean? \workspace[1.6cm]
+  \item Which quantity would you change to make the reaction in (a)
+        actually proceed? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) large $E_{\mathrm{a}}$ --- kinetic control \quad (b) no
+--- it changes only the rate \quad (c) favoured but trapped behind a
+barrier \quad (d) $E_{\mathrm{a}}$, via a catalyst or heat}
+\keyonly{\begin{apcanswer}(a) The reaction is \textbf{thermodynamically
+favoured but kinetically controlled}: the activation energy is so large
+that the rate is negligible at this temperature. $\Delta G$ describes
+extent, not speed. (b) \textbf{No.} A catalyst lowers $E_{\mathrm{a}}$
+and so raises the rate, but $\Delta G^{\circ}$ depends only on the free
+energies of reactants and products, which a catalyst does not touch ---
+the same argument as Chapter 12, Ladder 12. (c) A state that is
+\textbf{thermodynamically unfavoured relative to some other state but
+kinetically trapped} behind a large activation barrier --- favoured to
+change, but unable to. (d) The \textbf{activation energy}: add a
+catalyst, or raise the temperature so more collisions clear the
+existing barrier. Neither changes $\Delta G^{\circ}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ $\Delta G^{\circ}$ and $K$}
+\zsec{17.9}
+
+Chapter 13's equilibrium constant and this chapter's free energy are
+the same information in two currencies.
+
+\[ \Delta G^{\circ} = -RT \ln K
+   \qquad
+   R = 8.314\;\mathrm{J\,mol^{-1}\,K^{-1}} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,2.9)
+    {the two languages, translated};
+  % NB: the loop variables are \gv/\kv/\mng, NOT \g/\k/\meaning.
+  % \meaning is a TeX primitive and \k is LaTeX's ogonek accent;
+  % using either as a \foreach variable is a fatal error.
+  \foreach \y/\gv/\kv/\mng in {%
+      2.25/{$\Delta G^{\circ} < 0$}/{$K > 1$}/{products favoured},
+      1.7/{$\Delta G^{\circ} = 0$}/{$K = 1$}/{neither side favoured},
+      1.15/{$\Delta G^{\circ} > 0$}/{$K < 1$}/{reactants favoured}} {
+    \node[anchor=west] at (1.0,\y) {\gv};
+    \node[anchor=west] at (4.2,\y) {\kv};
+    \node[anchor=west] at (6.6,\y) {\mng};}
+  \draw[apcgray] (0.5,2.6) -- (11.0,2.6);
+  \draw[apcgray] (0.5,0.8) -- (11.0,0.8);
+  \node[anchor=west] at (1.0,0.3)
+    {note $\ln 1 = 0$, so $K = 1$ is exactly where
+     $\Delta G^{\circ}$ changes sign};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: both directions of the translation]
+\textbf{(a) A reaction has $K = \num{1.0e6}$ at \SI{298}{\kelvin}. Find
+$\Delta G^{\circ}$.}
+\[ \Delta G^{\circ} = -RT \ln K
+   = -(8.314)(298)\ln(\num{1.0e6}) \]
+\[ = -(2478)(13.82) = \SI{-34200}{\joule}
+   = \mathbf{\SI{-34.2}{\kilo\joule}} \]
+
+Large $K$, negative $\Delta G^{\circ}$ --- the two statements agree, as
+they must.
+
+\textbf{(b) A reaction has $\Delta G^{\circ} =
+\SI{+20.0}{\kilo\joule}$ at \SI{298}{\kelvin}. Find $K$.}
+
+Rearrange:
+\[ \ln K = \frac{-\Delta G^{\circ}}{RT}
+         = \frac{-20000}{(8.314)(298)}
+         = \frac{-20000}{2478} = -8.07 \]
+\[ K = e^{-8.07} = \mathbf{\num{3.1e-4}} \]
+
+Positive $\Delta G^{\circ}$, $K$ well below 1 --- reactants favoured,
+consistent again.
+
+\textbf{The sign check that catches everything.} Before computing,
+decide which side of 1 the answer should fall on. Negative
+$\Delta G^{\circ}$ gives $K > 1$; positive gives $K < 1$. A $K$ of
+\num{3.1e-4} for a positive $\Delta G^{\circ}$ passes; a $K$ of 3200
+would not, and would mean a dropped minus sign.
+
+\textbf{Units, again.} $R$ is in \textbf{joules}, so $\Delta G^{\circ}$
+must be in joules too. Feeding kilojoules into this equation is the same
+mistake as Ladder 7's, in a new place.
+
+\textbf{Why the relationship exists at all.} $\Delta G^{\circ}$ is the
+free-energy difference between pure reactants and pure products, and $K$
+measures where the mixture settles between them. They are two
+descriptions of one thing --- which is why Chapter 13, Ladder 5's
+``$K \gg 1$ means products favoured'' and this chapter's
+``$\Delta G^{\circ} < 0$ means favoured'' were always the same
+sentence.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+Use $T = \SI{298}{\kelvin}$, $RT = \SI{2478}{\joule\per\mole}$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $K = 1.0$. Find $\Delta G^{\circ}$. \workspace[1.6cm]
+  \item $\Delta G^{\circ} = \SI{-10.0}{\kilo\joule}$. Is $K$ greater or
+        less than 1? \workspace[1.6cm]
+  \item $K = \num{1.0e-3}$. Find $\Delta G^{\circ}$.
+        \workspace[2.0cm]
+  \item A student computes $K = 500$ from $\Delta G^{\circ} =
+        \SI{+15}{\kilo\joule}$. What went wrong?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 0 \quad (b) greater than 1 \quad (c)
+\SI{+17.1}{\kilo\joule} \quad (d) sign error --- positive
+$\Delta G^{\circ}$ needs $K < 1$}
+\keyonly{\begin{apcanswer}(a) $\ln 1 = 0$, so $\Delta G^{\circ} =
+\mathbf{0}$. (b) \textbf{Greater than 1} --- a negative
+$\Delta G^{\circ}$ always corresponds to $K > 1$. (c)
+$\Delta G^{\circ} = -(2478)\ln(\num{1.0e-3}) = -(2478)(-6.908) =
+\SI{17120}{\joule} = \mathbf{\SI{+17.1}{\kilo\joule}}$. (d) A
+\textbf{sign error}. A positive $\Delta G^{\circ}$ must give
+$K < 1$; getting 500 means the minus sign in
+$\ln K = -\Delta G^{\circ}/RT$ was dropped. The correct answer is
+$K = e^{-15000/2478} = \num{2.3e-3}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 13 \textbullet\ $\Delta G$ versus
+$\Delta G^{\circ}$}
+\zsec{17.9}
+
+The degree symbol matters. $\Delta G^{\circ}$ describes standard
+conditions; $\Delta G$ describes the mixture you actually have.
+
+\[ \Delta G = \Delta G^{\circ} + RT \ln Q \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,2.85)
+    {two symbols, two jobs};
+  \node[anchor=west] at (0.6,2.2)
+    {$\Delta G^{\circ}$ \quad a \textbf{fixed} number for the
+     reaction at standard conditions --- tied to $K$};
+  \node[anchor=west] at (0.6,1.65)
+    {$\Delta G$ \quad\; \textbf{changes} as the reaction proceeds ---
+     tied to $Q$};
+  \draw[apcgray] (0.5,1.3) -- (11.0,1.3);
+  \node[anchor=west] at (0.6,0.8)
+    {at equilibrium $Q = K$ and $\Delta G = 0$ --- substitute those and
+     you recover $\Delta G^{\circ} = -RT\ln K$};
+  \node[anchor=west,font=\sffamily\itshape] at (0.6,0.25)
+    {so Ladder 12's equation is just this one, evaluated at
+     equilibrium};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{$\Delta G^{\circ} = 0$ and $\Delta G = 0$ mean completely
+different things.} $\Delta G = 0$ means \emph{this particular mixture}
+is at equilibrium --- extremely common. $\Delta G^{\circ} = 0$ means
+$K = 1$ exactly --- rare, and a much stronger claim. A reaction with
+$\Delta G^{\circ} = \SI{+50}{\kilo\joule}$ still reaches equilibrium;
+it just does so with very little product.
+\end{apctrap}
+
+\begin{workedexample}[I do: why a positive $\Delta G^{\circ}$ still
+produces something]
+\textbf{A reaction has $\Delta G^{\circ} = \SI{+20.0}{\kilo\joule}$, so
+$K = \num{3.1e-4}$ (Ladder 12). Start with pure reactants and no
+product. What happens?}
+
+\textbf{At the very start, $Q = 0$.} And $\ln Q \to -\infty$, so
+\[ \Delta G = \Delta G^{\circ} + RT\ln Q \]
+is enormously negative. \textbf{The reaction runs forward} --- even
+though $\Delta G^{\circ}$ is positive.
+
+\textbf{As product accumulates, $Q$ rises} and $RT \ln Q$ climbs from
+$-\infty$ toward zero and beyond. $\Delta G$ becomes less and less
+negative.
+
+\textbf{When $Q$ reaches $K$, $\Delta G$ hits zero} and the reaction
+stops changing. Because $K$ is small, that happens with very little
+product formed --- but it is not zero product.
+
+\textbf{So the standard confusion resolves like this.} A positive
+$\Delta G^{\circ}$ does \emph{not} mean nothing happens. It means the
+equilibrium position lies toward reactants. Some product always forms,
+because starting from $Q = 0$ the forward direction is always initially
+favoured.
+
+\textbf{And the reverse case.} A reaction with a large negative
+$\Delta G^{\circ}$ started with mostly \emph{product} will run
+\emph{backwards} --- because $Q > K$ makes $\Delta G$ positive. Which
+direction a mixture moves is a $Q$-versus-$K$ question (Chapter 13,
+Ladder 6), and this equation is that comparison written in energy
+units.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 13 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item State the difference between $\Delta G$ and
+        $\Delta G^{\circ}$. \workspace[1.8cm]
+  \item What is $\Delta G$ at equilibrium? \workspace[1.4cm]
+  \item A reaction has $\Delta G^{\circ} > 0$ and starts with pure
+        reactants. Does any product form? Explain.
+        \workspace[1.8cm]
+  \item If $Q > K$, what is the sign of $\Delta G$, and which way does
+        the reaction run? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) standard conditions vs the actual mixture \quad (b) zero
+\quad (c) yes --- at $Q = 0$, $\Delta G$ is negative \quad (d)
+positive; it runs in reverse}
+\keyonly{\begin{apcanswer}(a) $\Delta G^{\circ}$ applies at
+\textbf{standard conditions} and is a fixed number tied to $K$;
+$\Delta G$ applies to \textbf{the mixture you actually have} and changes
+as the reaction proceeds, tied to $Q$. (b) \textbf{Zero}. (c)
+\textbf{Yes.} With pure reactants $Q = 0$, so $RT\ln Q \to -\infty$ and
+$\Delta G$ is strongly negative --- the reaction runs forward until
+$Q = K$. A positive $\Delta G^{\circ}$ only means the equilibrium lies
+toward reactants, not that nothing happens. (d) $\Delta G$ is
+\textbf{positive}, so the forward reaction is not favoured and the
+system runs \textbf{in reverse} until $Q$ falls back to
+$K$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 14 \textbullet\ Free energy of dissolution}
+\zsec{17.5}
+
+Chapter 11's question --- why does anything dissolve? --- finally gets
+its quantitative answer.
+
+\begin{workedexample}[I do: the salt that dissolves while cooling the
+beaker]
+\textbf{\ce{NaCl} dissolving has $\Delta H =
+\SI{+3.9}{\kilo\joule\per\mole}$ and $\Delta S =
+\SI{+43}{\joule\per\mole\per\kelvin}$. Is it favoured at
+\SI{298}{\kelvin}?}
+
+\[ \Delta G = 3.9 - (298)(0.043)
+   = 3.9 - 12.8 = \mathbf{\SI{-8.9}{\kilo\joule\per\mole}} \]
+
+Negative, so yes --- and note \emph{how} it is negative. The enthalpy
+term is unfavourable; the entropy term carries the whole reaction.
+
+\textbf{This is the answer Chapter 11 owed you.} Ladder 5 there showed
+that dissolving \ce{NaCl} is slightly endothermic --- the beaker cools
+--- and asked why it happens anyway. The answer is that ions going from
+a rigid lattice to freely moving hydrated particles is a large entropy
+increase, and $T\Delta S$ beats a small positive $\Delta H$.
+
+\textbf{The three-step cycle, now in free-energy terms.} Breaking the
+lattice and opening the solvent both cost enthalpy; solvation returns
+it. Whatever small residue is left over, the entropy term usually
+overwhelms --- which is why most salts dissolve at all.
+
+\textbf{When it fails.} For a salt with a large lattice energy and a
+strongly positive $\Delta H_{\text{soln}}$, the entropy term cannot
+cover it and $\Delta G > 0$ --- the salt is insoluble. That is
+Chapter 16's $K_{sp} \ll 1$, and via $\Delta G^{\circ} = -RT\ln K$
+it is literally the same statement: a positive $\Delta G^{\circ}$ for
+dissolution \emph{is} a small $K_{sp}$.
+
+\textbf{And the temperature prediction.} Since $\Delta S$ is usually
+positive for dissolving, $T\Delta S$ grows with heat, so most solids
+become more soluble when warmed --- Chapter 10, Ladder 9's solubility
+curves, predicted rather than tabulated.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 14 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A salt dissolves with $\Delta H = \SI{+25.0}{\kilo\joule\per\mole}$
+        and $\Delta S = \SI{+100.0}{\joule\per\mole\per\kelvin}$. Find
+        $\Delta G$ at \SI{298}{\kelvin}. \workspace[2.0cm]
+  \item Is it favoured? What is driving it? \workspace[1.6cm]
+  \item Why is $\Delta S$ almost always positive for dissolving a
+        solid? \workspace[1.8cm]
+  \item A salt has $\Delta G^{\circ} > 0$ for dissolution. What does
+        that say about $K_{sp}$? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{-4.8}{\kilo\joule\per\mole} \quad (b) yes ---
+entropy \quad (c) lattice to free hydrated ions \quad (d)
+$K_{sp} < 1$ --- sparingly soluble}
+\keyonly{\begin{apcanswer}(a) $\Delta G = 25.0 - (298)(0.1000) =
+25.0 - 29.8 = \mathbf{\SI{-4.8}{\kilo\joule\per\mole}}$. (b)
+\textbf{Yes, favoured}, and \textbf{entropy} is driving it --- the
+enthalpy term is strongly unfavourable and is overcome by $T\Delta S$.
+(c) Because ions or molecules go from \textbf{fixed positions in a rigid
+lattice to moving freely through the solvent}, an enormous increase in
+the number of available arrangements. (d) That $K_{sp} < 1$, and the
+more positive $\Delta G^{\circ}$ is the smaller $K_{sp}$ becomes ---
+by $\Delta G^{\circ} = -RT\ln K$, a positive $\Delta G^{\circ}$ for
+dissolution \emph{is} a sparingly soluble salt.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 15 \textbullet\ Coupled reactions}
+\zsec{17.10}
+
+An unfavourable reaction can be driven by attaching it to a favourable
+one --- provided they share a common species.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.6,3.1)
+    {add the equations, add the free energies};
+  \node[anchor=west] at (0.6,2.45)
+    {unfavourable: \quad $\Delta G^{\circ}_{1} = +13.8$};
+  \node[anchor=west] at (0.6,1.9)
+    {favourable: \qquad\; $\Delta G^{\circ}_{2} = -30.5$};
+  \draw[apcgray] (0.5,1.55) -- (7.6,1.55);
+  \node[anchor=west,font=\sffamily\bfseries] at (0.6,1.1)
+    {coupled: \qquad\quad $\Delta G^{\circ} = -16.7$
+     \; \si{\kilo\joule\per\mole}};
+  \node[anchor=west,align=left,font=\sffamily\footnotesize]
+    at (8.2,1.9)
+    {$\Delta G^{\circ}$ values \textbf{add},\\
+     exactly as $\Delta H$ does\\
+     in Hess's law};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: how your cells cheat thermodynamics]
+\textbf{Phosphorylating glucose is uphill:}
+\[ \ce{glucose + P_i -> glucose-6-phosphate}
+   \qquad \Delta G^{\circ} = \SI{+13.8}{\kilo\joule\per\mole} \]
+On its own it essentially does not happen.
+
+\textbf{ATP hydrolysis is downhill:}
+\[ \ce{ATP + H2O -> ADP + P_i}
+   \qquad \Delta G^{\circ} = \SI{-30.5}{\kilo\joule\per\mole} \]
+
+\textbf{Couple them --- they share \ce{P_i}} --- and add:
+\[ \ce{glucose + ATP -> glucose-6-phosphate + ADP} \]
+\[ \Delta G^{\circ} = +13.8 - 30.5
+   = \mathbf{\SI{-16.7}{\kilo\joule\per\mole}} \]
+
+Negative, so the coupled reaction is favoured, and this is the first
+step of glycolysis --- happening in your cells right now.
+
+\textbf{No law was broken.} The uphill reaction did not become
+favourable; it was \emph{paid for} by a larger downhill one. The
+combined process still has $\Delta G < 0$, so the second law is
+satisfied. Coupling is bookkeeping, not magic.
+
+\textbf{The two requirements.} The reactions must \textbf{share a
+common species} --- here \ce{P_i}, which cancels when you add them ---
+and the favourable $\Delta G^{\circ}$ must be \textbf{larger in
+magnitude} than the unfavourable one.
+
+\textbf{The industrial version} appeared in Ladder 10: iron oxide
+reduction on its own is hugely unfavourable
+($\Delta G^{\circ} = \SI{+742}{\kilo\joule}$), but coupled to carbon
+monoxide oxidation it comes out at \SI{-29.4}{\kilo\joule}. A blast
+furnace is a coupled reaction the size of a building.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 15 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Reaction A has $\Delta G^{\circ} = \SI{+25}{\kilo\joule}$ and
+        reaction B has $\SI{-40}{\kilo\joule}$. Find $\Delta G^{\circ}$
+        for the coupled process. \workspace[1.8cm]
+  \item Is the coupled process favoured? \workspace[1.4cm]
+  \item What two conditions must hold for coupling to work?
+        \workspace[1.8cm]
+  \item Does coupling violate the second law? Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{-15}{\kilo\joule} \quad (b) yes \quad (c) a shared
+species, and the favourable $\Delta G$ must be larger \quad (d) no ---
+the total $\Delta G$ is still negative}
+\keyonly{\begin{apcanswer}(a) $+25 - 40 =
+\mathbf{\SI{-15}{\kilo\joule}}$. (b) \textbf{Yes} ---
+$\Delta G^{\circ}$ is negative. (c) The two reactions must
+\textbf{share a common species} so that adding them produces a sensible
+overall equation, and the favourable reaction's $\Delta G^{\circ}$ must
+be \textbf{larger in magnitude} than the unfavourable one's. (d)
+\textbf{No.} The uphill reaction is paid for by a larger downhill one,
+and the combined process still has $\Delta G < 0$ --- so
+$\Delta S_{\text{univ}}$ still increases. Coupling is bookkeeping, not a
+loophole.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mixed set \textbullet\ ten questions, no labels}
+
+\begin{apcnote}[Why this section exists]
+Every question so far arrived with its ladder attached. These ten do
+not --- and in this chapter the first decision is usually \emph{which
+equation}: $\Delta H - T\Delta S$, formation values, $-RT\ln K$, or
+$\Delta G^{\circ} + RT\ln Q$.
+\end{apcnote}
+
+\begin{yourturn}[MIXED SET --- first five]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em,label=(\alph*)]
+  \item Give the sign of $\Delta S$ for
+        $\ce{2H2O2(l) -> 2H2O(l) + O2(g)}$. \workspace[1.6cm]
+  \item $\Delta H = \SI{-80.0}{\kilo\joule}$, $\Delta S =
+        \SI{-200.0}{\joule\per\kelvin}$. Find $\Delta G$ at
+        \SI{298}{\kelvin}. \workspace[2.0cm]
+  \item For that reaction, find the crossover temperature and say
+        which side is favoured. \workspace[2.0cm]
+  \item $K = \num{2.0e-5}$ at \SI{298}{\kelvin}
+        ($RT = \SI{2478}{\joule\per\mole}$). Find $\Delta G^{\circ}$.
+        \workspace[2.0cm]
+  \item A reaction has $\Delta G^{\circ} = \SI{-150}{\kilo\joule}$ yet
+        nothing observable happens. Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) positive \quad (b) \SI{-20.4}{\kilo\joule} \quad (c)
+\SI{400}{\kelvin}, favoured below \quad (d)
+\SI{+26.8}{\kilo\joule} \quad (e) kinetic control}
+\keyonly{\begin{apcanswer}\textbf{(a)} \textbf{Positive} --- a gas is
+produced where there was none. \textbf{(b)} $\Delta G = -80.0 -
+(298)(-0.2000) = -80.0 + 59.6 =
+\mathbf{\SI{-20.4}{\kilo\joule}}$ --- note the double negative.
+\textbf{(c)} $T = \num{-80000}/(-200.0) = \mathbf{\SI{400}{\kelvin}}$;
+$\Delta S$ is negative, so it is favoured \textbf{below}
+\SI{400}{\kelvin}. \textbf{(d)} $\Delta G^{\circ} = -(2478)
+\ln(\num{2.0e-5}) = -(2478)(-10.82) = \SI{26800}{\joule} =
+\mathbf{\SI{+26.8}{\kilo\joule}}$. \textbf{(e)} It is
+\textbf{thermodynamically favoured but kinetically controlled} --- the
+activation energy is large, so the rate is negligible.
+$\Delta G$ describes extent, not speed.\end{apcanswer}}
+\end{yourturn}
+
+\begin{yourturn}[MIXED SET --- last five]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em,label=(\alph*)]
+  \item Using $S^{\circ}$ (\si{\joule\per\mole\per\kelvin}):
+        \ce{N2O4(g)} $= 304.3$, \ce{NO2(g)} $= 240.1$, find
+        $\Delta S^{\circ}$ for $\ce{N2O4(g) -> 2NO2(g)}$.
+        \workspace[2.0cm]
+  \item A reaction has $\Delta H > 0$ and $\Delta S < 0$. At what
+        temperatures is it favoured? \workspace[1.6cm]
+  \item Reaction A ($\Delta G^{\circ} = \SI{+18}{\kilo\joule}$) is
+        coupled to B ($\SI{-45}{\kilo\joule}$). Find the coupled
+        $\Delta G^{\circ}$. \workspace[1.8cm]
+  \item $\Delta G^{\circ} = 0$ for a reaction. What is $K$?
+        \workspace[1.4cm]
+  \item A salt dissolves endothermically yet the process is favoured.
+        Which term is responsible, and why? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{+175.9}{\joule\per\kelvin} \quad (b) never \quad
+(c) \SI{-27}{\kilo\joule} \quad (d) $K = 1$ \quad (e) $T\Delta S$ ---
+lattice to free ions}
+\keyonly{\begin{apcanswer}\textbf{(a)} $2(240.1) - 304.3 = 480.2 -
+304.3 = \mathbf{\SI{+175.9}{\joule\per\kelvin}}$ --- positive, as one
+mole of gas becoming two requires. \textbf{(b)} \textbf{Never.} Both
+terms of $\Delta H - T\Delta S$ are positive at every temperature.
+\textbf{(c)} $+18 - 45 = \mathbf{\SI{-27}{\kilo\joule}}$ --- favoured.
+\textbf{(d)} $\mathbf{K = 1}$, since $\ln K = 0$. \textbf{(e)} The
+\textbf{entropy term $T\Delta S$}. Dissolving takes ions from fixed
+lattice positions to freely moving hydrated ions, a large entropy
+increase, and $T\Delta S$ outweighs the positive $\Delta H$
+(Ladder 14).\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt. Every row is assessed --- CED topics 9.1 to 9.7
+carry no exclusion statements at all, so nothing here is optional.
+
+\renewcommand{\arraystretch}{1.25}
+\noindent\begin{tabular}{@{}c p{5.7cm} c p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & what entropy is & 1 & arrangements, not mess \\
+$\square$ & predicting the sign of $\Delta S$ & 2 & count gas moles first \\
+$\square$ & the third law, absolute $S$ & 3 & elements are not zero \\
+$\square$ & calculating $\Delta S^{\circ}$ & 4 & predict the sign first \\
+$\square$ & the second law & 5 & only the sum must rise \\
+$\square$ & $\Delta S_{\text{surr}}$ from $\Delta H$ & 6 & $-\Delta H/T$ \\
+$\square$ & Gibbs free energy & 7 & convert kJ and J \\
+$\square$ & the four sign cases & 8 & $T$ scales entropy only \\
+$\square$ & the crossover temperature & 9 & $T = \Delta H/\Delta S$ \\
+$\square$ & $\Delta G^{\circ}$ from formation & 10 & elements ARE zero here \\
+$\square$ & thermodynamic vs kinetic & 11 & extent is not speed \\
+$\square$ & $\Delta G^{\circ}$ and $K$ & 12 & $-RT\ln K$, joules \\
+$\square$ & $\Delta G$ versus $\Delta G^{\circ}$ & 13 & $Q$ versus $K$ \\
+$\square$ & free energy of dissolution & 14 & entropy usually wins \\
+$\square$ & coupled reactions & 15 & the values add \\
+\midrule
+$\square$ & \textbf{mixed set} (8 of 10) & --- & whichever it exposed \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+15/15 and the mixed set: you have Unit 9's thermodynamics half, and
+Chapter 18 will lean on Ladders 12 and 13 constantly --- cell potential
+is free energy wearing different units.
+
+11--14: check where the misses fall. Ladders 1--6 are conceptual and
+repair by re-reading. Ladders 7--10 are the calculation core, and the
+overwhelming majority of errors there are the \textbf{kJ/J unit
+mismatch} rather than any misunderstanding. If that is your pattern,
+the fix is mechanical: write the units next to every number before
+substituting.
+
+10 or fewer: the likeliest single cause is treating $\Delta G$ as a
+statement about \emph{speed}. Re-read Ladders 7 and 11 together, then
+Ladder 12 --- ``favoured'' means the equilibrium lies toward products,
+and nothing more. Everything else in this chapter is arithmetic on top
+of that one distinction.
+
+\textbf{One thing to carry into Chapter 18.} $\Delta G^{\circ} =
+-nFE^{\circ}$ is coming, and it is Ladder 12 with a different constant.
+If $\Delta G^{\circ} = -RT\ln K$ is solid, electrochemistry's
+thermodynamics is already half learned.
+\end{apcnote}
+
+\end{document}
