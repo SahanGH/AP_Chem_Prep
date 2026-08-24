@@ -1,0 +1,1495 @@
+% Ch15 self-study -- "I do / You do" ladder for Zumdahl chapter 15.
+% FOURTEEN ladders (56 questions) plus a ten-question mixed set = 66
+% questions, fourteen figures. Completes the self-study series.
+%
+% SCOPE, read straight off the CED PDF on 2026-08-23. This chapter
+% carries the most intricate scope in the whole course, so it is worth
+% recording precisely:
+%
+%   ASSESSED (8.4.A.1-A.4): pH of any mixture of strong/weak acid and
+%   base -- excess-reagent case, buffer case (via H-H), and the
+%   equimolar/equivalence case (via the conjugate's Kb or Ka).
+%   ASSESSED (8.5): titration curves, equivalence point, indicators.
+%   ASSESSED (8.8, 8.10): why buffers work, and buffer capacity --
+%   both argumentation-flavoured, not computational.
+%   ASSESSED (8.9): the Henderson-Hasselbalch equation itself.
+%
+%   EXCLUDED (8.9): "Computation of the change in pH resulting from the
+%   addition of an acid or a base to a buffer" AND "Derivation of the
+%   Henderson-Hasselbalch equation".
+%   EXCLUDED (8.5): "Computation of the concentration of each species
+%   present in the titration curve for POLYPROTIC acids" -- the CED
+%   states explicitly that the same computations FOR MONOPROTIC ACIDS
+%   are in scope.
+%
+% The 8.9 exclusion is narrow and easy to over-read: mixing a weak acid
+% with a strong base and finding the resulting pH is 8.4.A.2 and IS
+% assessed. What is excluded is being handed an existing buffer and
+% asked for the pH CHANGE on adding something. Ladder 6 says this
+% explicitly, because the two calculations are nearly identical and a
+% student who over-reads the exclusion would skip required material.
+\documentclass{apchem-worksheet}
+
+\apcunitword{Chapter}
+\apcunit{15}
+\apcunittitle{Acid--Base Equilibria}
+\apcdoctitle{Self-Study \textbullet\ Chapter 15, I~do / You~do}
+\apcsubtitle{Zumdahl \S15.1--15.6 \textbullet\ PDF pp.\ 756--792}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed
+box --- same skill, new numbers, no help. Work all four before checking
+the gray \emph{check:} line; a tracker tick needs all four right first
+time. A ten-question \textbf{mixed set} follows Ladder 14.
+
+\textbf{This is the second half of Unit 8}, which at 11--15\% is the
+exam's second-heaviest unit. Chapter 14 gave you weak acids in
+isolation; this chapter puts them in mixtures --- which is where nearly
+all the exam's Unit 8 marks actually live.
+
+\textbf{What you must bring.} Chapter 14, Ladders 9, 12 and 16. Every
+calculation here is a weak-acid equilibrium with an extra stoichiometry
+step in front of it. If $K_{a}K_{b} = K_{w}$ and $\text{p}K_{a}$ are not
+automatic, fix that first.
+
+\textbf{The one structural idea.} Almost every problem in this chapter
+is \textbf{two steps}: first a \emph{stoichiometry} step in moles ---
+the strong reagent is consumed completely --- and then an
+\emph{equilibrium} step on whatever is left. Students who try to do both
+at once get lost; students who do them in order rarely do.
+
+\textbf{A scope note that matters.} The CED excludes two specific
+things here (Ladders 6 and 14 flag them precisely). Both exclusions are
+narrower than they first appear, and over-reading either one would make
+you skip required material --- so read those notes rather than
+guessing.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ The common-ion effect}
+\zsec{15.1}
+
+Add acetate to acetic acid and the acid ionises \emph{less}. That is
+Le Ch\^{a}telier applied to a weak acid --- and it is the mechanism
+behind every buffer in this chapter.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  % pure weak acid -- fill before stroke
+  \fill[apcgray!22] (0.7,0.5) rectangle (3.3,2.5);
+  \draw[very thick] (0.7,3.0) -- (0.7,0.5) -- (3.3,0.5) -- (3.3,3.0);
+  \foreach \p in {(1.1,0.95),(1.9,1.5),(2.7,1.0),(1.5,2.1),(2.4,2.0)} {
+    \node[font=\tiny] at \p {\ce{HA}};}
+  \node[font=\tiny] at (2.0,0.75) {\ce{H+}};
+  \node[align=center] at (2.0,-0.2)
+    {pure weak acid\\a little ionises};
+
+  \draw[-{Stealth[length=3mm]},very thick] (3.8,1.5) -- (5.1,1.5);
+  \node[above,align=center,font=\sffamily\footnotesize] at (4.45,1.65)
+    {add\\\ce{A-}};
+
+  \begin{scope}[xshift=5.6cm]
+    \fill[apcgray!22] (0.7,0.5) rectangle (3.3,2.5);
+    \draw[very thick] (0.7,3.0) -- (0.7,0.5) -- (3.3,0.5) -- (3.3,3.0);
+    \foreach \p in {(1.0,0.9),(1.7,1.4),(2.5,0.95),(1.3,2.0),
+                    (2.2,1.9),(2.9,1.5)} {
+      \node[font=\tiny] at \p {\ce{HA}};}
+    \foreach \p in {(1.1,1.7),(2.0,2.3),(2.7,2.2)} {
+      \node[font=\tiny] at \p {\ce{A-}};}
+    \node[align=center] at (2.0,-0.2)
+      {with added \ce{A-}\\ionisation \textbf{suppressed}};
+  \end{scope}
+  \node[font=\sffamily\footnotesize] at (5.6,-1.1)
+    {$\ce{HA <=> H+ + A-}$ --- adding a product pushes the equilibrium
+     \textbf{left}};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: the same acid, two solutions]
+\textbf{Compare \SI{0.10}{\Molar} acetic acid alone with
+\SI{0.10}{\Molar} acetic acid that also contains \SI{0.10}{\Molar}
+sodium acetate. $K_{a} = \num{1.8e-5}$.}
+
+\textbf{Alone} (Chapter 14, Ladder 9): $x = \sqrt{K_{a}c} =
+\num{1.34e-3}$, so pH $= 2.87$.
+
+\textbf{With acetate present}, the ICE table starts differently ---
+acetate is no longer zero:
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+& $[\ce{HA}]$ & $[\ce{H+}]$ & $[\ce{A-}]$ \\
+\midrule
+\textbf{I} & 0.10 & 0 & \textbf{0.10} \\
+\textbf{C} & $-x$ & $+x$ & $+x$ \\
+\textbf{E} & $0.10-x$ & $x$ & $0.10+x$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\[ K_{a} = \frac{x(0.10+x)}{0.10-x}
+   \;\approx\; \frac{x(0.10)}{0.10} = x \]
+So $x = K_{a} = \num{1.8e-5}$ and pH $= 4.74$.
+
+\textbf{Nearly two pH units less acidic}, from adding a salt that
+contains no \ce{H+} at all. The added acetate pushed the ionisation
+equilibrium left, exactly as Chapter 13's Le Ch\^{a}telier predicts.
+
+\textbf{Notice what the algebra collapsed to.} With comparable amounts
+of \ce{HA} and \ce{A-}, the two concentrations nearly cancel and
+$[\ce{H+}] \approx K_{a}$. That is the Henderson--Hasselbalch equation
+in embryo (Ladder 3) --- and it is why buffers are so easy to compute
+once you see the pattern.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Does adding \ce{NaF} to \ce{HF} solution raise or lower the pH?
+        Explain. \workspace[1.8cm]
+  \item Does it raise or lower the percent ionisation of \ce{HF}?
+        \workspace[1.6cm]
+  \item Does it change $K_{a}$? \workspace[1.4cm]
+  \item Which ion in \ce{NaF} is the ``common'' ion, and why is the
+        other irrelevant? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) raises it --- equilibrium shifts left \quad (b) lowers
+it \quad (c) no \quad (d) \ce{F-}; \ce{Na+} is a spectator}
+\keyonly{\begin{apcanswer}(a) \textbf{Raises} the pH. \ce{F-} is a
+product of $\ce{HF <=> H+ + F-}$, so adding it shifts the equilibrium
+\textbf{left}, reducing $[\ce{H+}]$. (b) \textbf{Lowers} it --- less of
+the \ce{HF} comes apart. (c) \textbf{No.} $K_{a}$ depends only on
+temperature; the common ion moves the position of the equilibrium, not
+the constant. (d) \textbf{\ce{F-}} --- it is common to both the salt
+and the acid's equilibrium. \ce{Na+} is a spectator: it is the
+conjugate of the strong base \ce{NaOH} and does not react with water
+(Chapter 14, Ladder 14).\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ What a buffer is, and why it
+works}
+\zsec{15.2}
+
+A buffer contains \textbf{appreciable amounts of both members of a
+conjugate pair}. That is the whole definition, and everything else
+follows from it.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,3.5)
+    {a buffer has two jobs, and one reagent for each};
+  % add acid
+  \node[anchor=west,font=\sffamily\bfseries] at (0.5,2.8)
+    {add \ce{H+}?};
+  \node[anchor=west] at (2.6,2.8)
+    {the \textbf{conjugate base} mops it up: \;
+     $\ce{A- + H+ -> HA}$};
+  % add base
+  \node[anchor=west,font=\sffamily\bfseries] at (0.5,2.2)
+    {add \ce{OH-}?};
+  \node[anchor=west] at (2.6,2.2)
+    {the \textbf{conjugate acid} mops it up: \;
+     $\ce{HA + OH- -> A- + H2O}$};
+  \draw[apcgray] (0.4,1.85) -- (11.0,1.85);
+  \node[anchor=west] at (0.5,1.4)
+    {either way the strong species is converted into a \emph{weak} one,
+     so the pH barely moves};
+  \node[anchor=west] at (0.5,0.85)
+    {the \textbf{ratio} $[\ce{A-}]/[\ce{HA}]$ shifts a little --- and
+     pH depends on the \emph{logarithm} of that ratio};
+  \draw[apcgray] (0.4,0.5) -- (11.0,0.5);
+  \node[anchor=west,font=\sffamily\itshape] at (0.5,0.05)
+    {a buffer does not stop pH changing --- it makes the change small};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: why the pH barely moves]
+\textbf{This is CED topic 8.8, and it is an \emph{argumentation} topic
+--- the marks are for the explanation, not a number.}
+
+\textbf{The mechanism, stated properly.} A buffer solution contains a
+large concentration of both members of a conjugate acid--base pair. The
+conjugate base reacts with added acid; the conjugate acid reacts with
+added base. Both reactions convert a \emph{strong} species into a
+\emph{weak} one, and a weak species contributes far less to the pH.
+
+\textbf{Why the logarithm matters.} pH tracks the \emph{ratio}
+$[\ce{A-}]/[\ce{HA}]$, and only through a logarithm. Take a buffer that
+is \SI{0.50}{\Molar} in each. Convert a tenth of the acid to base and
+the ratio goes from $1.00$ to $0.60/0.40 = 1.5$ --- and
+$\log 1.5 = 0.18$, so the pH moves by less than two-tenths of a unit.
+The same amount of acid added to pure water would move the pH by
+several units.
+
+\textbf{What a buffer is not.} It is not a substance that ``absorbs''
+\ce{H+} indefinitely, and it does not hold pH \emph{constant}. It
+resists change until one component is used up --- which is Ladder 5.
+
+\textbf{The exam sentence.} ``The solution contains appreciable amounts
+of both \ce{HA} and \ce{A-}. Added \ce{H+} reacts with \ce{A-} to form
+\ce{HA}, and added \ce{OH-} reacts with \ce{HA} to form \ce{A-}, so the
+ratio changes only slightly and the pH is stabilised.'' Both directions,
+or you have answered half the question.
+
+\textbf{And what makes a mixture a buffer.} Not any acid and base ---
+a \textbf{conjugate pair}. \ce{HCl} and \ce{NaOH} together are not a
+buffer; they neutralise each other completely. \ce{CH3COOH} with
+\ce{NaCH3COO} is, and so is \ce{NH3} with \ce{NH4Cl}.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which of these is a buffer? \ce{HCl}/\ce{NaCl},
+        \ce{HF}/\ce{NaF}, \ce{HCl}/\ce{NaOH}. \workspace[1.8cm]
+  \item Which component reacts with added \ce{OH-}?
+        \workspace[1.4cm]
+  \item Write the equation for a buffer absorbing added \ce{H+}.
+        \workspace[1.6cm]
+  \item Does a buffer keep the pH exactly constant? Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{HF}/\ce{NaF} \quad (b) the weak acid \ce{HA} \quad
+(c) $\ce{A- + H+ -> HA}$ \quad (d) no --- it makes the change small}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{HF}/\ce{NaF}} --- the only
+\textbf{conjugate pair}. \ce{HCl}/\ce{NaCl} is a strong acid with its
+useless conjugate; \ce{HCl}/\ce{NaOH} simply neutralise. (b) The
+\textbf{weak acid, \ce{HA}}: $\ce{HA + OH- -> A- + H2O}$. (c)
+$\ce{A- + H+ -> HA}$. (d) \textbf{No.} It \emph{resists} change ---
+added strong acid or base is converted to a weak species, so the ratio
+$[\ce{A-}]/[\ce{HA}]$ shifts only slightly and, because pH depends on
+the logarithm of that ratio, the pH moves very
+little.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Henderson--Hasselbalch}
+\zsec{15.2}
+
+\[ \text{pH} = \text{p}K_{a}
+   + \log\!\left(\frac{[\ce{A-}]}{[\ce{HA}]}\right) \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,3.2)
+    {read the ratio, not the concentrations};
+  \foreach \y/\rat/\lg/\ph in {%
+      2.55/{$[\ce{A-}] = [\ce{HA}]$}/{$\log 1 = 0$}/{pH $=$
+        p$K_{a}$},
+      2.0/{$[\ce{A-}] = 10[\ce{HA}]$}/{$\log 10 = 1$}/{pH $=$
+        p$K_{a} + 1$},
+      1.45/{$[\ce{A-}] = 0.1[\ce{HA}]$}/{$\log 0.1 = -1$}/{pH $=$
+        p$K_{a} - 1$}} {
+    \node[anchor=west] at (0.6,\y) {\rat};
+    \node[anchor=west] at (4.2,\y) {\lg};
+    \node[anchor=west] at (7.2,\y) {\ph};}
+  \draw[apcgray] (0.5,2.9) -- (11.0,2.9);
+  \draw[apcgray] (0.5,1.1) -- (11.0,1.1);
+  \node[anchor=west] at (0.6,0.65)
+    {because it is a \textbf{ratio}, you may use \textbf{moles}
+     instead of concentrations --- the volume cancels};
+  \node[anchor=west,font=\sffamily\itshape] at (0.6,0.1)
+    {which is what makes the titration ladders (7--10) quick};
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[AP scope: use it, do not derive it]
+CED topic 8.9's exclusion: \emph{``Derivation of the
+Henderson--Hasselbalch equation will not be assessed on the AP
+Exam.''} So you will never be asked where it comes from --- only to
+apply it. (For the curious: take $K_{a} =
+[\ce{H+}][\ce{A-}]/[\ce{HA}]$, solve for $[\ce{H+}]$, and take
+$-\log$ of both sides. That is the whole derivation, and it is not
+examinable.)
+\end{apcnote}
+
+\begin{workedexample}[I do: three buffers of the same acid]
+\textbf{Acetic acid has $K_{a} = \num{1.8e-5}$, so
+p$K_{a} = 4.74$.}
+
+\textbf{(a) Equal concentrations: \SI{0.10}{\Molar} \ce{CH3COOH} and
+\SI{0.10}{\Molar} \ce{CH3COO-}.}
+\[ \text{pH} = 4.74 + \log\!\left(\frac{0.10}{0.10}\right)
+   = 4.74 + 0 = \mathbf{4.74} \]
+When the two are equal, pH \emph{is} p$K_{a}$ --- the single most
+useful fact in this chapter, and the basis of Ladder 12.
+
+\textbf{(b) Twice as much base: \SI{0.10}{\Molar} \ce{HA},
+\SI{0.20}{\Molar} \ce{A-}.}
+\[ \text{pH} = 4.74 + \log 2 = 4.74 + 0.30 = \mathbf{5.04} \]
+
+\textbf{(c) Using moles instead.} Suppose a solution contains
+\SI{0.030}{\mole} \ce{HA} and \SI{0.020}{\mole} \ce{A-} in some volume:
+\[ \text{pH} = 4.74 + \log\!\left(\frac{0.020}{0.030}\right)
+   = 4.74 - 0.18 = \mathbf{4.56} \]
+No volume was needed, because both species sit in the \emph{same}
+solution and the volume divides out of the ratio. This is why the
+titration ladders can work entirely in moles.
+
+\textbf{Two errors to avoid.} The base goes on \textbf{top} --- putting
+\ce{HA} there flips the sign of the correction and moves the pH the
+wrong way. And the equation uses p$K_{a}$, not $K_{a}$: substituting
+$\num{1.8e-5}$ where $4.74$ belongs produces nonsense you should catch
+by inspection.
+
+\textbf{When it stops being valid.} H--H assumes both species are
+present in appreciable, comparable amounts. If the ratio is more
+extreme than about 10:1 either way you no longer really have a buffer,
+and the assumption that neither concentration changes much begins to
+fail.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+Acetic acid, p$K_{a} = 4.74$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{0.20}{\Molar} \ce{HA} and \SI{0.20}{\Molar} \ce{A-}. Find
+        the pH. \workspace[1.6cm]
+  \item \SI{0.10}{\Molar} \ce{HA} and \SI{0.010}{\Molar} \ce{A-}. Find
+        the pH. \workspace[1.8cm]
+  \item \SI{0.040}{\mole} \ce{A-} and \SI{0.020}{\mole} \ce{HA} in one
+        solution. Find the pH. \workspace[1.8cm]
+  \item Why may you use moles instead of concentrations?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) 4.74 \quad (b) 3.74 \quad (c) 5.04 \quad (d) the volume
+cancels in the ratio}
+\keyonly{\begin{apcanswer}(a) Ratio 1, so pH $= \mathbf{4.74}$ ---
+note the concentrations doubled from the worked example and the pH did
+not move, because only the ratio matters. (b) $\log(0.010/0.10) =
+\log(0.1) = -1$, so pH $= 4.74 - 1 = \mathbf{3.74}$. (c)
+$\log(0.040/0.020) = \log 2 = 0.30$, so pH $= \mathbf{5.04}$. (d)
+Because both species are dissolved in the \textbf{same solution and
+therefore the same volume}, which divides out of the ratio
+$[\ce{A-}]/[\ce{HA}]$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Designing a buffer}
+\zsec{15.2}
+
+Given a target pH, choose the acid first and the ratio second.
+
+\begin{workedexample}[I do: build a buffer at pH 5.00]
+\textbf{Step 1 --- choose an acid whose p$K_{a}$ is close to the target
+pH.} The correction term $\log(\text{ratio})$ should be small, which
+means p$K_{a}$ within about one unit of the target. For pH 5.00, acetic
+acid (p$K_{a} = 4.74$) is an excellent choice; \ce{HCN}
+(p$K_{a} = 9.21$) would be a terrible one, because it would need a
+ratio of about $10^{-4}$ and there would be almost no \ce{CN-} present
+to do any buffering.
+
+\textbf{Step 2 --- solve for the ratio.}
+\[ 5.00 = 4.74 + \log\!\left(\frac{[\ce{A-}]}{[\ce{HA}]}\right) \]
+\[ \log(\text{ratio}) = 0.26
+   \quad\Longrightarrow\quad
+   \text{ratio} = 10^{0.26} = \mathbf{1.8} \]
+
+So you need about \textbf{1.8 moles of acetate for every 1 mole of
+acetic acid}.
+
+\textbf{Step 3 --- choose absolute amounts.} The ratio fixes the pH;
+the \emph{concentrations} fix the capacity (Ladder 5). Using
+\SI{0.10}{\Molar} \ce{HA} with \SI{0.18}{\Molar} \ce{A-} gives pH 5.00,
+and so does \SI{1.0}{\Molar} with \SI{1.8}{\Molar} --- but the second
+buffer will withstand ten times as much added acid or base.
+
+\textbf{Two ways to make it in the lab.} Mix the weak acid with its
+salt directly, or --- more common in practice --- take the weak acid and
+add \emph{part} of the strong base needed to neutralise it. Half-neutralise
+an acid and you get a buffer at exactly p$K_{a}$, which is Ladder 12.
+
+\textbf{The choice-of-acid question is the assessed one.} If a question
+gives you four acids and a target pH, the answer is the one whose
+p$K_{a}$ is nearest --- and the justification is that a ratio near 1
+gives comparable amounts of both species and therefore the greatest
+capacity in both directions.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+p$K_{a}$: acetic $4.74$, \ce{HF} $3.14$, \ce{HClO} $7.46$, \ce{HCN}
+$9.21$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which acid would you choose for a pH 7.00 buffer? Why?
+        \workspace[1.8cm]
+  \item Which for a pH 3.00 buffer? \workspace[1.4cm]
+  \item For an acid with p$K_{a} = 4.74$, what ratio gives pH 4.44?
+        \workspace[1.8cm]
+  \item Two buffers have the same ratio but one is ten times more
+        concentrated. Do they have the same pH? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{HClO} \quad (b) \ce{HF} \quad (c) 0.50 \quad (d)
+yes}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{HClO}}, p$K_{a} = 7.46$ ---
+nearest to 7.00, so the ratio needed is close to 1 and both species are
+present in comparable amounts. (b) \textbf{\ce{HF}}, p$K_{a} = 3.14$.
+(c) $\log(\text{ratio}) = 4.44 - 4.74 = -0.30$, so ratio $=
+10^{-0.30} = \mathbf{0.50}$ --- twice as much acid as base. (d)
+\textbf{Yes.} pH depends only on the ratio. The concentrated one has a
+much larger \emph{capacity} (Ladder 5), but the same
+pH.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Buffer capacity}
+\zsec{15.3}
+
+Capacity is how much acid or base a buffer can absorb before it stops
+working. It is set by the \emph{absolute} concentrations, not the
+ratio.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,3.3)
+    {two independent knobs};
+  % second column at 4.0, not 3.4 -- "the concentrations" in bold sans
+  % is wider than 2.8cm and ran into "set the capacity"
+  \node[anchor=west,font=\sffamily\bfseries] at (0.6,2.65)
+    {the \textbf{ratio}};
+  \node[anchor=west] at (4.0,2.65)
+    {sets the \textbf{pH} \quad(Ladder 3)};
+  \node[anchor=west,font=\sffamily\bfseries] at (0.6,2.1)
+    {the \textbf{concentrations}};
+  \node[anchor=west] at (4.0,2.1)
+    {set the \textbf{capacity}};
+  \draw[apcgray] (0.5,1.75) -- (11.0,1.75);
+  \node[anchor=west] at (0.6,1.3)
+    {raise both concentrations, ratio fixed: \; same pH,
+     \textbf{more} capacity};
+  \node[anchor=west] at (0.6,0.75)
+    {more conjugate \textbf{acid} than base: \; greater capacity for
+     added \textbf{base}};
+  \node[anchor=west] at (0.6,0.2)
+    {more conjugate \textbf{base} than acid: \; greater capacity for
+     added \textbf{acid}};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: same pH, different staying power]
+\textbf{Buffer A is \SI{0.10}{\Molar} in \ce{HA} and
+\SI{0.10}{\Molar} in \ce{A-}. Buffer B is \SI{1.0}{\Molar} in each.
+Compare them.}
+
+\textbf{Same pH.} Both have ratio 1, so both sit at p$K_{a}$. The
+Henderson--Hasselbalch equation cannot tell them apart.
+
+\textbf{Very different capacity.} Buffer B contains ten times as many
+moles of each component per litre, so it can absorb ten times as much
+added acid or base before either component runs out. This is CED
+8.10.A.1: raising the concentrations while holding the ratio constant
+keeps the pH and increases the capacity.
+
+\textbf{Now the asymmetry, which is 8.10.A.2 and less obvious.} A
+buffer with \emph{more conjugate acid than base} has more \ce{HA}
+available to react with added \ce{OH-} --- so it has greater capacity
+for added \textbf{base}. A buffer with more conjugate base than acid has
+more \ce{A-} to react with added \ce{H+}, so greater capacity for added
+\textbf{acid}. The component in excess defends against the species it
+reacts with.
+
+\textbf{Which is worth saying slowly}, because the intuition often runs
+backwards. Extra \emph{acid} in the buffer protects against added
+\emph{base}, not against added acid --- because it is the acid
+component that consumes hydroxide.
+
+\textbf{And the practical consequence.} Capacity is greatest when the
+two components are roughly equal \emph{and} both concentrated: equal
+amounts give balanced protection in both directions, and high
+concentration gives a lot of it. That is why buffers are normally made
+at p$K_{a}$ and at the highest concentration the experiment tolerates.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Two buffers have ratio 1, one at \SI{0.05}{\Molar} and one at
+        \SI{0.50}{\Molar}. Which has the higher pH?
+        \workspace[1.6cm]
+  \item Which has the greater capacity? \workspace[1.4cm]
+  \item A buffer has more \ce{A-} than \ce{HA}. Is it better at
+        absorbing added acid or added base? \workspace[1.8cm]
+  \item What two conditions give the greatest overall capacity?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) neither --- same pH \quad (b) the \SI{0.50}{\Molar} one
+\quad (c) added acid \quad (d) equal amounts, both concentrated}
+\keyonly{\begin{apcanswer}(a) \textbf{Neither --- they have the same
+pH.} Ratio alone sets pH. (b) The \textbf{\SI{0.50}{\Molar}} buffer,
+by a factor of ten: it contains ten times as many moles of each
+component to consume added acid or base. (c) \textbf{Added acid.}
+\ce{A-} is the component that reacts with \ce{H+}, and this buffer has
+extra \ce{A-}. (d) \textbf{Roughly equal amounts of the two components}
+(balanced protection in both directions) and \textbf{high
+concentrations} of both (a lot of it).\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Strong acid $+$ strong base}
+\zsec{15.4}
+
+The simplest mixture, and the template for all the others: do the
+stoichiometry first, then look at what is left.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,2.9)
+    {$\ce{H+ + OH- -> H2O}$ \;--- quantitative, one-way, complete};
+  \foreach \y/\case/\what in {%
+      2.2/{\ce{H+} in excess}/{pH from leftover $[\ce{H+}]$ and the
+        \textbf{total} volume},
+      1.65/{\ce{OH-} in excess}/{pOH from leftover $[\ce{OH-}]$, then
+        pH $= 14 -$ pOH},
+      1.1/{exactly equal}/{pH $= 7.00$ --- only water and spectator
+        ions remain}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (0.6,\y) {\case};
+    \node[anchor=west] at (3.6,\y) {\what};}
+  \draw[apcgray] (0.5,2.55) -- (11.0,2.55);
+  \draw[apcgray] (0.5,0.75) -- (11.0,0.75);
+  \node[anchor=west] at (0.6,0.3)
+    {the volume that matters is always the \textbf{combined} volume ---
+     the commonest slip in this ladder};
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[AP scope: a narrow exclusion, easy to over-read]
+CED topic 8.9 excludes \emph{``computation of the change in pH
+resulting from the addition of an acid or a base to a buffer''}. Read
+that precisely: what is excluded is being handed an existing buffer and
+asked how much the pH \emph{changes}. Computing the pH of a mixture
+made by combining a weak acid with a strong base is topic
+\textbf{8.4.A.2} and \textbf{is} assessed --- the CED says so
+explicitly. Ladders 7--10 are that required material. The two
+calculations look almost identical, so do not let the exclusion
+frighten you off the titration work; it is the bulk of Unit 8's marks.
+\end{apcnote}
+
+\begin{workedexample}[I do: mix and find the leftover]
+\textbf{Mix \SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{HCl}
+with \SI{30.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaOH}. Find the
+pH.}
+
+\textbf{Step 1 --- moles, not concentrations.}
+\[ n(\ce{H+}) = 0.0500 \times 0.100 = \SI{5.00e-3}{\mole} \]
+\[ n(\ce{OH-}) = 0.0300 \times 0.100 = \SI{3.00e-3}{\mole} \]
+
+\textbf{Step 2 --- react them completely.} They cancel one for one:
+\[ \text{excess } \ce{H+} = 5.00 \times 10^{-3} - 3.00 \times 10^{-3}
+   = \SI{2.00e-3}{\mole} \]
+
+\textbf{Step 3 --- divide by the TOTAL volume.}
+\[ V_{\text{total}} = 50.0 + 30.0 = \SI{80.0}{\milli\litre}
+   = \SI{0.0800}{\litre} \]
+\[ [\ce{H+}] = \frac{\num{2.00e-3}}{0.0800}
+   = \SI{0.0250}{\Molar} \]
+
+\textbf{Step 4 --- take the logarithm.}
+\[ \text{pH} = -\log(0.0250) = \mathbf{1.60} \]
+
+\textbf{The two habits this ladder is for.} Work in \textbf{moles}
+through the stoichiometry, because concentrations change when you mix.
+And divide by the \textbf{combined} volume at the end --- using
+\SI{50.0}{\milli\litre} here would give pH 1.40 and be wrong by
+0.2 units.
+
+\textbf{Sanity check.} We started with excess acid, so the result must
+be acidic; pH 1.60 is, and it is higher than the original
+\SI{0.100}{\Molar} \ce{HCl} (pH 1.00) because some acid was neutralised
+and the rest diluted. Both effects push the same way.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Mix \SI{25.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{HCl}
+        with \SI{25.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaOH}.
+        Find the excess in moles. \workspace[2.0cm]
+  \item Find the pH of that mixture. \workspace[2.0cm]
+  \item Mix equal volumes of \SI{0.100}{\Molar} \ce{HCl} and
+        \SI{0.100}{\Molar} \ce{NaOH}. Give the pH.
+        \workspace[1.6cm]
+  \item Why must you use the combined volume?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{2.50e-3}{\mole} \ce{H+} \quad (b) 1.30 \quad (c)
+7.00 \quad (d) the solution is diluted on mixing}
+\keyonly{\begin{apcanswer}(a) $n(\ce{H+}) = 0.0250 \times 0.200 =
+\num{5.00e-3}$; $n(\ce{OH-}) = 0.0250 \times 0.100 = \num{2.50e-3}$;
+excess $= \mathbf{\SI{2.50e-3}{\mole}}$ of \ce{H+}. (b) Total volume
+\SI{50.0}{\milli\litre} $= \SI{0.0500}{\litre}$, so $[\ce{H+}] =
+\num{2.50e-3}/0.0500 = \SI{0.0500}{\Molar}$ and pH $= \mathbf{1.30}$.
+(c) Equal moles neutralise exactly, leaving only water and \ce{NaCl};
+pH $= \mathbf{7.00}$. (d) Because \textbf{mixing dilutes both
+solutions} --- the leftover moles are now spread through the sum of the
+two volumes, and using either original volume gives a concentration
+that is too high.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Weak acid $+$ strong base:
+the stoichiometry step}
+\zsec{15.4}
+
+Now the reaction that generates a buffer. The strong base is consumed
+\emph{completely}, so this step is stoichiometry --- no equilibrium
+yet.
+
+\[ \ce{HA + OH- -> A- + H2O} \]
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,3.2)
+    {the ICF table --- Initial, Change, Final, all in \textbf{moles}};
+  \node[font=\sffamily\bfseries] at (2.9,2.6) {\ce{HA}};
+  \node[font=\sffamily\bfseries] at (5.3,2.6) {\ce{OH-}};
+  \node[font=\sffamily\bfseries] at (7.7,2.6) {\ce{A-}};
+  \draw[apcgray] (0.9,2.3) -- (9.4,2.3);
+  \foreach \y/\lab/\ha/\oh/\am in {%
+      1.85/{\textbf{I}}/{$n_{\ce{HA}}$}/{$n_{\ce{OH-}}$}/{0},
+      1.3/{\textbf{C}}/{$-n_{\ce{OH-}}$}/{$-n_{\ce{OH-}}$}/{$+n_{\ce{OH-}}$},
+      0.75/{\textbf{F}}/{$n_{\ce{HA}} - n_{\ce{OH-}}$}/{\textbf{0}}/{$n_{\ce{OH-}}$}} {
+    \node[anchor=west,font=\sffamily\bfseries] at (1.0,\y) {\lab};
+    \node at (2.9,\y) {\ha};
+    \node at (5.3,\y) {\oh};
+    \node at (7.7,\y) {\am};}
+  \draw[apcgray] (0.9,0.45) -- (9.4,0.45);
+  \node[anchor=west] at (1.0,0.0)
+    {\textbf{F, not E} --- the limiting reagent goes to zero, because a
+     strong base reacts completely};
+\end{tikzpicture}
+\end{center}
+
+\begin{apctrap}
+\textbf{It is an IC\emph{F} table, not an IC\emph{E} table.} The strong
+base is not in equilibrium with anything --- it is consumed to
+\textbf{zero}. Writing ``$-x$'' here, or leaving leftover \ce{OH-} in an
+equilibrium expression, confuses two different steps. Do the
+stoichiometry to completion first; \emph{then}, if a weak species
+remains, do the equilibrium.
+\end{apctrap}
+
+\begin{workedexample}[I do: what is in the flask?]
+\textbf{\SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} acetic acid is
+treated with \SI{20.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaOH}.
+What is present afterwards?}
+
+\textbf{Moles first.}
+\[ n(\ce{HA}) = 0.0500 \times 0.100 = \SI{5.00e-3}{\mole} \]
+\[ n(\ce{OH-}) = 0.0200 \times 0.100 = \SI{2.00e-3}{\mole} \]
+
+\textbf{The ICF table.}
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+(mol) & \ce{HA} & \ce{OH-} & \ce{A-} \\
+\midrule
+\textbf{I} & \num{5.00e-3} & \num{2.00e-3} & 0 \\
+\textbf{C} & $-\num{2.00e-3}$ & $-\num{2.00e-3}$ & $+\num{2.00e-3}$ \\
+\textbf{F} & \num{3.00e-3} & \textbf{0} & \num{2.00e-3} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Read the F row and name the situation.} Both \ce{HA} and
+\ce{A-} are present in appreciable amounts --- \textbf{this is a
+buffer}. The hydroxide is gone.
+
+\textbf{So the pH comes from Henderson--Hasselbalch}, using the mole
+amounts directly (Ladder 3 showed the volume cancels):
+\[ \text{pH} = 4.74 + \log\!\left(\frac{\num{2.00e-3}}{\num{3.00e-3}}\right)
+   = 4.74 - 0.18 = \mathbf{4.56} \]
+
+\textbf{The F row tells you which method to use}, and that is the real
+skill:
+\begin{itemize}[leftmargin=1.4em,itemsep=0.15em]
+  \item \ce{HA} and \ce{A-} both present $\Rightarrow$ buffer, use H--H
+  \item only \ce{A-} left $\Rightarrow$ equivalence point, use $K_{b}$
+        (Ladder 9)
+  \item \ce{OH-} left over $\Rightarrow$ past equivalence, use excess
+        hydroxide (Ladder 8)
+\end{itemize}
+Every weak-acid titration question is one of these three, and the ICF
+table decides which.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{HA}
+($\text{p}K_{a} = 4.74$) is treated with \SI{0.100}{\Molar} \ce{NaOH}.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item After \SI{10.0}{\milli\litre} of base, give the moles of
+        \ce{HA} and \ce{A-}. \workspace[2.0cm]
+  \item Find the pH at that point. \workspace[1.8cm]
+  \item After \SI{25.0}{\milli\litre}, give the moles of each and the
+        pH. \workspace[2.0cm]
+  \item Why is it an ICF and not an ICE table?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{4.00e-3}{} and \SI{1.00e-3}{\mole} \quad (b) 4.14
+\quad (c) \SI{2.50e-3}{} each, pH 4.74 \quad (d) the strong base is
+consumed completely}
+\keyonly{\begin{apcanswer}(a) $n(\ce{OH-}) = \num{1.00e-3}$, so
+\ce{HA} $= 5.00 - 1.00 = \mathbf{\SI{4.00e-3}{\mole}}$ and \ce{A-}
+$= \mathbf{\SI{1.00e-3}{\mole}}$. (b) pH $= 4.74 +
+\log(1.00/4.00) = 4.74 - 0.60 = \mathbf{4.14}$. (c) $n(\ce{OH-}) =
+\num{2.50e-3}$, leaving \ce{HA} $= \num{2.50e-3}$ and \ce{A-} $=
+\num{2.50e-3}$ --- equal, so pH $= \mathbf{4.74} = \text{p}K_{a}$
+(Ladder 12). (d) Because the \textbf{strong base reacts completely} ---
+it is consumed to zero rather than reaching an equilibrium. The
+equilibrium step comes afterwards, on whatever weak species
+remain.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ The three regions of a
+titration}
+\zsec{15.4}
+
+One titration, three different calculations, and the ICF table tells
+you which you are in.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=11.4cm, height=6.6cm,
+  xlabel={volume of \SI{0.100}{\Molar} \ce{NaOH} added
+    (\si{\milli\litre})},
+  ylabel={pH},
+  xmin=0, xmax=70, ymin=0, ymax=14,
+  xtick={0,10,25,50,60,70}, ytick={0,2,4,6,8,10,12,14},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, very thick] coordinates {
+  (0,2.87) (10,4.14) (20,4.56) (25,4.74) (30,4.92) (40,5.34)
+  (45,5.69) (49,6.43) (50,8.72) (51,11.00) (55,11.68) (60,11.96)
+  (70,12.22)};
+\addplot[only marks, mark=*, mark size=1.8pt, black]
+  coordinates {(25,4.74) (50,8.72)};
+\draw[densely dashed, apcgray] (axis cs:50,0) -- (axis cs:50,8.72);
+\draw[densely dashed, apcgray] (axis cs:25,0) -- (axis cs:25,4.74);
+\node[font=\footnotesize,anchor=west] at (axis cs:2,7.2)
+  {\textbf{buffer region}};
+\node[font=\footnotesize,anchor=west] at (axis cs:2,6.4)
+  {use H--H};
+\node[font=\footnotesize,anchor=west] at (axis cs:52,6.0)
+  {equivalence};
+\node[font=\footnotesize,anchor=west] at (axis cs:52,5.2)
+  {pH 8.72};
+\node[font=\footnotesize,anchor=west] at (axis cs:27,3.0)
+  {half-equivalence, pH $=$ p$K_{a}$};
+\node[font=\footnotesize,anchor=east] at (axis cs:68,10.2)
+  {excess \ce{OH-}};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: past the equivalence point]
+\textbf{Continue the titration from Ladder 7 to
+\SI{60.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaOH}. Find the pH.}
+
+\textbf{ICF first, as always.}
+\[ n(\ce{HA}) = \num{5.00e-3}
+   \qquad
+   n(\ce{OH-}) = 0.0600 \times 0.100 = \num{6.00e-3} \]
+The base is now in excess:
+\[ \text{excess } \ce{OH-} = 6.00 \times 10^{-3} - 5.00 \times 10^{-3}
+   = \SI{1.00e-3}{\mole} \]
+
+\textbf{Read the F row.} There is leftover \emph{strong} base. Strong
+base overwhelms the weak conjugate base \ce{A-} that is also present ---
+by several orders of magnitude --- so the acetate contributes nothing
+worth counting and the pH comes from the excess hydroxide alone.
+
+\textbf{Divide by the total volume and finish.}
+\[ V = 50.0 + 60.0 = \SI{110.0}{\milli\litre} = \SI{0.110}{\litre} \]
+\[ [\ce{OH-}] = \frac{\num{1.00e-3}}{0.110}
+   = \SI{9.09e-3}{\Molar} \]
+\[ \text{pOH} = 2.04
+   \qquad
+   \text{pH} = 14.00 - 2.04 = \mathbf{11.96} \]
+
+\textbf{Notice this is Ladder 6's calculation.} Once strong base is in
+excess, a weak-acid titration behaves exactly like a strong-acid one ---
+which is why the two curves in Ladder 11 converge after the equivalence
+point.
+
+\textbf{The three regions, one last time.} Before equivalence: buffer,
+use H--H. At equivalence: only \ce{A-}, use its $K_{b}$ (Ladder 9).
+After equivalence: excess \ce{OH-}, use it directly. Identify the region
+from the ICF table and the method chooses itself.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{HA}
+(p$K_{a} = 4.74$) with \SI{0.100}{\Molar} \ce{NaOH}.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which region is \SI{40.0}{\milli\litre} in, and what is the pH?
+        \workspace[2.0cm]
+  \item Which region is \SI{55.0}{\milli\litre} in?
+        \workspace[1.4cm]
+  \item Find the pH at \SI{55.0}{\milli\litre}.
+        \workspace[2.2cm]
+  \item Why does the acetate present after equivalence not affect the
+        pH? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) buffer, pH 5.34 \quad (b) past equivalence \quad (c)
+11.68 \quad (d) the strong base overwhelms it}
+\keyonly{\begin{apcanswer}(a) \textbf{Buffer region}: \ce{HA} $=
+\num{1.00e-3}$, \ce{A-} $= \num{4.00e-3}$, so pH $= 4.74 + \log 4 =
+4.74 + 0.60 = \mathbf{5.34}$. (b) \textbf{Past the equivalence point}
+--- \SI{50.0}{\milli\litre} was needed to neutralise the acid. (c)
+Excess \ce{OH-} $= \num{5.50e-3} - \num{5.00e-3} = \num{5.00e-4}$ mol
+in \SI{0.105}{\litre}, so $[\ce{OH-}] = \num{4.76e-3}$, pOH $= 2.32$,
+pH $= \mathbf{11.68}$. (d) Because \ce{A-} is a \textbf{very weak
+base} ($K_{b} = \num{5.6e-10}$) and the leftover \ce{OH-} is a
+\emph{strong} base present at a concentration millions of times larger
+in effect. The weak contribution is negligible beside
+it.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ pH at the equivalence point}
+\zsec{15.4}
+
+At equivalence the acid is exactly consumed and \emph{only the
+conjugate base remains}. That is a weak-base problem --- Chapter 14,
+Ladder 11.
+
+\begin{apctrap}
+\textbf{The equivalence point of a weak acid titration is not pH 7.} It
+is \emph{basic}, because the solution at that moment is a solution of
+\ce{A-}, which is a weak base. Answering ``7'' is the standard error and
+costs the whole part. Only a \emph{strong} acid with a strong base
+gives 7.
+\end{apctrap}
+
+\begin{workedexample}[I do: the equivalence point, in full]
+\textbf{Find the pH at the equivalence point of the Ladder 7 titration:
+\SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} acetic acid with
+\SI{0.100}{\Molar} \ce{NaOH}. $K_{a} = \num{1.8e-5}$.}
+
+\textbf{Step 1 --- how much base, and what is left?} Equivalence needs
+\SI{5.00e-3}{\mole} of \ce{OH-}, which is
+\SI{50.0}{\milli\litre}. The F row is: no \ce{HA}, no \ce{OH-}, and
+\SI{5.00e-3}{\mole} of \ce{A-}.
+
+\textbf{Step 2 --- concentration of the conjugate base}, using the
+\textbf{total} volume:
+\[ [\ce{A-}] = \frac{\num{5.00e-3}}{0.100\;\si{\litre}}
+   = \SI{0.0500}{\Molar} \]
+The dilution is real --- the acetate sits in twice the original volume.
+
+\textbf{Step 3 --- treat it as the weak base it is.}
+\[ K_{b} = \frac{K_{w}}{K_{a}}
+   = \frac{\num{1.0e-14}}{\num{1.8e-5}} = \num{5.6e-10} \]
+\[ x = \sqrt{K_{b}c} = \sqrt{(\num{5.6e-10})(0.0500)}
+     = \SI{5.3e-6}{\Molar} = [\ce{OH-}] \]
+Check: $\num{5.3e-6}/0.0500$ is far below 5\%. \checkmark
+
+\textbf{Step 4 --- convert to pH}, remembering $x$ is $[\ce{OH-}]$:
+\[ \text{pOH} = 5.28
+   \qquad
+   \text{pH} = 14.00 - 5.28 = \mathbf{8.72} \]
+
+\textbf{Basic, as it must be.} And note the two dilution traps this
+problem contains: the volume doubled, and $x$ gave pOH rather than pH.
+Either slip alone produces a wrong answer that still \emph{looks}
+plausible.
+
+\textbf{The four-step shape is worth memorising} --- moles to
+equivalence, concentration in the total volume, $K_{b}$ from $K_{a}$,
+then the weak-base ICE. It is the same shape for a weak base titrated
+with strong acid (Ladder 10), with acid and base interchanged.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Is the equivalence pH of a weak acid $+$ strong base titration
+        above or below 7? Why? \workspace[1.8cm]
+  \item What volume of \SI{0.100}{\Molar} \ce{NaOH} reaches
+        equivalence for \SI{25.0}{\milli\litre} of \SI{0.100}{\Molar}
+        \ce{HA}? \workspace[1.8cm]
+  \item At that equivalence point, give $[\ce{A-}]$.
+        \workspace[1.8cm]
+  \item Which constant do you use at the equivalence point, $K_{a}$ or
+        $K_{b}$? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) above 7 --- \ce{A-} is a weak base \quad (b)
+\SI{25.0}{\milli\litre} \quad (c) \SI{0.0500}{\Molar} \quad (d)
+$K_{b}$}
+\keyonly{\begin{apcanswer}(a) \textbf{Above 7.} At equivalence the only
+solute is \ce{A-}, the conjugate base of a weak acid, and it takes a
+proton from water to give \ce{OH-}. (b)
+\textbf{\SI{25.0}{\milli\litre}} --- equal concentrations means equal
+volumes. (c) $n(\ce{A-}) = \num{2.50e-3}$ mol in a total
+\SI{50.0}{\milli\litre}, so $[\ce{A-}] =
+\mathbf{\SI{0.0500}{\Molar}}$. (d) \textbf{$K_{b}$}, obtained as
+$K_{w}/K_{a}$ --- the species present is a base, so you need a base
+constant.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Weak base $+$ strong acid}
+\zsec{15.4}
+
+The mirror image. Same three regions, same two-step method, everything
+reflected about pH 7.
+
+\[ \ce{B + H+ -> BH+} \]
+
+\begin{workedexample}[I do: ammonia titrated with hydrochloric acid]
+\textbf{\SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NH3}
+($K_{b} = \num{1.8e-5}$) is titrated with \SI{0.100}{\Molar} \ce{HCl}.}
+
+\textbf{First convert to the acid constant you will need.} The buffer
+here is \ce{NH3}/\ce{NH4+}, and Henderson--Hasselbalch is written for a
+conjugate acid:
+\[ K_{a}(\ce{NH4+}) = \frac{\num{1.0e-14}}{\num{1.8e-5}}
+   = \num{5.6e-10}
+   \qquad
+   \text{p}K_{a} = 9.26 \]
+
+\textbf{At half-equivalence (\SI{25.0}{\milli\litre} of acid):} the ICF
+row gives \SI{2.50e-3}{\mole} each of \ce{NH3} and \ce{NH4+}, so
+\[ \text{pH} = 9.26 + \log 1 = \mathbf{9.26} \]
+Still basic --- the buffer region of a weak-base titration sits above 7.
+
+\textbf{At equivalence (\SI{50.0}{\milli\litre}):} everything is
+\ce{NH4+}, at
+\[ [\ce{NH4+}] = \frac{\num{5.00e-3}}{0.100} = \SI{0.0500}{\Molar} \]
+\ce{NH4+} is a weak \emph{acid}, so
+\[ x = \sqrt{(\num{5.6e-10})(0.0500)} = \num{5.3e-6} = [\ce{H+}] \]
+\[ \text{pH} = \mathbf{5.28} \]
+
+\textbf{Acidic at equivalence}, which is the mirror of Ladder 9's 8.72
+--- and notice $8.72 + 5.28 = 14.00$ exactly, because acetic acid's
+$K_{a}$ and ammonia's $K_{b}$ happen to be the same number. That
+symmetry is a good check when a problem is built from that pair.
+
+\textbf{The rule for equivalence-point pH, in one line.} Strong$+$strong
+gives 7; weak acid $+$ strong base gives above 7; weak base $+$ strong
+acid gives below 7. The \emph{weak} partner determines which way, and
+its conjugate is what remains in the flask.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\ce{NH3}, $K_{b} = \num{1.8e-5}$, p$K_{a}(\ce{NH4+}) = 9.26$.
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Is the equivalence pH above or below 7? Why?
+        \workspace[1.8cm]
+  \item In the buffer region, which two species are present?
+        \workspace[1.6cm]
+  \item \SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NH3} plus
+        \SI{20.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{HCl}: find
+        the pH. \workspace[2.2cm]
+  \item Which constant do you need for the H--H equation here, and why?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) below 7 --- \ce{NH4+} is a weak acid \quad (b) \ce{NH3}
+and \ce{NH4+} \quad (c) 9.44 \quad (d) $K_{a}$ of \ce{NH4+}}
+\keyonly{\begin{apcanswer}(a) \textbf{Below 7}: at equivalence the only
+solute is \ce{NH4+}, the conjugate acid of a weak base, which donates a
+proton to water. (b) \textbf{\ce{NH3} and \ce{NH4+}} --- a conjugate
+pair. (c) $n(\ce{NH3}) = \num{5.00e-3}$, $n(\ce{H+}) = \num{2.00e-3}$,
+so \ce{NH3} $= \num{3.00e-3}$ and \ce{NH4+} $= \num{2.00e-3}$;
+pH $= 9.26 + \log(3.00/2.00) = 9.26 + 0.18 = \mathbf{9.44}$. Note the
+\emph{base} goes on top, and here the base is \ce{NH3}. (d)
+\textbf{$K_{a}$ of \ce{NH4+}}, obtained as $K_{w}/K_{b}$ ---
+Henderson--Hasselbalch is written in terms of the conjugate
+\emph{acid}'s p$K_{a}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Reading titration curves}
+\zsec{15.4--15.5}
+
+Two curves, one titrant, and the differences are all diagnostic.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=11.4cm, height=6.4cm,
+  xlabel={volume of \SI{0.100}{\Molar} \ce{NaOH} (\si{\milli\litre})},
+  ylabel={pH},
+  xmin=0, xmax=70, ymin=0, ymax=14,
+  xtick={0,10,20,30,40,50,60,70}, ytick={0,2,4,6,8,10,12,14},
+  grid=major, grid style={apcgray!25},
+  legend pos=north west, legend style={font=\footnotesize,
+    cells={anchor=west}},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, very thick] coordinates {
+  (0,2.87) (10,4.14) (20,4.56) (25,4.74) (30,4.92) (40,5.34)
+  (45,5.69) (49,6.43) (50,8.72) (51,11.00) (55,11.68) (60,11.96)
+  (70,12.22)};
+\addlegendentry{weak acid (\ce{CH3COOH})}
+\addplot[seriesB, very thick] coordinates {
+  (0,1.00) (10,1.18) (25,1.48) (40,1.95) (49,3.00) (50,7.00)
+  (51,11.00) (60,11.96) (70,12.22)};
+\addlegendentry{strong acid (\ce{HCl})}
+\addplot[only marks, mark=*, mark size=1.6pt, black]
+  coordinates {(50,8.72) (50,7.00)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: four things a curve tells you]
+\textbf{Compare the two curves above. Both titrate
+\SI{50.0}{\milli\litre} of a \SI{0.100}{\Molar} acid with the same
+base.}
+
+\textbf{1. The starting pH.} The weak acid starts at 2.87, the strong
+acid at 1.00. A high starting pH for a given concentration is the first
+sign of a weak acid.
+
+\textbf{2. The buffer plateau.} The weak-acid curve has a long, gentle
+stretch between about 10 and \SI{40}{\milli\litre} where the pH barely
+moves. The strong-acid curve has no such region --- there is no
+conjugate pair to buffer it. \textbf{A flat middle region means a weak
+acid.}
+
+\textbf{3. The equivalence pH.} 8.72 for the weak acid, 7.00 for the
+strong. Above 7 identifies a weak acid immediately.
+
+\textbf{4. The equivalence \emph{volume} is the same for both:}
+\SI{50.0}{\milli\litre}. This is the point students find surprising ---
+the volume depends only on \emph{moles} of acid, not on strength. A weak
+acid needs exactly as much base as a strong one at the same
+concentration. Strength changes the \emph{shape} of the curve, not
+where the equivalence point falls.
+
+\textbf{And after equivalence the curves coincide}, because both
+solutions are then just excess \ce{NaOH} diluted into a similar volume.
+Whatever acid you started with stops mattering once it is gone.
+
+\textbf{The steep jump is what makes titration work as a measurement.}
+Near equivalence, a fraction of a millilitre swings the pH by several
+units, so the endpoint is sharp and easy to detect --- which is Ladder
+13's business.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Two acids of the same concentration are titrated. One curve
+        starts at pH 1.0 and one at 3.0. Which is weak?
+        \workspace[1.6cm]
+  \item A titration curve has equivalence pH 9.0. What kind of acid was
+        it? \workspace[1.6cm]
+  \item Does a weak acid need more, less, or the same volume of base to
+        reach equivalence as a strong acid of the same concentration?
+        \workspace[1.8cm]
+  \item What feature of the curve shows a buffer region?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) the one starting at 3.0 \quad (b) weak \quad (c) the
+same \quad (d) the flat, gently sloping stretch}
+\keyonly{\begin{apcanswer}(a) The one starting at \textbf{pH 3.0} --- a
+weak acid ionises only partly, so $[\ce{H+}]$ is much lower at the same
+nominal concentration. (b) A \textbf{weak} acid: equivalence above 7
+means the conjugate base left in the flask is appreciably basic. (c)
+\textbf{The same volume.} Equivalence depends only on the \emph{moles}
+of acid present, not on how completely it ionises. (d) The
+\textbf{flat, gently sloping stretch} before the equivalence point,
+where added base changes the pH very little.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ The half-equivalence point}
+\zsec{15.4}
+
+The single most useful point on any weak-acid curve.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \node[font=\sffamily\small\bfseries] at (5.5,2.8)
+    {at half-equivalence, exactly half the acid has been converted};
+  \node[anchor=west] at (0.6,2.15)
+    {$n(\ce{HA}) = n(\ce{A-})$ \quad$\Longrightarrow$\quad ratio $=1$
+     \quad$\Longrightarrow$\quad $\log 1 = 0$};
+  \draw[-{Stealth[length=2.5mm]},thick] (5.5,1.85) -- (5.5,1.45);
+  \node[font=\sffamily\bfseries] at (5.5,1.1)
+    {pH $=$ p$K_{a}$};
+  \draw[apcgray] (0.5,0.7) -- (11.0,0.7);
+  \node[anchor=west] at (0.6,0.25)
+    {so you can \textbf{read $K_{a}$ off a titration curve} --- which is
+     how weak-acid constants are measured};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: measuring $K_{a}$ from a graph]
+\textbf{A weak acid is titrated. The equivalence point is at
+\SI{40.0}{\milli\litre} of base, and the pH at
+\SI{20.0}{\milli\litre} is 5.20. Find $K_{a}$.}
+
+\textbf{Locate half-equivalence.} Half of \SI{40.0}{\milli\litre} is
+\SI{20.0}{\milli\litre} --- so the given point \emph{is} the
+half-equivalence point.
+
+\textbf{Apply the identity.} There, $[\ce{HA}] = [\ce{A-}]$, so the
+logarithm vanishes and
+\[ \text{pH} = \text{p}K_{a} = 5.20 \]
+
+\textbf{Convert.}
+\[ K_{a} = 10^{-5.20} = \mathbf{\num{6.3e-6}} \]
+
+\textbf{This is a real laboratory method}, not a textbook trick. Titrate
+a weak acid, find the equivalence volume from the steep jump, halve it,
+read the pH there, and you have p$K_{a}$ --- no separate experiment
+required.
+
+\textbf{Why the point is flat, which is the practical payoff.} At
+half-equivalence the curve is at its most horizontal, so a small error
+in reading the volume produces almost no error in the pH. The
+measurement is unusually forgiving, which is exactly what you want from
+a method.
+
+\textbf{Two cautions.} Half-equivalence is half the volume \emph{to
+equivalence}, not half the total volume added, and not the middle of the
+graph. And this identity holds only for a weak acid or base --- a strong
+acid has no buffer region and no p$K_{a}$ to read.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Equivalence is at \SI{30.0}{\milli\litre}. Where is
+        half-equivalence? \workspace[1.4cm]
+  \item The pH there is 4.20. Give p$K_{a}$ and $K_{a}$.
+        \workspace[1.8cm]
+  \item Why does the logarithm term vanish at half-equivalence?
+        \workspace[1.8cm]
+  \item Can you use this method on a strong acid? Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{15.0}{\milli\litre} \quad (b) 4.20 and
+\num{6.3e-5} \quad (c) the ratio is 1 \quad (d) no --- no buffer
+region}
+\keyonly{\begin{apcanswer}(a) \textbf{\SI{15.0}{\milli\litre}}.
+(b) p$K_{a} = \mathbf{4.20}$, so $K_{a} = 10^{-4.20} =
+\mathbf{\num{6.3e-5}}$. (c) Because exactly half the acid has been
+converted, so $[\ce{HA}] = [\ce{A-}]$, the ratio is 1, and
+$\log 1 = 0$. (d) \textbf{No.} A strong acid ionises completely, so
+there is no \ce{HA}/\ce{A-} conjugate pair, no buffer region, and no
+$K_{a}$ to measure --- its curve has no flat stretch at
+all.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 13 \textbullet\ Choosing an indicator}
+\zsec{15.5}
+
+An indicator is itself a weak acid whose two forms differ in colour. It
+changes over roughly $\text{p}K_{a} \pm 1$.
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily\footnotesize]
+  \draw[-{Stealth[length=3mm]},very thick] (0.7,0.6) -- (10.9,0.6);
+  \foreach \x/\v in {1.0/0, 2.4/2, 3.8/4, 5.2/6, 6.6/8, 8.0/10,
+                     9.4/12, 10.5/14} {
+    \fill (\x,0.6) circle (0.06);
+    \node[font=\sffamily\footnotesize] at (\x,0.25) {\v};}
+  \node[anchor=north,font=\sffamily\footnotesize] at (5.8,-0.15) {pH};
+  % Names sit BESIDE their bands, not inside them: each name is wider
+  % than the band it labels (a 2 pH-unit range is only ~1.4cm here), so
+  % centring the text on the band spilled it over both edges.
+  \fill[apcgray!45] (3.24,1.0) rectangle (4.71,1.45);
+  \node[anchor=west,font=\sffamily\footnotesize] at (4.85,1.22)
+    {methyl red \;\textbullet\; 4.2--6.3};
+  \fill[apcgray!45] (4.46,1.65) rectangle (5.58,2.1);
+  \node[anchor=west,font=\sffamily\footnotesize] at (5.72,1.87)
+    {bromothymol blue \;\textbullet\; 6.0--7.6};
+  \fill[apcgray!45] (6.0,2.3) rectangle (7.7,2.75);
+  \node[anchor=west,font=\sffamily\footnotesize] at (7.84,2.52)
+    {phenolphthalein \;\textbullet\; 8.3--10.0};
+  \draw[apcgray] (0.6,3.05) -- (11.0,3.05);
+  \node[anchor=west,font=\sffamily\bfseries] at (0.7,3.45)
+    {pick the indicator whose range brackets the \emph{equivalence} pH};
+\end{tikzpicture}
+\end{center}
+
+\begin{workedexample}[I do: three titrations, three indicators]
+\textbf{The rule: the indicator's colour-change range must contain the
+equivalence pH, so the colour change coincides with the steep jump.}
+
+\textbf{Strong acid $+$ strong base}, equivalence pH 7.00.
+\textbf{Bromothymol blue} (6.0--7.6) brackets it neatly. Phenolphthalein
+also works in practice, because the jump at equivalence is so nearly
+vertical that it passes through 8.3 within a fraction of a drop.
+
+\textbf{Weak acid $+$ strong base}, equivalence pH 8.72 (Ladder 9).
+\textbf{Phenolphthalein} (8.3--10.0) is the correct choice. Methyl red
+would change colour around pH 5 --- long before equivalence --- and
+would report a badly low volume.
+
+\textbf{Weak base $+$ strong acid}, equivalence pH 5.28 (Ladder 10).
+\textbf{Methyl red} (4.2--6.3). Phenolphthalein would change far too
+late.
+
+\textbf{Why the steep jump makes this work at all.} Near equivalence the
+pH moves several units within a fraction of a millilitre, so any
+indicator whose range lies inside that jump changes colour at
+essentially the right volume. The steeper the jump, the more forgiving
+the choice --- which is why a strong--strong titration tolerates almost
+any indicator and a weak--weak titration is not worth attempting.
+
+\textbf{Endpoint versus equivalence point.} The \textbf{equivalence
+point} is where the moles match --- a fact about the chemistry. The
+\textbf{endpoint} is where the indicator changes --- what you actually
+observe. A well-chosen indicator makes them nearly coincide; a poor one
+makes them differ, and that difference is systematic experimental error.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 13 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which indicator suits an equivalence pH of 9.0?
+        \workspace[1.6cm]
+  \item Which suits an equivalence pH of 5.0?
+        \workspace[1.6cm]
+  \item Distinguish the endpoint from the equivalence point.
+        \workspace[1.8cm]
+  \item Why can a strong--strong titration tolerate almost any
+        indicator? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) phenolphthalein \quad (b) methyl red \quad (c) observed
+colour change vs where moles match \quad (d) the pH jump is very steep}
+\keyonly{\begin{apcanswer}(a) \textbf{Phenolphthalein} (8.3--10.0).
+(b) \textbf{Methyl red} (4.2--6.3). (c) The \textbf{equivalence point}
+is where the moles of acid and base are stoichiometrically equal --- a
+property of the chemistry. The \textbf{endpoint} is where the indicator
+visibly changes colour --- what the experimenter observes. A good
+indicator makes them nearly coincide. (d) Because the pH \textbf{jumps
+almost vertically} through several units within a fraction of a drop, so
+any indicator changing anywhere in that range does so at essentially the
+correct volume.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 14 \textbullet\ Polyprotic titration curves}
+\zsec{15.6}
+
+A diprotic acid gives up its protons in stages, so its curve has
+\textbf{two} equivalence points.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=11.0cm, height=5.8cm,
+  xlabel={volume of strong base added}, ylabel={pH},
+  xmin=0, xmax=100, ymin=0, ymax=14,
+  xtick={0,25,50,75,100},
+  xticklabels={0,{$\frac{1}{2}$eq},{1st eq},{$\frac{3}{2}$eq},
+    {2nd eq}},
+  ytick={0,2,4,6,8,10,12,14},
+  grid=major, grid style={apcgray!25},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+]
+\addplot[seriesA, very thick] coordinates {
+  (0,1.9) (10,2.6) (25,3.1) (40,3.7) (48,4.6) (50,5.6) (52,6.6)
+  (60,7.0) (75,7.2) (88,8.4) (95,9.6) (98,11.0) (100,11.6)};
+\addplot[only marks, mark=*, mark size=1.6pt, black]
+  coordinates {(25,3.1) (50,5.6) (75,7.2) (100,11.6)};
+\node[font=\footnotesize,anchor=west] at (axis cs:3,10.6)
+  {two buffer regions, two jumps};
+\node[font=\footnotesize,anchor=west] at (axis cs:3,9.6)
+  {pH $=$ p$K_{a1}$ and p$K_{a2}$ at the half-points};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{apcnote}[AP scope: shapes yes, species computations no]
+CED topic 8.5's exclusion: \emph{``Computation of the concentration of
+each species present in the titration curve for polyprotic acids will
+not be assessed on the AP Exam.''} The same sentence goes on to say
+that these computations \emph{are} in scope for \textbf{monoprotic}
+acids (that is Ladders 7--10), \emph{``as is qualitative reasoning
+regarding what species are present''}. So for polyprotic acids: read
+the curve, identify the equivalence points, say which species dominates
+where --- but do not expect to calculate concentrations.
+\end{apcnote}
+
+\begin{workedexample}[I do: reading a diprotic curve]
+\textbf{A diprotic acid \ce{H2A} is titrated with strong base. What
+happens, in order?}
+
+\textbf{First stage.} $\ce{H2A + OH- -> HA- + H2O}$ consumes the first
+proton. The buffer region here is \ce{H2A}/\ce{HA-}, and at its
+half-point pH $=$ p$K_{a1}$.
+
+\textbf{First equivalence point.} All the acid is now \ce{HA-}. This
+species is \textbf{amphoteric} --- it can lose another proton or gain
+one back --- and it sits at the first jump.
+
+\textbf{Second stage.} $\ce{HA- + OH- -> A^2- + H2O}$ takes the second
+proton. The buffer region is now \ce{HA-}/\ce{A^2-}, and its half-point
+gives pH $=$ p$K_{a2}$.
+
+\textbf{Second equivalence point.} Everything is \ce{A^2-}, a
+reasonably strong base, so the pH is well above 7.
+
+\textbf{Two features to point out on a graph.} The second equivalence
+volume is exactly \emph{twice} the first, because the second proton
+needs as much base as the first. And the first jump is usually smaller
+and less sharp than the second, because $K_{a1}$ and $K_{a2}$ are
+typically only a few orders of magnitude apart --- the two stages
+overlap slightly.
+
+\textbf{What you will be asked.} Identify the equivalence points; say
+which species predominates in each region; explain why the second
+equivalence pH is higher. What you will \emph{not} be asked is to
+compute the concentration of each species --- the exclusion note above
+says so explicitly.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 14 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item How many equivalence points does a diprotic acid curve have?
+        \workspace[1.4cm]
+  \item If the first is at \SI{20.0}{\milli\litre}, where is the
+        second? \workspace[1.4cm]
+  \item Which species predominates between the two equivalence points?
+        \workspace[1.6cm]
+  \item What does the pH equal at the first half-equivalence point?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) two \quad (b) \SI{40.0}{\milli\litre} \quad (c)
+\ce{HA-} \quad (d) p$K_{a1}$}
+\keyonly{\begin{apcanswer}(a) \textbf{Two} --- one per ionisable
+proton. (b) \textbf{\SI{40.0}{\milli\litre}}: the second proton
+requires the same amount of base as the first, so the second
+equivalence comes at twice the volume. (c) \textbf{\ce{HA-}}, the
+amphoteric intermediate --- the first proton is gone and the second has
+not yet been removed. (d) \textbf{p$K_{a1}$}, by the same argument as
+Ladder 12 applied to the first ionisation.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mixed set \textbullet\ ten questions, no labels}
+
+\begin{apcnote}[Why this section exists]
+Every question so far arrived with its ladder attached. These ten do
+not --- and in this chapter the first decision is almost always
+\emph{which region am I in}: excess strong reagent, buffer, or
+equivalence. Build the ICF table and the region names itself.
+\end{apcnote}
+
+\begin{yourturn}[MIXED SET --- first five]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em,label=(\alph*)]
+  \item A buffer is \SI{0.20}{\Molar} \ce{HA} and \SI{0.10}{\Molar}
+        \ce{A-}, p$K_{a} = 4.74$. Find the pH. \workspace[1.8cm]
+  \item Mix \SI{40.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{HCl}
+        with \SI{20.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaOH}.
+        Find the pH. \workspace[2.2cm]
+  \item Which is a buffer: \ce{NH3}/\ce{NH4Cl} or
+        \ce{NaOH}/\ce{NaCl}? \workspace[1.6cm]
+  \item Equivalence is at \SI{36.0}{\milli\litre} and the pH at
+        \SI{18.0}{\milli\litre} is 3.80. Find $K_{a}$.
+        \workspace[2.0cm]
+  \item Two buffers have the same ratio; one is five times more
+        concentrated. Compare their pH and capacity.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 4.44 \quad (b) 1.48 \quad (c) \ce{NH3}/\ce{NH4Cl} \quad
+(d) \num{1.6e-4} \quad (e) same pH, 5x capacity}
+\keyonly{\begin{apcanswer}\textbf{(a)} pH $= 4.74 + \log(0.10/0.20) =
+4.74 - 0.30 = \mathbf{4.44}$. \textbf{(b)} $n(\ce{H+}) =
+\num{4.00e-3}$, $n(\ce{OH-}) = \num{2.00e-3}$, excess
+$= \num{2.00e-3}$ mol in \SI{0.0600}{\litre}, so $[\ce{H+}] =
+\num{3.33e-2}$ and pH $= \mathbf{1.48}$. \textbf{(c)}
+\textbf{\ce{NH3}/\ce{NH4Cl}} --- a conjugate pair.
+\ce{NaOH}/\ce{NaCl} is a strong base with an inert salt. \textbf{(d)}
+\SI{18.0}{\milli\litre} is half-equivalence, so p$K_{a} = 3.80$ and
+$K_{a} = 10^{-3.80} = \mathbf{\num{1.6e-4}}$. \textbf{(e)}
+\textbf{Same pH} (ratio unchanged), \textbf{five times the capacity}
+(five times as many moles of each component to consume added acid or
+base).\end{apcanswer}}
+\end{yourturn}
+
+\begin{yourturn}[MIXED SET --- last five]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em,label=(\alph*)]
+  \item \SI{50.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{HA}
+        (p$K_{a} = 4.74$) plus \SI{30.0}{\milli\litre} of
+        \SI{0.100}{\Molar} \ce{NaOH}: find the pH.
+        \workspace[2.2cm]
+  \item The same acid plus \SI{50.0}{\milli\litre} of base: name the
+        region and say whether the pH is above or below 7.
+        \workspace[1.8cm]
+  \item Which indicator would you use for that titration?
+        \workspace[1.6cm]
+  \item A weak base is titrated with strong acid. Is the equivalence pH
+        above or below 7? \workspace[1.6cm]
+  \item A diprotic acid's first equivalence is at
+        \SI{15.0}{\milli\litre}. Where is the second, and which species
+        dominates between them? \workspace[2.0cm]
+\end{enumerate}
+\selfcheck{(a) 4.92 \quad (b) equivalence, above 7 \quad (c)
+phenolphthalein \quad (d) below 7 \quad (e)
+\SI{30.0}{\milli\litre}; \ce{HA-}}
+\keyonly{\begin{apcanswer}\textbf{(a)} ICF: \ce{HA} $= 5.00 - 3.00 =
+\num{2.00e-3}$, \ce{A-} $= \num{3.00e-3}$; pH $= 4.74 +
+\log(3.00/2.00) = 4.74 + 0.18 = \mathbf{4.92}$. \textbf{(b)} The
+\textbf{equivalence point} (\SI{5.00e-3}{\mole} of base exactly
+consumes the acid), and the pH is \textbf{above 7} because only \ce{A-},
+a weak base, remains. \textbf{(c)} \textbf{Phenolphthalein} --- its
+8.3--10.0 range brackets the basic equivalence pH. \textbf{(d)}
+\textbf{Below 7}: the conjugate acid \ce{BH+} is left in the flask.
+\textbf{(e)} \textbf{\SI{30.0}{\milli\litre}} --- twice the first ---
+and \textbf{\ce{HA-}}, the amphoteric intermediate, predominates
+between them.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Mastery tracker}
+
+Tick a row only if \textbf{all four} YOUR TURN questions were right on
+the first attempt. Two rows carry CED exclusions --- see the scope notes
+in Ladders 6 and 14 --- but both exclusions are narrow, and everything
+else here is fully assessed.
+
+\renewcommand{\arraystretch}{1.25}
+\noindent\begin{tabular}{@{}c p{5.7cm} c p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & the common-ion effect & 1 & adding a product shifts left \\
+$\square$ & what a buffer is & 2 & both halves of one pair \\
+$\square$ & Henderson--Hasselbalch & 3 & base on top, use p$K_{a}$ \\
+$\square$ & designing a buffer & 4 & pick p$K_{a}$ near the target \\
+$\square$ & buffer capacity & 5 & ratio sets pH, amount sets capacity \\
+$\square$ & strong $+$ strong & 6 & moles first, total volume \\
+$\square$ & the ICF stoichiometry step & 7 & F, not E \\
+$\square$ & the three regions & 8 & the F row picks the method \\
+$\square$ & the equivalence point & 9 & not pH 7 --- use $K_{b}$ \\
+$\square$ & weak base $+$ strong acid & 10 & convert $K_{b}$ to $K_{a}$ \\
+$\square$ & reading titration curves & 11 & same volume, different shape \\
+$\square$ & the half-equivalence point & 12 & pH $=$ p$K_{a}$ \\
+$\square$ & choosing an indicator & 13 & bracket the equivalence pH \\
+$\square$ & polyprotic curves & 14 & shapes yes, computations no \\
+\midrule
+$\square$ & \textbf{mixed set} (8 of 10) & --- & whichever it exposed \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+14/14 and the mixed set: Unit 8 is complete, and it is the largest
+single block of marks in the course after Unit 3.
+
+10--13: look at \emph{where}. Ladders 1--5 are buffers and repair
+quickly. Ladders 6--10 are the two-step method, and nearly every miss
+there is one of two things: forgetting the \textbf{total} volume, or
+trying to do stoichiometry and equilibrium in the same table. Both are
+mechanical and both are fixable in an afternoon.
+
+9 or fewer: do not practise more problems yet. Go back to Ladder 7 and
+build the ICF table for five different volumes of the same titration,
+stopping each time at the F row without computing a pH. The skill this
+chapter actually tests is \emph{recognising which of three situations
+you are in}; the arithmetic afterwards is Chapter 14's and you already
+have it.
+
+\textbf{Where this sits.} Chapters 14 and 15 together are Unit 8 ---
+11--15\% of the exam. With this chapter done, the self-study series is
+complete: every chapter of Zumdahl that the CED assesses now has one.
+\end{apcnote}
+
+\end{document}
