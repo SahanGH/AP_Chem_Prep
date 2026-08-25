@@ -16,28 +16,26 @@ Zumdahl §6.3 • write the target first, then work backwards
 **1.** State the two rules for manipulating a thermochemical equation,
 and give the physical reason for each.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **2.** Given N₂(g) + 3 H₂(g) → 2 NH₃(g),
 $\Delta H = -92.2\,\mathrm{kJ}$, find $\Delta H$ for:
 
 1. 2 NH₃(g) → N₂(g) + 3 H₂(g):
-   **\_\_\_\_\_\_**
+   +92.2 kJ
 2. 1/2 N₂(g) + 3/2 H₂(g) → NH₃(g):
-   **\_\_\_\_\_\_**
+   -46.1 kJ
 3. 2 N₂(g) + 6 H₂(g) → 4 NH₃(g):
-   **\_\_\_\_\_\_**
+   -184.4 kJ
 
 **3.** Verify Hess's law using Zumdahl's nitrogen oxides. Given
 
 $$ \begin{align*}   \text{N₂(g) + O₂(g) & → 2 NO(g)}   &\Delta H &= 180\,\mathrm{kJ}\\   \text{2 NO(g) + O₂(g) & → 2 NO₂(g)} &\Delta H &= -112\,\mathrm{kJ} \end{align*} $$
 
 1. Add the two equations and write the net reaction.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Compute $\Delta H$ for the net reaction.
-   **\_\_\_\_\_\_**
+   +68 kJ
 3. What property of enthalpy guarantees this equals the directly
-   measured value? **\_\_\_\_\_\_**
+   measured value? it is a state function
 
 **4.** Determine $\Delta H$ for C(s) + 1/2 O₂(g) → CO(g) given
 
@@ -62,20 +60,18 @@ $$ \begin{align*}   \text{(i)}\ \text{N₂H₄(l) + O₂(g) & → N₂(g) + 2 H�
 **7.** A student solving problem 6 forgets to double the reversed step
 and reports -578 kJ. Explain why the doubling is required.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Spiral review • Chapter 6 • blocks 1–2**
 >
 > 1. $\Delta E$ if $q = +300$ J and $w = -100$ J:
->    **\_\_\_\_\_\_**
+>    $+200$ J
 > 2. $\Delta H = q$ under what condition?
->    **\_\_\_\_\_\_**
+>    constant pressure
 > 3. $q$ for 100. g water warmed 5.00 °C:
->    **\_\_\_\_\_\_**
+>    2092 J
 > 4. Specific heat of water:
->    **\_\_\_\_\_\_**
+>    4.184 J/g/°C
 > 5. Sign of $w$ when a gas is compressed:
->    **\_\_\_\_\_\_**
+>    positive
 
 ---
 

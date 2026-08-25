@@ -41,10 +41,10 @@ Zumdahl §15.1–15.5 • PDF pp. 755–803 • 5 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. pH of 0.10 M HC₂H₃O₂ ($K_a = 1.8\times10^{-5}$):
->    **\_\_\_\_\_\_**
-> 2. $K_b$ for C₂H₃O₂⁻: **\_\_\_\_\_\_**
+>    2.87
+> 2. $K_b$ for C₂H₃O₂⁻: $5.6\times10^{-10}$
 > 3. If $Q  4. Adding a product to a system at equilibrium shifts it:
->    **\_\_\_\_\_\_**
+>    left
 
 #### INSTRUCTION A • The common ion effect 25 min
 
@@ -54,15 +54,15 @@ Zumdahl §15.1–15.5 • PDF pp. 755–803 • 5 blocks
 
 A common ion is an ion that is already a participant in the
 equilibrium you care about. Adding it shifts the position of that
-equilibrium **\_\_\_\_\_\_** — there is no new principle
+equilibrium backward — there is no new principle
 here at all. This is Le Ch\^atelier's principle applied to an acid
 ionization.
 
 HF(aq) ⇌ H+(aq) + F⁻(aq)
 
 Dissolve NaF in this solution and you have added F-, a product.
-The equilibrium shifts **\_\_\_\_\_\_**, so the acid ionizes
-*less* and the solution is **\_\_\_\_\_\_** than the
+The equilibrium shifts left, so the acid ionizes
+*less* and the solution is less acidic than the
 acid alone.
 
 > 📘 **Worked example 1: Zumdahl's fluoride comparison**
@@ -99,13 +99,13 @@ acid alone.
 #### GUIDED PRACTICE • Predicting the shift 15 min
 
 1. NaCN is added to a solution of HCN. The pH
-   **\_\_\_\_\_\_**
+   rises (less ionization)
 2. NH₄Cl is added to a solution of NH₃. The pH
-   **\_\_\_\_\_\_**
+   falls (less OH-)
 3. NaCl is added to a solution of HC₂H₃O₂. The pH
-   **\_\_\_\_\_\_**
+   no change — neither ion participates
 4. Which ion in item 3 would have mattered?
-   **\_\_\_\_\_\_**
+   C₂H₃O₂⁻, not Cl-
 
 #### INSTRUCTION B • What makes a solution a buffer 20 min
 
@@ -161,9 +161,9 @@ Three ways a buffer shows up on the exam:
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $[\text{H+}] = K_a \times$ **\_\_\_\_\_\_**
-> 2. p$K_a$ of HC₂H₃O₂: **\_\_\_\_\_\_**
-> 3. $\log(1) =$ **\_\_\_\_\_\_**
+> 1. $[\text{H+}] = K_a \times$ $[\text{HA}]/[\text{A⁻}]$
+> 2. p$K_a$ of HC₂H₃O₂: 4.74
+> 3. $\log(1) =$ 0
 
 #### INSTRUCTION A • Deriving the equation 25 min
 
@@ -183,12 +183,12 @@ $$ \boxed{\;\mathrm{pH} = \mathrm{p}K_a    + \log\frac{[\text{A⁻}]}{[\text{HA}
 Read the equation as three separate statements:
 
 - If $[\text{base}] = [\text{acid}]$, the log term is
-   **\_\_\_\_\_\_**, so the pH equals
-   **\_\_\_\_\_\_**.
+   0, so the pH equals
+   p$K_a$.
 - More base than acid $\Rightarrow$ log term positive $\Rightarrow$ pH
-   **\_\_\_\_\_\_**.
+   above p$K_a$.
 - More acid than base $\Rightarrow$ pH
-   **\_\_\_\_\_\_**.
+   below p$K_a$.
 
 > ⚠️ **AP trap**
 >
@@ -206,7 +206,7 @@ Read the equation as three separate statements:
    $K_a(\text{NH₄+}) = 5.6\times10^{-10}$:
    *(working space)*
 3. 0.100 M HOCl and 0.100 M NaOCl
-   ($K_a = 3.5\times10^{-8}$): **\_\_\_\_\_\_**
+   ($K_a = 3.5\times10^{-8}$): pH $= 7.46$
 
 > 📌 **On the ammonium p$K_a$**
 >
@@ -233,7 +233,7 @@ Two consequences worth writing down:
 
 - **Diluting a buffer does not change its pH** (to a good
    approximation) — both concentrations fall by the same factor, so
-   the ratio is **\_\_\_\_\_\_**. Compare this with a
+   the ratio is unchanged. Compare this with a
    weak acid alone, where dilution *does* raise the pH.
 - **You may use moles instead of molarity.** Both species share
    the same volume, so the volume cancels out of the ratio. This saves
@@ -279,11 +279,11 @@ Two consequences worth writing down:
 > 📌 **Retrieval warm-up**
 >
 > 1. Henderson–Hasselbalch: pH $=$
->    **\_\_\_\_\_\_**
+>    p$K_a + \log([\text{base}]/[\text{acid}])$
 > 2. pH of a buffer with equal amounts of both components:
->    **\_\_\_\_\_\_**
+>    p$K_a$
 > 3. Diluting a buffer changes its pH how?
->    **\_\_\_\_\_\_**
+>    hardly at all
 
 #### INSTRUCTION A • Stoichiometry first, then equilibrium 25 min
 
@@ -297,7 +297,7 @@ most often try to skip.
 **Stoichiometry step.** Strong acid or strong base reacts
         completely. Added OH- converts HA to A-;
         added H+ converts A- to HA. Work in
-        **\_\_\_\_\_\_** (or mmol) and take the reaction to
+        moles (or mmol) and take the reaction to
         completion. No $K$ appears in this step.
 
 **Equilibrium step.** Take the new amounts and put them into
@@ -337,15 +337,15 @@ The buffer moved **0.02** pH units. Water moved **5.00**.
 
 Add 0.010 mol of HCl to the same original buffer instead.
 
-Which component is consumed? **\_\_\_\_\_\_**
+Which component is consumed? C₂H₃O₂⁻
 
-New amounts: HC₂H₃O₂ $=$ **\_\_\_\_\_\_**,
-        C₂H₃O₂⁻ $=$ **\_\_\_\_\_\_**
+New amounts: HC₂H₃O₂ $=$ 0.51,
+        C₂H₃O₂⁻ $=$ 0.49
 
-New pH: **\_\_\_\_\_\_**
+New pH: 4.72
 
 Same HCl in 1.00 L pure water:
-        **\_\_\_\_\_\_**
+        2.00
 
 #### INSTRUCTION B • Capacity, and choosing a buffer 20 min
 
@@ -369,7 +369,7 @@ before its pH moves appreciably. Two things control it:
 | B  1.00 | thinsp;M / 0.01 | thinsp;M | 100 | 49.5 | 50.5% | $6.74 \to 6.43$ |
 
 Same amount of acid added; solution B's ratio changed
-**\_\_\_\_\_\_** as much. The lesson:
+25 times as much. The lesson:
 
 > 
 Optimal buffering occurs when $[\text{HA}] = [\text{A⁻}]$, that is, when
@@ -410,18 +410,16 @@ added acid.
 
 *(working space)*
 
-Explain why a buffer eventually fails if you keep adding base.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Explain why a buffer eventually fails if you keep adding base.
+        
 
 Rank for buffering capacity at pH 4.74, highest first:
         (i) 1.0 M/1.0 M acetate,
         (ii) 0.10 M/0.10 M acetate,
         (iii) 1.0 M/0.010 M acetate.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >
@@ -441,11 +439,12 @@ Rank for buffering capacity at pH 4.74, highest first:
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Buffer method, step 1: **\_\_\_\_\_\_**
-> 2. Buffer method, step 2: **\_\_\_\_\_\_**
-> 3. mmol $=$ **\_\_\_\_\_\_**
+> 1. Buffer method, step 1: stoichiometry to
+>    completion
+> 2. Buffer method, step 2: Henderson–Hasselbalch
+> 3. mmol $=$ mL $\times$ molarity
 > 4. pH of a 0.10 M NaC₂H₃O₂ solution:
->    **\_\_\_\_\_\_**
+>    8.87
 
 #### INSTRUCTION A • Strong acid with strong base 25 min
 
@@ -455,7 +454,7 @@ Rank for buffering capacity at pH 4.74, highest first:
 
 Since $\text{mL}\times\text{molarity} = \text{mmol}$, working in mL and mmol
 avoids every unit conversion. The total volume is always
-**\_\_\_\_\_\_**.
+initial volume $+$ volume added.
 
 > 📘 **Worked example 5: Zumdahl's nitric acid titration**
 >
@@ -521,8 +520,8 @@ pOH $= 5.28$, pH $= \mathbf{8.72}$.
 > **The equivalence point of a weak acid titration is not pH 7.** All the
 > acid has been converted to its conjugate base, and that base hydrolyses. For
 > a weak acid titrated with a strong base the equivalence pH is
-> **\_\_\_\_\_\_**; for a weak base titrated with a strong acid it
-> is **\_\_\_\_\_\_**. Only strong-with-strong lands on 7.00.
+> above 7; for a weak base titrated with a strong acid it
+> is below 7. Only strong-with-strong lands on 7.00.
 
 > 📌 **Two useful landmarks**
 >
@@ -539,7 +538,7 @@ pOH $= 5.28$, pH $= \mathbf{8.72}$.
 
 Both curves start and end in different places but converge after
 equivalence, because once the acid is gone the pH is set only by
-**\_\_\_\_\_\_**, which is the same in both flasks.
+excess NaOH, which is the same in both flasks.
 
 #### APPLICATION • Reading and calculating 20 min
 
@@ -550,17 +549,15 @@ equivalence, because once the acid is gone the pH is set only by
 
 *(working space)*
 
+        
+
 For that same titration, what is the pH after
         25.0 mL of HCl, and why can you write it down
         with almost no work? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 A curve for a monoprotic acid shows its equivalence point at pH
         9.1. Is the acid strong or weak? Justify.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >
@@ -580,10 +577,10 @@ A curve for a monoprotic acid shows its equivalence point at pH
 > 📌 **Retrieval warm-up**
 >
 > 1. Equivalence pH, weak acid $+$ strong base:
->    **\_\_\_\_\_\_**
+>    above 7
 > 2. Equivalence pH, weak base $+$ strong acid:
->    **\_\_\_\_\_\_**
-> 3. At the halfway point, pH $=$ **\_\_\_\_\_\_**
+>    below 7
+> 3. At the halfway point, pH $=$ p$K_a$
 
 #### INSTRUCTION A • How an indicator works 25 min
 
@@ -631,9 +628,9 @@ roughly $\mathrm{p}K_a \pm 1$ — a span of about **2 pH units**.
 ### End point is not equivalence point `ZUM §15.5`
 
 - The equivalence point is defined by
-   **\_\_\_\_\_\_**.
+   reaction stoichiometry.
 - The end point is defined by
-   **\_\_\_\_\_\_**.
+   the indicator changing color.
 
 They are different things. A good indicator makes them nearly coincide; a
 badly chosen one does not.
@@ -648,18 +645,16 @@ badly chosen one does not.
 | Phenolphthalein | 9.1 | 8.2–10.0 |
 
 HCl with NaOH, equivalence pH 7.00. Suitable indicators:
-        **\_\_\_\_\_\_**
+        any of them — the jump is nearly vertical
 
 HC₂H₃O₂ with NaOH, equivalence pH 8.72:
-        **\_\_\_\_\_\_**
+        phenolphthalein
 
 Why is methyl red wrong for item 2?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 NH₃ with HCl, equivalence pH 5.36:
-        **\_\_\_\_\_\_**
+        methyl red
 
 #### INSTRUCTION B • Titration as a measuring tool 20 min
 
@@ -672,7 +667,7 @@ A titration curve carries two independent pieces of information:
 - The **equivalence volume** gives the amount — and therefore
    the concentration — of the unknown.
 - The **pH at half that volume** gives
-   **\_\_\_\_\_\_**, and hence $K_a$.
+   p$K_a$, and hence $K_a$.
 
 > 📘 **Worked example 8: identifying an unknown acid**
 >
@@ -717,17 +712,15 @@ A 25.0 mL sample of 0.100 M
 
 *(working space)*
 
+        
+
 An indicator has $K_a = 1\times10^{-5}$. Over what pH range does it
         change color, and which titration in this block would it suit?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 A student titrating acetic acid with NaOH uses methyl orange
         and reports a concentration that is far too low. Explain the
         source of the error. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >

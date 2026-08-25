@@ -34,10 +34,10 @@ Zumdahl §13.1–13.7 • PDF pp. 650–695 • 5 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. Rate law for the elementary step A + B → C:
->    **\_\_\_\_\_\_**
-> 2. Does a catalyst change $\Delta H$? **\_\_\_\_\_\_**
+>    $k[\text{A}][\text{B}]$
+> 2. Does a catalyst change $\Delta H$? no
 > 3. Balance: N₂ + H₂ → NH₃:
->    **\_\_\_\_\_\_**
+>    N₂ + 3 H₂ → 2 NH₃
 
 #### INSTRUCTION A • What equilibrium actually is 25 min
 
@@ -48,10 +48,10 @@ Zumdahl §13.1–13.7 • PDF pp. 650–695 • 5 blocks
 Start with pure reactants. The forward reaction begins fast and slows as
 reactants are consumed. Products accumulate, so the reverse reaction speeds
 up. Eventually the two rates become
-**\_\_\_\_\_\_**, and from that moment the concentrations stop
+equal, and from that moment the concentrations stop
 changing.
 
-$\text{at equilibrium:}\qquad   \text{rate}_{\text{forward}} =$ **\_\_\_\_\_\_**
+$\text{at equilibrium:}\qquad   \text{rate}_{\text{forward}} =$ $\text{rate}_{\text{reverse}}$
 
 ![figure](fig-ch13-notes-1.png)
 
@@ -69,13 +69,13 @@ $\text{at equilibrium:}\qquad   \text{rate}_{\text{forward}} =$ **\_\_\_\_\_\_**
 #### GUIDED PRACTICE • True or false, with reasons 15 min
 
 1. At equilibrium, the forward reaction stops.
-   **\_\_\_\_\_\_**
+   False — both continue at equal rates
 2. At equilibrium, concentrations are constant.
-   **\_\_\_\_\_\_**
+   True
 3. At equilibrium, $[\text{reactants}] = [\text{products}]$.
-   **\_\_\_\_\_\_**
+   False — constant, not equal
 4. Equilibrium can be reached from either direction.
-   **\_\_\_\_\_\_**
+   True
 
 #### INSTRUCTION B • Approaching from either side 20 min
 
@@ -84,7 +84,7 @@ $\text{at equilibrium:}\qquad   \text{rate}_{\text{forward}} =$ **\_\_\_\_\_\_**
 `SP 4`
 
 A crucial property: for a given temperature, starting with pure reactants or
-with pure products leads to the **\_\_\_\_\_\_** equilibrium
+with pure products leads to the same equilibrium
 condition. Only the *route* differs.
 
 > 📌 **Note**
@@ -101,15 +101,12 @@ condition. Only the *route* differs.
    *(working space)*
 2. A sealed flask of N₂O₄ is left until no further colour change
    occurs, yet a chemist insists both reactions are still running.
-   How could that be demonstrated?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   How could that be demonstrated? 
 
 > 📌 **Exit ticket**
 >
 > Explain the difference between saying concentrations are “constant” and
 > saying they are “equal” at equilibrium.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## The Equilibrium Constant Zumdahl §13.2–13.3
 
@@ -123,10 +120,10 @@ condition. Only the *route* differs.
 > 📌 **Retrieval warm-up**
 >
 > 1. At equilibrium the two rates are:
->    **\_\_\_\_\_\_**
-> 2. Is equilibrium static or dynamic? **\_\_\_\_\_\_**
+>    equal
+> 2. Is equilibrium static or dynamic? dynamic
 > 3. $R$ in L·atm/mol/K:
->    **\_\_\_\_\_\_**
+>    0.08206
 
 #### INSTRUCTION A • The law of mass action 25 min
 
@@ -135,10 +132,10 @@ condition. Only the *route* differs.
 `SP 5`
 
 For the general reaction $j\text{A} + k\text{B} \rightleftharpoons l\text{C} + m\text{D}$:
-$K =$ **\_\_\_\_\_\_**
+$K =$ $\dfrac{[\text{C}]^l[\text{D}]^m}{[\text{A}]^j[\text{B}]^k}$
 
-**\_\_\_\_\_\_** over reactants, each raised to its
-**\_\_\_\_\_\_**.
+Products over reactants, each raised to its
+coefficient.
 
 > 📌 **Note**
 >
@@ -151,18 +148,18 @@ $K =$ **\_\_\_\_\_\_**
 
 | **If you…** | **then the new constant is…** |
 |---|---|
-| reverse the reaction | **\_\_\_\_\_\_** |
-| multiply coefficients by $n$ | **\_\_\_\_\_\_** |
-| add two reactions | **\_\_\_\_\_\_** |
+| reverse the reaction | $1/K$ |
+| multiply coefficients by $n$ | $K^n$ |
+| add two reactions | $K_1 \times K_2$ |
 
 #### GUIDED PRACTICE • Write the expressions 15 min
 
 1. N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g):
-   **\_\_\_\_\_\_**
+   $[\text{NH₃}]^2/([\text{N₂}][\text{H₂}]^3)$
 2. 2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g):
-   **\_\_\_\_\_\_**
+   $[\text{SO₃}]^2/([\text{SO₂}]^2[\text{O₂}])$
 3. If $K = 4.0$ for a reaction, $K$ for the reverse is:
-   **\_\_\_\_\_\_**
+   0.25
 
 #### INSTRUCTION B • $K_p$ and $K_c$ 20 min
 
@@ -174,7 +171,7 @@ For gases it is often easier to measure pressure than concentration, so
 $K_p$ uses partial pressures in place of molar concentrations.
 
 Since $C = P/RT$ for an ideal gas, substituting gives
-$K_p =$ **\_\_\_\_\_\_** $\qquad \Delta n =$ **\_\_\_\_\_\_**
+$K_p =$ $K_c(RT)^{\Delta n}$ $\qquad \Delta n =$ (mol gas products) $-$ (mol gas reactants)
 
 > 📘 **Worked example 1: when the two are equal**
 >
@@ -206,7 +203,7 @@ $K_p =$ **\_\_\_\_\_\_** $\qquad \Delta n =$ **\_\_\_\_\_\_**
 
 1. For N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g), find $\Delta n$ and write the
    relationship between $K_p$ and $K_c$.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. For 2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g) at 700 K,
    $K_c = 4.3\times10^{6}$. Calculate $K_p$.
    *(working space)*
@@ -214,8 +211,6 @@ $K_p =$ **\_\_\_\_\_\_** $\qquad \Delta n =$ **\_\_\_\_\_\_**
 > 📌 **Exit ticket**
 >
 > For which type of reaction does $K_p = K_c$? Give an example.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Heterogeneous Equilibria, Magnitude of $K$, and $Q$ Zumdahl §13.4–13.5
 
@@ -229,11 +224,11 @@ $K_p =$ **\_\_\_\_\_\_** $\qquad \Delta n =$ **\_\_\_\_\_\_**
 > 📌 **Retrieval warm-up**
 >
 > 1. $K$ expression for 2 A ⇌ B:
->    **\_\_\_\_\_\_**
-> 2. $\Delta n$ for 2 NO₂ ⇌ N₂O₄: **\_\_\_\_\_\_**
+>    $[\text{B}]/[\text{A}]^2$
+> 2. $\Delta n$ for 2 NO₂ ⇌ N₂O₄: $-1$
 > 3. If $K = 100$, $K$ for the reverse is:
->    **\_\_\_\_\_\_**
-> 4. Do equilibrium constants carry units? **\_\_\_\_\_\_**
+>    0.010
+> 4. Do equilibrium constants carry units? no
 
 #### INSTRUCTION A • Leaving things out 25 min
 
@@ -242,10 +237,10 @@ $K_p =$ **\_\_\_\_\_\_** $\qquad \Delta n =$ **\_\_\_\_\_\_**
 `SP 6`
 
 When a reaction involves more than one phase, pure solids and
-pure liquids are **\_\_\_\_\_\_** from the $K$ expression.
+pure liquids are omitted from the $K$ expression.
 
 The reason is not arbitrary: the “concentration” of a pure condensed phase
-is fixed by its **\_\_\_\_\_\_**, which does not change as the
+is fixed by its density, which does not change as the
 reaction proceeds. Adding more solid does not make it more concentrated — it
 just makes the pile bigger.
 
@@ -263,11 +258,11 @@ just makes the pile bigger.
 #### GUIDED PRACTICE • Write heterogeneous expressions 15 min
 
 1. 2 H₂O(l) ⇌ 2 H₂(g) + O₂(g):
-   **\_\_\_\_\_\_**
+   $K = [\text{H₂}]^2[\text{O₂}]$
 2. C(s) + CO₂(g) ⇌ 2 CO(g):
-   **\_\_\_\_\_\_**
+   $K = [\text{CO}]^2/[\text{CO₂}]$
 3. NH₄Cl(s) ⇌ NH₃(g) + HCl(g):
-   **\_\_\_\_\_\_**
+   $K = [\text{NH₃}][\text{HCl}]$
 
 #### INSTRUCTION B • What $K$ tells you — and what it does not 20 min
 
@@ -277,9 +272,9 @@ just makes the pile bigger.
 
 | **Magnitude** | **At equilibrium** | **Position** |
 |---|---|---|
-| $K \gg 1$ | mostly **\_\_\_\_\_\_** | lies far to the **\_\_\_\_\_\_** |
+| $K \gg 1$ | mostly products | lies far to the right |
 | $K \approx 1$ | appreciable amounts of both | near the middle |
-| $K \ll 1$ | mostly **\_\_\_\_\_\_** | lies far to the **\_\_\_\_\_\_** |
+| $K \ll 1$ | mostly reactants | lies far to the left |
 
 > ⚠️ **AP trap**
 >
@@ -297,7 +292,7 @@ them predicts which way the system must move:
 
 | **Comparison** | **Meaning** | **Shift** |
 |---|---|---|
-| $Q  K$ | too many products | toward **\_\_\_\_\_\_** (left) |
+| $Q  K$ | too many products | toward reactants (left) |
 
 #### APPLICATION • Using $Q$ 20 min
 
@@ -311,14 +306,12 @@ For H₂(g) + I₂(g) ⇌ 2 HI(g), $K = 50.0$ at a given temperature.
    predict.
    *(working space)*
 3. Explain why $Q$ is useful even though it is not a new equation.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > A reaction has $K = 3\times10^{15}$ yet no product forms in a laboratory
 > over several hours. Explain how both facts can be true.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Solving Equilibrium Problems Zumdahl §13.6
 
@@ -331,10 +324,10 @@ For H₂(g) + I₂(g) ⇌ 2 HI(g), $K = 50.0$ at a given temperature.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. If $Q     **\_\_\_\_\_\_**
+> 1. If $Q     right
 > 2. $K$ expression for CaCO₃(s) ⇌ CaO(s) + CO₂(g):
->    **\_\_\_\_\_\_**
-> 3. Does a large $K$ mean a fast reaction? **\_\_\_\_\_\_**
+>    $K_p = P_{\text{CO₂}}$
+> 3. Does a large $K$ mean a fast reaction? no
 
 #### INSTRUCTION A • The ICE table 25 min
 
@@ -344,15 +337,15 @@ For H₂(g) + I₂(g) ⇌ 2 HI(g), $K = 50.0$ at a given temperature.
 
 The tool is the Chapter 3 BCA table with new labels:
 Initial, Change, Equilibrium. As before, the change row
-is set by the **\_\_\_\_\_\_**; the only new feature
+is set by the coefficient ratios; the only new feature
 is that the reaction stops partway, so the change is an unknown $x$ rather
 than a known quantity.
 
 |  | N₂O₄ | $\rightleftharpoons$ | 2 NO₂ |
 |---|---|---|---|
 | **Initial** | 1.00 |  | 0 |
-| **Change** | **\_\_\_\_\_\_** |  | **\_\_\_\_\_\_** |
-| **Equilibrium** | **\_\_\_\_\_\_** |  | **\_\_\_\_\_\_** |
+| **Change** | $-x$ |  | $+2x$ |
+| **Equilibrium** | $1.00-x$ |  | $2x$ |
 
 > 📘 **Worked example 1: with the approximation**
 >
@@ -382,8 +375,6 @@ than a known quantity.
 
 For 2 SO₂ + O₂ ⇌ 2 SO₃ starting with 2.0 M SO₂,
 1.0 M O₂, no SO₃, write the equilibrium row.
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 #### INSTRUCTION B • When you must use the quadratic 20 min
 
@@ -430,23 +421,23 @@ H₂(g) + I₂(g) ⇌ 2 HI(g) has $K = 50.0$. A flask initially contains
 Build the ICE table.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Solve for $x$. (This one is a perfect square — take the square
         root of both sides.) 
 
 *(working space)*
+
+        
 
 State all three equilibrium concentrations and check them against
         $K$. 
 
 *(working space)*
 
+        
+
 > 📌 **Exit ticket**
 >
 > When is it safe to assume $x$ is negligible, and how do you confirm it?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Le Ch\^atelier's Principle Zumdahl §13.7
 
@@ -460,10 +451,11 @@ State all three equilibrium concentrations and check them against
 
 > 📌 **Retrieval warm-up**
 >
-> 1. The 5% rule checks what? **\_\_\_\_\_\_**
+> 1. The 5% rule checks what? validity of the
+>    approximation
 > 2. Reject a quadratic root when it gives:
->    **\_\_\_\_\_\_**
-> 3. If $Q > K$, the shift is: **\_\_\_\_\_\_**
+>    a negative concentration
+> 3. If $Q > K$, the shift is: left
 
 #### INSTRUCTION A • The principle 25 min
 
@@ -475,7 +467,7 @@ State all three equilibrium concentrations and check them against
 >
 > **Le Ch\^atelier's principle:** if a change is imposed on a system at
 > equilibrium, the equilibrium position shifts in the direction that
-> partially **\_\_\_\_\_\_** that change.
+> partially offsets that change.
 > 
 > Zumdahl's formulation for concentration is particularly clean: add a
 > component and the system shifts in the direction that
@@ -484,12 +476,12 @@ State all three equilibrium concentrations and check them against
 
 | **Change** | **Shift** | **Does $K$ change?** |
 |---|---|---|
-| Add a reactant | toward **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Remove a product | toward **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Decrease volume | toward the side with **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Increase temperature | toward the **\_\_\_\_\_\_** direction | ****\_\_\_\_\_\_**** |
-| Add a catalyst | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Add an inert gas at constant $V$ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| Add a reactant | toward products | no |
+| Remove a product | toward products | no |
+| Decrease volume | toward the side with fewer gas moles | no |
+| Increase temperature | toward the endothermic direction | **yes** |
+| Add a catalyst | no shift | no |
+| Add an inert gas at constant $V$ | no shift | no |
 
 > ⚠️ **AP trap**
 >
@@ -506,16 +498,16 @@ State all three equilibrium concentrations and check them against
 
 For N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g), $\Delta H = -92\,\mathrm{kJ}$:
 
-Add N₂: **\_\_\_\_\_\_**
+Add N₂: right
 
-Remove NH₃: **\_\_\_\_\_\_**
+Remove NH₃: right
 
-Decrease the volume: **\_\_\_\_\_\_**
+Decrease the volume: right (4 mol $\to$ 2 mol)
 
 Increase the temperature:
-        **\_\_\_\_\_\_**
+        left (exothermic forward)
 
-Add a catalyst: **\_\_\_\_\_\_**
+Add a catalyst: no shift
 
 #### INSTRUCTION B • Temperature and heterogeneous cases 20 min
 
@@ -525,12 +517,12 @@ Add a catalyst: **\_\_\_\_\_\_**
 
 #### Treat heat as a term in the equation
 
-For an exothermic reaction, write heat as a **\_\_\_\_\_\_**:
+For an exothermic reaction, write heat as a product:
 
 $$ \text{N₂ + 3 H₂ ⇌ 2 NH₃} + \text{heat} $$
 
 Now Le Ch\^atelier applies directly — adding heat (raising the
-temperature) pushes the system **\_\_\_\_\_\_**, exactly as adding
+temperature) pushes the system left, exactly as adding
 any other product would.
 
 > 📘 **Worked example: Zumdahl's arsenic roasting**
@@ -547,24 +539,20 @@ any other product would.
 
 #### APPLICATION • Applied Le Ch\^atelier 20 min
 
-For 2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g), $\Delta H The Haber process is run at high temperature even though that
+For 2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g), $\Delta H 
+
+The Haber process is run at high temperature even though that
         *lowers* the equilibrium yield of ammonia. Explain the
         trade-off. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Explain why adding argon to a rigid vessel containing an
         equilibrium mixture causes no shift.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > Which single type of change alters the numerical value of $K$, and why do
-> the others not? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> the others not?
 
 ---
 

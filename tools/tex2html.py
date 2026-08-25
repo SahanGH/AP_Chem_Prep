@@ -74,15 +74,25 @@ def doc_kind(stem: str) -> str:
 def strip_comments(src: str) -> str:
     out = []
     for line in src.split("\n"):
-        buf, i = [], 0
+        buf, i, saw_pct = [], 0, False
         while i < len(line):
             ch = line[i]
             if ch == "\\" and i + 1 < len(line):
                 buf.append(line[i:i + 2]); i += 2; continue
             if ch == "%":
+                saw_pct = True
                 break
             buf.append(ch); i += 1
-        out.append("".join(buf))
+        text = "".join(buf)
+        # A comment-only line contributes NOTHING in TeX -- the % eats the
+        # newline too.  Emitting an empty line in its place turns a run of
+        # comment lines into a \par, which is fatal inside a braced or
+        # bracketed argument.  That is what killed fig-ch10-selfstudy-5:
+        # its \begin{axis}[...] options carry a three-line comment, so the
+        # figure silently vanished from the page instead of failing loudly.
+        if saw_pct and not text.strip():
+            continue
+        out.append(text)
     return "\n".join(out)
 
 

@@ -37,9 +37,9 @@ Zumdahl §7.1–7.2, 7.5, 7.8–7.9, 7.11–7.12 • PDF pp. 331–389 • 4 blo
 > 📌 **Retrieval warm-up**
 >
 > 1. Which has more energy per photon, red or violet light?
->    **\_\_\_\_\_\_**
-> 2. Configuration of Ne: **\_\_\_\_\_\_**
-> 3. Which is larger, Na or Na+? **\_\_\_\_\_\_**
+>    violet
+> 2. Configuration of Ne: $1s^2 2s^2 2p^6$
+> 3. Which is larger, Na or Na+? Na
 
 #### INSTRUCTION A • Waves and their arithmetic 25 min
 
@@ -52,21 +52,21 @@ Light is characterized by three interlocking quantities:
 - Wavelength $\lambda$ — distance between successive peaks,
    in metres.
 - Frequency $\nu$ — cycles per second, in
-   **\_\_\_\_\_\_** (Hz).
+   /s (Hz).
 - Speed — all electromagnetic radiation travels at
-   $c =$ **\_\_\_\_\_\_** in a vacuum.
+   $c =$ 3.00e8 m/s in a vacuum.
 
-$c =$ **\_\_\_\_\_\_** $\qquad\Rightarrow\qquad   \nu =$ **\_\_\_\_\_\_**
+$c =$ $\lambda\nu$ $\qquad\Rightarrow\qquad   \nu =$ $c/\lambda$
 
 Because $c$ is fixed, $\lambda$ and $\nu$ are
-**\_\_\_\_\_\_** related — short wavelength means high
+inversely related — short wavelength means high
 frequency.
 
 #### Energy comes in packets
 
 Planck's insight was that energy is not continuous but
 quantized — transferred in discrete units. For a single photon:
-$E =$ **\_\_\_\_\_\_** $=$ **\_\_\_\_\_\_** $\qquad h = 6.626e-34\,\mathrm{J\cdot s}$
+$E =$ $h\nu$ $=$ $\dfrac{hc}{\lambda}$ $\qquad h = 6.626e-34\,\mathrm{J\cdot s}$
 
 > ⚠️ **AP trap**
 >
@@ -87,12 +87,12 @@ $E =$ **\_\_\_\_\_\_** $=$ **\_\_\_\_\_\_** $\qquad h = 6.626e-34\,\mathrm{J\cdo
 #### GUIDED PRACTICE • Photon arithmetic 15 min
 
 1. Frequency of 600. nm light:
-   **\_\_\_\_\_\_**
+   5.00e14 /s
 2. Energy of one such photon:
-   **\_\_\_\_\_\_**
+   3.31e-19 J
 3. A photon of 200 nm light has how many times the
    energy of one at 800 nm? (No calculator.)
-   **\_\_\_\_\_\_**
+   4 times
 
 #### INSTRUCTION B • The photoelectric effect 20 min
 
@@ -104,11 +104,11 @@ Shine light on a metal surface and electrons are ejected — but only under
 specific conditions. Zumdahl lists three observations:
 
 1. Below a threshold frequency $\nu_0$,
-   **\_\_\_\_\_\_** are emitted.
-2. Below $\nu_0$, increasing the **\_\_\_\_\_\_**
+   no electrons are emitted.
+2. Below $\nu_0$, increasing the intensity
    changes nothing — still no electrons.
 3. Above $\nu_0$, the *number* of electrons emitted rises with
-   **\_\_\_\_\_\_**.
+   intensity.
 
 > 📌 **Note**
 >
@@ -139,17 +139,15 @@ over tells you how tightly that electron was held.
    6.0e14 /s. Predict what happens with (a) intense
    red light at 4.0e14 /s and (b) dim violet light
    at 7.5e14 /s.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Explain why microwave radiation warms food but does not cause
    sunburn, while ultraviolet does the reverse.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > Two beams of light deliver the same total energy per second. One is red, one
-> is blue. Which delivers more photons, and why? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> is blue. Which delivers more photons, and why?
 
 ## Orbitals and Polyelectronic Atoms Zumdahl §7.5, 7.8–7.9
 
@@ -163,10 +161,10 @@ over tells you how tightly that electron was held.
 > 📌 **Retrieval warm-up**
 >
 > 1. $E$ of a 500 nm photon:
->    **\_\_\_\_\_\_**
+>    3.98e-19 J
 > 2. Below the threshold frequency, brighter light does what?
->    **\_\_\_\_\_\_**
-> 3. Max electrons in a $p$ subshell: **\_\_\_\_\_\_**
+>    still nothing
+> 3. Max electrons in a $p$ subshell: 6
 
 #### INSTRUCTION A • What an orbital actually is 25 min
 
@@ -175,29 +173,29 @@ over tells you how tightly that electron was held.
 `SP 1`
 
 An orbital is not a path or an orbit. It is a
-**\_\_\_\_\_\_** — a region of space where an
+probability distribution — a region of space where an
 electron is likely to be found. We cannot say where an electron *is*,
 only where it probably is.
 
 #### The Pauli exclusion principle
 
-An orbital holds at most **\_\_\_\_\_\_** electrons, and those two
-must have **\_\_\_\_\_\_**.
+An orbital holds at most 2 electrons, and those two
+must have opposite spins.
 
 Combined with the subshell capacities you already know:
 
 | Subshell | $s$ | $p$ | $d$ | $f$ |
 |---|---|---|---|---|
-| Orbitals | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Max electrons | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| Orbitals | 1 | 3 | 5 | 7 |
+| Max electrons | 2 | 6 | 10 | 14 |
 
 #### GUIDED PRACTICE • Orbital counting 15 min
 
 1. Total orbitals in the $n = 3$ shell:
-   **\_\_\_\_\_\_**
-2. Maximum electrons in $n = 3$: **\_\_\_\_\_\_**
+   9 (1 + 3 + 5)
+2. Maximum electrons in $n = 3$: 18
 3. Can two electrons in the same orbital have the same spin? Why?
-   **\_\_\_\_\_\_**
+   No — Pauli exclusion principle
 
 #### INSTRUCTION B • Why multi-electron atoms are harder 20 min
 
@@ -211,9 +209,10 @@ electron–electron interaction.
 
 - Shielding: inner electrons partly block the nuclear charge,
    so a valence electron feels an effective nuclear charge
-   $Z_{\text{eff}} \approx Z -$ **\_\_\_\_\_\_**
+   $Z_{\text{eff}} \approx Z -$ $S$ (shielding)
 - Penetration: some orbitals let an electron spend a small but
-   significant fraction of its time **\_\_\_\_\_\_**.
+   significant fraction of its time very near the
+   nucleus.
 
 > 📘 **Worked example: why 2s lies below 2p**
 >
@@ -240,17 +239,15 @@ electron–electron interaction.
 
 1. Which experiences a larger $Z_{\text{eff}}$: a 2$p$ electron in
    oxygen or a 2$p$ electron in fluorine? Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Sodium's 3$s$ electron is far easier to remove than any of its 2$p$
    electrons. Give both reasons.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > In hydrogen, 2$s$ and 2$p$ have identical energies; in lithium they do not.
-> Explain what changed. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Explain what changed.
 
 ## Electron Configurations Zumdahl §7.11
 
@@ -264,11 +261,11 @@ electron–electron interaction.
 > 📌 **Retrieval warm-up**
 >
 > 1. Why is 2$s$ lower in energy than 2$p$?
->    **\_\_\_\_\_\_**
-> 2. Max electrons in $n = 2$: **\_\_\_\_\_\_**
+>    2s penetrates the core more
+> 2. Max electrons in $n = 2$: 8
 > 3. An orbital is best described as a:
->    **\_\_\_\_\_\_**
-> 4. $Z_{\text{eff}}$ means: **\_\_\_\_\_\_**
+>    probability distribution
+> 4. $Z_{\text{eff}}$ means: effective nuclear charge
 
 #### INSTRUCTION A • Three rules 25 min
 
@@ -277,14 +274,14 @@ electron–electron interaction.
 `SP 1`
 
 1. Aufbau: fill orbitals from
-   **\_\_\_\_\_\_**.
-2. Pauli: at most **\_\_\_\_\_\_**,
+   lowest energy upward.
+2. Pauli: at most 2 electrons per orbital,
    opposite spins.
 3. Hund: within a subshell, occupy orbitals
-   **\_\_\_\_\_\_**, with parallel spins.
+   singly before pairing, with parallel spins.
 
 Filling order: $1s\,2s\,2p\,3s\,3p\,\mathbf{4s}\,3d\,4p\,5s\,4d\,5p$… —
-note that **\_\_\_\_\_\_** fills before 3$d$, a direct consequence of
+note that 4s fills before 3$d$, a direct consequence of
 the penetration effect from Block 2.
 
 > 📘 **Worked example 1: three notations for sulfur**
@@ -302,19 +299,19 @@ the penetration effect from Block 2.
 #### Reading configurations off the table
 
 The periodic table *is* a configuration map: groups 1–2 are the
-**\_\_\_\_\_\_** block, 13–18 the **\_\_\_\_\_\_** block,
-the transition metals the **\_\_\_\_\_\_** block. An element's
-period number gives the valence **\_\_\_\_\_\_**.
+$s$ block, 13–18 the $p$ block,
+the transition metals the $d$ block. An element's
+period number gives the valence $n$.
 
 #### GUIDED PRACTICE • Write them 15 min
 
-P: **\_\_\_\_\_\_**
+P: $[\text{Ne}]\,3s^2\,3p^3$
 
-Ca: **\_\_\_\_\_\_**
+Ca: $[\text{Ar}]\,4s^2$
 
-Br: **\_\_\_\_\_\_**
+Br: $[\text{Ar}]\,4s^2\,3d^{10}\,4p^5$
 
-Fe: **\_\_\_\_\_\_**
+Fe: $[\text{Ar}]\,4s^2\,3d^6$
 
 #### INSTRUCTION B • Ions and exceptions 20 min
 
@@ -328,16 +325,16 @@ Fe: **\_\_\_\_\_\_**
 > configuration — do not write the atom's configuration and label it.
 > Ca²⁺ is $[\text{Ar}]$, not $[\text{Ar}]4s^2$.
 > 
-> And for transition metals, electrons leave the **\_\_\_\_\_\_**
+> And for transition metals, electrons leave the 4s
 > orbital before the 3$d$, even though 4$s$ filled first. Fe²⁺ is
 > $[\text{Ar}]3d^6$, not $[\text{Ar}]4s^2 3d^4$.
 
 #### The two exceptions worth knowing
 
 - Cr: expected $[\text{Ar}]4s^2 3d^4$, actual
-   **\_\_\_\_\_\_**
+   $[\text{Ar}]4s^1 3d^5$
 - Cu: expected $[\text{Ar}]4s^2 3d^9$, actual
-   **\_\_\_\_\_\_**
+   $[\text{Ar}]4s^1 3d^{10}$
 
 Half-filled and filled $d$ subshells are slightly more stable, and the 4$s$
 and 3$d$ energies are close enough that promoting one electron pays off.
@@ -347,25 +344,17 @@ and 3$d$ energies are close enough that promoting one electron pays off.
 Write configurations for S²⁻, K+, and Ar. What do
         you notice? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 How many unpaired electrons does a ground-state Fe atom have?
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Distinguish ground state, excited state, and impossible:
         $1s^2 2s^2 2p^5 3s^1$ (10 electrons).
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > Write the configuration of Fe³⁺ and state how many unpaired electrons
-> it has. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> it has.
 
 ## Periodic Trends and PES Zumdahl §7.12
 
@@ -379,10 +368,10 @@ Distinguish ground state, excited state, and impossible:
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Configuration of Cr: **\_\_\_\_\_\_**
-> 2. Unpaired electrons in ground-state N: **\_\_\_\_\_\_**
+> 1. Configuration of Cr: $[\text{Ar}]4s^1 3d^5$
+> 2. Unpaired electrons in ground-state N: 3
 > 3. Which is removed first from Fe, a 4$s$ or 3$d$ electron?
->    **\_\_\_\_\_\_**
+>    4$s$
 
 #### INSTRUCTION A • Ionization energy 25 min
 
@@ -391,7 +380,7 @@ Distinguish ground state, excited state, and impossible:
 `SP 5`
 
 The first ionization energy $I_1$ removes the
-**\_\_\_\_\_\_** (least tightly bound) electron.
+highest-energy (least tightly bound) electron.
 
 > 📘 **Worked example 1: Zumdahl's aluminium**
 >
@@ -408,8 +397,8 @@ harder, and not only because 3$s$ lies lower. The dominant reason is
 greater positive charge binds electrons more firmly.
 
 The enormous jump at $I_4$ marks the point where you begin removing
-**\_\_\_\_\_\_** electrons — confirming aluminium has
-**\_\_\_\_\_\_** valence electrons.
+core electrons — confirming aluminium has
+3 valence electrons.
 
 > 📌 **Note**
 >
@@ -420,15 +409,13 @@ The enormous jump at $I_4$ marks the point where you begin removing
 #### GUIDED PRACTICE • Read the jump 15 min
 
 $I$ values 738, 1451, 7733 kJ/mol $\to$ group:
-        **\_\_\_\_\_\_**
+        2 (Mg)
 
 $I$ values 1012, 1907, 2914, 4964, 6274, 21,267 $\to$ group:
-        **\_\_\_\_\_\_**
+        15 (P)
 
 Why is $I_2$ always larger than $I_1$ for any element?
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 #### INSTRUCTION B • Trends and PES 20 min
 
@@ -438,9 +425,9 @@ Why is $I_2$ always larger than $I_1$ for any element?
 
 | **Property** | **Across a period** | **Coulombic reason** |
 |---|---|---|
-| Atomic radius | **\_\_\_\_\_\_** | rising $Z_{\text{eff}}$ pulls the same shell inward |
-| Ionization energy | **\_\_\_\_\_\_** | valence electron held more tightly |
-| Electronegativity | **\_\_\_\_\_\_** | same engine: more charge, less distance |
+| Atomic radius | decreases | rising $Z_{\text{eff}}$ pulls the same shell inward |
+| Ionization energy | increases | valence electron held more tightly |
+| Electronegativity | increases | same engine: more charge, less distance |
 
 > ⚠️ **AP trap**
 >
@@ -460,8 +447,8 @@ Helium is the usual source, emitting at 58.4 nm
 atoms.
 
 On the spectrum: peak *position* gives
-**\_\_\_\_\_\_**; peak *area* gives the
-**\_\_\_\_\_\_** in that subshell.
+binding energy; peak *area* gives the
+number of electrons in that subshell.
 
 > 📘 **Worked example 2: reading magnesium**
 >
@@ -479,24 +466,16 @@ The 1$s$ binding energy of boron is 19.3 MJ/mol; of fluorine, 67.2
         MJ/mol. Explain the difference without using the word “shell.”
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Predict two specific differences between the PES spectra of
         phosphorus and sulfur. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Rank first ionization energy: Na, Mg, Al. Explain any anomaly.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >
 > A PES spectrum shows peaks with areas $2:2:6:2:3$. Identify the element and
 > state which peak's electrons are lost first on ionization.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ---
 

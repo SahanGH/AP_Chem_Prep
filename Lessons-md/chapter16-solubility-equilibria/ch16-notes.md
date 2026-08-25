@@ -44,13 +44,13 @@ Zumdahl §16.1 • PDF pp. 805–813 • 4 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. Species omitted from any $K$ expression:
->    **\_\_\_\_\_\_**
+>    pure solids and pure liquids
 > 2. $K$ for 2A ⇌ B in terms of concentrations:
->    **\_\_\_\_\_\_**
+>    $[\text{B}]/[\text{A}]^2$
 > 3. Is AgCl soluble or insoluble by the Unit 4 rules?
->    **\_\_\_\_\_\_**
+>    insoluble
 > 4. If $Q saturated — and that is a
-**\_\_\_\_\_\_**, not a solution that has “stopped
+dynamic equilibrium, not a solution that has “stopped
 dissolving.”
 
 CaF₂(s) ⇌ Ca²⁺(aq) + 2F⁻(aq)
@@ -63,9 +63,9 @@ $$ K_{sp} = [\text{Ca²⁺}][\text{F⁻}]^2 $$
 Two features to notice, both of which are old rules reappearing:
 
 - The solid does *not* appear — it is a
-   **\_\_\_\_\_\_**, exactly as in Chapter 13.
+   pure solid, exactly as in Chapter 13.
 - Each ion is raised to the power of its
-   **\_\_\_\_\_\_**, so the 2 in 2F⁻ becomes an
+   coefficient, so the 2 in 2F⁻ becomes an
    exponent.
 
 > 📌 **Why more solid does not mean more dissolved**
@@ -93,15 +93,15 @@ Two features to notice, both of which are old rules reappearing:
 #### GUIDED PRACTICE • Writing the expressions 15 min
 
 1. AgCl: $K_{sp} =$
-   **\_\_\_\_\_\_**
+   $[\text{Ag+}][\text{Cl-}]$
 2. PbI₂: $K_{sp} =$
-   **\_\_\_\_\_\_**
+   $[\text{Pb²⁺}][\text{I-}]^2$
 3. Ag₂CrO₄: $K_{sp} =$
-   **\_\_\_\_\_\_**
+   $[\text{Ag+}]^2[\text{CrO₄²⁻}]$
 4. Mg(OH)₂: $K_{sp} =$
-   **\_\_\_\_\_\_**
+   $[\text{Mg²⁺}][\text{OH-}]^2$
 5. Ca₃(PO₄)₂: $K_{sp} =$
-   **\_\_\_\_\_\_**
+   $[\text{Ca²⁺}]^3[\text{PO₄³⁻}]^2$
 
 #### INSTRUCTION B • From measured solubility to $K_{sp}$ 20 min
 
@@ -164,7 +164,7 @@ salt.
    *(working space)*
 3. A student computes $K_{sp}$ for CaF₂ as $(s)(s)^2$. What did
    they miss, and by what factor is the answer wrong?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
@@ -185,11 +185,11 @@ salt.
 > 📌 **Retrieval warm-up**
 >
 > 1. $K_{sp}$ for an MX salt in terms of $s$:
->    **\_\_\_\_\_\_**
+>    $s^2$
 > 2. $K_{sp}$ for an MX₂ salt in terms of $s$:
->    **\_\_\_\_\_\_**
+>    $4s^3$
 > 3. $K_{sp}$ is a constant; solubility is a
->    **\_\_\_\_\_\_**
+>    position (it varies with the solution)
 
 #### INSTRUCTION A • Running the calculation backwards 25 min
 
@@ -252,7 +252,7 @@ Zumdahl's example is worth memorizing because it is so extreme:
 
 $K_{sp}$ order: CuS $>$ Ag₂S $>$ Bi₂S₃.   
 
-Solubility order: **\_\_\_\_\_\_**
+Solubility order: Bi₂S₃ $>$ Ag₂S $>$ CuS
 — **exactly reversed**.
 
 > ⚠️ **AP trap**
@@ -270,9 +270,9 @@ Solubility order: **\_\_\_\_\_\_**
 The solubility rules you memorized in Unit 4 are the qualitative version of
 this same idea. The CED makes the link explicit: a salt with
 $K_{sp} > 1$ is what those rules call
-**\_\_\_\_\_\_**, and the very small $K_{sp}$ values in the
+soluble, and the very small $K_{sp}$ values in the
 table belong to the salts the rules call
-**\_\_\_\_\_\_**. “Insoluble” never meant zero — it meant
+insoluble. “Insoluble” never meant zero — it meant
 an equilibrium lying far to the left.
 
 #### APPLICATION • Ranking and calculating 20 min
@@ -283,7 +283,7 @@ an equilibrium lying far to the left.
 2. Rank BaSO₄ ($1.5\times10^{-9}$), SrSO₄
    ($3.2\times10^{-7}$) and PbSO₄ ($1.3\times10^{-8}$) by
    increasing solubility, and say why no calculation is needed.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. CaF₂ ($K_{sp} = 4.0\times10^{-11}$) and BaCrO₄
    ($K_{sp} = 8.5\times10^{-11}$). Which is more soluble?
    *(working space)*
@@ -307,13 +307,13 @@ an equilibrium lying far to the left.
 >
 > 1. Molar solubility of AgCl in pure water
 >    ($K_{sp} = 1.6\times10^{-10}$):
->    **\_\_\_\_\_\_**
+>    $1.3\times10^{-5}$ M
 > 2. Adding a product shifts an equilibrium:
->    **\_\_\_\_\_\_**
+>    left
 > 3. A common ion is one that is:
->    **\_\_\_\_\_\_**
+>    already in the equilibrium
 > 4. Does adding a common ion change $K_{sp}$?
->    **\_\_\_\_\_\_**
+>    no
 
 #### INSTRUCTION A • Le Ch\^atelier, one more time 25 min
 
@@ -324,8 +324,8 @@ an equilibrium lying far to the left.
 CaF₂(s) ⇌ Ca²⁺(aq) + 2F⁻(aq)
 
 Dissolve the salt in a solution that already contains F- — from
-NaF, say — and you have added a **\_\_\_\_\_\_**. The
-equilibrium shifts **\_\_\_\_\_\_**, so *less* CaF₂
+NaF, say — and you have added a product. The
+equilibrium shifts left, so *less* CaF₂
 dissolves.
 
 This is the identical mechanism you met in Chapter 15, where NaF
@@ -369,13 +369,13 @@ The size of the effect depends on *which* ion you add, because the two
 ions enter the expression with different exponents.
 
 1. AgCl in 0.10 M NaCl: $s = K_{sp}/[\text{Cl-}] =$
-   **\_\_\_\_\_\_**
+   $1.6\times10^{-9}$ M
 2. AgCl in 0.020 M AgNO₃:
-   **\_\_\_\_\_\_**
+   $8.0\times10^{-9}$ M
 3. BaSO₄ ($1.5\times10^{-9}$) in 0.010 M
-   Na₂SO₄: **\_\_\_\_\_\_**
+   Na₂SO₄: $1.5\times10^{-7}$ M
 4. Would NaNO₃ change the solubility of AgCl? Why?
-   **\_\_\_\_\_\_**
+   no — neither ion is in the equilibrium
 
 #### INSTRUCTION B • Adding the cation instead 20 min
 
@@ -384,7 +384,7 @@ ions enter the expression with different exponents.
 `SP 5`
 
 For CaF₂, adding F- is far more effective than adding
-Ca²⁺, because fluoride is **\_\_\_\_\_\_** in the
+Ca²⁺, because fluoride is squared in the
 expression while calcium is not.
 
 > 📘 **Worked example 5: the same salt, the other ion**
@@ -418,10 +418,9 @@ fluoride is squared.
    *(working space)*
 2. Explain, without calculating, why BaSO₄ is used as an X-ray
    contrast agent despite barium ions being toxic.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. A student says a common ion works by “using up” the solid.
-   Correct them.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   Correct them. 
 
 > 📌 **Exit ticket**
 >
@@ -441,11 +440,11 @@ fluoride is squared.
 > 📌 **Retrieval warm-up**
 >
 > 1. Common ion added $\Rightarrow$ solubility:
->    **\_\_\_\_\_\_**
+>    falls
 > 2. Conjugate base of a *weak* acid is a:
->    **\_\_\_\_\_\_**
+>    meaningful (effective) base
 > 3. Conjugate base of a *strong* acid is a:
->    **\_\_\_\_\_\_**
+>    negligible base
 
 > 📌 **Read this before Block 4**
 >
@@ -465,8 +464,8 @@ fluoride is squared.
 Mg(OH)₂(s) ⇌ Mg²⁺(aq) + 2OH⁻(aq)
 
 Add acid. The H+ reacts with OH- and removes it from solution.
-That is removing a **\_\_\_\_\_\_**, so the equilibrium shifts
-**\_\_\_\_\_\_** and *more* solid dissolves.
+That is removing a product, so the equilibrium shifts
+right and *more* solid dissolves.
 
 This is why milk of magnesia — a suspension of solid Mg(OH)₂ —
 dissolves in the stomach exactly as fast as it is needed to neutralize
@@ -475,7 +474,7 @@ excess acid.
 Now the general principle. Adding acid can only pull an anion out of
 solution if that anion actually reacts with H+ — that is, if it is a
 meaningful base, which happens when its conjugate acid HX is
-**\_\_\_\_\_\_**.
+weak.
 
 | **Anion** | **Conjugate acid** | **Solubility in acid** |
 |---|---|---|
@@ -514,11 +513,11 @@ Cl-, Br-, I-, NO₃-, ClO₄- | *strong* — HCl, HNO₃ | **unchanged**: the an
 For each salt, write **yes** or **no** and name the anion's
 conjugate acid:
 
-1. CaCO₃: **\_\_\_\_\_\_**
-2. AgBr: **\_\_\_\_\_\_**
-3. CaF₂: **\_\_\_\_\_\_**
-4. Fe(OH)₃: **\_\_\_\_\_\_**
-5. PbI₂: **\_\_\_\_\_\_**
+1. CaCO₃: yes — H₂CO₃ is weak
+2. AgBr: no — HBr is strong
+3. CaF₂: yes — HF is weak
+4. Fe(OH)₃: yes — H₂O, very weak
+5. PbI₂: no — HI is strong
 
 ### Where limestone caves come from `ZUM §16.1`
 
@@ -536,19 +535,13 @@ Predict the effect of lowering the pH on the solubility of
         ZnS, and justify with an equation.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 A solution is saturated with Mg(OH)₂. NaOH is added.
         State the effect on solubility, on $[\text{Mg²⁺}]$, and on
         $K_{sp}$. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Two beakers hold saturated AgCl and saturated CaCO₃.
         Nitric acid is added to both. Describe and explain what differs.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 #### INSTRUCTION B • $Q$ versus $K_{sp}$ *(enrichment)* 20 min
 

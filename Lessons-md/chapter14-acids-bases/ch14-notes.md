@@ -39,11 +39,11 @@ Zumdahl §14.1–14.9 • PDF pp. 696–754 • 5 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. Net ionic equation for strong acid $+$ strong base:
->    **\_\_\_\_\_\_**
+>    H+ + OH⁻ → H₂O
 > 2. Name two strong acids (there are six):
->    **\_\_\_\_\_\_**
+>    HCl, HNO₃
 > 3. $K$ expression for HA ⇌ H+ + A⁻:
->    **\_\_\_\_\_\_**
+>    $[\text{H+}][\text{A⁻}]/[\text{HA}]$
 
 #### INSTRUCTION A • Two models 25 min
 
@@ -51,19 +51,19 @@ Zumdahl §14.1–14.9 • PDF pp. 696–754 • 5 blocks
 
 `SP 1`
 
-- Arrhenius: an acid produces **\_\_\_\_\_\_** in
-   water; a base produces **\_\_\_\_\_\_**. Historically
+- Arrhenius: an acid produces H+ in
+   water; a base produces OH-. Historically
    important, but limited — it applies only to
-   **\_\_\_\_\_\_** solutions and allows only one kind of
+   aqueous solutions and allows only one kind of
    base.
 - Brønsted–Lowry: an acid is a proton
-   **\_\_\_\_\_\_**; a base is a proton
-   **\_\_\_\_\_\_**. More general, and the model AP uses.
+   donor; a base is a proton
+   acceptor. More general, and the model AP uses.
 
 > 📌 **Note**
 >
 > Why water can act as a base: its oxygen carries two
-> **\_\_\_\_\_\_**, either of which can form a
+> unshared electron pairs, either of which can form a
 > bond to H+. When HCl gas dissolves, a proton transfers from
 > HCl to water:
 > HCl(g) + H₂O(l) → H₃O+(aq) + Cl⁻(aq)
@@ -79,14 +79,14 @@ proton:
 $$ \underbrace{\text{HC₂H₃O₂}}_{\text{acid}} + \underbrace{\text{H₂O}}_{\text{base}}   \rightleftharpoons   \underbrace{\text{H₃O+}}_{\text{conj. acid}} + \underbrace{\text{C₂H₃O₂⁻}}_{\text{conj. base}} $$
 
 The conjugate base of an acid is what remains after it
-**\_\_\_\_\_\_**.
+loses a proton.
 
 #### GUIDED PRACTICE • Identify the pairs 15 min
 
-1. Conjugate base of HNO₂: **\_\_\_\_\_\_**
-2. Conjugate acid of NH₃: **\_\_\_\_\_\_**
-3. Conjugate base of H₂PO₄⁻: **\_\_\_\_\_\_**
-4. Conjugate acid of H₂O: **\_\_\_\_\_\_**
+1. Conjugate base of HNO₂: NO₂⁻
+2. Conjugate acid of NH₃: NH₄+
+3. Conjugate base of H₂PO₄⁻: HPO₄²⁻
+4. Conjugate acid of H₂O: H₃O+
 
 #### INSTRUCTION B • Acid strength 20 min
 
@@ -95,9 +95,9 @@ The conjugate base of an acid is what remains after it
 `SP 5`
 
 For a weak acid, ionization is an equilibrium with its own constant:
-$\text{HA(aq) ⇌ H+(aq) + A⁻(aq)}   \qquad   K_a =$ **\_\_\_\_\_\_**
+$\text{HA(aq) ⇌ H+(aq) + A⁻(aq)}   \qquad   K_a =$ $\dfrac{[\text{H+}][\text{A⁻}]}{[\text{HA}]}$
 
-Larger $K_a$ means a **\_\_\_\_\_\_** acid. Strong acids
+Larger $K_a$ means a stronger acid. Strong acids
 ionize essentially completely, so $K_a$ is enormous and not tabulated —
 the equilibrium lies entirely to the right.
 
@@ -127,24 +127,21 @@ the equilibrium lies entirely to the right.
 
 #### pK$_a$
 
-$\mathrm{p}K_a =$ **\_\_\_\_\_\_**
-A *lower* pK$_a$ means a **\_\_\_\_\_\_** acid. Acetic
+$\mathrm{p}K_a =$ $-\log K_a$
+A *lower* pK$_a$ means a stronger acid. Acetic
 acid's $K_a = 1.8\times10^{-5}$ gives pK$_a = 4.74$.
 
 #### APPLICATION • Strength reasoning 20 min
 
 1. Rank as bases, weakest first: F-, CN-, Cl-.
    Justify from the $K_a$ table.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Acid A has pK$_a$ 3.2; acid B has pK$_a$ 6.8. Which is stronger, and
-   by what factor in $K_a$?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   by what factor in $K_a$? 
 
 > 📌 **Exit ticket**
 >
 > Explain why Cl- does not act as a base in water but F- does.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## The pH Scale and Strong Acids and Bases Zumdahl §14.3–14.4, 14.6
 
@@ -157,11 +154,11 @@ acid's $K_a = 1.8\times10^{-5}$ gives pK$_a = 4.74$.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Conjugate base of HF: **\_\_\_\_\_\_**
+> 1. Conjugate base of HF: F-
 > 2. Larger $K_a$ means the acid is:
->    **\_\_\_\_\_\_**
+>    stronger
 > 3. Brønsted–Lowry base definition:
->    **\_\_\_\_\_\_**
+>    proton acceptor
 
 #### INSTRUCTION A • Water ionizes too 25 min
 
@@ -171,19 +168,19 @@ acid's $K_a = 1.8\times10^{-5}$ gives pK$_a = 4.74$.
 
 Water is amphoteric — it acts as both acid and base with itself:
 2 H₂O(l) ⇌ H₃O+(aq) + OH⁻(aq)
-$K_w = [\text{H+}][\text{OH-}] =$ **\_\_\_\_\_\_** $\quad\text{at 25\,\mathrm{{}^\circ C}}$
+$K_w = [\text{H+}][\text{OH-}] =$ $1.0\times10^{-14}$ $\quad\text{at 25\,\mathrm{{}^\circ C}}$
 
 In *any* aqueous solution at 25 °C, the product of
 $[\text{H+}]$ and $[\text{OH-}]$ equals $K_w$ — so knowing one gives the
 other.
 
-$\mathrm{pH} =$ **\_\_\_\_\_\_** $\qquad   \mathrm{pOH} =$ **\_\_\_\_\_\_** $\qquad   \mathrm{pH} + \mathrm{pOH} =$ **\_\_\_\_\_\_**
+$\mathrm{pH} =$ $-\log[\text{H+}]$ $\qquad   \mathrm{pOH} =$ $-\log[\text{OH-}]$ $\qquad   \mathrm{pH} + \mathrm{pOH} =$ 14.00
 
 | **Solution** | **$[\text{H+}]$ vs $[\text{OH-}]$** | **pH at 25 | thinsp; | deg;C** |
 |---|---|---|---|---|
-| Acidic | $[\text{H+}] > [\text{OH-}]$ | **\_\_\_\_\_\_** |
-| Neutral | $[\text{H+}] = [\text{OH-}]$ | **\_\_\_\_\_\_** |
-| Basic | $[\text{H+}]  ⚠️ **AP trap**
+| Acidic | $[\text{H+}] > [\text{OH-}]$ | $7$ |
+
+> ⚠️ **AP trap**
 >
 > “Neutral means pH 7” is true *only at* 25 °C. $K_w$
 > increases with temperature, so at 50 °C pure water has a pH
@@ -192,18 +189,18 @@ $\mathrm{pH} =$ **\_\_\_\_\_\_** $\qquad   \mathrm{pOH} =$ **\_\_\_\_\_\_** $\qq
 
 #### The scale is logarithmic
 
-A change of one pH unit is a factor of **\_\_\_\_\_\_** in
-$[\text{H+}]$. pH 3 is **\_\_\_\_\_\_** times more acidic than pH 5 —
+A change of one pH unit is a factor of 10 in
+$[\text{H+}]$. pH 3 is 100 times more acidic than pH 5 —
 not 40% more.
 
 #### GUIDED PRACTICE • pH arithmetic 15 min
 
-1. $[\text{H+}] = 1.0\times10^{-4}$: pH $=$ **\_\_\_\_\_\_**
+1. $[\text{H+}] = 1.0\times10^{-4}$: pH $=$ 4.00
 2. pH $= 9.00$: $[\text{H+}] =$
-   **\_\_\_\_\_\_**
-3. pH $= 3.00$: pOH $=$ **\_\_\_\_\_\_**
+   $1.0\times10^{-9}$
+3. pH $= 3.00$: pOH $=$ 11.00
 4. $[\text{OH-}] = 1.0\times10^{-2}$: pH $=$
-   **\_\_\_\_\_\_**
+   12.00
 
 #### INSTRUCTION B • Strong acids and bases 20 min
 
@@ -212,7 +209,7 @@ not 40% more.
 `SP 5`
 
 For a *strong* acid, ionization is complete, so
-$[\text{H+}]$ simply equals the **\_\_\_\_\_\_**. No
+$[\text{H+}]$ simply equals the acid concentration. No
 equilibrium calculation is needed.
 
 There are only **six strong acids**, and they are worth memorizing
@@ -246,22 +243,19 @@ Ba(OH)₂.
 #### APPLICATION • Strong acid/base calculations 20 min
 
 1. pH of 0.0025 M HNO₃:
-   **\_\_\_\_\_\_**
+   2.60
 2. pH of 0.050 M KOH:
-   **\_\_\_\_\_\_**
+   12.70
 3. pH of 0.0050 M Ca(OH)₂: 
    *(working space)*
 4. A student computes pH $= 12.00$ for problem 3 by using
    $[\text{OH-}] = 0.0050$. Do they get the right answer by the right
-   method?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   method? 
 
 > 📌 **Exit ticket**
 >
 > Why does a strong acid problem need no ICE table while a weak acid problem
-> does? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> does?
 
 ## Weak Acids Zumdahl §14.5
 
@@ -275,11 +269,11 @@ Ba(OH)₂.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $K_w$ at 25 °C: **\_\_\_\_\_\_**
-> 2. pH of 0.10 M HCl: **\_\_\_\_\_\_**
-> 3. pH $+$ pOH $=$ **\_\_\_\_\_\_**
+> 1. $K_w$ at 25 °C: $1.0\times10^{-14}$
+> 2. pH of 0.10 M HCl: 1.00
+> 3. pH $+$ pOH $=$ 14.00
 > 4. $K_a$ expression for HA:
->    **\_\_\_\_\_\_**
+>    $[\text{H+}][\text{A⁻}]/[\text{HA}]$
 
 #### INSTRUCTION A • A weak acid is an equilibrium problem 25 min
 
@@ -293,10 +287,10 @@ place of $K$.
 |  | HA | H+ | A⁻ |
 |---|---|---|---|
 | **Initial** | $C_0$ | $\approx 0$ | 0 |
-| **Change** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| **Equilibrium** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| **Change** | $-x$ | $+x$ | $+x$ |
+| **Equilibrium** | $C_0-x$ | $x$ | $x$ |
 
-$K_a = \frac{x^2}{C_0 - x} \approx \frac{x^2}{C_0}   \qquad\Rightarrow\qquad   x = [\text{H+}] \approx$ **\_\_\_\_\_\_**
+$K_a = \frac{x^2}{C_0 - x} \approx \frac{x^2}{C_0}   \qquad\Rightarrow\qquad   x = [\text{H+}] \approx$ $\sqrt{K_a C_0}$
 
 > 📘 **Worked example: acetic acid**
 >
@@ -327,13 +321,13 @@ Find the pH of 0.250 M HF, $K_a = 7.2\times10^{-4}$.
 
 `SP 5`
 
-$\%\ \text{dissociation} =$ **\_\_\_\_\_\_**
+$\%\ \text{dissociation} =$ $\dfrac{[\text{H+}]_{\text{eq}}}{[\text{HA}]_0} \times 100\%$
 
 > 📌 **Note**
 >
 > A result worth understanding rather than memorizing: for a given weak acid,
 > percent dissociation *increases* as the solution is
-> **\_\_\_\_\_\_**. Since $x \approx \sqrt{K_aC_0}$, the
+> diluted. Since $x \approx \sqrt{K_aC_0}$, the
 > dissociation $x$ falls only as the *square root* of concentration while
 > $C_0$ falls linearly — so their ratio grows.
 > 
@@ -345,19 +339,16 @@ $\%\ \text{dissociation} =$ **\_\_\_\_\_\_**
 
 1. Compute the percent dissociation of 0.100 M acetic acid
    using the worked example above.
-   **\_\_\_\_\_\_**
+   1.34%
 2. For 0.0100 M acetic acid, $[\text{H+}] =         4.24\times10^{-4}$. Compute the percent dissociation and compare.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Which solution has the lower pH, and does that contradict your
-   answer to (b)?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   answer to (b)? 
 
 > 📌 **Exit ticket**
 >
 > A 0.10 M solution of a weak acid has pH 4.0. Calculate its
-> $K_a$. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> $K_a$.
 
 ## Weak Bases and Polyprotic Acids Zumdahl §14.6–14.7
 
@@ -371,11 +362,11 @@ $\%\ \text{dissociation} =$ **\_\_\_\_\_\_**
 > 📌 **Retrieval warm-up**
 >
 > 1. pH of 0.100 M acetic acid ($K_a = 1.8\times10^{-5}$):
->    **\_\_\_\_\_\_**
+>    2.87
 > 2. Percent dissociation formula:
->    **\_\_\_\_\_\_**
+>    $[\text{H+}]/[\text{HA}]_0 \times 100$
 > 3. Does diluting a weak acid raise or lower percent dissociation?
->    **\_\_\_\_\_\_**
+>    raise
 
 #### INSTRUCTION A • Weak bases 25 min
 
@@ -383,7 +374,7 @@ $\%\ \text{dissociation} =$ **\_\_\_\_\_\_**
 
 `SP 5`
 
-$\text{B(aq) + H₂O(l) ⇌ BH+(aq) + OH⁻(aq)}   \qquad   K_b =$ **\_\_\_\_\_\_**
+$\text{B(aq) + H₂O(l) ⇌ BH+(aq) + OH⁻(aq)}   \qquad   K_b =$ $\dfrac{[\text{BH+}][\text{OH-}]}{[\text{B}]}$
 
 The ICE method is identical to the weak acid case — but it produces
 $[\text{OH-}]$, so you must convert through pOH at the end.
@@ -407,7 +398,7 @@ $[\text{OH-}]$, so you must convert through pOH at the end.
 #### The conjugate relationship
 
 For any conjugate acid–base pair:
-$K_a \times K_b =$ **\_\_\_\_\_\_** $= 1.0\times10^{-14}$
+$K_a \times K_b =$ $K_w$ $= 1.0\times10^{-14}$
 
 > 📘 **Worked example: acetate**
 >
@@ -421,12 +412,12 @@ $K_a \times K_b =$ **\_\_\_\_\_\_** $= 1.0\times10^{-14}$
 #### GUIDED PRACTICE • Conjugate constants 15 min
 
 1. $K_b$ for F-, given $K_a(\text{HF}) = 7.2\times10^{-4}$:
-   **\_\_\_\_\_\_**
+   $1.4\times10^{-11}$
 2. $K_a$ for NH₄+, given $K_b(\text{NH₃}) = 1.8\times10^{-5}$:
-   **\_\_\_\_\_\_**
+   $5.6\times10^{-10}$
 3. Which is the stronger base, F- or CN-
    ($K_a(\text{HCN}) = 6.2\times10^{-10}$)?
-   **\_\_\_\_\_\_**
+   CN-
 
 #### INSTRUCTION B • Polyprotic acids 20 min
 
@@ -440,9 +431,9 @@ $$ \text{H₃PO₄} \xrightarrow{K_{a1}} \text{H₂PO₄⁻}   \xrightarrow{K_{a
 
 $$ K_{a1} = 7.5\times10^{-3} \gg K_{a2} = 6.2\times10^{-8}   \gg K_{a3} = 4.8\times10^{-13} $$
 
-Each successive constant is roughly **\_\_\_\_\_\_** times
+Each successive constant is roughly $10^5$ times
 smaller. The reason is electrostatic: pulling a positive proton away from an
-increasingly **\_\_\_\_\_\_** anion gets progressively harder.
+increasingly negative anion gets progressively harder.
 
 > 📌 **Note**
 >
@@ -462,22 +453,22 @@ Find the pH of 0.200 M NH₃
 
 *(working space)*
 
+        
+
 Find the pH of 0.100 M H₃PO₄, using
         $K_{a1} = 7.5\times10^{-3}$ only. 
 
 *(working space)*
 
-Justify ignoring $K_{a2}$ in problem 2.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Justify ignoring $K_{a2}$ in problem 2.
+        
 
 > 📌 **Exit ticket**
 >
 > Given $K_a$ for a weak acid, how do you find $K_b$ for its conjugate base,
-> and why does the relationship hold? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> and why does the relationship hold?
 
 ## Salts and Molecular Structure Zumdahl §14.8–14.9
 
@@ -490,10 +481,10 @@ Justify ignoring $K_{a2}$ in problem 2.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $K_aK_b =$ **\_\_\_\_\_\_**
-> 2. pH of 0.100 M NH₃: **\_\_\_\_\_\_**
+> 1. $K_aK_b =$ $K_w$
+> 2. pH of 0.100 M NH₃: 11.13
 > 3. Which ionization of a polyprotic acid dominates?
->    **\_\_\_\_\_\_**
+>    the first
 
 #### INSTRUCTION A • Salt solutions are rarely neutral 25 min
 
@@ -506,9 +497,9 @@ basic depends on whether either ion reacts with water.
 
 | **Cation from** | **Anion from** | **Solution** | **Example** |
 |---|---|---|---|
-| strong base | strong acid | **\_\_\_\_\_\_** | NaCl |
-| strong base | weak acid | **\_\_\_\_\_\_** | NaC₂H₃O₂ |
-| weak base | strong acid | **\_\_\_\_\_\_** | NH₄Cl |
+| strong base | strong acid | neutral | NaCl |
+| strong base | weak acid | basic | NaC₂H₃O₂ |
+| weak base | strong acid | acidic | NH₄Cl |
 | weak base | weak acid | compare $K_a$ and $K_b$ | NH₄C₂H₃O₂ |
 
 The logic is entirely conjugate-pair reasoning: an anion derived from a
@@ -531,13 +522,13 @@ is not.
 
 #### GUIDED PRACTICE • Classify the salts 15 min
 
-KNO₃: **\_\_\_\_\_\_**
+KNO₃: neutral (strong/strong)
 
-NH₄Br: **\_\_\_\_\_\_**
+NH₄Br: acidic (NH₄+ hydrolyses)
 
-NaCN: **\_\_\_\_\_\_**
+NaCN: basic (CN- hydrolyses)
 
-KC₂H₃O₂: **\_\_\_\_\_\_**
+KC₂H₃O₂: basic
 
 #### INSTRUCTION B • Why some acids are stronger 20 min
 
@@ -557,7 +548,7 @@ Down a group, HF $ ⚠️ **AP trap**
 #### Oxyacids: count the oxygens
 
 For the same central atom, more oxygens means a
-**\_\_\_\_\_\_** acid:
+stronger acid:
 
 $$ \text{HClO} 
 
@@ -565,18 +556,12 @@ Rank by increasing acid strength and give the reason:
         H₂SO₃, H₂SO₄.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Predict whether 0.10 M NH₄NO₃ is acidic, basic, or
         neutral, and justify from both ions.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Explain why NaCl solutions are neutral in conjugate-pair terms.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **ENRICHMENT — beyond the CED**
 >
@@ -590,9 +575,7 @@ Explain why NaCl solutions are neutral in conjugate-pair terms.
 > 📌 **Exit ticket**
 >
 > Explain why a solution of NaC₂H₃O₂ is basic even though it contains no
-> hydroxide ion initially. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> hydroxide ion initially.
 
 ---
 

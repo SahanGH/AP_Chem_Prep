@@ -15,52 +15,48 @@ Zumdahl §5.1–5.3 • kelvin before you substitute, every time
 
 **1.** Pressure conversions:
 
-1. 1.25 atm to torr: **\_\_\_\_\_\_**
-2. 608 mmHg to atm: **\_\_\_\_\_\_**
-3. 50.66 kPa to atm: **\_\_\_\_\_\_**
-4. 3.00 atm to kPa: **\_\_\_\_\_\_**
+1. 1.25 atm to torr: 950. torr
+2. 608 mmHg to atm: 0.800 atm
+3. 50.66 kPa to atm: 0.5000 atm
+4. 3.00 atm to kPa: 304 kPa
 
 **2.** Explain why a sealed metal can collapses when the steam inside it
 condenses. Refer to what is pushing in which direction.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **3.** Single-variable gas laws:
 
 1. 2.00 L at 3.00 atm expands to 6.00 L at
-   constant $T$. New pressure: **\_\_\_\_\_\_**
+   constant $T$. New pressure: 1.00 atm
 2. 500. mL at 250. K is heated to
    400. K at constant $P$. New volume:
-   **\_\_\_\_\_\_**
+   800. mL
 3. 1.50 L holding 0.200 mol is expanded to
    4.50 L at constant $T$ and $P$. Moles now present:
-   **\_\_\_\_\_\_**
+   0.600 mol
 
 **4.** A student heats a gas from 20 °C to
 40 °C and predicts the volume will double. Explain the error and
 give the correct factor. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **5.** Ideal gas law calculations:
 
 1. Volume of 1.50 mol at 2.00 atm and
-   350. K: **\_\_\_\_\_\_**
+   350. K: 21.5 L
 2. Moles in 4.00 L at 760 torr and
-   27 °C: **\_\_\_\_\_\_**
+   27 °C: 0.163 mol
 3. Pressure of 0.500 mol in 12.0 L at
-   100. °C: **\_\_\_\_\_\_**
+   100. °C: 1.28 atm
 4. Temperature at which 2.00 mol occupies 50.0 L at
-   1.00 atm: **\_\_\_\_\_\_**
+   1.00 atm: 305 K
 
 **6.** Density and molar mass:
 
 1. Density of N₂ at STP:
-   **\_\_\_\_\_\_**
+   1.25 g/L
 2. A gas has density 2.86 g/L at STP. Its molar mass
-   is: **\_\_\_\_\_\_**
+   is: 64.1 g/mol
 3. Suggest an identity for that gas.
-   **\_\_\_\_\_\_**
+   SO₂ (64.07)
 4. A 1.00 g sample occupies 0.500 L at
    1.00 atm and 273 K. Molar mass?
    *(working space)*
@@ -69,17 +65,15 @@ give the correct factor.
 no further information, while “the density of liquid water” is a useful
 figure? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Spiral review • Chapters 3–4 • spiral**
 >
-> 1. Moles in 88.0 g CO₂: **\_\_\_\_\_\_**
+> 1. Moles in 88.0 g CO₂: 2.00 mol
 > 2. Net ionic for Ag+ with Cl-:
->    **\_\_\_\_\_\_**
-> 3. Oxidation state of S in SO₄²⁻: **\_\_\_\_\_\_**
+>    Ag+ + Cl⁻ → AgCl(s)
+> 3. Oxidation state of S in SO₄²⁻: $+6$
 > 4. Limiting reactant determines what?
->    **\_\_\_\_\_\_**
-> 5. Name Fe(NO₃)₃: **\_\_\_\_\_\_**
+>    theoretical yield
+> 5. Name Fe(NO₃)₃: iron(III) nitrate
 
 ---
 

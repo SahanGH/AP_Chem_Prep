@@ -20,7 +20,7 @@ Zumdahl §5.4–5.5 • the molar-volume shortcut works ONLY at STP
    1.00 atm:
    *(working space)*
 3. Explain why (b) is larger than (a).
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **2.** CaCO₃(s) → CaO(s) + CO₂(g). What mass of CaCO₃
 ($M = 100.09$) is needed to produce 11.2 L of CO₂ at STP?
@@ -31,54 +31,52 @@ Zumdahl §5.4–5.5 • the molar-volume shortcut works ONLY at STP
 temperature and pressure.
 
 1. Volume of H₂ needed to react with 12.0 L N₂:
-   **\_\_\_\_\_\_**
-2. Volume of NH₃ produced: **\_\_\_\_\_\_**
+   36.0 L
+2. Volume of NH₃ produced: 24.0 L
 3. Explain why you can work entirely in volumes here without ever
-   computing moles.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   computing moles. 
 
 **4.** 6.00 L of H₂ and 2.00 L of O₂,
 both at 1.00 atm and 298 K, react completely.
 
 1. Balanced equation:
-   **\_\_\_\_\_\_**
+   2 H₂ + O₂ → 2 H₂O
 2. Limiting reactant, using volumes: 
    *(working space)*
-3. Volume of H₂ left over: **\_\_\_\_\_\_**
+3. Volume of H₂ left over: 2.00 L
 
 **5.** A 5.00 L vessel at 300. K holds
 0.150 mol N₂, 0.250 mol O₂, and
 0.100 mol CO₂.
 
-1. Total pressure: **\_\_\_\_\_\_**
-2. Mole fraction of O₂: **\_\_\_\_\_\_**
-3. Partial pressure of O₂: **\_\_\_\_\_\_**
+1. Total pressure: 2.46 atm
+2. Mole fraction of O₂: 0.500
+3. Partial pressure of O₂: 1.23 atm
 4. If the CO₂ were removed at constant $T$ and $V$, what happens
-   to $P_{\text{N₂}}$?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   to $P_{\text{N₂}}$? 
 
 **6.** Hydrogen is collected over water at 20 °C. The total
 pressure is 738 torr, the volume 0.400 L. The vapour
 pressure of water at 20 °C is 17.5 torr.
 
 1. Partial pressure of H₂ in torr and atm:
-   **\_\_\_\_\_\_**
+   720.5 torr $=$ 0.9480 atm
 2. Moles of H₂ collected: 
    *(working space)*
 3. A student forgets the water-vapour correction. Is their answer too
    high or too low, and by roughly what percentage?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Spiral review • Chapter 5 • blocks 1–2**
 >
-> 1. Molar volume at STP: **\_\_\_\_\_\_**
-> 2. 2.00 atm in torr: **\_\_\_\_\_\_**
+> 1. Molar volume at STP: 22.42 L
+> 2. 2.00 atm in torr: 1520 torr
 > 3. Density of He at STP:
->    **\_\_\_\_\_\_**
+>    0.179 g/L
 > 4. $M$ from $d = 1.96\,\mathrm{g/L}$ at STP:
->    **\_\_\_\_\_\_**
+>    43.9 g/mol
 > 5. Boyle's law holds which variables constant?
->    **\_\_\_\_\_\_**
+>    $n$ and $T$
 
 ---
 

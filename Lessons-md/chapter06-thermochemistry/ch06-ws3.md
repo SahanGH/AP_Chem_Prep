@@ -24,12 +24,11 @@ Zumdahl §6.4 • products minus reactants, each times its coefficient
 **1.** Definitions:
 
 1. Define standard enthalpy of formation precisely.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Why is $\Delta H^\circ_f$ of O₂(g) zero, while that of
-   O₃(g) is not?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   O₃(g) is not? 
 3. Write the formation equation for NO₂(g).
-   **\_\_\_\_\_\_**
+   1/2 N₂(g) + O₂(g) → NO₂(g)
 
 **2.** Compute $\Delta H^\circ$ for each reaction:
 
@@ -56,14 +55,13 @@ $$ \text{N₂H₄(l) + O₂(g) → N₂(g) + 2 H₂O(l)} \qquad \Delta H^\circ =
    determine $\Delta H^\circ_f$ for N₂H₄(l).
    *(working space)*
 2. Explain what the sign of your answer means about hydrazine.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Calculate the heat released when 32.0 g of N₂H₄
    ($M = 32.05\,\mathrm{g/mol}$) burns completely.
    *(working space)*
 4. If the reaction instead produced *gaseous* water, would the
    magnitude of $\Delta H^\circ$ be larger or smaller? Justify
-   quantitatively.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   quantitatively. 
 5. The combustion is run in a coffee-cup calorimeter containing
    500.0 g of water initially at 25.0 °C. If
    0.0500 mol of hydrazine burns and all the heat is absorbed
@@ -83,13 +81,13 @@ $$ \text{N₂H₄(l) + O₂(g) → N₂(g) + 2 H₂O(l)} \qquad \Delta H^\circ =
 > 📌 **Spiral review • Chapter 6 • blocks 1–3**
 >
 > 1. $\Delta H$ for the reverse of a $-200$ kJ reaction:
->    **\_\_\_\_\_\_**
+>    $+200$ kJ
 > 2. Hess's law works because $H$ is a:
->    **\_\_\_\_\_\_**
-> 3. $\Delta H^\circ_f$ of Fe(s): **\_\_\_\_\_\_**
+>    state function
+> 3. $\Delta H^\circ_f$ of Fe(s): 0
 > 4. $q$ for 200. g water warmed 3.00 °C:
->    **\_\_\_\_\_\_**
-> 5. Exothermic means $\Delta H$ is: **\_\_\_\_\_\_**
+>    2510 J
+> 5. Exothermic means $\Delta H$ is: negative
 
 ---
 

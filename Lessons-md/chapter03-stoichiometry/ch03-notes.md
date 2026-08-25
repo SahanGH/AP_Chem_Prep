@@ -27,9 +27,9 @@ Zumdahl §3.1–3.11 • PDF pp. 110–167 • 4 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Neutrons in ⁶⁵Cu: **\_\_\_\_\_\_**
-> 2. Formula for calcium phosphate: **\_\_\_\_\_\_**
-> 3. Sig figs in 0.03060 g: **\_\_\_\_\_\_**
+> 1. Neutrons in ⁶⁵Cu: 36
+> 2. Formula for calcium phosphate: Ca₃(PO₄)₂
+> 3. Sig figs in 0.03060 g: 4
 
 #### INSTRUCTION A • The mole and molar mass 25 min
 
@@ -38,19 +38,19 @@ Zumdahl §3.1–3.11 • PDF pp. 110–167 • 4 blocks
 `SP 5`
 
 You cannot count atoms individually, so you count them the way a bank counts
-pennies — by **\_\_\_\_\_\_**. That requires knowing the
+pennies — by weighing. That requires knowing the
 average mass of one particle, which is what the periodic table gives you.
 
 The mole is a counting unit:
-$1\ \text{mol} =$ **\_\_\_\_\_\_** $\qquad (N_A,\ \text{Avogadro's number})$
+$1\ \text{mol} =$ $6.022\times10^{23}$ particles $\qquad (N_A,\ \text{Avogadro's number})$
 
 #### Atomic mass is a weighted average
 
 Because elements are mixtures of isotopes, the tabulated mass is
-$\bar m =$ **\_\_\_\_\_\_**
+$\bar m =$ $\sum(\text{fractional abundance}\times\text{mass})$
 
 ⁶³Cu (62.93 u, 69.15%) and ⁶⁵Cu (64.93 u, 30.85%) give
-**\_\_\_\_\_\_** — closer to 63 because that isotope
+63.55 u — closer to 63 because that isotope
 dominates.
 
 #### Molar mass
@@ -59,7 +59,7 @@ The molar mass $M$ in g/mol is numerically the atomic
 (or formula) mass. Build it by summing:
 
 Ca(NO₃)₂: $40.08 + 2(14.01) + 6(16.00) =$
-**\_\_\_\_\_\_**
+164.10 g/mol
 
 > ⚠️ **AP trap**
 >
@@ -70,13 +70,13 @@ Ca(NO₃)₂: $40.08 + 2(14.01) + 6(16.00) =$
 #### GUIDED PRACTICE • Conversions in both directions 15 min
 
 1. Moles in 36.0 g of H₂O:
-   **\_\_\_\_\_\_**
+   2.00 mol
 2. Mass of 0.500 mol of NaCl:
-   **\_\_\_\_\_\_**
+   29.2 g
 3. Molecules in 2.00 mol of CO₂:
-   **\_\_\_\_\_\_**
+   $1.20\times10^{24}$
 4. Moles of O atoms in 1.00 mol of Ca(NO₃)₂:
-   **\_\_\_\_\_\_**
+   6.00 mol
 
 #### INSTRUCTION B • Solving problems systematically 20 min
 
@@ -108,9 +108,7 @@ we know*. Then build the path.
 > 📌 **Exit ticket**
 >
 > Which contains more atoms: 10.0 g of He or 10.0 g of Ne?
-> Justify without a calculator. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Justify without a calculator.
 
 ## Formulas from Composition Data Zumdahl §3.6–3.7
 
@@ -125,10 +123,10 @@ we know*. Then build the path.
 > 📌 **Retrieval warm-up**
 >
 > 1. Molar mass of (NH₄)₂SO₄:
->    **\_\_\_\_\_\_**
-> 2. Moles in 4.4 g CO₂: **\_\_\_\_\_\_**
-> 3. Atoms in 0.25 mol Fe: **\_\_\_\_\_\_**
-> 4. Mass of 2.0 mol O₂: **\_\_\_\_\_\_**
+>    132.15 g/mol
+> 2. Moles in 4.4 g CO₂: 0.10 mol
+> 3. Atoms in 0.25 mol Fe: $1.5\times10^{23}$
+> 4. Mass of 2.0 mol O₂: 64 g
 
 #### INSTRUCTION A • Percent composition 25 min
 
@@ -136,20 +134,20 @@ we know*. Then build the path.
 
 `SP 5`
 
-$\%\ \text{element} =$ **\_\_\_\_\_\_**
+$\%\ \text{element} =$ $\dfrac{\text{mass of that element in 1 mol}}{\text{molar mass}}\times100\%$
 
 C₂H₅OH ($M = 46.07$): $\%\,\text{C} = \dfrac{24.02}{46.07}\times100 =$
-**\_\_\_\_\_\_**
+52.14%
 
 A useful check: the percentages must total
-**\_\_\_\_\_\_**.
+100%.
 
 #### GUIDED PRACTICE • Percent composition drill 15 min
 
-1. $\%\,\text{N}$ in NH₃: **\_\_\_\_\_\_**
-2. $\%\,\text{O}$ in H₂SO₄: **\_\_\_\_\_\_**
+1. $\%\,\text{N}$ in NH₃: 82.2%
+2. $\%\,\text{O}$ in H₂SO₄: 65.25%
 3. Mass of Fe in 100.0 g of Fe₂O₃:
-   **\_\_\_\_\_\_**
+   69.94 g
 
 #### INSTRUCTION B • Empirical and molecular formulas 20 min
 
@@ -157,11 +155,11 @@ A useful check: the percentages must total
 
 `SP 5`
 
-1. Assume **\_\_\_\_\_\_** — percents become grams.
-2. Convert each mass to **\_\_\_\_\_\_**.
-3. Divide all by the **\_\_\_\_\_\_**.
+1. Assume 100 g — percents become grams.
+2. Convert each mass to moles.
+3. Divide all by the smallest.
 4. Not whole numbers? Multiply all by a small
-   **\_\_\_\_\_\_**.
+   integer.
 
 > 📘 **Worked example: a phosphorus oxide**
 >
@@ -181,7 +179,7 @@ A useful check: the percentages must total
 
 #### Molecular from empirical
 
-$\text{multiplier} =$ **\_\_\_\_\_\_**
+$\text{multiplier} =$ $\dfrac{\text{molar mass}}{\text{empirical formula mass}}$
 
 #### APPLICATION • Combustion analysis 20 min
 
@@ -193,11 +191,11 @@ to give 0.1466 g CO₂ and 0.0600 g H₂O. Its
 molar mass is 60.05 g/mol.
 
 1. Mass of C (all of it came from the CO₂):
-   **\_\_\_\_\_\_**
+   0.0400 g
 2. Mass of H (from the H₂O):
-   **\_\_\_\_\_\_**
+   0.00671 g
 3. Mass of O — explain why it must be found *by difference*.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 4. Empirical and molecular formulas: 
    *(working space)*
 
@@ -205,8 +203,6 @@ molar mass is 60.05 g/mol.
 >
 > A compound is 40.0% C, 6.7% H, 53.3% O with molar mass
 > 180 g/mol. Find both formulas.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Equations and Mass Relationships Zumdahl §3.8–3.10
 
@@ -219,9 +215,9 @@ molar mass is 60.05 g/mol.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Empirical formula of C₆H₁₂O₆: **\_\_\_\_\_\_**
-> 2. $\%\,\text{H}$ in CH₄: **\_\_\_\_\_\_**
-> 3. Moles in 9.0 g Al: **\_\_\_\_\_\_**
+> 1. Empirical formula of C₆H₁₂O₆: CH₂O
+> 2. $\%\,\text{H}$ in CH₄: 25.1%
+> 3. Moles in 9.0 g Al: 0.33 mol
 
 #### INSTRUCTION A • Balancing and what it means 25 min
 
@@ -230,15 +226,15 @@ molar mass is 60.05 g/mol.
 `SP 1`
 
 A balanced equation expresses conservation of
-**\_\_\_\_\_\_** (hence mass). You may change
-**\_\_\_\_\_\_** but never
-**\_\_\_\_\_\_** — changing a subscript changes the
+atoms (hence mass). You may change
+coefficients but never
+subscripts — changing a subscript changes the
 substance.
 
 #### Coefficients are mole ratios
 
 2 H₂ + O₂ → 2 H₂O reads: 2 mol H₂ react with
-**\_\_\_\_\_\_** mol O₂ to give **\_\_\_\_\_\_** mol
+1 mol O₂ to give 2 mol
 H₂O. It does *not* say 2 grams.
 
 > 📘 **Worked example: combustion of propane**
@@ -255,24 +251,24 @@ H₂O. It does *not* say 2 grams.
 Balance these:
 
 1. Fe + O₂ → Fe₂O₃:
-   **\_\_\_\_\_\_**
+   4 Fe + 3 O₂ → 2 Fe₂O₃
 2. Al + HCl → AlCl₃ + H₂:
-   **\_\_\_\_\_\_**
+   2 Al + 6 HCl → 2 AlCl₃ + 3 H₂
 3. C₂H₆ + O₂ → CO₂ + H₂O:
-   **\_\_\_\_\_\_**
+   2 C₂H₆ + 7 O₂ → 4 CO₂ + 6 H₂O
 
 #### GUIDED PRACTICE • Mole-ratio reasoning 15 min
 
 For N₂ + 3 H₂ → 2 NH₃:
 
 Moles of H₂ needed for 2.0 mol N₂:
-        **\_\_\_\_\_\_**
+        6.0 mol
 
 Moles of NH₃ from 0.50 mol N₂:
-        **\_\_\_\_\_\_**
+        1.0 mol
 
 Moles of N₂ needed for 5.0 mol NH₃:
-        **\_\_\_\_\_\_**
+        2.5 mol
 
 #### INSTRUCTION B • The mass-to-mass road 20 min
 
@@ -283,7 +279,7 @@ Moles of N₂ needed for 5.0 mol NH₃:
 ![figure](fig-ch03-notes-1.png)
 
 The middle arrow is the only step that uses the
-**\_\_\_\_\_\_**. Everything else is molar mass.
+balanced equation. Everything else is molar mass.
 
 > 📘 **Worked example: mass to mass**
 >
@@ -300,21 +296,21 @@ Mass of AlCl₃ from 5.40 g Al (excess Cl₂):
 
 *(working space)*
 
+        
+
 Mass of Cl₂ consumed: 
 
 *(working space)*
 
-Check your two answers against conservation of mass.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Check your two answers against conservation of mass.
+        
 
 > 📌 **Exit ticket**
 >
 > Why can't you convert grams of A directly to grams of B using the
-> coefficients? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> coefficients?
 
 ## Limiting Reactant and Percent Yield Zumdahl §3.11
 
@@ -329,11 +325,11 @@ Check your two answers against conservation of mass.
 > 📌 **Retrieval warm-up**
 >
 > 1. Balance: H₂ + O₂ → H₂O:
->    **\_\_\_\_\_\_**
-> 2. Moles in 28.0 g N₂: **\_\_\_\_\_\_**
+>    2 H₂ + O₂ → 2 H₂O
+> 2. Moles in 28.0 g N₂: 1.00 mol
 > 3. Mole ratio O₂:CO₂ in C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O:
->    **\_\_\_\_\_\_**
-> 4. Molar mass of NH₃: **\_\_\_\_\_\_**
+>    $5{:}3$
+> 4. Molar mass of NH₃: 17.03 g/mol
 
 #### INSTRUCTION A • The sandwich problem 25 min
 
@@ -343,8 +339,8 @@ Check your two answers against conservation of mass.
 
 Zumdahl's analogy: with 8 slices of bread, 9 slices of meat, and 5 slices of
 cheese, and a sandwich needing 2 bread $+$ 3 meat $+$ 1 cheese, you can make
-**\_\_\_\_\_\_** sandwiches. The
-**\_\_\_\_\_\_** runs out first — even though you started with
+3 sandwiches. The
+meat runs out first — even though you started with
 *more* of it than anything else.
 
 > 📌 **Note**
@@ -355,7 +351,7 @@ cheese, and a sandwich needing 2 bread $+$ 3 meat $+$ 1 cheese, you can make
 
 #### Method: compare moles of product each reactant could make
 
-Whichever reactant yields **\_\_\_\_\_\_** product is limiting, and
+Whichever reactant yields less product is limiting, and
 that smaller number is the theoretical yield.
 
 > 📘 **Worked example: ammonia synthesis**
@@ -378,11 +374,11 @@ For N₂ + 3 H₂ → 2 NH₃ starting with 5 mol N₂ and 9 mol H₂:
 |  | N₂ | 3 H₂ | 2 NH₃ |
 |---|---|---|---|
 | **Before** | 5 | 9 | 0 |
-| **Change** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| **After** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| **Change** | $-3$ | $-9$ | $+6$ |
+| **After** | 2 | 0 | 6 |
 
 The limiting reactant is the one whose **After** value is
-**\_\_\_\_\_\_** — here, **\_\_\_\_\_\_**.
+zero — here, H₂.
 
 #### INSTRUCTION B • Percent yield 20 min
 
@@ -390,10 +386,10 @@ The limiting reactant is the one whose **After** value is
 
 `SP 5`
 
-$\%\ \text{yield} =$ **\_\_\_\_\_\_**
+$\%\ \text{yield} =$ $\dfrac{\text{actual yield}}{\text{theoretical yield}}\times100\%$
 
 Real yields fall short because of side reactions, incomplete reaction, and
-losses during **\_\_\_\_\_\_**.
+losses during transfer/purification.
 
 > ⚠️ **AP trap**
 >
@@ -411,26 +407,32 @@ Identify the limiting reactant.
 
 *(working space)*
 
+        
+
 Theoretical yield of FeS: 
 
 *(working space)*
 
+        
+
 Mass of excess reactant remaining: 
 
 *(working space)*
+
+        
 
 If 20.1 g FeS is actually isolated, find the percent
         yield. 
 
 *(working space)*
 
+        
+
 > 📌 **Exit ticket**
 >
 > A student computes theoretical yield from the excess reactant and gets a
 > percent yield of 68%. Is the true percent yield higher or lower than 68%?
-> Explain. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Explain.
 
 ---
 

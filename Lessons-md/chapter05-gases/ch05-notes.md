@@ -33,10 +33,10 @@ Zumdahl §5.1–5.9 • PDF pp. 226–281 • 5 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Convert 25 °C to kelvin: **\_\_\_\_\_\_**
-> 2. Moles in 32.0 g O₂: **\_\_\_\_\_\_**
+> 1. Convert 25 °C to kelvin: 298 K
+> 2. Moles in 32.0 g O₂: 1.00 mol
 > 3. KMT: average kinetic energy depends only on:
->    **\_\_\_\_\_\_**
+>    temperature
 
 #### INSTRUCTION A • What pressure is, and how we measure it 25 min
 
@@ -44,17 +44,18 @@ Zumdahl §5.1–5.9 • PDF pp. 226–281 • 5 blocks
 
 `SP 1`
 
-Pressure is **\_\_\_\_\_\_**. For a gas it arises
+Pressure is force per unit area. For a gas it arises
 from countless particle collisions with the container walls — each
 collision is tiny, but there are on the order of $10^{23}$ particles.
 
-Atmospheric pressure is literally the **\_\_\_\_\_\_** above you, which is why it falls with altitude.
+Atmospheric pressure is literally the weight of the
+air above you, which is why it falls with altitude.
 
 #### Torricelli's barometer
 
 Invented in 1643: a tube of mercury inverted in a dish. Atmospheric pressure
 pushing down on the dish holds the column up. At sea level the column
-averages **\_\_\_\_\_\_** of mercury.
+averages 760 mm of mercury.
 
 > 📌 **Note**
 >
@@ -66,13 +67,13 @@ averages **\_\_\_\_\_\_** of mercury.
 
 #### Units you must be able to convert
 
-$1\,\mathrm{atm} =$ **\_\_\_\_\_\_** $=$ **\_\_\_\_\_\_** $= 101325\,\mathrm{Pa} =$ **\_\_\_\_\_\_**
+$1\,\mathrm{atm} =$ 760 mmHg $=$ 760 torr $= 101325\,\mathrm{Pa} =$ 101.325 kPa
 
 #### GUIDED PRACTICE • Pressure conversions 15 min
 
-1. 2.50 atm in torr: **\_\_\_\_\_\_**
-2. 380 mmHg in atm: **\_\_\_\_\_\_**
-3. 202.65 kPa in atm: **\_\_\_\_\_\_**
+1. 2.50 atm in torr: 1900 torr
+2. 380 mmHg in atm: 0.500 atm
+3. 202.65 kPa in atm: 2.000 atm
 
 #### INSTRUCTION B • Three empirical laws 20 min
 
@@ -84,9 +85,9 @@ Each law fixes two variables and relates the other two:
 
 | **Law** | **Held constant** | **Relationship** | **Working form** |
 |---|---|---|---|
-| Boyle | $n$, $T$ | $P$ and $V$ **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Charles | $n$, $P$ | $V$ and $T$ **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Avogadro | $P$, $T$ | $V$ and $n$ **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| Boyle | $n$, $T$ | $P$ and $V$ inversely | $P_1V_1 = P_2V_2$ |
+| Charles | $n$, $P$ | $V$ and $T$ directly | $V_1/T_1 = V_2/T_2$ |
+| Avogadro | $P$, $T$ | $V$ and $n$ directly | $V_1/n_1 = V_2/n_2$ |
 
 > ⚠️ **AP trap**
 >
@@ -118,7 +119,7 @@ Each law fixes two variables and relates the other two:
 
 Any two states of a fixed gas sample are related by the
 combined gas law:
-$\frac{P_1V_1}{T_1} =$ **\_\_\_\_\_\_**
+$\frac{P_1V_1}{T_1} =$ $\dfrac{P_2V_2}{T_2}$
 
 1. A gas occupies 4.00 L at 2.00 atm and
    300. K. Find its volume at 1.00 atm and
@@ -126,14 +127,12 @@ $\frac{P_1V_1}{T_1} =$ **\_\_\_\_\_\_**
    *(working space)*
 2. Explain, using particle collisions, why halving the volume at
    constant temperature doubles the pressure.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > A rigid steel cylinder of gas is heated from 300 K to
 > 600 K. What happens to its volume and its pressure?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## The Ideal Gas Law Zumdahl §5.3
 
@@ -146,11 +145,11 @@ $\frac{P_1V_1}{T_1} =$ **\_\_\_\_\_\_**
 
 > 📌 **Retrieval warm-up**
 >
-> 1. 1.50 atm in torr: **\_\_\_\_\_\_**
+> 1. 1.50 atm in torr: 1140 torr
 > 2. Boyle's law relates which two variables?
->    **\_\_\_\_\_\_**
-> 3. 127 °C in kelvin: **\_\_\_\_\_\_**
-> 4. Molar mass of CO₂: **\_\_\_\_\_\_**
+>    $P$ and $V$
+> 3. 127 °C in kelvin: 400. K
+> 4. Molar mass of CO₂: 44.01 g/mol
 
 #### INSTRUCTION A • One equation containing all three laws 25 min
 
@@ -158,19 +157,19 @@ $\frac{P_1V_1}{T_1} =$ **\_\_\_\_\_\_**
 
 `SP 5`
 
-$PV = nRT \qquad   R =$ **\_\_\_\_\_\_**
+$PV = nRT \qquad   R =$ 0.08206 L·atm/mol/K
 
 $R$ carries units, and those units dictate everything else: pressure in
-**\_\_\_\_\_\_**, volume in **\_\_\_\_\_\_**,
-temperature in **\_\_\_\_\_\_**. Convert *before* substituting,
+atm, volume in L,
+temperature in K. Convert *before* substituting,
 never after.
 
 #### Standard temperature and pressure
 
-STP is **\_\_\_\_\_\_** and
-**\_\_\_\_\_\_**. At STP one mole of any ideal gas occupies
+STP is 0 °C and
+1 atm. At STP one mole of any ideal gas occupies
 the molar volume:
-$V = \frac{nRT}{P} = \frac{(1)(0.08206)(273.15)}{1} =$ **\_\_\_\_\_\_**
+$V = \frac{nRT}{P} = \frac{(1)(0.08206)(273.15)}{1} =$ 22.42 L
 
 > 📌 **Note**
 >
@@ -180,13 +179,13 @@ $V = \frac{nRT}{P} = \frac{(1)(0.08206)(273.15)}{1} =$ **\_\_\_\_\_\_**
 
 #### GUIDED PRACTICE • Rearrangement drill 15 min
 
-1. Solve for $n$: **\_\_\_\_\_\_**
+1. Solve for $n$: $n = PV/RT$
 2. Volume of 2.50 mol at 1.50 atm, 300. K:
-   **\_\_\_\_\_\_**
+   41.0 L
 3. Pressure of 0.250 mol in 5.00 L at
-   273 K: **\_\_\_\_\_\_**
+   273 K: 1.12 atm
 4. Moles in 10.0 L at 2.00 atm and
-   350. K: **\_\_\_\_\_\_**
+   350. K: 0.696 mol
 
 #### INSTRUCTION B • Density and molar mass 20 min
 
@@ -195,7 +194,7 @@ $V = \frac{nRT}{P} = \frac{(1)(0.08206)(273.15)}{1} =$ **\_\_\_\_\_\_**
 `SP 5`
 
 Since $n = m/M$, substituting into $PV = nRT$ gives
-$d = \frac{m}{V} =$ **\_\_\_\_\_\_** $\qquad\text{and}\qquad   M =$ **\_\_\_\_\_\_**
+$d = \frac{m}{V} =$ $\dfrac{PM}{RT}$ $\qquad\text{and}\qquad   M =$ $\dfrac{dRT}{P}$
 
 You do not need to memorize these if you can derive them — but you must be
 able to get there quickly.
@@ -233,14 +232,12 @@ able to get there quickly.
    *(working space)*
 2. Two identical balloons at the same $T$ and $P$ hold helium and
    argon. Compare their masses and their densities, with reasoning.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > Why does a helium balloon rise while an identical balloon of CO₂ sinks?
-> Answer in terms of density. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Answer in terms of density.
 
 ## Gas Stoichiometry Zumdahl §5.4
 
@@ -253,10 +250,10 @@ able to get there quickly.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Molar volume at STP: **\_\_\_\_\_\_**
-> 2. $d$ of O₂ at STP: **\_\_\_\_\_\_**
+> 1. Molar volume at STP: 22.42 L
+> 2. $d$ of O₂ at STP: 1.43 g/L
 > 3. Moles in 50.0 g CaCO₃ ($M=100.09$):
->    **\_\_\_\_\_\_**
+>    0.500 mol
 
 #### INSTRUCTION A • Volumes join the mole map 25 min
 
@@ -272,9 +269,9 @@ on-ramp and off-ramp:
 Only the middle arrow uses the balanced equation. The last arrow has two
 possible tools:
 
-- At STP: multiply by **\_\_\_\_\_\_**
+- At STP: multiply by 22.42 L/mol
    — fast.
-- Any other conditions: use **\_\_\_\_\_\_**.
+- Any other conditions: use $V = nRT/P$.
 
 > 📘 **Worked example 1: Zumdahl's quicklime problem**
 >
@@ -302,7 +299,7 @@ possible tools:
    *(working space)*
 2. N₂(g) + 3 H₂(g) → 2 NH₃(g). All gases at the same $T$ and
    $P$: what volume of H₂ reacts with 5.0 L of
-   N₂? **\_\_\_\_\_\_**
+   N₂? 15 L
 
 > 📌 **Note**
 >
@@ -317,18 +314,16 @@ possible tools:
 1.00 atm and 273 K, react to form water.
 
 1. Write the balanced equation.
-   **\_\_\_\_\_\_**
+   2 H₂ + O₂ → 2 H₂O
 2. Identify the limiting reactant using volumes directly.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. What volume of O₂ remains unreacted?
-   **\_\_\_\_\_\_**
+   2.00 L
 
 > 📌 **Exit ticket**
 >
 > Why can you compare gas volumes directly to find a limiting reactant, but
-> never compare gas masses that way? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> never compare gas masses that way?
 
 ## Partial Pressures and Gas Collection Zumdahl §5.5
 
@@ -342,10 +337,10 @@ possible tools:
 > 📌 **Retrieval warm-up**
 >
 > 1. Volume of 0.500 mol at STP:
->    **\_\_\_\_\_\_**
+>    11.2 L
 > 2. N₂ + 3 H₂ → 2 NH₃: 6 L H₂ needs how much
->    N₂? **\_\_\_\_\_\_**
-> 3. Molar mass from $d$ at STP: **\_\_\_\_\_\_**
+>    N₂? 2 L
+> 3. Molar mass from $d$ at STP: $M = d \times 22.42$
 
 #### INSTRUCTION A • Dalton's law 25 min
 
@@ -355,11 +350,11 @@ possible tools:
 
 In an ideal gas, particles do not interact — so each component exerts
 pressure as if the others were absent:
-$P_{\text{total}} =$ **\_\_\_\_\_\_**
+$P_{\text{total}} =$ $P_1 + P_2 + P_3 + \cdots$
 
 Zumdahl derives the mole-fraction relationship directly from $n = P(V/RT)$:
 since each $n_i$ is proportional to $P_i$ with the same constant,
-$\chi_1 = \frac{n_1}{n_{\text{total}}} =$ **\_\_\_\_\_\_** $\qquad\Rightarrow\qquad   P_1 =$ **\_\_\_\_\_\_**
+$\chi_1 = \frac{n_1}{n_{\text{total}}} =$ $\dfrac{P_1}{P_{\text{total}}}$ $\qquad\Rightarrow\qquad   P_1 =$ $\chi_1 P_{\text{total}}$
 
 > 📌 **Note**
 >
@@ -383,12 +378,12 @@ $\chi_1 = \frac{n_1}{n_{\text{total}}} =$ **\_\_\_\_\_\_** $\qquad\Rightarrow\qq
 A 10.0 L flask at 300. K contains 0.400 mol
 Ar and 0.600 mol Ne.
 
-Total pressure: **\_\_\_\_\_\_**
+Total pressure: 2.46 atm
 
-$P_{\text{Ar}}$: **\_\_\_\_\_\_**
+$P_{\text{Ar}}$: 0.985 atm
 
 If all the Ne escaped, $P_{\text{Ar}}$ would be:
-        **\_\_\_\_\_\_**
+        unchanged, 0.985 atm
 
 #### INSTRUCTION B • Collecting a gas over water 20 min
 
@@ -398,13 +393,13 @@ If all the Ne escaped, $P_{\text{Ar}}$ would be:
 
 A gas produced in a reaction is often collected by displacing water from an
 inverted container. The collected sample is then a
-**\_\_\_\_\_\_**: the gas you made, plus
-**\_\_\_\_\_\_**.
+mixture: the gas you made, plus
+water vapour.
 
-$P_{\text{total}} = P_{\text{gas}} +$ **\_\_\_\_\_\_** $\qquad\Rightarrow\qquad   P_{\text{gas}} = P_{\text{total}} - P_{\text{H₂O}}$
+$P_{\text{total}} = P_{\text{gas}} +$ $P_{\text{H₂O}}$ $\qquad\Rightarrow\qquad   P_{\text{gas}} = P_{\text{total}} - P_{\text{H₂O}}$
 
 The vapour pressure of water depends only on
-**\_\_\_\_\_\_** and is read from a table:
+temperature and is read from a table:
 
 | $T$ ( | deg;C) | 15 | 20 | 25 | 30 | 35 |
 |---|---|---|---|---|---|---|
@@ -434,23 +429,25 @@ Oxygen from the decomposition of KClO₃ is collected over water at
 0.500 L.
 
 Partial pressure of O₂ in torr and atm:
-        **\_\_\_\_\_\_**
+        724.5 torr $=$ 0.9539 atm
 
 Moles of O₂ collected: 
 
 *(working space)*
+
+        
 
 Mass of KClO₃ that decomposed, given
         2 KClO₃ → 2 KCl + 3 O₂ ($M = 122.55$). 
 
 *(working space)*
 
+        
+
 > 📌 **Exit ticket**
 >
 > Why does the vapour pressure of water in a collection tube depend on
 > temperature but not on which gas is being collected?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Kinetic Molecular Theory and Real Gases Zumdahl §5.6–5.9
 
@@ -463,13 +460,13 @@ Mass of KClO₃ that decomposed, given
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $P_{\text{H₂O}}$ at 25 °C: **\_\_\_\_\_\_**
+> 1. $P_{\text{H₂O}}$ at 25 °C: 23.8 torr
 > 2. $P_A$ if $\chi_A = 0.25$, $P_{\text{tot}} = 4.0\,\mathrm{atm}$:
->    **\_\_\_\_\_\_**
+>    1.0 atm
 > 3. Volume of 2.00 mol at STP:
->    **\_\_\_\_\_\_**
+>    44.8 L
 > 4. Gas collected over water: add or subtract $P_{\text{H₂O}}$?
->    **\_\_\_\_\_\_**
+>    subtract
 
 #### INSTRUCTION A • The model 25 min
 
@@ -479,18 +476,18 @@ Mass of KClO₃ that decomposed, given
 
 An ideal gas consists of particles that:
 
-are in constant **\_\_\_\_\_\_** motion;
+are in constant random motion;
 
-have **\_\_\_\_\_\_** relative to the container;
+have negligible volume relative to the container;
 
-exert **\_\_\_\_\_\_** on one another;
+exert no attractive forces on one another;
 
-collide **\_\_\_\_\_\_**;
+collide elastically;
 
 have average kinetic energy proportional to
-        **\_\_\_\_\_\_**.
+        absolute temperature.
 
-$KE_{\text{avg}} = \tfrac32 RT \ \text{per mole}   \qquad   u_{\text{rms}} =$ **\_\_\_\_\_\_**
+$KE_{\text{avg}} = \tfrac32 RT \ \text{per mole}   \qquad   u_{\text{rms}} =$ $\sqrt{\dfrac{3RT}{M}}$
 
 > 📌 **Note**
 >
@@ -504,10 +501,8 @@ $KE_{\text{avg}} = \tfrac32 RT \ \text{per mole}   \qquad   u_{\text{rms}} =$ **
 Why does pressure rise when temperature rises at constant volume?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Rank average speed at the same $T$: He, N₂, CO₂.
-        **\_\_\_\_\_\_**
+        He $>$ N₂ $>$ CO₂
 
 > 📌 **ENRICHMENT — beyond the CED**
 >
@@ -533,40 +528,24 @@ Two postulates break under stress, and they push $PV/nRT$ in
 
 | **Failed postulate** | **Conditions** | **Effect** |
 |---|---|---|
-| Particles have no volume | **\_\_\_\_\_\_** | gas cannot compress as predicted; $PV/nRT$
-  **\_\_\_\_\_\_** |
-| No attractive forces | **\_\_\_\_\_\_** | attractions soften wall collisions, lowering $P$; $PV/nRT$
-  **\_\_\_\_\_\_** |
-
-Van der Waals corrects both:
-
-$$ \left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT $$
-
-where $a$ corrects for **\_\_\_\_\_\_** and $b$ for
-**\_\_\_\_\_\_**. You will not compute with this, but
-you should be able to say which term fixes which failure.
-
-#### APPLICATION • Deviation reasoning 20 min
+| Particles have no volume | high pressure | gas cannot compress as predicted; $PV/nRT$
+  $>1$ |
+| No attractive forces | low temperature | attractions soften wall collisions, lowering $P$; $PV/nRT$
+  $
 
 Rank by expected deviation from ideality at the same conditions:
         He, N₂, H₂O. Justify.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 A gas shows $PV/nRT = 0.95$ at moderate pressure and
         200 K. Which postulate is failing, and what happens if
         the sample is warmed to 500 K?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > State the two conditions under which any real gas behaves most ideally, and
-> give the reason for each. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> give the reason for each.
 
 ---
 

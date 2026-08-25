@@ -33,10 +33,10 @@ Zumdahl §6.1–6.4 • PDF pp. 282–308 • 4 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Convert 25 °C to kelvin: **\_\_\_\_\_\_**
+> 1. Convert 25 °C to kelvin: 298 K
 > 2. KMT: temperature measures what?
->    **\_\_\_\_\_\_**
-> 3. Moles in 16.04 g CH₄: **\_\_\_\_\_\_**
+>    average kinetic energy
+> 3. Moles in 16.04 g CH₄: 1.000 mol
 
 #### INSTRUCTION A • Energy, heat, and work 25 min
 
@@ -48,8 +48,8 @@ Before any energy bookkeeping, you must decide what you are keeping books
 *on*:
 
 - The system is the part of the universe you are studying —
-   usually the **\_\_\_\_\_\_** itself.
-- The surroundings are **\_\_\_\_\_\_** —
+   usually the reaction itself.
+- The surroundings are everything else —
    the solvent, the container, the room.
 
 Energy crosses that boundary in exactly two ways:
@@ -57,9 +57,9 @@ Energy crosses that boundary in exactly two ways:
 |  | **Definition** | **Sign convention (system's view)** |
 |---|---|---|
 | Heat ($q$) | transfer driven by a
-  **\_\_\_\_\_\_** | $q > 0$: heat flows **\_\_\_\_\_\_** the system (endothermic)  
+  temperature difference | $q > 0$: heat flows into the system (endothermic)  
 
-  $q Work ($w$) | transfer by force acting through a distance | $w > 0$: work done **\_\_\_\_\_\_** the system  
+  $q Work ($w$) | transfer by force acting through a distance | $w > 0$: work done on the system  
 
   $w  📌 **Note**
 >
@@ -75,39 +75,27 @@ Zumdahl's picture: two gas samples at different temperatures separated by a
 thin membrane. Temperature measures average kinetic energy, so the
 fast-moving particles on the hot side transfer energy through collisions to
 the slower particles on the cold side. Energy always flows from
-**\_\_\_\_\_\_** to **\_\_\_\_\_\_**, until both reach the
-same **\_\_\_\_\_\_** temperature.
+hot to cold, until both reach the
+same intermediate temperature.
 
 #### GUIDED PRACTICE • Assign the signs 15 min
 
 1. A reaction warms the beaker it is in.
-   **\_\_\_\_\_\_**
-2. An ice pack cools your skin.
-   **\_\_\_\_\_\_**
+   exothermic, $q  0$ for the pack
 3. A gas is compressed by a piston.
-   **\_\_\_\_\_\_**
+   $w > 0$ (work done on the gas)
 4. A gas expands and pushes the piston out.
-   **\_\_\_\_\_\_**
-
-#### INSTRUCTION B • The first law 20 min
-
-### Conservation of energy, written down `ZUM §6.1`
-
-`SP 5`
-
-$\Delta E =$ **\_\_\_\_\_\_**
-
-$\Delta E$ is the change in internal energy — the total kinetic and
+   $w internal energy — the total kinetic and
 potential energy of everything in the system. The first law says energy is
 neither created nor destroyed; it only moves or changes form.
 
 #### Pressure–volume work
 
 When a gas expands against a constant external pressure:
-$w =$ **\_\_\_\_\_\_**
+$w =$ $-P\Delta V$
 
 The minus sign is not decoration. If the gas *expands*, $\Delta V$ is
-positive, so $w$ is **\_\_\_\_\_\_** — the system spent
+positive, so $w$ is negative — the system spent
 energy pushing the surroundings back. If it is compressed, $\Delta V  0$.
 
 > 📘 **Worked example 1: combining heat and work**
@@ -138,7 +126,7 @@ energy pushing the surroundings back. If it is compressed, $\Delta V  0$.
 
 A state function depends only on the current state, not on how you
 got there. Energy ($E$) and enthalpy ($H$) are state functions;
-$q$ and $w$ individually are **\_\_\_\_\_\_**.
+$q$ and $w$ individually are not.
 
 > 📌 **Note**
 >
@@ -151,17 +139,15 @@ $q$ and $w$ individually are **\_\_\_\_\_\_**.
 
 1. A system releases 200 J of heat while
    75 J of work is done on it. Find $\Delta E$.
-   **\_\_\_\_\_\_**
+   $-125$ J
 2. Explain why $\Delta E$ for converting graphite to diamond is the
    same whether done in one step or ten.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > A reaction in a beaker makes the beaker feel cold. State the sign of $q$ for
-> the reaction and name the process. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> the reaction and name the process.
 
 ## Enthalpy and Calorimetry Zumdahl §6.2
 
@@ -175,10 +161,10 @@ $q$ and $w$ individually are **\_\_\_\_\_\_**.
 > 📌 **Retrieval warm-up**
 >
 > 1. Sign of $q$ for an exothermic reaction:
->    **\_\_\_\_\_\_**
-> 2. First law equation: **\_\_\_\_\_\_**
-> 3. $w$ when a gas expands: **\_\_\_\_\_\_**
-> 4. Is enthalpy a state function? **\_\_\_\_\_\_**
+>    negative
+> 2. First law equation: $\Delta E = q + w$
+> 3. $w$ when a gas expands: negative
+> 4. Is enthalpy a state function? yes
 
 #### INSTRUCTION A • Enthalpy 25 min
 
@@ -189,15 +175,15 @@ $q$ and $w$ individually are **\_\_\_\_\_\_**.
 Enthalpy is defined as $H = E + PV$. Its value comes from one consequence:
 at *constant pressure* — which is how nearly every reaction in an
 open beaker runs —
-$\Delta H =$ **\_\_\_\_\_\_**
+$\Delta H =$ $q_P$
 
 So the heat you measure in an open container *is* the enthalpy change.
 That is the whole reason enthalpy exists as a bookkeeping quantity.
 
 |  | **$\Delta H$ sign** | **Surroundings** |
 |---|---|---|
-| Exothermic | **\_\_\_\_\_\_** | get **\_\_\_\_\_\_** |
-| Endothermic | **\_\_\_\_\_\_** | get **\_\_\_\_\_\_** |
+| Exothermic | negative | get warmer |
+| Endothermic | positive | get cooler |
 
 #### $\Delta H$ scales with amount
 
@@ -221,11 +207,11 @@ $$ \text{CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l)} \qquad \Delta H = -890\
 Using $\Delta H = -890\,\mathrm{kJ}$ per mole of CH₄:
 
 1. Heat from 2.00 mol CH₄:
-   **\_\_\_\_\_\_**
+   -1780 kJ
 2. Heat from 32.08 g CH₄:
-   **\_\_\_\_\_\_**
+   -1780 kJ
 3. $\Delta H$ for the *reverse* reaction:
-   **\_\_\_\_\_\_**
+   +890 kJ
 
 #### INSTRUCTION B • Calorimetry 20 min
 
@@ -235,11 +221,11 @@ Using $\Delta H = -890\,\mathrm{kJ}$ per mole of CH₄:
 
 A calorimeter determines heat by watching a temperature change. The
 central equation:
-$q =$ **\_\_\_\_\_\_** $\qquad \Delta T = T_{\text{final}} - T_{\text{initial}}$
+$q =$ $mc\Delta T$ $\qquad \Delta T = T_{\text{final}} - T_{\text{initial}}$
 
 The specific heat capacity $c$ is the energy needed to raise
 1 g by 1 °C. For water,
-$c =$ **\_\_\_\_\_\_** — unusually
+$c =$ 4.184 J/g/°C — unusually
 large, which is why water moderates temperature so effectively.
 
 > ⚠️ **AP trap**
@@ -274,18 +260,15 @@ temperature is 24.8 °C.
 2. Specific heat of the metal: 
    *(working space)*
 3. Suggest the metal's identity.
-   **\_\_\_\_\_\_**
+   copper ($c \approx 0.385$)
 4. Why does the water's temperature rise far less than the metal's
-   falls?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   falls? 
 
 > 📌 **Exit ticket**
 >
 > A student computes $q_{\text{solution}} = +3.2\,\mathrm{kJ}$ for a
 > reaction and reports $\Delta H = +3.2\,\mathrm{kJ}$. What did they get
-> wrong? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> wrong?
 
 ## Hess's Law Zumdahl §6.3
 
@@ -300,11 +283,11 @@ temperature is 24.8 °C.
 > 📌 **Retrieval warm-up**
 >
 > 1. $\Delta H$ equals $q$ under what condition?
->    **\_\_\_\_\_\_**
+>    constant pressure
 > 2. $q$ for 25.0 g water warmed 10.0 °C:
->    **\_\_\_\_\_\_**
+>    1046 J
 > 3. Sign of $\Delta H$ for an endothermic process:
->    **\_\_\_\_\_\_**
+>    positive
 
 #### INSTRUCTION A • The law and why it must be true 25 min
 
@@ -315,11 +298,11 @@ temperature is 24.8 °C.
 > 📌 **Note**
 >
 > **Hess's law:** if a reaction is carried out in a series of steps,
-> $\Delta H$ for the overall reaction equals the **\_\_\_\_\_\_** of the
+> $\Delta H$ for the overall reaction equals the sum of the
 > $\Delta H$ values for the individual steps.
 > 
 > This is not a separate discovery — it is a direct consequence of enthalpy
-> being a **\_\_\_\_\_\_**. If $\Delta H$ depended on the
+> being a state function. If $\Delta H$ depended on the
 > route, you could build a machine that created energy by going one way and
 > returning another.
 
@@ -338,10 +321,10 @@ temperature is 24.8 °C.
 
 #### The two manipulation rules
 
-1. Reverse a reaction $\Rightarrow$ **\_\_\_\_\_\_**
+1. Reverse a reaction $\Rightarrow$ reverse the sign
    of $\Delta H$.
 2. Multiply the coefficients by a factor $\Rightarrow$
-   **\_\_\_\_\_\_** by the same factor.
+   multiply $\Delta H$ by the same factor.
 
 Rule 1 follows because $\Delta H$'s sign records the direction of heat flow;
 run the change backwards and the flow reverses. Rule 2 follows because
@@ -352,11 +335,11 @@ enthalpy is extensive — twice the reaction releases twice the heat.
 Given 2 H₂(g) + O₂(g) → 2 H₂O(l), $\Delta H = -572\,\mathrm{kJ}$:
 
 1. $\Delta H$ for H₂(g) + 1/2 O₂(g) → H₂O(l):
-   **\_\_\_\_\_\_**
+   -286 kJ
 2. $\Delta H$ for 2 H₂O(l) → 2 H₂(g) + O₂(g):
-   **\_\_\_\_\_\_**
+   +572 kJ
 3. $\Delta H$ for 4 H₂(g) + 2 O₂(g) → 4 H₂O(l):
-   **\_\_\_\_\_\_**
+   -1144 kJ
 
 #### INSTRUCTION B • The working method 20 min
 
@@ -364,7 +347,7 @@ Given 2 H₂(g) + O₂(g) → 2 H₂O(l), $\Delta H = -572\,\mathrm{kJ}$:
 
 `SP 5`
 
-Write the **\_\_\_\_\_\_** first.
+Write the target equation first.
 
 Find a substance that appears in only *one* given equation and
         place it correctly — reverse or scale that equation as needed.
@@ -372,7 +355,7 @@ Find a substance that appears in only *one* given equation and
 Repeat for the next such substance.
 
 Add everything; confirm the intermediates
-        **\_\_\_\_\_\_**.
+        cancel.
 
 Sum the adjusted $\Delta H$ values.
 
@@ -402,8 +385,6 @@ $$ \begin{align*}   \text{(i)}\ \text{C₂H₂(g) + 5/2 O₂(g) & → 2 CO₂(g)
 > 📌 **Exit ticket**
 >
 > Why does reversing a reaction reverse the sign of $\Delta H$?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Standard Enthalpies of Formation Zumdahl §6.4
 
@@ -418,13 +399,13 @@ $$ \begin{align*}   \text{(i)}\ \text{C₂H₂(g) + 5/2 O₂(g) & → 2 CO₂(g)
 > 📌 **Retrieval warm-up**
 >
 > 1. Hess's law depends on $H$ being a what?
->    **\_\_\_\_\_\_**
+>    state function
 > 2. Reverse a reaction: $\Delta H$ does what?
->    **\_\_\_\_\_\_**
+>    changes sign
 > 3. Halve the coefficients: $\Delta H$ does what?
->    **\_\_\_\_\_\_**
+>    halves
 > 4. $q$ for 50.0 g water cooled 4.00 °C:
->    **\_\_\_\_\_\_**
+>    -837 J
 
 #### INSTRUCTION A • A universal reference point 25 min
 
@@ -433,8 +414,8 @@ $$ \begin{align*}   \text{(i)}\ \text{C₂H₂(g) + 5/2 O₂(g) & → 2 CO₂(g)
 `SP 5`
 
 The standard enthalpy of formation $\Delta H^\circ_f$ is the enthalpy
-change when **\_\_\_\_\_\_** of a compound forms from its
-**\_\_\_\_\_\_**, with everything in its
+change when 1 mole of a compound forms from its
+elements, with everything in its
 standard state.
 
 Standard state means the substance's most stable form at
@@ -445,7 +426,7 @@ O₂(g), Br₂(l), C(graphite).
 >
 > It follows directly from the definition that
 > $\Delta H^\circ_f$ of an *element in its standard state* is
-> **\_\_\_\_\_\_** — forming an element from itself is no change at
+> 0 — forming an element from itself is no change at
 > all. That is why O₂(g) contributes nothing to a calculation while
 > O₃(g) (not the standard form) contributes $+143$ kJ/mol.
 
@@ -461,12 +442,12 @@ $\Delta H$ can be assembled from them — Hess's law industrialized.
 Write the formation equation (1 mol of product, elements in standard states):
 
 NH₃(g):
-        **\_\_\_\_\_\_**
+        1/2 N₂(g) + 3/2 H₂(g) → NH₃(g)
 
 CO₂(g):
-        **\_\_\_\_\_\_**
+        C(graphite) + O₂(g) → CO₂(g)
 
-$\Delta H^\circ_f$ of N₂(g): **\_\_\_\_\_\_**
+$\Delta H^\circ_f$ of N₂(g): 0
 
 #### INSTRUCTION B • The master equation 20 min
 
@@ -474,11 +455,11 @@ $\Delta H^\circ_f$ of N₂(g): **\_\_\_\_\_\_**
 
 `SP 5`
 
-$\Delta H^\circ_{\text{rxn}} =$ **\_\_\_\_\_\_**
+$\Delta H^\circ_{\text{rxn}} =$ $\sum n\,\Delta H^\circ_f(\text{products}) - \sum n\,\Delta H^\circ_f(\text{reactants})$
 
 Note the two easy losses: multiply each value by its
-**\_\_\_\_\_\_**, and subtract in the right order —
-**\_\_\_\_\_\_**.
+coefficient, and subtract in the right order —
+products minus reactants.
 
 > 📘 **Worked example 1: methane combustion**
 >
@@ -507,6 +488,8 @@ Compute $\Delta H^\circ$ for
 
 *(working space)*
 
+        
+
 Compute $\Delta H^\circ$ for the thermite reaction
         2 Al(s) + Fe₂O₃(s) → Al₂O₃(s) + 2 Fe(s), given
         $\Delta H^\circ_f$: Fe₂O₃ $-826$, Al₂O₃ $-1676$
@@ -514,18 +497,16 @@ Compute $\Delta H^\circ$ for the thermite reaction
 
 *(working space)*
 
-In problem 2, why do Al(s) and Fe(s) contribute nothing?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+In problem 2, why do Al(s) and Fe(s) contribute nothing?
+        
 
 > 📌 **Exit ticket**
 >
 > A reaction has $\Delta H^\circ = -1250\,\mathrm{kJ}$. State whether it
 > is exothermic or endothermic, and what happens to the temperature of the
-> surroundings. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> surroundings.
 
 ---
 

@@ -16,23 +16,21 @@ Zumdahl §14.8–14.9 • trace every salt back to its parent acid and base
 **1.** Classify each salt solution as acidic, basic, or neutral, and
 name the ion responsible:
 
-1. NaCl: **\_\_\_\_\_\_**
-2. NH₄Cl: **\_\_\_\_\_\_**
-3. NaCN: **\_\_\_\_\_\_**
-4. KNO₃: **\_\_\_\_\_\_**
-5. NH₄NO₃: **\_\_\_\_\_\_**
-6. KF: **\_\_\_\_\_\_**
+1. NaCl: neutral — neither ion hydrolyses
+2. NH₄Cl: acidic — NH₄+
+3. NaCN: basic — CN-
+4. KNO₃: neutral
+5. NH₄NO₃: acidic — NH₄+
+6. KF: basic — F-
 
 **2.** Explain, in conjugate-pair terms, why NaCl solutions are
 neutral but NaCN solutions are basic.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **3.** Calculate the pH of 0.20 M NaC₂H₃O₂.
 
 1. Write the hydrolysis equation.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-2. Calculate $K_b$. **\_\_\_\_\_\_**
+   
+2. Calculate $K_b$. $5.6\times10^{-10}$
 3. Calculate the pH. 
    *(working space)*
 
@@ -44,29 +42,21 @@ neutral but NaCN solutions are basic.
 
 1. Rank HF, HCl, HBr, HI by increasing strength and
    give the controlling factor.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Explain why HF is the weakest despite fluorine being the most
-   electronegative element.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   electronegative element. 
 3. Rank HClO, HClO₂, HClO₃, HClO₄ and give both
-   reasons.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   reasons. 
 4. Rank HOI, HOBr, HOCl.
-   **\_\_\_\_\_\_**
-
-**6.** **FRQ (10 points).** Hypochlorous acid, HOCl, has
-$K_a = 3.5\times10^{-8}$.
-
-1. Write the ionization equation and the $K_a$ expression.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   HOI $
 2. Calculate the pH of a 0.150 M solution of HOCl,
    including the validity check on any approximation.
    *(working space)*
 3. Calculate the percent dissociation.
-   **\_\_\_\_\_\_**
+   0.048%
 4. Sodium hypochlorite, NaOCl, is dissolved in water. Predict
    whether the solution is acidic, basic, or neutral, and justify.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 5. Calculate $K_b$ for OCl- and the pH of a 0.150 M
    NaOCl solution.
    *(working space)*
@@ -83,13 +73,13 @@ $K_a = 3.5\times10^{-8}$.
 
 > 📌 **Spiral review • Chapter 14 • blocks 1–4**
 >
-> 1. $K_aK_b =$ **\_\_\_\_\_\_**
-> 2. pH of 0.100 M NH₃: **\_\_\_\_\_\_**
+> 1. $K_aK_b =$ $K_w$
+> 2. pH of 0.100 M NH₃: 11.13
 > 3. Stronger acid: lower or higher pK$_a$?
->    **\_\_\_\_\_\_**
+>    lower
 > 4. Which ionization dominates for H₃PO₄?
->    **\_\_\_\_\_\_**
-> 5. pH of 0.010 M NaOH: **\_\_\_\_\_\_**
+>    the first
+> 5. pH of 0.010 M NaOH: 12.00
 
 ---
 

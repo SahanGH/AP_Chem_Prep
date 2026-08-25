@@ -16,21 +16,21 @@ Zumdahl §5.6–5.9 • name the failed postulate, not just ``it's real''
 **1.** State which KMT postulate each observation relies on:
 
 1. A gas fills its container uniformly.
-   **\_\_\_\_\_\_**
+   constant random motion
 2. Gas pressure in a sealed flask does not decay over time.
-   **\_\_\_\_\_\_**
+   elastic collisions
 3. He and Xe at the same $T$ have equal average kinetic
-   energies. **\_\_\_\_\_\_**
+   energies. $KE \propto T$
 
 **2.** At 300 K, rank H₂, O₂, and SF₆
 ($M = 146.06$) by:
 
 1. Average kinetic energy:
-   **\_\_\_\_\_\_**
+   all equal — depends only on $T$
 2. Average molecular speed:
-   **\_\_\_\_\_\_**
+   H₂ $>$ O₂ $>$ SF₆
 3. Explain how both answers can be true at once.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **3.** Sketch, on one set of axes, Maxwell–Boltzmann distributions for
 one gas at 200 K and at 600 K. Label both curves and
@@ -41,15 +41,13 @@ state what stays the same.
 **4.** Real gas behaviour:
 
 1. Under what two conditions does a real gas behave most ideally?
-   **\_\_\_\_\_\_**
+   high $T$, low $P$
 2. At high pressure, $PV/nRT$ rises above 1. Name the failed postulate
-   and explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   and explain. 
 3. At low temperature, $PV/nRT$ dips below 1. Name the failed postulate
-   and explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   and explain. 
 4. Which deviates more, Ne or NH₃? Why?
-   **\_\_\_\_\_\_**
+   NH₃ — hydrogen bonding
 
 **5.** **FRQ (10 points).** A student generates oxygen by
 decomposing potassium chlorate and collects it over water:
@@ -62,17 +60,15 @@ pressure of 754 torr. The vapour pressure of water at
 1. Calculate the moles of O₂ that should be produced.
    *(working space)*
 2. Determine the partial pressure of O₂, in atm.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Calculate the volume of gas collected. 
    *(working space)*
 4. Explain why the water-vapour correction is a subtraction, and state
-   the effect of omitting it.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   the effect of omitting it. 
 5. The student repeats the collection at 35 °C
    ($P_{\text{H₂O}} = 42.2\,\mathrm{torr}$), same total pressure. Predict
    whether the collected volume is larger or smaller, and give both
-   reasons.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   reasons. 
 
 > 📌 **Rubric — score yourself, 10 points**
 >
@@ -86,13 +82,13 @@ pressure of 754 torr. The vapour pressure of water at
 
 > 📌 **Spiral review • Chapter 5 • blocks 1–4**
 >
-> 1. $P_{\text{H₂O}}$ at 30 °C: **\_\_\_\_\_\_**
-> 2. Volume of 3.00 mol at STP: **\_\_\_\_\_\_**
-> 3. $\chi_A$ if $P_A = 1.5\,\mathrm{atm}$, $P_{\text{tot}} =         6.0\,\mathrm{atm}$: **\_\_\_\_\_\_**
+> 1. $P_{\text{H₂O}}$ at 30 °C: 31.8 torr
+> 2. Volume of 3.00 mol at STP: 67.3 L
+> 3. $\chi_A$ if $P_A = 1.5\,\mathrm{atm}$, $P_{\text{tot}} =         6.0\,\mathrm{atm}$: 0.25
 > 4. Faster at equal $T$: CH₄ or Ar?
->    **\_\_\_\_\_\_**
+>    CH₄
 > 5. $d$ of a gas with $M = 28.0\,\mathrm{g/mol}$ at STP:
->    **\_\_\_\_\_\_**
+>    1.25 g/L
 
 ---
 

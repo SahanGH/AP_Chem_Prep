@@ -36,10 +36,10 @@ Zumdahl §12.1–12.7 • PDF pp. 593–632 • 5 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. Balance: N₂O₅ → NO₂ + O₂:
->    **\_\_\_\_\_\_**
-> 2. Molarity units: **\_\_\_\_\_\_**
+>    2 N₂O₅ → 4 NO₂ + O₂
+> 2. Molarity units: mol/L
 > 3. Does a negative $\Delta H$ mean a reaction is fast?
->    **\_\_\_\_\_\_**
+>    no
 
 #### INSTRUCTION A • Defining rate 25 min
 
@@ -47,17 +47,17 @@ Zumdahl §12.1–12.7 • PDF pp. 593–632 • 5 blocks
 
 `SP 5`
 
-$\text{rate} =$ **\_\_\_\_\_\_** $=$ **\_\_\_\_\_\_**
+$\text{rate} =$ $-\dfrac{\Delta[\text{reactant}]}{\Delta t}$ $=$ $+\dfrac{\Delta[\text{product}]}{\Delta t}$
 
 The minus sign on the reactant term exists so the rate comes out
-**\_\_\_\_\_\_** — reactant concentration is falling, and a
+positive — reactant concentration is falling, and a
 negative rate would be meaningless.
 
 #### Stoichiometry relates the rates
 
 For 2 N₂O₅ → 4 NO₂ + O₂, NO₂ appears four times as fast as
 O₂. To get one number for the whole reaction, divide each rate by its
-**\_\_\_\_\_\_**:
+coefficient:
 
 $$ \text{rate} = -\frac{1}{2}\frac{\Delta[\text{N₂O₅}]}{\Delta t}   = \frac{1}{4}\frac{\Delta[\text{NO₂}]}{\Delta t}   = \frac{\Delta[\text{O₂}]}{\Delta t} $$
 
@@ -73,10 +73,10 @@ For 2 NO + O₂ → 2 NO₂, if O₂ disappears at
 0.020 M/s:
 
 1. Rate of NO disappearance:
-   **\_\_\_\_\_\_**
+   0.040 M/s
 2. Rate of NO₂ formation:
-   **\_\_\_\_\_\_**
-3. Rate of the reaction: **\_\_\_\_\_\_**
+   0.040 M/s
+3. Rate of the reaction: 0.020 M/s
 
 #### INSTRUCTION B • Average versus instantaneous 20 min
 
@@ -87,11 +87,11 @@ For 2 NO + O₂ → 2 NO₂, if O₂ disappears at
 ![figure](fig-ch12-notes-1.png)
 
 - The average rate over an interval is the slope of the
-   **\_\_\_\_\_\_** joining two points.
+   straight line joining two points.
 - The instantaneous rate at one moment is the slope of the
-   **\_\_\_\_\_\_** at that point.
+   tangent at that point.
 - The initial rate is the instantaneous rate at
-   **\_\_\_\_\_\_** — the value used in rate-law
+   $t = 0$ — the value used in rate-law
    experiments, because no products have accumulated to complicate
    things.
 
@@ -105,18 +105,15 @@ For 2 NO + O₂ → 2 NO₂, if O₂ disappears at
 #### APPLICATION • Rate reasoning 20 min
 
 1. Explain why the initial rate is preferred for determining a rate
-   law.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   law. 
 2. A reaction's rate decreases steadily over time even at constant
    temperature. Explain why.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > For N₂ + 3 H₂ → 2 NH₃, if H₂ is consumed at
 > 0.30 M/s, at what rate is NH₃ formed?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Rate Laws and the Method of Initial Rates Zumdahl §12.2–12.3
 
@@ -130,10 +127,10 @@ For 2 NO + O₂ → 2 NO₂, if O₂ disappears at
 > 📌 **Retrieval warm-up**
 >
 > 1. Rate of the reaction 2 A → B in terms of A:
->    **\_\_\_\_\_\_**
+>    $-\tfrac12\Delta[\text{A}]/\Delta t$
 > 2. Instantaneous rate is the slope of what?
->    **\_\_\_\_\_\_**
-> 3. Why use initial rates? **\_\_\_\_\_\_**
+>    the tangent
+> 3. Why use initial rates? no products present yet
 
 #### INSTRUCTION A • The rate law 25 min
 
@@ -145,7 +142,7 @@ $$ \text{rate} = k[\text{A}]^n[\text{B}]^m $$
 
 $k$ is the rate constant; $n$ and $m$ are the
 reaction orders. The overall order is
-**\_\_\_\_\_\_**.
+$n+m$.
 
 > ⚠️ **AP trap**
 >
@@ -159,9 +156,9 @@ reaction orders. The overall order is
 
 | **Order in A** | **Double [A] and the rate…** | **Meaning** |
 |---|---|---|
-| 0 | **\_\_\_\_\_\_** | rate independent of [A] |
-| 1 | **\_\_\_\_\_\_** | rate proportional to [A] |
-| 2 | **\_\_\_\_\_\_** | rate proportional to [A]$^2$ |
+| 0 | does not change | rate independent of [A] |
+| 1 | doubles | rate proportional to [A] |
+| 2 | quadruples | rate proportional to [A]$^2$ |
 
 > 📘 **Worked example: Zumdahl's dinitrogen pentoxide**
 >
@@ -183,10 +180,10 @@ even though the coefficient is 2.
 
 For rate $= k[\text{A}]^2[\text{B}]$:
 
-1. Overall order: **\_\_\_\_\_\_**
-2. Effect of doubling [A]: **\_\_\_\_\_\_**
-3. Effect of doubling [B]: **\_\_\_\_\_\_**
-4. Effect of doubling both: **\_\_\_\_\_\_**
+1. Overall order: 3
+2. Effect of doubling [A]: rate $\times 4$
+3. Effect of doubling [B]: rate $\times 2$
+4. Effect of doubling both: rate $\times 8$
 
 #### INSTRUCTION B • The method of initial rates 20 min
 
@@ -196,7 +193,7 @@ For rate $= k[\text{A}]^2[\text{B}]$:
 
 The procedure: run several trials, changing *one* concentration
 between two of them while holding the others
-**\_\_\_\_\_\_**. The ratio of rates then reveals that
+constant. The ratio of rates then reveals that
 reactant's order.
 
 > 📘 **Worked example: determining a full rate law**
@@ -239,20 +236,18 @@ For A + B → C:
 | 2 | 0.20 | 0.10 | $8.0\times10^{-3}$ |
 | 3 | 0.20 | 0.20 | $8.0\times10^{-3}$ |
 
-1. Order in A: **\_\_\_\_\_\_**   
-   Order in B: **\_\_\_\_\_\_**
+1. Order in A: 1   
+   Order in B: 0
 2. Write the rate law and the overall order.
-   **\_\_\_\_\_\_**
+   rate $= k[\text{A}]$; first order overall
 3. Calculate $k$ with units. 
    *(working space)*
 4. What does it mean physically that B is zero order?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > Why can a rate law never be written from a balanced equation alone?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Integrated Rate Laws and Half-Life Zumdahl §12.4
 
@@ -266,11 +261,11 @@ For A + B → C:
 > 📌 **Retrieval warm-up**
 >
 > 1. Rate law for a first-order reaction in A:
->    **\_\_\_\_\_\_**
+>    rate $= k[\text{A}]$
 > 2. If doubling [A] quadruples the rate, the order is:
->    **\_\_\_\_\_\_**
+>    2
 > 3. Units of $k$ for a first-order reaction:
->    **\_\_\_\_\_\_**
+>    s$^{-1}$
 
 #### INSTRUCTION A • Three integrated forms 25 min
 
@@ -283,9 +278,9 @@ you the concentration *later*.
 
 | **Order** | **Integrated form** | **Linear plot** | **Half-life** |
 |---|---|---|---|
-| 0 | $[\text{A}]_t = -kt + [\text{A}]_0$ | **\_\_\_\_\_\_** | $t_{1/2} = [\text{A}]_0/2k$ |
-| 1 | $\ln[\text{A}]_t = -kt + \ln[\text{A}]_0$ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| 2 | $\dfrac{1}{[\text{A}]_t} = kt + \dfrac{1}{[\text{A}]_0}$ | **\_\_\_\_\_\_** | $t_{1/2} = 1/(k[\text{A}]_0)$ |
+| 0 | $[\text{A}]_t = -kt + [\text{A}]_0$ | $[\text{A}]$ vs $t$ | $t_{1/2} = [\text{A}]_0/2k$ |
+| 1 | $\ln[\text{A}]_t = -kt + \ln[\text{A}]_0$ | $\ln[\text{A}]$ vs $t$ | $t_{1/2} = 0.693/k$ |
+| 2 | $\dfrac{1}{[\text{A}]_t} = kt + \dfrac{1}{[\text{A}]_0}$ | $1/[\text{A}]$ vs $t$ | $t_{1/2} = 1/(k[\text{A}]_0)$ |
 
 > 📌 **Note**
 >
@@ -297,7 +292,8 @@ you the concentration *later*.
 
 #### Why first-order half-life is special
 
-Only for first order is $t_{1/2}$ **\_\_\_\_\_\_**. A first-order reaction takes the same time to go from
+Only for first order is $t_{1/2}$ independent of
+concentration. A first-order reaction takes the same time to go from
 1.00 M to 0.50 M as from 0.50 M to 0.25 M — which is why radioactive decay
 and drug elimination are described by half-lives at all.
 
@@ -325,13 +321,13 @@ and drug elimination are described by half-lives at all.
 #### GUIDED PRACTICE • Half-life and order 15 min
 
 1. First-order with $k = 0.0231\,\mathrm{/s}$. Find $t_{1/2}$:
-   **\_\_\_\_\_\_**
+   30.0 s
 2. After three half-lives, what fraction remains?
-   **\_\_\_\_\_\_**
+   1/8
 3. A plot of $1/[\text{A}]$ versus $t$ is linear. The order is:
-   **\_\_\_\_\_\_**
+   2
 4. A plot of $[\text{A}]$ versus $t$ is linear. The order is:
-   **\_\_\_\_\_\_**
+   0
 
 #### INSTRUCTION B • Identifying order from data 20 min
 
@@ -343,15 +339,15 @@ and drug elimination are described by half-lives at all.
 
 Procedure: tabulate $[\text{A}]$, $\ln[\text{A}]$, and $1/[\text{A}]$ against
 time. Exactly one column will plot as a straight line, and that identifies
-the **\_\_\_\_\_\_**. The magnitude of the slope is
-**\_\_\_\_\_\_**.
+the order. The magnitude of the slope is
+$k$.
 
 #### APPLICATION • Full analysis 20 min
 
 A reaction is first order in A with $k = 0.0450\,\mathrm{/s}$ and
 $[\text{A}]_0 = 0.800\,\mathrm{M}$.
 
-1. Find $t_{1/2}$. **\_\_\_\_\_\_**
+1. Find $t_{1/2}$. 15.4 s
 2. Find $[\text{A}]$ after 30.0 s. 
    *(working space)*
 3. How long until $[\text{A}] = 0.100\,\mathrm{M}$? 
@@ -361,8 +357,6 @@ $[\text{A}]_0 = 0.800\,\mathrm{M}$.
 >
 > A first-order reaction has $t_{1/2} = 20\,\mathrm{min}$. If you start with
 > 8.0 g, how much remains after 60 min?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Reaction Mechanisms Zumdahl §12.5
 
@@ -376,11 +370,11 @@ $[\text{A}]_0 = 0.800\,\mathrm{M}$.
 > 📌 **Retrieval warm-up**
 >
 > 1. $t_{1/2}$ for first order with $k = 0.0693\,\mathrm{/s}$:
->    **\_\_\_\_\_\_**
+>    10.0 s
 > 2. Which plot is linear for second order?
->    **\_\_\_\_\_\_**
-> 3. Fraction left after 2 half-lives: **\_\_\_\_\_\_**
-> 4. Rate law exponents come from: **\_\_\_\_\_\_**
+>    $1/[\text{A}]$ vs $t$
+> 3. Fraction left after 2 half-lives: 1/4
+> 4. Rate law exponents come from: experiment
 
 #### INSTRUCTION A • Elementary steps 25 min
 
@@ -395,9 +389,9 @@ molecularity:
 
 | **Molecularity** | **Step** | **Rate law** |
 |---|---|---|
-| Unimolecular | A → products | **\_\_\_\_\_\_** |
-| Bimolecular | A + B → products | **\_\_\_\_\_\_** |
-| Bimolecular | 2A → products | **\_\_\_\_\_\_** |
+| Unimolecular | A → products | rate $= k[\text{A}]$ |
+| Bimolecular | A + B → products | rate $= k[\text{A}][\text{B}]$ |
+| Bimolecular | 2A → products | rate $= k[\text{A}]^2$ |
 
 > ⚠️ **AP trap**
 >
@@ -407,24 +401,24 @@ molecularity:
 
 #### Two requirements for a valid mechanism
 
-The steps must sum to the **\_\_\_\_\_\_**.
+The steps must sum to the overall equation.
 
 The predicted rate law must match the
-        **\_\_\_\_\_\_** rate law.
+        experimental rate law.
 
 An intermediate is produced in one step and consumed in a later one,
-so it **\_\_\_\_\_\_** in the sum and never appears in the
+so it cancels in the sum and never appears in the
 overall equation.
 
 #### GUIDED PRACTICE • Write step rate laws 15 min
 
-O₃ → O₂ + O: **\_\_\_\_\_\_**
+O₃ → O₂ + O: rate $= k[\text{O₃}]$
 
 NO₂ + NO₂ → NO₃ + NO:
-        **\_\_\_\_\_\_**
+        rate $= k[\text{NO₂}]^2$
 
 O + O₃ → 2 O₂:
-        **\_\_\_\_\_\_**
+        rate $= k[\text{O}][\text{O₃}]$
 
 #### INSTRUCTION B • The rate-determining step 20 min
 
@@ -437,7 +431,7 @@ O + O₃ → 2 O₂:
 > Zumdahl's analogy: pouring water rapidly through a funnel into a container.
 > The container fills at a rate set by the *funnel opening*, not by how
 > fast you pour. In the same way, an overall reaction can be no faster than
-> its **\_\_\_\_\_\_** — the
+> its slowest step — the
 > rate-determining step.
 
 > 📘 **Worked example: Zumdahl's NO₂ $+$ CO**
@@ -469,12 +463,10 @@ rate $= k[\text{NO}]^2[\text{O₂}]$. Proposed:
 $$ \begin{align*}   \text{NO + NO & → N₂O₂} &&\text{fast equilibrium}\\   \text{N₂O₂ + O₂ & → 2 NO₂} &&\text{slow} \end{align*} $$
 
 Identify the intermediate.
-        **\_\_\_\_\_\_**
+        N₂O₂
 
 Verify the steps sum to the overall equation.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 The slow step gives rate $= k[\text{N₂O₂}][\text{O₂}]$, but
         N₂O₂ is an intermediate and cannot appear in a rate law.
@@ -482,13 +474,9 @@ The slow step gives rate $= k[\text{N₂O₂}][\text{O₂}]$, but
         show that the mechanism predicts the observed rate law.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > Why can a proposed mechanism never be *proved* correct?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Collision Model, Activation Energy, and Catalysis Zumdahl §12.6–12.7
 
@@ -503,11 +491,11 @@ The slow step gives rate $= k[\text{N₂O₂}][\text{O₂}]$, but
 > 📌 **Retrieval warm-up**
 >
 > 1. Rate law for the elementary step 2 A → B:
->    **\_\_\_\_\_\_**
+>    $k[\text{A}]^2$
 > 2. A species made then consumed is called an:
->    **\_\_\_\_\_\_**
+>    intermediate
 > 3. The slowest step is called the:
->    **\_\_\_\_\_\_**
+>    rate-determining step
 
 #### INSTRUCTION A • Why most collisions do nothing 25 min
 
@@ -518,16 +506,16 @@ The slow step gives rate $= k[\text{N₂O₂}][\text{O₂}]$, but
 Molecules collide constantly, yet reactions proceed far more slowly than
 collision frequency alone would predict. Two requirements filter them:
 
-Sufficient **\_\_\_\_\_\_** — at least the
+Sufficient kinetic energy — at least the
         activation energy $E_a$.
 
-Correct **\_\_\_\_\_\_** — the reacting atoms must
+Correct orientation — the reacting atoms must
         meet.
 
 ![figure](fig-ch12-notes-3.png)
 
 The peak is the activated complex (transition state). Note that
-$E_a$ and $\Delta H$ are **\_\_\_\_\_\_** — a very
+$E_a$ and $\Delta H$ are independent — a very
 exothermic reaction can still be extremely slow if $E_a$ is large, which is
 why diamond does not spontaneously become graphite.
 
@@ -539,10 +527,10 @@ why diamond does not spontaneously become graphite.
 
 #### Temperature and the Arrhenius relationship
 
-$k = Ae^{-E_a/RT}   \qquad\Longleftrightarrow\qquad   \ln k =$ **\_\_\_\_\_\_**
+$k = Ae^{-E_a/RT}   \qquad\Longleftrightarrow\qquad   \ln k =$ $-\dfrac{E_a}{R}\left(\dfrac1T\right) + \ln A$
 
 A plot of $\ln k$ versus $1/T$ is a straight line of slope
-**\_\_\_\_\_\_**. Raising the temperature increases $k$ because
+$-E_a/R$. Raising the temperature increases $k$ because
 a larger *fraction* of molecules exceeds $E_a$ — connect this to the
 Maxwell–Boltzmann curves from Unit 3.
 
@@ -559,13 +547,13 @@ Maxwell–Boltzmann curves from Unit 3.
 #### GUIDED PRACTICE • Energy profile reading 15 min
 
 $E_a$ is measured from which point to which?
-        **\_\_\_\_\_\_**
+        reactants up to the peak
 
 $\Delta H$ is measured from which to which?
-        **\_\_\_\_\_\_**
+        reactants to products
 
 If the peak lies above the reactants and the products lie below,
-        the reaction is: **\_\_\_\_\_\_**
+        the reaction is: exothermic
 
 #### INSTRUCTION B • Catalysis 20 min
 
@@ -574,12 +562,12 @@ If the peak lies above the reactants and the products lie below,
 `SP 6`
 
 A catalyst increases the rate by providing an alternative pathway
-with a **\_\_\_\_\_\_**. It is
-**\_\_\_\_\_\_** — it is regenerated by the end.
+with a lower $E_a$. It is
+not consumed — it is regenerated by the end.
 
 |  | **Catalyst** | **Intermediate** |
 |---|---|---|
-| Appears first as a | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| Appears first as a | reactant | product |
 | Net effect | regenerated, unchanged | consumed later |
 
 > 📌 **Note**
@@ -592,9 +580,9 @@ with a **\_\_\_\_\_\_**. It is
 
 #### What a catalyst does and does not change
 
-- Changes: the **\_\_\_\_\_\_**, $E_a$, and the rate.
+- Changes: the mechanism, $E_a$, and the rate.
 - Does *not* change: $\Delta H$, the position of
-   **\_\_\_\_\_\_**, or the identity of the products.
+   equilibrium, or the identity of the products.
 
 Types: homogeneous (same phase as reactants) and
 heterogeneous (different phase — typically a solid surface, as in a
@@ -607,22 +595,18 @@ On an energy profile, sketch how a catalyst changes the curve and
 
 *(working space)*
 
+        
+
 A catalyst speeds up a reaction. Does it produce more product at
         equilibrium? Explain. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 In this mechanism, classify Cl and ClO:
         Cl + O₃ → ClO + O₂; ClO + O → Cl + O₂.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > Why does a modest temperature rise often produce a large increase in rate?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ---
 

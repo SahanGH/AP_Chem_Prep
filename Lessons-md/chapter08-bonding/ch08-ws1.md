@@ -15,63 +15,57 @@ Zumdahl §8.1–8.5 • charges first, radii second — every time
 
 **1.** Classify each bond and give the $\Delta$EN that decides it:
 
-1. O-O: **\_\_\_\_\_\_**
-2. N-H: **\_\_\_\_\_\_**
-3. K-Cl: **\_\_\_\_\_\_**
-4. C-S: **\_\_\_\_\_\_**
+1. O-O: nonpolar covalent, $\Delta$EN $=0$
+2. N-H: polar covalent, $\Delta$EN $=0.9$
+3. K-Cl: ionic, $\Delta$EN $=2.2$
+4. C-S: nonpolar covalent, $\Delta$EN $=0$
 
 **2.** Rank by increasing bond polarity and state the trend that
 decides it: C-H, C-N, C-O, C-F.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **3.** Bond polarity versus molecular polarity:
 
 1. Does CO₂ contain polar bonds? Is it a polar molecule? Explain
-   the apparent contradiction.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   the apparent contradiction. 
 2. Name one molecule that is polar despite having identical bonds
-   throughout, and explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   throughout, and explain. 
 
 **4.** Ionic radii:
 
 1. Explain why every cation is smaller than its parent atom.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Explain why every anion is larger than its parent atom.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Rank by decreasing size: Se²⁻, Br-, Rb+,
    Sr²⁺. State the principle.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 4. Rank by decreasing size: N³⁻, O²⁻, F-, Na+.
-   **\_\_\_\_\_\_**
+   N³⁻ $>$ O²⁻ $>$ F- $>$ Na+
 
 **5.** Lattice energy. Use $\text{LE} \propto |Q_1Q_2|/r$.
 
 1. Rank by lattice energy magnitude: NaCl, MgO, NaF,
-   CaO.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   CaO. 
 2. KF and CaO have similar ion sizes but very different
    melting points. Explain quantitatively.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. In the LiF lattice, how many F- ions surround each
    Li+, and why does that arrangement occur?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **6.** A student ranks BaO above MgO in lattice energy because
 barium is a larger, heavier atom. Correct the reasoning.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Spiral review • Chapters 6–7 • spiral**
 >
-> 1. $\Delta H^\circ_f$ of N₂(g): **\_\_\_\_\_\_**
+> 1. $\Delta H^\circ_f$ of N₂(g): 0
 > 2. Energy of a 500 nm photon:
->    **\_\_\_\_\_\_**
-> 3. Configuration of Fe³⁺: **\_\_\_\_\_\_**
-> 4. PES peak area represents: **\_\_\_\_\_\_**
+>    3.98e-19 J
+> 3. Configuration of Fe³⁺: $[\text{Ar}]3d^5$
+> 4. PES peak area represents: electrons in that
+>    subshell
 > 5. Hess's law works because $H$ is a:
->    **\_\_\_\_\_\_**
+>    state function
 
 ---
 

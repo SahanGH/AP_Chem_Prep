@@ -40,10 +40,10 @@ Zumdahl §1.3–1.5, 1.7–1.10 • PDF pp. 27–68 • 1 block (Day 1)
 > 📌 **Retrieval warm-up**
 >
 > 1. How many significant figures in $0.0025$?
->    **\_\_\_\_\_\_**
-> 2. How many in $1.008$? **\_\_\_\_\_\_**
-> 3. $25\,\mathrm{{}^\circ C}$ in kelvin: **\_\_\_\_\_\_**
-> 4. Density $=$ **\_\_\_\_\_\_**
+>    2
+> 2. How many in $1.008$? 4
+> 3. $25\,\mathrm{{}^\circ C}$ in kelvin: 298 K
+> 4. Density $=$ mass $\div$ volume
 
 #### INSTRUCTION A • Every measurement carries uncertainty 25 min
 
@@ -52,9 +52,9 @@ Zumdahl §1.3–1.5, 1.7–1.10 • PDF pp. 27–68 • 1 block (Day 1)
 `SP 2`
 
 - Accuracy is how close a measurement is to the
-   **\_\_\_\_\_\_**.
+   true value.
 - Precision is how close repeated measurements are to
-   **\_\_\_\_\_\_**.
+   one another.
 
 > 📌 **Zumdahl's graduated cylinder**
 >
@@ -80,18 +80,18 @@ Zumdahl's rules, which are the ones AP uses:
 
 1. **Nonzero digits** always count.
 2. **Leading zeros** (before all nonzero digits) are
-   **\_\_\_\_\_\_** significant — they only place the
-   decimal. $0.0025$ has **\_\_\_\_\_\_**.
+   never significant — they only place the
+   decimal. $0.0025$ has 2.
 3. **Captive zeros** (between nonzero digits) are
-   **\_\_\_\_\_\_** significant. $1.008$ has
-   **\_\_\_\_\_\_**.
+   always significant. $1.008$ has
+   4.
 4. **Trailing zeros** are significant *only if there is a
-   decimal point*. $100$ has **\_\_\_\_\_\_**;
-   $100.$ has **\_\_\_\_\_\_**; $1.00\times10^{2}$ has
-   **\_\_\_\_\_\_**.
+   decimal point*. $100$ has 1;
+   $100.$ has 3; $1.00\times10^{2}$ has
+   3.
 5. **Exact numbers** — from counting (8 molecules) or from
    definitions ($1~\text{in} \equiv 2.54~\text{cm}$) — have
-   **\_\_\_\_\_\_** significant figures and never limit a
+   infinite significant figures and never limit a
    result.
 
 > ⚠️ **AP trap**
@@ -108,14 +108,14 @@ Zumdahl's rules, which are the ones AP uses:
 
 Give the number of significant figures:
 
-1. $0.0105$ **\_\_\_\_\_\_**
-2. $0.050080$ **\_\_\_\_\_\_**
-3. $8.050\times10^{-3}$ **\_\_\_\_\_\_**
-4. $45.20$ **\_\_\_\_\_\_**
-5. $1200$ **\_\_\_\_\_\_**
-6. $1.20\times10^{3}$ **\_\_\_\_\_\_**
-7. $0.00300$ **\_\_\_\_\_\_**
-8. $6.0\times10^{-5}$ **\_\_\_\_\_\_**
+1. $0.0105$ 3
+2. $0.050080$ 5
+3. $8.050\times10^{-3}$ 4
+4. $45.20$ 4
+5. $1200$ 2
+6. $1.20\times10^{3}$ 3
+7. $0.00300$ 3
+8. $6.0\times10^{-5}$ 2
 
 #### INSTRUCTION B • Significant figures in calculations 20 min
 
@@ -155,7 +155,7 @@ sum is the most common significant-figure error there is.
 `SP 5`
 
 Multiply by conversion factors arranged so unwanted units
-**\_\_\_\_\_\_**. The factor you need is whichever way up makes
+cancel. The factor you need is whichever way up makes
 that happen.
 
 > 📘 **Worked example 2: a multi-step conversion**
@@ -202,7 +202,7 @@ $$ K = {}^\circ\text{C} + 273.15 $$
 Kelvin is the scale that matters: it appears in the gas laws, in
 $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, and in every
 equilibrium expression. 25 °C, the standard temperature, is
-**\_\_\_\_\_\_**.
+298 K.
 
 | **Matter** |  |
 |---|---|
@@ -213,7 +213,7 @@ equilibrium expression. 25 °C, the standard temperature, is
 
 A physical change alters form but not identity (melting, dissolving);
 a chemical change produces a
-**\_\_\_\_\_\_**.
+new substance.
 
 > 📌 **Exit ticket**
 >

@@ -17,43 +17,41 @@ Zumdahl §13.1–13.3 • constant does not mean equal
 false, with a one-line justification:
 
 1. The forward and reverse reactions have both stopped.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. The concentrations of reactants and products are equal.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. The same equilibrium state can be reached from either direction.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **2.** Write the $K_c$ expression for each:
 
 1. 2 NO(g) + O₂(g) ⇌ 2 NO₂(g):
-   **\_\_\_\_\_\_**
+   $[\text{NO₂}]^2/([\text{NO}]^2[\text{O₂}])$
 2. PCl₅(g) ⇌ PCl₃(g) + Cl₂(g):
-   **\_\_\_\_\_\_**
+   $[\text{PCl₃}][\text{Cl₂}]/[\text{PCl₅}]$
 3. 4 NH₃(g) + 5 O₂(g) ⇌ 4 NO(g) + 6 H₂O(g):
-   **\_\_\_\_\_\_**
+   $[\text{NO}]^4[\text{H₂O}]^6/([\text{NH₃}]^4[\text{O₂}]^5)$
 
 **3.** Manipulating $K$. A reaction has $K = 25$.
 
-1. $K$ for the reverse reaction: **\_\_\_\_\_\_**
+1. $K$ for the reverse reaction: 0.040
 2. $K$ if all coefficients are doubled:
-   **\_\_\_\_\_\_**
+   625
 3. $K$ if all coefficients are halved:
-   **\_\_\_\_\_\_**
+   5.0
 
 **4.** Explain why coefficients become exponents in a $K$ expression but
 never in a rate law. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **5.** $K_p$ and $K_c$. Use $K_p = K_c(RT)^{\Delta n}$ with
 $R = 0.08206\,\mathrm{L\cdot atm/mol/K}$.
 
 1. Determine $\Delta n$ for 2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g):
-   **\_\_\_\_\_\_**
+   $-1$
 2. Determine $\Delta n$ for H₂(g) + Cl₂(g) ⇌ 2 HCl(g):
-   **\_\_\_\_\_\_**
+   0
 3. For which of those two does $K_p = K_c$? Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 4. For N₂O₄(g) ⇌ 2 NO₂(g) at 25 °C,
    $K_c = 4.6\times10^{-3}$. Calculate $K_p$.
    *(working space)*
@@ -68,18 +66,16 @@ equilibrium is established.
 CaCO₃(s) ⇌ CaO(s) + CO₂(g). Identify the error, give the correct
 expression, and explain the reasoning.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Spiral review • Chapters 11–12 • spiral**
 >
 > 1. $t_{1/2}$ for first order with $k = 0.0693\,\mathrm{/s}$:
->    **\_\_\_\_\_\_**
+>    10.0 s
 > 2. Rate law exponents come from:
->    **\_\_\_\_\_\_**
-> 3. Molality formula: **\_\_\_\_\_\_**
-> 4. Does a catalyst change $\Delta H$? **\_\_\_\_\_\_**
+>    experiment
+> 3. Molality formula: mol solute / kg solvent
+> 4. Does a catalyst change $\Delta H$? no
 > 5. Gas solubility and temperature:
->    **\_\_\_\_\_\_**
+>    inversely related
 
 ---
 

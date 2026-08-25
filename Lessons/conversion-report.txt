@@ -1,4 +1,172 @@
+ch03-notes.tex
+  figure rendered: chapter03-stoichiometry\fig-ch03-notes-1.png
 ch03-selfstudy.tex
   ?? check line with 1 parts but 0 workspace slots -- left non-interactive
 ch03-selfstudy2.tex
   ?? check line with 3 parts but 1 workspace slots -- left non-interactive
+ch04-notes.tex
+  figure rendered: chapter04-reactions-solution-stoich\fig-ch04-notes-1.png
+ch05-notes.tex
+  figure rendered: chapter05-gases\fig-ch05-notes-1.png
+ch08-selfstudy.tex
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-1.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-2.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-3.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-4.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-5.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-6.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-7.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-8.png
+  figure rendered: chapter08-bonding\fig-ch08-selfstudy-9.png
+ch09-notes.tex
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-notes-1.png
+ch09-selfstudy.tex
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-1.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-2.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-3.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-4.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-5.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-6.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-7.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-8.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-9.png
+  figure rendered: chapter09-covalent-orbitals\fig-ch09-selfstudy-10.png
+ch10-notes.tex
+  figure rendered: chapter10-liquids-solids\fig-ch10-notes-1.png
+ch10-selfstudy.tex
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-1.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-2.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-3.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-4.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-5.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-6.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-7.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-8.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-9.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-10.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-11.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-12.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-13.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-14.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-15.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-16.png
+  figure rendered: chapter10-liquids-solids\fig-ch10-selfstudy-17.png
+ch11-selfstudy.tex
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-1.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-2.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-3.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-4.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-5.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-6.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-7.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-8.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-9.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-10.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-11.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-12.png
+  figure rendered: chapter11-solutions\fig-ch11-selfstudy-13.png
+ch12-notes.tex
+  figure rendered: chapter12-kinetics\fig-ch12-notes-1.png
+  figure rendered: chapter12-kinetics\fig-ch12-notes-2.png
+  figure rendered: chapter12-kinetics\fig-ch12-notes-3.png
+ch12-selfstudy.tex
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-1.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-2.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-3.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-4.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-5.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-6.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-7.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-8.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-9.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-10.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-11.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-12.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-13.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-14.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-15.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-16.png
+  figure rendered: chapter12-kinetics\fig-ch12-selfstudy-17.png
+ch13-notes.tex
+  figure rendered: chapter13-equilibrium\fig-ch13-notes-1.png
+ch13-selfstudy.tex
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-1.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-2.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-3.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-4.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-5.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-6.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-7.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-8.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-9.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-10.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-11.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-12.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-13.png
+  figure rendered: chapter13-equilibrium\fig-ch13-selfstudy-14.png
+ch14-selfstudy.tex
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-1.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-2.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-3.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-4.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-5.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-6.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-7.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-8.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-9.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-10.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-11.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-12.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-13.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-14.png
+  figure rendered: chapter14-acids-bases\fig-ch14-selfstudy-15.png
+  ?? check line with 3 parts but 6 workspace slots -- left non-interactive
+  ?? check line with 4 parts but 6 workspace slots -- left non-interactive
+ch15-notes.tex
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-notes-1.png
+ch15-selfstudy.tex
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-1.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-2.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-3.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-4.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-5.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-6.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-7.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-8.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-9.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-10.png
+  figure rendered: chapter15-acid-base-equilibria\fig-ch15-selfstudy-11.png
+ch16-selfstudy.tex
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-1.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-2.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-3.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-4.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-5.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-6.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-7.png
+  figure rendered: chapter16-solubility-equilibria\fig-ch16-selfstudy-8.png
+ch17-selfstudy.tex
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-1.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-2.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-3.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-4.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-5.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-6.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-7.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-8.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-9.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-10.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-11.png
+  figure rendered: chapter17-thermodynamics\fig-ch17-selfstudy-12.png
+ch18-selfstudy.tex
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-1.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-2.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-3.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-4.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-5.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-6.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-7.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-8.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-9.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-10.png
+  figure rendered: chapter18-electrochemistry\fig-ch18-selfstudy-11.png

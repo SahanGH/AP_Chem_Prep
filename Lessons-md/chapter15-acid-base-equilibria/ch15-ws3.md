@@ -17,24 +17,23 @@ Zumdahl §15.4–15.5 • name the major species before choosing a method
 species and the method used in each region:
 
 1. Before any base is added:
-   **\_\_\_\_\_\_**
+   HA only — weak-acid ICE
 2. Between the start and equivalence:
-   **\_\_\_\_\_\_**
+   HA and A- — buffer, use H–H
 3. At equivalence:
-   **\_\_\_\_\_\_**
+   A- only — weak-base ICE with $K_b$
 4. After equivalence:
-   **\_\_\_\_\_\_**
+   excess OH- — strong base alone
 
 **2.** 25.0 mL of 0.100 M HCl is
 titrated with 0.100 M NaOH.
 
 1. Volume of NaOH at equivalence:
-   **\_\_\_\_\_\_**
-2. pH before any base is added: **\_\_\_\_\_\_**
+   25.0 mL
+2. pH before any base is added: 1.00
 3. pH after 10.0 mL: 
    *(working space)*
 4. pH at equivalence, with a reason: 
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 5. pH after 35.0 mL: 
    *(working space)*
 
@@ -42,11 +41,11 @@ titrated with 0.100 M NaOH.
 titrated with 0.100 M NaOH. Complete the table.
 
 1. 0.00 mL (weak acid alone):
-   **\_\_\_\_\_\_**
+   2.87
 2. 5.00 mL: 
    *(working space)*
 3. 12.50 mL, and say what is special about it:
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 4. 20.00 mL: 
    *(working space)*
 5. 25.00 mL (equivalence): 
@@ -58,37 +57,37 @@ titrated with 0.100 M NaOH. Complete the table.
 volumes and concentrations.
 
 1. Are the equivalence *volumes* the same? Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Are the equivalence *pH values* the same? Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Which curve has a flat buffer region, and why?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **5.** 100.0 mL of 0.050 M NH₃ is
 titrated with 0.10 M HCl.
 
-1. Volume at equivalence: **\_\_\_\_\_\_**
+1. Volume at equivalence: 50.0 mL
 2. pH at the halfway point, with a one-line reason:
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. pH at equivalence: 
    *(working space)*
 4. Why is this equivalence point acidic?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **6.** Indicators.
 
-1. An indicator is itself a **\_\_\_\_\_\_**, whose
+1. An indicator is itself a weak acid, whose
    HIn and In- forms differ in
-   **\_\_\_\_\_\_**.
+   color.
 2. An indicator with $K_a = 1.0\times10^{-5}$ changes color over
-   what pH range? **\_\_\_\_\_\_**
+   what pH range? about 4 to 6
 3. Distinguish the end point from the equivalence point.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 4. Which indicator suits the titration in problem 3
    (equivalence 8.72): methyl red (4.4–6.2) or phenolphthalein
-   (8.2–10.0)? **\_\_\_\_\_\_**
+   (8.2–10.0)? phenolphthalein
 5. Which suits problem 5 (equivalence 5.36)?
-   **\_\_\_\_\_\_**
+   methyl red
 
 **7.** **FRQ (10 points).** A 20.00 mL sample of a
 solution of an unknown monoprotic weak acid HA is titrated with
@@ -100,22 +99,22 @@ Calculate the concentration of the acid.
 
 *(working space)*
 
+        
+
 Explain why the pH at 11.20 mL gives p$K_a$
         directly. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-Determine $K_a$. **\_\_\_\_\_\_**
+Determine $K_a$. $1.4\times10^{-5}$
 
 Calculate the pH at the equivalence point. 
 
 *(working space)*
 
+        
+
 Choose an indicator for this titration from methyl red (4.4–6.2),
         bromthymol blue (6.0–7.6) and phenolphthalein (8.2–10.0), and
         justify. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Rubric — score yourself, 10 points**
 >
@@ -133,13 +132,13 @@ Choose an indicator for this titration from methyl red (4.4–6.2),
 > 📌 **Spiral review • Chapter 15 • blocks 1–3**
 >
 > 1. Step 1 of the buffer method:
->    **\_\_\_\_\_\_**
-> 2. Optimal buffering ratio: **\_\_\_\_\_\_**
-> 3. Useful buffer range: **\_\_\_\_\_\_**
+>    stoichiometry to completion
+> 2. Optimal buffering ratio: 1
+> 3. Useful buffer range: p$K_a \pm 1$
 > 4. pH of 0.20 M/0.20 M acetate buffer:
->    **\_\_\_\_\_\_**
+>    4.74
 > 5. Diluting a buffer changes capacity how?
->    **\_\_\_\_\_\_**
+>    lowers it
 
 ---
 

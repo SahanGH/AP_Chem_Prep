@@ -37,10 +37,10 @@ Zumdahl §9.1 (CED) $+$ §9.2–9.3 (enrichment) • PDF pp. 454–490 • 3 blo
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Electron domains around C in CH₄: **\_\_\_\_\_\_**
-> 2. Geometry of BF₃: **\_\_\_\_\_\_**
+> 1. Electron domains around C in CH₄: 4
+> 2. Geometry of BF₃: trigonal planar
 > 3. Does a double bond count as one domain or two?
->    **\_\_\_\_\_\_**
+>    one
 
 #### INSTRUCTION A • The problem hybridization solves 25 min
 
@@ -51,10 +51,10 @@ Zumdahl §9.1 (CED) $+$ §9.2–9.3 (enrichment) • PDF pp. 454–490 • 3 blo
 Carbon's ground-state configuration is $[\text{He}]\,2s^2\,2p^2$ — one
 filled $s$ orbital and two half-filled $p$ orbitals, pointing at
 90$^\circ$ to each other. Taken literally, that predicts carbon should form
-**\_\_\_\_\_\_** bonds at **\_\_\_\_\_\_**.
+two bonds at 90$^\circ$.
 
-Methane is observed to have **\_\_\_\_\_\_** identical C–H bonds
-at **\_\_\_\_\_\_**. The atomic-orbital picture is simply
+Methane is observed to have four identical C–H bonds
+at 109.5$^\circ$. The atomic-orbital picture is simply
 wrong about the molecule.
 
 > 📌 **Note**
@@ -73,30 +73,30 @@ wrong about the molecule.
 
 | **Domains** | **Hybrid** | **Built from** | **Geometry** | **Leftover $p$** |
 |---|---|---|---|---|
-| 2 | **\_\_\_\_\_\_** | one $s$, one $p$ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| 3 | **\_\_\_\_\_\_** | one $s$, two $p$ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| 4 | **\_\_\_\_\_\_** | one $s$, three $p$ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| 2 | sp | one $s$, one $p$ | linear | 2 |
+| 3 | sp$^2$ | one $s$, two $p$ | trigonal planar | 1 |
+| 4 | sp$^3$ | one $s$, three $p$ | tetrahedral | 0 |
 
 The count is the whole trick: **the number of hybrid orbitals always
 equals the number of atomic orbitals combined**, and equals the number of
-electron **\_\_\_\_\_\_**.
+electron domains.
 
 #### GUIDED PRACTICE • Zumdahl's three-step procedure 15 min
 
 Always in this order:
 
-1. Draw the **\_\_\_\_\_\_**.
+1. Draw the Lewis structure.
 2. Determine the electron-pair arrangement using
-   **\_\_\_\_\_\_**.
-3. Assign the **\_\_\_\_\_\_** that match.
+   VSEPR.
+3. Assign the hybrid orbitals that match.
 
 Apply it:
 
-1. C in CH₄: **\_\_\_\_\_\_**
-2. B in BF₃: **\_\_\_\_\_\_**
-3. C in CO₂: **\_\_\_\_\_\_**
-4. N in NH₃: **\_\_\_\_\_\_**
-5. O in H₂O: **\_\_\_\_\_\_**
+1. C in CH₄: 4 domains $\to$ sp$^3$
+2. B in BF₃: 3 domains $\to$ sp$^2$
+3. C in CO₂: 2 domains $\to$ sp
+4. N in NH₃: 4 domains (1 LP) $\to$ sp$^3$
+5. O in H₂O: 4 domains (2 LP) $\to$ sp$^3$
 
 > ⚠️ **AP trap**
 >
@@ -131,20 +131,17 @@ five orbitals. But he immediately adds a caution worth taking seriously:
 
 1. In methanol, CH₃OH, give the hybridization of both the carbon
    and the oxygen, with domain counts.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. In formaldehyde, H₂CO, give the carbon's hybridization and
-   predict the H–C–H angle.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   predict the H–C–H angle. 
 3. SO₂ and SO₃ both have sulfur as the central atom, yet only
    one is bent. Give each hybridization and explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > Both CH₄ and H₂O have sp$^3$ hybridized central atoms, yet their
-> bond angles differ. Explain. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> bond angles differ. Explain.
 
 ## Sigma and Pi Bonds Zumdahl §9.1
 
@@ -157,11 +154,11 @@ five orbitals. But he immediately adds a caution worth taking seriously:
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Hybridization of C in C₂H₆: **\_\_\_\_\_\_**
+> 1. Hybridization of C in C₂H₆: sp$^3$
 > 2. How many hybrid orbitals does sp$^2$ produce?
->    **\_\_\_\_\_\_**
+>    3
 > 3. Leftover unhybridized $p$ orbitals on an sp carbon:
->    **\_\_\_\_\_\_**
+>    2
 
 #### INSTRUCTION A • Two ways for orbitals to overlap 25 min
 
@@ -171,18 +168,19 @@ five orbitals. But he immediately adds a caution worth taking seriously:
 
 |  | **$\sigma$ (sigma) bond** | **$\pi$ (pi) bond** |
 |---|---|---|
-| Overlap | **\_\_\_\_\_\_**, along the internuclear axis | **\_\_\_\_\_\_**, above and below the axis |
-| Built from | hybrid orbitals | leftover **\_\_\_\_\_\_** orbitals |
-| Electron density | concentrated **\_\_\_\_\_\_** | in two lobes off the axis |
-| Rotation | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| Overlap | head-on, along the internuclear axis | side-by-side, above and below the axis |
+| Built from | hybrid orbitals | leftover unhybridized
+  $p$ orbitals |
+| Electron density | concentrated between the nuclei | in two lobes off the axis |
+| Rotation | free | blocked |
 
 ![figure](fig-ch09-notes-1.png)
 
 #### Counting rule
 
-- Single bond $=$ **\_\_\_\_\_\_**
-- Double bond $=$ **\_\_\_\_\_\_**
-- Triple bond $=$ **\_\_\_\_\_\_**
+- Single bond $=$ 1 $\sigma$
+- Double bond $=$ 1 $\sigma$ + 1 $\pi$
+- Triple bond $=$ 1 $\sigma$ + 2 $\pi$
 
 > 📌 **Note**
 >
@@ -193,11 +191,11 @@ five orbitals. But he immediately adds a caution worth taking seriously:
 
 #### GUIDED PRACTICE • Count them 15 min
 
-1. C₂H₆ (ethane): **\_\_\_\_\_\_**
-2. C₂H₄ (ethene): **\_\_\_\_\_\_**
-3. C₂H₂ (ethyne): **\_\_\_\_\_\_**
-4. HCN: **\_\_\_\_\_\_**
-5. N₂: **\_\_\_\_\_\_**
+1. C₂H₆ (ethane): 7 $\sigma$, 0 $\pi$
+2. C₂H₄ (ethene): 5 $\sigma$, 1 $\pi$
+3. C₂H₂ (ethyne): 3 $\sigma$, 2 $\pi$
+4. HCN: 2 $\sigma$, 2 $\pi$
+5. N₂: 1 $\sigma$, 2 $\pi$
 
 #### INSTRUCTION B • Why double bonds cannot rotate 20 min
 
@@ -209,11 +207,11 @@ A $\sigma$ bond is cylindrically symmetric about the internuclear axis, so
 the two ends can spin freely — rotation costs essentially nothing.
 
 A $\pi$ bond is different. Its two lobes must stay
-**\_\_\_\_\_\_** to overlap at all. Rotating one end by
+parallel to overlap at all. Rotating one end by
 90$^\circ$ would set the $p$ orbitals perpendicular, destroying the overlap
-and **\_\_\_\_\_\_**. That takes a large amount of
+and breaking the bond. That takes a large amount of
 energy, so at ordinary temperatures a double bond is
-**\_\_\_\_\_\_**.
+rigid.
 
 > 📘 **Worked example: why cis and trans exist**
 >
@@ -231,17 +229,15 @@ energy, so at ordinary temperatures a double bond is
 
 1. For H₂C=CH-C#N: give the hybridization of each carbon and the
    total $\sigma$ and $\pi$ counts.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Explain why ethyne (C₂H₂) is linear while ethene
    (C₂H₄) is planar but not linear.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > A molecule has 4 $\sigma$ and 2 $\pi$ bonds between its heavy atoms. What
-> kind of multiple bonding must it contain? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> kind of multiple bonding must it contain?
 
 ## ENRICHMENT: The Molecular Orbital Model Zumdahl §9.2–9.3 — NOT on the CED
 
@@ -272,29 +268,29 @@ orbitals that span the *whole molecule*.
 Combining two atomic orbitals always produces two molecular orbitals:
 
 - a bonding MO — lower in energy, with electron density
-   **\_\_\_\_\_\_**;
+   between the nuclei;
 - an antibonding MO ($\sigma^*$, $\pi^*$) — higher in energy,
-   with a **\_\_\_\_\_\_** between the nuclei.
+   with a node between the nuclei.
 
-$\text{Bond order} =$ **\_\_\_\_\_\_**
+$\text{Bond order} =$ $\dfrac{(\text{bonding e}^-) - (\text{antibonding e}^-)}{2}$
 
-A bond order of zero means **\_\_\_\_\_\_** — which is
+A bond order of zero means no bond forms — which is
 exactly why He₂ does not exist.
 
 #### GUIDED PRACTICE • Bond order practice 15 min
 
 1. H₂: 2 bonding, 0 antibonding $\to$ bond order
-   **\_\_\_\_\_\_**
+   1
 2. He₂: 2 bonding, 2 antibonding $\to$ bond order
-   **\_\_\_\_\_\_**
+   0
 3. O₂: 10 bonding, 6 antibonding $\to$ bond order
-   **\_\_\_\_\_\_**
+   2
 4. N₂: 10 bonding, 4 antibonding $\to$ bond order
-   **\_\_\_\_\_\_**
+   3
 
 Zumdahl notes the payoff: across the period-2 diatomics, as MO bond order
-rises, bond energy **\_\_\_\_\_\_** and bond length
-**\_\_\_\_\_\_** — strong evidence the model is capturing
+rises, bond energy increases and bond length
+decreases — strong evidence the model is capturing
 something real.
 
 #### INSTRUCTION B • The oxygen problem 20 min
@@ -318,7 +314,7 @@ something real.
 The MO model resolves it cleanly. Filling oxygen's molecular orbitals places
 the last two electrons in *separate* degenerate $\pi^*$ orbitals, with
 parallel spins by Hund's rule. Result: bond order 2 (agreeing with the
-double bond) *and* two **\_\_\_\_\_\_** electrons,
+double bond) *and* two unpaired electrons,
 matching the magnetic evidence exactly.
 
 #### APPLICATION • Comparing the two models 20 min
@@ -327,19 +323,13 @@ State one thing the localized electron model does better than MO
         theory, and one thing MO does better.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Both models agree that O₂ has a bond order of 2. Why is that
         agreement reassuring rather than trivial?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
-> Why does He₂ not exist, in MO terms? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Why does He₂ not exist, in MO terms?
 
 ---
 

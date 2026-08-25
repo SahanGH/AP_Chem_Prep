@@ -53,12 +53,12 @@ Zumdahl §17.1–17.10 • PDF pp. 834–880 • 5 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. Sign of $\Delta H$ for an exothermic reaction:
->    **\_\_\_\_\_\_**
+>    negative
 > 2. Which phase has the most freedom of motion?
->    **\_\_\_\_\_\_**
-> 3. At constant $P$, $q$ equals: **\_\_\_\_\_\_**
+>    gas
+> 3. At constant $P$, $q$ equals: $\Delta H$
 > 4. Raising the temperature of a gas does what to the spread of
->    molecular speeds? **\_\_\_\_\_\_**
+>    molecular speeds? broadens it
 
 #### INSTRUCTION A • What entropy actually measures 25 min
 
@@ -77,7 +77,7 @@ names separately:
 - **Matter disperses.** Particles occupy a larger volume or move
    more freely.
 - **Energy disperses.** At higher temperature the distribution of
-   molecular kinetic energies **\_\_\_\_\_\_**, so the
+   molecular kinetic energies broadens, so the
    energy is spread over more states.
 
 ### The four situations you must recognize `ZUM §17.1`
@@ -106,15 +106,15 @@ names separately:
 Give the sign of $\Delta S^\circ$ and the reason:
 
 1. CaCO₃(s) → CaO(s) + CO₂(g)
-   **\_\_\_\_\_\_**
+   positive — 0 to 1 mol gas
 2. N₂(g) + 3H₂(g) → 2NH₃(g)
-   **\_\_\_\_\_\_**
+   negative — 4 to 2 mol gas
 3. 2H₂(g) + O₂(g) → 2H₂O(l)
-   **\_\_\_\_\_\_**
+   negative — 3 mol gas to 0
 4. H₂O(s) → H₂O(l)
-   **\_\_\_\_\_\_**
+   positive — solid to liquid
 5. 2NO₂(g) → N₂O₄(g)
-   **\_\_\_\_\_\_**
+   negative — 2 to 1 mol gas
 
 #### INSTRUCTION B • The second law 20 min
 
@@ -128,7 +128,7 @@ process, the entropy of the *universe* increases.
 
 $\Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}} > 0$
 
-The system's entropy is allowed to **\_\_\_\_\_\_** — water
+The system's entropy is allowed to decrease — water
 freezes, ammonia forms, life builds ordered structures — provided the
 surroundings gain more than the system loses.
 
@@ -151,7 +151,11 @@ $$ \Delta S_{\text{surr}} = -\frac{\Delta H}{T} $$
 
 #### APPLICATION • Reasoning with the second law 20 min
 
-1. Water freezing has $\Delta S_{\text{sys}}  📌 **Exit ticket**
+1. Water freezing has $\Delta S_{\text{sys}} 
+2. A living organism builds highly ordered molecules from simple ones.
+   Does this violate the second law? 
+
+> 📌 **Exit ticket**
 >
 > State the sign of $\Delta S_{\text{sys}}$, of $\Delta S_{\text{surr}}$, and
 > of $\Delta S_{\text{univ}}$ for the combustion of methane at room
@@ -169,9 +173,9 @@ $$ \Delta S_{\text{surr}} = -\frac{\Delta H}{T} $$
 > 📌 **Retrieval warm-up**
 >
 > 1. Sign of $\Delta S^\circ$ when moles of gas increase:
->    **\_\_\_\_\_\_**
-> 2. $\Delta S_{\text{surr}} =$ **\_\_\_\_\_\_**
-> 3. Units of $S^\circ$: **\_\_\_\_\_\_**
+>    positive
+> 2. $\Delta S_{\text{surr}} =$ $-\Delta H/T$
+> 3. Units of $S^\circ$: J/(K$\cdot$mol)
 
 #### INSTRUCTION A • Absolute entropies 25 min
 
@@ -180,7 +184,7 @@ $$ \Delta S_{\text{surr}} = -\frac{\Delta H}{T} $$
 `SP 5`
 
 The third law of thermodynamics says a perfect crystal at
-0 K has an entropy of exactly **\_\_\_\_\_\_**. That
+0 K has an entropy of exactly zero. That
 gives entropy a genuine origin, so every substance has an
 absolute entropy $S^\circ$ — a positive number, tabulated
 directly.
@@ -231,21 +235,21 @@ N₂O₄ 304.
 
 1. 2H₂(g) + O₂(g) → 2H₂O(l): 
    *(working space)*
-2. H₂O(l) → H₂O(g): **\_\_\_\_\_\_**
-3. 2NO₂(g) → N₂O₄(g): **\_\_\_\_\_\_**
+2. H₂O(l) → H₂O(g): $+119$ J/K
+3. 2NO₂(g) → N₂O₄(g): $-176$ J/K
 
 #### APPLICATION • Interpreting the numbers 20 min
 
 1. For H₂O(l) → H₂O(g), $\Delta S^\circ = +119$ J/K while
    $\Delta H^\circ = +44$ kJ. Explain what each sign says about
    whether the process is favored at 25 °C.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Why is $S^\circ$ for H₂O(g) nearly triple that for
    H₂O(l), when it is the same substance?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. A student computes $\Delta S^\circ$ for the Haber process as
    $193 - (192 + 131) = -130$ J/K. Find both errors.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
@@ -265,13 +269,13 @@ N₂O₄ 304.
 > 📌 **Retrieval warm-up**
 >
 > 1. $\Delta S^\circ$ for CaCO₃(s) → CaO(s) + CO₂(g):
->    **\_\_\_\_\_\_**
+>    $+161$ J/K
 > 2. $\Delta S_{\text{univ}}$ must be what sign for a favored process?
->    **\_\_\_\_\_\_**
+>    positive
 > 3. Units of $S^\circ$ versus $\Delta H^\circ$:
->    **\_\_\_\_\_\_**
+>    J/(K$\cdot$mol) versus kJ/mol
 > 4. The AP term replacing “spontaneous”:
->    **\_\_\_\_\_\_**
+>    thermodynamically favored
 
 #### INSTRUCTION A • One number that decides 25 min
 
@@ -296,8 +300,8 @@ $\Delta G^\circ  0$: not favored (the reverse is)
 $\Delta G^\circ = 0$: at equilibrium
 
 The sign flip is worth stating: $\Delta S_{\text{univ}}$ must be
-**\_\_\_\_\_\_**, but $\Delta G^\circ$ must be
-**\_\_\_\_\_\_**, because of the $-T$ used in the derivation.
+positive, but $\Delta G^\circ$ must be
+negative, because of the $-T$ used in the derivation.
 
 ### The second route: free energies of formation `ZUM §17.7`
 
@@ -375,7 +379,9 @@ $$ T = \frac{\Delta H^\circ}{\Delta S^\circ} $$
    say what it physically is.
    *(working space)*
 3. Without calculating, say whether
-   2H₂O₂(l) → 2H₂O(l) + O₂(g) ($\Delta H^\circ  📌 **Exit ticket**
+   2H₂O₂(l) → 2H₂O(l) + O₂(g) ($\Delta H^\circ 
+
+> 📌 **Exit ticket**
 >
 > A reaction has $\Delta H^\circ = +50$ kJ and $\Delta S^\circ = +100$ J/K.
 > Is it favored at 298 K? Above what temperature does that change?
@@ -391,12 +397,12 @@ $$ T = \frac{\Delta H^\circ}{\Delta S^\circ} $$
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $\Delta G^\circ =$ **\_\_\_\_\_\_**
-> 2. Favored means $\Delta G^\circ$ is: **\_\_\_\_\_\_**
+> 1. $\Delta G^\circ =$ $\Delta H^\circ -         T\Delta S^\circ$
+> 2. Favored means $\Delta G^\circ$ is: negative
 > 3. If $K > 1$, which side is favored?
->    **\_\_\_\_\_\_**
+>    products
 > 4. What raises a rate without changing $K$?
->    **\_\_\_\_\_\_**
+>    a catalyst
 
 #### INSTRUCTION A • Two languages for the same fact 25 min
 
@@ -448,7 +454,7 @@ A thermodynamically favored reaction tells you *where* the system would
 end up. It says nothing about *how long* that takes. When a favored
 reaction proceeds too slowly to observe, it is under
 kinetic control, and the usual cause is a high
-**\_\_\_\_\_\_**.
+activation energy.
 
 > ⚠️ **AP trap**
 >
@@ -471,10 +477,10 @@ kinetic control, and the usual cause is a high
 2. A mixture of H₂ and O₂ can sit in a flask for years
    without reacting, yet the combustion has
    $\Delta G^\circ = -474$ kJ. Explain, and say what a spark does.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. A student says “$\Delta G^\circ$ is negative, so the reaction will
    be fast.” Correct them in one sentence.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
@@ -494,11 +500,11 @@ kinetic control, and the usual cause is a high
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $\Delta G^\circ = -RT\ln K$; if $\Delta G^\circ     **\_\_\_\_\_\_**
+> 1. $\Delta G^\circ = -RT\ln K$; if $\Delta G^\circ     greater than 1
 > 2. A favored but immeasurably slow reaction is under:
->    **\_\_\_\_\_\_**
+>    kinetic control
 > 3. Adding two reactions adds their:
->    **\_\_\_\_\_\_**
+>    $\Delta G^\circ$ values
 
 #### INSTRUCTION A • Why some salts dissolve and others do not 25 min
 
@@ -510,15 +516,15 @@ This is CED **9.6**. Dissolving a salt is a free-energy balance with
 three parts:
 
 **Breaking up the solid** — overcoming the lattice.
-        $\Delta H$ strongly **\_\_\_\_\_\_**,
+        $\Delta H$ strongly positive,
         $\Delta S$ positive.
 
 **Reorganizing the solvent** around the ions.
-        $\Delta S$ **\_\_\_\_\_\_** — water molecules become
+        $\Delta S$ negative — water molecules become
         ordered in hydration shells.
 
 **Ion–solvent attraction** (hydration).
-        $\Delta H$ **\_\_\_\_\_\_**.
+        $\Delta H$ negative.
 
 > 📌 **Why the CED does not ask you to predict the total**
 >
@@ -562,8 +568,8 @@ two ways to make it happen anyway — CED topic **9.7**.
    water into glucose with a hugely positive $\Delta G^\circ$.
 
 **2. Couple it to a favorable reaction.** Because free energies
-**\_\_\_\_\_\_**, an unfavorable step can be carried by a favorable
-one, provided the two share a **\_\_\_\_\_\_** and
+add, an unfavorable step can be carried by a favorable
+one, provided the two share a common intermediate and
 the *sum* has $\Delta G^\circ  📘 **Worked example 7: how cells pay for chemistry**
 >
 > Phosphorylating glucose is unfavorable on its own:
@@ -588,17 +594,13 @@ Photosynthesis has $\Delta G^\circ \approx +2870$ kJ/mol of
         glucose. Explain how it occurs at all.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Reaction X has $\Delta G^\circ = +25$ kJ. It is coupled to
         reaction Y with $\Delta G^\circ = -60$ kJ. Is the coupled process
         favored, and what must the two reactions share?
-        **\_\_\_\_\_\_**
+        yes, $-35$ kJ; a common intermediate
 
 NaCl dissolves with $\Delta H^\circ$ very close to zero.
         Explain what must be driving it. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >

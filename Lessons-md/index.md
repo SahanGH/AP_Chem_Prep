@@ -97,6 +97,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 11 • Properties of Solutions
 
 - [Guided Notes](chapter11-solutions/ch11-notes.md)
+- [Self-Study • Chapter 11, I do / You do](chapter11-solutions/ch11-selfstudy.md)
 - [Worksheet 1 • Solution Composition](chapter11-solutions/ch11-ws1.md)
 - [Worksheet 2 • The Energetics of Dissolving](chapter11-solutions/ch11-ws2.md)
 - [Worksheet 3 • Solubility Factors, FRQ $+$ Optional](chapter11-solutions/ch11-ws3.md)
@@ -105,6 +106,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 12 • Chemical Kinetics
 
 - [Guided Notes](chapter12-kinetics/ch12-notes.md)
+- [Self-Study • Chapter 12, I do / You do](chapter12-kinetics/ch12-selfstudy.md)
 - [Worksheet 1 • Rates and Rate Laws](chapter12-kinetics/ch12-ws1.md)
 - [Worksheet 2 • Integrated Rate Laws](chapter12-kinetics/ch12-ws2.md)
 - [Worksheet 3 • Mechanisms, Energy, Catalysis & FRQ](chapter12-kinetics/ch12-ws3.md)
@@ -113,6 +115,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 13 • Chemical Equilibrium
 
 - [Guided Notes](chapter13-equilibrium/ch13-notes.md)
+- [Self-Study • Chapter 13, I do / You do](chapter13-equilibrium/ch13-selfstudy.md)
 - [Worksheet 1 • The Equilibrium Constant](chapter13-equilibrium/ch13-ws1.md)
 - [Worksheet 2 • $Q$, $K$, and ICE Tables](chapter13-equilibrium/ch13-ws2.md)
 - [Worksheet 3 • Le Ch^atelier's Principle & FRQ](chapter13-equilibrium/ch13-ws3.md)
@@ -121,6 +124,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 14 • Acids and Bases
 
 - [Guided Notes](chapter14-acids-bases/ch14-notes.md)
+- [Self-Study • Chapter 14, I do / You do](chapter14-acids-bases/ch14-selfstudy.md)
 - [Worksheet 1 • Conjugates, Strength, and the pH Scale](chapter14-acids-bases/ch14-ws1.md)
 - [Worksheet 2 • Weak Acids and Weak Bases](chapter14-acids-bases/ch14-ws2.md)
 - [Worksheet 3 • Salts, Structure & FRQ](chapter14-acids-bases/ch14-ws3.md)
@@ -129,6 +133,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 15 • Acid–Base Equilibria
 
 - [Guided Notes](chapter15-acid-base-equilibria/ch15-notes.md)
+- [Self-Study • Chapter 15, I do / You do](chapter15-acid-base-equilibria/ch15-selfstudy.md)
 - [Worksheet 1 • Common Ion and Henderson–Hasselbalch](chapter15-acid-base-equilibria/ch15-ws1.md)
 - [Worksheet 2 • Buffer Action and Capacity](chapter15-acid-base-equilibria/ch15-ws2.md)
 - [Worksheet 3 • Titration Curves, Indicators & FRQ](chapter15-acid-base-equilibria/ch15-ws3.md)
@@ -137,6 +142,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 16 • Solubility Equilibria
 
 - [Guided Notes](chapter16-solubility-equilibria/ch16-notes.md)
+- [Self-Study • Chapter 16, I do / You do](chapter16-solubility-equilibria/ch16-selfstudy.md)
 - [Worksheet 1 • $K_sp$ Expressions and $K_sp$ from Solubility](chapter16-solubility-equilibria/ch16-ws1.md)
 - [Worksheet 2 • Solubility from $K_sp$ and Ranking Salts](chapter16-solubility-equilibria/ch16-ws2.md)
 - [Worksheet 3 • The Common-Ion Effect](chapter16-solubility-equilibria/ch16-ws3.md)
@@ -146,6 +152,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 17 • Entropy and Free Energy
 
 - [Guided Notes](chapter17-thermodynamics/ch17-notes.md)
+- [Self-Study • Chapter 17, I do / You do](chapter17-thermodynamics/ch17-selfstudy.md)
 - [Worksheet 1 • Entropy and the Second Law](chapter17-thermodynamics/ch17-ws1.md)
 - [Worksheet 2 • Calculating $ S^$ and $ G^$](chapter17-thermodynamics/ch17-ws2.md)
 - [Worksheet 3 • Temperature, $K$, and Kinetic Control](chapter17-thermodynamics/ch17-ws3.md)
@@ -155,6 +162,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 ## Chapter 18 • Electrochemistry
 
 - [Guided Notes](chapter18-electrochemistry/ch18-notes.md)
+- [Self-Study • Chapter 18, I do / You do](chapter18-electrochemistry/ch18-selfstudy.md)
 - [Worksheet 1 • Galvanic Cells and How They Work](chapter18-electrochemistry/ch18-ws1.md)
 - [Worksheet 2 • $E^_cell$, $ G^$ and $K$](chapter18-electrochemistry/ch18-ws2.md)
 - [Worksheet 3 • Nonstandard Conditions](chapter18-electrochemistry/ch18-ws3.md)

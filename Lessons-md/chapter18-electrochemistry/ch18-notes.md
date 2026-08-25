@@ -53,11 +53,11 @@ Zumdahl §18.1–18.4, 18.7–18.8 • PDF pp. 881–930 • 5 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Oxidation is the **\_\_\_\_\_\_** of electrons.
-> 2. Reduction is the **\_\_\_\_\_\_** of electrons.
+> 1. Oxidation is the loss of electrons.
+> 2. Reduction is the gain of electrons.
 > 3. Oxidation number of Zn in Zn(s):
->    **\_\_\_\_\_\_**
-> 4. A reaction with $\Delta G^\circ     **\_\_\_\_\_\_**
+>    0
+> 4. A reaction with $\Delta G^\circ     thermodynamically favored
 
 #### INSTRUCTION A • Separating the half-reactions 25 min
 
@@ -67,7 +67,7 @@ Zumdahl §18.1–18.4, 18.7–18.8 • PDF pp. 881–930 • 5 blocks
 
 Drop zinc metal into copper(II) sulfate and the reaction
 Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)
-happens immediately, releasing energy as **\_\_\_\_\_\_**. The
+happens immediately, releasing energy as heat. The
 electrons pass directly from zinc atoms to copper ions at the point of
 contact, and nothing useful is captured.
 
@@ -94,8 +94,8 @@ That flow is an electric current, and it can do work.
 
 True in *every* cell, galvanic and electrolytic alike.
 
-Electrons always flow from **\_\_\_\_\_\_** to
-**\_\_\_\_\_\_** through the wire — alphabetical order, which
+Electrons always flow from anode to
+cathode through the wire — alphabetical order, which
 is worth noticing because it never changes.
 
 > 📌 **What the salt bridge is actually for**
@@ -115,16 +115,16 @@ is worth noticing because it never changes.
 For Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s) run as a galvanic cell:
 
 1. Oxidation half-reaction:
-   **\_\_\_\_\_\_**
+   Zn → Zn²⁺ + 2e⁻
 2. Reduction half-reaction:
-   **\_\_\_\_\_\_**
-3. The anode is made of: **\_\_\_\_\_\_**
-4. The cathode is made of: **\_\_\_\_\_\_**
-5. Electrons flow from **\_\_\_\_\_\_**
-6. The zinc electrode's mass **\_\_\_\_\_\_**; the
-   copper electrode's mass **\_\_\_\_\_\_**
+   Cu²⁺ + 2e⁻ → Cu
+3. The anode is made of: zinc
+4. The cathode is made of: copper
+5. Electrons flow from the zinc to the copper
+6. The zinc electrode's mass decreases; the
+   copper electrode's mass increases
 7. Anions in the salt bridge move toward:
-   **\_\_\_\_\_\_**
+   the anode (zinc)
 
 #### INSTRUCTION B • Galvanic against electrolytic 20 min
 
@@ -159,13 +159,12 @@ is being pushed, and whether energy comes out or must be put in.
 1. A student builds a cell and finds the silver electrode gains mass
    while the copper electrode dissolves. Identify the anode, the
    cathode, and the direction of electron flow.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Why does a galvanic cell stop working if the salt bridge is
-   removed?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   removed? 
 3. A cell has $E^\circ_{\text{cell}} = -0.46$ V. Is it galvanic or
    electrolytic, and what must be supplied?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
@@ -185,11 +184,11 @@ is being pushed, and whether energy comes out or must be put in.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Oxidation occurs at the: **\_\_\_\_\_\_**
+> 1. Oxidation occurs at the: anode
 > 2. Electrons flow from anode to:
->    **\_\_\_\_\_\_**
+>    cathode
 > 3. A favored reaction has $E^\circ_{\text{cell}}$:
->    **\_\_\_\_\_\_**
+>    positive
 
 #### INSTRUCTION A • A scale built on an arbitrary zero 25 min
 
@@ -230,7 +229,7 @@ where both values are taken *straight from the table as reductions* —
 no sign flipping needed if you use this form.
 
 For a **galvanic** cell you want $E^\circ_{\text{cell}} > 0$, so the
-species with the **\_\_\_\_\_\_** $E^\circ$ is reduced (it
+species with the more positive $E^\circ$ is reduced (it
 is the cathode) and the other is oxidized.
 
 > 📘 **Worked example 1: the Daniell cell**
@@ -270,23 +269,22 @@ $E^\circ$ (V): Ag+/Ag $+0.80$ • Cu²⁺/Cu $+0.34$
 • Mg²⁺/Mg $-2.37$
 
 1. Zn and Ag+: $E^\circ_{\text{cell}} =$
-   **\_\_\_\_\_\_**
+   $+1.56$ V
 2. Mg and Cu²⁺: $E^\circ_{\text{cell}} =$
-   **\_\_\_\_\_\_**
+   $+2.71$ V
 3. Zn and Ni²⁺: $E^\circ_{\text{cell}} =$
-   **\_\_\_\_\_\_**
+   $+0.53$ V
 4. Fe and Cu²⁺: $E^\circ_{\text{cell}} =$
-   **\_\_\_\_\_\_**
+   $+0.78$ V
 5. Pb and Ag+: $E^\circ_{\text{cell}} =$
-   **\_\_\_\_\_\_**
+   $+0.93$ V
 
 #### APPLICATION • Reading the table as a ranking 20 min
 
 1. Which is the stronger oxidizing agent, Ag+ or Zn²⁺?
-   Justify.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   Justify. 
 2. Which is the stronger reducing agent, Mg or Cu?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Will Cu(s) react with 1 M HCl? Support your
    answer with a cell potential.
    *(working space)*
@@ -308,11 +306,11 @@ $E^\circ$ (V): Ag+/Ag $+0.80$ • Cu²⁺/Cu $+0.34$
 > 📌 **Retrieval warm-up**
 >
 > 1. $E^\circ_{\text{cell}} =$
->    **\_\_\_\_\_\_**
+>    $E^\circ_{\text{cathode}} -         E^\circ_{\text{anode}}$
 > 2. Reversing a half-reaction does what to $E^\circ$?
->    **\_\_\_\_\_\_**
+>    flips its sign
 > 3. Doubling a half-reaction does what to $E^\circ$?
->    **\_\_\_\_\_\_**
+>    nothing
 
 #### INSTRUCTION A • Connecting volts to kilojoules 25 min
 
@@ -329,7 +327,7 @@ $$ \boxed{\;\Delta G^\circ = -nFE^\circ_{\text{cell}}\;} $$
 Read off the consequences:
 
 - $E^\circ > 0 \Rightarrow \Delta G^\circ$
-   **\_\_\_\_\_\_** $\Rightarrow$ favored, galvanic.
+   negative $\Rightarrow$ favored, galvanic.
 - $E^\circ  ⚠️ **AP trap**
 >
 > **Here is where $n$ finally matters.** Voltage does not depend on how
@@ -389,8 +387,7 @@ You now have *three* equivalent ways to say “products are favored”:
    *(working space)*
 3. Two cells both have $E^\circ = +0.50$ V, but one transfers 1
    electron and the other 4. Compare their voltages and their
-   $\Delta G^\circ$ values.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   $\Delta G^\circ$ values. 
 
 > 📌 **Exit ticket**
 >
@@ -408,10 +405,10 @@ You now have *three* equivalent ways to say “products are favored”:
 
 > 📌 **Retrieval warm-up**
 >
-> 1. $\Delta G^\circ =$ **\_\_\_\_\_\_**
+> 1. $\Delta G^\circ =$ $-nFE^\circ$
 > 2. $Q = K$ means the system is at:
->    **\_\_\_\_\_\_**
-> 3. Faraday's constant: **\_\_\_\_\_\_**
+>    equilibrium
+> 3. Faraday's constant: 96,485 C/mol
 
 > 📌 **What the CED asks for here**
 >
@@ -434,7 +431,7 @@ The further the cell is from equilibrium, the **larger** $|E|$.
 
 At equilibrium, $Q = K$ and $E = \mathbf{0}$.
 
-Standard conditions correspond to $Q =$ **\_\_\_\_\_\_**, which is
+Standard conditions correspond to $Q =$ 1, which is
 where $E = E^\circ$. So to decide whether a change raises or lowers the
 voltage, ask one question: **does the change move $Q$ further from
 $K$, or closer to it?**
@@ -447,10 +444,10 @@ $K$, or closer to it?**
 
 For a favored cell, $K$ is large, so $Q$ starts below it. Then:
 *increasing reactant* concentration lowers $Q$, moving it
-**\_\_\_\_\_\_** from $K$, so the voltage
-**\_\_\_\_\_\_**. *Increasing product* concentration raises
+further from $K$, so the voltage
+rises. *Increasing product* concentration raises
 $Q$, moving it closer to $K$, so the voltage
-**\_\_\_\_\_\_**.
+falls.
 
 > ⚠️ **AP trap**
 >
@@ -514,14 +511,14 @@ at equilibrium: equilibrium here means **equal concentrations**.
 1. For Zn + Cu²⁺ → Zn²⁺ + Cu, state and justify the effect
    on $E$ of (i) diluting the Cu²⁺ solution, (ii) adding
    Na₂S to the cathode compartment to precipitate CuS.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. A concentration cell is built from Ag electrodes in
    0.10 M and 2.0 M AgNO₃. Identify the
    anode and predict what happens to $E$ over time.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Explain why a student who answers “by Le Ch\^atelier's principle,
    the equilibrium shifts right” would not receive credit here.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
@@ -540,10 +537,10 @@ at equilibrium: equilibrium here means **equal concentrations**.
 > 📌 **Retrieval warm-up**
 >
 > 1. Electrolytic cells have $E^\circ$:
->    **\_\_\_\_\_\_**
-> 2. Faraday's constant: **\_\_\_\_\_\_**
+>    negative
+> 2. Faraday's constant: 96,485 C/mol e$^-$
 > 3. Reduction still occurs at the:
->    **\_\_\_\_\_\_**
+>    cathode
 
 #### INSTRUCTION A • Counting electrons with an ammeter 25 min
 
@@ -552,13 +549,13 @@ at equilibrium: equilibrium here means **equal concentrations**.
 `SP 5`
 
 Electrolysis is stoichiometry in which one of the reagents is
-**\_\_\_\_\_\_**. The whole calculation rests on being able
+the electron. The whole calculation rests on being able
 to count electrons, and current is how you do it:
 
 $$ \boxed{\;I = \frac{q}{t}\;} \qquad\text{so}\qquad    q = It $$
 
 with $q$ in coulombs, $I$ in amperes and $t$ in
-**\_\_\_\_\_\_**. Then Faraday's constant converts charge to
+seconds. Then Faraday's constant converts charge to
 moles of electrons:
 
 $$ \text{mol e}^- = \frac{q}{96485} $$
@@ -619,10 +616,14 @@ How long, in hours, to deposit 5.00 g of copper at
 
 *(working space)*
 
+        
+
 What current deposits 10.0 g of silver in
         1.00 h? 
 
 *(working space)*
+
+        
 
 #### INSTRUCTION B • Where this is used 20 min
 
@@ -651,17 +652,19 @@ Chromium is plated from Cr³⁺ at 5.00 A for
 
 *(working space)*
 
+        
+
 How much charge is needed to produce 1.00 kg of
         aluminium? 
 
 *(working space)*
 
+        
+
 Two cells are wired in series so the same current passes through
         both: one plates Ag from Ag+, the other Cu from
         Cu²⁺. After the same time, which has more *moles* of
         metal deposited, and why? 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >

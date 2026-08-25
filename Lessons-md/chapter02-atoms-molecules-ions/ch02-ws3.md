@@ -39,52 +39,52 @@ variable-charge and needs a Roman numeral every time.
 
 | **Fixed charge (Type I)** | **Variable charge (Type II)** |
 |---|---|
-| Group 1A (Li, Na, K, Rb, Cs) | **\_\_\_\_\_\_** | Cr | **\_\_\_\_\_\_** |
-| Group 2A (Mg, Ca, Sr, Ba) | **\_\_\_\_\_\_** | Mn | **\_\_\_\_\_\_** |
-| Group 3A (Al, Ga) | **\_\_\_\_\_\_** | Fe | **\_\_\_\_\_\_** |
-| Ag | **\_\_\_\_\_\_** | Co | **\_\_\_\_\_\_** |
-| Zn | **\_\_\_\_\_\_** | Cu | **\_\_\_\_\_\_** |
-| Cd | **\_\_\_\_\_\_** | Sn, Pb | **\_\_\_\_\_\_** |
-|  |  | Hg | **\_\_\_\_\_\_** |
+| Group 1A (Li, Na, K, Rb, Cs) | $1+$ | Cr | $2+$, $3+$ |
+| Group 2A (Mg, Ca, Sr, Ba) | $2+$ | Mn | $2+$, $3+$ |
+| Group 3A (Al, Ga) | $3+$ | Fe | $2+$, $3+$ |
+| Ag | $1+$ | Co | $2+$, $3+$ |
+| Zn | $2+$ | Cu | $1+$, $2+$ |
+| Cd | $2+$ | Sn, Pb | $2+$, $4+$ |
+|  |  | Hg | Hg₂²⁺, Hg²⁺ |
 
 **Common monatomic anions.** Give the ion and its name:
 
-1. N: **\_\_\_\_\_\_**    
-   O: **\_\_\_\_\_\_**
-2. S: **\_\_\_\_\_\_**    
-   F: **\_\_\_\_\_\_**
-3. Cl: **\_\_\_\_\_\_**    
-   Br: **\_\_\_\_\_\_**
-4. I: **\_\_\_\_\_\_**    
-   rule: **\_\_\_\_\_\_**
+1. N: N³⁻, nitride    
+   O: O²⁻, oxide
+2. S: S²⁻, sulfide    
+   F: F-, fluoride
+3. Cl: Cl-, chloride    
+   Br: Br-, bromide
+4. I: I-, iodide    
+   rule: element root $+$ *-ide*
 
 **2.** **Polyatomic ions** (Table 2.5). Write the name beside each
 formula. These are the ones worth knowing cold.
 
 | **Ion** | **Name** | **Ion** | **Name** |
 |---|---|---|---|
-| NH₄+ | **\_\_\_\_\_\_** | CO₃²⁻ | **\_\_\_\_\_\_** |
-| NO₂- | **\_\_\_\_\_\_** | HCO₃- | **\_\_\_\_\_\_** |
-| NO₃- | **\_\_\_\_\_\_** | ClO- | **\_\_\_\_\_\_** |
-| SO₃²⁻ | **\_\_\_\_\_\_** | ClO₂- | **\_\_\_\_\_\_** |
-| SO₄²⁻ | **\_\_\_\_\_\_** | ClO₃- | **\_\_\_\_\_\_** |
-| HSO₄- | **\_\_\_\_\_\_** | ClO₄- | **\_\_\_\_\_\_** |
-| OH- | **\_\_\_\_\_\_** | C₂H₃O₂- | **\_\_\_\_\_\_** |
-| CN- | **\_\_\_\_\_\_** | MnO₄- | **\_\_\_\_\_\_** |
-| PO₄³⁻ | **\_\_\_\_\_\_** | Cr₂O₇²⁻ | **\_\_\_\_\_\_** |
-| HPO₄²⁻ | **\_\_\_\_\_\_** | CrO₄²⁻ | **\_\_\_\_\_\_** |
-| H₂PO₄- | **\_\_\_\_\_\_** | O₂²⁻ | **\_\_\_\_\_\_** |
-| SCN- | **\_\_\_\_\_\_** | C₂O₄²⁻ | **\_\_\_\_\_\_** |
-| Hg₂²⁺ | **\_\_\_\_\_\_** | S₂O₃²⁻ | **\_\_\_\_\_\_** |
+| NH₄+ | ammonium | CO₃²⁻ | carbonate |
+| NO₂- | nitrite | HCO₃- | hydrogen carbonate |
+| NO₃- | nitrate | ClO- | hypochlorite |
+| SO₃²⁻ | sulfite | ClO₂- | chlorite |
+| SO₄²⁻ | sulfate | ClO₃- | chlorate |
+| HSO₄- | hydrogen sulfate | ClO₄- | perchlorate |
+| OH- | hydroxide | C₂H₃O₂- | acetate |
+| CN- | cyanide | MnO₄- | permanganate |
+| PO₄³⁻ | phosphate | Cr₂O₇²⁻ | dichromate |
+| HPO₄²⁻ | hydrogen phosphate | CrO₄²⁻ | chromate |
+| H₂PO₄- | dihydrogen phosphate | O₂²⁻ | peroxide |
+| SCN- | thiocyanate | C₂O₄²⁻ | oxalate |
+| Hg₂²⁺ | mercury(I) | S₂O₃²⁻ | thiosulfate |
 
 > 📌 **The oxyanion pattern — learn this instead of memorizing**
 >
 > Where a series of anions differ only in oxygen count, the names follow one
 > pattern. Two members: fewer oxygens $\to$
-> **\_\_\_\_\_\_**, more $\to$
-> **\_\_\_\_\_\_**. More than two: the extremes take
-> **\_\_\_\_\_\_** (fewest) and
-> **\_\_\_\_\_\_** (most).
+> *-ite*, more $\to$
+> *-ate*. More than two: the extremes take
+> *hypo-* (fewest) and
+> *per-* (most).
 > 
 > The chlorine series is the one to hold in memory, because every other
 > halogen copies it exactly:
@@ -110,12 +110,12 @@ column.
 
 | **Acid** | **Anion (name)** | **Acid name** |
 |---|---|---|
-| HF | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HCl | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HBr | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HI | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HCN | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| H₂S | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| HF | fluoride | hydrofluoric acid |
+| HCl | chloride | hydrochloric acid |
+| HBr | bromide | hydrobromic acid |
+| HI | iodide | hydroiodic acid |
+| HCN | cyanide | hydrocyanic acid |
+| H₂S | sulfide | hydrosulfuric acid |
 
 These names apply to the *aqueous solutions*.
 Gaseous HCl is hydrogen chloride; HCl(aq) is hydrochloric acid.
@@ -125,16 +125,16 @@ chlorine series). Complete every blank column.
 
 | **Acid** | **Anion (name)** | **Acid name** |
 |---|---|---|
-| HNO₃ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HNO₂ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| H₂SO₄ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| H₂SO₃ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| H₃PO₄ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HC₂H₃O₂ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HClO₄ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HClO₃ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HClO₂ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| HClO | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| HNO₃ | nitrate | nitric acid |
+| HNO₂ | nitrite | nitrous acid |
+| H₂SO₄ | sulfate | sulfuric acid |
+| H₂SO₃ | sulfite | sulfurous acid |
+| H₃PO₄ | phosphate | phosphoric acid |
+| HC₂H₃O₂ | acetate | acetic acid |
+| HClO₄ | perchlorate | perchloric acid |
+| HClO₃ | chlorate | chloric acid |
+| HClO₂ | chlorite | chlorous acid |
+| HClO | hypochlorite | hypochlorous acid |
 
 > ⚠️ **AP trap**
 >
@@ -190,83 +190,83 @@ chlorine series). Complete every blank column.
 **5.** **Type identification.** Label each I, II, III, or A. Do
 not name them yet.
 
-1. K₂S **\_\_\_\_\_\_**
-2. CoF₃ **\_\_\_\_\_\_**
-3. N₂O₅ **\_\_\_\_\_\_**
-4. HClO₄(aq) **\_\_\_\_\_\_**
-5. Ba(NO₃)₂ **\_\_\_\_\_\_**
-6. SnBr₄ **\_\_\_\_\_\_**
+1. K₂S I
+2. CoF₃ II
+3. N₂O₅ III
+4. HClO₄(aq) A
+5. Ba(NO₃)₂ I
+6. SnBr₄ II
 
 **6.** **Name each (Type I).**
 
-1. K₂S: **\_\_\_\_\_\_**
-2. SrI₂: **\_\_\_\_\_\_**
-3. Li₃N: **\_\_\_\_\_\_**
-4. AlBr₃: **\_\_\_\_\_\_**
-5. Ag₂S: **\_\_\_\_\_\_**
+1. K₂S: potassium sulfide
+2. SrI₂: strontium iodide
+3. Li₃N: lithium nitride
+4. AlBr₃: aluminum bromide
+5. Ag₂S: silver sulfide
 
 **7.** **Name each (Type II).** Get the metal's charge from the
 anions first.
 
-1. CoF₃: **\_\_\_\_\_\_**
-2. Cu₂S: **\_\_\_\_\_\_**
-3. PbO₂: **\_\_\_\_\_\_**
-4. Fe₂O₃: **\_\_\_\_\_\_**
-5. SnBr₄: **\_\_\_\_\_\_**
-6. Hg₂Cl₂: **\_\_\_\_\_\_**
+1. CoF₃: cobalt(III) fluoride
+2. Cu₂S: copper(I) sulfide
+3. PbO₂: lead(IV) oxide
+4. Fe₂O₃: iron(III) oxide
+5. SnBr₄: tin(IV) bromide
+6. Hg₂Cl₂: mercury(I) chloride
 
 **8.** **Name each compound containing a polyatomic ion.**
 
-1. Ba(NO₃)₂: **\_\_\_\_\_\_**
-2. Na₂Cr₂O₇: **\_\_\_\_\_\_**
-3. Fe(C₂H₃O₂)₂: **\_\_\_\_\_\_**
-4. (NH₄)₂SO₃: **\_\_\_\_\_\_**
-5. Ca(H₂PO₄)₂: **\_\_\_\_\_\_**
-6. KMnO₄: **\_\_\_\_\_\_**
+1. Ba(NO₃)₂: barium nitrate
+2. Na₂Cr₂O₇: sodium dichromate
+3. Fe(C₂H₃O₂)₂: iron(II) acetate
+4. (NH₄)₂SO₃: ammonium sulfite
+5. Ca(H₂PO₄)₂: calcium dihydrogen phosphate
+6. KMnO₄: potassium permanganate
 
 **9.** **Name each binary covalent compound (Type III).**
 
-1. N₂O₅: **\_\_\_\_\_\_**
-2. SF₆: **\_\_\_\_\_\_**
-3. PBr₃: **\_\_\_\_\_\_**
-4. CS₂: **\_\_\_\_\_\_**
-5. Cl₂O₇: **\_\_\_\_\_\_**
+1. N₂O₅: dinitrogen pentoxide
+2. SF₆: sulfur hexafluoride
+3. PBr₃: phosphorus tribromide
+4. CS₂: carbon disulfide
+5. Cl₂O₇: dichlorine heptoxide
 
 **10.** **Name each acid** (all aqueous).
 
-HI(aq): **\_\_\_\_\_\_**
+HI(aq): hydroiodic acid
 
-HClO₂(aq): **\_\_\_\_\_\_**
+HClO₂(aq): chlorous acid
 
-H₂CO₃(aq): **\_\_\_\_\_\_**
+H₂CO₃(aq): carbonic acid
 
-HC₂H₃O₂(aq): **\_\_\_\_\_\_**
+HC₂H₃O₂(aq): acetic acid
 
-HNO₂(aq): **\_\_\_\_\_\_**
+HNO₂(aq): nitrous acid
 
-H₂S(aq): **\_\_\_\_\_\_**
+H₂S(aq): hydrosulfuric acid
 
 **11.** **Write the formula** for each name.
 
-cobalt(II) hydroxide: **\_\_\_\_\_\_**
+cobalt(II) hydroxide: Co(OH)₂
 
-ammonium dichromate: **\_\_\_\_\_\_**
+ammonium dichromate: (NH₄)₂Cr₂O₇
 
-tetraphosphorus decoxide: **\_\_\_\_\_\_**
+tetraphosphorus decoxide: P₄O₁₀
 
-hydrocyanic acid: **\_\_\_\_\_\_**
+hydrocyanic acid: HCN(aq)
 
-magnesium perchlorate: **\_\_\_\_\_\_**
+magnesium perchlorate: Mg(ClO₄)₂
 
-iron(III) sulfate: **\_\_\_\_\_\_**
+iron(III) sulfate: Fe₂(SO₄)₃
 
-sulfur dioxide: **\_\_\_\_\_\_**
+sulfur dioxide: SO₂
 
-lead(II) chromate: **\_\_\_\_\_\_**
+lead(II) chromate: PbCrO₄
 
-perchloric acid: **\_\_\_\_\_\_**
+perchloric acid: HClO₄(aq)
 
-sodium thiosulfate: **\_\_\_\_\_\_**
+sodium thiosulfate: Na₂S₂O₃
 
 **12.** **Extend the pattern.** Bromine forms the same oxyanion
 series as chlorine.
@@ -274,12 +274,8 @@ series as chlorine.
 Name BrO-, BrO₂-, BrO₃-, BrO₄- in order.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Name the acids HBrO, HBrO₂, HBrO₃, HBrO₄.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **13.** **Error hunt.** Each name is wrong. Give the correct name
 and say which rule was broken.
@@ -287,123 +283,109 @@ and say which rule was broken.
 CuCl₂, “copper chloride”
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Al₂O₃, “dialuminum trioxide”
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Ca(NO₂)₂, “calcium nitrate”
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 H₂SO₃(aq), “sulfuric acid”
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **14.** **Lookalikes.** Name *both* members of each pair. One
 subscript is the entire difference.
 
 CuCl / CuCl₂
-        **\_\_\_\_\_\_**
+        copper(I) chloride / copper(II) chloride
 
 FeO / Fe₂O₃
-        **\_\_\_\_\_\_**
+        iron(II) oxide / iron(III) oxide
 
 Na₂CO₃ / NaHCO₃
-        **\_\_\_\_\_\_**
+        sodium carbonate / sodium hydrogen carbonate
 
 Na₂SO₃ / Na₂SO₄
-        **\_\_\_\_\_\_**
+        sodium sulfite / sodium sulfate
 
 **15.** **Mixed list.** Types are deliberately jumbled — decide
 the type before naming. This is the format the exam uses.
 
-ICl: **\_\_\_\_\_\_**
+ICl: iodine monochloride
 
-NH₄NO₂: **\_\_\_\_\_\_**
+NH₄NO₂: ammonium nitrite
 
-Co₂S₃: **\_\_\_\_\_\_**
+Co₂S₃: cobalt(III) sulfide
 
-Pb₃(PO₄)₂: **\_\_\_\_\_\_**
+Pb₃(PO₄)₂: lead(II) phosphate
 
-HC₂H₃O₂(aq): **\_\_\_\_\_\_**
+HC₂H₃O₂(aq): acetic acid
 
-Zn(OH)₂: **\_\_\_\_\_\_**
+Zn(OH)₂: zinc hydroxide
 
-P₄O₆: **\_\_\_\_\_\_**
+P₄O₆: tetraphosphorus hexoxide
 
-CrCl₃: **\_\_\_\_\_\_**
+CrCl₃: chromium(III) chloride
 
 **16.** **Transfer the pattern again.** Elements in the same family
 form oxyanions of the same general formula, named the same way.
 
-SeO₄²⁻: **\_\_\_\_\_\_**    
-        SeO₃²⁻: **\_\_\_\_\_\_**
+SeO₄²⁻: selenate    
+        SeO₃²⁻: selenite
 
-TeO₄²⁻: **\_\_\_\_\_\_**    
-        TeO₃²⁻: **\_\_\_\_\_\_**
+TeO₄²⁻: tellurate    
+        TeO₃²⁻: tellurite
 
 Which chlorine oxyanion did you use as the model, and why does it
         work for selenium? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Name IO-, IO₂-, IO₃-, IO₄- in order.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Name the acids HIO, HIO₂, HIO₃, HIO₄.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 SeO₄²⁻ carries a $2-$ charge while ClO₄- carries $1-$.
         Does that change how either is named?
-        **\_\_\_\_\_\_**
+        no — the name tracks oxygen count only
 
 **17.** **Write the formula** for each name (second set).
 
-potassium hydrogen sulfate: **\_\_\_\_\_\_**
+potassium hydrogen sulfate: KHSO₄
 
-barium peroxide: **\_\_\_\_\_\_**
+barium peroxide: BaO₂
 
-nickel(II) cyanide: **\_\_\_\_\_\_**
+nickel(II) cyanide: Ni(CN)₂
 
-dinitrogen tetroxide: **\_\_\_\_\_\_**
+dinitrogen tetroxide: N₂O₄
 
-chromium(III) carbonate: **\_\_\_\_\_\_**
+chromium(III) carbonate: Cr₂(CO₃)₃
 
-sodium dihydrogen phosphate: **\_\_\_\_\_\_**
+sodium dihydrogen phosphate: NaH₂PO₄
 
-hydrosulfuric acid: **\_\_\_\_\_\_**
+hydrosulfuric acid: H₂S(aq)
 
-silicon tetrachloride: **\_\_\_\_\_\_**
+silicon tetrachloride: SiCl₄
 
-mercury(II) oxide: **\_\_\_\_\_\_**
+mercury(II) oxide: HgO
 
-ammonium oxalate: **\_\_\_\_\_\_**
+ammonium oxalate: (NH₄)₂C₂O₄
 
 **18.** **Acid from its anion.** Each aqueous acid below is one or
 more H+ attached to the anion named. Give the acid's formula and its
 name.
 
-PO₄³⁻: **\_\_\_\_\_\_**
+PO₄³⁻: H₃PO₄, phosphoric acid
 
-ClO₂-: **\_\_\_\_\_\_**
+ClO₂-: HClO₂, chlorous acid
 
-CN-: **\_\_\_\_\_\_**
+CN-: HCN, hydrocyanic acid
 
-C₂O₄²⁻: **\_\_\_\_\_\_**
+C₂O₄²⁻: H₂C₂O₄, oxalic acid
 
-S₂O₃²⁻: **\_\_\_\_\_\_**
+S₂O₃²⁻: H₂S₂O₃, thiosulfuric acid
 
 How many H+ does the anion's charge tell you to attach?
-        **\_\_\_\_\_\_**
+        as many as the negative charge
 
 **19.** **Error hunt, second set.** Give the correct name and the
 rule that was broken.
@@ -411,66 +393,46 @@ rule that was broken.
 SO₃, “sulfur(VI) oxide”
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 K₂O, “potassium(I) oxide”
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Ca(ClO₃)₂, “calcium chlorite”
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 SnO, “tin oxide”
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Li₂O₂, “lithium oxide”
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 H₂SO₄(aq), “sulfate acid”
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **20.** **Say why.** One or two sentences each.
 
 Why does ZnCl₂ need no Roman numeral when FeCl₂ does?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Why are prefixes used in N₂O₄ but not in Al₂O₃?
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 HClO₃ and HClO₂ differ by one oxygen. Describe how both
         the anion name and the acid name change.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 A student writes CO as “carbon monooxide”. Correct the
         spelling and state the rule.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Spiral review • Chapter 2 • blocks 1–3**
 >
-> 1. Protons in ⁵⁶Fe³⁺: **\_\_\_\_\_\_**
-> 2. Electrons in ⁵⁶Fe³⁺: **\_\_\_\_\_\_**
+> 1. Protons in ⁵⁶Fe³⁺: 26
+> 2. Electrons in ⁵⁶Fe³⁺: 23
 > 3. Charge predicted for a group 5A monatomic ion:
->    **\_\_\_\_\_\_**
-> 4. ClO₃- is named: **\_\_\_\_\_\_**
+>    $3-$
+> 4. ClO₃- is named: chlorate
 > 5. An *-ate* anion gives which acid ending?
->    **\_\_\_\_\_\_**
+>    *-ic*
 
 ---
 

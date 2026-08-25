@@ -18,62 +18,61 @@ Zumdahl §2.1–2.7 • evidence-to-conclusion reasoning
 1.00 g of S combines with 1.50 g of O.
 
 1. Compute the ratio of oxygen masses per gram of sulfur.
-   **\_\_\_\_\_\_**
+   $1.50/1.00 = 3{:}2$
 2. Which law does this illustrate?
-   **\_\_\_\_\_\_**
+   law of multiple proportions
 3. Given A is SO₂, propose a formula for B and justify.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **2.** Match each observation to the law it demonstrates:
 
 1. A sealed flask weighs the same before and after a reaction inside
-   it. **\_\_\_\_\_\_**
+   it. conservation of mass
 2. Carbon dioxide from a volcano and from combustion both contain
-   27.3% C. **\_\_\_\_\_\_**
+   27.3% C. definite proportion
 
 **3.** Thomson's cathode-ray tube.
 
 1. Which way does the beam deflect in an electric field, and what does
-   that establish?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   that establish? 
 2. Thomson measured the same charge-to-mass ratio using several
    different gases. State the conclusion this supports.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Thomson's model placed electrons in a diffuse positive sphere. Which
    later experiment refuted it, and by what specific observation?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **4.** Complete the table.
 
 | **Species** | **protons** | **neutrons** | **electrons** | **mass #** |
 |---|---|---|---|---|
-| ³¹₁₅P | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| ⁸¹₃₅Br⁻ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| ⁵²₂₄Cr³⁺ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| **\_\_\_\_\_\_** | 8 | 8 | 10 | 16 |
+| ³¹₁₅P | 15 | 16 | 15 | 31 |
+| ⁸¹₃₅Br⁻ | 35 | 46 | 36 | 81 |
+| ⁵²₂₄Cr³⁺ | 24 | 28 | 21 | 52 |
+| ¹⁶O²⁻ | 8 | 8 | 10 | 16 |
 
 **5.** An ion has 38 protons, 50 neutrons, and 36 electrons.
 
 1. Write its complete isotope symbol.
-   **\_\_\_\_\_\_**
+   ⁸⁸₃₈Sr²⁺
 2. Name one species isoelectronic with it.
-   **\_\_\_\_\_\_**
+   Kr, Br-, Rb+, Y³⁺…
 
 **6.** Predict the ion each element forms, then the formula of the
 compound it makes with the partner given:
 
-1. Ca with Br: **\_\_\_\_\_\_**
-2. Li with N: **\_\_\_\_\_\_**
-3. Al with S: **\_\_\_\_\_\_**
+1. Ca with Br: Ca²⁺, Br- $\to$ CaBr₂
+2. Li with N: Li+, N³⁻ $\to$ Li₃N
+3. Al with S: Al³⁺, S²⁻ $\to$ Al₂S₃
 
 > 📌 **Spiral review • prerequisites**
 >
-> 1. Sig figs in 0.04500 g: **\_\_\_\_\_\_**
-> 2. 2.5 kg in grams: **\_\_\_\_\_\_**
+> 1. Sig figs in 0.04500 g: 4
+> 2. 2.5 kg in grams: 2500 g
 > 3. Which is a mixture: air, CO₂, or copper?
->    **\_\_\_\_\_\_**
-> 4. Protons in an atom with $Z = 47$: **\_\_\_\_\_\_**
-> 5. Isotopes differ in what particle? **\_\_\_\_\_\_**
+>    air
+> 4. Protons in an atom with $Z = 47$: 47
+> 5. Isotopes differ in what particle? neutrons
 
 ---
 

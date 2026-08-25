@@ -37,10 +37,10 @@ Zumdahl §10.1–10.8 • PDF pp. 491–530 • 5 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Is CH₄ polar? **\_\_\_\_\_\_**
+> 1. Is CH₄ polar? no
 > 2. Which is more electronegative, O or S?
->    **\_\_\_\_\_\_**
-> 3. Geometry of H₂O: **\_\_\_\_\_\_**
+>    O
+> 3. Geometry of H₂O: bent
 
 #### INSTRUCTION A • The forces between molecules 25 min
 
@@ -54,11 +54,11 @@ solid needs so much less energy than decomposing it.
 
 | **Force** | **Present in** | **Origin** |
 |---|---|---|
-| London dispersion | **\_\_\_\_\_\_** | instantaneous, momentary dipoles from electron motion |
+| London dispersion | every substance | instantaneous, momentary dipoles from electron motion |
 | Dipole–dipole | polar molecules | permanent $\delta^+$ attracted to a neighbour's
-  **\_\_\_\_\_\_** |
+  $\delta^-$ |
 | Hydrogen bonding | H bonded directly to
-  **\_\_\_\_\_\_** | an especially strong dipole–dipole case |
+  N, O, or F | an especially strong dipole–dipole case |
 
 > 📌 **Note**
 >
@@ -69,9 +69,9 @@ solid needs so much less energy than decomposing it.
 
 #### Hydrogen bonding requires a direct attachment
 
-CH₃OH hydrogen bonds through its **\_\_\_\_\_\_** group.
+CH₃OH hydrogen bonds through its O–H group.
 CH₃OCH₃ has the same formula C₂H₆O but
-**\_\_\_\_\_\_** hydrogen bond — its hydrogens are all on
+cannot hydrogen bond — its hydrogens are all on
 carbon. Boiling points: 65 °C versus -24 °C.
 
 > 📘 **Worked example: when dispersion wins**
@@ -93,11 +93,11 @@ molecules of similar size.
 
 #### GUIDED PRACTICE • Identify and rank 15 min
 
-1. CO₂: **\_\_\_\_\_\_**
-2. HCl: **\_\_\_\_\_\_**
-3. NH₃: **\_\_\_\_\_\_**
+1. CO₂: dispersion only
+2. HCl: dispersion $+$ dipole–dipole
+3. NH₃: dispersion, dipole–dipole, H-bonding
 4. Rank bp: CH₄, Xe, H₂O
-   **\_\_\_\_\_\_**
+   H₂O $>$ Xe $>$ CH₄
 
 #### INSTRUCTION B • What IMFs control 20 min
 
@@ -105,9 +105,9 @@ molecules of similar size.
 
 `SP 6`
 
-Stronger IMFs give **\_\_\_\_\_\_** boiling point,
-**\_\_\_\_\_\_** viscosity, **\_\_\_\_\_\_** surface
-tension — and **\_\_\_\_\_\_** vapour pressure.
+Stronger IMFs give higher boiling point,
+higher viscosity, higher surface
+tension — and lower vapour pressure.
 
 > ⚠️ **AP trap**
 >
@@ -120,18 +120,15 @@ tension — and **\_\_\_\_\_\_** vapour pressure.
 
 1. F₂, Cl₂, Br₂, I₂ are all nonpolar, yet boiling
    point rises steadily down the group. Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. H₂O boils at 100 °C while H₂S boils at
    -60 °C, even though H₂S has the greater molar
-   mass. Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   mass. Explain. 
 
 > 📌 **Exit ticket**
 >
 > Two liquids have equal molar mass; one is polar and one is not. Which has
 > the higher vapour pressure at room temperature, and why?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## The Liquid State Zumdahl §10.2
 
@@ -145,11 +142,11 @@ tension — and **\_\_\_\_\_\_** vapour pressure.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Strongest IMF in CH₃OH: **\_\_\_\_\_\_**
+> 1. Strongest IMF in CH₃OH: hydrogen bonding
 > 2. Higher vapour pressure: strong or weak IMFs?
->    **\_\_\_\_\_\_**
+>    weak
 > 3. Which has stronger dispersion, Ne or Xe?
->    **\_\_\_\_\_\_**
+>    Xe
 
 #### INSTRUCTION A • Cohesion and adhesion 25 min
 
@@ -158,9 +155,9 @@ tension — and **\_\_\_\_\_\_** vapour pressure.
 `SP 1`
 
 - Cohesive forces act between molecules of the
-   **\_\_\_\_\_\_** substance.
+   same substance.
 - Adhesive forces act between the liquid and a
-   **\_\_\_\_\_\_**, such as glass.
+   different surface, such as glass.
 
 Which of the two wins determines much of a liquid's visible behaviour.
 
@@ -168,19 +165,19 @@ Which of the two wins determines much of a liquid's visible behaviour.
 
 A molecule in the interior is pulled equally in all directions. A molecule at
 the surface has no neighbours above, so it is pulled
-**\_\_\_\_\_\_** — the liquid minimizes its surface area.
+inward — the liquid minimizes its surface area.
 
-That is why water **\_\_\_\_\_\_** on a waxed car and why some
+That is why water beads on a waxed car and why some
 insects walk on ponds. Stronger IMFs give
-**\_\_\_\_\_\_** surface tension.
+higher surface tension.
 
 #### GUIDED PRACTICE • Explain the observations 15 min
 
 1. Why does a drop of water form a sphere in free fall?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Mercury has a much higher surface tension than water. What does that
    say about its cohesive forces?
-   **\_\_\_\_\_\_**
+   they are stronger than water's
 
 #### INSTRUCTION B • Capillary action and viscosity 20 min
 
@@ -189,14 +186,14 @@ insects walk on ponds. Stronger IMFs give
 `SP 4`
 
 Water creeps up a narrow glass tube because water's
-**\_\_\_\_\_\_** forces to glass — the polar Si–OH groups
+adhesive forces to glass — the polar Si–OH groups
 attract water's dipole — exceed its cohesive forces. The column rises
 until its weight balances that attraction.
 
 | **Liquid** | **Which force wins** | **Meniscus shape** |
 |---|---|---|
-| Water in glass | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** (curves up at the edges) |
-| Mercury in glass | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** (bulges upward) |
+| Water in glass | adhesive | concave (curves up at the edges) |
+| Mercury in glass | cohesive | convex (bulges upward) |
 
 > 📌 **Note**
 >
@@ -208,25 +205,22 @@ until its weight balances that attraction.
 #### Viscosity
 
 Viscosity is resistance to flow. It increases with
-**\_\_\_\_\_\_** and also with
-**\_\_\_\_\_\_** — long chain molecules tangle,
+stronger IMFs and also with
+molecular size/shape — long chain molecules tangle,
 which is why motor oil and glycerol pour slowly while water does not.
 
 #### APPLICATION • Property reasoning 20 min
 
 1. Glycerol (C₃H₈O₃, three O–H groups) is far more viscous than
    ethanol (C₂H₅OH, one O–H). Give both reasons.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Predict the meniscus shape for water in a plastic (nonpolar) tube
-   and justify.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   and justify. 
 
 > 📌 **Exit ticket**
 >
 > Explain why a paperclip can be floated on water even though steel is far
-> denser than water. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> denser than water.
 
 ## Metallic and Network Solids Zumdahl §10.3–10.5
 
@@ -240,10 +234,10 @@ which is why motor oil and glycerol pour slowly while water does not.
 > 📌 **Retrieval warm-up**
 >
 > 1. Water in glass gives which meniscus?
->    **\_\_\_\_\_\_**
+>    concave
 > 2. Viscosity increases with what?
->    **\_\_\_\_\_\_**
-> 3. Does graphite conduct electricity? **\_\_\_\_\_\_**
+>    stronger IMFs
+> 3. Does graphite conduct electricity? yes
 
 #### INSTRUCTION A • Four kinds of solid 25 min
 
@@ -253,22 +247,22 @@ which is why motor oil and glycerol pour slowly while water does not.
 
 | **Type** | **Particles** | **Held by** | **Properties** |
 |---|---|---|---|
-| Metallic | cations $+$ e$^-$ sea | delocalized electrons | conducts **\_\_\_\_\_\_**, malleable, lustrous |
+| Metallic | cations $+$ e$^-$ sea | delocalized electrons | conducts always, malleable, lustrous |
 | Ionic | cations, anions | electrostatic attraction | high mp, brittle, conducts only when
-  **\_\_\_\_\_\_** |
-| Network covalent | atoms | **\_\_\_\_\_\_** | very high mp, very hard |
-| Molecular | molecules | **\_\_\_\_\_\_** | low mp, soft, nonconducting |
+  molten/aqueous |
+| Network covalent | atoms | covalent bonds | very high mp, very hard |
+| Molecular | molecules | IMFs | low mp, soft, nonconducting |
 
 #### GUIDED PRACTICE • Classify from data 15 min
 
 1. mp 1538 °C, conducts as a solid, malleable:
-   **\_\_\_\_\_\_**
+   metallic
 2. mp 3550 °C, extremely hard, insulating:
-   **\_\_\_\_\_\_**
+   network covalent
 3. mp -95 °C, soft, insulating:
-   **\_\_\_\_\_\_**
+   molecular
 4. mp 2852 °C, brittle, conducts when molten:
-   **\_\_\_\_\_\_**
+   ionic
 
 #### INSTRUCTION B • Metals, alloys, and network solids 20 min
 
@@ -279,28 +273,29 @@ which is why motor oil and glycerol pour slowly while water does not.
 Metal cations sit in fixed positions while valence electrons are
 delocalized across the entire sample. One model, three properties:
 
-- conducts electricity — **\_\_\_\_\_\_**;
+- conducts electricity — mobile electrons carry
+   charge;
 - malleable — layers slide without
-   **\_\_\_\_\_\_** (contrast ionic solids,
+   aligning like charges (contrast ionic solids,
    which shatter);
 - lustrous — mobile electrons re-emit light.
 
 #### Alloys
 
 - Substitutional: similar-sized atoms
-   **\_\_\_\_\_\_** host atoms — brass (Zn in Cu).
+   replace host atoms — brass (Zn in Cu).
 - Interstitial: small atoms fill
-   **\_\_\_\_\_\_** between hosts — steel (C in Fe).
+   holes between hosts — steel (C in Fe).
    These pin the layers, making the alloy
-   **\_\_\_\_\_\_**.
+   harder and less malleable.
 
 #### Two forms of carbon
 
 |  | **Diamond** | **Graphite** |
 |---|---|---|
-| Bonding | **\_\_\_\_\_\_**, 3-D network | **\_\_\_\_\_\_** sheets, with a leftover $p$ electron
+| Bonding | sp$^3$, 3-D network | sp$^2$ sheets, with a leftover $p$ electron
   delocalized across each layer |
-| Conducts? | **\_\_\_\_\_\_** | **\_\_\_\_\_\_**, within
+| Conducts? | no | yes, within
   the layers |
 | Hardness | hardest known | soft; layers slide over one another |
 
@@ -323,17 +318,14 @@ delocalized across the entire sample. One model, three properties:
 
 1. Diamond and graphite are both pure carbon, yet one is the hardest
    known material and the other is used as a lubricant. Explain fully.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Explain why steel is harder than pure iron but still conducts
-   electricity.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   electricity. 
 
 > 📌 **Exit ticket**
 >
 > SiO₂ (quartz) melts near 1600 °C while CO₂ sublimes at
 > -78 °C. Both are group-14 oxides. Explain.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Molecular and Ionic Solids Zumdahl §10.6–10.7
 
@@ -347,9 +339,9 @@ delocalized across the entire sample. One model, three properties:
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Type of solid: graphite? **\_\_\_\_\_\_**
-> 2. Steel is which kind of alloy? **\_\_\_\_\_\_**
-> 3. Do ionic solids conduct as solids? **\_\_\_\_\_\_**
+> 1. Type of solid: graphite? network covalent
+> 2. Steel is which kind of alloy? interstitial
+> 3. Do ionic solids conduct as solids? no
 
 #### INSTRUCTION A • Molecular solids 25 min
 
@@ -358,8 +350,8 @@ delocalized across the entire sample. One model, three properties:
 `SP 1`
 
 In a molecular solid the lattice points are occupied by whole
-**\_\_\_\_\_\_**, held to each other only by
-**\_\_\_\_\_\_**.
+molecules, held to each other only by
+IMFs.
 
 > ⚠️ **AP trap**
 >
@@ -373,16 +365,14 @@ In a molecular solid the lattice points are occupied by whole
 #### Why ice floats
 
 Hydrogen bonding forces water molecules into an open hexagonal lattice with
-more **\_\_\_\_\_\_** than the liquid. Solid water is
-therefore **\_\_\_\_\_\_** dense than liquid water — almost
+more empty space than the liquid. Solid water is
+therefore less dense than liquid water — almost
 uniquely among substances, and the reason lakes freeze from the top down.
 
 #### GUIDED PRACTICE • Predict melting points 15 min
 
 Rank by increasing melting point and give the reason:
 CH₄, H₂O, NaCl, SiO₂.
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 #### INSTRUCTION B • Ionic solids 20 min
 
@@ -392,12 +382,12 @@ CH₄, H₂O, NaCl, SiO₂.
 
 An ionic solid is a repeating three-dimensional lattice — each cation
 surrounded by anions and vice versa. There is no “NaCl molecule,” only
-a repeating **\_\_\_\_\_\_**.
+a repeating ratio.
 
 > 📘 **Worked example: why ionic solids shatter**
 >
 > Strike an ionic crystal and one layer shifts relative to the next. That
-> shift brings **\_\_\_\_\_\_** into alignment — cation
+> shift brings like charges into alignment — cation
 > above cation — and the sudden repulsion splits the crystal along a clean
 > plane.
 > 
@@ -409,8 +399,8 @@ a repeating **\_\_\_\_\_\_**.
 #### Conductivity requires mobile charges
 
 Solid ionic compounds do *not* conduct: the ions are
-**\_\_\_\_\_\_** in place. Melt or dissolve them and the ions
-become **\_\_\_\_\_\_**, so the liquid or solution conducts.
+locked in place. Melt or dissolve them and the ions
+become mobile, so the liquid or solution conducts.
 
 #### APPLICATION • Contrasting solids 20 min
 
@@ -418,19 +408,13 @@ Copper conducts as a solid; NaCl conducts only when molten or
         dissolved. Explain both, naming the charge carrier in each.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Why is MgO both harder and higher-melting than NaCl?
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >
 > Identify the solid type and justify: a substance melts at
 > 801 °C, shatters when struck, and conducts only when dissolved.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Vapour Pressure and Changes of State Zumdahl §10.8
 
@@ -443,12 +427,12 @@ Why is MgO both harder and higher-melting than NaCl?
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Why does ice float? **\_\_\_\_\_\_**
+> 1. Why does ice float? open H-bonded lattice
 > 2. Melting a molecular solid breaks:
->    **\_\_\_\_\_\_**
-> 3. Charge carrier in molten NaCl: **\_\_\_\_\_\_**
+>    IMFs, not bonds
+> 3. Charge carrier in molten NaCl: ions
 > 4. Specific heat of liquid water:
->    **\_\_\_\_\_\_**
+>    4.184 J/g/°C
 
 #### INSTRUCTION A • Vapour pressure 25 min
 
@@ -458,19 +442,19 @@ Why is MgO both harder and higher-melting than NaCl?
 
 In a closed container, molecules leave the liquid and others return. When
 the two rates are equal the system is at
-**\_\_\_\_\_\_**, and the pressure of vapour above the
+equilibrium, and the pressure of vapour above the
 liquid is its vapour pressure.
 
-Vapour pressure **\_\_\_\_\_\_** with temperature (more
+Vapour pressure increases with temperature (more
 molecules have enough kinetic energy to escape) and
-**\_\_\_\_\_\_** with stronger IMFs.
+decreases with stronger IMFs.
 
 #### Boiling
 
 A liquid boils when its vapour pressure equals the
-**\_\_\_\_\_\_**. The normal boiling point is
+external pressure. The normal boiling point is
 the temperature at which vapour pressure reaches
-**\_\_\_\_\_\_**.
+1 atm.
 
 > 📌 **Note**
 >
@@ -490,15 +474,13 @@ the temperature at which vapour pressure reaches
 #### GUIDED PRACTICE • Vapour pressure reasoning 15 min
 
 Higher vapour pressure at 25 °C: water or diethyl ether
-        (bp 35 °C)? **\_\_\_\_\_\_**
+        (bp 35 °C)? ether
 
 Which therefore has the larger $\Delta H_{\text{vap}}$?
-        **\_\_\_\_\_\_**
+        water
 
 Does vapour pressure depend on the *amount* of liquid present?
         Explain. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 #### INSTRUCTION B • Heating curves 20 min
 
@@ -509,9 +491,9 @@ Does vapour pressure depend on the *amount* of liquid present?
 ![figure](fig-ch10-notes-1.png)
 
 On a sloped segment, added energy raises
-**\_\_\_\_\_\_** — use $q = mc\Delta T$.
-On a **\_\_\_\_\_\_**, temperature is constant while energy goes
-into **\_\_\_\_\_\_** — use $q = n\Delta H$.
+temperature — use $q = mc\Delta T$.
+On a plateau, temperature is constant while energy goes
+into overcoming IMFs — use $q = n\Delta H$.
 
 > 📘 **Worked example: ice to steam**
 >
@@ -541,15 +523,15 @@ How much energy is needed to melt 45.0 g of ice already at
 
 *(working space)*
 
+        
+
 How much energy to convert 45.0 g of water at
         100 °C into steam at 100 °C?
-        **\_\_\_\_\_\_**
+        102 kJ
 
 Explain why steam at 100 °C causes far worse burns than
         liquid water at 100 °C.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Optional: phase diagrams (§10.9)**
 >
@@ -563,8 +545,6 @@ Explain why steam at 100 °C causes far worse burns than
 >
 > On a heating curve, why does temperature stay constant during a phase
 > change even though energy is still being added?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ---
 

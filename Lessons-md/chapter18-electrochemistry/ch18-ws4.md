@@ -18,24 +18,22 @@ Zumdahl §18.7–18.8 • the electron is a reagent; count it
 **1.** Write the conversion chain from a measured current to a mass of
 plated metal, naming each step.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **2.** How many moles of electrons are needed to deposit one mole of
 each metal?
 
-1. Ag from Ag+: **\_\_\_\_\_\_**
-2. Cu from Cu²⁺: **\_\_\_\_\_\_**
-3. Al from Al³⁺: **\_\_\_\_\_\_**
-4. Cr from Cr³⁺: **\_\_\_\_\_\_**
+1. Ag from Ag+: 1
+2. Cu from Cu²⁺: 2
+3. Al from Al³⁺: 3
+4. Cr from Cr³⁺: 3
 5. Where does that number come from?
-   **\_\_\_\_\_\_**
+   the charge on the ion, via the half-reaction
 
 **3.** A current of 2.00 A passes through AgNO₃
 solution for 30.0 min.
 
-1. Convert the time to seconds. **\_\_\_\_\_\_**
-2. Calculate the charge passed. **\_\_\_\_\_\_**
-3. Calculate the moles of electrons. **\_\_\_\_\_\_**
+1. Convert the time to seconds. 1800 s
+2. Calculate the charge passed. 3600 C
+3. Calculate the moles of electrons. 0.0373 mol
 4. Calculate the mass of silver deposited. 
    *(working space)*
 
@@ -46,7 +44,7 @@ instead — 1.50 A for 1.00 h.
    *(working space)*
 2. A student forgets to divide by 2 and reports 3.56 g. By what factor
    is that wrong, and what step did they skip?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **5.** Working backwards.
 
@@ -65,12 +63,11 @@ passes through both for the same time. One contains AgNO₃, the other
 CuSO₄.
 
 1. Which receives more charge?
-   **\_\_\_\_\_\_**
+   the same — they are in series
 2. Which deposits more *moles* of metal, and why?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Does that mean the silver electrode gains more *mass*?
-   Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   Explain. 
 
 **7.** Industrial scale.
 
@@ -78,27 +75,25 @@ CuSO₄.
    aluminium from Al³⁺?
    *(working space)*
 2. Explain, using two features of aluminium, why smelting it is so
-   energy-intensive.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   energy-intensive. 
 3. Why does recycling aluminium save so much energy compared with
-   producing it?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   producing it? 
 
 **8.** **FRQ (10 points).** An electrolytic cell is used to plate
 nickel onto a steel part from a solution of NiSO₄. A current of
 3.00 A is passed for 45.0 min.
 
 Write the half-reaction occurring at the cathode.
-        **\_\_\_\_\_\_**
+        Ni²⁺ + 2e⁻ → Ni
 
 Explain why the part being plated must be the cathode.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Calculate the mass of nickel deposited. 
 
 *(working space)*
+
+        
 
 Given $E^\circ$ for Ni²⁺/Ni is $-0.23$ V and for the anode
         reaction $+1.23$ V, calculate $E^\circ_{\text{cell}}$ and state
@@ -106,10 +101,14 @@ Given $E^\circ$ for Ni²⁺/Ni is $-0.23$ V and for the anode
 
 *(working space)*
 
+        
+
 Calculate $\Delta G^\circ$ for the cell reaction, taking $n = 2$.
         
 
 *(working space)*
+
+        
 
 > 📌 **Rubric — score yourself, 10 points**
 >
@@ -125,13 +124,13 @@ Calculate $\Delta G^\circ$ for the cell reaction, taking $n = 2$.
 
 > 📌 **Spiral review • Chapter 18 • blocks 1–4**
 >
-> 1. At equilibrium a cell has $E =$ **\_\_\_\_\_\_**
-> 2. Standard conditions correspond to $Q =$ **\_\_\_\_\_\_**
+> 1. At equilibrium a cell has $E =$ 0
+> 2. Standard conditions correspond to $Q =$ 1
 > 3. In a concentration cell, the anode is the:
->    **\_\_\_\_\_\_**
-> 4. $\Delta G^\circ = -nFE^\circ$; if $E^\circ     is **\_\_\_\_\_\_**
+>    dilute side
+> 4. $\Delta G^\circ = -nFE^\circ$; if $E^\circ     is positive
 > 5. Le Ch\^atelier applies to a running cell?
->    **\_\_\_\_\_\_**
+>    no
 
 ---
 

@@ -23,12 +23,10 @@ Zumdahl §17.6–17.7 • entropies are in joules, enthalpies in kilojoules
 **1.** Why can a table list an absolute $S^\circ$ but only a
 $\Delta H_f^\circ$? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **2.** Consequently, $S^\circ$ for an element in its standard state is
-**\_\_\_\_\_\_**, while $\Delta H_f^\circ$ for that element
-**\_\_\_\_\_\_**. Give the value of $S^\circ$ for O₂(g) as
-evidence. **\_\_\_\_\_\_**
+not zero, while $\Delta H_f^\circ$ for that element
+is zero. Give the value of $S^\circ$ for O₂(g) as
+evidence. 205 J/(K$\cdot$mol)
 
 **3.** Calculate $\Delta S^\circ$ for each reaction. Check each answer
 against the sign you would have predicted:
@@ -37,8 +35,8 @@ against the sign you would have predicted:
    *(working space)*
 2. 2CO(g) + O₂(g) → 2CO₂(g) 
    *(working space)*
-3. N₂O₄(g) → 2NO₂(g) **\_\_\_\_\_\_**
-4. H₂(g) + Cl₂(g) → 2HCl(g) **\_\_\_\_\_\_**
+3. N₂O₄(g) → 2NO₂(g) $+176$ J/K
+4. H₂(g) + Cl₂(g) → 2HCl(g) $+20$ J/K
 5. 2H₂O(l) → 2H₂(g) + O₂(g) 
    *(working space)*
 
@@ -55,18 +53,17 @@ way, from $\Delta G_f^\circ$ values.
 1. Set up and evaluate. 
    *(working space)*
 2. The two routes give $-68$ and $-70$ kJ. Is one of them wrong?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **6.** Unit discipline. A student calculates $\Delta G^\circ$ for a
 reaction with $\Delta H^\circ = -92$ kJ and $\Delta S^\circ = -199$ J/K as
 $-92 - 298(-199) = +59{,}210$.
 
 1. Identify the error. 
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 2. Give the correct value. 
    *(working space)*
 3. Their answer was wrong by roughly what factor?
-   **\_\_\_\_\_\_**
+   about 1000
 
 **7.** Calculate $\Delta H^\circ$, $\Delta S^\circ$ and
 $\Delta G^\circ$ at 298 K for the combustion of methane,
@@ -80,24 +77,21 @@ and $\Delta S^\circ = +185$ J/K.
 1. Calculate $\Delta G^\circ$ at 298 K.
    *(working space)*
 2. Is copper(II) oxide stable at room temperature? Justify from your
-   answer.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   answer. 
 
 **9.** Rank these three by increasing $\Delta S^\circ$ without
 calculating, then say which one you could not have ranked confidently:
 2H₂O(l) → 2H₂(g) + O₂(g), N₂(g) + 3H₂(g) → 2NH₃(g),
 H₂(g) + Cl₂(g) → 2HCl(g).
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Spiral review • Chapter 17 • block 1**
 >
-> 1. Entropy measures: **\_\_\_\_\_\_**
-> 2. $\Delta S_{\text{surr}} =$ **\_\_\_\_\_\_**
+> 1. Entropy measures: dispersal
+> 2. $\Delta S_{\text{surr}} =$ $-\Delta H/T$
 > 3. Second law: $\Delta S_{\text{univ}}$ must be
->    **\_\_\_\_\_\_**
-> 4. Which phase has the highest $S^\circ$? **\_\_\_\_\_\_**
-> 5. The AP term for $\Delta G^\circ     **\_\_\_\_\_\_**
+>    positive
+> 4. Which phase has the highest $S^\circ$? gas
+> 5. The AP term for $\Delta G^\circ     thermodynamically favored
 
 ---
 

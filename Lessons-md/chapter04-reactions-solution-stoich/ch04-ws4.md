@@ -15,37 +15,35 @@ Zumdahl §4.9–4.11 • assign states first, conclusions second
 
 **1.** Assign the oxidation state of the named element:
 
-1. S in SO₃: **\_\_\_\_\_\_**
-2. N in NO₂-: **\_\_\_\_\_\_**
-3. Cr in CrO₄²⁻: **\_\_\_\_\_\_**
-4. Cl in ClO₃-: **\_\_\_\_\_\_**
-5. P in H₃PO₄: **\_\_\_\_\_\_**
-6. O in H₂O₂: **\_\_\_\_\_\_**
-7. H in NaH: **\_\_\_\_\_\_**
-8. Fe in Fe₂O₃: **\_\_\_\_\_\_**
+1. S in SO₃: $+6$
+2. N in NO₂-: $+3$
+3. Cr in CrO₄²⁻: $+6$
+4. Cl in ClO₃-: $+5$
+5. P in H₃PO₄: $+5$
+6. O in H₂O₂: $-1$ (peroxide)
+7. H in NaH: $-1$ (hydride)
+8. Fe in Fe₂O₃: $+3$
 
 **2.** For each reaction: state whether it is redox; if so, identify
 what is oxidized, what is reduced, the oxidizing agent, and the reducing
 agent.
 
 1. Mg(s) + 2 HCl(aq) → MgCl₂(aq) + H₂(g)
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. 2 Na(s) + Cl₂(g) → 2 NaCl(s)
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **3.** Explain, in your own words, why the substance that is oxidized is
 called the *reducing* agent. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 **4.** In Fe₃O₄, the four oxygens total $-8$.
 
 1. What is the average oxidation state of iron?
-   **\_\_\_\_\_\_**
+   $+8/3$
 2. Explain why a non-integer value appears here.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **5.** **FRQ (10 points).** An iron ore sample is analyzed for iron
 content by redox titration. The dissolved iron is present as Fe²⁺ and
@@ -57,17 +55,17 @@ endpoint.
 
 1. Determine the oxidation state of manganese in MnO₄- and in
    Mn²⁺, and state whether Mn is oxidized or reduced.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Identify the oxidizing agent and the reducing agent.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. Calculate the moles of MnO₄- used. 
    *(working space)*
 4. Calculate the moles and mass of iron in the sample.
    *(working space)*
 5. Calculate the mass percent of iron in the ore.
-   **\_\_\_\_\_\_**
+   17.4%
 6. Explain why no indicator is needed for this titration.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Rubric — score yourself, 10 points**
 >
@@ -81,13 +79,13 @@ endpoint.
 > 📌 **Spiral review • Chapter 4 • full chapter**
 >
 > 1. Net ionic, strong acid + strong base:
->    **\_\_\_\_\_\_**
-> 2. Soluble? AgNO₃ **\_\_\_\_\_\_**
-> 3. Oxidation state of S in H₂S: **\_\_\_\_\_\_**
+>    H+ + OH⁻ → H₂O
+> 2. Soluble? AgNO₃ yes — rules 1, 3
+> 3. Oxidation state of S in H₂S: $-2$
 > 4. 20.0 mL of 0.100 M NaOH contains how
->    many moles? **\_\_\_\_\_\_**
+>    many moles? 2.00e-3 mol
 > 5. Weak acid in a net ionic equation is written how?
->    **\_\_\_\_\_\_**
+>    intact (undissociated)
 
 ---
 

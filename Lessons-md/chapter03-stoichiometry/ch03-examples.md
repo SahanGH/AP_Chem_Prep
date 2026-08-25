@@ -129,10 +129,9 @@ A formula determination always runs the same four steps:
    78.11 g/mol. Both formulas:
    *(working space)*
 2. Why does combustion analysis measure oxygen by difference rather
-   than directly?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   than directly? 
 3. A mole-ratio calculation gives C 1.00, H 1.33, O 1.00. The
-   empirical formula is: **\_\_\_\_\_\_**
+   empirical formula is: C₃H₄O₃
 
 ## §3.8 • What a chemical equation says
 
@@ -170,10 +169,9 @@ ammonia synthesis) and moles. Only atoms are bookkept.
 
 1. In 2H₂ + O₂ → 2H₂O, four molecules become two. Is mass
    conserved? Explain in one sentence.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Write what 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g) says about
-   states.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   states. 
 
 ## §3.9 • Balancing chemical equations
 
@@ -226,13 +224,13 @@ Balancing is done **by inspection**, but inspection with a strategy:
 Balance each (smallest whole coefficients):
 
 1. Fe(s) + O₂(g) → Fe₂O₃(s)
-   **\_\_\_\_\_\_**
+   4Fe + 3O₂ → 2Fe₂O₃
 2. C₃H₈(g) + O₂(g) → CO₂(g) + H₂O(g)
-   **\_\_\_\_\_\_**
+   C₃H₈ + 5O₂ → 3CO₂ + 4H₂O
 3. Al(s) + HCl(aq) → AlCl₃(aq) + H₂(g)
-   **\_\_\_\_\_\_**
+   2Al + 6HCl → 2AlCl₃ + 3H₂
 4. C₄H₁₀(g) + O₂(g) → CO₂(g) + H₂O(g)
-   **\_\_\_\_\_\_**
+   2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O
 
 ## §3.10 • Stoichiometric calculations
 
@@ -289,11 +287,10 @@ $\xrightarrow{\;\times M_B\;}$ grams of B
    10.0 g of propane burns?
    *(working space)*
 2. In 2Al + 3Cl₂ → 2AlCl₃, how many moles of Cl₂ react
-   with 0.40 mol Al? **\_\_\_\_\_\_**
+   with 0.40 mol Al? 0.60 mol
 3. A student converts 25.0 g C₃H₈ to grams of
    CO₂ by $25.0 \times \tfrac{3}{1}$. Name the two omitted
-   steps.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   steps. 
 
 ## §3.11 • Limiting reactant and percent
 yield
@@ -379,20 +376,22 @@ means anything after the coefficients are involved.
 
 *(working space)*
 
+        
+
 For that mixture, the mass of aluminum left over:
         
 
 *(working space)*
 
+        
+
 If 9.20 g of AlCl₃ is collected, the percent
         yield (divide by the *unrounded* theoretical yield):
-        **\_\_\_\_\_\_**
+        90.6%
 
 True or false, with a reason: the reactant present in the
         smaller mass is the limiting reactant.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **The whole span in four sentences**
 >

@@ -15,69 +15,56 @@ Zumdahl §8.9–8.13 • electron count first, always
 
 **1.** Electron counts and Lewis structures:
 
-1. NH₄+     count: **\_\_\_\_\_\_**
+1. NH₄+     count: 8
    *(working space)*
-2. SO₃     count: **\_\_\_\_\_\_**
+2. SO₃     count: 24
    *(working space)*
-3. XeF₄     count: **\_\_\_\_\_\_**
+3. XeF₄     count: 36
    *(working space)*
 
 **2.** Octet exceptions. Name the class and explain:
 
-1. NO₂: **\_\_\_\_\_\_**
-2. BeCl₂: **\_\_\_\_\_\_**
-3. PCl₅: **\_\_\_\_\_\_**
+1. NO₂: odd-electron species (17 e$^-$)
+2. BeCl₂: fewer than an octet (Be gets 4)
+3. PCl₅: expanded octet (period 3)
 4. Explain why NCl₅ does not exist.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **3.** Formal charge:
 
 1. Compute FC on each atom in NO₃- for a form with one N=O and
-   two N–O.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   two N–O. 
 2. State the two selection rules for choosing among candidate
-   structures.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   structures. 
 
 **4.** Resonance:
 
 1. Draw all resonance forms of CO₃²⁻ (24 e$^-$).
    *(working space)*
-2. Bond order of each C–O bond: **\_\_\_\_\_\_**
+2. Bond order of each C–O bond: $4/3$
 3. State the experimental evidence that carbonate is a hybrid rather
    than a molecule alternating between forms.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 **5.** Complete the VSEPR chain for each species:
 
-1. PCl₃: domains **\_\_\_\_\_\_**, geometry
-   **\_\_\_\_\_\_**, angle
-   **\_\_\_\_\_\_**
-2. CS₂: domains **\_\_\_\_\_\_**, geometry
-   **\_\_\_\_\_\_**, angle **\_\_\_\_\_\_**
-3. H₂S: domains **\_\_\_\_\_\_**, geometry
-   **\_\_\_\_\_\_**, angle
-   **\_\_\_\_\_\_**
-4. SO₃: domains **\_\_\_\_\_\_**, geometry
-   **\_\_\_\_\_\_**, angle
-   **\_\_\_\_\_\_**
-
-**6.** **FRQ (10 points).** Sulfur and carbon each form a
-triatomic oxide: SO₂ and CO₂.
-
-1. Give the total valence electron count for each.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+1. PCl₃: domains 4 (1 LP), geometry
+   trigonal pyramidal, angle
+   $\approx107^\circ$
+2. CS₂: domains 2, geometry
+   linear, angle 180$^\circ$
+3. H₂S: domains 4 (2 LP), geometry
+   bent, angle
+   $
 2. Draw a complete Lewis structure for each, showing all lone pairs.
    *(working space)*
 3. State the electron-domain count, molecular geometry, and
    approximate bond angle for each.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 4. One is polar and one is not. Identify which and justify using bond
-   dipoles and geometry.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   dipoles and geometry. 
 5. The two S–O bonds in SO₂ are found to be equal in length.
-   Explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   Explain. 
 
 > 📌 **Rubric — score yourself, 10 points**
 >
@@ -92,12 +79,12 @@ triatomic oxide: SO₂ and CO₂.
 > 📌 **Spiral review • Chapter 8 • blocks 1–3**
 >
 > 1. $\Delta H$ from bond energies:
->    **\_\_\_\_\_\_**
-> 2. Bond order of O₃ O–O bonds: **\_\_\_\_\_\_**
+>    broken $-$ formed
+> 2. Bond order of O₃ O–O bonds: $3/2$
 > 3. Higher lattice energy: KBr or CaO?
->    **\_\_\_\_\_\_**
-> 4. Electrons in ClO₃-: **\_\_\_\_\_\_**
-> 5. Can period-2 atoms expand their octet? **\_\_\_\_\_\_**
+>    CaO
+> 4. Electrons in ClO₃-: 26
+> 5. Can period-2 atoms expand their octet? no
 
 ---
 

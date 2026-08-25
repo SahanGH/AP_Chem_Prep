@@ -24,12 +24,12 @@ Zumdahl §1.3–1.10 • 30 minutes • this is scored, but it is not a test gra
 
 **1.** **[6 marks]** Give the number of significant figures:
 
-1. $0.00470$ **\_\_\_\_\_\_**
-2. $6500$ **\_\_\_\_\_\_**
-3. $6.500\times10^{3}$ **\_\_\_\_\_\_**
-4. $2.0080$ **\_\_\_\_\_\_**
-5. $150.$ **\_\_\_\_\_\_**
-6. $0.0090$ **\_\_\_\_\_\_**
+1. $0.00470$ 3
+2. $6500$ 2
+3. $6.500\times10^{3}$ 4
+4. $2.0080$ 5
+5. $150.$ 3
+6. $0.0090$ 2
 
 **2.** **[4 marks]** Carry out each calculation and report it to
 the correct number of significant figures:
@@ -47,28 +47,27 @@ the correct number of significant figures:
 you use.
 
 1. Convert 2.50 L to millilitres.
-   **\_\_\_\_\_\_**
+   2500 mL
 2. Convert 350 mg to grams.
-   **\_\_\_\_\_\_**
+   0.350 g
 3. Convert 0.0450 m to millimetres.
-   **\_\_\_\_\_\_**
+   45.0 mm
 4. Convert 5.00 miles to kilometres. 
    *(working space)*
 
 **4.** **[3 marks]** Temperature.
 
-1. 37.0 °C in kelvin: **\_\_\_\_\_\_**
+1. 37.0 °C in kelvin: 310.2 K
 2. 373.15 K in degrees Celsius:
-   **\_\_\_\_\_\_**
+   100.00 °C
 3. Why is the kelvin scale the one used in gas-law and thermodynamic
-   equations?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   equations? 
 
 **5.** **[4 marks]** Density.
 
 1. A block of aluminium ($d = 2.70\,\mathrm{g/cm^3}$)
    has a volume of 15.0 cm³. Find its mass.
-   **\_\_\_\_\_\_**
+   40.5 g
 2. Ethanol has $d = 0.789\,\mathrm{g/mL}$. Find the mass
    of 25.0 mL.
    *(working space)*
@@ -82,21 +81,20 @@ same object four times and records 12.47, 12.48, 12.46 and
 12.48 g. The object's true mass is 13.02 g.
 
 1. Are the measurements precise? Accurate?
-   **\_\_\_\_\_\_**
+   precise but not accurate
 2. What kind of error does this indicate, and what would you do about
-   it?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   it? 
 
 **7.** **[2 marks]** Classify each as an element, a compound, a
 homogeneous mixture, or a heterogeneous mixture:
 
-Pure copper wire **\_\_\_\_\_\_**
+Pure copper wire element
 
-Table salt, NaCl **\_\_\_\_\_\_**
+Table salt, NaCl compound
 
-Salt water **\_\_\_\_\_\_**
+Salt water homogeneous mixture
 
-Sand in water **\_\_\_\_\_\_**
+Sand in water heterogeneous mixture
 
 > 📌 **Scoring guide — for the teacher**
 >

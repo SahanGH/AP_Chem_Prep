@@ -35,9 +35,9 @@ Zumdahl §4.1–4.11 • PDF pp. 168–225 • 5 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Geometry and polarity of H₂O: **\_\_\_\_\_\_**
-> 2. Formula for ammonium sulfate: **\_\_\_\_\_\_**
-> 3. Moles in 58.44 g NaCl: **\_\_\_\_\_\_**
+> 1. Geometry and polarity of H₂O: bent; polar
+> 2. Formula for ammonium sulfate: (NH₄)₂SO₄
+> 3. Moles in 58.44 g NaCl: 1.000 mol
 
 #### INSTRUCTION A • Why water is the universal solvent 25 min
 
@@ -47,16 +47,16 @@ Zumdahl §4.1–4.11 • PDF pp. 168–225 • 5 blocks
 
 Water's power as a solvent is a direct consequence of two structural facts
 you already know from Unit 2. First, each O–H bond is strongly
-**\_\_\_\_\_\_**, because oxygen's electronegativity far exceeds
-hydrogen's. Second, the molecule is **\_\_\_\_\_\_**, so those two
+polar, because oxygen's electronegativity far exceeds
+hydrogen's. Second, the molecule is bent, so those two
 bond dipoles do *not* cancel — water carries a substantial net
-dipole, with a partial negative charge on **\_\_\_\_\_\_** and
+dipole, with a partial negative charge on oxygen and
 partial positives on the hydrogens.
 
 That permanent dipole is the whole story. When an ionic solid is placed in
 water, the water molecules orient themselves around each ion: oxygen ends
-point toward **\_\_\_\_\_\_**, hydrogen ends point toward
-**\_\_\_\_\_\_**. The resulting ion–dipole attractions
+point toward cations, hydrogen ends point toward
+anions. The resulting ion–dipole attractions
 release enough energy to compete with the lattice energy holding the crystal
 together. If ion–dipole attraction wins, the solid
 dissolves and the ions become hydrated — each surrounded by
@@ -74,9 +74,9 @@ a shell of oriented water molecules.
 #### GUIDED PRACTICE • Predicting from structure 15 min
 
 1. Which end of a water molecule approaches a Cl- ion, and why?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. Would you expect CCl₄ to dissolve NaCl? Justify.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 #### INSTRUCTION B • Electrolytes: three behaviors 20 min
 
@@ -90,10 +90,10 @@ solutes into three classes:
 
 | **Class** | **What happens in water** | **Examples** |
 |---|---|---|
-| Strong electrolyte | dissociates or ionizes **\_\_\_\_\_\_** | soluble salts (NaCl); strong acids (HCl, HNO₃,
+| Strong electrolyte | dissociates or ionizes completely | soluble salts (NaCl); strong acids (HCl, HNO₃,
   H₂SO₄); strong bases (NaOH, KOH) |
-| Weak electrolyte | ionizes only **\_\_\_\_\_\_** — an equilibrium | weak acids (HC₂H₃O₂); weak bases (NH₃) |
-| Nonelectrolyte | dissolves as **\_\_\_\_\_\_** | sugar, ethanol; and *water itself* |
+| Weak electrolyte | ionizes only slightly — an equilibrium | weak acids (HC₂H₃O₂); weak bases (NH₃) |
+| Nonelectrolyte | dissolves as intact molecules | sugar, ethanol; and *water itself* |
 
 > 📘 **Worked example: two acids, two behaviors**
 >
@@ -123,7 +123,7 @@ solutes into three classes:
 
 `SP 5`
 
-$M =$ **\_\_\_\_\_\_**
+$M =$ $\dfrac{\text{moles of solute}}{\text{liters of solution}}$
 
 Note carefully: liters of *solution*, not liters of solvent. This is
 why you dissolve the solid first and *then* add water up to the mark.
@@ -146,7 +146,7 @@ why you dissolve the solid first and *then* add water up to the mark.
 > 
 > $$ V_1 = \frac{M_2V_2}{M_1} = \frac{(0.50)(250.)}{16} = 7.8\,\mathrm{mL} $$
 > 
-> Dilution changes volume but not **\_\_\_\_\_\_**, which
+> Dilution changes volume but not moles of solute, which
 > is why $M_1V_1 = M_2V_2$ works. (Always add acid *to* water, never the
 > reverse.)
 
@@ -156,18 +156,16 @@ Because strong electrolytes dissociate completely, the ion concentrations
 follow directly from the formula:
 
 1. 0.10 M Na₂SO₄: $[\text{Na+}] =$
-   **\_\_\_\_\_\_**, $[\text{SO₄²⁻}] =$
-   **\_\_\_\_\_\_**
+   0.20 M, $[\text{SO₄²⁻}] =$
+   0.10 M
 2. 0.25 M Al(NO₃)₃: $[\text{NO₃-}] =$
-   **\_\_\_\_\_\_**
+   0.75 M
 
 > 📌 **Exit ticket**
 >
 > A 0.10 M solution of substance X barely lights a conductivity
 > bulb; 0.10 M of substance Y lights it brightly. What can you
 > conclude about each, and what can you *not* conclude?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Precipitation Reactions and Solubility Zumdahl §4.4–4.5, 4.7
 
@@ -182,12 +180,12 @@ follow directly from the formula:
 > 📌 **Retrieval warm-up**
 >
 > 1. $[\text{Cl-}]$ in 0.20 M CaCl₂:
->    **\_\_\_\_\_\_**
+>    0.40 M
 > 2. Strong or weak electrolyte: HNO₃?
->    **\_\_\_\_\_\_**
+>    strong
 > 3. Dilute 10.0 mL of 6.0 M to
->    60.0 mL: **\_\_\_\_\_\_**
-> 4. Nonelectrolyte example: **\_\_\_\_\_\_**
+>    60.0 mL: 1.0 M
+> 4. Nonelectrolyte example: sugar / ethanol
 
 #### INSTRUCTION A • The solubility rules 25 min
 
@@ -201,17 +199,17 @@ ones with the important exceptions.
 
 |  | **Soluble** | **Notable exceptions** |
 |---|---|---|
-| 1 | Most **\_\_\_\_\_\_** (NO₃-) salts | none worth
+| 1 | Most nitrate (NO₃-) salts | none worth
   memorizing |
 | 2 | Salts of alkali metals (Li+, Na+, K+, Rb+,
-  Cs+) and **\_\_\_\_\_\_** | none |
-| 3 | Most Cl-, Br-, I- salts | **\_\_\_\_\_\_** |
-| 4 | Most SO₄²⁻ salts | **\_\_\_\_\_\_** |
-| 5 | Most hydroxides are only *slightly* soluble | soluble: **\_\_\_\_\_\_**; marginal:
+  Cs+) and NH₄+ | none |
+| 3 | Most Cl-, Br-, I- salts | Ag+, Pb²⁺, Hg₂²⁺ |
+| 4 | Most SO₄²⁻ salts | BaSO₄, PbSO₄, Hg₂SO₄, CaSO₄ |
+| 5 | Most hydroxides are only *slightly* soluble | soluble: NaOH, KOH; marginal:
   Ba(OH)₂, Sr(OH)₂, Ca(OH)₂ |
 | 6 | Most S²⁻, CO₃²⁻, CrO₄²⁻, PO₄³⁻ salts are only
   slightly soluble | except those with the cations from
-  **\_\_\_\_\_\_** |
+  rule 2 |
 
 > 📌 **Note**
 >
@@ -222,11 +220,11 @@ ones with the important exceptions.
 
 #### GUIDED PRACTICE • Soluble or not? 15 min
 
-1. KNO₃: **\_\_\_\_\_\_**
-2. AgCl: **\_\_\_\_\_\_**
-3. BaSO₄: **\_\_\_\_\_\_**
-4. (NH₄)₂S: **\_\_\_\_\_\_**
-5. CaCO₃: **\_\_\_\_\_\_**
+1. KNO₃: soluble (rules 1 and 2)
+2. AgCl: insoluble (rule 3 exception)
+3. BaSO₄: insoluble (rule 4 exception)
+4. (NH₄)₂S: soluble (rule 2 beats rule 6)
+5. CaCO₃: insoluble (rule 6)
 
 #### INSTRUCTION B • Predicting products by ion interchange 20 min
 
@@ -238,11 +236,11 @@ Zumdahl is candid that predicting products is one of the hardest things a
 beginning student is asked to do. The procedure that makes it tractable:
 
 1. List the ions actually present after mixing (remember: strong
-   electrolytes are already **\_\_\_\_\_\_**).
+   electrolytes are already dissociated).
 2. Form the two possible new pairings by
-   **\_\_\_\_\_\_** cation and anion. A solid must be
+   interchanging cation and anion. A solid must be
    electrically neutral, so pair cation with
-   **\_\_\_\_\_\_** only.
+   anion only.
 3. Check each possibility against the solubility rules.
 4. Anything insoluble is the precipitate; the rest stays
    dissolved.
@@ -270,7 +268,7 @@ beginning student is asked to do. The procedure that makes it tractable:
 
 The mass of precipitate is an ordinary stoichiometry problem — with one
 extra front step: convert volume and molarity into
-**\_\_\_\_\_\_**.
+moles.
 
 > 📘 **Worked example**
 >
@@ -284,15 +282,12 @@ extra front step: convert volume and molarity into
    ($M = 233.39$).
    *(working space)*
 2. Explain why the answer does not depend on how much Na₂SO₄ was
-   added, provided it is in excess.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   added, provided it is in excess. 
 
 > 📌 **Exit ticket**
 >
 > Predict whether mixing Pb(NO₃)₂(aq) and KI(aq) produces a
 > precipitate. Name it and cite the rule.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Ionic Equations Zumdahl §4.6
 
@@ -305,12 +300,12 @@ extra front step: convert volume and molarity into
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Soluble or not: PbSO₄? **\_\_\_\_\_\_**
+> 1. Soluble or not: PbSO₄? insoluble
 > 2. Products of AgNO₃(aq) + KCl(aq):
->    **\_\_\_\_\_\_**
+>    AgCl(s) + KNO₃(aq)
 > 3. Moles of Ag+ in 20.0 mL of
 >    0.150 M AgNO₃:
->    **\_\_\_\_\_\_**
+>    3.00e-3 mol
 
 #### INSTRUCTION A • Three equations, three levels of honesty 25 min
 
@@ -323,10 +318,10 @@ a correct picture of what actually occurs in solution.” Three levels:
 
 | **Formula equation** | every substance written as a neutral compound |
 |---|---|
-| **Complete ionic** | every **\_\_\_\_\_\_**
+| **Complete ionic** | every strong electrolyte
   written as separated ions |
 | **Net ionic** | only the species that
-  **\_\_\_\_\_\_** |
+  actually react |
 
 > 📘 **Worked example: the same reaction, three ways**
 >
@@ -343,9 +338,9 @@ a correct picture of what actually occurs in solution.” Three levels:
 #### The rule that governs everything: what gets split?
 
 - **Split** (write as ions): soluble salts, strong acids, strong
-   bases — i.e. all **\_\_\_\_\_\_**.
+   bases — i.e. all strong electrolytes.
 - **Keep together**: solids (s), liquids (l), gases
-   (g), **\_\_\_\_\_\_**, and
+   (g), weak electrolytes, and
    nonelectrolytes.
 
 > ⚠️ **AP trap**
@@ -360,9 +355,8 @@ a correct picture of what actually occurs in solution.” Three levels:
 For Pb(NO₃)₂(aq) + 2 NaI(aq) → PbI₂(s) + 2 NaNO₃(aq):
 
 1. Complete ionic: 
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-2. Spectator ions: **\_\_\_\_\_\_**
-3. Net ionic: **\_\_\_\_\_\_**
+2. Spectator ions: Na+ and NO₃-
+3. Net ionic: Pb²⁺(aq) + 2 I⁻(aq) → PbI₂(s)
 
 #### INSTRUCTION B • Why net ionic equations matter 20 min
 
@@ -388,26 +382,18 @@ apparently different reactions are the *same* reaction.
 Write the net ionic equation for mixing Na₂CO₃(aq) and
         CaCl₂(aq). 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Mixing NaNO₃(aq) and KCl(aq) gives no net ionic equation
         at all. Explain what that means physically.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 A student writes Ba²⁺ + SO₄²⁻ → BaSO₄(s) for the reaction of
         Ba(OH)₂(aq) with H₂SO₄(aq). What did they miss?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > Why is HC₂H₃O₂(aq) written as a whole molecule in a net ionic equation
 > while HCl(aq) is written as separated ions?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Acid–Base Reactions Zumdahl §4.8
 
@@ -422,12 +408,13 @@ A student writes Ba²⁺ + SO₄²⁻ → BaSO₄(s) for the reaction of
 > 📌 **Retrieval warm-up**
 >
 > 1. Net ionic for AgNO₃(aq) + NaCl(aq):
->    **\_\_\_\_\_\_**
+>    Ag+ + Cl⁻ → AgCl(s)
 > 2. Do you split H₂O in an ionic equation?
->    **\_\_\_\_\_\_**
-> 3. Strong acid example: **\_\_\_\_\_\_**
+>    no
+> 3. Strong acid example: HCl, HNO₃,
+>    H₂SO₄
 > 4. Moles in 35.0 mL of 0.200 M:
->    **\_\_\_\_\_\_**
+>    7.00e-3 mol
 
 #### INSTRUCTION A • Two definitions, one behavior 25 min
 
@@ -435,11 +422,11 @@ A student writes Ba²⁺ + SO₄²⁻ → BaSO₄(s) for the reaction of
 
 `SP 1`
 
-- Arrhenius: an acid produces **\_\_\_\_\_\_** in
-   water; a base produces **\_\_\_\_\_\_**.
+- Arrhenius: an acid produces H+ in
+   water; a base produces OH-.
 - Bronsted–Lowry: an acid is a proton
-   **\_\_\_\_\_\_**; a base is a proton
-   **\_\_\_\_\_\_**. This is broader — it covers
+   donor; a base is a proton
+   acceptor. This is broader — it covers
    NH₃, which produces OH- without containing it.
 
 #### The strong acids and bases worth memorizing
@@ -447,20 +434,20 @@ A student writes Ba²⁺ + SO₄²⁻ → BaSO₄(s) for the reaction of
 Strong acids: HCl, HBr, HI, HNO₃, H₂SO₄,
 HClO₄.   
 
-Strong bases: hydroxides of **\_\_\_\_\_\_** plus
+Strong bases: hydroxides of group 1 plus
 Ca(OH)₂, Sr(OH)₂, Ba(OH)₂.   
 
-Everything else you meet this year is **\_\_\_\_\_\_**.
+Everything else you meet this year is weak.
 
 #### GUIDED PRACTICE • Classify 15 min
 
-HNO₃: **\_\_\_\_\_\_**
+HNO₃: strong acid
 
-NH₃: **\_\_\_\_\_\_**
+NH₃: weak base
 
-HF: **\_\_\_\_\_\_**
+HF: weak acid
 
-KOH: **\_\_\_\_\_\_**
+KOH: strong base
 
 #### INSTRUCTION B • Neutralization at the ion level 20 min
 
@@ -498,7 +485,7 @@ KOH: **\_\_\_\_\_\_**
 A titration adds a solution of known concentration (the
 titrant) until the reaction is exactly complete — the
 equivalence point, signaled by an
-**\_\_\_\_\_\_** colour change.
+indicator colour change.
 
 > 📘 **Worked example**
 >
@@ -513,17 +500,15 @@ equivalence point, signaled by an
 
 *(working space)*
 
-Why does the diprotic acid change the arithmetic?
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Why does the diprotic acid change the arithmetic?
+        
 
 > 📌 **Exit ticket**
 >
 > Write the net ionic equation for HF(aq) reacting with NaOH(aq),
 > and explain why it differs from the HCl/NaOH case.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Oxidation–Reduction Reactions Zumdahl §4.9–4.11
 
@@ -539,10 +524,10 @@ Why does the diprotic acid change the arithmetic?
 > 📌 **Retrieval warm-up**
 >
 > 1. Net ionic for strong acid + strong base:
->    **\_\_\_\_\_\_**
+>    H+ + OH⁻ → H₂O
 > 2. Moles of H+ in 25.0 mL of 0.100 M
->    H₂SO₄: **\_\_\_\_\_\_**
-> 3. Charge on the sulfate ion: **\_\_\_\_\_\_**
+>    H₂SO₄: 5.00e-3 mol
+> 3. Charge on the sulfate ion: $2-$
 
 #### INSTRUCTION A • Oxidation states 25 min
 
@@ -557,13 +542,13 @@ track where electrons go.
 
 |  | **Rule** | **Note** |
 |---|---|---|
-| 1 | Free element: **\_\_\_\_\_\_** | Na, O₂, P₄ |
-| 2 | Monatomic ion: equal to its **\_\_\_\_\_\_** | Na+ is $+1$ |
-| 3 | Oxygen: **\_\_\_\_\_\_** | except peroxides ($-1$) |
-| 4 | Hydrogen: **\_\_\_\_\_\_** | except metal hydrides ($-1$) |
-| 5 | Fluorine: **\_\_\_\_\_\_** | always |
-| 6 | Sum $=$ **\_\_\_\_\_\_** for a neutral compound, or the
-  **\_\_\_\_\_\_** for an ion | this is the equation you
+| 1 | Free element: 0 | Na, O₂, P₄ |
+| 2 | Monatomic ion: equal to its charge | Na+ is $+1$ |
+| 3 | Oxygen: $-2$ | except peroxides ($-1$) |
+| 4 | Hydrogen: $+1$ | except metal hydrides ($-1$) |
+| 5 | Fluorine: $-1$ | always |
+| 6 | Sum $=$ 0 for a neutral compound, or the
+  ion charge for an ion | this is the equation you
   actually solve |
 
 > 📘 **Worked example: three species, Zumdahl's own**
@@ -586,15 +571,15 @@ track where electrons go.
 
 #### GUIDED PRACTICE • Assign the underlined element 15 min
 
-S in H₂SO₄: **\_\_\_\_\_\_**
+S in H₂SO₄: $+6$
 
-Cr in Cr₂O₇²⁻: **\_\_\_\_\_\_**
+Cr in Cr₂O₇²⁻: $+6$
 
-Mn in MnO₄-: **\_\_\_\_\_\_**
+Mn in MnO₄-: $+7$
 
-N in NH₃: **\_\_\_\_\_\_**
+N in NH₃: $-3$
 
-C in CH₄: **\_\_\_\_\_\_**
+C in CH₄: $-4$
 
 #### INSTRUCTION B • Identifying redox and naming agents 20 min
 
@@ -603,13 +588,13 @@ C in CH₄: **\_\_\_\_\_\_**
 `SP 6`
 
 A reaction is redox if any element's oxidation state
-**\_\_\_\_\_\_**.
+changes.
 
 |  | **Oxidation** | **Reduction** |
 |---|---|---|
-| Electrons | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| Oxidation state | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| The species itself is the | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| Electrons | lost | gained |
+| Oxidation state | increases | decreases |
+| The species itself is the | reducing agent | oxidizing agent |
 
 > ⚠️ **AP trap**
 >
@@ -634,8 +619,6 @@ A reaction is redox if any element's oxidation state
 For Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s), identify what is
         oxidized, reduced, and both agents. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 In an iron analysis, Fe²⁺ is titrated with MnO₄-:
         5 Fe²⁺ + MnO₄⁻ + 8 H+ → 5 Fe³⁺ + Mn²⁺ + 4 H₂O
         A sample requires 18.0 mL of 0.0200 M
@@ -643,11 +626,11 @@ In an iron analysis, Fe²⁺ is titrated with MnO₄-:
 
 *(working space)*
 
+        
+
 Verify that manganese is reduced in that equation by computing its
         oxidation state on both sides.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **ENRICHMENT — beyond the CED**
 >
@@ -661,9 +644,7 @@ Verify that manganese is reduced in that equation by computing its
 > 📌 **Exit ticket**
 >
 > In 2 H₂ + O₂ → 2 H₂O, identify the oxidizing agent and justify with
-> oxidation states. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> oxidation states.
 
 ---
 

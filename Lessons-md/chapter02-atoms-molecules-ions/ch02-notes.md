@@ -29,10 +29,10 @@ Zumdahl §2.1–2.8 • PDF pp. 69–109 • 3 blocks
 
 > 📌 **Retrieval warm-up**
 >
-> 1. How many protons in ³⁵Cl? **\_\_\_\_\_\_**
+> 1. How many protons in ³⁵Cl? 17
 > 2. Which subatomic particle has negligible mass?
->    **\_\_\_\_\_\_**
-> 3. Charge of a neutron: **\_\_\_\_\_\_**
+>    electron
+> 3. Charge of a neutron: zero
 
 #### INSTRUCTION A • The three mass laws 25 min
 
@@ -43,13 +43,13 @@ Zumdahl §2.1–2.8 • PDF pp. 69–109 • 3 blocks
 | **Law** | **Statement** | **What it implies** |
 |---|---|---|
 | Conservation of mass  
-(Lavoisier) | mass is neither **\_\_\_\_\_\_** nor destroyed in a reaction | atoms are rearranged, not made or destroyed |
+(Lavoisier) | mass is neither created nor destroyed in a reaction | atoms are rearranged, not made or destroyed |
 | Definite proportion  
-(Proust) | a given compound always has the **\_\_\_\_\_\_** mass ratio of
+(Proust) | a given compound always has the same mass ratio of
   elements | compounds have fixed formulas |
 | Multiple proportions  
 (Dalton) | masses of B combining with a fixed mass of A are in small
-  **\_\_\_\_\_\_** ratios | atoms combine in discrete units — the strongest argument |
+  whole-number ratios | atoms combine in discrete units — the strongest argument |
 
 > 📘 **Worked example: multiple proportions**
 >
@@ -64,25 +64,25 @@ Zumdahl §2.1–2.8 • PDF pp. 69–109 • 3 blocks
 
 #### Dalton's atomic theory (1808)
 
-1. Elements are made of tiny particles called **\_\_\_\_\_\_**.
-2. All atoms of a given element are **\_\_\_\_\_\_**
-   — *later corrected by* **\_\_\_\_\_\_**.
+1. Elements are made of tiny particles called atoms.
+2. All atoms of a given element are identical
+   — *later corrected by* isotopes.
 3. Atoms of different elements differ in
-   **\_\_\_\_\_\_**.
+   mass/properties.
 4. Compounds form when atoms combine in fixed
-   **\_\_\_\_\_\_**.
-5. Chemical reactions only **\_\_\_\_\_\_** atoms.
+   whole-number ratios.
+5. Chemical reactions only rearrange atoms.
 
 #### GUIDED PRACTICE • Law identification 15 min
 
 Which law does each observation illustrate?
 
 1. Water from any source is 11.2% H by mass.
-   **\_\_\_\_\_\_**
+   definite proportion
 2. 10.0 g reactants yield 10.0 g products.
-   **\_\_\_\_\_\_**
+   conservation of mass
 3. NO and NO₂: O per gram of N is in a 1:2 ratio.
-   **\_\_\_\_\_\_**
+   multiple proportions
 
 #### INSTRUCTION B • Taking the atom apart 20 min
 
@@ -93,13 +93,13 @@ Which law does each observation illustrate?
 | **Experiment** | **Observation** | **Conclusion** |
 |---|---|---|
 | Thomson  
- cathode ray | beam deflects toward the **\_\_\_\_\_\_** plate; same
-  charge/mass for any gas | **\_\_\_\_\_\_** in all atoms; “plum pudding” |
+ cathode ray | beam deflects toward the positive plate; same
+  charge/mass for any gas | electrons exist in all atoms; “plum pudding” |
 | Millikan  
- oil drop | droplet charges are multiples of one value | charge of the **\_\_\_\_\_\_**; with $e/m$, gives its mass |
+ oil drop | droplet charges are multiples of one value | charge of the electron; with $e/m$, gives its mass |
 | Rutherford  
- gold foil | most $\alpha$ pass through; a few deflect **\_\_\_\_\_\_** | atom is mostly **\_\_\_\_\_\_** with a tiny, dense,
-  positive **\_\_\_\_\_\_** |
+ gold foil | most $\alpha$ pass through; a few deflect sharply back | atom is mostly empty space with a tiny, dense,
+  positive nucleus |
 
 > ⚠️ **AP trap**
 >
@@ -112,18 +112,15 @@ Which law does each observation illustrate?
 
 1. Thomson found the same charge-to-mass ratio no matter which gas
    filled the tube. Why did that matter?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. If the nucleus were the size of a marble, the atom would be about
    the size of a stadium. Which experimental result does that
-   illustrate?
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   illustrate? 
 
 > 📌 **Exit ticket**
 >
 > Dalton said all atoms of an element are identical. What later discovery
 > corrected this, and does it break the theory?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Atoms, Ions, and the Periodic Table Zumdahl §2.5–2.7
 
@@ -136,10 +133,10 @@ Which law does each observation illustrate?
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Which experiment found the nucleus? **\_\_\_\_\_\_**
+> 1. Which experiment found the nucleus? gold foil
 > 2. CO vs CO₂ illustrates which law?
->    **\_\_\_\_\_\_**
-> 3. Sign of an electron's charge: **\_\_\_\_\_\_**
+>    multiple proportions
+> 3. Sign of an electron's charge: negative
 
 #### INSTRUCTION A • Isotope notation 25 min
 
@@ -148,12 +145,12 @@ Which law does each observation illustrate?
 `SP 1`
 
 - $Z$ = atomic number = number of
-   **\_\_\_\_\_\_** — fixes the element's identity.
+   protons — fixes the element's identity.
 - $A$ = mass number = protons $+$
-   **\_\_\_\_\_\_**.
-- Neutrons $=$ **\_\_\_\_\_\_**.
-- Neutral atom: electrons $=$ **\_\_\_\_\_\_**.
-   For an ion, adjust by the **\_\_\_\_\_\_**.
+   neutrons.
+- Neutrons $=$ $A - Z$.
+- Neutral atom: electrons $=$ protons.
+   For an ion, adjust by the charge.
 
 > 📘 **Worked example: three species**
 >
@@ -170,10 +167,10 @@ Which law does each observation illustrate?
 
 | **Species** | **protons** | **neutrons** | **electrons** | **charge** |
 |---|---|---|---|---|
-| ²⁷₁₃Al | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| ¹⁹₉F⁻ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| ⁶⁵₃₀Zn²⁺ | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
-| ? | 20 | 20 | 18 | **\_\_\_\_\_\_** |
+| ²⁷₁₃Al | 13 | 14 | 13 | 0 |
+| ¹⁹₉F⁻ | 9 | 10 | 10 | $1-$ |
+| ⁶⁵₃₀Zn²⁺ | 30 | 35 | 28 | $2+$ |
+| ? | 20 | 20 | 18 | ⁴⁰Ca²⁺ |
 
 #### INSTRUCTION B • Charges from the table 20 min
 
@@ -185,29 +182,27 @@ Main-group metals lose electrons; nonmetals gain them:
 
 | **Group** | 1A | 2A | 3A | 6A | 7A |
 |---|---|---|---|---|---|
-| **Typical ion** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| **Typical ion** | $1+$ | $2+$ | $3+$ | $2-$ | $1-$ |
 
 Transition metals are the exception — most form
-**\_\_\_\_\_\_**, which is why their names need a
-**\_\_\_\_\_\_**.
+more than one charge, which is why their names need a
+Roman numeral.
 
 Memorize the exceptions that never take a numeral: Ag+, Zn²⁺,
 Cd²⁺, and Al³⁺.
 
 #### APPLICATION • Build formulas from charges 20 min
 
-1. Potassium + sulfur: **\_\_\_\_\_\_**
-2. Aluminum + oxygen: **\_\_\_\_\_\_**
-3. Barium + nitrogen: **\_\_\_\_\_\_**
+1. Potassium + sulfur: K₂S
+2. Aluminum + oxygen: Al₂O₃
+3. Barium + nitrogen: Ba₃N₂
 4. An ion has 34 protons and 36 electrons. Identify it fully.
-   **\_\_\_\_\_\_**
+   Se²⁻
 
 > 📌 **Exit ticket**
 >
 > An element in group 2A forms an ion with 10 electrons. Identify the element
-> and the ion. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> and the ion.
 
 ## Nomenclature Zumdahl §2.8
 
@@ -220,9 +215,9 @@ Cd²⁺, and Al³⁺.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Charge on the aluminum ion: **\_\_\_\_\_\_**
-> 2. Neutrons in ⁶³Cu: **\_\_\_\_\_\_**
-> 3. Formula: magnesium + chlorine: **\_\_\_\_\_\_**
+> 1. Charge on the aluminum ion: $3+$
+> 2. Neutrons in ⁶³Cu: 34
+> 3. Formula: magnesium + chlorine: MgCl₂
 
 #### INSTRUCTION A • The decision tree 25 min
 
@@ -233,33 +228,33 @@ Cd²⁺, and Al³⁺.
 Ask two questions in order:
 
 1. Does the formula start with H (in water)? $\to$ it's an
-   **\_\_\_\_\_\_**.
+   acid.
 2. Otherwise, is the first element a metal?
-   - **Yes** $\to$ **\_\_\_\_\_\_**. Does the metal
+   - **Yes** $\to$ ionic. Does the metal
    have a variable charge (transition metals, Pb, Sn)?
-   Then include a **\_\_\_\_\_\_**.
+   Then include a Roman numeral.
    - **No** (two nonmetals) $\to$
-   **\_\_\_\_\_\_** — use
-   **\_\_\_\_\_\_**.
+   binary covalent — use
+   prefixes.
 
 #### Type I ionic — fixed-charge metal
 
 Cation name (element name) $+$ anion root $+$
-“**\_\_\_\_\_\_**”.  
+“-ide”.  
 
-CaS $=$ **\_\_\_\_\_\_**;   
-Li₃N $=$ **\_\_\_\_\_\_**.
+CaS $=$ calcium sulfide;   
+Li₃N $=$ lithium nitride.
 
 #### Type II ionic — variable-charge metal
 
 Deduce the cation charge from the anion total, then write the numeral.  
 
 Fe₂O₃: three O²⁻ $=6-$, so each Fe is
-**\_\_\_\_\_\_** $\to$
-**\_\_\_\_\_\_**.  
+$3+$ $\to$
+iron(III) oxide.  
 
-CuCl $=$ **\_\_\_\_\_\_**;   
-PbCl₂ $=$ **\_\_\_\_\_\_**.
+CuCl $=$ copper(I) chloride;   
+PbCl₂ $=$ lead(II) chloride.
 
 > ⚠️ **AP trap**
 >
@@ -269,10 +264,10 @@ PbCl₂ $=$ **\_\_\_\_\_\_**.
 
 #### GUIDED PRACTICE • Ionic drill 15 min
 
-1. CoBr₂: **\_\_\_\_\_\_**
-2. Al₂O₃: **\_\_\_\_\_\_**
-3. chromium(III) chloride: **\_\_\_\_\_\_**
-4. MnO₂: **\_\_\_\_\_\_**
+1. CoBr₂: cobalt(II) bromide
+2. Al₂O₃: aluminum oxide
+3. chromium(III) chloride: CrCl₃
+4. MnO₂: manganese(IV) oxide
 
 #### INSTRUCTION B • Polyatomics, covalent, acids 20 min
 
@@ -289,10 +284,10 @@ Memorize these — there is no derivation:
 
 #### The oxyanion ladder (chlorine as the model)
 
-ClO- **\_\_\_\_\_\_** $\to$
-ClO₂- **\_\_\_\_\_\_** $\to$
-ClO₃- **\_\_\_\_\_\_** $\to$
-ClO₄- **\_\_\_\_\_\_**.
+ClO- hypochlorite $\to$
+ClO₂- chlorite $\to$
+ClO₃- chlorate $\to$
+ClO₄- perchlorate.
 
 Fewer O $\to$ *-ite*; more O $\to$ *-ate*;
 *hypo-* is one below *-ite*, *per-* one above
@@ -301,44 +296,42 @@ Fewer O $\to$ *-ite*; more O $\to$ *-ate*;
 #### Binary covalent (Type III) — prefixes
 
 mono(1), di(2), tri(3), tetra(4), penta(5), hexa(6).
-Drop *mono-* on the **\_\_\_\_\_\_** element only.  
+Drop *mono-* on the first element only.  
 
-N₂O₅ $=$ **\_\_\_\_\_\_**;   
-CO $=$ **\_\_\_\_\_\_**.
+N₂O₅ $=$ dinitrogen pentoxide;   
+CO $=$ carbon monoxide.
 
 #### Acids
 
 - No oxygen: *hydro-*root*-ic acid*. HCl(aq) $=$
-   **\_\_\_\_\_\_**.
+   hydrochloric acid.
 - Anion ends *-ate* $\to$ acid ends
-   **\_\_\_\_\_\_**. H₂SO₄ $=$
-   **\_\_\_\_\_\_**.
+   -ic. H₂SO₄ $=$
+   sulfuric acid.
 - Anion ends *-ite* $\to$ acid ends
-   **\_\_\_\_\_\_**. H₂SO₃ $=$
-   **\_\_\_\_\_\_**.
+   -ous. H₂SO₃ $=$
+   sulfurous acid.
 
 #### APPLICATION • Mixed naming — the real test 20 min
 
 Name or write the formula. Identify the type first.
 
-Fe(NO₃)₃: **\_\_\_\_\_\_**
+Fe(NO₃)₃: iron(III) nitrate
 
-P₄O₁₀: **\_\_\_\_\_\_**
+P₄O₁₀: tetraphosphorus decoxide
 
-HNO₂(aq): **\_\_\_\_\_\_**
+HNO₂(aq): nitrous acid
 
-sodium hydrogen carbonate: **\_\_\_\_\_\_**
+sodium hydrogen carbonate: NaHCO₃
 
-cesium perchlorate: **\_\_\_\_\_\_**
+cesium perchlorate: CsClO₄
 
-ammonium sulfate: **\_\_\_\_\_\_**
+ammonium sulfate: (NH₄)₂SO₄
 
 > 📌 **Exit ticket**
 >
 > Cu(NO₃)₂ and CuNO₃ — name both, and explain what forces the
-> difference. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> difference.
 
 ---
 

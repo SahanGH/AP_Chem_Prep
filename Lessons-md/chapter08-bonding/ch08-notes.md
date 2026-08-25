@@ -34,9 +34,9 @@ Zumdahl §8.1–8.13 • PDF pp. 390–453 • 5 blocks
 > 📌 **Retrieval warm-up**
 >
 > 1. Which is more electronegative, N or O?
->    **\_\_\_\_\_\_**
-> 2. Geometry of CO₂: **\_\_\_\_\_\_**
-> 3. Configuration of Mg²⁺: **\_\_\_\_\_\_**
+>    O
+> 2. Geometry of CO₂: linear
+> 3. Configuration of Mg²⁺: $[\text{Ne}]$
 
 #### INSTRUCTION A • Electronegativity 25 min
 
@@ -46,18 +46,18 @@ Zumdahl §8.1–8.13 • PDF pp. 390–453 • 5 blocks
 
 Electronegativity is an atom's ability to attract shared electrons in
 a bond. On the Pauling scale it runs from
-**\_\_\_\_\_\_** for fluorine down to **\_\_\_\_\_\_** for
+4.0 for fluorine down to 0.7 for
 caesium.
 
 The trend follows the same Coulombic engine as everything in Unit 1: it
-**\_\_\_\_\_\_** across a period (rising $Z_{\text{eff}}$) and
-**\_\_\_\_\_\_** down a group (greater distance and shielding).
+increases across a period (rising $Z_{\text{eff}}$) and
+decreases down a group (greater distance and shielding).
 
 | **Bond type** | **$\Delta$EN** | **Electron behaviour** |
 |---|---|---|
-| Nonpolar covalent | **\_\_\_\_\_\_** | shared equally; no partial charges |
-| Polar covalent | intermediate | shared **\_\_\_\_\_\_**; $\delta^+$ and $\delta^-$ appear |
-| Ionic | large | **\_\_\_\_\_\_** to form ions |
+| Nonpolar covalent | $\approx 0$ | shared equally; no partial charges |
+| Polar covalent | intermediate | shared unequally; $\delta^+$ and $\delta^-$ appear |
+| Ionic | large | transferred to form ions |
 
 > 📌 **Note**
 >
@@ -75,13 +75,13 @@ The trend follows the same Coulombic engine as everything in Unit 1: it
 > 
 > $$ \text{H-H} bond dipole — a vector pointing toward the more
 electronegative atom. Whether the *molecule* is polar depends on
-whether those vectors **\_\_\_\_\_\_**.
+whether those vectors cancel.
 
 Two conditions, both required for a polar molecule:
 
-1. at least one **\_\_\_\_\_\_**, and
+1. at least one polar bond, and
 2. a geometry that does *not* produce
-   **\_\_\_\_\_\_**.
+   cancellation.
 
 > ⚠️ **AP trap**
 >
@@ -94,16 +94,14 @@ Two conditions, both required for a polar molecule:
 
 1. CCl₄ and CHCl₃ both contain polar C–Cl bonds, yet only
    one is a polar molecule. Identify it and explain.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 2. NH₃ is polar but BF₃ is not, even though both are
    “XY₃.” Explain in terms of geometry.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 
 > 📌 **Exit ticket**
 >
 > Can a molecule containing only nonpolar bonds be polar? Explain.
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Ions and Lattice Energy Zumdahl §8.4–8.5
 
@@ -118,9 +116,9 @@ Two conditions, both required for a polar molecule:
 > 📌 **Retrieval warm-up**
 >
 > 1. $\Delta$EN of H-F given H 2.1, F 4.0:
->    **\_\_\_\_\_\_**
-> 2. Is BF₃ polar? **\_\_\_\_\_\_**
-> 3. Configuration of S²⁻: **\_\_\_\_\_\_**
+>    1.9
+> 2. Is BF₃ polar? no
+> 3. Configuration of S²⁻: $[\text{Ar}]$
 
 #### INSTRUCTION A • Ion sizes 25 min
 
@@ -128,11 +126,11 @@ Two conditions, both required for a polar molecule:
 
 `SP 6`
 
-- A cation is always **\_\_\_\_\_\_** than its parent
+- A cation is always smaller than its parent
    atom — electrons are removed (often emptying a whole shell) while
    the nuclear charge is unchanged, so the remainder is pulled in
    tightly.
-- An anion is always **\_\_\_\_\_\_** — added
+- An anion is always larger — added
    electrons increase mutual repulsion with no extra protons to
    compensate.
 
@@ -140,7 +138,7 @@ Two conditions, both required for a polar molecule:
 
 Ions with the same electron count differ only in nuclear charge. Zumdahl's
 rule: for a series of isoelectronic ions, size
-**\_\_\_\_\_\_** as $Z$ increases.
+decreases as $Z$ increases.
 
 > 📘 **Worked example: Zumdahl's krypton series**
 >
@@ -154,10 +152,10 @@ rule: for a series of isoelectronic ions, size
 
 #### GUIDED PRACTICE • Rank the ions 15 min
 
-1. Larger: Cl or Cl-? **\_\_\_\_\_\_**
-2. Larger: Fe²⁺ or Fe³⁺? **\_\_\_\_\_\_**
+1. Larger: Cl or Cl-? Cl-
+2. Larger: Fe²⁺ or Fe³⁺? Fe²⁺
 3. Rank by size: O²⁻, F-, Na+, Mg²⁺
-   **\_\_\_\_\_\_**
+   O²⁻ $>$ F- $>$ Na+ $>$ Mg²⁺
 
 #### INSTRUCTION B • Lattice energy 20 min
 
@@ -167,15 +165,15 @@ rule: for a series of isoelectronic ions, size
 
 Lattice energy is the energy change when gaseous ions assemble into
 an ionic solid. Zumdahl writes it as a modified Coulomb's law:
-$\text{Lattice energy} = k\!\left($ **\_\_\_\_\_\_** $\right)$
-where $Q_1$ and $Q_2$ are the ionic **\_\_\_\_\_\_** and $r$ is
-the distance between ion **\_\_\_\_\_\_**.
+$\text{Lattice energy} = k\!\left($ $\dfrac{Q_1Q_2}{r}$ $\right)$
+where $Q_1$ and $Q_2$ are the ionic charges and $r$ is
+the distance between ion centres.
 
 #### The ranking procedure
 
-1. Compare the **\_\_\_\_\_\_** $|Q_1Q_2|$ first
+1. Compare the charge products $|Q_1Q_2|$ first
    — they dominate.
-2. Only if those tie, compare **\_\_\_\_\_\_**: smaller
+2. Only if those tie, compare ionic radii: smaller
    ions sit closer, giving a stronger lattice.
 
 > 📘 **Worked example: three-way ranking**
@@ -193,7 +191,7 @@ the distance between ion **\_\_\_\_\_\_**.
 #### Why this matters structurally
 
 In the LiF lattice each Li+ is surrounded by
-**\_\_\_\_\_\_** F- ions and vice versa — the sodium chloride
+six F- ions and vice versa — the sodium chloride
 structure. That packing maximizes attractions between opposite charges while
 minimizing repulsions between like charges.
 
@@ -201,17 +199,13 @@ minimizing repulsions between like charges.
 
 1. MgO melts at 2852 °C but NaF at
    993 °C, despite similar ion sizes. Explain
-   quantitatively.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   quantitatively. 
 2. Rank CaO, KCl, KBr, SrO by lattice energy and
-   justify.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   justify. 
 
 > 📌 **Exit ticket**
 >
 > Why is Al₂O₃ used as a furnace lining while NaCl is not?
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Bond Energies Zumdahl §8.7–8.8
 
@@ -225,12 +219,12 @@ minimizing repulsions between like charges.
 > 📌 **Retrieval warm-up**
 >
 > 1. Lattice energy depends on charges and what else?
->    **\_\_\_\_\_\_**
-> 2. Larger: K+ or Ca²⁺? **\_\_\_\_\_\_**
+>    ionic radii
+> 2. Larger: K+ or Ca²⁺? K+
 > 3. Stronger lattice: LiF or KI?
->    **\_\_\_\_\_\_**
+>    LiF
 > 4. Sign of $\Delta H$ for an exothermic reaction:
->    **\_\_\_\_\_\_**
+>    negative
 
 #### INSTRUCTION A • What a bond energy is 25 min
 
@@ -240,26 +234,26 @@ minimizing repulsions between like charges.
 
 The bond energy is the energy required to break one mole of a
 particular bond in the gas phase. It is always
-**\_\_\_\_\_\_** — breaking a bond is always
-**\_\_\_\_\_\_**, and forming one always releases energy.
+positive — breaking a bond is always
+endothermic, and forming one always releases energy.
 
 |  | **Bond order** | **Length** | **Energy (kJ/mol)** |
 |---|---|---|---|
 | C-C | 1 | longest | 347 |
 | C=C | 2 | middle | 614 |
-| C#C | 3 | **\_\_\_\_\_\_** | **\_\_\_\_\_\_** |
+| C#C | 3 | shortest | 839 |
 
-Higher bond order $\to$ **\_\_\_\_\_\_** and
-**\_\_\_\_\_\_**. Note that the triple bond is not three times
+Higher bond order $\to$ shorter and
+stronger. Note that the triple bond is not three times
 the single — the increments shrink.
 
 #### GUIDED PRACTICE • Bond order reasoning 15 min
 
 Shortest N–O bond: NO₃-, NO₂-, or NO+?
-        **\_\_\_\_\_\_**
+        NO+ (order 3)
 
 Which requires more energy to break, O₂ or N₂? Why?
-        **\_\_\_\_\_\_**
+        N₂ — triple bond
 
 #### INSTRUCTION B • Computing $\Delta H$ from bonds 20 min
 
@@ -269,7 +263,7 @@ Which requires more energy to break, O₂ or N₂? Why?
 
 Imagine the reaction proceeding in two stages: tear every reactant apart
 into atoms, then assemble the products.
-$\Delta H =$ **\_\_\_\_\_\_**
+$\Delta H =$ $\sum D(\text{bonds broken}) - \sum D(\text{bonds formed})$
 
 > ⚠️ **AP trap**
 >
@@ -315,22 +309,18 @@ Compute $\Delta H$ for N₂(g) + 3 H₂(g) → 2 NH₃(g).
 
 *(working space)*
 
+        
+
 The accepted value is -92.2 kJ. Explain the
         discrepancy. 
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Which contributed more to the exothermicity: breaking the triple
         bond, or forming the six N–H bonds? Explain.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
-> Why is breaking a bond always endothermic? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Why is breaking a bond always endothermic?
 
 ## Lewis Structures and Octet Exceptions Zumdahl §8.9–8.11
 
@@ -344,10 +334,10 @@ Which contributed more to the exothermicity: breaking the triple
 > 📌 **Retrieval warm-up**
 >
 > 1. $\Delta H$ formula from bond energies:
->    **\_\_\_\_\_\_**
+>    broken $-$ formed
 > 2. Valence electrons in SO₄²⁻:
->    **\_\_\_\_\_\_**
-> 3. Bond order of N₂: **\_\_\_\_\_\_**
+>    $6+24+2 = 32$
+> 3. Bond order of N₂: 3
 
 #### INSTRUCTION A • The procedure 25 min
 
@@ -356,19 +346,19 @@ Which contributed more to the exothermicity: breaking the triple
 `SP 1`
 
 Count total valence electrons —
-        **\_\_\_\_\_\_**.
+        add for anions, subtract for cations.
 
 Choose the central atom: the
-        **\_\_\_\_\_\_** one, never H.
+        least electronegative one, never H.
 
 Connect with single bonds; complete the
-        **\_\_\_\_\_\_** octets (H takes 2).
+        outer atoms' octets (H takes 2).
 
 Place any remaining electrons on the
-        **\_\_\_\_\_\_**.
+        central atom.
 
 If the central atom is short, convert lone pairs into
-        **\_\_\_\_\_\_**.
+        multiple bonds.
 
 Always finish with a two-part check: the total electron count *and*
 every octet.
@@ -399,9 +389,9 @@ SO₂, ClO₄-.
 
 | **Class** | **Examples** | **Why** |
 |---|---|---|
-| Odd number of electrons | NO, NO₂ | one electron must remain **\_\_\_\_\_\_** |
-| Fewer than an octet | BF₃, BeH₂ | B and Be are content with **\_\_\_\_\_\_** and 4 |
-| Expanded octet | SF₆, PCl₅, XeF₂ | central atom is in period **\_\_\_\_\_\_** or beyond |
+| Odd number of electrons | NO, NO₂ | one electron must remain unpaired |
+| Fewer than an octet | BF₃, BeH₂ | B and Be are content with 6 and 4 |
+| Expanded octet | SF₆, PCl₅, XeF₂ | central atom is in period 3 or beyond |
 
 > ⚠️ **AP trap**
 >
@@ -415,19 +405,13 @@ SO₂, ClO₄-.
 A student draws BF₃ with one B=F double bond to give boron an
         octet. Evaluate. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Explain why SF₆ can exist but OF₆ cannot.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >
 > Give the electron count for PO₄³⁻ and state whether an expanded octet
-> is required. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> is required.
 
 ## Resonance, Formal Charge, and VSEPR Zumdahl §8.12–8.13
 
@@ -441,11 +425,11 @@ Explain why SF₆ can exist but OF₆ cannot.
 
 > 📌 **Retrieval warm-up**
 >
-> 1. Electrons in NO₃-: **\_\_\_\_\_\_**
-> 2. Can nitrogen expand its octet? **\_\_\_\_\_\_**
+> 1. Electrons in NO₃-: 24
+> 2. Can nitrogen expand its octet? no
 > 3. Which class of exception is BF₃?
->    **\_\_\_\_\_\_**
-> 4. Central atom of OCS: **\_\_\_\_\_\_**
+>    fewer than an octet
+> 4. Central atom of OCS: C
 
 #### INSTRUCTION A • Formal charge and resonance 25 min
 
@@ -453,17 +437,17 @@ Explain why SF₆ can exist but OF₆ cannot.
 
 `SP 5`
 
-$FC = \text{valence} -$ **\_\_\_\_\_\_**
+$FC = \text{valence} -$ $\text{nonbonding} - \tfrac12(\text{bonding})$
 
 The best structure has formal charges closest to
-**\_\_\_\_\_\_**, with any negative charge on the
-**\_\_\_\_\_\_** atom. The formal charges must sum
+zero, with any negative charge on the
+most electronegative atom. The formal charges must sum
 to the species' overall charge — that is a check, not a preference.
 
 #### Resonance
 
 When the electrons could be arranged in more than one equivalent way, draw
-all forms joined by **\_\_\_\_\_\_**. The real
+all forms joined by double-headed arrows. The real
 molecule is the hybrid — a single averaged structure, not a
 molecule flipping between forms.
 
@@ -486,13 +470,13 @@ molecule flipping between forms.
 #### GUIDED PRACTICE • Formal charge practice 15 min
 
 FC on S in SO₄²⁻ drawn with four single bonds:
-        **\_\_\_\_\_\_**
+        $+2$
 
-FC on each O in that structure: **\_\_\_\_\_\_**
+FC on each O in that structure: $-1$
 
-Bond order of C–O in CO₃²⁻: **\_\_\_\_\_\_**
+Bond order of C–O in CO₃²⁻: $4/3$
 
-Bond order of O–O in O₃: **\_\_\_\_\_\_**
+Bond order of O–O in O₃: $3/2$
 
 #### INSTRUCTION B • VSEPR 20 min
 
@@ -502,23 +486,23 @@ Bond order of O–O in O₃: **\_\_\_\_\_\_**
 
 Electron domains — bonding groups plus lone pairs — arrange themselves
 to maximize separation. A multiple bond counts as
-**\_\_\_\_\_\_**.
+one domain.
 
 | **Domains** | **Domain geometry** | **Angle** | **Example** |
 |---|---|---|---|
-| 2 | **\_\_\_\_\_\_** | 180$^\circ$ | CO₂ |
-| 3 | **\_\_\_\_\_\_** | 120$^\circ$ | BF₃ |
-| 4 | **\_\_\_\_\_\_** | 109.5$^\circ$ | CH₄ |
+| 2 | linear | 180$^\circ$ | CO₂ |
+| 3 | trigonal planar | 120$^\circ$ | BF₃ |
+| 4 | tetrahedral | 109.5$^\circ$ | CH₄ |
 | 5 | trigonal bipyramidal | 90/120$^\circ$ | PCl₅ |
 | 6 | octahedral | 90$^\circ$ | SF₆ |
 
 Molecular geometry names only the *atom* positions, so lone pairs
 change the name: 4 domains with 1 lone pair is
-**\_\_\_\_\_\_**; with 2 lone pairs it is
-**\_\_\_\_\_\_**.
+trigonal pyramidal; with 2 lone pairs it is
+bent.
 
 Lone pairs also compress angles, because they repel
-**\_\_\_\_\_\_** than bonding pairs — hence
+more strongly than bonding pairs — hence
 CH₄ 109.5$^\circ$, NH₃ $\approx107^\circ$, H₂O
 $\approx104.5^\circ$.
 
@@ -527,20 +511,14 @@ $\approx104.5^\circ$.
 For SO₂: electron count, domains, geometry, angle, polarity.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 CO₂ and SO₂ are both triatomic oxides, yet one is linear
         and one is bent. Explain the difference completely.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 > 📌 **Exit ticket**
 >
 > Predict the geometry and approximate bond angle of NF₃, and state
-> whether it is polar. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> whether it is polar.
 
 ---
 

@@ -37,11 +37,11 @@ Zumdahl §11.1–11.3 (CED) $+$ §11.4–11.7 (enrichment) • PDF pp. 551–581
 > 📌 **Retrieval warm-up**
 >
 > 1. Moles in 58.44 g NaCl:
->    **\_\_\_\_\_\_**
+>    1.000 mol
 > 2. $[\text{Cl-}]$ in 0.20 M CaCl₂:
->    **\_\_\_\_\_\_**
+>    0.40 M
 > 3. Mole fraction of A if $n_A = 0.25$, $n_{\text{tot}} = 1.00$:
->    **\_\_\_\_\_\_**
+>    0.25
 
 #### INSTRUCTION A • Four ways to state a concentration 25 min
 
@@ -51,10 +51,10 @@ Zumdahl §11.1–11.3 (CED) $+$ §11.4–11.7 (enrichment) • PDF pp. 551–581
 
 | **Measure** | **Definition** | **Note** |
 |---|---|---|
-| Molarity ($M$) | **\_\_\_\_\_\_** | the working unit of AP chemistry |
-| Molality ($m$) | **\_\_\_\_\_\_** | used for colligative work |
-| Mass percent | **\_\_\_\_\_\_** | common in industry and medicine |
-| Mole fraction ($\chi$) | **\_\_\_\_\_\_** | used for gas partial pressures |
+| Molarity ($M$) | $\dfrac{\text{mol solute}}{\text{L solution}}$ | the working unit of AP chemistry |
+| Molality ($m$) | $\dfrac{\text{mol solute}}{\text{kg solvent}}$ | used for colligative work |
+| Mass percent | $\dfrac{\text{mass solute}}{\text{mass solution}}\times100\%$ | common in industry and medicine |
+| Mole fraction ($\chi$) | $\dfrac{n_A}{n_{\text{total}}}$ | used for gas partial pressures |
 
 > ⚠️ **AP trap**
 >
@@ -66,10 +66,10 @@ Zumdahl §11.1–11.3 (CED) $+$ §11.4–11.7 (enrichment) • PDF pp. 551–581
 
 #### Why molality is temperature-independent
 
-Volume **\_\_\_\_\_\_** when a solution is warmed, so molarity
-**\_\_\_\_\_\_** even though nothing was added or removed. Mass
+Volume expands when a solution is warmed, so molarity
+decreases even though nothing was added or removed. Mass
 does not change with temperature, so molality stays
-**\_\_\_\_\_\_**. That is the only reason molality exists.
+constant. That is the only reason molality exists.
 
 > 📘 **Worked example: one solution, four numbers**
 >
@@ -87,10 +87,10 @@ does not change with temperature, so molality stays
 A solution contains 12.0 g of NaOH ($M = 40.00$) dissolved in
 250.0 g of water; the solution volume is 255 mL.
 
-1. Moles of NaOH: **\_\_\_\_\_\_**
-2. Molarity: **\_\_\_\_\_\_**
-3. Molality: **\_\_\_\_\_\_**
-4. Mass percent: **\_\_\_\_\_\_**
+1. Moles of NaOH: 0.300 mol
+2. Molarity: 1.18 M
+3. Molality: 1.20 mol/kg
+4. Mass percent: 4.58%
 
 #### INSTRUCTION B • Choosing the right measure 20 min
 
@@ -99,9 +99,9 @@ A solution contains 12.0 g of NaOH ($M = 40.00$) dissolved in
 `SP 4`
 
 - **Molarity** for anything involving reaction stoichiometry —
-   you measure out a **\_\_\_\_\_\_** and need moles.
+   you measure out a volume and need moles.
 - **Mole fraction** for gas mixtures — it converts directly to
-   **\_\_\_\_\_\_** via
+   partial pressure via
    $P_A = \chi_A P_{\text{total}}$.
 - **Mass percent** when the solute's identity or molar mass is
    unknown, or irrelevant.
@@ -111,20 +111,16 @@ A solution contains 12.0 g of NaOH ($M = 40.00$) dissolved in
 
 1. A solution is prepared and then warmed from 20 °C to
    60 °C. State what happens to its molarity, its molality,
-   and its mass percent.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   and its mass percent. 
 2. A student prepares a solution by adding 0.100 mol of solute
    to exactly 1.000 L of water and labels it
    0.100 M. Identify the error and state whether the true
-   molarity is higher or lower.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   molarity is higher or lower. 
 
 > 📌 **Exit ticket**
 >
 > Why can you not convert molarity to molality without knowing the solution's
-> density? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> density?
 
 ## The Energetics of Dissolving Zumdahl §11.2
 
@@ -140,10 +136,10 @@ A solution contains 12.0 g of NaOH ($M = 40.00$) dissolved in
 > 📌 **Retrieval warm-up**
 >
 > 1. Molality of 0.50 mol in 500 g solvent:
->    **\_\_\_\_\_\_**
+>    1.0 mol/kg
 > 2. Which measure is temperature-independent?
->    **\_\_\_\_\_\_**
-> 3. Strongest IMF in water: **\_\_\_\_\_\_**
+>    molality
+> 3. Strongest IMF in water: hydrogen bonding
 
 #### INSTRUCTION A • Three steps 25 min
 
@@ -156,11 +152,11 @@ they are an energy accounting scheme, exactly like Hess's law.
 
 | **Step** | **What happens** | **Sign of $\Delta H$** |
 |---|---|---|
-| 1 | Separate the **\_\_\_\_\_\_** into its components | **\_\_\_\_\_\_** — forces must be overcome |
-| 2 | Expand the **\_\_\_\_\_\_** to make room | **\_\_\_\_\_\_** — same reason |
-| 3 | Let solute and solvent **\_\_\_\_\_\_** | **\_\_\_\_\_\_** — new attractions form |
+| 1 | Separate the solute into its components | endothermic — forces must be overcome |
+| 2 | Expand the solvent to make room | endothermic — same reason |
+| 3 | Let solute and solvent interact | exothermic — new attractions form |
 
-$\Delta H_{\text{soln}} =$ **\_\_\_\_\_\_**
+$\Delta H_{\text{soln}} =$ $\Delta H_1 + \Delta H_2 + \Delta H_3$
 
 The overall sign can go either way, and small differences between large
 numbers decide it.
@@ -178,11 +174,11 @@ numbers decide it.
 #### GUIDED PRACTICE • Predict the thermal effect 15 min
 
 1. NH₄NO₃ has $\Delta H_{\text{soln}} =         +25.7\,\mathrm{kJ/mol}$. What do you feel when it
-   dissolves? **\_\_\_\_\_\_**
+   dissolves? the container gets cold
 2. CaCl₂ has $\Delta H_{\text{soln}} =         -82.8\,\mathrm{kJ/mol}$. What do you feel?
-   **\_\_\_\_\_\_**
+   the container gets hot
 3. Which of the two would you put in an instant cold pack?
-   **\_\_\_\_\_\_**
+   NH₄NO₃
 
 #### INSTRUCTION B • Why oil and water do not mix 20 min
 
@@ -199,13 +195,13 @@ numbers decide it.
 > *moderately* endothermic.
 > 
 > **Step 2** (expand the water): this requires breaking water's
-> **\_\_\_\_\_\_**, which is *strongly* endothermic
+> hydrogen bonds, which is *strongly* endothermic
 > — the largest term in the accounting.
 > 
 > **Step 3** (let them interact): a polar water molecule can induce a
 > dipole in a nonpolar oil molecule, so this is exothermic — but a
 > dipole–induced dipole attraction is much
-> **\_\_\_\_\_\_** than the hydrogen bonds that were sacrificed in
+> weaker than the hydrogen bonds that were sacrificed in
 > Step 2.
 > 
 > The exothermic Step 3 cannot pay for the endothermic Step 2, so
@@ -222,18 +218,14 @@ numbers decide it.
 #### APPLICATION • Energetic reasoning 20 min
 
 1. Explain, using the three-step model, why NaCl dissolves in
-   water but not in hexane.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   water but not in hexane. 
 2. Ethanol is miscible with water in all proportions. Explain in terms
-   of the three steps.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   of the three steps. 
 
 > 📌 **Exit ticket**
 >
 > A solute dissolves even though $\Delta H_{\text{soln}}$ is positive. What
-> does that tell you about the process? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> does that tell you about the process?
 
 ## Factors Affecting Solubility Zumdahl §11.3
 
@@ -247,10 +239,10 @@ numbers decide it.
 > 📌 **Retrieval warm-up**
 >
 > 1. Sign of $\Delta H$ for Step 2 (expanding solvent):
->    **\_\_\_\_\_\_**
-> 2. Cold pack salt: **\_\_\_\_\_\_**
+>    positive
+> 2. Cold pack salt: NH₄NO₃
 > 3. Which dissolves I₂ better, water or CCl₄?
->    **\_\_\_\_\_\_**
+>    CCl₄
 
 #### INSTRUCTION A • Structure effects 25 min
 
@@ -264,21 +256,21 @@ numbers decide it.
 > 
 > **Vitamin A** is built almost entirely from carbon and hydrogen, whose
 > electronegativities are similar — so the molecule is essentially
-> **\_\_\_\_\_\_**, or hydrophobic. It dissolves in body
+> nonpolar, or hydrophobic. It dissolves in body
 > fat but not in water.
 > 
 > **Vitamin C** carries many polar O–H and C–O bonds, making it
-> **\_\_\_\_\_\_**, or hydrophilic, and water-soluble.
+> polar, or hydrophilic, and water-soluble.
 > 
 > The consequence is medical: fat-soluble vitamins (A, D, E, K)
-> **\_\_\_\_\_\_** in fatty tissue, so excess intake can cause
+> accumulate in fatty tissue, so excess intake can cause
 > hypervitaminosis. Water-soluble vitamins are
-> **\_\_\_\_\_\_** and must be consumed regularly — which is
+> excreted and must be consumed regularly — which is
 > why sailors developed scurvy without fresh food.
 
 #### The chain-length effect
 
-For alcohols, water solubility **\_\_\_\_\_\_** as the carbon
+For alcohols, water solubility falls as the carbon
 chain grows: methanol and ethanol are miscible, but 1-octanol is nearly
 insoluble. The polar –OH group stays the same size while the nonpolar
 hydrocarbon portion grows, so the molecule becomes progressively more
@@ -289,11 +281,11 @@ hydrophobic overall.
 More soluble in water? Give the structural reason.
 
 1. CH₃OH or C₆H₁₄:
-   **\_\_\_\_\_\_**
+   CH₃OH — H-bonds with water
 2. NaCl or I₂:
-   **\_\_\_\_\_\_**
+   NaCl — ion–dipole
 3. C₂H₅OH or C₈H₁₇OH:
-   **\_\_\_\_\_\_**
+   C₂H₅OH — shorter nonpolar chain
 
 #### INSTRUCTION B • Pressure and temperature 20 min
 
@@ -303,9 +295,9 @@ More soluble in water? Give the structural reason.
 
 |  | **Solids in water** | **Gases in water** |
 |---|---|---|
-| Pressure | essentially **\_\_\_\_\_\_** | solubility **\_\_\_\_\_\_** with pressure |
+| Pressure | essentially no effect | solubility increases with pressure |
 | Temperature | *usually* increases, but
-  **\_\_\_\_\_\_** | solubility **\_\_\_\_\_\_** with temperature |
+  not always | solubility decreases with temperature |
 
 > 📘 **Worked example: why soda goes flat**
 >
@@ -338,21 +330,17 @@ More soluble in water? Give the structural reason.
 #### APPLICATION • Solubility reasoning 20 min
 
 1. Explain why a warm carbonated drink fizzes more violently when
-   opened than a cold one.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   opened than a cold one. 
 2. A power plant returns warmed water to a river. Explain the effect on
    dissolved oxygen and why it matters.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
 3. A student says “heating always dissolves more solute.” Give a
-   precise correction.
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   precise correction. 
 
 > 📌 **Exit ticket**
 >
 > Divers breathing compressed air at depth must ascend slowly. Connect this to
-> gas solubility. 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> gas solubility.
 
 ## ENRICHMENT: Colligative Properties Zumdahl §11.4–11.7 — NOT on the CED
 
@@ -379,30 +367,30 @@ More soluble in water? Give the structural reason.
 `SP 1`
 
 A colligative property depends only on the
-**\_\_\_\_\_\_** in solution — not on their
+number of solute particles in solution — not on their
 chemical identity. One mole of dissolved sugar and one mole of dissolved
 neon would behave identically.
 
 | **Property** | **Effect of solute** | **Everyday example** |
 |---|---|---|
 | Vapour pressure | lowered | — |
-| Boiling point | **\_\_\_\_\_\_** | salted cooking water |
-| Freezing point | **\_\_\_\_\_\_** | salt on icy roads;
+| Boiling point | raised | salted cooking water |
+| Freezing point | lowered | salt on icy roads;
   antifreeze |
 | Osmotic pressure | develops across a membrane | cells swell in pure water |
 
 #### Why electrolytes count double (or triple)
 
 Because these properties count *particles*, a mole of NaCl
-produces **\_\_\_\_\_\_** moles of particles and a mole of CaCl₂
-produces **\_\_\_\_\_\_**. That is why salt is far more effective per
+produces 2 moles of particles and a mole of CaCl₂
+produces 3. That is why salt is far more effective per
 gram at melting ice than sugar would be.
 
 #### GUIDED PRACTICE • Particle counting 15 min
 
 Rank by freezing-point depression, greatest first, at equal molality:
 glucose, NaCl, CaCl₂.
-**\_\_\_\_\_\_**
+CaCl₂ $>$ NaCl $>$ glucose (3, 2, 1 particles)
 
 #### INSTRUCTION B • Osmosis 20 min
 
@@ -411,8 +399,8 @@ glucose, NaCl, CaCl₂.
 `SP 6`
 
 A semipermeable membrane lets solvent through but blocks solute.
-Water moves from the **\_\_\_\_\_\_** side toward the
-**\_\_\_\_\_\_** side. The pressure needed to stop
+Water moves from the more dilute side toward the
+more concentrated side. The pressure needed to stop
 that flow is the osmotic pressure.
 
 > 📌 **Note**
@@ -428,19 +416,13 @@ that flow is the osmotic pressure.
 Explain why spreading salt on an icy road melts the ice.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
 Explain why a cucumber shrivels into a pickle in brine.
         
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 > 📌 **Exit ticket**
 >
 > Why is CaCl₂ preferred over NaCl for de-icing at very low
-> temperatures? 
-> 
-> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> temperatures?
 
 ---
 
