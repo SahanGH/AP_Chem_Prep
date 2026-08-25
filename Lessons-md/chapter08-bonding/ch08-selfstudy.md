@@ -109,7 +109,7 @@ dipoles are vectors: they can cancel.
 > **nonpolar** despite having two of the most polar bonds in the
 > chapter.
 > 
-> **H₂O** is **bent** at 104.5 degree. The two
+> **H₂O** is **bent** at 104.5 °. The two
 > O-H dipoles point from each H toward the O, and because they are not
 > opposed they add to a net dipole pointing up through the oxygen. The
 > molecule is **polar** — which is why water dissolves salts,
@@ -521,9 +521,9 @@ molecule is a single resonance hybrid — an average.
 > — with a length between a single and a double bond.
 > 
 > **The evidence.** A pure O-O single bond is about
-> 148 pico·m and a pure O=O double bond about
-> 121 pico·m. Both bonds in ozone measure
-> 128 pico·m — equal to each other, and between the two
+> 148 pm and a pure O=O double bond about
+> 121 pm. Both bonds in ozone measure
+> 128 pm — equal to each other, and between the two
 > reference values. Exactly what the hybrid predicts and what neither
 > individual structure predicts.
 > 
@@ -581,9 +581,9 @@ and **squeezes the bond angles down**:
 > 
 > |  | **Bonds** | **Lone pairs** | **Molecular shape** | **Angle** |
 > |---|---|---|---|---|
-> | CH₄ | 4 | 0 | tetrahedral | 109.5 | thinsp;degree |
-> | NH₃ | 3 | 1 | trigonal pyramidal | 107 | thinsp;degree |
-> | H₂O | 2 | 2 | bent | 104.5 | thinsp;degree |
+> | CH₄ | 4 | 0 | tetrahedral | 109.5 | thinsp; | deg; |
+> | NH₃ | 3 | 1 | trigonal pyramidal | 107 | thinsp; | deg; |
+> | H₂O | 2 | 2 | bent | 104.5 | thinsp; | deg; |
 
 **Why the angle shrinks down the column.** A bonding pair is shared
 between two nuclei, which holds it in a relatively narrow region. A lone

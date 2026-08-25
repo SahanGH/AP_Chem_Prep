@@ -121,7 +121,7 @@ $\to$ conclusion*. Learn the chain, not the anecdote.
 > 
 > **What was observed.** The vast majority did pass straight through
 > — but roughly 1 in 20 000 bounced back at more than
-> 90 degree.
+> 90 °.
 > 
 > **Why that is decisive.** Reversing a fast, massive alpha particle
 > requires a concentrated positive charge that is also *massive*

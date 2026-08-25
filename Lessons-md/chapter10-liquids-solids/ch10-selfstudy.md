@@ -395,7 +395,7 @@ neighbouring cells.
 > 📘 **I do: count the atoms, then get the density**
 >
 > **Copper is face-centred cubic with a cell edge of
-> 361.5 pico·m. Find its density.**
+> 361.5 pm. Find its density.**
 > 
 > **Step 1 — count the atoms in one cell.** Eight corners, each
 > worth $1/8$, and six faces, each worth $1/2$:
@@ -407,7 +407,7 @@ neighbouring cells.
 > $$ m = \frac{4 \times 63.55\,\mathrm{g/mol}}             {6.022e23\,\mathrm{/mol}}      = 4.221e-22\,\mathrm{g} $$
 > 
 > **Step 3 — volume of one cell.** Convert the edge to centimetres
-> first: 361.5 pico·m $= 3.615e-8\,\mathrm{cm}$.
+> first: 361.5 pm $= 3.615e-8\,\mathrm{cm}$.
 > 
 > $$ V = (3.615e-8\,\mathrm{cm})^{3}      = 4.724e-23\,\mathrm{cm^3} $$
 > 
@@ -467,7 +467,7 @@ consequences.
 > 
 > **Substitutional alloys work differently.** In brass, zinc atoms
 > are close enough in size to copper (134  against
-> 128 pico·m) to take copper's place in the lattice outright.
+> 128 pm) to take copper's place in the lattice outright.
 > They still disrupt its regularity, and so still harden the metal, but far
 > less dramatically — the alloy keeps much of the host's character, and
 > brass stays workable enough to be chosen for its colour and corrosion

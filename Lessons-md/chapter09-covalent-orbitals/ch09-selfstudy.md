@@ -33,11 +33,11 @@ Zumdahl §9.1 (assessed) $+$ §9.2–9.3 (enrichment) • PDF pp. 455–480
 `ZUM §9.1`
 
 Methane is a fact: four identical C-H bonds, all
-109.5 degree apart. Carbon's ground state is
+109.5 ° apart. Carbon's ground state is
 $1s^{2}\,2s^{2}\,2p^{2}$ — one filled $s$, two half-filled $p$ and one
 empty $p$. Those orbitals could not produce four identical bonds if we
 wanted them to: the $p$ orbitals are mutually perpendicular
-(90 degree) and the $s$ is spherical.
+(90 °) and the $s$ is spherical.
 
 ![figure](fig-ch09-selfstudy-1.png)
 
@@ -67,7 +67,7 @@ the model bending to fit the evidence, which is the right way round.
 > never three, never five.
 > 
 > **And the payoff:** four $sp^{3}$ orbitals point at
-> 109.5 degree, which is the measured H-C-H angle. The model
+> 109.5 °, which is the measured H-C-H angle. The model
 > now agrees with the laboratory.
 
 > ✏️ **YOUR TURN 1 — four questions**
@@ -84,7 +84,7 @@ the model bending to fit the evidence, which is the right way round.
 >    *(working space)*
 > 
 > > **check:** (a) three, $sp^{2}$     (b) carbon has only three $2p$, and
-> they are 90 degree apart     (c) five     (d) no — it is a
+> they are 90 ° apart     (c) five     (d) no — it is a
 > model, chosen to match measured geometry
 
 ## Ladder 2 • Domains to hybridization
@@ -120,7 +120,7 @@ hybridization — one hybrid orbital per domain.
 >
 > **(a) CO₂.** Carbon has two double bonds and no lone pairs.
 > Each double bond is one domain, so **2 domains** $\Rightarrow$
-> **$sp$**, linear, 180 degree.
+> **$sp$**, linear, 180 °.
 > 
 > **(b) H₂O.** Oxygen has two bonds and two lone pairs.
 > **4 domains** $\Rightarrow$ **$sp^{3}$**. The electron geometry
@@ -130,7 +130,7 @@ hybridization — one hybrid orbital per domain.
 > 
 > **(c) SO₃.** Sulfur has three domains (one double, two single
 > in each resonance structure, no lone pair) $\Rightarrow$
-> **$sp^{2}$**, trigonal planar, 120 degree.
+> **$sp^{2}$**, trigonal planar, 120 °.
 > 
 > **The procedure is always identical:** draw the Lewis structure,
 > count domains on the atom in question, read the hybridization off the
@@ -231,8 +231,8 @@ molecular shape depends on how many of those domains are lone pairs.
 > 
 > **The consequence for bond angles.** A lone pair occupies its
 > $sp^{3}$ orbital but is held by only one nucleus, so it spreads wider and
-> compresses the rest: 109.5 degree in CH₄,
-> 107 degree in NH₃, 104.5 degree in H₂O. The
+> compresses the rest: 109.5 ° in CH₄,
+> 107 ° in NH₃, 104.5 ° in H₂O. The
 > hybridization never changed — only how many domains you can see.
 > 
 > **So the safe phrasing on an exam:** “the central atom is $sp^{3}$
@@ -271,7 +271,7 @@ standing perpendicular to the plane of the three.
 > **Carbon's domains:** two C-H single bonds and one C=O
 > double bond. A double bond is one domain, so **3 domains**
 > $\Rightarrow$ **$sp^{2}$**, trigonal planar, roughly
-> 120 degree.
+> 120 °.
 > 
 > **Which orbitals do what.** Carbon's three $sp^{2}$ hybrids form
 > three $\sigma$ bonds: two to hydrogen, one to oxygen. Its remaining
@@ -321,7 +321,7 @@ other and to the bond axis.
 > 📘 **I do: carbon dioxide, atom by atom**
 >
 > **Carbon.** Two double bonds $=$ **2 domains** $\Rightarrow$
-> **$sp$**, linear at 180 degree. Its two $sp$ hybrids make the
+> **$sp$**, linear at 180 °. Its two $sp$ hybrids make the
 > two $\sigma$ bonds; its two leftover $p$ orbitals make one $\pi$ bond to
 > each oxygen.
 > 
@@ -411,11 +411,11 @@ hybridization $\to$ geometry and angles $\to$ count $\sigma$ and $\pi$
 > time.
 > 
 > **Methyl carbon.** Four single bonds $=$ 4 domains $\Rightarrow$
-> **$sp^{3}$**, tetrahedral, 109.5 degree.
+> **$sp^{3}$**, tetrahedral, 109.5 °.
 > 
 > **Carbonyl carbon.** One C=O $+$ two single bonds $=$
 > 3 domains $\Rightarrow$ **$sp^{2}$**, trigonal planar,
-> 120 degree.
+> 120 °.
 > 
 > **Carbonyl oxygen** (the double-bonded one). One double bond $+$
 > two lone pairs $=$ 3 domains $\Rightarrow$ **$sp^{2}$**.
@@ -449,7 +449,7 @@ hybridization $\to$ geometry and angles $\to$ count $\sigma$ and $\pi$
 >    *(working space)*
 > 
 > > **check:** (a) $sp^{3}$     (b) both $sp$     (c) 5 $\sigma$, 2
-> $\pi$     (d) 109.5 degree and 180 degree
+> $\pi$     (d) 109.5 ° and 180 °
 
 ## Ladder 9 • ENRICHMENT: molecular orbitals
 

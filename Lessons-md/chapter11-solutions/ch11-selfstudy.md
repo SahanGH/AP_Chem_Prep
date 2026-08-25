@@ -270,7 +270,7 @@ one idea.
 > (C₆H₁₂O₆, $M = 180.16\,\mathrm{g/mol}$) dissolved in
 > 250. g of water.**
 > 
-> $$ n = \frac{18.0}{180.16} = 0.0999\,\mathrm{mol}    \qquad    m = \frac{0.0999}{0.250\,\mathrm{kg}}      = \mathbf{0.400\,\mathrm{molal}} $$
+> $$ n = \frac{18.0}{180.16} = 0.0999\,\mathrm{mol}    \qquad    m = \frac{0.0999}{0.250\,\mathrm{kg}}      = \mathbf{0.400\,\mathrm{m}} $$
 > 
 > The denominator is 0.250 kg of *water*, not of
 > solution — for molality the solute mass never enters the bottom.
@@ -290,7 +290,7 @@ one idea.
 >    why molality does not change with temperature.
 >    *(working space)*
 > 
-> > **check:** (a) 0.250     (b) 0.65     (c) 0.250 molal    
+> > **check:** (a) 0.250     (b) 0.65     (c) 0.250 m    
 > (d) litres of solution vs kg of solvent; mass is
 > temperature-independent
 

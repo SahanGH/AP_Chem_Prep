@@ -199,9 +199,12 @@ UNIT = {
     "meter": "m", "metre": "m", "minute": "min", "hour": "h",
     "ampere": "A", "coulomb": "C", "volt": "V", "electronvolt": "eV",
     "percent": "%", "u": "u",
+    # \degree rendered as the literal word "degree" on every bond angle in
+    # the corpus ("109.5 degree"); \molal is declared in shared/apchem.sty.
+    "degree": "&deg;", "molal": "m",
 }
 PREFIX = {"kilo": "k", "milli": "m", "micro": "&micro;", "nano": "n",
-          "centi": "c"}
+          "centi": "c", "pico": "p"}
 UNKNOWN_UNITS = set()
 
 
@@ -795,6 +798,41 @@ def sigfigs(s: str) -> int:
     return len(digits.rstrip("0")) or 1
 
 
+# Unit symbols that may legitimately trail a numeric answer.  The old test
+# was a permissive character class, which happily read the tail of an
+# EXPRESSION as a unit: "4s^3" became value 4.0 unit "s^3", "3/2" became
+# value 3.0 unit "/2", "10^5" became value 10.0 unit "^5".  Each of those
+# published a checker that marks the correct answer wrong -- a student
+# entering the real bond order 1.5 was told they were incorrect.  Anything
+# not on this list now means "not a plain number", so the item falls back
+# to Show-answer, which is this file's stated safe default.
+UNIT_SYMBOLS = {
+    "g", "kg", "mg", "ng", "m", "cm", "mm", "nm", "pm", "km",
+    "L", "mL", "s", "ms", "min", "h", "mol", "mmol", "M", "K",
+    "J", "kJ", "V", "A", "C", "atm", "torr", "Pa", "kPa", "mmHg",
+    "u", "eV", "ppm", "particles", "particle", "mole", "moles",
+    "%", "degC", "&deg;C", "°C", "&deg;", "°",
+    "&micro;g", "&micro;m", "&micro;L",
+}
+
+
+def is_unit(unit: str) -> bool:
+    """True if `unit` is a plausible unit rather than the tail of an
+    expression.  Empty and "-" (dimensionless) count as units."""
+    u = unit.strip()
+    if u in ("", "-"):
+        return True
+    # An ASCII caret is always an exponent, never a unit: s^3, ^5, 2p^6.
+    if "^" in u:
+        return False
+    for sup in ("&sup2;", "&sup3;", "²", "³"):
+        u = u.replace(sup, "")
+    parts = [p.strip() for p in re.split(r"[/·]|&middot;", u)]
+    if not any(parts):
+        return False
+    return all(p in UNIT_SYMBOLS for p in parts if p)
+
+
 def numeric_spec(text: str):
     """Return {value, unit, sig} if `text` is a number (optionally with a
     unit or written in scientific notation), else None."""
@@ -803,14 +841,14 @@ def numeric_spec(text: str):
                      t)
     if m:
         unit = m.group(3).strip()
-        if re.fullmatch(r"[A-Za-z\u00b0%/\u00b7^\d\s.\-]{0,15}", unit):
+        if is_unit(unit):
             return {"value": float(m.group(1)) * (10 ** int(m.group(2))),
                     "unit": unit, "sig": sigfigs(m.group(1))}
         return None
     m = re.fullmatch(r"(" + NUM + r")\s*(.*)", t)
     if m:
         unit = m.group(2).strip()
-        if re.fullmatch(r"[A-Za-z\u00b0%/\u00b7^\d\s.\-]{0,15}", unit):
+        if is_unit(unit):
             return {"value": float(m.group(1)), "unit": unit,
                     "sig": sigfigs(m.group(1))}
     return None
