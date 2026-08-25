@@ -1,0 +1,229 @@
+% Zumdahl Chapter 5 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S5.1--\S5.9 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \textbf{CED 3.4} (ideal gas law, \S5.2--5.5), \textbf{3.5}
+(kinetic molecular theory, \S5.6--5.7) and \textbf{3.6} (deviation from
+ideal behaviour, \S5.8--5.9). \S5.10 (atmospheric chemistry) is context,
+not assessed content, and does not appear.
+
+$R = \SI{0.08206}{\litre\atm\per\mole\per\kelvin}$. The vapour pressure of
+water at \SI{25}{\celsius} is \SI{23.8}{\torr}.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S5.3--\S5.5 \textbullet\ CED 3.4 \textbullet\ gas stoichiometry and partial pressure}
+
+Calcium carbonate decomposes on strong heating:
+\[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \]
+A \SI{10.0}{\gram} sample is decomposed completely and the carbon dioxide
+is collected in a rigid \SI{2.00}{\litre} vessel at \SI{25}{\celsius}.
+
+\begin{parts}
+  \item Calculate the number of moles of \ce{CO2} produced.
+        \answerlines[2]{$n(\ce{CaCO3}) = 10.0/100.09 = \num{0.0999}$~mol;
+        the ratio is $1:1$, so $n(\ce{CO2}) = \mathbf{0.0999}$~mol}
+  \item Calculate the pressure exerted by the \ce{CO2} in the vessel.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}$T = 25 + 273 = \SI{298}{\kelvin}$.
+
+        $P = \dfrac{nRT}{V} = \dfrac{(0.0999)(0.08206)(298)}{2.00}
+        = \mathbf{1.22}$~atm\end{apcanswer}}
+  \item The gas is instead collected over water at \SI{25}{\celsius},
+        and the total pressure in the collection tube is
+        \SI{755}{\torr}. Calculate the partial pressure of the \ce{CO2}.
+        \answerlines[2]{$P(\ce{CO2}) = 755 - 23.8 = \mathbf{731}$~torr
+        --- the collected gas is saturated with water vapour, which
+        contributes its own partial pressure.}
+  \item State what happens to the pressure in the rigid vessel if the
+        temperature is raised to \SI{100}{\celsius}, and justify your
+        answer using kinetic molecular theory. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The pressure \textbf{rises}. Volume and
+        amount of gas are fixed, so by $P = nRT/V$ the pressure is
+        proportional to absolute temperature: $373/298$ gives about
+        \SI{1.53}{\atm}.
+
+        In kinetic terms, raising the temperature raises the average
+        kinetic energy and therefore the average speed of the molecules.
+        They strike the walls both \emph{more often} and \emph{harder},
+        and pressure is the force of those collisions per unit
+        area.\end{apcanswer}}
+  \item Explain why the identity of the gas does not appear anywhere in
+        the ideal gas law. \answerlines[2]{The ideal gas model treats
+        molecules as point particles with no volume and no intermolecular
+        forces, so nothing in it depends on what the molecules are ---
+        only on how many there are and how fast they move. Equal numbers
+        of moles of any ideal gas exert the same pressure under the same
+        conditions.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt moles of \ce{CaCO3}; 1 pt the $1:1$ ratio}
+  \rpoint{2}{(b) 1 pt temperature converted to kelvin; 1 pt
+    \SI{1.22}{\atm}. Using \SI{25}{} in place of \SI{298}{\kelvin} earns 0
+    for the whole part}
+  \rpoint{2}{(c) 1 pt subtracting the water vapour pressure; 1 pt
+    \SI{731}{\torr}}
+  \rpoint{2}{(d) 1 pt pressure rises, tied to $P \propto T$ at fixed $n$
+    and $V$; 1 pt collisions become more frequent \emph{and} more
+    forceful. ``The molecules move faster'' alone earns 1}
+  \rpoint{2}{(e) 1 pt no intermolecular forces / negligible molecular
+    volume in the model; 1 pt so behaviour depends on amount, not identity}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S5.6--\S5.9 \textbullet\ CED 3.5, 3.6 \textbullet\ molecular speeds and real gases}
+
+A sealed flask contains a mixture of helium (\SI{4.003}{\gram\per\mole})
+and sulfur dioxide (\SI{64.07}{\gram\per\mole}) at the same temperature.
+
+\begin{parts}
+  \item State how the average kinetic energies of the two gases compare,
+        and justify your answer. \answerlines[2]{They are \textbf{equal}.
+        Average kinetic energy depends only on absolute temperature, and
+        both gases are at the same temperature.}
+  \item State how their average molecular speeds compare, and explain the
+        difference from (a). \answerlines[3]{Helium is much faster. Since
+        $\text{KE} = \tfrac{1}{2}mv^2$ is the same for both, the lighter
+        molecule must have the greater speed. Equal energy does not mean
+        equal speed --- mass is the other factor.}
+  \item Calculate the ratio of the effusion rate of helium to that of
+        sulfur dioxide. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\dfrac{\text{rate}_{\ce{He}}}
+        {\text{rate}_{\ce{SO2}}} = \sqrt{\dfrac{M_{\ce{SO2}}}
+        {M_{\ce{He}}}} = \sqrt{\dfrac{64.07}{4.003}} = \sqrt{16.01}
+        = \mathbf{4.00}$
+
+        Helium effuses four times as fast.\end{apcanswer}}
+  \item Sketch, in words, how the distribution of molecular speeds for
+        helium differs in shape from that for sulfur dioxide at the same
+        temperature. \answerlines[3]{The helium curve peaks at a much
+        higher speed and is broader and lower --- its molecules are spread
+        over a wide range of high speeds. The sulfur dioxide curve peaks
+        at a low speed and is narrower and taller. Both enclose the same
+        total area, because both represent the same number of molecules.}
+  \item At high pressure the measured pressure of a real gas is
+        \emph{lower} than the ideal gas law predicts. Explain why, in
+        terms of intermolecular forces. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}The ideal model assumes molecules do not
+        attract one another. In a real gas they do. A molecule about to
+        strike the wall is pulled back by attractions from the molecules
+        behind it, so it hits with less force than it otherwise would.
+        Every collision is slightly softened, and the measured pressure
+        falls below the ideal prediction. The effect grows as pressure
+        rises, because the molecules are closer together and the
+        attractions matter more.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt ``equal''; 1 pt because KE depends only on
+    temperature}
+  \rpoint{2}{(b) 1 pt helium faster; 1 pt an argument from
+    $\text{KE} = \tfrac{1}{2}mv^2$ with equal KE. Saying only ``helium is
+    lighter'' earns 1}
+  \rpoint{2}{(c) 1 pt the inverse square-root relationship; 1 pt
+    \num{4.00}. An inverted ratio (\num{0.25}) earns 1}
+  \rpoint{2}{(d) 1 pt helium's peak at higher speed and broader; 1 pt
+    equal areas / same number of molecules}
+  \rpoint{2}{(e) 1 pt attractions between molecules; 1 pt reduced force of
+    wall collisions. An answer resting on molecular volume describes the
+    opposite deviation and earns 0}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S5.2--\S5.3 \textbullet\ CED 3.4 \textbullet\ applying the gas laws}
+
+A sample of nitrogen occupies \SI{4.00}{\litre} at \SI{1.50}{\atm} and
+\SI{300}{\kelvin}.
+
+\begin{parts}
+  \item Calculate the volume it would occupy at \SI{1.00}{\atm} and
+        \SI{450}{\kelvin}. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\dfrac{P_1V_1}{T_1} =
+        \dfrac{P_2V_2}{T_2}$
+
+        $V_2 = 4.00 \times \dfrac{1.50}{1.00} \times \dfrac{450}{300}
+        = \mathbf{9.00}$~L\end{apcanswer}}
+  \item State whether the number of moles of nitrogen has changed, and why.
+        \answerlines[2]{No. The sample is the same gas throughout; only
+        its pressure, volume and temperature changed. $n$ is constant,
+        which is exactly what allows the combined gas law to be used.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt correct combined-law setup; 1 pt both ratios applied
+    in the right sense; 1 pt \SI{9.00}{\litre}}
+  \rpoint{1}{(b) unchanged, because it is the same sealed sample}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S5.5 \textbullet\ CED 3.4 \textbullet\ partial pressure and mole fraction}
+
+A rigid vessel contains \SI{0.300}{\mole} \ce{N2}, \SI{0.100}{\mole}
+\ce{O2} and \SI{0.100}{\mole} \ce{Ar}. The total pressure is
+\SI{2.50}{\atm}.
+
+\begin{parts}
+  \item Calculate the partial pressure of nitrogen. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Total moles $= 0.300 + 0.100 + 0.100
+        = \num{0.500}$.
+
+        Mole fraction of \ce{N2} $= 0.300/0.500 = \num{0.600}$.
+
+        $P(\ce{N2}) = 0.600 \times 2.50 = \mathbf{1.50}$~atm\end{apcanswer}}
+  \item Argon has the largest molar mass of the three. State whether it
+        therefore exerts the largest partial pressure, and justify your
+        answer. \answerlines[3]{No. Partial pressure depends on the
+        \emph{number} of particles, not their mass --- it is set by mole
+        fraction alone. Argon and oxygen are present in equal amounts, so
+        they exert equal partial pressures (\SI{0.500}{\atm} each), and
+        nitrogen exerts the largest because there is most of it.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt mole fraction \num{0.600}; 1 pt \SI{1.50}{\atm}}
+  \rpoint{2}{(b) 1 pt ``no''; 1 pt partial pressure depends on mole
+    fraction, not molar mass}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S5.8--\S5.9 \textbullet\ CED 3.6 \textbullet\ conditions for ideal behaviour}
+
+\begin{parts}
+  \item State the two conditions under which a real gas behaves most
+        nearly ideally. \answerlines[2]{\textbf{High temperature} and
+        \textbf{low pressure}.}
+  \item Explain, for each condition, why the gas approaches ideal
+        behaviour. \workspace[3cm]
+        \keyonly{\begin{apcanswer}\textbf{Low pressure.} The molecules are
+        far apart, so the volume they themselves occupy is a negligible
+        fraction of the container, and they are too far apart for
+        attractions to matter.
+
+        \textbf{High temperature.} The molecules have large kinetic
+        energies compared with the strength of the intermolecular
+        attractions, so a passing attraction barely changes their motion
+        and they behave as though no forces acted at all.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each condition}
+  \rpoint{2}{(b) 1 pt low pressure linked to negligible molecular volume
+    and/or wide separation; 1 pt high temperature linked to kinetic energy
+    overwhelming attractions}
+\end{rubric}
+
+\examtotal
+
+\end{document}

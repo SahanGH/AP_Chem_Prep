@@ -1,0 +1,216 @@
+% Zumdahl Chapter 15 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{15}
+\apcunittitle{Acid--Base Equilibria}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S15.1--\S15.6 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Every section of this chapter is examinable: \textbf{CED 7.12}
+(common-ion effect, \S15.1), \textbf{8.4} (\S15.1--15.2), \textbf{8.5}
+(titrations, \S15.4--15.6), \textbf{8.8} (properties of buffers,
+\S15.2), \textbf{8.9} (Henderson--Hasselbalch, \S15.2) and \textbf{8.10}
+(buffer capacity, \S15.3).
+
+Take $K_a(\ce{CH3COOH}) = 1.8\times10^{-5}$, so
+$\mathrm{p}K_a = 4.74$, and $K_w = 1.0\times10^{-14}$.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S15.2 \textbullet\ CED 8.4, 8.8, 8.9 \textbullet\ how a buffer resists pH change}
+
+A buffer is prepared containing \SI{0.100}{\mole} of \ce{CH3COOH} and
+\SI{0.100}{\mole} of \ce{NaCH3COO} in \SI{1.00}{\litre} of solution.
+
+\begin{parts}
+  \item Calculate the pH of the buffer. \answerlines[2]{Henderson--
+        Hasselbalch: $\text{pH} = \mathrm{p}K_a +
+        \log\dfrac{[\ce{A-}]}{[\ce{HA}]} = 4.74 + \log(1) =
+        \mathbf{4.74}$}
+  \item \SI{0.010}{\mole} of \ce{HCl} is added, with no volume change.
+        Calculate the new pH. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}The added \ce{H+} is consumed by the
+        base component of the buffer:
+        \ce{CH3COO^- + H+ -> CH3COOH}.
+
+        Acetate: $0.100 - 0.010 = \num{0.090}$~mol \quad
+        Acetic acid: $0.100 + 0.010 = \num{0.110}$~mol
+
+        $\text{pH} = 4.74 + \log\dfrac{0.090}{0.110} = 4.74 - 0.087 =
+        \mathbf{4.65}$
+
+        (Carrying the unrounded $\mathrm{p}K_a = 4.7447$ gives
+        \num{4.66}; either is acceptable.)\end{apcanswer}}
+  \item Calculate the pH if \SI{0.010}{\mole} of \ce{NaOH} had been added
+        to the original buffer instead. \answerlines[3]{The added
+        \ce{OH-} is consumed by the acid component:
+        \ce{CH3COOH + OH^- -> CH3COO^- + H2O}, giving \num{0.090}~mol acid
+        and \num{0.110}~mol acetate.
+
+        $\text{pH} = 4.74 + \log\dfrac{0.110}{0.090} =
+        \mathbf{4.83}$}
+  \item Adding \SI{0.010}{\mole} of \ce{HCl} to \SI{1.00}{\litre} of pure
+        water gives a pH of \num{2.00}. Comment on the contrast with your
+        answer to (b). \answerlines[3]{In water the pH falls from
+        \num{7.00} to \num{2.00} --- five units. In the buffer it falls
+        from \num{4.74} to \num{4.65}, less than a tenth of a unit. The
+        buffer converts nearly all the added strong acid into a weak acid,
+        so the free $[\ce{H3O+}]$ barely rises.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt correct use of Henderson--Hasselbalch; 1 pt
+    \num{4.74}. Note equal concentrations always give pH $=$ p$K_a$}
+  \rpoint{3}{(b) 1 pt the neutralization reaction identified; 1 pt both
+    new mole quantities; 1 pt pH \num{4.65} (accept
+    \num{4.65}--\num{4.66})}
+  \rpoint{2}{(c) 1 pt the ratio inverted correctly; 1 pt \num{4.83}}
+  \rpoint{3}{(d) 1 pt quantifying both changes; 1 pt the buffer change is
+    far smaller; 1 pt the mechanism --- strong acid converted to weak acid}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S15.4--\S15.5 \textbullet\ CED 8.5 \textbullet\ a weak acid--strong base titration}
+
+\SI{25.00}{\milli\litre} of \SI{0.100}{\Molar} \ce{CH3COOH} is titrated
+with \SI{0.100}{\Molar} \ce{NaOH}.
+
+\begin{parts}
+  \item Calculate the initial pH, before any base is added.
+        \answerlines[2]{$x = \sqrt{(1.8\times10^{-5})(0.100)} =
+        \num{1.34e-3}$~M, so
+        $\text{pH} = \mathbf{2.87}$}
+  \item State the pH after \SI{12.50}{\milli\litre} of base has been
+        added, and justify without a full calculation.
+        \answerlines[3]{This is the \textbf{half-equivalence} point: half
+        the acid has been converted to acetate, so
+        $[\ce{HA}] = [\ce{A-}]$. The log term in Henderson--Hasselbalch is
+        zero, so $\text{pH} = \mathrm{p}K_a = \mathbf{4.74}$.}
+  \item Calculate the pH at the equivalence point. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}At equivalence all the acid has become
+        acetate: $n = (0.02500)(0.100) = \num{0.00250}$~mol in a total
+        volume of \SI{50.00}{\milli\litre}, so
+        $[\ce{A-}] = \SI{0.0500}{\Molar}$.
+
+        Acetate is a weak base:
+        $K_b = \dfrac{1.0\times10^{-14}}{1.8\times10^{-5}} =
+        \num{5.6e-10}$
+
+        $x = \sqrt{(5.6\times10^{-10})(0.0500)} = \num{5.3e-6}$~M
+        $= [\ce{OH-}]$
+
+        $\text{pOH} = 5.28$, so $\text{pH} = \mathbf{8.72}$\end{apcanswer}}
+  \item Explain why the equivalence point is above pH 7, and state what
+        this implies about choosing an indicator.
+        \answerlines[3]{At equivalence the solution contains only acetate,
+        the conjugate base of a weak acid, which hydrolyses water to give
+        \ce{OH-}. The solution is therefore basic.
+
+        The indicator must change colour near pH \num{8.7}, so
+        phenolphthalein (range about 8.3--10.0) is suitable. Methyl orange
+        (3.1--4.4) would change far too early and give a badly
+        underestimated volume.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt correct weak-acid setup; 1 pt pH \num{2.87}}
+  \rpoint{2}{(b) 1 pt identifying half-equivalence; 1 pt pH $=$
+    p$K_a$ $=$ \num{4.74}}
+  \rpoint{3}{(c) 1 pt $[\ce{A-}] = \SI{0.0500}{\Molar}$ using the
+    \emph{total} volume; 1 pt $K_b$ from $K_w/K_a$; 1 pt pH \num{8.72}.
+    Answering pH \num{7} earns 0 --- that is the strong-acid case}
+  \rpoint{3}{(d) 1 pt acetate hydrolyses to give \ce{OH-}; 1 pt
+    phenolphthalein named; 1 pt its range brackets the equivalence pH}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S15.1 \textbullet\ CED 7.12 \textbullet\ the common-ion effect}
+
+\begin{parts}
+  \item Predict the effect on the pH of \SI{0.100}{\Molar}
+        \ce{CH3COOH} of adding solid \ce{NaCH3COO}, and justify.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The pH \textbf{rises} (the solution
+        becomes less acidic).
+
+        Acetate is a product of the acid's ionization
+        \ce{CH3COOH <=> CH3COO^- + H+}. Adding it directly increases the
+        product concentration, so by Le Ch\^{a}telier's principle the
+        equilibrium shifts \emph{left}. Less acid ionizes, $[\ce{H+}]$
+        falls, and the pH rises.\end{apcanswer}}
+  \item State what happens to the value of $K_a$.
+        \answerlines[2]{Nothing. $K_a$ depends only on temperature. The
+        position of the equilibrium moved; the constant did not.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt pH rises; 1 pt naming acetate as the common ion /
+    a product; 1 pt the leftward shift suppressing ionization}
+  \rpoint{1}{(b) $K_a$ unchanged, temperature-dependent only}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S15.3 \textbullet\ CED 8.10 \textbullet\ buffer capacity}
+
+Two buffers both have pH \num{4.74}. Buffer X contains
+\SI{1.00}{\Molar} acetic acid and \SI{1.00}{\Molar} acetate; buffer Y
+contains \SI{0.010}{\Molar} of each.
+
+\begin{parts}
+  \item State which resists pH change better, and why.
+        \answerlines[3]{\textbf{Buffer X}. Buffer capacity depends on the
+        absolute amounts of the conjugate pair, not on their ratio.
+        X holds a hundred times more of each component, so it can absorb
+        far more added acid or base before either component is
+        substantially consumed.}
+  \item Explain why both have the same starting pH despite this.
+        \answerlines[2]{pH is set by the \emph{ratio} of base to acid in
+        Henderson--Hasselbalch, and that ratio is 1:1 in both. Capacity
+        and pH are governed by different things.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt buffer X; 1 pt capacity depends on absolute
+    concentrations}
+  \rpoint{2}{(b) 1 pt pH depends on the ratio; 1 pt the ratio is identical}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S15.4 \textbullet\ CED 8.5 \textbullet\ reading a titration curve}
+
+A titration curve for a monoprotic acid titrated with
+\SI{0.100}{\Molar} \ce{NaOH} shows a vertical rise centred at
+\SI{20.0}{\milli\litre}, and the pH at \SI{10.0}{\milli\litre} is
+\num{5.20}.
+
+\begin{parts}
+  \item Determine the $\mathrm{p}K_a$ and $K_a$ of the acid.
+        \answerlines[3]{\SI{10.0}{\milli\litre} is half of
+        \SI{20.0}{\milli\litre}, so it is the half-equivalence point and
+        $\mathrm{p}K_a = \mathbf{5.20}$.
+
+        $K_a = 10^{-5.20} = \mathbf{6.3\times10^{-6}}$}
+  \item If the original sample was \SI{25.0}{\milli\litre}, calculate the
+        concentration of the acid. \answerlines[2]{At equivalence,
+        $n(\ce{OH-}) = (0.0200)(0.100) = \num{0.00200}$~mol, which equals
+        the moles of acid. $[\ce{HA}] = 0.00200/0.0250 =
+        \mathbf{0.0800}$~M}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt identifying half-equivalence at
+    \SI{10.0}{\milli\litre}; 1 pt $K_a = \SI{6.3e-6}{}$}
+  \rpoint{2}{(b) 1 pt \num{0.00200}~mol at equivalence; 1 pt
+    \SI{0.0800}{\Molar}}
+\end{rubric}
+
+\examtotal
+
+\end{document}

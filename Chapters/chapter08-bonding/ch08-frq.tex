@@ -1,0 +1,228 @@
+% Zumdahl Chapter 8 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{8}
+\apcunittitle{Bonding: General Concepts}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S8.1--\S8.13 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+A heavily examined chapter: \textbf{CED 2.1} (\S8.1--8.3), \textbf{2.2}
+(\S8.5, \S8.8), \textbf{2.5} (Lewis diagrams, \S8.9--8.11), \textbf{2.6}
+(resonance and formal charge, \S8.12), \textbf{2.7} (VSEPR, \S8.13),
+\textbf{1.8} (\S8.4) and \textbf{6.7} (bond enthalpies, \S8.8).
+
+Throughout, explanations of trends must be \textbf{Coulombic} --- charge,
+distance, shielding. Rubrics here award zero for answers that rest on
+``octet'' or ``stability'' language alone.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S8.10--\S8.13 \textbullet\ CED 2.5, 2.6, 2.7 \textbullet\ Lewis structures, resonance and shape}
+
+Consider the nitrate ion, \ce{NO3-}.
+
+\begin{parts}
+  \item Draw a valid Lewis structure for \ce{NO3-}, showing all lone pairs
+        and the overall charge. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}Valence electrons:
+        $5 + 3(6) + 1 = \mathbf{24}$ (the $+1$ is for the negative
+        charge).
+
+        Nitrogen is central. Draw one \ce{N=O} double bond and two
+        \ce{N-O} single bonds. Each singly bonded oxygen carries three
+        lone pairs; the doubly bonded oxygen carries two. Nitrogen has no
+        lone pair. Enclose the structure in brackets with a $-$ charge
+        outside.\end{apcanswer}}
+  \item Explain why \ce{NO3-} is described by three resonance structures,
+        and state what the true structure is.
+        \answerlines[3]{The double bond can be placed on any of the three
+        oxygens, giving three equivalent Lewis structures. None is correct
+        on its own: the real ion is the average of all three, with the
+        extra bonding electron pair delocalized over all three \ce{N-O}
+        positions. The ion does not flip between them.}
+  \item State and justify the prediction for the three \ce{N-O} bond
+        lengths. \answerlines[3]{All three are \textbf{identical}, and
+        each is intermediate between a normal \ce{N-O} single bond and a
+        normal \ce{N=O} double bond. Delocalization spreads the extra pair
+        equally, so every position has the same bond order, about
+        $1\tfrac{1}{3}$.}
+  \item Predict the shape and the \ce{O-N-O} bond angle, and name the
+        model used. \answerlines[2]{\textbf{Trigonal planar},
+        \SI{120}{\degree}, from the VSEPR model: three electron domains
+        around nitrogen and no lone pair, so the domains spread as far
+        apart as possible in a plane.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt 24 valence electrons including the charge; 1 pt one
+    double and two single bonds; 1 pt all lone pairs shown with brackets
+    and charge. Forgetting the extra electron for the charge caps this at
+    1}
+  \rpoint{3}{(b) 1 pt three equivalent placements of the double bond;
+    1 pt the true structure is an average, not an alternation; 1 pt the
+    word delocalized. Saying the ion ``resonates back and forth'' earns
+    \textbf{0} for the second point}
+  \rpoint{2}{(c) 1 pt all three equal; 1 pt intermediate between single
+    and double, justified by delocalization}
+  \rpoint{2}{(d) 1 pt trigonal planar with \SI{120}{\degree}; 1 pt three
+    domains with no lone pair on the central atom}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S8.5, \S8.8 \textbullet\ CED 2.2, 6.7 \textbullet\ bond enthalpy and lattice energy}
+
+\begin{parts}
+  \item Use the average bond enthalpies below to estimate $\Delta H$ for
+        \[ \ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)} \]
+        \ce{C-H} 413, \ce{O=O} 495, \ce{C=O} 799, \ce{O-H} 467
+        \si{\kilo\joule\per\mole}. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Bonds \textbf{broken} (energy in):
+        $4(413) + 2(495) = 1652 + 990 = \num{2642}$~kJ
+
+        Bonds \textbf{formed} (energy out):
+        $2(799) + 4(467) = 1598 + 1868 = \num{3466}$~kJ
+
+        $\Delta H = \text{broken} - \text{formed} = 2642 - 3466 =
+        \mathbf{-824}$~kJ
+
+        Negative, so exothermic --- more energy is released forming the
+        new bonds than is required to break the old
+        ones.\end{apcanswer}}
+  \item Explain why this method gives only an estimate.
+        \answerlines[3]{The values are \emph{average} bond enthalpies
+        taken across many different compounds. The actual strength of a
+        given \ce{C-H} bond depends on its molecular environment, so the
+        computed total differs from the true value. The method also
+        assumes all species are gaseous.}
+  \item Lithium fluoride and potassium fluoride are both ionic. Predict
+        which has the larger lattice energy and justify in Coulombic
+        terms. \workspace[3cm]
+        \keyonly{\begin{apcanswer}\textbf{\ce{LiF}}. Both compounds pair
+        singly charged ions, so the charge product is the same and cannot
+        be the deciding factor.
+
+        \ce{Li+} is a much smaller cation than \ce{K+}, so in \ce{LiF} the
+        ions approach more closely and the internuclear distance $d$ is
+        shorter. Coulombic attraction varies as $1/d$, so the shorter
+        distance gives the stronger attraction and the larger lattice
+        energy.\end{apcanswer}}
+  \item State the effect on lattice energy of replacing \ce{F-} with
+        \ce{O^2-} in a compound of the same cation, and give the reason.
+        \answerlines[2]{The lattice energy increases substantially. The
+        charge product doubles from $(+1)(-1)$ to $(+1)(-2)$, and
+        Coulombic attraction is proportional to the product of the
+        charges.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{4}{(a) 1 pt bonds broken \num{2642}; 1 pt bonds formed
+    \num{3466}; 1 pt broken minus formed in the correct sense; 1 pt
+    $-824$~kJ. Reversing the subtraction gives $+824$ and earns at most 2}
+  \rpoint{2}{(b) 1 pt the values are averages over many compounds; 1 pt
+    actual bond strength depends on environment}
+  \rpoint{3}{(c) 1 pt \ce{LiF}; 1 pt noting the charges are equal so
+    distance decides; 1 pt smaller cation gives shorter $d$ and stronger
+    attraction. ``\ce{LiF} is more stable'' earns \textbf{0}}
+  \rpoint{1}{(d) increases, because the charge product doubles}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S8.2--\S8.3 \textbullet\ CED 2.1 \textbullet\ bond polarity and molecular polarity}
+
+\begin{parts}
+  \item \ce{CO2} and \ce{H2O} both contain polar bonds, yet only one
+        molecule is polar. Identify which, and explain.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}\textbf{Water} is polar; carbon dioxide
+        is not.
+
+        In \ce{CO2} the molecule is \textbf{linear}, so the two equal
+        \ce{C=O} bond dipoles point in exactly opposite directions and
+        cancel, leaving no net dipole.
+
+        In \ce{H2O} the two lone pairs on oxygen force a \textbf{bent}
+        shape. The two \ce{O-H} bond dipoles no longer oppose each other,
+        so they add to give a net dipole pointing toward the
+        oxygen.\end{apcanswer}}
+  \item State what determines whether a \emph{bond} is polar.
+        \answerlines[2]{A difference in electronegativity between the two
+        bonded atoms: the more electronegative atom draws the shared pair
+        closer, giving it a partial negative charge.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt water identified; 1 pt \ce{CO2} linear with dipoles
+    cancelling; 1 pt \ce{H2O} bent so dipoles do not cancel. An answer
+    that never mentions shape earns at most 1}
+  \rpoint{1}{(b) electronegativity difference}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S8.13 \textbullet\ CED 2.7 \textbullet\ VSEPR}
+
+For each species, state the number of electron domains on the central
+atom, the molecular shape, and the approximate bond angle.
+
+\begin{parts}
+  \item \ce{NH3} \answerlines[2]{Four domains (three bonding, one lone
+        pair); \textbf{trigonal pyramidal}; slightly less than
+        \SI{109.5}{\degree}, about \SI{107}{\degree}.}
+  \item \ce{SO2} \answerlines[2]{Three domains (two bonding, one lone
+        pair); \textbf{bent}; slightly less than \SI{120}{\degree}.}
+  \item Explain why the bond angle in \ce{NH3} is smaller than the ideal
+        tetrahedral angle. \answerlines[2]{A lone pair is held by only one
+        nucleus, so it spreads out closer to the central atom and occupies
+        more angular space than a bonding pair. It presses the three
+        \ce{N-H} bonds together, reducing the angle between them.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) four domains, trigonal pyramidal, angle below
+    \SI{109.5}{\degree}}
+  \rpoint{1}{(b) three domains, bent, angle below \SI{120}{\degree}}
+  \rpoint{2}{(c) 1 pt a lone pair occupies more space than a bonding pair;
+    1 pt it compresses the bonding angles. Note the shape is named from
+    the \emph{atoms}, not the domains}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S8.4 \textbullet\ CED 1.8 \textbullet\ isoelectronic ions}
+
+The ions \ce{N^3-}, \ce{O^2-}, \ce{F-}, \ce{Na+} and \ce{Mg^2+} all have
+ten electrons.
+
+\begin{parts}
+  \item Arrange them in order of increasing ionic radius.
+        \answerlines[2]{\ce{Mg^2+} $<$ \ce{Na+} $<$ \ce{F-} $<$ \ce{O^2-}
+        $<$ \ce{N^3-}}
+  \item Justify the order. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Every one of these ions has the same ten
+        electrons, so shielding is essentially identical across the whole
+        set. The only quantity that changes is the \textbf{nuclear
+        charge}.
+
+        \ce{Mg^2+} has 12 protons pulling on those ten electrons;
+        \ce{N^3-} has only 7. The greater the proton count, the more
+        strongly the same electron cloud is drawn in, and the smaller the
+        ion. Radius therefore falls steadily as nuclear charge
+        rises.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) the full order; 1 pt if only one pair is transposed}
+  \rpoint{2}{(b) 1 pt same number of electrons so shielding is constant;
+    1 pt increasing nuclear charge pulls the cloud in more tightly.
+    ``Anions are bigger than cations'' with no Coulombic reasoning earns
+    \textbf{0}}
+\end{rubric}
+
+\examtotal
+
+\end{document}

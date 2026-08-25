@@ -1,0 +1,249 @@
+% Zumdahl Chapter 12 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{12}
+\apcunittitle{Chemical Kinetics}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S12.1--\S12.7 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- one CED exclusion applies]
+Covers \textbf{CED 5.1} (\S12.1), \textbf{5.2} (\S12.2--12.3),
+\textbf{5.3} (\S12.4), \textbf{5.4} and \textbf{5.7--5.9} (\S12.5),
+\textbf{5.5}, \textbf{5.6} and \textbf{5.10} (\S12.6), and \textbf{5.11}
+(\S12.7).
+
+The CED exclusion on topic 5.6 removes \textbf{calculations involving the
+Arrhenius equation}. You will not be asked to compute an activation energy
+from two rate constants, or to use $\ln k$ against $1/T$ to extract
+$E_a$. Reading an energy profile and reasoning qualitatively about how
+temperature and catalysts change a rate both remain fully examinable, and
+both appear below.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S12.2--\S12.3 \textbullet\ CED 5.2 \textbullet\ determining a rate law from initial rates}
+
+For the reaction \ce{A + B -> C}, the following initial rates were
+measured at constant temperature.
+
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+\textbf{Experiment} & $[\ce{A}]_0$ (M) & $[\ce{B}]_0$ (M) &
+\textbf{Initial rate} (M/s) \\
+\hline
+1 & 0.10 & 0.10 & $2.0\times10^{-3}$ \\
+2 & 0.20 & 0.10 & $8.0\times10^{-3}$ \\
+3 & 0.10 & 0.20 & $4.0\times10^{-3}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the order with respect to \ce{A}. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Compare experiments 1 and 2, where
+        $[\ce{B}]$ is held constant. Doubling $[\ce{A}]$ multiplies the
+        rate by $8.0/2.0 = 4$.
+
+        Since $2^n = 4$, $n = \mathbf{2}$: second order in
+        \ce{A}.\end{apcanswer}}
+  \item Determine the order with respect to \ce{B}.
+        \answerlines[2]{Compare experiments 1 and 3, with $[\ce{A}]$
+        constant: doubling $[\ce{B}]$ doubles the rate, so
+        $2^n = 2$ and $n = \mathbf{1}$ --- first order in \ce{B}.}
+  \item Write the rate law and state the overall order.
+        \answerlines[2]{$\text{rate} = k[\ce{A}]^2[\ce{B}]$; overall order
+        $2 + 1 = \mathbf{3}$.}
+  \item Calculate the value of $k$, with units. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Using experiment 1:
+
+        $k = \dfrac{2.0\times10^{-3}}{(0.10)^2(0.10)} =
+        \dfrac{2.0\times10^{-3}}{1.0\times10^{-3}} = \mathbf{2.0}$
+
+        Units: rate is \si{\Molar\per\second} and $[\ce{A}]^2[\ce{B}]$ is
+        \si{\Molar\cubed}, so $k$ is in
+        \textbf{M\textsuperscript{-2}\,s\textsuperscript{-1}}.
+
+        Check against experiment 2: $2.0(0.20)^2(0.10) =
+        8.0\times10^{-3}$ \checkmark\end{apcanswer}}
+  \item Explain why the orders cannot be read off the balanced equation.
+        \answerlines[2]{Reaction orders are determined experimentally.
+        They reflect the mechanism --- in particular the slowest step ---
+        not the overall stoichiometry, and the two coincide only for a
+        genuinely elementary reaction.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt identifying that \ce{B} is held constant; 1 pt
+    order 2}
+  \rpoint{2}{(b) 1 pt the comparison; 1 pt order 1}
+  \rpoint{2}{(c) 1 pt the rate law; 1 pt overall order 3}
+  \rpoint{2}{(d) 1 pt $k = \num{2.0}$; 1 pt correct units. A bare number
+    with no units earns 1}
+  \rpoint{2}{(e) 1 pt orders are experimental; 1 pt they follow the
+    mechanism, not the coefficients}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S12.5--\S12.7 \textbullet\ CED 5.4, 5.7--5.11 \textbullet\ mechanisms and catalysis}
+
+A proposed two-step mechanism for \ce{2NO2 + F2 -> 2NO2F} is
+\begin{align*}
+\text{Step 1:}\quad & \ce{NO2 + F2 -> NO2F + F} \qquad \text{(slow)}\\
+\text{Step 2:}\quad & \ce{NO2 + F -> NO2F} \qquad\qquad \text{(fast)}
+\end{align*}
+
+\begin{parts}
+  \item Show that the mechanism sums to the overall equation.
+        \answerlines[2]{Adding: \ce{2NO2 + F2 + F -> 2NO2F + F}. The
+        fluorine atom appears on both sides and cancels, leaving
+        \ce{2NO2 + F2 -> 2NO2F}. \checkmark}
+  \item Identify any intermediate, and state how you recognized it.
+        \answerlines[2]{\ce{F}, the fluorine atom. It is \emph{produced}
+        in step 1 and \emph{consumed} in step 2, so it appears in the
+        mechanism but not in the overall equation.}
+  \item Write the rate law predicted by this mechanism, and justify it.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The overall rate can be no faster than
+        its slowest step, so the rate law comes from step 1. Step 1 is
+        \textbf{elementary}, so its orders \emph{may} be read from its
+        own coefficients:
+
+        $\text{rate} = k[\ce{NO2}][\ce{F2}]$
+
+        Note this is first order in \ce{NO2}, even though the overall
+        equation shows a coefficient of 2 --- which is exactly why the
+        overall equation cannot be used to predict a rate
+        law.\end{apcanswer}}
+  \item Sketch in words how the energy profile for this two-step
+        mechanism differs from that of a single-step reaction.
+        \answerlines[3]{It has \textbf{two} maxima, one for each step,
+        separated by a shallow minimum where the intermediate sits. The
+        first maximum is the higher of the two, because step 1 is the
+        slow step and therefore has the larger activation energy.}
+  \item Explain how a catalyst increases the rate, and state what it does
+        \emph{not} change. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}A catalyst provides an \textbf{alternative
+        pathway with a lower activation energy}. At a given temperature a
+        larger fraction of collisions then has enough energy to react, so
+        the rate rises.
+
+        It does \textbf{not} change $\Delta H$ for the reaction, nor the
+        position of the equilibrium: the reactants and products sit at the
+        same energies as before. A catalyst is also regenerated, so it
+        does not appear in the overall equation. It speeds the approach to
+        equilibrium without altering where equilibrium
+        lies.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) the steps added with \ce{F} cancelling}
+  \rpoint{2}{(b) 1 pt \ce{F}; 1 pt produced then consumed}
+  \rpoint{3}{(c) 1 pt rate law from the slow step; 1 pt
+    $k[\ce{NO2}][\ce{F2}]$; 1 pt noting coefficients may be used only
+    because the step is elementary}
+  \rpoint{2}{(d) 1 pt two maxima with an intermediate between; 1 pt the
+    first barrier is higher}
+  \rpoint{2}{(e) 1 pt lower activation energy via an alternative pathway;
+    1 pt $\Delta H$ and the equilibrium position are unchanged. Saying a
+    catalyst ``lowers the energy of the reactants'' earns 0}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S12.4 \textbullet\ CED 5.3 \textbullet\ first-order half-life}
+
+A first-order decomposition has $k = \SI{0.0250}{\per\second}$.
+
+\begin{parts}
+  \item Calculate the half-life. \answerlines[2]{$t_{1/2} = \dfrac{0.693}
+        {k} = \dfrac{0.693}{0.0250} = \mathbf{27.7}$~s}
+  \item Starting from \SI{1.00}{\Molar}, state the concentration remaining
+        after three half-lives, and explain why the half-life does not
+        change as the reaction proceeds.
+        \answerlines[3]{After three half-lives,
+        $1.00 \to 0.500 \to 0.250 \to \mathbf{0.125}$~M.
+
+        For a first-order reaction the half-life depends only on $k$, not
+        on concentration: as the concentration falls the rate falls in
+        exact proportion, so each successive halving takes the same time.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt the correct relationship; 1 pt \SI{27.7}{\second}}
+  \rpoint{2}{(b) 1 pt \SI{0.125}{\Molar}; 1 pt half-life independent of
+    concentration for first order}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S12.6 \textbullet\ CED 5.5 \textbullet\ the collision model}
+
+\begin{parts}
+  \item State the two requirements for a collision to result in reaction.
+        \answerlines[2]{Sufficient energy --- at least the activation
+        energy --- and correct \textbf{orientation} of the colliding
+        molecules.}
+  \item A modest rise in temperature can double a reaction rate, even
+        though it raises the average molecular speed only slightly.
+        Explain. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The rate is governed by the
+        \emph{fraction} of collisions carrying at least the activation
+        energy, and that fraction sits far out in the tail of the
+        distribution of molecular energies.
+
+        Raising the temperature shifts and broadens the whole
+        distribution. Near the average this is a small change, but out in
+        the high-energy tail the population increases sharply --- a small
+        shift can double or treble the number of molecules above the
+        threshold. The increase in collision \emph{frequency} is minor by
+        comparison; almost all the effect comes from the energy
+        distribution.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each requirement}
+  \rpoint{2}{(b) 1 pt the fraction above the activation energy rises
+    sharply; 1 pt this outweighs the increase in collision frequency.
+    ``Molecules move faster so they collide more'' alone earns 1}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S12.1 \textbullet\ CED 5.1 \textbullet\ expressing reaction rate}
+
+For \ce{2N2O5 -> 4NO2 + O2}, oxygen is produced at
+\SI{0.0125}{\Molar\per\second}.
+
+\begin{parts}
+  \item Determine the rate at which \ce{NO2} is formed and the rate at
+        which \ce{N2O5} is consumed. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Rates scale with the coefficients.
+
+        \ce{NO2}: $4 \times 0.0125 = \mathbf{0.0500}$~M/s formed.
+
+        \ce{N2O5}: $2 \times 0.0125 = \mathbf{0.0250}$~M/s consumed
+        --- a \emph{decrease}, so
+        $\Delta[\ce{N2O5}]/\Delta t = -0.0250$~M/s.\end{apcanswer}}
+  \item State why a rate expressed as
+        $-\tfrac{1}{2}\Delta[\ce{N2O5}]/\Delta t$ gives the same value as
+        $\tfrac{1}{4}\Delta[\ce{NO2}]/\Delta t$.
+        \answerlines[2]{Dividing each concentration change by its own
+        coefficient gives a single rate for the reaction as a whole,
+        independent of which species is monitored.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt \SI{0.0500}{\Molar\per\second} for \ce{NO2}; 1 pt
+    \SI{0.0250}{\Molar\per\second} for \ce{N2O5} with the negative sign or
+    the word ``consumed''}
+  \rpoint{2}{(b) 1 pt dividing by coefficients; 1 pt gives one rate for
+    the reaction regardless of species}
+\end{rubric}
+
+\examtotal
+
+\end{document}

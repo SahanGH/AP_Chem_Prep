@@ -1,0 +1,242 @@
+% Zumdahl Chapter 18 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{18}
+\apcunittitle{Electrochemistry}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S18.1--\S18.4, \S18.7 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \textbf{CED 9.8} (galvanic and electrolytic cells, \S18.1,
+\S18.7), \textbf{9.9} (cell potential and free energy,
+\S18.2--18.3), \textbf{9.10} (nonstandard conditions, \S18.4) and
+\textbf{9.11} (electrolysis and Faraday's law, \S18.7). \S18.5--18.6
+(batteries, corrosion) are applications and are not separately assessed.
+
+The CED exclusion on topic 9.8 concerns the \textbf{$+$/$-$ labelling}
+of electrodes, which differs between cell types and is not assessed.
+Anode and cathode are assessed, and the rule never changes: oxidation
+occurs at the anode in \emph{both} cell types.
+
+$F = \SI{96485}{\coulomb\per\mole}$. Standard reduction potentials:
+\ce{Cu^2+}/\ce{Cu} $= +0.34$~V, \ce{Zn^2+}/\ce{Zn} $= -0.76$~V,
+\ce{Ag+}/\ce{Ag} $= +0.80$~V.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S18.1--\S18.3 \textbullet\ CED 9.8, 9.9 \textbullet\ a galvanic cell end to end}
+
+A galvanic cell is built from a zinc electrode in
+\SI{1.0}{\Molar} \ce{Zn(NO3)2} and a copper electrode in
+\SI{1.0}{\Molar} \ce{Cu(NO3)2}, joined by a salt bridge.
+
+\begin{parts}
+  \item Write the half-reaction at each electrode, identifying which is
+        the anode. \answerlines[3]{\textbf{Anode} (oxidation):
+        \ce{Zn(s) -> Zn^2+(aq) + 2e^-}
+
+        \textbf{Cathode} (reduction):
+        \ce{Cu^2+(aq) + 2e^- -> Cu(s)}}
+  \item Calculate the standard cell potential.
+        \answerlines[2]{$E^\circ_{\text{cell}} = E^\circ_{\text{cathode}}
+        - E^\circ_{\text{anode}} = 0.34 - (-0.76) =
+        \mathbf{+1.10}$~V}
+  \item Calculate $\Delta G^\circ$ for the cell reaction.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Two electrons are transferred, so
+        $n = 2$.
+
+        $\Delta G^\circ = -nFE^\circ = -(2)(96485)(1.10) =
+        \num{-2.12e5}$~J $= \mathbf{-212}$~kJ
+
+        Negative, as it must be for a cell that delivers current
+        spontaneously.\end{apcanswer}}
+  \item State the direction of electron flow in the external circuit and
+        the direction of anion migration in the salt bridge.
+        \answerlines[3]{Electrons flow through the wire from the
+        \textbf{zinc} (anode) to the \textbf{copper} (cathode).
+
+        Anions in the salt bridge migrate toward the \textbf{anode}
+        compartment, to balance the positive charge building up as
+        \ce{Zn^2+} enters the solution.}
+  \item Explain what happens to the cell potential as the cell operates,
+        and what its value is when the cell is dead.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}As the cell runs, \ce{Cu^2+} is consumed
+        and \ce{Zn^2+} accumulates, so $Q$ rises. By the Nernst equation a
+        rising $Q$ lowers $E$, so the potential falls steadily.
+
+        A ``dead'' cell has reached \textbf{equilibrium}: $Q = K$ and
+        $E = \mathbf{0}$. No further net reaction occurs, so no current
+        flows. Note $E = 0$, not $E^\circ = 0$ --- the standard potential
+        is a constant and never changes.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt each half-reaction balanced with electrons; 1 pt
+    zinc identified as the anode}
+  \rpoint{1}{(b) $+1.10$~V. Adding the two potentials without reversing
+    one gives $-0.42$ and earns 0}
+  \rpoint{2}{(c) 1 pt $n = 2$; 1 pt $-212$~kJ with the negative sign}
+  \rpoint{2}{(d) 1 pt electrons from zinc to copper; 1 pt anions toward
+    the anode}
+  \rpoint{2}{(e) 1 pt $E$ falls as $Q$ rises; 1 pt $E = 0$ at equilibrium.
+    Saying $E^\circ = 0$ earns 0 for that point}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S18.4, \S18.7 \textbullet\ CED 9.10, 9.11 \textbullet\ Nernst and electrolysis}
+
+\begin{parts}
+  \item For the zinc--copper cell above, calculate the cell potential when
+        $[\ce{Cu^2+}] = \SI{0.10}{\Molar}$ and
+        $[\ce{Zn^2+}] = \SI{1.0}{\Molar}$. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$Q = \dfrac{[\ce{Zn^2+}]}
+        {[\ce{Cu^2+}]} = \dfrac{1.0}{0.10} = 10$
+
+        $E = E^\circ - \dfrac{0.0592}{n}\log Q = 1.10 -
+        \dfrac{0.0592}{2}\log(10)$
+
+        $E = 1.10 - 0.0296 = \mathbf{1.07}$~V
+
+        Lowering the product concentration would raise $E$; here the
+        \emph{reactant} \ce{Cu^2+} was lowered, so $E$
+        falls.\end{apcanswer}}
+  \item State the effect on $E$ of increasing $[\ce{Cu^2+}]$, and justify
+        using Le Ch\^{a}telier's principle.
+        \answerlines[3]{$E$ \textbf{increases}. \ce{Cu^2+} is a reactant,
+        so raising its concentration drives the cell reaction further
+        forward, giving a greater driving force and a larger potential.
+        Equivalently, $Q$ falls, so the subtracted term in the Nernst
+        equation becomes smaller (or negative).}
+  \item Silver is plated from \ce{Ag+} solution using a current of
+        \SI{2.00}{\ampere} for \SI{30.0}{\minute}. Calculate the mass of
+        silver deposited. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$t = 30.0 \times 60 =
+        \SI{1800}{\second}$
+
+        $Q = It = (2.00)(1800) = \SI{3600}{\coulomb}$
+
+        $n(e^-) = \dfrac{3600}{96485} = \num{0.03731}$~mol
+
+        \ce{Ag+ + e^- -> Ag} is a \textbf{one-electron} reduction, so
+        $n(\ce{Ag}) = \num{0.03731}$~mol.
+
+        $m = (0.03731)(107.87) = \mathbf{4.02}$~g\end{apcanswer}}
+  \item If \ce{Cu^2+} were plated instead of \ce{Ag+} under the same
+        current and time, state whether more or fewer moles of metal would
+        deposit, and why. \answerlines[3]{\textbf{Fewer} --- half as many.
+        Copper is deposited as \ce{Cu^2+ + 2e^- -> Cu}, so each atom
+        requires \emph{two} electrons rather than one. The same charge
+        therefore delivers half as many moles of metal.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt correct $Q$ with products over reactants; 1 pt the
+    Nernst form with $n = 2$; 1 pt \SI{1.07}{\volt}. Inverting $Q$ gives
+    \num{1.13} and earns at most 1}
+  \rpoint{2}{(b) 1 pt $E$ increases; 1 pt a Le Ch\^{a}telier or $Q$-based
+    justification}
+  \rpoint{3}{(c) 1 pt $Q = \SI{3600}{\coulomb}$; 1 pt moles of electrons;
+    1 pt \SI{4.02}{\gram}}
+  \rpoint{2}{(d) 1 pt fewer/half; 1 pt because two electrons are needed
+    per copper atom}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S18.2 \textbullet\ CED 9.9 \textbullet\ predicting whether a reaction occurs}
+
+\begin{parts}
+  \item Determine whether copper metal will dissolve in
+        \SI{1.0}{\Molar} \ce{Zn(NO3)2}. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The proposed reaction is
+        \ce{Cu(s) + Zn^2+(aq) -> Cu^2+(aq) + Zn(s)}, which puts copper at
+        the anode and zinc at the cathode:
+
+        $E^\circ = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}} =
+        (-0.76) - (0.34) = \mathbf{-1.10}$~V
+
+        The potential is \textbf{negative}, so the reaction is not
+        thermodynamically favourable --- copper does \textbf{not}
+        dissolve. It is exactly the reverse of the spontaneous cell
+        reaction.\end{apcanswer}}
+  \item State the general rule connecting the sign of $E^\circ$ to
+        favourability. \answerlines[2]{A positive $E^\circ$ means a
+        negative $\Delta G^\circ$ and a thermodynamically favourable
+        reaction; a negative $E^\circ$ means the reverse reaction is the
+        favourable one.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt correct assignment of anode and cathode for the
+    proposed reaction; 1 pt $-1.10$~V; 1 pt the conclusion that no
+    reaction occurs}
+  \rpoint{1}{(b) the sign rule, ideally linked to $\Delta G^\circ =
+    -nFE^\circ$}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S18.1, \S18.7 \textbullet\ CED 9.8 \textbullet\ galvanic versus electrolytic}
+
+\begin{parts}
+  \item State two differences between a galvanic and an electrolytic cell.
+        \answerlines[3]{A \textbf{galvanic} cell converts chemical energy
+        into electrical energy; its cell reaction is thermodynamically
+        favourable and $E^\circ$ is positive.
+
+        An \textbf{electrolytic} cell consumes electrical energy from an
+        external source to drive a reaction that is \emph{not}
+        favourable; its $E^\circ$ is negative.}
+  \item State what is true of the anode in \emph{both} types of cell.
+        \answerlines[2]{Oxidation always occurs at the anode --- in both
+        cell types, without exception. (The $+$/$-$ labelling of the
+        electrodes does differ between the two, which is why the CED does
+        not assess it.)}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each difference, one of which must reference
+    favourability or the sign of $E^\circ$}
+  \rpoint{2}{(b) 2 pts oxidation at the anode in both. Do \textbf{not}
+    require $+$/$-$ labels --- they are excluded by the CED for topic 9.8}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S18.4 \textbullet\ CED 9.10 \textbullet\ a concentration cell}
+
+Both half-cells of a cell contain copper electrodes in \ce{Cu^2+}
+solution, one at \SI{1.0}{\Molar} and one at \SI{0.010}{\Molar}.
+
+\begin{parts}
+  \item State the value of $E^\circ$ for this cell, with a reason.
+        \answerlines[2]{$E^\circ = \mathbf{0}$. Both half-cells involve
+        the same couple, so the standard potentials are identical and
+        cancel exactly.}
+  \item Explain why the cell nevertheless produces a measurable voltage,
+        and state which half-cell is the cathode.
+        \answerlines[3]{The driving force is the concentration difference,
+        not a difference in chemistry. The system moves to equalize the
+        two concentrations, and the Nernst term $-\frac{0.0592}{n}\log Q$
+        is non-zero because $Q \neq 1$.
+
+        The \textbf{more concentrated} half-cell is the cathode: \ce{Cu^2+}
+        is reduced there, lowering its concentration, while copper
+        dissolves in the dilute side and raises it.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) zero, because both electrodes are the same couple}
+  \rpoint{3}{(b) 1 pt the concentration difference is the driving force;
+    1 pt the concentrated side is the cathode; 1 pt the system tends
+    toward equal concentrations}
+\end{rubric}
+
+\examtotal
+
+\end{document}

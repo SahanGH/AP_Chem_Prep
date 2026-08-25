@@ -198,7 +198,7 @@ UNIT = {
     "atm": "atm", "torr": "torr", "mmHg": "mmHg", "pascal": "Pa",
     "meter": "m", "metre": "m", "minute": "min", "hour": "h",
     "ampere": "A", "coulomb": "C", "volt": "V", "electronvolt": "eV",
-    "percent": "%", "u": "u",
+    "percent": "%", "u": "u", "atomicmassunit": "u",
     # \degree rendered as the literal word "degree" on every bond angle in
     # the corpus ("109.5 degree"); \molal is declared in shared/apchem.sty.
     "degree": "&deg;", "molal": "m",

@@ -1,0 +1,285 @@
+% Zumdahl Chapter 2 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+% New document type: a dedicated FRQ set per chapter, separate from the
+% chapter test (which carries only 2 short FRQ of its own).
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{2}
+\apcunittitle{Atoms, Molecules, and Ions}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S2.2--\S2.8 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- read before assigning]
+Only \textbf{CED topic 1.8} (Valence Electrons and Ionic Compounds,
+Zumdahl \S2.6--\S2.8) is examinable material from this chapter. Question~1
+is the one that maps directly onto the framework, and it is the one to
+grade hardest.
+
+Questions 2--5 rest on \S2.2--\S2.5 and \S2.8 --- the nuclear atom,
+isotopes, the chemical laws, and nomenclature. The CED \emph{assumes}
+this material rather than assessing it as standalone topics: the AP exam
+will not ask you to recount the gold-foil experiment or to name a binary
+compound for its own sake. They are here because every later chapter
+depends on them, not because they will be tested in May. Treat them as
+foundation work, not as exam rehearsal.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+% ---- FRQ 1 -- the CED-aligned one ------------------------------------------
+\frq{long}{10}{Zumdahl \S2.6--\S2.8 \textbullet\ CED 1.8 \textbullet\ valence electrons, ionic compounds, Coulombic reasoning}
+
+Magnesium and nitrogen react to form a single binary ionic compound.
+
+\begin{parts}
+  \item For magnesium and for nitrogen, state the group number, the number
+        of valence electrons in the neutral atom, and the formula of the
+        monatomic ion each element forms.
+        \answerlines[3]{Mg: group 2, 2 valence electrons, forms
+        \ce{Mg^2+}. \quad N: group 15, 5 valence electrons, forms
+        \ce{N^3-}.}
+  \item Write the formula of the compound they form, and show that your
+        formula is electrically neutral. \answerlines[2]{\ce{Mg3N2};
+        $3(+2) + 2(-3) = 0$.}
+  \item Magnesium oxide and sodium chloride are both ionic solids.
+        Predict which has the larger lattice energy, and justify your
+        answer in terms of the Coulombic attraction between the ions.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}\textbf{\ce{MgO}} has by far the larger
+        lattice energy. Two Coulombic factors both push the same way.
+        \textbf{Charge:} the attraction is proportional to the product of
+        the ionic charges, which is $(+2)(-2) = 4$ for \ce{MgO} but
+        $(+1)(-1) = 1$ for \ce{NaCl} --- a factor of four on its own.
+        \textbf{Distance:} \ce{Mg^2+} and \ce{O^2-} are also the smaller
+        pair, so the internuclear separation $d$ is shorter
+        ($\approx$\SI{212}{\pico\metre} against
+        $\approx$\SI{283}{\pico\metre}), and the attraction goes as
+        $1/d$. Larger charge product over a shorter distance means a much
+        stronger attraction and a much larger lattice
+        energy.\end{apcanswer}}
+  \item Magnesium oxide melts at \SI{2852}{\celsius}; sodium chloride
+        melts at \SI{801}{\celsius}. Explain how this is consistent with
+        your answer to (c). \answerlines[2]{Melting an ionic solid means
+        overcoming the electrostatic attractions holding the lattice
+        together. \ce{MgO} has the stronger attractions, so more energy
+        is required and the melting point is much higher.}
+  \item Solid \ce{MgO} does not conduct electricity, but molten \ce{MgO}
+        does. Explain, and explain separately why an ionic crystal
+        shatters when struck rather than bending. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}\textbf{Conductivity.} Conduction
+        requires charged particles that are free to move. In the solid the
+        ions are locked in fixed lattice positions, so although charges
+        are present none of them can migrate. Melting frees the ions to
+        move through the liquid, so molten \ce{MgO} conducts.
+        \textbf{Brittleness.} A blow displaces one plane of ions by one
+        lattice position. Ions of \emph{like} charge are then brought face
+        to face, the attraction along that plane is replaced by strong
+        repulsion, and the crystal splits along it. A metal, whose
+        delocalized electrons tolerate the same displacement, bends
+        instead.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each element: group, valence count and ion all
+    correct. The nitrogen ion must carry a $3-$ charge written as a
+    superscript: \ce{N3-} is \emph{azide}, a different ion entirely, so
+    insist on \ce{N^3-}}
+  \rpoint{1}{(b) \ce{Mg3N2} with the neutrality shown --- the formula
+    alone, unjustified, earns the point only if correct}
+  \rpoint{2}{(c) 1 pt \ce{MgO} identified; 1 pt a Coulombic justification
+    naming \textbf{charge} (and, for full credit at this level, distance).
+    An answer resting on ``\ce{MgO} is more stable'', ``it obeys the
+    octet rule'' or ``\ce{Mg} is more reactive'' earns \textbf{0} for this
+    point --- no exceptions}
+  \rpoint{2}{(d) 1 pt linking melting to breaking electrostatic
+    attractions; 1 pt consistency with (c). Award the consistency point
+    even if (c) was answered wrongly, provided the reasoning follows}
+  \rpoint{3}{(e) 1 pt ions fixed in the solid; 1 pt ions mobile in the
+    melt; 1 pt like charges brought adjacent producing repulsion. ``The
+    bonds break'' earns 0 for the brittleness point}
+\end{rubric}
+
+% =====================================================================
+% ---- FRQ 2 -----------------------------------------------------------------
+\frq{long}{10}{Zumdahl \S2.3--\S2.5 \textbullet\ foundation \textbullet\ the nuclear atom and isotopes}
+
+Chlorine occurs naturally as two isotopes, \ce{^{35}Cl} and
+\ce{^{37}Cl}. The periodic table lists its atomic mass as
+\SI{35.45}{\atomicmassunit}.
+
+\begin{parts}
+  \item In Rutherford's experiment a thin gold foil was bombarded with
+        alpha particles. State the observation that was not expected, and
+        state what it ruled out about the structure of the atom.
+        \answerlines[3]{A very small fraction of the alpha particles were
+        deflected through large angles, some almost straight back. This
+        ruled out the ``plum pudding'' picture of charge and mass spread
+        evenly through the atom: only a small, dense, positively charged
+        centre could turn a fast alpha particle around.}
+  \item Give the number of protons, neutrons and electrons in a neutral
+        atom of \ce{^{37}Cl}, and in the ion \ce{^{37}Cl-}.
+        \answerlines[3]{Neutral \ce{^{37}Cl}: 17 protons, 20 neutrons, 17
+        electrons. \quad \ce{^{37}Cl-}: 17 protons, 20 neutrons, 18
+        electrons --- the extra electron is what makes it an anion; the
+        nucleus is untouched.}
+  \item Explain why \ce{^{35}Cl} and \ce{^{37}Cl} have different masses
+        but essentially identical chemical behaviour.
+        \answerlines[3]{They differ only in neutron count, which changes
+        the mass of the nucleus. Chemical behaviour is governed by the
+        electrons --- their number and arrangement --- and both isotopes
+        have 17 protons and therefore the same 17 electrons in the same
+        configuration. Neutrons carry no charge and do not affect how the
+        atom bonds.}
+  \item Dalton's atomic theory states that all atoms of a given element
+        are identical. Identify the part of that statement which the
+        discovery of isotopes required chemists to modify, and state the
+        corrected version. \answerlines[3]{The claim that atoms of an
+        element are identical \emph{in mass} is wrong. The corrected
+        statement is that all atoms of an element have the same number of
+        protons (the same atomic number), but may differ in neutron
+        number and therefore in mass. The rest of Dalton's theory
+        survived.}
+  \item Naturally occurring chlorine is \SI{75.8}{\percent} \ce{^{35}Cl}.
+        Without calculating, state whether the average atomic mass lies
+        closer to 35 or to 37, and justify your reasoning.
+        \answerlines[2]{Closer to \textbf{35}. The average is weighted by
+        abundance, and roughly three quarters of the atoms are the lighter
+        isotope, so the mean is pulled toward 35 --- consistent with the
+        tabulated \SI{35.45}{\atomicmassunit}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt the large-angle/back-scattered deflection of a small
+    fraction; 1 pt what it excludes (diffuse positive charge / plum
+    pudding). ``It proved the nucleus exists'' alone earns 1, not 2}
+  \rpoint{2}{(b) 1 pt the neutral atom fully correct; 1 pt the anion, which
+    requires 18 electrons \emph{and} an unchanged nucleus. Changing the
+    proton count loses the point}
+  \rpoint{2}{(c) 1 pt different neutron number accounts for the mass
+    difference; 1 pt chemistry is set by the electrons, which are the same}
+  \rpoint{2}{(d) 1 pt identifying ``identical in mass'' as the failed
+    clause; 1 pt the correction stated in terms of proton number}
+  \rpoint{2}{(e) 1 pt ``closer to 35''; 1 pt an abundance-weighting
+    justification. A numerical answer is acceptable but earns no extra
+    credit --- the question asked for reasoning}
+\end{rubric}
+
+% =====================================================================
+% ---- FRQ 3 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S2.2 \textbullet\ foundation \textbullet\ the law of multiple proportions}
+
+Two compounds contain only nitrogen and oxygen. Each sample below was
+found to contain \SI{1.750}{\gram} of nitrogen.
+
+\begin{center}
+\begin{tabular}{lcc}
+\hline
+ & \textbf{Compound A} & \textbf{Compound B} \\
+\hline
+mass of nitrogen & \SI{1.750}{\gram} & \SI{1.750}{\gram} \\
+mass of oxygen   & \SI{2.000}{\gram} & \SI{4.000}{\gram} \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Show that these data obey the law of multiple proportions.
+        \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Compare the oxygen combined with a
+        \emph{fixed} mass of nitrogen. For A,
+        $2.000/1.750 = \num{1.143}$~g O per g N; for B,
+        $4.000/1.750 = \num{2.286}$~g O per g N. The ratio of these is
+        $2.286/1.143 = \mathbf{2.00}$ --- a ratio of small whole numbers,
+        which is exactly what the law requires. (Because the nitrogen mass
+        is already the same in both samples, it is enough to note
+        $4.000/2.000 = 2$.)\end{apcanswer}}
+  \item Compound A is \ce{NO}. Deduce the formula of compound B, and state
+        the reasoning. \answerlines[2]{\ce{NO2}. The same mass of nitrogen
+        combines with twice as much oxygen in B, so B contains twice as
+        many oxygen atoms per nitrogen atom.}
+  \item State the postulate of Dalton's atomic theory that this result
+        supports. \answerlines[2]{That compounds form when atoms combine
+        in fixed, small whole-number ratios --- atoms are indivisible
+        units, so a compound cannot contain a fractional atom.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt comparing oxygen masses at a fixed nitrogen mass;
+    1 pt obtaining a small whole-number ratio of 2 (or 2:1). Dividing the
+    two total sample masses instead earns 0 --- the comparison must hold
+    nitrogen constant}
+  \rpoint{1}{(b) \ce{NO2} with the doubling argument}
+  \rpoint{1}{(c) any statement of combination in fixed small whole-number
+    ratios}
+\end{rubric}
+
+% =====================================================================
+% ---- FRQ 4 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S2.7 \textbullet\ CED 1.8 \textbullet\ the periodic table and predicted ionic charge}
+
+\begin{parts}
+  \item Predict the charge of the monatomic ion formed by each of
+        potassium, calcium, sulfur and bromine.
+        \answerlines[2]{\ce{K+}, \ce{Ca^2+}, \ce{S^2-}, \ce{Br-}.}
+  \item Sodium loses one electron readily, but removing a \emph{second}
+        electron from sodium requires nearly ten times as much energy.
+        Explain this in terms of the attraction experienced by the
+        electron being removed. \workspace[3cm]
+        \keyonly{\begin{apcanswer}The first electron removed is the single
+        valence electron in the third shell. It is far from the nucleus
+        and well shielded by the ten core electrons beneath it, so the net
+        attraction holding it is small.
+
+        Once it is gone, \ce{Na+} has a filled second shell. The next
+        electron must come out of that \emph{core} shell --- much closer
+        to the nucleus and shielded by only two electrons, so it
+        experiences a far greater effective nuclear charge at a much
+        shorter distance. Both Coulombic factors, larger $Z_{\text{eff}}$
+        and smaller $r$, raise the energy required
+        enormously.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt for each correct pair; all four required for 2}
+  \rpoint{2}{(b) 1 pt the second electron comes from a core shell closer
+    to the nucleus; 1 pt greater effective nuclear charge / less
+    shielding. An answer that says only ``\ce{Na+} has a full octet and is
+    stable'' earns \textbf{0} --- the question asked for the attraction,
+    not for a rule}
+\end{rubric}
+
+% =====================================================================
+% ---- FRQ 5 -----------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S2.8 \textbullet\ foundation \textbullet\ naming simple compounds}
+
+\begin{parts}
+  \item Give the name of \ce{Fe2O3} and of \ce{N2O5}, and the formula of
+        ammonium sulfate. \answerlines[2]{\ce{Fe2O3} is iron(III) oxide;
+        \ce{N2O5} is dinitrogen pentoxide; ammonium sulfate is
+        \ce{(NH4)2SO4}.}
+  \item Iron compounds are named with a Roman numeral but sodium compounds
+        are not. Explain why. \answerlines[3]{Sodium forms only one
+        cation, \ce{Na+}, so its charge is never in doubt and no numeral
+        is needed. Iron forms more than one stable cation --- \ce{Fe^2+}
+        and \ce{Fe^3+} --- so the name would be ambiguous without stating
+        which. The numeral gives the charge on the metal ion, not the
+        number of atoms.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 2 pts all three correct; 1 pt for two. Note that
+    \ce{N2O5} takes Greek prefixes because it is molecular, while
+    \ce{Fe2O3} takes a Roman numeral because it is ionic --- a candidate
+    who names \ce{N2O5} ``nitrogen(V) oxide'' earns no credit for it}
+  \rpoint{2}{(b) 1 pt sodium has only one possible charge; 1 pt iron has
+    more than one, so the numeral resolves the ambiguity. Saying the
+    numeral counts atoms earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

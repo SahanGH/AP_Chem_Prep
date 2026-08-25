@@ -1,0 +1,223 @@
+% Zumdahl Chapter 7 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{7}
+\apcunittitle{Atomic Structure and Periodicity}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S7.1--\S7.12 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- two CED exclusions apply]
+Covers \textbf{CED 1.5} (\S7.5, \S7.8--7.11), \textbf{1.6}
+(photoelectron spectroscopy, \S7.12), \textbf{1.7} (periodic trends,
+\S7.12), \textbf{3.11} (\S7.1) and \textbf{3.12} (\S7.2).
+
+Two exclusions shape what is asked. Topic 1.5 excludes
+\textbf{assigning quantum numbers to individual electrons}, so \S7.6 is
+not examined --- you will never be asked for $n$, $\ell$, $m_\ell$,
+$m_s$. Topic 1.7 excludes \textbf{electron configurations of the aufbau
+exceptions}, so \ce{Cr} and \ce{Cu} do not appear as configuration
+questions. Both remain worth understanding; neither will be tested.
+
+$h = \SI{6.626e-34}{\joule\second}$, \;
+$c = \SI{3.00e8}{\metre\per\second}$.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S7.11--\S7.12 \textbullet\ CED 1.5, 1.6, 1.7 \textbullet\ configuration, PES and trends}
+
+\begin{parts}
+  \item Write the complete electron configuration of a phosphorus atom
+        ($Z = 15$). \answerlines[2]{\ce{1s^2 2s^2 2p^6 3s^2 3p^3}}
+  \item A photoelectron spectrum of phosphorus shows five peaks. State how
+        many peaks correspond to each subshell and give the relative
+        height of each. \answerlines[3]{One peak per occupied subshell:
+        \ce{1s}, \ce{2s}, \ce{2p}, \ce{3s}, \ce{3p}. Relative heights
+        follow the number of electrons: $2 : 2 : 6 : 2 : 3$ --- which sums
+        to 15, the atomic number.}
+  \item State which peak appears at the highest binding energy, and
+        explain why. \answerlines[3]{The \ce{1s} peak. Those electrons are
+        closest to the nucleus and are shielded by no other electrons, so
+        they experience the largest effective nuclear charge at the
+        smallest distance. The Coulombic attraction is therefore strongest
+        and the most energy is needed to remove them.}
+  \item The first ionization energy of sulfur is \emph{lower} than that of
+        phosphorus, breaking the general left-to-right trend. Explain.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}Phosphorus is \ce{3p^3}: each of the
+        three \ce{3p} orbitals holds one electron. Sulfur is \ce{3p^4}, so
+        one \ce{3p} orbital must hold a \emph{pair}.
+
+        Two electrons confined to the same orbital repel each other
+        strongly. That repulsion raises the energy of the paired electron
+        and makes it easier to remove than the nuclear charge alone would
+        suggest --- enough to more than offset the extra proton in sulfur.
+
+        Note this is an argument about \textbf{electron--electron
+        repulsion within one orbital}, not about ``half-filled shells
+        being stable''.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 2 pts fully correct; 1 pt if only the final superscript
+    is wrong. Note the CED exclusion on 1.7: do not ask for \ce{Cr} or
+    \ce{Cu}}
+  \rpoint{2}{(b) 1 pt five peaks matched to the five subshells; 1 pt the
+    $2\!:\!2\!:\!6\!:\!2\!:\!3$ heights}
+  \rpoint{3}{(c) 1 pt \ce{1s}; 1 pt closest to the nucleus / least
+    shielded; 1 pt greatest effective nuclear charge and therefore
+    strongest attraction. An answer saying only ``it is the innermost''
+    earns 1}
+  \rpoint{3}{(d) 1 pt identifying the \ce{3p^3} versus \ce{3p^4}
+    difference; 1 pt naming the pairing in one orbital; 1 pt the
+    repulsion makes removal easier. ``Half-filled subshells are extra
+    stable'' with no repulsion argument earns \textbf{0} for the final
+    two points}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S7.1--\S7.4 \textbullet\ CED 3.11, 3.12 \textbullet\ photons and atomic spectra}
+
+Excited hydrogen atoms emit a bright blue-green line at
+\SI{486}{\nano\metre}.
+
+\begin{parts}
+  \item Calculate the energy of a single photon of this light.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$E = \dfrac{hc}{\lambda} =
+        \dfrac{(6.626\times10^{-34})(3.00\times10^{8})}
+        {486\times10^{-9}} = \mathbf{4.09\times10^{-19}}$~J\end{apcanswer}}
+  \item Calculate the energy emitted per mole of photons, in
+        \si{\kilo\joule\per\mole}. \answerlines[2]{$(4.09\times10^{-19})
+        (6.022\times10^{23}) = \num{2.46e5}$~J/mol
+        $= \mathbf{246}$~kJ/mol}
+  \item Hydrogen also emits a violet line at \SI{434}{\nano\metre}. State
+        whether its photons carry more or less energy than those at
+        \SI{486}{\nano\metre}, and justify without calculating.
+        \answerlines[2]{\textbf{More.} Energy is inversely proportional to
+        wavelength ($E = hc/\lambda$), and \SI{434}{\nano\metre} is the
+        shorter wavelength.}
+  \item Explain why the emission spectrum of hydrogen consists of discrete
+        lines rather than a continuous band. \workspace[3cm]
+        \keyonly{\begin{apcanswer}The electron in a hydrogen atom may
+        occupy only certain allowed energy levels --- its energy is
+        \textbf{quantized}. Emission occurs when the electron drops from
+        one allowed level to another, and the photon carries away exactly
+        the difference between them.
+
+        Because only certain differences exist, only certain photon
+        energies are possible, and therefore only certain wavelengths
+        appear. A continuous spectrum would require every energy
+        difference to be available, which would mean the electron could
+        have any energy at all.\end{apcanswer}}
+  \item State what the existence of these lines tells you about the energy
+        of the electron in a hydrogen atom.
+        \answerlines[2]{That it is restricted to discrete, quantized
+        values rather than varying continuously.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt $E = hc/\lambda$; 1 pt wavelength converted to
+    metres; 1 pt \SI{4.09e-19}{\joule}. Leaving $\lambda$ in nanometres
+    gives an answer out by $10^{9}$ and earns at most 1}
+  \rpoint{2}{(b) 1 pt multiplying by Avogadro's number; 1 pt
+    \SI{246}{\kilo\joule\per\mole}}
+  \rpoint{2}{(c) 1 pt ``more''; 1 pt the inverse relationship with
+    wavelength}
+  \rpoint{2}{(d) 1 pt energy levels are quantized; 1 pt the photon carries
+    exactly the difference between two levels}
+  \rpoint{1}{(e) the electron's energy is quantized}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S7.12 \textbullet\ CED 1.7 \textbullet\ periodic trends}
+
+\begin{parts}
+  \item Arrange \ce{Na}, \ce{Mg} and \ce{K} in order of increasing atomic
+        radius. \answerlines[2]{\ce{Mg} $<$ \ce{Na} $<$ \ce{K}}
+  \item Justify your ordering using Coulombic reasoning.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}\textbf{\ce{Mg} versus \ce{Na}:} same
+        shell, but magnesium has one more proton. The extra nuclear charge
+        pulls the same valence shell in more tightly, so \ce{Mg} is
+        smaller.
+
+        \textbf{\ce{K} versus \ce{Na}:} potassium's valence electron
+        occupies the next shell out. It is both further from the nucleus
+        and shielded by an additional filled shell, so the attraction it
+        feels is weaker and the atom is larger.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) the order \ce{Mg} $<$ \ce{Na} $<$ \ce{K}}
+  \rpoint{3}{(b) 1 pt increased nuclear charge across a period at constant
+    shell; 1 pt a new shell further out down a group; 1 pt increased
+    shielding. An answer resting on ``more electrons so bigger'' earns
+    \textbf{0} --- it predicts \ce{Mg} $>$ \ce{Na}, which is wrong}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S7.12 \textbullet\ CED 1.6 \textbullet\ reading a PES spectrum}
+
+A photoelectron spectrum of an unknown element from period 3 shows peaks
+at relative heights $2$, $2$, $6$ and $1$, from highest binding energy to
+lowest.
+
+\begin{parts}
+  \item Identify the element, showing your reasoning.
+        \answerlines[3]{The heights give the electron count in each
+        subshell: $2 + 2 + 6 + 1 = 11$ electrons, so $Z = 11$ and the
+        element is \textbf{sodium}. The configuration read off the
+        spectrum is \ce{1s^2 2s^2 2p^6 3s^1}.}
+  \item State which peak lies at the lowest binding energy, and what that
+        indicates chemically. \answerlines[3]{The height-1 peak, the
+        \ce{3s} electron. It is the outermost and most shielded electron,
+        so it is held least tightly --- which is why sodium loses exactly
+        one electron so readily and forms \ce{Na+}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt summing the heights to 11 electrons; 1 pt sodium}
+  \rpoint{2}{(b) 1 pt the \ce{3s} peak identified as lowest binding
+    energy; 1 pt linking it to the loss of one electron / formation of
+    \ce{Na+}}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S7.2 \textbullet\ CED 3.12 \textbullet\ properties of photons}
+
+\begin{parts}
+  \item Light of \SI{300}{\nano\metre} strikes a metal whose electrons are
+        bound with an energy of \SI{5.0e-19}{\joule}. Determine whether an
+        electron is ejected. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$E_{\text{photon}} = \dfrac{hc}{\lambda}
+        = \dfrac{(6.626\times10^{-34})(3.00\times10^{8})}
+        {300\times10^{-9}} = \num{6.63e-19}$~J.
+
+        This exceeds the \SI{5.0e-19}{\joule} binding energy, so an
+        electron \textbf{is} ejected, carrying away the difference,
+        about \SI{1.6e-19}{\joule}, as kinetic
+        energy.\end{apcanswer}}
+  \item Doubling the intensity of the light does not change whether an
+        electron is ejected. Explain. \answerlines[2]{Intensity sets how
+        \emph{many} photons arrive, not how much energy each one carries.
+        Ejection depends on a single photon having enough energy on its
+        own; more photons of the same energy eject more electrons, but
+        cannot help if each is individually too weak.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt photon energy \SI{6.63e-19}{\joule}; 1 pt the
+    comparison and conclusion that ejection occurs}
+  \rpoint{2}{(b) 1 pt intensity means number of photons; 1 pt the
+    one-photon-per-electron argument}
+\end{rubric}
+
+\examtotal
+
+\end{document}

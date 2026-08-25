@@ -1,0 +1,244 @@
+% Zumdahl Chapter 6 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S6.1--\S6.4 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \textbf{CED 6.1--6.4} (\S6.1--6.2), \textbf{6.6} (\S6.2),
+\textbf{6.8} (\S6.4) and \textbf{6.9} (\S6.3). Two neighbouring CED
+topics are sourced from other chapters and are not examined here:
+\textbf{6.5} (energy of phase changes) comes from \S10.8, and
+\textbf{6.7} (bond enthalpies) from \S8.8. \S6.5--6.6 of Zumdahl (energy
+sources) are context and are not assessed.
+
+Take the specific heat of water as
+\SI{4.18}{\joule\per\gram\per\celsius} and assume dilute aqueous
+solutions have the density and specific heat of water.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S6.2 \textbullet\ CED 6.4, 6.6 \textbullet\ calorimetry of a neutralization}
+
+A student mixes \SI{50.0}{\milli\litre} of \SI{1.00}{\Molar} \ce{HCl}
+with \SI{50.0}{\milli\litre} of \SI{1.00}{\Molar} \ce{NaOH} in a
+polystyrene cup. Both solutions start at \SI{21.0}{\celsius}. The highest
+temperature reached is \SI{27.8}{\celsius}.
+
+\begin{parts}
+  \item Write the net ionic equation for the reaction.
+        \answerlines[2]{\ce{H+(aq) + OH^-(aq) -> H2O(l)}}
+  \item Calculate the heat released by the reaction. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Total mass of solution
+        $= 50.0 + 50.0 = \SI{100.0}{\gram}$ (assuming the density of
+        water). $\Delta T = 27.8 - 21.0 = \SI{6.8}{\celsius}$.
+
+        $q = mc\,\Delta T = (100.0)(4.18)(6.8) = \mathbf{2.8\times10^{3}}$
+        J $= \SI{2.84}{\kilo\joule}$ absorbed by the solution, so
+        \SI{2.84}{\kilo\joule} was released by the
+        reaction.\end{apcanswer}}
+  \item Calculate the enthalpy of neutralization in
+        \si{\kilo\joule\per\mole}, and state its sign.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$n(\ce{H+}) = 0.0500 \times 1.00 =
+        \num{0.0500}$~mol, and \ce{OH-} is present in exactly the same
+        amount, so \num{0.0500}~mol of water forms.
+
+        $\Delta H = -\dfrac{2.84}{0.0500} =
+        \mathbf{-56.8}$~kJ/mol
+
+        The sign is \textbf{negative}: the temperature rose, so the
+        reaction released energy to the solution and is
+        exothermic.\end{apcanswer}}
+  \item The student repeats the experiment using
+        \SI{100.0}{\milli\litre} of each solution at the same
+        concentration. State what happens to the temperature change and to
+        $\Delta H$ per mole, and explain.
+        \answerlines[3]{The temperature change is essentially
+        \textbf{unchanged} (about \SI{6.8}{\celsius}): twice as much heat
+        is released, but it warms twice as much solution. $\Delta H$ per
+        mole is also \textbf{unchanged} --- it is an intensive quantity
+        that describes the reaction itself, not how much of it was run.}
+  \item Give one reason why the measured magnitude of $\Delta H$ is
+        typically smaller than the accepted value.
+        \answerlines[2]{Heat is lost to the surroundings --- to the cup,
+        the thermometer and the air --- so the measured temperature rise,
+        and hence the calculated heat, is too small. (Accept also: the
+        heat capacity of the calorimeter itself is ignored.)}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \ce{H+ + OH^- -> H2O}}
+  \rpoint{3}{(b) 1 pt total mass \SI{100.0}{\gram}; 1 pt
+    $\Delta T = \SI{6.8}{\celsius}$; 1 pt \SI{2.8e3}{\joule}. Using
+    \SI{50.0}{\gram} caps this part at 2}
+  \rpoint{3}{(c) 1 pt \num{0.0500}~mol; 1 pt dividing heat by moles; 1 pt
+    the negative sign with an exothermic justification. A positive
+    $\Delta H$ with a rising temperature earns 0 for the sign point}
+  \rpoint{2}{(d) 1 pt $\Delta T$ unchanged with the reasoning; 1 pt
+    $\Delta H$ per mole unchanged because it is intensive}
+  \rpoint{1}{(e) heat loss to the surroundings, or calorimeter heat
+    capacity neglected}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S6.3--\S6.4 \textbullet\ CED 6.8, 6.9 \textbullet\ Hess's law and enthalpies of formation}
+
+Consider the following data at \SI{298}{\kelvin}:
+\begin{center}
+\begin{tabular}{lr}
+\hline
+\textbf{Reaction} & $\Delta H^\circ$ (kJ) \\
+\hline
+\ce{C(s) + 1/2O2(g) -> CO(g)}   & $-110.5$ \\
+\ce{CO(g) + 1/2O2(g) -> CO2(g)} & $-283.0$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Use Hess's law to determine $\Delta H^\circ$ for
+        \ce{C(s) + O2(g) -> CO2(g)}. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The two reactions add directly: the
+        \ce{CO} produced by the first is consumed by the second and
+        cancels.
+
+        $\Delta H^\circ = (-110.5) + (-283.0) =
+        \mathbf{-393.5}$~kJ\end{apcanswer}}
+  \item Explain why this value is also the standard enthalpy of formation
+        of \ce{CO2}. \answerlines[3]{The reaction forms one mole of
+        \ce{CO2} from its elements, each in its standard state ---
+        graphite and \ce{O2} gas --- at \SI{298}{\kelvin} and
+        \SI{1}{\atm}. That is precisely the definition of a standard
+        enthalpy of formation.}
+  \item State the value of $\Delta H_f^\circ$ for \ce{O2(g)}, with a
+        reason. \answerlines[2]{\textbf{Zero}. \ce{O2} gas is the standard
+        state of the element oxygen, and forming an element from itself
+        involves no change.}
+  \item Explain why Hess's law works --- that is, why enthalpy changes may
+        be added in this way. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Enthalpy is a \textbf{state function}:
+        its value depends only on the current state of the system, not on
+        the path taken to reach it. The enthalpy difference between
+        reactants and products is therefore fixed, so any sequence of
+        steps connecting them must sum to the same total. This is why an
+        enthalpy change that is hard to measure directly can be obtained
+        from steps that are easy to measure.\end{apcanswer}}
+  \item If the second reaction were reversed, state the value of its
+        $\Delta H^\circ$ and explain. \answerlines[2]{$+283.0$~kJ.
+        Reversing a reaction reverses the direction of energy flow, so the
+        magnitude is unchanged and the sign flips.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt recognizing the equations add with \ce{CO}
+    cancelling; 1 pt $-393.5$~kJ}
+  \rpoint{2}{(b) 1 pt one mole of product formed; 1 pt from elements in
+    their standard states}
+  \rpoint{2}{(c) 1 pt zero; 1 pt because \ce{O2} is the element's standard
+    state}
+  \rpoint{2}{(d) 1 pt enthalpy is a state function; 1 pt therefore
+    path-independent, so steps sum. ``Because energy is conserved'' alone
+    earns 1}
+  \rpoint{2}{(e) 1 pt $+283.0$~kJ; 1 pt sign reverses on reversing the
+    reaction}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S6.2 \textbullet\ CED 6.4 \textbullet\ specific heat}
+
+A \SI{125}{\gram} block of an unknown metal at \SI{95.0}{\celsius} is
+dropped into \SI{200.0}{\gram} of water at \SI{22.0}{\celsius}. The final
+temperature of both is \SI{27.1}{\celsius}.
+
+\begin{parts}
+  \item Calculate the specific heat of the metal. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Heat gained by the water:
+
+        $q = (200.0)(4.18)(27.1 - 22.0) = \SI{4264}{\joule}$
+
+        The metal lost the same amount, cooling from \SI{95.0}{\celsius}
+        to \SI{27.1}{\celsius}, a fall of \SI{67.9}{\celsius}:
+
+        $c = \dfrac{4264}{(125)(67.9)} =
+        \mathbf{0.502}$~J/g\,\si{\celsius}\end{apcanswer}}
+  \item State the assumption about the surroundings that this calculation
+        requires. \answerlines[2]{That no heat is exchanged with anything
+        else --- all the heat lost by the metal is gained by the water,
+        with none lost to the container or the air.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt heat gained by water; 1 pt equating it to heat lost
+    by the metal with the metal's own $\Delta T$ of \SI{67.9}{\celsius};
+    1 pt \SI{0.502}{}~J/g\,\si{\celsius}. Using the water's $\Delta T$ for
+    the metal caps this at 1}
+  \rpoint{1}{(b) a statement that the calorimeter is isolated / no heat
+    lost to the surroundings}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S6.1 \textbullet\ CED 6.1--6.3 \textbullet\ energy diagrams and heat flow}
+
+\begin{parts}
+  \item When ammonium nitrate dissolves in water, the beaker becomes cold
+        to the touch. State the sign of $\Delta H$ for the dissolution and
+        explain the direction of heat flow.
+        \answerlines[3]{$\Delta H$ is \textbf{positive} --- the process is
+        endothermic. Energy flows \emph{from} the water \emph{into} the
+        dissolving solid, so the water loses energy and its temperature
+        falls, which is what the hand detects as cold.}
+  \item On an energy diagram for this process, state whether the products
+        lie above or below the reactants, and why.
+        \answerlines[2]{\textbf{Above.} The system absorbed energy, so the
+        products are at higher enthalpy than the reactants; the vertical
+        gap between them is $\Delta H$.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt positive / endothermic; 1 pt heat flows from the
+    water into the system. Saying ``the beaker gives off cold'' earns 0}
+  \rpoint{2}{(b) 1 pt products above reactants; 1 pt because energy was
+    absorbed}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S6.4 \textbullet\ CED 6.8 \textbullet\ using enthalpies of formation}
+
+For the combustion of methane,
+\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)}, use
+$\Delta H_f^\circ$: \ce{CH4(g)} $= -74.8$, \ce{CO2(g)} $= -393.5$,
+\ce{H2O(l)} $= -285.8$ \si{\kilo\joule\per\mole}.
+
+\begin{parts}
+  \item Calculate $\Delta H^\circ$ for the reaction. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$\Delta H^\circ = \sum \Delta H_f^\circ
+        (\text{products}) - \sum \Delta H_f^\circ (\text{reactants})$
+
+        Products: $(-393.5) + 2(-285.8) = \num{-965.1}$
+
+        Reactants: $(-74.8) + 2(0) = \num{-74.8}$ \quad
+        (\ce{O2} is an element in its standard state)
+
+        $\Delta H^\circ = -965.1 - (-74.8) =
+        \mathbf{-890.3}$~kJ\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{4}{2 pts the products-minus-reactants relationship applied with
+    the coefficient 2 on water; 1 pt using zero for \ce{O2}; 1 pt
+    $-890.3$~kJ. Reversing the subtraction gives $+890.3$ and earns at
+    most 2}
+\end{rubric}
+
+\examtotal
+
+\end{document}

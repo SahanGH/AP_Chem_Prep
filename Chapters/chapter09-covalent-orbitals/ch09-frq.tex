@@ -1,0 +1,198 @@
+% Zumdahl Chapter 9 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{9}
+\apcunittitle{Covalent Bonding: Orbitals}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S9.1 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- most of this chapter is off the framework]
+Only \S9.1 is examinable, as the orbital half of \textbf{CED 2.7}. Read
+the two exclusions before assigning:
+
+\textbf{1. Hybridization involving $d$ orbitals is excluded.} For a
+central atom with more than four electron domains the CED requires the
+\emph{shape} only. \ce{sp^3d} and \ce{sp^3d^2} labels are not assessed and
+are not asked for here.
+
+\textbf{2. Molecular orbital theory is excluded.} \S9.2--9.5 --- MO
+diagrams, bond order from MO theory, paramagnetism of \ce{O2} --- are
+enrichment. They are genuinely illuminating and they will not be on the
+exam. No question below uses them.
+
+What remains is worth doing properly: hybridization of second-row central
+atoms, and the sigma/pi count that explains why double bonds cannot
+rotate.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S9.1 \textbullet\ CED 2.7 \textbullet\ hybridization from electron domains}
+
+Consider the molecules \ce{CH4}, \ce{C2H4} (ethene) and \ce{C2H2}
+(ethyne).
+
+\begin{parts}
+  \item State the number of electron domains around each carbon atom and
+        the hybridization that follows.
+        \answerlines[3]{\ce{CH4}: 4 domains, \ce{sp^3}. \quad
+        \ce{C2H4}: 3 domains on each carbon, \ce{sp^2}. \quad
+        \ce{C2H2}: 2 domains on each carbon, \ce{sp}.}
+  \item State the bond angle and geometry about carbon in each.
+        \answerlines[3]{\ce{CH4}: tetrahedral, \SI{109.5}{\degree}. \quad
+        \ce{C2H4}: trigonal planar, \SI{120}{\degree}. \quad
+        \ce{C2H2}: linear, \SI{180}{\degree}.}
+  \item Explain the rule that connects the number of domains to the
+        hybridization. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Each electron domain needs its own
+        orbital pointing at it. The atom therefore mixes exactly as many
+        atomic orbitals as it has domains: two domains mix one $s$ and one
+        $p$ (\ce{sp}), three mix one $s$ and two $p$ (\ce{sp^2}), four mix
+        one $s$ and three $p$ (\ce{sp^3}).
+
+        The count of orbitals mixed always equals the count of domains,
+        because orbitals are conserved --- $n$ atomic orbitals give
+        exactly $n$ hybrid orbitals.\end{apcanswer}}
+  \item Count the sigma and pi bonds in ethene, \ce{C2H4}.
+        \answerlines[3]{\textbf{Five sigma} --- four \ce{C-H} plus one
+        \ce{C-C} --- and \textbf{one pi}, the second component of the
+        \ce{C=C}. A double bond is always one sigma plus one pi, never two
+        sigmas.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt each molecule, requiring both the domain count and
+    the hybrid label}
+  \rpoint{2}{(b) 1 pt all three geometries; 1 pt all three angles}
+  \rpoint{2}{(c) 1 pt one orbital per domain; 1 pt orbitals are conserved,
+    $n$ in gives $n$ out}
+  \rpoint{3}{(d) 1 pt five sigma; 1 pt one pi; 1 pt the double bond
+    identified as one sigma plus one pi. Answering ``two pi'' earns 0 for
+    the last two points}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S9.1 \textbullet\ CED 2.7 \textbullet\ sigma, pi, and restricted rotation}
+
+\begin{parts}
+  \item Describe how a sigma bond and a pi bond differ in the way their
+        orbitals overlap. \workspace[3cm]
+        \keyonly{\begin{apcanswer}A \textbf{sigma} bond forms by
+        \emph{end-on} overlap along the axis joining the two nuclei. Its
+        electron density is concentrated directly between the nuclei and
+        is cylindrically symmetric about that axis.
+
+        A \textbf{pi} bond forms by \emph{side-on} overlap of two parallel
+        $p$ orbitals. Its density lies in two lobes above and below the
+        internuclear axis, with a nodal plane containing the
+        axis.\end{apcanswer}}
+  \item Explain why rotation about the \ce{C=C} bond in ethene is
+        restricted, while rotation about the \ce{C-C} bond in ethane is
+        essentially free. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Ethane's \ce{C-C} bond is a single sigma
+        bond. Because sigma overlap is cylindrically symmetric about the
+        bond axis, twisting one carbon relative to the other does not
+        reduce the overlap, so rotation costs almost nothing.
+
+        Ethene's double bond includes a pi bond formed by two parallel $p$
+        orbitals. Rotating one \ce{CH2} group turns those orbitals out of
+        alignment; at \SI{90}{\degree} they are perpendicular and the
+        side-on overlap is zero. Rotation therefore requires breaking the
+        pi bond, which is energetically expensive --- so the two ends stay
+        locked in one plane.\end{apcanswer}}
+  \item State one observable chemical consequence of that restricted
+        rotation. \answerlines[2]{Molecules such as
+        1,2-dichloroethene exist as two distinct, separable isomers (the
+        two chlorines on the same side, or on opposite sides), which would
+        be impossible if the double bond rotated freely.}
+  \item State the hybridization of the nitrogen atom in \ce{NH3}, and
+        explain why the lone pair must be counted.
+        \answerlines[3]{\ce{sp^3}. The lone pair is an electron domain
+        occupying an orbital of its own and taking up space around the
+        nitrogen, so it must be counted when determining hybridization ---
+        four domains, hence \ce{sp^3}. Counting only the three bonds would
+        wrongly give \ce{sp^2}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt sigma end-on along the internuclear axis; 1 pt pi
+    side-on, above and below the axis}
+  \rpoint{4}{(b) 2 pts sigma symmetry means overlap is unchanged by
+    rotation; 2 pts rotation destroys pi overlap and would require
+    breaking the pi bond. ``Double bonds are stronger'' earns at most 1}
+  \rpoint{2}{(c) any correct isomerism consequence}
+  \rpoint{2}{(d) 1 pt \ce{sp^3}; 1 pt the lone pair counts as a domain}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S9.1 \textbullet\ CED 2.7 \textbullet\ assigning hybridization}
+
+State the hybridization of the central atom in each species.
+
+\begin{parts}
+  \item \ce{BF3} \answerlines[2]{Three domains, no lone pair on boron:
+        \ce{sp^2}.}
+  \item \ce{H2O} \answerlines[2]{Four domains (two bonds, two lone pairs):
+        \ce{sp^3}.}
+  \item \ce{CO2} \answerlines[2]{Two domains on carbon: \ce{sp}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{4}{1 pt each correct hybridization, plus 1 pt for consistently
+    counting lone pairs as domains across all three. A candidate who
+    answers \ce{sp^2} for water has counted only the bonds}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S9.1 \textbullet\ CED 2.7 \textbullet\ counting sigma and pi bonds}
+
+\begin{parts}
+  \item State the number of sigma and pi bonds in \ce{C2H2} (ethyne).
+        \answerlines[2]{Three sigma (two \ce{C-H}, one \ce{C-C}) and
+        \textbf{two} pi --- a triple bond is one sigma plus two pi.}
+  \item State the number of sigma and pi bonds in \ce{HCN}.
+        \answerlines[2]{Two sigma (\ce{H-C} and \ce{C-N}) and two pi, in
+        the \ce{C#N} triple bond.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt three sigma; 1 pt two pi}
+  \rpoint{2}{(b) 1 pt two sigma; 1 pt two pi. The general rule --- the
+    first bond of any pair is sigma, every additional bond is pi --- earns
+    full credit wherever it is applied correctly}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S9.1 \textbullet\ CED 2.7 \textbullet\ shape with more than four domains}
+
+Sulfur hexafluoride, \ce{SF6}, has six electron domains around sulfur.
+
+\begin{parts}
+  \item State the molecular shape and the \ce{F-S-F} bond angle.
+        \answerlines[2]{\textbf{Octahedral}, with \SI{90}{\degree} angles
+        between adjacent fluorines.}
+  \item Explain why six domains adopt this arrangement.
+        \answerlines[3]{Electron domains repel one another, so they
+        arrange themselves as far apart as possible on the surface of a
+        sphere around the central atom. For six identical domains that
+        arrangement is octahedral, which places each domain
+        \SI{90}{\degree} from its four neighbours and \SI{180}{\degree}
+        from the one opposite.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt octahedral; 1 pt \SI{90}{\degree}}
+  \rpoint{2}{(b) 1 pt domains repel and maximize separation; 1 pt the
+    octahedral result described. \textbf{Do not require or credit an
+    \ce{sp^3d^2} label} --- $d$-orbital hybridization is excluded by the
+    CED for topic 2.7}
+\end{rubric}
+
+\examtotal
+
+\end{document}

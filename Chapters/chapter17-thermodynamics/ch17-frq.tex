@@ -1,0 +1,232 @@
+% Zumdahl Chapter 17 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{17}
+\apcunittitle{Spontaneity, Entropy, and Free Energy}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S17.1--\S17.10 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \textbf{CED 9.1} (\S17.1), \textbf{9.2} (\S17.2, \S17.5--17.6),
+\textbf{9.3} (\S17.3--17.4), \textbf{9.4} (\S17.7), \textbf{9.5}
+(\S17.9), \textbf{9.6} (\S17.5) and \textbf{9.7} (coupled reactions,
+\S17.10).
+
+A note on wording: the CED prefers \textbf{``thermodynamically
+favourable''} to ``spontaneous'', precisely because the latter suggests
+something about speed. It does not --- a thermodynamically favourable
+reaction may be immeasurably slow. Both terms appear below; the
+distinction is examined in Question 1(e).
+
+$R = \SI{8.314}{\joule\per\mole\per\kelvin}$.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S17.3--\S17.4 \textbullet\ CED 9.3, 9.4 \textbullet\ $\Delta G = \Delta H - T\Delta S$}
+
+A reaction has $\Delta H^\circ = \SI{+30.0}{\kilo\joule\per\mole}$ and
+$\Delta S^\circ = \SI{+100}{\joule\per\mole\per\kelvin}$.
+
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin}.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Convert the entropy term to kilojoules:
+        $\Delta S^\circ = \SI{0.100}{\kilo\joule\per\mole\per\kelvin}$.
+
+        $\Delta G^\circ = 30.0 - (298)(0.100) = 30.0 - 29.8 =
+        \mathbf{+0.2}$~kJ/mol
+
+        Positive, so the reaction is \textbf{not} thermodynamically
+        favourable at \SI{298}{\kelvin} --- though only just.\end{apcanswer}}
+  \item Determine the temperature above which the reaction becomes
+        thermodynamically favourable. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}The changeover is where
+        $\Delta G^\circ = 0$:
+
+        $T = \dfrac{\Delta H^\circ}{\Delta S^\circ} =
+        \dfrac{30.0}{0.100} = \mathbf{300}$~K
+
+        Above \SI{300}{\kelvin} the $-T\Delta S^\circ$ term outweighs the
+        positive $\Delta H^\circ$ and $\Delta G^\circ$ turns
+        negative.\end{apcanswer}}
+  \item Calculate $\Delta G^\circ$ at \SI{400}{\kelvin}.
+        \answerlines[2]{$\Delta G^\circ = 30.0 - (400)(0.100) =
+        \mathbf{-10.0}$~kJ/mol}
+  \item State the general condition, in terms of the signs of $\Delta H$
+        and $\Delta S$, for a reaction that is favourable only at high
+        temperature. \answerlines[3]{$\Delta H$ positive and $\Delta S$
+        positive. The enthalpy term always opposes the reaction, so it can
+        only be overcome by making $T\Delta S$ large enough --- which
+        requires a high temperature. (If both were negative, the reaction
+        would instead be favourable only at \emph{low} temperature.)}
+  \item At \SI{400}{\kelvin} this reaction is thermodynamically
+        favourable, yet no product is detected after an hour. Explain how
+        both can be true. \answerlines[3]{Thermodynamics fixes only
+        whether the reaction \emph{can} proceed and how far, not how
+        fast. A large activation energy can make a favourable reaction
+        immeasurably slow --- the reaction is under \textbf{kinetic
+        control}. $\Delta G$ says nothing about rate.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt converting $\Delta S$ to \si{\kilo\joule}; 1 pt
+    $+0.2$~kJ/mol. Forgetting the conversion gives about $-29\,770$ and
+    earns 0}
+  \rpoint{2}{(b) 1 pt setting $\Delta G^\circ = 0$; 1 pt
+    \SI{300}{\kelvin}}
+  \rpoint{2}{(c) 1 pt correct substitution; 1 pt $-10.0$~kJ/mol}
+  \rpoint{2}{(d) 1 pt both signs positive; 1 pt the reasoning about
+    $T\Delta S$ overcoming $\Delta H$}
+  \rpoint{2}{(e) 1 pt thermodynamics gives extent, not rate; 1 pt naming a
+    large activation energy / kinetic control}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S17.1--\S17.2, \S17.9 \textbullet\ CED 9.1, 9.2, 9.5 \textbullet\ entropy and the link to \emph{K}}
+
+\begin{parts}
+  \item Predict the sign of $\Delta S^\circ$ for each process, with a
+        one-line reason.
+        \begin{enumerate}[label=(\roman*),leftmargin=*]
+          \item \ce{H2O(l) -> H2O(g)}
+          \item \ce{2NO2(g) -> N2O4(g)}
+          \item \ce{NaCl(s) -> Na+(aq) + Cl^-(aq)}
+        \end{enumerate}
+        \answerlines[3]{(i) \textbf{Positive} --- a gas is far more
+        disordered than a liquid. (ii) \textbf{Negative} --- two moles of
+        gas become one, so there are fewer particles and fewer
+        arrangements. (iii) \textbf{Positive} --- ions leave an ordered
+        crystal and disperse through the solvent.}
+  \item State the single most reliable indicator of the sign of
+        $\Delta S^\circ$ for a reaction involving gases.
+        \answerlines[2]{The change in the number of moles of \emph{gas}.
+        An increase means $\Delta S^\circ$ is positive; a decrease means
+        it is negative. Gases dominate the entropy of a system.}
+  \item A reaction has $\Delta G^\circ = \SI{-10.0}{\kilo\joule\per\mole}$
+        at \SI{400}{\kelvin}. Calculate $K$. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = -RT\ln K$, so
+
+        $\ln K = -\dfrac{\Delta G^\circ}{RT} =
+        \dfrac{10\,000}{(8.314)(400)} = \num{3.007}$
+
+        $K = e^{3.007} = \mathbf{20.2}$
+
+        Note $\Delta G^\circ$ must be in joules to match $R$.\end{apcanswer}}
+  \item State the value of $K$ when $\Delta G^\circ = 0$, and explain what
+        that means physically. \answerlines[3]{$K = 1$. When
+        $\Delta G^\circ = 0$, $\ln K = 0$. Physically, reactants and
+        products are equally favoured under standard conditions --- the
+        equilibrium mixture contains substantial amounts of both, with
+        neither side dominating.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt each sign with a valid reason. A sign with no reason
+    earns half credit only where the other two are fully justified}
+  \rpoint{1}{(b) change in moles of gas}
+  \rpoint{4}{(c) 1 pt the relationship $\Delta G^\circ = -RT\ln K$; 1 pt
+    converting to joules; 1 pt $\ln K = \num{3.01}$; 1 pt $K = \num{20.2}$.
+    Leaving $\Delta G^\circ$ in kilojoules gives $K \approx 1.003$ and
+    earns at most 1}
+  \rpoint{2}{(d) 1 pt $K = 1$; 1 pt an interpretation in terms of
+    comparable amounts of reactants and products}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S17.5 \textbullet\ CED 9.6 \textbullet\ free energy of dissolution}
+
+Ammonium nitrate dissolves readily in water although the process is
+endothermic.
+
+\begin{parts}
+  \item State the signs of $\Delta H$ and $\Delta S$ for the dissolution.
+        \answerlines[2]{$\Delta H$ \textbf{positive} (the solution cools);
+        $\Delta S$ \textbf{positive} (ordered lattice becomes dispersed
+        ions).}
+  \item Explain how $\Delta G$ can still be negative, and state what would
+        happen at a sufficiently low temperature.
+        \answerlines[3]{With both terms positive, $\Delta G = \Delta H -
+        T\Delta S$ is negative whenever $T\Delta S$ exceeds $\Delta H$ ---
+        which it does at room temperature. At a sufficiently low
+        temperature the $T\Delta S$ term shrinks, $\Delta G$ becomes
+        positive, and the salt would no longer dissolve
+        appreciably.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each sign}
+  \rpoint{2}{(b) 1 pt $T\Delta S$ outweighing $\Delta H$; 1 pt dissolution
+    becomes unfavourable at low temperature}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S17.6 \textbullet\ CED 9.2 \textbullet\ calculating $\Delta S^\circ$}
+
+For \ce{N2(g) + 3H2(g) -> 2NH3(g)}, standard molar entropies in
+\si{\joule\per\mole\per\kelvin} are \ce{N2} \num{191.6},
+\ce{H2} \num{130.7}, \ce{NH3} \num{192.5}.
+
+\begin{parts}
+  \item Calculate $\Delta S^\circ$ for the reaction. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$\Delta S^\circ = \sum S^\circ
+        (\text{products}) - \sum S^\circ (\text{reactants})$
+
+        Products: $2(192.5) = \num{385.0}$
+
+        Reactants: $191.6 + 3(130.7) = 191.6 + 392.1 = \num{583.7}$
+
+        $\Delta S^\circ = 385.0 - 583.7 =
+        \mathbf{-198.7}$~J/mol\,K\end{apcanswer}}
+  \item State whether the sign agrees with what you would predict by
+        inspection, and why. \answerlines[2]{Yes. Four moles of gas become
+        two, so the number of gas particles falls and $\Delta S^\circ$
+        should be negative.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt products minus reactants; 1 pt both coefficients
+    applied; 1 pt $-198.7$~J/mol\,K. Note that unlike $\Delta H_f^\circ$,
+    the standard entropy of an element is \textbf{not} zero}
+  \rpoint{1}{(b) agreement justified by the drop in moles of gas}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S17.10 \textbullet\ CED 9.7 \textbullet\ coupled reactions}
+
+The extraction of a metal from its oxide, \ce{MO(s) -> M(s) + 1/2O2(g)},
+has $\Delta G^\circ = \SI{+150}{\kilo\joule\per\mole}$. Industrially it is
+carried out with carbon, using
+\ce{C(s) + 1/2O2(g) -> CO(g)}, $\Delta G^\circ =
+\SI{-137}{\kilo\joule\per\mole}$.
+
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ for the coupled reaction
+        \ce{MO(s) + C(s) -> M(s) + CO(g)}.
+        \answerlines[2]{$150 + (-137) = \mathbf{+13}$~kJ/mol}
+  \item State whether coupling makes the extraction favourable at
+        \SI{298}{\kelvin}, and explain the principle behind coupling.
+        \answerlines[3]{Not yet --- $\Delta G^\circ$ is still positive at
+        \SI{298}{\kelvin}, though far smaller than \SI{+150}{}, so a
+        modest temperature rise will achieve it.
+
+        The principle: an unfavourable reaction can be driven by pairing
+        it with a strongly favourable one that shares a common species, so
+        that the \emph{sum} has a negative $\Delta G^\circ$. Free energies
+        add, exactly as enthalpies do in Hess's law.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt adding the two free energies; 1 pt $+13$~kJ/mol}
+  \rpoint{2}{(b) 1 pt noting it is still positive at \SI{298}{\kelvin};
+    1 pt the coupling principle that $\Delta G^\circ$ values add}
+\end{rubric}
+
+\examtotal
+
+\end{document}

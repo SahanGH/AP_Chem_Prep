@@ -1,0 +1,222 @@
+% Zumdahl Chapter 3 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{3}
+\apcunittitle{Stoichiometry}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S3.2--\S3.11 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Every question here is on the framework. This chapter carries
+\textbf{CED 1.1} (moles and molar mass, \S3.3--3.4), \textbf{1.2} (mass
+spectra, \S3.2), \textbf{1.3} (elemental composition, \S3.6--3.7),
+\textbf{4.1} (chemical equations, \S3.8) and \textbf{4.5} (stoichiometry,
+\S3.9--3.11). Stoichiometry sits inside CED Unit 4, which is weighted
+\SI{18}{\percent}--\SI{22}{\percent} of the exam --- the heaviest unit on
+the paper. Grade it accordingly.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S3.6--\S3.7 \textbullet\ CED 1.1, 1.3 \textbullet\ percent composition to molecular formula}
+
+A compound found in living cells contains only carbon, hydrogen and
+oxygen. Analysis gives \SI{40.00}{\percent} C, \SI{6.71}{\percent} H and
+\SI{53.29}{\percent} O by mass. Its molar mass is
+\SI{180.2}{\gram\per\mole}.
+
+\begin{parts}
+  \item Determine the empirical formula. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}Work from \SI{100.0}{\gram} of compound,
+        so the percentages become masses.
+
+        C: $40.00/12.011 = \num{3.331}$~mol \quad
+        H: $6.71/1.008 = \num{6.657}$~mol \quad
+        O: $53.29/15.999 = \num{3.331}$~mol
+
+        Divide through by the smallest, \num{3.331}: C~1.000,
+        H~1.999, O~1.000. The empirical formula is
+        \textbf{\ce{CH2O}}.\end{apcanswer}}
+  \item Determine the molecular formula. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}Empirical formula mass
+        $= 12.011 + 2(1.008) + 15.999 = \SI{30.03}{\gram\per\mole}$.
+
+        $180.2 / 30.03 = \num{6.00}$, so the molecular formula is six
+        empirical units: \textbf{\ce{C6H12O6}}.\end{apcanswer}}
+  \item Calculate the number of moles in a \SI{25.0}{\gram} sample.
+        \answerlines[2]{$25.0 / 180.2 = \mathbf{0.139}$~mol}
+  \item Calculate the number of oxygen \emph{atoms} in that
+        \SI{25.0}{\gram} sample. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Each molecule carries six oxygen atoms:
+
+        $0.1388 \times 6 \times 6.022\times10^{23} =
+        \mathbf{5.01\times10^{23}}$ oxygen atoms.
+
+        (A common slip is to stop at $8.36\times10^{22}$ --- that is the
+        number of \emph{molecules}, not oxygen atoms.)\end{apcanswer}}
+  \item Explain why percent composition alone cannot distinguish this
+        compound from formaldehyde, \ce{CH2O}. \answerlines[2]{They share
+        the same empirical formula, so they have identical percent
+        composition by mass. Percent composition fixes only the
+        \emph{ratio} of atoms; the molar mass is what fixes the actual
+        number of each.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt converting percentages to moles; 1 pt dividing by
+    the smallest; 1 pt \ce{CH2O}. A candidate who divides by the largest,
+    or who never converts to moles, earns 0 for the whole part}
+  \rpoint{2}{(b) 1 pt empirical formula mass \num{30.03}; 1 pt
+    \ce{C6H12O6}. Award both on a correct method even if (a) was wrong}
+  \rpoint{1}{(c) \num{0.139}~mol}
+  \rpoint{2}{(d) 1 pt multiplying by Avogadro's number; 1 pt the factor of
+    6 for oxygen atoms. Answering $8.36\times10^{22}$ earns 1, not 2}
+  \rpoint{2}{(e) 1 pt same empirical formula / same ratio; 1 pt molar mass
+    is what distinguishes them}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S3.9--\S3.11 \textbullet\ CED 4.5 \textbullet\ limiting reactant and percent yield}
+
+The thermite reaction produces molten iron:
+\[ \ce{Al(s) + Fe2O3(s) -> Al2O3(s) + Fe(l)} \quad \text{(unbalanced)} \]
+A mixture of \SI{25.0}{\gram} of aluminium and \SI{85.0}{\gram} of iron(III)
+oxide is ignited.
+
+\begin{parts}
+  \item Balance the equation. \answerlines[2]{\ce{2Al(s) + Fe2O3(s) ->
+        Al2O3(s) + 2Fe(l)}}
+  \item Identify the limiting reactant, showing your reasoning.
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Al}) = 25.0/26.98 =
+        \num{0.9266}$~mol. \quad $n(\ce{Fe2O3}) = 85.0/159.69 =
+        \num{0.5323}$~mol.
+
+        The equation needs \ce{Al} and \ce{Fe2O3} in a $2:1$ ratio, so
+        consuming all the \ce{Fe2O3} would require
+        $2 \times 0.5323 = \num{1.065}$~mol of \ce{Al} --- more than the
+        \num{0.9266}~mol available.
+
+        \textbf{Aluminium is limiting.}\end{apcanswer}}
+  \item Calculate the theoretical yield of iron in grams.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\ce{Al} and \ce{Fe} appear in a $2:2$,
+        i.e.\ $1:1$, ratio, so $n(\ce{Fe}) = \num{0.9266}$~mol.
+
+        $m = 0.9266 \times 55.85 = \mathbf{51.7}$~g
+        \ce{Fe}\end{apcanswer}}
+  \item The reaction actually produced \SI{45.9}{\gram} of iron.
+        Calculate the percent yield. \answerlines[2]{$45.9/51.7 \times 100
+        = \mathbf{88.7}\%$}
+  \item Give one reason, other than experimental spillage, why the percent
+        yield is below \SI{100}{\percent}. \answerlines[2]{Any one of: the
+        reaction did not go to completion; some product was lost when the
+        molten iron was separated from the slag; side reactions consumed
+        some reactant; the product was not fully dry or pure when weighed.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) coefficients 2, 1, 1, 2. States are not required for
+    credit}
+  \rpoint{3}{(b) 1 pt both mole quantities; 1 pt applying the $2:1$
+    stoichiometric ratio rather than comparing masses or raw moles; 1 pt
+    naming \ce{Al}. Comparing \num{0.9266} with \num{0.5323} directly and
+    concluding \ce{Fe2O3} is limiting earns 1 at most}
+  \rpoint{2}{(c) 1 pt the $1:1$ \ce{Al}-to-\ce{Fe} ratio; 1 pt
+    \SI{51.7}{\gram}}
+  \rpoint{2}{(d) 1 pt the ratio actual/theoretical; 1 pt
+    \SI{88.7}{\percent}. Carry an incorrect (c) through without further
+    penalty}
+  \rpoint{1}{(e) any chemically sensible reason}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S3.2 \textbullet\ CED 1.2 \textbullet\ mass spectra and average atomic mass}
+
+Copper has two stable isotopes. A mass spectrum gives
+\ce{^{63}Cu}, \SI{62.930}{\atomicmassunit}, abundance
+\SI{69.17}{\percent}; and \ce{^{65}Cu}, \SI{64.928}{\atomicmassunit},
+abundance \SI{30.83}{\percent}.
+
+\begin{parts}
+  \item Calculate the average atomic mass of copper. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$(62.930)(0.6917) + (64.928)(0.3083)
+        = 43.53 + 20.02 = \mathbf{63.55}$~u, which matches the periodic
+        table value.\end{apcanswer}}
+  \item State which peak in the spectrum is taller, and why.
+        \answerlines[2]{The \ce{^{63}Cu} peak. Peak height is proportional
+        to relative abundance, and \ce{^{63}Cu} accounts for
+        \SI{69.17}{\percent} of copper atoms.}
+  \item Explain why the tabulated atomic mass of copper is not a whole
+        number. \answerlines[2]{It is an abundance-weighted average over
+        two isotopes of different mass, not the mass of any single atom.
+        No individual copper atom weighs \SI{63.55}{\atomicmassunit}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt weighting each isotope mass by its fractional
+    abundance; 1 pt \num{63.55}. Averaging the two masses without
+    weighting gives \num{63.93} and earns 0}
+  \rpoint{1}{(b) \ce{^{63}Cu}, justified by abundance}
+  \rpoint{1}{(c) a weighted average over isotopes --- ``because of
+    neutrons'' alone earns 0}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S3.3--\S3.4 \textbullet\ CED 1.1 \textbullet\ moles, molar mass and counting}
+
+\begin{parts}
+  \item Calculate the molar mass of calcium nitrate, \ce{Ca(NO3)2}.
+        \answerlines[2]{$40.08 + 2\,[14.01 + 3(16.00)] = 40.08 + 2(62.01)
+        = \mathbf{164.1}$~g/mol}
+  \item Calculate the number of nitrate ions in \SI{45.0}{\gram} of
+        \ce{Ca(NO3)2}. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$n = 45.0/164.1 = \num{0.2742}$~mol
+        \ce{Ca(NO3)2}.
+
+        Each formula unit contains \textbf{two} nitrate ions, so
+
+        $0.2742 \times 2 \times 6.022\times10^{23} =
+        \mathbf{3.30\times10^{23}}$ nitrate ions.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt treating the subscript 2 as multiplying the whole
+    nitrate group; 1 pt \SI{164.1}{\gram\per\mole}. A candidate who
+    computes \num{102.1} has multiplied only the nitrogen and earns 0}
+  \rpoint{2}{(b) 1 pt moles and Avogadro's number; 1 pt the factor of two
+    for nitrate. $1.65\times10^{23}$ earns 1}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S3.8--\S3.9 \textbullet\ CED 4.1 \textbullet\ writing and balancing equations}
+
+\begin{parts}
+  \item Write the balanced equation for the complete combustion of propane,
+        \ce{C3H8}, in oxygen. \answerlines[2]{\ce{C3H8(g) + 5O2(g) ->
+        3CO2(g) + 4H2O(g)}}
+  \item A student balances an equation by changing \ce{H2O} to \ce{H2O2}.
+        Explain why this is not permitted. \answerlines[3]{Balancing may
+        change only the \emph{coefficients} in front of formulas, never
+        the subscripts inside them. Changing a subscript changes the
+        identity of the substance --- \ce{H2O2} is hydrogen peroxide, a
+        different compound from water --- so the equation would no longer
+        describe the reaction that occurred.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 2 pts fully balanced with coefficients 1, 5, 3, 4;
+    1 pt for correct products with wrong coefficients}
+  \rpoint{2}{(b) 1 pt only coefficients may change; 1 pt changing a
+    subscript changes the substance's identity. ``It is against the rules''
+    without a reason earns 0}
+\end{rubric}
+
+\examtotal
+
+\end{document}

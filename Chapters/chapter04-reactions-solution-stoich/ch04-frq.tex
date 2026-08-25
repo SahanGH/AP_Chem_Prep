@@ -1,0 +1,226 @@
+% Zumdahl Chapter 4 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{4}
+\apcunittitle{Types of Chemical Reactions and Solution Stoichiometry}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S4.1--\S4.11 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- two CED exclusions apply]
+This chapter is heavily examinable: \textbf{CED 3.7} (\S4.3),
+\textbf{3.8} (\S4.1--4.2), \textbf{3.10} (\S4.5), \textbf{4.2--4.3}
+(\S4.6--4.7), \textbf{4.6} (\S4.8, \S4.11), \textbf{4.7} (\S4.4--4.5),
+\textbf{4.8} (\S4.8) and \textbf{4.9} (\S4.9--4.10).
+
+Two things Zumdahl teaches here are \emph{off} the framework and are
+deliberately absent from these questions. The CED exclusion on topic 4.7
+removes the terms \textbf{``oxidizing agent'' and ``reducing agent''}, and
+removes \textbf{rote memorization of solubility rules} beyond the short
+list in 4.7.A.5. You will be asked which species is oxidized and which is
+reduced --- never to label an ``agent'', and never to recite a solubility
+table from memory.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S4.5--\S4.7 \textbullet\ CED 4.2, 4.5 \textbullet\ precipitation and solution stoichiometry}
+
+\SI{50.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{AgNO3} is mixed with
+\SI{25.0}{\milli\litre} of \SI{0.150}{\Molar} \ce{CaCl2}. A white
+precipitate of \ce{AgCl} forms. Assume volumes are additive.
+
+\begin{parts}
+  \item Write the balanced net ionic equation for the reaction.
+        \answerlines[2]{\ce{Ag+(aq) + Cl^-(aq) -> AgCl(s)}}
+  \item Identify the spectator ions and explain what makes them
+        spectators. \answerlines[2]{\ce{Ca^2+} and \ce{NO3-}. They are
+        present in solution before and after the reaction, unchanged and
+        still dissolved, so they take no part in the chemical change and
+        cancel from the equation.}
+  \item Determine which reactant is limiting. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Ag+}) = 0.0500 \times 0.200 =
+        \num{0.0100}$~mol.
+
+        $n(\ce{Cl-}) = 0.0250 \times 0.150 \times 2 = \num{0.00750}$~mol
+        --- note the factor of \textbf{2}, because each \ce{CaCl2}
+        releases two chloride ions.
+
+        The net ionic equation is $1:1$, so \textbf{chloride is
+        limiting}.\end{apcanswer}}
+  \item Calculate the mass of \ce{AgCl} precipitated.
+        \answerlines[2]{$0.00750 \times 143.32 = \mathbf{1.07}$~g}
+  \item Calculate the concentration of silver ion remaining in solution
+        after the reaction. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Excess silver
+        $= 0.0100 - 0.00750 = \num{0.00250}$~mol.
+
+        Total volume $= 50.0 + 25.0 = \SI{75.0}{\milli\litre} =
+        \SI{0.0750}{\litre}$.
+
+        $[\ce{Ag+}] = 0.00250/0.0750 = \mathbf{0.0333}$~M\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 2 pts for the net ionic equation with the solid state on
+    \ce{AgCl}; 1 pt if the equation is correct but written in full
+    molecular form}
+  \rpoint{2}{(b) 1 pt naming both spectators; 1 pt an explanation that
+    they are unchanged and remain in solution}
+  \rpoint{3}{(c) 1 pt each mole quantity; 1 pt identifying chloride. The
+    factor of two on \ce{CaCl2} is required --- omitting it gives
+    \num{0.00375} and caps this part at 1}
+  \rpoint{2}{(d) 1 pt using the limiting mole quantity; 1 pt
+    \SI{1.07}{\gram}}
+  \rpoint{1}{(e) \SI{0.0333}{\Molar}, using the \emph{combined} volume ---
+    dividing by \SI{50.0}{\milli\litre} earns 0}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S4.9--\S4.11 \textbullet\ CED 4.9, 4.6 \textbullet\ redox and a redox titration}
+
+Acidified potassium permanganate is used to determine the iron(II) content
+of a solution:
+\[ \ce{MnO4^-(aq) + Fe^2+(aq) + H+(aq) -> Mn^2+(aq) + Fe^3+(aq) + H2O(l)}
+   \quad \text{(unbalanced)} \]
+
+\begin{parts}
+  \item Assign the oxidation number of manganese in \ce{MnO4-} and in
+        \ce{Mn^2+}, and state whether manganese is oxidized or reduced.
+        \answerlines[2]{In \ce{MnO4-}: $x + 4(-2) = -1$, so
+        $x = \mathbf{+7}$. In \ce{Mn^2+}: $\mathbf{+2}$. The oxidation
+        number falls, so manganese is \textbf{reduced}.}
+  \item Balance the equation in acidic solution. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Manganese goes $+7 \to +2$, a gain of
+        \textbf{5} electrons; iron goes $+2 \to +3$, a loss of
+        \textbf{1}. Multiply the iron half-reaction by 5 so the electrons
+        cancel:
+
+        \ce{MnO4^-(aq) + 5Fe^2+(aq) + 8H+(aq) -> Mn^2+(aq) + 5Fe^3+(aq) +
+        4H2O(l)}
+
+        Check charge: left $-1 + 10 + 8 = +17$; right $+2 + 15 = +17$.
+        \checkmark\end{apcanswer}}
+  \item A \SI{25.00}{\milli\litre} sample of the iron(II) solution
+        required \SI{22.15}{\milli\litre} of \SI{0.0200}{\Molar} \ce{KMnO4}
+        to reach the endpoint. Calculate the concentration of \ce{Fe^2+}.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{MnO4-}) = 0.02215 \times 0.0200 =
+        \num{4.430e-4}$~mol.
+
+        From the balanced equation the ratio is $1$ \ce{MnO4-} to $5$
+        \ce{Fe^2+}:
+
+        $n(\ce{Fe^2+}) = 5 \times 4.430\times10^{-4} =
+        \num{2.215e-3}$~mol.
+
+        $[\ce{Fe^2+}] = 2.215\times10^{-3}/0.02500 =
+        \mathbf{0.0886}$~M\end{apcanswer}}
+  \item This titration needs no added indicator. Explain why.
+        \answerlines[2]{Permanganate is intensely purple and its reduction
+        product \ce{Mn^2+} is essentially colourless. While \ce{Fe^2+}
+        remains, added \ce{MnO4-} is decolourized; the first drop in
+        excess turns the solution permanently pink, which marks the
+        endpoint.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both oxidation numbers ($+7$ and $+2$); 1 pt
+    ``reduced''. Note the CED exclusion on 4.7: do \textbf{not} require or
+    credit the phrase ``oxidizing agent''}
+  \rpoint{3}{(b) 1 pt electron counts 5 and 1; 1 pt the factor of 5 on
+    iron; 1 pt \ce{H+} and \ce{H2O} balanced (8 and 4). A candidate whose
+    charges do not balance earns at most 2}
+  \rpoint{3}{(c) 1 pt moles of permanganate; 1 pt the $1:5$ ratio; 1 pt
+    \SI{0.0886}{\Molar}. Omitting the ratio gives \num{0.0177} and earns
+    at most 1}
+  \rpoint{2}{(d) 1 pt permanganate is coloured and \ce{Mn^2+} is not;
+    1 pt the first excess drop gives a persistent pink}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S4.3 \textbullet\ CED 3.7 \textbullet\ solution composition and dilution}
+
+\begin{parts}
+  \item \SI{25.0}{\milli\litre} of \SI{6.00}{\Molar} \ce{HCl} is diluted
+        with water to a final volume of \SI{250.0}{\milli\litre}.
+        Calculate the concentration of the diluted solution.
+        \answerlines[2]{$M_1V_1 = M_2V_2$: $(6.00)(25.0) = M_2(250.0)$, so
+        $M_2 = \mathbf{0.600}$~M}
+  \item State how many moles of \ce{HCl} are present after the dilution,
+        and explain your answer without calculating.
+        \answerlines[3]{\num{0.150}~mol --- the same as before dilution.
+        Adding water changes the volume, not the amount of solute, so the
+        number of moles is unchanged; only the concentration falls.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt correct dilution relationship; 1 pt
+    \SI{0.600}{\Molar}}
+  \rpoint{2}{(b) 1 pt \num{0.150}~mol; 1 pt the reasoning that moles of
+    solute are conserved on dilution}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S4.6 \textbullet\ CED 4.2 \textbullet\ net ionic equations}
+
+Write the balanced net ionic equation for each reaction.
+
+\begin{parts}
+  \item Aqueous sodium carbonate is mixed with aqueous calcium chloride,
+        forming a precipitate of calcium carbonate.
+        \answerlines[2]{\ce{Ca^2+(aq) + CO3^2-(aq) -> CaCO3(s)}}
+  \item Aqueous nitric acid is neutralized by aqueous potassium hydroxide.
+        \answerlines[2]{\ce{H+(aq) + OH^-(aq) -> H2O(l)}}
+  \item Explain why the net ionic equation in (b) is the same for
+        \emph{any} strong acid neutralized by \emph{any} strong hydroxide
+        base. \answerlines[2]{Strong acids and strong hydroxide bases are
+        fully dissociated, so the only chemical change is
+        \ce{H+} combining with \ce{OH-} to form water. Every other ion is
+        a spectator, whatever its identity.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct net ionic equation with the solid state shown}
+  \rpoint{1}{(b) \ce{H+ + OH^- -> H2O}}
+  \rpoint{2}{(b--c) 1 pt both strong species fully dissociate; 1 pt the
+    remaining ions are spectators regardless of identity}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S4.2 \textbullet\ CED 3.8 \textbullet\ representations of solutions}
+
+Solutions of \ce{HCl} and of \ce{HF}, both \SI{0.10}{\Molar}, are tested
+for electrical conductivity. The \ce{HCl} solution conducts strongly; the
+\ce{HF} solution conducts only weakly.
+
+\begin{parts}
+  \item Account for the difference in terms of the particles present.
+        \answerlines[3]{\ce{HCl} is a strong acid: essentially every
+        molecule ionizes, so the solution contains \ce{H+} and \ce{Cl-}
+        and almost no intact \ce{HCl}. \ce{HF} is a weak acid: only a
+        small fraction ionizes, so the solution is mostly intact \ce{HF}
+        molecules with few ions. Conductivity depends on the concentration
+        of mobile ions, which is far lower in the \ce{HF} solution.}
+  \item State what a particulate drawing of the \ce{HF} solution should
+        show that a drawing of the \ce{HCl} solution should not.
+        \answerlines[2]{Intact, undissociated \ce{HF} molecules ---
+        the majority species. The \ce{HCl} drawing should show separated
+        \ce{H+} and \ce{Cl-} ions and no intact \ce{HCl}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt \ce{HCl} essentially completely ionized; 1 pt
+    \ce{HF} only slightly ionized, linked to fewer mobile ions. ``\ce{HF}
+    is weaker'' with no reference to particles earns 0}
+  \rpoint{2}{(b) 1 pt intact \ce{HF} molecules shown; 1 pt as the dominant
+    species. A drawing showing equal numbers of molecules and ions earns 1}
+\end{rubric}
+
+\examtotal
+
+\end{document}

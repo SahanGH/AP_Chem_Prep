@@ -1,0 +1,219 @@
+% Zumdahl Chapter 13 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunitword{Chapter}
+\apcunit{13}
+\apcunittitle{Chemical Equilibrium}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{Zumdahl \S13.1--\S13.7 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- one CED exclusion applies]
+Covers \textbf{CED 7.1--7.2} (\S13.1), \textbf{7.3} and \textbf{7.5}
+(\S13.2, \S13.5), \textbf{7.4} (\S13.2--13.4), \textbf{7.6}
+(\S13.3--13.4), \textbf{7.7} (\S13.6), \textbf{7.8} (\S13.1) and
+\textbf{7.9--7.10} (\S13.7). Equilibrium sits in CED Unit 7 and is one of
+the most heavily tested ideas on the exam.
+
+The CED exclusion on topic 7.3 removes \textbf{converting between $K_c$
+and $K_p$}. Zumdahl derives $K_p = K_c(RT)^{\Delta n}$ in \S13.3; that
+conversion is not assessed and is not asked for here. Writing and using
+$K_p$ directly from partial pressures remains examinable.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S13.6 \textbullet\ CED 7.4, 7.7 \textbullet\ an ICE table}
+
+At a certain temperature, $K_c = 50.0$ for
+\[ \ce{H2(g) + I2(g) <=> 2HI(g)} \]
+A vessel is charged with \SI{1.00}{\Molar} \ce{H2} and
+\SI{1.00}{\Molar} \ce{I2} and no \ce{HI}.
+
+\begin{parts}
+  \item Write the equilibrium constant expression.
+        \answerlines[2]{$K_c = \dfrac{[\ce{HI}]^2}
+        {[\ce{H2}][\ce{I2}]}$}
+  \item Construct an ICE table for the reaction. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\begin{center}
+        \begin{tabular}{lccc}
+        \hline
+         & \ce{H2} & \ce{I2} & \ce{HI} \\
+        \hline
+        Initial     & 1.00   & 1.00   & 0 \\
+        Change      & $-x$   & $-x$   & $+2x$ \\
+        Equilibrium & $1.00-x$ & $1.00-x$ & $2x$ \\
+        \hline
+        \end{tabular}
+        \end{center}
+        The \ce{HI} change is $+2x$, not $+x$ --- the coefficient
+        matters.\end{apcanswer}}
+  \item Calculate the equilibrium concentration of \ce{HI}.
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$\dfrac{(2x)^2}{(1.00-x)^2} = 50.0$
+
+        Both sides are perfect squares, so take the square root of each
+        --- no quadratic formula is needed:
+
+        $\dfrac{2x}{1.00-x} = \sqrt{50.0} = 7.071$
+
+        $2x = 7.071 - 7.071x \;\Rightarrow\; 9.071x = 7.071
+        \;\Rightarrow\; x = \num{0.7795}$
+
+        $[\ce{HI}] = 2x = \mathbf{1.56}$~M, and
+        $[\ce{H2}] = [\ce{I2}] = \num{0.220}$~M.
+
+        Check: $(1.559)^2/(0.2205)^2 = 50.0$
+        \checkmark\end{apcanswer}}
+  \item Explain why the approximation $1.00 - x \approx 1.00$ would be
+        invalid here. \answerlines[3]{That approximation is only safe when
+        $x$ is small compared with the initial concentration, which
+        happens when $K$ is very small. Here $K = 50.0$ is large, the
+        reaction proceeds far toward products, and $x = 0.78$ is most of
+        the initial \SI{1.00}{\Molar}. Dropping it would be a
+        \SI{78}{\percent} error.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) correct expression with \ce{HI} squared; 1 pt if the
+    square is missing}
+  \rpoint{2}{(b) 1 pt initial row; 1 pt the change row with $+2x$ for
+    \ce{HI}. Using $+x$ caps the whole question at 5}
+  \rpoint{3}{(c) 1 pt setting up $K$ with the ICE values; 1 pt solving
+    (square-root method or quadratic); 1 pt $[\ce{HI}] = \SI{1.56}{\Molar}$}
+  \rpoint{3}{(d) 1 pt the approximation needs $x$ small relative to
+    initial; 1 pt $K$ is large here; 1 pt $x$ is a large fraction of
+    \num{1.00}}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{Zumdahl \S13.7 \textbullet\ CED 7.9--7.10 \textbullet\ Le Ch\^{a}telier and the reaction quotient}
+
+For the exothermic equilibrium
+\[ \ce{N2(g) + 3H2(g) <=> 2NH3(g)} \qquad \Delta H < 0 \]
+state and justify the effect of each change on the amount of \ce{NH3} at
+equilibrium.
+
+\begin{parts}
+  \item The volume of the container is decreased.
+        \answerlines[3]{The amount of \ce{NH3} \textbf{increases}.
+        Decreasing the volume raises all partial pressures; the system
+        responds by shifting toward the side with fewer moles of gas.
+        There are 4 moles of gas on the left and 2 on the right, so the
+        equilibrium shifts right.}
+  \item The temperature is increased.
+        \answerlines[3]{The amount of \ce{NH3} \textbf{decreases}. The
+        forward reaction is exothermic, so heat behaves as a product.
+        Adding heat shifts the system in the endothermic direction --- to
+        the left. Note this also \emph{changes the value of $K$}, which
+        temperature alone among these changes does.}
+  \item A catalyst is added.
+        \answerlines[2]{\textbf{No change} in the amount of \ce{NH3}. A
+        catalyst lowers the activation energy of the forward and reverse
+        reactions equally, so equilibrium is reached sooner but its
+        position, and $K$, are unaltered.}
+  \item At one moment the mixture contains
+        $[\ce{N2}] = \SI{0.10}{\Molar}$,
+        $[\ce{H2}] = \SI{0.10}{\Molar}$ and
+        $[\ce{NH3}] = \SI{0.50}{\Molar}$, and $K_c = 0.50$. Determine the
+        direction of net change. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$Q = \dfrac{[\ce{NH3}]^2}
+        {[\ce{N2}][\ce{H2}]^3} = \dfrac{(0.50)^2}{(0.10)(0.10)^3}
+        = \dfrac{0.25}{1.0\times10^{-4}} = \num{2.5e3}$
+
+        $Q \gg K$ (2500 against 0.50), so there is far too much product.
+        The system shifts \textbf{to the left}, consuming \ce{NH3} until
+        $Q$ falls to $K$.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt increases; 1 pt shift toward fewer moles of gas;
+    1 pt the 4-versus-2 count}
+  \rpoint{3}{(b) 1 pt decreases; 1 pt exothermic so heat acts as a
+    product; 1 pt noting $K$ itself changes with temperature}
+  \rpoint{1}{(c) no change, with the reason}
+  \rpoint{3}{(d) 1 pt correct $Q$ expression with the cube on \ce{H2};
+    1 pt $Q = \num{2.5e3}$; 1 pt shifts left because $Q > K$. Omitting the
+    cube caps this part at 1}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S13.4 \textbullet\ CED 7.6 \textbullet\ heterogeneous equilibria}
+
+\begin{parts}
+  \item Write the equilibrium constant expression for
+        \ce{CaCO3(s) <=> CaO(s) + CO2(g)}.
+        \answerlines[2]{$K = [\ce{CO2}]$ (or $K_p = P_{\ce{CO2}}$).}
+  \item Explain why the two solids are omitted.
+        \answerlines[3]{A pure solid has a fixed density and composition,
+        so its ``concentration'' does not change no matter how much is
+        present. Adding or removing solid does not shift the equilibrium,
+        so the solid is absorbed into the constant rather than written in
+        the expression.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) $K = [\ce{CO2}]$ alone; including either solid earns 0}
+  \rpoint{2}{(b) 1 pt a pure solid has constant concentration; 1 pt its
+    amount does not affect the position of equilibrium}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S13.5 \textbullet\ CED 7.5 \textbullet\ the magnitude of K}
+
+Two reactions at the same temperature have $K = 1\times10^{12}$ and
+$K = 1\times10^{-8}$.
+
+\begin{parts}
+  \item State what each value indicates about the position of equilibrium.
+        \answerlines[2]{$K = 10^{12}$: equilibrium lies far to the right;
+        the mixture is essentially all products. $K = 10^{-8}$: far to the
+        left; almost entirely reactants.}
+  \item State whether a large $K$ means the reaction is fast, and explain.
+        \answerlines[3]{No. $K$ describes only the \emph{position} of
+        equilibrium --- how far the reaction goes --- and says nothing
+        about how quickly it gets there. A reaction with a huge $K$ may be
+        immeasurably slow if its activation energy is high. Extent and
+        rate are independent.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each interpretation}
+  \rpoint{2}{(b) 1 pt ``no''; 1 pt $K$ gives extent, not rate}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{Zumdahl \S13.1--\S13.2 \textbullet\ CED 7.1--7.2, 7.8 \textbullet\ the nature of equilibrium}
+
+\begin{parts}
+  \item Explain what is meant by describing chemical equilibrium as
+        \emph{dynamic}. \answerlines[3]{Both the forward and reverse
+        reactions continue at the molecular level, at equal rates. Nothing
+        stops --- individual molecules keep reacting in both directions
+        --- but because the rates are equal the concentrations no longer
+        change.}
+  \item State what a graph of concentration against time looks like once
+        equilibrium is reached, and what it would look like if the
+        reaction had simply stopped.
+        \answerlines[3]{At equilibrium all curves become horizontal at
+        non-zero values, with reactants still present. If the reaction had
+        stopped instead, the curves would also flatten --- so the graph
+        alone cannot distinguish the two. The evidence for dynamic
+        behaviour comes from other experiments, such as isotopic labelling
+        showing continued exchange.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both reactions continue; 1 pt at equal rates so
+    concentrations are constant}
+  \rpoint{2}{(b) 1 pt horizontal lines at non-zero concentrations with
+    reactants remaining; 1 pt recognizing the graph alone does not prove
+    the process is dynamic}
+\end{rubric}
+
+\examtotal
+
+\end{document}
