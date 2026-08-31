@@ -31,6 +31,33 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "Lessons"
 OUT_MD = ROOT / "Lessons-md"
 
+# The site carries both content tracks as separate top-level sections.
+# Order here is the order they appear on the index: the CED sequence is what
+# exam prep is built on, so it leads; the Zumdahl chapters follow as the
+# reading track. Output directories stay FLAT under Lessons/ (unit01-... beside
+# chapter01-...), which keeps every already-published chapter URL working.
+SECTIONS = [
+    ("Units", "CED Units"),
+    ("Chapters", "Zumdahl Chapters"),
+]
+
+
+def src_root(tex_path: Path) -> Path:
+    """Which content track a source file belongs to."""
+    for name, _label in SECTIONS:
+        root = ROOT / name
+        try:
+            tex_path.relative_to(root)
+            return root
+        except ValueError:
+            continue
+    raise ValueError(f"{tex_path} is outside every known content track")
+
+
+def section_label(tex_path: Path) -> str:
+    root = src_root(tex_path).name
+    return dict(SECTIONS)[root]
+
 # Doc kinds that get answer-checking inputs and revealable explanations.
 # Keyed on the stem suffix: "ch05-selfstudy" -> "selfstudy". Exams are
 # deliberately absent -- self-grading defeats an assessment. Worksheets
@@ -196,7 +223,7 @@ UNIT = {
     "gram": "g", "mole": "mol", "litre": "L", "liter": "L", "second": "s",
     "kelvin": "K", "celsius": "&deg;C", "joule": "J", "Molar": "M",
     "atm": "atm", "torr": "torr", "mmHg": "mmHg", "pascal": "Pa",
-    "meter": "m", "metre": "m", "minute": "min", "hour": "h",
+    "meter": "m", "metre": "m", "minute": "min", "hour": "h", "day": "d",
     "ampere": "A", "coulomb": "C", "volt": "V", "electronvolt": "eV",
     "percent": "%", "u": "u", "atomicmassunit": "u",
     # \degree rendered as the literal word "degree" on every bond angle in
@@ -449,6 +476,31 @@ def protect_math(src: str) -> str:
     return src
 
 
+def convert_chemfig(src: str, log=None) -> str:
+    r"""\chemfig{O=C=O} -> \ce{O=C=O}.
+
+    chemfig draws structural formulas and has no HTML equivalent, so an
+    unhandled \chemfig was being dropped from the page entirely -- the CO2
+    Lewis-structure worked example in u02-notes lost the molecule it was
+    building toward. For a plain linear formula chemfig and mhchem take the
+    same string, so handing it to mhchem renders correctly. Anything using
+    chemfig's own layout syntax (branches, rings, bond angles) would NOT
+    survive that translation, so warn rather than emit something wrong.
+    """
+    pat = re.compile(r"\\chemfig(?![a-zA-Z])")
+    while True:
+        m = pat.search(src)
+        if not m:
+            return src
+        o = src.index("{", m.end())
+        j = match_brace(src, o)
+        arg = src[o + 1:j - 1]
+        if log is not None and re.search(r"[()\[\]<>*@?]", arg):
+            log.append(f"  ?? chemfig uses layout syntax, rendered as a plain "
+                       f"formula and may be wrong: {arg!r}")
+        src = src[:m.start()] + stash_math(rf"\(\ce{{{arg}}}\)") + src[j:]
+
+
 def convert_ce(src: str) -> str:
     pat = re.compile(r"\\ce(?![a-zA-Z])")
     while True:
@@ -539,6 +591,7 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
 
     # ---- math / chemistry / units ----
     body = protect_math(body)
+    body = convert_chemfig(body, log)
     body = convert_ce(body)
     body = convert_si(body, in_math=False)
 
@@ -1125,7 +1178,11 @@ def get_meta(src: str) -> dict:
         j = match_brace(src, m.end() - 1)
         return src[m.end():j - 1]
     return {
-        "unitword": grab("apcunitword", "Chapter"),
+        # Must match shared/apchem.sty, which defaults \apc@unitword to
+        # "Unit": the CED track sets nothing and the Zumdahl track overrides
+        # with \apcunitword{Chapter}. Defaulting to "Chapter" here silently
+        # relabelled every CED unit page and index group as "Chapter N".
+        "unitword": grab("apcunitword", "Unit"),
         "unit": grab("apcunit"),
         "unittitle": grab("apcunittitle"),
         "doctitle": grab("apcdoctitle"),
@@ -1151,7 +1208,7 @@ def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
     m = re.search(r"\\begin\{document\}(.*)\\end\{document\}", src, re.S)
     body = m.group(1)
 
-    rel = tex_path.relative_to(ROOT / "Chapters")
+    rel = tex_path.relative_to(src_root(tex_path))
     chapter_dir = OUT / rel.parts[0]
     chapter_dir.mkdir(parents=True, exist_ok=True)
 
@@ -1222,6 +1279,13 @@ h2 { font-family: system-ui, sans-serif; color: var(--accent);
      margin-top: 2rem; }
 h2.block { background: var(--accent); color: #fff; padding: .45rem .7rem;
            border-radius: 4px; border: none; }
+/* The index carries two content tracks. The track banner has to outrank the
+   per-unit headings under it, so it is heavier and rules above, not below. */
+h2.track { background: var(--accent); color: #fff; padding: .5rem .8rem;
+           border-radius: 4px; border: none; margin-top: 2.6rem;
+           font-size: 1.15rem; letter-spacing: .01em; }
+h2.track:first-of-type { margin-top: 1rem; }
+h2.track + h3 { margin-top: 1rem; }
 h2 .sub, h3 .sub, h4 .sub { font-weight: 400; font-size: .8em;
            color: inherit; opacity: .85; }
 h3, h4 { font-family: system-ui, sans-serif; margin-top: 1.4rem; }
@@ -1746,13 +1810,20 @@ def html_to_md_inner(s: str) -> str:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("target", nargs="?", default="Chapters")
+    ap.add_argument("target", nargs="?", default=None,
+                    help="a track, directory or single .tex; "
+                         "default is every track in SECTIONS")
     ap.add_argument("--no-figures", action="store_true")
     ap.add_argument("--format", choices=["html", "md", "both"], default="both")
     args = ap.parse_args()
 
-    target = ROOT / args.target
-    files = sorted(target.rglob("*.tex")) if target.is_dir() else [target]
+    if args.target:
+        target = ROOT / args.target
+        files = sorted(target.rglob("*.tex")) if target.is_dir() else [target]
+    else:
+        files = []
+        for name, _label in SECTIONS:
+            files += sorted((ROOT / name).rglob("*.tex"))
     if args.format in ("html", "both"):
         OUT.mkdir(exist_ok=True)
         (OUT / "style.css").write_text(CSS, encoding="utf-8")
@@ -1765,7 +1836,8 @@ def main():
         entry = []
         try:
             out, meta = convert_file(f, args.no_figures, entry, args.format)
-            index.setdefault(f.relative_to(ROOT / "Chapters").parts[0], []).append(
+            group = f.relative_to(src_root(f)).parts[0]
+            index.setdefault((section_label(f), group), []).append(
                 (out.name, meta))
             status = "ok" if not any("??" in e or "!!" in e for e in entry) else "WARN"
             print(f"  {status:<5} {f.name} -> {out.relative_to(ROOT)}")
@@ -1777,8 +1849,10 @@ def main():
             log.extend(entry)
 
     # index pages
-    order = {"notes": 0, "examples": 1, "selfstudy": 2, "selfstudy2": 3,
-             "ws": 4, "exam": 9}
+    # Teaching order, not alphabetical: orient, learn, practise, then assess.
+    # The map opens a unit and the review closes it, so they bracket the rest.
+    order = {"map": 0, "notes": 1, "examples": 2, "selfstudy": 3,
+             "selfstudy2": 4, "ws": 5, "frq": 6, "review": 7, "exam": 9}
 
     def key(t):
         stem = t[0].rsplit(".", 1)[0]
@@ -1791,18 +1865,28 @@ def main():
         "The printable PDFs (with teacher keys) are built separately with "
         "`build.ps1`.\n",
     ]
-    for chap in sorted(index):
-        first_meta = index[chap][0][1]
-        head = (f'{first_meta["unitword"]} {first_meta["unit"]} '
-                f'\u2022 {first_meta["unittitle"]}')
-        items.append(f"<h2>{head}</h2>\n<ul>")
-        md_items.append(f"\n## {head}\n")
-        for name, meta in sorted(index[chap], key=key):
-            stem = name.rsplit(".", 1)[0]
-            items.append(f'<li><a href="{chap}/{stem}.html">'
-                         f'{meta["doctitle"]}</a></li>')
-            md_items.append(f'- [{meta["doctitle"]}]({chap}/{stem}.md)')
-        items.append("</ul>")
+    # Two top-level sections, in SECTIONS order, each holding its own units or
+    # chapters. Sorting on the directory name inside a section keeps 01..18 in
+    # numeric order, because the directories are zero-padded.
+    for _root, label in SECTIONS:
+        groups = sorted(g for (sec, g) in index if sec == label)
+        if not groups:
+            continue
+        items.append(f'<h2 class="track">{label}</h2>')
+        md_items.append(f"\n# {label}\n")
+        for group in groups:
+            entries = index[(label, group)]
+            first_meta = entries[0][1]
+            head = (f'{first_meta["unitword"]} {first_meta["unit"]} '
+                    f'\u2022 {first_meta["unittitle"]}')
+            items.append(f"<h3>{head}</h3>\n<ul>")
+            md_items.append(f"\n## {head}\n")
+            for name, meta in sorted(entries, key=key):
+                stem = name.rsplit(".", 1)[0]
+                items.append(f'<li><a href="{group}/{stem}.html">'
+                             f'{meta["doctitle"]}</a></li>')
+                md_items.append(f'- [{meta["doctitle"]}]({group}/{stem}.md)')
+            items.append("</ul>")
     if args.format in ("md", "both"):
         (OUT_MD / "index.md").write_text("\n".join(md_items) + "\n",
                                          encoding="utf-8")

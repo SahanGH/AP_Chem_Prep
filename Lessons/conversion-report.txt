@@ -1,3 +1,29 @@
+u01-notes.tex
+  figure rendered: unit01-atomic-structure\fig-u01-notes-1.png
+  figure rendered: unit01-atomic-structure\fig-u01-notes-2.png
+  figure rendered: unit01-atomic-structure\fig-u01-notes-3.png
+  ?? unconverted: \text
+u01-ws2.tex
+  figure rendered: unit01-atomic-structure\fig-u01-ws2-1.png
+u01-ws3.tex
+  figure rendered: unit01-atomic-structure\fig-u01-ws3-1.png
+u02-notes.tex
+  figure rendered: unit02-compound-structure\fig-u02-notes-1.png
+u03-notes.tex
+  figure rendered: unit03-properties-substances\fig-u03-notes-1.png
+  figure rendered: unit03-properties-substances\fig-u03-notes-2.png
+u04-notes.tex
+  figure rendered: unit04-chemical-reactions\fig-u04-notes-1.png
+u04-ws1.tex
+  figure rendered: unit04-chemical-reactions\fig-u04-ws1-1.png
+u05-notes.tex
+  figure rendered: unit05-kinetics\fig-u05-notes-1.png
+  figure rendered: unit05-kinetics\fig-u05-notes-2.png
+  figure rendered: unit05-kinetics\fig-u05-notes-3.png
+u06-notes.tex
+  figure rendered: unit06-thermochemistry\fig-u06-notes-1.png
+u07-notes.tex
+  figure rendered: unit07-equilibrium\fig-u07-notes-1.png
 ch03-notes.tex
   figure rendered: chapter03-stoichiometry\fig-ch03-notes-1.png
 ch03-selfstudy.tex

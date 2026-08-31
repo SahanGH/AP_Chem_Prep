@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 1 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css?v=86b60da1">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=86b60da1"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Unit 1 • Atomic Structure and Properties</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">CED 1.1–1.8 • Zumdahl §3.2–3.7, §7.5–7.12, §8.4</p>
+</header>
+<main>
+<h2 class="block">Moles and Mass Spectra <span class="sub">Wed Aug 12</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Convert among grams, moles, and particles using molar mass and
+        Avogadro's number.
+
+<li>Compute an average atomic mass from a mass spectrum and identify
+        the element.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §3.2–3.5 • PDF pp. 112–123</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Express 0.00520 in scientific notation:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.005200000000000001" data-sig="3" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">\(5.20\times10^{-3}\)</span></span>
+
+<li>How many significant figures in 100.0&thinsp;g?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="num" data-val="4.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">4</span></span>
+
+<li>Name \(\ce{MgCl2}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">magnesium chloride</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="1" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The mole: chemistry's counting unit <span class="sub">25 min</span></h4>
+
+<h3>Why count by weighing <span class="badge">CED 1.1</span></h3>
+<span class="badge">SP 5</span>
+
+Atoms are too small to count directly, so we count them the way a bank counts
+coins: <strong class="term">by weighing</strong>. The bridge between mass and count is the
+<strong class="term">mole</strong>:
+<div class="center"><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">1 mol \(= 6.022\times10^{23}\) particles</span></span> \(\qquad\text{(Avogadro's number, } N_A\text{)}\)</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="3" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>Molar mass</h4>
+
+<p>The <strong class="term">molar mass</strong> \(M\) (g/mol) is numerically equal to the
+average atomic mass on the periodic table. For a compound, add the atoms:</p>
+
+\(\ce{CaCO3}\):  &emsp;  \(M = 40.08 + 12.01 + 3(16.00) =\)
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="100.09" data-sig="5" data-unit="g/mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">100.09&thinsp;g/mol</span></span>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="4" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>The mole road map</h4>
+
+<div class="center">
+
+<figure><img src="fig-u01-notes-1.png" alt="figure"></figure>
+
+</div>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Every path runs <em>through moles</em>. There is no direct road from grams to
+particles — that shortcut is where setups go wrong.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example: three-step conversion</div>
+
+<p>How many oxygen <em>atoms</em> are in 10.0&thinsp;g of \(\ce{CaCO3}\)?
+\begin{align*}
+  n &= \frac{10.0\,\mathrm{g}}{100.09\,\mathrm{g/mol}}
+     = 9.99e-2\,\mathrm{mol}\ \ce{CaCO3}\\
+  N &= (9.99\times10^{-2})(6.022\times10^{23})
+     = 6.02\times10^{22}\ \text{formula units}\\
+  N_{\ce{O}} &= 3 \times 6.02\times10^{22} = 1.80\times10^{23}\ \text{O atoms}
+\end{align*}</p>
+
+</div>
+
+<h4 class="segment">GUIDED PRACTICE • Mole conversions — you drive <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Moles in 4.50&thinsp;g of \(\ce{H2O}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.25" data-sig="3" data-unit="mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">0.250&thinsp;mol</span></span>
+
+<li>Mass of 0.30&thinsp;mol of \(\ce{NaCl}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">17.5&thinsp;g (\(\approx\) 18 g)</span></span>
+
+<li>Molecules in 0.25&thinsp;mol of \(\ce{CO2}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="1.4999999999999999e+23" data-sig="2" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">\(1.5\times10^{23}\)</span></span>
+
+<li>Hydrogen atoms in 1.0&thinsp;mol of \(\ce{NH3}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="1.8e+24" data-sig="2" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">\(1.8\times10^{24}\)</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="6" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Mass spectra: where atomic masses come from <span class="sub">20 min</span></h4>
+
+<h3>Isotopes and average atomic mass <span class="badge">CED 1.2</span></h3>
+<span class="badge">SP 4</span>
+
+Most elements are mixtures of <strong class="term">isotopes</strong> — same protons, different
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">neutrons</span></span>. The periodic-table mass is a
+<strong class="term">weighted average</strong>:
+<div class="center">\(\bar{m} =\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">\(\sum(\text{abundance} \times \text{mass})\)</span></span></div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="8" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>Reading a mass spectrum</h4>
+
+A <strong class="term">mass spectrometer</strong> vaporizes and ionizes a sample, then sorts ions by
+mass. On the spectrum:
+<ul>
+
+<li>peak <strong class="term">position</strong> (x-axis) \(\to\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="9">isotope mass</span></span>
+
+<li>peak <strong class="term">height/area</strong> (y-axis) \(\to\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="9">relative abundance</span></span>
+
+<li>number of peaks \(\to\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="9">number of isotopes</span></span>
+</ul>
+
+<div class="box we"><div class="box-title">Worked example: magnesium</div>
+
+<p>A magnesium spectrum shows peaks at 24 u (79%), 25 u (10%), and 26 u (11%).
+\[
+  \bar{m} = 0.79(24) + 0.10(25) + 0.11(26) = 24.3\,\mathrm{}
+\]
+The average sits <em>near 24</em> because \(\ce{^{24}Mg}\) dominates — a weighted
+average always leans toward the most abundant isotope.</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>“Average the peak masses” — \((24+25+26)/3 = 25\) — ignores abundance and
+is the single most common Unit 1 error. The AP answer requires the
+<em>weighted</em> setup even when the arithmetic is easy.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="9" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Spectrum interpretation <span class="sub">20 min</span></h4>
+
+<p>An element's spectrum shows exactly two peaks: 69 u (60.1%) and 71 u (39.9%).</p>
+
+<ol>
+
+<li>Estimate the average atomic mass <em>before computing</em>: closer to 69
+        or 71? Why?
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:1" data-math="1"></textarea>
+
+<li>Compute it. <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u01-notes:2" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(0.601(69)+0.399(71)=69.8\,\mathrm{}\) — gallium.</div></div>
+
+<li>A student claims the sample must contain two different elements
+        because there are two peaks. Refute in one sentence.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:3" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>Boron: \(\ce{^{10}B}\) 19.9%, \(\ce{^{11}B}\) 80.1%. Estimate the average atomic
+mass to one decimal and justify the direction it leans.
+<textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:4" data-math="1"></textarea></p>
+
+</div>
+
+<h2 class="block">Formulas from Data <span class="sub">Fri Aug 14</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Compute percent composition from a formula, and a formula from
+        percent composition.
+
+<li>Distinguish empirical from molecular formulas and connect them via
+        molar mass.
+
+<li>Classify matter as pure substance or mixture from particulate
+        diagrams.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §3.6–3.7 • PDF pp. 123–132</p> &emsp; <p class="reading"><strong>Read:</strong> §1.10 • PDF pp. 53–57</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Molar mass of \(\ce{CO2}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="44.01" data-sig="4" data-unit="g/mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">44.01&thinsp;g/mol</span></span>
+
+<li>Moles in 9.0&thinsp;g \(\ce{H2O}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.5" data-sig="2" data-unit="mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">0.50&thinsp;mol</span></span>
+
+<li>Mass spectrum peaks at 63 u and 65 u, heights 7 : 3. Which isotope is
+        more abundant? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">\(\ce{^{63}Cu}\) (63 u)</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="10" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Percent composition and empirical formulas <span class="sub">25 min</span></h4>
+
+<h3>Percent composition <span class="badge">CED 1.3</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">\(\%\,\text{element} =\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">\(\dfrac{\text{mass of element in 1 mol}}{\text{molar mass}}\times 100\%\)</span></span></div>
+
+\(\ce{H2O}\):  &emsp;  \(\%\,\ce{O} = \dfrac{16.00}{18.02}\times100\% =\)
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="88.8" data-sig="3" data-unit="%"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">88.8%</span></span>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="12" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>From percent to formula: the four-step recipe</h4>
+
+<ol>
+
+<li>Assume a <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="100.0" data-sig="1" data-unit="g"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="13">100 g</span></span> sample \(\to\) percents become grams.
+
+<li>Convert each element to <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="13">moles</span></span>.
+
+<li>Divide every mole value by the <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="13">smallest</span></span> of them.
+
+<li>If ratios aren't whole, multiply all by a small integer
+        ( .5 \(\to\times2\),  .33 \(\to\times3\) ).
+</ol>
+
+<div class="box we"><div class="box-title">Worked example: vitamin C</div>
+
+<p>40.9% C, 4.58% H, 54.5% O; molar mass \(\approx 176\,\mathrm{g/mol}\).
+\begin{align*}
+  \ce{C}&: 40.9/12.01 = 3.41 & \ce{H}&: 4.58/1.008 = 4.54 & \ce{O}&: 54.5/16.00 = 3.41\\
+  \ce{C}&: 3.41/3.41 = 1     & \ce{H}&: 4.54/3.41 = 1.33  & \ce{O}&: 3.41/3.41 = 1
+\end{align*}
+\(\times 3\): empirical \(\ce{C3H4O3}\) (\(M_{emp}=88.06\)).
+Since \(176/88.06 = 2\), molecular formula = \(\ce{C6H8O6}\).</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Never round 1.33 to 1. Ratios ending in .25, .33, .5, .67, .75 are signals to
+multiply, not round. Rounding is only for values within \(\sim\)0.05 of a whole
+number.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="13" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Formula determination <span class="sub">15 min</span></h4>
+
+<p>A compound is 75.0% C and 25.0% H by mass.</p>
+
+<ol>
+
+<li>Empirical formula: <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u01-notes:5" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>C: \(75/12.01=6.25\); H: \(25/1.008=24.8\);
+        ratio \(1:3.97 \to\) \(\ce{CH4}\)</div></div>
+
+<li>If the molar mass is 16&thinsp;g/mol, the molecular formula is
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="14">\(\ce{CH4}\)</span></span> — empirical and molecular can be the
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="14">same</span></span>.
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="14" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Pure substances, mixtures, and hydrates <span class="sub">20 min</span></h4>
+
+<h3>Classifying matter at the particle level <span class="badge">CED 1.4</span></h3>
+<span class="badge">SP 1</span>
+
+<div class="center">
+
+<figure><img src="fig-u01-notes-2.png" alt="figure"></figure>
+
+</div>
+
+<p>Diagram A shows a pure <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">element</span></span> (diatomic);
+B shows a pure <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">compound</span></span>;
+C shows a <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">mixture</span></span>.
+The test: a pure substance has <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.0cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">only one kind of particle</span></span>.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="16" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>Mixtures have variable composition</h4>
+
+<p>For a mixture, composition is a <em>measured</em> quantity, not a formula.
+A 5.0&thinsp;g mixture containing 2.0&thinsp;g \(\ce{NaCl}\) is
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="40.0" data-sig="1" data-unit="%"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">40%</span></span> \(\ce{NaCl}\) by mass.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="17" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Hydrate analysis <span class="sub">20 min</span></h4>
+
+\(\ce{MgSO4 . 7 H2O}\) (Epsom salt) is a compound — water molecules sit in fixed
+ratio inside the crystal.
+
+<ol>
+
+<li>Molar mass of \(\ce{MgSO4 . 7 H2O}\): <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u01-notes:6" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(120.4 + 7(18.02) = 246.5\,\mathrm{g/mol}\)</div></div>
+
+<li>Percent water by mass: <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u01-notes:7" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(126.1/246.5 \times 100\% = 51.2\%\)</div></div>
+
+<li>Heating drives off the water. Is the white powder left behind the same
+        substance you started with? Justify at the particle level.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:8" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>A compound is 50.0% S and 50.0% O by mass. Find its empirical formula.
+<textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:9" data-math="1"></textarea></p>
+
+</div>
+
+<h2 class="block">Electron Configurations and Coulomb's Law <span class="sub">Mon Aug 17</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Write ground-state configurations for atoms and ions; recognize
+        excited states.
+
+<li>Use Coulomb's law, shielding, and effective nuclear charge to compare
+        electron energies.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.5, 7.8–7.11 • PDF pp. 346–364</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Average mass from peaks 6 u (7.6%) and 7 u (92.4%):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">6.9&thinsp; (Li)</span></span>
+
+<li>Empirical formula of \(\ce{C6H12O6}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">\(\ce{CH2O}\)</span></span>
+
+<li>Moles of \(\ce{O}\) atoms in 0.50&thinsp;mol \(\ce{CO2}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="1.0" data-sig="2" data-unit="mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">1.0&thinsp;mol</span></span>
+
+<li>Protons / neutrons in \(\ce{^{37}Cl}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">17 / 20</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="18" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Where electrons live <span class="sub">25 min</span></h4>
+
+<h3>Shells, subshells, and the filling order <span class="badge">CED 1.5</span></h3>
+<span class="badge">SP 1</span>
+
+<p>Electrons occupy <strong class="term">shells</strong> (\(n = 1, 2, 3\ldots\)) divided into
+<strong class="term">subshells</strong> (s, p, d, f) holding at most
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.2cm" autocomplete="off" aria-label="answer" data-check="num" data-val="2.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">2</span></span>, <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.2cm" autocomplete="off" aria-label="answer" data-check="num" data-val="6.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">6</span></span>,
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.2cm" autocomplete="off" aria-label="answer" data-check="num" data-val="10.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">10</span></span>, and <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.2cm" autocomplete="off" aria-label="answer" data-check="num" data-val="14.0" data-sig="2" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">14</span></span> electrons.</p>
+
+Three rules govern ground states:
+<ul>
+
+<li><strong class="term">Aufbau</strong>: fill from <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">lowest energy upward</span></span>
+
+<li><strong class="term">Pauli</strong>: max <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:7.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">2 electrons per orbital, opposite spins</span></span>
+
+<li><strong class="term">Hund</strong>: within a subshell, <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">spread out singly before pairing</span></span>
+</ul>
+
+<div class="box we"><div class="box-title">Worked example: sulfur three ways</div>
+
+<strong>Full:</strong> \(\ce{S}\) (16 e\(^-\)): \(1s^2\,2s^2\,2p^6\,3s^2\,3p^4\)<br>
+<strong>Noble-gas shorthand:</strong> \([\ce{Ne}]\,3s^2\,3p^4\)<br>
+<strong>Orbital diagram (3p only):</strong>
+\(\uparrow\downarrow\ \ \uparrow\ \ \uparrow\) — Hund's rule leaves two
+unpaired.
+
+</div>
+
+Practice — write shorthand configurations:
+<ol>
+
+<li>\(\ce{P}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">\([\ce{Ne}]\,3s^2\,3p^3\)</span></span>
+
+<li>\(\ce{K}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">\([\ce{Ar}]\,4s^1\)</span></span>
+
+<li>\(\ce{Ca^2+}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">\([\ce{Ar}]\) (18 e\(^-\))</span></span>
+
+<li>\(\ce{S^2-}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="20">\([\ce{Ar}]\) — isoelectronic with \(\ce{Ca^2+}\)</span></span>
+</ol>
+
+<div class="box note"><div class="box-title">Note</div>
+
+<p>Ions first, then configure. \(\ce{Ca^2+}\) means <em>remove two electrons from
+Ca</em>, not “calcium's configuration plus a label.” Species with identical
+configurations are <strong class="term">isoelectronic</strong>.</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>An <strong class="term">excited state</strong> obeys Pauli but violates Aufbau:
+\(1s^2\,2s^1\,2p^4\) is excited nitrogen (an electron promoted before 2s
+filled). If any lower orbital is short while a higher one is occupied, it's
+excited — a favorite AP multiple-choice disguise.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="20" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Configuration checks <span class="sub">15 min</span></h4>
+
+For each, ground state, excited state, or impossible?
+<ol>
+
+<li>\(1s^2\,2s^2\,2p^5\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">ground state (F)</span></span>
+
+<li>\(1s^2\,2s^1\,2p^6\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">excited (2s not full, 2p occupied)</span></span>
+
+<li>\(1s^2\,2s^3\,2p^4\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">impossible (2s holds max 2)</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="21" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Coulomb's law: the engine behind everything <span class="sub">20 min</span></h4>
+
+<h3>Attraction, distance, and shielding <span class="badge">CED 1.5</span></h3>
+<span class="badge">SP 6</span>
+
+<p>Coulomb's law, qualitatively: attraction between charges grows with
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">larger charges</span></span> and shrinks with
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">greater distance</span></span>.</p>
+
+For an electron in an atom, the pull it feels is the <strong class="term">effective nuclear
+charge</strong> \(Z_{\text{eff}}\):
+<div class="center">\(Z_{\text{eff}} \approx Z -\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">S \text (shielding by inner electrons)</span></span></div>
+
+<p>Core electrons shield <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">well</span></span>; electrons in the
+<em>same</em> shell shield <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">poorly</span></span>.</p>
+
+<div class="box we"><div class="box-title">Worked example: why 3p loses before 3s</div>
+
+<p>In sulfur, 3p electrons are higher in energy than 3s: same shell, but the p
+subshell penetrates less, so it is shielded slightly more and held slightly
+less tightly. Energy ordering <em>within</em> an atom is set by the tug-of-war
+between \(Z\) and shielding — this is exactly what PES will let us
+<em>measure</em> on Wednesday.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="23" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Ranking with reasons <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Which electron is held more tightly: a 2p in F or a 2p in O? Two-part
+        answer: claim, then Coulombic reason.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:10" data-math="1"></textarea>
+
+<li>Na's 3s electron vs Na's 2p electrons: which is easier to remove, and
+        why?
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:11" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>Write the shorthand configuration of \(\ce{Al^3+}\) and name one species it is
+isoelectronic with.
+<textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:12" data-math="1"></textarea></p>
+
+</div>
+
+<h2 class="block">Photoelectron Spectroscopy <span class="sub">Wed Aug 19</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain what a PES experiment measures and how.
+
+<li>Read a PES spectrum: position \(\to\) binding energy, area \(\to\)
+        electron count; identify elements.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.12 • PDF pp. 368–369</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Shorthand configuration of Mg: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="24">\([\ce{Ne}]\,3s^2\)</span></span>
+
+<li>Which is held more tightly, a 1s or 2s electron in the same atom?
+        Why, in five words or fewer? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="24">1s — closer to
+        nucleus</span></span>
+
+<li>\(\ce{^{25}Mg}\) has how many neutrons? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="num" data-val="13.0" data-sig="2" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="24">13</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="24" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The experiment <span class="sub">25 min</span></h4>
+
+<h3>Knocking electrons out and timing them <span class="badge">CED 1.6</span></h3>
+<span class="badge">SP 4</span>
+
+In <strong class="term">photoelectron spectroscopy</strong>, high-energy photons strike a sample and
+eject electrons. We measure each ejected electron's kinetic energy. Energy
+conservation gives the electron's <strong class="term">binding energy</strong>:
+<div class="center">\(BE =\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">\(h\nu - KE_{\text{electron}}\)</span></span></div>
+
+<p>A tightly held electron exits <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">slowly</span></span> (low KE, high BE);
+a loosely held electron exits <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">fast</span></span>.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="26" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>Anatomy of the spectrum</h4>
+
+<ul>
+
+<li>x-axis: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:9.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">binding energy (usually decreasing rightward)</span></span>
+
+<li>each peak: one <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">subshell</span></span>
+
+<li>peak <strong class="term">area</strong>: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:7.3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">number of electrons in that subshell</span></span>
+</ul>
+
+<div class="box we"><div class="box-title">Worked example: neon</div>
+
+<div class="center">
+
+<figure><img src="fig-u01-notes-3.png" alt="figure"></figure>
+
+</div>
+Three peaks \(\to\) three subshells. Areas 2 : 2 : 6 \(\to\)
+\(1s^2\,2s^2\,2p^6\) \(\to\) <strong>neon</strong>. The 1s peak sits at enormous binding
+energy because those electrons are nearest an unshielded nucleus.
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Height is <em>electron count</em>, not stability; position is <em>binding
+energy</em>, not abundance. Students who learn mass spectra first often transplant
+“height = abundance” onto PES. Different instrument, different axis.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="27" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Read one yourself <span class="sub">15 min</span></h4>
+
+<p>A spectrum shows peaks at 273, 26.8, 20.2, 2.44, 1.25 MJ/mol with areas
+2 : 2 : 6 : 2 : 5.</p>
+
+<ol>
+
+<li>Configuration: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="28">\(1s^2\,2s^2\,2p^6\,3s^2\,3p^5\)</span></span>
+
+<li>Element: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="28">chlorine</span></span>
+
+<li>Which peak represents the electrons lost first in ionization?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="28">1.25 MJ/mol (3p)</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="28" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • What PES proves <span class="sub">20 min</span></h4>
+
+<h3>Evidence for shells and subshells <span class="badge">CED 1.6</span></h3>
+<span class="badge">SP 6</span>
+
+PES is the experimental receipt for the shell model:
+<ul>
+
+<li>Discrete peaks \(\to\) electrons occupy <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="30">discrete
+        energy levels</span></span>, not a continuum.
+
+<li>2s and 2p peaks are <em>close but distinct</em> \(\to\) shells contain
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="30">subshells</span></span>.
+
+<li>Across a period, every peak shifts to <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="30">higher BE</span></span>
+        — more protons, same shielding.
+</ul>
+
+<div class="box we"><div class="box-title">Worked example: boron vs fluorine 1s</div>
+
+<p>B 1s: 19.3 MJ/mol. F 1s: 67.2 MJ/mol. Same subshell, same shielding
+(\(\approx\) none for 1s) — but F has 9 protons to B's 5. Binding energy
+tracks \(Z_{\text{eff}}\), and nothing shields the 1s.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="30" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Full spectrum analysis <span class="sub">20 min</span></h4>
+
+<p>Phosphorus: peaks at 208, 18.7, 13.5, 1.95, 1.06 MJ/mol.</p>
+
+<ol>
+
+<li>Label each peak with its subshell and electron count.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:13" data-math="1"></textarea>
+
+<li>Predict how sulfur's spectrum differs. Two specific changes.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:14" data-math="1"></textarea>
+
+<li>Sketch space — draw P's spectrum with correct relative areas:
+        <textarea class="scratch" style="height:3.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u01-notes:15" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>One PES peak of element X sits at 0.74 MJ/mol with area 2; the next peak is at
+5.31 MJ/mol. X's 0.74 peak is 3s. Identify X and justify from the areas.
+<textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:16" data-math="1"></textarea></p>
+
+</div>
+
+<h2 class="block">Periodic Trends and Ionic Compounds <span class="sub">Fri Aug 21</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain — not just state — trends in radius, ionization energy,
+        and electronegativity.
+
+<li>Use successive ionization energies to locate an element's group.
+
+<li>Predict ionic charges and write ionic formulas.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §7.12 • PDF pp. 364–371</p> &emsp; <p class="reading"><strong>Read:</strong> §8.4 • PDF pp. 400–404</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>PES: peak area tells you <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="31">electron count in subshell</span></span>
+
+<li>Configuration of \(\ce{O^2-}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="31">\(1s^2 2s^2 2p^6\) (\(=[\ce{Ne}]\))</span></span>
+
+<li>Percent O in \(\ce{CO2}\) (nearest whole): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="num" data-val="73.0" data-sig="2" data-unit="%"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="31">73%</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="31" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The trends, with their engine <span class="sub">25 min</span></h4>
+
+<h3>Radius, ionization energy, electronegativity <span class="badge">CED 1.7</span></h3>
+<span class="badge">SP 6</span>
+
+<p>Every trend explanation on the AP exam is built from the same three levers:
+nuclear charge \(Z\), distance/shell \(n\), and shielding.</p>
+
+<table>
+<tr><th><strong>Property</strong></th><th><strong>Trend</strong></th><th><strong>Coulombic reason</strong></th></tr>
+<tr><td>Atomic radius</td><td>down: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">up</span></span><br> across: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">down</span></span></td><td>down: more shells; across: same shells, rising \(Z_{\text{eff}}\) pulls
+    cloud <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">inward</span></span></td></tr>
+<tr><td>Ionization energy</td><td>down: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">down</span></span><br> across: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">up</span></span></td><td>valence electron closer to a stronger pull is
+    <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">harder to remove</span></span></td></tr>
+<tr><td>Electronegativity</td><td>down: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">down</span></span><br> across: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="33">up</span></span></td><td>same engine: \(Z_{\text{eff}}\) up, distance down</td></tr>
+</table>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>“F is more electronegative because it wants a full octet” scores
+<strong>zero</strong>. Octet language is not an explanation; the rubric wants nuclear
+charge, distance, and shielding. Practice saying the Coulombic sentence.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="33" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4>The two famous IE anomalies (period 2)</h4>
+
+<ul>
+
+<li>B \(<\) Be: boron's outermost electron is in <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="34">2p</span></span>,
+        higher in energy than beryllium's 2s.
+
+<li>O \(<\) N: oxygen's fourth 2p electron is <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="34">paired</span></span>,
+        and electron–electron repulsion makes it easier to remove.
+</ul>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="34" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Rank and justify <span class="sub">15 min</span></h4>
+
+<ol>
+
+<li>Radius, largest first: Na, Mg, Al:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="35">Na \(>\) Mg \(>\) Al</span></span>
+
+<li>First IE, largest first: Ne, Na, Ar:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="35">Ne \(>\) Ar \(>\) Na</span></span>
+
+<li>Which is larger, \(\ce{Cl}\) or \(\ce{Cl-}\)? One-line reason.
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="35">\(\ce{Cl-}\) — same \(Z\), more e\(^-\)/repulsion</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="35" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Successive IE and ionic compounds <span class="sub">20 min</span></h4>
+
+<h3>Reading a successive-ionization table <span class="badge">CED 1.7</span></h3>
+<span class="badge">SP 4</span>
+
+<p>Removing electrons one at a time, IE rises gradually — until you hit the
+<strong class="term">core</strong>. The giant jump marks the end of the valence electrons.</p>
+
+<div class="box we"><div class="box-title">Worked example: locate the group</div>
+
+<p>Element X (kJ/mol): \(IE_1 = 578\), \(IE_2 = 1817\), \(IE_3 = 2745\),
+\(IE_4 = 11{,}577\). The cliff sits between \(IE_3\) and \(IE_4\) \(\to\) 3 valence
+electrons \(\to\) group 13. (X is aluminum.)</p>
+
+</div>
+
+<h3>From configurations to ionic formulas <span class="badge">CED 1.8</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Main-group atoms gain or lose electrons to reach a noble-gas configuration:
+metals <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">lose</span></span> (cations), nonmetals
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">gain</span></span> (anions). The compound's formula balances total
+charge to <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">zero</span></span>.</p>
+
+<ol>
+
+<li>\(\ce{Ca}\) + \(\ce{Br}\) \(\to\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">\(\ce{CaBr2}\)</span></span>
+
+<li>\(\ce{Al}\) + \(\ce{O}\) \(\to\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">\(\ce{Al2O3}\)</span></span>
+
+<li>\(\ce{Mg}\) + \(\ce{N}\) \(\to\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">\(\ce{Mg3N2}\)</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="38" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Data-based reasoning <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>An element has \(IE_1 = 738\), \(IE_2 = 1451\), \(IE_3 = 7733\) kJ/mol.
+        State its group and the formula of its chloride.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:17" data-math="1"></textarea>
+
+<li>Rank \(\ce{K+}\), \(\ce{Cl-}\), \(\ce{Ca^2+}\) by radius (all are isoelectronic
+        with Ar) and give the Coulombic reason.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:18" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+<p>Why is \(\ce{Na+}\) much smaller than Na? One Coulombic sentence.
+<textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u01-notes:19" data-math="1"></textarea></p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

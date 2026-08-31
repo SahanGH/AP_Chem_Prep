@@ -3,6 +3,115 @@
 Student edition, generated from the LaTeX sources. The printable PDFs (with teacher keys) are built separately with `build.ps1`.
 
 
+# CED Units
+
+
+## Unit 1 • Atomic Structure and Properties
+
+- [Unit Map](unit01-atomic-structure/u01-map.md)
+- [Guided Notes](unit01-atomic-structure/u01-notes.md)
+- [Worksheet 1 • Mole & Formula Drill](unit01-atomic-structure/u01-ws1.md)
+- [Worksheet 2 • Mass Spectra & Particulate Reasoning](unit01-atomic-structure/u01-ws2.md)
+- [Worksheet 3 • Configurations & PES](unit01-atomic-structure/u01-ws3.md)
+- [Worksheet 4 • FRQ Practice](unit01-atomic-structure/u01-ws4.md)
+- [Review Sheet](unit01-atomic-structure/u01-review.md)
+- [Unit Exam](unit01-atomic-structure/u01-exam.md)
+
+## Unit 2 • Compound Structure and Properties
+
+- [Unit Map](unit02-compound-structure/u02-map.md)
+- [Guided Notes](unit02-compound-structure/u02-notes.md)
+- [Worksheet 1 • Bonds, Wells, and Lattices](unit02-compound-structure/u02-ws1.md)
+- [Worksheet 2 • Lewis, Formal Charge, Resonance](unit02-compound-structure/u02-ws2.md)
+- [Worksheet 3 • Shapes, Angles, Polarity](unit02-compound-structure/u02-ws3.md)
+- [Worksheet 4 • FRQ Practice](unit02-compound-structure/u02-ws4.md)
+- [Review Sheet](unit02-compound-structure/u02-review.md)
+- [Unit Exam](unit02-compound-structure/u02-exam.md)
+
+## Unit 3 • Properties of Substances and Mixtures
+
+- [Unit Map](unit03-properties-substances/u03-map.md)
+- [Guided Notes](unit03-properties-substances/u03-notes.md)
+- [Worksheet 1 • Forces, Solids, Phases](unit03-properties-substances/u03-ws1.md)
+- [Worksheet 2 • Gases](unit03-properties-substances/u03-ws2.md)
+- [Worksheet 3 • Solutions and Concentration](unit03-properties-substances/u03-ws3.md)
+- [Worksheet 4 • Solubility and Separation](unit03-properties-substances/u03-ws4.md)
+- [Worksheet 5 • Spectroscopy & FRQ Practice](unit03-properties-substances/u03-ws5.md)
+- [Review Sheet](unit03-properties-substances/u03-review.md)
+- [Unit Exam](unit03-properties-substances/u03-exam.md)
+
+## Unit 4 • Chemical Reactions
+
+- [Unit Map](unit04-chemical-reactions/u04-map.md)
+- [Guided Notes](unit04-chemical-reactions/u04-notes.md)
+- [Worksheet 1 • Change and Representation](unit04-chemical-reactions/u04-ws1.md)
+- [Worksheet 2 • Net Ionic Equations and Reaction Types](unit04-chemical-reactions/u04-ws2.md)
+- [Worksheet 3 • Redox and Solution Stoichiometry](unit04-chemical-reactions/u04-ws3.md)
+- [Worksheet 4 • FRQ Practice](unit04-chemical-reactions/u04-ws4.md)
+- [Review Sheet](unit04-chemical-reactions/u04-review.md)
+- [Unit Exam](unit04-chemical-reactions/u04-exam.md)
+
+## Unit 5 • Kinetics
+
+- [Unit Map](unit05-kinetics/u05-map.md)
+- [Guided Notes](unit05-kinetics/u05-notes.md)
+- [Worksheet 1 • Rates and Rate Laws](unit05-kinetics/u05-ws1.md)
+- [Worksheet 2 • Concentration Over Time](unit05-kinetics/u05-ws2.md)
+- [Worksheet 3 • Mechanisms and Energy Profiles](unit05-kinetics/u05-ws3.md)
+- [Worksheet 4 • Pre-Equilibrium, Catalysis & FRQ](unit05-kinetics/u05-ws4.md)
+- [Review Sheet](unit05-kinetics/u05-review.md)
+- [Unit Exam](unit05-kinetics/u05-exam.md)
+
+## Unit 6 • Thermochemistry
+
+- [Unit Map](unit06-thermochemistry/u06-map.md)
+- [Guided Notes](unit06-thermochemistry/u06-notes.md)
+- [Worksheet 1 • Signs, Diagrams, and Heat Transfer](unit06-thermochemistry/u06-ws1.md)
+- [Worksheet 2 • Calorimetry and Phase Changes](unit06-thermochemistry/u06-ws2.md)
+- [Worksheet 3 • Enthalpy of Reaction and Hess's Law](unit06-thermochemistry/u06-ws3.md)
+- [Worksheet 4 • Bond and Formation Enthalpies & FRQ](unit06-thermochemistry/u06-ws4.md)
+- [Review Sheet](unit06-thermochemistry/u06-review.md)
+- [Unit Exam](unit06-thermochemistry/u06-exam.md)
+
+## Unit 7 • Equilibrium
+
+- [Unit Map](unit07-equilibrium/u07-map.md)
+- [Guided Notes](unit07-equilibrium/u07-notes.md)
+- [Worksheet 1 • Dynamic Equilibrium, $Q$ and $K$](unit07-equilibrium/u07-ws1.md)
+- [Worksheet 2 • Magnitude and Properties of $K$](unit07-equilibrium/u07-ws2.md)
+- [Worksheet 3 • ICE Tables](unit07-equilibrium/u07-ws3.md)
+- [Worksheet 4 • Le Ch^atelier and $Q$ versus $K$](unit07-equilibrium/u07-ws4.md)
+- [Worksheet 5 • Solubility Equilibria & FRQ](unit07-equilibrium/u07-ws5.md)
+- [Review Sheet](unit07-equilibrium/u07-review.md)
+- [Unit Exam](unit07-equilibrium/u07-exam.md)
+
+## Unit 8 • Acids and Bases
+
+- [Unit Map](unit08-acids-bases/u08-map.md)
+- [Guided Notes](unit08-acids-bases/u08-notes.md)
+- [Worksheet 1 • Conjugates, pH, and Strong Acids](unit08-acids-bases/u08-ws1.md)
+- [Worksheet 2 • Weak Acids and Weak Bases](unit08-acids-bases/u08-ws2.md)
+- [Worksheet 3 • Structure, p$K_a$, and Salts](unit08-acids-bases/u08-ws3.md)
+- [Worksheet 4 • Buffers and Henderson–Hasselbalch](unit08-acids-bases/u08-ws4.md)
+- [Worksheet 5 • Titrations, Indicators & FRQ](unit08-acids-bases/u08-ws5.md)
+- [Review Sheet](unit08-acids-bases/u08-review.md)
+- [Unit Exam](unit08-acids-bases/u08-exam.md)
+
+## Unit 9 • Thermodynamics and Electrochemistry
+
+- [Unit Map](unit09-thermodynamics-electrochemistry/u09-map.md)
+- [Guided Notes](unit09-thermodynamics-electrochemistry/u09-notes.md)
+- [Worksheet 1 • Entropy](unit09-thermodynamics-electrochemistry/u09-ws1.md)
+- [Worksheet 2 • Gibbs Free Energy](unit09-thermodynamics-electrochemistry/u09-ws2.md)
+- [Worksheet 3 • Free Energy, $K$, and Coupling](unit09-thermodynamics-electrochemistry/u09-ws3.md)
+- [Worksheet 4 • Cells and Cell Potential](unit09-thermodynamics-electrochemistry/u09-ws4.md)
+- [Worksheet 5 • Nonstandard Conditions, Electrolysis & FRQ](unit09-thermodynamics-electrochemistry/u09-ws5.md)
+- [Review Sheet](unit09-thermodynamics-electrochemistry/u09-review.md)
+- [Unit Exam](unit09-thermodynamics-electrochemistry/u09-exam.md)
+
+# Zumdahl Chapters
+
+
 ## Chapter 1 • Chemical Foundations
 
 - [Guided Notes](chapter01-foundations/ch01-notes.md)

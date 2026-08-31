@@ -1,0 +1,210 @@
+%% ced-zumdahl-map.tex -- one-page CED unit <-> Zumdahl chapter quick reference
+%%
+%% Reference sheet, not a content document: no answers, no CED point tags, so
+%% the four build variants differ only in palette (print = grayscale, LMS =
+%% tint), exactly like periodic-table.tex. The diagonal TEACHER KEY wash is
+%% suppressed for the same reason: it sits behind nine dense mini-tables and
+%% hurts legibility for no benefit -- there is nothing here to hide from a
+%% student build.
+%%
+%% DATA SOURCE -- every CED code, topic title, and Zumdahl section is
+%% transcribed from TEXTBOOK-MAP.md, NOT from memory. That file is the single
+%% source of truth; if the mapping ever changes, edit it there first and this
+%% sheet second. Full PDF page citations live in TEXTBOOK-MAP.md and are
+%% deliberately omitted here -- this is a chapter-level map, not a page index.
+%%
+%% The dagger marks a CED topic carrying a formal Exclusion Statement (CED
+%% PDF, verified 2026-08-23, reproduced in TEXTBOOK-MAP.md's exclusion
+%% table). It flags "this topic is narrower than Zumdahl teaches it," not
+%% "this corpus has a bug" -- several are already handled correctly and are
+%% marked here anyway, because the sheet's job is pedagogical caution, not a
+%% corpus changelog.
+
+\documentclass[10pt]{article}
+\usepackage{apchem}
+\usepackage{colortbl}
+
+\geometry{landscape,left=0.3in,right=0.3in,top=0.25in,bottom=0.25in}
+\pagestyle{empty}
+\raggedbottom
+\keyonly{\backgroundsetup{contents={}}}% see header note
+
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.86}
+\setlength{\parskip}{0pt}
+
+% ----------------------------------------------------------------- helpers
+% Unit banner: number, title, "blocks, weight%" right-aligned in the same bar.
+\newcommand{\uband}[3]{%
+  \par\vspace{1pt}\noindent
+  \colorbox{apclight}{\begin{minipage}{\dimexpr\linewidth-2\fboxsep\relax}
+    \sffamily\bfseries\footnotesize\color{apcaccent}Unit #1\quad#2%
+    \hfill\normalfont\footnotesize\color{apcgray}#3
+  \end{minipage}}\par\vspace{1pt}%
+}
+% One CED row: code, topic, Zumdahl section. \dg appends the exclusion dagger.
+\newcommand{\dg}{\textsuperscript{\dag}}
+\newcolumntype{C}{>{\sffamily\bfseries\footnotesize}p{0.44in}}
+\newcolumntype{T}{>{\footnotesize\raggedright\arraybackslash}p{1.98in}}
+\newcolumntype{Z}{>{\sffamily\footnotesize\raggedright\arraybackslash}p{0.70in}}
+\newenvironment{utab}{\begin{tabular}{@{}C@{\hspace{2pt}}T@{\hspace{2pt}}Z@{}}}{\end{tabular}\par}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+{\sffamily\bfseries\Large\color{apcaccent}AP Chemistry --- CED Units $\leftrightarrow$ Zumdahl Chapters}\\[1pt]
+{\sffamily\footnotesize\color{apcgray}%
+2024 CED framework, verified against the CED PDF (2026-08-23) \textbullet\
+Zumdahl \& DeCoste, \textit{Chemistry} 10e \textbullet\
+full page citations: \texttt{TEXTBOOK-MAP.md} \textbullet\
+\dg\ = CED Exclusion Statement narrows this topic --- see \texttt{TEXTBOOK-MAP.md}}
+\end{center}
+\vspace{2pt}
+
+\noindent
+\begin{minipage}[t]{3.28in}
+
+\uband{1}{Atomic Structure and Properties}{5 blocks \textbullet\ 7--9\%}
+\begin{utab}
+1.1 & Moles and Molar Mass & \S3.3--3.4\\
+1.2 & Mass Spectra of Elements & \S3.2\\
+1.3 & Elemental Composition of Pure Substances & \S3.6--3.7\\
+1.4 & Composition of Mixtures & \S1.10, \S3.7\\
+1.5\dg & Atomic Structure and Electron Configuration & \S7.5, \S7.8--7.11\\
+1.6 & Photoelectron Spectroscopy & \S7.12\\
+1.7\dg & Periodic Trends & \S7.12\\
+1.8 & Valence Electrons and Ionic Compounds & \S2.6--2.8, \S8.4\\
+\end{utab}
+
+\uband{2}{Compound Structure and Properties}{6 blocks \textbullet\ 7--9\%}
+\begin{utab}
+2.1 & Types of Chemical Bonds & \S8.1--8.3\\
+2.2 & Intramolecular Force and Potential Energy & \S8.5, \S8.8\\
+2.3\dg & Structure of Ionic Solids & \S10.7\\
+2.4 & Structure of Metals and Alloys & \S10.4\\
+2.5 & Lewis Diagrams & \S8.9--8.11\\
+2.6 & Resonance and Formal Charge & \S8.12\\
+2.7\dg & VSEPR and Hybridization & \S8.13, \S9.1\\
+\end{utab}
+
+\uband{3}{Properties of Substances and Mixtures}{8 blocks \textbullet\ \textbf{18--22\%}}
+\begin{utab}
+3.1 & Intermolecular and Interparticle Forces & \S10.1\\
+3.2 & Properties of Solids & \S10.3--10.7\\
+3.3\dg & Solids, Liquids, and Gases & \S10.2, \S10.8\\
+3.4 & Ideal Gas Law & \S5.2--5.5\\
+3.5 & Kinetic Molecular Theory & \S5.6--5.7\\
+3.6 & Deviation from Ideal Gas Law & \S5.8--5.9\\
+3.7 & Solutions and Mixtures & \S4.3, \S11.1--11.3\\
+3.8\dg & Representations of Solutions & \S4.1--4.2\\
+3.9 & Separation of Solutions and Mixtures & \S1.10\\
+3.10 & Solubility & \S4.5, \S11.2\\
+3.11 & Spectroscopy and the EM Spectrum & \S7.1, App.\,7\\
+3.12 & Properties of Photons & \S7.2\\
+3.13 & Beer--Lambert Law & App.\,3\\
+\end{utab}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{3.28in}
+
+\uband{4}{Chemical Reactions}{7 blocks \textbullet\ 7--9\%}
+\begin{utab}
+4.1 & Introduction for Reactions & \S3.8\\
+4.2 & Net Ionic Equations & \S4.6\\
+4.3 & Representations of Reactions & \S4.6--4.7\\
+4.4 & Physical and Chemical Changes & \S1.10\\
+4.5 & Stoichiometry & \S3.9--3.11\\
+4.6 & Introduction to Titration & \S4.8, \S4.11\\
+4.7\dg & Types of Chemical Reactions & \S4.4--4.5\\
+4.8\dg & Introduction to Acid--Base Reactions & \S4.8\\
+4.9 & Oxidation--Reduction (Redox) & \S4.9--4.10\\
+\end{utab}
+
+\uband{5}{Kinetics}{7 blocks \textbullet\ 7--9\%}
+\begin{utab}
+5.1 & Reaction Rates & \S12.1\\
+5.2 & Introduction to Rate Law & \S12.2--12.3\\
+5.3 & Concentration Changes Over Time & \S12.4\\
+5.4 & Elementary Reactions & \S12.5\\
+5.5 & Collision Model & \S12.6\\
+5.6\dg & Reaction Energy Profile & \S12.6\\
+5.7--5.9 & Mechanisms, Rate Law, Pre-Equilibrium & \S12.5\\
+5.10 & Multistep Reaction Energy Profile & \S12.6\\
+5.11 & Catalysis & \S12.7\\
+\end{utab}
+
+\uband{6}{Thermochemistry}{5 blocks \textbullet\ 7--9\%}
+\begin{utab}
+6.1 & Endothermic and Exothermic Processes & \S6.1\\
+6.2 & Energy Diagrams & \S6.1\\
+6.3 & Heat Transfer and Thermal Equilibrium & \S6.1\\
+6.4 & Heat Capacity and Calorimetry & \S6.2\\
+6.5 & Energy of Phase Changes & \S10.8\\
+6.6\dg & Introduction to Enthalpy of Reaction & \S6.2\\
+6.7 & Bond Enthalpies & \S8.8\\
+6.8 & Enthalpy of Formation & \S6.4\\
+6.9\dg & Hess's Law & \S6.3\\
+\end{utab}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{3.28in}
+
+\uband{7}{Equilibrium}{7 blocks \textbullet\ 7--9\%}
+\begin{utab}
+7.1 & Introduction to Equilibrium & \S13.1\\
+7.2 & Direction of Reversible Reactions & \S13.1\\
+7.3\dg & Reaction Quotient and Equilibrium Constant & \S13.2, \S13.5\\
+7.4 & Calculating the Equilibrium Constant & \S13.2--13.4\\
+7.5 & Magnitude of the Equilibrium Constant & \S13.5\\
+7.6 & Properties of the Equilibrium Constant & \S13.3--13.4\\
+7.7 & Calculating Equilibrium Concentrations & \S13.6\\
+7.8 & Representations of Equilibrium & \S13.1\\
+7.9--7.10 & Le Ch\^{a}telier's Principle \& $Q$ & \S13.7\\
+7.11 & Introduction to Solubility Equilibria & \S16.1\\
+7.12 & Common-Ion Effect & \S15.1; \S16.1\\
+\end{utab}
+
+\uband{8}{Acids and Bases}{8 blocks \textbullet\ \textbf{11--15\%}}
+\begin{utab}
+8.1 & Introduction to Acids and Bases & \S14.1--14.2\\
+8.2 & pH and pOH of Strong Acids and Bases & \S14.3--14.4, \S14.6\\
+8.3 & Weak Acid and Base Equilibria & \S14.5--14.7\\
+8.4 & Acid--Base Reactions and Buffers & \S15.1--15.2\\
+8.5\dg & Acid--Base Titrations & \S15.4--15.6\\
+8.6 & Molecular Structure of Acids and Bases & \S14.9--14.11\\
+8.7 & pH and p$K_a$ & \S14.8\\
+8.8 & Properties of Buffers & \S15.2\\
+8.9\dg & Henderson--Hasselbalch Equation & \S15.2\\
+8.10 & Buffer Capacity & \S15.3\\
+8.11\dg & pH and Solubility & \S16.1\\
+\end{utab}
+
+\uband{9}{Thermodynamics and Electrochemistry}{6 blocks \textbullet\ 7--9\%}
+\begin{utab}
+9.1 & Introduction to Entropy & \S17.1\\
+9.2 & Absolute Entropy and Entropy Change & \S17.2, \S17.5--17.6\\
+9.3 & Gibbs Free Energy \& Favorability & \S17.3--17.4\\
+9.4 & Thermodynamic and Kinetic Control & \S17.7\\
+9.5 & Free Energy and Equilibrium & \S17.9\\
+9.6 & Free Energy of Dissolution & \S17.5\\
+9.7 & Coupled Reactions & \S17.10\\
+9.8\dg & Galvanic and Electrolytic Cells & \S18.1, \S18.7\\
+9.9 & Cell Potential and Free Energy & \S18.2--18.3\\
+9.10 & Cell Potential, Nonstandard Conditions & \S18.4\\
+9.11 & Electrolysis and Faraday's Law & \S18.7\\
+\end{utab}
+\end{minipage}
+
+\vspace{2pt}
+\begin{center}
+{\sffamily\scriptsize\color{apcgray}%
+Order runs CED-first, not Zumdahl-first --- almost nothing lands where the
+book puts it. Zumdahl \S9.2--9.5 (MO theory), \S11.4--11.8 (colligative
+properties) and Chapters 19--22 carry no CED topic and are not mapped here;
+see TEXTBOOK-MAP.md's skip list. \S16.2's precipitation/$Q$-vs-$K_{sp}$
+portion supports 7.11; its qualitative-analysis portion does not, and
+\S16.3 (complex ions) is off the framework entirely.}
+\end{center}
+
+\end{document}

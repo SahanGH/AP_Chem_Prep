@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 6 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css?v=86b60da1">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=86b60da1"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Unit 6 • Thermochemistry</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">CED 6.1–6.9 • Zumdahl Ch 6, §8.8, §10.8 • 5 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">The one habit this unit runs on</div>
+
+<p>Nearly every error in thermochemistry is a <strong>sign</strong> error, and nearly
+every sign error comes from losing track of <em>whose</em> point of view you
+are taking.</p>
+
+<p>Fix the convention now and use it without exception: signs are always
+written <strong>from the system's point of view</strong>. Heat entering the system
+is positive; heat leaving is negative. When a reaction warms the water in a
+calorimeter, the water gained heat (\(q_{\text{water}} > 0\)) and the reaction
+lost it (\(q_{\text{rxn}} < 0\)). Those are the same event described from two
+sides, and the exam will ask for both.</p>
+
+</div>
+
+<h2 class="block">Energy, Heat, and Direction <span class="sub">CED 6.1–6.3 • Zumdahl §6.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Classify processes as endothermic or exothermic and assign signs.
+
+<li>Explain heat transfer and thermal equilibrium at the particle level.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.1 • PDF pp. 283–290</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Units of energy: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">joules (J)</span></span>
+
+<li>Temperature measures the average
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">kinetic energy</span></span> of particles.
+
+<li>Breaking a bond requires energy or releases it?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">requires</span></span>
+
+<li>Which has more energy, a gas or the same substance as a liquid?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">gas</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="1" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • System, surroundings, and sign <span class="sub">25 min</span></h4>
+
+<h3>The convention that prevents most errors <span class="badge">CED 6.1</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The <strong class="term">system</strong> is the part you are studying — usually the reaction. The
+<strong class="term">surroundings</strong> are everything else, including the solvent, the
+calorimeter, and the thermometer.</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Process</strong></th><th><strong>Heat</strong></th><th>\(q_{\text{system}}\)</th><th><strong>Surroundings</strong></th></tr>
+<tr><td><strong class="term">Exothermic</strong></td><td>released by the system</td><td><strong>negative</strong></td><td>warm up</td></tr>
+<tr><td><strong class="term">Endothermic</strong></td><td>absorbed by the system</td><td><strong>positive</strong></td><td>cool down</td></tr>
+</table>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The thermometer measures the surroundings, not the system.</strong> A
+reaction that makes the beaker feel hot is <em>exothermic</em>, so its
+\(\Delta H\) is <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">negative</span></span> — even though the temperature
+you measured went <em>up</em>.
+
+<p>This inversion is the most-missed idea in the unit. When a question gives
+you a temperature change, your first move should be to write down which
+thing changed temperature.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="3" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h3>Energy diagrams <span class="badge">CED 6.2</span></h3>
+
+<p>An energy diagram plots potential energy against reaction progress.</p>
+
+<ul>
+
+<li>Products <em>below</em> reactants \(\Rightarrow\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">exothermic</span></span>, \(\Delta H < 0\).
+
+<li>Products <em>above</em> reactants \(\Rightarrow\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">endothermic</span></span>, \(\Delta H > 0\).
+
+<li>\(\Delta H\) is the difference between
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">products and reactants</span></span> — and it says nothing
+        about how fast the reaction goes.
+</ul>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="4" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Heat transfer and thermal equilibrium <span class="sub">20 min</span></h4>
+
+<h3>What actually moves <span class="badge">CED 6.3</span></h3>
+<span class="badge">SP 6</span>
+
+<p>Put a hot metal block into cool water. At the particle level:</p>
+
+<ul>
+
+<li>Fast-moving metal atoms collide with slower water molecules and
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">transfer kinetic energy</span></span>.
+
+<li>Energy flows from <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">hot to cold</span></span> — always, and
+        never the reverse on its own.
+
+<li>Transfer continues until both reach the same
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">temperature</span></span>: <strong class="term">thermal equilibrium</strong>.
+
+<li>At equilibrium the transfer has not <em>stopped</em> — collisions
+        continue, but energy now flows both ways at
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">equal rates</span></span>.
+</ul>
+
+<div class="box note"><div class="box-title">Heat is not a substance a body contains</div>
+
+<p>Say “heat is transferred,” not “the block has a lot of heat.” Heat is
+energy <em>in transit</em> because of a temperature difference. What a body
+contains is internal energy; heat is what crosses the boundary.</p>
+
+<p>The exam does penalize “the hot object gives its heat to the cold object”
+when the question asks for a particle-level explanation — it wants
+collisions and kinetic-energy transfer.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="6" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Signs and directions <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Ammonium nitrate dissolves and the beaker becomes noticeably cold.
+        Give the sign of \(q\) for the dissolving process, the sign for the
+        water, and classify it. <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:1" data-math="1"></textarea>
+
+<li>Two blocks of the same metal, one at 80&thinsp;&deg;C and one at
+        20&thinsp;&deg;C, are placed in contact and left. Describe the
+        final state and what is happening in it. <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:2" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A reaction is run in solution and the thermometer reading rises from
+22.0&thinsp;&deg;C to 28.4&thinsp;&deg;C. State the sign of
+\(q_{\text{water}}\), the sign of \(\Delta H_{\text{rxn}}\), and explain why
+they differ.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(q_{\text{water}}\) is positive — the water
+absorbed energy and warmed. \(\Delta H_{\text{rxn}}\) is negative: the
+reaction released that energy, so the process is exothermic. They differ
+because the two describe the same energy from opposite sides of the system
+boundary.</div></div>
+
+</div>
+
+<h2 class="block">Heat Capacity and Calorimetry <span class="sub">CED 6.4 • Zumdahl §6.2</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Use \(q = mc\Delta T\) in both directions.
+
+<li>Determine \(\Delta H\) per mole from calorimetry data.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.2 • PDF pp. 290–297</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Exothermic means \(q_{\text{system}}\) is:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="7">negative</span></span>
+
+<li>Heat flows from: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="7">hot to cold</span></span>
+
+<li>Specific heat of water: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="4.18" data-sig="3" data-unit="J/g/ degC"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="7">4.18&thinsp;J/g/&deg;C</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="7" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The workhorse equation <span class="sub">25 min</span></h4>
+
+<h3>\(q = mc\Delta T\) <span class="badge">CED 6.4</span></h3>
+<span class="badge">SP 5</span>
+
+\[ q = mc\Delta T \qquad \Delta T = T_{\text{final}} - T_{\text{initial}} \]
+
+<strong class="term">Specific heat</strong> \(c\) is the energy needed to raise 1&thinsp;g by
+1&thinsp;&deg;C. Water's is unusually
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="9">large</span></span> at 4.18&thinsp;J/g/&deg;C, which is
+why it is used as the absorbing medium in calorimetry and why coastal
+climates are mild.
+
+<div class="box we"><div class="box-title">Worked example 1: straight substitution</div>
+
+<p>How much energy raises 50.0&thinsp;g of water from 20.0&thinsp;&deg;C
+to 80.0&thinsp;&deg;C?
+\[ q = (50.0)(4.18)(60.0) = 12{,}540~\text{J} =
+   \mathbf{12.5}~\text{kJ} \]
+Positive, because the water absorbed energy.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="9" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Calorimetry: from \(q\) to \(\Delta H\) per mole <span class="sub">20 min</span></h4>
+
+<h3>The two-step chain <span class="badge">CED 6.4</span></h3>
+<span class="badge">SP 5</span>
+
+<p>A calorimeter measures the temperature change of the <em>water</em>. Getting
+to \(\Delta H\) takes two moves:</p>
+
+<ol>
+
+<li>\(q_{\text{water}} = mc\Delta T\), then \(q_{\text{rxn}}\) equals
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="11">\(-q_{\text{water}}\)</span></span>.
+
+<li>Divide by the moles of the limiting reactant to get
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="11">kJ/mol</span></span>.
+</ol>
+
+<div class="box we"><div class="box-title">Worked example 2: a full calorimetry problem</div>
+
+<p>A reaction is run in 100.0&thinsp;g of water in a coffee-cup
+calorimeter. The temperature rises by 5.20&thinsp;&deg;C, and
+0.0250&thinsp;mol of the limiting reactant was used.</p>
+
+<strong>Step 1 — heat absorbed by the water:</strong>
+\[ q_{\text{water}} = (100.0)(4.18)(5.20) = 2174~\text{J} \]
+The water <em>gained</em> it, so the reaction <em>lost</em> it:
+\(q_{\text{rxn}} = -2174\)&nbsp;J.
+
+<strong>Step 2 — per mole:</strong>
+\[ \Delta H = \frac{-2174~\text{J}}{0.0250~\text{mol}}
+   = -86{,}900~\mathrm{J/mol} =
+   \mathbf{-86.9}~\mathrm{kJ/mol} \]
+
+<p>Negative, as the temperature rise already told us.</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Two habits worth building here. First, <strong>the minus sign in step 1 is
+not optional</strong> — omitting it reports an exothermic reaction as
+endothermic. Second, <strong>\(\Delta H\) is per mole</strong>; a bare answer in
+kilojoules with no “per mole” loses the point even when the arithmetic is
+right.</p>
+
+<p>Note also that we used the <em>water's</em> mass and specific heat, not the
+reactants'. The water is the surroundings, and it is what the thermometer
+was in.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="11" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Thermal equilibrium calculations <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>A 50.0&thinsp;g metal block at 100.0&thinsp;&deg;C is dropped
+        into 100.0&thinsp;g of water at 22.0&thinsp;&deg;C. The final
+        temperature is 24.6&thinsp;&deg;C. Find the specific heat of the
+        metal. <textarea class="scratch" style="height:3cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u06-notes:3" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(q_{\text{water}} = (100.0)(4.18)(2.6) =
+        1087\)&nbsp;J, gained. So the metal lost 1087&nbsp;J:
+        \(-1087 = (50.0)(c)(24.6 - 100.0) = (50.0)(c)(-75.4)\),
+        giving \(c = \mathbf{0.288}~\mathrm{J/g/{}^\circ C}\).
+        Much smaller than water's — typical of a
+        metal.</div></div>
+
+<li>Why does the water's temperature change so little while the metal's
+        changes by more than 75&thinsp;&deg;C?
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:4" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+In a calorimetry problem, whose mass and whose specific heat go into
+\(q = mc\Delta T\), and why?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The water's — the surroundings'. The
+calorimeter measures the temperature change of the water, and that is the
+only thing whose heat we can compute directly. The reaction's enthalpy is
+then inferred as the negative of that value, divided by
+moles.</div></div>
+
+</div>
+
+<h2 class="block">Energy of Phase Changes <span class="sub">CED 6.5 • Zumdahl §10.8</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Calculate the energy of a phase change.
+
+<li>Read a heating curve and choose the right equation for each region.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §10.8 • PDF pp. 523–530</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(q = mc\Delta T\) applies when what is changing?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">temperature</span></span>
+
+<li>\(\Delta H_{\text{fus}}\) for water:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="6.02" data-sig="3" data-unit="kJ/mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">6.02&thinsp;kJ/mol</span></span>
+
+<li>\(\Delta H_{\text{vap}}\) for water:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="40.7" data-sig="3" data-unit="kJ/mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">40.7&thinsp;kJ/mol</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="12" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Temperature does not change during a phase change <span class="sub">25 min</span></h4>
+
+<h3>Two different equations <span class="badge">CED 6.5</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">
+<div class="fbox">
+<strong>Temperature changing, one phase:</strong> \(q = mc\Delta T\) <br>
+<strong>Phase changing, temperature constant:</strong>
+\(q = n\Delta H_{\text{fus}}\) or \(n\Delta H_{\text{vap}}\)</div>
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>You cannot use \(q = mc\Delta T\) during a phase change</strong>, because
+\(\Delta T\) is <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="14">zero</span></span> — it would give \(q = 0\), which is
+plainly wrong for melting a block of ice.
+
+<p>During melting or boiling, the added energy goes into overcoming
+<strong>intermolecular forces</strong>, not into speeding the particles up. That is
+why the temperature holds steady on a heating curve, and it is the
+explanation the exam wants.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 3: melting and boiling</div>
+
+<strong>Melt 36.0&thinsp;g of ice at 0&thinsp;&deg;C.</strong>
+\(n = 36.0/18.02 = 2.00\,\mathrm{mol}\);
+\(q = (2.00)(6.02) = \mathbf{12.0}~\text{kJ}\).
+
+<strong>Vaporize 18.0&thinsp;g of water at 100&thinsp;&deg;C.</strong>
+\(n = 1.00\,\mathrm{mol}\); \(q = (1.00)(40.7) = \mathbf{40.7}~\text{kJ}\).
+
+<p>Vaporizing one mole costs nearly <strong>seven times</strong> as much as melting
+one mole — because melting only loosens the lattice, while boiling
+separates the molecules entirely.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="14" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Reading a heating curve <span class="sub">20 min</span></h4>
+
+<h3>Five regions, five calculations <span class="badge">CED 6.5</span></h3>
+<span class="badge">SP 4</span>
+
+<div class="center">
+
+<figure><img src="fig-u06-notes-1.png" alt="figure"></figure>
+
+</div>
+
+<p>The <strong>sloped</strong> regions use <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">\(q = mc\Delta T\)</span></span>; the
+<strong>flat</strong> regions use <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">\(q = n\Delta H\)</span></span>.</p>
+
+<p>The boiling plateau is always much <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="16">longer</span></span> than the
+melting plateau, for the same reason vaporization costs more energy.</p>
+
+<div class="box we"><div class="box-title">Worked example 4: ice to steam, all five regions</div>
+
+<p>Take 25.0&thinsp;g of ice from -10.0&thinsp;&deg;C to steam at
+110.0&thinsp;&deg;C. (\(c_{\text{ice}} = 2.09\),
+\(c_{\text{water}} = 4.18\), \(c_{\text{steam}} = 2.03\)
+J/g/&deg;C; \(n = 25.0/18.02 = 1.39\,\mathrm{mol}\))</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Region</strong></th><th><strong>Equation</strong></th><th><strong>\(q\) (kJ)</strong></th></tr>
+<tr><td>warm ice \(-10 \to 0\)</td><td>\(mc\Delta T\)</td><td>0.52</td></tr>
+<tr><td>melt at 0</td><td>thinsp;</td><td>deg;C</td><td>\(n\Delta H_{\text{fus}}\)</td><td>8.35</td></tr>
+<tr><td>warm water \(0 \to 100\)</td><td>\(mc\Delta T\)</td><td>10.45</td></tr>
+<tr><td>boil at 100</td><td>thinsp;</td><td>deg;C</td><td>\(n\Delta H_{\text{vap}}\)</td><td><strong>56.47</strong></td></tr>
+<tr><td>warm steam \(100 \to 110\)</td><td>\(mc\Delta T\)</td><td>0.51</td></tr>
+<tr><td><strong>Total</strong></td><td></td><td><strong>76.30</strong></td></tr>
+</table>
+
+</div>
+
+<p>Boiling alone is <strong>74%</strong> of the total. If a heating-curve question
+asks which step dominates, that is nearly always the answer.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="16" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Phase-change reasoning <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Calculate the energy to melt 90.0&thinsp;g of ice at
+        0&thinsp;&deg;C. <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u06-notes:5" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(n = 90.0/18.02 = 4.99\,\mathrm{mol}\);
+        \(q = (4.99)(6.02) = \mathbf{30.1}~\text{kJ}\)</div></div>
+
+<li>Explain, in terms of intermolecular forces, why the temperature
+        stays constant while ice melts even though energy is being added.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:6" data-math="1"></textarea>
+
+<li>Why is a steam burn worse than a burn from the same mass of water
+        at 100&thinsp;&deg;C? <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:7" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Which region of a heating curve requires the most energy for water, and
+why?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Boiling. Vaporization must separate the molecules
+completely against their hydrogen bonding, whereas melting only has to
+loosen the lattice — \(40.7\,\mathrm{kJ/mol}\) against
+\(6.02\,\mathrm{kJ/mol}\), nearly seven times
+larger.</div></div>
+
+</div>
+
+<h2 class="block">Enthalpy of Reaction and Hess's Law <span class="sub">CED 6.6, 6.9 • Zumdahl §6.2–6.3</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Scale \(\Delta H\) with the amount of substance reacting.
+
+<li>Combine reactions using Hess's law.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §6.2–6.3 • PDF pp. 290–301</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>During a phase change, \(\Delta T\) is:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">zero</span></span>
+
+<li>\(\Delta H_{\text{vap}}\) is larger than
+        \(\Delta H_{\text{fus}}\) because:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:7.5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">boiling separates molecules entirely</span></span>
+
+<li>Exothermic \(\Delta H\) is: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">negative</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="17" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • \(\Delta H\) is an extensive quantity <span class="sub">25 min</span></h4>
+
+<h3>Enthalpy scales with amount <span class="badge">CED 6.6</span></h3>
+<span class="badge">SP 5</span>
+
+<p>A thermochemical equation carries its \(\Delta H\) for the amounts written:
+\[ \ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l)} \qquad
+   \Delta H = -890.5~\text{kJ} \]
+means 890.5&thinsp;kJ released per <em>one mole</em> of \(\ce{CH4}\).</p>
+
+<ul>
+
+<li>Double the coefficients \(\Rightarrow\) \(\Delta H\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="19">doubles</span></span>.
+
+<li>Reverse the reaction \(\Rightarrow\) \(\Delta H\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="19">changes sign</span></span>.
+
+<li>Half a mole of \(\ce{CH4}\) releases
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="445.3" data-sig="4" data-unit="kJ"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="19">445.3&thinsp;kJ</span></span>.
+</ul>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="19" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Hess's law <span class="sub">20 min</span></h4>
+
+<h3>Enthalpy is a state function <span class="badge">CED 6.9</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">
+<div class="fbox">
+\(\Delta H\) depends only on the initial and final states, <br>
+never on the route taken. <br>
+So reactions can be added, and their \(\Delta H\) values add with them.</div>
+</div>
+
+<p>Two rules when manipulating:</p>
+
+<ol>
+
+<li>Reverse a reaction \(\Rightarrow\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">flip the sign of \(\Delta H\)</span></span>.
+
+<li>Multiply a reaction by \(n\) \(\Rightarrow\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">multiply \(\Delta H\) by \(n\)</span></span>.
+</ol>
+
+<div class="box we"><div class="box-title">Worked example 5: finding an unmeasurable \(\Delta H\)</div>
+
+<p>Burning carbon straight to \(\ce{CO}\) cannot be done cleanly — some
+\(\ce{CO2}\) always forms. But these two <em>can</em> be measured:</p>
+
+\begin{align*}
+  (1)&\quad \ce{C(gr) + O2(g) -> CO2(g)}
+     &\Delta H &= -393.5~\text{kJ} \\
+  (2)&\quad \ce{CO(g) + \tfrac{1}{2}O2(g) -> CO2(g)}
+     &\Delta H &= -283.0~\text{kJ}
+\end{align*}
+
+<strong>Target:</strong> \(\ce{C(gr) + \tfrac{1}{2}O2(g) -> CO(g)}\).
+
+<p>Take (1) as written, and <em>reverse</em> (2) so \(\ce{CO}\) ends up as a
+product — flipping its sign:
+\begin{align*}
+  \ce{C(gr) + O2 &-> CO2} &\Delta H &= -393.5 \\
+  \ce{CO2 &-> CO + \tfrac{1}{2}O2} &\Delta H &= +283.0 \\
+  \hline
+  \ce{C(gr) + \tfrac{1}{2}O2 &-> CO} &\Delta H &= \mathbf{-110.5}~\text{kJ}
+\end{align*}</p>
+
+\(\ce{CO2}\) cancels, and half the oxygen cancels. The answer matches the
+tabulated \(\Delta H_f^\circ\) of \(\ce{CO}\) exactly — a good check.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="21" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Scaling and combining <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{2CO(g) + O2(g) -> 2CO2(g)}\),
+        \(\Delta H = -566\)&nbsp;kJ. How much energy is released by
+        1.00&thinsp;mol of \(\ce{CO}\)? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="283.0" data-sig="3" data-unit="kJ"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">283&thinsp;kJ</span></span>
+
+<li>Give \(\Delta H\) for \(\ce{2CO2(g) -> 2CO(g) + O2(g)}\).
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="566.0" data-sig="3" data-unit="kJ"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">\(+566\) kJ</span></span>
+
+<li>A student combining reactions forgets to flip the sign when
+        reversing one. If the correct answer is \(-110.5\)&nbsp;kJ, what do they
+        report, and what is the size of the error?
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:8" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why does Hess's law work — what property of enthalpy makes it valid?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Enthalpy is a state function: its value depends
+only on the initial and final states of the system, not on the path taken
+between them. So any set of steps beginning and ending at the same places
+must sum to the same \(\Delta H\).</div></div>
+
+</div>
+
+<h2 class="block">Bond and Formation Enthalpies <span class="sub">CED 6.7, 6.8 • Zumdahl §8.8, §6.4</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Estimate \(\Delta H\) from average bond enthalpies.
+
+<li>Calculate \(\Delta H^\circ\) from enthalpies of formation.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §8.8 • PDF pp. 412–415</p> <p class="reading"><strong>Read:</strong> Zumdahl §6.4 • PDF pp. 301–308</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Reversing a reaction does what to \(\Delta H\)?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">flips the sign</span></span>
+
+<li>Breaking bonds is endothermic or exothermic?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">endothermic</span></span>
+
+<li>\(\Delta H_f^\circ\) of \(\ce{O2(g)}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">0</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="22" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Two routes with opposite conventions <span class="sub">25 min</span></h4>
+
+<h3>Bond enthalpies <span class="badge">CED 6.7</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Breaking a bond always <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="24">requires</span></span> energy; forming one
+always <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="24">releases</span></span> it. So:</p>
+
+\[ \boxed{\;\Delta H = \sum D(\text{bonds broken})
+   - \sum D(\text{bonds formed})\;} \]
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Broken minus formed</strong> — the reverse of every other convention in
+this unit, where it is products minus reactants. Bonds broken are on the
+reactant side, so the order looks inverted, and students who have just
+finished Hess's law reliably flip it.
+
+<p>A sanity check that costs nothing: if more energy is released forming bonds
+than was spent breaking them, the reaction is exothermic and your answer
+must come out <em>negative</em>.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 6: hydrogen and chlorine</div>
+
+\(\ce{H2(g) + Cl2(g) -> 2HCl(g)}\), using
+\(D(\ce{H-H}) = 432\), \(D(\ce{Cl-Cl}) = 239\), \(D(\ce{H-Cl}) = 427\)
+kJ/mol.
+
+<strong>Broken:</strong> \(432 + 239 = 671\)&nbsp;kJ. <br>
+<strong>Formed:</strong> \(2(427) = 854\)&nbsp;kJ.
+\[ \Delta H = 671 - 854 = \mathbf{-183}~\text{kJ} \]
+Exothermic, as the negative sign should confirm.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="24" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h3>Enthalpies of formation <span class="badge">CED 6.8</span></h3>
+
+\(\Delta H_f^\circ\) is the enthalpy change forming <strong>one mole</strong> of a
+compound from its elements in their standard states. By definition, an
+element in its standard state has \(\Delta H_f^\circ =\)
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="25">0</span></span>.
+
+\[ \Delta H^\circ_{\text{rxn}} = \sum n\Delta H_f^\circ(\text{products})
+   - \sum n\Delta H_f^\circ(\text{reactants}) \]
+
+<div class="box we"><div class="box-title">Worked example 7: the same reaction, two routes</div>
+
+\(\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\)
+
+<strong>From \(\Delta H_f^\circ\)</strong> (\(\ce{CH4}\) \(-75\), \(\ce{CO2}\) \(-393.5\),
+\(\ce{H2O(g)}\) \(-242\), \(\ce{O2}\) \(0\)):
+\[ \Delta H^\circ = [-393.5 + 2(-242)] - [-75 + 0] =
+   -877.5 + 75 = \mathbf{-802.5}~\text{kJ} \]
+
+<strong>From bond enthalpies:</strong> broken \(4(413) + 2(495) = 2642\);
+formed \(2(799) + 4(467) = 3466\); \(\Delta H = \mathbf{-824}\)&nbsp;kJ.
+
+<strong>They disagree by about 22 kJ — and that is expected.</strong> Bond
+enthalpies are <em>averages</em> over many molecules and ignore the specific
+molecular environment. Formation enthalpies are measured for the actual
+substances. When a question gives you both, use \(\Delta H_f^\circ\); use
+bond enthalpies when that is all you have, and call the result an estimate.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="25" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Both routes <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Calculate \(\Delta H^\circ\) for \(\ce{N2 + 3H2 -> 2NH3}\) from
+        \(\Delta H_f^\circ(\ce{NH3}) = -46\)&nbsp;kJ/mol. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u06-notes:9" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(2(-46) - 0 =
+        \mathbf{-92}~\text{kJ}\)</div></div>
+
+<li>Now estimate it from bond enthalpies
+        (\(\ce{N#N}\) 941, \(\ce{H-H}\) 432, \(\ce{N-H}\) 391).
+        <textarea class="scratch" style="height:2.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u06-notes:10" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Broken \(941 + 3(432) = 2237\);
+        formed \(6(391) = 2346\);
+        \(\Delta H = \mathbf{-109}~\text{kJ}\) — the same sign and rough
+        size as \(-92\), but not equal</div></div>
+
+<li>Account for the difference between your two answers.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u06-notes:11" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+State the two enthalpy expressions used in this block and say which one
+runs backwards relative to the other.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Formation: products minus reactants. Bond
+enthalpies: bonds <em>broken</em> minus bonds <em>formed</em> — which is the
+reactant side minus the product side, the reverse order. The reason is that
+breaking bonds costs energy, so those terms must enter
+positively.</div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

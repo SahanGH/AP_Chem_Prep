@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 7 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css?v=86b60da1">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=86b60da1"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Unit 7 • Equilibrium</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">CED 7.1–7.12 • Zumdahl Ch 13, §16.1 • 8 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">The comparison this whole unit runs on</div>
+
+<p>One question answers almost everything in this unit:
+<strong>how does \(Q\) compare with \(K\)?</strong></p>
+
+<div class="center">
+
+<table>
+<tr><th>\(Q < K\)</th><th>too few products</th><th>shifts <strong>right</strong></th></tr>
+<tr><th>\(Q = K\)</th><th>at equilibrium</th><th>no net change</th></tr>
+<tr><th>\(Q > K\)</th><th>too many products</th><th>shifts <strong>left</strong></th></tr>
+</table>
+
+</div>
+
+<p>That single comparison tells you which way a fresh mixture will move,
+whether a system has arrived, what a disturbance will do, and — in the
+last block — whether a precipitate forms. Le Ch\^atelier's principle is a
+shortcut for it, not a separate idea.</p>
+
+</div>
+
+<h2 class="block">Dynamic Equilibrium <span class="sub">CED 7.1–7.2 • Zumdahl §13.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Describe equilibrium as equal forward and reverse rates.
+
+<li>Interpret concentration-time graphs approaching equilibrium.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.1 • PDF pp. 651–654</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>A reversible reaction is written with what symbol?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">\(\rightleftharpoons\)</span></span>
+
+<li>Rate depends on: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">concentration</span></span>
+
+<li>As reactant is consumed, the forward rate:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">decreases</span></span>
+
+<li>As product builds up, the reverse rate:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="1">increases</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="1" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • What “equilibrium” actually means <span class="sub">25 min</span></h4>
+
+<h3>Equal rates, not equal amounts <span class="badge">CED 7.1</span></h3>
+<span class="badge">SP 6</span>
+
+<p>Start with pure reactants. The forward rate is at its
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">maximum</span></span> and the reverse rate is
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">zero</span></span>. As the reaction proceeds:</p>
+
+<ul>
+
+<li>Reactant concentration falls, so the forward rate
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">falls</span></span>.
+
+<li>Product concentration rises, so the reverse rate
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">rises</span></span>.
+
+<li>When the two rates become <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">equal</span></span>, concentrations
+        stop changing. That is <strong class="term">dynamic equilibrium</strong>.
+</ul>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Equilibrium does not mean equal concentrations.</strong> It means equal
+<em>rates</em>. The concentrations at equilibrium are almost never equal —
+their ratio is fixed by \(K\), which can be \(10^{-10}\) or \(10^{10}\).
+
+<p>It also does not mean the reaction has stopped. Both directions continue at
+the same rate, which is why the word is <em>dynamic</em>. A question asking
+“what is happening at equilibrium?” wants that sentence.</p>
+
+</div>
+
+<div class="center">
+
+<figure><img src="fig-u07-notes-1.png" alt="figure"></figure>
+
+</div>
+
+<p>Both curves <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">level off</span></span> — and they level off at
+<em>different</em> heights, which is the graphical version of the trap above.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="3" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Reading the graph <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>At the moment equilibrium is reached, compare the forward and
+        reverse rates, and compare the concentrations.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:1" data-math="1"></textarea>
+
+<li>A student says “the reaction stopped.” Correct them.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:2" data-math="1"></textarea>
+
+<li>How would the graph differ for a reaction with a very large \(K\)?
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:3" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Give two things that are equal at equilibrium and one thing that generally
+is not.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Equal: the forward and reverse rates, and (by
+consequence) the rates of change of every concentration, which are all
+zero. Not equal: the concentrations themselves, whose ratio is set by
+\(K\).</div></div>
+
+</div>
+
+<h2 class="block">\(Q\), \(K\), and Calculating Them <span class="sub">CED 7.3–7.4 • Zumdahl §13.2–13.4</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Write \(K\) and \(Q\) expressions correctly.
+
+<li>Calculate \(K\) from equilibrium data.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.2–13.4 • PDF pp. 654–662</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Equilibrium means equal: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">rates</span></span>
+
+<li>Coefficients become what in a \(K\) expression?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">exponents</span></span>
+
+<li>Which species are omitted from \(K\)?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">pure solids and liquids</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="4" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Writing the expression <span class="sub">25 min</span></h4>
+
+<h3>\(K\) and \(Q\) have the same form <span class="badge">CED 7.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>For \(\ce{aA + bB <=> cC + dD}\):
+\[ K = \frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b} \]</p>
+
+\(Q\) has the <em>identical</em> form but uses concentrations at
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="6">any moment</span></span>, not necessarily equilibrium ones.
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Omit pure solids and pure liquids.</strong> Their “concentration” does not
+vary — a bigger lump of solid is not more concentrated — so they carry
+no term. Aqueous species and gases always appear.
+
+<p>Watch for water: \(\ce{H2O(l)}\) as a solvent is omitted, but \(\ce{H2O(g)}\) in a
+gas-phase reaction is <em>included</em>. The state symbol is doing real work
+and is not decoration.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 1: expressions</div>
+
+\begin{align*}
+  \ce{N2(g) + 3H2(g) &<=> 2NH3(g)}
+    &K &= \frac{[\ce{NH3}]^2}{[\ce{N2}][\ce{H2}]^3} \\[0.3em]
+  \ce{CaCO3(s) &<=> CaO(s) + CO2(g)}
+    &K &= [\ce{CO2}] \\[0.3em]
+  \ce{2H2O(l) &<=> 2H2(g) + O2(g)}
+    &K &= [\ce{H2}]^2[\ce{O2}]
+\end{align*}
+The second has only one term — both solids drop out. The third omits
+liquid water but would keep it if it were steam.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="6" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Calculating \(K\) <span class="sub">20 min</span></h4>
+
+<h3>From equilibrium concentrations <span class="badge">CED 7.4</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="box we"><div class="box-title">Worked example 2: substituting into \(K\)</div>
+
+<p>At equilibrium a vessel contains \([\ce{N2}] = 0.50\),
+\([\ce{H2}] = 0.30\), \([\ce{NH3}] = 0.20\)&nbsp;M for
+\(\ce{N2 + 3H2 <=> 2NH3}\).</p>
+
+\[ K = \frac{(0.20)^2}{(0.50)(0.30)^3}
+     = \frac{0.040}{(0.50)(0.027)} = \frac{0.040}{0.0135}
+     = \mathbf{3.0} \]
+
+<p>The cube on hydrogen is where marks are lost — \((0.30)^3 = 0.027\), not
+\(0.90\).</p>
+
+</div>
+
+<h3>\(K_p\) and \(K_c\) <span class="badge">CED 7.4</span></h3>
+
+<p>For gases, \(K\) may be written with partial pressures:
+\[ K_p = K_c(RT)^{\Delta n} \qquad
+   \Delta n = \text{mol gas products} - \text{mol gas reactants} \]</p>
+
+<p>When \(\Delta n = 0\), \(K_p\) and \(K_c\) are <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="9">equal</span></span>.</p>
+
+<div class="box we"><div class="box-title">Worked example 3: converting</div>
+
+<p>For \(\ce{N2 + 3H2 <=> 2NH3}\) at 500&thinsp;K with
+\(K_c = 0.50\): \(\Delta n = 2 - 4 = -2\).
+\[ K_p = (0.50)[(0.08206)(500)]^{-2} = \frac{0.50}{(41.03)^2}
+   = \mathbf{3.0\times10^{-4}} \]</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="9" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Expressions and values <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Write \(K\) for \(\ce{2SO2(g) + O2(g) <=> 2SO3(g)}\).
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">\([\ce{SO3}]^2/([\ce{SO2}]^2[\ce{O2}])\)</span></span>
+
+<li>Write \(K\) for \(\ce{Fe3O4(s) + 4H2(g) <=> 3Fe(s) + 4H2O(g)}\).
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">\([\ce{H2O}]^4/[\ce{H2}]^4\)</span></span>
+
+<li>At equilibrium \([\ce{H2}] = 0.20\), \([\ce{I2}] = 0.40\),
+        \([\ce{HI}] = 0.60\)&nbsp;M. Find \(K\) for
+        \(\ce{H2 + I2 <=> 2HI}\). <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u07-notes:4" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(K = (0.60)^2/[(0.20)(0.40)] =
+        0.36/0.080 = \mathbf{4.5}\)</div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why do pure solids and liquids not appear in \(K\), and what determines
+whether water appears?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Their concentration is a fixed property of the
+substance and does not change as the reaction proceeds, so including them
+would add a constant. Water appears when it is a gas or a dissolved
+reactant, and is omitted when it is the pure liquid solvent — the state
+symbol decides.</div></div>
+
+</div>
+
+<h2 class="block">Magnitude and Properties of \(K\) <span class="sub">CED 7.5–7.6 • Zumdahl §13.3–13.5</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Interpret the size of \(K\).
+
+<li>Adjust \(K\) when a reaction is manipulated.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.3–13.5 • PDF pp. 658–671</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(K\) for \(\ce{CaCO3(s) <=> CaO(s) + CO2(g)}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">\([\ce{CO2}]\)</span></span>
+
+<li>\(K_p = K_c(RT)^{?}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">\(\Delta n\)</span></span>
+
+<li>Only what change alters the value of \(K\)?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">temperature</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="10" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • What the number tells you <span class="sub">25 min</span></h4>
+
+<h3>Reading the magnitude <span class="badge">CED 7.5</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">
+
+<table>
+<tr><th>\(K \gg 1\) (say \(> 10^2\))</th><th><strong>products</strong> strongly favored</th></tr>
+<tr><th>\(K \approx 1\)</th><th>appreciable amounts of both</th></tr>
+<tr><th>\(K \ll 1\) (say \(< 10^{-2}\))</th><th><strong>reactants</strong> strongly favored</th></tr>
+</table>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+\(K\) says <em>how far</em>, never <em>how fast</em>. A reaction with
+\(K = 10^{40}\) can be immeasurably slow — that is the kinetic control you
+met in Unit 5. The two questions are independent, and the exam likes pairing
+them to see whether you have separated them.
+
+</div>
+
+<h4 class="segment">INSTRUCTION B • Manipulating \(K\) <span class="sub">20 min</span></h4>
+
+<h3>Four rules <span class="badge">CED 7.6</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Change to the equation</strong></th><th><strong>New \(K\)</strong></th></tr>
+<tr><td>reverse it</td><td>\(1/K\)</td></tr>
+<tr><td>multiply the coefficients by \(n\)</td><td>\(K^n\)</td></tr>
+<tr><td>divide the coefficients by \(n\)</td><td>\(K^{1/n}\)</td></tr>
+<tr><td>add two reactions</td><td>\(K_1 \times K_2\)</td></tr>
+</table>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 4: one reaction, four values</div>
+
+<p>If \(K = 4.0\) for \(\ce{A + B <=> C}\), then:</p>
+
+<ul>
+
+<li>\(\ce{C <=> A + B}\) has \(K = 1/4.0 = \mathbf{0.25}\).
+
+<li>\(\ce{2A + 2B <=> 2C}\) has \(K = (4.0)^2 = \mathbf{16}\).
+
+<li>\(\ce{\tfrac{1}{2}A + \tfrac{1}{2}B <=> \tfrac{1}{2}C}\) has
+        \(K = \sqrt{4.0} = \mathbf{2.0}\).
+
+<li>Added to a second reaction with \(K = 3.0\), the overall \(K\) is
+        \((4.0)(3.0) = \mathbf{12}\).
+</ul>
+
+<p>Notice these are <em>multiplicative</em> operations, unlike \(\Delta H\) in
+Unit 6, which was additive. Equilibrium constants multiply where enthalpies
+add.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Using the rules <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>\(K = 2.5\times10^{-3}\) for a reaction. Give \(K\) for the reverse.
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="num" data-val="400.0" data-sig="2" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="15">\(4.0\times10^{2}\)</span></span>
+
+<li>Classify each as products-favored, reactants-favored, or mixed:
+        \(K = 1\times10^{-10}\), \(K = 1.5\), \(K = 3\times10^{6}\).
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:5" data-math="1"></textarea>
+
+<li>A reaction has \(K = 10^{35}\) but no observable change occurs when
+        the reactants are mixed. Is the value wrong? Explain.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:6" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+State what happens to \(K\) when a reaction is reversed and when its
+coefficients are doubled, and name the one change that alters \(K\) for a
+given reaction.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Reversing gives \(1/K\); doubling the coefficients
+gives \(K^2\). Only a change in <em>temperature</em> alters \(K\) for a given
+reaction as written — concentration, pressure and catalysts do
+not.</div></div>
+
+</div>
+
+<h2 class="block">ICE Tables <span class="sub">CED 7.7 • Zumdahl §13.6</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Set up and solve an ICE table.
+
+<li>Apply and test the small-\(x\) approximation.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.6 • PDF pp. 671–676</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Reversing a reaction gives \(K =\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="num" data-val="1.0" data-sig="1" data-unit="/K"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="15">\(1/K\)</span></span>
+
+<li>\(K \ll 1\) favors: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="15">reactants</span></span>
+
+<li>BCA tables from Unit 4 tracked what?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="15">moles, to completion</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="15" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The table you already know <span class="sub">25 min</span></h4>
+
+<h3>ICE is BCA with an unknown <span class="badge">CED 7.7</span></h3>
+<span class="badge">SP 5</span>
+
+<strong class="term">ICE</strong> stands for <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">Initial, Change, Equilibrium</span></span>. It
+is the Before/Change/After table from stoichiometry, with one difference:
+the reaction stops partway, so the change is an unknown
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">\(x\)</span></span>.
+
+<p>The change row is still driven by the <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">coefficients</span></span> —
+if A has coefficient 1 and C has coefficient 2, then A changes by \(-x\) and
+C by \(+2x\).</p>
+
+<div class="box we"><div class="box-title">Worked example 5: the small-\(x\) approximation</div>
+
+\(\ce{A <=> B + C}\) with \(K = 1.0\times10^{-5}\) and
+\([\ce{A}]_0 = 0.100\,\mathrm{M}\).
+
+<div class="center">
+
+<table>
+<tr><th></th><th>\(\ce{A}\)</th><th>\(\ce{B}\)</th><th>\(\ce{C}\)</th></tr>
+<tr><td>Initial</td><td>0.100</td><td>0</td><td>0</td></tr>
+<tr><td>Change</td><td>\(-x\)</td><td>\(+x\)</td><td>\(+x\)</td></tr>
+<tr><td>Equilibrium</td><td>\(0.100 - x\)</td><td>\(x\)</td><td>\(x\)</td></tr>
+</table>
+
+</div>
+
+\[ K = \frac{x^2}{0.100 - x} = 1.0\times10^{-5} \]
+
+<p>Because \(K\) is very small, very little A reacts, so
+\(0.100 - x \approx 0.100\):
+\[ x^2 \approx (1.0\times10^{-5})(0.100) = 1.0\times10^{-6}
+   \qquad x = \mathbf{1.0\times10^{-3}} \]</p>
+
+<strong>Test it:</strong> \(x/[\ce{A}]_0 = 1.0\%\), comfortably under 5%, so the
+approximation is justified. ✓
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The 5% check is part of the answer, not a formality.</strong> An FRQ that
+asks you to justify an approximation wants the <em>number</em> and the
+comparison, not the assertion. “\(x\) is small compared with 0.100” with no
+percentage earns nothing.
+
+<p>Rule of thumb: the approximation is safe when \(K\) is small relative to the
+initial concentration — roughly \([\ce{A}]_0/K > 400\).</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="17" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Running the table <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>\(\ce{A <=> 2B}\), \(K = 4.0\times10^{-6}\),
+        \([\ce{A}]_0 = 0.50\,\mathrm{M}\). Find \([\ce{B}]\) at equilibrium.
+        <textarea class="scratch" style="height:2.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u07-notes:7" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(K = (2x)^2/(0.50-x) \approx
+        4x^2/0.50\); \(4x^2 = 2.0\times10^{-6}\);
+        \(x = 7.1\times10^{-4}\);
+        \([\ce{B}] = 2x = \mathbf{1.4\times10^{-3}}\)&nbsp;M. Check:
+        \(x/0.50 = 0.14\%\) ✓</div></div>
+
+<li>Why does a small \(K\) make the approximation safe, in one sentence?
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:8" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+State the two steps that must appear in a complete small-\(x\) solution.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Solve using the approximation, then compute
+\(x/[\ce{A}]_0\) as a percentage and compare it with 5%. Omitting the second
+step leaves the answer unjustified.</div></div>
+
+</div>
+
+<h2 class="block">When the Approximation Fails <span class="sub">CED 7.7 • Zumdahl §13.6</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Recognize when the small-\(x\) approximation is invalid.
+
+<li>Solve the resulting quadratic or perfect square.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.6 • PDF pp. 671–676</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>The approximation threshold: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="5.0" data-sig="1" data-unit="%"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">5%</span></span>
+
+<li>ICE stands for: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">Initial, Change, Equilibrium</span></span>
+
+<li>Large \(K\) means the approximation is likely to be:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="18">invalid</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="18" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The check that saves you <span class="sub">25 min</span></h4>
+
+<h3>A failed approximation, quantified <span class="badge">CED 7.7</span></h3>
+<span class="badge">SP 5</span>
+
+<div class="box we"><div class="box-title">Worked example 6: the same setup, a bigger \(K\)</div>
+
+\(\ce{A <=> B + C}\) with \([\ce{A}]_0 = 0.100\) but now \(K = 0.20\).
+
+<strong>Try the approximation:</strong>
+\(x^2 \approx (0.20)(0.100)\) gives \(x = 0.141\).
+
+<strong>Test it:</strong> \(x/[\ce{A}]_0 = 141\%\) — the “small” \(x\) is larger
+than the entire initial concentration. <strong>Invalid.</strong>
+
+<strong>Solve properly:</strong> \(x^2 = 0.20(0.100 - x)\), so
+\(x^2 + 0.20x - 0.020 = 0\) and
+\[ x = \frac{-0.20 + \sqrt{0.040 + 0.080}}{2} = \mathbf{0.073} \]
+
+<p>The approximation was wrong by about <strong>93%</strong>. This is why the check
+is not optional.</p>
+
+</div>
+
+<h4 class="segment">INSTRUCTION B • Perfect squares <span class="sub">20 min</span></h4>
+
+<h3>When both sides are squares, take the root <span class="badge">CED 7.7</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Some ICE expressions avoid the quadratic formula entirely.</p>
+
+<div class="box we"><div class="box-title">Worked example 7: hydrogen iodide</div>
+
+\(\ce{H2 + I2 <=> 2HI}\), \(K = 50.0\), both reactants starting at
+1.00&thinsp;M.
+
+<div class="center">
+
+<table>
+<tr><th></th><th>\(\ce{H2}\)</th><th>\(\ce{I2}\)</th><th>\(\ce{HI}\)</th></tr>
+<tr><td>Initial</td><td>1.00</td><td>1.00</td><td>0</td></tr>
+<tr><td>Change</td><td>\(-x\)</td><td>\(-x\)</td><td>\(+2x\)</td></tr>
+<tr><td>Equilibrium</td><td>\(1.00-x\)</td><td>\(1.00-x\)</td><td>\(2x\)</td></tr>
+</table>
+
+</div>
+
+\[ K = \frac{(2x)^2}{(1.00-x)(1.00-x)}
+     = \left(\frac{2x}{1.00-x}\right)^2 = 50.0 \]
+
+<p>Both sides are perfect squares, so take the square root:
+\[ \frac{2x}{1.00-x} = \sqrt{50.0} = 7.07 \]
+\[ 2x = 7.07 - 7.07x \quad\Longrightarrow\quad 9.07x = 7.07
+   \quad\Longrightarrow\quad x = \mathbf{0.780} \]</p>
+
+<p>So \([\ce{H2}] = [\ce{I2}] = \mathbf{0.220}\) and
+\([\ce{HI}] = \mathbf{1.56}\)&nbsp;M.</p>
+
+<strong>Check:</strong> \((1.56)^2/(0.220)^2 = 50.0\) ✓ — always worth
+30 seconds.
+
+</div>
+
+<h4 class="segment">APPLICATION • Choosing a method <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For each, say whether the small-\(x\) approximation is likely valid:
+        (i) \(K = 10^{-8}\), \([\ce{A}]_0 = 1.0\);
+        (ii) \(K = 2.0\), \([\ce{A}]_0 = 0.10\);
+        (iii) \(K = 10^{-6}\), \([\ce{A}]_0 = 10^{-5}\).
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:9" data-math="1"></textarea>
+
+<li>Solve \(\ce{A <=> 2B}\) with \(K = 0.50\) and
+        \([\ce{A}]_0 = 1.00\)&nbsp;M, using the quadratic.
+        <textarea class="scratch" style="height:3cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u07-notes:10" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(K = 4x^2/(1.00-x) = 0.50\), so
+        \(4x^2 + 0.50x - 0.50 = 0\).
+        \(x = [-0.50 + \sqrt{0.25 + 8.0}]/8 = (-0.50+2.872)/8 =
+        \mathbf{0.297}\);
+        \([\ce{B}] = 0.593\), \([\ce{A}] = 0.703\)&nbsp;M</div></div>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why is it the <em>ratio</em> \([\ce{A}]_0/K\), rather than \(K\) alone, that
+decides whether the approximation works?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The approximation requires \(x\) to be small
+compared with \([\ce{A}]_0\), and \(x\) scales with \(K\) while the thing it is
+compared against is \([\ce{A}]_0\). A small \(K\) with an even smaller starting
+concentration still gives a large percentage, so only the ratio
+settles it.</div></div>
+
+</div>
+
+<h2 class="block">Representations and Le Ch\^atelier <span class="sub">CED 7.8–7.9 • Zumdahl §13.1, §13.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Interpret particulate and graphical representations of equilibrium.
+
+<li>Predict the effect of a disturbance.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.1, §13.7 • PDF pp. 651–654, 676–683</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Failed approximation \(\Rightarrow\) use the:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">quadratic</span></span>
+
+<li>At equilibrium, \(Q\) equals: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">\(K\)</span></span>
+
+<li>Only what changes \(K\)? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="23">temperature</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="23" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Le Ch\^atelier's principle <span class="sub">25 min</span></h4>
+
+<h3>A system opposes the change imposed on it <span class="badge">CED 7.9</span></h3>
+<span class="badge">SP 6</span>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Disturbance</strong></th><th><strong>Shift</strong></th><th><strong>Does \(K\) change?</strong></th></tr>
+<tr><td>add reactant</td><td>right</td><td>no</td></tr>
+<tr><td>add product</td><td>left</td><td>no</td></tr>
+<tr><td>remove product</td><td>right</td><td>no</td></tr>
+<tr><td>compress (smaller \(V\))</td><td>toward fewer moles of gas</td><td>no</td></tr>
+<tr><td>expand (larger \(V\))</td><td>toward more moles of gas</td><td>no</td></tr>
+<tr><td>add inert gas at constant \(V\)</td><td><strong>no shift</strong></td><td>no</td></tr>
+<tr><td>add a catalyst</td><td><strong>no shift</strong></td><td>no</td></tr>
+<tr><td>raise \(T\), endothermic forward</td><td>right</td><td><strong>yes, increases</strong></td></tr>
+<tr><td>raise \(T\), exothermic forward</td><td>left</td><td><strong>yes, decreases</strong></td></tr>
+</table>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Only temperature changes the value of \(K\).</strong> Everything else moves
+the system <em>along</em> the same curve until \(Q\) returns to the unchanged
+\(K\). A response saying “adding more reactant increases \(K\)” is marked
+wrong every time.
+
+<p>Two more that recur: an <strong>inert gas</strong> added at constant volume changes
+the total pressure but not any partial pressure or concentration, so
+nothing shifts. And a <strong>catalyst</strong> speeds both directions equally —
+equilibrium arrives sooner, in the same place.</p>
+
+</div>
+
+<h3>Temperature as a reactant or product <span class="badge">CED 7.9</span></h3>
+
+<p>Treat energy as a term in the equation. For an exothermic reaction, write
+heat as a <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">product</span></span>; adding heat then pushes the
+equilibrium <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">left</span></span>, exactly as adding any other product
+would.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="26" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Particulate representations <span class="sub">20 min</span></h4>
+
+<h3>Reading a picture of an equilibrium <span class="badge">CED 7.8</span></h3>
+<span class="badge">SP 1</span>
+
+<p>When a question shows before-and-after particle diagrams:</p>
+
+<ul>
+
+<li>Count particles and check that atoms are
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="28">conserved</span></span>.
+
+<li>Compare the ratio of products to reactants against
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="28">\(K\)</span></span>.
+
+<li>Two diagrams showing <em>no change in counts</em> between successive
+        times indicate the system has reached
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="28">equilibrium</span></span>.
+</ul>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="28" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Predicting shifts <span class="sub">20 min</span></h4>
+
+<p>For \(\ce{N2(g) + 3H2(g) <=> 2NH3(g)}\), \(\Delta H = -92\)&nbsp;kJ:</p>
+
+<ol>
+
+<li>Add \(\ce{N2}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">shifts right</span></span>
+
+<li>Remove \(\ce{NH3}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">shifts right</span></span>
+
+<li>Compress the vessel: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">right — 4 mol gas to 2</span></span>
+
+<li>Add argon at constant volume:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">no shift</span></span>
+
+<li>Raise the temperature:
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:11" data-math="1"></textarea>
+
+<li>Add a catalyst: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">no shift; equilibrium sooner</span></span>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Name the only disturbance that changes the value of \(K\), and explain why
+the others do not.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Temperature. The others move concentrations or
+pressures, which changes \(Q\); the system then shifts until \(Q\) returns to
+the same \(K\). Temperature instead changes the constant itself, so the
+system settles at a genuinely different ratio.</div></div>
+
+</div>
+
+<h2 class="block">\(Q\) versus \(K\) Quantitatively <span class="sub">CED 7.10 • Zumdahl §13.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Calculate \(Q\) and compare it with \(K\) to predict direction.
+
+<li>Justify a Le Ch\^atelier prediction quantitatively.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §13.7 • PDF pp. 676–683</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Adding a product shifts the equilibrium:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">left</span></span>
+
+<li>An inert gas at constant volume causes:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">no shift</span></span>
+
+<li>Compressing shifts toward:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">fewer moles of gas</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="29" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The calculation behind the principle <span class="sub">25 min</span></h4>
+
+<h3>\(Q\) is the answer to “which way?” <span class="badge">CED 7.10</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Le Ch\^atelier tells you the direction; \(Q\) <em>proves</em> it. On an FRQ,
+the quantitative justification is usually worth the point that the
+qualitative one is not.</p>
+
+<div class="box we"><div class="box-title">Worked example 8: predicting with \(Q\)</div>
+
+<p>For \(\ce{H2 + I2 <=> 2HI}\), \(K = 4.5\). A vessel is charged with
+\([\ce{H2}] = 0.40\), \([\ce{I2}] = 0.30\), \([\ce{HI}] = 0.40\)&nbsp;M.</p>
+
+\[ Q = \frac{(0.40)^2}{(0.40)(0.30)} = \frac{0.16}{0.12} = 1.3 \]
+
+\(Q = 1.3 < K = 4.5\), so there are <em>too few products</em>: the reaction
+proceeds <strong>to the right</strong> until \(Q\) rises to 4.5.
+
+<p>Note that this required no Le Ch\^atelier reasoning at all — the
+comparison settles it directly, and it works even for a fresh mixture that
+was never at equilibrium.</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Le Ch\^atelier applies to <em>disturbing a system already at
+equilibrium</em>. \(Q\) versus \(K\) works for <strong>any</strong> mixture, equilibrium or
+not. When a question gives you arbitrary starting concentrations, \(Q\) is the
+tool — Le Ch\^atelier has nothing to say about a mixture that was never at
+equilibrium in the first place.</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Direction from data <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>\(K = 4.5\) for \(\ce{H2 + I2 <=> 2HI}\). For each mixture, calculate
+        \(Q\) and state the direction:
+        <ol>
+
+<li>\([\ce{H2}]=[\ce{I2}]=[\ce{HI}]=0.50\)
+                <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">\(Q = 1.0\); shifts right</span></span>
+
+<li>\([\ce{H2}]=0.10\), \([\ce{I2}]=0.10\), \([\ce{HI}]=0.30\)
+                <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">\(Q = 9.0\); shifts left</span></span>
+        </ol>
+
+<li>A system at equilibrium has extra product added. Explain, using
+        \(Q\), why it shifts left. <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:12" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+When is \(Q\) the right tool and Le Ch\^atelier's principle the wrong one?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>When the mixture was never at equilibrium — for
+instance an arbitrary set of starting concentrations. Le Ch\^atelier
+describes the response to disturbing an existing equilibrium; comparing \(Q\)
+with \(K\) works for any mixture at all.</div></div>
+
+</div>
+
+<h2 class="block">Solubility Equilibria <span class="sub">CED 7.11–7.12 • Zumdahl §16.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate \(K_{sp}\) to molar solubility.
+
+<li>Explain and calculate the common-ion effect.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §16.1 • PDF pp. 805–812</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(Q < K\) means the reaction shifts:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">right</span></span>
+
+<li>Pure solids appear in \(K\)? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">no</span></span>
+
+<li>Adding a product shifts equilibrium:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">left</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="32" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The same machinery, applied to a solid <span class="sub">25 min</span></h4>
+
+<h3>\(K_{sp}\) is just \(K\) <span class="badge">CED 7.11</span></h3>
+<span class="badge">SP 5</span>
+
+<p>A saturated solution is a system at equilibrium with undissolved solid:
+\[ \ce{CaF2(s) <=> Ca^2+(aq) + 2F^-(aq)} \qquad
+   K_{sp} = [\ce{Ca^2+}][\ce{F^-}]^2 \]</p>
+
+<p>The solid is omitted for the reason you already know — it is a
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="34">pure solid</span></span>.</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Type</strong></th><th><strong>\(K_{sp}\) in terms of \(s\)</strong></th><th><strong>Solubility</strong></th></tr>
+<tr><td>\(\ce{MX}\)</td><td>\(s^2\)</td><td>\(s = \sqrt{K_{sp}}\)</td></tr>
+<tr><td>\(\ce{MX2}\) or \(\ce{M2X}\)</td><td>\(4s^3\)</td><td>\(s = \sqrt[3]{K_{sp}/4}\)</td></tr>
+</table>
+
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>\(K_{sp}\) is a constant; solubility is a position.</strong> \(K_{sp}\) has one
+value at a given temperature; the solubility changes with whatever else is
+in the water.
+
+<p>And <strong>\(K_{sp}\) values may be compared directly only for salts
+producing the same number of ions.</strong> \(\ce{CaF2}\)
+(\(K_{sp} = 4.0\times10^{-11}\)) is far more soluble than \(\ce{BaCrO4}\)
+(\(8.5\times10^{-11}\)) despite the smaller constant, because \(s\) enters to
+different powers.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="34" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • The common-ion effect <span class="sub">20 min</span></h4>
+
+<h3>Le Ch\^atelier, one last time <span class="badge">CED 7.12</span></h3>
+<span class="badge">SP 6</span>
+
+<p>Dissolve a salt in a solution already containing one of its ions and you
+have added a <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="36">product</span></span>. The equilibrium shifts
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="36">left</span></span>, so <em>less</em> dissolves — while \(K_{sp}\)
+stays exactly the same.</p>
+
+<div class="box we"><div class="box-title">Worked example 9: silver chloride</div>
+
+\(K_{sp}(\ce{AgCl}) = 1.6\times10^{-10}\).
+
+<strong>In pure water:</strong> \(s = \sqrt{1.6\times10^{-10}} =
+\mathbf{1.3\times10^{-5}}\)&nbsp;M.
+
+<strong>In 0.10&thinsp;M \(\ce{NaCl}\):</strong> the chloride is essentially all
+from the \(\ce{NaCl}\), so
+\[ s = \frac{K_{sp}}{[\ce{Cl^-}]} = \frac{1.6\times10^{-10}}{0.10}
+   = \mathbf{1.6\times10^{-9}}~\text{M} \]
+
+<p>Suppressed by a factor of about <strong>7900</strong> — and \(K_{sp}\) never moved.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="36" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Solubility calculations <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Calculate the molar solubility of \(\ce{CaF2}\)
+        (\(K_{sp} = 4.0\times10^{-11}\)) in pure water.
+        <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u07-notes:13" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(4s^3 = 4.0\times10^{-11}\);
+        \(s^3 = 1.0\times10^{-11}\);
+        \(s = \mathbf{2.2\times10^{-4}}\)&nbsp;M</div></div>
+
+<li>Calculate it in 0.025&thinsp;M \(\ce{NaF}\).
+        <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u07-notes:14" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\([\ce{F-}] \approx 0.025\);
+        \(4.0\times10^{-11} = s(0.025)^2\);
+        \(s = \mathbf{6.4\times10^{-8}}\)&nbsp;M</div></div>
+
+<li>State what happened to \(K_{sp}\) between (a) and (b), and why.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u07-notes:15" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Explain the common-ion effect using \(Q\) rather than Le Ch\^atelier.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Adding the common ion raises the ion product \(Q\)
+above \(K_{sp}\). A system with \(Q > K\) shifts toward the reactant side —
+here, toward the undissolved solid — until \(Q\) falls back to \(K_{sp}\),
+which leaves less of the salt dissolved.</div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

@@ -1,0 +1,1326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 9 • Guided Notes</title>
+<link rel="stylesheet" href="../style.css?v=86b60da1">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=86b60da1"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Unit 9 • Thermodynamics and Electrochemistry</p>
+  <h1>Guided Notes</h1>
+  <p class="subtitle">CED 9.1–9.11 • Zumdahl Ch 17–18 • 9 blocks</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">One quantity, three languages</div>
+
+<p>Everything in this unit is a consequence of a single number, \(\Delta G^\circ\),
+and of the three equations that compute it or convert it:</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Equation</strong></th><th><strong>Answers the question</strong></th><th><strong>From</strong></th></tr>
+<tr><td>\(\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\)</td><td>is it favored, and at what \(T\)?</td><td>Unit 6 \(+\) 9.1–9.2</td></tr>
+<tr><td>\(\Delta G^\circ = -RT\ln K\)</td><td>how far does it go?</td><td>Unit 7</td></tr>
+<tr><td>\(\Delta G^\circ = -nFE^\circ_{\text{cell}}\)</td><td>what voltage does it produce?</td><td>Unit 9</td></tr>
+</table>
+
+</div>
+
+<p>Read across the middle column and you have the whole course: Unit 6 measured
+heat, Unit 7 measured extent, Unit 5 measured rate. \(\Delta G^\circ\) is what
+connects the first two — and topic 9.4 exists to insist that it says
+nothing at all about the third.</p>
+
+<p>Three signs travel together and are worth memorizing as one fact:
+\[ \Delta G^\circ < 0 \iff K > 1 \iff E^\circ_{\text{cell}} > 0 \]</p>
+
+</div>
+
+<div class="box trap"><div class="box-title">The word the CED retired</div>
+
+<p>The 2024 CED replaced “spontaneous” with
+<strong>thermodynamically favored</strong> throughout, because “spontaneous”
+misleads students into hearing “happens quickly, by itself.” A favored
+reaction may take geological time — diamond turning into graphite is
+favored and has not troubled anyone's jewellery.</p>
+
+<p>Zumdahl's Chapter 17 is still titled “Spontaneity, Entropy, and Free
+Energy.” Read the chapter, write the CED's word.</p>
+
+</div>
+
+<h2 class="block">Entropy <span class="sub">CED 9.1 • Zumdahl §17.1</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>State what entropy measures.
+
+<li>Predict the sign of \(\Delta S^\circ\) from the change described.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §17.1 • PDF pp. 835–841</p>
+
+<h4 class="segment">INSTRUCTION A • What entropy actually measures <span class="sub">25 min</span></h4>
+
+<h3>Dispersal, not disorder <span class="badge">CED 9.1</span></h3>
+<span class="badge">SP 6</span>
+
+<strong class="term">Entropy</strong>, \(S\), measures how many microscopic arrangements produce the
+same macroscopic state — how <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">dispersed</span></span> the energy and
+matter of a system are. More available arrangements means
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="3">higher</span></span> entropy.
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>“Disorder” is the usual shorthand and it is a poor one. A messy room has
+no more entropy than a tidy one, because nothing about the energy of its
+molecules has changed. Argue from <strong>how many ways the particles and
+their energy can be arranged</strong>, and from the volume available to them —
+that reasoning earns credit, and “it looks messier” does not.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="3" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h3>The four situations to recognize <span class="badge">CED 9.1</span></h3>
+
+<p>Nearly every \(\Delta S\) question on the exam is one of these:</p>
+
+<ol>
+
+<li><strong>Phase change.</strong>
+        solid \(<\) liquid \(\ll\) gas. Melting and boiling have
+        \(\Delta S\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">positive</span></span>; freezing and condensing,
+        negative.
+
+<li><strong>Change in moles of gas.</strong> Count gas molecules on each side.
+        More gas means \(\Delta S\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">positive</span></span>. This
+        dominates every other consideration — if the mole count of gas
+        changes, stop looking for other reasons.
+
+<li><strong>Dissolving.</strong> A crystal becoming dispersed ions is normally
+        an <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="4">increase</span></span>.
+
+<li><strong>Temperature.</strong> Heating anything raises its entropy;
+        molecules access more energy levels.
+</ol>
+
+<div class="box note"><div class="box-title">The tie-breaker</div>
+
+<p>When two of these compete, <strong>gas wins</strong>. In
+\(\ce{2H2(g) + O2(g) -> 2H2O(l)}\) three moles of gas become zero, so
+\(\Delta S^\circ\) is strongly negative even though a liquid is arguably
+“more dispersed” than a crystal would be.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="4" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Predicting the sign <span class="sub">15 min</span></h4>
+
+<p>Predict the sign of \(\Delta S^\circ\) and give the controlling reason.</p>
+
+<ol>
+
+<li>\(\ce{H2O(l) -> H2O(g)}\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">\(+\); liquid becomes gas</span></span>
+
+<li>\(\ce{2NO2(g) -> N2O4(g)}\) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">\(-\); 2 mol gas to 1</span></span>
+
+<li>\(\ce{NaCl(s) -> Na+(aq) + Cl^-(aq)}\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">\(+\); crystal disperses</span></span>
+
+<li>\(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">\(+\); a gas appears</span></span>
+
+<li>\(\ce{N2(g) + 3H2(g) -> 2NH3(g)}\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="5">\(-\); 4 mol gas to 2</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="5" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • The second law <span class="sub">20 min</span></h4>
+
+<h3>The universe, not the system <span class="badge">CED 9.1</span></h3>
+<span class="badge">SP 6</span>
+
+<p>The <strong class="term">second law of thermodynamics</strong>: for any thermodynamically favored
+process,
+\[ \Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}}
+   > 0 \]</p>
+
+<p>The system's entropy is allowed to <em>decrease</em> — water freezes, ice
+crystals are more ordered than liquid — provided the surroundings gain
+more than the system loses. Freezing releases heat to the surroundings, and
+that heat raises their entropy.</p>
+
+<div class="box note"><div class="box-title">Why this becomes Gibbs free energy</div>
+
+<p>Tracking the surroundings is a nuisance. The next block folds them into a
+single system-only quantity, which is the entire reason \(\Delta G\) is worth
+defining. If you understand \(\Delta S_{\text{univ}} > 0\), you already
+understand \(\Delta G^\circ < 0\) — they are the same statement multiplied
+by \(-T\).</p>
+
+</div>
+
+<h4 class="segment">APPLICATION • Reasoning with the second law <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Water freezing at -10&thinsp;&deg;C is thermodynamically favored,
+        yet the water's entropy decreases. Explain how both are true.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:1" data-math="1"></textarea>
+
+<li>A student says a reaction with \(\Delta S_{\text{sys}} < 0\) can
+        never happen. Correct them in one sentence.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:2" data-math="1"></textarea>
+
+<li>Rank by absolute entropy at the same temperature: \(\ce{H2O(s)}\),
+        \(\ce{H2O(l)}\), \(\ce{H2O(g)}\). <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">\(\ce{H2O(s)}\) \(<\)
+        \(\ce{H2O(l)}\) \(<\) \(\ce{H2O(g)}\)</span></span>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Predict the sign of \(\Delta S^\circ\) for
+\(\ce{2SO2(g) + O2(g) -> 2SO3(g)}\) and justify in one sentence.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Negative. Three moles of gas become two, and a
+decrease in the number of gas particles dominates any other
+contribution.</div></div>
+
+</div>
+
+<h2 class="block">Absolute Entropy and \(\Delta S^\circ\) <span class="sub">CED 9.2 • Zumdahl §17.2, §17.5–17.6</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Explain why entropy has an absolute scale but enthalpy does not.
+
+<li>Calculate \(\Delta S^\circ\) from tabulated absolute entropies.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §17.2, §17.5–17.6 • PDF pp. 841–842, 848–853</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Sign of \(\Delta S^\circ\) for \(\ce{2NO2(g) -> N2O4(g)}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">negative</span></span>
+
+<li>Which has more entropy, \(\ce{H2O(l)}\) or \(\ce{H2O(g)}\)?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">\(\ce{H2O(g)}\)</span></span>
+
+<li>\(\Delta S_{\text{univ}}\) for a favored process:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">\(> 0\)</span></span>
+
+<li>The AP term replacing “spontaneous”:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="8">thermodynamically favored</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="8" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • A real zero <span class="sub">25 min</span></h4>
+
+<h3>The third law <span class="badge">CED 9.2</span></h3>
+<span class="badge">SP 5</span>
+
+<p>The <strong class="term">third law of thermodynamics</strong> says a perfect crystal at
+0&thinsp;K has entropy exactly <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">zero</span></span>. That gives
+entropy a genuine origin, so every substance has a tabulated
+<strong class="term">absolute entropy</strong> \(S^\circ\) — always a positive number.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>Contrast with enthalpy. There is no absolute \(H\), so tables list
+\(\Delta H_f^\circ\) and assign zero to elements in their standard states.</p>
+
+<p>Entropy tables are different: <strong>\(S^\circ\) of an element is not zero.</strong>
+\(\ce{O2(g)}\) has \(S^\circ = 205\,\mathrm{J/K/mol}\). Setting
+element entropies to zero out of habit is a reliable way to lose a point.</p>
+
+</div>
+
+\[ \boxed{\;\Delta S^\circ_{\text{rxn}} = \sum n S^\circ_{\text{products}}
+   - \sum n S^\circ_{\text{reactants}}\;} \]
+
+<p>Coefficients multiply, exactly as in Hess's law. And note the units:
+\(S^\circ\) is in <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">joules</span></span> while \(\Delta H^\circ\) is in
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="10">kilojoules</span></span>.</p>
+
+<div class="box we"><div class="box-title">Worked example 1: decomposing limestone</div>
+
+\[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \]
+\(S^\circ\): \(\ce{CaCO3}\) 93, \(\ce{CaO}\) 40, \(\ce{CO2}\) 214
+J/K/mol.
+\[ \Delta S^\circ = (40 + 214) - 93 = \mathbf{+161}~\mathrm{J/K} \]
+Positive, as predicted — a gas appeared where there was none.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 2: the Haber process</div>
+
+\[ \ce{N2(g) + 3H2(g) -> 2NH3(g)} \]
+\(S^\circ\): \(\ce{N2}\) 192, \(\ce{H2}\) 131, \(\ce{NH3}\) 193.
+\[ \Delta S^\circ = 2(193) - [192 + 3(131)] = 386 - 585
+   = \mathbf{-199}~\mathrm{J/K} \]
+Four moles of gas became two, so the sign had to be negative. Dropping the
+coefficient 3 on hydrogen gives \(-68\) — wrong magnitude entirely.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="10" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Running the sums <span class="sub">15 min</span></h4>
+
+\(S^\circ\) (J/K/mol): \(\ce{H2}\) 131, \(\ce{O2}\) 205,
+\(\ce{H2O(l)}\) 70, \(\ce{H2O(g)}\) 189, \(\ce{NO2}\) 240, \(\ce{N2O4}\) 304.
+
+<ol>
+
+<li>\(\ce{2H2(g) + O2(g) -> 2H2O(l)}\): <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u09-notes:3" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(2(70) - [2(131) + 205] = 140 - 467
+        = \mathbf{-327}~\mathrm{J/K}\)</div></div>
+
+<li>\(\ce{H2O(l) -> H2O(g)}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="119.0" data-sig="3" data-unit="J/K"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="11">\(+119\) J/K</span></span>
+
+<li>\(\ce{2NO2(g) -> N2O4(g)}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="-176.0" data-sig="3" data-unit="J/K"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="11">\(-176\) J/K</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="11" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Interpreting the numbers <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Why is \(S^\circ\) for \(\ce{H2O(g)}\) nearly triple that of
+        \(\ce{H2O(l)}\), when it is the same substance?
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:4" data-math="1"></textarea>
+
+<li>A student computes the Haber \(\Delta S^\circ\) as
+        \(193 - (192 + 131) = -130\)&nbsp;J/K. Find both errors.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:5" data-math="1"></textarea>
+
+<li>For \(\ce{H2O(l) -> H2O(g)}\), \(\Delta S^\circ = +119\)&nbsp;J/K and
+        \(\Delta H^\circ = +44\)&nbsp;kJ. Say what each sign contributes to
+        favorability at 25&thinsp;&deg;C.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:6" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Why can a table list an absolute \(S^\circ\) for oxygen gas but not an
+absolute \(H^\circ\)?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The third law fixes a true zero for entropy — a
+perfect crystal at 0&thinsp;K has \(S = 0\) — so entropies are
+measurable on an absolute scale. Enthalpy has no such natural zero, so only
+<em>changes</em> are measurable and tables use \(\Delta H_f^\circ\) with
+elements assigned zero by convention.</div></div>
+
+</div>
+
+<h2 class="block">Gibbs Free Energy <span class="sub">CED 9.3 • Zumdahl §17.3–17.4</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Calculate \(\Delta G^\circ\) from \(\Delta H^\circ\) and
+        \(\Delta S^\circ\).
+
+<li>Determine the temperature range over which a process is favored.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §17.3–17.4 • PDF pp. 842–848</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta S^\circ\) for \(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="161.0" data-sig="3" data-unit="J/K"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">\(+161\) J/K</span></span>
+
+<li>\(\Delta S_{\text{univ}}\) must be what sign for a favored process?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">positive</span></span>
+
+<li>Units of \(S^\circ\) versus \(\Delta H^\circ\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:5.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">J/(K\(\cdot\)mol) versus kJ/mol</span></span>
+
+<li>\(S^\circ\) of an element in its standard state is:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="12">not zero</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="12" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • One number that decides <span class="sub">25 min</span></h4>
+
+<h3>Folding the surroundings in <span class="badge">CED 9.3</span></h3>
+<span class="badge">SP 5</span>
+
+<strong class="term">Gibbs free energy</strong> removes the need to track the surroundings:
+\[ G = H - TS \qquad\Longrightarrow\qquad
+   \boxed{\;\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\;} \]
+
+<p>Dividing \(\Delta G = \Delta H - T\Delta S\) by \(-T\) returns exactly
+\(\Delta S_{\text{surr}} + \Delta S_{\text{sys}} = \Delta S_{\text{univ}}\).
+So \(\Delta G\) is the second law rewritten <em>entirely in terms of the
+system</em>.</p>
+
+<div class="center">
+<div class="fbox">
+\(\Delta G^\circ < 0\): <strong>thermodynamically favored</strong> <br>
+\(\Delta G^\circ > 0\): not favored (the reverse is) <br>
+\(\Delta G^\circ = 0\): at equilibrium</div>
+</div>
+
+<p>The sign flip is worth stating aloud: \(\Delta S_{\text{univ}}\) must be
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="14">positive</span></span>, but \(\Delta G^\circ\) must be
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="14">negative</span></span>, because of the \(-T\) used in the derivation.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Convert the entropy to kJ before subtracting.</strong> \(\Delta H^\circ\) is
+in kJ and \(\Delta S^\circ\) in J/K. Forgetting the factor of 1000 is the
+single most common arithmetic error in this unit, and it produces answers
+wrong by roughly a factor of a thousand — large enough to spot if you
+sanity-check the magnitude.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="14" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • When temperature decides <span class="sub">20 min</span></h4>
+
+<h3>The four cases <span class="badge">CED 9.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Because \(\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ\), the two signs
+between them decide whether temperature matters at all:</p>
+
+<div class="center">
+
+<table>
+<tr><th>\(\Delta H^\circ\)</th><th>\(\Delta S^\circ\)</th><th><strong>Favored at</strong></th><th><strong>Comment</strong></th></tr>
+<tr><td>\(-\)</td><td>\(+\)</td><td><strong>all temperatures</strong></td><td>both terms help; no calculation
+  needed</td></tr>
+<tr><td>\(+\)</td><td>\(-\)</td><td><strong>no temperature</strong></td><td>both terms oppose; never favored</td></tr>
+<tr><td>\(+\)</td><td>\(+\)</td><td><strong>high \(T\)</strong></td><td>entropy wins once \(T\) is large enough</td></tr>
+<tr><td>\(-\)</td><td>\(-\)</td><td><strong>low \(T\)</strong></td><td>enthalpy wins while \(T\) is small</td></tr>
+</table>
+
+</div>
+
+<p>For the two mixed cases the <strong class="term">crossover temperature</strong>, where
+\(\Delta G^\circ = 0\), is
+\[ T = \frac{\Delta H^\circ}{\Delta S^\circ} \]</p>
+
+<div class="box we"><div class="box-title">Worked example 3: why limestone needs a kiln</div>
+
+\(\ce{CaCO3(s) -> CaO(s) + CO2(g)}\): \(\Delta H^\circ = +178.5\)&nbsp;kJ,
+\(\Delta S^\circ = +161\)&nbsp;J/K. Both positive \(\Rightarrow\) favored only at
+high temperature.
+
+<strong>At 298&thinsp;K:</strong>
+\(\Delta G^\circ = 178.5 - 298(0.161) = +131\)&nbsp;kJ — not favored, which is
+why limestone buildings do not crumble into quicklime.
+
+<strong>Crossover:</strong>
+\[ T = \frac{178.5}{0.161} = \mathbf{1109}~\mathrm{K}
+   \quad (\approx 836\,\mathrm{{}^\circ C}) \]
+Which is about the temperature at which lime kilns are operated.
+
+</div>
+
+<h4 class="segment">APPLICATION • Predicting and calculating <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For the Haber process \(\Delta H^\circ = -92\)&nbsp;kJ and
+        \(\Delta S^\circ = -199\)&nbsp;J/K. Find \(\Delta G^\circ\) at
+        298&thinsp;K and the crossover temperature. <textarea class="scratch" style="height:2.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u09-notes:7" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\Delta G^\circ = -92 - 298(-0.199)
+        = -92 + 59 = \mathbf{-33}\)&nbsp;kJ, so favored at 298&thinsp;K.
+        Crossover \(T = 92/0.199 = \mathbf{462}\)&nbsp;K — favored <em>below</em>
+        462 K, since both terms are negative.</div></div>
+
+<li>For \(\ce{H2O(l) -> H2O(g)}\), \(\Delta H^\circ = +44\)&nbsp;kJ and
+        \(\Delta S^\circ = +119\)&nbsp;J/K. Find the crossover temperature and say
+        what it physically is. <textarea class="scratch" style="height:2.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u09-notes:8" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T = 44/0.119 = \mathbf{370}\)&nbsp;K
+        \(\approx 97\,\mathrm{{}^\circ C}\) — the <strong>boiling point</strong>. Above
+        it vaporization is favored at 1 atm; below it condensation is. The
+        tabulated value is 373 K; the gap is rounding in the
+        table.</div></div>
+
+<li>Without calculating, say whether
+        \(\ce{2H2O2(l) -> 2H2O(l) + O2(g)}\) (\(\Delta H^\circ < 0\)) is favored,
+        and at what temperatures. <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:9" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A reaction has \(\Delta H^\circ = +50\)&nbsp;kJ and \(\Delta S^\circ = +100\)&nbsp;J/K.
+Is it favored at 298&thinsp;K? Above what temperature does that change?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\Delta G^\circ = 50 - 298(0.100) = +20\)&nbsp;kJ, so
+not favored. Crossover at \(T = 50/0.100 = 500\,\mathrm{K}\); above
+500&thinsp;K it becomes favored.</div></div>
+
+</div>
+
+<h2 class="block">Formation Free Energies and Kinetic Control <span class="sub">CED 9.3, 9.4 • Zumdahl §17.4, §17.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Calculate \(\Delta G^\circ\) from free energies of formation.
+
+<li>Explain why a favored reaction may proceed immeasurably slowly.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §17.4, §17.7 • PDF pp. 845–848, 853–859</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta G^\circ = \) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">\(\Delta H^\circ -
+        T\Delta S^\circ\)</span></span>
+
+<li>Favored means \(\Delta G^\circ\) is: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">negative</span></span>
+
+<li>\(\Delta H^\circ < 0\) and \(\Delta S^\circ > 0\): favored at
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">all temperatures</span></span>
+
+<li>Crossover temperature \(= \) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="17">\(\Delta H^\circ /
+        \Delta S^\circ\)</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="17" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • The second route to \(\Delta G^\circ\) <span class="sub">25 min</span></h4>
+
+<h3>Free energies of formation <span class="badge">CED 9.3</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Exactly as with enthalpy, \(\Delta G^\circ\) can be assembled from tabulated
+formation values:
+\[ \Delta G^\circ_{\text{rxn}} = \sum n\Delta G_f^\circ{}_{\text{products}}
+   - \sum n\Delta G_f^\circ{}_{\text{reactants}} \]
+and \(\Delta G_f^\circ\) of an element in its standard state is
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="19">zero</span></span> — unlike \(S^\circ\).</p>
+
+<div class="box we"><div class="box-title">Worked example 4: two routes, one answer</div>
+
+<p>For \(\ce{2H2(g) + O2(g) -> 2H2O(l)}\):</p>
+
+<strong>Route 1 — from \(\Delta H^\circ\) and \(\Delta S^\circ\).</strong>
+\(\Delta H^\circ = 2(-286) = -572\)&nbsp;kJ;
+\(\Delta S^\circ = -327\)&nbsp;J/K \(= -0.327\)&nbsp;kJ/K.
+\[ \Delta G^\circ = -572 - 298(-0.327) = -572 + 97
+   = \mathbf{-475}~\text{kJ} \]
+
+<strong>Route 2 — from \(\Delta G_f^\circ\).</strong>
+\(\Delta G^\circ = 2(-237) - 0 = \mathbf{-474}\)&nbsp;kJ.
+
+<p>The two agree to within table rounding. Note again that the entropy had to
+be converted from J/K to kJ/K first.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="19" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Favored is not the same as fast <span class="sub">20 min</span></h4>
+
+<h3>Thermodynamic versus kinetic control <span class="badge">CED 9.4</span></h3>
+<span class="badge">SP 6</span>
+
+<p>This is the point of topic 9.4, and it is the one place where this unit and
+Unit 5 must be held apart:</p>
+
+<div class="center">
+<div class="fbox">
+\(\Delta G^\circ\) tells you <strong>whether</strong> and <strong>how far</strong>. <br>
+\(E_a\) tells you <strong>how fast</strong>. <br>
+They are independent.</div>
+</div>
+
+<p>A reaction that is thermodynamically favored but has a large
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">activation energy</span></span> proceeds too slowly to observe. It is
+said to be under <strong class="term">kinetic control</strong>.</p>
+
+<ul>
+
+<li><strong>Diamond to graphite.</strong> \(\Delta G^\circ\) is negative, so
+        graphite is the favored form at room conditions. The rearrangement
+        requires breaking a covalent network, so it does not measurably
+        occur.
+
+<li><strong>Petrol in air.</strong> Combustion is strongly favored; a tank of
+        fuel is stable because the reaction needs a spark to clear
+        \(E_a\).
+</ul>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>A <strong>catalyst</strong> lowers \(E_a\) and speeds a reaction up. It does
+<em>not</em> change \(\Delta G^\circ\), \(\Delta H^\circ\), \(\Delta S^\circ\), or
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="21">\(K\)</span></span>. A catalyst cannot make an unfavorable reaction
+favorable — it can only let an already-favored one arrive sooner.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="21" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Thermodynamics versus kinetics <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>A reaction has \(\Delta G^\circ = -150\)&nbsp;kJ but no measurable rate at
+        room temperature. Is this a contradiction? Explain.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:10" data-math="1"></textarea>
+
+<li>Give two ways to speed that reaction up, and state the effect of
+        each on \(K\). <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:11" data-math="1"></textarea>
+
+<li>Explain why “spontaneous” is a poor word for \(\Delta G^\circ < 0\)
+        using diamond as the example.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:12" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+State one thing a catalyst changes and two things it does not.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>It lowers the activation energy (and so raises
+the rate). It does not change \(\Delta G^\circ\) or \(K\) — nor
+\(\Delta H^\circ\) or \(\Delta S^\circ\).</div></div>
+
+</div>
+
+<h2 class="block">Free Energy and Equilibrium <span class="sub">CED 9.5 • Zumdahl §17.9</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Relate \(\Delta G^\circ\) to \(K\) and estimate one from the other.
+
+<li>Distinguish \(\Delta G\) from \(\Delta G^\circ\) using \(Q\).
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §17.9 • PDF pp. 862–867</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>If \(K > 1\), which side is favored? <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">products</span></span>
+
+<li>\(Q\) is calculated like \(K\) but with:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">non-equilibrium concentrations</span></span>
+
+<li>What raises a rate without changing \(K\)?
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">a catalyst</span></span>
+
+<li>\(\Delta G^\circ\) for a favored process is:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="22">negative</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="22" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Two languages for one fact <span class="sub">25 min</span></h4>
+
+<h3>\(\Delta G^\circ\) and \(K\) <span class="badge">CED 9.5</span></h3>
+<span class="badge">SP 5</span>
+
+<p>You now have two ways of saying “products are favored”: \(K > 1\) from
+Unit 7, and \(\Delta G^\circ < 0\) from this unit. They are the same
+statement:
+\[ \boxed{\;\Delta G^\circ = -RT\ln K\;}
+   \qquad\text{equivalently}\qquad K = e^{-\Delta G^\circ/RT} \]
+with \(R = 8.314\,\mathrm{J/mol/K}\) — note
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="24">joules</span></span>, so \(\Delta G^\circ\) must be converted from kJ.</p>
+
+<div class="center">
+
+<table>
+<tr><th>\(\Delta G^\circ\)</th><th>\(K\)</th><th></th></tr>
+<tr><td>negative</td><td>\(> 1\)</td><td>products favored at equilibrium</td></tr>
+<tr><td>zero</td><td>\(= 1\)</td><td>neither side favored</td></tr>
+<tr><td>positive</td><td>\(< 1\)</td><td>reactants favored</td></tr>
+</table>
+
+</div>
+
+<div class="box note"><div class="box-title">The MCQ half is no-calculator</div>
+
+<p>You are not asked to evaluate logarithms by hand. You are asked to know
+which <em>way</em> the relationship runs: more negative \(\Delta G^\circ\) means
+larger \(K\), and the dependence is exponential — so a modest change in
+\(\Delta G^\circ\) produces an enormous change in \(K\). Reason with the sign
+and the direction, not with arithmetic.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="24" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • \(\Delta G\) versus \(\Delta G^\circ\) <span class="sub">20 min</span></h4>
+
+<h3>Away from standard conditions <span class="badge">CED 9.5</span></h3>
+<span class="badge">SP 6</span>
+
+\(\Delta G^\circ\) is a fixed property of the reaction at a given temperature
+— every species at standard conditions. \(\Delta G\) is what the reaction
+mixture <em>actually</em> has right now, and depends on the current
+composition through \(Q\):
+\[ \Delta G = \Delta G^\circ + RT\ln Q \]
+
+<ul>
+
+<li>\(Q < K\): the mixture shifts <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">forward</span></span> and
+        \(\Delta G < 0\).
+
+<li>\(Q = K\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">equilibrium</span></span>, and \(\Delta G = 0\).
+
+<li>\(Q > K\): the mixture shifts <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="26">reverse</span></span> and
+        \(\Delta G > 0\).
+</ul>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<p>At equilibrium \(\Delta G = 0\), <strong>not</strong> \(\Delta G^\circ\). \(\Delta G^\circ\)
+is zero only in the special case \(K = 1\). Writing “\(\Delta G^\circ = 0\) at
+equilibrium” is a standard lost point — and setting \(\Delta G = 0\) in
+\(\Delta G = \Delta G^\circ + RT\ln Q\) is precisely how
+\(\Delta G^\circ = -RT\ln K\) is derived.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="26" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Connecting the two <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>Reaction A has \(\Delta G^\circ = -5\)&nbsp;kJ, reaction B has
+        \(\Delta G^\circ = -50\)&nbsp;kJ. Compare their \(K\) values qualitatively.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:13" data-math="1"></textarea>
+
+<li>A reaction has \(\Delta G^\circ = +20\)&nbsp;kJ. Can it ever proceed
+        forward? <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:14" data-math="1"></textarea>
+
+<li>At equilibrium, state the values of \(\Delta G\) and of \(Q\).
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">\(\Delta G = 0\) and \(Q = K\)</span></span>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A reaction has \(K = 1\). What is \(\Delta G^\circ\), and is the reaction
+favored?
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\Delta G^\circ = -RT\ln(1) = 0\). Neither
+direction is favored — at standard conditions the reaction is already at
+equilibrium.</div></div>
+
+</div>
+
+<h2 class="block">Dissolution and Coupled Reactions <span class="sub">CED 9.6, 9.7 • Zumdahl §17.5, §17.10</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Identify the enthalpy and entropy contributions to dissolution.
+
+<li>Explain how coupling or external energy drives an unfavorable
+        process.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §17.5, §17.10 • PDF pp. 848–849, 867–869</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta G^\circ = -RT\ln K\); \(R\) is in:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">J/(mol\(\cdot\)K)</span></span>
+
+<li>At equilibrium \(\Delta G = \) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">0</span></span>
+
+<li>\(\Delta S\) for dissolving a crystal is usually:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">positive</span></span>
+
+<li>A catalyst changes: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="27">\(E_a\) only</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="27" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Why some salts dissolve <span class="sub">25 min</span></h4>
+
+<h3>Three competing contributions <span class="badge">CED 9.6</span></h3>
+<span class="badge">SP 4</span>
+
+<p>Dissolving a salt is a free-energy balance with three parts:</p>
+
+<ol>
+
+<li><strong>Breaking up the lattice.</strong> \(\Delta H\) strongly
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">positive</span></span>, \(\Delta S\) positive.
+
+<li><strong>Reorganizing the solvent</strong> around the ions. \(\Delta S\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">negative</span></span> — water becomes ordered in hydration
+        shells.
+
+<li><strong>Ion–solvent attraction</strong> (hydration). \(\Delta H\)
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="29">negative</span></span>.
+</ol>
+
+<div class="box note"><div class="box-title">Why the CED does not ask you to predict the total</div>
+
+<p>The framework says outright that predicting the overall \(\Delta G^\circ\) of
+dissolution is challenging because of the cancellations among these three
+factors. The enthalpy terms are large and opposite; so are the entropy
+terms. What remains is a small difference between big numbers.</p>
+
+<p>You are expected to <strong>identify the contributions and their signs</strong>,
+not to predict solubility from scratch. Reasoning through the three factors
+earns credit even where the net direction is uncertain.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 5: dissolving that cools the beaker</div>
+
+\(\ce{NH4NO3}\) dissolves <em>endothermically</em> — the beaker gets cold, so
+\(\Delta H^\circ > 0\). Yet it is very soluble. Why?
+
+<p>Because \(\Delta S^\circ\) is strongly positive: an ordered crystal becomes
+freely moving hydrated ions dispersed through the solvent. At room
+temperature \(T\Delta S^\circ\) exceeds \(\Delta H^\circ\), so
+\(\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ < 0\).</p>
+
+<strong>Entropy is driving this one alone</strong>, with the enthalpy term working
+against it — the case to remember whenever you are tempted to equate
+“exothermic” with “favored”.
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="29" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Driving the unfavorable <span class="sub">20 min</span></h4>
+
+<h3>Coupling and external energy <span class="badge">CED 9.7</span></h3>
+<span class="badge">SP 4</span>
+
+<p>A process with \(\Delta G^\circ > 0\) will not happen on its own. There are
+two ways to make it happen anyway.</p>
+
+<strong>1. Supply external energy.</strong>
+<ul>
+
+<li><strong>Electrical energy</strong> driving an electrolytic cell or charging
+        a battery — the subject of the next three blocks.
+
+<li><strong>Light</strong> driving photosynthesis, which builds glucose from
+        \(\ce{CO2}\) and water with a hugely positive \(\Delta G^\circ\).
+</ul>
+
+<strong>2. Couple it to a favorable reaction.</strong> Because free energies
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="31">add</span></span>, an unfavorable step can be carried by a favorable
+one — provided the two share a <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="31">common intermediate</span></span>
+and the <em>sum</em> has \(\Delta G^\circ < 0\).
+
+<div class="box we"><div class="box-title">Worked example 6: how cells pay for chemistry</div>
+
+<p>Phosphorylating glucose is unfavorable on its own:
+\[ \text{glucose} + \ce{P_i} \to \text{glucose-6-phosphate}
+   \qquad \Delta G^\circ = +13.8~\text{kJ/mol} \]
+Hydrolysing ATP is strongly favorable:
+\[ \ce{ATP} + \ce{H2O} \to \ce{ADP} + \ce{P_i}
+   \qquad \Delta G^\circ = -30.5~\text{kJ/mol} \]
+Coupled through the shared \(\ce{P_i}\):
+\[ \Delta G^\circ = +13.8 + (-30.5) = \mathbf{-16.7}~\text{kJ/mol} \]
+and therefore favored. This is what “ATP is the cell's energy currency”
+means — not that ATP contains energy, but that its hydrolysis is
+favorable enough to pay for reactions that are not.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="31" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Putting free energy to work <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>\(\ce{NaCl}\) dissolves with \(\Delta H^\circ\) very slightly positive
+        and still dissolves readily. Explain using the three contributions.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:15" data-math="1"></textarea>
+
+<li>Reaction X has \(\Delta G^\circ = +25\)&nbsp;kJ. It is coupled to
+        reaction Y with \(\Delta G^\circ = -40\)&nbsp;kJ. Is the coupled process
+        favored, and what must the two share? <textarea class="scratch" style="height:2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u09-notes:16" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\Delta G^\circ = +25 + (-40) =
+        \mathbf{-15}\)&nbsp;kJ, so yes. They must share a <strong>common
+        intermediate</strong> — a species produced by one and consumed by the
+        other — or the coupling is only arithmetic, not
+        chemical.</div></div>
+
+<li>Name the external energy source that drives each: electrolysis of
+        water; photosynthesis. <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:6.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">electrical; light</span></span>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+State the one condition that makes coupling chemically real rather than
+just an addition of two numbers.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The two reactions must share a <strong>common
+intermediate</strong>, so that the product of one is consumed by the other in the
+same system. Without it the free energies still add on paper, but nothing
+connects the two processes.</div></div>
+
+</div>
+
+<h2 class="block">Galvanic and Electrolytic Cells <span class="sub">CED 9.8 • Zumdahl §18.1, §18.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Identify anode, cathode, and the direction of electron flow.
+
+<li>Distinguish galvanic from electrolytic cells.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.1, §18.7 • PDF pp. 882–884, 906–911</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Oxidation is loss of: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">electrons</span></span>
+
+<li>An unfavorable process has \(\Delta G^\circ\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">positive</span></span>
+
+<li>One way to drive an unfavorable reaction:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4.7cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">supply external energy</span></span>
+
+<li>Oxidation number of \(\ce{Zn}\) in \(\ce{Zn^2+}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="2.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="32">\(+2\)</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="32" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Separating the half-reactions <span class="sub">25 min</span></h4>
+
+<h3>Why a wire is involved at all <span class="badge">CED 9.8</span></h3>
+<span class="badge">SP 1</span>
+
+<p>Drop zinc into copper sulfate and electrons pass directly from zinc to
+\(\ce{Cu^2+}\); the energy is released as <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="34">heat</span></span>. Separate
+the two half-reactions into different compartments and the electrons must
+travel through a <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="34">wire</span></span> instead — and along the way
+they can do electrical work. That is the whole idea of a cell.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="34" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h3>The parts, and what each does <span class="badge">CED 9.8</span></h3>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Part</strong></th><th><strong>Where</strong></th><th><strong>What happens</strong></th></tr>
+<tr><td>Anode</td><td>one half-cell</td><td><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="35">oxidation</span></span>; electrons leave</td></tr>
+<tr><td>Cathode</td><td>the other half-cell</td><td><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="35">reduction</span></span>; electrons arrive</td></tr>
+<tr><td>Wire</td><td>between electrodes</td><td>carries electrons, anode \(\to\) cathode</td></tr>
+<tr><td>Salt bridge</td><td>joins the solutions</td><td>carries ions to keep both solutions neutral</td></tr>
+</table>
+
+</div>
+
+<strong>An&nbsp;Ox and Red&nbsp;Cat</strong> — <strong>An</strong>ode <strong>Ox</strong>idation,
+<strong>Red</strong>uction <strong>Cat</strong>hode — holds in every cell, galvanic or
+electrolytic. It is the one fact in this block that never changes.
+
+<div class="box note"><div class="box-title">What the CED excludes here</div>
+
+<p>Topic 9.8 <strong>excludes</strong> assigning positive and negative labels to the
+electrodes. The signs actually reverse between galvanic and electrolytic
+cells, which is exactly why the framework leaves them out. Identify
+electrodes by <em>anode</em> and <em>cathode</em> and by what happens there;
+never by charge.</p>
+
+</div>
+
+<p>Without the salt bridge, oxidation at the anode would leave that solution
+building up <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="35">positive charge</span></span> and the cathode solution
+going negative. Charge separation halts electron flow almost immediately,
+so the cell stops.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="35" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • The same hardware, run backwards <span class="sub">20 min</span></h4>
+
+<h3>Galvanic against electrolytic <span class="badge">CED 9.8</span></h3>
+<span class="badge">SP 1</span>
+
+<div class="center">
+
+<table>
+<tr><th></th><th><strong>Galvanic (voltaic)</strong></th><th><strong>Electrolytic</strong></th></tr>
+<tr><td>\(\Delta G^\circ\)</td><td><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="37">negative</span></span></td><td><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="37">positive</span></span></td></tr>
+<tr><td>\(E^\circ_{\text{cell}}\)</td><td><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="37">positive</span></span></td><td><span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="37">negative</span></span></td></tr>
+<tr><td>Drives itself?</td><td>yes — it is a battery</td><td>no — needs a power supply</td></tr>
+<tr><td>Energy</td><td>chemical \(\to\) electrical</td><td>electrical \(\to\) chemical</td></tr>
+<tr><td>Example</td><td>a AA cell discharging</td><td>electroplating; recharging</td></tr>
+</table>
+
+</div>
+
+<p>An electrolytic cell is CED topic 9.7's “external energy source driving an
+unfavorable process,” built in hardware.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="37" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Describing cells <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>In a galvanic cell made from \(\ce{Zn}\)/\(\ce{Zn^2+}\) and
+        \(\ce{Cu}\)/\(\ce{Cu^2+}\), zinc is oxidized. Name the anode, the cathode,
+        and the direction of electron flow.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:17" data-math="1"></textarea>
+
+<li>State what happens to the mass of each electrode as that cell runs.
+        <textarea class="scratch" style="height:3.2em" rows="2" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:18" data-math="1"></textarea>
+
+<li>A student labels the anode “negative” on an exam question about
+        an electrolytic cell. Explain why the CED avoids this.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:19" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+Give the one statement about anode and cathode that is true in every cell,
+and one statement that is not.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Always true: oxidation occurs at the anode and
+reduction at the cathode. Not always true: that the anode is the negative
+electrode — that holds for galvanic cells and reverses for electrolytic
+ones.</div></div>
+
+</div>
+
+<h2 class="block">Cell Potential and Free Energy <span class="sub">CED 9.9 • Zumdahl §18.2–18.3</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Calculate \(E^\circ_{\text{cell}}\) from standard reduction
+        potentials.
+
+<li>Relate \(E^\circ_{\text{cell}}\) to \(\Delta G^\circ\) and to \(K\).
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.2–18.3 • PDF pp. 884–895</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>Oxidation occurs at the: <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">anode</span></span>
+
+<li>Galvanic cells have \(E^\circ_{\text{cell}}\):
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">positive</span></span>
+
+<li>Electrons flow from <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">anode to cathode</span></span>
+
+<li>\(\Delta G^\circ\) for a galvanic cell is:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="38">negative</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="38" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • A scale built on an arbitrary zero <span class="sub">25 min</span></h4>
+
+<h3>Standard reduction potentials <span class="badge">CED 9.9</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Only a <em>difference</em> in potential is measurable, so one half-reaction is
+assigned a value by convention:
+\[ \ce{2H+(aq) + 2e^- -> H2(g)} \qquad E^\circ \equiv \mathbf{0.00}~\text{V} \]
+Every other half-reaction is measured against this
+<strong class="term">standard hydrogen electrode</strong>. <strong>Standard conditions</strong> means all
+solutes at 1&thinsp;M, gases at 1&thinsp;atm, and 25&thinsp;&deg;C.</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Every table is written as reductions.</strong> Reversing a half-reaction
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="40">flips the sign</span></span> of \(E^\circ\). But multiplying a
+half-reaction by a coefficient does <strong>not</strong> change \(E^\circ\) at all —
+potential is an <strong class="term">intensive</strong> property, volts per unit charge, not volts
+per mole. Scaling a half-reaction to balance electrons is required; scaling
+its voltage is wrong.
+
+</div>
+
+\[ \boxed{\;E^\circ_{\text{cell}} = E^\circ_{\text{cathode}}
+   - E^\circ_{\text{anode}}\;} \]
+with both values taken straight from the table as reductions. For a
+galvanic cell you want \(E^\circ_{\text{cell}} > 0\), so the species with the
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="40">more positive</span></span> \(E^\circ\) is the one reduced.
+
+<div class="box we"><div class="box-title">Worked example 7: the Daniell cell</div>
+
+<p>Combine \(\ce{Zn^2+}\)/\(\ce{Zn}\) (\(-0.76\)&nbsp;V) and \(\ce{Cu^2+}\)/\(\ce{Cu}\) (\(+0.34\)&nbsp;V).
+Copper is more positive, so copper is reduced (cathode) and zinc oxidized
+(anode):
+\[ \ce{Zn + Cu^2+ -> Zn^2+ + Cu} \qquad
+   E^\circ_{\text{cell}} = 0.34 - (-0.76) = \mathbf{+1.10}~\text{V} \]</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 8: when the electrons do not balance</div>
+
+<p>Combine \(\ce{Ag+}\)/\(\ce{Ag}\) (\(+0.80\)&nbsp;V) and \(\ce{Cu^2+}\)/\(\ce{Cu}\) (\(+0.34\)&nbsp;V).
+Silver is reduced; balancing electrons needs <em>two</em> silver
+half-reactions:
+\[ \ce{Cu + 2Ag+ -> Cu^2+ + 2Ag} \qquad
+   E^\circ_{\text{cell}} = 0.80 - 0.34 = \mathbf{+0.46}~\text{V} \]
+The silver half-reaction was doubled; its \(E^\circ\) was not. Writing
+\(2(0.80) - 0.34 = 1.26\)&nbsp;V is the classic error here.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="40" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">GUIDED PRACTICE • Building cells from the table <span class="sub">15 min</span></h4>
+
+\(E^\circ\) (V): \(\ce{Ag+}\)/\(\ce{Ag}\) \(+0.80\) • \(\ce{Cu^2+}\)/\(\ce{Cu}\)
+\(+0.34\) • \(\ce{Pb^2+}\)/\(\ce{Pb}\) \(-0.13\) •\
+\(\ce{Ni^2+}\)/\(\ce{Ni}\) \(-0.23\) • \(\ce{Fe^2+}\)/\(\ce{Fe}\) \(-0.44\)
+• \(\ce{Zn^2+}\)/\(\ce{Zn}\) \(-0.76\) • \(\ce{Mg^2+}\)/\(\ce{Mg}\)
+\(-2.37\)
+
+<ol>
+
+<li>\(\ce{Zn}\) and \(\ce{Ag+}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="1.56" data-sig="3" data-unit="V"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="41">\(+1.56\) V</span></span>
+
+<li>\(\ce{Mg}\) and \(\ce{Cu^2+}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="2.71" data-sig="3" data-unit="V"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="41">\(+2.71\) V</span></span>
+
+<li>\(\ce{Zn}\) and \(\ce{Ni^2+}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.53" data-sig="2" data-unit="V"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="41">\(+0.53\) V</span></span>
+
+<li>\(\ce{Fe}\) and \(\ce{Cu^2+}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.78" data-sig="2" data-unit="V"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="41">\(+0.78\) V</span></span>
+
+<li>\(\ce{Pb}\) and \(\ce{Ag+}\): <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.6cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.93" data-sig="2" data-unit="V"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="41">\(+0.93\) V</span></span>
+</ol>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="41" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Volts into kilojoules, and on to \(K\) <span class="sub">20 min</span></h4>
+
+<h3>\(\Delta G^\circ = -nFE^\circ\) <span class="badge">CED 9.9</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Electrical work is charge moved through a potential difference. With
+<strong class="term">Faraday's constant</strong> \(F = 96485\,\mathrm{C/mol}\),
+\[ \boxed{\;\Delta G^\circ = -nFE^\circ_{\text{cell}}\;} \]</p>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>Here is where \(n\) finally matters.</strong> Voltage does not depend on how
+many electrons are transferred; free energy does, because more electrons
+through the same potential means more energy. Two cells can share an
+\(E^\circ\) and have very different \(\Delta G^\circ\).
+
+<p>And \(n\) comes from the <strong>balanced overall equation</strong>, not from either
+half-reaction alone.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 9: the Daniell cell in kilojoules</div>
+
+\(E^\circ = +1.10\)&nbsp;V and \(n = 2\):
+\[ \Delta G^\circ = -(2)(96485)(1.10) = -212{,}267~\text{J}
+   = \mathbf{-212}~\text{kJ} \]
+The answer arrives in <strong>joules</strong> — \(F\) is coulombs per mole and a
+volt is a joule per coulomb — so convert to kJ.
+
+</div>
+
+<p>Combining with \(\Delta G^\circ = -RT\ln K\) gives the third link:
+\[ nFE^\circ = RT\ln K \qquad\Longrightarrow\qquad
+   \ln K = \frac{nFE^\circ}{RT} \]</p>
+
+<div class="center">
+
+<table>
+<tr><th>\(E^\circ_{\text{cell}}\)</th><th>\(\Delta G^\circ\)</th><th>\(K\)</th><th></th></tr>
+<tr><td>\(> 0\)</td><td>\(< 0\)</td><td>\(> 1\)</td><td>favored; galvanic</td></tr>
+<tr><td>\(= 0\)</td><td>\(= 0\)</td><td>\(= 1\)</td><td>at equilibrium; a dead battery</td></tr>
+<tr><td>\(< 0\)</td><td>\(> 0\)</td><td>\(< 1\)</td><td>unfavored; electrolytic</td></tr>
+</table>
+
+</div>
+
+<h4 class="segment">APPLICATION • Moving between the three <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}\), \(E^\circ = +0.46\)&nbsp;V. Calculate
+        \(\Delta G^\circ\). <textarea class="scratch" style="height:2.2cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u09-notes:20" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(n = 2\);
+        \(\Delta G^\circ = -(2)(96485)(0.46) = -88{,}766~\text{J}
+        = \mathbf{-89}~\text{kJ}\)</div></div>
+
+<li>Two cells both have \(E^\circ = +0.50\)&nbsp;V; one transfers 1 electron
+        and the other 4. Compare their voltages and their \(\Delta G^\circ\).
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:21" data-math="1"></textarea>
+
+<li>A battery is described as “dead”. Give \(E_{\text{cell}}\),
+        \(\Delta G\), and the relationship between \(Q\) and \(K\).
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:7.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="44">\(E = 0\), \(\Delta G = 0\), \(Q = K\)</span></span>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+A student doubles a half-reaction to balance electrons and doubles its
+\(E^\circ\) too. Explain why the second step is wrong.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Potential is intensive — energy per unit charge
+— so it does not scale with amount. Doubling the half-reaction doubles
+both the energy and the charge, leaving the volts unchanged. Only \(n\)
+changes, and that enters later through
+\(\Delta G^\circ = -nFE^\circ\).</div></div>
+
+</div>
+
+<h2 class="block">Nonstandard Conditions and Electrolysis <span class="sub">CED 9.10, 9.11 • Zumdahl §18.4, §18.7</span></h2>
+
+<div class="box note"><div class="box-title">By the end you can…</div>
+<ul>
+
+<li>Predict qualitatively how concentration changes a cell potential.
+
+<li>Apply Faraday's law to an electrolysis calculation.
+</ul>
+</div>
+
+<p class="reading"><strong>Read:</strong> Zumdahl §18.4, §18.7 • PDF pp. 895–900, 906–911</p>
+
+<div class="box note"><div class="box-title">Retrieval warm-up</div>
+<ol>
+
+<li>\(\Delta G^\circ = \) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="44">\(-nFE^\circ\)</span></span>
+
+<li>\(F = \) <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="96485.0" data-sig="5" data-unit="C/mol"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="44">96485&thinsp;C/mol</span></span>
+
+<li>\(Q > K\) means the reaction shifts:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="44">reverse</span></span>
+
+<li>\(E^\circ_{\text{cell}}\) for a dead battery:
+        <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="44">0</span></span>
+</ol>
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="44" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION A • Voltage as distance from equilibrium <span class="sub">25 min</span></h4>
+
+<h3>Changing the concentrations <span class="badge">CED 9.10</span></h3>
+<span class="badge">SP 6</span>
+
+<p>A cell's voltage measures how far the reaction is from equilibrium. As it
+runs, reactants are consumed and products build up, so \(Q\)
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="46">rises</span></span> toward \(K\) and the voltage
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.6cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="46">falls</span></span>. When \(Q = K\) the cell is dead.</p>
+
+<div class="box note"><div class="box-title">What CED 9.10 does and does not require</div>
+
+<p>Topic 9.10 lists <strong>no equation</strong>. The Nernst equation is not required,
+and it does not appear on the AP equation sheet. What is required is the
+<em>direction</em> of the effect, argued from Le Ch\^atelier:</p>
+
+<ul>
+
+<li>Increase a <strong>reactant</strong> concentration \(\Rightarrow\) \(Q\)
+        decreases \(\Rightarrow\) the cell is further from equilibrium
+        \(\Rightarrow\) voltage <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="46">increases</span></span>.
+
+<li>Increase a <strong>product</strong> concentration \(\Rightarrow\) \(Q\)
+        increases \(\Rightarrow\) voltage <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="46">decreases</span></span>.
+</ul>
+
+<p>Reason with \(Q\) against \(K\). That argument earns full credit and needs no
+logarithms.</p>
+
+</div>
+
+<p>A <strong class="term">concentration cell</strong> has the <em>same</em> species in both half-cells
+at different concentrations. \(E^\circ_{\text{cell}} = \)
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.4cm" autocomplete="off" aria-label="answer" data-check="num" data-val="0.0" data-sig="1" data-unit=""><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="46">0</span></span>, since both electrodes are identical, yet the cell
+still produces a voltage — the system moves to equalize the two
+concentrations. The <span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:3.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="46">dilute</span></span> half-cell is the anode
+(metal dissolves, raising its concentration) and the concentrated one is
+the cathode. The cell dies when the concentrations become equal.</p>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="46" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">INSTRUCTION B • Counting electrons with an ammeter <span class="sub">20 min</span></h4>
+
+<h3>Faraday's law <span class="badge">CED 9.11</span></h3>
+<span class="badge">SP 5</span>
+
+<p>Electrolysis is stoichiometry in which one reagent is
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:2.4cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="48">the electron</span></span>. Current is how you count them:
+\[ I = \frac{q}{t} \qquad\text{so}\qquad q = It \]
+with \(q\) in coulombs, \(I\) in amperes, \(t\) in
+<span class="blankwrap"><input type="text" class="ansinput blank-in" style="width:1.8cm" autocomplete="off" aria-label="answer" data-check="none"><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden data-grp="48">seconds</span></span>. Then
+\(\text{mol e}^- = q/96485\).</p>
+
+<div class="center">
+<div class="fbox">
+current &amp; time \(\to\) charge (\(q = It\)) \(\to\) moles of electrons
+(\(\div F\)) <br>
+\(\to\) moles of substance (\(\div n\) from the half-reaction) \(\to\) grams
+(\(\times\) molar mass)</div>
+</div>
+
+<div class="box trap"><div class="box-title">AP trap</div>
+
+<strong>The half-reaction supplies the electron ratio, and it is not always
+2.</strong> One mole of electrons deposits one mole of \(\ce{Ag}\), but only half a
+mole of \(\ce{Cu}\) and a third of a mole of \(\ce{Al}\). Reading that number off
+the ion's charge is the step students skip.
+
+<p>Also: <strong>time must be in seconds.</strong> A problem stated in minutes or
+hours is stated that way on purpose.</p>
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 10: silver plating</div>
+
+<p>2.00&thinsp;A for 30.0&thinsp;min through \(\ce{AgNO3}\).</p>
+
+\(t = 30.0 \times 60 = 1800\,\mathrm{s}\);
+\(q = (2.00)(1800) = 3600\,\mathrm{C}\);
+\(\text{mol e}^- = 3600/96485 = 0.0373\).
+
+\(\ce{Ag+ + e^- -> Ag}\) is one electron per atom, so
+\(m = (0.0373)(107.87) = \mathbf{4.03}\)&nbsp;g.
+
+</div>
+
+<div class="box we"><div class="box-title">Worked example 11: the same current, a different ion</div>
+
+<p>1.50&thinsp;A for 1.00&thinsp;h through \(\ce{CuSO4}\).</p>
+
+\(q = (1.50)(3600) = 5400\,\mathrm{C}\);
+\(\text{mol e}^- = 5400/96485 = 0.0560\).
+
+<p>But \(\ce{Cu^2+ + 2e^- -> Cu}\) needs <em>two</em> electrons per atom:
+\[ \text{mol Cu} = \frac{0.0560}{2} = 0.0280 \qquad
+   m = (0.0280)(63.55) = \mathbf{1.78}~\text{g} \]
+Forgetting to divide by 2 gives 3.56 g — exactly double, and a lost
+point.</p>
+
+</div>
+
+<div class="reveal"><button class="reveal-btn revealblanks" type="button" aria-expanded="false" data-grp="48" data-show="Show answers" data-hide="Hide answers">Show answers</button></div><h4 class="segment">APPLICATION • Predicting and scaling <span class="sub">20 min</span></h4>
+
+<ol>
+
+<li>For \(\ce{Zn + Cu^2+ -> Zn^2+ + Cu}\), predict the effect on
+        \(E_{\text{cell}}\) of increasing \([\ce{Cu^2+}]\), and justify without
+        calculating. <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:22" data-math="1"></textarea>
+
+<li>How long, in hours, to deposit 5.00&thinsp;g of copper at
+        2.00&thinsp;A? <textarea class="scratch" style="height:2.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u09-notes:23" data-math="1"></textarea>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>mol Cu \(= 5.00/63.55 = 0.0787\);
+        mol e\(^- = 0.157\); \(q = (0.157)(96485) = 15183\,\mathrm{C}\);
+        \(t = 15183/2.00 = 7591\,\mathrm{s} =
+        \mathbf{2.11}~\text{h}\)</div></div>
+
+<li>A concentration cell is built from two \(\ce{Cu}\) electrodes in
+        0.10&thinsp;M and 1.0&thinsp;M \(\ce{Cu^2+}\). Identify the
+        anode and say when the cell stops.
+        <textarea class="scratch" style="height:4.8em" rows="3" spellcheck="false" aria-label="answer space" placeholder="your answer" data-pad="u09-notes:24" data-math="1"></textarea>
+</ol>
+
+<div class="box note"><div class="box-title">Exit ticket</div>
+
+State the one question to ask before starting any calculation in this unit,
+and why it settles the method.
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>“Which of \(\Delta G^\circ\), \(K\), and
+\(E^\circ_{\text{cell}}\) am I given, and which is wanted?” All three
+describe the same fact and are linked by
+\(\Delta G^\circ = -RT\ln K = -nFE^\circ\), so naming the two endpoints
+selects the equation and leaves only unit conversion to get
+wrong.</div></div>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>
