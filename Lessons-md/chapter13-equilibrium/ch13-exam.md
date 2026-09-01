@@ -1,7 +1,7 @@
 # Chapter Test
 
 *Chapter 13 • Chemical Equilibrium*  
-Zumdahl §13.1–13.7 • 50 minutes • $R = §I0.08206$
+Zumdahl §13.1–13.7 • 50 minutes • R = 0.08206 L·atm/mol/K
 
 [← all lessons](../index.md)
 

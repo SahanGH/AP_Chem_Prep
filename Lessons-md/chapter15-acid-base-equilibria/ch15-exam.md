@@ -1,7 +1,7 @@
 # Chapter Test
 
 *Chapter 15 • Acid–Base Equilibria*  
-Zumdahl §15.1–15.5 • 60 minutes • $K$ and p$K_a$ values provided with Section II
+Zumdahl §15.1–15.5 • 60 minutes • K and pKa values provided with Section II
 
 [← all lessons](../index.md)
 

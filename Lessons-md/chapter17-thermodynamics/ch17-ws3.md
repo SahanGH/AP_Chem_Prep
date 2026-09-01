@@ -1,4 +1,4 @@
-# Worksheet 3 • Temperature, $K$, and Kinetic Control
+# Worksheet 3 • Temperature, K, and Kinetic Control
 
 *Chapter 17 • Entropy and Free Energy*  
 Zumdahl §17.3, 17.9 • favored says where it ends up, never how fast

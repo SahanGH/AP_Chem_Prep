@@ -1,4 +1,4 @@
-# Worksheet 2 • $Q$, $K$, and ICE Tables
+# Worksheet 2 • Q, K, and ICE Tables
 
 *Chapter 13 • Chemical Equilibrium*  
 Zumdahl §13.4–13.6 • always check the approximation

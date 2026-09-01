@@ -1,4 +1,4 @@
-# Worksheet 3 • Solubility Factors, FRQ $+$ Optional
+# Worksheet 3 • Solubility Factors, FRQ + Optional
 
 *Chapter 11 • Properties of Solutions*  
 Zumdahl §11.3 examinable • §11.4–11.7 optional

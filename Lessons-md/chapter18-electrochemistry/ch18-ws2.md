@@ -1,4 +1,4 @@
-# Worksheet 2 • $E^_cell$, $ G^$ and $K$
+# Worksheet 2 • E°cell, ΔG° and K
 
 *Chapter 18 • Electrochemistry*  
 Zumdahl §18.2–18.3 • scale the half-reaction, never scale the volts

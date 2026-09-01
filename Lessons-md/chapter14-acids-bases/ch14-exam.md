@@ -1,7 +1,7 @@
 # Chapter Test
 
 *Chapter 14 • Acids and Bases*  
-Zumdahl §14.1–14.9 • 50 minutes • $K$ values provided with Section II
+Zumdahl §14.1–14.9 • 50 minutes • K values provided with Section II
 
 [← all lessons](../index.md)
 

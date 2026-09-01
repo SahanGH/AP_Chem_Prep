@@ -1,7 +1,7 @@
 # Worksheet 3 • Nonstandard Conditions
 
 *Chapter 18 • Electrochemistry*  
-Zumdahl §18.4 • reason from distance to equilibrium, not from Le Ch^atelier
+Zumdahl §18.4 • reason from distance to equilibrium, not from Le Chatelier
 
 [← all lessons](../index.md)
 

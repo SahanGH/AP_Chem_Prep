@@ -1,7 +1,7 @@
 # Guided Notes
 
 *Chapter 11 • Properties of Solutions*  
-Zumdahl §11.1–11.3 (CED) $+$ §11.4–11.7 (enrichment) • PDF pp. 551–581 • 4 blocks
+Zumdahl §11.1–11.3 (CED) + §11.4–11.7 (enrichment) • PDF pp. 551–581 • 4 blocks
 
 [← all lessons](../index.md)
 

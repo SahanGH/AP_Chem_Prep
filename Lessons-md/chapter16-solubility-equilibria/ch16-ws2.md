@@ -1,7 +1,7 @@
-# Worksheet 2 • Solubility from $K_sp$ and Ranking Salts
+# Worksheet 2 • Solubility from Ksp and Ranking Salts
 
 *Chapter 16 • Solubility Equilibria*  
-Zumdahl §16.1 • you may compare $K_sp$ only when the ion counts match
+Zumdahl §16.1 • you may compare Ksp only when the ion counts match
 
 [← all lessons](../index.md)
 

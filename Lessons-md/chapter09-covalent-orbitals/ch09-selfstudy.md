@@ -1,7 +1,7 @@
 # Self-Study • Chapter 9, I do / You do
 
 *Chapter 9 • Covalent Bonding: Orbitals*  
-Zumdahl §9.1 (assessed) $+$ §9.2–9.3 (enrichment) • PDF pp. 455–480
+Zumdahl §9.1 (assessed) + §9.2–9.3 (enrichment) • PDF pp. 455–480
 
 [← all lessons](../index.md)
 

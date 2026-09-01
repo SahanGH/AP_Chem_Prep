@@ -1,7 +1,7 @@
 # Guided Notes
 
 *Chapter 9 • Covalent Bonding: Orbitals*  
-Zumdahl §9.1 (CED) $+$ §9.2–9.3 (enrichment) • PDF pp. 454–490 • 3 blocks
+Zumdahl §9.1 (CED) + §9.2–9.3 (enrichment) • PDF pp. 454–490 • 3 blocks
 
 [← all lessons](../index.md)
 

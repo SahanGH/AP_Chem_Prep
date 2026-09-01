@@ -1190,11 +1190,56 @@ def get_meta(src: str) -> dict:
     }
 
 
+# Metadata is plain text -- it lands in <title>, the page header and the
+# index link, none of which run MathJax. Any macro not mapped here is
+# deleted, so a Greek letter or an operator in a title vanishes silently:
+# "Hybridization and $\sigma$/$\pi$ Bonds" published as "and $$/$$ Bonds",
+# and "$\Delta G^\circ$" as "$ G^$". Map anything a title plausibly uses.
+META_MACROS = {
+    "textbullet": "\u2022",
+    # Greek
+    "alpha": "\u03b1", "beta": "\u03b2", "gamma": "\u03b3",
+    "delta": "\u03b4", "Delta": "\u0394", "epsilon": "\u03b5",
+    "theta": "\u03b8", "lambda": "\u03bb", "mu": "\u03bc", "nu": "\u03bd",
+    "pi": "\u03c0", "rho": "\u03c1", "sigma": "\u03c3", "tau": "\u03c4",
+    "phi": "\u03c6", "chi": "\u03c7", "omega": "\u03c9", "Omega": "\u03a9",
+    # operators, relations, arrows
+    "to": "\u2192", "rightarrow": "\u2192", "longrightarrow": "\u2192",
+    "Rightarrow": "\u21d2", "leftrightarrow": "\u2194",
+    "rightleftharpoons": "\u21cc", "approx": "\u2248", "neq": "\u2260",
+    "leq": "\u2264", "geq": "\u2265", "ll": "\u226a", "gg": "\u226b",
+    "times": "\u00d7", "cdot": "\u00b7", "pm": "\u00b1",
+    "circ": "\u00b0", "degree": "\u00b0", "percent": "%",
+    "ldots": "\u2026", "dots": "\u2026", "infty": "\u221e",
+}
+
+# expand_units returns HTML entities; metadata wants literal characters.
+_ENTITY = {"&deg;": "\u00b0", "&micro;": "\u00b5", "&sup2;": "\u00b2",
+           "&sup3;": "\u00b3", "&middot;": "\u00b7", "&thinsp;": " ",
+           "&nbsp;": " "}
+
+
 def clean_meta(s: str) -> str:
-    s = s.replace(r"\textbullet", "\u2022").replace(r"\S", "\u00a7")
+    # \S before the general strip, but NOT when it opens \SI -- doing this
+    # blindly turned "\SI{0.08206}{...}" into "§I0.08206".
+    s = re.sub(r"\\S(?![a-zA-Z])", "\u00a7", s)
     s = re.sub(r"\\ce\{([^}]*)\}", r"\1", s)
+    # \SI{value}{units} -> "value units"
+    s = re.sub(r"\\SI\{([^}]*)\}\{([^}]*)\}",
+               lambda m: m.group(1) + " " + expand_units(m.group(2)), s)
+    s = re.sub(r"\\si\{([^}]*)\}", lambda m: expand_units(m.group(1)), s)
+    for name, ch in META_MACROS.items():
+        # Consume one following space, as TeX itself does after a control
+        # word -- otherwise "\Delta S" comes out "Δ S" instead of "ΔS".
+        s = re.sub(r"\\" + name + r"(?![a-zA-Z]) ?", ch, s)
+    for ent, ch in _ENTITY.items():
+        s = s.replace(ent, ch)
+    # Whatever is left is a formatting wrapper (\emph, \textbf, \mathrm...);
+    # drop the macro and keep its argument.
     s = re.sub(r"\\[a-zA-Z]+", "", s)
     s = s.replace("\\ ", " ").replace("\\,", " ").replace("\\", "")
+    # Math delimiters and sub/superscript markers mean nothing in plain text.
+    s = s.replace("$", "").replace("^", "").replace("_", "")
     s = s.replace("~", " ").replace("{", "").replace("}", "")
     s = s.replace("---", "\u2014").replace("--", "\u2013")
     return re.sub(r"\s+", " ", s).strip()

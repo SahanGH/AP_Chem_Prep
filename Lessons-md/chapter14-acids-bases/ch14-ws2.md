@@ -1,7 +1,7 @@
 # Worksheet 2 • Weak Acids and Weak Bases
 
 *Chapter 14 • Acids and Bases*  
-Zumdahl §14.5–14.7 • for a base, $x$ is $[OH-]$ — convert
+Zumdahl §14.5–14.7 • for a base, x is [OH-] — convert
 
 [← all lessons](../index.md)
 

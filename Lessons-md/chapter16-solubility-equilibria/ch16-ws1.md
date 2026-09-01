@@ -1,4 +1,4 @@
-# Worksheet 1 • $K_sp$ Expressions and $K_sp$ from Solubility
+# Worksheet 1 • Ksp Expressions and Ksp from Solubility
 
 *Chapter 16 • Solubility Equilibria*  
 Zumdahl §16.1 • the coefficient becomes an exponent and a multiplier

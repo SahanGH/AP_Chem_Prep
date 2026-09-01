@@ -1,7 +1,7 @@
 # Self-Study • Chapter 16, I do / You do
 
 *Chapter 16 • Solubility Equilibria*  
-Zumdahl §16.1 $+$ §16.2 (Q vs $K_sp$) • PDF pp. 805–819
+Zumdahl §16.1 + §16.2 (Q vs Ksp) • PDF pp. 805–819
 
 [← all lessons](../index.md)
 

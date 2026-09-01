@@ -1,7 +1,7 @@
-# Worksheet 3 • Le Ch^atelier's Principle & FRQ
+# Worksheet 3 • Le Chatelier's Principle & FRQ
 
 *Chapter 13 • Chemical Equilibrium*  
-Zumdahl §13.7 • only temperature changes the value of $K$
+Zumdahl §13.7 • only temperature changes the value of K
 
 [← all lessons](../index.md)
 

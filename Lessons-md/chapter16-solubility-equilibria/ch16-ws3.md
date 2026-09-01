@@ -1,7 +1,7 @@
 # Worksheet 3 • The Common-Ion Effect
 
 *Chapter 16 • Solubility Equilibria*  
-Zumdahl §16.1 • solubility moves; $K_sp$ does not
+Zumdahl §16.1 • solubility moves; Ksp does not
 
 [← all lessons](../index.md)
 

@@ -1,4 +1,4 @@
-# Worksheet 2 • Calculating $ S^$ and $ G^$
+# Worksheet 2 • Calculating ΔS° and ΔG°
 
 *Chapter 17 • Entropy and Free Energy*  
 Zumdahl §17.6–17.7 • entropies are in joules, enthalpies in kilojoules

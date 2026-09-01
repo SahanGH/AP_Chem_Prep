@@ -1,4 +1,4 @@
-# Worksheet 2 • FRQ Practice $+$ Optional Enrichment
+# Worksheet 2 • FRQ Practice + Optional Enrichment
 
 *Chapter 9 • Covalent Bonding: Orbitals*  
 Zumdahl §9.1 examinable • §9.2–9.3 optional

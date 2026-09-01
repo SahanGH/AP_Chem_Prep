@@ -1,4 +1,4 @@
-# Worksheet 1 • Hybridization and $$/$$ Bonds
+# Worksheet 1 • Hybridization and σ/π Bonds
 
 *Chapter 9 • Covalent Bonding: Orbitals*  
 Zumdahl §9.1 • count domains, not bonds

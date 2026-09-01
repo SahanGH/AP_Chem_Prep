@@ -1,7 +1,7 @@
 # Chapter Test
 
 *Chapter 16 • Solubility Equilibria*  
-Zumdahl §16.1 • 50 minutes • $K_sp$ values provided with Section II
+Zumdahl §16.1 • 50 minutes • Ksp values provided with Section II
 
 [← all lessons](../index.md)
 
