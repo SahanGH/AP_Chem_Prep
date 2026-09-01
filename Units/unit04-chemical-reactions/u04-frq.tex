@@ -1,0 +1,224 @@
+% Unit 4 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunit{4}
+\apcunittitle{Chemical Reactions}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{CED 4.1--4.9 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- two CED exclusions apply]
+Covers \ced{4.1} through \ced{4.9}, worth
+\SI{7}{\percent}--\SI{9}{\percent} of the exam.
+
+Topic \ced{4.7} excludes the terms \textbf{``oxidizing agent'' and
+``reducing agent''}, and excludes \textbf{rote memorization of solubility
+rules} beyond the short list in 4.7.A.5. Topic \ced{4.8} excludes
+\textbf{Lewis acid--base concepts}; Br\o{}nsted--Lowry is the model the
+exam uses.
+
+You will be asked which species is oxidized and which is reduced --- never
+to name an ``agent''.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{\ced{4.2} \ced{4.3} \ced{4.5} \ced{4.7} \textbullet\ precipitation and solution stoichiometry}
+
+\SI{40.0}{\milli\litre} of \SI{0.150}{\Molar} \ce{Pb(NO3)2} is mixed with
+\SI{50.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{KI}. A bright yellow
+precipitate of \ce{PbI2} forms ($M = \SI{461.0}{\gram\per\mole}$). Assume
+volumes are additive.
+
+\begin{parts}
+  \item Write the balanced net ionic equation.
+        \answerlines[2]{\ce{Pb^2+(aq) + 2I^-(aq) -> PbI2(s)}}
+  \item Determine the limiting reactant. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Pb^2+}) = 0.0400 \times 0.150 =
+        \num{0.00600}$~mol.
+
+        $n(\ce{I-}) = 0.0500 \times 0.200 = \num{0.0100}$~mol.
+
+        The net ionic equation needs \textbf{two} iodide per lead, so
+        consuming all the \ce{Pb^2+} would require
+        $2(0.00600) = \num{0.0120}$~mol of iodide --- more than the
+        \num{0.0100} available.
+
+        \textbf{Iodide is limiting.}\end{apcanswer}}
+  \item Calculate the mass of \ce{PbI2} formed. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Iodide is limiting and the ratio is
+        $2\,\ce{I-} : 1\,\ce{PbI2}$:
+
+        $n(\ce{PbI2}) = 0.0100/2 = \num{0.00500}$~mol
+
+        $m = 0.00500 \times 461.0 = \mathbf{2.31}$~g\end{apcanswer}}
+  \item Calculate the concentration of lead(II) ion remaining in solution.
+        \answerlines[3]{Lead consumed $= \num{0.00500}$~mol, so
+        $0.00600 - 0.00500 = \num{0.00100}$~mol remains.
+
+        Total volume $= 40.0 + 50.0 = \SI{90.0}{\milli\litre}$.
+
+        $[\ce{Pb^2+}] = 0.00100/0.0900 = \mathbf{0.0111}$~M}
+  \item Identify the spectator ions and explain what makes them
+        spectators. \answerlines[2]{\ce{K+} and \ce{NO3-}. Both are
+        present, dissolved and unchanged, before and after the reaction,
+        so they take no part in the chemical change and cancel from the
+        equation.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 2 pts the net ionic equation with the $2$ on iodide and
+    the solid state shown; 1 pt if written in full molecular form}
+  \rpoint{3}{(b) 1 pt both mole quantities; 1 pt applying the $2:1$ ratio
+    rather than comparing moles directly; 1 pt iodide. Comparing
+    \num{0.00600} with \num{0.0100} and answering \ce{Pb^2+} earns 1}
+  \rpoint{2}{(c) 1 pt dividing by 2 for the ratio; 1 pt \SI{2.31}{\gram}}
+  \rpoint{2}{(d) 1 pt \num{0.00100}~mol remaining; 1 pt dividing by the
+    \emph{combined} \SI{90.0}{\milli\litre}}
+  \rpoint{1}{(e) both spectators named, with a reason}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{\ced{4.9} \ced{4.6} \textbullet\ redox and a dichromate titration}
+
+Acidified dichromate oxidizes iron(II) in solution:
+\[ \ce{Cr2O7^2-(aq) + Fe^2+(aq) + H+(aq) -> Cr^3+(aq) + Fe^3+(aq) + H2O(l)}
+   \quad \text{(unbalanced)} \]
+
+\begin{parts}
+  \item Assign the oxidation number of chromium on each side and state
+        whether it is oxidized or reduced.
+        \answerlines[2]{In \ce{Cr2O7^2-}: $2x + 7(-2) = -2$, so
+        $x = \mathbf{+6}$. In \ce{Cr^3+}: $\mathbf{+3}$. The oxidation
+        number falls, so chromium is \textbf{reduced}.}
+  \item Balance the equation in acidic solution. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Each chromium gains 3 electrons and
+        there are two of them, so the dichromate half-reaction takes
+        \textbf{6} electrons. Iron loses 1 each, so six \ce{Fe^2+} are
+        needed:
+
+        \ce{Cr2O7^2- + 6Fe^2+ + 14H+ -> 2Cr^3+ + 6Fe^3+ + 7H2O}
+
+        Charge check: left $-2 + 12 + 14 = +24$; right
+        $+6 + 18 = +24$. \checkmark\end{apcanswer}}
+  \item A \SI{20.00}{\milli\litre} sample of the iron(II) solution
+        required \SI{24.50}{\milli\litre} of \SI{0.0150}{\Molar}
+        \ce{K2Cr2O7} to reach the endpoint. Calculate $[\ce{Fe^2+}]$.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}$n(\ce{Cr2O7^2-}) = 0.02450 \times
+        0.0150 = \num{3.675e-4}$~mol.
+
+        The balanced ratio is $1 : 6$:
+
+        $n(\ce{Fe^2+}) = 6 \times 3.675\times10^{-4} =
+        \num{2.205e-3}$~mol
+
+        $[\ce{Fe^2+}] = 2.205\times10^{-3}/0.02000 =
+        \mathbf{0.110}$~M\end{apcanswer}}
+  \item State what would happen to the calculated $[\ce{Fe^2+}]$ if the
+        student overshot the endpoint, and why.
+        \answerlines[2]{It would come out \textbf{too high}. An overshoot
+        records a larger titre than the true equivalence volume, so more
+        dichromate is thought to have reacted and the calculated iron(II)
+        amount is correspondingly inflated.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both oxidation numbers; 1 pt ``reduced''. Per the
+    \ced{4.7} exclusion, do \textbf{not} require the phrase ``oxidizing
+    agent''}
+  \rpoint{3}{(b) 1 pt 6 electrons on the dichromate side; 1 pt the factor
+    of 6 on iron; 1 pt \ce{H+} and \ce{H2O} balanced (14 and 7). Charges
+    not balancing caps this at 2}
+  \rpoint{3}{(c) 1 pt moles of dichromate; 1 pt the $1:6$ ratio; 1 pt
+    \SI{0.110}{\Molar}. Omitting the ratio gives \num{0.0184} and earns 1}
+  \rpoint{2}{(d) 1 pt ``too high''; 1 pt because the recorded volume
+    exceeds the true equivalence volume}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{4.4} \textbullet\ physical versus chemical change}
+
+\begin{parts}
+  \item Classify each as physical or chemical, with a one-line reason:
+        (i) ice melting; (ii) iron rusting; (iii) salt dissolving in
+        water. \answerlines[3]{(i) \textbf{Physical} --- the molecules are
+        unchanged; only the arrangement and the intermolecular forces
+        between them change. (ii) \textbf{Chemical} --- new substances
+        with new bonds form. (iii) \textbf{Physical} --- the ions separate
+        and become hydrated, but \ce{Na+} and \ce{Cl-} themselves are
+        unchanged.}
+  \item Dissolving is sometimes argued to be chemical because ion--dipole
+        bonds form. State the strongest argument that it is physical.
+        \answerlines[2]{No new chemical substance is produced: the ions
+        that were in the lattice are the same ions in solution, and
+        evaporating the water recovers the original solid unchanged.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{1 pt each classification, each needing its reason}
+  \rpoint{1}{(b) recoverability / no new substance formed}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{4.6} \ced{4.8} \textbullet\ acid--base titration}
+
+A \SI{25.00}{\milli\litre} sample of a monoprotic acid \ce{HA} is titrated
+with \SI{0.100}{\Molar} \ce{NaOH}. The endpoint occurs at
+\SI{28.75}{\milli\litre}.
+
+\begin{parts}
+  \item Calculate the concentration of the acid.
+        \answerlines[2]{$n(\ce{OH-}) = 0.02875 \times 0.100 =
+        \num{0.00288}$~mol, which equals $n(\ce{HA})$ at equivalence.
+
+        $[\ce{HA}] = 0.00288/0.02500 = \mathbf{0.115}$~M}
+  \item Write the net ionic equation for the reaction, given that \ce{HA}
+        is a \emph{weak} acid. \answerlines[3]{\ce{HA(aq) + OH^-(aq) ->
+        A^-(aq) + H2O(l)}
+
+        A weak acid is only slightly ionized, so it must be written as the
+        intact molecule \ce{HA} rather than as \ce{H+}. Only \ce{Na+} is a
+        spectator.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt moles of base equal moles of acid at equivalence;
+    1 pt \SI{0.115}{\Molar}}
+  \rpoint{2}{(b) 1 pt correct equation; 1 pt \ce{HA} kept intact because
+    it is weak. Writing \ce{H+ + OH^- -> H2O} earns 0 for the second point}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{4.1} \ced{4.3} \textbullet\ equations and particulate representations}
+
+\begin{parts}
+  \item Write the balanced equation for the complete combustion of ethanol,
+        \ce{C2H5OH}. \answerlines[2]{\ce{C2H5OH(l) + 3O2(g) -> 2CO2(g) +
+        3H2O(g)}}
+  \item A particulate diagram of the reactants shows 4 ethanol molecules
+        and 9 oxygen molecules. Determine how many molecules of each
+        species the product diagram should show. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}The ratio needed is $1 : 3$, so 4
+        ethanol would require 12 oxygen. Only 9 are present, so
+        \textbf{oxygen is limiting}: it supports $9/3 = 3$ ethanol.
+
+        Products: $3 \times 2 = \mathbf{6}$ \ce{CO2} and
+        $3 \times 3 = \mathbf{9}$ \ce{H2O}, together with
+        $4 - 3 = \mathbf{1}$ unreacted ethanol molecule --- which must be
+        drawn, since it is still there.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) coefficients 1, 3, 2, 3}
+  \rpoint{2}{(b) 1 pt identifying oxygen as limiting; 1 pt 6 \ce{CO2},
+    9 \ce{H2O} \emph{and} the leftover ethanol. Omitting the excess
+    reactant is the standard error and costs the point}
+\end{rubric}
+
+\examtotal
+
+\end{document}

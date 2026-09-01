@@ -1,0 +1,228 @@
+% Unit 6 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{CED 6.1--6.9 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope]
+Covers \ced{6.1} through \ced{6.9}, worth
+\SI{7}{\percent}--\SI{9}{\percent} of the exam. Note that \ced{6.5}
+(energy of phase changes) is sourced from Zumdahl \S10.8 and \ced{6.7}
+(bond enthalpies) from \S8.8 --- both sit outside the thermochemistry
+chapter, and both are examined here.
+
+Topics \ced{6.6} and \ced{6.9} carry an exclusion covering the
+\textbf{enthalpy-versus-internal-energy distinction} and formal treatment
+of \textbf{state functions}. Hess's law itself is fully examinable; the
+thermodynamic formalism behind it is not.
+
+Take $c(\ce{H2O}) = \SI{4.18}{\joule\per\gram\per\celsius}$,
+$\Delta H_{\text{fus}} = \SI{334}{\joule\per\gram}$ and
+$\Delta H_{\text{vap}} = \SI{2260}{\joule\per\gram}$.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{\ced{6.3} \ced{6.4} \ced{6.6} \textbullet\ calorimetry}
+
+A \SI{75.0}{\gram} block of an unknown metal is heated to
+\SI{98.0}{\celsius} and dropped into \SI{150.0}{\gram} of water at
+\SI{22.0}{\celsius} in an insulated calorimeter. The final temperature of
+both is \SI{24.6}{\celsius}.
+
+\begin{parts}
+  \item State the direction of heat flow and the sign of $q$ for the water
+        and for the metal. \answerlines[3]{Heat flows from the
+        \textbf{metal} (hotter) to the \textbf{water} (cooler), until both
+        reach the same temperature. $q_{\text{water}}$ is
+        \textbf{positive} --- it gains energy; $q_{\text{metal}}$ is
+        \textbf{negative} --- it loses the same amount.}
+  \item Calculate the heat gained by the water. \answerlines[2]{$q = mc
+        \Delta T = (150.0)(4.18)(24.6 - 22.0) = \mathbf{1.63\times10^{3}}$~J}
+  \item Calculate the specific heat capacity of the metal.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}The metal lost what the water gained,
+        cooling from \SI{98.0}{\celsius} to \SI{24.6}{\celsius} --- a fall
+        of \SI{73.4}{\celsius}, \emph{not} \SI{2.6}{\celsius}:
+
+        $c = \dfrac{1630}{(75.0)(73.4)} =
+        \mathbf{0.296}$~J/g\,\si{\celsius}\end{apcanswer}}
+  \item The water's temperature rose only \SI{2.6}{\celsius} while the
+        metal fell \SI{73.4}{\celsius}, for the same quantity of heat.
+        Explain. \answerlines[3]{Water has a much larger specific heat
+        capacity --- about fourteen times the metal's --- and there is
+        twice as much of it by mass. The same energy therefore produces a
+        far smaller temperature change in the water. Its extensive heat
+        capacity, $mc$, is much the larger of the two.}
+  \item State one assumption made in this calculation.
+        \answerlines[2]{That the calorimeter is perfectly insulated, so
+        all the heat lost by the metal is gained by the water and none
+        escapes to the surroundings or is absorbed by the container.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt direction of flow; 1 pt both signs}
+  \rpoint{2}{(b) 1 pt $mc\Delta T$ with $\Delta T = \SI{2.6}{}$; 1 pt
+    \SI{1.63e3}{\joule}}
+  \rpoint{3}{(c) 1 pt equating heat lost to heat gained; 1 pt using the
+    metal's own $\Delta T$ of \SI{73.4}{\celsius}; 1 pt
+    \num{0.296}~J/g\,\si{\celsius}. Using \SI{2.6}{\celsius} for the metal
+    caps this part at 1}
+  \rpoint{2}{(d) 1 pt water's larger specific heat capacity; 1 pt the
+    larger mass / larger $mc$}
+  \rpoint{1}{(e) any valid isolation assumption}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{\ced{6.7} \ced{6.8} \ced{6.9} \textbullet\ Hess's law, formation and bond enthalpies}
+
+Consider these data at \SI{298}{\kelvin}:
+\begin{center}
+\begin{tabular}{lr}
+\hline
+\textbf{Reaction} & $\Delta H^\circ$ (kJ) \\
+\hline
+\ce{N2(g) + O2(g) -> 2NO(g)}    & $+180.5$ \\
+\ce{2NO(g) + O2(g) -> 2NO2(g)}  & $-114.1$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Use Hess's law to find $\Delta H^\circ$ for
+        \ce{N2(g) + 2O2(g) -> 2NO2(g)}. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}The two equations add directly --- the
+        \ce{2NO} produced by the first is consumed by the second and
+        cancels, and the oxygens sum to \ce{2O2}:
+
+        $\Delta H^\circ = (+180.5) + (-114.1) =
+        \mathbf{+66.4}$~kJ\end{apcanswer}}
+  \item Hence determine $\Delta H_f^\circ$ for \ce{NO2(g)}, and explain
+        the relationship. \answerlines[3]{The reaction in (a) forms
+        \textbf{two} moles of \ce{NO2} from its elements in their standard
+        states, so it equals $2\,\Delta H_f^\circ(\ce{NO2})$.
+
+        $\Delta H_f^\circ = 66.4/2 = \mathbf{+33.2}$~kJ/mol}
+  \item State $\Delta H^\circ$ for \ce{2NO2(g) -> 2NO(g) + O2(g)} and
+        justify. \answerlines[2]{$+114.1$~kJ. Reversing a reaction
+        reverses the direction of energy flow, so the magnitude is
+        unchanged and the sign flips.}
+  \item Using average bond enthalpies \ce{N#N} 941, \ce{O=O} 495 and
+        \ce{N=O} 607 \si{\kilo\joule\per\mole}, estimate $\Delta H$ for
+        \ce{N2 + O2 -> 2NO} and compare with the tabulated $+180.5$~kJ.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}Broken: $941 + 495 = \num{1436}$~kJ.
+        Formed: $2(607) = \num{1214}$~kJ.
+
+        $\Delta H = 1436 - 1214 = \mathbf{+222}$~kJ
+
+        That is about \SI{40}{\kilo\joule} above the tabulated
+        $+180.5$~kJ. Bond enthalpies are \emph{averages} taken across many
+        compounds, so a value computed this way is only an estimate; the
+        sign and rough magnitude are right, the precise figure is
+        not.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt the equations add with \ce{NO} cancelling; 1 pt
+    $+66.4$~kJ}
+  \rpoint{3}{(b) 1 pt recognizing the reaction forms 2 mol from elements
+    in standard states; 1 pt dividing by 2; 1 pt $+33.2$~kJ/mol}
+  \rpoint{2}{(c) 1 pt $+114.1$~kJ; 1 pt the sign-reversal reason}
+  \rpoint{3}{(d) 1 pt bonds broken; 1 pt bonds formed and the subtraction
+    in the correct sense; 1 pt noting these are averages, so the result is
+    an estimate. Reversing the subtraction gives $-222$ and caps this at 1}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{6.1} \ced{6.2} \textbullet\ endothermic processes and energy diagrams}
+
+Barium hydroxide octahydrate and ammonium chloride are mixed in a beaker.
+The beaker becomes so cold that it freezes to a wet block of wood.
+
+\begin{parts}
+  \item State the sign of $\Delta H$ and explain the direction of heat
+        flow. \answerlines[3]{$\Delta H$ is \textbf{positive} --- the
+        process is endothermic. Energy flows \emph{from} the surroundings
+        (the beaker, the wood, the air) \emph{into} the reacting mixture,
+        so the surroundings lose energy and their temperature falls.}
+  \item Describe the energy diagram for this reaction.
+        \answerlines[2]{The products lie \textbf{above} the reactants,
+        since the system absorbed energy. The vertical gap between them is
+        $\Delta H$, and it is positive.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt positive/endothermic; 1 pt heat flows from
+    surroundings into the system. ``It releases cold'' earns 0}
+  \rpoint{2}{(b) 1 pt products above reactants; 1 pt the gap identified as
+    $\Delta H$}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{6.5} \textbullet\ energy of phase changes}
+
+\begin{parts}
+  \item Calculate the total energy needed to convert \SI{25.0}{\gram} of
+        ice at \SI{0}{\celsius} into steam at \SI{100}{\celsius}.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Melt: $(25.0)(334) = \SI{8350}{\joule} =
+        \SI{8.35}{\kilo\joule}$
+
+        Heat \SI{0}{} to \SI{100}{\celsius}: $(25.0)(4.18)(100) =
+        \SI{10450}{\joule} = \SI{10.45}{\kilo\joule}$
+
+        Vaporize: $(25.0)(2260) = \SI{56500}{\joule} =
+        \SI{56.5}{\kilo\joule}$
+
+        Total $= \mathbf{75.3}$~kJ\end{apcanswer}}
+  \item State which step requires the most energy and why.
+        \answerlines[2]{\textbf{Vaporization.} Melting only loosens the
+        lattice --- the molecules stay in contact --- whereas vaporizing
+        must separate them completely, overcoming essentially all the
+        remaining intermolecular attractions.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt each of the three steps computed correctly, with the
+    phase-change terms using mass only and no $\Delta T$}
+  \rpoint{1}{(b) vaporization, justified by having to separate the
+    molecules completely}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{6.3} \textbullet\ heat transfer and thermal equilibrium}
+
+\begin{parts}
+  \item Two blocks at different temperatures are placed in contact and
+        isolated. Describe what happens at the particle level until they
+        reach thermal equilibrium. \answerlines[3]{Particles of the hotter
+        block have the greater average kinetic energy. At the boundary
+        they collide with particles of the cooler block and transfer
+        energy to them. The hotter block's average kinetic energy falls
+        and the cooler block's rises, until both have the same average
+        kinetic energy --- the same temperature. Collisions continue, but
+        with no further \emph{net} transfer.}
+  \item State whether the two blocks must contain the same amount of
+        thermal energy at equilibrium, and why.
+        \answerlines[2]{No. They share the same \emph{temperature}, but
+        total thermal energy also depends on mass and specific heat
+        capacity, which may differ between the blocks.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt energy transferred by particle collisions at the
+    boundary; 1 pt equal average kinetic energy defines equilibrium}
+  \rpoint{2}{(b) 1 pt ``no''; 1 pt temperature is not the same thing as
+    total thermal energy}
+\end{rubric}
+
+\examtotal
+
+\end{document}

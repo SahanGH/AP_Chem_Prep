@@ -1,0 +1,238 @@
+% Unit 8 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+%
+% Q1 is built on HF at 0.250 M, where the 5% approximation FAILS by a hair
+% (5.2%). That is the point: the candidate has to actually run the check
+% rather than assume, and then carry the quadratic. Both values are stated
+% in the key so a grader is not surprised by a 1.87 from a candidate who
+% approximated.
+\documentclass{apchem-exam}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{CED 8.1--8.11 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- three CED exclusions apply]
+Covers \ced{8.1} through \ced{8.11}. Unit 8 is worth
+\SI{11}{\percent}--\SI{15}{\percent} of the exam, the second-heaviest
+unit.
+
+Topic \ced{8.5} excludes \textbf{species computations on polyprotic
+titration curves}; \ced{8.9} excludes \textbf{deriving
+Henderson--Hasselbalch} and computing the pH change on adding acid or base
+to a buffer; \ced{8.11} restricts pH-and-solubility to
+\textbf{qualitative} treatment only. None of the three is asked below.
+
+$K_w = \num{1.0e-14}$ at \SI{25}{\celsius}.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{\ced{8.1} \ced{8.3} \ced{8.7} \textbullet\ a weak acid where the 5\% rule fails}
+
+Hydrofluoric acid has $K_a = \num{7.2e-4}$. Consider
+\SI{0.250}{\Molar} \ce{HF}.
+
+\begin{parts}
+  \item Write the ionization equilibrium and the $K_a$ expression.
+        \answerlines[2]{\ce{HF(aq) + H2O(l) <=> F^-(aq) + H3O+(aq)}
+
+        $K_a = \dfrac{[\ce{F-}][\ce{H3O+}]}{[\ce{HF}]}$ --- water is the
+        solvent and is omitted.}
+  \item Test whether the approximation $0.250 - x \approx 0.250$ is valid,
+        and state your conclusion. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Assuming it holds,
+        $x \approx \sqrt{(7.2\times10^{-4})(0.250)} = \num{0.0134}$~M.
+
+        As a fraction of the initial concentration,
+        $0.0134/0.250 = \SI{5.4}{\percent}$ --- just \emph{above} the
+        \SI{5}{\percent} threshold, so the approximation
+        \textbf{fails} and the quadratic should be
+        used.\end{apcanswer}}
+  \item Calculate the pH. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$\dfrac{x^2}{0.250-x} =
+        7.2\times10^{-4} \;\Rightarrow\;
+        x^2 + 7.2\times10^{-4}x - 1.8\times10^{-4} = 0$
+
+        $x = \dfrac{-7.2\times10^{-4} +
+        \sqrt{(7.2\times10^{-4})^2 + 4(1.8\times10^{-4})}}{2}
+        = \num{0.01306}$~M
+
+        $\text{pH} = -\log(0.01306) = \mathbf{1.88}$
+
+        (The approximation would have given \num{0.01342} and pH
+        \num{1.87}. The difference is small here, which is exactly why the
+        \SI{5}{\percent} test must be run rather than
+        guessed.)\end{apcanswer}}
+  \item Calculate the percent ionization and the $\mathrm{p}K_a$.
+        \answerlines[2]{Percent ionization $= 0.01306/0.250 \times 100 =
+        \mathbf{5.2}\%$. \quad
+        $\mathrm{p}K_a = -\log(7.2\times10^{-4}) = \mathbf{3.14}$}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt the equilibrium with a double arrow; 1 pt the
+    expression with water omitted}
+  \rpoint{3}{(b) 1 pt the approximate $x$; 1 pt expressing it as a
+    percentage; 1 pt concluding the approximation fails}
+  \rpoint{3}{(c) 1 pt the quadratic set up; 1 pt $x = \num{0.0131}$; 1 pt
+    pH \num{1.88}. Accept \num{1.87}--\num{1.88}; a candidate who
+    approximated but showed the (b) test still earns full credit here}
+  \rpoint{2}{(d) 1 pt \SI{5.2}{\percent}; 1 pt $\mathrm{p}K_a = \num{3.14}$}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{\ced{8.4} \ced{8.5} \ced{8.8} \ced{8.10} \textbullet\ buffers and a titration curve}
+
+A buffer is made from \ce{HF} ($\mathrm{p}K_a = 3.14$) and \ce{NaF}.
+
+\begin{parts}
+  \item Explain how this mixture resists pH change when a small amount of
+        strong acid is added, and when strong base is added.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}The buffer holds appreciable amounts of
+        \emph{both} members of a conjugate pair.
+
+        \textbf{Added \ce{H+}} is consumed by the base component:
+        \ce{F^- + H+ -> HF}. Strong acid is converted into weak acid, so
+        free $[\ce{H3O+}]$ barely rises.
+
+        \textbf{Added \ce{OH-}} is consumed by the acid component:
+        \ce{HF + OH^- -> F^- + H2O}. Strong base is converted into the
+        conjugate base, so free $[\ce{OH-}]$ barely rises.
+
+        In each case the \emph{ratio} of the pair changes only slightly,
+        and pH depends on that ratio.\end{apcanswer}}
+  \item Calculate the pH of a buffer that is \SI{0.20}{\Molar} in \ce{HF}
+        and \SI{0.30}{\Molar} in \ce{F-}.
+        \answerlines[2]{$\text{pH} = \mathrm{p}K_a +
+        \log\dfrac{[\ce{F-}]}{[\ce{HF}]} = 3.14 + \log\dfrac{0.30}{0.20}
+        = 3.14 + 0.18 = \mathbf{3.32}$}
+  \item State the pH at the half-equivalence point of an \ce{HF}--\ce{NaOH}
+        titration, with justification. \answerlines[2]{At half-equivalence
+        exactly half the \ce{HF} has been converted to \ce{F-}, so
+        $[\ce{HF}] = [\ce{F-}]$, the log term vanishes and
+        $\text{pH} = \mathrm{p}K_a = \mathbf{3.14}$.}
+  \item Explain why the equivalence point of this titration lies
+        \emph{above} pH 7, and name a suitable indicator.
+        \answerlines[3]{At equivalence all the \ce{HF} has become
+        \ce{F-}, the conjugate base of a weak acid. It hydrolyses water,
+        \ce{F^- + H2O <=> HF + OH^-}, producing \ce{OH-} and making the
+        solution basic.
+
+        Phenolphthalein, changing colour around pH 8.3--10.0, brackets a
+        weak-acid equivalence point well. Methyl orange would change far
+        too early.}
+  \item Two buffers both have pH \num{3.14}; one is \SI{1.0}{\Molar} in
+        each component, the other \SI{0.010}{\Molar}. State which has the
+        greater buffer capacity and why. \answerlines[2]{The
+        \SI{1.0}{\Molar} buffer. Capacity depends on the absolute
+        \emph{amounts} of the conjugate pair, not their ratio, so it can
+        absorb far more added acid or base before either component runs
+        out.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt both members of the pair present; 1 pt the equation
+    consuming added \ce{H+}; 1 pt the equation consuming added \ce{OH-}.
+    Per the \ced{8.9} exclusion, do \textbf{not} require a pH-change
+    calculation}
+  \rpoint{2}{(b) 1 pt correct use of Henderson--Hasselbalch; 1 pt
+    \num{3.32}}
+  \rpoint{2}{(c) 1 pt pH $=$ p$K_a$; 1 pt because the pair is present in
+    equal amounts}
+  \rpoint{2}{(d) 1 pt fluoride hydrolyses to give \ce{OH-}; 1 pt
+    phenolphthalein with a range matching}
+  \rpoint{1}{(e) the \SI{1.0}{\Molar} buffer, justified by absolute amount}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{8.2} \textbullet\ strong acids and bases}
+
+\begin{parts}
+  \item Calculate the pH of \SI{0.0050}{\Molar} \ce{Ba(OH)2}, assuming
+        complete dissociation. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Each formula unit releases \textbf{two}
+        hydroxide ions:
+
+        $[\ce{OH-}] = 2(0.0050) = \SI{0.010}{\Molar}$
+
+        $\text{pOH} = -\log(0.010) = 2.00$, so
+        $\text{pH} = 14.00 - 2.00 = \mathbf{12.00}$\end{apcanswer}}
+  \item A student reports pH \num{2.30} for this solution. Identify the
+        likely error. \answerlines[2]{They computed pOH and reported it as
+        pH --- or treated \ce{Ba(OH)2} as an acid. A hydroxide of a group
+        2 metal must give a \emph{basic} solution, so any pH below 7 is
+        immediately wrong.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt the factor of 2 on hydroxide; 1 pt pOH \num{2.00};
+    1 pt pH \num{12.00}. Omitting the factor of 2 gives \num{11.70} and
+    earns at most 2}
+  \rpoint{1}{(b) recognizing pH and pOH have been interchanged}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{8.6} \textbullet\ molecular structure and acid strength}
+
+\begin{parts}
+  \item Acid strength increases along \ce{HClO} $<$ \ce{HClO2} $<$
+        \ce{HClO3} $<$ \ce{HClO4}. Explain.
+        \answerlines[3]{Each additional oxygen is strongly electronegative
+        and pulls electron density away from the \ce{O-H} bond, weakening
+        it so the proton is released more readily. The extra oxygens also
+        spread the negative charge of the resulting anion over more atoms,
+        so the anion accommodates it better and ionization goes further.}
+  \item Acid strength also increases along \ce{HF} $<$ \ce{HCl} $<$
+        \ce{HBr} $<$ \ce{HI}, even though electronegativity
+        \emph{decreases} down the group. Explain.
+        \answerlines[3]{Here \textbf{bond strength} decides, not
+        electronegativity. Going down the group the halogen gets larger,
+        the \ce{H-X} bond gets longer and weaker, and the proton is
+        released more easily. The electronegativity trend would predict
+        the opposite order, so it cannot be the controlling factor.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt electron withdrawal weakening the \ce{O-H} bond;
+    1 pt charge delocalized over more oxygens in the anion}
+  \rpoint{2}{(b) 1 pt bond strength as the deciding factor; 1 pt longer,
+    weaker \ce{H-X} bonds down the group}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{8.11} \textbullet\ pH and solubility, qualitatively}
+
+For each solid, predict whether acidifying the solution increases,
+decreases or barely changes its solubility, and justify in one sentence.
+\emph{Do not calculate.}
+
+\begin{parts}
+  \item \ce{CaCO3} \answerlines[2]{\textbf{Increases.} Carbonate is the
+        conjugate base of the weak acid \ce{H2CO3}, so added \ce{H+}
+        removes it from solution and the dissolution equilibrium shifts
+        right.}
+  \item \ce{AgCl} \answerlines[2]{\textbf{Barely changes.} Chloride comes
+        from the strong acid \ce{HCl} and is a negligible base, so it does
+        not react appreciably with \ce{H+}.}
+  \item \ce{Mg(OH)2} \answerlines[2]{\textbf{Increases.} Hydroxide is
+        neutralized by \ce{H+} to form water, removing a product and
+        shifting the equilibrium right.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{1 pt each correct prediction}
+  \rpoint{1}{justifications that consistently turn on whether the anion is
+    the conjugate base of a weak acid. Per the \ced{8.11} exclusion this
+    is assessed \textbf{qualitatively only} --- award no credit for, and
+    do not require, a calculation}
+\end{rubric}
+
+\examtotal
+
+\end{document}

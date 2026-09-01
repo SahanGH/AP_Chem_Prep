@@ -14,6 +14,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 2 • Mass Spectra & Particulate Reasoning](unit01-atomic-structure/u01-ws2.md)
 - [Worksheet 3 • Configurations & PES](unit01-atomic-structure/u01-ws3.md)
 - [Worksheet 4 • FRQ Practice](unit01-atomic-structure/u01-ws4.md)
+- [Free-Response Set](unit01-atomic-structure/u01-frq.md)
 - [Review Sheet](unit01-atomic-structure/u01-review.md)
 - [Unit Exam](unit01-atomic-structure/u01-exam.md)
 
@@ -25,6 +26,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 2 • Lewis, Formal Charge, Resonance](unit02-compound-structure/u02-ws2.md)
 - [Worksheet 3 • Shapes, Angles, Polarity](unit02-compound-structure/u02-ws3.md)
 - [Worksheet 4 • FRQ Practice](unit02-compound-structure/u02-ws4.md)
+- [Free-Response Set](unit02-compound-structure/u02-frq.md)
 - [Review Sheet](unit02-compound-structure/u02-review.md)
 - [Unit Exam](unit02-compound-structure/u02-exam.md)
 
@@ -37,6 +39,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 3 • Solutions and Concentration](unit03-properties-substances/u03-ws3.md)
 - [Worksheet 4 • Solubility and Separation](unit03-properties-substances/u03-ws4.md)
 - [Worksheet 5 • Spectroscopy & FRQ Practice](unit03-properties-substances/u03-ws5.md)
+- [Free-Response Set](unit03-properties-substances/u03-frq.md)
 - [Review Sheet](unit03-properties-substances/u03-review.md)
 - [Unit Exam](unit03-properties-substances/u03-exam.md)
 
@@ -48,6 +51,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 2 • Net Ionic Equations and Reaction Types](unit04-chemical-reactions/u04-ws2.md)
 - [Worksheet 3 • Redox and Solution Stoichiometry](unit04-chemical-reactions/u04-ws3.md)
 - [Worksheet 4 • FRQ Practice](unit04-chemical-reactions/u04-ws4.md)
+- [Free-Response Set](unit04-chemical-reactions/u04-frq.md)
 - [Review Sheet](unit04-chemical-reactions/u04-review.md)
 - [Unit Exam](unit04-chemical-reactions/u04-exam.md)
 
@@ -59,6 +63,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 2 • Concentration Over Time](unit05-kinetics/u05-ws2.md)
 - [Worksheet 3 • Mechanisms and Energy Profiles](unit05-kinetics/u05-ws3.md)
 - [Worksheet 4 • Pre-Equilibrium, Catalysis & FRQ](unit05-kinetics/u05-ws4.md)
+- [Free-Response Set](unit05-kinetics/u05-frq.md)
 - [Review Sheet](unit05-kinetics/u05-review.md)
 - [Unit Exam](unit05-kinetics/u05-exam.md)
 
@@ -70,6 +75,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 2 • Calorimetry and Phase Changes](unit06-thermochemistry/u06-ws2.md)
 - [Worksheet 3 • Enthalpy of Reaction and Hess's Law](unit06-thermochemistry/u06-ws3.md)
 - [Worksheet 4 • Bond and Formation Enthalpies & FRQ](unit06-thermochemistry/u06-ws4.md)
+- [Free-Response Set](unit06-thermochemistry/u06-frq.md)
 - [Review Sheet](unit06-thermochemistry/u06-review.md)
 - [Unit Exam](unit06-thermochemistry/u06-exam.md)
 
@@ -82,6 +88,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 3 • ICE Tables](unit07-equilibrium/u07-ws3.md)
 - [Worksheet 4 • Le Ch^atelier and $Q$ versus $K$](unit07-equilibrium/u07-ws4.md)
 - [Worksheet 5 • Solubility Equilibria & FRQ](unit07-equilibrium/u07-ws5.md)
+- [Free-Response Set](unit07-equilibrium/u07-frq.md)
 - [Review Sheet](unit07-equilibrium/u07-review.md)
 - [Unit Exam](unit07-equilibrium/u07-exam.md)
 
@@ -94,6 +101,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 3 • Structure, p$K_a$, and Salts](unit08-acids-bases/u08-ws3.md)
 - [Worksheet 4 • Buffers and Henderson–Hasselbalch](unit08-acids-bases/u08-ws4.md)
 - [Worksheet 5 • Titrations, Indicators & FRQ](unit08-acids-bases/u08-ws5.md)
+- [Free-Response Set](unit08-acids-bases/u08-frq.md)
 - [Review Sheet](unit08-acids-bases/u08-review.md)
 - [Unit Exam](unit08-acids-bases/u08-exam.md)
 
@@ -106,6 +114,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 3 • Free Energy, $K$, and Coupling](unit09-thermodynamics-electrochemistry/u09-ws3.md)
 - [Worksheet 4 • Cells and Cell Potential](unit09-thermodynamics-electrochemistry/u09-ws4.md)
 - [Worksheet 5 • Nonstandard Conditions, Electrolysis & FRQ](unit09-thermodynamics-electrochemistry/u09-ws5.md)
+- [Free-Response Set](unit09-thermodynamics-electrochemistry/u09-frq.md)
 - [Review Sheet](unit09-thermodynamics-electrochemistry/u09-review.md)
 - [Unit Exam](unit09-thermodynamics-electrochemistry/u09-exam.md)
 

@@ -1,0 +1,233 @@
+% Unit 3 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+%
+% The heaviest unit on the exam (18-22%) and the most scattered in Zumdahl:
+% seven separate source locations. The questions below deliberately cross
+% those sources, which is the whole reason the CED track exists.
+\documentclass{apchem-exam}
+
+\apcunit{3}
+\apcunittitle{Properties of Substances and Mixtures}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{CED 3.1--3.13 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- two CED exclusions apply]
+Covers \ced{3.1} through \ced{3.13}. This is the \textbf{heaviest unit on
+the exam}, \SI{18}{\percent}--\SI{22}{\percent}. Grade it hardest.
+
+Topic \ced{3.3} excludes \textbf{phase diagrams}. Topic \ced{3.8} excludes
+\textbf{colligative properties} and, with them, \textbf{calculations of
+molality, percent by mass and percent by volume}. Concentration on this
+exam means \textbf{molarity}; no question below uses anything else.
+
+$R = \SI{0.08206}{\litre\atm\per\mole\per\kelvin}$; the vapour pressure of
+water at \SI{25}{\celsius} is \SI{23.8}{\torr}.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{\ced{3.4} \ced{3.5} \textbullet\ gas stoichiometry, collection over water, and KMT}
+
+Zinc reacts with excess hydrochloric acid:
+\[ \ce{Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)} \]
+A \SI{3.27}{\gram} sample of zinc reacts completely and the hydrogen is
+collected over water at \SI{25}{\celsius}. The total pressure in the
+collection tube is \SI{745}{\torr}.
+
+\begin{parts}
+  \item Calculate the moles of hydrogen produced.
+        \answerlines[2]{$n(\ce{Zn}) = 3.27/65.38 = \num{0.0500}$~mol; the
+        ratio is $1:1$, so $n(\ce{H2}) = \mathbf{0.0500}$~mol}
+  \item Determine the partial pressure of the dry hydrogen, in atm.
+        \answerlines[3]{The collected gas is saturated with water vapour,
+        which contributes its own partial pressure:
+
+        $P(\ce{H2}) = 745 - 23.8 = \SI{721}{\torr}$
+
+        $= 721.2/760 = \mathbf{0.949}$~atm}
+  \item Calculate the volume the hydrogen occupies.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$V = \dfrac{nRT}{P} =
+        \dfrac{(0.05002)(0.08206)(298)}{0.94895} = \mathbf{1.29}$~L
+
+        Using the \emph{total} pressure instead of the dry partial
+        pressure gives \SI{1.25}{\litre} --- the water vapour must be
+        subtracted first.\end{apcanswer}}
+  \item The tube is warmed. Explain, using kinetic molecular theory, what
+        happens to the pressure exerted by the hydrogen if the volume is
+        held fixed. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}The pressure \textbf{rises}. Raising the
+        temperature raises the average kinetic energy, and therefore the
+        average speed, of the molecules.
+
+        They then strike the walls both \emph{more often} and \emph{with
+        greater force}, and pressure is exactly the force of those
+        collisions per unit area. (The vapour pressure of the water also
+        rises, so the total pressure climbs faster still.)\end{apcanswer}}
+  \item Helium is added to the tube at constant volume and temperature.
+        State the effect on the partial pressure of the hydrogen and on
+        the total pressure. \answerlines[2]{The partial pressure of
+        hydrogen is \textbf{unchanged} --- it depends only on the moles of
+        hydrogen present, which have not changed. The \textbf{total}
+        pressure rises by the partial pressure of the added helium.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt moles of zinc; 1 pt the $1:1$ ratio}
+  \rpoint{2}{(b) 1 pt subtracting the water vapour pressure; 1 pt
+    converting to \SI{0.949}{\atm}}
+  \rpoint{3}{(c) 1 pt kelvin temperature; 1 pt using the \emph{dry}
+    pressure; 1 pt \SI{1.29}{\litre}. Using \SI{745}{\torr} caps this at 2}
+  \rpoint{2}{(d) 1 pt greater average kinetic energy and speed; 1 pt
+    collisions more frequent \emph{and} more forceful}
+  \rpoint{1}{(e) hydrogen's partial pressure unchanged, total pressure up}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{\ced{3.1} \ced{3.2} \ced{3.3} \ced{3.7} \ced{3.10} \textbullet\ forces, phases and dissolving}
+
+\begin{parts}
+  \item Rank \ce{CH4}, \ce{CH3OH} and \ce{CH3F} by boiling point, lowest
+        first, and name the strongest intermolecular force in each.
+        \answerlines[3]{\ce{CH4} $<$ \ce{CH3F} $<$ \ce{CH3OH}.
+
+        \ce{CH4}: London dispersion only --- non-polar. \quad
+        \ce{CH3F}: dipole--dipole (polar, but its H is on carbon, so no
+        hydrogen bonding). \quad \ce{CH3OH}: hydrogen bonding, its H being
+        bonded directly to oxygen.}
+  \item Explain why \ce{CH3F} boils lower than \ce{CH3OH} even though
+        fluorine is more electronegative than oxygen.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Hydrogen bonding requires a hydrogen
+        bonded \emph{directly} to N, O or F. In \ce{CH3F} the fluorine is
+        bonded to carbon and all three hydrogens sit on carbon, so no
+        hydrogen bond can form however electronegative the fluorine is ---
+        the molecule manages only dipole--dipole attraction.
+
+        In \ce{CH3OH} the hydrogen on the oxygen is left nearly bare of
+        electron density and can approach a lone pair on a neighbouring
+        oxygen very closely, giving a much stronger
+        attraction.\end{apcanswer}}
+  \item Methanol and water mix in all proportions; methane is almost
+        insoluble in water. Account for the difference.
+        \answerlines[3]{Methanol's \ce{-OH} group hydrogen-bonds with
+        water, so the solute--solvent attractions formed are comparable in
+        strength to the water--water attractions they replace. Methane is
+        non-polar and offers only weak dispersion forces, which cannot
+        compensate for disrupting water's hydrogen-bond network, so it
+        stays essentially undissolved.}
+  \item During boiling, energy is supplied but the temperature does not
+        rise. Explain. \answerlines[2]{The energy goes into overcoming the
+        intermolecular attractions and separating the molecules ---
+        raising the potential energy of the system. Temperature measures
+        average \emph{kinetic} energy, which is unchanged, so it stays
+        constant until the last of the liquid has vaporized.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt the correct order; 2 pts all three forces correctly
+    named (1 pt for two)}
+  \rpoint{3}{(b) 1 pt hydrogen bonding requires H bonded directly to N, O
+    or F; 1 pt \ce{CH3F} has its H on carbon; 1 pt \ce{CH3OH} does hydrogen
+    bond. Arguing from electronegativity alone predicts the wrong order
+    and earns \textbf{0}}
+  \rpoint{2}{(c) 1 pt methanol hydrogen-bonds with water; 1 pt methane
+    offers only dispersion}
+  \rpoint{2}{(d) 1 pt energy overcomes intermolecular forces / raises
+    potential energy; 1 pt temperature tracks kinetic energy, which is
+    unchanged}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{3.6} \textbullet\ deviation from ideal behaviour}
+
+\begin{parts}
+  \item State the two assumptions of the ideal gas model that fail in a
+        real gas. \answerlines[2]{That the molecules have
+        \textbf{negligible volume} of their own, and that there are
+        \textbf{no attractive forces} between them.}
+  \item At high pressure the measured pressure of a real gas falls below
+        the ideal prediction, but at very high pressure it rises above it.
+        Explain both. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}\textbf{Below, at high pressure:} the
+        molecules are close enough to attract one another. A molecule
+        heading for the wall is pulled back by those behind it, so it
+        strikes with less force and the measured pressure is lower than
+        ideal.
+
+        \textbf{Above, at very high pressure:} the molecules are packed so
+        closely that their own volume is no longer negligible against the
+        container. The free space available is smaller than $V$, so the
+        gas is effectively more compressed than the ideal law assumes and
+        the pressure runs higher.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt each assumption}
+  \rpoint{2}{(b) 1 pt attractions reducing wall-collision force; 1 pt
+    molecular volume dominating at very high pressure}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{3.11} \ced{3.12} \ced{3.13} \textbullet\ spectroscopy and Beer--Lambert}
+
+A coloured solution has an absorbance of \num{0.435} in a
+\SI{1.00}{\centi\metre} cell. The molar absorptivity of the absorbing
+species is \SI{1.25e3}{} \si{\per\Molar\per\centi\metre}.
+
+\begin{parts}
+  \item Calculate the concentration. \answerlines[2]{$A = \varepsilon b c$,
+        so $c = \dfrac{0.435}{(1.25\times10^{3})(1.00)} =
+        \mathbf{3.48\times10^{-4}}$~M}
+  \item A student dilutes the sample to half its concentration. State the
+        new absorbance and explain. \answerlines[2]{\num{0.218}.
+        Absorbance is directly proportional to concentration at fixed path
+        length, so halving the concentration halves the absorbance.}
+  \item Explain why a molecule absorbs only certain wavelengths of light.
+        \answerlines[3]{Its allowed energy levels are quantized. A photon
+        is absorbed only when its energy, $E = hc/\lambda$, matches
+        exactly the gap between two allowed levels, so only certain
+        wavelengths are taken up and the rest pass through.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt the Beer--Lambert relationship; 1 pt
+    \SI{3.48e-4}{\Molar}}
+  \rpoint{1}{(b) \num{0.218} with the proportionality}
+  \rpoint{1}{(c) quantized levels, photon energy matching the gap}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{3.8} \ced{3.9} \textbullet\ representations of solutions and separation}
+
+\begin{parts}
+  \item A student draws a particulate diagram of aqueous \ce{K2SO4}
+        showing intact \ce{K2SO4} units. Identify the error and describe
+        the correct drawing. \answerlines[3]{\ce{K2SO4} is a soluble ionic
+        compound and dissociates completely in water. The drawing should
+        show \emph{separate} hydrated ions --- \textbf{two} \ce{K+} for
+        every one \ce{SO4^2-} --- with no intact \ce{K2SO4} units. The
+        sulfate should be drawn as one polyatomic unit, since the
+        \ce{S-O} bonds do not break.}
+  \item Name a technique that separates a dissolved salt from its solvent,
+        and state the property it exploits.
+        \answerlines[2]{\textbf{Distillation} (or simple evaporation). It
+        exploits the large difference in \textbf{volatility} --- the
+        solvent has a much higher vapour pressure and boils away, leaving
+        the non-volatile salt behind.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt identifying that it dissociates into ions; 1 pt the
+    correct $2:1$ ion ratio with sulfate kept intact}
+  \rpoint{2}{(b) 1 pt a valid technique; 1 pt the property it exploits.
+    Note \ced{3.8} excludes molality and percent-by-mass calculations ---
+    do not ask for them}
+\end{rubric}
+
+\examtotal
+
+\end{document}

@@ -1,0 +1,232 @@
+% Unit 1 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+%
+% The CED track's FRQ sets deliberately CROSS chapters where the unit does.
+% Unit 1 draws on Zumdahl Ch3 (moles, mass spectra), Ch7 (structure, PES,
+% trends) and Ch2/Ch8 (valence, ionic compounds); the chapter-track sets treat
+% those separately, so the questions here integrate them instead of repeating
+% them. No item duplicates a chapter FRQ set.
+\documentclass{apchem-exam}
+
+\apcunit{1}
+\apcunittitle{Atomic Structure and Properties}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{CED 1.1--1.8 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- two CED exclusions apply]
+Covers \ced{1.1} through \ced{1.8}. Unit 1 is worth
+\SI{7}{\percent}--\SI{9}{\percent} of the exam.
+
+Topic \ced{1.5} excludes \textbf{assigning quantum numbers to individual
+electrons}, and \ced{1.7} excludes \textbf{electron configurations of the
+aufbau exceptions} (\ce{Cr}, \ce{Cu}). Neither is asked below.
+
+Trend explanations must be \textbf{Coulombic} --- nuclear charge,
+distance, shielding. The rubrics award zero for answers resting on
+``stability'' or ``wants a full octet''.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{\ced{1.1} \ced{1.2} \textbullet\ mass spectrum to mole count}
+
+Boron occurs as two isotopes. Its mass spectrum shows peaks at
+\SI{10.013}{\atomicmassunit} (\SI{19.9}{\percent}) and
+\SI{11.009}{\atomicmassunit} (\SI{80.1}{\percent}).
+
+\begin{parts}
+  \item Calculate the average atomic mass of boron. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$(10.013)(0.199) + (11.009)(0.801)
+        = 1.993 + 8.818 = \mathbf{10.81}$~u, matching the periodic
+        table.\end{apcanswer}}
+  \item State which peak is taller and explain what peak height
+        represents. \answerlines[2]{The \SI{11.009}{} peak. Peak height is
+        proportional to the relative abundance of that isotope, and
+        \ce{^{11}B} accounts for \SI{80.1}{\percent} of boron atoms.}
+  \item Calculate the number of moles in a \SI{5.00}{\gram} sample of
+        boron, and the number of atoms it contains. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$n = 5.00/10.81 = \mathbf{0.463}$~mol
+
+        atoms $= 0.4625 \times 6.022\times10^{23} =
+        \mathbf{2.79\times10^{23}}$\end{apcanswer}}
+  \item Explain why the average atomic mass must be used for the mole
+        calculation in (c) rather than either isotope mass.
+        \answerlines[3]{A real sample contains both isotopes in their
+        natural proportions, so its average particle mass is the
+        abundance-weighted value. Using \num{10.013} or \num{11.009} would
+        assume the sample were isotopically pure, which it is not.}
+  \item A second element has two isotopes of nearly equal abundance and an
+        average atomic mass almost exactly halfway between them. State
+        what this implies about the relative peak heights.
+        \answerlines[2]{The two peaks are of nearly equal height. The
+        average sits midway only when the two isotopes contribute almost
+        equally, which means almost equal abundances.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt weighting each mass by its fractional abundance;
+    1 pt \num{10.81}. A plain mean of the two masses gives \num{10.51} and
+    earns 0}
+  \rpoint{2}{(b) 1 pt the \ce{^{11}B} peak; 1 pt height means relative
+    abundance. Confusing height with mass earns 0}
+  \rpoint{3}{(c) 1 pt \num{0.463}~mol; 1 pt multiplying by Avogadro's
+    number; 1 pt \SI{2.79e23}{}}
+  \rpoint{2}{(d) 1 pt the sample contains both isotopes; 1 pt the average
+    reflects their proportions}
+  \rpoint{1}{(e) nearly equal peak heights}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{\ced{1.5} \ced{1.6} \ced{1.7} \ced{1.8} \textbullet\ PES to configuration to trend}
+
+A photoelectron spectrum of an unknown element from period 3 shows four
+peaks with relative heights $2$, $2$, $6$, $2$ and a fifth of height $1$,
+listed from highest binding energy to lowest.
+
+\begin{parts}
+  \item Identify the element and write its complete electron
+        configuration. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}The heights give the electron count in
+        each subshell: $2+2+6+2+1 = 13$ electrons, so $Z = 13$ and the
+        element is \textbf{aluminium}.
+
+        \ce{1s^2 2s^2 2p^6 3s^2 3p^1}\end{apcanswer}}
+  \item State which peak lies at the highest binding energy and justify it
+        in Coulombic terms. \answerlines[3]{The height-2 \ce{1s} peak.
+        Those electrons sit closest to the nucleus and are shielded by no
+        other electrons, so they experience the largest effective nuclear
+        charge at the smallest distance; the attraction is strongest and
+        the most energy is needed to remove one.}
+  \item The first ionization energies of magnesium and aluminium are 738
+        and 578 \si{\kilo\joule\per\mole} respectively. Magnesium's is
+        \emph{higher}, even though aluminium has the greater nuclear
+        charge. Explain. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}The electron removed comes from a
+        \emph{different subshell} in each case.
+
+        Magnesium is \ce{3s^2}: its outermost electron is a \ce{3s}
+        electron. Aluminium is \ce{3s^2 3p^1}: its outermost electron is
+        in a \ce{3p} orbital, which lies at higher energy and, on average,
+        further from the nucleus. The \ce{3p} electron is also shielded by
+        the filled \ce{3s} sublevel beneath it.
+
+        Greater distance plus greater shielding means a smaller net
+        attraction, so the aluminium electron is easier to remove despite
+        the extra proton.\end{apcanswer}}
+  \item State the ion aluminium forms and give the formula of the compound
+        it forms with oxygen. \answerlines[2]{\ce{Al^3+}; with \ce{O^2-}
+        the neutral formula is \textbf{\ce{Al2O3}}.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt summing the peak heights to 13 electrons; 1 pt
+    aluminium; 1 pt the full configuration}
+  \rpoint{3}{(b) 1 pt the \ce{1s} peak; 1 pt closest to the nucleus /
+    unshielded; 1 pt greatest effective nuclear charge. ``It is the
+    innermost'' alone earns 1}
+  \rpoint{2}{(c) 1 pt identifying the \ce{3s}-versus-\ce{3p} difference;
+    1 pt greater distance and/or shielding of the \ce{3p} electron.
+    An answer arguing only from nuclear charge predicts the wrong order
+    and earns \textbf{0}}
+  \rpoint{2}{(d) 1 pt \ce{Al^3+}; 1 pt \ce{Al2O3}}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{1.3} \textbullet\ combustion analysis}
+
+A \SI{0.500}{\gram} sample of a compound containing only carbon, hydrogen
+and oxygen is burned completely, producing \SI{0.733}{\gram} of \ce{CO2}
+and \SI{0.300}{\gram} of \ce{H2O}. Its molar mass is
+\SI{60.05}{\gram\per\mole}.
+
+\begin{parts}
+  \item Determine the empirical and molecular formulas.
+        \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Carbon, from the \ce{CO2}:
+        $n = 0.733/44.01 = \num{0.01665}$~mol C, mass
+        $= \SI{0.200}{\gram}$.
+
+        Hydrogen, from the \ce{H2O}: $n(\ce{H2O}) = 0.300/18.02 =
+        \num{0.01665}$~mol, so $n(\ce{H}) = \num{0.03331}$~mol, mass
+        $= \SI{0.0336}{\gram}$.
+
+        Oxygen \emph{by difference} --- it cannot be taken from the
+        products, since the burning oxygen came from the air:
+        $0.500 - 0.200 - 0.034 = \SI{0.266}{\gram}$, so
+        $n = 0.266/16.00 = \num{0.01665}$~mol.
+
+        Ratio $\ce{C}:\ce{H}:\ce{O} = 1:2:1$, so the empirical formula is
+        \textbf{\ce{CH2O}} (mass \num{30.03}).
+
+        $60.05/30.03 = 2$, so the molecular formula is
+        \textbf{\ce{C2H4O2}}.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{4}{1 pt carbon from \ce{CO2}; 1 pt hydrogen from \ce{H2O}, with
+    the factor of 2; 1 pt oxygen \textbf{by difference}; 1 pt both
+    formulas. Taking oxygen from the \ce{CO2} and \ce{H2O} masses is the
+    classic error and forfeits the third point}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{1.4} \textbullet\ composition of a mixture}
+
+A \SI{5.00}{\gram} sample of a sand-and-salt mixture is stirred with
+water, filtered, and the filtrate evaporated to dryness, leaving
+\SI{3.20}{\gram} of \ce{NaCl}.
+
+\begin{parts}
+  \item Calculate the percent by mass of \ce{NaCl} in the mixture.
+        \answerlines[2]{$\dfrac{3.20}{5.00} \times 100 =
+        \mathbf{64.0}\%$}
+  \item Explain why this separation works, in terms of a property that
+        differs between the two components.
+        \answerlines[3]{The components differ in \textbf{solubility in
+        water}. Sodium chloride is ionic and dissolves as hydrated
+        \ce{Na+} and \ce{Cl-} ions; sand (\ce{SiO2}) is a covalent network
+        solid held by strong covalent bonds throughout, and water cannot
+        provide interactions strong enough to break it apart. Filtration
+        then separates the undissolved solid from the solution.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt the ratio; 1 pt \SI{64.0}{\percent}}
+  \rpoint{2}{(b) 1 pt naming the solubility difference; 1 pt a reason
+    grounded in bonding or particle-level interaction. ``Salt dissolves
+    and sand does not'' with no reason earns 1}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{1.8} \textbullet\ ionic compounds and Coulombic attraction}
+
+\begin{parts}
+  \item Calcium reacts with nitrogen to form a binary ionic compound.
+        Give the ions formed and the formula of the compound.
+        \answerlines[2]{\ce{Ca^2+} and \ce{N^3-}; the neutral formula is
+        \textbf{\ce{Ca3N2}}, since $3(+2) + 2(-3) = 0$.}
+  \item Predict which has the larger lattice energy, \ce{CaO} or
+        \ce{KCl}, and justify in Coulombic terms. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\textbf{\ce{CaO}}. The Coulombic
+        attraction is proportional to the product of the ionic charges:
+        $(+2)(-2) = 4$ for \ce{CaO} against $(+1)(-1) = 1$ for \ce{KCl}.
+
+        \ce{Ca^2+} and \ce{O^2-} are also the smaller ions, so the
+        internuclear distance is shorter and the attraction, which varies
+        as $1/d$, is stronger again. Both factors point the same
+        way.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt both ions; 1 pt \ce{Ca3N2}}
+  \rpoint{2}{(b) 1 pt \ce{CaO}; 1 pt a Coulombic justification naming
+    charge (and ideally distance). ``\ce{CaO} is more stable'' or an
+    octet-based answer earns \textbf{0}}
+\end{rubric}
+
+\examtotal
+
+\end{document}

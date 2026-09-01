@@ -1,0 +1,241 @@
+% Unit 9 free-response set -- 2 long (10) + 3 short (4) = 32 pts.
+\documentclass{apchem-exam}
+
+\apcunit{9}
+\apcunittitle{Thermodynamics and Electrochemistry}
+\apcdoctitle{Free-Response Set}
+\apcsubtitle{CED 9.1--9.11 \textbullet\ 5 questions \textbullet\ 32 points \textbullet\ 50 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[Scope --- one CED exclusion applies]
+Covers \ced{9.1} through \ced{9.11}, worth
+\SI{7}{\percent}--\SI{9}{\percent} of the exam. This unit joins
+thermodynamics to electrochemistry through a single bridge,
+$\Delta G^\circ = -nFE^\circ$, and the questions below are built to make
+that link explicit.
+
+Topic \ced{9.8} excludes \textbf{labelling an electrode as positive or
+negative}, since the convention differs between cell types. Anode and
+cathode \emph{are} assessed, and the rule never changes: oxidation occurs
+at the anode in both galvanic and electrolytic cells.
+
+$R = \SI{8.314}{\joule\per\mole\per\kelvin}$,
+$F = \SI{96485}{\coulomb\per\mole}$. Standard reduction potentials:
+\ce{Ag+}/\ce{Ag} $= +0.80$~V, \ce{Cu^2+}/\ce{Cu} $= +0.34$~V.
+\end{apcnote}
+
+\examsection{II}{Free Response}{5 questions \textbullet\ 32 points \textbullet\ 50 minutes}{\calculatorok}
+
+% =====================================================================
+\frq{long}{10}{\ced{9.1} \ced{9.2} \ced{9.3} \ced{9.5} \textbullet\ entropy, free energy and temperature}
+
+A reaction has $\Delta H^\circ = \SI{+95.0}{\kilo\joule\per\mole}$ and
+$\Delta S^\circ = \SI{+150}{\joule\per\mole\per\kelvin}$.
+
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ at \SI{298}{\kelvin} and state whether
+        the reaction is thermodynamically favourable there.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Convert the entropy term to kilojoules:
+        $\Delta S^\circ = \SI{0.150}{\kilo\joule\per\mole\per\kelvin}$.
+
+        $\Delta G^\circ = 95.0 - (298)(0.150) = 95.0 - 44.7 =
+        \mathbf{+50.3}$~kJ/mol
+
+        Positive, so it is \textbf{not} favourable at
+        \SI{298}{\kelvin}.\end{apcanswer}}
+  \item Determine the temperature above which it becomes favourable.
+        \answerlines[2]{Set $\Delta G^\circ = 0$:
+        $T = \dfrac{\Delta H^\circ}{\Delta S^\circ} = \dfrac{95.0}{0.150}
+        = \mathbf{633}$~K}
+  \item Calculate $\Delta G^\circ$ at \SI{700}{\kelvin} and hence $K$ at
+        that temperature. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$\Delta G^\circ = 95.0 - (700)(0.150) =
+        \mathbf{-10.0}$~kJ/mol
+
+        $\Delta G^\circ = -RT\ln K$, with $\Delta G^\circ$ in
+        \textbf{joules}:
+
+        $\ln K = \dfrac{10\,000}{(8.314)(700)} = \num{1.718}$
+
+        $K = e^{1.718} = \mathbf{5.6}$\end{apcanswer}}
+  \item Explain why a positive $\Delta S^\circ$ is required for a reaction
+        with positive $\Delta H^\circ$ ever to become favourable.
+        \answerlines[3]{With $\Delta H^\circ$ positive, the enthalpy term
+        always opposes the reaction. The only term that can overcome it is
+        $-T\Delta S^\circ$, and that is negative only when
+        $\Delta S^\circ$ is positive. Raising $T$ then makes it
+        arbitrarily large, so a high enough temperature turns
+        $\Delta G^\circ$ negative. If $\Delta S^\circ$ were negative, both
+        terms would oppose and the reaction could never be favourable at
+        any temperature.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt converting $\Delta S$ to kilojoules; 1 pt
+    $+50.3$~kJ/mol; 1 pt ``not favourable''. Forgetting the unit
+    conversion gives about $-44\,600$ and earns 0 for the part}
+  \rpoint{2}{(b) 1 pt setting $\Delta G^\circ = 0$; 1 pt \SI{633}{\kelvin}}
+  \rpoint{3}{(c) 1 pt $-10.0$~kJ/mol; 1 pt $\Delta G^\circ = -RT\ln K$
+    with joules; 1 pt $K = \num{5.6}$}
+  \rpoint{2}{(d) 1 pt the enthalpy term always opposes; 1 pt only a
+    positive $\Delta S^\circ$ lets $-T\Delta S^\circ$ overcome it}
+\end{rubric}
+
+% =====================================================================
+\frq{long}{10}{\ced{9.8} \ced{9.9} \ced{9.10} \ced{9.11} \textbullet\ a galvanic cell, Nernst and electrolysis}
+
+A galvanic cell is built from a copper electrode in
+\SI{1.0}{\Molar} \ce{Cu(NO3)2} and a silver electrode in
+\SI{1.0}{\Molar} \ce{AgNO3}.
+
+\begin{parts}
+  \item Write the half-reaction at each electrode, identify the anode, and
+        give the balanced overall equation.
+        \answerlines[3]{\textbf{Anode} (oxidation):
+        \ce{Cu(s) -> Cu^2+(aq) + 2e^-}
+
+        \textbf{Cathode} (reduction):
+        \ce{Ag+(aq) + e^- -> Ag(s)}, doubled to balance electrons.
+
+        Overall: \ce{Cu(s) + 2Ag+(aq) -> Cu^2+(aq) + 2Ag(s)}}
+  \item Calculate $E^\circ_{\text{cell}}$ and $\Delta G^\circ$.
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}$E^\circ = E^\circ_{\text{cathode}} -
+        E^\circ_{\text{anode}} = 0.80 - 0.34 = \mathbf{+0.46}$~V
+
+        Two electrons are transferred, so $n = 2$:
+
+        $\Delta G^\circ = -nFE^\circ = -(2)(96485)(0.46) =
+        \num{-8.9e4}$~J $= \mathbf{-89}$~kJ
+
+        Note the silver half-reaction is doubled but $E^\circ$ is
+        \emph{not} --- potential is intensive.\end{apcanswer}}
+  \item Calculate the cell potential when
+        $[\ce{Cu^2+}] = \SI{0.10}{\Molar}$ and
+        $[\ce{Ag+}] = \SI{0.010}{\Molar}$. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$Q = \dfrac{[\ce{Cu^2+}]}
+        {[\ce{Ag+}]^2} = \dfrac{0.10}{(0.010)^2} = \num{1.0e3}$
+
+        $E = E^\circ - \dfrac{0.0592}{n}\log Q = 0.46 -
+        \dfrac{0.0592}{2}\log(1000)$
+
+        $= 0.46 - (0.0296)(3) = \mathbf{0.37}$~V
+
+        Lower than standard, because the product ion is relatively
+        plentiful and the reactant ion scarce.\end{apcanswer}}
+  \item Silver is deposited from \ce{AgNO3} solution by electrolysis at
+        \SI{1.50}{\ampere} for \SI{20.0}{\minute}. Calculate the mass
+        deposited. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$Q = It = (1.50)(20.0 \times 60) =
+        \SI{1800}{\coulomb}$
+
+        $n(e^-) = 1800/96485 = \num{0.01866}$~mol
+
+        \ce{Ag+ + e^- -> Ag} is a one-electron reduction, so
+        $n(\ce{Ag}) = \num{0.01866}$~mol.
+
+        $m = (0.01866)(107.87) = \mathbf{2.01}$~g\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) 1 pt each half-reaction; 1 pt copper as anode with the
+    overall equation balanced for electrons}
+  \rpoint{2}{(b) 1 pt $+0.46$~V; 1 pt $-89$~kJ with $n = 2$. Doubling
+    $E^\circ$ along with the half-reaction earns 0 for the first point}
+  \rpoint{3}{(c) 1 pt $Q$ with $[\ce{Ag+}]$ squared; 1 pt the Nernst form;
+    1 pt \SI{0.37}{\volt}. Omitting the square caps this at 1}
+  \rpoint{2}{(d) 1 pt charge and moles of electrons; 1 pt
+    \SI{2.01}{\gram}}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{9.4} \textbullet\ thermodynamic versus kinetic control}
+
+Diamond converting to graphite has
+$\Delta G^\circ = \SI{-2.9}{\kilo\joule\per\mole}$ at
+\SI{298}{\kelvin}, yet diamonds do not visibly change.
+
+\begin{parts}
+  \item Explain how both statements can be true.
+        \answerlines[3]{$\Delta G^\circ$ describes only whether the
+        conversion is thermodynamically \emph{favourable} and how far it
+        would go --- not how fast. Rearranging diamond's covalent network
+        requires breaking very strong \ce{C-C} bonds, an enormous
+        activation energy, so the rate is effectively zero at room
+        temperature. The reaction is under \textbf{kinetic control}.}
+  \item State what would have to change for the conversion to proceed at
+        an observable rate. \answerlines[2]{The activation barrier would
+        have to be surmounted --- in practice by supplying a great deal of
+        thermal energy (very high temperature), which raises the fraction
+        of atoms with enough energy to rearrange.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt $\Delta G$ gives extent, not rate; 1 pt naming a
+    large activation energy / kinetic control}
+  \rpoint{2}{(b) 1 pt supplying energy to pass the barrier; 1 pt linked to
+    temperature raising the fraction of sufficiently energetic particles}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{9.6} \textbullet\ free energy of dissolution}
+
+\begin{parts}
+  \item Sodium chloride dissolves readily in water with
+        $\Delta H_{\text{soln}}$ close to zero. Explain what drives the
+        process. \answerlines[3]{The \textbf{entropy} increase. The ions
+        begin locked in a highly ordered crystal lattice and end dispersed
+        throughout the solvent, a large rise in disorder. With
+        $\Delta H$ near zero, $\Delta G = \Delta H - T\Delta S$ is
+        negative essentially because of the $-T\Delta S$ term alone.}
+  \item Some ionic solids are insoluble despite a favourable entropy
+        change. State what must be true of $\Delta H_{\text{soln}}$ in
+        those cases. \answerlines[2]{It must be substantially
+        \textbf{positive} --- large enough that the endothermic cost of
+        separating the lattice outweighs $T\Delta S$, leaving
+        $\Delta G$ positive.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt naming entropy; 1 pt ordered lattice becoming
+    dispersed ions}
+  \rpoint{2}{(b) 1 pt strongly positive $\Delta H_{\text{soln}}$; 1 pt
+    outweighing $T\Delta S$}
+\end{rubric}
+
+% =====================================================================
+\frq{short}{4}{\ced{9.7} \textbullet\ coupled reactions}
+
+The decomposition of a mineral has
+$\Delta G^\circ = \SI{+72}{\kilo\joule\per\mole}$. Industrially it is
+coupled to a reaction with
+$\Delta G^\circ = \SI{-105}{\kilo\joule\per\mole}$ that shares a common
+species.
+
+\begin{parts}
+  \item Calculate $\Delta G^\circ$ for the coupled process and state
+        whether it is favourable.
+        \answerlines[2]{$72 + (-105) = \mathbf{-33}$~kJ/mol. Negative, so
+        the coupled process \textbf{is} thermodynamically favourable.}
+  \item Explain the principle that makes coupling work, and state the
+        condition the two reactions must satisfy.
+        \answerlines[3]{Free energies are additive, exactly as enthalpies
+        are in Hess's law, so an unfavourable reaction can be driven by
+        pairing it with a sufficiently favourable one. The condition is
+        that they must share a \textbf{common species} --- the product of
+        one being consumed by the other --- so that they genuinely proceed
+        as a single combined process rather than two independent ones.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) 1 pt $-33$~kJ/mol; 1 pt ``favourable''}
+  \rpoint{2}{(b) 1 pt free energies add; 1 pt the shared-species condition.
+    Answering only ``the negative one is bigger'' earns 1}
+\end{rubric}
+
+\examtotal
+
+\end{document}
