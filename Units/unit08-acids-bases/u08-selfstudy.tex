@@ -1,0 +1,709 @@
+% Unit 8 self-study -- "I do / You do" ladder for CED 8.1-8.11.
+% Twelve ladders, forty-eight questions. Second-heaviest unit (11-15%).
+%
+% Disjoint from u08-frq, which uses HF at 0.250 M (where the 5% rule
+% fails), an HF/NaF buffer, Ba(OH)2, the HClO series and a qualitative
+% pH-solubility set. This document uses acetic acid at 0.200 M (where the
+% rule holds), an acetate buffer, NaOH/HCl strong-acid work and salt
+% hydrolysis.
+\documentclass{apchem-worksheet}
+
+\apcunit{8}
+\apcunittitle{Acids and Bases}
+\apcdoctitle{Self-Study \textbullet\ CED 8.1--8.11, I~do / You~do}
+\apcsubtitle{Twelve ladders \textbullet\ four YOUR TURN questions each \textbullet\ 11--15\% of the exam}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a worked example, then \textbf{four}
+YOUR TURN questions --- same skill, new numbers, no help. Work all four
+before checking anything.
+
+\textbf{This unit is worth \SI{11}{\percent}--\SI{15}{\percent} of the AP
+exam}, second only to Unit 3.
+
+\textbf{The distinction that causes the most lost marks.}
+\textbf{Strength} is about the \emph{extent} of ionization ---
+a strong acid ionizes essentially completely. \textbf{Concentration} is
+about how much was dissolved. They are independent: a dilute strong acid
+and a concentrated weak acid are both entirely ordinary things.
+
+\textbf{The habit that decides this unit.} Before calculating any pH, ask
+\emph{strong or weak?} A strong acid gives $[\ce{H+}]$ directly from the
+label. A weak one requires an equilibrium calculation with $K_a$. Treating
+a weak acid as strong is the single commonest error here.
+
+$K_w = 1.0\times10^{-14}$ at \SI{25}{\celsius}.
+
+\textbf{One scope note.} The CED excludes deriving
+Henderson--Hasselbalch, computing the pH change on adding acid or base to
+a buffer, and species computations on polyprotic titration curves. None is
+asked here.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Br\o{}nsted--Lowry pairs}
+\ced{8.1}
+
+An acid donates a proton; a base accepts one. A conjugate pair differs by
+\textbf{exactly one} \ce{H+}.
+
+\begin{workedexample}[I do: finding both pairs]
+Identify the conjugate acid--base pairs in
+\ce{HCO3^- + H2O <=> H2CO3 + OH^-}.
+
+\textbf{Follow the protons.} \ce{HCO3-} \emph{gains} one to become
+\ce{H2CO3}: it acted as a \textbf{base}, and \ce{H2CO3} is its conjugate
+acid. That is pair one.
+
+\ce{H2O} \emph{loses} one to become \ce{OH-}: it acted as an
+\textbf{acid}, and \ce{OH-} is its conjugate base. That is pair two.
+
+\textbf{Pairs: \ce{H2CO3}/\ce{HCO3-} and \ce{H2O}/\ce{OH-}.}
+
+\textbf{The trap:} pairing \ce{HCO3-} with \ce{OH-}. They are on opposite
+sides and look like a pair, but they differ by more than one proton and
+are not related as conjugates. Always check the one-proton rule.
+
+\textbf{Amphiprotic species} such as \ce{HCO3-} can act either way ---
+here it is a base, but with a stronger acid present it would donate
+instead.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Conjugate base of \ce{H2SO4}: \workspace[1.4cm]
+  \item Conjugate acid of \ce{NH3}: \workspace[1.4cm]
+  \item Identify both pairs in \ce{CH3COOH + H2O <=> CH3COO^- + H3O+}:
+        \workspace[1.8cm]
+  \item Write an equation showing \ce{HCO3-} acting as an \emph{acid}.
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{HSO4-} \quad (b) \ce{NH4+} \quad (c)
+\ce{CH3COOH}/\ce{CH3COO-} and \ce{H3O+}/\ce{H2O} \quad
+(d) \ce{HCO3^- + H2O <=> CO3^2- + H3O+}}
+\keyonly{\begin{apcanswer}(a) \ce{HSO4-} --- remove one proton.
+(b) \ce{NH4+} --- add one proton.
+(c) \ce{CH3COOH} (acid) with \ce{CH3COO-} (its conjugate base); \ce{H2O}
+(base) with \ce{H3O+} (its conjugate acid).
+(d) \ce{HCO3^-(aq) + H2O(l) <=> CO3^2-(aq) + H3O+(aq)}. Here it
+\emph{donates} a proton, which is what makes it amphiprotic --- it did the
+opposite in the worked example.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Strong versus weak}
+\ced{8.1}
+
+Strong means essentially complete ionization --- write a single arrow.
+Weak means partial --- write a double arrow, and expect an equilibrium
+calculation.
+
+\begin{workedexample}[I do: what is in the beaker]
+Compare \SI{0.10}{\Molar} \ce{HCl} with \SI{0.10}{\Molar}
+\ce{CH3COOH} in terms of the particles present and the conductivity.
+
+\textbf{\ce{HCl}, strong:} essentially every molecule ionizes.
+\ce{HCl -> H+ + Cl^-}. The solution contains \SI{0.10}{\Molar}
+\ce{H+}, \SI{0.10}{\Molar} \ce{Cl-} and almost no intact \ce{HCl}. It
+conducts strongly.
+
+\textbf{\ce{CH3COOH}, weak:} only about \SI{1}{\percent} ionizes.
+\ce{CH3COOH <=> CH3COO^- + H+}. The solution is mostly \emph{intact
+acetic acid molecules}, with roughly \SI{0.001}{\Molar} of each ion. It
+conducts weakly.
+
+\textbf{Same concentration, hundred-fold difference in $[\ce{H+}]$} ---
+and about two pH units between them. Strength, not concentration, made
+that difference.
+
+\textbf{On a particulate drawing:} the weak acid must show mostly whole
+molecules. Drawing it fully dissociated is the standard error.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which conducts better, \SI{0.1}{\Molar} \ce{HCl} or
+        \SI{0.1}{\Molar} \ce{HF}? Why? \workspace[1.6cm]
+  \item Can a weak acid solution be more concentrated than a strong acid
+        solution? \workspace[1.6cm]
+  \item Which arrow does a weak acid take, and why?
+        \workspace[1.6cm]
+  \item Could a concentrated weak acid have a lower pH than a dilute
+        strong acid? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{HCl} --- more mobile ions \quad (b) yes \quad
+(c) double --- partial ionization \quad (d) yes}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{HCl}}. It ionizes essentially
+completely, so it supplies far more mobile ions; \ce{HF} is weak and
+mostly stays intact.
+(b) \textbf{Yes.} Concentration and strength are independent properties.
+(c) A \textbf{double arrow}, because the ionization is an equilibrium ---
+substantial amounts of the un-ionized acid remain.
+(d) \textbf{Yes.} pH depends on $[\ce{H+}]$, not on strength alone.
+\SI{5}{\Molar} acetic acid produces more \ce{H+} than
+\SI{0.0001}{\Molar} \ce{HCl}, despite being the weaker
+acid.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ pH, pOH and \emph{K}\textsubscript{w}}
+\ced{8.2}
+
+$\text{pH} = -\log[\ce{H+}]$, $\text{pOH} = -\log[\ce{OH-}]$, and at
+\SI{25}{\celsius} they sum to \num{14.00}.
+
+\begin{workedexample}[I do: all four quantities from one]
+A solution has $[\ce{H+}] = \SI{2.5e-5}{\Molar}$. Find pH, pOH and
+$[\ce{OH-}]$.
+
+\[ \text{pH} = -\log(2.5\times10^{-5}) = \mathbf{4.60} \]
+\[ \text{pOH} = 14.00 - 4.60 = \mathbf{9.40} \]
+\[ [\ce{OH-}] = \frac{1.0\times10^{-14}}{2.5\times10^{-5}}
+   = \mathbf{4.0\times10^{-10}~M} \]
+
+\textbf{Sense check:} pH below 7 means acidic, so $[\ce{H+}]$ should
+exceed $[\ce{OH-}]$. It does, by five orders of magnitude. \checkmark
+
+\textbf{Significant figures in a logarithm:} only the digits \emph{after}
+the decimal point count. $[\ce{H+}]$ has two significant figures, so the
+pH is quoted to two decimal places --- \num{4.60}, not \num{4.6} or
+\num{4.602}.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item pH when $[\ce{H+}] = \SI{1.0e-3}{\Molar}$:
+        \workspace[1.4cm]
+  \item $[\ce{OH-}]$ when pH $= \num{9.00}$: \workspace[1.6cm]
+  \item pOH when $[\ce{H+}] = \SI{0.020}{\Molar}$:
+        \workspace[1.6cm]
+  \item Is a solution of pH \num{6.5} at \SI{25}{\celsius} acidic, basic
+        or neutral? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \num{3.00} \quad (b) \SI{1.0e-5}{\Molar} \quad
+(c) \num{12.30} \quad (d) very slightly acidic}
+\keyonly{\begin{apcanswer}(a) $-\log(1.0\times10^{-3}) = \mathbf{3.00}$.
+(b) $\text{pOH} = 14.00 - 9.00 = 5.00$, so
+$[\ce{OH-}] = \mathbf{1.0\times10^{-5}}$~M.
+(c) $\text{pH} = -\log(0.020) = 1.70$, so
+$\text{pOH} = 14.00 - 1.70 = \mathbf{12.30}$.
+(d) \textbf{Slightly acidic} --- below 7, though only just. At
+\SI{25}{\celsius} neutral is exactly 7.00, where
+$[\ce{H+}] = [\ce{OH-}]$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ pH of strong acids and bases}
+\ced{8.2}
+
+For a strong acid or base, the concentration \emph{is} the ion
+concentration --- but watch for a formula supplying more than one ion.
+
+\begin{workedexample}[I do: watch the subscript]
+Find the pH of \SI{0.0050}{\Molar} \ce{Ba(OH)2}, assuming complete
+dissociation.
+
+\textbf{Count the hydroxides.} Each formula unit gives \textbf{two}:
+\[ [\ce{OH-}] = 2(0.0050) = \SI{0.010}{\Molar} \]
+
+\[ \text{pOH} = -\log(0.010) = 2.00 \qquad
+   \text{pH} = 14.00 - 2.00 = \mathbf{12.00} \]
+
+\textbf{Forgetting the factor of 2} gives pOH \num{2.30} and pH
+\num{11.70} --- close enough to look plausible, which is exactly what makes
+it dangerous.
+
+\textbf{The sanity check that catches sign errors:} a group 2 hydroxide is
+a strong base, so the pH must be well above 7. Any answer below 7 is
+immediately wrong, and usually means pH and pOH were interchanged.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item pH of \SI{0.010}{\Molar} \ce{HCl}: \workspace[1.4cm]
+  \item pH of \SI{0.010}{\Molar} \ce{NaOH}: \workspace[1.6cm]
+  \item pH of \SI{0.0025}{\Molar} \ce{Ca(OH)2}: \workspace[1.8cm]
+  \item Why is the concentration used directly for a strong acid but not
+        for a weak one? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \num{2.00} \quad (b) \num{12.00} \quad (c) \num{11.70}
+\quad (d) the weak acid only partly ionizes}
+\keyonly{\begin{apcanswer}(a) Fully ionized, so
+$[\ce{H+}] = 0.010$ and $\text{pH} = \mathbf{2.00}$.
+(b) $[\ce{OH-}] = 0.010$, $\text{pOH} = 2.00$, so
+$\text{pH} = \mathbf{12.00}$.
+(c) $[\ce{OH-}] = 2(0.0025) = 0.0050$;
+$\text{pOH} = 2.30$, so $\text{pH} = \mathbf{11.70}$.
+(d) Because a strong acid ionizes essentially completely: every mole
+dissolved yields a mole of \ce{H+}, so the label gives $[\ce{H+}]$
+directly. A weak acid ionizes only slightly, so $[\ce{H+}]$ is far smaller
+than the label and must be found from the $K_a$
+equilibrium.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ pH of a weak acid}
+\ced{8.3}
+
+Set up the $K_a$ equilibrium, assume $x$ is small, solve --- then
+\textbf{test} the assumption.
+
+\begin{workedexample}[I do: the full routine]
+Find the pH of \SI{0.200}{\Molar} acetic acid,
+$K_a = 1.8\times10^{-5}$.
+
+\textbf{Equilibrium:}
+\ce{CH3COOH <=> CH3COO^- + H+}, with $x = [\ce{H+}]$ formed.
+
+\[ K_a = \frac{x^2}{0.200 - x} = 1.8\times10^{-5} \]
+
+\textbf{Assume $x \ll 0.200$:}
+\[ x = \sqrt{(1.8\times10^{-5})(0.200)} = \num{1.90e-3}~\text{M} \]
+
+\textbf{Test it:} $1.90\times10^{-3}/0.200 = \SI{0.95}{\percent}$, well
+under \SI{5}{\percent}. \textbf{Valid} --- no quadratic needed.
+
+\[ \text{pH} = -\log(1.897\times10^{-3}) = \mathbf{2.72} \]
+
+\textbf{Compare with a strong acid} at the same concentration: pH
+\num{0.70}. The weak acid sits two units higher because so little of it
+ionized.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Find $[\ce{H+}]$ for \SI{0.100}{\Molar} of an acid with
+        $K_a = 4.0\times10^{-6}$. \workspace[1.8cm]
+  \item Find the pH in (a). \workspace[1.4cm]
+  \item Check whether the approximation was valid in (a).
+        \workspace[1.6cm]
+  \item Why is $[\ce{H+}]$ far less than the acid's concentration?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{6.3e-4}{\Molar} \quad (b) \num{3.20} \quad
+(c) yes --- \SI{0.63}{\percent} \quad (d) only a small fraction ionizes}
+\keyonly{\begin{apcanswer}(a) $x = \sqrt{(4.0\times10^{-6})(0.100)} =
+\mathbf{6.3\times10^{-4}}$~M.
+(b) $\text{pH} = -\log(6.32\times10^{-4}) = \mathbf{3.20}$.
+(c) $6.3\times10^{-4}/0.100 = \SI{0.63}{\percent}$, far below
+\SI{5}{\percent} --- \textbf{valid}.
+(d) Because a weak acid ionizes only partially. At equilibrium the great
+majority of the acid remains as intact molecules, and only the small
+fraction that has donated a proton contributes to
+$[\ce{H+}]$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Percent ionization}
+\ced{8.3}
+
+\[ \%\text{ ionization} = \frac{[\ce{H+}]_{\text{eq}}}
+   {[\text{acid}]_{\text{initial}}} \times 100 \]
+It \emph{rises} on dilution, even though the pH rises too.
+
+\begin{workedexample}[I do: the counter-intuitive result]
+For the \SI{0.200}{\Molar} acetic acid above, find the percent ionization
+and predict what happens on dilution.
+
+\[ \frac{1.90\times10^{-3}}{0.200}\times100 = \mathbf{0.95\%} \]
+
+\textbf{On dilution the percent ionization increases.} $K_a$ is fixed, and
+$x \approx \sqrt{K_a C}$ --- so $x$ falls only as the \emph{square root}
+of the concentration, while the concentration itself falls linearly. The
+\emph{ratio} therefore grows.
+
+\textbf{Concretely:} at \SI{0.0200}{\Molar} the ionization is about
+\SI{3.0}{\percent} --- three times the fraction, even though $[\ce{H+}]$
+itself has fallen and the pH has risen.
+
+\textbf{Two things moving opposite ways.} Diluting makes the solution
+\emph{less acidic} (higher pH) but the acid \emph{more ionized} (higher
+percentage). Both are true, and confusing them is a common error.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $[\ce{H+}] = \SI{2.0e-3}{\Molar}$ from \SI{0.50}{\Molar} acid.
+        Percent ionization? \workspace[1.6cm]
+  \item On dilution, does percent ionization rise or fall?
+        \workspace[1.4cm]
+  \item On dilution, does the pH rise or fall? \workspace[1.4cm]
+  \item Explain how both answers can be true at once.
+        \workspace[2.0cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.40}{\percent} \quad (b) rises \quad (c) rises \quad
+(d) $[\ce{H+}]$ falls, but not as fast as the concentration}
+\keyonly{\begin{apcanswer}(a) $2.0\times10^{-3}/0.50 \times 100 =
+\mathbf{0.40}\%$.
+(b) It \textbf{rises}.
+(c) The pH also \textbf{rises} --- the solution is less acidic.
+(d) They measure different things. $[\ce{H+}]$ \emph{does} fall on
+dilution, which is why the pH rises. But it falls only as
+$\sqrt{C}$, while the total acid concentration falls as $C$. So the
+\emph{fraction} ionized --- their ratio --- goes up, even as the absolute
+amount of \ce{H+} goes down.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ p\emph{K}\textsubscript{a} and acid strength}
+\ced{8.7}
+
+$\mathrm{p}K_a = -\log K_a$. A \emph{smaller} $\mathrm{p}K_a$ means a
+\emph{stronger} acid --- the logarithm reverses the order.
+
+\begin{workedexample}[I do: converting and comparing]
+Acid A has $K_a = 1.8\times10^{-5}$; acid B has
+$\mathrm{p}K_a = 3.14$. Which is stronger?
+
+\textbf{Put them on the same scale.}
+$\mathrm{p}K_a(\text{A}) = -\log(1.8\times10^{-5}) = \mathbf{4.74}$.
+
+\textbf{Compare:} B's \num{3.14} is \emph{smaller}, so \textbf{B is the
+stronger acid}.
+
+\textbf{Check by converting back:}
+$K_a(\text{B}) = 10^{-3.14} = 7.2\times10^{-4}$, which is indeed larger
+than $1.8\times10^{-5}$ --- about forty times. \checkmark
+
+\textbf{Why the reversal:} the minus sign in the definition. Every factor
+of ten \emph{up} in $K_a$ is one unit \emph{down} in $\mathrm{p}K_a$. It
+works exactly as pH does: lower pH means more acidic.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item $\mathrm{p}K_a$ for $K_a = 1.0\times10^{-7}$:
+        \workspace[1.4cm]
+  \item $K_a$ for $\mathrm{p}K_a = 2.00$: \workspace[1.4cm]
+  \item Which is stronger, $\mathrm{p}K_a$ \num{4.2} or \num{9.1}?
+        \workspace[1.4cm]
+  \item Two acids differ by 2 in $\mathrm{p}K_a$. How do their $K_a$
+        values compare? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \num{7.00} \quad (b) \SI{1.0e-2}{} \quad (c) the
+\num{4.2} one \quad (d) a factor of 100}
+\keyonly{\begin{apcanswer}(a) $-\log(1.0\times10^{-7}) = \mathbf{7.00}$.
+(b) $10^{-2.00} = \mathbf{1.0\times10^{-2}}$.
+(c) The one with $\mathrm{p}K_a = \mathbf{4.2}$ --- smaller means
+stronger.
+(d) They differ by a factor of $10^2 = \mathbf{100}$. The
+$\mathrm{p}K_a$ scale is logarithmic, so each unit is a tenfold change in
+$K_a$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Structure and acid strength}
+\ced{8.6}
+
+Two separate trends, governed by two different factors --- and one of them
+runs opposite to what electronegativity alone would suggest.
+
+\begin{workedexample}[I do: the two trends]
+Explain why acid strength increases along \ce{HF} $<$ \ce{HCl} $<$
+\ce{HBr} $<$ \ce{HI}, and along \ce{HClO} $<$ \ce{HClO2} $<$ \ce{HClO3}
+$<$ \ce{HClO4}.
+
+\textbf{Down the halogens: bond strength decides.} The halogen gets
+larger, so the \ce{H-X} bond is longer and weaker and the proton is
+released more easily. Electronegativity \emph{falls} down this group, so
+it would predict the opposite order --- it is not the controlling factor
+here.
+
+\textbf{Across the oxoacids: electron withdrawal decides.} Each added
+oxygen is highly electronegative and pulls electron density away from the
+\ce{O-H} bond, weakening it. The extra oxygens also spread the negative
+charge of the resulting anion over more atoms, so the anion accommodates
+it better and the ionization proceeds further.
+
+\textbf{The lesson:} identify which factor is varying before reaching for
+a rule. Electronegativity, bond strength and charge delocalization each
+dominate in different comparisons.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Stronger acid, \ce{HBr} or \ce{HCl}? Why? \workspace[1.6cm]
+  \item Stronger acid, \ce{HClO4} or \ce{HClO}? Why?
+        \workspace[1.6cm]
+  \item Stronger acid, \ce{HBrO3} or \ce{HClO3}? \workspace[1.8cm]
+  \item Why does electronegativity fail to explain the hydrohalic trend?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{HBr} --- weaker bond \quad (b) \ce{HClO4} --- more
+electron withdrawal \quad (c) \ce{HClO3} --- Cl more electronegative
+\quad (d) it predicts the reverse order}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{HBr}}. Bromine is larger, so the
+\ce{H-Br} bond is longer and weaker and the proton leaves more readily.
+(b) \textbf{\ce{HClO4}}. Three additional oxygens withdraw far more
+electron density from the \ce{O-H} bond and spread the anion's charge over
+four oxygens rather than one.
+(c) \textbf{\ce{HClO3}}. With the same number of oxygens, the more
+electronegative central atom withdraws more density; chlorine is more
+electronegative than bromine.
+(d) Because fluorine is the \emph{most} electronegative halogen, so an
+electronegativity argument predicts \ce{HF} to be the strongest --- yet it
+is by far the weakest of the four. Bond strength, not polarity, is what
+varies decisively down that group.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ Acid--base properties of salts}
+\ced{8.7}
+
+Look at where each ion came from. An ion from a \emph{weak} parent reacts
+with water; an ion from a \emph{strong} parent does not.
+
+\begin{workedexample}[I do: three salts, three verdicts]
+Predict whether solutions of \ce{NaCl}, \ce{NH4Cl} and
+\ce{NaCH3COO} are acidic, basic or neutral.
+
+\textbf{\ce{NaCl}: neutral.} \ce{Na+} comes from the strong base
+\ce{NaOH}; \ce{Cl-} from the strong acid \ce{HCl}. Both are the conjugates
+of \emph{strong} parents, so neither reacts appreciably with water.
+
+\textbf{\ce{NH4Cl}: acidic.} \ce{NH4+} is the conjugate acid of the weak
+base ammonia, so it donates a proton to water:
+\ce{NH4+ + H2O <=> NH3 + H3O+}. \ce{Cl-} is inert.
+
+\textbf{\ce{NaCH3COO}: basic.} Acetate is the conjugate base of a weak
+acid, so it accepts a proton from water:
+\ce{CH3COO^- + H2O <=> CH3COOH + OH^-}. \ce{Na+} is inert.
+
+\textbf{The rule in one line:} the conjugate of a \emph{weak} species is
+itself reactive; the conjugate of a \emph{strong} species is not.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Is \ce{KNO3} acidic, basic or neutral? \workspace[1.4cm]
+  \item Is \ce{NaF} acidic, basic or neutral? Why? \workspace[1.6cm]
+  \item Is \ce{NH4NO3} acidic, basic or neutral? Why?
+        \workspace[1.6cm]
+  \item Why is \ce{Cl-} inert in water while \ce{F-} is not?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) neutral \quad (b) basic --- \ce{F-} is from weak \ce{HF}
+\quad (c) acidic --- \ce{NH4+} donates \quad (d) \ce{HCl} is strong,
+\ce{HF} is weak}
+\keyonly{\begin{apcanswer}(a) \textbf{Neutral} --- \ce{K+} from strong
+\ce{KOH}, \ce{NO3-} from strong \ce{HNO3}.
+(b) \textbf{Basic.} Fluoride is the conjugate base of the \emph{weak} acid
+\ce{HF}, so it accepts a proton from water and produces \ce{OH-}.
+(c) \textbf{Acidic.} \ce{NH4+} is the conjugate acid of weak ammonia and
+donates a proton; nitrate is inert.
+(d) Because \ce{HCl} is a \textbf{strong} acid, so its conjugate base
+\ce{Cl-} is an extremely weak base --- it has no tendency to take a proton
+back. \ce{HF} is \textbf{weak}, so \ce{F-} is a strong enough base to
+remove a proton from water appreciably.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Buffers}
+\ced{8.4} \ced{8.8} \ced{8.9}
+
+A buffer holds appreciable amounts of \emph{both} members of a conjugate
+pair, so it can neutralize either added acid or added base.
+\[ \text{pH} = \mathrm{p}K_a +
+   \log\frac{[\text{base}]}{[\text{acid}]} \]
+
+\begin{workedexample}[I do: pH and mechanism]
+A buffer is \SI{0.40}{\Molar} in \ce{CH3COOH} and \SI{0.25}{\Molar} in
+\ce{CH3COO-} ($\mathrm{p}K_a = 4.74$). Find its pH, and explain how it
+resists change.
+
+\[ \text{pH} = 4.74 + \log\frac{0.25}{0.40} = 4.74 + (-0.20)
+   = \mathbf{4.54} \]
+
+Below the $\mathrm{p}K_a$, as it must be when the acid form dominates.
+
+\textbf{Added \ce{H+}} is consumed by the base component:
+\ce{CH3COO^- + H+ -> CH3COOH}. Strong acid becomes weak acid, so free
+$[\ce{H3O+}]$ barely rises.
+
+\textbf{Added \ce{OH-}} is consumed by the acid component:
+\ce{CH3COOH + OH^- -> CH3COO^- + H2O}.
+
+\textbf{Why the pH barely moves:} it depends on the \emph{ratio} of the
+pair, and a small addition changes that ratio only slightly. A logarithm
+of a slightly-changed ratio is a barely-changed number.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item pH of a buffer with equal concentrations of the pair
+        ($\mathrm{p}K_a = 4.74$): \workspace[1.4cm]
+  \item pH when $[\text{base}]/[\text{acid}] = 10$:
+        \workspace[1.6cm]
+  \item Write the equation for the buffer consuming added \ce{OH-}.
+        \workspace[1.6cm]
+  \item Why does a solution of acetic acid \emph{alone} not buffer?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \num{4.74} \quad (b) \num{5.74} \quad
+(c) \ce{CH3COOH + OH^- -> CH3COO^- + H2O} \quad (d) it has almost no
+conjugate base}
+\keyonly{\begin{apcanswer}(a) $\log(1) = 0$, so
+$\text{pH} = \mathrm{p}K_a = \mathbf{4.74}$.
+(b) $4.74 + \log(10) = 4.74 + 1 = \mathbf{5.74}$.
+(c) \ce{CH3COOH + OH^- -> CH3COO^- + H2O}.
+(d) Because buffering requires \emph{both} members of the pair in
+appreciable amounts. Acetic acid alone is only about \SI{1}{\percent}
+ionized, so there is very little acetate present to neutralize any added
+acid. It could absorb added base, but not added acid --- and a buffer must
+handle both.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Buffer capacity}
+\ced{8.10}
+
+Capacity is how much acid or base a buffer can absorb before its pH moves
+sharply. It depends on the \textbf{absolute amounts} of the pair, not on
+their ratio.
+
+\begin{workedexample}[I do: same pH, different capacity]
+Two buffers both have pH \num{4.74}. Buffer X is \SI{1.0}{\Molar} in each
+component; buffer Y is \SI{0.010}{\Molar} in each. Compare them.
+
+\textbf{Same pH:} both have a $1\!:\!1$ ratio, and pH depends on the
+ratio, so both read \num{4.74}.
+
+\textbf{Very different capacity:} X holds a hundred times more of each
+component. Adding \SI{0.005}{\mole} of strong acid barely dents X's
+reservoir, but would consume half of Y's base component and move its pH
+substantially.
+
+\textbf{The distinction to hold on to:} \textbf{ratio} sets the pH;
+\textbf{amount} sets the capacity. Two independent properties, controlled
+by two different things.
+
+\textbf{Best capacity when $\text{pH} = \mathrm{p}K_a$,} because the ratio
+is then 1 and the buffer has equal reserves in both directions. Useful
+range is roughly $\mathrm{p}K_a \pm 1$.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Which has greater capacity, \SI{0.50}{\Molar} or
+        \SI{0.05}{\Molar} of each component? \workspace[1.6cm]
+  \item Do those two have the same pH? \workspace[1.4cm]
+  \item At what pH is a buffer most effective? \workspace[1.4cm]
+  \item Choose a buffer for pH \num{5.0} from acids with
+        $\mathrm{p}K_a$ \num{3.1}, \num{4.8} and \num{9.2}.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) the \SI{0.50}{\Molar} \quad (b) yes --- same ratio \quad
+(c) at its $\mathrm{p}K_a$ \quad (d) the \num{4.8} one}
+\keyonly{\begin{apcanswer}(a) The \textbf{\SI{0.50}{\Molar}} buffer ---
+ten times the reserves of each component.
+(b) \textbf{Yes.} Both have a $1\!:\!1$ ratio, and the pH depends on the
+ratio alone.
+(c) At its \textbf{$\mathrm{p}K_a$}, where the pair is present in equal
+amounts and reserves against acid and base are balanced.
+(d) The one with $\mathrm{p}K_a = \mathbf{4.8}$ --- closest to the target
+pH, so the required ratio is near 1 and capacity is greatest. The
+\num{3.1} acid would need a ratio near 80:1, leaving almost no reserve of
+the acid form.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ Titration curves}
+\ced{8.5}
+
+Four landmarks on a weak-acid titration: the start, the
+half-equivalence point (pH $= \mathrm{p}K_a$), the equivalence point
+(above 7), and the excess-base region.
+
+\begin{workedexample}[I do: reading the four regions]
+\SI{25.00}{\milli\litre} of \SI{0.100}{\Molar} acetic acid
+($\mathrm{p}K_a = 4.74$) is titrated with \SI{0.100}{\Molar} \ce{NaOH}.
+Describe each landmark.
+
+\textbf{Start (0 mL):} weak acid alone. pH \num{2.87} from the $K_a$
+calculation --- not \num{1.00}, because it is weak.
+
+\textbf{Half-equivalence (12.50 mL):} half the acid has become acetate, so
+$[\ce{HA}] = [\ce{A-}]$ and
+$\text{pH} = \mathrm{p}K_a = \mathbf{4.74}$. Reading a
+$\mathrm{p}K_a$ straight off a curve at this point is a standard exam
+task.
+
+\textbf{Equivalence (25.00 mL):} all the acid is now acetate, a weak base.
+It hydrolyses water, so the pH is \textbf{above 7} --- here \num{8.72}.
+This is the landmark most often got wrong; equivalence does \emph{not}
+mean pH 7 unless both acid and base were strong.
+
+\textbf{Beyond equivalence:} excess strong base dominates and the pH
+approaches that of the titrant.
+
+\textbf{Indicator choice follows:} phenolphthalein (8.3--10.0) brackets
+\num{8.72}; methyl orange (3.1--4.4) would change far too early.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item What quantity is read directly at the half-equivalence point?
+        \workspace[1.4cm]
+  \item Is the equivalence point of a strong acid with a strong base above,
+        below or at pH 7? \workspace[1.6cm]
+  \item Why is a weak-acid equivalence point above 7?
+        \workspace[1.8cm]
+  \item A titration curve's vertical rise is centred at
+        \SI{20.0}{\milli\litre}, and the pH at \SI{10.0}{\milli\litre} is
+        \num{5.20}. Find $\mathrm{p}K_a$. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $\mathrm{p}K_a$ \quad (b) at 7 \quad (c) the conjugate
+base hydrolyses \quad (d) \num{5.20}}
+\keyonly{\begin{apcanswer}(a) The \textbf{$\mathrm{p}K_a$} of the acid,
+since $[\ce{HA}] = [\ce{A-}]$ there.
+(b) \textbf{At 7.} Both ions produced are conjugates of strong species and
+neither reacts with water.
+(c) Because at equivalence the solution contains only the
+\textbf{conjugate base} of a weak acid, which reacts with water,
+\ce{A^- + H2O <=> HA + OH^-}, generating \ce{OH-} and making the solution
+basic.
+(d) \SI{10.0}{\milli\litre} is exactly half of \SI{20.0}{\milli\litre}, so
+it is the half-equivalence point and
+$\mathrm{p}K_a = \mathbf{5.20}$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Where you stand}
+
+Tick a ladder only if all four YOUR TURN questions were right first time.
+
+\renewcommand{\arraystretch}{1.30}
+\noindent\begin{tabular}{@{}c p{6.0cm} c >{\raggedright\arraybackslash}p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & conjugate pairs & 1 & differ by one proton \\
+$\square$ & strong versus weak & 2 & extent, not amount \\
+$\square$ & pH, pOH, $K_w$ & 3 & they sum to 14.00 \\
+$\square$ & strong acid/base pH & 4 & count the ions released \\
+$\square$ & weak acid pH & 5 & $K_a$ setup, then test $x$ \\
+$\square$ & percent ionization & 6 & rises on dilution \\
+$\square$ & p$K_a$ & 7 & smaller means stronger \\
+$\square$ & structure and strength & 8 & bond strength or withdrawal \\
+$\square$ & salts & 9 & conjugate of a weak parent reacts \\
+$\square$ & buffers & 10 & ratio sets the pH \\
+$\square$ & buffer capacity & 11 & amount sets the capacity \\
+$\square$ & titration curves & 12 & equivalence is not pH 7 \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+12/12: move on to the unit worksheets and the free-response set.
+9--11: solid --- redo the missed ladders tomorrow from a blank page.
+8 or fewer: the recurring root causes here are exactly three ---
+(1) treating a weak acid as though it were strong and reading
+$[\ce{H+}]$ off the label, (2) assuming every equivalence point is at
+pH 7, and (3) confusing strength with concentration. Fix those three and
+most of these ladders fall together.
+\end{apcnote}
+
+\end{document}

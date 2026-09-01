@@ -1,0 +1,675 @@
+% Unit 2 self-study -- "I do / You do" ladder for CED 2.1-2.7.
+% Eleven ladders, forty-four questions.
+%
+% Disjoint from u02-frq, which uses the SCN- Lewis/formal-charge question,
+% the NaCl/HCl/Cl2 bonding continuum, the Cl2-vs-Br2 bond energy comparison
+% and ethanoic-acid hybridisation. This document uses K-F/C-O pairs, the
+% LiF-NaF-KF lattice series, C-C/C=C/C#C bond order, and CO2/NO3-/SO4^2-
+% for Lewis work instead.
+\documentclass{apchem-worksheet}
+
+\apcunit{2}
+\apcunittitle{Compound Structure and Properties}
+\apcdoctitle{Self-Study \textbullet\ CED 2.1--2.7, I~do / You~do}
+\apcsubtitle{Eleven ladders \textbullet\ four YOUR TURN questions each \textbullet\ work alone, check after all four}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a worked example in the solid-framed box,
+then \textbf{four} YOUR TURN questions in the dashed box --- same skill,
+new substances, no help. Work all four before checking anything.
+
+\textbf{The habit that decides this unit.} Almost every question here is
+answered in two moves: \emph{count the electrons}, then \emph{reason about
+the attraction}. Counting means valence electrons, domains, or charges.
+Reasoning means \textbf{Coulomb's law} --- the product of the charges over
+the distance between them.
+
+An explanation that says a species ``wants a full octet'' or ``is more
+stable'' earns \textbf{zero} on the AP exam. The octet rule tells you
+\emph{what} the structure is; it never tells you \emph{why} a property
+follows.
+
+\textbf{One scope note.} For a central atom with more than four electron
+domains the CED asks for the \textbf{shape only}. You will not be asked
+for an \ce{sp^3d} or \ce{sp^3d^2} label, and none appears here.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Bond type from electronegativity}
+\ced{2.1}
+
+Bonding is a continuum, not three boxes. The electronegativity difference
+$\Delta$EN tells you where on it a bond sits: near zero, the pair is
+shared equally; large, the electron is effectively transferred.
+
+\begin{workedexample}[I do: placing three bonds on the continuum]
+Classify \ce{K-F}, \ce{C-O} and \ce{H-H} using
+EN: H 2.1, C 2.5, O 3.5, F 4.0, K 0.8.
+
+\textbf{\ce{K-F}:} $\Delta$EN $= 4.0 - 0.8 = 3.2$. Very large --- the
+electron is transferred, giving \ce{K+} and \ce{F-}. \textbf{Ionic.}
+
+\textbf{\ce{C-O}:} $\Delta$EN $= 3.5 - 2.5 = 1.0$. Moderate --- the pair
+is shared but pulled toward oxygen, leaving $\delta+$ on C and $\delta-$
+on O. \textbf{Polar covalent.}
+
+\textbf{\ce{H-H}:} $\Delta$EN $= 0$. Identical atoms share equally.
+\textbf{Nonpolar covalent.}
+
+\textbf{Read the boundaries as guides, not laws.} Roughly: below
+\num{0.4} nonpolar, \num{0.4}--\num{1.7} polar, above \num{1.7} ionic. A
+bond at \num{1.6} is not categorically different from one at \num{1.8};
+the character shifts gradually.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Classify \ce{Na-Br} (EN Na 0.9, Br 2.8): \workspace[1.4cm]
+  \item Classify \ce{N-H} (EN N 3.0, H 2.1): \workspace[1.4cm]
+  \item In \ce{P-Cl} (EN P 2.1, Cl 3.0), which atom carries $\delta-$, and
+        why? \workspace[1.6cm]
+  \item Two bonds have $\Delta$EN of \num{1.6} and \num{1.8}. Explain why
+        calling one ``covalent'' and the other ``ionic'' is misleading.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) ionic, $\Delta$EN \num{1.9} \quad (b) polar covalent,
+\num{0.9} \quad (c) Cl, it is more electronegative \quad (d) the
+continuum has no sharp boundary}
+\keyonly{\begin{apcanswer}(a) $\Delta$EN $= 2.8 - 0.9 = \num{1.9}$, above
+\num{1.7}: \textbf{ionic}.
+(b) $\Delta$EN $= 3.0 - 2.1 = \num{0.9}$: \textbf{polar covalent}.
+(c) \textbf{Chlorine}. It is the more electronegative atom, so it draws
+the shared pair closer and gains the partial negative charge; phosphorus
+is left $\delta+$.
+(d) Because bonding is a \textbf{continuum}. A bond at \num{1.6} and one
+at \num{1.8} have almost identical character --- both are strongly polar
+with substantial charge separation. The \num{1.7} line is a convenient
+convention, not a physical boundary where the nature of the bond suddenly
+changes.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Coulomb's law and lattice energy}
+\ced{2.2}
+
+Lattice energy is the energy released when gaseous ions come together into
+a crystal. It is Coulombic, so only two things matter: the
+\textbf{product of the charges} and the \textbf{distance} between ion
+centres.
+\[ \text{attraction} \;\propto\; \frac{q_1 q_2}{d} \]
+
+\begin{workedexample}[I do: one factor at a time]
+Rank \ce{LiF}, \ce{NaF} and \ce{KF} by lattice energy, then compare
+\ce{NaF} with \ce{MgO}.
+
+\textbf{Within the fluoride series,} every compound pairs a $1+$ with a
+$1-$, so the charge product is the same and cannot decide anything.
+\emph{Distance} decides. Cation radii rise \ce{Li+} (76) $<$ \ce{Na+}
+(102) $<$ \ce{K+} (138)~pm, so $d$ rises and the attraction falls:
+\[ \ce{LiF} > \ce{NaF} > \ce{KF} \quad (1030 > 910 > 808~\text{kJ/mol}) \]
+
+\textbf{\ce{NaF} against \ce{MgO}:} now the \emph{charges} change.
+\ce{NaF} is $(+1)(-1) = 1$; \ce{MgO} is $(+2)(-2) = 4$ --- four times
+the charge product. The ions are also smaller
+(\SI{212}{\pico\metre} against \SI{235}{\pico\metre}), so $d$ is shorter
+too. Both factors point the same way, and the gap is enormous:
+\SI{3795}{} against \SI{910}{\kilo\joule\per\mole}.
+
+\textbf{The method:} check charge first. If the charges match, distance
+decides. If they differ, charge almost always dominates.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Larger lattice energy, \ce{NaCl} or \ce{NaF}? Why?
+        \workspace[1.6cm]
+  \item Larger lattice energy, \ce{CaO} or \ce{KF}? Why?
+        \workspace[1.8cm]
+  \item \ce{MgO} melts far higher than \ce{NaF}. Connect this to lattice
+        energy. \workspace[1.8cm]
+  \item Explain why comparing \ce{MgO} with \ce{NaCl} does \emph{not}
+        isolate the effect of charge. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{NaF} --- \ce{F-} smaller, shorter $d$ \quad
+(b) \ce{CaO} --- charge product 4 vs 1 \quad (c) stronger attractions need
+more energy to break \quad (d) charge \emph{and} size both differ}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{NaF}}. Same charges, so distance
+decides: \ce{F-} (133~pm) is smaller than \ce{Cl-} (181~pm), so $d$ is
+shorter and the attraction stronger.
+(b) \textbf{\ce{CaO}}. Charge product $(+2)(-2) = 4$ against \ce{KF}'s
+$(+1)(-1) = 1$. Charge dominates, and \ce{CaO}'s ions are smaller too.
+(c) Melting means giving ions enough energy to break out of the lattice.
+A larger lattice energy means stronger electrostatic attractions holding
+them, so more energy --- a higher temperature --- is needed.
+(d) Because \textbf{both} variables change at once: \ce{MgO} has the
+larger charge product \emph{and} the shorter internuclear distance. Any
+difference cannot be attributed to charge alone. To isolate charge you
+would compare species of similar size but different charge.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Bond order, length and energy}
+\ced{2.2}
+
+Within the same pair of atoms, more shared pairs means a shorter, stronger
+bond. Bond order runs with energy and against length.
+
+\begin{workedexample}[I do: a carbon--carbon series]
+Rank \ce{C-C}, \ce{C=C} and \ce{C#C} by bond length and by bond energy.
+
+Bond energies: 347, 614, 839 \si{\kilo\joule\per\mole}.
+
+\textbf{Energy rises with bond order:} \ce{C-C} $<$ \ce{C=C} $<$
+\ce{C#C}. Each extra shared pair adds attraction between the two nuclei
+and the electron density between them.
+
+\textbf{Length falls as order rises:} \ce{C#C} $<$ \ce{C=C} $<$ \ce{C-C}.
+More shared electron density pulls the nuclei closer together.
+
+\textbf{Note the energies are not simple multiples} --- 614 is not twice
+347, and 839 is not three times it. The second and third pairs are pi
+bonds, whose side-on overlap is less effective than the first bond's
+end-on overlap.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Rank \ce{N-N} (163), \ce{N=N} (418), \ce{N#N} (941) by bond
+        length, shortest first. \workspace[1.4cm]
+  \item \ce{H-F} 567, \ce{H-Cl} 431, \ce{H-Br} 366, \ce{H-I} 299
+        \si{\kilo\joule\per\mole}. Explain the trend.
+        \workspace[2.2cm]
+  \item Why is \ce{N2} so unreactive? \workspace[1.8cm]
+  \item In \ce{O2} (495) and \ce{F2} (154), the bond order falls from 2 to
+        1. Is that the whole explanation for the energy difference?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{N#N} $<$ \ce{N=N} $<$ \ce{N-N} \quad (b) larger
+halogen, longer bond, weaker attraction \quad (c) the triple bond is
+extremely strong \quad (d) largely, but lone-pair repulsion in \ce{F2}
+also weakens it}
+\keyonly{\begin{apcanswer}(a) \ce{N#N} $<$ \ce{N=N} $<$ \ce{N-N}. Higher
+bond order draws the nuclei closer.
+(b) Down the halogen group the atom gets \textbf{larger}, so the
+\ce{H-X} bond is longer and the shared pair sits further from both
+nuclei. The Coulombic attraction holding the bond is correspondingly
+weaker, so the bond energy falls steadily.
+(c) Its \ce{N#N} triple bond is one of the strongest known
+(\SI{941}{\kilo\joule\per\mole}). Any reaction must begin by breaking it,
+which demands an enormous energy input, so nitrogen is kinetically
+sluggish even where reaction is thermodynamically favourable.
+(d) \textbf{Largely, but not entirely.} Bond order accounts for most of
+it. \ce{F2} is also anomalously weak for a single bond because the two
+small fluorine atoms are close together and their \textbf{lone pairs
+repel} strongly, further destabilizing the bond --- which is why
+\ce{F-F} (154) is weaker even than \ce{Cl-Cl} (243).\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Properties of ionic solids}
+\ced{2.3}
+
+Every property of an ionic solid traces back to the same fact: charged
+particles locked in a rigid lattice, held by strong electrostatic
+attractions.
+
+\begin{workedexample}[I do: four properties, one cause]
+Explain why \ce{NaCl} is hard, brittle, high-melting, and conducts only
+when molten or dissolved.
+
+\textbf{Hard and high-melting:} each ion is attracted to all its
+oppositely charged neighbours throughout the lattice. Deforming or melting
+the solid means overcoming many strong Coulombic attractions at once.
+
+\textbf{Brittle:} a blow displaces one plane of ions by a single lattice
+position. Ions of \emph{like} charge are then brought face to face,
+attraction along that plane becomes strong repulsion, and the crystal
+splits cleanly.
+
+\textbf{Conductivity:} conduction requires mobile charges. In the solid
+the ions are fixed --- charges are present but cannot move. Melting or
+dissolving frees them, and the liquid or solution conducts.
+
+\textbf{The contrast that makes the point:} a metal, struck the same way,
+bends. Its delocalized electrons flow with the displaced layer and keep
+binding it, so no like-charge repulsion ever arises.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Why does solid \ce{KBr} not conduct, while molten \ce{KBr} does?
+        \workspace[1.6cm]
+  \item \ce{MgO} is harder than \ce{NaCl}. Explain Coulombically.
+        \workspace[1.8cm]
+  \item Why does an ionic crystal shatter rather than bend?
+        \workspace[1.8cm]
+  \item A solid dissolves in water and the solution conducts. Does that
+        prove the solid was ionic? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) ions fixed vs mobile \quad (b) charge product 4 vs 1 \quad
+(c) like charges brought adjacent \quad (d) no --- a molecular acid also
+ionizes}
+\keyonly{\begin{apcanswer}(a) Conduction needs \emph{mobile} charge
+carriers. In solid \ce{KBr} the ions sit in fixed lattice positions;
+melting frees them to migrate, so the melt conducts.
+(b) \ce{MgO} pairs $2+$ with $2-$, a charge product of 4, against
+\ce{NaCl}'s 1; its ions are also smaller, so $d$ is shorter. Much stronger
+attractions make the lattice far harder to deform.
+(c) A blow shifts one layer by one ion position, bringing like charges
+adjacent. Attraction along that plane is replaced by strong repulsion,
+which drives the layers apart and splits the crystal.
+(d) \textbf{No.} A molecular substance that \emph{ionizes} in water --- HCl,
+for instance --- also gives a conducting solution despite being covalent
+as a pure substance. The stronger evidence for an ionic solid is that it
+conducts when \textbf{molten}, since that requires ions to have been
+present in the solid itself.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Metals and alloys}
+\ced{2.4}
+
+A metal is a lattice of cations in a sea of delocalized electrons. Every
+metallic property follows from those electrons being free to move.
+
+\begin{workedexample}[I do: conductivity, malleability, alloys]
+Explain metallic conduction and malleability, and why adding a second
+element hardens the metal.
+
+\textbf{Conduction:} the valence electrons belong to the whole lattice,
+not to individual atoms. Under a potential difference they drift through
+the solid, carrying charge.
+
+\textbf{Malleability:} when layers of cations slide over one another, the
+electron sea flows with them and continues to bind the lattice. Nothing
+brings like charges together, so the metal deforms instead of fracturing.
+
+\textbf{Alloying:} atoms of a different size disrupt the regular layers.
+Layers can no longer slide smoothly past one another, so the alloy resists
+deformation --- it is harder and stronger, though usually less ductile.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Why do metals conduct heat as well as electricity?
+        \workspace[1.6cm]
+  \item Brass is copper with zinc. Why is it harder than pure copper?
+        \workspace[1.8cm]
+  \item Why is an interstitial alloy such as steel usually harder than a
+        substitutional one? \workspace[1.8cm]
+  \item Both metals and molten ionic solids conduct. State how the
+        \emph{carriers} differ. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) mobile electrons carry kinetic energy \quad (b) zinc atoms
+disrupt the layers \quad (c) small atoms wedge into gaps and pin the
+layers \quad (d) electrons vs ions}
+\keyonly{\begin{apcanswer}(a) The same delocalized electrons carry
+\emph{kinetic} energy as well as charge. Heated at one end, they move
+faster and transfer that energy rapidly through the lattice by collision.
+(b) Zinc atoms differ in size from copper, disrupting the regular layers
+so that they cannot slide over one another as easily.
+(c) An interstitial alloy adds \emph{small} atoms (carbon in iron) that
+wedge into the gaps between the metal atoms, pinning the layers directly.
+A substitutional alloy merely swaps in atoms of similar size, which
+disrupts the packing less.
+(d) In a metal the mobile carriers are \textbf{electrons}, and the cations
+stay put. In a molten ionic solid the carriers are the \textbf{ions}
+themselves, which physically migrate through the liquid.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Drawing Lewis structures}
+\ced{2.5}
+
+Count the valence electrons first --- adjusting for charge --- then build a
+skeleton, complete the outer atoms' octets, and convert lone pairs to
+multiple bonds only if the central atom is short.
+
+\begin{workedexample}[I do: a neutral molecule and an anion]
+Draw \ce{CO2} and \ce{CO3^2-}.
+
+\textbf{\ce{CO2}.} Valence electrons: $4 + 2(6) = \mathbf{16}$.
+Skeleton \ce{O-C-O} uses 4. Completing octets on both oxygens uses the
+other 12 --- but carbon then has only 4. Convert one lone pair on each
+oxygen into a bond: \ce{O=C=O}, with two lone pairs on each oxygen. Every
+atom now has an octet, and the total is still 16. \checkmark
+
+\textbf{\ce{CO3^2-}.} Valence electrons:
+$4 + 3(6) + \mathbf{2} = \mathbf{24}$ --- the $2-$ charge adds two.
+Carbon central, three oxygens around it. One \ce{C=O} and two \ce{C-O},
+with the whole structure in brackets carrying $2-$.
+
+\textbf{The single most common error} is forgetting to adjust for the
+charge. An anion has \emph{more} electrons than the neutral atoms
+supply; a cation has fewer.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Valence-electron count for \ce{NH3}: \workspace[1.4cm]
+  \item Valence-electron count for \ce{NH4+}: \workspace[1.4cm]
+  \item Valence-electron count for \ce{SO4^2-}: \workspace[1.4cm]
+  \item \ce{PCl3} has 26 valence electrons. How many lone pairs are on the
+        phosphorus? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 8 \quad (b) 8 \quad (c) 32 \quad (d) one}
+\keyonly{\begin{apcanswer}(a) $5 + 3(1) = \mathbf{8}$.
+(b) $5 + 4(1) - \mathbf{1} = \mathbf{8}$ --- the $+$ charge \emph{removes}
+one electron.
+(c) $6 + 4(6) + \mathbf{2} = \mathbf{32}$.
+(d) Three \ce{P-Cl} bonds use 6 electrons; completing the three chlorine
+octets uses 18 more, totalling 24. The remaining $26 - 24 = 2$ electrons
+sit on phosphorus as \textbf{one lone pair} --- which is what makes
+\ce{PCl3} pyramidal rather than planar.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Formal charge}
+\ced{2.6}
+
+\[ \text{formal charge} = \text{valence electrons} -
+   \text{lone-pair electrons} - \tfrac{1}{2}(\text{bonding electrons}) \]
+Formal charges must sum to the overall charge on the species. The best
+structure keeps them small, and puts any negative charge on the most
+electronegative atom.
+
+\begin{workedexample}[I do: nitrate]
+Assign formal charges in \ce{NO3-}, drawn with one \ce{N=O} and two
+\ce{N-O}.
+
+\textbf{Nitrogen:} 5 valence, no lone pairs, 8 bonding electrons:
+$5 - 0 - 4 = \mathbf{+1}$.
+
+\textbf{Doubly bonded O:} 6 valence, 4 lone-pair electrons, 4 bonding:
+$6 - 4 - 2 = \mathbf{0}$.
+
+\textbf{Each singly bonded O:} 6 valence, 6 lone-pair electrons, 2
+bonding: $6 - 6 - 1 = \mathbf{-1}$.
+
+\textbf{Check the sum:} $(+1) + 0 + (-1) + (-1) = -1$, matching the ion's
+charge. \checkmark If your formal charges do not sum to the overall
+charge, the structure is drawn wrong --- go back before doing anything
+else.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Formal charge on N in \ce{NH4+} (4 bonds, no lone pairs):
+        \workspace[1.4cm]
+  \item Formal charge on each O in \ce{CO2} (each doubly bonded, two lone
+        pairs): \workspace[1.4cm]
+  \item In \ce{SO4^2-} drawn with four single bonds, the formal charge on
+        S is $+2$ and on each O is $-1$. Verify the sum.
+        \workspace[1.6cm]
+  \item Two structures for \ce{OCN-} put the $-1$ on O in one and on N in
+        the other. Which is preferred? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $+1$ \quad (b) 0 \quad (c) $+2 + 4(-1) = -2$ \checkmark
+\quad (d) the one with $-1$ on O, the more electronegative atom}
+\keyonly{\begin{apcanswer}(a) $5 - 0 - \tfrac{1}{2}(8) = \mathbf{+1}$.
+(b) $6 - 4 - \tfrac{1}{2}(4) = \mathbf{0}$ for each oxygen; carbon is
+also 0, so the molecule sums to 0. \checkmark
+(c) $(+2) + 4(-1) = \mathbf{-2}$, which matches the ion's charge.
+\checkmark
+(d) The structure with the negative formal charge on \textbf{oxygen}.
+Oxygen is more electronegative than nitrogen and so accommodates negative
+charge better; the arrangement placing $-1$ on the more electronegative
+atom is the larger contributor.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Resonance}
+\ced{2.6}
+
+When a double bond can be placed in more than one equivalent position, no
+single Lewis structure is correct. The real species is the
+\textbf{average} --- the electrons are delocalized. It does not flip
+between structures.
+
+\begin{workedexample}[I do: nitrate's three structures]
+Explain why \ce{NO3-} needs three resonance structures, and predict its
+bond lengths.
+
+\textbf{Why three:} the double bond can go to any one of the three
+oxygens, and the three choices are equivalent.
+
+\textbf{What is real:} not one structure, and not rapid switching between
+them. The extra bonding pair is \textbf{delocalized} over all three
+\ce{N-O} positions simultaneously.
+
+\textbf{Bond lengths:} all three are \textbf{identical}, and each is
+intermediate between a normal \ce{N-O} single bond and a normal \ce{N=O}
+double bond. Every position has the same bond order, about
+$1\tfrac{1}{3}$.
+
+\textbf{The experimental point:} measurement finds three equal bond
+lengths. A structure with one short and two long bonds would predict
+otherwise, which is exactly why the single Lewis structure is known to be
+inadequate.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item How many equivalent resonance structures does \ce{CO3^2-} have?
+        \workspace[1.4cm]
+  \item Predict the relative \ce{C-O} bond lengths in \ce{CO3^2-}.
+        \workspace[1.6cm]
+  \item \ce{O3} has two resonance structures. What does this predict about
+        its two \ce{O-O} bonds? \workspace[1.6cm]
+  \item Why is ``the ion rapidly switches between structures'' wrong?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) three \quad (b) all equal, between single and double \quad
+(c) identical, bond order 1.5 \quad (d) the electrons are delocalized, not
+alternating}
+\keyonly{\begin{apcanswer}(a) \textbf{Three} --- the double bond can sit on
+any of the three oxygens.
+(b) All three \textbf{identical}, each intermediate between a \ce{C-O}
+single and a \ce{C=O} double bond; bond order about $1\tfrac{1}{3}$.
+(c) The two \ce{O-O} bonds are \textbf{identical}, each of bond order
+\num{1.5} --- intermediate between single and double. Measurement confirms
+this.
+(d) Because nothing is moving between structures. The resonance
+structures are limitations of the \emph{Lewis notation}, not states the
+molecule occupies. The real electron distribution is a single, unchanging,
+delocalized one that no individual Lewis structure can
+draw.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ VSEPR: shapes and angles}
+\ced{2.7}
+
+Count the electron \textbf{domains} on the central atom --- each bond
+(single, double or triple) and each lone pair is one domain. Domains repel
+and spread as far apart as possible. The \emph{shape} is then named from
+the positions of the \textbf{atoms} only.
+
+\begin{workedexample}[I do: same domain count, three different shapes]
+Give the shape and approximate bond angle for \ce{CH4}, \ce{NH3} and
+\ce{H2O}.
+
+All three have \textbf{four} domains, so all three are based on a
+tetrahedron. What differs is how many domains are lone pairs.
+
+\textbf{\ce{CH4}} --- 4 bonds, 0 lone pairs: \textbf{tetrahedral},
+\SI{109.5}{\degree}.
+
+\textbf{\ce{NH3}} --- 3 bonds, 1 lone pair: \textbf{trigonal pyramidal},
+about \SI{107}{\degree}.
+
+\textbf{\ce{H2O}} --- 2 bonds, 2 lone pairs: \textbf{bent}, about
+\SI{104.5}{\degree}.
+
+\textbf{Why the angle shrinks:} a lone pair is held by only one nucleus,
+so it spreads out closer to the central atom and takes up more angular
+space than a bonding pair. Each lone pair squeezes the remaining bonds
+together, so the angle drops with every one added.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Shape and angle of \ce{BF3}: \workspace[1.4cm]
+  \item Shape and angle of \ce{SO2}: \workspace[1.6cm]
+  \item Shape of \ce{SF6} (six domains, no lone pairs):
+        \workspace[1.4cm]
+  \item \ce{CO2} has two double bonds yet only two domains. Explain.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) trigonal planar, \SI{120}{\degree} \quad (b) bent, just
+under \SI{120}{\degree} \quad (c) octahedral \quad (d) a multiple bond
+counts as one domain}
+\keyonly{\begin{apcanswer}(a) Three domains, no lone pair:
+\textbf{trigonal planar}, \SI{120}{\degree}.
+(b) Three domains, one lone pair: \textbf{bent}, a little under
+\SI{120}{\degree} because the lone pair takes more space.
+(c) \textbf{Octahedral}, with \SI{90}{\degree} between adjacent
+fluorines. (The CED asks only for the shape here --- no orbital label is
+required.)
+(d) A domain is a \emph{region} of electron density, not a count of
+pairs. All the electrons of a double bond lie between the same two nuclei,
+so they occupy one region and repel other domains as a single unit. Carbon
+therefore has two domains and \ce{CO2} is linear.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Hybridization and sigma/pi counting}
+\ced{2.7}
+
+The central atom mixes exactly as many atomic orbitals as it has domains:
+2 domains \ce{sp}, 3 domains \ce{sp^2}, 4 domains \ce{sp^3}. Every single
+bond is one sigma; every double bond is one sigma plus one pi; every
+triple bond is one sigma plus two pi.
+
+\begin{workedexample}[I do: hybridization and bond count together]
+For \ce{HCN}, give the hybridization of carbon and count the sigma and pi
+bonds.
+
+\textbf{Domains on carbon:} one bond to H, one triple bond to N. The
+triple bond is a single domain, so carbon has \textbf{two} domains ---
+hence \ce{sp} hybridized, and the molecule is linear.
+
+\textbf{Bond count:} \ce{H-C} is one sigma. \ce{C#N} is one sigma plus
+\emph{two} pi. Total: \textbf{2 sigma, 2 pi}.
+
+\textbf{The rule that never fails:} the \emph{first} bond between any two
+atoms is sigma; every additional bond between that same pair is pi.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Hybridization of B in \ce{BF3}: \workspace[1.4cm]
+  \item Hybridization of O in \ce{H2O}: \workspace[1.4cm]
+  \item Sigma and pi bonds in \ce{C2H4} (ethene): \workspace[1.6cm]
+  \item Why does the \ce{C=C} bond in ethene resist rotation while the
+        \ce{C-C} bond in ethane does not? \workspace[2.2cm]
+\end{enumerate}
+\selfcheck{(a) \ce{sp^2} \quad (b) \ce{sp^3} \quad (c) five sigma, one pi
+\quad (d) rotation would destroy the pi overlap}
+\keyonly{\begin{apcanswer}(a) Three domains, no lone pair:
+\textbf{\ce{sp^2}}.
+(b) Four domains --- two bonds and \emph{two lone pairs}:
+\textbf{\ce{sp^3}}. Counting only the bonds would wrongly give
+\ce{sp^2}.
+(c) Four \ce{C-H} sigma plus one \ce{C-C} sigma $=$ \textbf{five sigma};
+the second component of the \ce{C=C} is \textbf{one pi}.
+(d) Ethane's \ce{C-C} is a single sigma bond, and sigma overlap is
+cylindrically symmetric about the bond axis --- twisting does not reduce
+it, so rotation is nearly free. Ethene's double bond includes a pi bond
+formed by two \emph{parallel} $p$ orbitals; rotating one end turns them
+out of alignment, and at \SI{90}{\degree} the overlap is zero. Rotation
+would mean breaking the pi bond, which costs far too much
+energy.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Molecular polarity}
+\ced{2.1} \ced{2.7}
+
+A molecule is polar only if it has polar bonds \emph{and} a shape that
+prevents their dipoles cancelling. Shape decides --- which is why this
+ladder comes after VSEPR.
+
+\begin{workedexample}[I do: same bonds, opposite verdicts]
+\ce{CO2} and \ce{H2O} both contain polar bonds. Explain why only water is
+polar.
+
+\textbf{\ce{CO2} is linear.} The two \ce{C=O} bond dipoles are equal and
+point in exactly opposite directions, so they cancel completely. Net
+dipole zero: \textbf{nonpolar}, despite strongly polar bonds.
+
+\textbf{\ce{H2O} is bent}, because oxygen's two lone pairs force it so.
+The two \ce{O-H} dipoles no longer oppose each other and add to a net
+dipole pointing toward the oxygen: \textbf{polar}.
+
+\textbf{The method:} identify the polar bonds, then ask whether the shape
+is symmetric enough for them to cancel. Never answer from the bonds alone.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Is \ce{CCl4} polar? Justify. \workspace[1.6cm]
+  \item Is \ce{CH3Cl} polar? Justify. \workspace[1.6cm]
+  \item Is \ce{NH3} polar? Justify. \workspace[1.6cm]
+  \item \ce{BF3} and \ce{NH3} both have three bonds to the central atom,
+        but only one is polar. Explain. \workspace[2.0cm]
+\end{enumerate}
+\selfcheck{(a) no --- tetrahedral, dipoles cancel \quad (b) yes ---
+asymmetric \quad (c) yes --- pyramidal \quad (d) \ce{BF3} is planar and
+symmetric; \ce{NH3} has a lone pair and is pyramidal}
+\keyonly{\begin{apcanswer}(a) \textbf{Nonpolar.} The four \ce{C-Cl} bonds
+are polar, but the tetrahedral arrangement is perfectly symmetric and the
+four dipoles cancel.
+(b) \textbf{Polar.} Replacing one chlorine with hydrogen destroys that
+symmetry: the \ce{C-Cl} dipole is no longer balanced by an identical bond
+opposite it, so a net dipole remains.
+(c) \textbf{Polar.} Three \ce{N-H} dipoles plus a lone pair on a
+\emph{pyramidal} nitrogen; the dipoles do not cancel and the net points
+along the lone-pair axis.
+(d) \ce{BF3} has three domains and \emph{no} lone pair, so it is
+\textbf{trigonal planar} --- perfectly symmetric, and the three dipoles
+cancel. \ce{NH3} has four domains, one being a lone pair, so it is
+\textbf{pyramidal} --- unsymmetric, and the dipoles add. Same number of
+bonds, different domain count, opposite result.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Where you stand}
+
+Tick a ladder only if all four YOUR TURN questions were right first time.
+
+\renewcommand{\arraystretch}{1.35}
+\noindent\begin{tabular}{@{}c p{6.2cm} c >{\raggedright\arraybackslash}p{4.8cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & bond type from $\Delta$EN & 1 & it is a continuum \\
+$\square$ & lattice energy & 2 & charge first, then distance \\
+$\square$ & bond order, length, energy & 3 & more pairs, shorter, stronger \\
+$\square$ & ionic solid properties & 4 & fixed ions; like charges repel \\
+$\square$ & metals and alloys & 5 & delocalized electron sea \\
+$\square$ & Lewis structures & 6 & adjust the count for charge \\
+$\square$ & formal charge & 7 & must sum to the ion charge \\
+$\square$ & resonance & 8 & delocalized, not alternating \\
+$\square$ & VSEPR shape and angle & 9 & name from atoms, not domains \\
+$\square$ & hybridization, sigma/pi & 10 & one orbital per domain \\
+$\square$ & molecular polarity & 11 & shape decides, not bonds \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+11/11: move on to the unit worksheets and the free-response set.
+8--10: solid --- redo the missed ladders tomorrow, from a blank page.
+7 or fewer: the recurring root causes in this unit are exactly three ---
+(1) forgetting to adjust the valence-electron count for an ion's charge,
+(2) counting bonds instead of \emph{domains}, so lone pairs get ignored,
+and (3) answering a ``why'' question with the octet rule instead of with
+charge, distance and shielding. Fix those three and most of these ladders
+fall together.
+\end{apcnote}
+
+\end{document}

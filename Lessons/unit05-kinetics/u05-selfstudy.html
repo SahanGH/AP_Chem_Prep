@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 5 • Self-Study • CED 5.1–5.11, I do / You do</title>
+<link rel="stylesheet" href="../style.css?v=86b60da1">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=86b60da1"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Unit 5 • Kinetics</p>
+  <h1>Self-Study • CED 5.1–5.11, I do / You do</h1>
+  <p class="subtitle">Twelve ladders • four YOUR TURN questions each • work alone, check after all four</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How to use these notes — read this first</div>
+
+<p>Each skill is a <strong>ladder</strong>: a worked example, then <strong>four</strong>
+YOUR TURN questions — same skill, new numbers, no help. Work all four
+before checking anything.</p>
+
+<strong>The one idea this whole unit turns on.</strong> Kinetics is about
+<em>how fast</em>, thermodynamics is about <em>how far</em>. They are
+independent. A reaction can be enormously favourable and still take
+centuries; diamond turning to graphite is the standard example. Never
+answer a rate question with an argument about stability.
+
+<strong>The habit that decides this unit.</strong> Reaction orders are
+<strong>experimental</strong>. They come from data, or from the slow step of a
+mechanism — never from the coefficients of the overall equation. Reading
+orders off a balanced equation is the single most common way to lose marks
+here.
+
+<strong>One scope note.</strong> The CED excludes <strong>Arrhenius equation
+calculations</strong>: you will not be asked to extract an activation energy from
+two rate constants or from a plot of \(\ln k\) against \(1/T\). Reading an
+energy profile and reasoning about temperature and catalysts qualitatively
+both remain fully examinable.
+
+</div>
+
+<h2> Ladder 1 • Expressing reaction rate</h2>
+<span class="badge">CED 5.1</span>
+
+<p>Rate is a change in concentration per unit time. Divide each species'
+rate by its coefficient and every species gives the <em>same</em> number —
+one rate for the reaction.</p>
+
+<div class="box we"><div class="box-title">I do: relating species</div>
+
+<p>For \(\ce{2N2O5 -> 4NO2 + O2}\), oxygen appears at
+0.0125&thinsp;M/s. Find the rates for the other two.</p>
+
+<strong>Scale by the coefficients.</strong> Relative to \(\ce{O2}\) (coefficient 1):
+
+\(\ce{NO2}\) has coefficient 4, so it forms at
+\(4 \times 0.0125 = \mathbf{0.0500}\)&nbsp;M/s.
+
+\(\ce{N2O5}\) has coefficient 2, so it is <em>consumed</em> at
+\(2 \times 0.0125 = \mathbf{0.0250}\)&nbsp;M/s. As a rate of change,
+\(\Delta[\ce{N2O5}]/\Delta t = -0.0250\)&nbsp;M/s — negative, because it is
+disappearing.
+
+<strong>The single reaction rate:</strong>
+\[ -\tfrac{1}{2}\frac{\Delta[\ce{N2O5}]}{\Delta t}
+   = \tfrac{1}{4}\frac{\Delta[\ce{NO2}]}{\Delta t}
+   = \frac{\Delta[\ce{O2}]}{\Delta t} = 0.0125\,\mathrm{M/s} \]
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 1 — four questions</div>
+
+<ol>
+
+<li>For \(\ce{N2 + 3H2 -> 2NH3}\), if \(\ce{N2}\) is consumed at
+        0.020&thinsp;M/s, how fast is \(\ce{H2}\) consumed?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:1" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="0.06" data-sig="2" data-unit="M/s"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>How fast is \(\ce{NH3}\) formed in (a)? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:2" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="num" data-val="0.04" data-sig="2" data-unit="M/s"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why is the rate of change of a reactant negative?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:3" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>its concentration falls</span></div>
+
+<li>Why divide each rate by its coefficient? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:4" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>to get one rate independent of the species watched</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 0.060&thinsp;M/s  &emsp; 
+(b) 0.040&thinsp;M/s  &emsp;  (c) its concentration falls  &emsp; 
+(d) to get one rate independent of the species watched</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(3 \times 0.020 = \mathbf{0.060}\)&nbsp;M/s.
+(b) \(2 \times 0.020 = \mathbf{0.040}\)&nbsp;M/s.
+(c) Because its concentration is <em>decreasing</em>, so
+\(\Delta[\text{reactant}]\) is negative. The reaction rate itself is quoted
+as a positive number, which is why the expression carries a minus sign.
+(d) Because the species are consumed and produced in fixed proportions set
+by the coefficients. Dividing those proportions out leaves a single number
+describing the reaction as a whole, the same whichever species was
+monitored.</div></div>
+
+</div>
+
+<h2> Ladder 2 • Rate law from initial rates</h2>
+<span class="badge">CED 5.2</span>
+
+<p>Compare two experiments in which <em>one</em> concentration changes and the
+others are held constant. The factor the rate changes by tells you the
+order.</p>
+
+<div class="box we"><div class="box-title">I do: reading a rate table</div>
+
+<p>For \(\ce{A + 2B -> C}\):</p>
+
+<div class="center">
+
+<table>
+<tr><th><strong>Exp</strong></th><th>\([\ce{A}]_0\)</th><th>\([\ce{B}]_0\)</th><th><strong>rate</strong> (M/s)</th></tr>
+<tr><td>1</td><td>0.050</td><td>0.10</td><td>\(1.2\times10^{-3}\)</td></tr>
+<tr><td>2</td><td>0.100</td><td>0.10</td><td>\(4.8\times10^{-3}\)</td></tr>
+<tr><td>3</td><td>0.050</td><td>0.20</td><td>\(2.4\times10^{-3}\)</td></tr>
+</table>
+
+</div>
+
+<strong>Order in A:</strong> compare 1 and 2, where \([\ce{B}]\) is constant.
+\([\ce{A}]\) doubles and the rate goes up by
+\(4.8/1.2 = 4\). Since \(2^n = 4\), \(n = \mathbf{2}\).
+
+<strong>Order in B:</strong> compare 1 and 3, where \([\ce{A}]\) is constant.
+\([\ce{B}]\) doubles and the rate doubles, so \(n = \mathbf{1}\).
+
+\[ \text{rate} = k[\ce{A}]^2[\ce{B}] \qquad
+   \text{overall order } 2 + 1 = \mathbf{3} \]
+
+<strong>Note what the equation would have suggested:</strong> a coefficient of 2
+on B, hence perhaps second order in B. The data say first. Orders are
+experimental.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 2 — four questions</div>
+
+<ol>
+
+<li>If tripling a reactant's concentration multiplies the rate by 9,
+        what is the order? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:5" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>second</span></div>
+
+<li>If doubling a concentration leaves the rate unchanged, what is the
+        order? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:6" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>zero</span></div>
+
+<li>If doubling a concentration multiplies the rate by 8, what is the
+        order? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:7" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>third</span></div>
+
+<li>Why must the other concentrations be held constant?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:8" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>otherwise
+you cannot attribute the change to one reactant</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) second  &emsp;  (b) zero  &emsp;  (c) third  &emsp;  (d) otherwise
+you cannot attribute the change to one reactant</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(3^n = 9\), so \(n = \mathbf{2}\).
+(b) \(2^n = 1\), so \(n = \mathbf{0}\) — the rate does not depend on that
+reactant at all.
+(c) \(2^n = 8\), so \(n = \mathbf{3}\).
+(d) Because the rate depends on all of them at once. If two
+concentrations changed between the experiments, the change in rate could
+not be attributed to either one alone — the comparison would be
+uninterpretable.</div></div>
+
+</div>
+
+<h2> Ladder 3 • The rate constant and its units</h2>
+<span class="badge">CED 5.2</span>
+
+\(k\) is found by substituting one experiment back into the rate law. Its
+<em>units</em> are whatever makes the equation dimensionally consistent, and
+they depend on the overall order.
+
+<div class="box we"><div class="box-title">I do: value and units together</div>
+
+<p>From experiment 1 above, find \(k\) with units.</p>
+
+\[ k = \frac{\text{rate}}{[\ce{A}]^2[\ce{B}]}
+     = \frac{1.2\times10^{-3}}{(0.050)^2(0.10)}
+     = \frac{1.2\times10^{-3}}{2.5\times10^{-4}} = \mathbf{4.8} \]
+
+<strong>Units:</strong> rate is M/s and
+\([\ce{A}]^2[\ce{B}]\) is M&sup3;, so \(k\) carries
+/M&sup2;/s — that is,
+M\textsuperscript-2 s\textsuperscript-1.
+
+<strong>Check with another experiment:</strong>
+\(4.8(0.100)^2(0.10) = 4.8\times10^{-3}\), matching experiment 2.
+✓ A rate constant that fails this check means the orders are
+wrong.
+
+<strong>The pattern:</strong> overall order 0 gives M/s; order
+1 gives /s; order 2 gives
+/M/s; order 3 gives
+/M&sup2;/s.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 3 — four questions</div>
+
+<ol>
+
+<li>Units of \(k\) for a first-order reaction: <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:9" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>/s</span></div>
+
+<li>Units of \(k\) for a second-order reaction: <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:10" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>/M/s</span></div>
+
+<li>A reaction has rate \(= k[\ce{A}][\ce{B}]\) with rate
+        6.0e-4&thinsp;M/s when both are
+        0.20&thinsp;M. Find \(k\). <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:11" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.015" data-sig="2" data-unit="/M/s"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Why do the units of \(k\) differ between orders?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:12" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>they must make the
+equation dimensionally consistent</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) /s  &emsp;  (b) /M/s  &emsp; 
+(c) 1.5e-2&thinsp;/M/s  &emsp;  (d) they must make the
+equation dimensionally consistent</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>/s</strong>
+(s\textsuperscript-1).
+(b) <strong>/M/s</strong>
+(M\textsuperscript-1 s\textsuperscript-1).
+(c) \(k = 6.0\times10^{-4}/[(0.20)(0.20)] =
+\mathbf{1.5\times10^{-2}}\)&nbsp;M\textsuperscript-1 s\textsuperscript-1.
+(d) Because rate always has units of M/s, while the
+concentration term on the right is raised to the overall order. \(k\) must
+supply whatever units are needed to reconcile the two, so its units change
+with that order — which is why quoting \(k\) without units is
+meaningless.</div></div>
+
+</div>
+
+<h2> Ladder 4 • Integrated rate laws: which plot is straight?</h2>
+<span class="badge">CED 5.3</span>
+
+<p>Given concentration-versus-time data, the order is identified by which
+plot comes out linear.</p>
+
+<div class="box we"><div class="box-title">I do: the three tests</div>
+
+<p>State which plot is linear for each order, and what the slope gives.</p>
+
+<strong>Zero order:</strong> \([\ce{A}]\) against \(t\) is linear. Slope \(= -k\).
+The concentration falls by equal <em>amounts</em> in equal times.
+
+<strong>First order:</strong> \(\ln[\ce{A}]\) against \(t\) is linear. Slope
+\(= -k\). The concentration falls by equal <em>fractions</em> in equal times
+— which is what a constant half-life means.
+
+<strong>Second order:</strong> \(1/[\ce{A}]\) against \(t\) is linear. Slope
+\(= +k\), positive because the reciprocal grows.
+
+<strong>How to use it:</strong> plot all three from the same data. Exactly one
+comes out straight, and that identifies the order. The slope then gives
+\(k\) directly — and note the sign: negative for zero and first order,
+positive for second.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 4 — four questions</div>
+
+<ol>
+
+<li>A plot of \(\ln[\ce{A}]\) against time is a straight line. What
+        order? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:13" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>first</span></div>
+
+<li>A plot of \(1/[\ce{A}]\) against time is straight with slope
+        \(+0.25\). Give the order and \(k\). <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:14" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>second, \(k = 0.25\)
+/M/s</span></div>
+
+<li>For a zero-order reaction, what does a graph of \([\ce{A}]\) against
+        \(t\) look like? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:15" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>a straight line of negative slope</span></div>
+
+<li>Which order has a half-life independent of concentration?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:16" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>first</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) first  &emsp;  (b) second, \(k = 0.25\)
+/M/s  &emsp;  (c) a straight line of negative slope
+ &emsp;  (d) first</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>First order</strong>.
+(b) <strong>Second order</strong>; the slope equals \(k\), so
+\(k = 0.25\)&nbsp;M\textsuperscript-1 s\textsuperscript-1.
+(c) A <strong>straight line with negative slope</strong>, falling at a constant
+rate until the reactant is exhausted — the rate does not depend on how
+much is left.
+(d) <strong>First order.</strong> Its half-life is \(0.693/k\), containing no
+concentration term at all.</div></div>
+
+</div>
+
+<h2> Ladder 5 • Half-life</h2>
+<span class="badge">CED 5.3</span>
+
+<p>For a first-order reaction, \(t_{1/2} = 0.693/k\) — constant, whatever the
+concentration. Every half-life removes half of whatever remains.</p>
+
+<div class="box we"><div class="box-title">I do: half-life and successive halvings</div>
+
+<p>A first-order reaction has \(k = 0.0300\,\mathrm{/s}\) and starts at
+0.800&thinsp;M. Find the half-life and the concentration after three
+half-lives.</p>
+
+\[ t_{1/2} = \frac{0.693}{0.0300} = \mathbf{23.1~s} \]
+
+<strong>Three half-lives:</strong>
+\(0.800 \to 0.400 \to 0.200 \to \mathbf{0.100~M}\), taking
+\(3 \times 23.1 = 69.3\,\mathrm{s}\).
+
+<strong>Why the half-life does not drift.</strong> As the concentration falls, the
+rate falls in exact proportion — that is what first order means. Half of
+a smaller amount takes exactly as long to disappear as half of a larger
+one did.
+
+<strong>Contrast:</strong> for a <em>second</em>-order reaction the half-life
+<em>doubles</em> each time, because the rate falls faster than the
+concentration does.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 5 — four questions</div>
+
+<ol>
+
+<li>Half-life when \(k = 2.5e-4\,\mathrm{/s}\):
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:17" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="2800.0" data-sig="2" data-unit="s"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Fraction remaining after four half-lives: <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:18" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(1/16\)</span></div>
+
+<li>Starting at 0.600&thinsp;M, concentration after four
+        half-lives: <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:19" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="num" data-val="0.0375" data-sig="3" data-unit="M"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>Does a first-order half-life depend on the starting
+        concentration? Explain. <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:20" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no — \(t_{1/2} = 0.693/k\) only</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 2.8e3&thinsp;s  &emsp;  (b) \(1/16\)  &emsp; 
+(c) 0.0375&thinsp;M  &emsp;  (d) no — \(t_{1/2} = 0.693/k\) only</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(0.693/2.5\times10^{-4} =
+\mathbf{2.8\times10^{3}}\)&nbsp;s (about 46&thinsp;min).
+(b) \((1/2)^4 = \mathbf{1/16}\).
+(c) \(0.600/16 = \mathbf{0.0375}\)&nbsp;M.
+(d) <strong>No.</strong> The expression \(t_{1/2} = 0.693/k\) contains no
+concentration term. Physically, the rate is proportional to concentration,
+so halving a large amount and halving a small one take the same time. This
+is unique to first order.</div></div>
+
+</div>
+
+<h2> Ladder 6 • Elementary reactions</h2>
+<span class="badge">CED 5.4</span>
+
+<p>An elementary step describes an actual molecular event. For an elementary
+step <em>only</em>, the coefficients may be used as the orders.</p>
+
+<div class="box we"><div class="box-title">I do: when coefficients are allowed</div>
+
+<p>For the elementary step \(\ce{2NO2 -> NO3 + NO}\), write the rate law. Then
+explain why the same cannot be done for the overall equation
+\(\ce{2NO2 + F2 -> 2NO2F}\).</p>
+
+<strong>Elementary step:</strong> the event is two \(\ce{NO2}\) molecules colliding,
+so
+\[ \text{rate} = k[\ce{NO2}]^2 \]
+This is legitimate <em>because</em> the step is elementary — the equation
+describes the collision itself.
+
+<strong>Overall equation:</strong> it is a summary of the net change, not a
+description of any single event. It says nothing about how many molecules
+actually meet in the slow step. Writing
+\(\text{rate} = k[\ce{NO2}]^2[\ce{F2}]\) from it would be a guess, and
+experiment shows the true law is \(k[\ce{NO2}][\ce{F2}]\).
+
+<strong>Molecularity:</strong> one molecule is unimolecular, two bimolecular.
+Termolecular steps — three particles meeting at once — are very rare,
+which is why proposed mechanisms almost never contain them.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 6 — four questions</div>
+
+<ol>
+
+<li>Rate law for the elementary step \(\ce{A + B -> C}\):
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:21" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(k[\ce{A}][\ce{B}]\)</span></div>
+
+<li>Rate law for the elementary step \(\ce{2A -> B}\):
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:22" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(k[\ce{A}]^2\)</span></div>
+
+<li>What is the molecularity of \(\ce{O3 -> O2 + O}\)?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:23" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>unimolecular</span></div>
+
+<li>Why are termolecular steps rare? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:24" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>three particles colliding simultaneously is
+very improbable</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(k[\ce{A}][\ce{B}]\)  &emsp;  (b) \(k[\ce{A}]^2\)  &emsp; 
+(c) unimolecular  &emsp;  (d) three particles colliding simultaneously is
+very improbable</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(\text{rate} = k[\ce{A}][\ce{B}]\).
+(b) \(\text{rate} = k[\ce{A}]^2\).
+(c) <strong>Unimolecular</strong> — a single molecule decomposes.
+(d) Because a reaction event requires the particles to be in the same
+place at the same instant <em>and</em> correctly oriented. Two-body
+collisions are common; three particles meeting simultaneously with the
+right geometry is vastly less probable, so such steps are almost never
+rate-competitive.</div></div>
+
+</div>
+
+<h2> Ladder 7 • The collision model</h2>
+<span class="badge">CED 5.5</span>
+
+<p>A collision produces reaction only if it carries at least the activation
+energy <em>and</em> the molecules are correctly oriented. Everything that
+changes a rate changes one of those two.</p>
+
+<div class="box we"><div class="box-title">I do: why a small warming does so much</div>
+
+<p>A rise of 10&thinsp;&deg;C can roughly double a rate, though it raises
+the average speed only a few percent. Explain.</p>
+
+<strong>What actually matters</strong> is the <em>fraction</em> of collisions
+carrying at least \(E_a\), and that fraction lies far out in the
+high-energy tail of the distribution of molecular energies.
+
+<strong>Warming shifts and broadens the whole distribution.</strong> Near the
+average that is a small change. Out in the tail, where the threshold sits,
+the population rises steeply — easily doubling.
+
+<strong>Collision frequency rises too, but only slightly</strong> — a few
+percent, in line with the speed. Essentially all of the rate increase
+comes from the energy distribution, not from more collisions.
+
+<strong>The answer that earns half marks:</strong> “molecules move faster and
+collide more often”. True, but it is the smaller effect; the marks are
+for the fraction above \(E_a\).
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 7 — four questions</div>
+
+<ol>
+
+<li>State the two requirements for a successful collision.
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:25" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>enough energy, correct orientation</span></div>
+
+<li>Why does increasing concentration increase the rate?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:26" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>more frequent
+collisions</span></div>
+
+<li>Why does powdering a solid reactant speed up its reaction?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:27" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>more exposed surface area</span></div>
+
+<li>Which effect of warming matters more: more collisions, or more
+        energetic ones? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:28" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>more energetic
+ones, by far</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) enough energy, correct orientation  &emsp;  (b) more frequent
+collisions  &emsp;  (c) more exposed surface area  &emsp;  (d) more energetic
+ones, by far</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) Energy at least equal to the
+<strong>activation energy</strong>, and correct <strong>orientation</strong>.
+(b) More particles per unit volume means they meet more often, so the
+collision frequency rises and more of those collisions are successful per
+second.
+(c) Powdering exposes far more <strong>surface area</strong>, so more particles
+are available to collide at the solid–fluid boundary at any moment.
+(d) <strong>More energetic ones, by far.</strong> Collision frequency rises only a
+few percent with a modest warming, while the fraction of collisions
+exceeding \(E_a\) can double, because that fraction sits in the steep tail
+of the energy distribution.</div></div>
+
+</div>
+
+<h2> Ladder 8 • Reading an energy profile</h2>
+<span class="badge">CED 5.6</span> <span class="badge">CED 5.10</span>
+
+<p>The vertical axis is potential energy. The peak is the transition state;
+the climb from reactants to peak is \(E_a\); the difference between the two
+ends is \(\Delta H\).</p>
+
+<div class="box we"><div class="box-title">I do: everything on one diagram</div>
+
+<p>A profile rises from reactants at 50&thinsp;kJ to a peak at
+170&thinsp;kJ, then falls to products at 20&thinsp;kJ.
+Find \(E_a\) forward, \(E_a\) reverse and \(\Delta H\), and say whether it is
+exothermic.</p>
+
+<strong>Forward \(E_a\):</strong> \(170 - 50 = \mathbf{120~kJ}\) — reactants up to
+the peak.
+
+<strong>Reverse \(E_a\):</strong> \(170 - 20 = \mathbf{150~kJ}\) — products up to
+the same peak.
+
+<strong>\(\Delta H\):</strong> \(20 - 50 = \mathbf{-30~kJ}\), products minus
+reactants. Negative, so <strong>exothermic</strong> — and the products sit lower
+than the reactants, which is the visual signature.
+
+<strong>The relationship worth remembering:</strong>
+\(\Delta H = E_{a,\text{forward}} - E_{a,\text{reverse}} = 120 - 150 =
+-30\)&nbsp;kJ. ✓
+
+<strong>A multi-step profile</strong> has one peak per step, with shallow minima
+between them where intermediates sit. The <em>highest</em> peak is the
+rate-determining step.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 8 — four questions</div>
+
+<ol>
+
+<li>Reactants 30&thinsp;kJ, peak 110&thinsp;kJ,
+        products 75&thinsp;kJ. Forward \(E_a\)?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:29" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="num" data-val="80.0" data-sig="1" data-unit="kJ"><button class="anscheck" type="button">Check</button><span class="ansfeedback" role="status"></span></div>
+
+<li>\(\Delta H\) for that reaction, and is it endo- or exothermic?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:30" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(+45\)&nbsp;kJ, endothermic</span></div>
+
+<li>On a two-step profile, how do you identify the rate-determining
+        step? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:31" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the step with the highest peak</span></div>
+
+<li>What sits in the shallow minimum between two peaks?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:32" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>an intermediate</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) 80&thinsp;kJ  &emsp;  (b) \(+45\)&nbsp;kJ, endothermic  &emsp; 
+(c) the step with the highest peak  &emsp;  (d) an intermediate</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) \(110 - 30 = \mathbf{80}\)&nbsp;kJ.
+(b) \(75 - 30 = \mathbf{+45}\)&nbsp;kJ, so <strong>endothermic</strong> — the products
+lie above the reactants.
+(c) It is the step whose peak is <strong>highest above the preceding
+minimum</strong> — the largest barrier to climb, and therefore the slowest step,
+which sets the overall rate.
+(d) An <strong>intermediate</strong> — a real species, produced by one step and
+consumed by a later one. Being in a minimum it is genuinely stable enough
+to exist, unlike a transition state, which sits at a
+<em>maximum</em>.</div></div>
+
+</div>
+
+<h2> Ladder 9 • Mechanisms and the rate-determining step</h2>
+<span class="badge">CED 5.7</span> <span class="badge">CED 5.8</span> <span class="badge">CED 5.9</span>
+
+<p>A mechanism is valid only if its steps add to the overall equation
+<em>and</em> its slow step predicts the observed rate law.</p>
+
+<div class="box we"><div class="box-title">I do: testing a mechanism</div>
+
+<p>Test this mechanism for \(\ce{NO2 + CO -> NO + CO2}\), whose observed rate law
+is \(k[\ce{NO2}]^2\):
+\begin{align*}
+\text{Step 1:}\quad & \ce{NO2 + NO2 -> NO3 + NO} \qquad \text{(slow)}\\
+\text{Step 2:}\quad & \ce{NO3 + CO -> NO2 + CO2} \qquad \text{(fast)}
+\end{align*}</p>
+
+<strong>Do the steps add?</strong> Summing:
+\(\ce{2NO2 + NO3 + CO -> NO3 + NO + NO2 + CO2}\). Cancel \(\ce{NO3}\) from both
+sides and one \(\ce{NO2}\):
+\(\ce{NO2 + CO -> NO + CO2}\). ✓
+
+<strong>Does the slow step give the observed law?</strong> Step 1 is elementary
+and bimolecular in \(\ce{NO2}\), so
+\(\text{rate} = k[\ce{NO2}]^2\). ✓
+
+<strong>The striking prediction:</strong> \(\ce{CO}\) does not appear in the rate law
+at all, even though it is a reactant. It enters only in the <em>fast</em>
+step, after the bottleneck — so adding more of it does not speed the
+reaction up. That is exactly what the experiment finds, and it is strong
+evidence for this mechanism.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 9 — four questions</div>
+
+<ol>
+
+<li>In the mechanism above, identify the intermediate.
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:33" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>\(\ce{NO3}\)</span></div>
+
+<li>Which step determines the rate, and why? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:34" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>step 1, the slow one</span></div>
+
+<li>Why does \(\ce{CO}\) not appear in the rate law? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:35" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>it
+appears only after the slow step</span></div>
+
+<li>What two tests must any proposed mechanism pass?
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:36" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>steps sum to the overall
+equation; slow step gives the observed rate law</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) \(\ce{NO3}\)  &emsp;  (b) step 1, the slow one  &emsp;  (c) it
+appears only after the slow step  &emsp;  (d) steps sum to the overall
+equation; slow step gives the observed rate law</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>\(\ce{NO3}\)</strong> — produced in step 1 and
+consumed in step 2, so it appears in the mechanism but not in the overall
+equation.
+(b) <strong>Step 1</strong>, the slow step. The overall reaction cannot proceed
+faster than its slowest stage, so that step is the bottleneck.
+(c) Because it is consumed only in the <em>fast</em> step, which happens
+after the bottleneck. Whatever \(\ce{NO3}\) step 1 produces is mopped up
+essentially instantly, so the supply of \(\ce{CO}\) never limits anything and
+its concentration does not affect the overall rate.
+(d) (1) The steps must <strong>sum to the overall balanced equation</strong>, with
+intermediates cancelling. (2) The <strong>slow step must predict the
+experimentally observed rate law</strong>. Failing either rules the mechanism out
+— though passing both does not prove it correct, only that it is
+consistent.</div></div>
+
+</div>
+
+<h2> Ladder 10 • Intermediates versus catalysts</h2>
+<span class="badge">CED 5.7</span> <span class="badge">CED 5.11</span>
+
+<p>Both appear inside a mechanism and neither appears in the overall
+equation — but they are opposites. An intermediate is
+<em>made then used</em>; a catalyst is <em>used then remade</em>.</p>
+
+<div class="box we"><div class="box-title">I do: telling them apart</div>
+
+<p>In this mechanism, identify the catalyst and the intermediate:
+\begin{align*}
+\text{Step 1:}\quad & \ce{X + A -> XA} \\
+\text{Step 2:}\quad & \ce{XA + B -> C + X}
+\end{align*}</p>
+
+<strong>\(\ce{X}\) is the catalyst.</strong> It is <em>consumed</em> in step 1 and
+<em>regenerated</em> in step 2 — present at the start, present at the end,
+unchanged overall.
+
+<strong>\(\ce{XA}\) is the intermediate.</strong> It is <em>produced</em> in step 1 and
+<em>consumed</em> in step 2 — absent at the start, absent at the end.
+
+<strong>The test is the order of events.</strong> Consumed first, then produced:
+catalyst. Produced first, then consumed: intermediate.
+
+<strong>Overall:</strong> \(\ce{A + B -> C}\), with \(\ce{X}\) appearing nowhere —
+which is why a catalyst is never written into the equation, only above the
+arrow.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 10 — four questions</div>
+
+<ol>
+
+<li>A species is produced in step 1 and consumed in step 3. What is
+        it? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:37" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>an intermediate</span></div>
+
+<li>A species is consumed in step 1 and regenerated in step 3. What is
+        it? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:38" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>a catalyst</span></div>
+
+<li>Why does neither appear in the overall equation?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:39" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>both cancel
+when the steps are added</span></div>
+
+<li>Can a catalyst appear in the rate law? <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:40" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>yes, if it acts at or before the slow
+step</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) an intermediate  &emsp;  (b) a catalyst  &emsp;  (c) both cancel
+when the steps are added  &emsp;  (d) yes, if it acts at or before the slow
+step</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) An <strong>intermediate</strong>.
+(b) A <strong>catalyst</strong>.
+(c) Because both appear on <em>both</em> sides when the steps are summed —
+once as a product and once as a reactant — so they cancel algebraically.
+(d) <strong>Yes.</strong> A catalyst is not a reactant overall, but if it
+participates in or before the rate-determining step, its concentration
+does affect the rate and can appear in the experimental rate law. This is
+common in enzyme and acid catalysis.</div></div>
+
+</div>
+
+<h2> Ladder 11 • How a catalyst works</h2>
+<span class="badge">CED 5.11</span>
+
+<p>A catalyst provides an <em>alternative pathway</em> with a lower activation
+energy. It does not push the old reaction harder — it opens a new route.</p>
+
+<div class="box we"><div class="box-title">I do: what changes and what does not</div>
+
+<p>State precisely what a catalyst changes and what it leaves alone.</p>
+
+<strong>Changes: the activation energy.</strong> The new pathway has a lower
+barrier, so at any given temperature a larger fraction of collisions
+carries enough energy. The rate rises, often by orders of magnitude.
+
+<strong>Does <em>not</em> change \(\Delta H\).</strong> Reactants and products sit at
+exactly the same energies as before. Only the height of the hill between
+them is reduced — the two ends are untouched.
+
+<strong>Does <em>not</em> change the equilibrium position or \(K\).</strong> The
+forward and reverse barriers are lowered by the <em>same</em> amount, so
+both rates rise in the same proportion. Equilibrium arrives sooner, in
+exactly the same place.
+
+<strong>Two answers that earn zero:</strong> “it lowers the energy of the
+reactants” and “it shifts the equilibrium toward products”. Both
+describe things a catalyst cannot do.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 11 — four questions</div>
+
+<ol>
+
+<li>What does a catalyst do to the activation energy?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:41" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>lowers it, via a new pathway</span></div>
+
+<li>What does it do to \(\Delta H\)? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:42" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>nothing</span></div>
+
+<li>What does it do to the yield at equilibrium?
+        <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:43" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>nothing</span></div>
+
+<li>Explain why a catalyst speeds the reverse reaction too.
+        <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:44" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>the same lowered barrier is crossed either way</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) lowers it, via a new pathway  &emsp;  (b) nothing  &emsp; 
+(c) nothing  &emsp;  (d) the same lowered barrier is crossed either way</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) <strong>Lowers</strong> it, by providing an
+alternative pathway — not by altering the original one.
+(b) <strong>Nothing.</strong> \(\Delta H\) depends only on the energies of reactants
+and products, which are unchanged.
+(c) <strong>Nothing.</strong> The equilibrium position and \(K\) are unaffected;
+only the time taken to reach equilibrium is shorter.
+(d) Because both directions pass over the <em>same</em> transition state. A
+pathway with a lower barrier is a lower barrier whichever way it is
+crossed, so the reverse activation energy falls by the same amount and the
+reverse rate rises in the same proportion. That is precisely why the
+equilibrium position cannot shift.</div></div>
+
+</div>
+
+<h2> Ladder 12 • Kinetics versus thermodynamics</h2>
+<span class="badge">CED 5.5</span> <span class="badge">CED 5.6</span>
+
+<p>Two independent questions: <em>does it want to happen</em> (thermodynamics)
+and <em>will it happen quickly</em> (kinetics). The answers need not agree.</p>
+
+<div class="box we"><div class="box-title">I do: favourable but immeasurably slow</div>
+
+<p>Diamond converting to graphite has
+\(\Delta G^\circ = -2.9\,\mathrm{kJ/mol}\) — thermodynamically
+favourable at room temperature. Explain why diamonds do not visibly
+change.</p>
+
+<strong>Thermodynamics says it should happen.</strong> A negative \(\Delta G\) means
+graphite is the more stable form, and the conversion would release energy.
+
+<strong>Kinetics says it will not, on any human timescale.</strong> Rearranging
+diamond's covalent network requires breaking very strong \(\ce{C-C}\) bonds —
+an enormous activation energy. At room temperature essentially no atom has
+that much energy, so the rate is indistinguishable from zero.
+
+<strong>The general statement:</strong> \(\Delta G\) tells you about the
+<em>destination</em>; \(E_a\) tells you about the <em>journey</em>. A large
+negative \(\Delta G\) with a large \(E_a\) describes a reaction that is
+strongly favourable and completely stuck — which is why fuels can sit
+safely in a tank in air.
+
+</div>
+
+<div class="box yt"><div class="box-title">YOUR TURN 12 — four questions</div>
+
+<ol>
+
+<li>Petrol and oxygen do not react at room temperature although the
+        reaction is highly favourable. Why? <textarea class="scratch" style="height:1.8cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:45" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 1" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>high activation energy</span></div>
+
+<li>What does a spark supply? <textarea class="scratch" style="height:1.4cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:46" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 2" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>energy to surmount \(E_a\)</span></div>
+
+<li>Does a large equilibrium constant mean a fast reaction?
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:47" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 3" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>no</span></div>
+
+<li>Name two ways to speed a reaction without changing \(\Delta H\).
+        <textarea class="scratch" style="height:1.6cm" rows="2" spellcheck="false" aria-label="working space" placeholder="working (optional)" data-pad="u05-selfstudy:48" data-math="1"></textarea><div class="ansrow"><input type="text" class="ansinput" autocomplete="off" aria-label="answer to question 4" placeholder="your answer" data-check="none"><button class="ansshow" type="button">Show answer</button><span class="ansfeedback" role="status"></span><span class="ansreveal" hidden>raise the temperature; add a catalyst</span></div>
+</ol>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show answers" data-hide="Hide answers">Show answers</button><div class="reveal-body answers" hidden><p class="selfcheck"> (a) high activation energy  &emsp;  (b) energy to surmount \(E_a\)
+ &emsp;  (c) no  &emsp;  (d) raise the temperature; add a catalyst</p></div></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>(a) The <strong>activation energy is high</strong>, so at
+room temperature almost no collisions carry enough energy. The mixture is
+under <strong>kinetic control</strong>: favourable but stuck.
+(b) Enough <strong>energy</strong> to get a small number of molecules over the
+activation barrier. Once started, the reaction is exothermic and supplies
+the energy to keep itself going.
+(c) <strong>No.</strong> \(K\) measures how <em>far</em> a reaction proceeds, not how
+<em>fast</em>. The two are independent: a reaction with an enormous \(K\) can
+be immeasurably slow if \(E_a\) is large.
+(d) <strong>Raise the temperature</strong> (increases the fraction of collisions
+above \(E_a\)) and <strong>add a catalyst</strong> (lowers \(E_a\) via a new
+pathway). Increasing concentration or surface area also works. None of
+them alters \(\Delta H\).</div></div>
+
+</div>
+
+<h2> Where you stand</h2>
+
+<p>Tick a ladder only if all four YOUR TURN questions were right first time.</p>
+
+<table>
+<tr><th><strong>First try?</strong></th><th><strong>Skill</strong></th><th><strong>Ladder</strong></th><th><strong>If not, re-read…</strong></th></tr>
+<tr><td>\(\square\)</td><td>expressing rate</td><td>1</td><td>divide by coefficients</td></tr>
+<tr><td>\(\square\)</td><td>rate law from data</td><td>2</td><td>hold the others constant</td></tr>
+<tr><td>\(\square\)</td><td>\(k\) and its units</td><td>3</td><td>units follow the order</td></tr>
+<tr><td>\(\square\)</td><td>which plot is straight</td><td>4</td><td>\(\ln\) first, \(1/[\ce{A}]\) second</td></tr>
+<tr><td>\(\square\)</td><td>half-life</td><td>5</td><td>first order: independent of \(c\)</td></tr>
+<tr><td>\(\square\)</td><td>elementary steps</td><td>6</td><td>coefficients allowed only here</td></tr>
+<tr><td>\(\square\)</td><td>collision model</td><td>7</td><td>the tail above \(E_a\)</td></tr>
+<tr><td>\(\square\)</td><td>energy profiles</td><td>8</td><td>peak minus start</td></tr>
+<tr><td>\(\square\)</td><td>mechanisms</td><td>9</td><td>sum, then slow step</td></tr>
+<tr><td>\(\square\)</td><td>intermediate vs catalyst</td><td>10</td><td>which comes first</td></tr>
+<tr><td>\(\square\)</td><td>how catalysts work</td><td>11</td><td>new path, same \(\Delta H\)</td></tr>
+<tr><td>\(\square\)</td><td>kinetics vs thermodynamics</td><td>12</td><td>how fast vs how far</td></tr>
+</table>
+
+<div class="box note"><div class="box-title">Scoring yourself honestly</div>
+
+<p>12/12: move on to the unit worksheets and the free-response set.
+9–11: solid — redo the missed ladders tomorrow from a blank page.
+8 or fewer: the recurring root causes here are exactly three —
+(1) reading reaction orders off the balanced equation instead of from
+data or the slow step, (2) quoting a rate constant with no units, and
+(3) answering a rate question with a stability argument. Fix those three
+and most of these ladders fall together.</p>
+
+</div>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

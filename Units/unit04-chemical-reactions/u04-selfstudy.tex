@@ -1,0 +1,670 @@
+% Unit 4 self-study -- "I do / You do" ladder for CED 4.1-4.9.
+% Twelve ladders, forty-eight questions.
+%
+% Disjoint from u04-frq, which uses the Pb(NO3)2/KI precipitation, the
+% dichromate/Fe2+ titration, the ethanol combustion particulate question
+% and an HA/NaOH titration. This document uses N2/H2 ammonia synthesis,
+% AgNO3/NaCl, an HCl/NaOH titration and permanganate oxidation numbers.
+\documentclass{apchem-worksheet}
+
+\apcunit{4}
+\apcunittitle{Chemical Reactions}
+\apcdoctitle{Self-Study \textbullet\ CED 4.1--4.9, I~do / You~do}
+\apcsubtitle{Twelve ladders \textbullet\ four YOUR TURN questions each \textbullet\ work alone, check after all four}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a worked example, then \textbf{four}
+YOUR TURN questions --- same skill, new numbers, no help. Work all four
+before checking anything.
+
+\textbf{The habit that decides this unit.} Every quantitative question
+here runs the same three-step road: \textbf{to moles}, \textbf{through the
+balanced equation}, \textbf{back out}. Grams never talk to grams directly.
+If you find yourself comparing two masses, or two volumes, you have
+skipped the middle step.
+
+\textbf{One scope note.} The CED excludes the terms ``oxidizing agent''
+and ``reducing agent'', and excludes memorizing solubility rules beyond a
+short list. You will be asked which species is \emph{oxidized} and which
+is \emph{reduced} --- never to label an ``agent''. Lewis acid--base theory
+is also excluded; Br\o{}nsted--Lowry is the model used throughout.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Balancing equations}
+\ced{4.1}
+
+Change \textbf{coefficients} only. Changing a subscript changes the
+substance, so it is never allowed.
+
+\begin{workedexample}[I do: a combustion]
+Balance \ce{C3H8 + O2 -> CO2 + H2O}.
+
+\textbf{Carbon first} (it appears in one place on each side): 3 carbons
+left, so 3 \ce{CO2}.
+
+\textbf{Hydrogen next:} 8 hydrogens left, so 4 \ce{H2O}.
+
+\textbf{Oxygen last} --- it is in two products, so leave it until the rest
+is fixed. Right side now has $3(2) + 4(1) = 10$ oxygens, so 5 \ce{O2}.
+
+\[ \ce{C3H8 + 5O2 -> 3CO2 + 4H2O} \]
+
+\textbf{Check every element:} C 3=3, H 8=8, O 10=10. \checkmark
+
+\textbf{Why oxygen last:} balancing the element that appears in the most
+places first forces you to redo it every time something else changes.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Balance \ce{Fe + O2 -> Fe2O3}: \workspace[1.4cm]
+  \item Balance \ce{C2H6 + O2 -> CO2 + H2O}: \workspace[1.6cm]
+  \item Balance \ce{Al + HCl -> AlCl3 + H2}: \workspace[1.6cm]
+  \item A student balances \ce{H2 + O2 -> H2O} by writing \ce{H2O2}.
+        Explain the error. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 4, 3, 2 \quad (b) 2, 7, 4, 6 \quad (c) 2, 6, 2, 3 \quad
+(d) changing a subscript changes the substance}
+\keyonly{\begin{apcanswer}(a) \ce{4Fe + 3O2 -> 2Fe2O3}.
+(b) \ce{2C2H6 + 7O2 -> 4CO2 + 6H2O}.
+(c) \ce{2Al + 6HCl -> 2AlCl3 + 3H2}.
+(d) Balancing may adjust only the \textbf{coefficients} in front of
+formulas. A subscript is part of the formula's identity: \ce{H2O2} is
+hydrogen peroxide, a different compound from water, so the equation would
+no longer describe the reaction that happened.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Net ionic equations}
+\ced{4.2}
+
+Write what actually changes. Strong electrolytes in solution are already
+separated into ions; anything that appears unchanged on both sides is a
+spectator and cancels.
+
+\begin{workedexample}[I do: molecular to net ionic]
+\ce{AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq)}. Write the net ionic
+equation.
+
+\textbf{Split the strong electrolytes.} \ce{AgNO3}, \ce{NaCl} and
+\ce{NaNO3} are all soluble and ionic, so all are separated. \ce{AgCl} is
+a \emph{solid} and stays written as one unit.
+\[ \ce{Ag+ + NO3^- + Na+ + Cl^- -> AgCl(s) + Na+ + NO3^-} \]
+
+\textbf{Cancel the spectators:} \ce{Na+} and \ce{NO3-} appear unchanged on
+both sides.
+\[ \ce{Ag+(aq) + Cl^-(aq) -> AgCl(s)} \]
+
+\textbf{The rule for what stays together:} solids, liquids, gases and weak
+electrolytes are written as whole units. Only dissolved strong
+electrolytes get split.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Net ionic for \ce{BaCl2(aq) + Na2SO4(aq) -> BaSO4(s) + 2NaCl(aq)}:
+        \workspace[1.6cm]
+  \item Net ionic for \ce{HNO3(aq) + KOH(aq) -> KNO3(aq) + H2O(l)}:
+        \workspace[1.6cm]
+  \item Which species stay written as whole units in a net ionic equation?
+        \workspace[1.6cm]
+  \item Why is the net ionic equation the same for \emph{any} strong acid
+        with \emph{any} strong hydroxide base? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{Ba^2+ + SO4^2- -> BaSO4(s)} \quad
+(b) \ce{H+ + OH^- -> H2O} \quad (c) solids, liquids, gases, weak
+electrolytes \quad (d) only \ce{H+} and \ce{OH-} actually react}
+\keyonly{\begin{apcanswer}(a) \ce{Ba^2+(aq) + SO4^2-(aq) -> BaSO4(s)};
+\ce{Na+} and \ce{Cl-} are spectators.
+(b) \ce{H+(aq) + OH^-(aq) -> H2O(l)}; \ce{K+} and \ce{NO3-} are
+spectators.
+(c) \textbf{Solids, liquids, gases and weak electrolytes} --- anything not
+present as free ions in solution.
+(d) Both are fully dissociated, so the only chemical change is \ce{H+}
+combining with \ce{OH-} to form water. Every other ion is present and
+unchanged before and after, whatever its identity, so all of them
+cancel.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Physical versus chemical change}
+\ced{4.4}
+
+A chemical change makes a new substance --- new bonds, new identity. A
+physical change rearranges what is already there.
+
+\begin{workedexample}[I do: the hard case]
+Classify: (i) ice melting, (ii) iron rusting, (iii) \ce{NaCl} dissolving.
+
+\textbf{(i) Physical.} The \ce{H2O} molecules are unchanged; only the
+arrangement and the intermolecular forces between them change.
+
+\textbf{(ii) Chemical.} Iron and oxygen form iron(III) oxide --- a new
+substance with new bonds.
+
+\textbf{(iii) Physical}, and this is the one that causes arguments. The
+ionic lattice is pulled apart and each ion is surrounded by water, so
+strong new ion--dipole interactions do form. But no new \emph{substance}
+is made: the ions in solution are the same \ce{Na+} and \ce{Cl-} that were
+in the crystal, and evaporating the water returns the original solid
+unchanged. Recoverability is the deciding test.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Classify: sugar dissolving in tea. \workspace[1.4cm]
+  \item Classify: a candle burning. \workspace[1.4cm]
+  \item Classify: dry ice subliming. \workspace[1.4cm]
+  \item Give one observation that suggests a chemical change has occurred,
+        and one reason it is not conclusive. \workspace[2.0cm]
+\end{enumerate}
+\selfcheck{(a) physical \quad (b) chemical \quad (c) physical \quad
+(d) e.g.\ colour change; but dissolving a dye also changes colour}
+\keyonly{\begin{apcanswer}(a) \textbf{Physical} --- the sucrose molecules
+are dispersed, not altered, and can be recovered by evaporation.
+(b) \textbf{Chemical} --- hydrocarbons and oxygen become \ce{CO2} and
+\ce{H2O}.
+(c) \textbf{Physical} --- solid \ce{CO2} becomes gaseous \ce{CO2}. Same
+molecules, different phase.
+(d) A \textbf{colour change}, a gas evolving, a precipitate forming, or a
+temperature change all suggest chemical change. None is conclusive: mixing
+a dye into water changes colour, boiling produces bubbles, and dissolving
+\ce{NH4NO3} makes the beaker cold --- all physical
+changes.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Mole-to-mole stoichiometry}
+\ced{4.5}
+
+The coefficients of a balanced equation are a \emph{mole} ratio, never a
+mass ratio. That ratio is the only bridge between one substance and
+another.
+
+\begin{workedexample}[I do: the three-step road]
+For \ce{N2 + 3H2 -> 2NH3}, how many grams of \ce{NH3} form from
+\SI{28.0}{\gram} of \ce{N2}, with hydrogen in excess?
+
+\textbf{To moles:} $28.0/28.02 = \num{0.999}$~mol \ce{N2}.
+
+\textbf{Through the equation:} the ratio \ce{N2}:\ce{NH3} is $1:2$, so
+$0.999 \times 2 = \num{2.00}$~mol \ce{NH3}.
+
+\textbf{Back out:} $2.00 \times 17.03 = \mathbf{34.0~g}$.
+
+\textbf{The check that catches the commonest error:} mass is conserved
+overall, but it is \emph{not} transferred one-for-one between species.
+\SI{28.0}{\gram} of \ce{N2} does not give \SI{28.0}{\gram} of \ce{NH3};
+the extra mass comes from the hydrogen.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item For \ce{2H2 + O2 -> 2H2O}, moles of \ce{H2O} from
+        \SI{0.500}{\mole} \ce{O2}: \workspace[1.4cm]
+  \item For \ce{N2 + 3H2 -> 2NH3}, moles of \ce{H2} needed for
+        \SI{0.400}{\mole} \ce{N2}: \workspace[1.4cm]
+  \item For \ce{4Fe + 3O2 -> 2Fe2O3}, grams of \ce{Fe2O3} from
+        \SI{11.2}{\gram} \ce{Fe}: \workspace[2.0cm]
+  \item Why can the coefficients not be read as a mass ratio?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \num{1.00}~mol \quad (b) \num{1.20}~mol \quad
+(c) \SI{16.0}{\gram} \quad (d) different substances have different molar
+masses}
+\keyonly{\begin{apcanswer}(a) Ratio \ce{O2}:\ce{H2O} is $1:2$, so
+$\mathbf{1.00}$~mol.
+(b) Ratio \ce{N2}:\ce{H2} is $1:3$, so $0.400 \times 3 =
+\mathbf{1.20}$~mol.
+(c) $11.2/55.85 = \num{0.2005}$~mol Fe; ratio \ce{Fe}:\ce{Fe2O3} is
+$4:2$, so $0.2005/2 = \num{0.1003}$~mol \ce{Fe2O3};
+$\times 159.7 = \mathbf{16.0}$~g.
+(d) Because a coefficient counts \emph{particles}, and particles of
+different substances have different masses. Two moles of \ce{H2}
+(\SI{4}{\gram}) reacting with one mole of \ce{O2} (\SI{32}{\gram}) is a
+$2\!:\!1$ mole ratio but a $1\!:\!8$ mass ratio.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Limiting reactant}
+\ced{4.5}
+
+Convert both reactants to moles, then test them \emph{against the
+equation's ratio}. Comparing raw moles, or masses, is the standard way to
+get this wrong.
+
+\begin{workedexample}[I do: testing against the ratio]
+\SI{28.0}{\gram} \ce{N2} and \SI{4.00}{\gram} \ce{H2} react by
+\ce{N2 + 3H2 -> 2NH3}. Which is limiting, and what mass of \ce{NH3}
+forms?
+
+\textbf{To moles:} \ce{N2} $= 28.0/28.02 = \num{0.999}$;
+\ce{H2} $= 4.00/2.016 = \num{1.98}$.
+
+\textbf{Test against the ratio.} Consuming all the \ce{N2} would require
+$3 \times 0.999 = \num{3.00}$~mol of \ce{H2} --- but only \num{1.98} is
+available. So \textbf{hydrogen is limiting}.
+
+Note that hydrogen is limiting despite there being \emph{twice as many
+moles} of it. The ratio, not the raw count, decides.
+
+\textbf{Yield from the limiting reactant only:}
+$n(\ce{NH3}) = \tfrac{2}{3}(1.984) = \num{1.32}$~mol,
+so $m = 1.32 \times 17.03 = \mathbf{22.5~g}$.
+
+\textbf{Excess left over:} \ce{N2} used $= 1.984/3 = \num{0.661}$~mol, so
+$0.999 - 0.661 = \num{0.338}$~mol remains
+$= \SI{9.47}{\gram}$.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{0.300}{\mole} \ce{H2} with \SI{0.200}{\mole} \ce{O2} by
+        \ce{2H2 + O2 -> 2H2O}. Limiting? \workspace[1.6cm]
+  \item How many moles of water form in (a)? \workspace[1.4cm]
+  \item How much of the excess reactant is left in (a)?
+        \workspace[1.6cm]
+  \item Why is it wrong to say ``the reactant present in the smaller
+        amount is limiting''? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{H2} \quad (b) \num{0.300}~mol \quad (c)
+\num{0.050}~mol \ce{O2} \quad (d) the stoichiometric ratio decides}
+\keyonly{\begin{apcanswer}(a) All the \ce{H2} would need
+$0.300/2 = \num{0.150}$~mol \ce{O2}, and \num{0.200} is available --- so
+oxygen is in excess and \textbf{\ce{H2} is limiting}.
+(b) Ratio \ce{H2}:\ce{H2O} is $2:2$, so $\mathbf{0.300}$~mol.
+(c) \ce{O2} used $= \num{0.150}$~mol, so
+$0.200 - 0.150 = \mathbf{0.050}$~mol remains.
+(d) Because the reactants are not consumed one-for-one. In the ammonia
+example hydrogen was limiting even though there was twice as much of it in
+moles, because the equation demands three times as much. Only a comparison
+\emph{against the coefficients} answers the question.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Percent yield}
+\ced{4.5}
+
+\[ \%\text{ yield} = \frac{\text{actual}}{\text{theoretical}} \times 100 \]
+The theoretical yield always comes from the \textbf{limiting} reactant.
+
+\begin{workedexample}[I do: yield from the previous ladder]
+The ammonia synthesis above has a theoretical yield of
+\SI{22.5}{\gram}. A run produces \SI{18.0}{\gram}. Find the percent yield
+and give two reasons it is below \SI{100}{\percent}.
+
+\[ \frac{18.0}{22.5}\times100 = \mathbf{80.0\%} \]
+
+\textbf{Reasons:} the reaction may not have gone to completion --- ammonia
+synthesis is an equilibrium and does not consume all its reactants; product
+is lost during separation and purification; side reactions may consume
+reactants; or the product may not be fully dry when weighed.
+
+\textbf{What a yield above \SI{100}{\percent} means:} not a better
+reaction --- an error. Almost always the product was still wet, or
+contained impurities.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Theoretical \SI{5.00}{\gram}, actual \SI{4.10}{\gram}. Percent
+        yield? \workspace[1.4cm]
+  \item A \SI{85.0}{\percent} yield on a theoretical \SI{12.0}{\gram}.
+        Actual mass? \workspace[1.6cm]
+  \item Which reactant's amount sets the theoretical yield?
+        \workspace[1.4cm]
+  \item A student reports \SI{105}{\percent}. What has most likely
+        happened? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{82.0}{\percent} \quad (b) \SI{10.2}{\gram} \quad
+(c) the limiting reactant \quad (d) the product was wet or impure}
+\keyonly{\begin{apcanswer}(a) $4.10/5.00 \times 100 = \mathbf{82.0}\%$.
+(b) $0.850 \times 12.0 = \mathbf{10.2}$~g.
+(c) The \textbf{limiting} reactant --- it runs out first and so caps how
+much product can form.
+(d) An error, since a reaction cannot make more than the theoretical
+amount. The usual cause is that the product was weighed while still
+\textbf{wet} with solvent, or contained an impurity. Mis-identifying the
+limiting reactant would also do it.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Solution stoichiometry}
+\ced{4.5}
+
+Volume and concentration give moles: $n = MV$. From there it is the same
+three-step road as always.
+
+\begin{workedexample}[I do: two solutions, a precipitate]
+\SI{30.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{AgNO3} is mixed with
+\SI{25.0}{\milli\litre} of \SI{0.150}{\Molar} \ce{NaCl}. What mass of
+\ce{AgCl} forms?
+
+\textbf{To moles:} $n(\ce{Ag+}) = (0.0300)(0.200) = \num{0.00600}$;
+$n(\ce{Cl-}) = (0.0250)(0.150) = \num{0.00375}$.
+
+\textbf{Test the ratio:} the net ionic equation
+\ce{Ag+ + Cl^- -> AgCl} is $1:1$, so the smaller amount limits ---
+\textbf{chloride}.
+
+\textbf{Back out:} $n(\ce{AgCl}) = \num{0.00375}$~mol;
+$m = 0.00375 \times 143.32 = \mathbf{0.537~g}$.
+
+\textbf{If asked for a leftover concentration:} excess \ce{Ag+} is
+$0.00600 - 0.00375 = \num{0.00225}$~mol in the \emph{combined}
+\SI{55.0}{\milli\litre}, giving \SI{0.0409}{\Molar}. Always use the total
+volume.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Moles in \SI{45.0}{\milli\litre} of \SI{0.250}{\Molar}:
+        \workspace[1.4cm]
+  \item Volume of \SI{0.500}{\Molar} containing \SI{0.0300}{\mole}:
+        \workspace[1.4cm]
+  \item In the worked example, what is $[\ce{NO3-}]$ after mixing?
+        \workspace[1.8cm]
+  \item Why must the \emph{combined} volume be used for a leftover
+        concentration? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \num{0.0113}~mol \quad (b) \SI{60.0}{\milli\litre} \quad
+(c) \SI{0.109}{\Molar} \quad (d) the solute is now spread through both
+volumes}
+\keyonly{\begin{apcanswer}(a) $(0.0450)(0.250) = \mathbf{0.0113}$~mol.
+(b) $V = n/M = 0.0300/0.500 = \SI{0.0600}{\litre} =
+\mathbf{60.0}$~mL.
+(c) Nitrate is a spectator, so all \num{0.00600}~mol remains, now in
+\SI{55.0}{\milli\litre}: $0.00600/0.0550 = \mathbf{0.109}$~M.
+(d) Because on mixing, the solute is dispersed through the \emph{sum} of
+the two volumes. Dividing by only one of them would overstate the
+concentration.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Titration}
+\ced{4.6}
+
+At the equivalence point the moles of acid and base have reacted in
+exactly the ratio the equation demands. That single sentence solves every
+titration question.
+
+\begin{workedexample}[I do: finding an unknown concentration]
+\SI{25.00}{\milli\litre} of \ce{HCl} requires \SI{22.40}{\milli\litre} of
+\SI{0.150}{\Molar} \ce{NaOH} to reach the endpoint. Find $[\ce{HCl}]$.
+
+\textbf{Moles of base:} $(0.02240)(0.150) = \num{0.00336}$~mol.
+
+\textbf{Through the ratio:} \ce{HCl + NaOH -> NaCl + H2O} is $1:1$, so
+$n(\ce{HCl}) = \num{0.00336}$~mol.
+
+\textbf{Back out:} $[\ce{HCl}] = 0.00336/0.02500 = \mathbf{0.134~M}$.
+
+\textbf{Watch for a ratio that is not $1:1$.} With \ce{H2SO4}, one mole of
+acid supplies two of \ce{H+}, so it takes \emph{twice} as much base ---
+and forgetting that halves or doubles your answer.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{20.00}{\milli\litre} of \ce{NaOH} needs
+        \SI{18.60}{\milli\litre} of \SI{0.200}{\Molar} \ce{HCl}.
+        $[\ce{NaOH}]$? \workspace[1.8cm]
+  \item How many moles of \ce{NaOH} neutralize \SI{0.0100}{\mole} of
+        \ce{H2SO4}? \workspace[1.4cm]
+  \item What is true of the moles of \ce{H+} and \ce{OH-} at the
+        equivalence point? \workspace[1.6cm]
+  \item A student overshoots the endpoint. Is the calculated concentration
+        too high or too low? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.186}{\Molar} \quad (b) \num{0.0200}~mol \quad
+(c) they are stoichiometrically equal \quad (d) too high}
+\keyonly{\begin{apcanswer}(a) $n(\ce{HCl}) = (0.01860)(0.200) =
+\num{0.00372}$~mol; $1:1$, so
+$[\ce{NaOH}] = 0.00372/0.02000 = \mathbf{0.186}$~M.
+(b) \ce{H2SO4} is diprotic: $2 \times 0.0100 = \mathbf{0.0200}$~mol.
+(c) They have reacted in exactly the ratio the balanced equation requires
+--- for a monoprotic acid with a single hydroxide base, in equal amounts.
+Neither is in excess.
+(d) \textbf{Too high.} An overshoot records a larger titre than the true
+equivalence volume, so more base appears to have been needed, and the
+calculated acid concentration is inflated.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ Recognizing reaction types}
+\ced{4.7}
+
+Three families cover almost everything on this exam: precipitation
+(two solutions, an insoluble solid), acid--base (proton transfer), and
+redox (electron transfer, shown by changing oxidation numbers).
+
+\begin{workedexample}[I do: classify and justify]
+Classify each: (i) \ce{Pb(NO3)2 + 2KI -> PbI2 + 2KNO3};
+(ii) \ce{HNO3 + NaOH -> NaNO3 + H2O};
+(iii) \ce{Zn + CuSO4 -> ZnSO4 + Cu}.
+
+\textbf{(i) Precipitation.} Two aqueous solutions meet and an insoluble
+solid, \ce{PbI2}, forms.
+
+\textbf{(ii) Acid--base.} A proton moves from the acid to the hydroxide;
+the net ionic equation is \ce{H+ + OH^- -> H2O}.
+
+\textbf{(iii) Redox.} Zinc goes from 0 to $+2$ (oxidized, loses
+electrons); copper goes from $+2$ to 0 (reduced, gains them). Changing
+oxidation numbers is the signature.
+
+\textbf{The quick test for redox:} if any element's oxidation number
+changes, it is redox. If none changes, it is not.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Classify \ce{AgNO3 + NaCl -> AgCl + NaNO3}: \workspace[1.4cm]
+  \item Classify \ce{2Mg + O2 -> 2MgO}: \workspace[1.4cm]
+  \item Classify \ce{CH3COOH + NaOH -> CH3COONa + H2O}:
+        \workspace[1.4cm]
+  \item What single test distinguishes a redox reaction from the other
+        two? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) precipitation \quad (b) redox \quad (c) acid--base \quad
+(d) does any oxidation number change?}
+\keyonly{\begin{apcanswer}(a) \textbf{Precipitation} --- insoluble
+\ce{AgCl} forms.
+(b) \textbf{Redox} --- Mg goes 0 to $+2$, O goes 0 to $-2$.
+(c) \textbf{Acid--base} --- a proton transfers from the weak acid to the
+hydroxide.
+(d) Whether any element's \textbf{oxidation number changes}. In
+precipitation and acid--base reactions the ions are rearranged but no
+element is oxidized or reduced.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Acid--base reactions}
+\ced{4.8}
+
+Br\o{}nsted--Lowry: an acid donates a proton, a base accepts one. A
+conjugate pair differs by exactly one \ce{H+}.
+
+\begin{workedexample}[I do: pairs and strength]
+Identify the conjugate acid--base pairs in
+\ce{NH3 + H2O <=> NH4+ + OH^-}, and explain why \ce{NH3} is a weak base.
+
+\textbf{Pairs.} \ce{NH3} accepts a proton to become \ce{NH4+}: that is one
+pair, base and its conjugate acid. \ce{H2O} donates a proton to become
+\ce{OH-}: that is the other, acid and its conjugate base.
+
+\textbf{Weak, not strong.} At equilibrium most of the ammonia is still
+\ce{NH3}. Only a small fraction has accepted a proton, so the solution
+contains far fewer \ce{OH-} ions than a strong base of the same
+concentration would give --- which is why the equation is written with a
+double arrow.
+
+\textbf{Strength is about extent, not concentration.} A concentrated
+solution of a weak base is entirely possible.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Conjugate base of \ce{HNO3}: \workspace[1.4cm]
+  \item Conjugate acid of \ce{HCO3-}: \workspace[1.4cm]
+  \item Identify both pairs in \ce{HF + H2O <=> F^- + H3O+}:
+        \workspace[1.6cm]
+  \item Distinguish a \emph{strong} acid from a \emph{concentrated} acid.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{NO3-} \quad (b) \ce{H2CO3} \quad (c) \ce{HF}/\ce{F-}
+and \ce{H3O+}/\ce{H2O} \quad (d) extent of ionization vs amount per
+litre}
+\keyonly{\begin{apcanswer}(a) \ce{NO3-} --- remove one proton.
+(b) \ce{H2CO3} --- add one proton.
+(c) \ce{HF} (acid) with \ce{F-} (its conjugate base); \ce{H2O} (base) with
+\ce{H3O+} (its conjugate acid).
+(d) \textbf{Strength} is the \emph{extent} of ionization: a strong acid
+ionizes essentially completely. \textbf{Concentration} is how much acid
+was dissolved per litre. A dilute solution of a strong acid and a
+concentrated solution of a weak acid are both perfectly
+possible.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ Oxidation numbers}
+\ced{4.9}
+
+Rules in order of priority: free elements 0; monatomic ions equal their
+charge; oxygen $-2$ (peroxides $-1$); hydrogen $+1$ (metal hydrides
+$-1$); the sum equals the overall charge.
+
+\begin{workedexample}[I do: three species]
+Find the oxidation number of the central atom in \ce{MnO4-},
+\ce{Cr2O7^2-} and \ce{H2SO4}.
+
+\textbf{\ce{MnO4-}:} four oxygens at $-2$ give $-8$; the total must be
+$-1$.
+\[ x + (-8) = -1 \;\Rightarrow\; x = \mathbf{+7} \]
+
+\textbf{\ce{Cr2O7^2-}:} seven oxygens give $-14$; the total is $-2$; and
+there are \textbf{two} chromiums.
+\[ 2x + (-14) = -2 \;\Rightarrow\; 2x = +12 \;\Rightarrow\;
+   x = \mathbf{+6} \]
+
+\textbf{\ce{H2SO4}:} two hydrogens give $+2$, four oxygens $-8$, total 0.
+\[ 2 + x - 8 = 0 \;\Rightarrow\; x = \mathbf{+6} \]
+
+\textbf{The slip to avoid:} forgetting to divide by the number of central
+atoms. In dichromate the answer is $+6$, not $+12$.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Oxidation number of N in \ce{NO3-}: \workspace[1.4cm]
+  \item Oxidation number of Cl in \ce{ClO3-}: \workspace[1.4cm]
+  \item Oxidation number of S in \ce{SO4^2-}: \workspace[1.4cm]
+  \item Oxidation number of O in \ce{H2O2}, and why it is not $-2$:
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) $+5$ \quad (b) $+5$ \quad (c) $+6$ \quad (d) $-1$; it is a
+peroxide}
+\keyonly{\begin{apcanswer}(a) $x - 6 = -1$, so $x = \mathbf{+5}$.
+(b) $x - 6 = -1$, so $x = \mathbf{+5}$.
+(c) $x - 8 = -2$, so $x = \mathbf{+6}$.
+(d) $\mathbf{-1}$. \ce{H2O2} is a \textbf{peroxide}: the two oxygens are
+bonded to \emph{each other} as well as to hydrogen, and a bond between two
+identical atoms contributes nothing to either one's oxidation number.
+Applying the usual $-2$ would give hydrogen an impossible
+$+2$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ Balancing redox in acid}
+\ced{4.9}
+
+Balance electrons first --- the number lost must equal the number gained ---
+then use \ce{H+} and \ce{H2O} to finish. Check the \emph{charge} as well
+as the atoms.
+
+\begin{workedexample}[I do: permanganate and iron]
+Balance
+\ce{MnO4^- + Fe^2+ + H+ -> Mn^2+ + Fe^3+ + H2O}.
+
+\textbf{Electron bookkeeping.} Mn goes $+7 \to +2$: a gain of \textbf{5}.
+Fe goes $+2 \to +3$: a loss of \textbf{1}. To make these equal, multiply
+the iron by 5.
+
+\textbf{Then balance O with water and H with \ce{H+}.} Four oxygens on the
+left need 4 \ce{H2O} on the right, which needs 8 \ce{H+} on the left:
+\[ \ce{MnO4^- + 5Fe^2+ + 8H+ -> Mn^2+ + 5Fe^3+ + 4H2O} \]
+
+\textbf{Charge check --- do this every time.}
+Left: $(-1) + 5(+2) + 8(+1) = +17$. Right: $(+2) + 5(+3) = +17$.
+\checkmark
+
+If the charges do not match, the equation is wrong even if every atom
+balances.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item How many electrons does each Cr gain going from \ce{Cr2O7^2-} to
+        \ce{Cr^3+}? \workspace[1.4cm]
+  \item How many \ce{Fe^2+} are needed per \ce{Cr2O7^2-}?
+        \workspace[1.4cm]
+  \item In \ce{Zn + Cu^2+ -> Zn^2+ + Cu}, which species is oxidized?
+        \workspace[1.4cm]
+  \item Why is a charge check necessary even when all atoms balance?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) 3 each, 6 total \quad (b) six \quad (c) \ce{Zn} \quad
+(d) electrons must balance too}
+\keyonly{\begin{apcanswer}(a) Cr goes $+6 \to +3$, a gain of
+\textbf{3} each; with two chromiums the ion takes \textbf{6} electrons.
+(b) Each \ce{Fe^2+} supplies one electron, so \textbf{six} are needed.
+(c) \textbf{\ce{Zn}} --- it goes from 0 to $+2$, losing electrons.
+(d) Because balancing atoms alone does not guarantee that electrons have
+been accounted for. A redox equation transfers charge, and if the totals
+differ between the two sides, electrons have been created or destroyed
+somewhere --- which is impossible. The charge check is the only reliable
+test that the electron bookkeeping was right.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Where you stand}
+
+Tick a ladder only if all four YOUR TURN questions were right first time.
+
+\renewcommand{\arraystretch}{1.30}
+\noindent\begin{tabular}{@{}c p{6.0cm} c >{\raggedright\arraybackslash}p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & balancing equations & 1 & coefficients only \\
+$\square$ & net ionic equations & 2 & split only dissolved strong \\
+$\square$ & physical vs chemical & 3 & is a new substance made? \\
+$\square$ & mole-to-mole & 4 & coefficients are a mole ratio \\
+$\square$ & limiting reactant & 5 & test against the ratio \\
+$\square$ & percent yield & 6 & theoretical from the limiter \\
+$\square$ & solution stoichiometry & 7 & $n = MV$; combined volume \\
+$\square$ & titration & 8 & watch a non-$1\!:\!1$ ratio \\
+$\square$ & reaction types & 9 & did an oxidation number move? \\
+$\square$ & acid--base pairs & 10 & differ by one proton \\
+$\square$ & oxidation numbers & 11 & divide by the atom count \\
+$\square$ & balancing redox & 12 & check charge, not just atoms \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+12/12: move on to the unit worksheets and the free-response set.
+9--11: solid --- redo the missed ladders tomorrow from a blank page.
+8 or fewer: the recurring root causes in this unit are exactly three ---
+(1) comparing masses or raw moles instead of testing against the
+\emph{stoichiometric ratio}, (2) dividing by one solution's volume instead
+of the combined volume after mixing, and (3) balancing a redox equation
+without ever checking the charge. Fix those three and most of these
+ladders fall together.
+\end{apcnote}
+
+\end{document}

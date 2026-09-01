@@ -20,10 +20,16 @@ u05-notes.tex
   figure rendered: unit05-kinetics\fig-u05-notes-1.png
   figure rendered: unit05-kinetics\fig-u05-notes-2.png
   figure rendered: unit05-kinetics\fig-u05-notes-3.png
+u05-selfstudy.tex
+  ?? unconverted: \textsuperscript
 u06-notes.tex
   figure rendered: unit06-thermochemistry\fig-u06-notes-1.png
 u07-notes.tex
   figure rendered: unit07-equilibrium\fig-u07-notes-1.png
+u07-selfstudy.tex
+  ?? unconverted: \textsubscript
+u08-selfstudy.tex
+  ?? unconverted: \textsubscript
 ch03-notes.tex
   figure rendered: chapter03-stoichiometry\fig-ch03-notes-1.png
 ch03-selfstudy.tex

@@ -1,0 +1,603 @@
+% Unit 1 self-study -- "I do / You do" ladder for CED 1.1-1.8, four YOUR
+% TURN questions per ladder. Ten ladders, forty questions.
+%
+% Values are chosen DISJOINT from u01-notes, the u01 worksheets and
+% u01-frq: the FRQ set uses boron isotopes, an aluminium PES spectrum, an
+% acetic-acid combustion and Ca3N2/CaO-KCl, so this document uses copper
+% and lithium isotopes, a phosphorus PES spectrum, percent-composition
+% routes to formulas, and Mg3N2/MgO-NaF instead. Nothing is repeated.
+\documentclass{apchem-worksheet}
+
+\apcunit{1}
+\apcunittitle{Atomic Structure and Properties}
+\apcdoctitle{Self-Study \textbullet\ CED 1.1--1.8, I~do / You~do}
+\apcsubtitle{Ten ladders \textbullet\ four YOUR TURN questions each \textbullet\ work alone, check after all four}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a fully worked example in the
+solid-framed box, then \textbf{four} YOUR TURN questions in the dashed box
+--- same skill, new numbers, no help.
+
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item \textbf{Work all four} before checking anything.
+  \item Check against the gray \emph{check:} line. All four right first
+        time earns the tick on the tracker (last page).
+  \item Any misses: re-read the worked example, then redo the missed ones
+        from a blank page --- not by reading the answer again.
+\end{enumerate}
+
+\textbf{Two habits that prevent most lost marks in this unit.} Always
+convert to \textbf{moles} before doing anything else with a mass ---
+almost every Unit 1 error is a comparison made in grams that should have
+been made in moles. And when you explain a periodic trend, name
+\textbf{nuclear charge, distance and shielding}. An answer that says an
+atom ``wants a full shell'' earns nothing on the AP exam.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Moles, mass and particles}
+\ced{1.1}
+
+The mole is a counting unit: one mole is
+$6.022\times10^{23}$ particles. The molar mass in
+\si{\gram\per\mole} is the bridge between the mass you can weigh and the
+number of particles you cannot.
+
+\begin{workedexample}[I do: mass to moles to atoms]
+How many moles, and how many atoms, are in \SI{12.5}{\gram} of calcium?
+
+\textbf{Mass to moles} --- divide by the molar mass:
+\[ n = \frac{12.5}{40.08} = \mathbf{0.312~mol} \]
+
+\textbf{Moles to atoms} --- multiply by Avogadro's number:
+\[ 0.3119 \times 6.022\times10^{23} = \mathbf{1.88\times10^{23}}
+   \text{ atoms} \]
+
+\textbf{Sense check:} \SI{12.5}{\gram} is well under one molar mass
+(\SI{40.08}{\gram}), so the answer must be under one mole. It is.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Moles in \SI{8.40}{\gram} of iron: \workspace[1.4cm]
+  \item Atoms in \SI{2.25}{\gram} of magnesium: \workspace[1.6cm]
+  \item Mass of \SI{3.01e23}{} atoms of sodium: \workspace[1.6cm]
+  \item Without calculating: \SI{10}{\gram} of helium or \SI{10}{\gram} of
+        iron --- which contains more atoms, and why? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \num{0.150}~mol \quad (b) \num{5.57e22} atoms \quad
+(c) \SI{11.5}{\gram} \quad (d) helium --- far smaller molar mass, so the
+same mass is many more moles}
+\keyonly{\begin{apcanswer}(a) $8.40/55.85 = \mathbf{0.150}$~mol.
+(b) $2.25/24.31 = 0.0926$~mol; $\times 6.022\times10^{23} =
+\mathbf{5.57\times10^{22}}$ atoms.
+(c) $3.01\times10^{23}/6.022\times10^{23} = 0.500$~mol;
+$\times 22.99 = \mathbf{11.5}$~g.
+(d) \textbf{Helium.} Molar mass \num{4.003} against \num{55.85}, so
+\SI{10}{\gram} of helium is about 2.5~mol while \SI{10}{\gram} of iron is
+about 0.18~mol --- roughly fourteen times as many atoms. Equal
+\emph{masses} are not equal counts.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Molar mass of a compound}
+\ced{1.1}
+
+A subscript outside a bracket multiplies \emph{everything} inside it.
+That single rule is where most molar-mass errors come from.
+
+\begin{workedexample}[I do: a compound with brackets]
+Find the molar mass of \ce{Ca(NO3)2}.
+
+\textbf{Read the formula first.} There is one calcium, and \emph{two}
+nitrate groups. Each nitrate is one N and three O, so the compound holds
+2 N and 6 O --- not 1 N and 3 O.
+
+\[ 40.08 + 2\,[\,14.01 + 3(16.00)\,] = 40.08 + 2(62.01)
+   = \mathbf{164.1~g/mol} \]
+
+\textbf{The trap:} forgetting to distribute the 2 gives \num{102.1}, and
+every later answer built on it is wrong.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Molar mass of \ce{MgCl2}: \workspace[1.4cm]
+  \item Molar mass of \ce{K2CO3}: \workspace[1.4cm]
+  \item Molar mass of \ce{Al2(SO4)3}: \workspace[1.8cm]
+  \item How many oxygen atoms are in one formula unit of
+        \ce{Al2(SO4)3}? \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) \num{95.21} \quad (b) \num{138.2} \quad (c) \num{342.1}
+\quad (d) 12}
+\keyonly{\begin{apcanswer}(a) $24.31 + 2(35.45) = \mathbf{95.21}$~g/mol.
+(b) $2(39.10) + 12.01 + 3(16.00) = \mathbf{138.2}$~g/mol.
+(c) $2(26.98) + 3\,[\,32.06 + 4(16.00)\,] = 53.96 + 3(96.06) =
+\mathbf{342.1}$~g/mol.
+(d) Three sulfate groups, four oxygens each: $3 \times 4 = \mathbf{12}$
+oxygen atoms.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ Mass spectra and average atomic mass}
+\ced{1.2}
+
+A mass spectrum plots mass on the horizontal axis and abundance on the
+vertical. Peak \emph{position} gives isotope mass; peak \emph{height}
+gives how common that isotope is. The tabulated atomic mass is the
+abundance-weighted average of the two.
+
+\begin{workedexample}[I do: two isotopes to one atomic mass]
+Copper has two isotopes: \ce{^{63}Cu},
+\SI{62.930}{\atomicmassunit}, \SI{69.17}{\percent}; and \ce{^{65}Cu},
+\SI{64.928}{\atomicmassunit}, \SI{30.83}{\percent}. Find the average
+atomic mass.
+
+\textbf{Weight each mass by its fractional abundance and add:}
+\[ (62.930)(0.6917) + (64.928)(0.3083) = 43.53 + 20.02 =
+   \mathbf{63.55~u} \]
+
+\textbf{Sense check:} the answer must land between the two isotope masses,
+and closer to the \emph{more abundant} one. \num{63.55} sits nearer
+\num{62.930}, as it must with \SI{69}{\percent} of atoms being the lighter
+isotope.
+
+\textbf{The trap:} averaging \num{62.930} and \num{64.928} without
+weighting gives \num{63.93} --- wrong, because it assumes equal
+abundances.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Lithium: \SI{6.015}{\atomicmassunit} at \SI{7.59}{\percent},
+        \SI{7.016}{\atomicmassunit} at \SI{92.41}{\percent}. Average?
+        \workspace[1.6cm]
+  \item Chlorine: \SI{34.969}{\atomicmassunit} at \SI{75.78}{\percent},
+        \SI{36.966}{\atomicmassunit} at \SI{24.22}{\percent}. Average?
+        \workspace[1.6cm]
+  \item An element has isotopes at 20 u and 22 u and an average atomic
+        mass of \num{20.2}. Which peak is taller, and roughly by how much?
+        \workspace[1.6cm]
+  \item Explain why no single atom of chlorine has a mass of
+        \SI{35.45}{\atomicmassunit}. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \num{6.94} \quad (b) \num{35.45} \quad (c) the 20 u peak,
+by roughly 9:1 \quad (d) it is an average over isotopes, not a real
+particle mass}
+\keyonly{\begin{apcanswer}(a) $(6.015)(0.0759) + (7.016)(0.9241) =
+\mathbf{6.94}$~u.
+(b) $(34.969)(0.7578) + (36.966)(0.2422) = \mathbf{35.45}$~u.
+(c) The \textbf{20 u} peak is much taller. The average sits only
+\num{0.2} above 20 but \num{1.8} below 22, so the light isotope must
+dominate --- about \SI{90}{\percent} against \SI{10}{\percent}, a ratio
+near $9\!:\!1$.
+(d) Chlorine atoms are either \ce{^{35}Cl} or \ce{^{37}Cl}. The tabulated
+\num{35.45} is the \textbf{abundance-weighted average} of those two, a
+property of a bulk sample rather than of any individual
+atom.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Percent composition}
+\ced{1.3}
+
+Percent composition asks what fraction of a compound's mass each element
+contributes. Work from \emph{one mole} of the compound.
+
+\begin{workedexample}[I do: percent composition of a nitrate]
+Find the percent by mass of each element in \ce{Ca(NO3)2}
+($M = \SI{164.1}{\gram\per\mole}$).
+
+\textbf{Mass of each element in one mole:}
+Ca $= 40.08$; \quad N $= 2(14.01) = 28.02$; \quad
+O $= 6(16.00) = 96.00$.
+
+\[ \%\text{Ca} = \frac{40.08}{164.1}\times100 = \mathbf{24.4\%} \qquad
+   \%\text{N} = \frac{28.02}{164.1}\times100 = \mathbf{17.1\%} \]
+\[ \%\text{O} = \frac{96.00}{164.1}\times100 = \mathbf{58.5\%} \]
+
+\textbf{Sense check:} the three must sum to \SI{100}{\percent}.
+$24.4 + 17.1 + 58.5 = 100.0$. \checkmark
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Percent chlorine in \ce{MgCl2}: \workspace[1.6cm]
+  \item Percent potassium in \ce{K2CO3}: \workspace[1.6cm]
+  \item Percent oxygen in \ce{K2CO3}: \workspace[1.6cm]
+  \item Which has the higher percent by mass of oxygen, \ce{H2O} or
+        \ce{H2O2}? Justify without a full calculation.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{74.5}{\percent} \quad (b) \SI{56.6}{\percent} \quad
+(c) \SI{34.7}{\percent} \quad (d) \ce{H2O2} --- twice the oxygen for only
+the same hydrogen}
+\keyonly{\begin{apcanswer}(a) $2(35.45)/95.21 \times 100 =
+\mathbf{74.5}\%$.
+(b) $2(39.10)/138.2 \times 100 = \mathbf{56.6}\%$.
+(c) $3(16.00)/138.2 \times 100 = \mathbf{34.7}\%$.
+(d) \textbf{\ce{H2O2}}. Going from \ce{H2O} to \ce{H2O2} doubles the
+oxygen mass while the hydrogen mass is unchanged, so oxygen must take a
+larger share. Confirming: \ce{H2O} is \SI{88.8}{\percent} O and
+\ce{H2O2} is \SI{94.1}{\percent} O.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Empirical and molecular formulas}
+\ced{1.3}
+
+The empirical formula is the simplest whole-number \emph{ratio} of atoms.
+The molecular formula is the actual count. Percent composition gives you
+the first; only the molar mass gives you the second.
+
+\begin{workedexample}[I do: percentages to a molecular formula]
+A compound is \SI{40.00}{\percent} C, \SI{6.71}{\percent} H and
+\SI{53.29}{\percent} O by mass, with
+$M = \SI{180.2}{\gram\per\mole}$.
+
+\textbf{Step 1 --- assume \SI{100.0}{\gram},} so the percentages become
+masses in grams.
+
+\textbf{Step 2 --- convert each to moles:}
+\[ \text{C: } \frac{40.00}{12.011} = 3.331 \qquad
+   \text{H: } \frac{6.71}{1.008} = 6.657 \qquad
+   \text{O: } \frac{53.29}{16.00} = 3.331 \]
+
+\textbf{Step 3 --- divide by the smallest} (\num{3.331}):
+C~1.00, H~2.00, O~1.00, so the empirical formula is \textbf{\ce{CH2O}}.
+
+\textbf{Step 4 --- scale to the molar mass.} Empirical mass
+$= 12.01 + 2(1.008) + 16.00 = 30.03$, and
+$180.2/30.03 = 2$\ldots{} in fact $\mathbf{6.00}$.
+\[ \ce{CH2O} \times 6 = \mathbf{\ce{C6H12O6}} \]
+
+\textbf{The trap:} stopping at \ce{CH2O}. That ratio is shared by
+formaldehyde, acetic acid and glucose --- the molar mass is what separates
+them.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item \SI{92.26}{\percent} C, \SI{7.74}{\percent} H,
+        $M = \SI{78.11}{\gram\per\mole}$. Empirical and molecular
+        formulas? \workspace[2.2cm]
+  \item \SI{5.93}{\percent} H, \SI{94.07}{\percent} O,
+        $M = \SI{34.01}{\gram\per\mole}$. Empirical and molecular?
+        \workspace[2.2cm]
+  \item \SI{69.94}{\percent} Fe, \SI{30.06}{\percent} O. Empirical
+        formula? \workspace[2.0cm]
+  \item Why can two different compounds share an empirical formula but
+        never a molecular formula \emph{and} the same structure?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \ce{CH}, \ce{C6H6} \quad (b) \ce{HO}, \ce{H2O2} \quad
+(c) \ce{Fe2O3} \quad (d) the empirical formula fixes only the ratio}
+\keyonly{\begin{apcanswer}(a) C: $92.26/12.011 = 7.681$; H:
+$7.74/1.008 = 7.679$. Ratio $1:1$, so \textbf{\ce{CH}} (mass
+\num{13.02}). $78.11/13.02 = 6$, giving \textbf{\ce{C6H6}}, benzene.
+(b) H: $5.93/1.008 = 5.883$; O: $94.07/16.00 = 5.879$. Ratio $1:1$, so
+\textbf{\ce{HO}} (mass \num{17.01}). $34.01/17.01 = 2$, giving
+\textbf{\ce{H2O2}}.
+(c) Fe: $69.94/55.85 = 1.252$; O: $30.06/16.00 = 1.879$. Dividing by the
+smaller: Fe~1.00, O~1.50. Multiply both by 2 to clear the half:
+\textbf{\ce{Fe2O3}}.
+(d) The empirical formula fixes only the \emph{ratio} of atoms, so any
+number of compounds can share it. The molecular formula fixes the actual
+count --- and two compounds can still share that (isomers) while differing
+in how the atoms are connected.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Composition of mixtures}
+\ced{1.4}
+
+A mixture has no formula. Its composition is whatever was put in, so it is
+described by percent by mass --- and its components keep their own
+properties, which is how they can be separated.
+
+\begin{workedexample}[I do: separating and weighing]
+A \SI{8.00}{\gram} mixture of \ce{KCl} and sand is stirred with water,
+filtered, and the filtrate evaporated to dryness, leaving
+\SI{4.60}{\gram} of \ce{KCl}. Find the percent by mass of \ce{KCl}, and
+explain why the method works.
+
+\[ \frac{4.60}{8.00}\times100 = \mathbf{57.5\%~KCl} \]
+
+\textbf{Why it works:} \ce{KCl} is ionic and dissolves as hydrated
+\ce{K+} and \ce{Cl-} ions; sand is a covalent network solid whose bonds
+water cannot break. The difference in \textbf{solubility} is the property
+being exploited, and filtration separates the two.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A \SI{12.0}{\gram} mixture yields \SI{7.20}{\gram} of soluble
+        salt. Percent salt? \workspace[1.4cm]
+  \item A mixture is \SI{2.00}{\gram} \ce{NaCl} and \SI{3.00}{\gram}
+        \ce{KCl}. What is the percent by mass of \emph{sodium} in the
+        whole mixture? \workspace[2.0cm]
+  \item Name a technique that separates two miscible liquids, and the
+        property it exploits. \workspace[1.6cm]
+  \item Why can a mixture's composition vary while a compound's cannot?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{60.0}{\percent} \quad (b) \SI{15.7}{\percent} \quad
+(c) distillation; difference in boiling point / volatility \quad
+(d) mixtures are not chemically combined}
+\keyonly{\begin{apcanswer}(a) $7.20/12.0 \times 100 = \mathbf{60.0}\%$.
+(b) Sodium in the \ce{NaCl}: $2.00 \times (22.99/58.44) =
+\SI{0.787}{\gram}$. As a fraction of the whole mixture:
+$0.787/5.00 \times 100 = \mathbf{15.7}\%$. Note the denominator is the
+\emph{total} mixture mass, not the \ce{NaCl} mass.
+(c) \textbf{Distillation}, exploiting the difference in
+\textbf{volatility} (boiling point): the more volatile liquid vaporizes
+first and is condensed separately.
+(d) A mixture's components are only physically combined in whatever
+proportion was used, so the proportion can be anything. A compound's atoms
+are chemically bonded in a fixed whole-number ratio, so its composition is
+fixed by its formula.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ Electron configurations}
+\ced{1.5}
+
+Fill lowest-energy orbitals first: \ce{1s}, \ce{2s}, \ce{2p}, \ce{3s},
+\ce{3p}, \ce{4s}, \ce{3d}, \ce{4p}. Capacities are $s$~2, $p$~6, $d$~10.
+The superscripts must sum to the electron count.
+
+\begin{workedexample}[I do: an atom and an ion]
+Write the configuration of phosphorus ($Z = 15$) and of the sulfide ion,
+\ce{S^2-}.
+
+\textbf{Phosphorus, 15 electrons:}
+\[ \ce{1s^2 2s^2 2p^6 3s^2 3p^3} \qquad
+   (2+2+6+2+3 = 15 \text{ \checkmark}) \]
+
+\textbf{Sulfide.} Neutral sulfur has 16 electrons; the $2-$ charge means
+it has \emph{gained} two, giving 18:
+\[ \ce{1s^2 2s^2 2p^6 3s^2 3p^6} \qquad (=18 \text{ \checkmark}) \]
+
+\textbf{The trap:} writing the ion's configuration as though it were the
+atom. Always adjust the electron count for the charge first --- negative
+means more electrons, positive means fewer.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Configuration of calcium ($Z = 20$): \workspace[1.6cm]
+  \item Configuration of \ce{Al^3+}: \workspace[1.6cm]
+  \item Configuration of iron ($Z = 26$): \workspace[1.8cm]
+  \item Explain why \ce{Al^3+} and \ce{Mg^2+} have identical
+        configurations but different sizes. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2} \quad
+(b) \ce{1s^2 2s^2 2p^6} \quad
+(c) \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6} \quad
+(d) same electrons, different nuclear charge}
+\keyonly{\begin{apcanswer}(a) \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2}
+($= 20$).
+(b) Aluminium has 13 electrons; losing three leaves 10:
+\ce{1s^2 2s^2 2p^6}.
+(c) \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6} ($= 26$). Note \ce{4s} fills
+before \ce{3d}.
+(d) Both are \textbf{isoelectronic} --- ten electrons in the same
+arrangement --- so shielding is essentially identical. But aluminium has
+13 protons against magnesium's 12. The greater nuclear charge pulls the
+same electron cloud in more tightly, so \ce{Al^3+} is the
+\textbf{smaller} ion.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Reading a photoelectron spectrum}
+\ced{1.6}
+
+A PES spectrum has one peak per occupied \emph{subshell}. Peak
+\textbf{height} gives the number of electrons in that subshell; peak
+\textbf{position} gives their binding energy. Summing the heights gives
+the atomic number --- which identifies the element.
+
+\begin{workedexample}[I do: peaks to an element]
+A spectrum shows five peaks of relative height $2$, $2$, $6$, $2$ and $3$,
+running from highest binding energy to lowest. Identify the element and
+explain which peak is highest in binding energy.
+
+\textbf{Sum the heights:} $2+2+6+2+3 = 15$ electrons, so $Z = 15$ ---
+\textbf{phosphorus}, \ce{1s^2 2s^2 2p^6 3s^2 3p^3}.
+
+\textbf{Highest binding energy: the first \ce{1s} peak.} Those electrons
+lie closest to the nucleus and are shielded by no others, so they feel the
+largest effective nuclear charge over the shortest distance. The Coulombic
+attraction is strongest, so the most energy is needed to remove one.
+
+\textbf{Lowest binding energy: the \ce{3p} peak of height 3.} Outermost
+and most shielded, so held least tightly --- these are the electrons
+phosphorus loses or shares in chemistry.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Peaks of height $2, 2, 6, 1$. Identify the element.
+        \workspace[1.6cm]
+  \item Peaks of height $2, 2, 6, 2, 4$. Identify the element.
+        \workspace[1.6cm]
+  \item An element's spectrum has four peaks, the last of height 2.
+        Identify it and give its configuration. \workspace[1.8cm]
+  \item Two elements both show a \ce{1s} peak. Explain why the peak sits
+        at a \emph{higher} binding energy for the element of larger $Z$.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) sodium \quad (b) sulfur \quad (c) magnesium,
+\ce{1s^2 2s^2 2p^6 3s^2} \quad (d) more protons pull the \ce{1s}
+electrons harder}
+\keyonly{\begin{apcanswer}(a) $2+2+6+1 = 11$, so $Z = 11$:
+\textbf{sodium}.
+(b) $2+2+6+2+4 = 16$: \textbf{sulfur}.
+(c) $2+2+6+2 = 12$: \textbf{magnesium}, \ce{1s^2 2s^2 2p^6 3s^2}.
+(d) The \ce{1s} electrons are essentially unshielded in both, so the
+attraction they feel is set almost entirely by the number of protons. More
+protons means a larger effective nuclear charge at the same tiny distance,
+hence a stronger Coulombic attraction and a higher binding
+energy.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ Periodic trends, explained Coulombically}
+\ced{1.7}
+
+Across a period, protons are added to the \emph{same} shell: nuclear
+charge rises, shielding barely changes, so the atom contracts and holds
+its electrons more tightly. Down a group, a new shell is added: distance
+and shielding both rise, so the atom expands and holds its outer electrons
+more loosely.
+
+\begin{workedexample}[I do: ranking and explaining]
+Rank \ce{Na}, \ce{Mg} and \ce{K} by first ionization energy, and justify.
+
+\textbf{Order: \ce{K} $<$ \ce{Na} $<$ \ce{Mg}} (419, 496, 738
+\si{\kilo\joule\per\mole}).
+
+\textbf{\ce{Na} against \ce{Mg}} --- same shell, but magnesium has one
+more proton. The extra nuclear charge holds the valence electrons more
+tightly, so more energy is needed: \ce{Mg} is higher.
+
+\textbf{\ce{Na} against \ce{K}} --- potassium's valence electron is in the
+next shell out, further from the nucleus and shielded by an extra filled
+shell. The attraction is weaker, so it is easier to remove: \ce{K} is
+lower.
+
+\textbf{What earns zero:} ``\ce{Mg} wants to lose two electrons'' or
+``\ce{K} is more reactive''. Name charge, distance, shielding --- nothing
+else counts.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Rank \ce{Li}, \ce{Na}, \ce{K} by atomic radius, smallest first.
+        \workspace[1.4cm]
+  \item Rank \ce{Na}, \ce{Mg}, \ce{Al} by atomic radius, smallest first.
+        \workspace[1.4cm]
+  \item The first ionization energy of sulfur (1000) is \emph{lower} than
+        that of phosphorus (1012), breaking the trend. Explain.
+        \workspace[2.4cm]
+  \item Why is the \emph{second} ionization energy of sodium enormously
+        larger than its first? \workspace[2.2cm]
+\end{enumerate}
+\selfcheck{(a) \ce{Li} $<$ \ce{Na} $<$ \ce{K} \quad
+(b) \ce{Al} $<$ \ce{Mg} $<$ \ce{Na} \quad (c) the paired \ce{3p}
+electron is repelled \quad (d) the second comes from a core shell}
+\keyonly{\begin{apcanswer}(a) \ce{Li} $<$ \ce{Na} $<$ \ce{K}. Each step
+down adds a shell, so distance and shielding both increase.
+(b) \ce{Al} $<$ \ce{Mg} $<$ \ce{Na}. Across the period the nuclear charge
+rises while the shell stays the same, pulling the cloud inward.
+(c) Phosphorus is \ce{3p^3}, with one electron in each of the three
+\ce{3p} orbitals. Sulfur is \ce{3p^4}, so one orbital holds a
+\emph{pair}. Two electrons confined to the same orbital repel each other
+strongly, raising that electron's energy and making it easier to remove ---
+enough to outweigh sulfur's extra proton. (This is an argument about
+electron--electron repulsion, \emph{not} about ``half-filled subshells
+being stable''.)
+(d) The first electron removed is sodium's single \ce{3s} valence
+electron, far out and well shielded. Once it is gone, \ce{Na+} has a
+filled \ce{2p} shell, and the next electron must come from that
+\textbf{core} shell --- much closer to the nucleus and shielded by only two
+electrons. Far greater effective nuclear charge at a far shorter distance
+means an enormously larger energy.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Valence electrons and ionic compounds}
+\ced{1.8}
+
+A main-group element's group number gives its valence-electron count, and
+that fixes the ion it forms. Combine ions so the charges cancel; the
+lattice energy that results is Coulombic.
+
+\begin{workedexample}[I do: from groups to a formula and a comparison]
+Magnesium reacts with nitrogen. Give the ions, the formula, and predict
+whether the compound's lattice energy exceeds that of \ce{NaF}.
+
+\textbf{Ions:} Mg is group 2, two valence electrons, forms \ce{Mg^2+}.
+N is group 15, five valence electrons, forms \ce{N^3-}.
+
+\textbf{Formula:} the charges must cancel. Three \ce{Mg^2+} ($+6$) with
+two \ce{N^3-} ($-6$) gives \textbf{\ce{Mg3N2}}.
+
+\textbf{Lattice energy against \ce{NaF}:} compare Coulombically. The
+attraction is proportional to the product of the ionic charges. For
+\ce{Mg3N2} that product is $(2)(3) = 6$; for \ce{NaF} it is
+$(1)(1) = 1$. \ce{Mg3N2} therefore has much the larger lattice energy.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Formula of the compound of aluminium and oxygen:
+        \workspace[1.4cm]
+  \item Formula of the compound of potassium and sulfur:
+        \workspace[1.4cm]
+  \item Which has the larger lattice energy, \ce{MgO} or \ce{NaF}?
+        Justify Coulombically. \workspace[2.4cm]
+  \item \ce{MgO} melts at \SI{2852}{\celsius}, \ce{NaF} at
+        \SI{993}{\celsius}. Explain how this follows from your answer to
+        (c). \workspace[2.0cm]
+\end{enumerate}
+\selfcheck{(a) \ce{Al2O3} \quad (b) \ce{K2S} \quad (c) \ce{MgO} --- charge
+product 4 vs 1, and shorter distance \quad (d) stronger attractions take
+more energy to overcome}
+\keyonly{\begin{apcanswer}(a) \ce{Al^3+} and \ce{O^2-}:
+$2(+3) + 3(-2) = 0$, so \textbf{\ce{Al2O3}}.
+(b) \ce{K+} and \ce{S^2-}: $2(+1) + (-2) = 0$, so \textbf{\ce{K2S}}.
+(c) \textbf{\ce{MgO}}, on both Coulombic counts. \textbf{Charge:} the
+product is $(+2)(-2) = 4$ against \ce{NaF}'s $(+1)(-1) = 1$.
+\textbf{Distance:} \ce{Mg^2+} and \ce{O^2-} are the smaller pair, so the
+internuclear separation is shorter ($\approx$\SI{212}{\pico\metre}
+against $\approx$\SI{235}{\pico\metre}) and the attraction, going as
+$1/d$, is stronger again.
+(d) Melting an ionic solid means giving the ions enough energy to break
+free of the lattice's electrostatic attractions. \ce{MgO} has much the
+stronger attractions, so far more energy --- a far higher temperature ---
+is required.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Where you stand}
+
+Tick a ladder only if all four YOUR TURN questions were right on the first
+attempt.
+
+\renewcommand{\arraystretch}{1.35}
+% Ragged-right on the last column: justifying a 4.8cm measure with short
+% phrases produces underfull hboxes for no visual gain.
+\noindent\begin{tabular}{@{}c p{6.2cm} c >{\raggedright\arraybackslash}p{4.8cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & moles, mass, particles & 1 & divide by $M$, then $\times N_A$ \\
+$\square$ & molar mass with brackets & 2 & the subscript multiplies all \\
+$\square$ & average atomic mass & 3 & weight by abundance \\
+$\square$ & percent composition & 4 & per mole; must sum to 100 \\
+$\square$ & empirical \& molecular & 5 & $\div$ smallest, then $\times$ \\
+$\square$ & mixtures & 6 & no formula; separable by property \\
+$\square$ & electron configurations & 7 & adjust for charge first \\
+$\square$ & PES spectra & 8 & heights sum to $Z$ \\
+$\square$ & periodic trends & 9 & charge, distance, shielding \\
+$\square$ & ionic compounds & 10 & cancel charges; Coulomb's law \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+10/10: move on to the unit worksheets and the free-response set.
+7--9: solid --- redo the missed ladders tomorrow, not today, and from a
+blank page. 6 or fewer: the recurring root causes in this unit are exactly
+three --- (1) comparing \emph{masses} where the question needs
+\emph{moles}, (2) forgetting that a subscript outside a bracket multiplies
+everything inside it, and (3) explaining a periodic trend by what an atom
+``wants'' instead of by nuclear charge, distance and shielding. Fix those
+three and most of these ladders fall together.
+\end{apcnote}
+
+\end{document}

@@ -10,6 +10,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit01-atomic-structure/u01-map.md)
 - [Guided Notes](unit01-atomic-structure/u01-notes.md)
+- [Self-Study • CED 1.1–1.8, I do / You do](unit01-atomic-structure/u01-selfstudy.md)
 - [Worksheet 1 • Mole & Formula Drill](unit01-atomic-structure/u01-ws1.md)
 - [Worksheet 2 • Mass Spectra & Particulate Reasoning](unit01-atomic-structure/u01-ws2.md)
 - [Worksheet 3 • Configurations & PES](unit01-atomic-structure/u01-ws3.md)
@@ -22,6 +23,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit02-compound-structure/u02-map.md)
 - [Guided Notes](unit02-compound-structure/u02-notes.md)
+- [Self-Study • CED 2.1–2.7, I do / You do](unit02-compound-structure/u02-selfstudy.md)
 - [Worksheet 1 • Bonds, Wells, and Lattices](unit02-compound-structure/u02-ws1.md)
 - [Worksheet 2 • Lewis, Formal Charge, Resonance](unit02-compound-structure/u02-ws2.md)
 - [Worksheet 3 • Shapes, Angles, Polarity](unit02-compound-structure/u02-ws3.md)
@@ -34,6 +36,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit03-properties-substances/u03-map.md)
 - [Guided Notes](unit03-properties-substances/u03-notes.md)
+- [Self-Study • CED 3.1–3.13, I do / You do](unit03-properties-substances/u03-selfstudy.md)
 - [Worksheet 1 • Forces, Solids, Phases](unit03-properties-substances/u03-ws1.md)
 - [Worksheet 2 • Gases](unit03-properties-substances/u03-ws2.md)
 - [Worksheet 3 • Solutions and Concentration](unit03-properties-substances/u03-ws3.md)
@@ -47,6 +50,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit04-chemical-reactions/u04-map.md)
 - [Guided Notes](unit04-chemical-reactions/u04-notes.md)
+- [Self-Study • CED 4.1–4.9, I do / You do](unit04-chemical-reactions/u04-selfstudy.md)
 - [Worksheet 1 • Change and Representation](unit04-chemical-reactions/u04-ws1.md)
 - [Worksheet 2 • Net Ionic Equations and Reaction Types](unit04-chemical-reactions/u04-ws2.md)
 - [Worksheet 3 • Redox and Solution Stoichiometry](unit04-chemical-reactions/u04-ws3.md)
@@ -59,6 +63,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit05-kinetics/u05-map.md)
 - [Guided Notes](unit05-kinetics/u05-notes.md)
+- [Self-Study • CED 5.1–5.11, I do / You do](unit05-kinetics/u05-selfstudy.md)
 - [Worksheet 1 • Rates and Rate Laws](unit05-kinetics/u05-ws1.md)
 - [Worksheet 2 • Concentration Over Time](unit05-kinetics/u05-ws2.md)
 - [Worksheet 3 • Mechanisms and Energy Profiles](unit05-kinetics/u05-ws3.md)
@@ -71,6 +76,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit06-thermochemistry/u06-map.md)
 - [Guided Notes](unit06-thermochemistry/u06-notes.md)
+- [Self-Study • CED 6.1–6.9, I do / You do](unit06-thermochemistry/u06-selfstudy.md)
 - [Worksheet 1 • Signs, Diagrams, and Heat Transfer](unit06-thermochemistry/u06-ws1.md)
 - [Worksheet 2 • Calorimetry and Phase Changes](unit06-thermochemistry/u06-ws2.md)
 - [Worksheet 3 • Enthalpy of Reaction and Hess's Law](unit06-thermochemistry/u06-ws3.md)
@@ -83,6 +89,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit07-equilibrium/u07-map.md)
 - [Guided Notes](unit07-equilibrium/u07-notes.md)
+- [Self-Study • CED 7.1–7.12, I do / You do](unit07-equilibrium/u07-selfstudy.md)
 - [Worksheet 1 • Dynamic Equilibrium, $Q$ and $K$](unit07-equilibrium/u07-ws1.md)
 - [Worksheet 2 • Magnitude and Properties of $K$](unit07-equilibrium/u07-ws2.md)
 - [Worksheet 3 • ICE Tables](unit07-equilibrium/u07-ws3.md)
@@ -96,6 +103,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit08-acids-bases/u08-map.md)
 - [Guided Notes](unit08-acids-bases/u08-notes.md)
+- [Self-Study • CED 8.1–8.11, I do / You do](unit08-acids-bases/u08-selfstudy.md)
 - [Worksheet 1 • Conjugates, pH, and Strong Acids](unit08-acids-bases/u08-ws1.md)
 - [Worksheet 2 • Weak Acids and Weak Bases](unit08-acids-bases/u08-ws2.md)
 - [Worksheet 3 • Structure, p$K_a$, and Salts](unit08-acids-bases/u08-ws3.md)
@@ -109,6 +117,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 
 - [Unit Map](unit09-thermodynamics-electrochemistry/u09-map.md)
 - [Guided Notes](unit09-thermodynamics-electrochemistry/u09-notes.md)
+- [Self-Study • CED 9.1–9.11, I do / You do](unit09-thermodynamics-electrochemistry/u09-selfstudy.md)
 - [Worksheet 1 • Entropy](unit09-thermodynamics-electrochemistry/u09-ws1.md)
 - [Worksheet 2 • Gibbs Free Energy](unit09-thermodynamics-electrochemistry/u09-ws2.md)
 - [Worksheet 3 • Free Energy, $K$, and Coupling](unit09-thermodynamics-electrochemistry/u09-ws3.md)

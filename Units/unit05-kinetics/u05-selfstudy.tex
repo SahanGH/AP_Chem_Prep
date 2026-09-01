@@ -1,0 +1,738 @@
+% Unit 5 self-study -- "I do / You do" ladder for CED 5.1-5.11.
+% Twelve ladders, forty-eight questions.
+%
+% Disjoint from u05-frq, which uses the 2NO + O2 initial-rates table, the
+% N2O5 three-step mechanism, a k = 1.5e-3 half-life and the collision-model
+% temperature question. This document uses an A + 2B table, the NO2/CO
+% mechanism, k = 0.0300 and different catalysis items.
+%
+% CED 5.6 excludes Arrhenius CALCULATIONS. Ladder 8 reads an energy
+% profile and reasons qualitatively; no question extracts Ea from data.
+\documentclass{apchem-worksheet}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Self-Study \textbullet\ CED 5.1--5.11, I~do / You~do}
+\apcsubtitle{Twelve ladders \textbullet\ four YOUR TURN questions each \textbullet\ work alone, check after all four}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How to use these notes --- read this first]
+Each skill is a \textbf{ladder}: a worked example, then \textbf{four}
+YOUR TURN questions --- same skill, new numbers, no help. Work all four
+before checking anything.
+
+\textbf{The one idea this whole unit turns on.} Kinetics is about
+\emph{how fast}, thermodynamics is about \emph{how far}. They are
+independent. A reaction can be enormously favourable and still take
+centuries; diamond turning to graphite is the standard example. Never
+answer a rate question with an argument about stability.
+
+\textbf{The habit that decides this unit.} Reaction orders are
+\textbf{experimental}. They come from data, or from the slow step of a
+mechanism --- never from the coefficients of the overall equation. Reading
+orders off a balanced equation is the single most common way to lose marks
+here.
+
+\textbf{One scope note.} The CED excludes \textbf{Arrhenius equation
+calculations}: you will not be asked to extract an activation energy from
+two rate constants or from a plot of $\ln k$ against $1/T$. Reading an
+energy profile and reasoning about temperature and catalysts qualitatively
+both remain fully examinable.
+\end{apcnote}
+
+% =====================================================================
+\section*{\sffamily Ladder 1 \textbullet\ Expressing reaction rate}
+\ced{5.1}
+
+Rate is a change in concentration per unit time. Divide each species'
+rate by its coefficient and every species gives the \emph{same} number ---
+one rate for the reaction.
+
+\begin{workedexample}[I do: relating species]
+For \ce{2N2O5 -> 4NO2 + O2}, oxygen appears at
+\SI{0.0125}{\Molar\per\second}. Find the rates for the other two.
+
+\textbf{Scale by the coefficients.} Relative to \ce{O2} (coefficient 1):
+
+\ce{NO2} has coefficient 4, so it forms at
+$4 \times 0.0125 = \mathbf{0.0500}$~M/s.
+
+\ce{N2O5} has coefficient 2, so it is \emph{consumed} at
+$2 \times 0.0125 = \mathbf{0.0250}$~M/s. As a rate of change,
+$\Delta[\ce{N2O5}]/\Delta t = -0.0250$~M/s --- negative, because it is
+disappearing.
+
+\textbf{The single reaction rate:}
+\[ -\tfrac{1}{2}\frac{\Delta[\ce{N2O5}]}{\Delta t}
+   = \tfrac{1}{4}\frac{\Delta[\ce{NO2}]}{\Delta t}
+   = \frac{\Delta[\ce{O2}]}{\Delta t} = \SI{0.0125}{\Molar\per\second} \]
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 1 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item For \ce{N2 + 3H2 -> 2NH3}, if \ce{N2} is consumed at
+        \SI{0.020}{\Molar\per\second}, how fast is \ce{H2} consumed?
+        \workspace[1.4cm]
+  \item How fast is \ce{NH3} formed in (a)? \workspace[1.4cm]
+  \item Why is the rate of change of a reactant negative?
+        \workspace[1.4cm]
+  \item Why divide each rate by its coefficient? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \SI{0.060}{\Molar\per\second} \quad
+(b) \SI{0.040}{\Molar\per\second} \quad (c) its concentration falls \quad
+(d) to get one rate independent of the species watched}
+\keyonly{\begin{apcanswer}(a) $3 \times 0.020 = \mathbf{0.060}$~M/s.
+(b) $2 \times 0.020 = \mathbf{0.040}$~M/s.
+(c) Because its concentration is \emph{decreasing}, so
+$\Delta[\text{reactant}]$ is negative. The reaction rate itself is quoted
+as a positive number, which is why the expression carries a minus sign.
+(d) Because the species are consumed and produced in fixed proportions set
+by the coefficients. Dividing those proportions out leaves a single number
+describing the reaction as a whole, the same whichever species was
+monitored.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 2 \textbullet\ Rate law from initial rates}
+\ced{5.2}
+
+Compare two experiments in which \emph{one} concentration changes and the
+others are held constant. The factor the rate changes by tells you the
+order.
+
+\begin{workedexample}[I do: reading a rate table]
+For \ce{A + 2B -> C}:
+
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+\textbf{Exp} & $[\ce{A}]_0$ & $[\ce{B}]_0$ & \textbf{rate} (M/s) \\
+\hline
+1 & 0.050 & 0.10 & $1.2\times10^{-3}$ \\
+2 & 0.100 & 0.10 & $4.8\times10^{-3}$ \\
+3 & 0.050 & 0.20 & $2.4\times10^{-3}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Order in A:} compare 1 and 2, where $[\ce{B}]$ is constant.
+$[\ce{A}]$ doubles and the rate goes up by
+$4.8/1.2 = 4$. Since $2^n = 4$, $n = \mathbf{2}$.
+
+\textbf{Order in B:} compare 1 and 3, where $[\ce{A}]$ is constant.
+$[\ce{B}]$ doubles and the rate doubles, so $n = \mathbf{1}$.
+
+\[ \text{rate} = k[\ce{A}]^2[\ce{B}] \qquad
+   \text{overall order } 2 + 1 = \mathbf{3} \]
+
+\textbf{Note what the equation would have suggested:} a coefficient of 2
+on B, hence perhaps second order in B. The data say first. Orders are
+experimental.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 2 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item If tripling a reactant's concentration multiplies the rate by 9,
+        what is the order? \workspace[1.4cm]
+  \item If doubling a concentration leaves the rate unchanged, what is the
+        order? \workspace[1.4cm]
+  \item If doubling a concentration multiplies the rate by 8, what is the
+        order? \workspace[1.4cm]
+  \item Why must the other concentrations be held constant?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) second \quad (b) zero \quad (c) third \quad (d) otherwise
+you cannot attribute the change to one reactant}
+\keyonly{\begin{apcanswer}(a) $3^n = 9$, so $n = \mathbf{2}$.
+(b) $2^n = 1$, so $n = \mathbf{0}$ --- the rate does not depend on that
+reactant at all.
+(c) $2^n = 8$, so $n = \mathbf{3}$.
+(d) Because the rate depends on all of them at once. If two
+concentrations changed between the experiments, the change in rate could
+not be attributed to either one alone --- the comparison would be
+uninterpretable.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 3 \textbullet\ The rate constant and its units}
+\ced{5.2}
+
+$k$ is found by substituting one experiment back into the rate law. Its
+\emph{units} are whatever makes the equation dimensionally consistent, and
+they depend on the overall order.
+
+\begin{workedexample}[I do: value and units together]
+From experiment 1 above, find $k$ with units.
+
+\[ k = \frac{\text{rate}}{[\ce{A}]^2[\ce{B}]}
+     = \frac{1.2\times10^{-3}}{(0.050)^2(0.10)}
+     = \frac{1.2\times10^{-3}}{2.5\times10^{-4}} = \mathbf{4.8} \]
+
+\textbf{Units:} rate is \si{\Molar\per\second} and
+$[\ce{A}]^2[\ce{B}]$ is \si{\Molar\cubed}, so $k$ carries
+\si{\per\Molar\squared\per\second} --- that is,
+M\textsuperscript{-2}\,s\textsuperscript{-1}.
+
+\textbf{Check with another experiment:}
+$4.8(0.100)^2(0.10) = 4.8\times10^{-3}$, matching experiment 2.
+\checkmark A rate constant that fails this check means the orders are
+wrong.
+
+\textbf{The pattern:} overall order 0 gives \si{\Molar\per\second}; order
+1 gives \si{\per\second}; order 2 gives
+\si{\per\Molar\per\second}; order 3 gives
+\si{\per\Molar\squared\per\second}.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 3 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Units of $k$ for a first-order reaction: \workspace[1.4cm]
+  \item Units of $k$ for a second-order reaction: \workspace[1.4cm]
+  \item A reaction has rate $= k[\ce{A}][\ce{B}]$ with rate
+        \SI{6.0e-4}{\Molar\per\second} when both are
+        \SI{0.20}{\Molar}. Find $k$. \workspace[1.8cm]
+  \item Why do the units of $k$ differ between orders?
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) \si{\per\second} \quad (b) \si{\per\Molar\per\second} \quad
+(c) \SI{1.5e-2}{\per\Molar\per\second} \quad (d) they must make the
+equation dimensionally consistent}
+\keyonly{\begin{apcanswer}(a) \textbf{\si{\per\second}}
+(s\textsuperscript{-1}).
+(b) \textbf{\si{\per\Molar\per\second}}
+(M\textsuperscript{-1}\,s\textsuperscript{-1}).
+(c) $k = 6.0\times10^{-4}/[(0.20)(0.20)] =
+\mathbf{1.5\times10^{-2}}$~M\textsuperscript{-1}\,s\textsuperscript{-1}.
+(d) Because rate always has units of \si{\Molar\per\second}, while the
+concentration term on the right is raised to the overall order. $k$ must
+supply whatever units are needed to reconcile the two, so its units change
+with that order --- which is why quoting $k$ without units is
+meaningless.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 4 \textbullet\ Integrated rate laws: which plot is straight?}
+\ced{5.3}
+
+Given concentration-versus-time data, the order is identified by which
+plot comes out linear.
+
+\begin{workedexample}[I do: the three tests]
+State which plot is linear for each order, and what the slope gives.
+
+\textbf{Zero order:} $[\ce{A}]$ against $t$ is linear. Slope $= -k$.
+The concentration falls by equal \emph{amounts} in equal times.
+
+\textbf{First order:} $\ln[\ce{A}]$ against $t$ is linear. Slope
+$= -k$. The concentration falls by equal \emph{fractions} in equal times
+--- which is what a constant half-life means.
+
+\textbf{Second order:} $1/[\ce{A}]$ against $t$ is linear. Slope
+$= +k$, positive because the reciprocal grows.
+
+\textbf{How to use it:} plot all three from the same data. Exactly one
+comes out straight, and that identifies the order. The slope then gives
+$k$ directly --- and note the sign: negative for zero and first order,
+positive for second.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 4 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A plot of $\ln[\ce{A}]$ against time is a straight line. What
+        order? \workspace[1.4cm]
+  \item A plot of $1/[\ce{A}]$ against time is straight with slope
+        $+0.25$. Give the order and $k$. \workspace[1.6cm]
+  \item For a zero-order reaction, what does a graph of $[\ce{A}]$ against
+        $t$ look like? \workspace[1.6cm]
+  \item Which order has a half-life independent of concentration?
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) first \quad (b) second, $k = \num{0.25}$
+\si{\per\Molar\per\second} \quad (c) a straight line of negative slope
+\quad (d) first}
+\keyonly{\begin{apcanswer}(a) \textbf{First order}.
+(b) \textbf{Second order}; the slope equals $k$, so
+$k = \num{0.25}$~M\textsuperscript{-1}\,s\textsuperscript{-1}.
+(c) A \textbf{straight line with negative slope}, falling at a constant
+rate until the reactant is exhausted --- the rate does not depend on how
+much is left.
+(d) \textbf{First order.} Its half-life is $0.693/k$, containing no
+concentration term at all.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 5 \textbullet\ Half-life}
+\ced{5.3}
+
+For a first-order reaction, $t_{1/2} = 0.693/k$ --- constant, whatever the
+concentration. Every half-life removes half of whatever remains.
+
+\begin{workedexample}[I do: half-life and successive halvings]
+A first-order reaction has $k = \SI{0.0300}{\per\second}$ and starts at
+\SI{0.800}{\Molar}. Find the half-life and the concentration after three
+half-lives.
+
+\[ t_{1/2} = \frac{0.693}{0.0300} = \mathbf{23.1~s} \]
+
+\textbf{Three half-lives:}
+$0.800 \to 0.400 \to 0.200 \to \mathbf{0.100~M}$, taking
+$3 \times 23.1 = \SI{69.3}{\second}$.
+
+\textbf{Why the half-life does not drift.} As the concentration falls, the
+rate falls in exact proportion --- that is what first order means. Half of
+a smaller amount takes exactly as long to disappear as half of a larger
+one did.
+
+\textbf{Contrast:} for a \emph{second}-order reaction the half-life
+\emph{doubles} each time, because the rate falls faster than the
+concentration does.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 5 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Half-life when $k = \SI{2.5e-4}{\per\second}$:
+        \workspace[1.6cm]
+  \item Fraction remaining after four half-lives: \workspace[1.4cm]
+  \item Starting at \SI{0.600}{\Molar}, concentration after four
+        half-lives: \workspace[1.6cm]
+  \item Does a first-order half-life depend on the starting
+        concentration? Explain. \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \SI{2.8e3}{\second} \quad (b) $1/16$ \quad
+(c) \SI{0.0375}{\Molar} \quad (d) no --- $t_{1/2} = 0.693/k$ only}
+\keyonly{\begin{apcanswer}(a) $0.693/2.5\times10^{-4} =
+\mathbf{2.8\times10^{3}}$~s (about \SI{46}{\minute}).
+(b) $(1/2)^4 = \mathbf{1/16}$.
+(c) $0.600/16 = \mathbf{0.0375}$~M.
+(d) \textbf{No.} The expression $t_{1/2} = 0.693/k$ contains no
+concentration term. Physically, the rate is proportional to concentration,
+so halving a large amount and halving a small one take the same time. This
+is unique to first order.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 6 \textbullet\ Elementary reactions}
+\ced{5.4}
+
+An elementary step describes an actual molecular event. For an elementary
+step \emph{only}, the coefficients may be used as the orders.
+
+\begin{workedexample}[I do: when coefficients are allowed]
+For the elementary step \ce{2NO2 -> NO3 + NO}, write the rate law. Then
+explain why the same cannot be done for the overall equation
+\ce{2NO2 + F2 -> 2NO2F}.
+
+\textbf{Elementary step:} the event is two \ce{NO2} molecules colliding,
+so
+\[ \text{rate} = k[\ce{NO2}]^2 \]
+This is legitimate \emph{because} the step is elementary --- the equation
+describes the collision itself.
+
+\textbf{Overall equation:} it is a summary of the net change, not a
+description of any single event. It says nothing about how many molecules
+actually meet in the slow step. Writing
+$\text{rate} = k[\ce{NO2}]^2[\ce{F2}]$ from it would be a guess, and
+experiment shows the true law is $k[\ce{NO2}][\ce{F2}]$.
+
+\textbf{Molecularity:} one molecule is unimolecular, two bimolecular.
+Termolecular steps --- three particles meeting at once --- are very rare,
+which is why proposed mechanisms almost never contain them.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 6 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Rate law for the elementary step \ce{A + B -> C}:
+        \workspace[1.4cm]
+  \item Rate law for the elementary step \ce{2A -> B}:
+        \workspace[1.4cm]
+  \item What is the molecularity of \ce{O3 -> O2 + O}?
+        \workspace[1.4cm]
+  \item Why are termolecular steps rare? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) $k[\ce{A}][\ce{B}]$ \quad (b) $k[\ce{A}]^2$ \quad
+(c) unimolecular \quad (d) three particles colliding simultaneously is
+very improbable}
+\keyonly{\begin{apcanswer}(a) $\text{rate} = k[\ce{A}][\ce{B}]$.
+(b) $\text{rate} = k[\ce{A}]^2$.
+(c) \textbf{Unimolecular} --- a single molecule decomposes.
+(d) Because a reaction event requires the particles to be in the same
+place at the same instant \emph{and} correctly oriented. Two-body
+collisions are common; three particles meeting simultaneously with the
+right geometry is vastly less probable, so such steps are almost never
+rate-competitive.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 7 \textbullet\ The collision model}
+\ced{5.5}
+
+A collision produces reaction only if it carries at least the activation
+energy \emph{and} the molecules are correctly oriented. Everything that
+changes a rate changes one of those two.
+
+\begin{workedexample}[I do: why a small warming does so much]
+A rise of \SI{10}{\celsius} can roughly double a rate, though it raises
+the average speed only a few percent. Explain.
+
+\textbf{What actually matters} is the \emph{fraction} of collisions
+carrying at least $E_a$, and that fraction lies far out in the
+high-energy tail of the distribution of molecular energies.
+
+\textbf{Warming shifts and broadens the whole distribution.} Near the
+average that is a small change. Out in the tail, where the threshold sits,
+the population rises steeply --- easily doubling.
+
+\textbf{Collision frequency rises too, but only slightly} --- a few
+percent, in line with the speed. Essentially all of the rate increase
+comes from the energy distribution, not from more collisions.
+
+\textbf{The answer that earns half marks:} ``molecules move faster and
+collide more often''. True, but it is the smaller effect; the marks are
+for the fraction above $E_a$.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 7 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item State the two requirements for a successful collision.
+        \workspace[1.4cm]
+  \item Why does increasing concentration increase the rate?
+        \workspace[1.6cm]
+  \item Why does powdering a solid reactant speed up its reaction?
+        \workspace[1.6cm]
+  \item Which effect of warming matters more: more collisions, or more
+        energetic ones? \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) enough energy, correct orientation \quad (b) more frequent
+collisions \quad (c) more exposed surface area \quad (d) more energetic
+ones, by far}
+\keyonly{\begin{apcanswer}(a) Energy at least equal to the
+\textbf{activation energy}, and correct \textbf{orientation}.
+(b) More particles per unit volume means they meet more often, so the
+collision frequency rises and more of those collisions are successful per
+second.
+(c) Powdering exposes far more \textbf{surface area}, so more particles
+are available to collide at the solid--fluid boundary at any moment.
+(d) \textbf{More energetic ones, by far.} Collision frequency rises only a
+few percent with a modest warming, while the fraction of collisions
+exceeding $E_a$ can double, because that fraction sits in the steep tail
+of the energy distribution.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 8 \textbullet\ Reading an energy profile}
+\ced{5.6} \ced{5.10}
+
+The vertical axis is potential energy. The peak is the transition state;
+the climb from reactants to peak is $E_a$; the difference between the two
+ends is $\Delta H$.
+
+\begin{workedexample}[I do: everything on one diagram]
+A profile rises from reactants at \SI{50}{\kilo\joule} to a peak at
+\SI{170}{\kilo\joule}, then falls to products at \SI{20}{\kilo\joule}.
+Find $E_a$ forward, $E_a$ reverse and $\Delta H$, and say whether it is
+exothermic.
+
+\textbf{Forward $E_a$:} $170 - 50 = \mathbf{120~kJ}$ --- reactants up to
+the peak.
+
+\textbf{Reverse $E_a$:} $170 - 20 = \mathbf{150~kJ}$ --- products up to
+the same peak.
+
+\textbf{$\Delta H$:} $20 - 50 = \mathbf{-30~kJ}$, products minus
+reactants. Negative, so \textbf{exothermic} --- and the products sit lower
+than the reactants, which is the visual signature.
+
+\textbf{The relationship worth remembering:}
+$\Delta H = E_{a,\text{forward}} - E_{a,\text{reverse}} = 120 - 150 =
+-30$~kJ. \checkmark
+
+\textbf{A multi-step profile} has one peak per step, with shallow minima
+between them where intermediates sit. The \emph{highest} peak is the
+rate-determining step.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 8 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Reactants \SI{30}{\kilo\joule}, peak \SI{110}{\kilo\joule},
+        products \SI{75}{\kilo\joule}. Forward $E_a$?
+        \workspace[1.4cm]
+  \item $\Delta H$ for that reaction, and is it endo- or exothermic?
+        \workspace[1.6cm]
+  \item On a two-step profile, how do you identify the rate-determining
+        step? \workspace[1.6cm]
+  \item What sits in the shallow minimum between two peaks?
+        \workspace[1.4cm]
+\end{enumerate}
+\selfcheck{(a) \SI{80}{\kilo\joule} \quad (b) $+45$~kJ, endothermic \quad
+(c) the step with the highest peak \quad (d) an intermediate}
+\keyonly{\begin{apcanswer}(a) $110 - 30 = \mathbf{80}$~kJ.
+(b) $75 - 30 = \mathbf{+45}$~kJ, so \textbf{endothermic} --- the products
+lie above the reactants.
+(c) It is the step whose peak is \textbf{highest above the preceding
+minimum} --- the largest barrier to climb, and therefore the slowest step,
+which sets the overall rate.
+(d) An \textbf{intermediate} --- a real species, produced by one step and
+consumed by a later one. Being in a minimum it is genuinely stable enough
+to exist, unlike a transition state, which sits at a
+\emph{maximum}.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 9 \textbullet\ Mechanisms and the rate-determining step}
+\ced{5.7} \ced{5.8} \ced{5.9}
+
+A mechanism is valid only if its steps add to the overall equation
+\emph{and} its slow step predicts the observed rate law.
+
+\begin{workedexample}[I do: testing a mechanism]
+Test this mechanism for \ce{NO2 + CO -> NO + CO2}, whose observed rate law
+is $k[\ce{NO2}]^2$:
+\begin{align*}
+\text{Step 1:}\quad & \ce{NO2 + NO2 -> NO3 + NO} \qquad \text{(slow)}\\
+\text{Step 2:}\quad & \ce{NO3 + CO -> NO2 + CO2} \qquad \text{(fast)}
+\end{align*}
+
+\textbf{Do the steps add?} Summing:
+\ce{2NO2 + NO3 + CO -> NO3 + NO + NO2 + CO2}. Cancel \ce{NO3} from both
+sides and one \ce{NO2}:
+\ce{NO2 + CO -> NO + CO2}. \checkmark
+
+\textbf{Does the slow step give the observed law?} Step 1 is elementary
+and bimolecular in \ce{NO2}, so
+$\text{rate} = k[\ce{NO2}]^2$. \checkmark
+
+\textbf{The striking prediction:} \ce{CO} does not appear in the rate law
+at all, even though it is a reactant. It enters only in the \emph{fast}
+step, after the bottleneck --- so adding more of it does not speed the
+reaction up. That is exactly what the experiment finds, and it is strong
+evidence for this mechanism.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 9 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item In the mechanism above, identify the intermediate.
+        \workspace[1.4cm]
+  \item Which step determines the rate, and why? \workspace[1.6cm]
+  \item Why does \ce{CO} not appear in the rate law? \workspace[1.6cm]
+  \item What two tests must any proposed mechanism pass?
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) \ce{NO3} \quad (b) step 1, the slow one \quad (c) it
+appears only after the slow step \quad (d) steps sum to the overall
+equation; slow step gives the observed rate law}
+\keyonly{\begin{apcanswer}(a) \textbf{\ce{NO3}} --- produced in step 1 and
+consumed in step 2, so it appears in the mechanism but not in the overall
+equation.
+(b) \textbf{Step 1}, the slow step. The overall reaction cannot proceed
+faster than its slowest stage, so that step is the bottleneck.
+(c) Because it is consumed only in the \emph{fast} step, which happens
+after the bottleneck. Whatever \ce{NO3} step 1 produces is mopped up
+essentially instantly, so the supply of \ce{CO} never limits anything and
+its concentration does not affect the overall rate.
+(d) (1) The steps must \textbf{sum to the overall balanced equation}, with
+intermediates cancelling. (2) The \textbf{slow step must predict the
+experimentally observed rate law}. Failing either rules the mechanism out
+--- though passing both does not prove it correct, only that it is
+consistent.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 10 \textbullet\ Intermediates versus catalysts}
+\ced{5.7} \ced{5.11}
+
+Both appear inside a mechanism and neither appears in the overall
+equation --- but they are opposites. An intermediate is
+\emph{made then used}; a catalyst is \emph{used then remade}.
+
+\begin{workedexample}[I do: telling them apart]
+In this mechanism, identify the catalyst and the intermediate:
+\begin{align*}
+\text{Step 1:}\quad & \ce{X + A -> XA} \\
+\text{Step 2:}\quad & \ce{XA + B -> C + X}
+\end{align*}
+
+\textbf{\ce{X} is the catalyst.} It is \emph{consumed} in step 1 and
+\emph{regenerated} in step 2 --- present at the start, present at the end,
+unchanged overall.
+
+\textbf{\ce{XA} is the intermediate.} It is \emph{produced} in step 1 and
+\emph{consumed} in step 2 --- absent at the start, absent at the end.
+
+\textbf{The test is the order of events.} Consumed first, then produced:
+catalyst. Produced first, then consumed: intermediate.
+
+\textbf{Overall:} \ce{A + B -> C}, with \ce{X} appearing nowhere ---
+which is why a catalyst is never written into the equation, only above the
+arrow.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 10 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item A species is produced in step 1 and consumed in step 3. What is
+        it? \workspace[1.4cm]
+  \item A species is consumed in step 1 and regenerated in step 3. What is
+        it? \workspace[1.4cm]
+  \item Why does neither appear in the overall equation?
+        \workspace[1.6cm]
+  \item Can a catalyst appear in the rate law? \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) an intermediate \quad (b) a catalyst \quad (c) both cancel
+when the steps are added \quad (d) yes, if it acts at or before the slow
+step}
+\keyonly{\begin{apcanswer}(a) An \textbf{intermediate}.
+(b) A \textbf{catalyst}.
+(c) Because both appear on \emph{both} sides when the steps are summed ---
+once as a product and once as a reactant --- so they cancel algebraically.
+(d) \textbf{Yes.} A catalyst is not a reactant overall, but if it
+participates in or before the rate-determining step, its concentration
+does affect the rate and can appear in the experimental rate law. This is
+common in enzyme and acid catalysis.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 11 \textbullet\ How a catalyst works}
+\ced{5.11}
+
+A catalyst provides an \emph{alternative pathway} with a lower activation
+energy. It does not push the old reaction harder --- it opens a new route.
+
+\begin{workedexample}[I do: what changes and what does not]
+State precisely what a catalyst changes and what it leaves alone.
+
+\textbf{Changes: the activation energy.} The new pathway has a lower
+barrier, so at any given temperature a larger fraction of collisions
+carries enough energy. The rate rises, often by orders of magnitude.
+
+\textbf{Does \emph{not} change $\Delta H$.} Reactants and products sit at
+exactly the same energies as before. Only the height of the hill between
+them is reduced --- the two ends are untouched.
+
+\textbf{Does \emph{not} change the equilibrium position or $K$.} The
+forward and reverse barriers are lowered by the \emph{same} amount, so
+both rates rise in the same proportion. Equilibrium arrives sooner, in
+exactly the same place.
+
+\textbf{Two answers that earn zero:} ``it lowers the energy of the
+reactants'' and ``it shifts the equilibrium toward products''. Both
+describe things a catalyst cannot do.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 11 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item What does a catalyst do to the activation energy?
+        \workspace[1.4cm]
+  \item What does it do to $\Delta H$? \workspace[1.4cm]
+  \item What does it do to the yield at equilibrium?
+        \workspace[1.4cm]
+  \item Explain why a catalyst speeds the reverse reaction too.
+        \workspace[1.8cm]
+\end{enumerate}
+\selfcheck{(a) lowers it, via a new pathway \quad (b) nothing \quad
+(c) nothing \quad (d) the same lowered barrier is crossed either way}
+\keyonly{\begin{apcanswer}(a) \textbf{Lowers} it, by providing an
+alternative pathway --- not by altering the original one.
+(b) \textbf{Nothing.} $\Delta H$ depends only on the energies of reactants
+and products, which are unchanged.
+(c) \textbf{Nothing.} The equilibrium position and $K$ are unaffected;
+only the time taken to reach equilibrium is shorter.
+(d) Because both directions pass over the \emph{same} transition state. A
+pathway with a lower barrier is a lower barrier whichever way it is
+crossed, so the reverse activation energy falls by the same amount and the
+reverse rate rises in the same proportion. That is precisely why the
+equilibrium position cannot shift.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Ladder 12 \textbullet\ Kinetics versus thermodynamics}
+\ced{5.5} \ced{5.6}
+
+Two independent questions: \emph{does it want to happen} (thermodynamics)
+and \emph{will it happen quickly} (kinetics). The answers need not agree.
+
+\begin{workedexample}[I do: favourable but immeasurably slow]
+Diamond converting to graphite has
+$\Delta G^\circ = \SI{-2.9}{\kilo\joule\per\mole}$ --- thermodynamically
+favourable at room temperature. Explain why diamonds do not visibly
+change.
+
+\textbf{Thermodynamics says it should happen.} A negative $\Delta G$ means
+graphite is the more stable form, and the conversion would release energy.
+
+\textbf{Kinetics says it will not, on any human timescale.} Rearranging
+diamond's covalent network requires breaking very strong \ce{C-C} bonds ---
+an enormous activation energy. At room temperature essentially no atom has
+that much energy, so the rate is indistinguishable from zero.
+
+\textbf{The general statement:} $\Delta G$ tells you about the
+\emph{destination}; $E_a$ tells you about the \emph{journey}. A large
+negative $\Delta G$ with a large $E_a$ describes a reaction that is
+strongly favourable and completely stuck --- which is why fuels can sit
+safely in a tank in air.
+\end{workedexample}
+
+\begin{yourturn}[YOUR TURN 12 --- four questions]
+\begin{enumerate}[leftmargin=*,itemsep=0.5em]
+  \item Petrol and oxygen do not react at room temperature although the
+        reaction is highly favourable. Why? \workspace[1.8cm]
+  \item What does a spark supply? \workspace[1.4cm]
+  \item Does a large equilibrium constant mean a fast reaction?
+        \workspace[1.6cm]
+  \item Name two ways to speed a reaction without changing $\Delta H$.
+        \workspace[1.6cm]
+\end{enumerate}
+\selfcheck{(a) high activation energy \quad (b) energy to surmount $E_a$
+\quad (c) no \quad (d) raise the temperature; add a catalyst}
+\keyonly{\begin{apcanswer}(a) The \textbf{activation energy is high}, so at
+room temperature almost no collisions carry enough energy. The mixture is
+under \textbf{kinetic control}: favourable but stuck.
+(b) Enough \textbf{energy} to get a small number of molecules over the
+activation barrier. Once started, the reaction is exothermic and supplies
+the energy to keep itself going.
+(c) \textbf{No.} $K$ measures how \emph{far} a reaction proceeds, not how
+\emph{fast}. The two are independent: a reaction with an enormous $K$ can
+be immeasurably slow if $E_a$ is large.
+(d) \textbf{Raise the temperature} (increases the fraction of collisions
+above $E_a$) and \textbf{add a catalyst} (lowers $E_a$ via a new
+pathway). Increasing concentration or surface area also works. None of
+them alters $\Delta H$.\end{apcanswer}}
+\end{yourturn}
+
+% =====================================================================
+\section*{\sffamily Where you stand}
+
+Tick a ladder only if all four YOUR TURN questions were right first time.
+
+\renewcommand{\arraystretch}{1.30}
+\noindent\begin{tabular}{@{}c p{6.0cm} c >{\raggedright\arraybackslash}p{4.9cm}@{}}
+\toprule
+\textbf{First try?} & \textbf{Skill} & \textbf{Ladder} &
+  \textbf{If not, re-read\ldots}\\
+\midrule
+$\square$ & expressing rate & 1 & divide by coefficients \\
+$\square$ & rate law from data & 2 & hold the others constant \\
+$\square$ & $k$ and its units & 3 & units follow the order \\
+$\square$ & which plot is straight & 4 & $\ln$ first, $1/[\ce{A}]$ second \\
+$\square$ & half-life & 5 & first order: independent of $c$ \\
+$\square$ & elementary steps & 6 & coefficients allowed only here \\
+$\square$ & collision model & 7 & the tail above $E_a$ \\
+$\square$ & energy profiles & 8 & peak minus start \\
+$\square$ & mechanisms & 9 & sum, then slow step \\
+$\square$ & intermediate vs catalyst & 10 & which comes first \\
+$\square$ & how catalysts work & 11 & new path, same $\Delta H$ \\
+$\square$ & kinetics vs thermodynamics & 12 & how fast vs how far \\
+\bottomrule
+\end{tabular}
+
+\begin{apcnote}[Scoring yourself honestly]
+12/12: move on to the unit worksheets and the free-response set.
+9--11: solid --- redo the missed ladders tomorrow from a blank page.
+8 or fewer: the recurring root causes here are exactly three ---
+(1) reading reaction orders off the balanced equation instead of from
+data or the slow step, (2) quoting a rate constant with no units, and
+(3) answering a rate question with a stability argument. Fix those three
+and most of these ladders fall together.
+\end{apcnote}
+
+\end{document}
