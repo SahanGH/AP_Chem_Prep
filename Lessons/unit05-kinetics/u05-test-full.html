@@ -1,0 +1,1974 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unit 5 • Comprehensive Test</title>
+<link rel="stylesheet" href="../style.css?v=86b60da1">
+<script>
+MathJax = { loader: { load: ['[tex]/mhchem'] },
+  tex: { packages: {'[+]': ['mhchem']},
+         inlineMath: [['\\(', '\\)']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="../lessons.js?v=86b60da1"></script>
+</head>
+<body>
+<header>
+  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
+  <p class="unit">Unit 5 • Kinetics</p>
+  <h1>Comprehensive Test</h1>
+  <p class="subtitle">CED 5.1–5.11 • Session 1: Parts A–B, 27 questions, 142 points, 150 minutes • Session 2: Parts C–E, 17 questions, 88 points, 100 minutes • Session 3: Part F, 13 questions, 111 points, 110 minutes</p>
+</header>
+<main>
+<div class="box note"><div class="box-title">How this paper runs</div>
+
+<strong>Three sessions, not one.</strong> Session 1 (Parts A–B) covers rate laws
+and integrated rate laws — the core of the unit and the largest session.
+Session 2 (Parts C–E) covers mechanisms, energetics, and catalysis.
+Session 3 (Part F) is a challenge set that goes past what the AP exam asks.
+Do not attempt more than one session in a single sitting.
+
+<p>Calculator, periodic table, and equations sheet are permitted throughout.
+<strong>Show every step.</strong> A bare final answer earns the answer mark only;
+the setup marks are for work you can point to. Carry units through each
+line and round only at the end.</p>
+
+</div>
+
+<div class="box note"><div class="box-title">Scope — read before Session 2</div>
+
+<p>One CED boundary shapes this paper more than any other: <span class="badge">CED 5.6</span> excludes
+<strong>calculations involving the Arrhenius equation</strong>
+(\(k = Ae^{-E_a/RT}\)) from the AP exam. You will still be asked to
+<em>read</em> an energy profile, identify \(E_a\), and reason about how
+temperature and catalysts change a rate — all core CED content. But
+solving \(k = Ae^{-E_a/RT}\) numerically, whether for \(E_a\), \(A\), or \(k\)
+itself, is flagged <strong>[beyond CED]</strong> throughout Parts D, E, and F. It is
+here because Arrhenius calculations are standard chemistry and because
+Unit&nbsp;9 electrochemistry leans on the same algebra.</p>
+
+</div>
+
+<h2>Section A • Rates and Rate Laws from Data <span class="sub">10 questions •\
+  50 points</span></h2>
+
+<h3 class="frq">Free-response 1 • short • 3 points</h3>
+
+<p>For \(\ce{4PH3(g) -> P4(g) + 6H2(g)}\), phosphine is consumed at
+0.0048&thinsp;mol/s in a 2.0&thinsp;L container.</p>
+
+Determine the rate of production of \(\ce{P4}\) and of \(\ce{H2}\).
+<div class="workspace" style="height:4cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — convert to a concentration
+rate.</strong>
+
+\(-\dfrac{d[\ce{PH3}]}{dt} = \dfrac{0.0048\,\mathrm{mol/s}}
+{2.0\,\mathrm{L}} = 0.0024\,\mathrm{M/s}\)
+
+<strong>Step 2 — divide by \(\ce{PH3}\)'s coefficient</strong> to reach the rate of
+reaction:
+
+\(\text{rate} = 0.0024/4 = 6.0e-4\,\mathrm{M/s}\)
+
+<strong>Step 3 — multiply by each product's coefficient.</strong>
+
+\(\dfrac{d[\ce{P4}]}{dt} = 1 \times 6.0\times10^{-4}
+= \mathbf{6.0\times10^{-4}}\)&nbsp;<strong>M/s</strong>
+
+\(\dfrac{d[\ce{H2}]}{dt} = 6 \times 6.0\times10^{-4}
+= \mathbf{3.6\times10^{-3}}\)&nbsp;<strong>M/s</strong></div></div>
+
+<h3 class="frq">Free-response 2 • short • 4 points</h3>
+
+<p>For \(\ce{2H2O2(aq) -> 2H2O(l) + O2(g)}\) at 40&thinsp;&deg;C:
+\([\ce{H2O2}] = 1.000\,\mathrm{M}\) at \(t=0\), 0.500&thinsp;M at
+\(t = 2.16e4\,\mathrm{s}\), 0.250&thinsp;M at
+\(t = 4.32e4\,\mathrm{s}\).</p>
+
+Calculate the average rate of \(\ce{H2O2}\) decomposition, and the
+corresponding average rate of \(\ce{O2}\) production, over each interval.
+<div class="workspace" style="height:5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Interval 1</strong> (\(0\) to
+2.16e4&thinsp;s):
+
+\(-\dfrac{\Delta[\ce{H2O2}]}{\Delta t} =
+\dfrac{1.000 - 0.500}{2.16\times10^4} = \mathbf{2.31\times10^{-5}}\)&nbsp;M/s
+
+<p>1:1 ratio in the decomposition step, but \(\ce{O2}\) carries coefficient 1
+against \(\ce{H2O2}\)'s 2, so halve it:
+\(d[\ce{O2}]/dt = \mathbf{1.16\times10^{-5}}\)&nbsp;M/s</p>
+
+<strong>Interval 2</strong> (\(2.16e4\,\mathrm{s}\) to 4.32e4&thinsp;s):
+
+\(-\dfrac{\Delta[\ce{H2O2}]}{\Delta t} =
+\dfrac{0.500-0.250}{2.16\times10^4} = \mathbf{1.16\times10^{-5}}\)&nbsp;M/s
+
+\(d[\ce{O2}]/dt = \mathbf{5.79\times10^{-6}}\)&nbsp;M/s
+
+<p>Both rates are half the previous interval's — worth noticing, since
+\(\ce{H2O2}\) also halves every 2.16e4&thinsp;s, the signature of first
+order (Part B builds on exactly this idea).</div></div></p>
+
+<h3 class="frq">Free-response 3 • short • 3 points</h3>
+
+For the reaction
+\[a\ce{A} + b\ce{B} \to c\ce{C}\]
+the average rates measured were:
+<ul>
+
+<li>\(-\Delta[\ce{A}]/\Delta t = 0.0080\,\mathrm{M/s}\)
+
+<li>\(-\Delta[\ce{B}]/\Delta t = 0.0120\,\mathrm{M/s}\)
+
+<li>\(\Delta[\ce{C}]/\Delta t = 0.0160\,\mathrm{M/s}\)
+</ul>
+
+Propose a possible set of coefficients \(a, b, c\).
+<div class="workspace" style="height:3.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — normalize the three rates</strong> to
+the smallest:
+
+\(0.0080 : 0.0120 : 0.0160 = 1 : 1.5 : 2\)
+
+<strong>Step 2 — clear the fraction</strong> by doubling:
+
+\(\mathbf{a=2,\ b=3,\ c=4}\)
+
+<p>Any whole-number multiple of \(2:3:4\) works equally well — rates fix only
+the <em>ratio</em> of coefficients, never their absolute
+size.</div></div></p>
+
+<h3 class="frq">Free-response 4 • short • 7 points</h3>
+
+\(\ce{BrO3^-(aq) + 5Br^-(aq) + 6H^+(aq) -> 3Br2(l) + 3H2O(l)}\) was studied at
+constant temperature. Rate is defined as \(-\Delta[\ce{BrO3^-}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>Exp.</th><th>\([\ce{BrO3^-}]_0\) (M)</th><th>\([\ce{Br^-}]_0\) (M)</th><th>\([\ce{H^+}]_0\) (M)</th><th>Rate (M/s)</th></tr>
+<tr><td>1</td><td>0.10</td><td>0.10</td><td>0.10</td><td>\(8.0\times10^{-4}\)</td></tr>
+<tr><td>2</td><td>0.20</td><td>0.10</td><td>0.10</td><td>\(1.6\times10^{-3}\)</td></tr>
+<tr><td>3</td><td>0.20</td><td>0.20</td><td>0.10</td><td>\(3.2\times10^{-3}\)</td></tr>
+<tr><td>4</td><td>0.10</td><td>0.10</td><td>0.20</td><td>\(3.2\times10^{-3}\)</td></tr>
+</table>
+
+</div>
+
+Determine the rate law and the rate constant.
+<div class="workspace" style="height:7cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{BrO3^-}\)</strong> (Exp 1\(\to\)2,
+others held fixed): concentration doubles, rate doubles
+(\(8.0\to16\times10^{-4}\)) \(\Rightarrow\) order \(\mathbf{1}\).
+
+<strong>Order in \(\ce{Br^-}\)</strong> (Exp 2\(\to\)3, others fixed): concentration
+doubles, rate doubles again \(\Rightarrow\) order \(\mathbf{1}\).
+
+<strong>Order in \(\ce{H^+}\)</strong> (Exp 1\(\to\)4, others fixed): concentration
+doubles, rate quadruples (\(8.0\to32\times10^{-4}\))
+\(\Rightarrow 2^n=4 \Rightarrow\) order \(\mathbf{2}\).
+
+\[\text{Rate} = k[\ce{BrO3^-}][\ce{Br^-}][\ce{H^+}]^2 \qquad
+\text{(overall order 4)}\]
+
+<strong>Rate constant</strong>, from Experiment 1:
+
+\(k = \dfrac{8.0\times10^{-4}}{(0.10)(0.10)(0.10)^2} = \mathbf{8.0}\)&nbsp;
+<strong>L<sup>3</sup>/mol<sup>3</sup> s</strong>
+
+<p>All four experiments return \(k=8.0\) — the check that the assumed
+rate law is right.</div></div></p>
+
+<h3 class="frq">Free-response 5 • short • 5 points</h3>
+
+\(\ce{2NO(g) + Cl2(g) -> 2NOCl(g)}\) at -10&thinsp;&deg;C, rate defined as
+\(-\Delta[\ce{Cl2}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>Exp.</th><th>\([\ce{NO}]_0\) (M)</th><th>\([\ce{Cl2}]_0\) (M)</th><th>Rate (M/min)</th></tr>
+<tr><td>1</td><td>0.10</td><td>0.10</td><td>0.18</td></tr>
+<tr><td>2</td><td>0.10</td><td>0.20</td><td>0.36</td></tr>
+<tr><td>3</td><td>0.20</td><td>0.20</td><td>1.45</td></tr>
+</table>
+
+</div>
+
+Determine the rate law and \(k\).
+<div class="workspace" style="height:5.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{Cl2}\)</strong> (Exp 1\(\to\)2, \(\ce{NO}\)
+fixed): doubles, rate doubles \(\Rightarrow\) order \(\mathbf{1}\).
+
+<strong>Order in \(\ce{NO}\)</strong> (Exp 2\(\to\)3, \(\ce{Cl2}\) fixed): doubles, rate
+roughly quadruples (\(0.36\to1.45\), ratio \(4.03\)) \(\Rightarrow\) order
+\(\mathbf{2}\).
+
+\[\text{Rate} = k[\ce{NO}]^2[\ce{Cl2}]\]
+
+<p>From Experiment 1: \(k = 0.18/[(0.10)^2(0.10)] = \mathbf{180}\)&nbsp;
+<strong>L<sup>2</sup>/mol<sup>2</sup> min</strong></p>
+
+<p>(2 sig figs: \(\mathbf{1.8\times10^2}\))</div></div></p>
+
+<h3 class="frq">Free-response 6 • short • 6 points</h3>
+
+\(\ce{2I^-(aq) + S2O8^2-(aq) -> I2(aq) + 2SO4^2-(aq)}\) at 25&thinsp;&deg;C,
+rate defined as \(-\Delta[\ce{S2O8^2-}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>Exp.</th><th>\([\ce{I^-}]_0\) (M)</th><th>\([\ce{S2O8^2-}]_0\) (M)</th><th>Rate (M/s)</th></tr>
+<tr><td>1</td><td>0.080</td><td>0.040</td><td>\(1.25\times10^{-5}\)</td></tr>
+<tr><td>2</td><td>0.040</td><td>0.040</td><td>\(6.25\times10^{-6}\)</td></tr>
+<tr><td>3</td><td>0.080</td><td>0.020</td><td>\(6.25\times10^{-6}\)</td></tr>
+<tr><td>4</td><td>0.032</td><td>0.040</td><td>\(5.00\times10^{-6}\)</td></tr>
+<tr><td>5</td><td>0.060</td><td>0.030</td><td>\(7.00\times10^{-6}\)</td></tr>
+</table>
+
+</div>
+
+Determine the rate law and an average value of \(k\).
+<div class="workspace" style="height:6.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{I^-}\)</strong> (Exp 1\(\to\)2,
+\(\ce{S2O8^2-}\) fixed): halves, rate halves \(\Rightarrow\) order \(\mathbf{1}\).
+
+<strong>Order in \(\ce{S2O8^2-}\)</strong> (Exp 1\(\to\)3, \(\ce{I^-}\) fixed): halves, rate
+halves \(\Rightarrow\) order \(\mathbf{1}\).
+
+\[\text{Rate} = k[\ce{I^-}][\ce{S2O8^2-}]\]
+
+\(k\) from each experiment: \(3.906,\ 3.906,\ 3.906,\ 3.906,\
+3.889 \ (\times10^{-3})\) — all agree to 3 sig figs.
+
+<strong>Average \(k \approx \mathbf{3.90\times10^{-3}}\) L/mol s.</strong></div></div>
+
+<h3 class="frq">Free-response 7 • short • 4 points</h3>
+
+\(\ce{2N2O5(g) -> 4NO2(g) + O2(g)}\), rate defined as \(-\Delta[\ce{N2O5}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{N2O5}]_0\) (M)</th><th>Rate (M/s)</th></tr>
+<tr><td>0.0750</td><td>\(8.90\times10^{-4}\)</td></tr>
+<tr><td>0.190</td><td>\(2.26\times10^{-3}\)</td></tr>
+<tr><td>0.275</td><td>\(3.26\times10^{-3}\)</td></tr>
+<tr><td>0.410</td><td>\(4.85\times10^{-3}\)</td></tr>
+</table>
+
+</div>
+
+There is only one reactant here, so every row must be consistent with the
+same order. Determine the rate law and \(k\).
+<div class="workspace" style="height:4.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Test first order</strong>: divide rate by
+\([\ce{N2O5}]\) in each row.
+
+\(8.90\times10^{-4}/0.0750 = 0.01187\)
+
+\(2.26\times10^{-3}/0.190 = 0.01189\)
+
+\(3.26\times10^{-3}/0.275 = 0.01185\)
+
+\(4.85\times10^{-3}/0.410 = 0.01183\)
+
+<p>All four give the <strong>same</strong> value within rounding — confirms first
+order without needing a second reactant to isolate.</p>
+
+\[\text{Rate} = k[\ce{N2O5}] \qquad \mathbf{k \approx
+0.0119}\ \text{s}^{-1}\]</div></div>
+
+<h3 class="frq">Free-response 8 • short • 6 points</h3>
+
+\(\ce{I^-(aq) + OCl^-(aq) -> IO^-(aq) + Cl^-(aq)}\).
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{I^-}]_0\) (M)</th><th>\([\ce{OCl^-}]_0\) (M)</th><th>Rate (M/s)</th></tr>
+<tr><td>0.12</td><td>0.18</td><td>\(7.91\times10^{-2}\)</td></tr>
+<tr><td>0.060</td><td>0.18</td><td>\(3.95\times10^{-2}\)</td></tr>
+<tr><td>0.030</td><td>0.090</td><td>\(9.88\times10^{-3}\)</td></tr>
+<tr><td>0.24</td><td>0.090</td><td>\(7.91\times10^{-2}\)</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine the rate law and \(k\). <div class="workspace" style="height:5.5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{I^-}\)</strong> (row 1\(\to\)2,
+        \(\ce{OCl^-}\) fixed): halves, rate halves \(\Rightarrow\) order
+        \(\mathbf{1}\).
+
+<strong>Order in \(\ce{OCl^-}\)</strong>: no two rows hold \(\ce{I^-}\) fixed while
+        varying \(\ce{OCl^-}\) alone, so first divide out the \(\ce{I^-}\)
+        dependence. Row 1: \(\text{rate}/[\ce{I^-}]=0.659\); row 3:
+        \(0.329\). \(\ce{OCl^-}\) goes \(0.090\to0.18\) (doubles) as this
+        normalized rate doubles \(\Rightarrow\) order \(\mathbf{1}\).
+
+\[\text{Rate} = k[\ce{I^-}][\ce{OCl^-}]\]
+
+<p>From row 1: \(k = 7.91\times10^{-2}/(0.12)(0.18)
+        = \mathbf{3.66}\)&nbsp;<strong>L/mol s</strong></div></div></p>
+
+<li>Predict the initial rate when \([\ce{I^-}]_0 = [\ce{OCl^-}]_0
+        = 0.15\,\mathrm{M}\). <div class="workspace" style="height:2.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\text{Rate} = 3.66 \times 0.15 \times
+        0.15 = \mathbf{0.0824}\)&nbsp;<strong>M/s</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 9 • short • 6 points</h3>
+
+\(\ce{2NO(g) + O2(g) -> 2NO2(g)}\), rate defined as \(-\Delta[\ce{O2}]/\Delta t\),
+concentrations in molecules/cm<sup>3</sup>.
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{NO}]_0\)</th><th>\([\ce{O2}]_0\)</th><th>Rate (molecules/cm<sup>3</sup> s)</th></tr>
+<tr><td>\(1.00\times10^{18}\)</td><td>\(1.00\times10^{18}\)</td><td>\(2.00\times10^{16}\)</td></tr>
+<tr><td>\(3.00\times10^{18}\)</td><td>\(1.00\times10^{18}\)</td><td>\(1.80\times10^{17}\)</td></tr>
+<tr><td>\(2.50\times10^{18}\)</td><td>\(2.50\times10^{18}\)</td><td>\(3.13\times10^{17}\)</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine the rate law and \(k\). <div class="workspace" style="height:5.5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{NO}\)</strong> (row 1\(\to\)2,
+        \(\ce{O2}\) fixed): \(\times3\) concentration, \(\times9\) rate
+        (\(2.00\to18.0\times10^{16}\)) \(\Rightarrow 3^n=9 \Rightarrow\) order
+        \(\mathbf{2}\).
+
+<strong>Order in \(\ce{O2}\)</strong>: normalize out \(\ce{NO}\)\(^2\) from rows 1
+        and 3 (rate\(/[\ce{NO}]^2\)): row 1 gives \(2.00\times10^{-20}\); row 3
+        gives \(5.01\times10^{-20}\); ratio \(\approx 2.5\), matching the
+        \([\ce{O2}]\) ratio of \(2.5\) exactly \(\Rightarrow\) order
+        \(\mathbf{1}\).
+
+\[\text{Rate} = k[\ce{NO}]^2[\ce{O2}]\]
+
+<p>From row 1: \((1.00\times10^{18})^2(1.00\times10^{18}) =
+        1.00\times10^{54}\), so</p>
+
+\[k = \frac{2.00\times10^{16}}{1.00\times10^{54}}
+        = \mathbf{2.00\times10^{-38}}\]
+        <strong>cm<sup>6</sup>/molecule<sup>2</sup> s</strong></div></div>
+
+<li>Predict the rate at \([\ce{NO}]_0 = 6.21\times10^{18}\),
+        \([\ce{O2}]_0 = 7.36\times10^{18}\) molecules/cm<sup>3</sup>.
+        <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\text{Rate} = 2.00\times10^{-38}
+        \times (6.21\times10^{18})^2 \times 7.36\times10^{18}
+        = \mathbf{5.68\times10^{18}}\)&nbsp;<strong>molecules/cm<sup>3</sup> s</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 10 • short • 6 points</h3>
+
+\(\ce{2ClO2(aq) + 2OH^-(aq) -> ClO3^-(aq) + ClO2^-(aq) + H2O(l)}\), rate
+defined as \(-\Delta[\ce{ClO2}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{ClO2}]_0\) (M)</th><th>\([\ce{OH^-}]_0\) (M)</th><th>Rate (M/s)</th></tr>
+<tr><td>0.0500</td><td>0.100</td><td>\(5.75\times10^{-2}\)</td></tr>
+<tr><td>0.100</td><td>0.100</td><td>\(2.30\times10^{-1}\)</td></tr>
+<tr><td>0.100</td><td>0.0500</td><td>\(1.15\times10^{-1}\)</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine the rate law and \(k\). <div class="workspace" style="height:5.5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{ClO2}\)</strong> (row 1\(\to\)2,
+        \(\ce{OH^-}\) fixed): doubles, rate quadruples \(\Rightarrow\) order
+        \(\mathbf{2}\).
+
+<strong>Order in \(\ce{OH^-}\)</strong> (row 2\(\to\)3, \(\ce{ClO2}\) fixed): halves,
+        rate halves \(\Rightarrow\) order \(\mathbf{1}\).
+
+\[\text{Rate} = k[\ce{ClO2}]^2[\ce{OH^-}]\]
+
+<p>From row 1: \(k = 5.75\times10^{-2}/[(0.0500)^2(0.100)]
+        = \mathbf{230}\)&nbsp;<strong>L<sup>2</sup>/mol<sup>2</sup> s</strong></div></div></p>
+
+<li>Predict the initial rate at \([\ce{ClO2}]_0 = 0.175\,\mathrm{M}\),
+        \([\ce{OH^-}]_0 = 0.0844\,\mathrm{M}\). <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\text{Rate} = 230 \times (0.175)^2
+        \times 0.0844 = \mathbf{0.594}\)&nbsp;<strong>M/s</strong></div></div>
+</ol>
+
+<h2>Section B • Integrated Rate Laws and Half-Life <span class="sub">17 questions
+  • 92 points</span></h2>
+
+<div class="box note"><div class="box-title">The three straight-line tests</div>
+
+<p>Every item in this section reduces to one question: which quantity, plotted
+against time, gives a <em>straight line</em>? \([\ce{A}]\) linear
+\(\Rightarrow\) zero order. \(\ln[\ce{A}]\) linear \(\Rightarrow\) first order.
+\(1/[\ce{A}]\) linear \(\Rightarrow\) second order. Do not guess the order from
+how the curve <em>looks</em> — test a transform and check that it is
+actually straight.</p>
+
+</div>
+
+<h3 class="frq">Free-response 11 • short • 6 points</h3>
+
+\(\ce{2N2O5(soln) -> 4NO2(soln) + O2(g)}\). Rate is defined as
+\(-\Delta[\ce{N2O5}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{N2O5}]\) (M)</th><th>Time (s)</th></tr>
+<tr><td>0.1000</td><td>0</td></tr>
+<tr><td>0.0707</td><td>50</td></tr>
+<tr><td>0.0500</td><td>100</td></tr>
+<tr><td>0.0250</td><td>200</td></tr>
+<tr><td>0.0125</td><td>300</td></tr>
+<tr><td>0.00625</td><td>400</td></tr>
+</table>
+
+</div>
+
+Show that this reaction is first order, and determine \(k\).
+<div class="workspace" style="height:6cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — build a \(\ln[\ce{N2O5}]\)
+column.</strong> \(-2.303,\ -2.649,\ -2.996,\ -3.689,\ -4.382,\ -5.075\).
+
+<strong>Step 2 — check linearity.</strong> Plotted against \(t=0,50,\ldots,400\)&nbsp;s,
+these fall on a straight line (the successive drops are
+\(-0.346,-0.347,-0.693,-0.693,-0.693\) per interval — constant per unit
+time, exactly what a straight line requires). <strong>First order
+confirmed.</strong>
+
+<strong>Step 3 — slope.</strong> Using the full data set (best-fit line):
+slope \(= \mathbf{-6.93\times10^{-3}}\ \text{s}^{-1}\)
+
+\[k = -\text{slope} = \mathbf{6.93\times10^{-3}}\ \text{s}^{-1}\]</div></div>
+
+<h3 class="frq">Free-response 12 • short • 3 points</h3>
+
+Using the reaction and \(k = 6.93e-3\,\mathrm{/s}\) from the previous
+question, predict \([\ce{N2O5}]\) at \(t = 150\,\mathrm{s}\).
+<div class="workspace" style="height:3.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ln[\ce{N2O5}] = \ln(0.1000) - (6.93\times10^{-3})(150)
+= -2.303 - 1.040 = -3.343\)
+
+\([\ce{N2O5}] = e^{-3.343} = \mathbf{0.0354}\)&nbsp;<strong>M</strong>
+
+<p>Note this is <em>not</em> the simple average of the \(t=100\) and \(t=200\)
+values (\(0.0500\) and \(0.0250\), average \(0.0375\)) — \(\ln[\ce{A}]\) is
+linear in \(t\), not \([\ce{A}]\) itself.</div></div></p>
+
+<h3 class="frq">Free-response 13 • short • 4 points</h3>
+
+<p>A first-order reaction has \(t_{1/2} = 20.0\,\mathrm{min}\).</p>
+
+<ol class="parts" type="a">
+
+<li>Find \(k\). <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find the time for the reaction to reach 75&thinsp;%
+        completion. <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>75% complete leaves 25% remaining, so
+        \([\ce{A}]_0/[\ce{A}] = 4.0\).
+
+\(t = \ln(4.0)/k = 1.386/0.0347 = \mathbf{40.}\)&nbsp;<strong>min</strong>
+
+<p>Check: two half-lives (\(2\times20.0\)) leaves
+        \(100\%\to50\%\to25\%\) — 40&thinsp;min matches
+        directly.</div></div>
+</ol></p>
+
+<h3 class="frq">Free-response 14 • long • 8 points</h3>
+
+\(\ce{2C4H6(g) -> C8H12(g)}\) (butadiene dimerization).
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{C4H6}]\) (M)</th><th>Time (s)</th></tr>
+<tr><td>0.01000</td><td>0</td></tr>
+<tr><td>0.00625</td><td>1000</td></tr>
+<tr><td>0.00476</td><td>1800</td></tr>
+<tr><td>0.00370</td><td>2800</td></tr>
+<tr><td>0.00313</td><td>3600</td></tr>
+<tr><td>0.00270</td><td>4400</td></tr>
+<tr><td>0.00241</td><td>5200</td></tr>
+<tr><td>0.00208</td><td>6200</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine whether the reaction is first or second order.
+        <div class="workspace" style="height:4.5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Test both transforms.
+
+\(\ln[\ce{C4H6}]\) values:
+        \(-4.605,-5.075,-5.348,-5.599,-5.767,-5.915,-6.028,-6.175\)
+        — the drops shrink steadily (\(-0.470,-0.273,-0.251,\ldots\)), so
+        this is <strong>curved</strong>, not linear.
+
+\(1/[\ce{C4H6}]\): \(100,\ 160,\ 210,\ 270,\ 320,\ 370,\ 415,\ 481\)
+        — the rises are close to constant per 800&nbsp;s step, a
+        <strong>straight line</strong>.
+
+<strong>Second order</strong> — only \(1/[\ce{A}]\) is
+        linear.</div></div>
+
+<li>Find \(k\). <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>slope of \(1/[\ce{A}]\) vs. \(t\)
+        (full data): \(\mathbf{k \approx 6.12\times10^{-2}}\)&nbsp;
+        <strong>L/mol s</strong></div></div>
+
+<li>Find the half-life under these initial conditions.
+        <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t_{1/2} = 1/(k[\ce{A}]_0) =
+        1/(0.0612 \times 0.01000) = \mathbf{1.63\times10^3}\)&nbsp;
+        <strong>s</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 15 • short • 5 points</h3>
+
+<p>For \(a\ce{A} \to b\ce{B}\), \([\ce{A}]_0 = 2.00e-2\,\mathrm{M}\). A plot of
+\(\ln[\ce{A}]\) vs. time is linear with slope
+\(-2.97e-2\,\mathrm{/min}\).</p>
+
+<ol class="parts" type="a">
+
+<li>State the rate law and \(k\). <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find the half-life. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find the time for \([\ce{A}]\) to reach \(2.50e-3\,\mathrm{M}\).
+        <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t = \dfrac{\ln([\ce{A}]_0/[\ce{A}])}{k}
+        = \dfrac{\ln(2.00\times10^{-2}/2.50\times10^{-3})}{0.0297}
+        = \dfrac{\ln(8.0)}{0.0297} = \mathbf{70.0}\)&nbsp;<strong>min</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 16 • long • 8 points</h3>
+
+\(\ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}\), rate defined as
+\(-\Delta[\ce{NO2}]/\Delta t\).
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{NO2}]\) (M)</th><th>Time (s)</th></tr>
+<tr><td>0.500</td><td>0</td></tr>
+<tr><td>0.444</td><td>1200</td></tr>
+<tr><td>0.381</td><td>3000</td></tr>
+<tr><td>0.340</td><td>4500</td></tr>
+<tr><td>0.250</td><td>9000</td></tr>
+<tr><td>0.174</td><td>18000</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine the order and the rate law. <div class="workspace" style="height:4.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Plotting \(\ln[\ce{NO2}]\) against \(t\)
+        gives shrinking drops — curved. Plotting \(1/[\ce{NO2}]\) against
+        \(t\) instead (\(2.00,\ 2.25,\ 2.63,\ 2.94,\ 4.00,\ 5.75\)) rises at a
+        consistent rate per unit time: <strong>linear</strong>.
+
+<strong>Second order</strong>: Rate \(=k[\ce{NO2}]^2\).</div></div>
+
+<li>Find \(k\). <div class="workspace" style="height:2cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>slope of \(1/[\ce{NO2}]\) vs. \(t\)
+        (full data): \(\mathbf{k \approx 2.10\times10^{-4}}\)&nbsp;
+        <strong>L/mol s</strong></div></div>
+
+<li>Predict \([\ce{NO2}]\) at \(t = 27000\,\mathrm{s}\).
+        <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\dfrac{1}{[\ce{NO2}]} =
+        \dfrac{1}{0.500} + (2.10\times10^{-4})(27000)
+        = 2.00 + 5.67 = 7.67\)
+
+\([\ce{NO2}] = \mathbf{0.130}\)&nbsp;<strong>M</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 17 • short • 5 points</h3>
+
+<p>For \(a\ce{A} \to b\ce{B}\), \([\ce{A}]_0 = 2.80e-3\,\mathrm{M}\). A plot of
+\(1/[\ce{A}]\) vs. time is linear with slope
+\(+3.60e-2\,\mathrm{L/mol/s}\).</p>
+
+<ol class="parts" type="a">
+
+<li>Find the half-life. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t_{1/2} = \dfrac{1}{k[\ce{A}]_0} =
+        \dfrac{1}{(0.0360)(2.80\times10^{-3})}
+        = \mathbf{9.92\times10^3}\)&nbsp;<strong>s</strong></div></div>
+
+<li>Find the time for \([\ce{A}]\) to reach \(7.00e-4\,\mathrm{M}\).
+        <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t = \dfrac{1/[\ce{A}] -
+        1/[\ce{A}]_0}{k} = \dfrac{1/(7.00\times10^{-4}) -
+        1/(2.80\times10^{-3})}{0.0360}
+        = \mathbf{2.98\times10^4}\)&nbsp;<strong>s</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 18 • short • 4 points</h3>
+
+\(\ce{C2H5OH(g) ->[Al2O3] C2H4(g) + H2O(g)}\) at 600&thinsp;K. A plot of
+\([\ce{C2H5OH}]\) vs. time is <em>itself</em> linear, slope
+\(-4.00e-5\,\mathrm{M/s}\).
+
+<ol class="parts" type="a">
+
+<li>Find the half-life given \([\ce{C2H5OH}]_0 = 1.25e-2\,\mathrm{M}\).
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find the time for complete decomposition.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h3 class="frq">Free-response 19 • long • 7 points</h3>
+
+\(\ce{C2H5OH(g) ->[Cu] CH3CHO(g) + H2(g)}\) at 500&thinsp;K, followed by
+the partial pressure of ethanol.
+
+<div class="center">
+
+<table>
+<tr><th>\(P_{\ce{C2H5OH}}\) (torr)</th><th>Time (s)</th></tr>
+<tr><td>250.</td><td>0</td></tr>
+<tr><td>237</td><td>100</td></tr>
+<tr><td>224</td><td>200</td></tr>
+<tr><td>211</td><td>300</td></tr>
+<tr><td>198</td><td>400</td></tr>
+<tr><td>185</td><td>500</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine the order. <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Successive pressures drop by exactly
+        13&thinsp; every 100&thinsp;s
+        (\(250\to237\to224\to211\to198\to185\)) — a <em>constant</em>
+        difference per unit time is the signature of a <strong>zero-order</strong>
+        process (pressure standing in for concentration
+        here).</div></div>
+
+<li>Find \(k\) and the (equivalent) rate law. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(k = 13\,\mathrm{}/100\,\mathrm{s}
+        = \mathbf{0.130}\)&nbsp;<strong>torr/s</strong>
+
+<p>Rate \(= k\) (independent of \(P_{\ce{C2H5OH}}\))</div></div></p>
+
+<li>Predict \(P_{\ce{C2H5OH}}\) at \(t = 900\,\mathrm{s}\).
+        <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(P = 250 - (0.130)(900) = 250 - 117
+        = \mathbf{133}\)&nbsp;<strong>torr</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 20 • long • 6 points</h3>
+
+\(\ce{O(g) + NO2(g) -> NO(g) + O2(g)}\). \(\ce{NO2}\) is held in a large excess,
+\(1.0\times10^{13}\) molecules/cm<sup>3</sup>, while \(\ce{O}\) is
+followed:
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{O}]\) (atoms/cm<sup>3</sup>)</th><th>Time (s)</th></tr>
+<tr><td>\(5.0\times10^9\)</td><td>0</td></tr>
+<tr><td>\(1.9\times10^9\)</td><td>\(1.0\times10^{-2}\)</td></tr>
+<tr><td>\(6.8\times10^8\)</td><td>\(2.0\times10^{-2}\)</td></tr>
+<tr><td>\(2.5\times10^8\)</td><td>\(3.0\times10^{-2}\)</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Determine the order with respect to \(\ce{O}\). <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ln[\ce{O}]\) drops by close to a
+        constant amount every \(1.0\times10^{-2}\)&nbsp;s
+        (\(22.3\to21.4\to20.3\to19.3\), drops of about \(-1.0\) each time)
+        — <strong>linear</strong>, so <strong>first order</strong> in
+        \(\ce{O}\).</div></div>
+
+<li>Given that the reaction is also first order in \(\ce{NO2}\), write the
+        overall rate law and find \(k\). <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\[\text{Rate} = k[\ce{O}][\ce{NO2}]\]
+
+<p>Pseudo-rate constant from part (a)'s slope:
+        \(k' \approx 100\,\mathrm{/s}\)</p>
+
+<p>Since \(\ce{NO2}\) was flooded at \(1.0\times10^{13}\):</p>
+
+\(k = k'/[\ce{NO2}] = 100/(1.0\times10^{13})
+        = \mathbf{1.0\times10^{-11}}\)&nbsp;<strong>cm<sup>3</sup>/molecule s</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 21 • short • 4 points</h3>
+
+<p>For \(\ce{A} -> 2\ce{B} + \ce{C}\), the same data are plotted three ways:
+\([\ce{A}]\) vs. time, \(\ln[\ce{A}]\) vs. time, and \(1/[\ce{A}]\) vs. time.
+Only the \(1/[\ce{A}]\) panel is a straight line, running from about
+\((1\text{ s}, 20)\) to \((6\text{ s}, 70)\); the other two panels both curve.
+The \([\ce{A}]\)-vs-time panel's first plotted point sits almost exactly on
+the axis's top gridline, \([\ce{A}] = 0.05\,\mathrm{M}\).</p>
+
+What is the order with respect to \(\ce{A}\), and what is the initial
+concentration of \(\ce{A}\)?
+<div class="workspace" style="height:4cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Only the \(1/[\ce{A}]\) plot is linear, so the
+reaction is <strong>second order</strong> in \(\ce{A}\).
+
+<p>Reading the \([\ce{A}]\)-vs-time panel back to \(t=0\): \([\ce{A}]_0 \approx
+\mathbf{0.050}\)&nbsp;<strong>M</strong> (accept 0.048&thinsp;M to
+0.052&thinsp;M — this is a graph-reading estimate, not a
+calculation).</div></div></p>
+
+<h3 class="frq">Free-response 22 • short • 5 points</h3>
+
+\(\ce{2HI(g) ->[Au] H2(g) + I2(g)}\) is zero order in \(\ce{HI}\) at
+150&thinsp;&deg;C: \(k = 1.20e-4\,\mathrm{M/s}\).
+
+<ol class="parts" type="a">
+
+<li>Find \([\ce{HI}]\) 25&thinsp;min after the start, if
+        \([\ce{HI}]_0 = 0.250\,\mathrm{M}\). <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t = 25 \times 60 = 1500\,\mathrm{s}\)
+
+\([\ce{HI}] = 0.250 - (1.20\times10^{-4})(1500)
+        = 0.250 - 0.180 = \mathbf{0.070}\)&nbsp;<strong>M</strong></div></div>
+
+<li>Find the time for all 0.250&thinsp;M \(\ce{HI}\) to decompose.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h3 class="frq">Free-response 23 • short • 4 points</h3>
+
+A first-order reaction is 45.0&thinsp;% complete in 65&thinsp;s.
+Find \(k\) and \(t_{1/2}\).
+<div class="workspace" style="height:4cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>45.0% complete leaves 55.0% remaining:
+\([\ce{A}]_0/[\ce{A}] = 1/0.550 = 1.818\).
+
+\(k = \ln(1.818)/65 = 0.598/65 = \mathbf{9.20\times10^{-3}}\)&nbsp;
+<strong>s<sup>-1</sup></strong>
+
+\(t_{1/2} = 0.693/k = \mathbf{75.3}\)&nbsp;<strong>s</strong></div></div>
+
+<h3 class="frq">Free-response 24 • short • 5 points</h3>
+
+<p>A first-order reaction is 75.0&thinsp;% complete in 320.&thinsp;s.</p>
+
+<ol class="parts" type="a">
+
+<li>Find the first and second half-lives. <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>75.0% complete = 2 half-lives exactly
+        (\(100\to50\to25\)), so \(2\,t_{1/2} = 320.\)&nbsp;s \(\Rightarrow
+        t_{1/2} = \mathbf{160.}\)&nbsp;s.
+
+<strong>First-order half-life is constant</strong>: the
+        <strong>second</strong> half-life is also <strong>160.&nbsp;s</strong>.</div></div>
+
+<li>Find the time for 90.0&thinsp;% completion. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(k = 0.693/160. = 4.33\times10^{-3}\)
+        s<sup>-1</sup>
+
+<p>10.0% remains: \(t = \ln(1/0.100)/k = 2.303/0.00433
+        = \mathbf{532}\)&nbsp;<strong>s</strong></div></div>
+</ol></p>
+
+<h3 class="frq">Free-response 25 • short • 5 points</h3>
+
+<p>Rate \(=-\Delta[\ce{PH3}]/\Delta t = k[\ce{PH3}]\). It takes 120.&thinsp;s
+for 1.00&thinsp;M \(\ce{PH3}\) to fall to 0.250&thinsp;M.</p>
+
+Find the time for 2.00&thinsp;M \(\ce{PH3}\) to fall to 0.350&thinsp;M.
+<div class="workspace" style="height:5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — find \(k\)</strong> from the first
+scenario:
+
+\(k = \ln(1.00/0.250)/120. = \ln(4.00)/120. = 1.386/120.
+= \mathbf{1.155\times10^{-2}}\)&nbsp;s<sup>-1</sup>
+
+<strong>Step 2 — apply \(k\) to the new scenario.</strong> First order means \(k\)
+does not depend on the starting concentration:
+
+\(t = \ln(2.00/0.350)/k = \ln(5.714)/0.01155 = 1.743/0.01155
+= \mathbf{151}\)&nbsp;<strong>s</strong></div></div>
+
+<h3 class="frq">Free-response 26 • short • 5 points</h3>
+
+<p>Rate \(=-\Delta[\ce{NOBr}]/\Delta t = k[\ce{NOBr}]^2\) for
+\(\ce{2NOBr(g) -> 2NO(g) + Br2(g)}\). \(t_{1/2} = 2.00\,\mathrm{s}\) when
+\([\ce{NOBr}]_0 = 0.900\,\mathrm{M}\).</p>
+
+<ol class="parts" type="a">
+
+<li>Find \(k\). <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find the time for \([\ce{NOBr}]\) to reach 0.100&thinsp;M.
+        <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t = \dfrac{1/[\ce{A}] - 1/[\ce{A}]_0}{k}
+        = \dfrac{1/0.100 - 1/0.900}{0.556} = \dfrac{10.0 - 1.11}{0.556}
+        = \mathbf{16.0}\)&nbsp;<strong>s</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 27 • long • 8 points</h3>
+
+\(\ce{A} + \ce{B} + 2\ce{C} \to 2\ce{D} + 3\ce{E}\), Rate
+\(=-\Delta[\ce{A}]/\Delta t = k[\ce{A}][\ce{B}]^2\).
+\([\ce{A}]_0 = 1.0e-2\,\mathrm{M}\), \([\ce{B}]_0 = 3.0\,\mathrm{M}\),
+\([\ce{C}]_0 = 2.0\,\mathrm{M}\). After 8.0&thinsp;s,
+\([\ce{A}] = 3.8e-3\,\mathrm{M}\).
+
+<ol class="parts" type="a">
+
+<li>Find \(k\). <div class="workspace" style="height:4.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ce{B}\) and \(\ce{C}\) are both in such large
+        excess over \(\ce{A}\) that \([\ce{B}]\) barely changes — treat it as
+        constant. Rate becomes <strong>pseudo-first-order</strong> in \(\ce{A}\):
+
+\(\ln([\ce{A}]_0/[\ce{A}]) = k'[\ce{B}]_0^0 t\)... more precisely,
+        with \(k' = k[\ce{B}]_0^2\) held constant:
+
+\(k' = \ln(1.0\times10^{-2}/3.8\times10^{-3})/8.0
+        = \ln(2.632)/8.0 = 0.968/8.0 = \mathbf{0.1209}\)&nbsp;s<sup>-1</sup>
+
+\(k = k'/[\ce{B}]_0^2 = 0.1209/(3.0)^2
+        = \mathbf{0.0134}\)&nbsp;<strong>L<sup>2</sup>/mol<sup>2</sup> s</strong></div></div>
+
+<li>Find the half-life for this experiment. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find \([\ce{A}]\) after 13.0&thinsp;s. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\([\ce{A}] = [\ce{A}]_0\,e^{-k't} =
+        (1.0\times10^{-2})e^{-(0.1209)(13.0)}
+        = \mathbf{2.08\times10^{-3}}\)&nbsp;<strong>M</strong></div></div>
+
+<li>Find \([\ce{C}]\) after 13.0&thinsp;s. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ce{C}\) is consumed 2 mol per 1 mol of
+        \(\ce{A}\):
+
+\(\Delta[\ce{A}] = 1.0\times10^{-2} - 2.08\times10^{-3}
+        = 7.92\times10^{-3}\)&nbsp;M
+
+\([\ce{C}] = 2.0 - 2(7.92\times10^{-3}) =
+        \mathbf{1.98}\)&nbsp;<strong>M</strong></div></div>
+</ol>
+
+<h2>Section C • Reaction Mechanisms <span class="sub">7 questions • 36
+  points</span></h2>
+
+<h3 class="frq">Free-response 28 • short • 5 points</h3>
+
+\(\ce{2NO2(g) + F2(g) -> 2NO2F(g)}\) has experimental rate law
+Rate \(=k[\ce{NO2}][\ce{F2}]\). A proposed mechanism:
+
+<div class="center">
+\(\ce{NO2 + F2 ->[ M383 , slow] NO2F + F}\)<br>
+\(\ce{F + NO2 ->[ M384 , fast] NO2F}\)
+</div>
+
+Is this mechanism acceptable? Justify against <em>both</em> requirements a
+mechanism must satisfy.
+<div class="workspace" style="height:5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Requirement 1 — the steps sum to the
+overall equation.</strong> Adding the two steps: \(\ce{NO2}+\ce{F2}+\ce{F}+\ce{NO2}
+\to \ce{NO2F}+\ce{F}+\ce{NO2F}\); the intermediate \(\ce{F}\) cancels, leaving
+\(2\ce{NO2}+\ce{F2}\to2\ce{NO2F}\). ✓
+
+<strong>Requirement 2 — the mechanism predicts the observed rate law.</strong>
+Step 1 is the slow, rate-determining step, and it is bimolecular:
+
+\[\text{Rate} = k_1[\ce{NO2}][\ce{F2}]\]
+
+<p>This matches the experimental rate law exactly. ✓</p>
+
+<strong>Yes, acceptable.</strong> This does <em>not</em> prove the mechanism is
+correct — only that it is consistent. A different mechanism could
+reproduce the same rate law.</div></div>
+
+<h3 class="frq">Free-response 29 • short • 7 points</h3>
+
+\(\ce{Cl2(g) + CHCl3(g) -> HCl(g) + CCl4(g)}\) has experimental rate law
+Rate \(=k[\ce{Cl2}]^{1/2}[\ce{CHCl3}]\). A proposed mechanism:
+
+<div class="center">
+\(\ce{Cl2 <=>[ M388 ][ M389 ] 2Cl}\)  &emsp; (fast equilibrium)<br>
+\(\ce{Cl + CHCl3 ->[ M390 , slow] HCl + CCl3}\)<br>
+\(\ce{CCl3 + Cl ->[ M391 , fast] CCl4}\)
+</div>
+
+Show that this mechanism predicts the observed rate law.
+<div class="workspace" style="height:6cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — rate from the RDS.</strong> The slow
+step is rate-determining:
+
+\[\text{Rate} = k_2[\ce{Cl}][\ce{CHCl3}]\]
+
+<strong>Step 2 — \(\ce{Cl}\) is an intermediate</strong>, so it must be eliminated
+using the fast equilibrium, where forward and reverse rates are equal:
+
+\[k_1[\ce{Cl2}] = k_{-1}[\ce{Cl}]^2 \ \Rightarrow\
+[\ce{Cl}] = \left(\frac{k_1}{k_{-1}}\right)^{1/2}[\ce{Cl2}]^{1/2}\]
+
+<strong>Step 3 — substitute back.</strong>
+
+\[\text{Rate} = k_2\left(\frac{k_1}{k_{-1}}\right)^{1/2}
+[\ce{Cl2}]^{1/2}[\ce{CHCl3}] = k[\ce{Cl2}]^{1/2}[\ce{CHCl3}]\]
+
+<p>This matches the observed half-order dependence on \(\ce{Cl2}\) — the kind
+of fractional order that <em>always</em> signals a pre-equilibrium step
+producing the true reactant of the RDS.</div></div></p>
+
+<h3 class="frq">Free-response 30 • short • 4 points</h3>
+
+<p>A proposed mechanism for hydrogen peroxide decomposition:</p>
+
+<div class="center">
+\(\ce{H2O2 -> 2OH}\)<br>
+\(\ce{H2O2 + OH -> H2O + HO2}\)<br>
+\(\ce{HO2 + OH -> H2O + O2}\)
+</div>
+
+\(\ce{H2O2}\) decomposition is experimentally observed to be (close to) first
+order overall. \(\ce{OH}\) is an extremely reactive radical that, once formed,
+is consumed almost immediately.
+
+Which step is the most reasonable candidate for rate-determining, and
+what is the overall balanced equation?
+<div class="workspace" style="height:4.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>The second step</strong>
+(\(\ce{H2O2 + OH -> H2O + HO2}\)) is the best candidate.
+
+<p>The first step produces \(\ce{OH}\), but a species this reactive cannot be the
+one that piles up waiting to react — it reacts on the next collision.
+Once formed, its fate is either step 2 or step 3; since step 2 involves
+\(\ce{H2O2}\) (the species whose concentration is large and whose decay is
+being tracked), making step 2 rate-determining reproduces the observed
+near-first-order dependence on \(\ce{H2O2}\).</p>
+
+<strong>Overall equation</strong> — add all three steps and cancel intermediates
+(\(\ce{OH}\) appears \(1-1-1=-1\)... more carefully: \(\ce{OH}\) is produced twice in
+step 1 and consumed once each in steps 2 and 3, cancelling completely;
+\(\ce{HO2}\) produced in step 2 and consumed in step 3):
+
+\[2\ce{H2O2(aq) -> 2H2O(l) + O2(g)}\]</div></div>
+
+<h3 class="frq">Free-response 31 • short • 5 points</h3>
+
+<p>A proposed mechanism:</p>
+
+<div class="center">
+\(\ce{C4H9Br ->[slow] C4H9^+ + Br^-}\)<br>
+\(\ce{C4H9^+ + H2O ->[fast] C4H9OH2^+}\)<br>
+\(\ce{C4H9OH2^+ + H2O ->[fast] C4H9OH + H3O^+}\)
+</div>
+
+<ol class="parts" type="a">
+
+<li>Write the rate law implied by this mechanism.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Write the overall balanced equation. <div class="workspace" style="height:2cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\ce{C4H9Br(aq) + 2H2O(l) ->
+        C4H9OH(aq) + H3O^+(aq) + Br^-(aq)}\)</div></div>
+
+<li>Identify the intermediates. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h3 class="frq">Free-response 32 • short • 4 points</h3>
+
+<p>The gas-phase reaction of nitrogen dioxide with carbon monoxide is thought
+to proceed by:</p>
+
+<div class="center">
+\(\ce{NO2 + NO2 ->[slow] NO3 + NO}\)<br>
+\(\ce{NO3 + CO ->[fast] NO2 + CO2}\)
+</div>
+
+Write the rate law implied by this mechanism and the overall balanced
+equation.
+<div class="workspace" style="height:3.4cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The slow step is bimolecular in \(\ce{NO2}\) with
+itself:
+
+\[\text{Rate} = k[\ce{NO2}]^2\]
+
+<p>Adding the steps, \(\ce{NO3}\) (intermediate) cancels:</p>
+
+\[\ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}\]
+
+<p>Note this rate law does <em>not</em> depend on \(\ce{[CO]}\) at all — CO only
+appears in the fast step after the rate is already set.</div></div></p>
+
+<h3 class="frq">Free-response 33 • short • 5 points</h3>
+
+<p>Recall from Part A that \(\ce{2NO(g) + Cl2(g) -> 2NOCl(g)}\) has rate law
+Rate \(=k[\ce{NO}]^2[\ce{Cl2}]\). A proposed mechanism:</p>
+
+<div class="center">
+\(\ce{NO + Cl2 ->[ M395 ] NOCl2}\)<br>
+\(\ce{NOCl2 + NO ->[ M396 ] 2NOCl}\)
+</div>
+
+(Neither step is labeled slow or fast in this proposal.) Is this
+mechanism consistent with the rate law above? If so, which step must be
+rate-determining?
+<div class="workspace" style="height:5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Try step 2 as rate-determining</strong>, with
+step 1 as a fast, reversible pre-equilibrium.
+
+<p>If step 1 is fast equilibrium: \(k_1[\ce{NO}][\ce{Cl2}] =
+k_{-1}[\ce{NOCl2}] \Rightarrow [\ce{NOCl2}] =
+\dfrac{k_1}{k_{-1}}[\ce{NO}][\ce{Cl2}]\)</p>
+
+<p>Rate from step 2 (the RDS): \(\text{Rate} = k_2[\ce{NOCl2}][\ce{NO}]
+= k_2\dfrac{k_1}{k_{-1}}[\ce{NO}]^2[\ce{Cl2}] = k[\ce{NO}]^2[\ce{Cl2}]\)</p>
+
+<p>This <strong>matches</strong> the observed rate law.</p>
+
+<strong>Yes, consistent</strong>, provided <strong>step 2 is
+rate-determining</strong> and step 1 is a fast equilibrium (not literally
+irreversible, despite lacking a reverse arrow in the shorthand above). If
+step 1 were rate-determining instead, the rate law would be
+\(k_1[\ce{NO}][\ce{Cl2}]\) — first order in \(\ce{NO}\), which does <em>not</em>
+match.</div></div>
+
+<h3 class="frq">Free-response 34 • short • 6 points</h3>
+
+\(\ce{2NO(g) + O2(g) -> 2NO2(g)}\) exhibits Rate \(=k[\ce{NO}]^2[\ce{O2}]\).
+Which mechanism below, if any, is consistent?
+
+<div class="center">
+<strong>(a)</strong> &emsp;  \(\ce{NO + O2 ->[slow] NO2 + O}\) &emsp;&emsp; 
+\(\ce{O + NO ->[fast] NO2}\)
+
+<strong>(b)</strong> &emsp;  \(\ce{NO + O2 <=>[fast eq.] NO3}\) &emsp;&emsp; 
+\(\ce{NO3 + NO ->[slow] 2NO2}\)
+
+<strong>(c)</strong> &emsp;  \(\ce{2NO ->[slow] N2O2}\) &emsp;&emsp; 
+\(\ce{N2O2 + O2 ->[fast] N2O4}\) &emsp;&emsp; 
+\(\ce{N2O4 ->[fast] 2NO2}\)
+
+<strong>(d)</strong> &emsp;  \(\ce{2NO <=>[fast eq.] N2O2}\) &emsp;&emsp; 
+\(\ce{N2O2 ->[slow] NO2 + O}\) &emsp;&emsp; 
+\(\ce{O + NO ->[fast] NO2}\)
+</div>
+<div class="workspace" style="height:6.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Check each RDS against the target,
+\(k[\ce{NO}]^2[\ce{O2}]\).
+
+<strong>(a)</strong> RDS is bimolecular, \(\ce{NO}\)+\(\ce{O2}\): gives
+\(k[\ce{NO}][\ce{O2}]\) — first order in \(\ce{NO}\), <strong>wrong</strong>.
+
+<strong>(b)</strong> Fast equilibrium gives \([\ce{NO3}]=(k_1/k_{-1})[\ce{NO}]
+[\ce{O2}]\); RDS rate \(=k_2[\ce{NO3}][\ce{NO}]=k[\ce{NO}]^2[\ce{O2}]\)
+— <strong>matches</strong>.
+
+<strong>(c)</strong> RDS is \(2\ce{NO}\to\ce{N2O2}\): gives \(k[\ce{NO}]^2\), with
+<em>no</em> \(\ce{O2}\) dependence at all — <strong>wrong</strong>.
+
+<strong>(d)</strong> Fast equilibrium gives \([\ce{N2O2}]=(k_1/k_{-1})[\ce{NO}]^2\);
+RDS rate \(=k_2[\ce{N2O2}]=k[\ce{NO}]^2\), again <em>no</em> \(\ce{O2}\)
+dependence — <strong>wrong</strong>.
+
+<strong>Only (b) is consistent.</strong> The trap in (c) and (d) is that both
+correctly reproduce the \(\ce{NO}\)<sup>2</sup> dependence but silently
+lose \(\ce{O2}\) because it never appears anywhere before or in their
+rate-determining step.</div></div>
+
+<h2>Section D • Collision Model, Energy Profiles, and Arrhenius <span class="sub">7
+  questions • 35 points</span></h2>
+
+<h3 class="frq">Free-response 35 • short • 3 points</h3>
+
+<p>On your own paper, sketch a labeled reaction-energy-profile for each case,
+marking \(E_a\) and \(\Delta E\) on each:</p>
+
+<ol class="parts" type="a">
+
+<li>\(\Delta E = +10\)&nbsp;kJ/mol, \(E_a = 25\)&nbsp;kJ/mol
+
+<li>\(\Delta E = -10\)&nbsp;kJ/mol, \(E_a = 50\)&nbsp;kJ/mol
+
+<li>\(\Delta E = -50\)&nbsp;kJ/mol, \(E_a = 50\)&nbsp;kJ/mol
+</ol>
+<div class="workspace" style="height:5.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>All three profiles rise from reactants to a
+single peak (the transition state) and then fall to products.
+
+<strong>(a)</strong> Products sit <em>above</em> reactants by 10&nbsp;kJ/mol
+(endothermic); the peak sits 25&nbsp;kJ/mol above reactants, so only
+\(25-10=15\)&nbsp;kJ/mol separates the peak from products — a short downhill
+side.
+
+<strong>(b)</strong> Products sit 10&nbsp;kJ/mol <em>below</em> reactants (exothermic);
+peak is 50&nbsp;kJ/mol above reactants, so \(50-(-10)=60\)&nbsp;kJ/mol separates the
+peak from products — a long downhill side.
+
+<strong>(c)</strong> Products sit 50&nbsp;kJ/mol below reactants, peak still 50&nbsp;kJ/mol
+above reactants: the reverse activation energy is
+\(50-(-50)=100\)&nbsp;kJ/mol — an even longer drop from peak to
+products.</div></div>
+
+<h3 class="frq">Free-response 36 • short • 3 points</h3>
+
+<p>For \(\ce{X2(g) + Y2(g) -> 2XY(g)}\), \(E_a\text{(forward)} = 167\,\mathrm{kJ/mol}\) and \(\Delta E = +28\,\mathrm{kJ/mol}\).</p>
+
+Find \(E_a\) for the decomposition of \(\ce{XY}\) (the reverse reaction).
+<div class="workspace" style="height:3cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The forward and reverse activation energies
+share the same peak; they differ only in which side they are measured
+from:
+
+\[E_a(\text{reverse}) = E_a(\text{forward}) - \Delta E = 167 - 28
+= \mathbf{139}\ \text{kJ/mol}\]
+
+<p>Sanity check: since the forward reaction is endothermic
+(\(\Delta E > 0\)), products sit higher than reactants, so the reverse
+climb (products back down to the peak) must be <em>shorter</em> than the
+forward climb — and \(139 < 167\). ✓</div></div></p>
+
+<h3 class="frq">Free-response 37 • long • 7 points</h3>
+
+\(\ce{2N2O5(g) -> 4NO2(g) + O2(g)}\).
+
+<div class="center">
+
+<table>
+<tr><th>\(T\) (</th><th>deg;C)</th><th>\(k\) (s<sup>-1</sup>)</th></tr>
+<tr><td>20</td><td>\(2.0\times10^{-5}\)</td></tr>
+<tr><td>30</td><td>\(7.3\times10^{-5}\)</td></tr>
+<tr><td>40</td><td>\(2.7\times10^{-4}\)</td></tr>
+<tr><td>50</td><td>\(9.1\times10^{-4}\)</td></tr>
+<tr><td>60</td><td>\(2.9\times10^{-3}\)</td></tr>
+</table>
+
+</div>
+
+Determine \(E_a\).
+<div class="workspace" style="height:7cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — convert to Kelvin and build</strong>
+\(1/T\) <strong>and</strong> \(\ln k\) <strong>columns.</strong>
+
+<div class="center">
+
+<table>
+<tr><th>\(T\) (K)</th><th>\(1/T\) (K<sup>-1</sup>)</th><th>\(\ln k\)</th></tr>
+<tr><th>293</th><th>\(3.41\times10^{-3}\)</th><th>\(-10.82\)</th></tr>
+<tr><th>303</th><th>\(3.30\times10^{-3}\)</th><th>\(-9.53\)</th></tr>
+<tr><th>313</th><th>\(3.19\times10^{-3}\)</th><th>\(-8.22\)</th></tr>
+<tr><th>323</th><th>\(3.10\times10^{-3}\)</th><th>\(-7.00\)</th></tr>
+<tr><th>333</th><th>\(3.00\times10^{-3}\)</th><th>\(-5.84\)</th></tr>
+</table>
+
+</div>
+
+<strong>Step 2 — the Arrhenius equation predicts \(\ln k\) is linear in
+\(1/T\)</strong>, with slope \(=-E_a/R\):
+
+\[\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A\]
+
+<strong>Step 3 — fit a line</strong> to the five points above: slope
+\(\approx -1.22\times10^4\)&nbsp;K.
+
+<strong>Step 4 — solve for \(E_a\).</strong>
+
+\[E_a = -\text{slope}\times R = (1.22\times10^4)(8.3145)
+= \mathbf{1.01\times10^5}\ \text{J/mol} = \mathbf{101}\ \text{kJ/mol}\]</div></div>
+
+<h3 class="frq">Free-response 38 • short • 6 points</h3>
+
+\(\ce{N2O5(g) -> 2NO2(g) + 1/2O2(g)}\).
+
+<div class="center">
+
+<table>
+<tr><th>\(T\) (K)</th><th>\(k\) (s<sup>-1</sup>)</th></tr>
+<tr><td>338</td><td>\(4.9\times10^{-3}\)</td></tr>
+<tr><td>318</td><td>\(5.0\times10^{-4}\)</td></tr>
+<tr><td>298</td><td>\(3.5\times10^{-5}\)</td></tr>
+</table>
+
+</div>
+
+Determine \(E_a\).
+<div class="workspace" style="height:5.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Build \(1/T\) and \(\ln k\):
+
+\(1/T = 2.959\times10^{-3},\ 3.145\times10^{-3},\ 3.356\times10^{-3}\)
+K<sup>-1</sup>
+
+\(\ln k = -5.32,\ -7.60,\ -10.26\)
+
+<p>Slope of \(\ln k\) vs. \(1/T\) (fitting all three points): \(\approx
+-1.24\times10^4\)&nbsp;K</p>
+
+\[E_a = -\text{slope}\times R = (1.24\times10^4)(8.3145)
+\approx \mathbf{1.03\times10^5}\ \text{J/mol} = \mathbf{103}\
+\text{kJ/mol}\]
+
+<p>Close to, but not identical to, the previous question's answer for the
+same reaction — different temperature ranges and rounding in each data
+set give slightly different fitted slopes; both are legitimate estimates
+of the same underlying \(E_a\).</div></div></p>
+
+<h3 class="frq">Free-response 39 • short • 5 points</h3>
+
+\(\ce{CH4(g) + 2S2(g) -> CS2(g) + 2H2S(g)}\): \(k_1 = 1.1\,\mathrm{L/mol/s}\) at 550&thinsp;&deg;C; \(k_2 = 6.4\,\mathrm{L/mol/s}\) at 625&thinsp;&deg;C.
+
+Determine \(E_a\).
+<div class="workspace" style="height:4.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — convert to Kelvin</strong>:
+\(T_1=823\,\mathrm{K}\), \(T_2=898\,\mathrm{K}\).
+
+<strong>Step 2 — two-point Arrhenius form</strong>, which needs only two
+\((T,k)\) pairs (no full data table required):
+
+\[\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1}-\frac{1}{T_2}\right)\]
+
+<strong>Step 3 — solve.</strong>
+
+\(\ln(6.4/1.1) = \ln(5.818) = 1.761\)
+
+\(\dfrac{1}{823}-\dfrac{1}{898} = 1.0155\times10^{-4}\)&nbsp;K<sup>-1</sup>
+
+\[E_a = \frac{1.761 \times 8.3145}{1.0155\times10^{-4}}
+= \mathbf{1.44\times10^5}\ \text{J/mol} = \mathbf{144}\ \text{kJ/mol}\]</div></div>
+
+<h3 class="frq">Free-response 40 • long • 7 points</h3>
+
+\(\ce{(CH3)3CBr + OH^- -> (CH3)3COH + Br^-}\) is first order in
+\(\ce{(CH3)3CBr}\) and zero order in \(\ce{OH^-}\). A plot of \(\ln k\) vs. \(1/T\) is
+linear, slope \(= -1.10e4\,\mathrm{K}\), \(y\)-intercept \(=33.5\) (\(k\) in
+s<sup>-1</sup>).
+
+<ol class="parts" type="a">
+
+<li>Find \(E_a\). <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Find the frequency factor \(A\). <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>The intercept of \(\ln k\) vs. \(1/T\) is
+        \(\ln A\):
+
+\(A = e^{33.5} = \mathbf{3.54\times10^{14}}\)&nbsp;
+        <strong>s<sup>-1</sup></strong></div></div>
+
+<li>Find \(k\) at 25&thinsp;&deg;C. <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T = 298.15\,\mathrm{K}\),
+        \(1/T = 3.354\times10^{-3}\)&nbsp;K<sup>-1</sup>
+
+\(\ln k = (-1.10\times10^4)(3.354\times10^{-3}) + 33.5
+        = -36.89 + 33.5 = -3.39\)
+
+\(k = e^{-3.39} = \mathbf{0.0336}\)&nbsp;<strong>s<sup>-1</sup></strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 41 • short • 4 points</h3>
+
+Chemists commonly use the rule of thumb that a 10&thinsp;K rise
+doubles a reaction's rate. What must \(E_a\) be for this to hold exactly
+between 25&thinsp;&deg;C and 35&thinsp;&deg;C?
+<div class="workspace" style="height:4cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T_1=298.15\,\mathrm{K}\),
+\(T_2=308.15\,\mathrm{K}\), \(k_2/k_1=2.00\).
+
+\[E_a = \frac{R\ln(2.00)}{\dfrac{1}{T_1}-\dfrac{1}{T_2}}
+= \frac{(8.3145)(0.693)}{1.0868\times10^{-4}}
+= \mathbf{5.29\times10^4}\ \text{J/mol} = \mathbf{52.9}\
+\text{kJ/mol}\]
+
+<p>This is why the rule of thumb is only a rule of thumb: it is exact for
+one specific \(E_a\) (about 53&thinsp;kJ/mol) near room
+temperature, and increasingly wrong for reactions with very different
+activation energies.</div></div></p>
+
+<h2>Section E • Catalysis <span class="sub">3 questions • 17 points</span></h2>
+
+<h3 class="frq">Free-response 42 • short • 6 points</h3>
+
+<p>One mechanism for ozone destruction in the upper atmosphere:</p>
+
+<div class="center">
+\(\ce{O3 + NO ->[slow] NO2 + O2}\)<br>
+\(\ce{NO2 + O ->[fast] NO + O2}\)<br>
+<hr style="margin:0.4em 0"><br>
+\(\ce{O3 + O -> 2O2}\)  &emsp; (overall)
+</div>
+
+<ol class="parts" type="a">
+
+<li>Which species is a catalyst? <div class="lines"><div class="rule"></div></div>
+
+<li>Which species is an intermediate? <div class="lines"><div class="rule"></div></div>
+
+<li><strong>[beyond CED]</strong> \(E_a\text{(uncatalyzed)} =
+        14.0\,\mathrm{kJ/mol}\); \(E_a\text{(catalyzed)} =
+        11.9\,\mathrm{kJ/mol}\). Find the ratio
+        \(k_{\text{cat}}/k_{\text{uncat}}\) at 25&thinsp;&deg;C, assuming
+        the same \(A\). <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\[\frac{k_{\text{cat}}}{k_{\text{uncat}}}
+        = \frac{Ae^{-E_{a,\text{cat}}/RT}}{Ae^{-E_{a,\text{uncat}}/RT}}
+        = e^{-(E_{a,\text{cat}}-E_{a,\text{uncat}})/RT}\]
+
+\(= e^{-(11900-14000)/[(8.3145)(298.15)]}
+        = e^{2100/2478.8} = e^{0.847}\)
+
+\(= \mathbf{2.33}\) — the catalyzed pathway runs about
+        <strong>2.3 times faster</strong>.</div></div>
+</ol>
+
+<h3 class="frq">Free-response 43 • short • 4 points</h3>
+
+<p>Chlorine atoms, generated photochemically from Freon-12
+(\(\ce{CCl2F2 ->[ M506 ] CF2Cl + Cl}\)), also catalyze ozone destruction:
+\(\ce{Cl + O3 -> ClO + O2}\), \(E_a = 2.1\,\mathrm{kJ/mol}\).</p>
+
+Using your ratio from the previous question, which is the more effective
+catalyst for ozone destruction: \(\ce{Cl}\) or \(\ce{NO}\)?
+<div class="workspace" style="height:4cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Compare each catalyzed pathway to the same
+uncatalyzed baseline (\(E_a=14.0\,\mathrm{kJ/mol}\)):
+
+\[\frac{k_{\ce{Cl}}}{k_{\text{uncat}}} =
+e^{-(2100-14000)/[(8.3145)(298.15)]} = e^{4.80} = \mathbf{122}\]
+
+<p>Chlorine speeds the reaction up by a factor of about <strong>120</strong>, versus
+\(\ce{NO}\)'s factor of about <strong>2.3</strong> from the previous question.</p>
+
+<strong>Chlorine is the far more effective catalyst</strong> — its much lower
+activation energy (2.1&thinsp;kJ/mol versus
+11.9&thinsp;kJ/mol) matters enormously because \(E_a\) sits in
+an exponent. This is also exactly why CFC-driven ozone depletion is a
+serious atmospheric problem: a single \(\ce{Cl}\) atom can destroy ozone far
+faster, and far more times before removal, than \(\ce{NO}\)
+does.</div></div>
+
+<h3 class="frq">Free-response 44 • long • 7 points</h3>
+
+\(\ce{2NH3(g) -> N2(g) + 3H2(g)}\) was studied on two catalytic surfaces:
+\(E_a(\ce{W}) = 163\,\mathrm{kJ/mol}\),
+\(E_a(\ce{Os}) = 197\,\mathrm{kJ/mol}\). Uncatalyzed,
+\(E_a = 335\,\mathrm{kJ/mol}\). The rate law observed on both
+surfaces has the form Rate \(=k[\ce{NH3}]/[\ce{H2}]\).
+
+<ol class="parts" type="a">
+
+<li>Which surface is the better catalyst, and why? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li><strong>[beyond CED]</strong> How many times faster is the reaction on
+        \(\ce{W}\) than uncatalyzed, at 298&thinsp;K, same \(A\)?
+        <div class="workspace" style="height:4.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\[\frac{k_{\ce{W}}}{k_{\text{uncat}}}
+        = e^{-(163000-335000)/[(8.3145)(298)]}
+        = e^{172000/2477.7} = e^{69.4}\]
+
+\(= \mathbf{1.4\times10^{30}}\) — an almost incomprehensibly
+        large factor. This is the real message of the Arrhenius equation:
+        because \(E_a\) sits in an exponent, a catalyst does not merely
+        speed a reaction up, it can be the entire difference between a
+        reaction that runs and one that effectively never
+        does.</div></div>
+
+<li>Explain the inverse dependence of rate on \([\ce{H2}]\).
+        <div class="workspace" style="height:3cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>An inverse order means \(\ce{H2}\)
+        <strong>inhibits</strong> the reaction — more \(\ce{H2}\) present makes the
+        reaction <em>slower</em>. On a heterogeneous catalyst, this is the
+        signature of <strong>competitive adsorption</strong>: \(\ce{H2}\) molecules
+        occupy active sites on the surface without reacting further,
+        blocking \(\ce{NH3}\) from adsorbing there. The more \(\ce{H2}\) present,
+        the more sites are tied up this way, so the rate — limited by
+        how much \(\ce{NH3}\) can actually bind — falls as \([\ce{H2}]\)
+        rises.</div></div>
+</ol>
+
+<h2>Section F • Challenge Extension <span class="sub">13 questions • 111 points
+  • separate sitting</span></h2>
+
+<div class="box note"><div class="box-title">About Part F</div>
+
+<p>Every Challenge Problem printed on Zumdahl's Chapter&nbsp;12 review pages is
+here. These go well past what the AP exam will ask — third-order
+kinetics, multi-experiment flooding studies, and mechanism derivations
+with fast pre-equilibria — but every technique is one you already used
+in Sessions 1–2, just layered together.</p>
+
+</div>
+
+<h3 class="frq">Free-response 45 • short • 6 points</h3>
+
+<p>For \(a\ce{A} \to \text{products}\), Rate \(=k[\ce{A}]^3\) (third order). The
+first half-life is 40&thinsp;s.</p>
+
+Find the <em>second</em> half-life (the time for \([\ce{A}]\) to drop from
+\([\ce{A}]_0/2\) to \([\ce{A}]_0/4\)).
+<div class="workspace" style="height:6.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — integrate the third-order rate
+law.</strong>
+
+\[\frac{d[\ce{A}]}{[\ce{A}]^3} = -k\,dt \quad\Longrightarrow\quad
+\frac{1}{[\ce{A}]^2} = \frac{1}{[\ce{A}]_0^2} + 2kt\]
+
+<strong>Step 2 — find how \(t_{1/2}\) depends on the starting
+concentration.</strong> Setting \([\ce{A}]=[\ce{A}]_0/2\):
+
+\[\frac{4}{[\ce{A}]_0^2} = \frac{1}{[\ce{A}]_0^2} + 2k\,t_{1/2}
+\quad\Longrightarrow\quad t_{1/2} = \frac{3}{2k[\ce{A}]_0^2}\]
+
+<strong>Step 3 — the key idea:</strong> \(t_{1/2}\) scales as
+\(1/[\ce{A}]_0^2\). The second half-life starts from \([\ce{A}]_0/2\), so its
+own "\([\ce{A}]_0\)" is half as large — meaning its half-life is
+\((1/2)^{-2}=4\) times longer:
+
+\[t_{1/2,\,2} = 4 \times t_{1/2,\,1} = 4 \times 40
+= \mathbf{160}\ \text{s}\]
+
+<p>Contrast this with first order (every half-life the <em>same</em>) and
+second order (each half-life <em>doubles</em>) — third order
+<strong>quadruples</strong>.</div></div></p>
+
+<h3 class="frq">Free-response 46 • long • 9 points</h3>
+
+\(\ce{I^-(aq) + OCl^-(aq) -> IO^-(aq) + Cl^-(aq)}\), studied with \(\ce{[OH^-]}\)
+varied alongside the two reactants.
+
+<div class="center">
+
+<table>
+<tr><th>Exp.</th><th>\([\ce{I^-}]_0\) (M)</th><th>\([\ce{OCl^-}]_0\) (M)</th><th>\([\ce{OH^-}]_0\) (M) &emsp; 
+  Rate (M/s)</th></tr>
+<tr><td>1</td><td>0.0013</td><td>0.012</td><td>0.10  &emsp;  \(9.4\times10^{-3}\)</td></tr>
+<tr><td>2</td><td>0.0026</td><td>0.012</td><td>0.10  &emsp;  \(1.87\times10^{-2}\)</td></tr>
+<tr><td>3</td><td>0.0013</td><td>0.0060</td><td>0.10  &emsp;  \(4.7\times10^{-3}\)</td></tr>
+<tr><td>4</td><td>0.0013</td><td>0.018</td><td>0.10  &emsp;  \(1.40\times10^{-2}\)</td></tr>
+<tr><td>5</td><td>0.0013</td><td>0.012</td><td>0.050  &emsp;  \(1.87\times10^{-2}\)</td></tr>
+<tr><td>6</td><td>0.0013</td><td>0.012</td><td>0.20  &emsp;  \(4.7\times10^{-3}\)</td></tr>
+<tr><td>7</td><td>0.0013</td><td>0.018</td><td>0.20  &emsp;  \(7.0\times10^{-3}\)</td></tr>
+</table>
+
+</div>
+
+Determine the rate law and \(k\).
+<div class="workspace" style="height:8cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Order in \(\ce{I^-}\)</strong> (1\(\to\)2, others
+fixed): doubles, rate doubles \(\Rightarrow\) order \(\mathbf{1}\).
+
+<strong>Order in \(\ce{OCl^-}\)</strong> (1\(\to\)3, others fixed): halves, rate halves
+\(\Rightarrow\) order \(\mathbf{1}\). (Confirmed independently, 1\(\to\)4:
+\(\times1.5\) concentration, \(\times1.49\) rate.)
+
+<strong>Order in \(\ce{OH^-}\)</strong> (1\(\to\)5, others fixed): \([\ce{OH^-}]\)
+<em>halves</em>, but the rate <em>doubles</em>. Halving the concentration
+doubling the rate means the exponent is <strong>negative</strong>:
+\(0.5^n=2 \Rightarrow n=-1\). (Confirmed 1\(\to\)6: \([\ce{OH^-}]\) doubles,
+rate halves — same \(-1\).)
+
+\[\text{Rate} = \frac{k[\ce{I^-}][\ce{OCl^-}]}{[\ce{OH^-}]}\]
+
+\(\ce{OH^-}\) <strong>inhibits</strong> this reaction — more of it slows the
+reaction down, the reverse of a normal reactant.
+
+\(k\) from each row (\(=\text{rate}\times[\ce{OH^-}]/([\ce{I^-}][\ce{OCl^-}])\)):
+all seven rows give \(k \approx 60\), average
+
+\[\mathbf{k \approx 60.0}\ \text{L}^2\text{/mol}^2\text{\,s}\]</div></div>
+
+<h3 class="frq">Free-response 47 • long • 9 points</h3>
+
+<p>Isomers \(\ce{A}\) and \(\ce{B}\) each dimerize, both by second-order kinetics:
+\(2\ce{A}\to\ce{A2}\) (rate constant \(k_1\)), \(2\ce{B}\to\ce{B2}\) (rate
+constant \(k_2\)). At 25&thinsp;&deg;C, \(k_1 = 0.250\,\mathrm{L/mol/s}\). In separate containers, \([\ce{A}]_0 = 1.00e-2\,\mathrm{M}\)
+and \([\ce{B}]_0 = 2.50e-2\,\mathrm{M}\). After 3.00&thinsp;min,
+\([\ce{A}] = 3.00[\ce{B}]\).</p>
+
+<ol class="parts" type="a">
+
+<li>Find \([\ce{A2}]\) after 3.00&thinsp;min. <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(t = 180\,\mathrm{s}\).
+
+\([\ce{A}] = \dfrac{1}{1/[\ce{A}]_0 + k_1 t}
+        = \dfrac{1}{1/0.0100 + (0.250)(180)}
+        = \dfrac{1}{145} = \mathbf{6.90\times10^{-3}}\)&nbsp;<strong>M</strong>
+
+<p>Dimerization is 2:1, so
+        \([\ce{A2}] = (0.0100-0.00690)/2
+        = \mathbf{1.55\times10^{-3}}\)&nbsp;<strong>M</strong></div></div></p>
+
+<li>Find \(k_2\). <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\([\ce{A}]=3.00[\ce{B}]
+        \Rightarrow [\ce{B}] = 6.90\times10^{-3}/3.00
+        = 2.30\times10^{-3}\)&nbsp;M.
+
+\(k_2 = \dfrac{1/[\ce{B}] - 1/[\ce{B}]_0}{t}
+        = \dfrac{1/(2.30\times10^{-3}) - 1/(2.50\times10^{-2})}{180}
+        = \mathbf{2.19}\)&nbsp;<strong>L/mol s</strong></div></div>
+
+<li>Find the half-life for the \(\ce{A}\) experiment.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h3 class="frq">Free-response 48 • long • 10 points</h3>
+
+\(\ce{NO(g) + O3(g) -> NO2(g) + O2(g)}\), studied two ways.
+
+<strong>Experiment 1</strong> — \(\ce{O3}\) flooded at
+\(1.0\times10^{14}\)&nbsp;molecules/cm<sup>3</sup>, \(\ce{NO}\) followed:
+\([\ce{NO}]\) (molecules/cm<sup>3</sup>) at \(t\) (ms):
+\(6.0\times10^8\) (0), \(5.0\times10^8\) (100), \(2.4\times10^8\) (500),
+\(1.7\times10^8\) (700), \(9.9\times10^7\) (1000).
+
+<strong>Experiment 2</strong> — \(\ce{NO}\) flooded at
+\(2.0\times10^{14}\)&nbsp;molecules/cm<sup>3</sup>, \(\ce{O3}\) followed:
+\([\ce{O3}]\) at \(t\) (ms): \(1.0\times10^{10}\) (0), \(8.4\times10^9\) (50),
+\(7.0\times10^9\) (100), \(4.9\times10^9\) (200), \(3.4\times10^9\) (300).
+
+<ol class="parts" type="a">
+
+<li>Determine the order with respect to each reactant.
+        <div class="workspace" style="height:4.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Both experiments give a good straight
+        line for \(\ln[\text{tracked species}]\) vs. \(t\) (checked, not
+        assumed): <strong>Experiment 1</strong> \(\Rightarrow\) order 1 in \(\ce{NO}\).
+        <strong>Experiment 2</strong> \(\Rightarrow\) order 1 in
+        \(\ce{O3}\).</div></div>
+
+<li>Write the overall rate law. <div class="lines"><div class="rule"></div></div>
+
+<li>Find \(k\) from each experiment, and an overall value.
+        <div class="workspace" style="height:4.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Exp 1</strong>: pseudo-rate constant
+        \(k'_1 = -\text{slope of }\ln[\ce{NO}]\text{ vs }t
+        \approx 1.80e-3\,\mathrm{/ms}\). Since \(\ce{O3}\) was
+        flooded at \(1.0\times10^{14}\):
+        \(k = k'_1/[\ce{O3}] = \mathbf{1.80\times10^{-17}}\)&nbsp;
+        <strong>cm<sup>3</sup>/molecule ms</strong>
+
+<strong>Exp 2</strong>: \(k'_2 \approx 3.60e-3\,\mathrm{/ms}\);
+        \(\ce{NO}\) flooded at \(2.0\times10^{14}\):
+        \(k = k'_2/[\ce{NO}] = \mathbf{1.80\times10^{-17}}\)&nbsp;
+        <strong>cm<sup>3</sup>/molecule ms</strong>
+
+<p>Both experiments agree — strong confirmation of the rate
+        law.</div></div>
+</ol></p>
+
+<h3 class="frq">Free-response 49 • long • 8 points</h3>
+
+<p>Recall from Part A that
+\(\ce{BrO3^- + 5 Br^- + 6 H^+ -> 3 Br2 + 3 H2O}\) has the experimental rate
+law Rate \(=k[\ce{BrO3^-}][\ce{Br^-}][\ce{H^+}]^2\). A proposed mechanism:</p>
+
+<div class="center">
+\(\ce{BrO3^- + H^+ <=>[ M606 ][ M607 ] HBrO3}\)  &emsp; (fast equilibrium)<br>
+\(\ce{HBrO3 + H^+ <=>[ M608 ][ M609 ] H2BrO3^+}\)  &emsp; (fast equilibrium)<br>
+\(\ce{Br^- + H2BrO3^+ ->[ M610 , slow] (BrOBrO2) + H2O}\)<br>
+\(\ce{(BrOBrO2) + 4H^+ + 4Br^- ->[fast] 3Br2 + 3H2O}\)
+</div>
+
+Derive the rate law this mechanism predicts, and confirm it reproduces
+the experimental one from Part A.
+<div class="workspace" style="height:8cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — rate from the RDS.</strong>
+
+\[\text{Rate} = k_3[\ce{Br^-}][\ce{H2BrO3^+}]\]
+
+<strong>Step 2 — eliminate \(\ce{H2BrO3^+}\)</strong> using the second fast
+equilibrium:
+
+\[k_2[\ce{HBrO3}][\ce{H^+}] = k_{-2}[\ce{H2BrO3^+}]
+\Rightarrow [\ce{H2BrO3^+}] = \frac{k_2}{k_{-2}}[\ce{HBrO3}][\ce{H^+}]\]
+
+<strong>Step 3 — eliminate \(\ce{HBrO3}\)</strong> using the first fast
+equilibrium:
+
+\[k_1[\ce{BrO3^-}][\ce{H^+}] = k_{-1}[\ce{HBrO3}]
+\Rightarrow [\ce{HBrO3}] = \frac{k_1}{k_{-1}}[\ce{BrO3^-}][\ce{H^+}]\]
+
+<strong>Step 4 — combine.</strong>
+
+\[[\ce{H2BrO3^+}] = \frac{k_2 k_1}{k_{-2}k_{-1}}[\ce{BrO3^-}][\ce{H^+}]^2\]
+
+\[\text{Rate} = k_3\frac{k_1 k_2}{k_{-1}k_{-2}}[\ce{Br^-}][\ce{BrO3^-}]
+[\ce{H^+}]^2 = k[\ce{BrO3^-}][\ce{Br^-}][\ce{H^+}]^2\]
+
+<strong>This exactly reproduces the empirical rate law</strong> from Part A —
+the mechanism explains <em>why</em> \(\ce{H^+}\) shows up squared: it is
+consumed in <em>two</em> separate pre-equilibrium steps before the slow
+step ever occurs.</div></div>
+
+<h3 class="frq">Free-response 50 • long • 7 points</h3>
+
+\(\ce{CO(g) + Cl2(g) -> COCl2(g)}\) (phosgene). A proposed mechanism:
+
+<div class="center">
+\(\ce{Cl2 <=>[ M611 ][ M612 ] 2Cl}\)  &emsp; (fast equilibrium)<br>
+\(\ce{Cl + CO <=>[ M613 ][ M614 ] COCl}\)  &emsp; (fast equilibrium)<br>
+\(\ce{COCl + Cl2 ->[ M615 , slow] COCl2 + Cl}\)
+</div>
+
+<ol class="parts" type="a">
+
+<li>Derive the rate law implied by this mechanism.
+        <div class="workspace" style="height:6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>RDS: \(\text{Rate} =
+        k_3[\ce{COCl}][\ce{Cl2}]\).
+
+<p>From the second equilibrium: \([\ce{COCl}] =
+        \dfrac{k_2}{k_{-2}}[\ce{Cl}][\ce{CO}]\).</p>
+
+<p>From the first equilibrium: \([\ce{Cl}] =
+        \left(\dfrac{k_1}{k_{-1}}\right)^{1/2}[\ce{Cl2}]^{1/2}\).</p>
+
+<p>Combine:</p>
+
+\[\text{Rate} = k_3\frac{k_2}{k_{-2}}\left(\frac{k_1}{k_{-1}}
+        \right)^{1/2}[\ce{CO}][\ce{Cl2}]^{1/2}[\ce{Cl2}]
+        = k[\ce{CO}][\ce{Cl2}]^{3/2}\]
+
+<p>First order in \(\ce{CO}\), three-halves order in
+        \(\ce{Cl2}\).</div></div></p>
+
+<li>Identify the intermediates. <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h3 class="frq">Free-response 51 • short • 5 points</h3>
+
+<p>A two-step reaction has an energy profile with <strong>two</strong> humps
+separated by a dip that sits above the reactants but below the taller of
+the two peaks.</p>
+
+On such a profile, identify: (a) the positions of reactants and products;
+(b) \(E_a\) for the overall reaction; (c) \(\Delta E\) for the overall
+reaction; (d) the point representing the intermediate; (e) which step is
+rate-determining, with reasoning.
+<div class="workspace" style="height:5.5cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>(a)</strong> Reactants sit at the far left of
+the curve (before the first hump); products sit at the far right (after
+the second hump).
+
+<strong>(b)</strong> \(E_a\)(overall) is measured from the reactants' height up to
+the <em>taller</em> of the two peaks — not the sum of both humps.
+
+<strong>(c)</strong> \(\Delta E\)(overall) is the vertical distance from reactants
+directly to products, ignoring the path between.
+
+<strong>(d)</strong> The <strong>dip between the two humps</strong> is the intermediate
+— a real, momentarily stable species, not a transition state (transition
+states sit <em>at</em> the peaks, not in valleys).
+
+<strong>(e)</strong> Whichever step's hump is <strong>taller</strong> is
+<strong>rate-determining</strong> — that step has the larger activation energy
+measured from its own starting point, so it is the slower of the
+two.</div></div>
+
+<h3 class="frq">Free-response 52 • long • 10 points</h3>
+
+\(\ce{H2(g) + F2(g) -> 2HF(g)}\) was studied twice, each time with one
+reactant held at a much higher pressure than the other (the lower-pressure
+reactant starting at 1.000&thinsp;atm). Both runs gave the <em>same</em>
+apparent rate constant. The reaction proceeds <strong>40.0 times</strong> faster at
+55&thinsp;&deg;C than at 35&thinsp;&deg;C, and is understood to proceed
+through three elementary steps, the first of which has by far the largest
+\(E_a\). Bond energies: \(\ce{H-H}\) 432&thinsp;kJ/mol, \(\ce{F-F}\)
+154&thinsp;kJ/mol, \(\ce{H-F}\) 565&thinsp;kJ/mol.
+
+<ol class="parts" type="a">
+
+<li>Find \(\Delta E\) for the overall reaction. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(\Delta E = \text{(bonds broken)} -
+        \text{(bonds formed)}\)
+
+\(= [432+154] - 2(565) = 586 - 1130 = \mathbf{-544}\)&nbsp;
+        <strong>kJ/mol</strong> — strongly exothermic.</div></div>
+
+<li>Estimate \(E_a\) for the overall reaction from the temperature
+        data. <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\(T_1=308.15\,\mathrm{K}\),
+        \(T_2=328.15\,\mathrm{K}\), ratio \(=40.0\):
+
+\[E_a = \frac{R\ln(40.0)}{1/T_1-1/T_2}
+        = \frac{(8.3145)(3.689)}{1.982\times10^{-4}}
+        \approx \mathbf{155}\ \text{kJ/mol}\]</div></div>
+
+<li>Sketch a qualitative energy profile consistent with this
+        information, and propose a reasonable three-step mechanism.
+        <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>A very tall first hump (dominates
+        \(E_a\)), then two much smaller humps as the reaction runs strongly
+        downhill overall (large negative \(\Delta E\)). A standard
+        radical-chain proposal: initiation
+        \(\ce{F2 -> 2F}\) (the slow, high-\(E_a\) step), then propagation
+        \(\ce{F + H2 -> HF + H}\) and \(\ce{H + F2 -> HF + F}\) (both fast,
+        each regenerating a radical to continue the chain).</div></div>
+
+<li>Which reactant was limiting? <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+</ol>
+
+<h3 class="frq">Free-response 53 • long • 10 points</h3>
+
+\(\ce{2NO2(g) -> 2NO(g) + O2(g)}\) is an <strong>elementary, bimolecular</strong>
+reaction: \(k = 2.3e-12\,\mathrm{L/mol/s}\) at
+273&thinsp;K, \(E_a = 111\,\mathrm{kJ/mol}\).
+
+Find the time for \([\ce{NO2}]\) to fall from a partial pressure of
+2.5&thinsp;atm to 1.5&thinsp;atm at 500&thinsp;K (ideal gas).
+<div class="workspace" style="height:8cm"></div>
+<div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Step 1 — because this is elementary and
+bimolecular</strong>, its rate law is known directly from molecularity, without
+needing initial-rate data: \(\text{Rate}=k[\ce{NO2}]^2\), <strong>second
+order</strong>.
+
+<strong>Step 2 — \(k\) at 500&thinsp;K</strong> via the two-point Arrhenius
+equation:
+
+\[k_{500} = k_{273}\exp\left[-\frac{E_a}{R}\left(\frac{1}{500}-
+\frac{1}{273}\right)\right]\]
+
+\(= (2.3\times10^{-12})\exp[15.72] = \mathbf{1.01\times10^{-2}}\)&nbsp;
+<strong>L/mol s</strong>
+
+<strong>Step 3 — convert pressures to concentrations</strong> at
+500&thinsp;K (\(C=P/RT\), \(R=0.08206\,\mathrm{L\cdot atm/mol/K}\)):
+
+\([\ce{NO2}]_1 = 2.5/(0.08206\times500) = 0.0609\,\mathrm{M}\)
+
+\([\ce{NO2}]_2 = 1.5/(0.08206\times500) = 0.0366\,\mathrm{M}\)
+
+<strong>Step 4 — integrated second-order law.</strong>
+
+\[t = \frac{1/[\ce{NO2}]_2 - 1/[\ce{NO2}]_1}{k_{500}}
+= \frac{27.34 - 16.41}{1.01\times10^{-2}}
+\approx \mathbf{1.08\times10^3}\ \text{s}\]</div></div>
+
+<h3 class="frq">Free-response 54 • long • 8 points</h3>
+
+\(2\ce{A} + \ce{B} \to \ce{C} + \ce{D}\), \(\ce{B}\) flooded. Rate defined as
+\(-\Delta[\ce{A}]/\Delta t\).
+
+<strong>Exp 1</strong> (\([\ce{B}]_0=5.0\,\mathrm{M}\)), \([\ce{A}]\) (M) at \(t\) (s):
+\(0.100\) (0), \(0.0667\) (20.), \(0.0500\) (40.), \(0.0400\) (60.), \(0.0333\)
+(80.), \(0.0286\) (100.), \(0.0250\) (120.).
+
+<strong>Exp 2</strong> (\([\ce{B}]_0=10.0\,\mathrm{M}\)), \([\ce{A}]\) (M) at \(t\)
+(s): \(0.100\) (0), \(0.0500\) (20.), \(0.0333\) (40.), \(0.0250\) (60.), \(0.0200\)
+(80.), \(0.0167\) (100.), \(0.0143\) (120.).
+
+<ol class="parts" type="a">
+
+<li>Explain why \([\ce{B}]_0 \gg [\ce{A}]_0\) in both runs.
+        <div class="lines"><div class="rule"></div><div class="rule"></div></div>
+
+<li>Determine the rate law and \(k\). <div class="workspace" style="height:6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Both experiments' \(1/[\ce{A}]\) vs. \(t\)
+        are excellent straight lines — <strong>second order</strong> in
+        \(\ce{A}\) in each.
+
+<p>Pseudo-rate constants (slopes): \(k'_1 \approx
+        0.250\,\mathrm{L/mol/s}\),
+        \(k'_2 \approx 0.499\,\mathrm{L/mol/s}\).</p>
+
+\([\ce{B}]\) doubles (5.0\(\to\)10.0) and \(k'\) doubles too
+        \(\Rightarrow\) order <strong>1</strong> in \(\ce{B}\).
+
+\[\text{Rate} = k[\ce{A}]^2[\ce{B}]\]
+
+\(k = k'_1/[\ce{B}]_1 = 0.250/5.0 = \mathbf{0.0500}\)&nbsp;
+        <strong>L<sup>2</sup>/mol<sup>2</sup> s</strong>
+        (Exp 2 gives the same value.)</div></div>
+</ol>
+
+<h3 class="frq">Free-response 55 • long • 9 points</h3>
+
+\(2\ce{A} + 2\ce{B} \to \ce{C} + 2\ce{D}\), \(\ce{B}\) flooded. Rate defined as
+\(-\Delta[\ce{A}]/\Delta t\).
+
+<strong>Exp 1</strong> (\([\ce{B}]_0=10.0\,\mathrm{M}\)), \([\ce{A}]\) (M) at \(t\)
+(s): \(1.0\times10^{-2}\) (0), \(8.4\times10^{-3}\) (10.), \(7.1\times10^{-3}\)
+(20.), <em>(value lost)</em> (30.), \(5.0\times10^{-3}\) (40.).
+
+<strong>Exp 2</strong> (\([\ce{B}]_0=20.0\,\mathrm{M}\)), \([\ce{A}]\) (M) at \(t\)
+(s): \(1.0\times10^{-2}\) (0), \(5.0\times10^{-3}\) (10.), \(2.5\times10^{-3}\)
+(20.), \(1.3\times10^{-3}\) (30.), \(6.3\times10^{-4}\) (40.).
+
+<ol class="parts" type="a">
+
+<li>Determine the order with respect to \(\ce{A}\). <em>Do not assume
+        — test at least two candidate orders against the data.</em>
+        <div class="workspace" style="height:5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Test \(1/[\ce{A}]\) first</strong>, since
+        this looks superficially like the previous question: Exp 2's
+        \(1/[\ce{A}]\) values are \(100,\,200,\,400,\,769,\,1587\) — the
+        differences (\(100,200,369,818\)) are <em>not</em> constant. This
+        transform is <strong>not</strong> linear.
+
+<strong>Test \(\ln[\ce{A}]\) instead</strong>: Exp 2's concentrations
+        literally <em>halve every 10&thinsp;s</em>
+        (\(1.0\times10^{-2}\to5.0\times10^{-3}\to2.5\times10^{-3}\to
+        \ldots\)) — a constant half-life, the signature of
+        <strong>first order</strong>. Exp 1 (excluding the missing point) shows
+        the same constant-ratio pattern.
+
+<strong>First order</strong> in \(\ce{A}\), <em>not</em> second — the
+        superficial resemblance to earlier flooding problems is a
+        trap.</div></div>
+
+<li>Determine the order with respect to \(\ce{B}\), and find \(k\).
+        <div class="workspace" style="height:4.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Pseudo-rate constants from the
+        \(\ln[\ce{A}]\) slopes: \(k'_1 \approx
+        0.0173\,\mathrm{/s}\), \(k'_2 \approx 0.0688\,\mathrm{/s}\).
+
+\([\ce{B}]\) doubles (\(10.0\to20.0\)) and \(k'\) roughly
+        <strong>quadruples</strong> (\(0.0173\to0.0688\), ratio \(3.97\))
+        \(\Rightarrow 2^n=4 \Rightarrow\) order <strong>2</strong> in \(\ce{B}\).
+
+\[\text{Rate} = k[\ce{A}][\ce{B}]^2\]
+
+\(k = k'_1/[\ce{B}]_1^2 = 0.0173/(10.0)^2 = 0.0173/100
+        = \mathbf{1.7\times10^{-4}}\)&nbsp;<strong>L<sup>2</sup>/mol<sup>2</sup> s</strong>
+
+<p>(Exp 2 cross-checks: \(k'_2/[\ce{B}]_2^2 = 0.0688/400 =
+        1.7\times10^{-4}\) — agrees.)</div></div></p>
+
+<li>Predict the missing \([\ce{A}]\) value at \(t=30\,\mathrm{s}\) in
+        Experiment 1. <div class="workspace" style="height:2.6cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Using the first-order fit for Exp 1:
+        \([\ce{A}] = [\ce{A}]_0\,e^{-k'_1 t} = (1.0\times10^{-2})
+        e^{-(0.0173)(30)} = \mathbf{5.95\times10^{-3}}\)&nbsp;<strong>M</strong></div></div>
+</ol>
+
+<h3 class="frq">Free-response 56 • long • 10 points</h3>
+
+\(\ce{A} + \ce{B} + 2\ce{C} \to 2\ce{D} + 3\ce{E}\), rate defined as
+\(-\Delta[\ce{B}]/\Delta t\), studied with each pair of reactants flooded in
+turn.
+
+<strong>Exp 1</strong> (\(\ce{A}\), \(\ce{C}\) flooded at 2.0&nbsp;M, 1.0&nbsp;M), \([\ce{B}]\) at \(t\)
+(s): \(2.7\times10^{-4}\) (\(1.0\times10^5\)), \(1.6\times10^{-4}\)
+(\(2.0\times10^5\)), \(1.1\times10^{-4}\) (\(3.0\times10^5\)),
+\(8.5\times10^{-5}\) (\(4.0\times10^5\)), \(6.9\times10^{-5}\)
+(\(5.0\times10^5\)), \(5.8\times10^{-5}\) (\(6.0\times10^5\)).
+
+<strong>Exp 2</strong> (\(\ce{B}\), \(\ce{C}\) flooded at 3.0&nbsp;M, 1.0&nbsp;M), \([\ce{A}]\) at \(t\)
+(s): \(8.9\times10^{-3}\) (1.0), \(7.1\times10^{-3}\) (3.0), \(5.5\times10^{-3}\)
+(5.0), \(3.8\times10^{-3}\) (8.0), \(2.9\times10^{-3}\) (10.0),
+\(2.0\times10^{-3}\) (13.0).
+
+<strong>Exp 3</strong> (\(\ce{A}\), \(\ce{B}\) flooded at 10.0&nbsp;M, 5.0&nbsp;M), \([\ce{C}]\) at \(t\)
+(s): \(0.43\) (\(1.0\times10^{-2}\)), \(0.36\) (\(2.0\times10^{-2}\)), \(0.29\)
+(\(3.0\times10^{-2}\)), \(0.22\) (\(4.0\times10^{-2}\)), \(0.15\)
+(\(5.0\times10^{-2}\)), \(0.08\) (\(6.0\times10^{-2}\)).
+
+<ol class="parts" type="a">
+
+<li>Determine the order with respect to each reactant.
+        <div class="workspace" style="height:5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden><strong>Exp 1 (tracking \(\ce{B}\))</strong>:
+        \(1/[\ce{B}]\) vs. \(t\) is the clean straight line (not \(\ln[\ce{B}]\))
+        — order <strong>2</strong> in \(\ce{B}\).
+
+<strong>Exp 2 (tracking \(\ce{A}\))</strong>: \(\ln[\ce{A}]\) vs. \(t\) is the
+        clean straight line — order <strong>1</strong> in \(\ce{A}\).
+
+<strong>Exp 3 (tracking \(\ce{C}\))</strong>: \([\ce{C}]\) itself vs. \(t\) is
+        linear (constant drop of \(0.07\) every \(1.0\times10^{-2}\)&nbsp;s) —
+        order <strong>0</strong> in \(\ce{C}\).</div></div>
+
+<li>Write the rate law and find \(k\). <div class="workspace" style="height:5.5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>\[\text{Rate} = k[\ce{A}][\ce{B}]^2\]
+
+<strong>From Exp 1</strong> (\(\ce{A}\), \(\ce{C}\) flooded): the \(1/[\ce{B}]\)
+        slope is the pseudo-rate constant \(k'_1 = k[\ce{A}]_{\text{flood}}\):
+
+\(k'_1 \approx 0.0272\,\mathrm{L/mol/s}
+        \Rightarrow k = 0.0272/2.0 = \mathbf{0.0136}\)&nbsp;
+        <strong>L<sup>2</sup>/mol<sup>2</sup> s</strong>
+
+<strong>From Exp 2</strong> (\(\ce{B}\), \(\ce{C}\) flooded, and \(\ce{A}\):\(\ce{B}\) is
+        1:1 so \(-d[\ce{A}]/dt\) obeys the same rate law): the \(\ln[\ce{A}]\)
+        slope is \(k''_2 = k[\ce{B}]_{\text{flood}}^2\):
+
+\(k''_2 \approx 0.1253\,\mathrm{/s}
+        \Rightarrow k = 0.1253/(3.0)^2 = \mathbf{0.0139}\)&nbsp;
+        <strong>L<sup>2</sup>/mol<sup>2</sup> s</strong>
+
+<p>The two independent experiments agree to two significant figures
+        — <strong>\(k \approx 0.0137\)</strong>
+        <strong>L<sup>2</sup>/mol<sup>2</sup> s</strong>.</div></div>
+</ol></p>
+
+<h3 class="frq">Free-response 57 • long • 10 points</h3>
+
+\(\ce{H2O2(aq) + 3I^-(aq) + 2H^+(aq) -> I3^-(aq) + 2H2O(l)}\), followed by the
+slope of \(\ln[\ce{H2O2}]\) vs. time in each run (all runs starting at
+\([\ce{H2O2}]_0 = 8.0e-4\,\mathrm{M}\), with \(\ce{I^-}\) and \(\ce{H^+}\) flooded).
+The rate law is known to have the form
+\[\text{Rate} = (k_1 + k_2[\ce{H^+}])[\ce{I^-}]^m[\ce{H2O2}]^n\]
+
+<div class="center">
+
+<table>
+<tr><th>\([\ce{I^-}]_0\) (M)</th><th>\([\ce{H^+}]_0\) (M)</th><th>slope (min<sup>-1</sup>)</th></tr>
+<tr><td>0.1000</td><td>0.0400</td><td>\(-0.120\)</td></tr>
+<tr><td>0.3000</td><td>0.0400</td><td>\(-0.360\)</td></tr>
+<tr><td>0.4000</td><td>0.0400</td><td>\(-0.480\)</td></tr>
+<tr><td>0.0750</td><td>0.0200</td><td>\(-0.0760\)</td></tr>
+<tr><td>0.0750</td><td>0.0800</td><td>\(-0.118\)</td></tr>
+<tr><td>0.0750</td><td>0.1600</td><td>\(-0.174\)</td></tr>
+</table>
+
+</div>
+
+<ol class="parts" type="a">
+
+<li>Confirm \(n=1\), and determine \(m\). <div class="workspace" style="height:3.4cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>Since the tracked quantity is
+        \(\ln[\ce{H2O2}]\) and it gives a straight line in every run, \(n=1\)
+        is confirmed directly (that is what makes \(\ln[\ce{H2O2}]\) linear
+        in the first place).
+
+<p>Rows 1–3 hold \([\ce{H^+}]\) fixed: \([\ce{I^-}]\) triples
+        (\(0.10\to0.30\)), the slope triples too (\(-0.120\to-0.360\))
+        \(\Rightarrow m=\mathbf{1}\).</div></div></p>
+
+<li>Determine \(k_1\) and \(k_2\). <div class="workspace" style="height:5.5cm"></div>
+        <div class="reveal"><button class="reveal-btn" type="button" aria-expanded="false" data-show="Show explanation" data-hide="Hide explanation">Show explanation</button><div class="reveal-body explain" hidden>With \(m=n=1\), define
+        \(k_{\text{obs}} = |\text{slope}|/[\ce{I^-}]_0 = k_1+k_2[\ce{H^+}]\)
+        — linear in \([\ce{H^+}]\).
+
+<p>Using rows 4–6 (fixed \([\ce{I^-}]=0.0750\)):</p>
+
+\([\ce{H^+}]=0.0200\): \(k_{\text{obs}}=0.0760/0.0750=1.013\)
+
+\([\ce{H^+}]=0.0800\): \(k_{\text{obs}}=0.118/0.0750=1.573\)
+
+\([\ce{H^+}]=0.1600\): \(k_{\text{obs}}=0.174/0.0750=2.320\)
+
+<p>These three points fall on a straight line
+        \(k_{\text{obs}}=k_1+k_2[\ce{H^+}]\): slope
+        \(\mathbf{k_2 \approx 9.33}\)&nbsp;L<sup>2</sup>/mol<sup>2</sup> min,
+        intercept \(\mathbf{k_1 \approx 0.827}\)&nbsp;
+        L/mol min.</div></div></p>
+
+<li>Suggest a reason the rate law has two terms, one independent of
+        \([\ce{H^+}]\) and one proportional to it. <div class="lines"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+</ol>
+</main>
+<footer><p>AP Chemistry course materials • student edition •
+CC BY-NC-SA 4.0</p></footer>
+</body>
+</html>

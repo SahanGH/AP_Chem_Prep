@@ -467,7 +467,7 @@ neither $K$ nor the position.
 > > **check:** (a) shifts right; $K$ increases     (b) temperature only
 >     (c) none     (d) it speeds both directions equally
 
-## Ladder 11 • Solubility equilibria and *K*\textsubscriptsp
+## Ladder 11 • Solubility equilibria and *K*sp
 
 `CED 7.11`
 

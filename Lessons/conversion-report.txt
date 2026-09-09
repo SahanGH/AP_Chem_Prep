@@ -1,11 +1,5 @@
 u01-notes.tex
   ?? unconverted: \text
-u05-selfstudy.tex
-  ?? unconverted: \textsuperscript
-u07-selfstudy.tex
-  ?? unconverted: \textsubscript
-u08-selfstudy.tex
-  ?? unconverted: \textsubscript
 ch03-selfstudy.tex
   ?? check line with 1 parts but 0 workspace slots -- left non-interactive
 ch03-selfstudy2.tex

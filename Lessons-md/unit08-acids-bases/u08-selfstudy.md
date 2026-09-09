@@ -125,7 +125,7 @@ calculation.
 > > **check:** (a) HCl — more mobile ions     (b) yes    
 > (c) double — partial ionization     (d) yes
 
-## Ladder 3 • pH, pOH and *K*\textsubscriptw
+## Ladder 3 • pH, pOH and *K*w
 
 `CED 8.2`
 
@@ -295,7 +295,7 @@ It *rises* on dilution, even though the pH rises too.
 > > **check:** (a) 0.40 %     (b) rises     (c) rises    
 > (d) $[\text{H+}]$ falls, but not as fast as the concentration
 
-## Ladder 7 • p*K*\textsubscripta and acid strength
+## Ladder 7 • p*K*a and acid strength
 
 `CED 8.7`
 

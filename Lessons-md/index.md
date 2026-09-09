@@ -72,6 +72,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Free-Response Set](unit05-kinetics/u05-frq.md)
 - [Review Sheet](unit05-kinetics/u05-review.md)
 - [Unit Exam](unit05-kinetics/u05-exam.md)
+- [Comprehensive Test](unit05-kinetics/u05-test-full.md)
 
 ## Unit 6 • Thermochemistry
 

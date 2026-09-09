@@ -1,0 +1,2548 @@
+% Unit 5 comprehensive test -- 57 free-response questions, built to a teacher
+% request covering all nine Zumdahl Ch12 worked examples, 35 named end-of-
+% chapter exercises, and every Challenge Problem on 509k-509n. Session 1
+% (Parts A-B, rates/rate laws/integrated laws) + Session 2 (Parts C-E,
+% mechanisms/energetics/catalysis) + Session 3 (Part F, challenge, all
+% beyond CED). Every numeric answer independently recomputed in Python
+% before being typed here; every "determine the order from data" item was
+% checked against ALL THREE candidate transforms (zero/first/second order)
+% by R^2, not assumed -- that check caught two items (Q120, Q121) where the
+% obvious-looking guess was wrong.
+%
+% Items adapted from Zumdahl Ch12 exercises are reworded as original items
+% with the source numbers preserved and tagged "after Zumdahl Qn" -- the
+% public repo carries no Cengage text (convention 6).
+\documentclass{apchem-exam}
+
+% Same fix as the Unit 4 test: siunitx groups any run of 5+ digits, and this
+% paper is dense with 5-digit rate constants and concentrations.
+\sisetup{group-minimum-digits = 7}
+
+\apcunit{5}
+\apcunittitle{Kinetics}
+\apcdoctitle{Comprehensive Test}
+\apcsubtitle{CED 5.1--5.11 \textbullet\ Session 1: Parts A--B, 27 questions,
+  142 points, 150 minutes \textbullet\ Session 2: Parts C--E, 17 questions,
+  88 points, 100 minutes \textbullet\ Session 3: Part F, 13 questions,
+  111 points, 110 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this paper runs]
+\textbf{Three sessions, not one.} Session 1 (Parts A--B) covers rate laws
+and integrated rate laws --- the core of the unit and the largest session.
+Session 2 (Parts C--E) covers mechanisms, energetics, and catalysis.
+Session 3 (Part F) is a challenge set that goes past what the AP exam asks.
+Do not attempt more than one session in a single sitting.
+
+Calculator, periodic table, and equations sheet are permitted throughout.
+\textbf{Show every step.} A bare final answer earns the answer mark only;
+the setup marks are for work you can point to. Carry units through each
+line and round only at the end.
+\end{apcnote}
+
+\begin{apcnote}[Scope --- read before Session 2]
+One CED boundary shapes this paper more than any other: \ced{5.6} excludes
+\textbf{calculations involving the Arrhenius equation}
+($k = Ae^{-E_a/RT}$) from the AP exam. You will still be asked to
+\emph{read} an energy profile, identify $E_a$, and reason about how
+temperature and catalysts change a rate --- all core CED content. But
+solving $k = Ae^{-E_a/RT}$ numerically, whether for $E_a$, $A$, or $k$
+itself, is flagged \textbf{[beyond CED]} throughout Parts D, E, and F. It is
+here because Arrhenius calculations are standard chemistry and because
+Unit~9 electrochemistry leans on the same algebra.
+\end{apcnote}
+
+% ============================================================================
+\examsection{A}{Rates and Rate Laws from Data}{10 questions \textbullet\
+  50 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{5.1} \textbullet\ stoichiometric rate relationships
+  \emph{(after Zumdahl Q25)}}
+
+For \ce{4PH3(g) -> P4(g) + 6H2(g)}, phosphine is consumed at
+\SI{0.0048}{\mole\per\second} in a \SI{2.0}{\litre} container.
+
+Determine the rate of production of \ce{P4} and of \ce{H2}.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- convert to a concentration
+rate.}
+
+$-\dfrac{d[\ce{PH3}]}{dt} = \dfrac{\SI{0.0048}{\mole\per\second}}
+{\SI{2.0}{\litre}} = \SI{0.0024}{\Molar\per\second}$
+
+\textbf{Step 2 --- divide by \ce{PH3}'s coefficient} to reach the rate of
+reaction:
+
+$\text{rate} = 0.0024/4 = \SI{6.0e-4}{\Molar\per\second}$
+
+\textbf{Step 3 --- multiply by each product's coefficient.}
+
+$\dfrac{d[\ce{P4}]}{dt} = 1 \times 6.0\times10^{-4}
+= \mathbf{6.0\times10^{-4}}$~\textbf{M/s}
+
+$\dfrac{d[\ce{H2}]}{dt} = 6 \times 6.0\times10^{-4}
+= \mathbf{3.6\times10^{-3}}$~\textbf{M/s}\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts to \SI{0.0024}{\Molar\per\second}}
+  \rpoint{1}{divides by the coefficient of \ce{PH3} correctly}
+  \rpoint{1}{both product rates correct}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.1} \textbullet\ average rate over an interval
+  \emph{(after Zumdahl Q27)}}
+
+For \ce{2H2O2(aq) -> 2H2O(l) + O2(g)} at \SI{40}{\celsius}:
+$[\ce{H2O2}] = \SI{1.000}{\Molar}$ at $t=0$, \SI{0.500}{\Molar} at
+$t = \SI{2.16e4}{\second}$, \SI{0.250}{\Molar} at
+$t = \SI{4.32e4}{\second}$.
+
+Calculate the average rate of \ce{H2O2} decomposition, and the
+corresponding average rate of \ce{O2} production, over each interval.
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Interval 1} ($0$ to
+\SI{2.16e4}{\second}):
+
+$-\dfrac{\Delta[\ce{H2O2}]}{\Delta t} =
+\dfrac{1.000 - 0.500}{2.16\times10^4} = \mathbf{2.31\times10^{-5}}$~M/s
+
+1:1 ratio in the decomposition step, but \ce{O2} carries coefficient 1
+against \ce{H2O2}'s 2, so halve it:
+$d[\ce{O2}]/dt = \mathbf{1.16\times10^{-5}}$~M/s
+
+\textbf{Interval 2} ($\SI{2.16e4}{\second}$ to \SI{4.32e4}{\second}):
+
+$-\dfrac{\Delta[\ce{H2O2}]}{\Delta t} =
+\dfrac{0.500-0.250}{2.16\times10^4} = \mathbf{1.16\times10^{-5}}$~M/s
+
+$d[\ce{O2}]/dt = \mathbf{5.79\times10^{-6}}$~M/s
+
+Both rates are half the previous interval's --- worth noticing, since
+\ce{H2O2} also halves every \SI{2.16e4}{\second}, the signature of first
+order (Part B builds on exactly this idea).\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{interval 1: $-\Delta[\ce{H2O2}]/\Delta t = \SI{2.31e-5}{\Molar\per\second}$}
+  \rpoint{1}{interval 1: halves correctly for \ce{O2}}
+  \rpoint{1}{interval 2: $-\Delta[\ce{H2O2}]/\Delta t = \SI{1.16e-5}{\Molar\per\second}$}
+  \rpoint{1}{interval 2: \ce{O2} rate halved again}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{5.1} \textbullet\ inferring coefficients from rates
+  \emph{(after Zumdahl Q28)}}
+
+For the reaction
+\[a\ce{A} + b\ce{B} \to c\ce{C}\]
+the average rates measured were:
+\begin{itemize}[leftmargin=*,itemsep=0.1em,topsep=2pt]
+  \item $-\Delta[\ce{A}]/\Delta t = \SI{0.0080}{\Molar\per\second}$
+  \item $-\Delta[\ce{B}]/\Delta t = \SI{0.0120}{\Molar\per\second}$
+  \item $\Delta[\ce{C}]/\Delta t = \SI{0.0160}{\Molar\per\second}$
+\end{itemize}
+
+Propose a possible set of coefficients $a, b, c$.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- normalize the three rates} to
+the smallest:
+
+$0.0080 : 0.0120 : 0.0160 = 1 : 1.5 : 2$
+
+\textbf{Step 2 --- clear the fraction} by doubling:
+
+$\mathbf{a=2,\ b=3,\ c=4}$
+
+Any whole-number multiple of $2:3:4$ works equally well --- rates fix only
+the \emph{ratio} of coefficients, never their absolute
+size.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{normalizes the rates to a ratio}
+  \rpoint{1}{clears to whole numbers, $2:3:4$}
+  \rpoint{1}{states the ratio is not unique (any multiple works)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{7}{\ced{5.2} \practice{5} \textbullet\ rate law from four
+  variables}
+
+\ce{BrO3^-(aq) + 5Br^-(aq) + 6H^+(aq) -> 3Br2(l) + 3H2O(l)} was studied at
+constant temperature. Rate is defined as $-\Delta[\ce{BrO3^-}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Exp. & $[\ce{BrO3^-}]_0$ (M) & $[\ce{Br^-}]_0$ (M) & $[\ce{H^+}]_0$ (M) &
+  Rate (M/s)\\
+\midrule
+1 & 0.10 & 0.10 & 0.10 & $8.0\times10^{-4}$\\
+2 & 0.20 & 0.10 & 0.10 & $1.6\times10^{-3}$\\
+3 & 0.20 & 0.20 & 0.10 & $3.2\times10^{-3}$\\
+4 & 0.10 & 0.10 & 0.20 & $3.2\times10^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Determine the rate law and the rate constant.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}\textbf{Order in \ce{BrO3^-}} (Exp 1$\to$2,
+others held fixed): concentration doubles, rate doubles
+($8.0\to16\times10^{-4}$) $\Rightarrow$ order $\mathbf{1}$.
+
+\textbf{Order in \ce{Br^-}} (Exp 2$\to$3, others fixed): concentration
+doubles, rate doubles again $\Rightarrow$ order $\mathbf{1}$.
+
+\textbf{Order in \ce{H^+}} (Exp 1$\to$4, others fixed): concentration
+doubles, rate quadruples ($8.0\to32\times10^{-4}$)
+$\Rightarrow 2^n=4 \Rightarrow$ order $\mathbf{2}$.
+
+\[\text{Rate} = k[\ce{BrO3^-}][\ce{Br^-}][\ce{H^+}]^2 \qquad
+\text{(overall order 4)}\]
+
+\textbf{Rate constant}, from Experiment 1:
+
+$k = \dfrac{8.0\times10^{-4}}{(0.10)(0.10)(0.10)^2} = \mathbf{8.0}$~
+\textbf{L\textsuperscript{3}/mol\textsuperscript{3}\,s}
+
+All four experiments return $k=8.0$ --- the check that the assumed
+rate law is right.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{order 1 in \ce{BrO3^-}, comparison shown}
+  \rpoint{1}{order 1 in \ce{Br^-}, comparison shown}
+  \rpoint{2}{order 2 in \ce{H^+}, comparison shown}
+  \rpoint{1}{correct rate law written}
+  \rpoint{1}{$k = \SI{8.0}{\litre\cubed\per\mole\cubed\per\second}$}
+  \rpoint{1}{checks $k$ against a second experiment}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.2} \textbullet\ rate law, two reactants
+  \emph{(after Zumdahl Q31)}}
+
+\ce{2NO(g) + Cl2(g) -> 2NOCl(g)} at \SI{-10}{\celsius}, rate defined as
+$-\Delta[\ce{Cl2}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Exp. & $[\ce{NO}]_0$ (M) & $[\ce{Cl2}]_0$ (M) & Rate (M/min)\\
+\midrule
+1 & 0.10 & 0.10 & 0.18\\
+2 & 0.10 & 0.20 & 0.36\\
+3 & 0.20 & 0.20 & 1.45\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Determine the rate law and $k$.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{Order in \ce{Cl2}} (Exp 1$\to$2, \ce{NO}
+fixed): doubles, rate doubles $\Rightarrow$ order $\mathbf{1}$.
+
+\textbf{Order in \ce{NO}} (Exp 2$\to$3, \ce{Cl2} fixed): doubles, rate
+roughly quadruples ($0.36\to1.45$, ratio $4.03$) $\Rightarrow$ order
+$\mathbf{2}$.
+
+\[\text{Rate} = k[\ce{NO}]^2[\ce{Cl2}]\]
+
+From Experiment 1: $k = 0.18/[(0.10)^2(0.10)] = \mathbf{180}$~
+\textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,min}
+
+(2 sig figs: $\mathbf{1.8\times10^2}$)\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{order 1 in \ce{Cl2}}
+  \rpoint{2}{order 2 in \ce{NO}, ratio shown ($\approx4$)}
+  \rpoint{1}{rate law $k[\ce{NO}]^2[\ce{Cl2}]$}
+  \rpoint{1}{$k \approx \SI{1.8e2}{\litre\squared\per\mole\squared\per\minute}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.2} \textbullet\ five experiments, averaged $k$
+  \emph{(after Zumdahl Q32)}}
+
+\ce{2I^-(aq) + S2O8^2-(aq) -> I2(aq) + 2SO4^2-(aq)} at \SI{25}{\celsius},
+rate defined as $-\Delta[\ce{S2O8^2-}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Exp. & $[\ce{I^-}]_0$ (M) & $[\ce{S2O8^2-}]_0$ (M) & Rate (M/s)\\
+\midrule
+1 & 0.080 & 0.040 & $1.25\times10^{-5}$\\
+2 & 0.040 & 0.040 & $6.25\times10^{-6}$\\
+3 & 0.080 & 0.020 & $6.25\times10^{-6}$\\
+4 & 0.032 & 0.040 & $5.00\times10^{-6}$\\
+5 & 0.060 & 0.030 & $7.00\times10^{-6}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Determine the rate law and an average value of $k$.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Order in \ce{I^-}} (Exp 1$\to$2,
+\ce{S2O8^2-} fixed): halves, rate halves $\Rightarrow$ order $\mathbf{1}$.
+
+\textbf{Order in \ce{S2O8^2-}} (Exp 1$\to$3, \ce{I^-} fixed): halves, rate
+halves $\Rightarrow$ order $\mathbf{1}$.
+
+\[\text{Rate} = k[\ce{I^-}][\ce{S2O8^2-}]\]
+
+$k$ from each experiment: $3.906,\ 3.906,\ 3.906,\ 3.906,\
+3.889 \ (\times10^{-3})$ --- all agree to 3 sig figs.
+
+\textbf{Average $k \approx \mathbf{3.90\times10^{-3}}$ L/mol\,s.}\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{order 1 in \ce{I^-}}
+  \rpoint{1}{order 1 in \ce{S2O8^2-}}
+  \rpoint{1}{rate law correct}
+  \rpoint{2}{$k$ computed for at least 3 of the 5 experiments}
+  \rpoint{1}{average $k \approx \SI{3.90e-3}{\litre\per\mole\per\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.2} \textbullet\ confirming an order across four
+  points \emph{(after Zumdahl Q34)}}
+
+\ce{2N2O5(g) -> 4NO2(g) + O2(g)}, rate defined as $-\Delta[\ce{N2O5}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$[\ce{N2O5}]_0$ (M) & Rate (M/s)\\
+\midrule
+0.0750 & $8.90\times10^{-4}$\\
+0.190 & $2.26\times10^{-3}$\\
+0.275 & $3.26\times10^{-3}$\\
+0.410 & $4.85\times10^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+There is only one reactant here, so every row must be consistent with the
+same order. Determine the rate law and $k$.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{Test first order}: divide rate by
+$[\ce{N2O5}]$ in each row.
+
+$8.90\times10^{-4}/0.0750 = 0.01187$
+
+$2.26\times10^{-3}/0.190 = 0.01189$
+
+$3.26\times10^{-3}/0.275 = 0.01185$
+
+$4.85\times10^{-3}/0.410 = 0.01183$
+
+All four give the \textbf{same} value within rounding --- confirms first
+order without needing a second reactant to isolate.
+
+\[\text{Rate} = k[\ce{N2O5}] \qquad \mathbf{k \approx
+0.0119}\ \text{s}^{-1}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{computes rate/[N2O5] for at least 3 rows}
+  \rpoint{1}{recognises the constant ratio as confirming first order}
+  \rpoint{1}{rate law $k[\ce{N2O5}]$}
+  \rpoint{1}{$k \approx \SI{0.0119}{\per\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.2} \textbullet\ rate law and a predicted rate
+  \emph{(after Zumdahl Q35)}}
+
+\ce{I^-(aq) + OCl^-(aq) -> IO^-(aq) + Cl^-(aq)}.
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+$[\ce{I^-}]_0$ (M) & $[\ce{OCl^-}]_0$ (M) & Rate (M/s)\\
+\midrule
+0.12 & 0.18 & $7.91\times10^{-2}$\\
+0.060 & 0.18 & $3.95\times10^{-2}$\\
+0.030 & 0.090 & $9.88\times10^{-3}$\\
+0.24 & 0.090 & $7.91\times10^{-2}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the rate law and $k$. \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Order in \ce{I^-}} (row 1$\to$2,
+        \ce{OCl^-} fixed): halves, rate halves $\Rightarrow$ order
+        $\mathbf{1}$.
+
+        \textbf{Order in \ce{OCl^-}}: no two rows hold \ce{I^-} fixed while
+        varying \ce{OCl^-} alone, so first divide out the \ce{I^-}
+        dependence. Row 1: $\text{rate}/[\ce{I^-}]=0.659$; row 3:
+        $0.329$. \ce{OCl^-} goes $0.090\to0.18$ (doubles) as this
+        normalized rate doubles $\Rightarrow$ order $\mathbf{1}$.
+
+        \[\text{Rate} = k[\ce{I^-}][\ce{OCl^-}]\]
+
+        From row 1: $k = 7.91\times10^{-2}/(0.12)(0.18)
+        = \mathbf{3.66}$~\textbf{L/mol\,s}\end{apcanswer}}
+  \item Predict the initial rate when $[\ce{I^-}]_0 = [\ce{OCl^-}]_0
+        = \SI{0.15}{\Molar}$. \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\text{Rate} = 3.66 \times 0.15 \times
+        0.15 = \mathbf{0.0824}$~\textbf{M/s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{order 1 in \ce{I^-}}
+  \rpoint{2}{order 1 in \ce{OCl^-}, obtained by normalizing out \ce{I^-}
+    first}
+  \rpoint{1}{$k \approx \SI{3.66}{\litre\per\mole\per\second}$}
+  \rpoint{2}{predicted rate $\approx \SI{0.0824}{\Molar\per\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.2} \textbullet\ molecular units and a predicted rate
+  \emph{(after Zumdahl Q36)}}
+
+\ce{2NO(g) + O2(g) -> 2NO2(g)}, rate defined as $-\Delta[\ce{O2}]/\Delta t$,
+concentrations in molecules/cm\textsuperscript{3}.
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+$[\ce{NO}]_0$ & $[\ce{O2}]_0$ & Rate (molecules/cm\textsuperscript{3}\,s)\\
+\midrule
+$1.00\times10^{18}$ & $1.00\times10^{18}$ & $2.00\times10^{16}$\\
+$3.00\times10^{18}$ & $1.00\times10^{18}$ & $1.80\times10^{17}$\\
+$2.50\times10^{18}$ & $2.50\times10^{18}$ & $3.13\times10^{17}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the rate law and $k$. \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Order in \ce{NO}} (row 1$\to$2,
+        \ce{O2} fixed): $\times3$ concentration, $\times9$ rate
+        ($2.00\to18.0\times10^{16}$) $\Rightarrow 3^n=9 \Rightarrow$ order
+        $\mathbf{2}$.
+
+        \textbf{Order in \ce{O2}}: normalize out \ce{NO}$^2$ from rows 1
+        and 3 (rate$/[\ce{NO}]^2$): row 1 gives $2.00\times10^{-20}$; row 3
+        gives $5.01\times10^{-20}$; ratio $\approx 2.5$, matching the
+        $[\ce{O2}]$ ratio of $2.5$ exactly $\Rightarrow$ order
+        $\mathbf{1}$.
+
+        \[\text{Rate} = k[\ce{NO}]^2[\ce{O2}]\]
+
+        From row 1: $(1.00\times10^{18})^2(1.00\times10^{18}) =
+        1.00\times10^{54}$, so
+
+        \[k = \frac{2.00\times10^{16}}{1.00\times10^{54}}
+        = \mathbf{2.00\times10^{-38}}\]
+        \textbf{cm\textsuperscript{6}/molecule\textsuperscript{2}\,s}\end{apcanswer}}
+  \item Predict the rate at $[\ce{NO}]_0 = 6.21\times10^{18}$,
+        $[\ce{O2}]_0 = 7.36\times10^{18}$ molecules/cm\textsuperscript{3}.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\text{Rate} = 2.00\times10^{-38}
+        \times (6.21\times10^{18})^2 \times 7.36\times10^{18}
+        = \mathbf{5.68\times10^{18}}$~\textbf{molecules/cm\textsuperscript{3}\,s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{order 2 in \ce{NO}, ratio shown}
+  \rpoint{2}{order 1 in \ce{O2}, normalized comparison shown}
+  \rpoint{1}{$k \approx 2.00\times10^{-38}$
+    cm\textsuperscript{6}/molecule\textsuperscript{2}\,s (units accepted
+    in any consistent molecular form)}
+  \rpoint{1}{predicted rate $\approx 5.7\times10^{18}$ molecules/cm\textsuperscript{3}\,s}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.2} \textbullet\ rate law and a predicted rate
+  \emph{(after Zumdahl Q38)}}
+
+\ce{2ClO2(aq) + 2OH^-(aq) -> ClO3^-(aq) + ClO2^-(aq) + H2O(l)}, rate
+defined as $-\Delta[\ce{ClO2}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+$[\ce{ClO2}]_0$ (M) & $[\ce{OH^-}]_0$ (M) & Rate (M/s)\\
+\midrule
+0.0500 & 0.100 & $5.75\times10^{-2}$\\
+0.100 & 0.100 & $2.30\times10^{-1}$\\
+0.100 & 0.0500 & $1.15\times10^{-1}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the rate law and $k$. \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Order in \ce{ClO2}} (row 1$\to$2,
+        \ce{OH^-} fixed): doubles, rate quadruples $\Rightarrow$ order
+        $\mathbf{2}$.
+
+        \textbf{Order in \ce{OH^-}} (row 2$\to$3, \ce{ClO2} fixed): halves,
+        rate halves $\Rightarrow$ order $\mathbf{1}$.
+
+        \[\text{Rate} = k[\ce{ClO2}]^2[\ce{OH^-}]\]
+
+        From row 1: $k = 5.75\times10^{-2}/[(0.0500)^2(0.100)]
+        = \mathbf{230}$~\textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}\end{apcanswer}}
+  \item Predict the initial rate at $[\ce{ClO2}]_0 = \SI{0.175}{\Molar}$,
+        $[\ce{OH^-}]_0 = \SI{0.0844}{\Molar}$. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\text{Rate} = 230 \times (0.175)^2
+        \times 0.0844 = \mathbf{0.594}$~\textbf{M/s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{order 2 in \ce{ClO2}, ratio shown}
+  \rpoint{1}{order 1 in \ce{OH^-}}
+  \rpoint{1}{$k \approx \SI{230}{\litre\squared\per\mole\squared\per\second}$}
+  \rpoint{2}{predicted rate $\approx \SI{0.594}{\Molar\per\second}$}
+\end{rubric}
+
+% ============================================================================
+\examsection{B}{Integrated Rate Laws and Half-Life}{17 questions
+  \textbullet\ 92 points}{\calculatorok}
+
+\begin{apcnote}[The three straight-line tests]
+Every item in this section reduces to one question: which quantity, plotted
+against time, gives a \emph{straight line}? $[\ce{A}]$ linear
+$\Rightarrow$ zero order. $\ln[\ce{A}]$ linear $\Rightarrow$ first order.
+$1/[\ce{A}]$ linear $\Rightarrow$ second order. Do not guess the order from
+how the curve \emph{looks} --- test a transform and check that it is
+actually straight.
+\end{apcnote}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.3} \practice{5} \textbullet\ first order confirmed
+  from a data table}
+
+\ce{2N2O5(soln) -> 4NO2(soln) + O2(g)}. Rate is defined as
+$-\Delta[\ce{N2O5}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$[\ce{N2O5}]$ (M) & Time (s)\\
+\midrule
+0.1000 & 0\\
+0.0707 & 50\\
+0.0500 & 100\\
+0.0250 & 200\\
+0.0125 & 300\\
+0.00625 & 400\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Show that this reaction is first order, and determine $k$.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- build a $\ln[\ce{N2O5}]$
+column.} $-2.303,\ -2.649,\ -2.996,\ -3.689,\ -4.382,\ -5.075$.
+
+\textbf{Step 2 --- check linearity.} Plotted against $t=0,50,\ldots,400$~s,
+these fall on a straight line (the successive drops are
+$-0.346,-0.347,-0.693,-0.693,-0.693$ per interval --- constant per unit
+time, exactly what a straight line requires). \textbf{First order
+confirmed.}
+
+\textbf{Step 3 --- slope.} Using the full data set (best-fit line):
+slope $= \mathbf{-6.93\times10^{-3}}\ \text{s}^{-1}$
+
+\[k = -\text{slope} = \mathbf{6.93\times10^{-3}}\ \text{s}^{-1}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{builds the $\ln[\ce{N2O5}]$ column correctly}
+  \rpoint{2}{shows the drops (or slope) are constant, confirming linearity}
+  \rpoint{2}{extracts a slope from the data}
+  \rpoint{1}{$k \approx \SI{6.93e-3}{\per\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{5.3} \textbullet\ using $k$ to predict a concentration}
+
+Using the reaction and $k = \SI{6.93e-3}{\per\second}$ from the previous
+question, predict $[\ce{N2O5}]$ at $t = \SI{150}{\second}$.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}$\ln[\ce{N2O5}] = \ln(0.1000) - (6.93\times10^{-3})(150)
+= -2.303 - 1.040 = -3.343$
+
+$[\ce{N2O5}] = e^{-3.343} = \mathbf{0.0354}$~\textbf{M}
+
+Note this is \emph{not} the simple average of the $t=100$ and $t=200$
+values ($0.0500$ and $0.0250$, average $0.0375$) --- $\ln[\ce{A}]$ is
+linear in $t$, not $[\ce{A}]$ itself.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{sets up $\ln[\ce{A}] = \ln[\ce{A}]_0 - kt$}
+  \rpoint{1}{$[\ce{N2O5}] \approx \SI{0.0354}{\Molar}$}
+  \rpoint{1}{notes this differs from a linear average of neighboring
+    concentrations}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.3} \practice{5} \textbullet\ half-life to $k$ and back}
+
+A first-order reaction has $t_{1/2} = \SI{20.0}{\minute}$.
+
+\begin{parts}
+  \item Find $k$. \answerlines[2]{$k = 0.693/20.0 =
+        \mathbf{3.47\times10^{-2}}$~min\textsuperscript{-1}}
+  \item Find the time for the reaction to reach \SI{75}{\percent}
+        completion. \workspace[3cm]
+        \keyonly{\begin{apcanswer}75\% complete leaves 25\% remaining, so
+        $[\ce{A}]_0/[\ce{A}] = 4.0$.
+
+        $t = \ln(4.0)/k = 1.386/0.0347 = \mathbf{40.}$~\textbf{min}
+
+        Check: two half-lives ($2\times20.0$) leaves
+        $100\%\to50\%\to25\%$ --- \SI{40}{\minute} matches
+        directly.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{$k = \SI{3.47e-2}{\per\minute}$}
+  \rpoint{1}{recognises 75\% complete $\Rightarrow$ ratio of 4}
+  \rpoint{1}{$t = \ln(4.0)/k$ set up}
+  \rpoint{1}{\SI{40.}{\minute}, cross-checked against two half-lives}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{5.3} \practice{5} \textbullet\ determining second order
+  from data}
+
+\ce{2C4H6(g) -> C8H12(g)} (butadiene dimerization).
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$[\ce{C4H6}]$ (M) & Time (s)\\
+\midrule
+0.01000 & 0\\
+0.00625 & 1000\\
+0.00476 & 1800\\
+0.00370 & 2800\\
+0.00313 & 3600\\
+0.00270 & 4400\\
+0.00241 & 5200\\
+0.00208 & 6200\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine whether the reaction is first or second order.
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}Test both transforms.
+
+$\ln[\ce{C4H6}]$ values:
+        $-4.605,-5.075,-5.348,-5.599,-5.767,-5.915,-6.028,-6.175$
+        --- the drops shrink steadily ($-0.470,-0.273,-0.251,\ldots$), so
+        this is \textbf{curved}, not linear.
+
+        $1/[\ce{C4H6}]$: $100,\ 160,\ 210,\ 270,\ 320,\ 370,\ 415,\ 481$
+        --- the rises are close to constant per 800~s step, a
+        \textbf{straight line}.
+
+        \textbf{Second order} --- only $1/[\ce{A}]$ is
+        linear.\end{apcanswer}}
+  \item Find $k$. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}slope of $1/[\ce{A}]$ vs.\ $t$
+        (full data): $\mathbf{k \approx 6.12\times10^{-2}}$~
+        \textbf{L/mol\,s}\end{apcanswer}}
+  \item Find the half-life under these initial conditions.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$t_{1/2} = 1/(k[\ce{A}]_0) =
+        1/(0.0612 \times 0.01000) = \mathbf{1.63\times10^3}$~
+        \textbf{s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{tests $\ln[\ce{A}]$, finds it curved}
+  \rpoint{2}{tests $1/[\ce{A}]$, finds it linear --- second order}
+  \rpoint{2}{$k \approx \SI{6.1e-2}{\litre\per\mole\per\second}$}
+  \rpoint{1}{correct second-order half-life formula, $1/(k[A]_0)$}
+  \rpoint{2}{$t_{1/2} \approx \SI{1.63e3}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.3} \textbullet\ first order, slope given
+  \emph{(after Zumdahl Q40)}}
+
+For $a\ce{A} \to b\ce{B}$, $[\ce{A}]_0 = \SI{2.00e-2}{\Molar}$. A plot of
+$\ln[\ce{A}]$ vs.\ time is linear with slope
+$\SI{-2.97e-2}{\per\minute}$.
+
+\begin{parts}
+  \item State the rate law and $k$. \answerlines[2]{Rate $=k[\ce{A}]$,
+        $k = \mathbf{2.97\times10^{-2}}$~min\textsuperscript{-1}}
+  \item Find the half-life. \answerlines[2]{$t_{1/2} = 0.693/0.0297
+        = \mathbf{23.3}$~min}
+  \item Find the time for $[\ce{A}]$ to reach $\SI{2.50e-3}{\Molar}$.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}$t = \dfrac{\ln([\ce{A}]_0/[\ce{A}])}{k}
+        = \dfrac{\ln(2.00\times10^{-2}/2.50\times10^{-3})}{0.0297}
+        = \dfrac{\ln(8.0)}{0.0297} = \mathbf{70.0}$~\textbf{min}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{rate law and $k = \SI{2.97e-2}{\per\minute}$}
+  \rpoint{1}{$t_{1/2} = \SI{23.3}{\minute}$}
+  \rpoint{2}{sets up $\ln([\ce{A}]_0/[\ce{A}]) = kt$}
+  \rpoint{1}{$t = \SI{70.0}{\minute}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{5.3} \practice{5} \textbullet\ second order determined
+  from a live data set \emph{(after Zumdahl Q41)}}
+
+\ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}, rate defined as
+$-\Delta[\ce{NO2}]/\Delta t$.
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$[\ce{NO2}]$ (M) & Time (s)\\
+\midrule
+0.500 & 0\\
+0.444 & 1200\\
+0.381 & 3000\\
+0.340 & 4500\\
+0.250 & 9000\\
+0.174 & 18000\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the order and the rate law. \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}Plotting $\ln[\ce{NO2}]$ against $t$
+        gives shrinking drops --- curved. Plotting $1/[\ce{NO2}]$ against
+        $t$ instead ($2.00,\ 2.25,\ 2.63,\ 2.94,\ 4.00,\ 5.75$) rises at a
+        consistent rate per unit time: \textbf{linear}.
+
+        \textbf{Second order}: Rate $=k[\ce{NO2}]^2$.\end{apcanswer}}
+  \item Find $k$. \workspace[2cm]
+        \keyonly{\begin{apcanswer}slope of $1/[\ce{NO2}]$ vs.\ $t$
+        (full data): $\mathbf{k \approx 2.10\times10^{-4}}$~
+        \textbf{L/mol\,s}\end{apcanswer}}
+  \item Predict $[\ce{NO2}]$ at $t = \SI{27000}{\second}$.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}$\dfrac{1}{[\ce{NO2}]} =
+        \dfrac{1}{0.500} + (2.10\times10^{-4})(27000)
+        = 2.00 + 5.67 = 7.67$
+
+        $[\ce{NO2}] = \mathbf{0.130}$~\textbf{M}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{tests $\ln[\ce{A}]$, finds it curved}
+  \rpoint{2}{tests $1/[\ce{A}]$, finds it linear --- second order}
+  \rpoint{2}{$k \approx \SI{2.1e-4}{\litre\per\mole\per\second}$}
+  \rpoint{1}{sets up the integrated second-order law at $t=27000$~s}
+  \rpoint{2}{$[\ce{NO2}] \approx \SI{0.130}{\Molar}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.3} \textbullet\ second order, slope given
+  \emph{(after Zumdahl Q42)}}
+
+For $a\ce{A} \to b\ce{B}$, $[\ce{A}]_0 = \SI{2.80e-3}{\Molar}$. A plot of
+$1/[\ce{A}]$ vs.\ time is linear with slope
+$\SI{+3.60e-2}{\litre\per\mole\per\second}$.
+
+\begin{parts}
+  \item Find the half-life. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$t_{1/2} = \dfrac{1}{k[\ce{A}]_0} =
+        \dfrac{1}{(0.0360)(2.80\times10^{-3})}
+        = \mathbf{9.92\times10^3}$~\textbf{s}\end{apcanswer}}
+  \item Find the time for $[\ce{A}]$ to reach $\SI{7.00e-4}{\Molar}$.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}$t = \dfrac{1/[\ce{A}] -
+        1/[\ce{A}]_0}{k} = \dfrac{1/(7.00\times10^{-4}) -
+        1/(2.80\times10^{-3})}{0.0360}
+        = \mathbf{2.98\times10^4}$~\textbf{s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{correct second-order half-life formula}
+  \rpoint{1}{$t_{1/2} \approx \SI{9.92e3}{\second}$}
+  \rpoint{2}{sets up the integrated second-order law correctly}
+  \rpoint{1}{$t \approx \SI{2.98e4}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.3} \textbullet\ zero order, slope given
+  \emph{(after Zumdahl Q43)}}
+
+\ce{C2H5OH(g) ->[Al2O3] C2H4(g) + H2O(g)} at \SI{600}{\kelvin}. A plot of
+$[\ce{C2H5OH}]$ vs.\ time is \emph{itself} linear, slope
+$\SI{-4.00e-5}{\Molar\per\second}$.
+
+\begin{parts}
+  \item Find the half-life given $[\ce{C2H5OH}]_0 = \SI{1.25e-2}{\Molar}$.
+        \answerlines[2]{$t_{1/2} = [\ce{A}]_0/(2k) = 0.0125/(2\times0.0000400)
+        = \mathbf{156}$~s}
+  \item Find the time for complete decomposition.
+        \answerlines[2]{$t = [\ce{A}]_0/k = 0.0125/0.0000400
+        = \mathbf{313}$~s}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{recognises zero order from the linear $[\ce{A}]$ vs $t$ plot}
+  \rpoint{1}{correct zero-order half-life formula}
+  \rpoint{1}{$t_{1/2} \approx \SI{156}{\second}$}
+  \rpoint{1}{$t \approx \SI{313}{\second}$, all \ce{A} consumed}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{5.3} \practice{5} \textbullet\ zero order from pressure
+  data \emph{(after Zumdahl Q44)}}
+
+\ce{C2H5OH(g) ->[Cu] CH3CHO(g) + H2(g)} at \SI{500}{\kelvin}, followed by
+the partial pressure of ethanol.
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$P_{\ce{C2H5OH}}$ (torr) & Time (s)\\
+\midrule
+250. & 0\\
+237 & 100\\
+224 & 200\\
+211 & 300\\
+198 & 400\\
+185 & 500\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the order. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}Successive pressures drop by exactly
+        \SI{13}{torr} every \SI{100}{\second}
+        ($250\to237\to224\to211\to198\to185$) --- a \emph{constant}
+        difference per unit time is the signature of a \textbf{zero-order}
+        process (pressure standing in for concentration
+        here).\end{apcanswer}}
+  \item Find $k$ and the (equivalent) rate law. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$k = \SI{13}{torr}/\SI{100}{\second}
+        = \mathbf{0.130}$~\textbf{torr/s}
+
+        Rate $= k$ (independent of $P_{\ce{C2H5OH}}$)\end{apcanswer}}
+  \item Predict $P_{\ce{C2H5OH}}$ at $t = \SI{900}{\second}$.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$P = 250 - (0.130)(900) = 250 - 117
+        = \mathbf{133}$~\textbf{torr}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{identifies zero order from the constant pressure drop}
+  \rpoint{1}{$k = \SI{0.130}{torr\per\second}$}
+  \rpoint{1}{states rate is independent of $P_{\ce{C2H5OH}}$}
+  \rpoint{2}{sets up the zero-order extrapolation to $t=900$~s}
+  \rpoint{1}{$P \approx \SI{133}{torr}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{\ced{5.2} \practice{5} \textbullet\ pseudo-order from a
+  flooded reactant \emph{(after Zumdahl Q46)}}
+
+\ce{O(g) + NO2(g) -> NO(g) + O2(g)}. \ce{NO2} is held in a large excess,
+$1.0\times10^{13}$ molecules/cm\textsuperscript{3}, while \ce{O} is
+followed:
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$[\ce{O}]$ (atoms/cm\textsuperscript{3}) & Time (s)\\
+\midrule
+$5.0\times10^9$ & 0\\
+$1.9\times10^9$ & $1.0\times10^{-2}$\\
+$6.8\times10^8$ & $2.0\times10^{-2}$\\
+$2.5\times10^8$ & $3.0\times10^{-2}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Determine the order with respect to \ce{O}. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$\ln[\ce{O}]$ drops by close to a
+        constant amount every $1.0\times10^{-2}$~s
+        ($22.3\to21.4\to20.3\to19.3$, drops of about $-1.0$ each time)
+        --- \textbf{linear}, so \textbf{first order} in
+        \ce{O}.\end{apcanswer}}
+  \item Given that the reaction is also first order in \ce{NO2}, write the
+        overall rate law and find $k$. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\[\text{Rate} = k[\ce{O}][\ce{NO2}]\]
+
+        Pseudo-rate constant from part (a)'s slope:
+        $k' \approx \SI{100}{\per\second}$
+
+        Since \ce{NO2} was flooded at $1.0\times10^{13}$:
+
+        $k = k'/[\ce{NO2}] = 100/(1.0\times10^{13})
+        = \mathbf{1.0\times10^{-11}}$~\textbf{cm\textsuperscript{3}/molecule\,s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{tests $\ln[\ce{O}]$ vs $t$, finds it linear}
+  \rpoint{1}{first order in \ce{O}}
+  \rpoint{1}{recognises \ce{NO2} is flooded (pseudo-order technique)}
+  \rpoint{1}{overall rate law $k[\ce{O}][\ce{NO2}]$}
+  \rpoint{2}{$k \approx 1.0\times10^{-11}$ cm\textsuperscript{3}/molecule\,s}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.3} \practice{3} \textbullet\ reading order
+  from three graphs \emph{(after Zumdahl Q47)}}
+
+For $\ce{A} -> 2\ce{B} + \ce{C}$, the same data are plotted three ways:
+$[\ce{A}]$ vs.\ time, $\ln[\ce{A}]$ vs.\ time, and $1/[\ce{A}]$ vs.\ time.
+Only the $1/[\ce{A}]$ panel is a straight line, running from about
+$(1\text{ s}, 20)$ to $(6\text{ s}, 70)$; the other two panels both curve.
+The $[\ce{A}]$-vs-time panel's first plotted point sits almost exactly on
+the axis's top gridline, $[\ce{A}] = \SI{0.05}{\Molar}$.
+
+What is the order with respect to \ce{A}, and what is the initial
+concentration of \ce{A}?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}Only the $1/[\ce{A}]$ plot is linear, so the
+reaction is \textbf{second order} in \ce{A}.
+
+Reading the $[\ce{A}]$-vs-time panel back to $t=0$: $[\ce{A}]_0 \approx
+\mathbf{0.050}$~\textbf{M} (accept \SI{0.048}{\Molar} to
+\SI{0.052}{\Molar} --- this is a graph-reading estimate, not a
+calculation).\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{identifies $1/[\ce{A}]$ as the linear panel}
+  \rpoint{1}{concludes second order}
+  \rpoint{2}{$[\ce{A}]_0 \approx \SI{0.050}{\Molar}$, read from the graph}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.3} \textbullet\ zero order on a catalytic surface
+  \emph{(after Zumdahl Q50)}}
+
+\ce{2HI(g) ->[Au] H2(g) + I2(g)} is zero order in \ce{HI} at
+\SI{150}{\celsius}: $k = \SI{1.20e-4}{\Molar\per\second}$.
+
+\begin{parts}
+  \item Find $[\ce{HI}]$ \SI{25}{\minute} after the start, if
+        $[\ce{HI}]_0 = \SI{0.250}{\Molar}$. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$t = 25 \times 60 = \SI{1500}{\second}$
+
+        $[\ce{HI}] = 0.250 - (1.20\times10^{-4})(1500)
+        = 0.250 - 0.180 = \mathbf{0.070}$~\textbf{M}\end{apcanswer}}
+  \item Find the time for all \SI{0.250}{\Molar} \ce{HI} to decompose.
+        \answerlines[2]{$t = 0.250/(1.20\times10^{-4}) =
+        \mathbf{2.08\times10^3}$~s ($\approx 34.7$~min)}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{converts \SI{25}{\minute} to seconds}
+  \rpoint{2}{$[\ce{HI}] \approx \SI{0.070}{\Molar}$ at \SI{25}{\minute}}
+  \rpoint{2}{time to full decomposition $\approx \SI{2.08e3}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.3} \textbullet\ percent complete to $k$ and
+  half-life \emph{(after Zumdahl Q51)}}
+
+A first-order reaction is \SI{45.0}{\percent} complete in \SI{65}{\second}.
+Find $k$ and $t_{1/2}$.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}45.0\% complete leaves 55.0\% remaining:
+$[\ce{A}]_0/[\ce{A}] = 1/0.550 = 1.818$.
+
+$k = \ln(1.818)/65 = 0.598/65 = \mathbf{9.20\times10^{-3}}$~
+\textbf{s\textsuperscript{-1}}
+
+$t_{1/2} = 0.693/k = \mathbf{75.3}$~\textbf{s}\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts 45.0\% complete to a concentration ratio of 1.818}
+  \rpoint{2}{$k \approx \SI{9.20e-3}{\per\second}$}
+  \rpoint{1}{$t_{1/2} \approx \SI{75.3}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.3} \textbullet\ successive half-lives, first order
+  \emph{(after Zumdahl Q52)}}
+
+A first-order reaction is \SI{75.0}{\percent} complete in \SI{320.}{\second}.
+
+\begin{parts}
+  \item Find the first and second half-lives. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}75.0\% complete = 2 half-lives exactly
+        ($100\to50\to25$), so $2\,t_{1/2} = 320.$~s $\Rightarrow
+        t_{1/2} = \mathbf{160.}$~s.
+
+        \textbf{First-order half-life is constant}: the
+        \textbf{second} half-life is also \textbf{160.~s}.\end{apcanswer}}
+  \item Find the time for \SI{90.0}{\percent} completion. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$k = 0.693/160. = 4.33\times10^{-3}$
+        s\textsuperscript{-1}
+
+        10.0\% remains: $t = \ln(1/0.100)/k = 2.303/0.00433
+        = \mathbf{532}$~\textbf{s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{recognises 75.0\% complete as exactly two half-lives}
+  \rpoint{1}{$t_{1/2} = \SI{160.}{\second}$}
+  \rpoint{1}{states the second half-life equals the first (constant for
+    first order)}
+  \rpoint{2}{time to 90.0\% complete $\approx \SI{532}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.3} \textbullet\ first order, two different starting
+  points \emph{(after Zumdahl Q53)}}
+
+Rate $=-\Delta[\ce{PH3}]/\Delta t = k[\ce{PH3}]$. It takes \SI{120.}{\second}
+for \SI{1.00}{\Molar} \ce{PH3} to fall to \SI{0.250}{\Molar}.
+
+Find the time for \SI{2.00}{\Molar} \ce{PH3} to fall to \SI{0.350}{\Molar}.
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- find $k$} from the first
+scenario:
+
+$k = \ln(1.00/0.250)/120. = \ln(4.00)/120. = 1.386/120.
+= \mathbf{1.155\times10^{-2}}$~s\textsuperscript{-1}
+
+\textbf{Step 2 --- apply $k$ to the new scenario.} First order means $k$
+does not depend on the starting concentration:
+
+$t = \ln(2.00/0.350)/k = \ln(5.714)/0.01155 = 1.743/0.01155
+= \mathbf{151}$~\textbf{s}\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{2}{$k \approx \SI{1.155e-2}{\per\second}$ from the first scenario}
+  \rpoint{1}{states $k$ is independent of starting concentration}
+  \rpoint{2}{$t \approx \SI{151}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.3} \textbullet\ second order from a given half-life
+  \emph{(after Zumdahl Q56)}}
+
+Rate $=-\Delta[\ce{NOBr}]/\Delta t = k[\ce{NOBr}]^2$ for
+\ce{2NOBr(g) -> 2NO(g) + Br2(g)}. $t_{1/2} = \SI{2.00}{\second}$ when
+$[\ce{NOBr}]_0 = \SI{0.900}{\Molar}$.
+
+\begin{parts}
+  \item Find $k$. \answerlines[2]{$k = 1/(t_{1/2}[\ce{A}]_0) =
+        1/(2.00\times0.900) = \mathbf{0.556}$~L/mol\,s}
+  \item Find the time for $[\ce{NOBr}]$ to reach \SI{0.100}{\Molar}.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}$t = \dfrac{1/[\ce{A}] - 1/[\ce{A}]_0}{k}
+        = \dfrac{1/0.100 - 1/0.900}{0.556} = \dfrac{10.0 - 1.11}{0.556}
+        = \mathbf{16.0}$~\textbf{s}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{correct second-order half-life formula}
+  \rpoint{1}{$k \approx \SI{0.556}{\litre\per\mole\per\second}$}
+  \rpoint{2}{sets up the integrated second-order law}
+  \rpoint{1}{$t = \SI{16.0}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{5.2} \ced{5.3} \practice{5} \textbullet\ the flooding
+  technique \emph{(after Zumdahl Q60)}}
+
+$\ce{A} + \ce{B} + 2\ce{C} \to 2\ce{D} + 3\ce{E}$, Rate
+$=-\Delta[\ce{A}]/\Delta t = k[\ce{A}][\ce{B}]^2$.
+$[\ce{A}]_0 = \SI{1.0e-2}{\Molar}$, $[\ce{B}]_0 = \SI{3.0}{\Molar}$,
+$[\ce{C}]_0 = \SI{2.0}{\Molar}$. After \SI{8.0}{\second},
+$[\ce{A}] = \SI{3.8e-3}{\Molar}$.
+
+\begin{parts}
+  \item Find $k$. \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}\ce{B} and \ce{C} are both in such large
+        excess over \ce{A} that $[\ce{B}]$ barely changes --- treat it as
+        constant. Rate becomes \textbf{pseudo-first-order} in \ce{A}:
+
+        $\ln([\ce{A}]_0/[\ce{A}]) = k'[\ce{B}]_0^0 t$... more precisely,
+        with $k' = k[\ce{B}]_0^2$ held constant:
+
+        $k' = \ln(1.0\times10^{-2}/3.8\times10^{-3})/8.0
+        = \ln(2.632)/8.0 = 0.968/8.0 = \mathbf{0.1209}$~s\textsuperscript{-1}
+
+        $k = k'/[\ce{B}]_0^2 = 0.1209/(3.0)^2
+        = \mathbf{0.0134}$~\textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}\end{apcanswer}}
+  \item Find the half-life for this experiment. \answerlines[2]{$t_{1/2}
+        = 0.693/k' = 0.693/0.1209 = \mathbf{5.73}$~s}
+  \item Find $[\ce{A}]$ after \SI{13.0}{\second}. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$[\ce{A}] = [\ce{A}]_0\,e^{-k't} =
+        (1.0\times10^{-2})e^{-(0.1209)(13.0)}
+        = \mathbf{2.08\times10^{-3}}$~\textbf{M}\end{apcanswer}}
+  \item Find $[\ce{C}]$ after \SI{13.0}{\second}. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\ce{C} is consumed 2 mol per 1 mol of
+        \ce{A}:
+
+        $\Delta[\ce{A}] = 1.0\times10^{-2} - 2.08\times10^{-3}
+        = 7.92\times10^{-3}$~M
+
+        $[\ce{C}] = 2.0 - 2(7.92\times10^{-3}) =
+        \mathbf{1.98}$~\textbf{M}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{recognises \ce{B}, \ce{C} are flooded --- pseudo-first-order
+    in \ce{A}}
+  \rpoint{2}{$k' \approx \SI{0.121}{\per\second}$}
+  \rpoint{2}{$k \approx \SI{0.0134}{\litre\squared\per\mole\squared\per\second}$}
+  \rpoint{1}{$t_{1/2} \approx \SI{5.73}{\second}$}
+  \rpoint{1}{$[\ce{A}]$ at \SI{13.0}{\second} $\approx \SI{2.08e-3}{\Molar}$}
+  \rpoint{1}{$[\ce{C}]$ at \SI{13.0}{\second} $\approx \SI{1.98}{\Molar}$,
+    using the 2:1 \ce{C}:\ce{A} stoichiometry}
+\end{rubric}
+
+% ============================================================================
+% SESSION 2
+% ============================================================================
+\clearpage
+\examsection{C}{Reaction Mechanisms}{7 questions \textbullet\ 36
+  points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.4} \ced{5.7} \ced{5.8} \practice{6} \textbullet\
+  validating a proposed mechanism}
+
+\ce{2NO2(g) + F2(g) -> 2NO2F(g)} has experimental rate law
+Rate $=k[\ce{NO2}][\ce{F2}]$. A proposed mechanism:
+
+\begin{center}
+\ce{NO2 + F2 ->[$k_1$, slow] NO2F + F}\\
+\ce{F + NO2 ->[$k_2$, fast] NO2F}
+\end{center}
+
+Is this mechanism acceptable? Justify against \emph{both} requirements a
+mechanism must satisfy.
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Requirement 1 --- the steps sum to the
+overall equation.} Adding the two steps: $\ce{NO2}+\ce{F2}+\ce{F}+\ce{NO2}
+\to \ce{NO2F}+\ce{F}+\ce{NO2F}$; the intermediate \ce{F} cancels, leaving
+$2\ce{NO2}+\ce{F2}\to2\ce{NO2F}$. \checkmark
+
+\textbf{Requirement 2 --- the mechanism predicts the observed rate law.}
+Step 1 is the slow, rate-determining step, and it is bimolecular:
+
+\[\text{Rate} = k_1[\ce{NO2}][\ce{F2}]\]
+
+This matches the experimental rate law exactly. \checkmark
+
+\textbf{Yes, acceptable.} This does \emph{not} prove the mechanism is
+correct --- only that it is consistent. A different mechanism could
+reproduce the same rate law.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{checks the steps sum to the overall equation}
+  \rpoint{1}{identifies \ce{F} as an intermediate that cancels}
+  \rpoint{2}{derives Rate $=k_1[\ce{NO2}][\ce{F2}]$ from the slow step}
+  \rpoint{1}{concludes acceptable, and notes this does not prove
+    uniqueness}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{7}{\ced{5.4} \ced{5.7} \ced{5.9} \practice{6} \textbullet\
+  non-integer order from a fast pre-equilibrium}
+
+\ce{Cl2(g) + CHCl3(g) -> HCl(g) + CCl4(g)} has experimental rate law
+Rate $=k[\ce{Cl2}]^{1/2}[\ce{CHCl3}]$. A proposed mechanism:
+
+\begin{center}
+\ce{Cl2 <=>[$k_1$][$k_{-1}$] 2Cl} \quad(fast equilibrium)\\
+\ce{Cl + CHCl3 ->[$k_2$, slow] HCl + CCl3}\\
+\ce{CCl3 + Cl ->[$k_3$, fast] CCl4}
+\end{center}
+
+Show that this mechanism predicts the observed rate law.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- rate from the RDS.} The slow
+step is rate-determining:
+
+\[\text{Rate} = k_2[\ce{Cl}][\ce{CHCl3}]\]
+
+\textbf{Step 2 --- \ce{Cl} is an intermediate}, so it must be eliminated
+using the fast equilibrium, where forward and reverse rates are equal:
+
+\[k_1[\ce{Cl2}] = k_{-1}[\ce{Cl}]^2 \ \Rightarrow\
+[\ce{Cl}] = \left(\frac{k_1}{k_{-1}}\right)^{1/2}[\ce{Cl2}]^{1/2}\]
+
+\textbf{Step 3 --- substitute back.}
+
+\[\text{Rate} = k_2\left(\frac{k_1}{k_{-1}}\right)^{1/2}
+[\ce{Cl2}]^{1/2}[\ce{CHCl3}] = k[\ce{Cl2}]^{1/2}[\ce{CHCl3}]\]
+
+This matches the observed half-order dependence on \ce{Cl2} --- the kind
+of fractional order that \emph{always} signals a pre-equilibrium step
+producing the true reactant of the RDS.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{writes Rate $=k_2[\ce{Cl}][\ce{CHCl3}]$ from the slow step}
+  \rpoint{1}{recognises \ce{Cl} is an intermediate that must be eliminated}
+  \rpoint{2}{sets forward rate = reverse rate for the fast equilibrium}
+  \rpoint{1}{solves for $[\ce{Cl}]$ in terms of $[\ce{Cl2}]^{1/2}$}
+  \rpoint{2}{substitutes and matches the given half-order rate law}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.4} \ced{5.7} \textbullet\ identifying the
+  rate-determining step \emph{(adapted from Zumdahl Q62)}}
+
+A proposed mechanism for hydrogen peroxide decomposition:
+
+\begin{center}
+\ce{H2O2 -> 2OH}\\
+\ce{H2O2 + OH -> H2O + HO2}\\
+\ce{HO2 + OH -> H2O + O2}
+\end{center}
+
+\ce{H2O2} decomposition is experimentally observed to be (close to) first
+order overall. \ce{OH} is an extremely reactive radical that, once formed,
+is consumed almost immediately.
+
+Which step is the most reasonable candidate for rate-determining, and
+what is the overall balanced equation?
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{The second step}
+(\ce{H2O2 + OH -> H2O + HO2}) is the best candidate.
+
+The first step produces \ce{OH}, but a species this reactive cannot be the
+one that piles up waiting to react --- it reacts on the next collision.
+Once formed, its fate is either step 2 or step 3; since step 2 involves
+\ce{H2O2} (the species whose concentration is large and whose decay is
+being tracked), making step 2 rate-determining reproduces the observed
+near-first-order dependence on \ce{H2O2}.
+
+\textbf{Overall equation} --- add all three steps and cancel intermediates
+(\ce{OH} appears $1-1-1=-1$... more carefully: \ce{OH} is produced twice in
+step 1 and consumed once each in steps 2 and 3, cancelling completely;
+\ce{HO2} produced in step 2 and consumed in step 3):
+
+\[2\ce{H2O2(aq) -> 2H2O(l) + O2(g)}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{2}{identifies step 2 as rate-determining, with reasoning about
+    \ce{OH}'s reactivity}
+  \rpoint{1}{cancels both intermediates (\ce{OH}, \ce{HO2}) correctly}
+  \rpoint{1}{overall equation $2\ce{H2O2} \to 2\ce{H2O} + \ce{O2}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.4} \ced{5.7} \textbullet\ an S\textsubscript{N}1
+  mechanism \emph{(after Zumdahl Q63)}}
+
+A proposed mechanism:
+
+\begin{center}
+\ce{C4H9Br ->[slow] C4H9^+ + Br^-}\\
+\ce{C4H9^+ + H2O ->[fast] C4H9OH2^+}\\
+\ce{C4H9OH2^+ + H2O ->[fast] C4H9OH + H3O^+}
+\end{center}
+
+\begin{parts}
+  \item Write the rate law implied by this mechanism.
+        \answerlines[2]{Rate $=k[\ce{C4H9Br}]$ --- the slow step involves
+        only \ce{C4H9Br} and is unimolecular.}
+  \item Write the overall balanced equation. \workspace[2cm]
+        \keyonly{\begin{apcanswer}\ce{C4H9Br(aq) + 2H2O(l) ->
+        C4H9OH(aq) + H3O^+(aq) + Br^-(aq)}\end{apcanswer}}
+  \item Identify the intermediates. \answerlines[2]{\ce{C4H9+} and
+        \ce{C4H9OH2+} --- both are produced in one step and fully consumed
+        in a later one, never appearing in the overall
+        equation.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{rate law $k[\ce{C4H9Br}]$ from the slow unimolecular step}
+  \rpoint{2}{overall equation, with 2 waters and \ce{H3O+} correctly
+    placed}
+  \rpoint{2}{both intermediates named}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.4} \ced{5.7} \ced{5.8} \textbullet\ mechanism rate
+  law \emph{(after Zumdahl Q64)}}
+
+The gas-phase reaction of nitrogen dioxide with carbon monoxide is thought
+to proceed by:
+
+\begin{center}
+\ce{NO2 + NO2 ->[slow] NO3 + NO}\\
+\ce{NO3 + CO ->[fast] NO2 + CO2}
+\end{center}
+
+Write the rate law implied by this mechanism and the overall balanced
+equation.
+\workspace[3.4cm]
+\keyonly{\begin{apcanswer}The slow step is bimolecular in \ce{NO2} with
+itself:
+
+\[\text{Rate} = k[\ce{NO2}]^2\]
+
+Adding the steps, \ce{NO3} (intermediate) cancels:
+
+\[\ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}\]
+
+Note this rate law does \emph{not} depend on \ce{[CO]} at all --- CO only
+appears in the fast step after the rate is already set.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{2}{rate law $k[\ce{NO2}]^2$}
+  \rpoint{1}{overall equation with \ce{NO3} cancelled}
+  \rpoint{1}{notes the rate law is independent of \ce{[CO]}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.4} \ced{5.7} \ced{5.9} \textbullet\ testing
+  consistency with earlier data \emph{(after Zumdahl Q65)}}
+
+Recall from Part A that \ce{2NO(g) + Cl2(g) -> 2NOCl(g)} has rate law
+Rate $=k[\ce{NO}]^2[\ce{Cl2}]$. A proposed mechanism:
+
+\begin{center}
+\ce{NO + Cl2 ->[$k_1$] NOCl2}\\
+\ce{NOCl2 + NO ->[$k_2$] 2NOCl}
+\end{center}
+
+(Neither step is labeled slow or fast in this proposal.) Is this
+mechanism consistent with the rate law above? If so, which step must be
+rate-determining?
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Try step 2 as rate-determining}, with
+step 1 as a fast, reversible pre-equilibrium.
+
+If step 1 is fast equilibrium: $k_1[\ce{NO}][\ce{Cl2}] =
+k_{-1}[\ce{NOCl2}] \Rightarrow [\ce{NOCl2}] =
+\dfrac{k_1}{k_{-1}}[\ce{NO}][\ce{Cl2}]$
+
+Rate from step 2 (the RDS): $\text{Rate} = k_2[\ce{NOCl2}][\ce{NO}]
+= k_2\dfrac{k_1}{k_{-1}}[\ce{NO}]^2[\ce{Cl2}] = k[\ce{NO}]^2[\ce{Cl2}]$
+
+This \textbf{matches} the observed rate law.
+
+\textbf{Yes, consistent}, provided \textbf{step 2 is
+rate-determining} and step 1 is a fast equilibrium (not literally
+irreversible, despite lacking a reverse arrow in the shorthand above). If
+step 1 were rate-determining instead, the rate law would be
+$k_1[\ce{NO}][\ce{Cl2}]$ --- first order in \ce{NO}, which does \emph{not}
+match.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{treats step 1 as a fast, reversible pre-equilibrium}
+  \rpoint{2}{substitutes $[\ce{NOCl2}]$ correctly to reach
+    $k[\ce{NO}]^2[\ce{Cl2}]$}
+  \rpoint{1}{concludes step 2 is rate-determining}
+  \rpoint{1}{checks that step 1 as RDS would give the wrong (1st-order)
+    dependence on \ce{NO}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.4} \ced{5.7} \practice{6} \textbullet\ choosing among
+  four candidate mechanisms \emph{(after Zumdahl Q66)}}
+
+\ce{2NO(g) + O2(g) -> 2NO2(g)} exhibits Rate $=k[\ce{NO}]^2[\ce{O2}]$.
+Which mechanism below, if any, is consistent?
+
+\begin{center}
+\textbf{(a)}\quad \ce{NO + O2 ->[slow] NO2 + O}\qquad
+\ce{O + NO ->[fast] NO2}
+
+\vspace{0.3em}
+\textbf{(b)}\quad \ce{NO + O2 <=>[fast eq.] NO3}\qquad
+\ce{NO3 + NO ->[slow] 2NO2}
+
+\vspace{0.3em}
+\textbf{(c)}\quad \ce{2NO ->[slow] N2O2}\qquad
+\ce{N2O2 + O2 ->[fast] N2O4}\qquad
+\ce{N2O4 ->[fast] 2NO2}
+
+\vspace{0.3em}
+\textbf{(d)}\quad \ce{2NO <=>[fast eq.] N2O2}\qquad
+\ce{N2O2 ->[slow] NO2 + O}\qquad
+\ce{O + NO ->[fast] NO2}
+\end{center}
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}Check each RDS against the target,
+$k[\ce{NO}]^2[\ce{O2}]$.
+
+\textbf{(a)} RDS is bimolecular, \ce{NO}+\ce{O2}: gives
+$k[\ce{NO}][\ce{O2}]$ --- first order in \ce{NO}, \textbf{wrong}.
+
+\textbf{(b)} Fast equilibrium gives $[\ce{NO3}]=(k_1/k_{-1})[\ce{NO}]
+[\ce{O2}]$; RDS rate $=k_2[\ce{NO3}][\ce{NO}]=k[\ce{NO}]^2[\ce{O2}]$
+--- \textbf{matches}.
+
+\textbf{(c)} RDS is $2\ce{NO}\to\ce{N2O2}$: gives $k[\ce{NO}]^2$, with
+\emph{no} \ce{O2} dependence at all --- \textbf{wrong}.
+
+\textbf{(d)} Fast equilibrium gives $[\ce{N2O2}]=(k_1/k_{-1})[\ce{NO}]^2$;
+RDS rate $=k_2[\ce{N2O2}]=k[\ce{NO}]^2$, again \emph{no} \ce{O2}
+dependence --- \textbf{wrong}.
+
+\textbf{Only (b) is consistent.} The trap in (c) and (d) is that both
+correctly reproduce the \ce{NO}\textsuperscript{2} dependence but silently
+lose \ce{O2} because it never appears anywhere before or in their
+rate-determining step.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{(a) rejected, first order in \ce{NO} only}
+  \rpoint{2}{(b) verified consistent, equilibrium substitution shown}
+  \rpoint{1}{(c) rejected, no \ce{O2} dependence}
+  \rpoint{1}{(d) rejected, no \ce{O2} dependence}
+  \rpoint{1}{selects (b) as the unique answer}
+\end{rubric}
+
+% ============================================================================
+\examsection{D}{Collision Model, Energy Profiles, and Arrhenius}{7
+  questions \textbullet\ 35 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{5.6} \textbullet\ sketching energy profiles
+  \emph{(after Zumdahl Q68)}}
+
+On your own paper, sketch a labeled reaction-energy-profile for each case,
+marking $E_a$ and $\Delta E$ on each:
+
+\begin{parts}
+  \item $\Delta E = +10$~kJ/mol, $E_a = 25$~kJ/mol
+  \item $\Delta E = -10$~kJ/mol, $E_a = 50$~kJ/mol
+  \item $\Delta E = -50$~kJ/mol, $E_a = 50$~kJ/mol
+\end{parts}
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}All three profiles rise from reactants to a
+single peak (the transition state) and then fall to products.
+
+\textbf{(a)} Products sit \emph{above} reactants by 10~kJ/mol
+(endothermic); the peak sits 25~kJ/mol above reactants, so only
+$25-10=15$~kJ/mol separates the peak from products --- a short downhill
+side.
+
+\textbf{(b)} Products sit 10~kJ/mol \emph{below} reactants (exothermic);
+peak is 50~kJ/mol above reactants, so $50-(-10)=60$~kJ/mol separates the
+peak from products --- a long downhill side.
+
+\textbf{(c)} Products sit 50~kJ/mol below reactants, peak still 50~kJ/mol
+above reactants: the reverse activation energy is
+$50-(-50)=100$~kJ/mol --- an even longer drop from peak to
+products.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct relative heights of reactants/peak/products}
+  \rpoint{1}{(b) correct relative heights}
+  \rpoint{1}{(c) correct relative heights, including the large reverse
+    $E_a$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{5.6} \textbullet\ activation energy of the reverse
+  reaction \emph{(after Zumdahl Q70)}}
+
+For \ce{X2(g) + Y2(g) -> 2XY(g)}, $E_a\text{(forward)} = \SI{167}{\kilo
+\joule\per\mole}$ and $\Delta E = \SI{+28}{\kilo\joule\per\mole}$.
+
+Find $E_a$ for the decomposition of \ce{XY} (the reverse reaction).
+\workspace[3cm]
+\keyonly{\begin{apcanswer}The forward and reverse activation energies
+share the same peak; they differ only in which side they are measured
+from:
+
+\[E_a(\text{reverse}) = E_a(\text{forward}) - \Delta E = 167 - 28
+= \mathbf{139}\ \text{kJ/mol}\]
+
+Sanity check: since the forward reaction is endothermic
+($\Delta E > 0$), products sit higher than reactants, so the reverse
+climb (products back down to the peak) must be \emph{shorter} than the
+forward climb --- and $139 < 167$. \checkmark\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{sets up $E_a(\text{rev}) = E_a(\text{fwd}) - \Delta E$}
+  \rpoint{1}{\SI{139}{\kilo\joule\per\mole}}
+  \rpoint{1}{checks the direction (reverse $E_a$ smaller, since forward is
+    endothermic)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{5.6} \practice{5} \textbullet\ [beyond CED] activation
+  energy from a $k(T)$ table}
+
+\ce{2N2O5(g) -> 4NO2(g) + O2(g)}.
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$T$ (\si{\celsius}) & $k$ (s\textsuperscript{-1})\\
+\midrule
+20 & $2.0\times10^{-5}$\\
+30 & $7.3\times10^{-5}$\\
+40 & $2.7\times10^{-4}$\\
+50 & $9.1\times10^{-4}$\\
+60 & $2.9\times10^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Determine $E_a$.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- convert to Kelvin and build}
+$1/T$ \textbf{and} $\ln k$ \textbf{columns.}
+
+\begin{center}
+\begin{tabular}{ccc}
+$T$ (K) & $1/T$ (K\textsuperscript{-1}) & $\ln k$\\
+293 & $3.41\times10^{-3}$ & $-10.82$\\
+303 & $3.30\times10^{-3}$ & $-9.53$\\
+313 & $3.19\times10^{-3}$ & $-8.22$\\
+323 & $3.10\times10^{-3}$ & $-7.00$\\
+333 & $3.00\times10^{-3}$ & $-5.84$\\
+\end{tabular}
+\end{center}
+
+\textbf{Step 2 --- the Arrhenius equation predicts $\ln k$ is linear in
+$1/T$}, with slope $=-E_a/R$:
+
+\[\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A\]
+
+\textbf{Step 3 --- fit a line} to the five points above: slope
+$\approx -1.22\times10^4$~K.
+
+\textbf{Step 4 --- solve for $E_a$.}
+
+\[E_a = -\text{slope}\times R = (1.22\times10^4)(8.3145)
+= \mathbf{1.01\times10^5}\ \text{J/mol} = \mathbf{101}\ \text{kJ/mol}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts all temperatures to Kelvin}
+  \rpoint{1}{builds correct $1/T$ column}
+  \rpoint{1}{builds correct $\ln k$ column}
+  \rpoint{2}{extracts a slope from the linear $\ln k$ vs.\ $1/T$
+    relationship}
+  \rpoint{2}{$E_a \approx \SI{101}{\kilo\joule\per\mole}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.6} \textbullet\ [beyond CED] a second $k(T)$
+  determination \emph{(after Zumdahl Q71)}}
+
+\ce{N2O5(g) -> 2NO2(g) + 1/2O2(g)}.
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$T$ (K) & $k$ (s\textsuperscript{-1})\\
+\midrule
+338 & $4.9\times10^{-3}$\\
+318 & $5.0\times10^{-4}$\\
+298 & $3.5\times10^{-5}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Determine $E_a$.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}Build $1/T$ and $\ln k$:
+
+$1/T = 2.959\times10^{-3},\ 3.145\times10^{-3},\ 3.356\times10^{-3}$
+K\textsuperscript{-1}
+
+$\ln k = -5.32,\ -7.60,\ -10.26$
+
+Slope of $\ln k$ vs.\ $1/T$ (fitting all three points): $\approx
+-1.24\times10^4$~K
+
+\[E_a = -\text{slope}\times R = (1.24\times10^4)(8.3145)
+\approx \mathbf{1.03\times10^5}\ \text{J/mol} = \mathbf{103}\
+\text{kJ/mol}\]
+
+Close to, but not identical to, the previous question's answer for the
+same reaction --- different temperature ranges and rounding in each data
+set give slightly different fitted slopes; both are legitimate estimates
+of the same underlying $E_a$.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts $T$ and computes $\ln k$ for all 3 points}
+  \rpoint{2}{extracts a slope from the linear relationship}
+  \rpoint{2}{$E_a \approx \SI{103}{\kilo\joule\per\mole}$ (accept
+    \SIrange{95}{110}{\kilo\joule\per\mole})}
+  \rpoint{1}{notes this is consistent with, though not identical to, the
+    previous item's value for the same reaction}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.6} \practice{5} \textbullet\ [beyond CED] Ea from
+  two rate constants}
+
+\ce{CH4(g) + 2S2(g) -> CS2(g) + 2H2S(g)}: $k_1 = \SI{1.1}{\litre\per\mole
+\per\second}$ at \SI{550}{\celsius}; $k_2 = \SI{6.4}{\litre\per\mole\per
+\second}$ at \SI{625}{\celsius}.
+
+Determine $E_a$.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- convert to Kelvin}:
+$T_1=\SI{823}{\kelvin}$, $T_2=\SI{898}{\kelvin}$.
+
+\textbf{Step 2 --- two-point Arrhenius form}, which needs only two
+$(T,k)$ pairs (no full data table required):
+
+\[\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1}-\frac{1}{T_2}\right)\]
+
+\textbf{Step 3 --- solve.}
+
+$\ln(6.4/1.1) = \ln(5.818) = 1.761$
+
+$\dfrac{1}{823}-\dfrac{1}{898} = 1.0155\times10^{-4}$~K\textsuperscript{-1}
+
+\[E_a = \frac{1.761 \times 8.3145}{1.0155\times10^{-4}}
+= \mathbf{1.44\times10^5}\ \text{J/mol} = \mathbf{144}\ \text{kJ/mol}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to Kelvin}
+  \rpoint{1}{correct two-point Arrhenius equation set up}
+  \rpoint{1}{$\ln(k_2/k_1)$ computed correctly}
+  \rpoint{2}{$E_a \approx \SI{144}{\kilo\joule\per\mole}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{5.6} \practice{5} \textbullet\ [beyond CED] the full
+  Arrhenius toolkit \emph{(after Zumdahl Q72)}}
+
+\ce{(CH3)3CBr + OH^- -> (CH3)3COH + Br^-} is first order in
+\ce{(CH3)3CBr} and zero order in \ce{OH^-}. A plot of $\ln k$ vs.\ $1/T$ is
+linear, slope $= \SI{-1.10e4}{\kelvin}$, $y$-intercept $=33.5$ ($k$ in
+s\textsuperscript{-1}).
+
+\begin{parts}
+  \item Find $E_a$. \answerlines[2]{$E_a = -\text{slope}\times R =
+        (1.10\times10^4)(8.3145) = \mathbf{91.5}$~kJ/mol}
+  \item Find the frequency factor $A$. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}The intercept of $\ln k$ vs.\ $1/T$ is
+        $\ln A$:
+
+        $A = e^{33.5} = \mathbf{3.54\times10^{14}}$~
+        \textbf{s\textsuperscript{-1}}\end{apcanswer}}
+  \item Find $k$ at \SI{25}{\celsius}. \workspace[3cm]
+        \keyonly{\begin{apcanswer}$T = \SI{298.15}{\kelvin}$,
+        $1/T = 3.354\times10^{-3}$~K\textsuperscript{-1}
+
+        $\ln k = (-1.10\times10^4)(3.354\times10^{-3}) + 33.5
+        = -36.89 + 33.5 = -3.39$
+
+        $k = e^{-3.39} = \mathbf{0.0336}$~\textbf{s\textsuperscript{-1}}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{$E_a \approx \SI{91.5}{\kilo\joule\per\mole}$}
+  \rpoint{2}{$A \approx 3.5\times10^{14}$~s\textsuperscript{-1}, via
+    $A=e^{\text{intercept}}$}
+  \rpoint{3}{$k \approx \SI{0.0336}{\per\second}$ at \SI{25}{\celsius}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.6} \practice{5} \textbullet\ [beyond CED] the
+  ``10~K doubles the rate'' rule \emph{(after Zumdahl Q76)}}
+
+Chemists commonly use the rule of thumb that a \SI{10}{\kelvin} rise
+doubles a reaction's rate. What must $E_a$ be for this to hold exactly
+between \SI{25}{\celsius} and \SI{35}{\celsius}?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$T_1=\SI{298.15}{\kelvin}$,
+$T_2=\SI{308.15}{\kelvin}$, $k_2/k_1=2.00$.
+
+\[E_a = \frac{R\ln(2.00)}{\dfrac{1}{T_1}-\dfrac{1}{T_2}}
+= \frac{(8.3145)(0.693)}{1.0868\times10^{-4}}
+= \mathbf{5.29\times10^4}\ \text{J/mol} = \mathbf{52.9}\
+\text{kJ/mol}\]
+
+This is why the rule of thumb is only a rule of thumb: it is exact for
+one specific $E_a$ (about \SI{53}{\kilo\joule\per\mole}) near room
+temperature, and increasingly wrong for reactions with very different
+activation energies.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to Kelvin}
+  \rpoint{1}{sets $k_2/k_1 = 2.00$}
+  \rpoint{1}{correct Arrhenius two-point setup}
+  \rpoint{1}{$E_a \approx \SI{52.9}{\kilo\joule\per\mole}$}
+\end{rubric}
+
+% ============================================================================
+\examsection{E}{Catalysis}{3 questions \textbullet\ 17 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.11} \practice{6} \textbullet\ catalyst, intermediate,
+  and rate ratio \emph{(after Zumdahl Q79)}}
+
+One mechanism for ozone destruction in the upper atmosphere:
+
+\begin{center}
+\ce{O3 + NO ->[slow] NO2 + O2}\\
+\ce{NO2 + O ->[fast] NO + O2}\\[2pt]
+\hrulefill\\[2pt]
+\ce{O3 + O -> 2O2} \quad(overall)
+\end{center}
+
+\begin{parts}
+  \item Which species is a catalyst? \answerlines[1]{\ce{NO} --- consumed
+        in step 1, regenerated in step 2, net unchanged.}
+  \item Which species is an intermediate? \answerlines[1]{\ce{NO2} ---
+        produced in step 1, consumed in step 2, never appears in the
+        overall equation.}
+  \item \textbf{[beyond CED]} $E_a\text{(uncatalyzed)} =
+        \SI{14.0}{\kilo\joule\per\mole}$; $E_a\text{(catalyzed)} =
+        \SI{11.9}{\kilo\joule\per\mole}$. Find the ratio
+        $k_{\text{cat}}/k_{\text{uncat}}$ at \SI{25}{\celsius}, assuming
+        the same $A$. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\[\frac{k_{\text{cat}}}{k_{\text{uncat}}}
+        = \frac{Ae^{-E_{a,\text{cat}}/RT}}{Ae^{-E_{a,\text{uncat}}/RT}}
+        = e^{-(E_{a,\text{cat}}-E_{a,\text{uncat}})/RT}\]
+
+        $= e^{-(11900-14000)/[(8.3145)(298.15)]}
+        = e^{2100/2478.8} = e^{0.847}$
+
+        $= \mathbf{2.33}$ --- the catalyzed pathway runs about
+        \textbf{2.3 times faster}.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{\ce{NO} identified as catalyst}
+  \rpoint{1}{\ce{NO2} identified as intermediate}
+  \rpoint{1}{sets up the ratio as $e^{-\Delta E_a/RT}$, same $A$ cancels}
+  \rpoint{3}{ratio $\approx 2.3$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{5.11} \textbullet\ [beyond CED] comparing two
+  catalysts \emph{(after Zumdahl Q80)}}
+
+Chlorine atoms, generated photochemically from Freon-12
+(\ce{CCl2F2 ->[$h\nu$] CF2Cl + Cl}), also catalyze ozone destruction:
+\ce{Cl + O3 -> ClO + O2}, $E_a = \SI{2.1}{\kilo\joule\per\mole}$.
+
+Using your ratio from the previous question, which is the more effective
+catalyst for ozone destruction: \ce{Cl} or \ce{NO}?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}Compare each catalyzed pathway to the same
+uncatalyzed baseline ($E_a=\SI{14.0}{\kilo\joule\per\mole}$):
+
+\[\frac{k_{\ce{Cl}}}{k_{\text{uncat}}} =
+e^{-(2100-14000)/[(8.3145)(298.15)]} = e^{4.80} = \mathbf{122}\]
+
+Chlorine speeds the reaction up by a factor of about \textbf{120}, versus
+\ce{NO}'s factor of about \textbf{2.3} from the previous question.
+
+\textbf{Chlorine is the far more effective catalyst} --- its much lower
+activation energy (\SI{2.1}{\kilo\joule\per\mole} versus
+\SI{11.9}{\kilo\joule\per\mole}) matters enormously because $E_a$ sits in
+an exponent. This is also exactly why CFC-driven ozone depletion is a
+serious atmospheric problem: a single \ce{Cl} atom can destroy ozone far
+faster, and far more times before removal, than \ce{NO}
+does.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{2}{ratio for \ce{Cl} $\approx 120$}
+  \rpoint{1}{compares against \ce{NO}'s ratio of $\approx 2.3$}
+  \rpoint{1}{concludes \ce{Cl} is the far more effective catalyst, tied to
+    its much smaller $E_a$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{5.11} \practice{6} \textbullet\ comparing heterogeneous
+  catalysts \emph{(after Zumdahl Q82)}}
+
+\ce{2NH3(g) -> N2(g) + 3H2(g)} was studied on two catalytic surfaces:
+$E_a(\ce{W}) = \SI{163}{\kilo\joule\per\mole}$,
+$E_a(\ce{Os}) = \SI{197}{\kilo\joule\per\mole}$. Uncatalyzed,
+$E_a = \SI{335}{\kilo\joule\per\mole}$. The rate law observed on both
+surfaces has the form Rate $=k[\ce{NH3}]/[\ce{H2}]$.
+
+\begin{parts}
+  \item Which surface is the better catalyst, and why? \answerlines[2]{
+        Tungsten (\ce{W}) --- its lower $E_a$
+        (\SI{163}{\kilo\joule\per\mole} versus
+        \SI{197}{\kilo\joule\per\mole}) means a larger fraction of
+        collisions clear the barrier at any given temperature.}
+  \item \textbf{[beyond CED]} How many times faster is the reaction on
+        \ce{W} than uncatalyzed, at \SI{298}{\kelvin}, same $A$?
+        \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}\[\frac{k_{\ce{W}}}{k_{\text{uncat}}}
+        = e^{-(163000-335000)/[(8.3145)(298)]}
+        = e^{172000/2477.7} = e^{69.4}\]
+
+        $= \mathbf{1.4\times10^{30}}$ --- an almost incomprehensibly
+        large factor. This is the real message of the Arrhenius equation:
+        because $E_a$ sits in an exponent, a catalyst does not merely
+        speed a reaction up, it can be the entire difference between a
+        reaction that runs and one that effectively never
+        does.\end{apcanswer}}
+  \item Explain the inverse dependence of rate on $[\ce{H2}]$.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}An inverse order means \ce{H2}
+        \textbf{inhibits} the reaction --- more \ce{H2} present makes the
+        reaction \emph{slower}. On a heterogeneous catalyst, this is the
+        signature of \textbf{competitive adsorption}: \ce{H2} molecules
+        occupy active sites on the surface without reacting further,
+        blocking \ce{NH3} from adsorbing there. The more \ce{H2} present,
+        the more sites are tied up this way, so the rate --- limited by
+        how much \ce{NH3} can actually bind --- falls as $[\ce{H2}]$
+        rises.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{selects \ce{W}}
+  \rpoint{1}{justifies via lower $E_a$}
+  \rpoint{1}{correct exponential ratio set up}
+  \rpoint{2}{ratio $\approx 1.4\times10^{30}$}
+  \rpoint{2}{explains the inverse \ce{H2} order via competitive adsorption
+    for surface sites}
+\end{rubric}
+
+% ============================================================================
+% SESSION 3
+% ============================================================================
+\clearpage
+\examsection{F}{Challenge Extension}{13 questions \textbullet\ 111 points
+  \textbullet\ separate sitting}{\calculatorok}
+
+\begin{apcnote}[About Part F]
+Every Challenge Problem printed on Zumdahl's Chapter~12 review pages is
+here. These go well past what the AP exam will ask --- third-order
+kinetics, multi-experiment flooding studies, and mechanism derivations
+with fast pre-equilibria --- but every technique is one you already used
+in Sessions 1--2, just layered together.
+\end{apcnote}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{5.3} \practice{5} \textbullet\ third-order half-life
+  scaling \emph{(after Zumdahl Q110)}}
+
+For $a\ce{A} \to \text{products}$, Rate $=k[\ce{A}]^3$ (third order). The
+first half-life is \SI{40}{\second}.
+
+Find the \emph{second} half-life (the time for $[\ce{A}]$ to drop from
+$[\ce{A}]_0/2$ to $[\ce{A}]_0/4$).
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- integrate the third-order rate
+law.}
+
+\[\frac{d[\ce{A}]}{[\ce{A}]^3} = -k\,dt \quad\Longrightarrow\quad
+\frac{1}{[\ce{A}]^2} = \frac{1}{[\ce{A}]_0^2} + 2kt\]
+
+\textbf{Step 2 --- find how $t_{1/2}$ depends on the starting
+concentration.} Setting $[\ce{A}]=[\ce{A}]_0/2$:
+
+\[\frac{4}{[\ce{A}]_0^2} = \frac{1}{[\ce{A}]_0^2} + 2k\,t_{1/2}
+\quad\Longrightarrow\quad t_{1/2} = \frac{3}{2k[\ce{A}]_0^2}\]
+
+\textbf{Step 3 --- the key idea:} $t_{1/2}$ scales as
+$1/[\ce{A}]_0^2$. The second half-life starts from $[\ce{A}]_0/2$, so its
+own "$[\ce{A}]_0$" is half as large --- meaning its half-life is
+$(1/2)^{-2}=4$ times longer:
+
+\[t_{1/2,\,2} = 4 \times t_{1/2,\,1} = 4 \times 40
+= \mathbf{160}\ \text{s}\]
+
+Contrast this with first order (every half-life the \emph{same}) and
+second order (each half-life \emph{doubles}) --- third order
+\textbf{quadruples}.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{2}{integrates $d[\ce{A}]/[\ce{A}]^3=-k\,dt$ to reach
+    $1/[\ce{A}]^2=1/[\ce{A}]_0^2+2kt$}
+  \rpoint{2}{derives $t_{1/2}\propto1/[\ce{A}]_0^2$}
+  \rpoint{1}{recognises the second half-life starts from half the
+    concentration, so scales by $2^2=4$}
+  \rpoint{1}{\SI{160}{\second}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{5.2} \practice{5} \textbullet\ a rate law with an
+  inverse term \emph{(after Zumdahl Q111)}}
+
+\ce{I^-(aq) + OCl^-(aq) -> IO^-(aq) + Cl^-(aq)}, studied with \ce{[OH^-]}
+varied alongside the two reactants.
+
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Exp. & $[\ce{I^-}]_0$ (M) & $[\ce{OCl^-}]_0$ (M) & $[\ce{OH^-}]_0$ (M)\quad
+  Rate (M/s)\\
+\midrule
+1 & 0.0013 & 0.012 & 0.10 \quad $9.4\times10^{-3}$\\
+2 & 0.0026 & 0.012 & 0.10 \quad $1.87\times10^{-2}$\\
+3 & 0.0013 & 0.0060 & 0.10 \quad $4.7\times10^{-3}$\\
+4 & 0.0013 & 0.018 & 0.10 \quad $1.40\times10^{-2}$\\
+5 & 0.0013 & 0.012 & 0.050 \quad $1.87\times10^{-2}$\\
+6 & 0.0013 & 0.012 & 0.20 \quad $4.7\times10^{-3}$\\
+7 & 0.0013 & 0.018 & 0.20 \quad $7.0\times10^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Determine the rate law and $k$.
+\workspace[8cm]
+\keyonly{\begin{apcanswer}\textbf{Order in \ce{I^-}} (1$\to$2, others
+fixed): doubles, rate doubles $\Rightarrow$ order $\mathbf{1}$.
+
+\textbf{Order in \ce{OCl^-}} (1$\to$3, others fixed): halves, rate halves
+$\Rightarrow$ order $\mathbf{1}$. (Confirmed independently, 1$\to$4:
+$\times1.5$ concentration, $\times1.49$ rate.)
+
+\textbf{Order in \ce{OH^-}} (1$\to$5, others fixed): $[\ce{OH^-}]$
+\emph{halves}, but the rate \emph{doubles}. Halving the concentration
+doubling the rate means the exponent is \textbf{negative}:
+$0.5^n=2 \Rightarrow n=-1$. (Confirmed 1$\to$6: $[\ce{OH^-}]$ doubles,
+rate halves --- same $-1$.)
+
+\[\text{Rate} = \frac{k[\ce{I^-}][\ce{OCl^-}]}{[\ce{OH^-}]}\]
+
+\ce{OH^-} \textbf{inhibits} this reaction --- more of it slows the
+reaction down, the reverse of a normal reactant.
+
+$k$ from each row ($=\text{rate}\times[\ce{OH^-}]/([\ce{I^-}][\ce{OCl^-}])$):
+all seven rows give $k \approx 60$, average
+
+\[\mathbf{k \approx 60.0}\ \text{L}^2\text{/mol}^2\text{\,s}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{order 1 in \ce{I^-}}
+  \rpoint{1}{order 1 in \ce{OCl^-}, checked against two independent row
+    pairs}
+  \rpoint{3}{order $-1$ in \ce{OH^-}, explicitly reasoning that halving
+    $[\ce{OH^-}]$ doubles the rate}
+  \rpoint{1}{rate law written with \ce{OH^-} in the denominator}
+  \rpoint{2}{$k$ computed for at least 3 rows, all consistent}
+  \rpoint{1}{average $k \approx \SI{60.0}{\litre\squared\per\mole\squared\per\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{5.3} \practice{5} \textbullet\ two competing
+  dimerizations \emph{(after Zumdahl Q112)}}
+
+Isomers \ce{A} and \ce{B} each dimerize, both by second-order kinetics:
+$2\ce{A}\to\ce{A2}$ (rate constant $k_1$), $2\ce{B}\to\ce{B2}$ (rate
+constant $k_2$). At \SI{25}{\celsius}, $k_1 = \SI{0.250}{\litre\per\mole
+\per\second}$. In separate containers, $[\ce{A}]_0 = \SI{1.00e-2}{\Molar}$
+and $[\ce{B}]_0 = \SI{2.50e-2}{\Molar}$. After \SI{3.00}{\minute},
+$[\ce{A}] = 3.00[\ce{B}]$.
+
+\begin{parts}
+  \item Find $[\ce{A2}]$ after \SI{3.00}{\minute}. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$t = \SI{180}{\second}$.
+
+        $[\ce{A}] = \dfrac{1}{1/[\ce{A}]_0 + k_1 t}
+        = \dfrac{1}{1/0.0100 + (0.250)(180)}
+        = \dfrac{1}{145} = \mathbf{6.90\times10^{-3}}$~\textbf{M}
+
+        Dimerization is 2:1, so
+        $[\ce{A2}] = (0.0100-0.00690)/2
+        = \mathbf{1.55\times10^{-3}}$~\textbf{M}\end{apcanswer}}
+  \item Find $k_2$. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$[\ce{A}]=3.00[\ce{B}]
+        \Rightarrow [\ce{B}] = 6.90\times10^{-3}/3.00
+        = 2.30\times10^{-3}$~M.
+
+        $k_2 = \dfrac{1/[\ce{B}] - 1/[\ce{B}]_0}{t}
+        = \dfrac{1/(2.30\times10^{-3}) - 1/(2.50\times10^{-2})}{180}
+        = \mathbf{2.19}$~\textbf{L/mol\,s}\end{apcanswer}}
+  \item Find the half-life for the \ce{A} experiment.
+        \answerlines[2]{$t_{1/2} = 1/(k_1[\ce{A}]_0)
+        = 1/(0.250\times0.0100) = \mathbf{400}$~s}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{$[\ce{A}]$ at \SI{3.00}{\minute} $\approx \SI{6.90e-3}{\Molar}$}
+  \rpoint{2}{halves correctly for $[\ce{A2}] \approx \SI{1.55e-3}{\Molar}$}
+  \rpoint{2}{uses the $[\ce{A}]=3.00[\ce{B}]$ relation to find $[\ce{B}]$}
+  \rpoint{2}{$k_2 \approx \SI{2.19}{\litre\per\mole\per\second}$}
+  \rpoint{1}{$t_{1/2}(\ce{A}) = \SI{400}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{5.2} \practice{5} \textbullet\ two flooding experiments
+  combined \emph{(after Zumdahl Q113)}}
+
+\ce{NO(g) + O3(g) -> NO2(g) + O2(g)}, studied two ways.
+
+\textbf{Experiment 1} --- \ce{O3} flooded at
+$1.0\times10^{14}$~molecules/cm\textsuperscript{3}, \ce{NO} followed:
+$[\ce{NO}]$ (molecules/cm\textsuperscript{3}) at $t$ (ms):
+$6.0\times10^8$ (0), $5.0\times10^8$ (100), $2.4\times10^8$ (500),
+$1.7\times10^8$ (700), $9.9\times10^7$ (1000).
+
+\textbf{Experiment 2} --- \ce{NO} flooded at
+$2.0\times10^{14}$~molecules/cm\textsuperscript{3}, \ce{O3} followed:
+$[\ce{O3}]$ at $t$ (ms): $1.0\times10^{10}$ (0), $8.4\times10^9$ (50),
+$7.0\times10^9$ (100), $4.9\times10^9$ (200), $3.4\times10^9$ (300).
+
+\begin{parts}
+  \item Determine the order with respect to each reactant.
+        \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}Both experiments give a good straight
+        line for $\ln[\text{tracked species}]$ vs.\ $t$ (checked, not
+        assumed): \textbf{Experiment 1} $\Rightarrow$ order 1 in \ce{NO}.
+        \textbf{Experiment 2} $\Rightarrow$ order 1 in
+        \ce{O3}.\end{apcanswer}}
+  \item Write the overall rate law. \answerlines[1]{Rate
+        $= k[\ce{NO}][\ce{O3}]$}
+  \item Find $k$ from each experiment, and an overall value.
+        \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}\textbf{Exp 1}: pseudo-rate constant
+        $k'_1 = -\text{slope of }\ln[\ce{NO}]\text{ vs }t
+        \approx \SI{1.80e-3}{\per\milli\second}$. Since \ce{O3} was
+        flooded at $1.0\times10^{14}$:
+        $k = k'_1/[\ce{O3}] = \mathbf{1.80\times10^{-17}}$~
+        \textbf{cm\textsuperscript{3}/molecule\,ms}
+
+        \textbf{Exp 2}: $k'_2 \approx \SI{3.60e-3}{\per\milli\second}$;
+        \ce{NO} flooded at $2.0\times10^{14}$:
+        $k = k'_2/[\ce{NO}] = \mathbf{1.80\times10^{-17}}$~
+        \textbf{cm\textsuperscript{3}/molecule\,ms}
+
+        Both experiments agree --- strong confirmation of the rate
+        law.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{tests $\ln$[tracked species] vs $t$ in each experiment}
+  \rpoint{2}{order 1 in \ce{NO} (Exp 1)}
+  \rpoint{2}{order 1 in \ce{O3} (Exp 2)}
+  \rpoint{1}{overall rate law $k[\ce{NO}][\ce{O3}]$}
+  \rpoint{2}{$k$ from Exp 1 $\approx 1.8\times10^{-17}$
+    cm\textsuperscript{3}/molecule\,ms}
+  \rpoint{2}{$k$ from Exp 2 agrees, confirming the rate law}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{5.4} \ced{5.9} \practice{6} \textbullet\ deriving a rate
+  law from a four-step mechanism \emph{(after Zumdahl Q114)}}
+
+Recall from Part A that
+\ce{BrO3^- + 5 Br^- + 6 H^+ -> 3 Br2 + 3 H2O} has the experimental rate
+law Rate $=k[\ce{BrO3^-}][\ce{Br^-}][\ce{H^+}]^2$. A proposed mechanism:
+
+\begin{center}
+\ce{BrO3^- + H^+ <=>[$k_1$][$k_{-1}$] HBrO3} \quad(fast equilibrium)\\
+\ce{HBrO3 + H^+ <=>[$k_2$][$k_{-2}$] H2BrO3^+} \quad(fast equilibrium)\\
+\ce{Br^- + H2BrO3^+ ->[$k_3$, slow] (BrOBrO2) + H2O}\\
+\ce{(BrOBrO2) + 4H^+ + 4Br^- ->[fast] 3Br2 + 3H2O}
+\end{center}
+
+Derive the rate law this mechanism predicts, and confirm it reproduces
+the experimental one from Part A.
+\workspace[8cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- rate from the RDS.}
+
+\[\text{Rate} = k_3[\ce{Br^-}][\ce{H2BrO3^+}]\]
+
+\textbf{Step 2 --- eliminate \ce{H2BrO3^+}} using the second fast
+equilibrium:
+
+\[k_2[\ce{HBrO3}][\ce{H^+}] = k_{-2}[\ce{H2BrO3^+}]
+\Rightarrow [\ce{H2BrO3^+}] = \frac{k_2}{k_{-2}}[\ce{HBrO3}][\ce{H^+}]\]
+
+\textbf{Step 3 --- eliminate \ce{HBrO3}} using the first fast
+equilibrium:
+
+\[k_1[\ce{BrO3^-}][\ce{H^+}] = k_{-1}[\ce{HBrO3}]
+\Rightarrow [\ce{HBrO3}] = \frac{k_1}{k_{-1}}[\ce{BrO3^-}][\ce{H^+}]\]
+
+\textbf{Step 4 --- combine.}
+
+\[[\ce{H2BrO3^+}] = \frac{k_2 k_1}{k_{-2}k_{-1}}[\ce{BrO3^-}][\ce{H^+}]^2\]
+
+\[\text{Rate} = k_3\frac{k_1 k_2}{k_{-1}k_{-2}}[\ce{Br^-}][\ce{BrO3^-}]
+[\ce{H^+}]^2 = k[\ce{BrO3^-}][\ce{Br^-}][\ce{H^+}]^2\]
+
+\textbf{This exactly reproduces the empirical rate law} from Part A ---
+the mechanism explains \emph{why} \ce{H^+} shows up squared: it is
+consumed in \emph{two} separate pre-equilibrium steps before the slow
+step ever occurs.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{writes Rate $=k_3[\ce{Br^-}][\ce{H2BrO3^+}]$ from the RDS}
+  \rpoint{2}{eliminates \ce{H2BrO3^+} using the second equilibrium}
+  \rpoint{2}{eliminates \ce{HBrO3} using the first equilibrium}
+  \rpoint{2}{combines to the correct final rate law}
+  \rpoint{1}{explicitly connects the result back to Part A's empirical
+    rate law}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{5.4} \ced{5.9} \practice{6} \textbullet\
+  three-halves-order phosgene mechanism \emph{(after Zumdahl Q115)}}
+
+\ce{CO(g) + Cl2(g) -> COCl2(g)} (phosgene). A proposed mechanism:
+
+\begin{center}
+\ce{Cl2 <=>[$k_1$][$k_{-1}$] 2Cl} \quad(fast equilibrium)\\
+\ce{Cl + CO <=>[$k_2$][$k_{-2}$] COCl} \quad(fast equilibrium)\\
+\ce{COCl + Cl2 ->[$k_3$, slow] COCl2 + Cl}
+\end{center}
+
+\begin{parts}
+  \item Derive the rate law implied by this mechanism.
+        \workspace[6cm]
+        \keyonly{\begin{apcanswer}RDS: $\text{Rate} =
+        k_3[\ce{COCl}][\ce{Cl2}]$.
+
+        From the second equilibrium: $[\ce{COCl}] =
+        \dfrac{k_2}{k_{-2}}[\ce{Cl}][\ce{CO}]$.
+
+        From the first equilibrium: $[\ce{Cl}] =
+        \left(\dfrac{k_1}{k_{-1}}\right)^{1/2}[\ce{Cl2}]^{1/2}$.
+
+        Combine:
+
+        \[\text{Rate} = k_3\frac{k_2}{k_{-2}}\left(\frac{k_1}{k_{-1}}
+        \right)^{1/2}[\ce{CO}][\ce{Cl2}]^{1/2}[\ce{Cl2}]
+        = k[\ce{CO}][\ce{Cl2}]^{3/2}\]
+
+        First order in \ce{CO}, three-halves order in
+        \ce{Cl2}.\end{apcanswer}}
+  \item Identify the intermediates. \answerlines[2]{\ce{Cl} and
+        \ce{COCl} --- both produced in one step and consumed in a later
+        one, neither appearing in the overall equation.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{Rate $=k_3[\ce{COCl}][\ce{Cl2}]$ from the RDS}
+  \rpoint{2}{eliminates \ce{COCl} using the second equilibrium}
+  \rpoint{2}{eliminates \ce{Cl} using the first equilibrium (square root)}
+  \rpoint{1}{final rate law $k[\ce{CO}][\ce{Cl2}]^{3/2}$}
+  \rpoint{1}{both intermediates named}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{5.4} \ced{5.10} \textbullet\ labeling a two-step
+  energy profile \emph{(after Zumdahl Q116)}}
+
+A two-step reaction has an energy profile with \textbf{two} humps
+separated by a dip that sits above the reactants but below the taller of
+the two peaks.
+
+On such a profile, identify: (a) the positions of reactants and products;
+(b) $E_a$ for the overall reaction; (c) $\Delta E$ for the overall
+reaction; (d) the point representing the intermediate; (e) which step is
+rate-determining, with reasoning.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{(a)} Reactants sit at the far left of
+the curve (before the first hump); products sit at the far right (after
+the second hump).
+
+\textbf{(b)} $E_a$(overall) is measured from the reactants' height up to
+the \emph{taller} of the two peaks --- not the sum of both humps.
+
+\textbf{(c)} $\Delta E$(overall) is the vertical distance from reactants
+directly to products, ignoring the path between.
+
+\textbf{(d)} The \textbf{dip between the two humps} is the intermediate
+--- a real, momentarily stable species, not a transition state (transition
+states sit \emph{at} the peaks, not in valleys).
+
+\textbf{(e)} Whichever step's hump is \textbf{taller} is
+\textbf{rate-determining} --- that step has the larger activation energy
+measured from its own starting point, so it is the slower of the
+two.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{reactants/products correctly placed at the two ends}
+  \rpoint{1}{overall $E_a$ measured to the taller peak, not summed}
+  \rpoint{1}{overall $\Delta E$ measured reactants-to-products directly}
+  \rpoint{1}{intermediate correctly placed at the dip, not a peak}
+  \rpoint{1}{rate-determining step identified as the one with the taller
+    hump, with reasoning}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{5.4} \ced{5.9} \practice{6} \textbullet\ mechanism,
+  bond energies, and a limiting reactant \emph{(after Zumdahl Q117)}}
+
+\ce{H2(g) + F2(g) -> 2HF(g)} was studied twice, each time with one
+reactant held at a much higher pressure than the other (the lower-pressure
+reactant starting at \SI{1.000}{\atm}). Both runs gave the \emph{same}
+apparent rate constant. The reaction proceeds \textbf{40.0 times} faster at
+\SI{55}{\celsius} than at \SI{35}{\celsius}, and is understood to proceed
+through three elementary steps, the first of which has by far the largest
+$E_a$. Bond energies: \ce{H-H} \SI{432}{\kilo\joule\per\mole}, \ce{F-F}
+\SI{154}{\kilo\joule\per\mole}, \ce{H-F} \SI{565}{\kilo\joule\per\mole}.
+
+\begin{parts}
+  \item Find $\Delta E$ for the overall reaction. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\Delta E = \text{(bonds broken)} -
+        \text{(bonds formed)}$
+
+        $= [432+154] - 2(565) = 586 - 1130 = \mathbf{-544}$~
+        \textbf{kJ/mol} --- strongly exothermic.\end{apcanswer}}
+  \item Estimate $E_a$ for the overall reaction from the temperature
+        data. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}$T_1=\SI{308.15}{\kelvin}$,
+        $T_2=\SI{328.15}{\kelvin}$, ratio $=40.0$:
+
+        \[E_a = \frac{R\ln(40.0)}{1/T_1-1/T_2}
+        = \frac{(8.3145)(3.689)}{1.982\times10^{-4}}
+        \approx \mathbf{155}\ \text{kJ/mol}\]\end{apcanswer}}
+  \item Sketch a qualitative energy profile consistent with this
+        information, and propose a reasonable three-step mechanism.
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}A very tall first hump (dominates
+        $E_a$), then two much smaller humps as the reaction runs strongly
+        downhill overall (large negative $\Delta E$). A standard
+        radical-chain proposal: initiation
+        $\ce{F2 -> 2F}$ (the slow, high-$E_a$ step), then propagation
+        $\ce{F + H2 -> HF + H}$ and $\ce{H + F2 -> HF + F}$ (both fast,
+        each regenerating a radical to continue the chain).\end{apcanswer}}
+  \item Which reactant was limiting? \answerlines[2]{Neither in the usual
+        stoichiometric sense --- one reactant was deliberately held in
+        large excess in each run so its concentration stayed effectively
+        constant, isolating the kinetic dependence on the other. The
+        reactant starting at \SI{1.000}{\atm} is the one that actually
+        limits how far the reaction can proceed.}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{$\Delta E = \SI{-544}{\kilo\joule\per\mole}$, bonds broken
+    minus bonds formed}
+  \rpoint{3}{$E_a \approx \SI{155}{\kilo\joule\per\mole}$ from the
+    two-point Arrhenius method}
+  \rpoint{3}{qualitative profile and a chemically reasonable 3-step
+    radical-chain mechanism}
+  \rpoint{2}{identifies the \SI{1.000}{\atm} reactant as limiting, and
+    explains why the other was flooded}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{5.4} \ced{5.6} \practice{5} \textbullet\ [beyond CED]
+  an elementary reaction, combined with Arrhenius \emph{(after Zumdahl
+  Q118)}}
+
+\ce{2NO2(g) -> 2NO(g) + O2(g)} is an \textbf{elementary, bimolecular}
+reaction: $k = \SI{2.3e-12}{\litre\per\mole\per\second}$ at
+\SI{273}{\kelvin}, $E_a = \SI{111}{\kilo\joule\per\mole}$.
+
+Find the time for $[\ce{NO2}]$ to fall from a partial pressure of
+\SI{2.5}{\atm} to \SI{1.5}{\atm} at \SI{500}{\kelvin} (ideal gas).
+\workspace[8cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- because this is elementary and
+bimolecular}, its rate law is known directly from molecularity, without
+needing initial-rate data: $\text{Rate}=k[\ce{NO2}]^2$, \textbf{second
+order}.
+
+\textbf{Step 2 --- $k$ at \SI{500}{\kelvin}} via the two-point Arrhenius
+equation:
+
+\[k_{500} = k_{273}\exp\left[-\frac{E_a}{R}\left(\frac{1}{500}-
+\frac{1}{273}\right)\right]\]
+
+$= (2.3\times10^{-12})\exp[15.72] = \mathbf{1.01\times10^{-2}}$~
+\textbf{L/mol\,s}
+
+\textbf{Step 3 --- convert pressures to concentrations} at
+\SI{500}{\kelvin} ($C=P/RT$, $R=\SI{0.08206}{\litre\atm\per\mole\per
+\kelvin}$):
+
+$[\ce{NO2}]_1 = 2.5/(0.08206\times500) = \SI{0.0609}{\Molar}$
+
+$[\ce{NO2}]_2 = 1.5/(0.08206\times500) = \SI{0.0366}{\Molar}$
+
+\textbf{Step 4 --- integrated second-order law.}
+
+\[t = \frac{1/[\ce{NO2}]_2 - 1/[\ce{NO2}]_1}{k_{500}}
+= \frac{27.34 - 16.41}{1.01\times10^{-2}}
+\approx \mathbf{1.08\times10^3}\ \text{s}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognises elementary + bimolecular fixes the rate law as
+    second order without needing data}
+  \rpoint{3}{$k$ at \SI{500}{\kelvin} $\approx \SI{1.0e-2}{\litre\per\mole\per\second}$}
+  \rpoint{2}{converts both pressures to concentrations using $PV=nRT$}
+  \rpoint{2}{sets up the integrated second-order law correctly}
+  \rpoint{2}{$t \approx \SI{1.08e3}{\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{5.2} \practice{5} \textbullet\ pseudo-second-order from
+  two flooded experiments \emph{(after Zumdahl Q119)}}
+
+$2\ce{A} + \ce{B} \to \ce{C} + \ce{D}$, \ce{B} flooded. Rate defined as
+$-\Delta[\ce{A}]/\Delta t$.
+
+\textbf{Exp 1} ($[\ce{B}]_0=\SI{5.0}{\Molar}$), $[\ce{A}]$ (M) at $t$ (s):
+$0.100$ (0), $0.0667$ (20.), $0.0500$ (40.), $0.0400$ (60.), $0.0333$
+(80.), $0.0286$ (100.), $0.0250$ (120.).
+
+\textbf{Exp 2} ($[\ce{B}]_0=\SI{10.0}{\Molar}$), $[\ce{A}]$ (M) at $t$
+(s): $0.100$ (0), $0.0500$ (20.), $0.0333$ (40.), $0.0250$ (60.), $0.0200$
+(80.), $0.0167$ (100.), $0.0143$ (120.).
+
+\begin{parts}
+  \item Explain why $[\ce{B}]_0 \gg [\ce{A}]_0$ in both runs.
+        \answerlines[2]{Flooding \ce{B} keeps $[\ce{B}]$ essentially
+        constant across the run, so its own kinetic dependence collapses
+        into a pseudo-constant --- letting the order in \ce{A} alone be
+        read from a single experiment's data.}
+  \item Determine the rate law and $k$. \workspace[6cm]
+        \keyonly{\begin{apcanswer}Both experiments' $1/[\ce{A}]$ vs.\ $t$
+        are excellent straight lines --- \textbf{second order} in
+        \ce{A} in each.
+
+        Pseudo-rate constants (slopes): $k'_1 \approx
+        \SI{0.250}{\litre\per\mole\per\second}$,
+        $k'_2 \approx \SI{0.499}{\litre\per\mole\per\second}$.
+
+        $[\ce{B}]$ doubles (5.0$\to$10.0) and $k'$ doubles too
+        $\Rightarrow$ order \textbf{1} in \ce{B}.
+
+        \[\text{Rate} = k[\ce{A}]^2[\ce{B}]\]
+
+        $k = k'_1/[\ce{B}]_1 = 0.250/5.0 = \mathbf{0.0500}$~
+        \textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}
+        (Exp 2 gives the same value.)\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{explains the flooding technique}
+  \rpoint{2}{tests $1/[\ce{A}]$, confirms linear (second order) in both
+    experiments}
+  \rpoint{2}{compares the two pseudo-rate constants to find order 1 in
+    \ce{B}}
+  \rpoint{1}{rate law $k[\ce{A}]^2[\ce{B}]$}
+  \rpoint{1}{$k \approx \SI{0.0500}{\litre\squared\per\mole\squared\per\second}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{5.2} \ced{5.3} \practice{5} \textbullet\ do not assume
+  the order --- test it \emph{(after Zumdahl Q120)}}
+
+$2\ce{A} + 2\ce{B} \to \ce{C} + 2\ce{D}$, \ce{B} flooded. Rate defined as
+$-\Delta[\ce{A}]/\Delta t$.
+
+\textbf{Exp 1} ($[\ce{B}]_0=\SI{10.0}{\Molar}$), $[\ce{A}]$ (M) at $t$
+(s): $1.0\times10^{-2}$ (0), $8.4\times10^{-3}$ (10.), $7.1\times10^{-3}$
+(20.), \emph{(value lost)} (30.), $5.0\times10^{-3}$ (40.).
+
+\textbf{Exp 2} ($[\ce{B}]_0=\SI{20.0}{\Molar}$), $[\ce{A}]$ (M) at $t$
+(s): $1.0\times10^{-2}$ (0), $5.0\times10^{-3}$ (10.), $2.5\times10^{-3}$
+(20.), $1.3\times10^{-3}$ (30.), $6.3\times10^{-4}$ (40.).
+
+\begin{parts}
+  \item Determine the order with respect to \ce{A}. \emph{Do not assume
+        --- test at least two candidate orders against the data.}
+        \workspace[5cm]
+        \keyonly{\begin{apcanswer}\textbf{Test $1/[\ce{A}]$ first}, since
+        this looks superficially like the previous question: Exp 2's
+        $1/[\ce{A}]$ values are $100,\,200,\,400,\,769,\,1587$ --- the
+        differences ($100,200,369,818$) are \emph{not} constant. This
+        transform is \textbf{not} linear.
+
+        \textbf{Test $\ln[\ce{A}]$ instead}: Exp 2's concentrations
+        literally \emph{halve every \SI{10}{\second}}
+        ($1.0\times10^{-2}\to5.0\times10^{-3}\to2.5\times10^{-3}\to
+        \ldots$) --- a constant half-life, the signature of
+        \textbf{first order}. Exp 1 (excluding the missing point) shows
+        the same constant-ratio pattern.
+
+        \textbf{First order} in \ce{A}, \emph{not} second --- the
+        superficial resemblance to earlier flooding problems is a
+        trap.\end{apcanswer}}
+  \item Determine the order with respect to \ce{B}, and find $k$.
+        \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}Pseudo-rate constants from the
+        $\ln[\ce{A}]$ slopes: $k'_1 \approx
+        \SI{0.0173}{\per\second}$, $k'_2 \approx \SI{0.0688}{\per\second}$.
+
+        $[\ce{B}]$ doubles ($10.0\to20.0$) and $k'$ roughly
+        \textbf{quadruples} ($0.0173\to0.0688$, ratio $3.97$)
+        $\Rightarrow 2^n=4 \Rightarrow$ order \textbf{2} in \ce{B}.
+
+        \[\text{Rate} = k[\ce{A}][\ce{B}]^2\]
+
+        $k = k'_1/[\ce{B}]_1^2 = 0.0173/(10.0)^2 = 0.0173/100
+        = \mathbf{1.7\times10^{-4}}$~\textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}
+
+        (Exp 2 cross-checks: $k'_2/[\ce{B}]_2^2 = 0.0688/400 =
+        1.7\times10^{-4}$ --- agrees.)\end{apcanswer}}
+  \item Predict the missing $[\ce{A}]$ value at $t=\SI{30}{\second}$ in
+        Experiment 1. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Using the first-order fit for Exp 1:
+        $[\ce{A}] = [\ce{A}]_0\,e^{-k'_1 t} = (1.0\times10^{-2})
+        e^{-(0.0173)(30)} = \mathbf{5.95\times10^{-3}}$~\textbf{M}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{tests $1/[\ce{A}]$, finds it is NOT linear}
+  \rpoint{2}{tests $\ln[\ce{A}]$ (or notices the constant halving
+    directly), confirms first order}
+  \rpoint{2}{compares pseudo-rate constants to find order 2 in \ce{B}}
+  \rpoint{1}{rate law $k[\ce{A}][\ce{B}]^2$}
+  \rpoint{1}{$k \approx \SI{1.7e-4}{\litre\squared\per\mole\squared\per\second}$}
+  \rpoint{1}{predicted $[\ce{A}] \approx \SI{5.95e-3}{\Molar}$ at
+    \SI{30}{\second}, using the first-order (not second-order) fit}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{5.2} \practice{5} \textbullet\ three experiments, three
+  orders \emph{(after Zumdahl Q121)}}
+
+$\ce{A} + \ce{B} + 2\ce{C} \to 2\ce{D} + 3\ce{E}$, rate defined as
+$-\Delta[\ce{B}]/\Delta t$, studied with each pair of reactants flooded in
+turn.
+
+\textbf{Exp 1} (\ce{A}, \ce{C} flooded at 2.0~M, 1.0~M), $[\ce{B}]$ at $t$
+(s): $2.7\times10^{-4}$ ($1.0\times10^5$), $1.6\times10^{-4}$
+($2.0\times10^5$), $1.1\times10^{-4}$ ($3.0\times10^5$),
+$8.5\times10^{-5}$ ($4.0\times10^5$), $6.9\times10^{-5}$
+($5.0\times10^5$), $5.8\times10^{-5}$ ($6.0\times10^5$).
+
+\textbf{Exp 2} (\ce{B}, \ce{C} flooded at 3.0~M, 1.0~M), $[\ce{A}]$ at $t$
+(s): $8.9\times10^{-3}$ (1.0), $7.1\times10^{-3}$ (3.0), $5.5\times10^{-3}$
+(5.0), $3.8\times10^{-3}$ (8.0), $2.9\times10^{-3}$ (10.0),
+$2.0\times10^{-3}$ (13.0).
+
+\textbf{Exp 3} (\ce{A}, \ce{B} flooded at 10.0~M, 5.0~M), $[\ce{C}]$ at $t$
+(s): $0.43$ ($1.0\times10^{-2}$), $0.36$ ($2.0\times10^{-2}$), $0.29$
+($3.0\times10^{-2}$), $0.22$ ($4.0\times10^{-2}$), $0.15$
+($5.0\times10^{-2}$), $0.08$ ($6.0\times10^{-2}$).
+
+\begin{parts}
+  \item Determine the order with respect to each reactant.
+        \workspace[5cm]
+        \keyonly{\begin{apcanswer}\textbf{Exp 1 (tracking \ce{B})}:
+        $1/[\ce{B}]$ vs.\ $t$ is the clean straight line (not $\ln[\ce{B}]$)
+        --- order \textbf{2} in \ce{B}.
+
+        \textbf{Exp 2 (tracking \ce{A})}: $\ln[\ce{A}]$ vs.\ $t$ is the
+        clean straight line --- order \textbf{1} in \ce{A}.
+
+        \textbf{Exp 3 (tracking \ce{C})}: $[\ce{C}]$ itself vs.\ $t$ is
+        linear (constant drop of $0.07$ every $1.0\times10^{-2}$~s) ---
+        order \textbf{0} in \ce{C}.\end{apcanswer}}
+  \item Write the rate law and find $k$. \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\[\text{Rate} = k[\ce{A}][\ce{B}]^2\]
+
+        \textbf{From Exp 1} (\ce{A}, \ce{C} flooded): the $1/[\ce{B}]$
+        slope is the pseudo-rate constant $k'_1 = k[\ce{A}]_{\text{flood}}$:
+
+        $k'_1 \approx \SI{0.0272}{\litre\per\mole\per\second}
+        \Rightarrow k = 0.0272/2.0 = \mathbf{0.0136}$~
+        \textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}
+
+        \textbf{From Exp 2} (\ce{B}, \ce{C} flooded, and \ce{A}:\ce{B} is
+        1:1 so $-d[\ce{A}]/dt$ obeys the same rate law): the $\ln[\ce{A}]$
+        slope is $k''_2 = k[\ce{B}]_{\text{flood}}^2$:
+
+        $k''_2 \approx \SI{0.1253}{\per\second}
+        \Rightarrow k = 0.1253/(3.0)^2 = \mathbf{0.0139}$~
+        \textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}
+
+        The two independent experiments agree to two significant figures
+        --- \textbf{$k \approx 0.0137$}
+        \textbf{L\textsuperscript{2}/mol\textsuperscript{2}\,s}.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{Exp 1: tests transforms, confirms order 2 in \ce{B}}
+  \rpoint{1}{Exp 2: tests transforms, confirms order 1 in \ce{A}}
+  \rpoint{1}{Exp 3: confirms order 0 in \ce{C}}
+  \rpoint{2}{combines all three into the correct rate law
+    $k[\ce{A}][\ce{B}]^2$}
+  \rpoint{1}{recognises 1:1 \ce{A}:\ce{B} stoichiometry lets Exp 2 be used
+    for the same rate law}
+  \rpoint{2}{$k$ from Exp 1 $\approx \SI{0.0136}{\litre\squared\per\mole\squared\per\second}$}
+  \rpoint{2}{$k$ from Exp 2 agrees $\approx \SI{0.0139}{\litre\squared\per\mole\squared\per\second}$,
+    cross-checked against Exp 1}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{5.2} \practice{5} \textbullet\ a two-term rate law
+  \emph{(after Zumdahl Q122)}}
+
+\ce{H2O2(aq) + 3I^-(aq) + 2H^+(aq) -> I3^-(aq) + 2H2O(l)}, followed by the
+slope of $\ln[\ce{H2O2}]$ vs.\ time in each run (all runs starting at
+$[\ce{H2O2}]_0 = \SI{8.0e-4}{\Molar}$, with \ce{I^-} and \ce{H^+} flooded).
+The rate law is known to have the form
+\[\text{Rate} = (k_1 + k_2[\ce{H^+}])[\ce{I^-}]^m[\ce{H2O2}]^n\]
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+$[\ce{I^-}]_0$ (M) & $[\ce{H^+}]_0$ (M) & slope (min\textsuperscript{-1})\\
+\midrule
+0.1000 & 0.0400 & $-0.120$\\
+0.3000 & 0.0400 & $-0.360$\\
+0.4000 & 0.0400 & $-0.480$\\
+0.0750 & 0.0200 & $-0.0760$\\
+0.0750 & 0.0800 & $-0.118$\\
+0.0750 & 0.1600 & $-0.174$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+  \item Confirm $n=1$, and determine $m$. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}Since the tracked quantity is
+        $\ln[\ce{H2O2}]$ and it gives a straight line in every run, $n=1$
+        is confirmed directly (that is what makes $\ln[\ce{H2O2}]$ linear
+        in the first place).
+
+        Rows 1--3 hold $[\ce{H^+}]$ fixed: $[\ce{I^-}]$ triples
+        ($0.10\to0.30$), the slope triples too ($-0.120\to-0.360$)
+        $\Rightarrow m=\mathbf{1}$.\end{apcanswer}}
+  \item Determine $k_1$ and $k_2$. \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}With $m=n=1$, define
+        $k_{\text{obs}} = |\text{slope}|/[\ce{I^-}]_0 = k_1+k_2[\ce{H^+}]$
+        --- linear in $[\ce{H^+}]$.
+
+        Using rows 4--6 (fixed $[\ce{I^-}]=0.0750$):
+
+        $[\ce{H^+}]=0.0200$: $k_{\text{obs}}=0.0760/0.0750=1.013$
+
+        $[\ce{H^+}]=0.0800$: $k_{\text{obs}}=0.118/0.0750=1.573$
+
+        $[\ce{H^+}]=0.1600$: $k_{\text{obs}}=0.174/0.0750=2.320$
+
+        These three points fall on a straight line
+        $k_{\text{obs}}=k_1+k_2[\ce{H^+}]$: slope
+        $\mathbf{k_2 \approx 9.33}$~L\textsuperscript{2}/mol\textsuperscript{2}\,min,
+        intercept $\mathbf{k_1 \approx 0.827}$~
+        L/mol\,min.\end{apcanswer}}
+  \item Suggest a reason the rate law has two terms, one independent of
+        $[\ce{H^+}]$ and one proportional to it. \answerlines[3]{Two
+        parallel mechanistic pathways operate at once: one where
+        \ce{I^-} attacks \ce{H2O2} directly ($k_1$, no proton needed),
+        and a faster acid-catalyzed pathway where \ce{H2O2} is first
+        protonated, making the O--O bond easier to break before \ce{I^-}
+        attacks ($k_2[\ce{H^+}]$). Both channels operate simultaneously,
+        so the observed rate constant is their sum.}
+\end{parts}
+
+% This is the paper's last rubric: 6 \rpoint lines need more headroom than
+% the class's built-in 4-baselineskip pre-check, so the box was found (by
+% rendering the key and reading it) to split mid-line at a page boundary,
+% stranding "for two rate terms" as an orphaned, unlabeled fragment on the
+% next page. \needspace's own baselineskip estimate undershot the box's
+% real height (tcolorbox padding isn't in that estimate) and did not fix
+% it -- confirmed by re-rendering. Since nothing follows this rubric but
+% \examtotal, force it onto a fresh page outright.
+\clearpage
+\begin{rubric}
+  \rpoint{1}{confirms $n=1$ from the linear $\ln[\ce{H2O2}]$ tracking}
+  \rpoint{2}{$m=1$, shown from rows 1--3}
+  \rpoint{1}{defines $k_{\text{obs}}=|\text{slope}|/[\ce{I^-}]$}
+  \rpoint{2}{$k_2 \approx \SI{9.33}{\litre\squared\per\mole\squared\per\minute}$}
+  \rpoint{2}{$k_1 \approx \SI{0.827}{\litre\per\mole\per\minute}$}
+  \rpoint{2}{proposes two parallel pathways (uncatalyzed and
+    acid-catalyzed) as the mechanistic reason for two rate terms}
+\end{rubric}
+
+% ============================================================================
+\examtotal
+
+\end{document}

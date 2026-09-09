@@ -139,7 +139,7 @@ they depend on the overall order.
 > **Units:** rate is M/s and
 > $[\text{A}]^2[\text{B}]$ is M³, so $k$ carries
 > /M²/s — that is,
-> M\textsuperscript-2 s\textsuperscript-1.
+> M-2 s-1.
 > 
 > **Check with another experiment:**
 > $4.8(0.100)^2(0.10) = 4.8\times10^{-3}$, matching experiment 2.
