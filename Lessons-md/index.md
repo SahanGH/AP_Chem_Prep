@@ -58,6 +58,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Free-Response Set](unit04-chemical-reactions/u04-frq.md)
 - [Review Sheet](unit04-chemical-reactions/u04-review.md)
 - [Unit Exam](unit04-chemical-reactions/u04-exam.md)
+- [Comprehensive Test](unit04-chemical-reactions/u04-test-full.md)
 
 ## Unit 5 • Kinetics
 

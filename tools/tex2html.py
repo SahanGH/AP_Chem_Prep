@@ -59,10 +59,19 @@ def section_label(tex_path: Path) -> str:
     return dict(SECTIONS)[root]
 
 # Doc kinds that get answer-checking inputs and revealable explanations.
-# Keyed on the stem suffix: "ch05-selfstudy" -> "selfstudy". Exams are
-# deliberately absent -- self-grading defeats an assessment. Worksheets
+# Keyed on the stem suffix: "ch05-selfstudy" -> "selfstudy". Worksheets
 # ("ws1".."ws4") are phase 2; adding them here is the whole switch.
-EXPLAIN_KINDS = {"selfstudy", "selfstudy2"}
+#
+# The two sets are deliberately different. EXPLAIN_KINDS keeps \keyonly
+# content and turns each apcanswer into a "Show explanation" reveal;
+# INTERACTIVE_KINDS additionally converts workspace into live scratch pads
+# and pairs \selfcheck ladders. "test-full" wants the first and not the
+# second: it is a read-and-check paper with no \selfcheck lines.
+#
+# The unit EXAMS stay out of both -- self-grading defeats an assessment.
+# "test-full" is in at the teacher's explicit request, so the reveals are
+# available for going over the paper afterwards.
+EXPLAIN_KINDS = {"selfstudy", "selfstudy2", "test-full"}
 INTERACTIVE_KINDS = {"selfstudy", "selfstudy2"}
 
 # Doc kinds whose scratch pads load the MathLive equation editor. It is
@@ -238,7 +247,7 @@ UNKNOWN_UNITS = set()
 def expand_units(spec: str) -> str:
     r"""\gram\per\mole -> g/mol (HTML entities allowed)."""
     toks = re.findall(r"\\([a-zA-Z]+)|(squared|cubed)", spec)
-    parts, per, prefix = [], False, ""
+    parts, per, prefix, power = [], False, "", ""
     for name, _ in toks:
         t = name or _
         if t == "per":
@@ -249,11 +258,17 @@ def expand_units(spec: str) -> str:
             parts[-1] += "&sup2;"; continue
         if t == "cubed":
             parts[-1] += "&sup3;"; continue
+        # siunitx spells an exponent on either side of the unit: \square\metre
+        # and \metre\squared both mean m^2. Only the postfix pair was handled,
+        # so \cubic\centi\metre published as the literal "cubic&middot;cm" --
+        # the same silent-passthrough that shipped \degree and \day as words.
+        if t in ("square", "cubic"):
+            power = "&sup2;" if t == "square" else "&sup3;"; continue
         u = UNIT.get(t)
         if u is None:
             UNKNOWN_UNITS.add(t); u = t
-        u = prefix + u
-        prefix = ""
+        u = prefix + u + power
+        prefix = power = ""
         parts.append(("/" if per else "") + u)
         per = False
     out = "".join(p if i == 0 else (p if p.startswith("/") else "&middot;" + p)
@@ -1107,7 +1122,11 @@ def number_pads(body: str, stem: str, math_on: bool) -> str:
 
 def add_interactivity(body: str, kind: str, stem: str, log) -> str:
     if not wants(kind, INTERACTIVE_KINDS):
-        return body
+        # A document can reveal explanations without taking typed input.
+        # wrap_explanations lives at the end of the interactive path, so
+        # without this an EXPLAIN_KINDS-only doc would keep its answers
+        # but render them permanently expanded instead of behind a button.
+        return wrap_explanations(body) if wants(kind, EXPLAIN_KINDS) else body
     out, pos, paired, skipped = [], 0, 0, 0
     for m in SELFCHECK_RE.finditer(body):
         region = body[pos:m.start()]
@@ -1897,7 +1916,8 @@ def main():
     # Teaching order, not alphabetical: orient, learn, practise, then assess.
     # The map opens a unit and the review closes it, so they bracket the rest.
     order = {"map": 0, "notes": 1, "examples": 2, "selfstudy": 3,
-             "selfstudy2": 4, "ws": 5, "frq": 6, "review": 7, "exam": 9}
+             "selfstudy2": 4, "ws": 5, "frq": 6, "review": 7, "exam": 9,
+             "test-full": 10}
 
     def key(t):
         stem = t[0].rsplit(".", 1)[0]

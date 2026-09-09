@@ -1,0 +1,1910 @@
+% Unit 4 comprehensive test -- all free response, fully worked key.
+%
+% Built to a teacher request: every item must be answered in explicit steps,
+% so EVERY part uses \workspace + \keyonly{apcanswer} -- no \answerlines
+% anywhere. Two reasons. It keeps the footprint invariant safe by
+% construction (the workspace renders in BOTH builds and the key only ever
+% ADDS the solution box, so the key can never come out shorter). And it puts
+% every answer inside an apcanswer block, which is the only thing
+% tex2html.py can turn into a "Show explanation" reveal -- an \answerlines
+% answer is dropped on the web for any non-fill-in document.
+%
+% Items marked "after Zumdahl Q<n>" are rewritten from the chapter-4 exercise
+% set: same chemistry, same data, our own wording, per convention 6.
+\documentclass{apchem-exam}
+
+% siunitx groups any run of 5+ digits, so a burette volume renders as
+% "0.028 97 L" -- which reads as two numbers on a page a student is being
+% timed on. This paper is dense with 5-digit intermediates, so raise the
+% threshold locally. Not fixed in shared/apchem.sty: that would repaginate
+% the whole corpus and needs its own smoke + page-count sweep.
+\sisetup{group-minimum-digits = 7}
+
+\apcunit{4}
+\apcunittitle{Chemical Reactions}
+\apcdoctitle{Comprehensive Test}
+\apcsubtitle{CED 4.1--4.9 \textbullet\ Session 1: Parts A--E, 19 questions,
+  139 points, 140 minutes \textbullet\ Session 2: Part F, 10 questions,
+  95 points, 90 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this paper runs]
+\textbf{Parts A--E} are the main test, 140 minutes. \textbf{Part F} is a
+separate challenge session --- do not attempt it in the same sitting.
+
+Calculator, periodic table, and equations sheet are permitted throughout.
+\textbf{Show every step.} A bare final answer earns the answer mark only;
+the setup marks are awarded for work you can point to. Carry units through
+each line and round only at the end.
+\end{apcnote}
+
+\begin{apcnote}[Scope --- read before Part E]
+Two CED boundaries apply to this paper.
+
+\ced{4.7} excludes the \emph{meaning of the terms} ``oxidizing agent'' and
+``reducing agent'' --- the AP exam asks only which species is
+\textbf{oxidized} and which is \textbf{reduced}. Question~14(c) asks you to
+name the agents anyway, because the vocabulary is standard in chemistry
+beyond this course. That part is flagged \textbf{[beyond CED]}.
+
+\ced{3.8} excludes percent-by-mass \emph{for solutions}. Percent
+composition of a \emph{solid} sample --- questions~12 and~18 --- is Unit~1
+material and is fair game. Question~19 asks for percent by mass of a
+\emph{solution} (blood plasma), which the AP exam will not ask; it is here
+because the redox stoichiometry leading up to it is exactly on syllabus.
+\end{apcnote}
+
+% ============================================================================
+\examsection{A}{Moles, Formulas, and Concentration}{5 questions \textbullet\
+  25 minutes}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{4.5} \practice{5} \textbullet\ molarity from a solid}
+
+To measure the alcohol content of a wine sample, a chemist needs
+\SI{1.00}{\litre} of aqueous \SI{0.200}{\Molar} \ce{K2Cr2O7}.
+
+Determine the mass of solid \ce{K2Cr2O7} that must be weighed out.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles needed from the target
+concentration.}
+
+$n = M \times V = \SI{0.200}{\mole\per\litre} \times \SI{1.00}{\litre}
+= \num{0.200}$~mol
+
+\textbf{Step 2 --- molar mass of \ce{K2Cr2O7}.}
+
+$2(39.10) + 2(52.00) + 7(16.00) = 78.20 + 104.00 + 112.00
+= \SI{294.20}{\gram\per\mole}$
+
+\textbf{Step 3 --- convert moles to mass.}
+
+$m = 0.200 \times 294.20 = \mathbf{58.8}$~\textbf{g}
+
+Weigh \SI{58.8}{\gram} of \ce{K2Cr2O7}, dissolve it in less than
+\SI{1}{\litre} of water, then dilute to the \SI{1.00}{\litre} mark of a
+volumetric flask. Adding \SI{1.00}{\litre} of water instead would give a
+final volume larger than \SI{1.00}{\litre} and a concentration below
+\SI{0.200}{\Molar}.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$n = MV = \num{0.200}$~mol}
+  \rpoint{1}{molar mass \SI{294.2}{\gram\per\mole}}
+  \rpoint{1}{$m = n\mathcal{M}$ set up correctly}
+  \rpoint{1}{\SI{58.8}{\gram}, 3 significant figures}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{4.5} \textbullet\ density to molarity \emph{(after Zumdahl Q32)}}
+
+A solution is made by dissolving \SI{75.0}{\milli\litre} of ethanol,
+\ce{C2H5OH} (density \SI{0.79}{\gram\per\cubic\centi\metre}), in enough
+water to make \SI{250.0}{\milli\litre} of solution.
+
+Calculate the molarity of ethanol in the solution.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- volume of ethanol to mass}, using
+density as the conversion factor:
+
+$m = 75.0\;\mathrm{cm^3} \times \SI{0.79}{\gram\per\cubic\centi\metre}
+= \SI{59.25}{\gram}$
+
+\textbf{Step 2 --- molar mass of \ce{C2H5OH}.}
+
+$2(12.01) + 6(1.008) + 16.00 = \SI{46.07}{\gram\per\mole}$
+
+\textbf{Step 3 --- mass to moles.}
+
+$n = 59.25 / 46.07 = \num{1.286}$~mol
+
+\textbf{Step 4 --- divide by the solution volume}, not the ethanol volume:
+
+$M = 1.286 / \SI{0.2500}{\litre} = \mathbf{5.1}$~\textbf{M}
+
+Two significant figures: the density \SI{0.79}{\gram\per\cubic\centi\metre}
+is the weakest datum and limits the whole
+chain.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{uses density to get \SI{59.25}{\gram}}
+  \rpoint{1}{molar mass \SI{46.07}{\gram\per\mole}, $n = \num{1.29}$~mol}
+  \rpoint{1}{divides by \SI{0.2500}{\litre} (total solution, not solvent)}
+  \rpoint{1}{\SI{5.1}{\Molar} to 2 sig figs}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{4.1} \ced{4.5} \textbullet\ dissociation and ion
+  concentrations \emph{(after Zumdahl Q34)}}
+
+Each solution below contains only a strong electrolyte. Calculate the
+concentration of \textbf{every ion present}.
+
+\begin{parts}
+  \item \SI{0.0200}{\mole} of sodium phosphate in \SI{10.0}{\milli\litre}
+        of solution. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Formula \ce{Na3PO4}; it dissociates
+        \ce{Na3PO4(s) -> 3Na^+(aq) + PO4^3-(aq)}.
+
+        $[\ce{Na3PO4}] = 0.0200 / \SI{0.0100}{\litre} = \SI{2.00}{\Molar}$
+
+        $[\ce{Na+}] = 3 \times 2.00 = \mathbf{6.00}$~\textbf{M}\quad
+        $[\ce{PO4^3-}] = \mathbf{2.00}$~\textbf{M}\end{apcanswer}}
+  \item \SI{0.300}{\mole} of barium nitrate in \SI{600.0}{\milli\litre} of
+        solution. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Formula \ce{Ba(NO3)2}:
+        \ce{Ba(NO3)2(s) -> Ba^2+(aq) + 2NO3^-(aq)}.
+
+        $[\ce{Ba(NO3)2}] = 0.300 / \SI{0.6000}{\litre} = \SI{0.500}{\Molar}$
+
+        $[\ce{Ba^2+}] = \mathbf{0.500}$~\textbf{M}\quad
+        $[\ce{NO3-}] = 2 \times 0.500 = \mathbf{1.00}$~\textbf{M}\end{apcanswer}}
+  \item \SI{1.00}{\gram} of potassium chloride in \SI{0.500}{\litre} of
+        solution. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\mathcal{M}(\ce{KCl}) = 39.10 + 35.45
+        = \SI{74.55}{\gram\per\mole}$
+
+        $n = 1.00 / 74.55 = \num{0.01341}$~mol
+
+        $[\ce{KCl}] = 0.01341 / 0.500 = \SI{0.0268}{\Molar}$
+
+        One of each ion per formula unit, so
+        $[\ce{K+}] = [\ce{Cl-}] = \mathbf{0.0268}$~\textbf{M}\end{apcanswer}}
+  \item \SI{132}{\gram} of ammonium sulfate in \SI{1.50}{\litre} of
+        solution. \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Formula \ce{(NH4)2SO4}:
+        \ce{(NH4)2SO4(s) -> 2NH4^+(aq) + SO4^2-(aq)}.
+
+        $\mathcal{M} = 2(18.04) + 32.07 + 4(16.00)
+        = \SI{132.15}{\gram\per\mole}$
+
+        $n = 132 / 132.15 = \num{0.999}$~mol
+
+        $[\ce{(NH4)2SO4}] = 0.999 / 1.50 = \SI{0.666}{\Molar}$
+
+        $[\ce{NH4+}] = 2 \times 0.666 = \mathbf{1.33}$~\textbf{M}\quad
+        $[\ce{SO4^2-}] = \mathbf{0.666}$~\textbf{M}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correct formula \ce{Na3PO4} from the name}
+  \rpoint{1}{(a) \SI{6.00}{\Molar} \ce{Na+} and \SI{2.00}{\Molar} \ce{PO4^3-}}
+  \rpoint{1}{(b) correct formula \ce{Ba(NO3)2}}
+  \rpoint{1}{(b) \SI{0.500}{\Molar} \ce{Ba^2+} and \SI{1.00}{\Molar} \ce{NO3-}}
+  \rpoint{1}{(c) molar mass \SI{74.55}{\gram\per\mole}}
+  \rpoint{1}{(c) \SI{0.0268}{\Molar} for both ions}
+  \rpoint{1}{(d) correct formula \ce{(NH4)2SO4}}
+  \rpoint{1}{(d) molar mass \SI{132.15}{\gram\per\mole}}
+  \rpoint{1}{(d) \SI{1.33}{\Molar} \ce{NH4+}}
+  \rpoint{1}{(d) \SI{0.666}{\Molar} \ce{SO4^2-}}
+  \rpoint{0}{no credit anywhere for multiplying the polyatomic ion apart
+    (\ce{PO4^3-} and \ce{SO4^2-} stay intact)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{4.1} \ced{4.5} \textbullet\ counting ions
+  \emph{(after Zumdahl Q36)}}
+
+Which of these three solutions contains the \textbf{largest total number of
+ions}? Support your choice with a calculation for each.
+
+\begin{parts}
+  \item \SI{100.0}{\milli\litre} of \SI{0.100}{\Molar} \ce{NaOH}
+  \item \SI{50.0}{\milli\litre} of \SI{0.200}{\Molar} \ce{BaCl2}
+  \item \SI{75.0}{\milli\litre} of \SI{0.150}{\Molar} \ce{Na3PO4}
+\end{parts}
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of formula units in each.}
+
+(a) $0.1000 \times 0.100 = \num{0.0100}$~mol\quad
+(b) $0.0500 \times 0.200 = \num{0.0100}$~mol\quad
+(c) $0.0750 \times 0.150 = \num{0.01125}$~mol
+
+\textbf{Step 2 --- ions released per formula unit.}
+
+\ce{NaOH -> Na+ + OH-} gives \textbf{2};\quad
+\ce{BaCl2 -> Ba^2+ + 2Cl-} gives \textbf{3};\quad
+\ce{Na3PO4 -> 3Na+ + PO4^3-} gives \textbf{4}.
+
+\textbf{Step 3 --- multiply.}
+
+(a) $0.0100 \times 2 = \num{0.0200}$~mol ions
+
+(b) $0.0100 \times 3 = \num{0.0300}$~mol ions
+
+(c) $0.01125 \times 4 = \num{0.0450}$~mol ions
+
+\textbf{(c), the \ce{Na3PO4} solution, contains the most ions.} It wins on
+both counts --- it has the most formula units \emph{and} the most ions per
+formula unit.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of solute correct for all three}
+  \rpoint{1}{ion count per formula unit correct (2, 3, 4)}
+  \rpoint{1}{total moles of ions computed for all three}
+  \rpoint{1}{selects (c) \ce{Na3PO4}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{4.5} \textbullet\ mixing without reaction
+  \emph{(after Zumdahl Q46)}}
+
+\SI{50.0}{\milli\litre} of \SI{0.250}{\Molar} \ce{CoCl2} is added to
+\SI{25.0}{\milli\litre} of \SI{0.350}{\Molar} \ce{NiCl2}. No reaction
+occurs. Assume the volumes are additive.
+
+Calculate the concentration of each ion present after mixing.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- recognise there is no reaction.}
+Both salts are soluble and no precipitate, gas, or water forms. Every ion
+that goes in stays in solution; only \emph{dilution} changes.
+
+\textbf{Step 2 --- moles of each cation.}
+
+$n(\ce{Co^2+}) = 0.0500 \times 0.250 = \num{0.0125}$~mol
+
+$n(\ce{Ni^2+}) = 0.0250 \times 0.350 = \num{0.00875}$~mol
+
+\textbf{Step 3 --- moles of chloride}, remembering \emph{two} per formula
+unit of each chloride salt:
+
+$n(\ce{Cl-}) = 2(0.0125) + 2(0.00875) = 0.0250 + 0.0175
+= \num{0.0425}$~mol
+
+\textbf{Step 4 --- new total volume.}
+
+$V = 50.0 + 25.0 = \SI{75.0}{\milli\litre} = \SI{0.0750}{\litre}$
+
+\textbf{Step 5 --- divide each by the total volume.}
+
+$[\ce{Co^2+}] = 0.0125/0.0750 = \mathbf{0.167}$~\textbf{M}
+
+$[\ce{Ni^2+}] = 0.00875/0.0750 = \mathbf{0.117}$~\textbf{M}
+
+$[\ce{Cl-}] = 0.0425/0.0750 = \mathbf{0.567}$~\textbf{M}
+
+\textbf{Check:} charge must balance.
+$2(0.167) + 2(0.117) = 0.568 \approx 0.567$~M of positive charge against
+\SI{0.567}{\Molar} negative. \checkmark\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{states no reaction occurs / dilution only}
+  \rpoint{1}{$n(\ce{Co^2+}) = \num{0.0125}$~mol}
+  \rpoint{1}{$n(\ce{Ni^2+}) = \num{0.00875}$~mol}
+  \rpoint{1}{chloride doubled from both salts, \num{0.0425}~mol}
+  \rpoint{1}{uses total volume \SI{75.0}{\milli\litre}}
+  \rpoint{1}{all three concentrations correct}
+\end{rubric}
+
+% ============================================================================
+\examsection{B}{Balancing and Mass Relationships}{2 questions \textbullet\
+  20 minutes}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{4.2} \ced{4.3} \ced{4.7} \practice{5} \textbullet\ three
+  levels of equation}
+
+For each reaction, write the \textbf{formula equation}, the \textbf{complete
+ionic equation}, and the \textbf{net ionic equation}. Include all phase
+labels.
+
+\begin{parts}
+  \item Aqueous potassium chloride is added to aqueous silver nitrate,
+        forming a silver chloride precipitate and aqueous potassium
+        nitrate. \workspace[4.2cm]
+        \keyonly{\begin{apcanswer}\textbf{Formula equation}
+
+        \ce{KCl(aq) + AgNO3(aq) -> AgCl(s) + KNO3(aq)}
+
+        Already balanced 1:1:1:1.
+
+        \textbf{Complete ionic} --- split every \emph{soluble strong
+        electrolyte}, leave the solid intact:
+
+        \ce{K^+(aq) + Cl^-(aq) + Ag^+(aq) + NO3^-(aq) -> AgCl(s) + K^+(aq)
+        + NO3^-(aq)}
+
+        \textbf{Net ionic} --- cancel \ce{K+} and \ce{NO3-}, which appear
+        unchanged on both sides:
+
+        \ce{Ag^+(aq) + Cl^-(aq) -> AgCl(s)}\end{apcanswer}}
+  \item Aqueous potassium hydroxide is mixed with aqueous iron(III)
+        nitrate, forming an iron(III) hydroxide precipitate and aqueous
+        potassium nitrate. \workspace[4.6cm]
+        \keyonly{\begin{apcanswer}\textbf{Formula equation} --- iron(III)
+        needs three hydroxides, so the coefficients are 3 and 3:
+
+        \ce{3KOH(aq) + Fe(NO3)3(aq) -> Fe(OH)3(s) + 3KNO3(aq)}
+
+        \textbf{Complete ionic}
+
+        \ce{3K^+(aq) + 3OH^-(aq) + Fe^3+(aq) + 3NO3^-(aq) -> Fe(OH)3(s) +
+        3K^+(aq) + 3NO3^-(aq)}
+
+        \textbf{Net ionic} --- \ce{K+} and \ce{NO3-} are spectators:
+
+        \ce{Fe^3+(aq) + 3OH^-(aq) -> Fe(OH)3(s)}
+
+        Note the charge check: $+3 + 3(-1) = 0$, matching the neutral
+        solid.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) formula equation correct with phases}
+  \rpoint{1}{(a) complete ionic splits both soluble salts}
+  \rpoint{1}{(a) \ce{AgCl(s)} left intact, not split}
+  \rpoint{1}{(a) net ionic \ce{Ag+ + Cl- -> AgCl(s)}}
+  \rpoint{1}{(b) formula equation balanced with the 3:1:1:3 coefficients}
+  \rpoint{1}{(b) complete ionic with all coefficients distributed}
+  \rpoint{1}{(b) \ce{Fe(OH)3(s)} left intact}
+  \rpoint{1}{(b) net ionic \ce{Fe^3+ + 3OH- -> Fe(OH)3(s)}}
+  \rpoint{1}{phase labels present throughout}
+  \rpoint{1}{spectator ions correctly cancelled in both}
+  \rpoint{0}{no credit for splitting a solid or a weak electrolyte}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{4.5} \practice{5} \textbullet\ mass to precipitate an ion}
+
+Calculate the mass of solid \ce{NaCl} that must be added to
+\SI{1.50}{\litre} of \SI{0.100}{\Molar} \ce{AgNO3} to precipitate all of the
+\ce{Ag+} as \ce{AgCl}.
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- net ionic equation}, which
+gives the ratio that matters:
+
+\ce{Ag^+(aq) + Cl^-(aq) -> AgCl(s)}\quad --- a \textbf{1:1} ratio.
+
+\textbf{Step 2 --- moles of \ce{Ag+} to remove.}
+
+$n = 0.100 \times 1.50 = \num{0.150}$~mol
+
+\textbf{Step 3 --- moles of \ce{Cl-}, hence of \ce{NaCl}.}
+
+1:1, so \num{0.150}~mol of \ce{Cl-} is needed, supplied by
+\num{0.150}~mol \ce{NaCl} (one \ce{Cl-} per formula unit).
+
+\textbf{Step 4 --- convert to mass.}
+
+$\mathcal{M}(\ce{NaCl}) = 22.99 + 35.45 = \SI{58.44}{\gram\per\mole}$
+
+$m = 0.150 \times 58.44 = \mathbf{8.77}$~\textbf{g}
+
+``All'' the silver means \emph{at least} this much; any excess \ce{NaCl}
+simply stays dissolved as spectator \ce{Na+} and \ce{Cl-}.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{net ionic equation or explicit 1:1 ratio}
+  \rpoint{1}{$n(\ce{Ag+}) = \num{0.150}$~mol}
+  \rpoint{1}{recognises \num{0.150}~mol \ce{NaCl} required}
+  \rpoint{1}{molar mass \SI{58.44}{\gram\per\mole}}
+  \rpoint{1}{\SI{8.77}{\gram}}
+\end{rubric}
+
+% ============================================================================
+\examsection{C}{Limiting Reactant and Yield}{1 question \textbullet\
+  15 minutes}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{4.2} \ced{4.5} \ced{4.7} \practice{5} \textbullet\
+  limiting reactant in solution}
+
+When aqueous \ce{Na2SO4} and \ce{Pb(NO3)2} are mixed, \ce{PbSO4}
+precipitates. \SI{1.25}{\litre} of \SI{0.0500}{\Molar} \ce{Pb(NO3)2} is
+mixed with \SI{2.00}{\litre} of \SI{0.0250}{\Molar} \ce{Na2SO4}. Assume the
+volumes are additive.
+
+\begin{parts}
+  \item Write the net ionic equation. \workspace[2.2cm]
+        \keyonly{\begin{apcanswer}Both salts are soluble; the precipitate is
+        \ce{PbSO4}. Keep the solid intact and cancel the spectators:
+
+        \ce{Pb^2+(aq) + SO4^2-(aq) -> PbSO4(s)}\end{apcanswer}}
+  \item Identify the limiting reactant, showing your reasoning.
+        \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of each reacting
+        ion.}
+
+        $n(\ce{Pb^2+}) = 1.25 \times 0.0500 = \num{0.0625}$~mol
+
+        $n(\ce{SO4^2-}) = 2.00 \times 0.0250 = \num{0.0500}$~mol
+
+        \textbf{Step 2 --- compare against the 1:1 stoichiometry.}
+        Consuming all the \ce{Pb^2+} would need \num{0.0625}~mol of
+        sulfate, but only \num{0.0500}~mol is available.
+
+        \textbf{Sulfate is the limiting reactant.} Note that the larger
+        \emph{volume} belongs to the limiting reagent --- volume alone
+        decides nothing, only moles do.\end{apcanswer}}
+  \item Calculate the mass of \ce{PbSO4} formed. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of product} from
+        the limiting reactant, 1:1:
+
+        $n(\ce{PbSO4}) = \num{0.0500}$~mol
+
+        \textbf{Step 2 --- molar mass.}
+
+        $207.2 + 32.07 + 4(16.00) = \SI{303.3}{\gram\per\mole}$
+
+        \textbf{Step 3 --- mass.}
+
+        $m = 0.0500 \times 303.3 = \mathbf{15.2}$~\textbf{g}\end{apcanswer}}
+  \item Calculate the concentration of the excess reactant ion remaining in
+        solution. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- leftover moles.}
+
+        $n(\ce{Pb^2+})_{\text{excess}} = 0.0625 - 0.0500
+        = \num{0.0125}$~mol
+
+        \textbf{Step 2 --- total volume.}
+
+        $V = 1.25 + 2.00 = \SI{3.25}{\litre}$
+
+        \textbf{Step 3 --- divide.}
+
+        $[\ce{Pb^2+}] = 0.0125 / 3.25 = \mathbf{0.00385}$~\textbf{M}\end{apcanswer}}
+  \item Identify the spectator ions and explain what makes them spectators.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}\ce{Na+} and \ce{NO3-}.
+
+        Both are dissolved and unchanged before and after the reaction ---
+        same species, same charge, same aqueous phase --- so they take no
+        part in the chemical change and cancel from the complete ionic
+        equation.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{net ionic equation with phases}
+  \rpoint{1}{$n(\ce{Pb^2+}) = \num{0.0625}$~mol}
+  \rpoint{1}{$n(\ce{SO4^2-}) = \num{0.0500}$~mol}
+  \rpoint{1}{sulfate identified as limiting, with a mole comparison}
+  \rpoint{1}{molar mass \SI{303.3}{\gram\per\mole}}
+  \rpoint{1}{\SI{15.2}{\gram} \ce{PbSO4}}
+  \rpoint{1}{excess \ce{Pb^2+} $= \num{0.0125}$~mol}
+  \rpoint{1}{uses total volume \SI{3.25}{\litre}}
+  \rpoint{1}{$[\ce{Pb^2+}] = \SI{0.00385}{\Molar}$}
+  \rpoint{1}{spectators named and justified as unchanged}
+\end{rubric}
+
+% ============================================================================
+\examsection{D}{Acid--Base Reactions and Titration}{5 questions \textbullet\
+  35 minutes}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{4.6} \ced{4.8} \textbullet\ neutralisation volume}
+
+What volume of \SI{0.100}{\Molar} \ce{HCl} is needed to neutralise exactly
+\SI{25.0}{\milli\litre} of \SI{0.350}{\Molar} \ce{NaOH}?
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- net ionic equation.}
+
+\ce{H^+(aq) + OH^-(aq) -> H2O(l)}\quad --- \textbf{1:1}.
+
+\textbf{Step 2 --- moles of \ce{OH-}.}
+
+$n = 0.0250 \times 0.350 = \num{0.00875}$~mol
+
+\textbf{Step 3 --- moles of \ce{H+} required} --- the same,
+\num{0.00875}~mol.
+
+\textbf{Step 4 --- back-solve the volume.}
+
+$V = n/M = 0.00875 / 0.100 = \SI{0.0875}{\litre}
+= \mathbf{87.5}$~\textbf{mL}
+
+The answer is larger than \SI{25.0}{\milli\litre} because the acid is the
+more dilute solution --- it takes more of it to deliver the same number of
+moles.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{1:1 stoichiometry stated or implied by a correct equation}
+  \rpoint{1}{$n(\ce{OH-}) = \num{0.00875}$~mol}
+  \rpoint{1}{sets $n(\ce{H+}) = n(\ce{OH-})$}
+  \rpoint{1}{\SI{87.5}{\milli\litre}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{4.6} \ced{4.8} \practice{5} \textbullet\ excess after
+  neutralisation}
+
+\SI{28.0}{\milli\litre} of \SI{0.250}{\Molar} \ce{HNO3} is mixed with
+\SI{53.0}{\milli\litre} of \SI{0.320}{\Molar} \ce{KOH}.
+
+Determine which ion is in excess after the reaction goes to completion, and
+calculate its concentration.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of each.}
+
+$n(\ce{H+}) = 0.0280 \times 0.250 = \num{0.00700}$~mol
+
+$n(\ce{OH-}) = 0.0530 \times 0.320 = \num{0.01696}$~mol
+
+\textbf{Step 2 --- react them 1:1.} \ce{OH-} is in excess, so all the
+\ce{H+} is consumed:
+
+$n(\ce{OH-})_{\text{excess}} = 0.01696 - 0.00700
+= \num{0.00996}$~mol
+
+\textbf{Step 3 --- total volume.}
+
+$V = 28.0 + 53.0 = \SI{81.0}{\milli\litre} = \SI{0.0810}{\litre}$
+
+\textbf{Step 4 --- concentration of the surviving ion.}
+
+$[\ce{OH-}] = 0.00996 / 0.0810 = \mathbf{0.123}$~\textbf{M}
+
+The solution is basic. $[\ce{H+}]$ is not zero, but it is set by the
+autoionisation of water, not by the leftover acid ---
+that is a Unit~8 calculation.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$n(\ce{H+}) = \num{0.00700}$~mol}
+  \rpoint{1}{$n(\ce{OH-}) = \num{0.01696}$~mol}
+  \rpoint{1}{identifies \ce{OH-} as the excess ion}
+  \rpoint{1}{excess $= \num{0.00996}$~mol}
+  \rpoint{1}{uses total volume \SI{81.0}{\milli\litre}}
+  \rpoint{1}{$\SI{0.123}{\Molar}$ \ce{OH-}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{4.6} \practice{5} \textbullet\ standardisation against a
+  primary standard}
+
+A student standardises a sodium hydroxide solution. They weigh out
+\SI{1.3009}{\gram} of potassium hydrogen phthalate (\ce{KHC8H4O4}, ``KHP'',
+$\mathcal{M} = \SI{204.22}{\gram\per\mole}$), which has \textbf{one} acidic
+hydrogen. The KHP is dissolved in distilled water, phenolphthalein is added,
+and the solution is titrated with the \ce{NaOH}. The burette readings show
+that \SI{41.20}{\milli\litre} of \ce{NaOH} is required to reach the
+endpoint.
+
+\begin{parts}
+  \item Calculate the concentration of the sodium hydroxide solution.
+        \workspace[5cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- balanced reaction.}
+        One acidic hydrogen means \textbf{1:1}:
+
+        \ce{KHC8H4O4(aq) + NaOH(aq) -> KNaC8H4O4(aq) + H2O(l)}
+
+        \textbf{Step 2 --- moles of KHP}, the primary standard whose mass
+        we know exactly:
+
+        $n = 1.3009 / 204.22 = \num{6.3701e-3}$~mol
+
+        \textbf{Step 3 --- moles of \ce{NaOH} at the equivalence point} ---
+        equal, by the 1:1 ratio: $\num{6.3701e-3}$~mol.
+
+        \textbf{Step 4 --- divide by the delivered volume.}
+
+        $M = \num{6.3701e-3} / \SI{0.04120}{\litre}
+        = \mathbf{0.1546}$~\textbf{M}
+
+        Four significant figures are justified --- the mass, the titre, and
+        the molar mass all carry at least
+        four.\end{apcanswer}}
+  \item Explain why KHP is weighed as a solid rather than the \ce{NaOH}
+        being weighed directly. \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Solid \ce{NaOH} is \textbf{hygroscopic}
+        --- it absorbs water and \ce{CO2} from the air --- so a weighed
+        mass of it is not a known mass of \ce{NaOH}.
+
+        KHP is a stable, non-hygroscopic solid of high purity and high molar
+        mass, so its weighed mass gives moles reliably. That is exactly what
+        makes it a \textbf{primary standard}.\end{apcanswer}}
+  \item The student rinses the burette with distilled water and does not
+        rinse it with the \ce{NaOH} solution before filling. State the
+        effect on the calculated concentration and justify it.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}Residual water \textbf{dilutes} the
+        \ce{NaOH} in the burette. Each millilitre delivered then contains
+        fewer moles of \ce{OH-}, so a \textbf{larger volume} is needed to
+        reach the endpoint.
+
+        In $M = n / V$, the numerator $n$ is fixed by the KHP mass while
+        $V$ is too large, so the calculated concentration is
+        \textbf{too low}.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{balanced 1:1 equation or explicit statement of the ratio}
+  \rpoint{1}{$n(\text{KHP}) = \num{6.3701e-3}$~mol}
+  \rpoint{1}{sets $n(\ce{NaOH}) = n(\text{KHP})$}
+  \rpoint{1}{converts \SI{41.20}{\milli\litre} to \SI{0.04120}{\litre}}
+  \rpoint{1}{\SI{0.1546}{\Molar}}
+  \rpoint{1}{4 significant figures justified}
+  \rpoint{1}{(b) \ce{NaOH} absorbs water/\ce{CO2}, mass unreliable}
+  \rpoint{1}{(b) KHP stable and pure --- a primary standard}
+  \rpoint{1}{(c) states the result is too low}
+  \rpoint{1}{(c) justifies via a larger titre at fixed moles of KHP}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.6} \ced{4.8} \textbullet\ percent composition of a solid
+  by titration}
+
+An environmental chemist analyses effluent known to contain carbon
+tetrachloride (\ce{CCl4}) and benzoic acid (\ce{HC7H5O2}), a weak acid with
+one acidic hydrogen per molecule. A \SI{0.3518}{\gram} sample is shaken with
+water; the resulting aqueous solution requires \SI{10.59}{\milli\litre} of
+\SI{0.1546}{\Molar} \ce{NaOH} for neutralisation.
+
+\begin{parts}
+  \item Calculate the mass percent of \ce{HC7H5O2} in the original sample.
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- what actually reacts.}
+        \ce{CCl4} is non-polar and has no acidic hydrogen; it neither
+        dissolves appreciably nor reacts with \ce{NaOH}. \textbf{Only the
+        benzoic acid is titrated.}
+
+        \ce{HC7H5O2(aq) + NaOH(aq) -> NaC7H5O2(aq) + H2O(l)}\quad
+        --- 1:1.
+
+        \textbf{Step 2 --- moles of \ce{NaOH} delivered.}
+
+        $n = 0.01059 \times 0.1546 = \num{1.6372e-3}$~mol
+
+        \textbf{Step 3 --- moles of benzoic acid} --- the same,
+        \num{1.6372e-3}~mol.
+
+        \textbf{Step 4 --- mass of benzoic acid.}
+
+        $\mathcal{M}(\ce{HC7H5O2}) = 7(12.01) + 6(1.008) + 2(16.00)
+        = \SI{122.12}{\gram\per\mole}$
+
+        $m = \num{1.6372e-3} \times 122.12 = \SI{0.19993}{\gram}$
+
+        \textbf{Step 5 --- percent of the whole sample.}
+
+        $\dfrac{0.19993}{0.3518} \times 100 = \mathbf{56.83\%}$
+
+        The remaining \SI{43.17}{\percent} is the
+        \ce{CCl4}.\end{apcanswer}}
+  \item Benzoic acid is a \emph{weak} acid. Explain why the titration still
+        reaches a sharp, well-defined equivalence point.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Strength governs \emph{how far the acid
+        ionises at equilibrium}, not how many moles of \ce{OH-} it can
+        eventually neutralise.
+
+        \ce{OH-} removes \ce{H+} from solution, which pulls the ionisation
+        of the weak acid forward until every molecule has been deprotonated.
+        The stoichiometry at the equivalence point is therefore still
+        exactly 1:1.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{states \ce{CCl4} does not react / is not titrated}
+  \rpoint{1}{$n(\ce{NaOH}) = \num{1.637e-3}$~mol}
+  \rpoint{1}{1:1 ratio applied}
+  \rpoint{1}{molar mass \SI{122.12}{\gram\per\mole}}
+  \rpoint{1}{mass of acid \SI{0.1999}{\gram}}
+  \rpoint{1}{\SI{56.83}{\percent} (accept \SI{56.8}{\percent})}
+  \rpoint{1}{(b) distinguishes extent of ionisation from moles available}
+  \rpoint{1}{(b) argues the equilibrium is driven to completion by \ce{OH-}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{4.6} \ced{4.8} \textbullet\ diprotic bases
+  \emph{(after Zumdahl Q76)}}
+
+What volume of each base will react completely with \SI{25.00}{\milli\litre}
+of \SI{0.200}{\Molar} \ce{HCl}?
+
+\begin{parts}
+  \item \SI{0.100}{\Molar} \ce{NaOH}
+  \item \SI{0.0500}{\Molar} \ce{Sr(OH)2}
+  \item \SI{0.250}{\Molar} \ce{KOH}
+\end{parts}
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of \ce{H+} to neutralise},
+common to all three:
+
+$n(\ce{H+}) = 0.02500 \times 0.200 = \num{5.00e-3}$~mol
+
+\textbf{(a) \ce{NaOH}} supplies one \ce{OH-} per formula unit, so
+\num{5.00e-3}~mol of \ce{NaOH} is needed:
+
+$V = \num{5.00e-3}/0.100 = \SI{0.0500}{\litre} = \mathbf{50.0}$~\textbf{mL}
+
+\textbf{(b) \ce{Sr(OH)2}} supplies \emph{two} \ce{OH-} per formula unit, so
+only half as many moles are needed:
+
+$n = \num{5.00e-3}/2 = \num{2.50e-3}$~mol\quad
+$V = \num{2.50e-3}/0.0500 = \mathbf{50.0}$~\textbf{mL}
+
+The volume matches (a) by coincidence --- \ce{Sr(OH)2} is half the
+concentration \emph{and} delivers twice the hydroxide, and the two factors
+cancel.
+
+\textbf{(c) \ce{KOH}}, one \ce{OH-} per formula unit:
+
+$V = \num{5.00e-3}/0.250 = \SI{0.0200}{\litre}
+= \mathbf{20.0}$~\textbf{mL}\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$n(\ce{H+}) = \num{5.00e-3}$~mol}
+  \rpoint{1}{(a) \SI{50.0}{\milli\litre}}
+  \rpoint{1}{(b) recognises 2 \ce{OH-} per \ce{Sr(OH)2}}
+  \rpoint{1}{(b) \SI{50.0}{\milli\litre}}
+  \rpoint{1}{(c) \SI{20.0}{\milli\litre}}
+  \rpoint{1}{units and 3 significant figures throughout}
+\end{rubric}
+
+% ============================================================================
+\examsection{E}{Oxidation--Reduction}{6 questions \textbullet\ 45
+  minutes}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{4.7} \ced{4.9} \practice{5} \textbullet\ redox in
+  metallurgy}
+
+Producing a metal from its ore always involves oxidation--reduction. In the
+metallurgy of galena (\ce{PbS}), the principal lead ore, the first step is
+roasting:
+
+\begin{center}
+\ce{2PbS(s) + 3O2(g) -> 2PbO(s) + 2SO2(g)}
+\end{center}
+
+The oxide is then treated with carbon monoxide to give the free metal:
+
+\begin{center}
+\ce{PbO(s) + CO(g) -> Pb(s) + CO2(g)}
+\end{center}
+
+\begin{parts}
+  \item For the \textbf{roasting} reaction, assign oxidation numbers to
+        every element on both sides, and identify the atoms oxidised and
+        reduced. \workspace[4.6cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- assign, using the
+        rules in order.}
+
+        \ce{PbS}: sulfide is $-2$, so \ce{Pb} is $\mathbf{+2}$, S is
+        $\mathbf{-2}$.
+
+        \ce{O2}: free element, O is $\mathbf{0}$.
+
+        \ce{PbO}: O is $-2$, so \ce{Pb} is $\mathbf{+2}$.
+
+        \ce{SO2}: O is $-2$ each ($-4$ total), so S is $\mathbf{+4}$.
+
+        \textbf{Step 2 --- find what changed.}
+
+        S: $-2 \to +4$, a loss of 6 electrons --- \textbf{sulfur is
+        oxidised}.
+
+        O: $0 \to -2$, a gain of 2 electrons each --- \textbf{oxygen is
+        reduced}.
+
+        Pb stays $+2$ throughout and is \textbf{not} involved in the
+        electron transfer, despite lead being the point of the whole
+        process.
+
+        \textbf{Step 3 --- electron check.}
+        2 S atoms $\times$ 6 e$^-$ lost $= 12$ e$^-$;
+        6 O atoms $\times$ 2 e$^-$ gained $= 12$ e$^-$. Balanced.
+        \checkmark\end{apcanswer}}
+  \item For the \textbf{carbon monoxide} reaction, identify the atoms
+        oxidised and reduced. \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}\ce{PbO}: \ce{Pb} $+2$, O $-2$.\quad
+        \ce{CO}: O is $-2$, so C is $+2$.
+
+        \ce{Pb}: free element, $0$.\quad \ce{CO2}: O $-2$ each, so C is
+        $+4$.
+
+        Pb: $+2 \to 0$, gains 2 electrons --- \textbf{lead is reduced}.
+
+        C: $+2 \to +4$, loses 2 electrons --- \textbf{carbon is oxidised}.
+
+        Oxygen is $-2$ on both sides and takes no part.
+
+        Electron check: 2 lost by C, 2 gained by Pb.
+        \checkmark\end{apcanswer}}
+  \item \textbf{[beyond CED]} Name the oxidising agent and the reducing
+        agent in each reaction. \workspace[3cm]
+        \keyonly{\begin{apcanswer}The agent is the \emph{whole substance}
+        that contains the atom which changed, and it is named for what it
+        does to its \emph{partner}.
+
+        \textbf{Roasting:} \ce{O2} is the oxidising agent (it is reduced);
+        \ce{PbS} is the reducing agent (it is oxidised).
+
+        \textbf{Reduction step:} \ce{PbO} is the oxidising agent (it is
+        reduced); \ce{CO} is the reducing agent (it is oxidised).
+
+        The trap: the oxidising agent is the species that is
+        \emph{reduced}. The AP exam will not test this vocabulary --- it
+        asks only which species is oxidised and which is
+        reduced.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \ce{Pb} $+2$ and S $-2$ in \ce{PbS}}
+  \rpoint{1}{(a) O $0$ in \ce{O2}, $-2$ in the products}
+  \rpoint{1}{(a) S $+4$ in \ce{SO2}}
+  \rpoint{1}{(a) sulfur oxidised, $-2 \to +4$}
+  \rpoint{1}{(a) oxygen reduced, $0 \to -2$}
+  \rpoint{1}{(a) notes Pb is unchanged at $+2$}
+  \rpoint{1}{(b) C $+2 \to +4$, oxidised}
+  \rpoint{1}{(b) Pb $+2 \to 0$, reduced}
+  \rpoint{1}{(c) \ce{O2} and \ce{PbO} as oxidising agents}
+  \rpoint{1}{(c) \ce{PbS} and \ce{CO} as reducing agents}
+  \rpoint{0}{no credit for ``stability'' or ``octet'' language anywhere in
+    this question --- oxidation numbers and electron counts only}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.7} \ced{4.9} \textbullet\ is it redox?
+  \emph{(after Zumdahl Q90)}}
+
+For each equation, state whether it is an oxidation--reduction reaction. If
+it is, identify the species oxidised and the species reduced. If it is not,
+justify that verdict.
+
+\begin{parts}
+  \item \ce{CH4(g) + H2O(g) -> CO(g) + 3H2(g)} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\textbf{Redox.} C: $-4 \to +2$,
+        \textbf{oxidised}. H: $+1 \to 0$ in \ce{H2}, \textbf{reduced}.
+
+        \textbf{All six} hydrogens are reduced --- the four from \ce{CH4}
+        and the two from \ce{H2O} --- because the only hydrogen-bearing
+        product is \ce{H2}. That is exactly what the electron count
+        demands: carbon loses 6~e$^-$, so 6~H must each gain
+        one.\end{apcanswer}}
+  \item \ce{2AgNO3(aq) + Cu(s) -> Cu(NO3)2(aq) + 2Ag(s)}
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\textbf{Redox.} Cu: $0 \to +2$,
+        \textbf{oxidised}. Ag: $+1 \to 0$, \textbf{reduced}.
+
+        \ce{NO3-} is a spectator, unchanged at $-1$ overall. This is a
+        single-replacement reaction, which is always
+        redox.\end{apcanswer}}
+  \item \ce{Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\textbf{Redox.} Zn: $0 \to +2$,
+        \textbf{oxidised}. H: $+1 \to 0$, \textbf{reduced}.
+
+        Chlorine stays $-1$ throughout.\end{apcanswer}}
+  \item \ce{2H^+(aq) + 2CrO4^2-(aq) -> Cr2O7^2-(aq) + H2O(l)}
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}\textbf{Not redox.} Check chromium in
+        both:
+
+        \ce{CrO4^2-}: $x + 4(-2) = -2 \Rightarrow x = \mathbf{+6}$
+
+        \ce{Cr2O7^2-}: $2x + 7(-2) = -2 \Rightarrow 2x = +12
+        \Rightarrow x = \mathbf{+6}$
+
+        Chromium is $+6$ on both sides; H stays $+1$ and O stays $-2$. No
+        oxidation number changes, so no electrons are transferred. This is
+        a condensation (equilibrium) reaction, not a redox
+        one.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) identified as redox}
+  \rpoint{1}{(a) C oxidised and H reduced}
+  \rpoint{1}{(b) Cu oxidised, Ag reduced}
+  \rpoint{1}{(c) Zn oxidised, H reduced}
+  \rpoint{1}{(d) identified as NOT redox}
+  \rpoint{1}{(d) shows Cr is $+6$ in \ce{CrO4^2-}}
+  \rpoint{1}{(d) shows Cr is $+6$ in \ce{Cr2O7^2-}}
+  \rpoint{1}{(d) concludes no oxidation number changes}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{4.9} \practice{5} \textbullet\ the half-reaction method}
+
+Potassium dichromate is a bright orange solid, reduced here to \ce{Cr^3+}.
+In water alone that ion is blue-violet, as \ce{[Cr(H2O)6]^3+}; in the
+sulfate and chloride media used below, those ligands displace water and the
+solution looks green instead. Under acidic conditions dichromate reacts
+with ethanol:
+
+\begin{center}
+\ce{H^+(aq) + Cr2O7^2-(aq) + C2H5OH(aq) -> Cr^3+(aq) + CO2(g) + H2O(l)}
+\quad(unbalanced)
+\end{center}
+
+Balance this equation using the half-reaction method, showing both half
+reactions.
+\workspace[8.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- oxidation numbers, to find the
+electron counts.}
+
+Cr in \ce{Cr2O7^2-} is $+6$; in \ce{Cr^3+} it is $+3$. Gain of 3~e$^-$ per
+Cr, so \textbf{6~e$^-$ per dichromate ion}.
+
+C in \ce{C2H5OH}: $2x + 6(+1) + (-2) = 0 \Rightarrow x = -2$. In \ce{CO2},
+C is $+4$. Loss of 6~e$^-$ per carbon, so \textbf{12~e$^-$ per ethanol}.
+
+\textbf{Step 2 --- reduction half-reaction.} Balance Cr, then O with
+\ce{H2O}, then H with \ce{H+}, then charge with electrons:
+
+\ce{Cr2O7^2- + 14H^+ + 6e^- -> 2Cr^3+ + 7H2O}
+
+\textbf{Step 3 --- oxidation half-reaction}, the same way:
+
+\ce{C2H5OH + 3H2O -> 2CO2 + 12H^+ + 12e^-}
+
+\textbf{Step 4 --- equalise the electrons.} Multiply the reduction half by
+2 so both carry 12~e$^-$:
+
+\ce{2Cr2O7^2- + 28H^+ + 12e^- -> 4Cr^3+ + 14H2O}
+
+\textbf{Step 5 --- add and cancel.} Adding gives $28\,\ce{H+}$ on the left
+against $12$ on the right (net 16 left), and $14\,\ce{H2O}$ on the right
+against 3 on the left (net 11 right):
+
+\begin{center}\ce{16H^+(aq) + 2Cr2O7^2-(aq) + C2H5OH(aq) -> 4Cr^3+(aq) +
+2CO2(g) + 11H2O(l)}\end{center}
+
+\textbf{Step 6 --- verify.}
+C 2/2. Cr 4/4.
+H: $16 + 6 = 22$ against $22$.
+O: $14 + 1 = 15$ against $4 + 11 = 15$.
+Charge: two \ce{Cr2O7^2-} carry $-4$ between them, so
+$+16 - 4 = +12$ against $4(+3) = +12$. \checkmark\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{Cr $+6 \to +3$, 6 e$^-$ per \ce{Cr2O7^2-}}
+  \rpoint{1}{C $-2 \to +4$, 12 e$^-$ per ethanol}
+  \rpoint{1}{reduction half balanced for Cr and O}
+  \rpoint{1}{reduction half balanced for H and charge}
+  \rpoint{1}{oxidation half balanced for C and O}
+  \rpoint{1}{oxidation half balanced for H and charge}
+  \rpoint{1}{multiplies the reduction half by 2}
+  \rpoint{1}{cancels \ce{H+} and \ce{H2O} correctly}
+  \rpoint{1}{final equation correct}
+  \rpoint{1}{verifies atoms \emph{and} charge}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.6} \ced{4.9} \textbullet\ redox titration
+  \emph{(after Zumdahl Q97)}}
+
+A permanganate solution is standardised by titration against oxalic acid,
+\ce{H2C2O4}. It takes \SI{28.97}{\milli\litre} of the permanganate solution
+to react completely with \SI{0.1058}{\gram} of oxalic acid, in acidic
+solution:
+
+\begin{center}
+\ce{MnO4^-(aq) + H2C2O4(aq) -> Mn^2+(aq) + CO2(g)}\quad(unbalanced)
+\end{center}
+
+\begin{parts}
+  \item Balance the equation. \workspace[4cm]
+        \keyonly{\begin{apcanswer}Mn: $+7 \to +2$, gains 5~e$^-$.
+
+        C in \ce{H2C2O4}: $2x + 2(+1) + 4(-2) = 0 \Rightarrow x = +3$;
+        in \ce{CO2}, $+4$. Each of the 2 carbons loses 1~e$^-$, so
+        \textbf{2~e$^-$ per oxalic acid}.
+
+        LCM$(5,2) = 10$: take \textbf{2} \ce{MnO4-} and \textbf{5}
+        \ce{H2C2O4}.
+
+        \begin{center}\ce{2MnO4^- + 5H2C2O4 + 6H^+ -> 2Mn^2+ + 10CO2 +
+        8H2O}\end{center}
+
+        Check --- H: $10 + 6 = 16$ vs $16$. O: $8 + 20 = 28$ vs
+        $20 + 8 = 28$. Charge: $-2 + 6 = +4$ vs $+4$.
+        \checkmark\end{apcanswer}}
+  \item Calculate the molarity of the permanganate solution.
+        \workspace[4cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- molar mass of oxalic
+        acid.}
+
+        $2(1.008) + 2(12.01) + 4(16.00) = \SI{90.04}{\gram\per\mole}$
+
+        \textbf{Step 2 --- moles of oxalic acid.}
+
+        $n = 0.1058 / 90.04 = \num{1.1751e-3}$~mol
+
+        \textbf{Step 3 --- apply the 2:5 ratio} from the balanced equation:
+
+        $n(\ce{MnO4-}) = \frac{2}{5}(\num{1.1751e-3})
+        = \num{4.700e-4}$~mol
+
+        \textbf{Step 4 --- divide by the volume delivered.}
+
+        $M = \num{4.700e-4} / \SI{0.02897}{\litre}
+        = \mathbf{0.01622}$~\textbf{M}
+
+        No indicator is needed: permanganate is its own indicator, going
+        from deep purple to colourless until the first excess drop
+        stays pink.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{Mn $+7 \to +2$, 5 e$^-$; C $+3 \to +4$, 2 e$^-$ per acid}
+  \rpoint{1}{coefficients 2 and 5 from the electron balance}
+  \rpoint{1}{\ce{H+} and \ce{H2O} balanced, equation verified}
+  \rpoint{1}{molar mass \SI{90.04}{\gram\per\mole}}
+  \rpoint{1}{$n(\ce{H2C2O4}) = \num{1.175e-3}$~mol}
+  \rpoint{1}{applies the 2:5 mole ratio}
+  \rpoint{1}{$n(\ce{MnO4-}) = \num{4.70e-4}$~mol}
+  \rpoint{1}{\SI{0.01622}{\Molar}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.6} \ced{4.9} \textbullet\ two titrants, one analyte
+  \emph{(after Zumdahl Q98, Q99)}}
+
+\begin{parts}
+  \item The iron in an ore is dissolved in \ce{HCl} and fully reduced to
+        \ce{Fe^2+}, then titrated with standard \ce{KMnO4}, producing
+        \ce{Fe^3+} and \ce{Mn^2+} in acidic solution. It takes
+        \SI{38.37}{\milli\litre} of \SI{0.0198}{\Molar} \ce{KMnO4} to
+        titrate a solution made from \SI{0.6128}{\gram} of ore. Calculate
+        the mass percent of iron in the ore. \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- balanced equation.}
+        Mn gains 5~e$^-$, Fe loses 1~e$^-$, so the ratio is
+        \textbf{1:5}:
+
+        \ce{MnO4^- + 5Fe^2+ + 8H^+ -> Mn^2+ + 5Fe^3+ + 4H2O}
+
+        \textbf{Step 2 --- moles of titrant.}
+
+        $n(\ce{MnO4-}) = 0.03837 \times 0.0198 = \num{7.597e-4}$~mol
+
+        \textbf{Step 3 --- moles of iron}, 5 per permanganate:
+
+        $n(\ce{Fe^2+}) = 5(\num{7.597e-4}) = \num{3.799e-3}$~mol
+
+        \textbf{Step 4 --- mass of iron.}
+
+        $m = \num{3.799e-3} \times 55.85 = \SI{0.2122}{\gram}$
+
+        \textbf{Step 5 --- percent of the ore.}
+
+        $\dfrac{0.2122}{0.6128} \times 100
+        = \mathbf{34.6\%}$\end{apcanswer}}
+  \item A \SI{50.00}{\milli\litre} sample containing \ce{Fe^2+} requires
+        \SI{20.62}{\milli\litre} of \SI{0.0216}{\Molar} \ce{KMnO4}.
+        Calculate $[\ce{Fe^2+}]$, then determine what volume of
+        \SI{0.0150}{\Molar} \ce{K2Cr2O7} would titrate the same sample.
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of
+        permanganate.}
+
+        $n = 0.02062 \times 0.0216 = \num{4.454e-4}$~mol
+
+        \textbf{Step 2 --- moles of \ce{Fe^2+}}, 1:5 as above:
+
+        $n = 5(\num{4.454e-4}) = \num{2.227e-3}$~mol
+
+        \textbf{Step 3 --- concentration.}
+
+        $[\ce{Fe^2+}] = \num{2.227e-3}/\SI{0.05000}{\litre}
+        = \mathbf{0.0445}$~\textbf{M}
+
+        \textbf{Step 4 --- the dichromate equation.} Each \ce{Cr2O7^2-}
+        accepts 6~e$^-$ (2 Cr $\times$ 3), so the ratio is \textbf{1:6}:
+
+        \ce{Cr2O7^2- + 6Fe^2+ + 14H^+ -> 2Cr^3+ + 6Fe^3+ + 7H2O}
+
+        \textbf{Step 5 --- moles and volume of dichromate.}
+
+        $n = \num{2.227e-3}/6 = \num{3.712e-4}$~mol
+
+        $V = \num{3.712e-4}/0.0150 = \SI{0.02474}{\litre}
+        = \mathbf{24.7}$~\textbf{mL}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) 1:5 \ce{MnO4-}:\ce{Fe^2+} ratio}
+  \rpoint{1}{(a) $n(\ce{MnO4-}) = \num{7.60e-4}$~mol}
+  \rpoint{1}{(a) $n(\ce{Fe}) = \num{3.80e-3}$~mol}
+  \rpoint{1}{(a) \SI{34.6}{\percent} iron}
+  \rpoint{1}{(b) $n(\ce{Fe^2+}) = \num{2.23e-3}$~mol}
+  \rpoint{1}{(b) $[\ce{Fe^2+}] = \SI{0.0445}{\Molar}$}
+  \rpoint{1}{(b) 1:6 \ce{Cr2O7^2-}:\ce{Fe^2+} ratio}
+  \rpoint{1}{(b) \SI{24.7}{\milli\litre}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.6} \ced{4.9} \textbullet\ the blood alcohol assay
+  \emph{(after Zumdahl Q100)}}
+
+Blood alcohol level can be determined by titrating blood plasma with acidic
+potassium dichromate, producing \ce{Cr^3+} and \ce{CO2}. The titration is
+self-indicating: \ce{Cr2O7^2-} is orange and \ce{Cr^3+} is green. Use the
+equation you balanced in question~16.
+
+If \SI{31.05}{\milli\litre} of \SI{0.0600}{\Molar} potassium dichromate is
+required to titrate \SI{30.0}{\gram} of blood plasma, determine the mass
+percent of alcohol in the blood.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- recall the balanced
+equation} from question~16:
+
+\ce{16H^+ + 2Cr2O7^2- + C2H5OH -> 4Cr^3+ + 2CO2 + 11H2O}
+
+The ratio that matters is \textbf{2 \ce{Cr2O7^2-} : 1 \ce{C2H5OH}}.
+
+\textbf{Step 2 --- moles of dichromate delivered.}
+
+$n = 0.03105 \times 0.0600 = \num{1.863e-3}$~mol
+
+\textbf{Step 3 --- moles of ethanol}, halving by the 2:1 ratio:
+
+$n(\ce{C2H5OH}) = \num{1.863e-3}/2 = \num{9.315e-4}$~mol
+
+\textbf{Step 4 --- mass of ethanol.}
+
+$m = \num{9.315e-4} \times 46.07 = \SI{0.04291}{\gram}$
+
+\textbf{Step 5 --- mass percent of the plasma sample.}
+
+$\dfrac{0.04291}{30.0} \times 100 = \mathbf{0.143\%}$
+
+For context, the legal driving limit in most of the United States is
+\SI{0.08}{\gram} of ethanol per \SI{100}{\milli\litre} of blood --- a
+mass/volume basis, which at a blood density of about
+\SI{1.06}{\gram\per\milli\litre} works out near \SI{0.075}{\percent} by
+mass. Getting the 2:1 ratio backwards would double the answer and change
+the verdict --- which is why the balanced equation comes before the
+arithmetic.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{states the 2:1 dichromate-to-ethanol ratio}
+  \rpoint{1}{$n(\ce{Cr2O7^2-}) = \num{1.863e-3}$~mol}
+  \rpoint{1}{divides by 2 to get ethanol}
+  \rpoint{1}{$n(\ce{C2H5OH}) = \num{9.32e-4}$~mol}
+  \rpoint{1}{molar mass \SI{46.07}{\gram\per\mole}}
+  \rpoint{1}{mass \SI{0.0429}{\gram}}
+  \rpoint{1}{divides by \SI{30.0}{\gram}}
+  \rpoint{1}{\SI{0.143}{\percent}}
+\end{rubric}
+
+% ============================================================================
+% SESSION 2
+% ============================================================================
+\clearpage
+\examsection{F}{Challenge Extension}{10 questions \textbullet\ 90 minutes
+  \textbullet\ separate sitting}{\calculatorok}
+
+\begin{apcnote}[About Part F]
+These items go past what the AP exam will ask. Half-reaction balancing in
+\textbf{basic} solution, \textbf{ppm/ppb} concentration units, and
+multi-step \textbf{back-titration} analyses are all beyond the CED --- but
+each one is built from Unit~4 skills, and the reasoning is exactly what
+Unit~9 electrochemistry will assume you already have.
+
+Three questions also contain \textbf{complex ions} ---
+\ce{[Ag(CN)2]^-}, \ce{[Al(OH)4]^-}, \ce{[AuCl4]^-}. Coordination chemistry
+is not on this course's syllabus, and you are never asked to explain the
+bonding: treat each one as a formula to conserve while you
+balance.
+\end{apcnote}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.9} \textbullet\ half-reactions in basic solution}
+
+Balance the following reaction, which occurs in \textbf{basic} solution.
+This is the reaction used to leach silver from low-grade ore.
+
+\begin{center}
+\ce{Ag(s) + CN^-(aq) + O2(g) -> [Ag(CN)2]^-(aq)}\quad(unbalanced)
+\end{center}
+\workspace[8cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- what changes.} Ag: $0 \to +1$
+inside the complex ion (the two cyanides are $-1$ each, giving
+$+1 - 2 = -1$ overall). Loses 1~e$^-$.
+
+O in \ce{O2}: $0 \to -2$ in \ce{OH-}. Gains 2~e$^-$ each, so
+\textbf{4~e$^-$ per \ce{O2}}.
+
+\textbf{Step 2 --- oxidation half.} The cyanide is a ligand, not a redox
+partner, but it must appear because it ends up bound to the silver:
+
+\ce{Ag + 2CN^- -> [Ag(CN)2]^- + e^-}
+
+Charge check: $-2$ on the left; $-1 - 1 = -2$ on the right. \checkmark
+
+\textbf{Step 3 --- reduction half, in basic solution.} Balance O with
+\ce{H2O}, then H with \ce{OH-}:
+
+\ce{O2 + 2H2O + 4e^- -> 4OH^-}
+
+Charge check: $-4$ on the left; $-4$ on the right. \checkmark
+
+\textbf{Step 4 --- equalise electrons} by multiplying the oxidation half
+by 4:
+
+\ce{4Ag + 8CN^- -> 4[Ag(CN)2]^- + 4e^-}
+
+\textbf{Step 5 --- add.}
+
+\begin{center}\ce{4Ag(s) + 8CN^-(aq) + O2(g) + 2H2O(l) ->
+4[Ag(CN)2]^-(aq) + 4OH^-(aq)}\end{center}
+
+\textbf{Step 6 --- verify.}
+Ag 4/4. C 8/8. N 8/8. O: $2 + 2 = 4$ vs $4$. H: 4 vs 4.
+Charge: $-8$ vs $4(-1) + 4(-1) = -8$. \checkmark
+
+Note there are no \ce{H+} ions anywhere --- in basic solution the
+hydrogen bookkeeping is done with \ce{H2O} and \ce{OH-}
+only.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{Ag $0 \to +1$; deduces the oxidation state inside the complex}
+  \rpoint{1}{O $0 \to -2$, 4 e$^-$ per \ce{O2}}
+  \rpoint{1}{oxidation half includes \ce{2CN-}}
+  \rpoint{1}{reduction half balanced with \ce{H2O} and \ce{OH-}, not \ce{H+}}
+  \rpoint{1}{multiplies the oxidation half by 4}
+  \rpoint{1}{correct final equation}
+  \rpoint{1}{atoms verified}
+  \rpoint{1}{charge verified}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{12}{\ced{4.9} \textbullet\ acidic half-reactions
+  \emph{(after Zumdahl Q91)}}
+
+Balance each reaction, which occurs in \textbf{acidic} solution.
+
+\begin{parts}
+  \item \ce{I^-(aq) + ClO^-(aq) -> I3^-(aq) + Cl^-(aq)} \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}I: $-1 \to -\tfrac{1}{3}$ (average in
+        \ce{I3-}); three iodides lose 2~e$^-$ between them.
+        Cl: $+1 \to -1$, gains 2~e$^-$. Already matched at 2.
+
+        Oxidation: \ce{3I^- -> I3^- + 2e^-}
+
+        Reduction: \ce{ClO^- + 2H^+ + 2e^- -> Cl^- + H2O}
+
+        \begin{center}\ce{3I^- + ClO^- + 2H^+ -> I3^- + Cl^- +
+        H2O}\end{center}
+
+        Charge: $-3 - 1 + 2 = -2$ vs $-1 - 1 = -2$.
+        \checkmark\end{apcanswer}}
+  \item \ce{As2O3(s) + NO3^-(aq) -> H3AsO4(aq) + NO(g)}
+        \workspace[3.8cm]
+        \keyonly{\begin{apcanswer}As: $+3 \to +5$, 2~e$^-$ each, so
+        4~e$^-$ per \ce{As2O3}. N: $+5 \to +2$, 3~e$^-$.
+        LCM$(4,3) = 12$: take 3 and 4.
+
+        Oxidation: \ce{As2O3 + 5H2O -> 2H3AsO4 + 4H^+ + 4e^-}
+
+        Reduction: \ce{NO3^- + 4H^+ + 3e^- -> NO + 2H2O}
+
+        Scale by 3 and 4, add, then cancel $12\,\ce{H+}$ and
+        $8\,\ce{H2O}$:
+
+        \begin{center}\ce{3As2O3 + 4NO3^- + 7H2O + 4H^+ -> 6H3AsO4 +
+        4NO}\end{center}
+
+        O: $9 + 12 + 7 = 28$ vs $24 + 4 = 28$. Charge: $-4 + 4 = 0$ vs
+        $0$. \checkmark\end{apcanswer}}
+  \item \ce{Br^-(aq) + MnO4^-(aq) -> Br2(l) + Mn^2+(aq)}
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}Br: $-1 \to 0$, 2~e$^-$ per \ce{Br2}.
+        Mn: $+7 \to +2$, 5~e$^-$. LCM$(2,5) = 10$.
+
+        Oxidation: \ce{10Br^- -> 5Br2 + 10e^-}
+
+        Reduction: \ce{2MnO4^- + 16H^+ + 10e^- -> 2Mn^2+ + 8H2O}
+
+        \begin{center}\ce{10Br^- + 2MnO4^- + 16H^+ -> 5Br2 + 2Mn^2+ +
+        8H2O}\end{center}
+
+        Charge: $-10 - 2 + 16 = +4$ vs $+4$. \checkmark\end{apcanswer}}
+  \item \ce{CH3OH(aq) + Cr2O7^2-(aq) -> CH2O(aq) + Cr^3+(aq)}
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}C in \ce{CH3OH} is $-2$; in \ce{CH2O} it
+        is $0$. Loses 2~e$^-$. \ce{Cr2O7^2-} gains 6~e$^-$. Ratio 3:1.
+
+        Oxidation: \ce{3CH3OH -> 3CH2O + 6H^+ + 6e^-}
+
+        Reduction: \ce{Cr2O7^2- + 14H^+ + 6e^- -> 2Cr^3+ + 7H2O}
+
+        \begin{center}\ce{3CH3OH + Cr2O7^2- + 8H^+ -> 3CH2O + 2Cr^3+ +
+        7H2O}\end{center}
+
+        H: $12 + 8 = 20$ vs $6 + 14 = 20$. Charge: $-2 + 8 = +6$ vs $+6$.
+        \checkmark\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) both half-reactions and the correct sum}
+  \rpoint{3}{(b) both half-reactions and the correct sum}
+  \rpoint{3}{(c) both half-reactions and the correct sum}
+  \rpoint{3}{(d) both half-reactions and the correct sum}
+  \rpoint{0}{within each part: 1 pt electron count, 1 pt half-reactions,
+    1 pt balanced sum verified for atoms and charge}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{15}{\ced{4.9} \textbullet\ more acidic half-reactions
+  \emph{(after Zumdahl Q92)}}
+
+Balance each reaction in \textbf{acidic} solution.
+
+\begin{parts}
+  \item \ce{Cu(s) + NO3^-(aq) -> Cu^2+(aq) + NO(g)} \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}Cu loses 2~e$^-$; N ($+5 \to +2$) gains
+        3. LCM 6: 3 Cu, 2 N.
+
+        \begin{center}\ce{3Cu + 2NO3^- + 8H^+ -> 3Cu^2+ + 2NO +
+        4H2O}\end{center}
+
+        Charge: $-2 + 8 = +6$ vs $+6$. \checkmark\end{apcanswer}}
+  \item \ce{Cr2O7^2-(aq) + Cl^-(aq) -> Cr^3+(aq) + Cl2(g)}
+        \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}\ce{Cr2O7^2-} gains 6~e$^-$;
+        \ce{2Cl- -> Cl2} loses 2. Ratio 1:3.
+
+        \begin{center}\ce{Cr2O7^2- + 6Cl^- + 14H^+ -> 2Cr^3+ + 3Cl2 +
+        7H2O}\end{center}
+
+        Charge: $-2 - 6 + 14 = +6$ vs $+6$. \checkmark\end{apcanswer}}
+  \item \ce{Pb(s) + PbO2(s) + H2SO4(aq) -> PbSO4(s)} \workspace[2.8cm]
+        \keyonly{\begin{apcanswer}A disproportionation in reverse: Pb
+        ($0 \to +2$) loses 2~e$^-$ and \ce{PbO2} ($+4 \to +2$) gains 2.
+        Matched 1:1.
+
+        \begin{center}\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 +
+        2H2O}\end{center}
+
+        This is the discharge reaction of a lead--acid car battery. O:
+        $2 + 8 = 10$ vs $8 + 2 = 10$. \checkmark\end{apcanswer}}
+  \item \ce{Mn^2+(aq) + NaBiO3(s) -> Bi^3+(aq) + MnO4^-(aq)}
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}Mn: $+2 \to +7$, loses 5~e$^-$.
+        Bi: $+5 \to +3$, gains 2. LCM 10: 2 Mn, 5 Bi.
+
+        Oxidation: \ce{2Mn^2+ + 8H2O -> 2MnO4^- + 16H^+ + 10e^-}
+
+        Reduction: \ce{5NaBiO3 + 30H^+ + 10e^- -> 5Bi^3+ + 5Na^+ +
+        15H2O}
+
+        \begin{center}\ce{2Mn^2+ + 5NaBiO3 + 14H^+ -> 2MnO4^- + 5Bi^3+ +
+        5Na^+ + 7H2O}\end{center}
+
+        Charge: $+4 + 14 = +18$ vs $-2 + 15 + 5 = +18$.
+        \checkmark\end{apcanswer}}
+  \item \ce{H3AsO4(aq) + Zn(s) -> AsH3(g) + Zn^2+(aq)}
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}As: $+5 \to -3$, gains 8~e$^-$ --- an
+        unusually large jump. Zn loses 2, so 4 Zn are needed.
+
+        Reduction: \ce{H3AsO4 + 8H^+ + 8e^- -> AsH3 + 4H2O}
+
+        Oxidation: \ce{4Zn -> 4Zn^2+ + 8e^-}
+
+        \begin{center}\ce{H3AsO4 + 4Zn + 8H^+ -> AsH3 + 4Zn^2+ +
+        4H2O}\end{center}
+
+        Charge: $+8$ vs $+8$. \checkmark\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) electron count, half-reactions, verified sum}
+  \rpoint{3}{(b) electron count, half-reactions, verified sum}
+  \rpoint{3}{(c) recognises the 1:1 electron match, verified sum}
+  \rpoint{3}{(d) electron count, half-reactions, verified sum}
+  \rpoint{3}{(e) As $+5 \to -3$ (8 e$^-$), half-reactions, verified sum}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{4.9} \textbullet\ basic solution
+  \emph{(after Zumdahl Q93)}}
+
+Balance each reaction in \textbf{basic} solution.
+
+\begin{parts}
+  \item \ce{Al(s) + MnO4^-(aq) -> MnO2(s) + [Al(OH)4]^-(aq)}
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Al: $0 \to +3$, loses 3~e$^-$.
+        Mn: $+7 \to +4$, gains 3. Matched 1:1.
+
+        Oxidation: \ce{Al + 4OH^- -> [Al(OH)4]^- + 3e^-}
+
+        Reduction: \ce{MnO4^- + 2H2O + 3e^- -> MnO2 + 4OH^-}
+
+        Adding cancels all four \ce{OH-} on each side:
+
+        \begin{center}\ce{Al(s) + MnO4^-(aq) + 2H2O(l) -> [Al(OH)4]^-(aq)
+        + MnO2(s)}\end{center}
+
+        Charge: $-1$ vs $-1$. \checkmark\end{apcanswer}}
+  \item \ce{Cl2(g) -> Cl^-(aq) + OCl^-(aq)} \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}A \textbf{disproportionation} --- the
+        same element is both oxidised and reduced. Cl: $0 \to -1$ and
+        $0 \to +1$.
+
+        Oxidation: \ce{Cl2 + 4OH^- -> 2OCl^- + 2H2O + 2e^-}
+
+        Reduction: \ce{Cl2 + 2e^- -> 2Cl^-}
+
+        Adding gives \ce{2Cl2 + 4OH^- -> 2OCl^- + 2Cl^- + 2H2O};
+        divide through by 2:
+
+        \begin{center}\ce{Cl2(g) + 2OH^-(aq) -> Cl^-(aq) + OCl^-(aq) +
+        H2O(l)}\end{center}
+
+        This is how household bleach is made.
+        \checkmark\end{apcanswer}}
+  \item \ce{NO2^-(aq) + Al(s) -> NH3(g) + AlO2^-(aq)}
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}N: $+3 \to -3$, gains 6~e$^-$.
+        Al: $0 \to +3$, loses 3. So 2 Al per N.
+
+        Oxidation: \ce{2Al + 8OH^- -> 2AlO2^- + 4H2O + 6e^-}
+
+        Reduction: \ce{NO2^- + 5H2O + 6e^- -> NH3 + 7OH^-}
+
+        Add, then cancel $7\,\ce{OH-}$ and $4\,\ce{H2O}$:
+
+        \begin{center}\ce{2Al(s) + NO2^-(aq) + OH^-(aq) + H2O(l) ->
+        2AlO2^-(aq) + NH3(g)}\end{center}
+
+        H: $1 + 2 = 3$ vs $3$. Charge: $-2$ vs $-2$.
+        \checkmark\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) half-reactions in basic form and verified sum}
+  \rpoint{3}{(b) treats \ce{Cl2} as both oxidised and reduced; verified sum
+    (naming it ``disproportionation'' is not required)}
+  \rpoint{3}{(c) half-reactions in basic form and verified sum}
+  \rpoint{0}{no credit for a final equation containing \ce{H+} --- basic
+    solution is balanced with \ce{H2O} and \ce{OH-}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{4.9} \textbullet\ more basic solution
+  \emph{(after Zumdahl Q94)}}
+
+Balance each reaction in \textbf{basic} solution.
+
+\begin{parts}
+  \item \ce{Cr(s) + CrO4^2-(aq) -> Cr(OH)3(s)} \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}Another disproportionation, running
+        \emph{inward} from both ends: Cr $0 \to +3$ (loses 3~e$^-$) and
+        Cr $+6 \to +3$ (gains 3). Matched 1:1.
+
+        Oxidation: \ce{Cr + 3OH^- -> Cr(OH)3 + 3e^-}
+
+        Reduction: \ce{CrO4^2- + 4H2O + 3e^- -> Cr(OH)3 + 5OH^-}
+
+        \begin{center}\ce{Cr(s) + CrO4^2-(aq) + 4H2O(l) -> 2Cr(OH)3(s) +
+        2OH^-(aq)}\end{center}
+
+        O: $4 + 4 = 8$ vs $6 + 2 = 8$. Charge: $-2$ vs $-2$.
+        \checkmark\end{apcanswer}}
+  \item \ce{MnO4^-(aq) + S^2-(aq) -> MnS(s) + S(s)} \workspace[3.6cm]
+        \keyonly{\begin{apcanswer}Careful --- sulfide has \emph{two}
+        fates. Some is oxidised to S; some simply pairs with \ce{Mn^2+}
+        as \ce{MnS}, staying at $-2$.
+
+        Mn: $+7 \to +2$, gains 5~e$^-$. \ce{S^2- -> S} loses 2~e$^-$.
+        LCM 10: 2 Mn, 5 S oxidised, plus 2 more sulfide to form the
+        \ce{MnS}.
+
+        Reduction: \ce{2MnO4^- + 2S^2- + 8H2O + 10e^- -> 2MnS + 16OH^-}
+
+        Oxidation: \ce{5S^2- -> 5S + 10e^-}
+
+        \begin{center}\ce{2MnO4^-(aq) + 7S^2-(aq) + 8H2O(l) -> 2MnS(s) +
+        5S(s) + 16OH^-(aq)}\end{center}
+
+        S: 7 vs $2 + 5 = 7$. Charge: $-2 - 14 = -16$ vs $-16$.
+        \checkmark\end{apcanswer}}
+  \item \ce{CN^-(aq) + MnO4^-(aq) -> CNO^-(aq) + MnO2(s)}
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}C in \ce{CN-} is $+2$ (N is $-3$); in
+        \ce{CNO-} it is $+4$. Loses 2~e$^-$. Mn: $+7 \to +4$, gains 3.
+        LCM 6: 3 CN, 2 Mn.
+
+        Oxidation: \ce{3CN^- + 6OH^- -> 3CNO^- + 3H2O + 6e^-}
+
+        Reduction: \ce{2MnO4^- + 4H2O + 6e^- -> 2MnO2 + 8OH^-}
+
+        \begin{center}\ce{3CN^-(aq) + 2MnO4^-(aq) + H2O(l) -> 3CNO^-(aq)
+        + 2MnO2(s) + 2OH^-(aq)}\end{center}
+
+        Charge: $-5$ vs $-5$. \checkmark
+
+        This is the industrial destruction of cyanide waste.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{3}{(a) treats Cr as both oxidised ($0$) and reduced ($+6$);
+    verified sum (naming it ``disproportionation'' is not required)}
+  \rpoint{3}{(b) accounts for sulfide's two fates, verified sum}
+  \rpoint{3}{(c) deduces C is $+2$ in \ce{CN-}, verified sum}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{4.9} \textbullet\ Scheele's chlorine
+  \emph{(after Zumdahl Q95)}}
+
+Chlorine gas was first prepared in 1774 by C.~W. Scheele, by oxidising
+sodium chloride with manganese(IV) oxide. Balance the equation:
+
+\begin{center}
+\ce{NaCl(aq) + H2SO4(aq) + MnO2(s) -> Na2SO4(aq) + MnCl2(aq) + H2O(l) +
+Cl2(g)}
+\end{center}
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- what changes.} Mn: $+4 \to +2$,
+gains 2~e$^-$. Cl: $-1 \to 0$ in \ce{Cl2}, losing 1~e$^-$ each, so 2
+chlorides are oxidised per Mn.
+
+\textbf{The trap:} not all the chloride is oxidised. Two chlorides go to
+\ce{Cl2}, and two more stay at $-1$ in \ce{MnCl2}. Four \ce{NaCl} are
+needed in total.
+
+\textbf{Step 2 --- balance the rest.} Four Na require 2 \ce{Na2SO4}, hence
+2 \ce{H2SO4}, hence 2 \ce{H2O}:
+
+\begin{center}\ce{4NaCl + 2H2SO4 + MnO2 -> 2Na2SO4 + MnCl2 + 2H2O +
+Cl2}\end{center}
+
+\textbf{Step 3 --- verify.} Na 4/4. Cl: 4 vs $2 + 2 = 4$. S 2/2.
+Mn 1/1. H 4/4. O: $8 + 2 = 10$ vs $8 + 2 = 10$.
+\checkmark\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{Mn $+4 \to +2$; Cl $-1 \to 0$}
+  \rpoint{1}{recognises only half the chloride is oxidised}
+  \rpoint{1}{correct coefficients 4, 2, 1, 2, 1, 2, 1}
+  \rpoint{1}{verifies all six elements}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{4.9} \textbullet\ aqua regia
+  \emph{(after Zumdahl Q96)}}
+
+Gold dissolves in neither concentrated nitric acid nor concentrated
+hydrochloric acid, but it does dissolve in \emph{aqua regia}, a mixture of
+the two. The products are \ce{[AuCl4]^-} and gaseous \ce{NO}. Write a
+balanced equation for the dissolution of gold in aqua regia, then explain
+why the mixture works when neither acid alone does.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- the electron transfer.}
+Au: $0 \to +3$ (in \ce{[AuCl4]-}, four \ce{Cl-} give $-4$, so gold is
+$+3$). Loses 3~e$^-$.
+
+N: $+5 \to +2$, gains 3~e$^-$. Matched \textbf{1:1}.
+
+\textbf{Step 2 --- half-reactions.}
+
+Oxidation: \ce{Au + 4Cl^- -> [AuCl4]^- + 3e^-}
+
+Reduction: \ce{NO3^- + 4H^+ + 3e^- -> NO + 2H2O}
+
+\textbf{Step 3 --- add.}
+
+\begin{center}\ce{Au(s) + 4Cl^-(aq) + NO3^-(aq) + 4H^+(aq) ->
+[AuCl4]^-(aq) + NO(g) + 2H2O(l)}\end{center}
+
+Charge: $-4 - 1 + 4 = -1$ vs $-1$. \checkmark
+
+\textbf{Why the mixture works and neither acid alone does:} nitrate is the
+oxidant, but on its own it cannot pull gold's equilibrium far enough.
+Chloride then \emph{removes} the \ce{Au^3+} by locking it into the stable
+\ce{[AuCl4]-} complex, which drives the oxidation forward. Two reagents,
+two different jobs.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{deduces Au is $+3$ in \ce{[AuCl4]-}}
+  \rpoint{1}{both half-reactions correct}
+  \rpoint{1}{balanced overall equation}
+  \rpoint{1}{explains the separate roles of \ce{NO3-} and \ce{Cl-}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{4.5} \textbullet\ trace concentration units
+  \emph{(after Zumdahl Q135)}}
+
+Environmental chemists use \textbf{parts per million} (ppm) and \textbf{parts
+per billion} (ppb). For dilute aqueous solutions, whose density is
+essentially \SI{1.0}{\gram\per\milli\litre}, \SI{1.0}{ppm} equals
+\SI{1.0}{\milli\gram} of solute per litre of solution, and \SI{1.0}{ppb}
+equals \SI{1.0}{\micro\gram} per litre.
+
+Calculate the molarity of each solution.
+
+\begin{parts}
+  \item \SI{5.0}{ppb} \ce{Hg} \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\SI{5.0}{ppb} = \num{5.0e-6}$~g/L
+
+        $M = \num{5.0e-6}/200.59 = \mathbf{2.5 \times
+        10^{-8}}$~\textbf{M}\end{apcanswer}}
+  \item \SI{1.0}{ppb} \ce{CHCl3} \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\mathcal{M}(\ce{CHCl3}) = 12.01 + 1.008
+        + 3(35.45) = \SI{119.37}{\gram\per\mole}$
+
+        $M = \num{1.0e-6}/119.37 = \mathbf{8.4 \times
+        10^{-9}}$~\textbf{M}\end{apcanswer}}
+  \item \SI{10.0}{ppm} \ce{As} \workspace[2.4cm]
+        \keyonly{\begin{apcanswer}$\SI{10.0}{ppm} =
+        \SI{10.0}{\milli\gram\per\litre} = \num{1.00e-2}$~g/L
+
+        $M = \num{1.00e-2}/74.92 = \mathbf{1.33 \times
+        10^{-4}}$~\textbf{M}
+
+        For reference, the drinking-water limit for arsenic is
+        \SI{10}{ppb} --- a thousand times lower than
+        this.\end{apcanswer}}
+  \item \SI{0.10}{ppm} DDT, \ce{C14H9Cl5} \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}$\mathcal{M} = 14(12.01) + 9(1.008) +
+        5(35.45) = \SI{354.46}{\gram\per\mole}$
+
+        $\SI{0.10}{ppm} = \num{1.0e-4}$~g/L
+
+        $M = \num{1.0e-4}/354.46 = \mathbf{2.8 \times
+        10^{-7}}$~\textbf{M}\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) converts ppb to g/L and divides by \SI{200.59}{\gram\per\mole}}
+  \rpoint{2}{(b) molar mass \SI{119.37}{\gram\per\mole} and correct result}
+  \rpoint{2}{(c) converts ppm to \SI{0.0100}{\gram\per\litre}, correct result}
+  \rpoint{2}{(d) molar mass \SI{354.46}{\gram\per\mole} and correct result}
+  \rpoint{0}{all four answers to 2--3 significant figures with units}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{14}{\ced{4.5} \ced{4.6} \ced{4.9} \textbullet\ the triiodide
+  determination \emph{(after Zumdahl Q154)}}
+
+Triiodide ion is generated in acidic solution by
+
+\begin{center}
+\ce{IO3^-(aq) + I^-(aq) -> I3^-(aq)}\quad(unbalanced)
+\end{center}
+
+Its concentration is then found by titration with sodium thiosulfate,
+\ce{Na2S2O3}; the products are iodide ion and tetrathionate ion,
+\ce{S4O6^2-}.
+
+\begin{parts}
+  \item Balance the equation for \ce{IO3-} reacting with \ce{I-}.
+        \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}I in \ce{IO3-} is $+5$; in \ce{I3-} the
+        average is $-\tfrac{1}{3}$. Treat it as two half-reactions:
+
+        Reduction: \ce{IO3^- + 6H^+ + 6e^- -> I^- + 3H2O}
+
+        Oxidation: \ce{3I^- -> I3^- + 2e^-} (scaled $\times 3$)
+
+        Combining and then folding the product iodide into \ce{I3-}:
+
+        \begin{center}\ce{IO3^- + 8I^- + 6H^+ -> 3I3^- +
+        3H2O}\end{center}
+
+        I: $1 + 8 = 9$ vs $9$. O: 3 vs 3. H: 6 vs 6.
+        Charge: $-1 - 8 + 6 = -3$ vs $-3$. \checkmark\end{apcanswer}}
+  \item \SI{0.6013}{\gram} of \ce{KIO3} is dissolved in water, then \ce{HCl}
+        and solid \ce{KI} are added. Determine the minimum mass of \ce{KI}
+        and the minimum volume of \SI{3.00}{\Molar} \ce{HCl} needed to
+        convert all the \ce{IO3-} to \ce{I3-}. \workspace[5cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of iodate.}
+
+        $\mathcal{M}(\ce{KIO3}) = 39.10 + 126.90 + 48.00
+        = \SI{214.00}{\gram\per\mole}$
+
+        $n = 0.6013/214.00 = \num{2.8098e-3}$~mol
+
+        \textbf{Step 2 --- iodide required}, 8 per iodate:
+
+        $n(\ce{KI}) = 8(\num{2.8098e-3}) = \num{2.2479e-2}$~mol
+
+        $\mathcal{M}(\ce{KI}) = 39.10 + 126.90
+        = \SI{166.00}{\gram\per\mole}$
+
+        $m = \num{2.2479e-2} \times 166.00 = \mathbf{3.731}$~\textbf{g}
+
+        \textbf{Step 3 --- acid required}, 6 \ce{H+} per iodate:
+
+        $n(\ce{H+}) = 6(\num{2.8098e-3}) = \num{1.6859e-2}$~mol
+
+        $V = \num{1.6859e-2}/3.00 = \SI{5.6196e-3}{\litre}
+        = \mathbf{5.62}$~\textbf{mL}\end{apcanswer}}
+  \item Write and balance the equation for \ce{S2O3^2-} reacting with
+        \ce{I3-}. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}S in \ce{S2O3^2-} averages $+2$; in
+        \ce{S4O6^2-} it averages $+2.5$. Each pair loses 1~e$^-$;
+        \ce{I3-} gains 2~e$^-$ going to 3 \ce{I-}.
+
+        \begin{center}\ce{2S2O3^2-(aq) + I3^-(aq) -> 3I^-(aq) +
+        S4O6^2-(aq)}\end{center}
+
+        S 4/4. I 3/3. Charge: $-4 - 1 = -5$ vs $-3 - 2 = -5$.
+        \checkmark\end{apcanswer}}
+  \item A \SI{25.00}{\milli\litre} sample of \SI{0.0100}{\Molar} \ce{KIO3}
+        is reacted with excess \ce{KI}. Titrating the \ce{I3-} produced
+        takes \SI{32.04}{\milli\litre} of \ce{Na2S2O3}. Calculate its
+        molarity. \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of iodate.}
+
+        $n = 0.02500 \times 0.0100 = \num{2.500e-4}$~mol
+
+        \textbf{Step 2 --- moles of \ce{I3-}}, 3 per iodate from part (a):
+
+        $n = 3(\num{2.500e-4}) = \num{7.500e-4}$~mol
+
+        \textbf{Step 3 --- moles of thiosulfate}, 2 per \ce{I3-} from
+        part (c):
+
+        $n = 2(\num{7.500e-4}) = \num{1.500e-3}$~mol
+
+        \textbf{Step 4 --- divide by the titre.}
+
+        $M = \num{1.500e-3}/\SI{0.03204}{\litre}
+        = \mathbf{0.0468}$~\textbf{M}
+
+        Note the chain: one iodate becomes three triiodides becomes six
+        thiosulfates. The \textbf{overall} ratio is
+        \textbf{1:6}.\end{apcanswer}}
+  \item Describe how you would prepare \SI{500.0}{\milli\litre} of the
+        \ce{KIO3} solution in part (d) from the solid.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}$n = 0.5000 \times 0.0100
+        = \num{5.00e-3}$~mol
+
+        $m = \num{5.00e-3} \times 214.00 = \SI{1.07}{\gram}$
+
+        Weigh \SI{1.07}{\gram} of \ce{KIO3} on an analytical balance,
+        transfer it quantitatively into a \SI{500.0}{\milli\litre}
+        \textbf{volumetric} flask, rinsing the weighing vessel into the
+        flask. Add distilled water to dissolve, swirl, then fill to the
+        calibration mark and invert to mix.
+
+        A beaker or graduated cylinder will not do --- neither is accurate
+        enough to define \SI{500.0}{\milli\litre} to four significant
+        figures.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) balanced \ce{IO3- + 8I- + 6H+ -> 3I3- + 3H2O}}
+  \rpoint{1}{(b) $n(\ce{KIO3}) = \num{2.81e-3}$~mol}
+  \rpoint{2}{(b) \SI{3.731}{\gram} \ce{KI}}
+  \rpoint{2}{(b) \SI{5.62}{\milli\litre} \ce{HCl}}
+  \rpoint{2}{(c) balanced \ce{2S2O3^2- + I3- -> 3I- + S4O6^2-}}
+  \rpoint{1}{(d) chains the 1:3 and 1:2 ratios}
+  \rpoint{2}{(d) \SI{0.0468}{\Molar}}
+  \rpoint{1}{(e) \SI{1.07}{\gram} in a \SI{500.0}{\milli\litre} volumetric
+    flask}
+  \rpoint{1}{(e) fills to the mark rather than adding \SI{500}{\milli\litre}
+    of water}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{12}{\ced{4.5} \ced{4.6} \ced{4.9} \textbullet\ back-titration and
+  film thickness \emph{(after Zumdahl Q155)}}
+
+Chromium has been investigated as a coating for steel cans. The film
+thickness is found by dissolving a sample of the can in acid and oxidising
+the resulting \ce{Cr^3+} to \ce{Cr2O7^2-} with peroxydisulfate:
+
+\begin{center}
+\ce{S2O8^2-(aq) + Cr^3+(aq) + H2O(l) -> Cr2O7^2-(aq) + SO4^2-(aq) +
+H^+(aq)}\quad(unbalanced)
+\end{center}
+
+Unreacted \ce{S2O8^2-} is then removed. An \textbf{excess} of ferrous
+ammonium sulfate is added next, reducing the \ce{Cr2O7^2-}; the salt is
+\ce{Fe(NH4)2(SO4)2 * 6H2O}. The \ce{Fe^2+} left over is titrated with a
+separate \ce{K2Cr2O7} solution:
+
+\begin{center}
+\ce{H^+(aq) + Fe^2+(aq) + Cr2O7^2-(aq) -> Fe^3+(aq) + Cr^3+(aq) +
+H2O(l)}\quad(unbalanced)
+\end{center}
+
+\begin{parts}
+  \item Balance both equations. \workspace[4.4cm]
+        \keyonly{\begin{apcanswer}\textbf{First reaction.} Cr: $+3 \to
+        +6$, loses 3~e$^-$ each, so 6~e$^-$ per \ce{Cr2O7^2-} formed.
+
+        Peroxydisulfate is \ce{O3S-O-O-SO3^2-}: it carries a
+        \textbf{peroxide} linkage, so six oxygens are $-2$ and two are
+        $-1$. Sulfur is therefore $+6$ --- the same as in \ce{SO4^2-},
+        and the group maximum. It is the two \textbf{peroxide oxygens}
+        that are reduced, $-1 \to -2$, so each \ce{S2O8^2-} gains
+        2~e$^-$. LCM 6: 3 \ce{S2O8^2-} per 2 \ce{Cr^3+}.
+
+        \begin{center}\ce{3S2O8^2- + 2Cr^3+ + 7H2O -> Cr2O7^2- + 6SO4^2-
+        + 14H^+}\end{center}
+
+        O: $24 + 7 = 31$ vs $7 + 24 = 31$. Charge: $-6 + 6 = 0$ vs
+        $-2 - 12 + 14 = 0$. \checkmark
+
+        \textbf{Second reaction.} \ce{Cr2O7^2-} gains 6~e$^-$;
+        \ce{Fe^2+} loses 1. Ratio \textbf{1:6}.
+
+        \begin{center}\ce{14H^+ + 6Fe^2+ + Cr2O7^2- -> 6Fe^3+ + 2Cr^3+ +
+        7H2O}\end{center}
+
+        Charge: $+14 + 12 - 2 = +24$ vs $+18 + 6 = +24$.
+        \checkmark\end{apcanswer}}
+  \item A \SI{40.0}{\square\centi\metre} sample of chromium-plated can was
+        treated this way. After the excess \ce{S2O8^2-} was removed,
+        \SI{3.000}{\gram} of the ferrous salt above
+        ($\mathcal{M} = \SI{392.17}{\gram\per\mole}$) was added, and
+        \SI{8.58}{\milli\litre} of \SI{0.0520}{\Molar} \ce{K2Cr2O7} was
+        needed to react with the excess \ce{Fe^2+}. The density of chromium
+        is \SI{7.19}{\gram\per\cubic\centi\metre}. Calculate the thickness
+        of the chromium film. \workspace[8cm]
+        \keyonly{\begin{apcanswer}\textbf{This is a back-titration: find
+        the total, find the leftover, subtract.}
+
+        \textbf{Step 1 --- total \ce{Fe^2+} added.}
+
+        $n = 3.000/392.17 = \num{7.650e-3}$~mol
+
+        \textbf{Step 2 --- excess \ce{Fe^2+}}, from the titration at 6:1:
+
+        $n(\ce{Cr2O7^2-}) = 0.00858 \times 0.0520 = \num{4.462e-4}$~mol
+
+        $n(\ce{Fe^2+})_{\text{excess}} = 6(\num{4.462e-4})
+        = \num{2.677e-3}$~mol
+
+        \textbf{Step 3 --- \ce{Fe^2+} that reacted with the sample's
+        dichromate.}
+
+        $\num{7.650e-3} - \num{2.677e-3} = \num{4.973e-3}$~mol
+
+        \textbf{Step 4 --- dichromate from the sample}, again 6:1:
+
+        $n(\ce{Cr2O7^2-}) = \num{4.973e-3}/6 = \num{8.288e-4}$~mol
+
+        \textbf{Step 5 --- chromium on the can}, 2 Cr per dichromate:
+
+        $n(\ce{Cr}) = 2(\num{8.288e-4}) = \num{1.658e-3}$~mol
+
+        $m = \num{1.658e-3} \times 52.00 = \SI{0.08619}{\gram}$
+
+        \textbf{Step 6 --- volume, then thickness.}
+
+        $V = 0.08619/7.19 = \SI{0.011988}{\cubic\centi\metre}$
+
+        $t = V/A = 0.011988/40.0
+        = \mathbf{3.00 \times 10^{-4}}$~\textbf{cm}
+
+        That is \SI{3.00}{\micro\metre} --- about a twentieth the width of
+        a human hair.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{(a) first equation balanced and verified}
+  \rpoint{2}{(a) second equation balanced and verified}
+  \rpoint{1}{(b) total \ce{Fe^2+} $= \num{7.65e-3}$~mol}
+  \rpoint{1}{(b) excess \ce{Fe^2+} $= \num{2.68e-3}$~mol via the 6:1 ratio}
+  \rpoint{1}{(b) subtracts to get \num{4.97e-3}~mol reacted}
+  \rpoint{1}{(b) dichromate from sample $= \num{8.29e-4}$~mol}
+  \rpoint{1}{(b) $n(\ce{Cr}) = \num{1.66e-3}$~mol via 2 Cr per dichromate}
+  \rpoint{1}{(b) mass \SI{0.0862}{\gram}}
+  \rpoint{1}{(b) volume \SI{0.0120}{\cubic\centi\metre} from the density}
+  \rpoint{1}{(b) thickness \SI{3.00e-4}{\centi\metre}}
+\end{rubric}
+
+% ============================================================================
+\examtotal
+
+\end{document}

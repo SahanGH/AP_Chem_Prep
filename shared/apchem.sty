@@ -237,9 +237,18 @@
 }
 
 % \workspace[height] -- blank calculation space, print only gets the full box.
+%
+% \vspace* not \vspace. Plain \vspace is DISCARDABLE glue: when a prompt
+% happens to end a page, TeX drops the following skip and the student gets
+% zero writing room, while the key still looks right because the apcanswer
+% box after it re-anchors the space. Found on the Unit 4 comprehensive test,
+% where a 10-point half-reaction question had its entire 8.5cm of working
+% space silently deleted. Invisible to the build, the logs, and the
+% page-count sweep -- only reading the student PDF catches it.
+% \vspace* prefixes a zero-height rule so the skip survives at a page top.
 \newcommand{\workspace}[1][3cm]{%
   \par\vspace{0.3em}%
-  \iftoggle{apcLMS}{\vspace{0.8cm}}{\vspace{#1}}%
+  \iftoggle{apcLMS}{\vspace*{0.8cm}}{\vspace*{#1}}%
   \par%
 }
 
