@@ -1,0 +1,1105 @@
+% Unit 6 comprehensive test -- 24 free-response questions, built to a
+% teacher request covering every Zumdahl Ch6 worked example (6.1-6.13,
+% including 6.8, which a first search of the cache missed and a second,
+% direct page read found), the one Ch8 SS8.8 bond-energy example, and all
+% ten Chapter 6 Challenge Problems (Q130-139). No separate named-exercise
+% list was requested this time, so this paper is smaller than the Unit 4/5
+% comprehensive tests -- an honest reflection of what was actually asked,
+% not a shortfall.
+%
+% Every numeric answer independently recomputed in Python before being
+% typed here, including sourcing Table 6.2 and Appendix 4 (dHf values not
+% given in-problem) directly from the cached textbook pages.
+%
+% Items adapted from Zumdahl Ch6/Ch8 examples and exercises are reworded as
+% original items with the source numbers preserved and tagged "after
+% Zumdahl" -- the public repo carries no Cengage text (convention 6).
+\documentclass{apchem-exam}
+
+% Same fix as the Unit 4/5 tests: siunitx groups any run of 5+ digits.
+\sisetup{group-minimum-digits = 7}
+
+\apcunit{6}
+\apcunittitle{Thermochemistry}
+\apcdoctitle{Comprehensive Test}
+\apcsubtitle{CED 6.1--6.9 \textbullet\ Session 1: Worked Examples, 14
+  questions, 80 points, 105 minutes \textbullet\ Session 2: Challenge
+  Problems, 10 questions, 72 points, 90 minutes}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this paper runs]
+\textbf{Two sessions.} Session 1 works through every worked example in
+Zumdahl Chapter 6 and \S8.8, in the book's own order --- the techniques
+build on each other. Session 2 is the chapter's own Challenge Problem set
+in full.
+
+Calculator, periodic table, and equations sheet are permitted throughout.
+\textbf{Show every step.} A bare final answer earns the answer mark only;
+the setup marks are for work you can point to. Carry units through each
+line and round only at the end.
+\end{apcnote}
+
+\begin{apcnote}[Scope --- read before you start]
+Two CED exclusions shape this paper. Under \ced{6.6}: \textbf{the
+technical distinction between enthalpy and internal energy is not
+assessed}. Most AP reactions run at constant pressure, where
+$q_p = \Delta H$ --- that equivalence is all the CED asks for. Under
+\ced{6.9}: \textbf{the formal concept of a state function is not
+assessed} --- Hess's law itself is fully examinable, the thermodynamic
+formalism behind \emph{why} it works is not.
+
+Chapter 6 itself is a general-chemistry chapter, and several of its early
+worked examples are built entirely around $\Delta E = q + w$ and $w =
+-P\Delta V$ --- squarely the excluded material. Those parts are flagged
+\textbf{[beyond CED]} throughout. They are here because the calculation is
+short, standard, and worth knowing --- not because the AP exam will ask
+for it.
+\end{apcnote}
+
+% ============================================================================
+\examsection{A}{Worked Examples --- Energy, Work, and Enthalpy}{7
+  questions \textbullet\ 32 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{6.6} \textbullet\ [beyond CED] internal energy from
+  $q$ and $w$ \emph{(after Zumdahl Example 6.1)}}
+
+A system absorbs \SI{15.6}{\kilo\joule} of heat from its surroundings, and
+\SI{1.4}{\kilo\joule} of work is done \emph{on} the system.
+
+Find \(\Delta E\) for the system.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- assign signs.} Heat flows
+\emph{into} the system: \(q = +\SI{15.6}{\kilo\joule}\). Work is done
+\emph{on} the system: \(w = +\SI{1.4}{\kilo\joule}\).
+
+\textbf{Step 2 --- apply the first law.}
+
+\[\Delta E = q + w = 15.6 + 1.4 = \mathbf{+17.0}\ \text{kJ}\]
+
+The system's internal energy \textbf{increases} by \SI{17.0}{\kilo\joule}
+--- both terms added energy, so both carry a positive
+sign.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct sign on $q$ ($+15.6$, heat absorbed)}
+  \rpoint{1}{correct sign on $w$ ($+1.4$, work done on the system)}
+  \rpoint{1}{\(\Delta E = +\SI{17.0}{\kilo\joule}\)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{\ced{6.6} \textbullet\ [beyond CED] $PV$ work
+  \emph{(after Zumdahl Example 6.2)}}
+
+A gas expands from \SI{46}{\litre} to \SI{64}{\litre} at a constant
+external pressure of \SI{15}{\atm}.
+
+Calculate the work associated with this expansion.
+\workspace[3.2cm]
+\keyonly{\begin{apcanswer}\[\Delta V = 64 - 46 = \SI{18}{\litre}\]
+
+\[w = -P\Delta V = -(15)(18) = \mathbf{-270}\ \text{L\,atm}\]
+
+The negative sign is not optional bookkeeping: an
+\textbf{expanding} gas does work \emph{on} the surroundings, so the
+system's own energy account records a
+loss.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\(\Delta V = \SI{18}{\litre}\)}
+  \rpoint{1}{correct formula \(w=-P\Delta V\)}
+  \rpoint{1}{\(w = -270\)~L\,atm, with the negative sign explained}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{\ced{6.6} \practice{5} \textbullet\ [beyond CED] $\Delta E$
+  with a unit conversion \emph{(after Zumdahl Example 6.3)}}
+
+A weather balloon expands from \SI{4.00e6}{\litre} to
+\SI{4.50e6}{\litre} while \SI{1.3e8}{\joule} of heat is added, against a
+constant external pressure of \SI{1.0}{\atm}.
+($\SI{1}{\litre\atm} = \SI{101.3}{\joule}$.)
+
+Find \(\Delta E\) for the gas inside the balloon.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- work, in L\,atm.}
+
+\[\Delta V = 4.50\times10^6 - 4.00\times10^6 = 5.0\times10^5\ \text{L}\]
+
+\[w = -P\Delta V = -(1.0)(5.0\times10^5) = -5.0\times10^5\ \text{L\,atm}\]
+
+\textbf{Step 2 --- convert to joules.}
+
+\[w = (-5.0\times10^5\ \text{L\,atm}) \times 101.3\ \frac{\text{J}}
+{\text{L\,atm}} = \mathbf{-5.1\times10^7}\ \text{J}\]
+
+\textbf{Step 3 --- apply the first law.}
+
+\[\Delta E = q + w = 1.3\times10^8 + (-5.1\times10^7)
+= \mathbf{8\times10^7}\ \text{J}\]
+
+More heat was added than the balloon spent expanding, so the net internal
+energy \textbf{rises} --- to 1 significant figure, since $q$ was only
+given to two.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\(\Delta V = 5.0\times10^5\)~L}
+  \rpoint{1}{\(w = -5.0\times10^5\)~L\,atm}
+  \rpoint{1}{converts to \(w \approx -5.1\times10^7\)~J}
+  \rpoint{1}{applies \(\Delta E = q + w\) correctly}
+  \rpoint{1}{\(\Delta E \approx 8\times10^7\)~J, sig figs justified}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{6.6} \practice{5} \textbullet\ enthalpy on a mass
+  basis \emph{(after Zumdahl Example 6.4)}}
+
+Burning \SI{1}{\mole} of \ce{CH4(g)} at constant pressure releases
+\SI{890}{\kilo\joule}.
+
+Find \(\Delta H\) for burning \SI{5.8}{\gram} of \ce{CH4}.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\[\mathcal{M}(\ce{CH4}) = 12.01 + 4(1.008)
+= \SI{16.04}{\gram\per\mole}\]
+
+\[n = 5.8/16.04 = \num{0.362}\ \text{mol}\]
+
+\[\Delta H = 0.362 \times (-890) = \mathbf{-320}\ \text{kJ}\]
+
+\(\Delta H\) is an \textbf{extensive} property --- it scales directly
+with the amount reacting, unlike an intensive property such as
+temperature.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{molar mass \(\SI{16.04}{\gram\per\mole}\)}
+  \rpoint{1}{\(n = \num{0.362}\)~mol}
+  \rpoint{1}{\(\Delta H = -320\)~kJ}
+  \rpoint{1}{notes \(\Delta H\) is extensive}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{\ced{6.4} \ced{6.6} \practice{6} \textbullet\
+  constant-pressure calorimetry \emph{(after Zumdahl Example 6.5)}}
+
+\SI{1.00}{\litre} of \SI{1.00}{\Molar} \ce{Ba(NO3)2} and \SI{1.00}{\litre}
+of \SI{1.00}{\Molar} \ce{Na2SO4}, both at \SI{25.0}{\celsius}, are mixed
+in a coffee-cup calorimeter. The temperature rises to
+\SI{28.1}{\celsius}. Take the specific heat of the mixed solution as
+\SI{4.18}{\joule\per\gram\per\celsius} and its density as
+\SI{1.0}{\gram\per\milli\litre}.
+
+\begin{parts}
+  \item Write the net ionic equation. \workspace[2cm]
+        \keyonly{\begin{apcanswer}\(\ce{Ba^2+(aq) + SO4^2-(aq) ->
+        BaSO4(s)}\)\end{apcanswer}}
+  \item Find \(\Delta H\) per mole of \ce{BaSO4} formed.
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- heat released to the
+        solution.}
+
+        mass of solution \(= 2.00\ \text{L} \times 1000\ \text{mL/L}
+        \times 1.0\ \text{g/mL} = 2.0\times10^3\)~g
+
+        \(\Delta T = 28.1 - 25.0 = \SI{3.1}{\celsius}\)
+
+        \[q_{\text{soln}} = (4.18)(2.0\times10^3)(3.1)
+        = \num{2.6e4}\ \text{J} = 26\ \text{kJ}\]
+
+        \textbf{Step 2 --- sign flip.} The reaction released this heat
+        \emph{to} the solution, so the reaction's own
+        \(q_p = \Delta H = -\SI{26}{\kilo\joule}\).
+
+        \textbf{Step 3 --- moles of \ce{BaSO4}.} Both solutions supply
+        exactly \(1.00\ \text{L} \times 1.00\ \text{M} = \num{1.00}\)~mol
+        of their ion, a clean 1:1 match --- \textbf{1.00 mol}
+        \ce{BaSO4} forms.
+
+        \[\Delta H = \frac{-26\ \text{kJ}}{1.00\ \text{mol}}
+        = \mathbf{-26}\ \text{kJ/mol}\]\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{correct net ionic equation}
+  \rpoint{1}{mass of solution \(= \SI{2.0e3}{\gram}\)}
+  \rpoint{1}{\(q_{\text{soln}} = \SI{26}{\kilo\joule}\)}
+  \rpoint{1}{sign flip: reaction's \(\Delta H = -q_{\text{soln}}\)}
+  \rpoint{1}{recognises exactly 1.00 mol \ce{BaSO4} forms}
+  \rpoint{1}{\(\Delta H = \SI{-26}{\kilo\joule\per\mole}\)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{\ced{6.4} \practice{6} \textbullet\ bomb calorimetry, two
+  fuels \emph{(after Zumdahl Example 6.6)}}
+
+A bomb calorimeter has heat capacity \SI{11.3}{\kilo\joule\per\celsius}.
+Burning \SI{1.50}{\gram} of \ce{CH4} raises the temperature
+\SI{7.3}{\celsius}; burning \SI{1.15}{\gram} of \ce{H2} raises it
+\SI{14.3}{\celsius}.
+
+Which fuel releases more energy \emph{per gram}, and by what factor?
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- total energy released in each
+trial.}
+
+\ce{CH4}: \(E = (11.3)(7.3) = \SI{82.5}{\kilo\joule}\)
+
+\ce{H2}: \(E = (11.3)(14.3) = \SI{162}{\kilo\joule}\)
+
+\textbf{Step 2 --- divide by sample mass.}
+
+\ce{CH4}: \(82.5/1.50 = \mathbf{55.0}\)~kJ/g
+
+\ce{H2}: \(162/1.15 = \mathbf{141}\)~kJ/g
+
+\textbf{Step 3 --- compare.}
+
+\[\frac{141}{55.0} = \mathbf{2.56}\]
+
+\textbf{Hydrogen} releases about \textbf{2.5 times} as much energy per
+gram as methane --- part of why it is attractive as a fuel despite being
+hard to store (Example 6.13 returns to exactly this
+trade-off).\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\(E(\ce{CH4}) = \SI{82.5}{\kilo\joule}\)}
+  \rpoint{1}{\(E(\ce{H2}) = \SI{162}{\kilo\joule}\)}
+  \rpoint{1}{\SI{55.0}{\kilo\joule\per\gram} for \ce{CH4}}
+  \rpoint{1}{\SI{141}{\kilo\joule\per\gram} for \ce{H2}}
+  \rpoint{1}{selects \ce{H2} as releasing more per gram}
+  \rpoint{1}{ratio \(\approx 2.5\)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{6.9} \practice{5} \textbullet\ Hess's law I, graphite
+  to diamond \emph{(after Zumdahl Example 6.7)}}
+
+Enthalpies of combustion: graphite, \SI{-394}{\kilo\joule\per\mole};
+diamond, \SI{-396}{\kilo\joule\per\mole}.
+
+Find \(\Delta H\) for \(\ce{C_{graphite}(s) -> C_{diamond}(s)}\).
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- write both combustion
+equations.}
+
+\ce{C_{graphite}(s) + O2(g) -> CO2(g)}\quad \(\Delta H = -394\)~kJ
+
+\ce{C_{diamond}(s) + O2(g) -> CO2(g)}\quad \(\Delta H = -396\)~kJ
+
+\textbf{Step 2 --- reverse the second} (diamond must end up as a
+\emph{product}), flipping its sign, and add:
+
+\ce{C_{graphite}(s) + O2(g) -> CO2(g)}\quad \(-394\)~kJ
+
+\ce{CO2(g) -> C_{diamond}(s) + O2(g)}\quad \(+396\)~kJ
+
+\ce{O2} and \ce{CO2} cancel, leaving the target equation.
+
+\[\Delta H = -394 + 396 = \mathbf{+2}\ \text{kJ/mol}\]
+
+Slightly \textbf{endothermic} --- consistent with diamond being the
+higher-energy, less stable form of carbon at ordinary
+conditions.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{both combustion equations written correctly}
+  \rpoint{2}{reverses the diamond equation and flips its sign}
+  \rpoint{1}{\ce{O2} and \ce{CO2} correctly cancel}
+  \rpoint{1}{\(\Delta H = +2\)~kJ/mol, endothermic}
+\end{rubric}
+
+% ============================================================================
+\examsection{B}{Worked Examples --- Hess's Law and Formation
+  Enthalpies}{7 questions \textbullet\ 48 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{6.9} \practice{5} \textbullet\ Hess's law II, four-step
+  combination \emph{(after Zumdahl Example 6.8)}}
+
+Diborane, \ce{B2H6(g)}, was once studied as a rocket fuel. Find
+\(\Delta H\) for \(\ce{2B(s) + 3H2(g) -> B2H6(g)}\) using:
+
+\begin{center}
+(a)\ \ce{2B(s) + 3/2O2(g) -> B2O3(s)}\quad \(\Delta H = -1273\)~kJ\\
+(b)\ \ce{B2H6(g) + 3O2(g) -> B2O3(s) + 3H2O(g)}\quad \(\Delta H =
+-2035\)~kJ\\
+(c)\ \ce{H2(g) + 1/2O2(g) -> H2O(l)}\quad \(\Delta H = -286\)~kJ\\
+(d)\ \ce{H2O(l) -> H2O(g)}\quad \(\Delta H = +44\)~kJ
+\end{center}
+\workspace[7.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- match reactants/products to
+the target.} The target needs \ce{B(s)} and \ce{H2(g)} as reactants,
+\ce{B2H6(g)} as the only product.
+
+\textbf{Keep (a) as written} --- \ce{B(s)} is already a reactant, matching
+the target's \(2\ce{B(s)}\).
+
+\textbf{Reverse (b)} --- the target needs \ce{B2H6} as a
+\emph{product}, but (b) has it as a reactant:
+
+\[\ce{B2O3(s) + 3H2O(g) -> B2H6(g) + 3O2(g)}\quad \Delta H = +2035\
+\text{kJ}\]
+
+\textbf{Combine (c)+(d), then triple} --- the target needs \(3\ce{H2}\)
+as a reactant with no water anywhere in the final equation. Adding (c)
+and (d) gives \ce{H2(g) + 1/2O2(g) -> H2O(g)}, \(\Delta H = -286+44 =
+-242\)~kJ; tripling for 3 mol \ce{H2}:
+
+\[\ce{3H2(g) + 3/2O2(g) -> 3H2O(g)}\quad \Delta H
+= 3(-242) = -726\ \text{kJ}\]
+
+\textbf{Step 2 --- add all three and check cancellation.} \ce{B2O3(s)}
+cancels (appears both sides); \(3\ce{H2O(g)}\) cancels; \(3/2+3/2=3\)~mol
+\ce{O2} on the left cancels the 3~mol \ce{O2} on the right. What remains
+is exactly \(\ce{2B(s) + 3H2(g) -> B2H6(g)}\).
+
+\[\Delta H = -1273 + 2035 + (-726) = \mathbf{+36}\ \text{kJ}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{keeps (a) unchanged, correctly matching \ce{B(s)}}
+  \rpoint{2}{reverses (b) and flips its sign to $+2035$}
+  \rpoint{2}{combines (c)+(d) and triples correctly to $-726$}
+  \rpoint{1}{verifies \ce{B2O3}, \ce{H2O}, and \ce{O2} all cancel}
+  \rpoint{1}{\(\Delta H = +36\)~kJ}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{\ced{6.8} \practice{5} \textbullet\ enthalpy of reaction
+  from formation values \emph{(after Zumdahl Example 6.9)}}
+
+\(\ce{4NH3(g) + 7O2(g) -> 4NO2(g) + 6H2O(l)}\). Given
+\(\Delta H_f^\circ\): \ce{NH3(g)} \(=-46\); \ce{NO2(g)} \(=+34\);
+\ce{H2O(l)} \(=-286\) (all kJ/mol; \ce{O2} is an element).
+
+Find \(\Delta H^\circ\) for the reaction.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- decompose the reactants to
+elements}, the reverse of formation:
+
+\(4\ce{NH3}\): \(4\times(-(-46)) = +184\)~kJ
+
+\(7\ce{O2}\): already elemental, \(0\)~kJ
+
+\textbf{Step 2 --- build the products from elements}, the formation
+reactions themselves:
+
+\(4\ce{NO2}\): \(4\times(34) = +136\)~kJ
+
+\(6\ce{H2O(l)}\): \(6\times(-286) = -1716\)~kJ
+
+\textbf{Step 3 --- sum.}
+
+\[\Delta H^\circ = 184 + 0 + 136 - 1716 = \mathbf{-1396}\ \text{kJ}\]
+
+The general rule this whole method reduces to:
+\(\Delta H^\circ_{\text{rxn}} = \sum n\,\Delta H_f^\circ(\text{products})
+- \sum n\,\Delta H_f^\circ(\text{reactants})\).\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{decomposes \ce{NH3}, reversing its formation sign}
+  \rpoint{1}{recognises \ce{O2} contributes 0}
+  \rpoint{1}{forms \ce{NO2}, \(+136\)~kJ}
+  \rpoint{1}{forms \ce{H2O(l)}, \(-1716\)~kJ}
+  \rpoint{2}{\(\Delta H^\circ = -1396\)~kJ}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{\ced{6.8} \textbullet\ the thermite reaction
+  \emph{(after Zumdahl Example 6.10)}}
+
+\(\ce{2Al(s) + Fe2O3(s) -> Al2O3(s) + 2Fe(s)}\). Given
+\(\Delta H_f^\circ(\ce{Fe2O3}) = -826\), \(\Delta H_f^\circ(\ce{Al2O3})
+= -1676\) kJ/mol.
+
+Find \(\Delta H^\circ\) for the reaction.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\ce{Al(s)} and \ce{Fe(s)} are elements, so
+\(\Delta H_f^\circ = 0\) for both.
+
+\[\Delta H^\circ = \Delta H_f^\circ(\ce{Al2O3}) -
+\Delta H_f^\circ(\ce{Fe2O3}) = -1676 - (-826) = \mathbf{-850.}\
+\text{kJ}\]
+
+The famously violent thermite reaction is this exothermic --- enough to
+melt the iron product on the spot.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognises \ce{Al(s)} and \ce{Fe(s)} contribute 0}
+  \rpoint{1}{sets up products minus reactants correctly}
+  \rpoint{2}{\(\Delta H^\circ = -850.\)~kJ}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{6.8} \practice{5} \textbullet\ fuel value per gram,
+  methanol vs.\ octane \emph{(after Zumdahl Example 6.11)}}
+
+Given \(\Delta H_f^\circ\) (kJ/mol): \ce{CO2(g)} \(=-394\); \ce{H2O(l)}
+\(=-286\); \ce{CH3OH(l)} \(=-239\); \ce{C8H18(l)} \(=-269\).
+
+\begin{parts}
+  \item Find the enthalpy of combustion of methanol \emph{per gram}.
+        \(\ce{2CH3OH(l) + 3O2(g) -> 2CO2(g) + 4H2O(l)}\).
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}\[\Delta H = 2(-394) + 4(-286) -
+        2(-239) = \mathbf{-1454}\ \text{kJ (per 2 mol)}\]
+
+        \[\mathcal{M}(\ce{CH3OH}) = 32.04\ \text{g/mol}
+        \Rightarrow 2\ \text{mol} = 64.08\ \text{g}\]
+
+        \[\frac{-1454}{64.08} = \mathbf{-22.7}\ \text{kJ/g}\]\end{apcanswer}}
+  \item Find the enthalpy of combustion of octane \emph{per gram}.
+        \(\ce{2C8H18(l) + 25O2(g) -> 16CO2(g) + 18H2O(l)}\).
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}\[\Delta H = 16(-394) + 18(-286) -
+        2(-269) = -10{,}914\ \text{kJ (per 2 mol)} \approx
+        \mathbf{-1.09\times10^4}\ \text{kJ}\]
+
+        \[\mathcal{M}(\ce{C8H18}) = 114.22\ \text{g/mol}
+        \Rightarrow 2\ \text{mol} = 228.4\ \text{g}\]
+
+        Dividing the \emph{unrounded} enthalpy by mass (rounding only at
+        the end, per the front-page rule):
+
+        \[\frac{-10{,}914}{228.4} = \mathbf{-47.8}\ \text{kJ/g}\]\end{apcanswer}}
+  \item Octane releases about twice the energy per gram that methanol
+        does. Methanol was nonetheless once preferred in race-car
+        engines. Suggest why. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}Methanol burns more smoothly and
+        completely, and is harder to ignite accidentally --- safety and
+        combustion-quality advantages that outweighed needing more fuel
+        mass on board for the same energy.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{methanol \(\Delta H = -1454\)~kJ per 2 mol}
+  \rpoint{1}{methanol \(\approx -22.7\)~kJ/g}
+  \rpoint{1}{octane \(\Delta H \approx -1.09\times10^4\)~kJ per 2 mol}
+  \rpoint{1}{octane \(\approx -47.8\)~kJ/g}
+  \rpoint{2}{correctly compares, octane roughly double per gram}
+  \rpoint{2}{offers a plausible non-energy reason for methanol's use}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{6.8} \textbullet\ equal-volume comparison,
+  \ce{H2} vs.\ \ce{CH4} \emph{(after Zumdahl Example 6.12)}}
+
+Using Example 6.6's results (\SI{55.0}{\kilo\joule\per\gram} for
+\ce{CH4}, \SI{141}{\kilo\joule\per\gram} for \ce{H2}): equal
+\emph{volumes} of ideal gases at the same temperature and pressure hold
+equal numbers of \emph{moles}. Which gas releases more energy per equal
+volume, and by what factor?
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- convert each to a per-mole
+basis}, since equal volume means equal moles.
+
+\ce{H2}: \(141 \times 2.02 = \mathbf{285}\)~kJ/mol
+
+\ce{CH4}: \(55.0 \times 16.04 = \mathbf{882}\)~kJ/mol
+
+\textbf{Step 2 --- compare.}
+
+\[\frac{285}{882} = \mathbf{0.32}\]
+
+Mole for mole (hence volume for volume), \ce{CH4} releases about
+\textbf{3 times} as much energy as \ce{H2} --- the opposite ranking from
+the \emph{per-gram} comparison in Example 6.6. \ce{H2} wins per gram
+because it is so light; it loses per volume because a mole of gas is a
+mole of gas regardless of what it weighs.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts \ce{H2} to \(\approx 285\)~kJ/mol}
+  \rpoint{1}{converts \ce{CH4} to \(\approx 882\)~kJ/mol}
+  \rpoint{2}{selects \ce{CH4}, ratio \(\approx 3\times\)}
+  \rpoint{1}{explains why the per-gram and per-volume rankings flip}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{6.8} \practice{5} \textbullet\ storing hydrogen for a
+  car \emph{(after Zumdahl Example 6.13)}}
+
+\ce{H2} provides about 3 times the energy per gram that gasoline does
+(from Examples 6.6 and 6.11). Densities: liquid \ce{H2},
+\SI{0.0710}{\gram\per\milli\litre}; gasoline,
+\SI{0.740}{\gram\per\milli\litre}. A full tank holds \SI{80.0}{\litre}
+of gasoline.
+
+\begin{parts}
+  \item Find the mass of liquid \ce{H2} needed to match the tank's
+        energy. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\[m(\text{gasoline}) = 80.0\times1000
+        \times 0.740 = 5.92\times10^4\ \text{g}\]
+
+        \[m(\ce{H2}) = \frac{5.92\times10^4}{3}
+        = \mathbf{1.97\times10^4}\ \text{g}\]\end{apcanswer}}
+  \item Find the volume that mass of liquid \ce{H2} occupies.
+        \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\[V = \frac{1.97\times10^4}{0.0710}
+        = 2.78\times10^5\ \text{mL} = \mathbf{278}\ \text{L}\]
+
+        Already nearly 3.5 times the gasoline tank's own volume, and
+        that is the \emph{easy} case ---
+        liquid.\end{apcanswer}}
+  \item Find the volume the same mass of \ce{H2} would occupy as a gas at
+        \SI{25}{\celsius}, \SI{1.00}{\atm}. \workspace[3.4cm]
+        \keyonly{\begin{apcanswer}\[n = \frac{1.97\times10^4}{2.016}
+        = 9.79\times10^3\ \text{mol}\]
+
+        \[V = \frac{nRT}{P} = \frac{(9.79\times10^3)(0.08206)(298)}
+        {1.00} = \mathbf{2.39\times10^5}\ \text{L}\]
+
+        That is almost \textbf{3000 times} the volume of the
+        \SI{80.0}{\litre} gasoline tank it replaces (and about
+        \textbf{860 times} the volume of part (b)'s \emph{liquid}
+        \ce{H2}) --- the real reason hydrogen cars store the gas
+        compressed or liquefied rather than at room
+        pressure.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{\(m(\text{gasoline}) = 5.92\times10^4\)~g}
+  \rpoint{1}{\(m(\ce{H2}) \approx 1.97\times10^4\)~g}
+  \rpoint{2}{\(V(\text{liquid } \ce{H2}) \approx 278\)~L}
+  \rpoint{1}{\(n(\ce{H2}) \approx 9.79\times10^3\)~mol}
+  \rpoint{2}{ideal gas law applied correctly}
+  \rpoint{1}{\(V(\text{gas}) \approx 2.39\times10^5\)~L}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{6.7} \practice{5} \textbullet\ $\Delta H$ from bond
+  energies \emph{(after Zumdahl \S8.8, Example 8.5)}}
+
+Average bond energies (kJ/mol): \ce{H-H} 432, \ce{F-F} 154, \ce{H-F} 565,
+\ce{C-H} 413, \ce{Cl-Cl} 239, \ce{C-F} 485, \ce{C-Cl} 339, \ce{H-Cl}
+427.
+
+\begin{parts}
+  \item As a warm-up, find \(\Delta H\) for
+        \(\ce{H2(g) + F2(g) -> 2HF(g)}\) from these bond
+        energies, then check it against
+        \(\Delta H_f^\circ(\ce{HF}) = \SI{-271}{\kilo\joule\per\mole}\).
+        \workspace[4cm]
+        \keyonly{\begin{apcanswer}\[\Delta H = D(\ce{H-H}) + D(\ce{F-F})
+        - 2D(\ce{H-F}) = 432 + 154 - 2(565) = \mathbf{-544}\
+        \text{kJ}\]
+
+        Check: \(2\Delta H_f^\circ(\ce{HF}) = 2(-271)
+        = \mathbf{-542}\)~kJ --- the two methods agree to within
+        rounding, confirming bond energies are a legitimate shortcut for
+        estimating \(\Delta H\).\end{apcanswer}}
+  \item Find \(\Delta H\) for the synthesis of Freon-12:
+        \(\ce{CH4(g) + 2Cl2(g) + 2F2(g) -> CF2Cl2(g) + 2HF(g) +
+        2HCl(g)}\). \workspace[7cm]
+        \keyonly{\begin{apcanswer}\textbf{Bonds broken} (reactants ---
+        take everything apart to atoms):
+
+        \(4\ \ce{C-H}: 4(413) = 1652\)~kJ
+
+        \(2\ \ce{Cl-Cl}: 2(239) = 478\)~kJ
+
+        \(2\ \ce{F-F}: 2(154) = 308\)~kJ
+
+        \textbf{Total required} \(= 1652+478+308 = 2438\)~kJ
+
+        \textbf{Bonds formed} (products --- reassemble the atoms):
+
+        \(2\ \ce{C-F}: 2(485) = 970\)~kJ
+
+        \(2\ \ce{C-Cl}: 2(339) = 678\)~kJ
+
+        \(2\ \ce{H-F}: 2(565) = 1130\)~kJ
+
+        \(2\ \ce{H-Cl}: 2(427) = 854\)~kJ
+
+        \textbf{Total released} \(= 970+678+1130+854 = 3632\)~kJ
+
+        \[\Delta H = \text{required} - \text{released} = 2438 - 3632
+        = \mathbf{-1194}\ \text{kJ per mol \ce{CF2Cl2}}\]\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{HF warm-up: \(\Delta H = -544\)~kJ}
+  \rpoint{1}{HF warm-up: checks against \(-542\)~kJ from \(\Delta H_f^\circ\)}
+  \rpoint{1}{correctly identifies all bonds broken (4 \ce{C-H}, 2
+    \ce{Cl-Cl}, 2 \ce{F-F})}
+  \rpoint{1}{sums bonds broken correctly, \(2438\)~kJ}
+  \rpoint{1}{correctly identifies all bonds formed (2 \ce{C-F}, 2
+    \ce{C-Cl}, 2 \ce{H-F}, 2 \ce{H-Cl})}
+  \rpoint{1}{sums bonds formed correctly, \(3632\)~kJ}
+  \rpoint{3}{\(\Delta H = -1194\)~kJ per mole \ce{CF2Cl2}, setup and
+    arithmetic both correct}
+\end{rubric}
+
+% ============================================================================
+% SESSION 2
+% ============================================================================
+\clearpage
+\examsection{C}{Challenge Problems}{10 questions \textbullet\ 72 points
+  \textbullet\ separate sitting}{\calculatorok}
+
+\begin{apcnote}[About this session]
+Every Challenge Problem printed at the end of Zumdahl Chapter 6 is here,
+Q130 through Q139. Several parts lean on the \ced{6.6} exclusion --- any
+part asking for $w$ or $\Delta E$ specifically is flagged
+\textbf{[beyond CED]}; the $q$ and $\Delta H$ parts of the same questions
+are core content and are not.
+\end{apcnote}
+
+% ---------------------------------------------------------------------------
+\frq{long}{8}{\ced{6.6} \ced{6.9} \practice{6} \textbullet\ [beyond CED]
+  is work a state function? \emph{(after Zumdahl Q130)}}
+
+\SI{2.00}{\mole} of an ideal gas moves from state A
+(\(P=\SI{2.00}{\atm}\), \(V=\SI{10.0}{\litre}\)) to state B
+(\(P=\SI{1.00}{\atm}\), \(V=\SI{30.0}{\litre}\)) by two different routes.
+
+\textbf{Pathway 1} (via point C, \(P=\SI{2.00}{\atm}\),
+\(V=\SI{30.0}{\litre}\)): A$\to$C at constant pressure, then C$\to$B at
+constant volume.
+
+\textbf{Pathway 2} (via point D, \(P=\SI{1.00}{\atm}\),
+\(V=\SI{10.0}{\litre}\)): A$\to$D at constant volume, then D$\to$B at
+constant pressure.
+
+\begin{parts}
+  \item Find the total work for each pathway, in joules.
+        \workspace[6cm]
+        \keyonly{\begin{apcanswer}Work is done only on a
+        \textbf{constant-pressure} leg; a constant-volume leg has
+        \(\Delta V=0\), so \(w=0\) on that leg regardless of how much the
+        pressure changes.
+
+        \textbf{Pathway 1:} A$\to$C at \(P=2.00\)~atm:
+        \(w = -(2.00)(30.0-10.0) = -40.0\)~L\,atm. C$\to$B: \(w=0\).
+
+        \[w_{\text{total}} = -40.0\ \text{L\,atm} \times 101.3\
+        \text{J/L\,atm} = \mathbf{-4.05\times10^3}\ \text{J}\]
+
+        \textbf{Pathway 2:} A$\to$D: \(w=0\). D$\to$B at
+        \(P=1.00\)~atm: \(w = -(1.00)(30.0-10.0) = -20.0\)~L\,atm.
+
+        \[w_{\text{total}} = -20.0 \times 101.3
+        = \mathbf{-2.03\times10^3}\ \text{J}\]\end{apcanswer}}
+  \item Is work a state function? Explain using your answer above.
+        \workspace[3.2cm]
+        \keyonly{\begin{apcanswer}No. A state function depends only on
+        the initial and final states, but here the \emph{same} states A
+        and B give \emph{different} total work
+        (\(-4.05\times10^3\)~J versus \(-2.03\times10^3\)~J) depending
+        on the path taken between them --- the defining behaviour of a
+        path function, not a state function.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{recognises \(w=0\) on every constant-volume leg}
+  \rpoint{2}{Pathway 1: \(w \approx -4.05\times10^3\)~J}
+  \rpoint{2}{Pathway 2: \(w \approx -2.03\times10^3\)~J}
+  \rpoint{1}{states work is not a state function}
+  \rpoint{2}{explains using the two different values for the same start
+    and end states}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{6}{\ced{6.5} \ced{6.6} \textbullet\ [beyond CED for $w$,
+  $\Delta E$] vaporization \emph{(after Zumdahl Q131)}}
+
+\SI{1}{\mole} of a liquid vaporizes at its boiling point
+(\SI{80.0}{\celsius}), \SI{1.00}{\atm}. \(\Delta H_{\text{vap}} =
+\SI{30.7}{\kilo\joule\per\mole}\) at that temperature.
+
+Find \(w\) and \(\Delta E\) for the vaporization.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- work.} The liquid's own
+volume is negligible next to the gas it becomes, so
+\(\Delta V \approx V_{\text{gas}} = nRT/P\), and
+
+\[w = -P\Delta V \approx -nRT = -(1)(8.314)(353.15)
+= \mathbf{-2.94}\ \text{kJ}\]
+
+\textbf{Step 2 --- first law}, using \(q_p = \Delta H_{\text{vap}}\) at
+constant pressure:
+
+\[\Delta E = q + w = 30.7 + (-2.94) = \mathbf{27.8}\ \text{kJ}\]
+
+Most of the heat absorbed goes into internal energy, not into pushing
+back the atmosphere --- consistent with a liquid's own volume being
+almost nothing compared to the vapor it turns
+into.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts to Kelvin, \(T=\SI{353.15}{\kelvin}\)}
+  \rpoint{2}{\(w \approx -nRT \approx -2.94\)~kJ, with the negligible-\(V_{\text{liq}}\)
+    approximation stated}
+  \rpoint{1}{\(q_p = \Delta H_{\text{vap}}\)}
+  \rpoint{2}{\(\Delta E \approx 27.8\)~kJ}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{\ced{6.6} \practice{6} \textbullet\ photosynthetic
+  efficiency \emph{(after Zumdahl Q132)}}
+
+The sun delivers about \SI{1.0}{\kilo\watt\per\square\metre}. A field
+produces \SI{20.}{\kilo\gram} of sucrose (\ce{C12H22O11}) per hour per
+hectare (1 hectare \(= \SI{10000}{\square\metre}\)):
+
+\begin{center}
+\(\ce{12CO2(g) + 11H2O(l) -> C12H22O11(s) + 12O2(g)}\)
+\quad \(\Delta H = \SI{5640}{\kilo\joule}\)
+\end{center}
+
+Find the percentage of incident sunlight energy that ends up stored in
+the sucrose.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- energy incident} on 1
+hectare in 1 hour:
+
+\[E_{\text{in}} = (1.0\ \text{kJ/s per m}^2)(10{,}000\ \text{m}^2)
+(3600\ \text{s}) = 3.6\times10^7\ \text{kJ}\]
+
+\textbf{Step 2 --- energy stored} as sucrose. \(20.\)~kg
+\(=2.0\times10^4\)~g; \(\mathcal{M}(\ce{C12H22O11})=342.3\)~g/mol:
+
+\[n = \frac{2.0\times10^4}{342.3} = 58.43\ \text{mol}\]
+
+\[E_{\text{stored}} = 58.43 \times 5640 = 3.30\times10^5\ \text{kJ}\]
+
+\textbf{Step 3 --- ratio.}
+
+\[\text{efficiency} = \frac{3.30\times10^5}{3.6\times10^7} \times 100
+= \mathbf{0.92\%}\]
+
+A useful number to know: photosynthesis, the process every food chain on
+Earth ultimately runs on, captures under 1\% of the sunlight that hits a
+leaf.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{incident energy \(E_{\text{in}} = 3.6\times10^7\)~kJ}
+  \rpoint{1}{molar mass of sucrose, \SI{342.3}{\gram\per\mole}}
+  \rpoint{2}{\(n(\text{sucrose}) = 58.4\)~mol (accept 58.43)}
+  \rpoint{2}{\(E_{\text{stored}} = 3.30\times10^5\)~kJ}
+  \rpoint{1}{efficiency \(\approx 0.92\%\)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{6.6} \textbullet\ solar panel sizing
+  \emph{(after Zumdahl Q133)}}
+
+Solar panels convert sunlight to electricity at \SI{19}{\percent}
+efficiency. A home uses \SI{40.}{\kilo\watt\hour} of electricity per day
+and receives \SI{8.0}{\hour} of useful sunlight (at the
+\SI{1.0}{\kilo\watt\per\square\metre} flux from the previous question).
+
+Find the minimum panel area needed to supply the whole home.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- incident energy per square
+metre per day.}
+
+\[1.0\ \text{kW/m}^2 \times 8.0\ \text{h} = 8.0\ \text{kWh/m}^2\]
+
+\textbf{Step 2 --- usable energy}, at 19\% efficiency:
+
+\[8.0 \times 0.19 = 1.52\ \text{kWh/m}^2\]
+
+\textbf{Step 3 --- divide the daily need by the usable rate.}
+
+\[\text{area} = \frac{40.}{1.52} = \mathbf{26}\ \text{m}^2\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{incident energy \(\SI{8.0}{\kilo\watt\hour\per\square\metre}\)}
+  \rpoint{1}{applies 19\% efficiency}
+  \rpoint{1}{usable \(\SI{1.52}{\kilo\watt\hour\per\square\metre}\)}
+  \rpoint{2}{area \(\approx \SI{26}{\square\metre}\)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{10}{\ced{6.8} \ced{6.9} \practice{5} \textbullet\ neutralizing
+  a nitric acid spill \emph{(after Zumdahl Q134)}}
+
+\(\ce{2HNO3(aq) + Na2CO3(s) -> 2NaNO3(aq) + H2O(l) + CO2(g)}\).
+Given \(\Delta H_f^\circ\) (kJ/mol): \ce{HNO3(aq)}
+\(=-207\); \ce{Na2CO3(s)} \(=-1131\); \ce{NaNO3(aq)} \(=-467\);
+\ce{H2O(l)} \(=-286\); \ce{CO2(g)} \(=-393.5\).
+
+About $2.0\times10^4$ gallons of a 70.0\%-by-mass \ce{HNO3} solution
+(density \SI{1.42}{\gram\per\milli\litre}) spilled and required
+neutralization with \ce{Na2CO3(s)}.
+
+\begin{parts}
+  \item Find \(\Delta H^\circ\) for the neutralization, per the equation
+        as written. \workspace[2.6cm]
+        \keyonly{\begin{apcanswer}\[\Delta H^\circ = [2(-467) + (-286) +
+        (-393.5)] - [2(-207) + (-1131)]\]
+        \[= -1613.5 - (-1545) = \mathbf{-68.5}\ \text{kJ}\]\end{apcanswer}}
+  \item Find the mass of \ce{Na2CO3} required, and the total heat
+        evolved. \workspace[6cm]
+        \keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of \ce{HNO3}
+        spilled.}
+
+        \(V = 2.0\times10^4\ \text{gal} \times 3785\ \text{mL/gal}
+        = 7.57\times10^7\)~mL
+
+        \(m(\text{soln}) = 7.57\times10^7 \times 1.42
+        = 1.0749\times10^8\)~g
+
+        \(m(\ce{HNO3}) = 1.0749\times10^8 \times 0.700
+        = 7.52\times10^7\)~g
+
+        \(\mathcal{M}(\ce{HNO3}) = 63.02\)~g/mol \(\Rightarrow n
+        = \mathbf{1.19\times10^6}\)~mol
+
+        \textbf{Step 2 --- stoichiometry}, 2 \ce{HNO3} : 1 \ce{Na2CO3}:
+
+        \(n(\ce{Na2CO3}) = 1.19\times10^6/2 = 5.97\times10^5\)~mol
+
+        \(\mathcal{M}(\ce{Na2CO3}) = 106.0\)~g/mol \(\Rightarrow m
+        = \mathbf{6.33\times10^7}\)~g \(\approx 6.3\times10^4\)~kg
+        (about 63 metric tons)
+
+        \textbf{Step 3 --- heat}, using \(\Delta H^\circ\) per mole of
+        \ce{Na2CO3} (coefficient 1):
+
+        \[q = (5.97\times10^5)(-68.5) = \mathbf{-4.1\times10^7}\
+        \text{kJ}\]\end{apcanswer}}
+  \item Given the size of \(\Delta H^\circ\), what was officials' major
+        concern about air pollution during the cleanup?
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}The reaction is strongly exothermic
+        \emph{and} produces gaseous \ce{CO2} --- adding the base quickly
+        could drive the reaction fast enough to release a large burst of
+        \ce{CO2} (potentially carrying acid mist with it) into the air
+        rather than a slow, controlled fizz.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{2}{\(\Delta H^\circ = -68.5\)~kJ}
+  \rpoint{1}{\(n(\ce{HNO3}) \approx 1.19\times10^6\)~mol}
+  \rpoint{2}{\(n(\ce{Na2CO3})\) via 2:1 stoichiometry}
+  \rpoint{2}{mass \ce{Na2CO3} \(\approx 6.3\times10^7\)~g}
+  \rpoint{1}{heat evolved \(\approx -4.1\times10^7\)~kJ}
+  \rpoint{2}{plausible air-quality concern tied to rapid \ce{CO2}
+    release under a large exotherm}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{\ced{6.1} \textbullet\ cake calories to stair-climbing
+  \emph{(after Zumdahl Q135)}}
+
+A slice of cake contains about 400 (nutritional) Calories
+(\(1\ \text{Cal} = 1000\ \text{cal} = \SI{4.184}{\kilo\joule}\)). A
+180-lb person climbs 8-inch steps; potential energy per step is
+\(PE = mgh\).
+
+How many steps must they climb to expend the 400 Cal?
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- energy available.}
+
+\[400\ \text{Cal} \times 4.184\ \text{kJ/Cal} = 1674\ \text{kJ}\]
+
+\textbf{Step 2 --- convert mass and height to SI.}
+
+\(180\ \text{lb} \times 0.4536\ \text{kg/lb} = 81.6\)~kg
+
+\(8\ \text{in} \times 0.0254\ \text{m/in} = 0.203\)~m
+
+\textbf{Step 3 --- energy per step.}
+
+\[PE = mgh = (81.6)(9.81)(0.203) = 163\ \text{J}\]
+
+\textbf{Step 4 --- divide.}
+
+\[\frac{1{,}674{,}000\ \text{J}}{163\ \text{J/step}}
+\approx \mathbf{1.0\times10^4}\ \text{steps}\]
+
+Roughly ten thousand steps --- a reminder of just how much chemical
+energy a small amount of food actually
+carries.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts 400 Cal to \SI{1674}{\kilo\joule}}
+  \rpoint{1}{converts mass to \SI{81.6}{\kilogram}}
+  \rpoint{1}{converts step height to \SI{0.203}{\metre}}
+  \rpoint{1}{\(PE\) per step \(\approx 163\)~J}
+  \rpoint{1}{\(\approx 1.0\times10^4\)~steps}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{7}{\ced{6.6} \practice{5} \textbullet\ [beyond CED for $w$,
+  $\Delta E$] decomposing water \emph{(after Zumdahl Q136)}}
+
+\(\Delta H_f^\circ(\ce{H2O(l)}) = \SI{-285.8}{\kilo\joule\per\mole}\) at
+\SI{298}{\kelvin}.
+
+Find \(\Delta E\) for \(\ce{H2O(l) -> H2(g) + 1/2O2(g)}\) at
+\SI{298}{\kelvin}, \SI{1}{\atm}.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- \(\Delta H\).} This is the
+\emph{reverse} of the formation reaction:
+
+\[\Delta H = -\Delta H_f^\circ = \mathbf{+285.8}\ \text{kJ}\]
+
+\textbf{Step 2 --- work.} No gas exists on the reactant side; 1.5 mol of
+gas appears on the product side. For an ideal gas at constant \(T,P\),
+\(PV=nRT \Rightarrow P\Delta V = \Delta n_{\text{gas}}RT\):
+
+\[w = -\Delta n_{\text{gas}}RT = -(1.5)(8.314)(298)
+= \mathbf{-3.72}\ \text{kJ}\]
+
+\textbf{Step 3 --- first law.}
+
+\[\Delta E = \Delta H + w = 285.8 + (-3.72)
+= \mathbf{282}\ \text{kJ}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\(\Delta H = +285.8\)~kJ, reversed formation}
+  \rpoint{2}{identifies \(\Delta n_{\text{gas}} = 1.5\)~mol}
+  \rpoint{2}{\(w \approx -3.72\)~kJ, using \(w=-\Delta n_{\text{gas}}RT\)}
+  \rpoint{2}{\(\Delta E \approx 282\)~kJ}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{6.4} \ced{6.5} \practice{5} \textbullet\ a full heating
+  curve \emph{(after Zumdahl Q137)}}
+
+\SI{1.00}{\mole} of water starts as ice at \SI{-30.0}{\celsius} and ends
+as steam at \SI{140.}{\celsius}. Specific heats: ice
+\SI{2.03}{\joule\per\gram\per\celsius}; water
+\SI{4.18}{\joule\per\gram\per\celsius}; steam
+\SI{2.02}{\joule\per\gram\per\celsius}. \(\Delta H_{\text{fus}} =
+\SI{6.02}{\kilo\joule\per\mole}\) at \SI{0}{\celsius};
+\(\Delta H_{\text{vap}} = \SI{40.7}{\kilo\joule\per\mole}\) at
+\SI{100.}{\celsius}.
+
+Find \(q\) for the entire process.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}Five legs, in order. \(\mathcal{M}(\ce{H2O}) =
+18.02\)~g, so \(1.00\)~mol \(=18.02\)~g throughout.
+
+\textbf{1. Warm ice}, \(-30.0\to0\,^\circ\)C:
+\[q_1 = (18.02)(2.03)(30.0) = 1.10\ \text{kJ}\]
+
+\textbf{2. Melt at 0\,°C}:
+\[q_2 = (1.00)(6.02) = 6.02\ \text{kJ}\]
+
+\textbf{3. Warm liquid water}, \(0\to100.\,^\circ\)C:
+\[q_3 = (18.02)(4.18)(100.) = 7.53\ \text{kJ}\]
+
+\textbf{4. Vaporize at 100.\,°C}:
+\[q_4 = (1.00)(40.7) = 40.7\ \text{kJ}\]
+
+\textbf{5. Warm steam}, \(100.\to140.\,^\circ\)C:
+\[q_5 = (18.02)(2.02)(40.0) = 1.46\ \text{kJ}\]
+
+\textbf{Total:}
+
+\[q = 1.10 + 6.02 + 7.53 + 40.7 + 1.46 = \mathbf{56.8}\
+\text{kJ}\]
+
+Notice how lopsided this is --- the single vaporization step
+(\SI{40.7}{\kilo\joule}) costs almost as much as everything else
+combined. That is the entire reason steam burns are so much worse than
+boiling-water burns: steam carries all that extra energy, released the
+instant it condenses on your
+skin.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\(q_1 \approx 1.10\)~kJ, warming ice}
+  \rpoint{1}{\(q_2 = 6.02\)~kJ, fusion}
+  \rpoint{1}{\(q_3 \approx 7.53\)~kJ, warming liquid}
+  \rpoint{1}{\(q_4 = 40.7\)~kJ, vaporization}
+  \rpoint{1}{\(q_5 \approx 1.46\)~kJ, warming steam}
+  \rpoint{2}{all five legs correctly summed, \(q \approx 56.8\)~kJ}
+  \rpoint{2}{notes vaporization dominates the total}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{\ced{6.4} \practice{5} \textbullet\ identifying a metal by
+  calorimetry \emph{(after Zumdahl Q138)}}
+
+A \SI{500.0}{\gram} sample of an unknown element at \SI{195}{\celsius}
+is dropped into an ice--water mixture; \SI{109.5}{\gram} of ice melts,
+and an ice--water mixture remains (so the final temperature is
+\SI{0}{\celsius}). \(\Delta H_{\text{fus}}(\ce{H2O}) =
+\SI{6.02}{\kilo\joule\per\mole}\).
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- heat absorbed by the melting
+ice} equals the heat released by the cooling element (an ice--water
+mixture staying put at \SI{0}{\celsius} is what pins the final
+temperature).
+
+\[n(\text{ice melted}) = 109.5/18.02 = 6.077\ \text{mol}\]
+
+\[q = (6.077)(6.02\ \text{kJ/mol}) = 36.6\ \text{kJ}
+= 3.66\times10^4\ \text{J}\]
+
+\textbf{Step 2 --- specific heat of the element}, cooling from
+\SI{195}{\celsius} to \SI{0}{\celsius}:
+
+\[q = mc\Delta T \Rightarrow c = \frac{3.66\times10^4}{(500.0)(195)}
+= \mathbf{0.375}\ \text{J/(°C\,g)}\]
+
+This is close to copper's specific heat
+(\SI{0.385}{\joule\per\gram\per\celsius}) --- consistent with the sample
+being copper.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of ice melted, \(6.077\)~mol}
+  \rpoint{2}{heat absorbed by ice, \(\approx 3.66\times10^4\)~J}
+  \rpoint{1}{sets element's heat released equal to ice's heat absorbed}
+  \rpoint{1}{correctly uses \(\Delta T = 195\,^\circ\)C (element cools to
+    \(0\,^\circ\)C, not further)}
+  \rpoint{1}{\(c \approx \SI{0.375}{\joule\per\gram\per\celsius}\)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{9}{\ced{6.4} \ced{6.6} \practice{5} \textbullet\ [beyond CED
+  for $w$, $\Delta E$] cooling a gas at constant pressure
+  \emph{(after Zumdahl Q139)}}
+
+\SI{88.0}{\gram} of \ce{N2O(g)} cools from \SI{165}{\celsius} to
+\SI{55}{\celsius} at a constant pressure of \SI{5.00}{\atm}. The molar
+heat capacity of \ce{N2O(g)} is
+\SI{38.7}{\joule\per\celsius\per\mole}.
+
+Find \(q\), \(w\), \(\Delta E\), and \(\Delta H\) for this process.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles.}
+
+\[\mathcal{M}(\ce{N2O}) = 2(14.01)+16.00 = 44.02\ \text{g/mol}
+\Rightarrow n = \frac{88.0}{44.02} = 2.00\ \text{mol}\]
+
+\textbf{Step 2 --- $q$ and $\Delta H$}, at constant pressure
+\(q_p=\Delta H\):
+
+\[q = \Delta H = nC_p\Delta T = (2.00)(38.7)(55-165)
+= \mathbf{-8.51\times10^3}\ \text{J} = -8.51\ \text{kJ}\]
+
+Negative, as expected for a gas being cooled.
+
+\textbf{Step 3 --- $w$} \textbf{[beyond CED]}. At constant \(P,n\):
+\(\Delta V = nR\Delta T/P\), so
+
+\[w = -P\Delta V = -nR\Delta T = -(2.00)(8.314)(-110)
+= \mathbf{+1.83\times10^3}\ \text{J}\]
+
+Positive: as the gas cools it \textbf{contracts}, so the surroundings do
+work \emph{on} it.
+
+\textbf{Step 4 --- $\Delta E$} \textbf{[beyond CED]}.
+
+\[\Delta E = q + w = -8.51\times10^3 + 1.83\times10^3
+= \mathbf{-6.68\times10^3}\ \text{J} = -6.68\ \text{kJ}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\(n(\ce{N2O}) = 2.00\)~mol}
+  \rpoint{2}{\(q = \Delta H \approx -8.51\)~kJ}
+  \rpoint{2}{\(w \approx +1.83\times10^3\)~J, sign explained by
+    contraction}
+  \rpoint{2}{\(\Delta E \approx -6.68\)~kJ}
+  \rpoint{2}{all four quantities clearly labeled and internally
+    consistent (\(\Delta E = q+w\))}
+\end{rubric}
+
+% ============================================================================
+\examtotal
+
+\end{document}

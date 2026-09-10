@@ -86,6 +86,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Free-Response Set](unit06-thermochemistry/u06-frq.md)
 - [Review Sheet](unit06-thermochemistry/u06-review.md)
 - [Unit Exam](unit06-thermochemistry/u06-exam.md)
+- [Comprehensive Test](unit06-thermochemistry/u06-test-full.md)
 
 ## Unit 7 • Equilibrium
 
