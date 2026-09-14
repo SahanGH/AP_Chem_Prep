@@ -1,0 +1,3313 @@
+% Zumdahl Chapter 5 comprehensive test -- 105 free-response items, built to a
+% teacher request covering all 20 Interactive Examples (5.1-5.20), 72 named
+% end-of-chapter exercises, and all 13 Challenge Problems (Q157-Q169). Six
+% sessions: Part A-B (examples), Part C (gas-law exercises), Part D
+% (density/stoichiometry exercises), Part E (partial-pressure/atmosphere
+% exercises), Part F (KMT/real-gas exercises), Part G (challenge problems).
+% Every numeric answer independently recomputed in Python before being typed
+% here, at full precision, rounding only at the end.
+%
+% Items adapted from Zumdahl Ch5 examples/exercises are reworded as original
+% items with the source numbers preserved and tagged "after Zumdahl Ex./Qn"
+% -- the public repo carries no Cengage text (convention 6).
+\documentclass{apchem-exam}
+
+% Same fix as Units 4/5/6: siunitx groups any run of 5+ digits, and this
+% paper carries 5+ digit Avogadro-scale counts and molecule concentrations.
+\sisetup{group-minimum-digits = 7}
+
+\apcunitword{Chapter}
+\apcunit{5}
+\apcunittitle{Gases}
+\apcdoctitle{Comprehensive Test}
+\apcsubtitle{Zumdahl \S5.1--5.9 \textbullet\ 105 questions, 376 points,
+  6 sessions \textbullet\ S1: Parts A--B (Examples), 20Q/72pts/90min
+  \textbullet\ S2: Part C (Gas Laws), 24Q/73pts/90min \textbullet\ S3:
+  Part D (Density \& Stoichiometry), 16Q/54pts/70min \textbullet\ S4:
+  Part E (Partial Pressure \& Atmosphere), 19Q/63pts/80min \textbullet\
+  S5: Part F (KMT \& Real Gases), 13Q/39pts/50min \textbullet\ S6: Part G
+  (Challenge), 13Q/75pts/100min}
+
+\begin{document}
+\apctitleblock
+
+\begin{apcnote}[How this paper runs]
+\textbf{Six sessions, not one.} Session 1 (Parts A--B) works through all
+twenty of the textbook's own worked examples, rebuilt as original problems
+using the same numbers and setups, so you can check your method directly
+against the book. Sessions 2--5 (Parts C--F) are the full end-of-chapter
+exercise set, grouped by topic. Session 6 (Part G) is the Challenge Problem
+set -- the hardest material in the chapter. Do not attempt more than one
+session in a single sitting.
+
+Calculator, periodic table, and equations sheet are permitted throughout.
+\textbf{Show every step.} A bare final answer earns the answer mark only;
+the setup marks are for work you can point to. Carry units through each
+line and round only at the end. Use $R = \SI{0.08206}{\liter\atm\per
+\mole\per\kelvin}$ unless a part specifically calls for SI units.
+\end{apcnote}
+
+\begin{apcnote}[Scope --- read before Session 5]
+Three tools this chapter uses are \textbf{not} on the AP equation sheet and
+not part of CED Topics 3.4--3.6: the \textbf{root-mean-square speed}
+formula ($u_{\text{rms}} = \sqrt{3RT/M}$), \textbf{Graham's law of
+effusion} ($\text{rate}_1/\text{rate}_2 = \sqrt{M_2/M_1}$), and the
+\textbf{van der Waals equation} itself as a numerical tool. The CED gives
+you $KE = \tfrac12 mv^2$ and the qualitative idea that Kelvin temperature
+tracks average kinetic energy (3.5.A.2--3.5.A.3), and it gives you the
+qualitative reasoning that interparticle attraction and particle volume
+explain non-ideal behavior (3.6.A.1) -- but neither an rms-speed equation,
+an effusion-rate equation, nor van der Waals constants are anywhere in the
+official equation sheet. Every item using one of these three tools is
+flagged \textbf{[beyond CED]}. It is here because this is standard
+introductory chemistry and because reading a molecular-speed or
+non-ideal-gas argument qualitatively is core CED content even when solving
+for a number is not.
+\end{apcnote}
+
+% ============================================================================
+% SESSION 1
+% ============================================================================
+\examsection{A}{Worked-Example Mastery I --- Pressure and the Empirical Gas
+  Laws}{10 questions \textbullet\ 37 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.1 \textbullet\ pressure unit conversion
+  \emph{(after Zumdahl Example 5.1)}}
+
+A student's gas sample is measured at \SI{49}{\torr}.
+
+Convert this pressure to (a) atmospheres and (b) pascals.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}\textbf{(a)} $49 \div 760 = \mathbf{0.064}$~atm
+
+\textbf{(b)} $0.064 \times \SI{101325}{\pascal\per\atm}
+= \mathbf{6.5\times10^3}$~Pa\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{divides by 760 to reach \SI{0.064}{\atm}}
+  \rpoint{1}{converts atm to Pa using \SI{101325}{\pascal\per\atm}}
+  \rpoint{1}{correct sig figs (2) and units on both answers}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.2 \textbullet\ Boyle's law
+  \emph{(after Zumdahl Example 5.2)}}
+
+A \SI{1.53}{\liter} sample of gaseous \ce{SO2} at \SI{5.6e3}{\pascal} has
+its pressure changed to \SI{1.5e4}{\pascal} at constant temperature.
+
+Calculate the new volume.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\textbf{Boyle's law:} $P_1V_1 = P_2V_2$
+
+\[V_2 = \frac{P_1V_1}{P_2} = \frac{(5.6\times10^3)(1.53)}{1.5\times10^4}
+= \mathbf{0.57}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{sets up $P_1V_1=P_2V_2$}
+  \rpoint{1}{correct algebraic rearrangement for $V_2$}
+  \rpoint{1}{\SI{0.57}{\liter}, correct sig figs}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{Zumdahl \S5.2 \textbullet\ Boyle's law and the approach to
+  ideal behavior \emph{(after Zumdahl Example 5.3)}}
+
+A sample of \SI{1.0}{\mole} \ce{NH3} gas at \SI{0}{\celsius} was studied at
+six pressures, and its volume was measured at each:
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$P$ (atm) & $V$ (L) \\
+\midrule
+0.1300 & 172.1 \\
+0.2500 & 89.28 \\
+0.3000 & 74.35 \\
+0.5000 & 44.49 \\
+0.7500 & 29.55 \\
+1.000 & 22.08 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Calculate $PV$ at each pressure, then state what value $PV$ appears to
+approach as $P \to 0$, and explain what that value represents physically.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}
+\[
+\begin{array}{cc}
+P\ (\text{atm}) & PV\ (\text{L}\cdot\text{atm})\\
+0.1300 & 22.373\\
+0.2500 & 22.320\\
+0.3000 & 22.305\\
+0.5000 & 22.245\\
+0.7500 & 22.163\\
+1.000 & 22.080
+\end{array}
+\]
+
+As pressure drops toward zero, $PV$ climbs toward roughly
+\textbf{22.4~L$\cdot$atm}, essentially $nRT=(1.0)(0.08206)(273)
+=22.4$~L$\cdot$atm. This is the \textbf{ideal-gas limit}: every real gas
+behaves more like an ideal gas at low pressure, because the molecules
+spend more time far apart, where intermolecular attractions and their
+own volume matter least.
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$PV=22.373$ at $P=0.1300$}
+  \rpoint{1}{$PV=22.320$ at $P=0.2500$}
+  \rpoint{1}{$PV=22.305$ at $P=0.3000$}
+  \rpoint{1}{$PV=22.245$ at $P=0.5000$}
+  \rpoint{1}{$PV=22.163$ at $P=0.7500$}
+  \rpoint{1}{$PV=22.080$ at $P=1.000$}
+  \rpoint{1}{identifies the low-pressure limit as $nRT\approx\SI{22.4}
+    {\liter\atm}$ and ties it to ideal behavior}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.3 \textbullet\ Charles's law
+  \emph{(after Zumdahl Example 5.4)}}
+
+A gas sample has a volume of \SI{2.58}{\liter} at \SI{15}{\celsius} and
+some fixed pressure.
+
+Find its volume at \SI{38}{\celsius}, same pressure.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}$T_1 = 15+273 = \SI{288}{\kelvin}$,
+$T_2 = 38+273 = \SI{311}{\kelvin}$
+
+\[V_2 = V_1 \times \frac{T_2}{T_1} = 2.58 \times \frac{311}{288}
+= \mathbf{2.79}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{sets up Charles's law $V_2=V_1(T_2/T_1)$}
+  \rpoint{1}{\SI{2.79}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.3 \textbullet\ Avogadro's law
+  \emph{(after Zumdahl Example 5.5)}}
+
+A \SI{12.2}{\liter} sample at \SI{1}{\atm}, \SI{25}{\celsius} contains
+\SI{0.50}{\mole} \ce{O2}. Every \ce{O2} molecule present is converted to
+ozone via \ce{3O2(g) -> 2O3(g)}, at the same temperature and pressure.
+
+Find the volume of ozone gas produced.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of \ce{O3}} from the 3:2
+ratio:
+
+\[n(\ce{O3}) = 0.50 \times \frac{2}{3} = 0.333\ \text{mol}\]
+
+\textbf{Step 2 --- Avogadro's law} ($V\propto n$ at fixed $T,P$):
+
+\[V_2 = V_1 \times \frac{n_2}{n_1} = 12.2 \times \frac{0.333}{0.50}
+= \mathbf{8.1}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{finds \SI{0.33}{\mole} \ce{O3} from the 3:2 stoichiometric
+    ratio}
+  \rpoint{1}{applies Avogadro's law, $V\propto n$}
+  \rpoint{1}{\SI{8.1}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ ideal gas law, solve for moles
+  \emph{(after Zumdahl Example 5.6)}}
+
+A sample of \ce{H2} gas occupies \SI{8.56}{\liter} at \SI{0}{\celsius} and
+\SI{1.5}{\atm}.
+
+Find the moles of \ce{H2} present.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\[n = \frac{PV}{RT} = \frac{(1.5)(8.56)}
+{(0.08206)(273)} = \mathbf{0.57}\ \text{mol}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts to \SI{273}{\kelvin}}
+  \rpoint{1}{rearranges $PV=nRT$ correctly for $n$}
+  \rpoint{1}{\SI{0.57}{\mole}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ ideal gas law, solve for pressure
+  \emph{(after Zumdahl Example 5.7)}}
+
+Ammonia gas held at \SI{1.68}{\atm} in a \SI{7.0}{\milli\liter} container
+is compressed to \SI{2.7}{\milli\liter} at constant temperature.
+
+Find the final pressure.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}Constant $n,T$ means Boyle's law applies:
+
+\[P_2 = P_1 \times \frac{V_1}{V_2} = 1.68 \times \frac{7.0}{2.7}
+= \mathbf{4.4}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes constant $n,T$ allows Boyle's law}
+  \rpoint{1}{correct algebra}
+  \rpoint{1}{\SI{4.4}{\atm}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ ideal gas law, solve for volume
+  \emph{(after Zumdahl Example 5.8)}}
+
+Methane gas occupies \SI{3.8}{\liter} at \SI{5}{\celsius}. It is heated at
+constant pressure to \SI{86}{\celsius}.
+
+Find the new volume.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}$T_1=\SI{278}{\kelvin}$, $T_2=\SI{359}{\kelvin}$
+
+\[V_2 = V_1\times\frac{T_2}{T_1} = 3.8\times\frac{359}{278}
+= \mathbf{4.9}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{applies Charles's law correctly}
+  \rpoint{1}{\SI{4.9}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S5.4 \textbullet\ combined gas law
+  \emph{(after Zumdahl Example 5.9)}}
+
+A sample of diborane, \ce{B2H6(g)}, is at \SI{345}{\torr},
+\SI{-15}{\celsius}, \SI{3.48}{\liter}. Conditions change to
+\SI{36}{\celsius} and \SI{468}{\torr}.
+
+Find the new volume. (Pressure may stay in torr throughout --- the unit
+cancels in the ratio.)
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$T_1 = \SI{258}{\kelvin}$, $T_2=\SI{309}{\kelvin}$
+
+\[V_2 = V_1\times\frac{P_1}{P_2}\times\frac{T_2}{T_1}
+= 3.48\times\frac{345}{468}\times\frac{309}{258}
+= \mathbf{3.07}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{sets up the combined gas law correctly}
+  \rpoint{1}{recognizes torr does not need conversion here}
+  \rpoint{1}{\SI{3.07}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{5}{Zumdahl \S5.4 \textbullet\ combined gas law with unit
+  conversion \emph{(after Zumdahl Example 5.10)}}
+
+\SI{0.35}{\mole} argon gas is held at \SI{13}{\celsius} and \SI{568}{\torr}.
+Conditions change to \SI{56}{\celsius} and \SI{897}{\torr}.
+
+Find the change in volume, $V_2-V_1$.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Convert everything first.}
+$P_1 = 568/760=\SI{0.7474}{\atm}$, $P_2=897/760=\SI{1.1803}{\atm}$,
+$T_1=\SI{286}{\kelvin}$, $T_2=\SI{329}{\kelvin}$.
+
+\textbf{Solve each state separately} (moles are fixed, but pressure and
+temperature both change, so there is no single-ratio shortcut for
+$\Delta V$):
+
+\[V_1 = \frac{nRT_1}{P_1} = \frac{(0.35)(0.08206)(286)}{0.7474}
+= 11.0\ \text{L}\]
+
+\[V_2 = \frac{nRT_2}{P_2} = \frac{(0.35)(0.08206)(329)}{1.1803}
+= 8.01\ \text{L}\]
+
+\[\Delta V = V_2-V_1 = 8.01-11.0 = \mathbf{-3.0}\ \text{L}\]
+
+The volume \textbf{decreases} by about \SI{3.0}{\liter} --- the pressure
+rose by a larger factor than the temperature did, so compression wins out
+over thermal expansion.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both pressures to atm}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{finds $V_1\approx\SI{11.0}{\liter}$}
+  \rpoint{1}{finds $V_2\approx\SI{8.01}{\liter}$}
+  \rpoint{1}{$\Delta V\approx\SI{-3.0}{\liter}$, with the sign/direction
+    interpreted}
+\end{rubric}
+
+% ============================================================================
+\clearpage
+\examsection{B}{Worked-Example Mastery II --- Stoichiometry, Density,
+  Dalton's Law, KMT}{10 questions \textbullet\ 35 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ gas stoichiometry, STP molar
+  volume \emph{(after Zumdahl Example 5.11)}}
+
+A sample of \ce{N2} gas occupies \SI{1.75}{\liter} at STP.
+
+Find the moles of \ce{N2} present, using the molar volume of a gas at STP.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}\[n = \frac{1.75\ \text{L}}{22.42\ \text{L/mol}}
+= \mathbf{0.0781}\ \text{mol}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{identifies that the STP molar-volume shortcut applies}
+  \rpoint{1}{correct division}
+  \rpoint{1}{\SI{0.0781}{\mole}, correct sig figs}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{4}{Zumdahl \S5.4 \textbullet\ gas stoichiometry, decomposition
+  \emph{(after Zumdahl Example 5.12)}}
+
+\ce{CaCO3(s) -> CaO(s) + CO2(g)}. A \SI{152}{\gram} sample of \ce{CaCO3}
+fully decomposes.
+
+Find the volume of \ce{CO2} gas produced, measured at STP.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$M(\ce{CaCO3}) = 40.08+12.01+3(16.00)
+= \SI{100.09}{\gram\per\mole}$
+
+\[n(\ce{CaCO3}) = \frac{152}{100.09} = 1.519\ \text{mol}\]
+
+1:1 ratio with \ce{CO2}, so:
+
+\[V(\ce{CO2}) = 1.519 \times 22.42 = \mathbf{34.0}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{molar mass of \ce{CaCO3}}
+  \rpoint{1}{moles of \ce{CaCO3}}
+  \rpoint{1}{uses the 1:1 stoichiometric ratio}
+  \rpoint{1}{\SI{34.0}{\liter} via the STP molar volume}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.4 \textbullet\ gas stoichiometry, limiting
+  reactant \emph{(after Zumdahl Example 5.13)}}
+
+\SI{2.80}{\liter} \ce{CH4} gas at \SI{25}{\celsius}, \SI{1.65}{\atm} is
+mixed with \SI{35.0}{\liter} \ce{O2} gas at \SI{31}{\celsius},
+\SI{1.25}{\atm} and ignited: \ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}.
+
+Find the volume of \ce{CO2} produced, measured at \SI{2.50}{\atm} and
+\SI{125}{\celsius}.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of each reactant.}
+
+\[n(\ce{CH4}) = \frac{(1.65)(2.80)}{(0.08206)(298)} = 0.1889\ \text{mol}\]
+
+\[n(\ce{O2}) = \frac{(1.25)(35.0)}{(0.08206)(304)} = 1.754\ \text{mol}\]
+
+\textbf{Step 2 --- identify the limiting reactant.} Fully reacting
+\SI{0.1889}{\mole} \ce{CH4} needs $2\times0.1889=0.3779$~mol \ce{O2}, and
+\SI{1.754}{\mole} is available --- \textbf{\ce{CH4} is limiting}.
+
+\textbf{Step 3 --- moles, then volume, of \ce{CO2}} (1:1 with \ce{CH4}):
+
+\[n(\ce{CO2}) = 0.1889\ \text{mol}\]
+
+\[V(\ce{CO2}) = \frac{nRT}{P} = \frac{(0.1889)(0.08206)(398)}{2.50}
+= \mathbf{2.47}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$n(\ce{CH4})\approx\SI{0.189}{\mole}$}
+  \rpoint{1}{$n(\ce{O2})\approx\SI{1.75}{\mole}$ available}
+  \rpoint{1}{identifies \ce{CH4} as limiting, with the comparison shown}
+  \rpoint{1}{$n(\ce{CO2})=\SI{0.189}{\mole}$ from the 1:1 ratio}
+  \rpoint{1}{\SI{2.47}{\liter} at the new conditions}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ gas density and molar mass
+  \emph{(after Zumdahl Example 5.14)}}
+
+A gas sample has a density of \SI{1.95}{\gram\per\liter} at \SI{1.50}{\atm}
+and \SI{27}{\celsius}.
+
+Find its molar mass.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\[M = \frac{dRT}{P}
+= \frac{(1.95)(0.08206)(300)}{1.50} = \mathbf{32.0}\ \text{g/mol}\]
+
+(Close enough to \ce{O2}'s molar mass, \SI{32.00}{\gram\per\mole}, to be a
+strong hint at the gas's identity.)\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts to \SI{300}{\kelvin}}
+  \rpoint{1}{uses $M=dRT/P$}
+  \rpoint{1}{\SI{32.0}{\gram\per\mole}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.5 \textbullet\ Dalton's law from moles
+  \emph{(after Zumdahl Example 5.15)}}
+
+For a deep dive, a scuba tank is filled by pumping \SI{46}{\liter} \ce{He}
+gas (at \SI{25}{\celsius}, \SI{1.0}{\atm}) and \SI{12}{\liter} \ce{O2} gas
+(at \SI{25}{\celsius}, \SI{1.0}{\atm}) into a previously evacuated
+\SI{5.0}{\liter} tank.
+
+Find the partial pressure of each gas, and the total pressure, in the tank
+at \SI{25}{\celsius}.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of each gas}, from its
+own original container:
+
+\[n(\ce{He}) = \frac{(1.0)(46)}{(0.08206)(298)} = 1.881\ \text{mol}\]
+
+\[n(\ce{O2}) = \frac{(1.0)(12)}{(0.08206)(298)} = 0.4907\ \text{mol}\]
+
+\textbf{Step 2 --- each gas's own partial pressure} in the shared
+\SI{5.0}{\liter} tank:
+
+\[P(\ce{He}) = \frac{nRT}{V} = \frac{(1.881)(0.08206)(298)}{5.0}
+= \mathbf{9.2}\ \text{atm}\]
+
+\[P(\ce{O2}) = \frac{(0.4907)(0.08206)(298)}{5.0} = \mathbf{2.4}\ \text{atm}\]
+
+\textbf{Step 3 --- Dalton's law:}
+
+\[P_{\text{total}} = P(\ce{He}) + P(\ce{O2}) = 9.2+2.4
+= \mathbf{11.6}\ \text{atm}\]
+
+(The textbook's own worked solution rounds $n(\ce{He})$ to 1.9~mol
+\emph{before} recomputing pressure, which gives 9.3~atm and a total of
+11.7~atm --- a good illustration of why this paper's front-matter rule is
+to carry full precision and round only at the very end.)\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$n(\ce{He})\approx\SI{1.88}{\mole}$}
+  \rpoint{1}{$P(\ce{He})=\SI{9.2}{\atm}$}
+  \rpoint{1}{$n(\ce{O2})\approx\SI{0.491}{\mole}$}
+  \rpoint{1}{$P(\ce{O2})=\SI{2.4}{\atm}$}
+  \rpoint{1}{$P_{\text{total}}=\SI{11.6}{\atm}$ (9.3/2.4/11.7 accepted too,
+    if a student follows the textbook's own rounded-intermediate method)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.5 \textbullet\ Dalton's law, mole fraction
+  \emph{(after Zumdahl Example 5.16)}}
+
+In a sample of air, \ce{O2}'s partial pressure is \SI{156}{\torr} while
+the total pressure is \SI{743}{\torr}.
+
+Find the mole fraction of \ce{O2}.
+\workspace[2.5cm]
+\keyonly{\begin{apcanswer}\[\chi(\ce{O2}) = \frac{P(\ce{O2})}
+{P_{\text{total}}} = \frac{156}{743} = \mathbf{0.210}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{uses $\chi_A = P_A/P_{\text{total}}$}
+  \rpoint{1}{0.210}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.5 \textbullet\ Dalton's law, partial pressure
+  from mole fraction \emph{(after Zumdahl Example 5.17)}}
+
+Air is $0.7808$ mole fraction \ce{N2}.
+
+Find the partial pressure of \ce{N2} when the total pressure is
+\SI{760.}{\torr}.
+\workspace[2.5cm]
+\keyonly{\begin{apcanswer}\[P(\ce{N2}) = \chi(\ce{N2}) \times
+P_{\text{total}} = 0.7808\times760 = \mathbf{593}\ \text{torr}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{uses $P_A=\chi_AP_{\text{total}}$}
+  \rpoint{1}{\SI{593}{\torr}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.5 \textbullet\ gas collection over water
+  \emph{(after Zumdahl Example 5.18)}}
+
+\ce{2KClO3(s) -> 2KCl(s) + 3O2(g)}. The \ce{O2} produced is collected by
+water displacement at \SI{22}{\celsius}: the collected gas has a total
+pressure of \SI{754}{\torr} and a volume of \SI{0.650}{\liter}. Water's
+vapor pressure at \SI{22}{\celsius} is \SI{21}{\torr}.
+
+\begin{parts}
+  \item Find the partial pressure of \ce{O2} in the collected gas.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$754-21=\mathbf{733}$~torr $=\SI{0.9645}{\atm}$\end{apcanswer}}
+  \item Find the mass of \ce{KClO3} that originally decomposed.
+        \workspace[5cm]
+        \keyonly{\begin{apcanswer}\[n(\ce{O2}) = \frac{PV}{RT}
+        = \frac{(0.9645)(0.650)}{(0.08206)(295)} = 0.02590\ \text{mol}\]
+
+        2:3 ratio with \ce{KClO3}:
+
+        \[n(\ce{KClO3}) = 0.02590\times\frac{2}{3} = 0.01726\ \text{mol}\]
+
+        $M(\ce{KClO3}) = 39.10+35.45+3(16.00)
+        = \SI{122.55}{\gram\per\mole}$
+
+        \[\text{mass} = 0.01726\times122.55 = \mathbf{2.12}\ \text{g}\]
+        \end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) subtracts water's vapor pressure to reach \SI{733}{\torr}}
+  \rpoint{1}{(b) converts pressure to atm}
+  \rpoint{1}{(b) finds $n(\ce{O2})\approx\SI{0.0259}{\mole}$}
+  \rpoint{1}{(b) applies the 2:3 stoichiometric ratio}
+  \rpoint{1}{(b) \SI{2.12}{\gram} using the correct molar mass of
+    \ce{KClO3}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.7 \textbullet\ root-mean-square velocity
+  \textbf{[beyond CED]} \emph{(after Zumdahl Example 5.19)}}
+
+Calculate the root-mean-square velocity of \ce{He} gas atoms at
+\SI{25}{\celsius}.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}Use SI units: $M(\ce{He})=\SI{4.003e-3}
+{\kilo\gram\per\mole}$, $R=\SI{8.3145}{\joule\per\mole\per\kelvin}$,
+$T=\SI{298}{\kelvin}$.
+
+\[u_{\text{rms}} = \sqrt{\frac{3RT}{M}}
+= \sqrt{\frac{3(8.3145)(298)}{4.003\times10^{-3}}}
+= \mathbf{1.36\times10^{3}}\ \text{m/s}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct formula $u_{\text{rms}}=\sqrt{3RT/M}$ with $R$ in
+    \si{\joule\per\mole\per\kelvin} and $M$ in \si{\kilo\gram\per\mole}}
+  \rpoint{1}{correct substitution}
+  \rpoint{1}{\SI{1.36e3}{\meter\per\second}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.7 \textbullet\ Graham's law of effusion
+  \textbf{[beyond CED]} \emph{(after Zumdahl Example 5.20)}}
+
+Calculate the ratio of effusion rates of \ce{H2} gas to \ce{UF6} gas,
+under identical conditions.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\[\frac{\text{rate}(\ce{H2})}
+{\text{rate}(\ce{UF6})} = \sqrt{\frac{M(\ce{UF6})}{M(\ce{H2})}}
+= \sqrt{\frac{352.03}{2.016}} = \mathbf{13.2}\]
+
+Hydrogen effuses about 13 times faster than uranium hexafluoride. Real
+gaseous-diffusion uranium enrichment uses this same Graham's-law idea,
+but on a far more subtle scale: it separates $^{235}\ce{UF6}$ from
+$^{238}\ce{UF6}$ (two isotopologues of the \emph{same} compound), where
+the mass difference is tiny and the per-stage separation factor is only
+about 1.004 --- thousands of stages are needed. \ce{H2} vs.\ \ce{UF6}
+illustrates the physics, not the actual industrial
+process.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct Graham's law setup}
+  \rpoint{1}{correct molar masses substituted}
+  \rpoint{1}{ratio $\approx13.2$}
+\end{rubric}
+
+% ============================================================================
+% SESSION 2
+% ============================================================================
+\clearpage
+\examsection{C}{Gas Laws}{24 questions \textbullet\ 73 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.1 \textbullet\ pressure conversion
+  \emph{(after Zumdahl Q42)}}
+
+A gas cylinder's gauge reads 2200~psi ($\SI{1}{\atm}=14.7$~psi).
+
+Convert this pressure to (a) atm, (b) MPa, (c) torr.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$2200/14.7 = \mathbf{150}$~atm
+
+$150\times101325 = 1.5\times10^7$~Pa $= \mathbf{15}$~MPa
+
+$150\times760 = \mathbf{1.1\times10^5}$~torr\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{\SI{150}{\atm}}
+  \rpoint{1}{\SI{15}{\mega\pascal}}
+  \rpoint{1}{\SI{1.1e5}{\torr}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.1 \textbullet\ manometers and fluid choice
+  \emph{(after Zumdahl Q46)}}
+
+A gas sample is connected to an open-tube mercury manometer; atmospheric
+pressure is \SI{760.}{\torr}. In two separate trials, the gas pressure
+exceeds atmospheric pressure, and the mercury column shows height
+differences of \SI{118}{\milli\meter} and \SI{215}{\milli\meter}.
+
+\begin{parts}
+  \item Find the flask pressure in each trial, in torr, atm, and Pa.
+        \workspace[5cm]
+        \keyonly{\begin{apcanswer}Flask pressure $=P_{\text{atm}}+\Delta h$:
+
+        Trial 1: $760+118=\mathbf{878}$~torr
+        $=\SI{1.16}{\atm}=\SI{1.17e5}{\pascal}$
+
+        Trial 2: $760+215=\mathbf{975}$~torr
+        $=\SI{1.28}{\atm}=\SI{1.30e5}{\pascal}$\end{apcanswer}}
+  \item If the manometer were instead filled with nonvolatile silicone oil
+        (density \SI{1.30}{\gram\per\centi\meter\cubed}) rather than
+        mercury (density \SI{13.6}{\gram\per\centi\meter\cubed}), would
+        the observed column-height difference for the \emph{same} gas
+        pressure be larger or smaller? Explain.
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}Larger. Column height is inversely proportional
+        to fluid density at a fixed pressure difference --- mercury is
+        about 10 times denser than this oil, so the same pressure
+        difference would push an oil column roughly 10 times higher. A
+        taller column is easier to read precisely, which is exactly why a
+        less-dense fluid is chosen for measuring small pressure
+        differences.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{Trial 1: \SI{878}{\torr} (or equivalent atm/Pa)}
+  \rpoint{1}{Trial 2: \SI{975}{\torr} (or equivalent atm/Pa)}
+  \rpoint{2}{explains that a less dense fluid gives a taller, more
+    readable column for the same pressure, via height $\propto1/$density}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.2 \textbullet\ Boyle's law
+  \emph{(after Zumdahl Q47)}}
+
+A \SI{400.}{\milli\liter} can of compressed gas at \SI{5.20}{\atm} is
+sprayed completely into a large, previously empty plastic bag, which
+inflates to \SI{2.14}{\liter} (constant temperature).
+
+Find the gas pressure in the bag.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}\[P_2 = \frac{P_1V_1}{V_2}
+= \frac{(5.20)(0.400)}{2.14} = \mathbf{0.972}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{sets up Boyle's law with matched volume units}
+  \rpoint{1}{\SI{0.972}{\atm}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.3 \textbullet\ Charles's law
+  \emph{(after Zumdahl Q48)}}
+
+A balloon is filled to $7.00\times10^2$~mL at \SI{20.0}{\celsius}, then
+cooled at constant pressure to \SI{1.00e2}{\kelvin}.
+
+Find the final volume.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}$T_1=\SI{293}{\kelvin}$
+
+\[V_2 = 700.\times\frac{100.}{293} = \mathbf{239}\ \text{mL}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts \SI{20.0}{\celsius} to \SI{293}{\kelvin}}
+  \rpoint{1}{\SI{239}{\milli\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.3 \textbullet\ Avogadro's law from molar volume
+  \emph{(after Zumdahl Q49)}}
+
+\SI{27.1}{\gram} \ce{Ar(g)} occupies \SI{4.21}{\liter}.
+
+What volume would \SI{1.29}{\mole} \ce{Ne(g)} occupy at the same
+temperature and pressure?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\[n(\ce{Ar}) = \frac{27.1}{39.95}
+= 0.6783\ \text{mol} \ \Longrightarrow\
+V_m = \frac{4.21}{0.6783} = 6.206\ \text{L/mol}\]
+
+\[V(\ce{Ne}) = 1.29\times6.206 = \mathbf{8.01}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{finds moles of \ce{Ar}}
+  \rpoint{1}{finds the shared molar volume at these conditions}
+  \rpoint{1}{\SI{8.01}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.3 \textbullet\ stoichiometric volume ratios
+  \emph{(after Zumdahl Q50)}}
+
+\ce{2NO2(g) -> N2O4(g)}. If \SI{25.0}{\milli\liter} \ce{NO2} gas fully
+converts to \ce{N2O4} under the same conditions, what volume does the
+\ce{N2O4} occupy?
+\workspace[2.5cm]
+\keyonly{\begin{apcanswer}Gas volumes track moles at fixed $T,P$, and the
+2:1 ratio halves the volume:
+
+\[V(\ce{N2O4}) = 25.0\times\frac{1}{2} = \mathbf{12.5}\ \text{mL}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes $V\propto n$ applies here}
+  \rpoint{1}{\SI{12.5}{\milli\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ complete the table I
+  \emph{(after Zumdahl Q51)}}
+
+Complete the table below for an ideal gas ($R=\SI{0.08206}{\liter\atm
+\per\mole\per\kelvin}$):
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+ & $P$ (atm) & $V$ (L) & $n$ (mol) & $T$ \\
+\midrule
+a. & 5.00 & --- & 2.00 & \SI{155}{\celsius} \\
+b. & 0.300 & 2.00 & --- & \SI{155}{\kelvin} \\
+c. & 4.47 & 25.0 & 2.01 & --- \\
+d. & --- & 2.25 & 10.5 & \SI{75}{\celsius} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{a.} $T=\SI{428}{\kelvin}$;
+$V=nRT/P=(2.00)(0.08206)(428)/5.00=\mathbf{14.1}$~L
+
+\textbf{b.} $n=PV/RT=(0.300)(2.00)/[(0.08206)(155)]=\mathbf{0.0472}$~mol
+
+\textbf{c.} $T=PV/nR=(4.47)(25.0)/[(2.01)(0.08206)]=\mathbf{678}$~K
+
+\textbf{d.} $T=\SI{348}{\kelvin}$;
+$P=nRT/V=(10.5)(0.08206)(348)/2.25=\mathbf{133}$~atm\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{a. \SI{14.1}{\liter}}
+  \rpoint{1}{b. \SI{0.0472}{\mole}}
+  \rpoint{1}{c. \SI{678}{\kelvin}}
+  \rpoint{1}{d. \SI{133}{\atm}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ complete the table II
+  \emph{(after Zumdahl Q52)}}
+
+Complete the table below:
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+ & $P$ & $V$ & $n$ (mol) & $T$ \\
+\midrule
+a. & $7.74\times10^3$~Pa & 12.2 mL & --- & \SI{25}{\celsius} \\
+b. & --- & 43.0 mL & 0.421 & \SI{223}{\kelvin} \\
+c. & 455 torr & --- & $4.4\times10^{-2}$ & \SI{331}{\celsius} \\
+d. & 745 mmHg & 11.2 L & 0.401 & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+\workspace[5cm]
+\keyonly{\begin{apcanswer}\textbf{a.} $P=0.07639$~atm, $V=0.0122$~L,
+$T=298$~K: $n=PV/RT=\mathbf{3.81\times10^{-5}}$~mol
+
+\textbf{b.} $P=nRT/V=(0.421)(0.08206)(223)/0.0430
+=\mathbf{179}$~atm
+
+\textbf{c.} $P=0.5987$~atm, $T=604$~K:
+$V=nRT/P=\mathbf{3.6}$~L
+
+\textbf{d.} $P=0.9803$~atm: $T=PV/nR=(0.9803)(11.2)/[(0.401)(0.08206)]
+=\mathbf{334}$~K\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{a. $n\approx3.81\times10^{-5}$~mol}
+  \rpoint{1}{b. $P\approx\SI{179}{\atm}$}
+  \rpoint{1}{c. $V\approx\SI{3.6}{\liter}$}
+  \rpoint{1}{d. $T\approx\SI{334}{\kelvin}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ moles of air in the lungs
+  \emph{(after Zumdahl Q54)}}
+
+Average human lung capacity is \SI{6.0}{\liter}. Find the moles of air in
+the lungs:
+
+\begin{parts}
+  \item At sea level: $T=\SI{298}{\kelvin}$, $P=\SI{1.00}{\atm}$.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$n=PV/RT=\mathbf{0.25}$~mol\end{apcanswer}}
+  \item \SI{10.}{\meter} underwater: $T=\SI{298}{\kelvin}$,
+        $P=\SI{1.97}{\atm}$.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$n=\mathbf{0.48}$~mol\end{apcanswer}}
+  \item Summit of Mount Everest: $T=\SI{200.}{\kelvin}$,
+        $P=\SI{0.296}{\atm}$.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$n=\mathbf{0.11}$~mol\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{0.25}{\mole}}
+  \rpoint{1}{(b) \SI{0.48}{\mole}}
+  \rpoint{2}{(c) \SI{0.11}{\mole} --- both the low $T$ and low $P$ used
+    correctly}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.4 \textbullet\ ideal gas law, mass given
+  \emph{(after Zumdahl Q56)}}
+
+A \SI{5.0}{\liter} flask holds \SI{0.60}{\gram} \ce{O2} at
+\SI{22}{\celsius}.
+
+Find the pressure, in atm.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}$n=0.60/32.00=0.01875$~mol, $T=295$~K
+
+\[P = \frac{nRT}{V} = \frac{(0.01875)(0.08206)(295)}{5.0}
+= \mathbf{0.091}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts mass to moles}
+  \rpoint{1}{\SI{0.091}{\atm}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ ideal gas law, two unknowns
+  \emph{(after Zumdahl Q57)}}
+
+A \SI{2.50}{\liter} container holds \SI{175}{\gram} argon.
+
+\begin{parts}
+  \item At \SI{10.0}{\atm}, find the temperature.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$n=4.380$~mol; $T=PV/nR=\mathbf{69.5}$~K\end{apcanswer}}
+  \item At \SI{225}{\kelvin}, find the pressure.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$P=nRT/V=\mathbf{32.4}$~atm\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{moles of argon, \SI{4.38}{\mole}}
+  \rpoint{1}{(a) \SI{69.5}{\kelvin} (note: this is below argon's triple
+    point of \SI{83.8}{\kelvin}, so real argon would already be solid ---
+    this is the idealized $PV=nRT$ result)}
+  \rpoint{1}{(b) \SI{32.4}{\atm}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ liquid-to-gas volume
+  \emph{(after Zumdahl Q58)}}
+
+A person swallows a \SI{0.050}{\milli\liter} drop of liquid \ce{O2}
+(density \SI{1.149}{\gram\per\milli\liter}).
+
+What volume of gas results in the stomach, at \SI{37}{\celsius} and
+\SI{1.0}{\atm}?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}mass $=0.050\times1.149=0.05745$~g,
+$n=0.05745/32.00=1.795\times10^{-3}$~mol, $T=310$~K
+
+\[V = \frac{nRT}{P} = \mathbf{0.046}\ \text{L} = 46\ \text{mL}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts the liquid volume to a mass, then to moles}
+  \rpoint{1}{correct kelvin temperature}
+  \rpoint{1}{\SI{46}{\milli\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ counting gas particles
+  \emph{(after Zumdahl Q59)}}
+
+A breath draws in \SI{450}{\milli\liter} of air at \SI{745}{\torr},
+\SI{22}{\celsius}.
+
+How many air particles are in the breath?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$P=745/760=0.9803$~atm, $T=295$~K
+
+\[n = \frac{PV}{RT} = \frac{(0.9803)(0.450)}{(0.08206)(295)}
+= 0.01822\ \text{mol}\]
+
+\[\text{particles} = 0.01822\times6.022\times10^{23}
+= \mathbf{1.10\times10^{22}}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts torr to atm}
+  \rpoint{1}{finds $n\approx0.0182$~mol}
+  \rpoint{1}{$1.10\times10^{22}$ particles}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ transferring gas between
+  containers \emph{(after Zumdahl Q60)}}
+
+\ce{N2O} fills a cylinder at \SI{10.5}{\atm}, \SI{5.00}{\liter},
+\SI{298}{\kelvin}.
+
+\begin{parts}
+  \item Find the moles of \ce{N2O} present.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$n=\mathbf{2.15}$~mol\end{apcanswer}}
+  \item That gas is emptied into a large balloon at \SI{745}{\torr}. Find
+        the balloon's volume at \SI{298}{\kelvin}.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$P=0.9803$~atm;
+        $V=nRT/P=\mathbf{53.6}$~L\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{2.15}{\mole}}
+  \rpoint{1}{(b) converts \SI{745}{\torr} to atm}
+  \rpoint{1}{(b) \SI{53.6}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ gas added to a rigid container
+  \emph{(after Zumdahl Q61)}}
+
+A rigid container holds \SI{1.50}{\mole} gas at \SI{25}{\celsius},
+exerting \SI{400.}{\torr}. More gas is added and the temperature raised to
+\SI{50.}{\celsius}; the pressure rises to \SI{800.}{\torr}.
+
+How many moles were added?
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- find the fixed container
+volume} from the initial state:
+
+\[V = \frac{n_1RT_1}{P_1} = \frac{(1.50)(0.08206)(298)}{400/760}
+= 69.7\ \text{L}\]
+
+\textbf{Step 2 --- find the final moles}, same $V$, new $P,T$:
+
+\[n_2 = \frac{P_2V}{RT_2} = \frac{(800/760)(69.7)}{(0.08206)(323)}
+= 2.77\ \text{mol}\]
+
+\textbf{Step 3 --- subtract:}
+
+\[\Delta n = 2.77-1.50 = \mathbf{1.27}\ \text{mol added}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{finds the container's fixed volume from the initial state}
+  \rpoint{1}{converts torr to atm for both states}
+  \rpoint{1}{finds $n_2\approx\SI{2.77}{\mole}$}
+  \rpoint{1}{\SI{1.27}{\mole} added}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ combined gas law, percent change
+  \emph{(after Zumdahl Q62)}}
+
+A bicycle tire is inflated to 75~psi at \SI{19}{\celsius}. Riding
+on hot asphalt raises the tire to \SI{58}{\celsius}, and its volume grows
+4.0\%.
+
+Find the new pressure.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$T_1=292$~K, $T_2=331$~K,
+$V_2/V_1=1.040$
+
+\[P_2 = P_1\times\frac{V_1}{V_2}\times\frac{T_2}{T_1}
+= 75\times\frac{1}{1.040}\times\frac{331}{292}
+= \mathbf{82}\ \text{psi}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{accounts for the 4.0\% volume increase}
+  \rpoint{1}{82 psi}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ comparing two containers
+  \emph{(after Zumdahl Q63)}}
+
+Container A: \ce{SO2(g)}, pressure $P_A$, \SI{1.0}{\mole},
+\SI{1.0}{\liter}, \SI{7}{\celsius}.
+
+Container B: an unknown gas, pressure $P_B$, \SI{2.0}{\mole},
+\SI{2.0}{\liter}, \SI{-87}{\celsius}.
+
+How does $P_B$ relate to $P_A$?
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\[P_A = \frac{n_ART_A}{V_A}
+= \frac{(1.0)(0.08206)(280)}{1.0} = 23.0\ \text{atm}\]
+
+\[P_B = \frac{n_BRT_B}{V_B}
+= \frac{(2.0)(0.08206)(186)}{2.0} = 15.3\ \text{atm}\]
+
+Since $n/V=1.0$~mol/L for both containers, this simplifies to
+$P_B/P_A = T_B/T_A = 186/280$:
+
+\[\mathbf{P_B \approx 0.66\,P_A}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$P_A\approx\SI{23.0}{\atm}$}
+  \rpoint{1}{$P_B\approx\SI{15.3}{\atm}$}
+  \rpoint{1}{states the relationship, $P_B\approx0.66P_A$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.4 \textbullet\ conceptual, simultaneous changes
+  \emph{(after Zumdahl Q64)}}
+
+What happens to an ideal gas's volume if pressure doubles while the
+absolute temperature is simultaneously halved?
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Since $V\propto T/P$:
+
+\[\frac{V_2}{V_1} = \frac{T_2/T_1}{P_2/P_1} = \frac{0.5}{2}
+= \mathbf{0.25}\]
+
+The volume drops to one quarter of its original value.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{sets up $V\propto T/P$}
+  \rpoint{1}{correctly concludes $V_2=\tfrac14 V_1$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{3}{Zumdahl \S5.4 \textbullet\ Gay-Lussac's law
+  \emph{(after Zumdahl Q65)}}
+
+A rigid container holds ideal gas at \SI{11.0}{\atm}, \SI{0}{\celsius}.
+
+\begin{parts}
+  \item Find the pressure if heated to \SI{45}{\celsius}.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$\mathbf{12.8}$~atm\end{apcanswer}}
+  \item Find the temperature for a pressure of \SI{6.50}{\atm}.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$\mathbf{161}$~K\end{apcanswer}}
+  \item Find the temperature for a pressure of \SI{25.0}{\atm}.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$\mathbf{620}$~K\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{12.8}{\atm}}
+  \rpoint{1}{(b) \SI{161}{\kelvin}}
+  \rpoint{1}{(c) \SI{620}{\kelvin}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ Charles's law in three dimensions
+  \emph{(after Zumdahl Q66)}}
+
+An ideal gas at \SI{7}{\celsius} fills a spherical, flexible container of
+radius \SI{1.00}{\centi\meter}. Heated at constant pressure to
+\SI{88}{\celsius}.
+
+Find the new radius. ($V_{\text{sphere}}=\tfrac43\pi r^3$.)
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$T_1=280$~K, $T_2=361$~K; $V\propto T$, so
+$V_2/V_1=T_2/T_1=1.289$.
+
+Since $V\propto r^3$:
+
+\[r_2 = r_1\times(1.289)^{1/3} = \mathbf{1.09}\ \text{cm}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{finds the volume ratio $V_2/V_1=1.29$}
+  \rpoint{1}{takes the cube root correctly, \SI{1.09}{\centi\meter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ extreme compression
+  \emph{(after Zumdahl Q67)}}
+
+An ideal gas in a $5.00\times10^2$~mL cylinder at \SI{30.}{\celsius} and
+\SI{710.}{\torr} is compressed to \SI{25}{\milli\liter} while heated to
+\SI{820.}{\celsius}.
+
+Find the new pressure.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$T_1=303$~K, $T_2=1093$~K
+
+\[P_2 = P_1\times\frac{V_1}{V_2}\times\frac{T_2}{T_1}
+= 710.\times\frac{500.}{25}\times\frac{1093}{303}
+= \mathbf{5.12\times10^4}\ \text{torr}\]
+
+($\approx\SI{67.4}{\atm}$ --- a reminder that the combined gas law does
+not know or care that no real cylinder survives this.)\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{sets up the combined gas law correctly}
+  \rpoint{1}{$5.12\times10^4$~torr}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ mass remaining in a cylinder
+  \emph{(after Zumdahl Q68)}}
+
+A compressed-gas cylinder holds $1.00\times10^3$~g argon at
+2050.~psi, \SI{18}{\celsius}.
+
+How much gas (mass) remains if the pressure drops to 650.~psi at
+\SI{26}{\celsius}?
+\workspace[6cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- find the cylinder's fixed
+volume} from the initial state ($n_1=1000/39.95=25.03$~mol,
+$P_1=2050/14.7=139.5$~atm, $T_1=291$~K):
+
+\[V = \frac{n_1RT_1}{P_1} = \frac{(25.03)(0.08206)(291)}{139.5}
+= 4.29\ \text{L}\]
+
+\textbf{Step 2 --- find the remaining moles} at the new state
+($P_2=650/14.7=44.2$~atm, $T_2=299$~K):
+
+\[n_2 = \frac{P_2V}{RT_2} = \frac{(44.2)(4.29)}{(0.08206)(299)}
+= 7.72\ \text{mol}\]
+
+\textbf{Step 3 --- convert back to mass:}
+
+\[\text{mass} = 7.72\times39.95 = \mathbf{309}\ \text{g}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{finds the cylinder's fixed volume from the initial state}
+  \rpoint{1}{converts psi to atm for both states}
+  \rpoint{1}{finds $n_2\approx\SI{7.72}{\mole}$}
+  \rpoint{1}{\SI{309}{\gram} remaining}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ balloon at altitude
+  \emph{(after Zumdahl Q69)}}
+
+A sealed balloon holds \SI{1.00}{\liter} \ce{He} at \SI{23}{\celsius},
+\SI{1.00}{\atm}. It rises to where the pressure is \SI{220.}{\torr} and
+the temperature is \SI{-31}{\celsius}.
+
+Find the new volume, and the volume change from the initial \SI{1.00}
+{\liter}.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$T_1=296$~K, $T_2=242$~K,
+$P_2=220/760=0.2895$~atm
+
+\[V_2 = V_1\times\frac{P_1}{P_2}\times\frac{T_2}{T_1}
+= 1.00\times\frac{1.00}{0.2895}\times\frac{242}{296}
+= \mathbf{2.82}\ \text{L}\]
+
+\[\Delta V = 2.82-1.00 = \mathbf{+1.82}\ \text{L increase}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin and \SI{220.}{\torr} to
+    atm}
+  \rpoint{1}{\SI{2.82}{\liter}}
+  \rpoint{1}{correctly reports the \SI{1.82}{\liter} increase}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ open-system mole ratio
+  \emph{(after Zumdahl Q70)}}
+
+A hot-air balloon holds $4.00\times10^3$~m$^3$ air at \SI{745}{\torr},
+\SI{21}{\celsius}. Heated to \SI{62}{\celsius}, it expands to
+$4.20\times10^3$~m$^3$ (pressure unchanged --- the balloon is open to the
+atmosphere).
+
+Find the ratio of final to initial moles of air.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}At constant $P$, $n\propto V/T$:
+
+\[\frac{n_2}{n_1} = \frac{V_2/T_2}{V_1/T_1}
+= \frac{4.20\times10^3/335}{4.00\times10^3/294}
+= \mathbf{0.922}\]
+
+The balloon holds about 7.8\% \emph{fewer} moles of air after heating ---
+this is exactly why hot-air balloons rise: heated air is driven out
+through the open bottom, so the balloon's average density drops even
+though its volume grows.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts both temperatures to kelvin}
+  \rpoint{1}{sets up $n\propto V/T$ at constant $P$}
+  \rpoint{1}{$n_2/n_1\approx0.922$, with the physical interpretation}
+\end{rubric}
+
+% ============================================================================
+% SESSION 3
+% ============================================================================
+\clearpage
+\examsection{D}{Gas Density, Molar Mass, and Reaction Stoichiometry}
+  {16 questions \textbullet\ 54 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ gas-to-mass stoichiometry
+  \emph{(after Zumdahl Q71)}}
+
+\ce{4Al(s) + 3O2(g) -> 2Al2O3(s)}. \SI{2.00}{\liter} pure \ce{O2} at STP
+fully reacts with a sample of aluminum.
+
+Find the mass of aluminum consumed.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\[n(\ce{O2}) = \frac{2.00}{22.42}
+= 0.08921\ \text{mol}\]
+
+4:3 ratio with \ce{Al}:
+
+\[n(\ce{Al}) = 0.08921\times\frac43 = 0.1190\ \text{mol}\]
+
+\[\text{mass} = 0.1190\times26.98 = \mathbf{3.21}\ \text{g}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{O2} via STP molar volume}
+  \rpoint{1}{applies the 4:3 ratio}
+  \rpoint{1}{\SI{3.21}{\gram}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.4 \textbullet\ sublimation to gas volume
+  \emph{(after Zumdahl Q72)}}
+
+A student adds \SI{4.00}{\gram} dry ice (solid \ce{CO2}) to an empty
+balloon.
+
+Find the balloon's volume at STP once all the \ce{CO2} sublimes.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}\[n = \frac{4.00}{44.01} = 0.0909\ \text{mol}
+\ \Longrightarrow\ V = 0.0909\times22.42 = \mathbf{2.04}\ \text{L}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{CO2}}
+  \rpoint{1}{\SI{2.04}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ airbag stoichiometry
+  \emph{(after Zumdahl Q73)}}
+
+Airbags deploy when sodium azide decomposes explosively:
+\ce{2NaN3(s) -> 2Na(s) + 3N2(g)}.
+
+What mass of \ce{NaN3(s)} must react to inflate a bag to \SI{70.0}{\liter}
+\ce{N2} at STP?
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$M(\ce{NaN3}) = 22.99+3(14.01)
+= \SI{65.02}{\gram\per\mole}$
+
+\[n(\ce{N2}) = \frac{70.0}{22.42} = 3.123\ \text{mol}\]
+
+2:3 ratio with \ce{NaN3}:
+
+\[n(\ce{NaN3}) = 3.123\times\frac23 = 2.082\ \text{mol}\]
+
+\[\text{mass} = 2.082\times65.02 = \mathbf{135}\ \text{g}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{molar mass of \ce{NaN3}}
+  \rpoint{1}{moles of \ce{N2}, then applies the 2:3 ratio}
+  \rpoint{1}{\SI{135}{\gram}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ decomposition of a solution
+  \emph{(after Zumdahl Q74)}}
+
+\ce{2H2O2(aq) -> 2H2O(l) + O2(g)}. What volume of pure \ce{O2(g)},
+collected at \SI{27}{\celsius} and \SI{746}{\torr}, forms from decomposing
+\SI{125}{\gram} of a 50.0\%-by-mass \ce{H2O2} solution?
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}mass \ce{H2O2} $=125\times0.500=62.5$~g,
+$n=62.5/34.02=1.837$~mol
+
+2:1 ratio with \ce{O2}:
+
+\[n(\ce{O2}) = 1.837/2 = 0.9186\ \text{mol}\]
+
+$P=746/760=0.9816$~atm, $T=300$~K:
+
+\[V = \frac{nRT}{P} = \mathbf{23.0}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{H2O2} from the 50\% solution}
+  \rpoint{1}{applies the 2:1 ratio to find $n(\ce{O2})$}
+  \rpoint{1}{\SI{23.0}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ large-scale gas stoichiometry
+  \emph{(after Zumdahl Q75)}}
+
+In 1897, Swedish explorer Andr{\'e}e attempted a hydrogen-balloon flight
+toward the North Pole; the \ce{H2} was generated from iron splints and
+dilute sulfuric acid: \ce{Fe(s) + H2SO4(aq) -> FeSO4(aq) + H2(g)}. The
+balloon's volume was $4800$~m$^3$, with an estimated 20.\% hydrogen loss
+during filling.
+
+Find the mass of iron splints and of 98\% (by mass) \ce{H2SO4} needed to
+completely fill the balloon, assuming \SI{0}{\celsius}, \SI{1.0}{\atm}
+during filling, 100\% yield.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- moles of \ce{H2} needed in
+the finished balloon:}
+
+\[n = \frac{PV}{RT} = \frac{(1.0)(4.80\times10^6\ \text{L})}
+{(0.08206)(273.15)} = 2.141\times10^5\ \text{mol}\]
+
+\textbf{Step 2 --- account for the 20\% loss} --- 25\% more must be
+\emph{produced} than ends up in the balloon:
+
+\[n_{\text{produced}} = \frac{2.141\times10^5}{0.80}
+= 2.677\times10^5\ \text{mol}\]
+
+\textbf{Step 3 --- 1:1:1 stoichiometry} with \ce{Fe} and \ce{H2SO4}:
+
+\[\text{mass Fe} = 2.677\times10^5\times55.85
+= \mathbf{1.50\times10^4}\ \text{kg}\]
+
+\[\text{mass pure \ce{H2SO4}} = 2.677\times10^5\times98.09
+= 2.626\times10^7\ \text{g}\]
+
+\[\text{mass 98\% solution} = \frac{2.626\times10^7}{0.98}
+= \mathbf{2.68\times10^4}\ \text{kg}\]
+
+(Metric-ton-scale masses are correct here, not a units slip --- this was a
+genuinely enormous balloon.)\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{H2} needed in the final balloon}
+  \rpoint{1}{correctly scales up for the 20\% loss}
+  \rpoint{1}{mass of Fe, $\approx1.50\times10^4$~kg}
+  \rpoint{1}{mass of 98\% \ce{H2SO4} solution, $\approx2.68\times10^4$~kg}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ two-step gas stoichiometry
+  \emph{(after Zumdahl Q76)}}
+
+\ce{S(s) + O2(g) -> SO2(g)}, then \ce{2SO2(g) + O2(g) -> 2SO3(g)}.
+
+What volume of \ce{O2(g)} at \SI{350.}{\celsius} and \SI{5.25}{\atm} is
+needed to fully convert \SI{5.00}{\gram} sulfur to \ce{SO3}?
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$n(\ce{S})=5.00/32.07=0.1559$~mol. Each mole of
+\ce{S} needs 1~mol \ce{O2} in step 1 and 0.5~mol \ce{O2} in step 2 ---
+1.5~mol \ce{O2} total per mole \ce{S}:
+
+\[n(\ce{O2}) = 0.1559\times1.5 = 0.2339\ \text{mol}\]
+
+$T=623$~K:
+
+\[V = \frac{nRT}{P} = \frac{(0.2339)(0.08206)(623)}{5.25}
+= \mathbf{2.28}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of sulfur}
+  \rpoint{1}{combines both steps into 1.5~mol \ce{O2} per mol \ce{S}}
+  \rpoint{1}{\SI{2.28}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ limiting reactant, partial
+  pressures given \emph{(after Zumdahl Q77)}}
+
+A \SI{15.0}{\liter} rigid container holds \SI{0.500}{\atm} \ce{Kr} and
+\SI{1.50}{\atm} \ce{Cl2} at \SI{350.}{\celsius}; they react:
+\ce{Kr(g) + 2Cl2(g) -> KrCl4(s)}.
+
+Find the mass of \ce{KrCl4} produced, assuming 100\% yield.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}$T=623$~K
+
+\[n(\ce{Kr}) = \frac{(0.500)(15.0)}{(0.08206)(623)} = 0.1467\ \text{mol}\]
+
+\[n(\ce{Cl2}) = \frac{(1.50)(15.0)}{(0.08206)(623)} = 0.4401\ \text{mol}\]
+
+Fully consuming the \ce{Kr} needs $2\times0.1467=0.2934$~mol \ce{Cl2}, and
+\SI{0.4401}{\mole} is available --- \textbf{\ce{Kr} is limiting}.
+
+\[\text{mass}(\ce{KrCl4}) = 0.1467\times225.60
+= \mathbf{33.1}\ \text{g}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{$n(\ce{Kr})$ and $n(\ce{Cl2})$ from their partial pressures}
+  \rpoint{1}{identifies \ce{Kr} as limiting, with the comparison shown}
+  \rpoint{1}{correct molar mass of \ce{KrCl4}}
+  \rpoint{1}{\SI{33.1}{\gram}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ three-reactant limiting case
+  \emph{(after Zumdahl Q78)}}
+
+Acrylonitrile synthesis: \ce{2C3H6(g) + 2NH3(g) + 3O2(g) -> 2C3H3N(g)
++ 6H2O(g)}. A \SI{150.}{\liter} reactor at \SI{25}{\celsius} is charged to
+partial pressures $P(\ce{C3H6})=\SI{0.500}{\mega\pascal}$,
+$P(\ce{NH3})=\SI{0.800}{\mega\pascal}$,
+$P(\ce{O2})=\SI{1.500}{\mega\pascal}$.
+
+Find the mass of acrylonitrile (\ce{C3H3N}) obtainable.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}Convert each pressure to atm ($\div101325$~Pa,
+$\times10^6$) and find moles ($T=298$~K):
+
+$n(\ce{C3H6})=30.27$~mol, $n(\ce{NH3})=48.43$~mol,
+$n(\ce{O2})=90.81$~mol
+
+Each reactant's maximum \ce{C3H3N} yield (using its own coefficient, all
+1:1 with \ce{C3H6}/\ce{NH3}, 2:3 with \ce{O2}):
+\ce{C3H6}$\to30.27$~mol, \ce{NH3}$\to48.43$~mol,
+\ce{O2}$\to90.81\times\tfrac23=60.54$~mol.
+
+\textbf{\ce{C3H6} is limiting}, despite \ce{O2} having by far the highest
+partial pressure --- pressure alone does not determine the limiting
+reactant, the coefficient-scaled yield does.
+
+\[\text{mass}(\ce{C3H3N}) = 30.27\times53.06
+= \mathbf{1610}\ \text{g}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts all three partial pressures to moles correctly}
+  \rpoint{1}{computes each reactant's coefficient-scaled yield}
+  \rpoint{1}{identifies \ce{C3H6} as limiting despite \ce{O2}'s higher
+    pressure}
+  \rpoint{1}{\SI{1610}{\gram} (1.61~kg)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ liquid + gas limiting reactant
+  \emph{(after Zumdahl Q79)}}
+
+\SI{50.0}{\milli\liter} liquid methanol, \ce{CH3OH} (density
+\SI{0.850}{\gram\per\milli\liter}), reacts with \SI{22.8}{\liter} \ce{O2}
+at \SI{27}{\celsius}, \SI{2.00}{\atm}: \ce{2CH3OH(l) + 3O2(g) -> 2CO2(g)
++ 4H2O(g)}.
+
+Find the moles of \ce{H2O} formed if the reaction completes.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}mass \ce{CH3OH} $=50.0\times0.850=42.5$~g,
+$n=42.5/32.04=1.326$~mol
+
+\[n(\ce{O2}) = \frac{(2.00)(22.8)}{(0.08206)(300)} = 1.852\ \text{mol}\]
+
+Fully consuming the methanol needs $1.5\times1.326=1.990$~mol \ce{O2},
+but only \SI{1.852}{\mole} is available --- \textbf{\ce{O2} is limiting}.
+
+\[n(\ce{H2O}) = 1.852\times\frac43 = \mathbf{2.47}\ \text{mol}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts the liquid methanol volume to moles}
+  \rpoint{1}{moles of \ce{O2} via the ideal gas law}
+  \rpoint{1}{identifies \ce{O2} as limiting, with the comparison shown}
+  \rpoint{1}{\SI{2.47}{\mole} \ce{H2O}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ continuous-flow limiting reactant
+  \emph{(after Zumdahl Q80)}}
+
+Urea synthesis: \ce{2NH3(g) + CO2(g) -> H2NCONH2(s) + H2O(g)}. \ce{NH3} at
+\SI{223}{\celsius}, \SI{90.}{\atm} flows into a reactor at
+\SI{500.}{\liter\per\minute}; \ce{CO2} at \SI{223}{\celsius}, \SI{45}{\atm}
+flows in at \SI{600.}{\liter\per\minute}.
+
+Find the mass of urea produced per minute, assuming 100\% yield.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}$T=496$~K
+
+\[\frac{n(\ce{NH3})}{\text{min}} = \frac{(90.)(500.)}{(0.08206)(496)}
+= 1106\ \text{mol/min}\]
+
+\[\frac{n(\ce{CO2})}{\text{min}} = \frac{(45)(600.)}{(0.08206)(496)}
+= 663.4\ \text{mol/min}\]
+
+Fully consuming the \ce{NH3} needs $1106/2=553$~mol/min \ce{CO2}, and
+\SI{663.4}{\mole\per\minute} is available --- \textbf{\ce{NH3} is
+limiting}.
+
+\[\frac{\text{mass urea}}{\text{min}} = \frac{1106}{2}\times60.06
+= \mathbf{3.32\times10^4}\ \text{g/min}\ (33.2\ \text{kg/min})
+\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles per minute of \ce{NH3} from its flow rate}
+  \rpoint{1}{moles per minute of \ce{CO2} from its flow rate}
+  \rpoint{1}{identifies \ce{NH3} as limiting, with the comparison shown}
+  \rpoint{1}{\SI{3.32e4}{\gram\per\minute} urea}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ balancing plus volume-based
+  limiting reactant \emph{(after Zumdahl Q81)}}
+
+\ce{HCN} is produced commercially from \ce{CH4(g)}, \ce{NH3(g)}, and
+\ce{O2(g)} at high temperature; gaseous water is the other product.
+
+\begin{parts}
+  \item Write the balanced chemical equation.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}\ce{2CH4(g) + 2NH3(g) + 3O2(g) -> 2HCN(g)
+        + 6H2O(g)}\end{apcanswer}}
+  \item Find the volume of \ce{HCN(g)} obtainable from \SI{20.0}{\liter}
+        \ce{CH4(g)}, \SI{20.0}{\liter} \ce{NH3(g)}, and \SI{20.0}{\liter}
+        \ce{O2(g)} --- all at the same temperature and pressure.
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}Same $T,P$ means volume tracks moles.
+        Divide each given volume by its coefficient:
+        \ce{CH4}: $20.0/2=10.00$; \ce{NH3}: $20.0/2=10.00$; \ce{O2}:
+        $20.0/3=6.667$ --- \textbf{\ce{O2} is limiting}.
+
+        \[V(\ce{HCN}) = 6.667\times2 = \mathbf{13.3}\ \text{L}\]
+        \end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correctly balanced equation}
+  \rpoint{1}{(b) divides each volume by its coefficient}
+  \rpoint{1}{(b) identifies \ce{O2} as limiting}
+  \rpoint{1}{(b) \SI{13.3}{\liter} \ce{HCN}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ percent yield from flow rates
+  \emph{(after Zumdahl Q82)}}
+
+\ce{C2H4(g) + H2(g) ->[\text{catalyst}] C2H6(g)}. \ce{C2H4} enters a
+catalytic reactor at \SI{25.0}{\atm}, \SI{300.}{\celsius},
+\SI{1000.}{\liter\per\minute}; \ce{H2} enters at \SI{25.0}{\atm},
+\SI{300.}{\celsius}, \SI{1500.}{\liter\per\minute}. If \SI{15.0}{\kilo
+\gram} \ce{C2H6} is collected per minute, find the percent yield.
+\workspace[6cm]
+\keyonly{\begin{apcanswer}$T=573$~K
+
+\[\frac{n(\ce{C2H4})}{\text{min}} = \frac{(25.0)(1000.)}
+{(0.08206)(573)} = 531.7\ \text{mol/min}\]
+
+\[\frac{n(\ce{H2})}{\text{min}} = \frac{(25.0)(1500.)}
+{(0.08206)(573)} = 797.5\ \text{mol/min}\]
+
+1:1 ratio, so \textbf{\ce{C2H4} is limiting}.
+
+\[\text{theoretical mass} = 531.7\times30.07
+= 1.599\times10^4\ \text{g/min}\]
+
+\[\%\ \text{yield} = \frac{1.50\times10^4}{1.599\times10^4}\times100
+= \mathbf{93.8\%}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles per minute of each reactant}
+  \rpoint{1}{identifies \ce{C2H4} as limiting}
+  \rpoint{1}{correct theoretical yield}
+  \rpoint{1}{93.8\% yield}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ identifying a gas from density
+  \emph{(after Zumdahl Q83)}}
+
+An unknown diatomic gas has a density of \SI{3.164}{\gram\per\liter} at
+STP.
+
+Identify the gas.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\[M = d\times22.42 = 3.164\times22.42
+= 70.94\ \text{g/mol}\]
+
+Atomic mass $=70.94/2=35.47$~g/mol --- matches chlorine.
+
+\[\textbf{Gas: \ce{Cl2}}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{finds the molar mass via $M=d\times22.42$}
+  \rpoint{1}{divides by 2 for the atomic mass}
+  \rpoint{1}{identifies \ce{Cl2}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.4 \textbullet\ empirical to molecular formula
+  \emph{(after Zumdahl Q84)}}
+
+A compound with empirical formula \ce{CHCl}: a \SI{256}{\milli\liter}
+flask at \SI{373}{\kelvin}, \SI{750.}{\torr} holds \SI{0.800}{\gram} of
+the gaseous compound.
+
+Find the molecular formula.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}$P=750/760=0.9868$~atm
+
+\[n = \frac{PV}{RT} = \frac{(0.9868)(0.256)}{(0.08206)(373)}
+= 8.254\times10^{-3}\ \text{mol}\]
+
+\[M = \frac{0.800}{8.254\times10^{-3}} = 96.9\ \text{g/mol}\]
+
+Empirical formula mass of \ce{CHCl} $=12.01+1.008+35.45=48.47$~g/mol.
+
+\[\frac{96.9}{48.47} \approx 2\]
+
+\[\textbf{Molecular formula: \ce{C2H2Cl2}}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of gas via the ideal gas law}
+  \rpoint{1}{molar mass $\approx\SI{96.9}{\gram\per\mole}$}
+  \rpoint{1}{empirical formula mass of \ce{CHCl}}
+  \rpoint{1}{\ce{C2H2Cl2}, correctly justified by the multiplier of 2}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.4 \textbullet\ density of a heavy vapor
+  \emph{(after Zumdahl Q85)}}
+
+Uranium hexafluoride is solid at room temperature but boils at
+\SI{56}{\celsius}.
+
+Find its density at \SI{60.}{\celsius} and \SI{745}{\torr}.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}$M(\ce{UF6})=238.03+6(19.00)=352.03$~g/mol,
+$P=0.9803$~atm, $T=333$~K
+
+\[d = \frac{PM}{RT} = \mathbf{12.6}\ \text{g/L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{molar mass of \ce{UF6} and correct unit conversions}
+  \rpoint{1}{\SI{12.6}{\gram\per\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.4 \textbullet\ comparing two vapor densities
+  \emph{(after Zumdahl Q86)}}
+
+Silicon tetrachloride (\ce{SiCl4}) and trichlorosilane (\ce{SiHCl3}) are
+electronics-grade-silicon feedstocks.
+
+Find the densities of pure \ce{SiCl4} vapor and pure \ce{SiHCl3} vapor at
+\SI{85}{\celsius}, \SI{635}{\torr}.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$P=635/760=0.8355$~atm, $T=358$~K
+
+$M(\ce{SiCl4})=28.09+4(35.45)=169.89$~g/mol:
+
+\[d = \frac{PM}{RT} = \mathbf{4.83}\ \text{g/L}\]
+
+$M(\ce{SiHCl3})=28.09+1.008+3(35.45)=135.45$~g/mol:
+
+\[d = \frac{PM}{RT} = \mathbf{3.85}\ \text{g/L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{molar masses of both compounds}
+  \rpoint{1}{\ce{SiCl4}: \SI{4.83}{\gram\per\liter}}
+  \rpoint{1}{\ce{SiHCl3}: \SI{3.85}{\gram\per\liter}}
+\end{rubric}
+
+% ============================================================================
+% SESSION 4
+% ============================================================================
+\clearpage
+\examsection{E}{Partial Pressure and Atmospheric Chemistry}
+  {19 questions \textbullet\ 63 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ partial pressure from particle
+  counts \emph{(after Zumdahl Q87)}}
+
+A rigid container under a total pressure of \SI{1}{\atm} holds a mixture
+of three noble gases. A particulate diagram shows 5 \ce{He} particles,
+3 \ce{Ne} particles, and 2 \ce{Ar} particles (10 particles total).
+
+Find the partial pressure of each gas.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}Mole fraction equals particle-count fraction:
+
+\[P(\ce{He}) = \tfrac{5}{10}(1) = \mathbf{0.500}\ \text{atm}\]
+\[P(\ce{Ne}) = \tfrac{3}{10}(1) = \mathbf{0.300}\ \text{atm}\]
+\[P(\ce{Ar}) = \tfrac{2}{10}(1) = \mathbf{0.200}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes particle-count fraction equals mole fraction}
+  \rpoint{1}{all three partial pressures correct}
+  \rpoint{1}{pressures sum to \SI{1.000}{\atm}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.5 \textbullet\ mixing two flasks
+  \emph{(after Zumdahl Q88)}}
+
+Two equal-volume flasks, same temperature, are joined by a closed
+stopcock. The left flask holds only \ce{He}; a particulate diagram shows
+5 \ce{He} particles. The right flask holds only \ce{Ne}; its diagram
+shows 4 \ce{Ne} particles.
+
+\begin{parts}
+  \item Which is greater, the initial pressure of \ce{He} or \ce{Ne}? By
+        how much?
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$P\propto n$ at fixed $V,T$, so
+        $P(\ce{He}):P(\ce{Ne})=5:4$ --- \ce{He}'s pressure is
+        \textbf{25\% greater}.\end{apcanswer}}
+  \item Once the stopcock opens, what volume does each gas occupy?
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}Both gases mix and spread through the
+        \emph{combined} volume of both flasks.\end{apcanswer}}
+  \item Express the final total pressure in terms of the original
+        pressures $P(\ce{He})_i$ and $P(\ce{Ne})_i$.
+        \workspace[3cm]
+        \keyonly{\begin{apcanswer}Each gas's own volume doubles at
+        constant $n,T$, so its own pressure halves:
+
+        \[P_{\text{total,final}} = \frac{P(\ce{He})_i}{2}
+        +\frac{P(\ce{Ne})_i}{2}
+        = \mathbf{\dfrac{P(\ce{He})_i+P(\ce{Ne})_i}{2}}\]\end{apcanswer}}
+  \item Express the final partial pressure of each gas in terms of its
+        own original pressure.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$P(\ce{He})_f=\dfrac{P(\ce{He})_i}{2}$,\quad
+        $P(\ce{Ne})_f=\dfrac{P(\ce{Ne})_i}{2}$ --- each gas simply
+        halves, independently of the other.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) $P(\ce{He})$ is 25\% greater, from the 5:4 particle
+    ratio}
+  \rpoint{1}{(b) both gases occupy the full combined volume}
+  \rpoint{1}{(c) $P_{\text{total,final}}=[P(\ce{He})_i+P(\ce{Ne})_i]/2$}
+  \rpoint{1}{(d) each gas's final pressure is half its own original
+    pressure}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ Dalton's law, masses given
+  \emph{(after Zumdahl Q89)}}
+
+For a deep dive, \SI{15.2}{\gram} \ce{He(g)} and \SI{30.6}{\gram}
+\ce{O2(g)} are added to a previously evacuated \SI{5.00}{\liter} tank at
+\SI{22}{\celsius}.
+
+Find the partial pressure of each gas, and the total pressure.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$n(\ce{He})=15.2/4.003=3.797$~mol,
+$n(\ce{O2})=30.6/32.00=0.9563$~mol, $T=295$~K
+
+\[P(\ce{He}) = \frac{nRT}{V} = \mathbf{18.4}\ \text{atm}\]
+
+\[P(\ce{O2}) = \mathbf{4.63}\ \text{atm}\]
+
+\[P_{\text{total}} = 18.4+4.63 = \mathbf{23.0}\ \text{atm}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of both gases}
+  \rpoint{1}{both partial pressures correct}
+  \rpoint{1}{$P_{\text{total}}=\SI{23.0}{\atm}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ Dalton's law, light gases
+  \emph{(after Zumdahl Q90)}}
+
+\SI{1.00}{\gram} \ce{H2} and \SI{1.00}{\gram} \ce{He} are placed in a
+\SI{1.00}{\liter} container at \SI{27}{\celsius}.
+
+Find the partial pressure of each gas, and the total pressure.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$n(\ce{H2})=1.00/2.016=0.4960$~mol,
+$n(\ce{He})=1.00/4.003=0.2498$~mol, $T=300$~K
+
+\[P(\ce{H2}) = \mathbf{12.2}\ \text{atm}, \quad
+P(\ce{He}) = \mathbf{6.15}\ \text{atm}\]
+
+\[P_{\text{total}} = \mathbf{18.4}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of both gases}
+  \rpoint{1}{both partial pressures correct}
+  \rpoint{1}{$P_{\text{total}}=\SI{18.4}{\atm}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ combining two flasks by Boyle's
+  law \emph{(after Zumdahl Q91)}}
+
+\SI{2.00}{\liter} \ce{H2} at \SI{475}{\torr} and \SI{1.00}{\liter} \ce{N2}
+at \SI{0.200}{\atm} sit in separate flasks joined by a stopcock. Once
+opened, the combined volume is \SI{3.00}{\liter} (constant temperature).
+
+Find the final partial pressure of each gas, and the total pressure, in
+torr.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}Each gas expands into the full \SI{3.00}{\liter}
+independently (Boyle's law, $P_f=P_iV_i/V_f$):
+
+\[P(\ce{H2})_f = 475\times\frac{2.00}{3.00} = \mathbf{317}\ \text{torr}\]
+
+\[P(\ce{N2})_f = 152\times\frac{1.00}{3.00} = \mathbf{50.7}\ \text{torr}\]
+
+\[P_{\text{total}} = 317+50.7 = \mathbf{367}\ \text{torr}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{applies Boyle's law to each gas independently}
+  \rpoint{1}{both final partial pressures correct}
+  \rpoint{1}{$P_{\text{total}}=\SI{367}{\torr}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ working backward from total
+  pressure \emph{(after Zumdahl Q92)}}
+
+Same two-flask apparatus as the previous problem: \SI{2.00}{\liter} \ce{H2}
+at \SI{360.}{\torr} and \SI{1.00}{\liter} \ce{N2} at an unknown pressure.
+After the stopcock opens (combined volume \SI{3.00}{\liter}), the total
+pressure is \SI{320.}{\torr}.
+
+Find the initial pressure of \ce{N2} in the \SI{1.00}{\liter} flask.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\ce{H2}'s contribution to the final pressure:
+
+\[P(\ce{H2})_f = 360.\times\frac{2.00}{3.00} = 240.\ \text{torr}\]
+
+\ce{N2}'s final contribution, by difference:
+
+\[P(\ce{N2})_f = 320.-240. = 80.0\ \text{torr}\]
+
+Boyle's law backward to the original \SI{1.00}{\liter} flask:
+
+\[P(\ce{N2})_i = 80.0\times\frac{3.00}{1.00} = \mathbf{240.}\ \text{torr}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{finds \ce{H2}'s final contribution, \SI{240.}{\torr}}
+  \rpoint{1}{finds \ce{N2}'s final contribution by difference}
+  \rpoint{1}{\SI{240.}{\torr} for \ce{N2}'s original pressure}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.5 \textbullet\ three gases from mixed units
+  \emph{(after Zumdahl Q94)}}
+
+At \SI{0}{\celsius}, a \SI{1.0}{\liter} flask contains
+$5.0\times10^{-2}$~mol \ce{N2}, $1.5\times10^2$~mg \ce{O2}, and
+$5.0\times10^{21}$ molecules \ce{NH3}.
+
+Find the partial pressure of each gas, and the total pressure.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}$n(\ce{N2})=0.050$~mol,
+$n(\ce{O2})=0.150/32.00=4.688\times10^{-3}$~mol,
+$n(\ce{NH3})=5.0\times10^{21}/6.022\times10^{23}=8.303\times10^{-3}$~mol,
+$T=273$~K
+
+\[P(\ce{N2}) = \mathbf{1.12}\ \text{atm}, \quad
+P(\ce{O2}) = \mathbf{0.105}\ \text{atm}, \quad
+P(\ce{NH3}) = \mathbf{0.186}\ \text{atm}\]
+
+\[P_{\text{total}} = \mathbf{1.41}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{converts mg \ce{O2} and molecules \ce{NH3} to moles correctly}
+  \rpoint{1}{$P(\ce{N2})=\SI{1.12}{\atm}$}
+  \rpoint{1}{$P(\ce{O2})$ and $P(\ce{NH3})$ both correct}
+  \rpoint{1}{$P_{\text{total}}=\SI{1.41}{\atm}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.5 \textbullet\ equimolar mixture
+  \emph{(after Zumdahl Q96)}}
+
+A 1:1 molar mixture of nitrous oxide and oxygen (a dental sedative) totals
+\SI{2.50}{\atm}.
+
+Find the partial pressure of each gas.
+\workspace[2.5cm]
+\keyonly{\begin{apcanswer}Equal moles $\Rightarrow$ equal partial
+pressures:
+
+\[P(\ce{N2O}) = P(\ce{O2}) = \mathbf{1.25}\ \text{atm each}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes equal moles give equal partial pressures}
+  \rpoint{1}{\SI{1.25}{\atm} each}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ partial pressure from mass
+  fractions \emph{(after Zumdahl Q98)}}
+
+A tank holds \SI{52.5}{\gram} \ce{O2} and \SI{65.1}{\gram} \ce{CO2} at
+\SI{27}{\celsius}, total pressure \SI{9.21}{\atm}.
+
+Find the partial pressure of each gas.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}$n(\ce{O2})=52.5/32.00=1.641$~mol,
+$n(\ce{CO2})=65.1/44.01=1.479$~mol
+
+\[\chi(\ce{O2}) = \frac{1.641}{1.641+1.479} = 0.5259\]
+
+\[P(\ce{O2}) = 0.5259\times9.21 = \mathbf{4.84}\ \text{atm}\]
+
+\[P(\ce{CO2}) = 9.21-4.84 = \mathbf{4.37}\ \text{atm}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of both gases from their masses}
+  \rpoint{1}{mole fraction of \ce{O2}}
+  \rpoint{1}{both partial pressures correct}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ collection over water, find
+  volume \emph{(after Zumdahl Q100)}}
+
+\ce{He} is collected over water at \SI{25}{\celsius}, \SI{1.00}{\atm}
+total pressure. Water's vapor pressure at \SI{25}{\celsius} is
+\SI{23.8}{\torr}.
+
+What total gas volume must be collected to obtain \SI{0.586}{\gram}
+\ce{He}?
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$n(\ce{He})=0.586/4.003=0.1464$~mol
+
+\[P(\ce{He}) = 760-23.8 = 736.2\ \text{torr} = 0.9687\ \text{atm}\]
+
+\[V = \frac{nRT}{P(\ce{He})} = \frac{(0.1464)(0.08206)(298)}{0.9687}
+= \mathbf{3.70}\ \text{L}\]
+
+(This equals the \emph{total} collected volume, since \ce{He} and water
+vapor share the same container.)\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{He}}
+  \rpoint{1}{subtracts water's vapor pressure to find $P(\ce{He})$}
+  \rpoint{1}{\SI{3.70}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.5 \textbullet\ determining a product formula
+  from pressure changes \emph{(after Zumdahl Q102)}}
+
+A \SI{100.0}{\milli\liter} nickel container is filled with \ce{Xe} and
+\ce{F2} at partial pressures \SI{1.24}{\atm} and \SI{10.10}{\atm}
+respectively (\SI{25}{\celsius}). Heated to \SI{400}{\celsius}, the two
+react to form a xenon fluoride; the vessel is then cooled so that leftover
+\ce{F2} stays gaseous while the product becomes a nonvolatile solid. The
+remaining \ce{F2} is transferred to a second \SI{100.0}{\milli\liter}
+nickel container, where its pressure at \SI{25}{\celsius} is
+\SI{7.62}{\atm}.
+
+Assuming all the xenon reacted, find the formula of the product.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Step 1 --- initial moles} (both at
+298~K, \SI{0.1000}{\liter}):
+
+\[n(\ce{Xe}) = \frac{(1.24)(0.1000)}{(0.08206)(298)}
+= 5.071\times10^{-3}\ \text{mol}\]
+
+\[n(\ce{F2})_i = \frac{(10.10)(0.1000)}{(0.08206)(298)}
+= 4.130\times10^{-2}\ \text{mol}\]
+
+\textbf{Step 2 --- remaining \ce{F2}} (second container, same $V,T$):
+
+\[n(\ce{F2})_{\text{remaining}}
+= \frac{(7.62)(0.1000)}{(0.08206)(298)} = 3.116\times10^{-2}\ \text{mol}\]
+
+\textbf{Step 3 --- \ce{F2} consumed:}
+
+\[n(\ce{F2})_{\text{consumed}} = 0.04130-0.03116
+= 1.014\times10^{-2}\ \text{mol}\]
+
+\textbf{Step 4 --- ratio to \ce{Xe}:}
+
+\[\frac{n(\ce{F2})_{\text{consumed}}}{n(\ce{Xe})}
+= \frac{1.014\times10^{-2}}{5.071\times10^{-3}} = \mathbf{2.00}\]
+
+Each mole of \ce{F2} supplies 2~mol \ce{F} atoms, so a 2.00:1
+\ce{F2}:\ce{Xe} ratio means 4~mol \ce{F} per mol \ce{Xe}:
+
+\[\textbf{Product: \ce{XeF4}}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{initial moles of \ce{Xe} and \ce{F2}}
+  \rpoint{1}{moles of \ce{F2} remaining, from the second container}
+  \rpoint{1}{moles of \ce{F2} consumed, by subtraction}
+  \rpoint{1}{correct \ce{F2}:\ce{Xe} ratio, $\approx2.00$}
+  \rpoint{1}{converts the \ce{F2}:\ce{Xe} ratio to \ce{F}:\ce{Xe} and
+    identifies \ce{XeF4}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.5 \textbullet\ percent yield, continuous flow
+  \emph{(after Zumdahl Q103)}}
+
+\ce{CO(g) + 2H2(g) -> CH3OH(g)}. \ce{H2} at STP flows into a reactor at
+\SI{16.0}{\liter\per\minute}; \ce{CO} at STP flows in at
+\SI{25.0}{\liter\per\minute}. If \SI{5.30}{\gram} methanol forms per
+minute, find the percent yield.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}\[\frac{n(\ce{H2})}{\text{min}}
+= \frac{16.0}{22.42} = 0.7136\ \text{mol/min}, \quad
+\frac{n(\ce{CO})}{\text{min}} = \frac{25.0}{22.42}
+= 1.115\ \text{mol/min}\]
+
+Need 2:1 \ce{H2}:\ce{CO}; available ratio is only 0.640:1 ---
+\textbf{\ce{H2} is limiting}.
+
+\[\text{theoretical mass} = \frac{0.7136}{2}\times32.04
+= 11.43\ \text{g/min}\]
+
+\[\%\ \text{yield} = \frac{5.30}{11.43}\times100
+= \mathbf{46.4\%}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles per minute of both reactants}
+  \rpoint{1}{identifies \ce{H2} as limiting}
+  \rpoint{1}{correct theoretical yield}
+  \rpoint{1}{46.4\% yield}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.5 \textbullet\ fermentation headspace pressure
+  \emph{(after Zumdahl Q104)}}
+
+In the "M\'ethode Champenoise" process, grape juice ferments inside a
+sealed bottle to produce sparkling wine:
+\ce{C6H12O6(aq) -> 2C2H5OH(aq) + 2CO2(g)}. \SI{750.}{\milli\liter} grape
+juice (density \SI{1.0}{\gram\per\milli\liter}) ferments in an
+\SI{825}{\milli\liter} bottle until 12\% of the liquid's \emph{volume} is
+ethanol (density \SI{0.79}{\gram\per\milli\liter}).
+
+Assuming (incorrectly) that the \ce{CO2} is insoluble in the liquid, find
+the \ce{CO2} pressure inside the bottle at \SI{25}{\celsius}.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}ethanol volume $=0.12\times750=90.0$~mL,
+mass $=90.0\times0.79=71.1$~g, $n=71.1/46.07=1.543$~mol
+
+1:1 ratio with \ce{CO2}: $n(\ce{CO2})=1.543$~mol
+
+Headspace volume $=825-750=75$~mL$=0.075$~L, $T=298$~K:
+
+\[P(\ce{CO2}) = \frac{nRT}{V}
+= \frac{(1.543)(0.08206)(298)}{0.075} = \mathbf{503}\ \text{atm}\]
+
+This is not a typo --- it is a genuinely unphysical pressure (no ordinary
+bottle survives \SI{500}{\atm}). That is the point of the exercise: the
+assumption that \emph{all} the \ce{CO2} stays gaseous in a tiny headspace
+is badly wrong, and the calculation shows exactly why real \ce{CO2}
+\emph{must} stay dissolved until the cork is pulled.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{ethanol mass and moles from the 12\% volume condition}
+  \rpoint{1}{applies the 1:1 mole ratio to find $n(\ce{CO2})$}
+  \rpoint{1}{correct headspace volume, \SI{75}{\milli\liter}}
+  \rpoint{1}{$\approx\SI{503}{\atm}$, with the physical interpretation}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.5 \textbullet\ volume change on reaction
+  \emph{(after Zumdahl Q106)}}
+
+Equal moles of \ce{SO2} and \ce{O2} are mixed in a flexible (constant
+$T,P$) container and sparked: \ce{2SO2(g) + O2(g) -> 2SO3(g)}.
+
+Assuming the reaction completes, find the ratio of final to initial
+gas-mixture volume.
+\workspace[4cm]
+\keyonly{\begin{apcanswer}Basis: $n$ mol \ce{SO2} + $n$ mol \ce{O2}
+($2n$ total initially). The 2:1 ratio needs only $n/2$~mol \ce{O2} to
+consume all the \ce{SO2} --- \textbf{\ce{SO2} is limiting}, \ce{O2} is in
+excess.
+
+\ce{O2} remaining $=n-n/2=n/2$; \ce{SO3} produced $=n$.
+
+Final total $=n+n/2=1.5n$.
+
+\[\frac{V_{\text{final}}}{V_{\text{initial}}} = \frac{1.5n}{2n}
+= \mathbf{0.75}\ (3:4)\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{identifies \ce{SO2} as limiting despite the equimolar setup}
+  \rpoint{1}{correctly finds the final total moles, $1.5n$}
+  \rpoint{1}{ratio $=0.75$ (or 3:4)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.5 \textbullet\ mixture composition from a
+  pressure drop \emph{(after Zumdahl Q108)}}
+
+Group 2A metal oxides react with \ce{CO2}: \ce{MO(s) + CO2(g) -> MCO3(s)}.
+A \SI{2.85}{\gram} sample containing only \ce{MgO} and \ce{CuO} (only
+\ce{MgO} reacts with \ce{CO2}) sits in a \SI{3.00}{\liter} container
+filled with \ce{CO2} to \SI{740.}{\torr} at \SI{20.}{\celsius}. After the
+reaction completes, the pressure is \SI{390.}{\torr} at the same
+temperature.
+
+Find the mass percent of \ce{MgO} in the mixture.
+\workspace[5.5cm]
+\keyonly{\begin{apcanswer}$T=293$~K
+
+\[n(\ce{CO2})_i = \frac{(740/760)(3.00)}{(0.08206)(293)} = 0.1215\ \text{mol}\]
+
+\[n(\ce{CO2})_f = \frac{(390/760)(3.00)}{(0.08206)(293)} = 0.06403\ \text{mol}\]
+
+\[n(\ce{CO2})_{\text{consumed}} = n(\ce{MgO}) = 0.1215-0.06403
+= 0.05747\ \text{mol}\]
+
+$M(\ce{MgO})=24.31+16.00=40.31$~g/mol:
+
+\[\text{mass \ce{MgO}} = 0.05747\times40.31 = 2.317\ \text{g}\]
+
+\[\%\ \ce{MgO} = \frac{2.317}{2.85}\times100 = \mathbf{81.3\%}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{CO2} before and after the reaction}
+  \rpoint{1}{moles of \ce{CO2} consumed equals moles of \ce{MgO}}
+  \rpoint{1}{mass of \ce{MgO} using its correct molar mass}
+  \rpoint{1}{81.3\%}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.6 \textbullet\ atmospheric pressure and
+  altitude \emph{(after Zumdahl Q126)}}
+
+A \SI{1.0}{\liter} sample of air is collected at \SI{25}{\celsius}, sea
+level (\SI{1.00}{\atm}).
+
+Estimate this sample's volume at \SI{15}{\kilo\meter} altitude, where
+pressure is about \SI{0.1}{\atm} (treat temperature as approximately
+constant for this estimate).
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Boyle's law:
+
+\[V_2 = V_1\times\frac{P_1}{P_2} = 1.0\times\frac{1.00}{0.1}
+= \mathbf{10}\ \text{L}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{applies Boyle's law}
+  \rpoint{1}{\SI{10}{\liter}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.6 \textbullet\ acid rain
+  \emph{(after Zumdahl Q128)}}
+
+Write a balanced equation showing how sulfuric acid in acid rain reacts
+with marble and limestone (both primarily calcium carbonate).
+\workspace[2.5cm]
+\keyonly{\begin{apcanswer}\[\ce{H2SO4(aq) + CaCO3(s) -> CaSO4(aq)
++ H2O(l) + CO2(g)}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct products (\ce{CaSO4}, \ce{H2O}, \ce{CO2})}
+  \rpoint{1}{correctly balanced (all coefficients 1)}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.6 \textbullet\ trace-gas concentration, ppmv
+  \emph{(after Zumdahl Q129)}}
+
+Atmospheric scientists report trace-compound concentrations in ppmv:
+$\text{ppmv of X} = (V_X/V_{\text{air}})\times10^6$ at the same $T,P$
+(equal to mole fraction $\times10^6$). On a November day, downtown
+Denver's \ce{CO} concentration reached $3.0\times10^2$~ppmv; atmospheric
+pressure was \SI{628}{\torr}, temperature \SI{0}{\celsius}.
+
+\begin{parts}
+  \item Find the partial pressure of \ce{CO}.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$\chi(\ce{CO})=3.0\times10^{-4}$;
+        $P(\ce{CO})=3.0\times10^{-4}\times628=\mathbf{0.188}$~torr\end{apcanswer}}
+  \item Find the \ce{CO} concentration in molecules per cubic meter.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$P(\ce{CO})=0.188/760
+        =2.479\times10^{-4}$~atm, $T=273$~K
+
+        \[\frac{n}{V} = \frac{P}{RT} = 1.107\times10^{-5}\ \text{mol/L}
+        = 1.107\times10^{-2}\ \text{mol/m}^3\]
+
+        \[\times 6.022\times10^{23}
+        = \mathbf{6.66\times10^{21}}\ \text{molecules/m}^3\]
+        \end{apcanswer}}
+  \item Find the \ce{CO} concentration in molecules per cubic centimeter.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$6.66\times10^{21}\div10^6
+        = \mathbf{6.66\times10^{15}}$~molecules/cm$^3$\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{0.188}{\torr}}
+  \rpoint{1}{(b) converts to molarity via $P/RT$}
+  \rpoint{1}{(b) $6.66\times10^{21}$~molecules/m$^3$}
+  \rpoint{1}{(c) $6.66\times10^{15}$~molecules/cm$^3$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.6 \textbullet\ two trace pollutants, ppmv
+  \emph{(after Zumdahl Q130)}}
+
+Trace organics are concentrated by pumping air through a porous trap,
+then released for analysis by gas chromatography. A \SI{3.00}{\liter} air
+sample at \SI{748}{\torr}, \SI{23}{\celsius} was passed through a trap,
+yielding \SI{89.6}{\nano\gram} benzene (\ce{C6H6}) and
+\SI{153}{\nano\gram} toluene (\ce{C7H8}).
+
+Find the mixing ratio (ppmv, as in the previous problem) and the
+concentration in molecules per cubic centimeter, for both compounds.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}$P=748/760=0.9842$~atm, $T=296$~K
+
+\[n_{\text{air}} = \frac{PV}{RT} = \frac{(0.9842)(3.00)}
+{(0.08206)(296)} = 0.1216\ \text{mol}\]
+
+\textbf{Benzene:} $n=89.6\times10^{-9}/78.11=1.147\times10^{-9}$~mol
+
+\[\text{ppmv} = \frac{1.147\times10^{-9}}{0.1216}\times10^6
+= \mathbf{9.44\times10^{-3}}\]
+
+\[\text{conc.} = \frac{1.147\times10^{-9}\times6.022\times10^{23}}
+{3000\ \text{cm}^3} = \mathbf{2.30\times10^{11}}\ \text{molecules/cm}^3\]
+
+\textbf{Toluene:} $n=153\times10^{-9}/92.14=1.661\times10^{-9}$~mol
+
+\[\text{ppmv} = \frac{1.661\times10^{-9}}{0.1216}\times10^6
+= \mathbf{1.37\times10^{-2}}\]
+
+\[\text{conc.} = \frac{1.661\times10^{-9}\times6.022\times10^{23}}
+{3000\ \text{cm}^3} = \mathbf{3.33\times10^{11}}\ \text{molecules/cm}^3\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{total moles of air in the sampled volume}
+  \rpoint{1}{both compounds' moles from their nanogram masses}
+  \rpoint{1}{both ppmv values correct}
+  \rpoint{1}{both molecules/cm$^3$ concentrations correct}
+\end{rubric}
+
+% ============================================================================
+% SESSION 5
+% ============================================================================
+\clearpage
+\examsection{F}{Kinetic Molecular Theory and Real Gases}
+  {13 questions \textbullet\ 39 points}{\calculatorok}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.6 \textbullet\ average kinetic energy
+  \emph{(after Zumdahl Q109)}}
+
+Find the average kinetic energy per mole of \ce{CH4(g)} \emph{and} of
+\ce{N2(g)} at \SI{273}{\kelvin} and at \SI{546}{\kelvin}.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}$KE=\tfrac32RT$ depends only on $T$, \textbf{not}
+on molar mass --- so \ce{CH4} and \ce{N2} have the identical value at each
+temperature:
+
+\[KE(\SI{273}{\kelvin}) = \tfrac32(8.3145)(273)
+= \mathbf{3.40\times10^3}\ \text{J/mol}\]
+
+\[KE(\SI{546}{\kelvin}) = \mathbf{6.81\times10^3}\ \text{J/mol}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes $KE$ is identical for both gases at a given $T$}
+  \rpoint{1}{both correct values, and that doubling $T$ doubles $KE$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.6 \textbullet\ total kinetic energy of a
+  mixture \emph{(after Zumdahl Q110)}}
+
+A \SI{100.}{\liter} flask holds \ce{CH4} and \ce{Ar} at \SI{25}{\celsius}.
+Argon present: \SI{228}{\gram}; methane's mole fraction is $0.650$.
+
+Find the total kinetic energy of the mixture.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}$n(\ce{Ar})=228/39.95=5.707$~mol.
+$\chi(\ce{Ar})=0.350$, so:
+
+\[n_{\text{total}} = \frac{5.707}{0.350} = 16.31\ \text{mol}\]
+
+$KE_{\text{total}}$ needs only $n_{\text{total}}$, since $KE$ per mole is
+identical for every gas at a given $T$:
+
+\[KE_{\text{total}} = n_{\text{total}}\times\tfrac32RT
+= 16.31\times1.5\times8.3145\times298
+= \mathbf{6.06\times10^4}\ \text{J}\ (60.6\ \text{kJ})\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{Ar}}
+  \rpoint{1}{total moles from the mole fraction}
+  \rpoint{1}{\SI{60.6}{\kilo\joule}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.6 \textbullet\ four root-mean-square velocities
+  \textbf{[beyond CED]} \emph{(after Zumdahl Q111)}}
+
+Find the root-mean-square velocity of \ce{CH4(g)} and of \ce{N2(g)}, each
+at \SI{273}{\kelvin} and at \SI{546}{\kelvin} (four values total).
+\workspace[5cm]
+\keyonly{\begin{apcanswer}$M(\ce{CH4})=\SI{0.01604}{\kilo\gram\per\mole}$,
+$M(\ce{N2})=\SI{0.02802}{\kilo\gram\per\mole}$
+
+\[\ce{CH4},\ \SI{273}{\kelvin}:\ \mathbf{652}\ \text{m/s} \qquad
+\ce{CH4},\ \SI{546}{\kelvin}:\ \mathbf{921}\ \text{m/s}\]
+
+\[\ce{N2},\ \SI{273}{\kelvin}:\ \mathbf{493}\ \text{m/s} \qquad
+\ce{N2},\ \SI{546}{\kelvin}:\ \mathbf{697}\ \text{m/s}\]
+
+At fixed $T$, the lighter gas (\ce{CH4}) always moves faster; doubling $T$
+scales every speed by $\sqrt2$.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct formula $u_{\text{rms}}=\sqrt{3RT/M}$ applied with
+    $M$ in kg/mol}
+  \rpoint{1}{both \ce{CH4} values correct}
+  \rpoint{1}{both \ce{N2} values correct}
+  \rpoint{1}{notes the $\sqrt2$ scaling and that \ce{CH4} is always faster}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.6 \textbullet\ matching speeds across two
+  gases \textbf{[beyond CED]} \emph{(after Zumdahl Q112)}}
+
+Separate \SI{1.0}{\liter} samples of \ce{He(g)} and \ce{UF6(g)}, both at
+\SI{1.00}{\atm} with equal moles.
+
+What temperature ratio $T(\ce{UF6})/T(\ce{He})$ gives them equal
+root-mean-square velocity?
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Setting $u_{\text{rms}}$ equal cancels the
+common factors:
+
+\[\frac{T(\ce{UF6})}{T(\ce{He})} = \frac{M(\ce{UF6})}{M(\ce{He})}
+= \frac{352.03}{4.003} = \mathbf{87.9}\]
+
+\ce{UF6} would need to be almost 88 times hotter (in kelvin) than
+\ce{He} to move at the same speed.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{sets $\sqrt{3RT_{\ce{He}}/M_{\ce{He}}}
+    =\sqrt{3RT_{\ce{UF6}}/M_{\ce{UF6}}}$ and simplifies}
+  \rpoint{1}{ratio $\approx88$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.6 \textbullet\ conceptual, shrinking a piston
+  \emph{(after Zumdahl Q113)}}
+
+A gas-filled cylinder with a movable piston, held at \SI{1.00}{\atm},
+shows its volume decreasing.
+
+State two \emph{distinct} changes to the system that would produce this
+volume decrease, and briefly explain why each works.
+\workspace[3.5cm]
+\keyonly{\begin{apcanswer}\textbf{(1)} Lower the temperature at constant
+$n,P$ --- $V\propto T$, so cooling shrinks the volume.
+
+\textbf{(2)} Remove some gas (decrease $n$) at constant $T,P$ ---
+$V\propto n$, so less gas occupies less space.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{lowering temperature, with the $V\propto T$ reasoning}
+  \rpoint{1}{removing gas, with the $V\propto n$ reasoning}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.6 \textbullet\ conceptual, doubling a piston's
+  volume \emph{(after Zumdahl Q114)}}
+
+A cylinder with a weighted piston shows its volume doubling once the
+weights are removed.
+
+State three \emph{distinct} changes that would double the gas's volume,
+and briefly explain each.
+\workspace[4.5cm]
+\keyonly{\begin{apcanswer}\textbf{(1)} Halve the pressure at constant
+$n,T$ --- $V\propto1/P$ (this is exactly what removing weight from the
+piston does).
+
+\textbf{(2)} Double the absolute temperature at constant $n,P$ ---
+$V\propto T$.
+
+\textbf{(3)} Double the moles of gas at constant $T,P$ --- $V\propto n$.
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{halving pressure, with reasoning}
+  \rpoint{1}{doubling temperature, with reasoning}
+  \rpoint{1}{doubling moles, with reasoning}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.6 \textbullet\ KMT reasoning across four changes
+  \emph{(after Zumdahl Q115)}}
+
+For a \SI{1.0}{\liter} container of neon gas at STP, state whether average
+kinetic energy, average velocity, and wall-collision frequency increase,
+decrease, or stay the same when:
+
+\begin{parts}
+  \item Temperature rises to \SI{100}{\celsius}.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}All three \textbf{increase} --- faster molecules
+        that also hit the walls more often.\end{apcanswer}}
+  \item Temperature drops to \SI{-50}{\celsius}.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}All three \textbf{decrease}.\end{apcanswer}}
+  \item Volume drops to \SI{0.5}{\liter} ($T,n$ constant).
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$KE$ and average velocity are \textbf{unchanged}
+        (depend only on $T$); collision frequency \textbf{increases} ---
+        the same particles now pack into half the space, so they strike
+        the walls more often even at the same speed.\end{apcanswer}}
+  \item The moles of neon double ($T,V$ constant).
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}$KE$ and average velocity are \textbf{unchanged};
+        collision frequency \textbf{increases} --- twice as many
+        particles means twice as many wall strikes per second.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) all three increase}
+  \rpoint{1}{(b) all three decrease}
+  \rpoint{1}{(c) $KE$/velocity unchanged, collision frequency increases,
+    with reasoning}
+  \rpoint{1}{(d) $KE$/velocity unchanged, collision frequency increases,
+    with reasoning}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.6 \textbullet\ comparing two unknown gases
+  \emph{(after Zumdahl Q116)}}
+
+Two \SI{1.0}{\liter} containers hold different gases at the same
+temperature and pressure. Container A holds \SI{0.34}{\gram}; container B
+holds \SI{0.48}{\gram}.
+
+\begin{parts}
+  \item Which sample has more molecules present? Explain.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Equal} --- same $T,P,V$ means equal moles
+        by $PV=nRT$, regardless of mass or identity.\end{apcanswer}}
+  \item Which sample has the greater average kinetic energy? Explain.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Equal} --- $KE$ depends only on $T$.\end{apcanswer}}
+  \item Which sample has the faster average velocity? Explain.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}\textbf{A} (the lighter gas) --- since
+        $u_{\text{rms}}\propto1/\sqrt{M}$ at fixed $T$, and A has fewer
+        grams for the same moles, A's molar mass is smaller.\end{apcanswer}}
+  \item If B's heavier molecules hit the walls harder, how can the
+        pressure in both containers be equal?
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}B's molecules move proportionally
+        \emph{slower} (lower $u_{\text{rms}}$) by exactly the amount that
+        offsets their greater mass per collision --- the two effects
+        cancel, which is exactly what makes $PV=nRT$ identity-independent.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) equal molecules, justified via $PV=nRT$}
+  \rpoint{1}{(b) equal $KE$, justified via $T$}
+  \rpoint{1}{(c) A faster, justified via $u_{\text{rms}}\propto1/\sqrt M$}
+  \rpoint{1}{(d) explains the mass/speed trade-off that keeps pressure
+    equal}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{3}{Zumdahl \S5.6 \textbullet\ ranking four gases
+  \textbf{[beyond CED]} \emph{(after Zumdahl Q118)}}
+
+Separate \SI{1.0}{\liter} samples of \ce{H2}, \ce{Xe}, \ce{Cl2}, and
+\ce{O2}, all at STP.
+
+\begin{parts}
+  \item Rank the gases by increasing average kinetic energy.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}\textbf{All equal} --- $KE$ depends only on $T$,
+        which is the same (STP) for all four.\end{apcanswer}}
+  \item Rank the gases by increasing average velocity.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}\ce{Xe} (228 m/s) $<$ \ce{Cl2} (310 m/s)
+        $<$ \ce{O2} (461 m/s) $<$ \textbf{\ce{H2}} (1840 m/s) ---
+        lightest moves fastest.\end{apcanswer}}
+  \item How could \ce{O2} and \ce{H2} samples ever have the \emph{same}
+        average velocity?
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}Only at different temperatures: \ce{O2} would
+        need to be $M(\ce{O2})/M(\ce{H2})\approx16$ times hotter (in
+        kelvin) than \ce{H2}.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) all equal, with the $T$-only reasoning}
+  \rpoint{1}{(b) correct increasing order by $u_{\text{rms}}$}
+  \rpoint{1}{(c) identifies that only a $\approx16\times$ temperature gap
+    could equalize them}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{3}{Zumdahl \S5.7 \textbullet\ identifying a gas by effusion
+  \textbf{[beyond CED]} \emph{(after Zumdahl Q119)}}
+
+An unknown gas effuses at \SI{31.50}{\milli\liter\per\minute}; \ce{O2(g)}
+effuses at \SI{30.50}{\milli\liter\per\minute} under identical conditions.
+
+Identify the unknown gas (candidates: \ce{CH4}, \ce{CO}, \ce{NO},
+\ce{CO2}, \ce{NO2}).
+\workspace[4cm]
+\keyonly{\begin{apcanswer}\[M_{\text{unknown}} = M(\ce{O2})\times
+\left(\frac{\text{rate}(\ce{O2})}{\text{rate}_{\text{unknown}}}\right)^2
+= 32.00\times\left(\frac{30.50}{31.50}\right)^2
+= \mathbf{30.0}\ \text{g/mol}\]
+
+This matches \ce{NO} ($\SI{30.01}{\gram\per\mole}$) almost exactly ---
+every other candidate is off by more than 1~g/mol.
+
+\[\textbf{Identity: \ce{NO}}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct Graham's law setup, with \ce{O2}'s rate in the
+    numerator}
+  \rpoint{1}{$M\approx\SI{30.0}{\gram\per\mole}$}
+  \rpoint{1}{identifies \ce{NO}, ruling out the other candidates}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.7 \textbullet\ unknown molar mass from
+  effusion \textbf{[beyond CED]} \emph{(after Zumdahl Q120)}}
+
+An unknown gas effuses at \SI{24.0}{\milli\liter\per\minute}; pure
+\ce{CH4(g)} effuses at \SI{47.8}{\milli\liter\per\minute} under identical
+conditions.
+
+Find the unknown gas's molar mass.
+\workspace[3cm]
+\keyonly{\begin{apcanswer}\[M_{\text{unknown}} = M(\ce{CH4})\times
+\left(\frac{\text{rate}(\ce{CH4})}{\text{rate}_{\text{unknown}}}\right)^2
+= 16.04\times\left(\frac{47.8}{24.0}\right)^2
+= \mathbf{63.6}\ \text{g/mol}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct Graham's law setup}
+  \rpoint{1}{\SI{63.6}{\gram\per\mole}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{short}{2}{Zumdahl \S5.7 \textbullet\ effusion time comparison
+  \textbf{[beyond CED]} \emph{(after Zumdahl Q122)}}
+
+\SI{1.0}{\liter} helium takes \SI{4.5}{\minute} to effuse through a porous
+barrier.
+
+How long would \SI{1.0}{\liter} \ce{Cl2} gas take, under identical
+conditions?
+\workspace[3cm]
+\keyonly{\begin{apcanswer}Effusion \emph{time} scales as $\sqrt{M}$
+(inverse of rate):
+
+\[t(\ce{Cl2}) = t(\ce{He})\times\sqrt{\frac{M(\ce{Cl2})}{M(\ce{He})}}
+= 4.5\times\sqrt{\frac{70.90}{4.003}} = \mathbf{18.9}\ \text{min}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes time scales as $\sqrt M$, not $1/\sqrt M$}
+  \rpoint{1}{\SI{18.9}{\minute}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.8 \textbullet\ van der Waals versus ideal
+  \textbf{[beyond CED]} \emph{(after Zumdahl Q124)}}
+
+\SI{0.5000}{\mole} \ce{N2} sits in a \SI{10.000}{\liter} container at
+\SI{25.0}{\celsius}.
+
+Van der Waals constants for \ce{N2}:
+$a=\SI{1.39}{\liter\squared\atm\per\mole\squared}$,
+$b=\SI{0.0391}{\liter\per\mole}$.
+
+\begin{parts}
+  \item Find the pressure using the ideal gas law.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}$P=nRT/V=\mathbf{1.223}$~atm\end{apcanswer}}
+  \item Find the pressure using the van der Waals equation.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}\[P = \frac{nRT}{V-nb}
+        - a\left(\frac{n}{V}\right)^2
+        = \frac{(0.5000)(0.08206)(298.15)}{10.000-(0.5000)(0.0391)}
+        - 1.39\left(\frac{0.5000}{10.000}\right)^2
+        = \mathbf{1.222}\ \text{atm}\]\end{apcanswer}}
+  \item Compare the two results.
+        \workspace[2.5cm]
+        \keyonly{\begin{apcanswer}They differ by only about
+        \textbf{0.09\%} --- at \SI{10.0}{\liter} this gas behaves almost
+        ideally.\end{apcanswer}}
+  \item Repeat parts (a)--(b) for the \emph{same} \SI{0.5000}{\mole} in a
+        \SI{1.0000}{\liter} container instead, and compare the size of the
+        deviation to part (c).
+        \workspace[4cm]
+        \keyonly{\begin{apcanswer}Ideal: $P=nRT/V=\mathbf{12.23}$~atm.
+
+        Van der Waals: $P=\dfrac{nRT}{V-nb}-a(n/V)^2=\mathbf{12.13}$~atm.
+
+        \% difference $\approx\mathbf{0.85\%}$ --- about \textbf{10 times
+        larger} than the 10.0~L case. Compressing the same moles into a
+        tenth of the volume raises the pressure roughly tenfold, and the
+        van der Waals corrections grow with it: this is exactly the
+        "close to condensation / high pressure" regime CED~3.6 describes
+        qualitatively.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) \SI{1.223}{\atm}}
+  \rpoint{1}{(b) \SI{1.222}{\atm}}
+  \rpoint{1}{(c) correctly compares, $\approx0.09\%$ difference}
+  \rpoint{2}{(d) both 1.0~L values correct AND correctly identifies the
+    much larger ($\approx10\times$) deviation at higher pressure}
+\end{rubric}
+
+% ============================================================================
+% SESSION 6
+% ============================================================================
+\clearpage
+\examsection{G}{Challenge Extension}{13 questions \textbullet\ 75 points
+  \textbullet\ separate sitting}{\calculatorok}
+
+\begin{apcnote}[About Part G]
+Every Challenge Problem printed on Zumdahl's Chapter~5 review pages is
+here. These go well past what the AP exam will ask -- multi-gas mixture
+mass balances, hot-air-balloon lift calculations, and van der Waals
+derivations -- but every technique is one you already used in Sessions
+1--5, just layered together.
+\end{apcnote}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{Zumdahl \S5.4 \textbullet\ two-oxide mixture from a pressure
+  drop \emph{(after Zumdahl Q157)}}
+
+A \SI{5.14}{\gram} mixture of \ce{BaO(s)} and \ce{CaO(s)} is placed in a
+\SI{1.50}{\liter} flask containing \ce{CO2(g)} at \SI{30.0}{\celsius} and
+\SI{750.}{\torr}: \ce{BaO(s) + CO2(g) -> BaCO3(s)} and
+\ce{CaO(s) + CO2(g) -> CaCO3(s)}. After the reaction completes, the
+remaining \ce{CO2(g)} pressure is \SI{230.}{\torr} at the same
+temperature.
+
+Find the mass percent of \ce{CaO} and of \ce{BaO} in the original mixture.
+\workspace[7.5cm]
+\keyonly{\begin{apcanswer}$T=303.15$~K
+
+\[n(\ce{CO2})_i = \frac{(750/760)(1.50)}{(0.08206)(303.15)}
+= 0.05950\ \text{mol}\]
+
+\[n(\ce{CO2})_f = \frac{(230/760)(1.50)}{(0.08206)(303.15)}
+= 0.01825\ \text{mol}\]
+
+\[n(\ce{CO2})_{\text{consumed}} = 0.05950-0.01825 = 0.04126\ \text{mol}
+= x(\ce{BaO})+x(\ce{CaO})\]
+
+Both oxides react 1:1 with \ce{CO2}, so this is a system in two unknowns
+($x=$~mol \ce{BaO}, $y=$~mol \ce{CaO}$)$:
+
+\[x+y = 0.04126 \qquad 153.33x+56.08y = 5.14\]
+
+Solving: $x=0.02906$~mol \ce{BaO}, $y=0.01219$~mol \ce{CaO}.
+
+mass \ce{BaO} $=0.02906\times153.33=4.456$~g;
+mass \ce{CaO} $=0.01219\times56.08=0.684$~g.
+
+\[\%\ce{BaO} = \frac{4.456}{5.14}\times100 = \mathbf{86.7\%} \qquad
+\%\ce{CaO} = \mathbf{13.3\%}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{CO2} before the reaction}
+  \rpoint{1}{moles of \ce{CO2} after the reaction}
+  \rpoint{1}{moles of \ce{CO2} consumed equals total moles of oxide}
+  \rpoint{1}{sets up the correct two-equation system (mass and mole
+    balance)}
+  \rpoint{1}{solves for both masses correctly}
+  \rpoint{1}{86.7\% \ce{BaO}, 13.3\% \ce{CaO}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{Zumdahl \S5.4 \textbullet\ metal-alloy composition from
+  \ce{H2} volume \emph{(after Zumdahl Q158)}}
+
+A \SI{0.362}{\gram} mixture of chromium and zinc is reacted with excess
+hydrochloric acid: \ce{Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)} and
+\ce{2Cr(s) + 6HCl(aq) -> 2CrCl3(aq) + 3H2(g)}. After all the metal
+reacts, \SI{225}{\milli\liter} dry \ce{H2} is collected at
+\SI{27}{\celsius}, \SI{750.}{\torr}.
+
+Determine the mass percent of \ce{Zn} in the metal sample.
+\workspace[7.5cm]
+\keyonly{\begin{apcanswer}\[n(\ce{H2}) = \frac{(750/760)(0.225)}
+{(0.08206)(300)} = 0.009019\ \text{mol}\]
+
+Each mole \ce{Zn} produces 1~mol \ce{H2}; each mole \ce{Cr} produces
+1.5~mol \ce{H2}. With $x=$~mol \ce{Zn}, $y=$~mol \ce{Cr}:
+
+\[65.38x+52.00y = 0.362 \qquad x+1.5y = 0.009019\]
+
+Solving: $y=0.004942$~mol \ce{Cr}, $x=0.001606$~mol \ce{Zn}.
+
+mass \ce{Zn} $=0.001606\times65.38=0.1050$~g;
+mass \ce{Cr} $=0.004942\times52.00=0.2570$~g (sum checks: 0.3620~g).
+
+\[\%\ce{Zn} = \frac{0.1050}{0.362}\times100 = \mathbf{29.0\%}\]
+\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{moles of \ce{H2} collected}
+  \rpoint{1}{correctly relates 1~mol \ce{Zn} to 1~mol \ce{H2} and 1~mol
+    \ce{Cr} to 1.5~mol \ce{H2}}
+  \rpoint{1}{sets up the two-equation system}
+  \rpoint{1}{solves for both metals' moles}
+  \rpoint{1}{both masses check against the \SI{0.362}{\gram} total}
+  \rpoint{1}{29.0\% \ce{Zn}}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{Zumdahl \S5.4 \textbullet\ identifying a hydrocarbon from
+  its combustion products \emph{(after Zumdahl Q159)}}
+
+A hydrocarbon sample (\ce{C} and \ce{H} only) at \SI{0.959}{\atm},
+\SI{298}{\kelvin} is burned completely in oxygen, producing a mixture of
+gaseous \ce{CO2} and \ce{H2O} at \SI{1.51}{\atm}, \SI{375}{\kelvin},
+density \SI{1.391}{\gram\per\liter}, occupying a volume \textbf{four
+times} as large as the original hydrocarbon sample's.
+
+Determine the molecular formula of the hydrocarbon.
+\workspace[8cm]
+\keyonly{\begin{apcanswer}Let the hydrocarbon be $\ce{C}_x\ce{H}_y$, so
+
+\[\ce{C}_x\ce{H}_y + \left(x+\frac{y}{4}\right)\ce{O2}
+\longrightarrow x\,\ce{CO2} + \frac{y}{2}\ce{H2O}\]
+
+\textbf{Step 1 --- total product moles per mole hydrocarbon.} With
+$n_{\text{HC}}=P_1V/(RT_1)$ and $n_{\text{products}}=P_2(4V)/(RT_2)$, the
+sample volume $V$ cancels:
+
+\[\frac{n_{\text{products}}}{n_{\text{HC}}}
+= \frac{4P_2T_1}{P_1T_2}
+= \frac{4(1.51)(298)}{(0.959)(375)} = 5.00 = x+\frac{y}{2}\]
+
+(this is exactly the moles of \ce{CO2} plus \ce{H2O} produced per mole of
+hydrocarbon burned).
+
+\textbf{Step 2 --- average molar mass of the product mixture,} from its
+density:
+
+\[M_{\text{avg}} = \frac{dRT_2}{P_2}
+= \frac{(1.391)(0.08206)(375)}{1.51} = 28.3\ \text{g/mol}\]
+
+\textbf{Step 3 --- solve the two equations.} With
+$A=x+y/2=5.00$ and $M_{\text{avg}}=[44.01x+18.02(A-x)]/A$:
+
+\[x = \frac{A(M_{\text{avg}}-18.02)}{44.01-18.02} \approx 2, \qquad
+\frac{y}{2} = A-x \approx 3 \Rightarrow y\approx6\]
+
+\[\textbf{Molecular formula: \ce{C2H6} (ethane)}\]
+
+Check: pure \ce{C2H6} combustion gives $A=x+y/2=2+3=5$ exactly, and
+$M_{\text{avg}}=[2(44.01)+3(18.02)]/5=28.4$~g/mol --- both match the
+measured values to within rounding.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{writes the general combustion equation for $\ce{C}_x\ce{H}_y$}
+  \rpoint{1}{finds $x+y/2\approx5.00$ from the mole-ratio relationship
+    (volume must cancel)}
+  \rpoint{1}{finds $M_{\text{avg}}\approx\SI{28.3}{\gram\per\mole}$ of the
+    product mixture}
+  \rpoint{2}{solves the two equations for $x\approx2$, $y\approx6$}
+  \rpoint{1}{identifies \ce{C2H6} and verifies against both checks}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{Zumdahl \S5.4 \textbullet\ mixture density before and after
+  reaction \emph{(after Zumdahl Q160)}}
+
+An equimolar mixture of \ce{SO2} and \ce{O2}, plus some \ce{He}, sits in a
+piston-fitted container (constant $T,P$). The mixture's density at STP is
+\SI{1.924}{\gram\per\liter}.
+
+\begin{parts}
+  \item What is the mole fraction of \ce{He} in the original mixture?
+        \workspace[5cm]
+        \keyonly{\begin{apcanswer}Let $m=$~mol \ce{SO2}$=$mol \ce{O2}
+        (equimolar), $h=$~mol \ce{He}.
+
+        \[M_{\text{avg}} = d\times22.42 = 1.924\times22.42
+        = 43.14\ \text{g/mol}\]
+
+        \[M_{\text{avg}}(2m+h) = m(64.07)+m(32.00)+h(4.003)\]
+
+        Solving for the ratio $m/h$:
+
+        \[\frac{m}{h} = \frac{4.003-M_{\text{avg}}}{2M_{\text{avg}}-96.07}
+        = \mathbf{3.994}\]
+
+        \[\chi(\ce{He}) = \frac{h}{2m+h} = \frac{1}{2(3.994)+1}
+        = \mathbf{0.111}\ (11.1\%)\]\end{apcanswer}}
+  \item \ce{SO2} and \ce{O2} react to completion:
+        \ce{2SO2(g) + O2(g) -> 2SO3(g)}. Find the density of the gas
+        mixture after the reaction completes (same STP conditions).
+        \workspace[6cm]
+        \keyonly{\begin{apcanswer}Equimolar \ce{SO2}:\ce{O2} needs a 2:1
+        ratio to fully react, so with only 1:1 available,
+        \textbf{\ce{SO2} is limiting} --- \ce{O2} is left over.
+
+        \ce{SO3} produced $=m$; \ce{O2} remaining $=m-m/2=m/2$;
+        \ce{He} unchanged $=h$.
+
+        New total moles $=m+m/2+h=1.5m+h$. \textbf{Total mass is
+        conserved} (no mass enters or leaves):
+
+        \[\text{total mass} = m(64.07)+m(32.00)+h(4.003)\]
+
+        Using the $m/h=3.994$ ratio (take $h=1$, $m=3.994$):
+
+        \[\text{mass}=3.994(96.07)+4.003=387.7\ \text{(arb. units)},
+        \quad n_{\text{new}}=1.5(3.994)+1=6.991\]
+
+        \[M_{\text{avg,new}} = \frac{387.7}{6.991} = 55.5\ \text{g/mol}\]
+
+        \[d_{\text{new}} = \frac{M_{\text{avg,new}}}{22.42}
+        = \mathbf{2.47}\ \text{g/L}\]
+
+        (Higher than the original \SI{1.924}{\gram\per\liter} --- the
+        same total mass is now packed into fewer moles, since
+        \ce{2SO2 + O2 -> 2SO3} reduces total gas moles.)
+        \end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) finds $M_{\text{avg}}$ of the original mixture from its
+    density}
+  \rpoint{1}{(a) sets up the mole-fraction equation correctly}
+  \rpoint{1}{(a) $\chi(\ce{He})\approx0.111$}
+  \rpoint{1}{(b) identifies \ce{SO2} as limiting despite the equimolar
+    setup}
+  \rpoint{1}{(b) correctly finds the new total moles, $1.5m+h$}
+  \rpoint{1}{(b) recognizes total mass is conserved}
+  \rpoint{1}{(b) $d_{\text{new}}\approx\SI{2.47}{\gram\per\liter}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{Zumdahl \S5.4 \textbullet\ industrial combustion, complete
+  and incomplete \emph{(after Zumdahl Q161)}}
+
+\ce{CH4} gas flows into a combustion chamber at \SI{200.}{\liter\per
+\minute}, \SI{1.50}{\atm}, \SI{25}{\celsius}. Air (21~mol\% \ce{O2},
+79~mol\% \ce{N2}) is added at \SI{1.00}{\atm}, the same temperature, and
+the mixture is ignited: \ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}.
+
+\begin{parts}
+  \item To ensure complete combustion, three times the stoichiometrically
+        necessary \ce{O2} is supplied. Find the required air flow rate.
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}\[\frac{n(\ce{CH4})}{\text{min}}
+        = \frac{(1.50)(200.)}{(0.08206)(298)} = 12.27\ \text{mol/min}\]
+
+        Stoichiometric \ce{O2} $=2\times12.27=24.54$~mol/min; actual
+        (three times) $=73.61$~mol/min.
+
+        \[\frac{n_{\text{air}}}{\text{min}} = \frac{73.61}{0.21}
+        = 350.5\ \text{mol/min}\]
+
+        \[\text{air flow rate} = \frac{nRT}{P}
+        = \frac{(350.5)(0.08206)(298)}{1.00}
+        = \mathbf{8570}\ \text{L/min}\]\end{apcanswer}}
+  \item Under these conditions combustion is incomplete: 95.0\% of the
+        exhaust carbon becomes \ce{CO2(g)}, the rest \ce{CO(g)} (via
+        \ce{CH4(g) + 1.5O2(g) -> CO(g) + 2H2O(g)}); all \ce{CH4} reacts,
+        \ce{N2} is unreacted. Find the mole fraction of \ce{CO},
+        \ce{CO2}, \ce{O2}, \ce{N2}, and \ce{H2O} in the exhaust.
+        \workspace[7cm]
+        \keyonly{\begin{apcanswer}Per minute: \ce{CO2}$=0.95(12.27)
+        =11.65$~mol; \ce{CO}$=0.05(12.27)=0.6134$~mol; \ce{H2O}
+        $=2(12.27)=24.54$~mol (every \ce{CH4}'s H atoms become \ce{H2O}
+        regardless of which carbon product forms).
+
+        \ce{O2} consumed $=0.95(12.27)(2)+0.05(12.27)(1.5)=24.23$~mol/min;
+        \ce{O2} remaining $=73.61-24.23=49.38$~mol/min.
+
+        \ce{N2} (unreacted, 79\% of the air found in part a)
+        $=0.79\times350.5=276.9$~mol/min.
+
+        Total exhaust $=11.65+0.6134+24.54+49.38+276.9=363.1$~mol/min.
+
+        \[\chi(\ce{CO2})=\mathbf{0.0321},\quad \chi(\ce{CO})=\mathbf{0.0017},
+        \quad \chi(\ce{H2O})=\mathbf{0.0676}\]
+        \[\chi(\ce{O2})=\mathbf{0.136},\quad
+        \chi(\ce{N2})=\mathbf{0.763}\]\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) moles per minute of \ce{CH4}}
+  \rpoint{1}{(a) correctly scales \ce{O2} to 3$\times$ stoichiometric}
+  \rpoint{1}{(a) \SI{8570}{\liter\per\minute}}
+  \rpoint{1}{(b) correctly splits carbon 95\%/5\% between \ce{CO2} and
+    \ce{CO}}
+  \rpoint{1}{(b) correctly finds remaining \ce{O2} and unreacted \ce{N2}}
+  \rpoint{2}{(b) all five mole fractions correct and summing to 1}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{Zumdahl \S5.4 \textbullet\ graphite combustion, \ce{CO}
+  versus \ce{CO2} \emph{(after Zumdahl Q162)}}
+
+A steel cylinder contains \SI{5.00}{\mole} graphite (solid carbon) and
+\SI{5.00}{\mole} \ce{O2}. The mixture is ignited; all the graphite
+reacts, producing a mixture of \ce{CO} and \ce{CO2} gas. After the
+cylinder cools back to its original temperature, its pressure has
+increased by 17.0\%.
+
+Calculate the mole fractions of \ce{CO}, \ce{CO2}, and \ce{O2} in the
+final gas mixture.
+\workspace[7cm]
+\keyonly{\begin{apcanswer}Initial \emph{gas} moles $=5.00$ (graphite is
+solid). At constant $V,T$, pressure tracks moles, so:
+
+\[n_{\text{final}} = 1.170\times5.00 = 5.85\ \text{mol}\]
+
+Let $x=$~mol \ce{C}$\to$\ce{CO2} (via \ce{C(s) + O2(g) -> CO2(g)}, no net
+change in gas moles) and $y=$~mol \ce{C}$\to$\ce{CO} (via
+\ce{2C(s) + O2(g) -> 2CO(g)}, a net \emph{gain} of 0.5~mol gas per mol
+\ce{C}). Then $x+y=5.00$, and:
+
+\[n_{\text{final}} = \underbrace{[5.00-(x+0.5y)]}_{\ce{O2}\text{ left}}
++\underbrace{x}_{\ce{CO2}}+\underbrace{y}_{\ce{CO}} = 5.00+0.5y\]
+
+\[5.00+0.5y = 5.85 \ \Longrightarrow\ y=\mathbf{1.70}\ \text{mol},
+\quad x=5.00-1.70=\mathbf{3.30}\ \text{mol}\]
+
+\[\ce{O2}\ \text{remaining} = 5.00-(3.30+0.85) = 0.85\ \text{mol}\]
+
+\[\chi(\ce{CO2})=\frac{3.30}{5.85}=\mathbf{0.564}, \quad
+\chi(\ce{CO})=\frac{1.70}{5.85}=\mathbf{0.291}, \quad
+\chi(\ce{O2})=\frac{0.85}{5.85}=\mathbf{0.145}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{recognizes only \ce{O2} counts as initial gas moles}
+  \rpoint{1}{correctly finds final gas moles, \SI{5.85}{\mole}, from the
+    17.0\% pressure increase}
+  \rpoint{2}{sets up and solves $5.00+0.5y=5.85$ for $x$ and $y$}
+  \rpoint{1}{correctly finds remaining \ce{O2}}
+  \rpoint{1}{all three mole fractions correct and summing to 1}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{7}{Zumdahl \S5.4 \textbullet\ hot-air balloon lift
+  \emph{(after Zumdahl Q163)}}
+
+A hot-air balloon approximates a \SI{5.00}{\meter}-diameter sphere,
+containing air heated to \SI{65}{\celsius}; surrounding air is
+\SI{21}{\celsius}. The balloon's internal pressure equals atmospheric
+pressure, \SI{745}{\torr}, throughout. (Average molar mass of air
+$=\SI{29.0}{\gram\per\mole}$.)
+
+\begin{parts}
+  \item What total mass can the balloon lift?
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}$V=\tfrac43\pi(2.50)^3=65.45$~m$^3$
+        $=65450$~L. $P=745/760=0.9803$~atm.
+
+        \[\text{mass cold air (294 K)} = \frac{PVM}{RT}
+        = \frac{(0.9803)(65450)(29.0)}{(0.08206)(294)}
+        = 77120\ \text{g}\]
+
+        \[\text{mass hot air (338 K)} = \frac{(0.9803)(65450)(29.0)}
+        {(0.08206)(338)} = 67080\ \text{g}\]
+
+        \[\text{lift} = 77120-67080 = \mathbf{1.004\times10^4}\ \text{g}
+        \approx\mathbf{10.0}\ \text{kg}\]\end{apcanswer}}
+  \item If instead filled with \ce{He} at \SI{21}{\celsius},
+        \SI{745}{\torr}, matching the same volume, what total mass can
+        the balloon lift?
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}mass \ce{He} (294~K)
+        $=(0.9803)(65450)(4.003)/[(0.08206)(294)]=10650$~g; lift
+        $=77120-10650=\mathbf{6.65\times10^4}$~g $\approx\mathbf{66.5}$~kg
+        --- over 6 times the hot-air balloon's lift, since \ce{He} is so
+        much less dense than even heated ordinary air.\end{apcanswer}}
+  \item Repeat part (a) at Denver's typical atmospheric pressure,
+        \SI{630.}{\torr}.
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}$P=630/760=0.8289$~atm; mass cold air
+        $=65220$~g, mass hot air $=56730$~g; lift
+        $=\mathbf{8.49\times10^3}$~g $\approx\mathbf{8.49}$~kg --- less
+        lift than at sea level, since a thinner atmosphere displaces
+        less mass to begin with.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{correct sphere volume in liters}
+  \rpoint{1}{(a) mass of cold (displaced) air}
+  \rpoint{1}{(a) mass of hot air inside}
+  \rpoint{1}{(a) lift $\approx\SI{10.0}{\kilo\gram}$}
+  \rpoint{2}{(b) \ce{He} lift $\approx\SI{66.5}{\kilo\gram}$, correctly
+    using \SI{21}{\celsius} for both masses}
+  \rpoint{1}{(c) Denver lift $\approx\SI{8.49}{\kilo\gram}$, correctly
+    using the lower pressure throughout}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.4 \textbullet\ balloons needed to lift a child
+  \emph{(after Zumdahl Q164)}}
+
+\begin{parts}
+  \item Estimate the minimum number of \SI{10.}{\liter} helium balloons
+        (filled at \SI{1.00}{\atm}, \SI{25}{\celsius}) needed to lift a
+        50.-lb child ($M_{\text{air}}=\SI{29}{\gram\per\mole}$;
+        balloon and string masses negligible).
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}mass air per balloon
+        $=PVM/RT=(1.00)(10.0)(29)/[(0.08206)(298)]=11.86$~g
+
+        mass \ce{He} per balloon
+        $=(1.00)(10.0)(4.003)/[(0.08206)(298)]=1.637$~g
+
+        lift per balloon $=11.859-1.637=10.222$~g (kept unrounded here so
+        the final division comes out right)
+
+        child's mass $=50.\times0.4536=22.68$~kg $=22680$~g
+
+        \[\text{balloons} = \frac{22680}{10.222}
+        = 2218.7\ \Longrightarrow\ \text{round up} \Longrightarrow
+        \mathbf{2219\ \text{balloons}}\]\end{apcanswer}}
+  \item Explain, in terms of buoyancy, why the balloons can lift the
+        child at all.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}Each balloon displaces a mass of air far greater
+        than the mass of helium it contains (\ce{He}'s molar mass is
+        about 1/7 that of air). The buoyant force equals the weight of
+        the displaced air (Archimedes' principle applied to a gas); the
+        excess of that buoyant force over the balloon's own weight is
+        what is available to lift additional load.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{mass of air displaced per balloon}
+  \rpoint{1}{mass of \ce{He} per balloon}
+  \rpoint{1}{lift per balloon, $\approx\SI{10.2}{\gram}$}
+  \rpoint{1}{correctly converts the child's mass and rounds up to 2219}
+  \rpoint{1}{explains the buoyancy argument}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{Zumdahl \S5.4 \textbullet\ matching a hot-air balloon's
+  lift to helium's \emph{(after Zumdahl Q165)}}
+
+You have a helium balloon at \SI{1.00}{\atm}, \SI{25}{\celsius}. You want
+a hot-air balloon of the \emph{same volume} with the \emph{same} lift.
+Air is 79.0\% \ce{N2}, 21.0\% \ce{O2} by mole.
+
+\begin{parts}
+  \item Will the hot-air balloon's temperature need to be higher or
+        lower than \SI{25}{\celsius}? Explain.
+        \workspace[4.5cm]
+        \keyonly{\begin{apcanswer}\textbf{Higher.} Ordinary air ($M\approx29$) is
+        far denser than \ce{He} ($M\approx4$) at the same conditions. To
+        make hot air displace the same net buoyant mass as \ce{He} does,
+        its density must be driven down a great deal --- and since
+        density $\propto M/T$ at fixed $P$, that means a large increase
+        in temperature.\end{apcanswer}}
+  \item Calculate the required air temperature.
+        \workspace[5.5cm]
+        \keyonly{\begin{apcanswer}$M_{\text{air}}=0.79(28.02)+0.21(32.00)
+        =28.86$~g/mol.
+
+        Setting the two lifts (mass of displaced ambient air minus mass
+        of the balloon's own gas, per unit volume) equal, with the
+        displaced air always evaluated at ambient \SI{298}{\kelvin}:
+
+        \[\frac{(M_{\text{air}}-M_{\ce{He}})P}{R(298)}
+        = \frac{M_{\text{air}}P}{R(298)} - \frac{M_{\text{air}}P}
+        {RT_{\text{hot}}}\]
+
+        $P/R$ cancels completely, leaving
+        $M_{\text{air}}/T_{\text{hot}} = M_{\ce{He}}/298$:
+
+        \[T_{\text{hot}} = 298\times\frac{M_{\text{air}}}{M_{\ce{He}}}
+        = 298\times\frac{28.86}{4.003}
+        = \mathbf{2148}\ \text{K}\ (\mathbf{1875}\ \text{\textcelsius})
+        \]
+
+        A physically unreachable temperature for a real balloon
+        envelope --- a vivid illustration of just how much less dense
+        helium is than even very hot air.\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{(a) correctly identifies "higher," with density reasoning}
+  \rpoint{1}{(b) average molar mass of air}
+  \rpoint{2}{(b) correctly sets the two lift expressions equal}
+  \rpoint{2}{(b) $T_{\text{hot}}\approx\SI{2148}{\kelvin}$, algebra shown}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.8 \textbullet\ van der Waals reduces to the
+  ideal gas law \textbf{[beyond CED]} \emph{(after Zumdahl Q166)}}
+
+\[\left[P+a\left(\frac{n}{V}\right)^2\right](V-nb) = nRT\]
+
+Show algebraically that this reduces to $PV=nRT$ at low pressure (large
+$V$, fixed $n$) and explain why the same is true at high temperature.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\textbf{Low pressure / large volume.} As $V$
+grows without bound at fixed $n$: the attraction term $a(n/V)^2\to0$,
+since $n/V\to0$; and $nb$ becomes negligible \emph{relative to} $V$, so
+$(V-nb)\to V$. Substituting both limits:
+
+\[[P+0](V-0) \ \longrightarrow\ PV=nRT\]
+
+Physically: at low pressure molecules are far apart on average, so (i)
+their own volume $nb$ is a negligible fraction of the container, and
+(ii) intermolecular attractions --- which fall off steeply with distance
+--- rarely have a chance to act.
+
+\textbf{High temperature.} The attraction term $a(n/V)^2$ does not
+depend on $T$ at all, but $nRT$ grows without bound as $T$ rises, so the
+attraction term's contribution to the \emph{measured} pressure becomes
+comparatively negligible: kinetic energy increasingly dominates over the
+potential energy of intermolecular attraction. (The $nb$ term still
+requires $V$ to stay reasonably large --- i.e., pressure not also pushed
+to an extreme --- for it to vanish too.) Both limits describe the same
+underlying idea: the two correction terms exist specifically to capture
+molecular size and intermolecular attraction, and both become
+unimportant whenever the gas is dilute or energetic enough that
+molecules spend most of their time far apart and moving fast relative to
+any attraction between them.\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{shows $a(n/V)^2\to0$ as $V\to\infty$}
+  \rpoint{1}{shows $(V-nb)\to V$ as $V\to\infty$, reaching $PV=nRT$}
+  \rpoint{1}{explains the low-pressure limit physically (molecules far
+    apart, both corrections vanish)}
+  \rpoint{1}{explains why high $T$ also drives the equation toward ideal
+    behavior}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{5}{Zumdahl \S5.4 \textbullet\ identifying an unknown compound
+  \emph{(after Zumdahl Q167)}}
+
+An unknown gaseous binary compound (two elements) is burned in excess
+oxygen. Burning \SI{10.0}{\gram} of it produces \SI{16.3}{\gram} water.
+The compound's density is 1.38 times that of oxygen gas at the same
+temperature and pressure.
+
+Give a possible identity for the unknown compound.
+\workspace[6.5cm]
+\keyonly{\begin{apcanswer}\[M_{\text{compound}} = 1.38\times32.00
+= 44.16\ \text{g/mol}\]
+
+Since the compound produces water on combustion, it must contain
+\textbf{hydrogen} --- this immediately rules out close-mass decoys like
+\ce{N2O} and \ce{CO2} (both $\approx44.01$~g/mol, neither containing H).
+
+\textbf{Test propane, \ce{C3H8}} ($M=3(12.01)+8(1.008)=44.09$~g/mol,
+within 0.15\% of the density-derived value):
+
+\[\ce{C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(g)}\]
+
+\[n(\ce{C3H8}) = \frac{10.0}{44.09} = 0.2268\ \text{mol}\]
+
+\[\text{predicted mass \ce{H2O}} = 4(0.2268)(18.02) = 16.3\ \text{g}\]
+
+This matches the given \SI{16.3}{\gram} almost exactly.
+
+\[\textbf{Identity: \ce{C3H8} (propane)}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{molar mass of the unknown, $\approx\SI{44.16}{\gram\per
+    \mole}$}
+  \rpoint{1}{recognizes the compound must contain H, ruling out
+    mass-matched non-hydrogen decoys}
+  \rpoint{1}{balances the combustion equation for \ce{C3H8}}
+  \rpoint{1}{predicts the water mass from the combustion stoichiometry}
+  \rpoint{1}{identifies \ce{C3H8} and confirms the match}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{6}{Zumdahl \S5.4 \textbullet\ ammonia synthesis at constant
+  pressure \emph{(after Zumdahl Q168)}}
+
+\ce{N2(g) + 3H2(g) -> 2NH3(g)}. \SI{15.0}{\liter} of \ce{N2} and \ce{H2}
+gas sit in a container fitted with a movable piston that holds the total
+pressure constant. Each reactant initially has a partial pressure of
+\SI{1.00}{\atm}.
+
+\begin{parts}
+  \item Find the partial pressure of \ce{NH3} after the reaction
+        completes.
+        \workspace[6cm]
+        \keyonly{\begin{apcanswer}Equal initial partial pressures at the
+        same $V,T$ means equal initial moles, $n_0$ each. The 3:1
+        stoichiometric requirement means \textbf{\ce{H2} is limiting}
+        (only enough to react $n_0/3$~mol \ce{N2}).
+
+        All $n_0$~mol \ce{H2} reacts, consuming $n_0/3$~mol \ce{N2} and
+        producing $2n_0/3$~mol \ce{NH3}. \ce{N2} remaining
+        $=n_0-n_0/3=2n_0/3$.
+
+        Final total moles $=2n_0/3\ (\ce{N2}) + 2n_0/3\ (\ce{NH3})
+        = 4n_0/3$ (vs.\ $2n_0$ initially).
+
+        Total pressure stays fixed at its initial value,
+        $1.00+1.00=\SI{2.00}{\atm}$ (the piston's job). \ce{NH3}'s mole
+        fraction in the final mixture is $(2n_0/3)/(4n_0/3)=0.500$:
+
+        \[P(\ce{NH3}) = 2.00\times0.500 = \mathbf{1.00}\ \text{atm}\]
+        \end{apcanswer}}
+  \item Find the volume of the container after the reaction completes.
+        \workspace[3.5cm]
+        \keyonly{\begin{apcanswer}At constant $T,P$, $V\propto n$:
+
+        \[V_{\text{final}} = 15.0\times\frac{4n_0/3}{2n_0}
+        = 15.0\times\frac23 = \mathbf{10.0}\ \text{L}\]\end{apcanswer}}
+\end{parts}
+
+\begin{rubric}
+  \rpoint{1}{identifies \ce{H2} as limiting from the 3:1 stoichiometric
+    requirement against equal initial moles}
+  \rpoint{1}{correctly finds the final moles of each species in terms of
+    $n_0$}
+  \rpoint{1}{finds the final total moles, $4n_0/3$}
+  \rpoint{1}{(a) $P(\ce{NH3})=\SI{1.00}{\atm}$, via the mole-fraction
+    argument}
+  \rpoint{2}{(b) $V_{\text{final}}=\SI{10.0}{\liter}$}
+\end{rubric}
+
+% ---------------------------------------------------------------------------
+\frq{long}{4}{Zumdahl \S5.7 \textbullet\ diffusion meeting point
+  \textbf{[beyond CED]} \emph{(after Zumdahl Q169)}}
+
+A classroom has ten evenly spaced rows of students. A student in row~1
+releases \ce{N2O} (laughing gas) and a student in row~10 simultaneously
+releases a lachrymator (tear-inducing gas) of molar mass
+\SI{176}{\gram\per\mole}.
+
+In which row do students first laugh and cry at the same time?
+\workspace[5cm]
+\keyonly{\begin{apcanswer}Diffusion distance is proportional to
+$1/\sqrt M$, so the two gases split the 9 row-gaps between rows 1 and 10
+in the ratio of their diffusion rates:
+
+\[\frac{d_{\ce{N2O}}}{d_{\text{lachrymator}}}
+= \sqrt{\frac{M_{\text{lachrymator}}}{M_{\ce{N2O}}}}
+= \sqrt{\frac{176}{44.01}} = 2.00\]
+
+With $d_{\ce{N2O}}+d_{\text{lachrymator}}=9$ and
+$d_{\ce{N2O}}=2\,d_{\text{lachrymator}}$:
+
+\[d_{\ce{N2O}} = 9\times\frac{2}{3} = 6.00\ \text{row-gaps}\]
+
+\[\textbf{Meeting row} = 1+6.00 = \mathbf{\text{row } 7}\]\end{apcanswer}}
+
+\begin{rubric}
+  \rpoint{1}{correct Graham's-law-based distance ratio,
+    $\sqrt{176/44.01}\approx2$}
+  \rpoint{1}{sets up $d_{\ce{N2O}}+d_{\text{lachrymator}}=9$}
+  \rpoint{1}{solves for $d_{\ce{N2O}}=6$ row-gaps}
+  \rpoint{1}{correctly reports row 7}
+\end{rubric}
+
+% ============================================================================
+\examtotal
+
+\end{document}

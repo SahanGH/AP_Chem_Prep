@@ -237,10 +237,10 @@ UNIT = {
     "percent": "%", "u": "u", "atomicmassunit": "u", "watt": "W",
     # \degree rendered as the literal word "degree" on every bond angle in
     # the corpus ("109.5 degree"); \molal is declared in shared/apchem.sty.
-    "degree": "&deg;", "molal": "m",
+    "degree": "&deg;", "molal": "m", "psi": "psi",
 }
 PREFIX = {"kilo": "k", "milli": "m", "micro": "&micro;", "nano": "n",
-          "centi": "c", "pico": "p"}
+          "centi": "c", "pico": "p", "mega": "M"}
 UNKNOWN_UNITS = set()
 
 

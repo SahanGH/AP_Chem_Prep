@@ -183,6 +183,7 @@ Student edition, generated from the LaTeX sources. The printable PDFs (with teac
 - [Worksheet 3 • KMT, Real Gases & FRQ](chapter05-gases/ch05-ws3.md)
 - [Free-Response Set](chapter05-gases/ch05-frq.md)
 - [Chapter Test](chapter05-gases/ch05-exam.md)
+- [Comprehensive Test](chapter05-gases/ch05-test-full.md)
 
 ## Chapter 6 • Thermochemistry
 
