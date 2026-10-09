@@ -1166,6 +1166,9 @@ PAGE = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
 <link rel="stylesheet" href="../style.css?v={assetv}">
 <script>
 MathJax = {{ loader: {{ load: ['[tex]/mhchem'] }},
@@ -1175,10 +1178,13 @@ MathJax = {{ loader: {{ load: ['[tex]/mhchem'] }},
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script defer src="../lessons.js?v={assetv}"></script>
 </head>
-<body>
-<header>
-  <p class="crumb"><a href="../index.html">AP Chemistry lessons</a></p>
-  <p class="unit">{unitword} {unit} \u2022 {unittitle}</p>
+<body class="hue-{hue}">
+<div class="spectrum" aria-hidden="true"></div>
+<nav class="topbar"><a class="brand" href="../index.html"><span class="brand-tile"
+  aria-hidden="true"><small>AP</small>Ch</span>AP Chemistry</a>
+  <a class="navlink" href="../index.html">All lessons</a></nav>
+<header class="pagehead">
+  {unitline}
   <h1>{doctitle}</h1>
   <p class="subtitle">{subtitle}</p>
 </header>
@@ -1267,6 +1273,24 @@ def clean_meta(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+HUES = 9
+
+
+def hue_of(unit: str) -> int:
+    """Each unit/chapter number gets one of nine theme colours (hue-1..9);
+    0 is the neutral rainbow used by the index."""
+    return (int(unit) - 1) % HUES + 1 if unit.strip().isdigit() else 0
+
+
+def page_extras(meta: dict) -> dict:
+    unitline = ""
+    if meta.get("unit"):
+        unitline = (f'<p class="unit"><span class="unit-chip">'
+                    f'{meta["unitword"]} {meta["unit"]}</span> '
+                    f'{meta["unittitle"]}</p>')
+    return {"hue": hue_of(meta.get("unit", "")), "unitline": unitline}
+
+
 def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
     global MATH
     MATH = []
@@ -1306,14 +1330,16 @@ def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
                            lambda m: stash[int(m.group(1))], raw)
         html_body = add_interactivity(html_body, kind, tex_path.stem, log)
         out = chapter_dir / (tex_path.stem + ".html")
-        out.write_text(PAGE.format(title=title, body=html_body, assetv=ASSET_V, **meta),
+        out.write_text(PAGE.format(title=title, body=html_body, assetv=ASSET_V,
+                                   **meta, **page_extras(meta)),
                        encoding="utf-8")
     if fmt in ("md", "both"):
         md_dir = OUT_MD / rel.parts[0]
         md_dir.mkdir(parents=True, exist_ok=True)
         html_for_md = re.sub(r"\x00M(\d+)\x00",
                              lambda m: math_to_md(stash[int(m.group(1))]), raw)
-        page = PAGE.format(title=title, body=html_for_md, assetv=ASSET_V, **meta)
+        page = PAGE.format(title=title, body=html_for_md, assetv=ASSET_V,
+                           **meta, **page_extras(meta))
         md = html_to_md(page, meta)
         md_out = md_dir / (tex_path.stem + ".md")
         md_out.write_text(md, encoding="utf-8")
@@ -1326,137 +1352,257 @@ def convert_file(tex_path: Path, no_figures: bool, log, fmt="both"):
 
 
 CSS = """
-:root { --accent:#1F4E79; --ans:#9E2A2B; --gray:#5A5A5A; --light:#EEF3F8;
-        --rule:#BFC9D4; --warn:#8A6D1F; --warnbg:#FDF6E3; }
+/* Colourful light theme. Every page carries body.hue-N (its unit/chapter
+   number, cycled over nine colours); accents read --h (vivid), --hd (dark
+   enough for text on white, >= 4.5:1) and --hl (pale tint for fills).
+   White text only ever sits on --hd, never on --h: gold and pink fail. */
+:root {
+  --ink:#1F2340; --muted:#5B6078; --bg:#FAFAFF; --line:#E3E5F0;
+  --ans:#C0392B; --ok:#1E8E4E; --warn:#9A6200;
+  --c1:#E8505B; --c2:#F28C28; --c3:#F2B807; --c4:#3BA55C; --c5:#14A3A3;
+  --c6:#2F80ED; --c7:#6C5CE7; --c8:#C2418F; --c9:#FF6B9A;
+  --rainbow:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),
+            var(--c5),var(--c6),var(--c7),var(--c8),var(--c9));
+  --h:#6C5CE7; --hd:#4636B8; --hl:#EEECFD;
+  --head:'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --body:'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --shadow:0 3px 14px rgba(31,35,64,.07);
+}
+.hue-1 { --h:#E8505B; --hd:#B4232F; --hl:#FDECEE; }
+.hue-2 { --h:#F28C28; --hd:#A85300; --hl:#FEF1E4; }
+.hue-3 { --h:#F2B807; --hd:#8A6300; --hl:#FEF8E1; }
+.hue-4 { --h:#3BA55C; --hd:#1F6E38; --hl:#E8F6EC; }
+.hue-5 { --h:#14A3A3; --hd:#0B6B6B; --hl:#E3F6F6; }
+.hue-6 { --h:#2F80ED; --hd:#1A55A8; --hl:#E7F0FD; }
+.hue-7 { --h:#6C5CE7; --hd:#4636B8; --hl:#EEECFD; }
+.hue-8 { --h:#C2418F; --hd:#8E2766; --hl:#FAEAF3; }
+.hue-9 { --h:#FF6B9A; --hd:#B8325E; --hl:#FFEDF3; }
+
 * { box-sizing: border-box; }
-body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.75;
-       margin: 0; color: #1a1a1a; background: #fff; }
-header, main, footer { max-width: 52rem; margin: 0 auto; padding: 0 1.2rem; }
-header { border-bottom: 3px solid var(--accent); padding-top: 1.2rem;
-         padding-bottom: .8rem; }
-header .crumb a { color: var(--gray); font-size: .85rem;
-                  font-family: system-ui, sans-serif; text-decoration: none; }
-header .unit { color: var(--accent); font-family: system-ui, sans-serif;
-               font-weight: 600; margin: .4rem 0 0; }
-header h1 { margin: .1rem 0; font-family: system-ui, sans-serif; }
-header .subtitle { color: var(--gray); margin: 0 0 .4rem; }
-main { padding-top: 1rem; padding-bottom: 3rem; }
-h2 { font-family: system-ui, sans-serif; color: var(--accent);
-     border-bottom: 1px solid var(--rule); padding-bottom: .2rem;
-     margin-top: 2rem; }
-h2.block { background: var(--accent); color: #fff; padding: .45rem .7rem;
-           border-radius: 4px; border: none; }
-/* The index carries two content tracks. The track banner has to outrank the
-   per-unit headings under it, so it is heavier and rules above, not below. */
-h2.track { background: var(--accent); color: #fff; padding: .5rem .8rem;
-           border-radius: 4px; border: none; margin-top: 2.6rem;
-           font-size: 1.15rem; letter-spacing: .01em; }
-h2.track:first-of-type { margin-top: 1rem; }
-h2.track + h3 { margin-top: 1rem; }
+body { font-family: var(--body); font-size: 1.08rem; line-height: 1.7;
+       margin: 0; color: var(--ink); background: var(--bg); }
+a { color: var(--hd); text-decoration-color: var(--h);
+    text-underline-offset: 3px; }
+.spectrum { height: 6px; background: var(--rainbow); }
+
+/* --- top bar + page header --- */
+.topbar { width: min(60rem, calc(100% - 2.4rem)); margin: 0 auto;
+          padding: .8rem 0; display: flex; align-items: center;
+          justify-content: space-between; gap: 1rem; }
+.brand { display: inline-flex; align-items: center; gap: .65rem;
+         font-family: var(--head); font-weight: 700; font-size: 1.05rem;
+         color: var(--ink); text-decoration: none; }
+.brand-tile { width: 2.5rem; height: 2.5rem; border-radius: .6rem;
+              background: linear-gradient(135deg, var(--c7), var(--c8) 55%,
+              var(--c2)); color: #fff; display: flex; flex-direction: column;
+              align-items: center; justify-content: center; line-height: 1;
+              font-size: 1.05rem; box-shadow: var(--shadow); }
+.brand-tile small { font-size: .5rem; font-weight: 600; opacity: .9; }
+.navlink { font-family: var(--head); font-weight: 600; font-size: .85rem;
+           color: var(--hd); background: var(--hl); text-decoration: none;
+           padding: .4rem 1rem; border-radius: 999px; }
+.navlink:hover { background: var(--hd); color: #fff; }
+header.pagehead { width: min(60rem, calc(100% - 2.4rem)); margin: .3rem auto 0;
+    padding: 1.6rem 1.9rem 1.3rem; background: linear-gradient(135deg,
+    var(--hl), #fff 75%); border: 1px solid var(--line);
+    border-top: 7px solid var(--h); border-radius: 20px;
+    box-shadow: var(--shadow); }
+header .unit { margin: 0 0 .5rem; font-family: var(--head); font-weight: 600;
+               color: var(--hd); }
+.unit-chip { display: inline-block; background: var(--hd); color: #fff;
+             border-radius: 999px; padding: .15rem .8rem; font-size: .8rem;
+             letter-spacing: .03em; margin-right: .35rem; }
+header h1 { font-family: var(--head); font-weight: 700; font-size: 2.1rem;
+            line-height: 1.2; margin: .1rem 0 .4rem; color: var(--ink); }
+header .subtitle { color: var(--muted); margin: 0; font-size: 1rem; }
+main { width: min(52rem, calc(100% - 2.4rem)); margin: 0 auto;
+       padding: 1.4rem 0 3.5rem; }
+footer { text-align: center; color: var(--muted); font-size: .85rem;
+         padding: 1.2rem; border-top: 4px solid transparent;
+         border-image: var(--rainbow) 1; }
+
+/* --- headings --- */
+h2, h3, h4 { font-family: var(--head); line-height: 1.3; }
+h2 { color: var(--hd); font-size: 1.45rem; margin-top: 2.4rem;
+     padding-bottom: .35rem; border-bottom: 3px solid var(--hl); }
+h2::before { content: ""; display: inline-block; width: .6em; height: .6em;
+             border-radius: 50%; background: var(--h); margin-right: .5em;
+             vertical-align: .08em; }
+h2.block { background: var(--hd); color: #fff; padding: .6rem 1rem;
+           border-radius: 12px; border: none; }
+h2.block::before { background: #fff; }
 h2 .sub, h3 .sub, h4 .sub { font-weight: 400; font-size: .8em;
            color: inherit; opacity: .85; }
-h3, h4 { font-family: system-ui, sans-serif; margin-top: 1.4rem; }
-h4.segment { background: var(--light); padding: .3rem .6rem;
-             border-left: 4px solid var(--accent); }
-.badge { font-family: system-ui, sans-serif; font-size: .72rem;
-         background: var(--light); color: var(--accent);
-         border: 1px solid var(--rule); border-radius: 999px;
-         padding: .05rem .55rem; vertical-align: middle;
-         white-space: nowrap; }
-.box { border: 1px solid var(--rule); border-radius: 6px;
-       margin: 1.1rem 0; padding: .2rem .9rem .6rem; }
-.box-title { font-family: system-ui, sans-serif; font-weight: 700;
-             font-size: .85rem; letter-spacing: .02em;
-             margin: .5rem 0 .4rem; }
-.box.we { border-color: var(--gray); }
-.box.we .box-title { color: #fff; background: var(--gray);
-     margin: .55rem -0.9rem .5rem; padding: .3rem .9rem;
-     border-radius: 5px 5px 0 0; margin-top: -1px; }
-.box.yt { border: 1.5px dashed var(--gray); }
-.box.yt .box-title { color: var(--accent); }
-.box.note { background: var(--light); border-color: var(--accent); }
-.box.trap { background: var(--warnbg); border-color: var(--warn); }
-.box.trap .box-title { color: var(--warn); }
-.problem { margin: 1rem 0 .3rem; }
-.qnum { font-weight: 700; font-family: system-ui, sans-serif; }
+h3, h4 { margin-top: 1.6rem; color: var(--ink); }
+h3.frq { margin-top: 2.6rem; padding: .6rem 1rem; background: var(--hl);
+         color: var(--hd); border-left: 7px solid var(--h);
+         border-radius: 12px; font-size: 1.05rem; }
+h4.segment { background: var(--hl); padding: .4rem .8rem;
+             border-left: 5px solid var(--h); border-radius: 0 10px 10px 0; }
+.badge { font-family: var(--head); font-size: .7rem; font-weight: 600;
+         background: var(--hl); color: var(--hd); border-radius: 999px;
+         padding: .1rem .6rem; vertical-align: middle; white-space: nowrap; }
+
+/* --- content boxes: fixed colours by MEANING, not by page hue --- */
+.box { background: #fff; border: 1px solid var(--line);
+       border-left: 7px solid var(--h); border-radius: 14px;
+       margin: 1.3rem 0; padding: .3rem 1.1rem .8rem; box-shadow: var(--shadow); }
+.box-title { display: inline-block; font-family: var(--head); font-weight: 600;
+             font-size: .76rem; letter-spacing: .05em; text-transform: uppercase;
+             padding: .2rem .75rem; border-radius: 999px; margin: .75rem 0 .35rem;
+             background: var(--hl); color: var(--hd); }
+.box.we { border-left-color: var(--c6); }
+.box.we .box-title { background: #E7F0FD; color: #1A55A8; }
+.box.yt { border-left-color: var(--c7); border-style: dashed solid dashed solid; }
+.box.yt .box-title { background: #EEECFD; color: #4636B8; }
+.box.note { border-left-color: var(--c5); background: #F4FBFB; }
+.box.note .box-title { background: #E3F6F6; color: #0B6B6B; }
+.box.trap { border-left-color: var(--c2); background: #FFF8EF; }
+.box.trap .box-title { background: #FEF1E4; color: #A85300; }
+
+.problem { margin: 1.1rem 0 .3rem; }
+.qnum { display: inline-flex; align-items: center; justify-content: center;
+        min-width: 1.75rem; height: 1.75rem; padding: 0 .35rem; margin-right: .3rem;
+        border-radius: 999px; background: var(--hd); color: #fff;
+        font-family: var(--head); font-weight: 600; font-size: .85rem; }
 li { margin: .4rem 0; }
 li > ol, li > ul { margin-top: .35rem; }
+li::marker { color: var(--hd); font-weight: 600; }
 p { margin: .9rem 0; }
 ol.parts { list-style-type: lower-alpha; }
 ol.choices { list-style-type: upper-alpha; }
-.blank { display: inline-block; border-bottom: 1px solid #333;
+.blank { display: inline-block; border-bottom: 2px solid var(--h);
          min-height: 1.1em; vertical-align: bottom; }
-.lines .rule { border-bottom: 1px solid #999; height: 1.7em; }
-.workspace { border: 1px dashed var(--rule); border-radius: 4px;
-             margin: .4rem 0; }
-.selfcheck { color: var(--gray); font-size: .92rem; font-style: italic;
-             border-top: 1px dotted var(--rule); padding-top: .3rem; }
+.lines .rule { border-bottom: 1px solid var(--line); height: 1.7em; }
+.workspace { border: 2px dashed var(--line); border-radius: 12px;
+             margin: .5rem 0; background: #fff; }
+.selfcheck { color: var(--muted); font-size: .92rem; font-style: italic;
+             border-top: 1px dotted var(--line); padding-top: .3rem; }
 .center { text-align: center; }
-.fbox { border: 1.5px solid #333; padding: .5rem .9rem; margin: 1rem auto;
-        max-width: 85%; text-align: center; }
-table { border-collapse: collapse; margin: 1rem auto; }
-th, td { padding: .3rem .7rem; text-align: left;
-         border-bottom: 1px solid var(--rule); }
-th { border-bottom: 2px solid var(--accent);
-     font-family: system-ui, sans-serif; }
-figure { text-align: center; margin: 1.2rem 0; }
-figure img { max-width: 100%; height: auto; }
-blockquote { border-left: 4px solid var(--rule); margin-left: 0;
-             padding-left: 1rem; color: var(--gray); }
-footer { border-top: 1px solid var(--rule); color: var(--gray);
-         font-size: .85rem; font-family: system-ui, sans-serif; }
-.figure-missing { color: var(--gray); font-style: italic; }
-@media print { .selfcheck { display: none; } }
+.fbox { border: 2px solid var(--h); background: var(--hl); border-radius: 12px;
+        padding: .6rem 1rem; margin: 1rem auto; max-width: 85%;
+        text-align: center; }
+table { border-collapse: collapse; margin: 1.1rem auto; display: block;
+        width: max-content; max-width: 100%; overflow-x: auto;
+        background: #fff; border-radius: 12px; box-shadow: var(--shadow); }
+th, td { padding: .4rem .85rem; text-align: left;
+         border-bottom: 1px solid var(--line); }
+th { background: var(--hl); color: var(--hd); font-family: var(--head);
+     font-weight: 600; border-bottom: 2px solid var(--h); }
+tr:last-child td { border-bottom: none; }
+figure { text-align: center; margin: 1.3rem 0; }
+figure img { max-width: 100%; height: auto; border-radius: 10px;
+             background: #fff; }
+blockquote { border-left: 4px solid var(--h); margin-left: 0;
+             padding-left: 1rem; color: var(--muted); }
+.figure-missing { color: var(--muted); font-style: italic; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden;
+                                max-width: 100%; }
 
 /* --- answer checking (screen only; print keeps the blank workspace) --- */
-.scratch { display: block; width: 100%; box-sizing: border-box;
-           margin: .3rem 0 .15rem; padding: .45rem .6rem;
-           border: 1px dashed var(--rule); border-radius: 4px;
-           font: inherit; font-size: .95rem; color: inherit; background: #fff;
-           resize: vertical; min-height: 2.2rem; }
-.scratch:focus { outline: 2px solid var(--accent); outline-offset: 1px;
-                 border-style: solid; }
-.scratch::placeholder { color: var(--gray); opacity: .55; }
-math-field.mathfield { display: block; width: 100%; box-sizing: border-box;
-    margin: .3rem 0 .15rem; padding: .35rem .5rem;
-    border: 1px solid var(--accent); border-radius: 4px; background: #fff;
-    font-size: 1.05rem; }
-math-field.mathfield:focus { outline: 2px solid var(--accent);
-    outline-offset: 1px; }
+.scratch { display: block; width: 100%; margin: .3rem 0 .15rem;
+           padding: .5rem .7rem; border: 2px dashed var(--line);
+           border-radius: 12px; font: inherit; font-size: .95rem;
+           color: inherit; background: #fff; resize: vertical;
+           min-height: 2.2rem; }
+.scratch:focus { outline: 3px solid var(--hl); border: 2px solid var(--h); }
+.scratch::placeholder { color: var(--muted); opacity: .6; }
+math-field.mathfield { display: block; width: 100%; margin: .3rem 0 .15rem;
+    padding: .4rem .6rem; border: 2px solid var(--h); border-radius: 12px;
+    background: #fff; font-size: 1.05rem; }
+math-field.mathfield:focus { outline: 3px solid var(--hl); }
 .ansrow { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
-          margin: .4rem 0 .9rem; font-family: system-ui, sans-serif; }
-.ansinput { flex: 1 1 11rem; max-width: 16rem; padding: .35rem .5rem;
-            border: 1px solid var(--rule); border-radius: 4px;
+          margin: .4rem 0 .9rem; }
+.ansinput { flex: 1 1 11rem; max-width: 16rem; padding: .4rem .6rem;
+            border: 2px solid var(--line); border-radius: 10px;
             font: inherit; font-size: 1rem; background: #fff; color: inherit; }
-.ansinput:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.ansinput.ok { border-color: #2E7D32; background: #F1F8F2; }
-.ansinput.no { border-color: var(--ans); background: #FDF3F3; }
-.ansinput.warn { border-color: var(--warn); background: #FDF9EE; }
+.ansinput:focus { outline: 3px solid var(--hl); border-color: var(--h); }
+.ansinput.ok { border-color: var(--ok); background: #EEF9F2; }
+.ansinput.no { border-color: var(--ans); background: #FDF1F0; }
+.ansinput.warn { border-color: var(--warn); background: #FFF8EA; }
 .anscheck, .ansshow, .reveal-btn {
-    font-family: system-ui, sans-serif; font-size: .82rem;
-    padding: .32rem .75rem; border: 1px solid var(--rule);
-    border-radius: 999px; background: var(--light); color: var(--accent);
-    cursor: pointer; }
-.anscheck:hover, .ansshow:hover, .reveal-btn:hover { background: #E2EBF5; }
+    font-family: var(--head); font-weight: 600; font-size: .82rem;
+    padding: .45rem 1.1rem; border: none; border-radius: 999px;
+    background: var(--hd); color: #fff; cursor: pointer;
+    box-shadow: 0 2px 0 rgba(31,35,64,.15);
+    transition: transform .12s, filter .15s; }
+.ansshow, .reveal-btn[aria-expanded="true"] {
+    background: var(--hl); color: var(--hd); }
+.anscheck:hover, .ansshow:hover, .reveal-btn:hover {
+    filter: brightness(1.12); transform: translateY(-1px); }
 .anscheck:focus-visible, .ansshow:focus-visible, .reveal-btn:focus-visible {
-    outline: 2px solid var(--accent); outline-offset: 2px; }
+    outline: 3px solid var(--h); outline-offset: 2px; }
 .blankwrap { display: inline-flex; align-items: baseline; gap: .3rem;
              flex-wrap: wrap; margin: .15rem 0; }
-.blank-in { flex: none; min-width: 0; padding: .15rem .4rem;
-            font-size: .95rem; }
+.blank-in { flex: none; min-width: 0; padding: .15rem .4rem; font-size: .95rem; }
 .blankwrap .ansfeedback { font-size: .78rem; }
-.ansfeedback { font-size: .85rem; font-family: system-ui, sans-serif; }
-.ansfeedback.ok { color: #2E7D32; font-weight: 600; }
+.ansfeedback { font-size: .88rem; }
+.ansfeedback.ok { color: var(--ok); font-weight: 700; }
 .ansfeedback.no { color: var(--ans); }
 .ansfeedback.hint { color: var(--warn); }
-.ansreveal { font-size: .9rem; color: var(--ans);
-             font-family: system-ui, sans-serif; }
-.reveal { margin: .6rem 0 1rem; }
-.reveal-body { margin-top: .5rem; padding: .6rem .85rem;
-               border-left: 3px solid var(--rule); background: var(--light);
-               border-radius: 0 4px 4px 0; }
+.ansreveal { font-size: .92rem; color: var(--ans); }
+.reveal { margin: .7rem 0 1.1rem; }
+.reveal-body { margin-top: .6rem; padding: .7rem 1.1rem; background: #fff;
+               border: 1px solid var(--line); border-left: 7px solid var(--c4);
+               border-radius: 12px; box-shadow: var(--shadow); }
 .reveal-body .selfcheck { display: block; margin: 0; }
-@media print { .ansrow, .reveal-btn, .reveal-body { display: none; } }
+
+/* --- home page: one card per unit/chapter --- */
+body.home header.pagehead { border-top: none; background:
+    linear-gradient(120deg, #FDECEE, #FEF8E1 30%, #E3F6F6 60%, #EEECFD); }
+body.home header h1 { font-size: 2.5rem; }
+body.home main, body.home .topbar, body.home header.pagehead {
+    width: min(72rem, calc(100% - 2.4rem)); }
+h2.track { color: var(--ink); font-size: 1.55rem; border: none;
+           margin: 2.4rem 0 1rem; }
+h2.track::before { width: 2.4rem; height: .5rem; border-radius: 999px;
+                   background: var(--rainbow); }
+.cards { display: grid; gap: 1.1rem;
+         grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr)); }
+.card { display: flex; gap: 1rem; background: #fff; border: 1px solid var(--line);
+        border-top: 6px solid var(--h); border-radius: 18px; padding: 1rem;
+        box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
+.card:hover { transform: translateY(-3px);
+              box-shadow: 0 10px 26px rgba(31,35,64,.13); }
+.tile { flex: none; position: relative; width: 4.5rem; height: 4.9rem;
+        border-radius: 12px; background: var(--hl); border: 2px solid var(--h);
+        color: var(--hd); text-decoration: none; font-family: var(--head);
+        display: flex; flex-direction: column; align-items: center;
+        justify-content: center; }
+.tile .z { position: absolute; top: .2rem; left: .45rem; font-size: .72rem;
+           font-weight: 600; }
+.tile .sym { font-size: 1.75rem; font-weight: 700; line-height: 1;
+             margin-top: .35rem; }
+.tile .word { font-size: .56rem; text-transform: uppercase;
+              letter-spacing: .08em; margin-top: .3rem; }
+.cardbody { min-width: 0; }
+.cardbody h3 { margin: .1rem 0 0; font-size: 1.12rem; }
+.cardmeta { margin: .1rem 0 0; font-size: .85rem; color: var(--muted); }
+ul.pills { list-style: none; padding: 0; margin: .65rem 0 0; display: flex;
+           flex-wrap: wrap; gap: .4rem; }
+ul.pills li { margin: 0; }
+ul.pills a { display: inline-block; padding: .22rem .75rem; border-radius: 999px;
+             background: var(--hl); color: var(--hd); font-size: .86rem;
+             font-weight: 600; text-decoration: none; }
+ul.pills a:hover, ul.pills a:focus-visible { background: var(--hd); color: #fff; }
+ul.pills li.star a { background: var(--hd); color: #fff; }
+ul.pills li.star a::before { content: "\\2605  "; }
+
+@media (max-width: 560px) {
+  header.pagehead { padding: 1.2rem; border-radius: 16px; }
+  header h1, body.home header h1 { font-size: 1.65rem; }
+  .card { padding: .85rem; }
+}
+@media print {
+  .spectrum, .topbar { display: none; }
+  body { background: #fff; color: #000; }
+  header.pagehead, .box, table, .card, .reveal-body { box-shadow: none; }
+  header.pagehead { background: none; border: none; padding: 0; }
+  .selfcheck, .ansrow, .reveal-btn, .reveal-body { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .anscheck, .ansshow, .reveal-btn { transition: none; }
+}
 """
 
 
@@ -1940,30 +2086,52 @@ def main():
         groups = sorted(g for (sec, g) in index if sec == label)
         if not groups:
             continue
-        items.append(f'<h2 class="track">{label}</h2>')
+        items.append(f'<section class="trackwrap"><h2 class="track">{label}'
+                     f'</h2>\n<div class="cards">')
         md_items.append(f"\n# {label}\n")
         for group in groups:
             entries = index[(label, group)]
             first_meta = entries[0][1]
             head = (f'{first_meta["unitword"]} {first_meta["unit"]} '
                     f'\u2022 {first_meta["unittitle"]}')
-            items.append(f"<h3>{head}</h3>\n<ul>")
+            # The tile mimics a periodic-table cell: number top-left, a
+            # two-letter "symbol" from the title, the word underneath.
+            word = re.sub(r"[^A-Za-z]", "", first_meta["unittitle"]) or "Ch"
+            symbol = word[0].upper() + word[1:2].lower()
+            items.append(
+                f'<article class="card hue-{hue_of(first_meta["unit"])}">'
+                f'<a class="tile" href="{group}/{sorted(entries, key=key)[0][0]}"'
+                f' aria-hidden="true" tabindex="-1">'
+                f'<span class="z">{first_meta["unit"]}</span>'
+                f'<span class="sym">{symbol}</span>'
+                f'<span class="word">{first_meta["unitword"]}</span></a>'
+                f'<div class="cardbody"><h3>{first_meta["unittitle"]}</h3>'
+                f'<p class="cardmeta">{first_meta["unitword"]} '
+                f'{first_meta["unit"]} \u2022 {len(entries)} resources</p>'
+                f'<ul class="pills">')
             md_items.append(f"\n## {head}\n")
             for name, meta in sorted(entries, key=key):
                 stem = name.rsplit(".", 1)[0]
-                items.append(f'<li><a href="{group}/{stem}.html">'
+                star = ' class="star"' if stem.endswith("test-full") else ""
+                items.append(f'<li{star}><a href="{group}/{stem}.html">'
                              f'{meta["doctitle"]}</a></li>')
                 md_items.append(f'- [{meta["doctitle"]}]({group}/{stem}.md)')
-            items.append("</ul>")
+            items.append("</ul></div></article>")
+        items.append("</div></section>")
     if args.format in ("md", "both"):
         (OUT_MD / "index.md").write_text("\n".join(md_items) + "\n",
                                          encoding="utf-8")
     if args.format in ("html", "both"):
         idx = PAGE.format(assetv=ASSET_V, title="AP Chemistry \u2022 Lessons",
                           unitword="", unit="", unittitle="AP Chemistry",
-                          doctitle="Lessons", subtitle="student edition \u2022 "
-                          "HTML companions to the printable PDFs",
+                          hue=0, unitline='<p class="unit"><span class='
+                          '"unit-chip">Student edition</span></p>',
+                          doctitle="AP Chemistry Lessons",
+                          subtitle="Notes, worksheets, self-study, exams and "
+                          "comprehensive tests \u2014 the HTML companions to "
+                          "the printable PDFs. Pick a unit to start.",
                           body="\n".join(items)).replace('href="../', 'href="').replace('src="../', 'src="')
+        idx = idx.replace("<body class=\"hue-0\">", '<body class="hue-0 home">')
         (OUT / "index.html").write_text(idx, encoding="utf-8")
 
     report = (OUT if args.format in ("html", "both") else OUT_MD) \
