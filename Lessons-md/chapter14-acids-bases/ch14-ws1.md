@@ -9,10 +9,8 @@ Zumdahl §14.1–14.4, 14.6 • strong is not the same word as concentrated
 
 > 📌 **Directions & data**
 >
-> $K_a$ values where needed: HF $7.2\times10^{-4}$ •\
-> HNO₂ $4.0\times10^{-4}$ • HC₂H₃O₂
-> $1.8\times10^{-5}$ • HOCl $3.5\times10^{-8}$ •\
-> HCN $6.2\times10^{-10}$. $K_w = 1.0\times10^{-14}$.
+> $K_a$ values where needed: HF $7.2\times10^{-4}$ • HNO₂ $4.0\times10^{-4}$ • HC₂H₃O₂
+> $1.8\times10^{-5}$ • HOCl $3.5\times10^{-8}$ • HCN $6.2\times10^{-10}$. $K_w = 1.0\times10^{-14}$.
 
 **1.** Identify the conjugate:
 

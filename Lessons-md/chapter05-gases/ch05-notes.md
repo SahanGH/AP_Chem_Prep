@@ -411,7 +411,7 @@ temperature and is read from a table:
 > 755 torr and the volume is 0.250 L. How many moles of
 > H₂ were collected?
 > 
-> $$ \begin{align*}   P_{\text{H₂}} &= 755 - 23.8 = 731\,\mathrm{torr} = 0.962\,\mathrm{atm}\\   n &= \frac{PV}{RT} = \frac{(0.962)(0.250)}{(0.08206)(298)} = 9.83e-3\,\mathrm{mol} \end{align*} $$
+> $$ \begin{align*}   P_{\text{H₂}} &= 755 - 23.8 = 731\,\mathrm{torr} = 0.962\,\mathrm{atm}\\   n &= \frac{PV}{RT} = \frac{(0.962)(0.250)}{(0.08206)(298)} = 9.83\times10^{-3}\,\mathrm{mol} \end{align*} $$
 > 
 > Forgetting the correction would have overstated the answer by about 3%.
 

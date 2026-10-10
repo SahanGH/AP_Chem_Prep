@@ -79,10 +79,8 @@ $$ \text{N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g)} \qquad \Delta H = -92\,\mathrm{kJ} 
 >
 > **(a) 2 pts** 1 $K_c$ expression, 1 $\Delta n$ with the $K_p$ relation
 > • **(b) 1 pt** 0.080 • **(c) 2 pts**
-> 1 direction, 1 explicitly states $K$ unchanged •\
-> **(d) 3 pts** 1 pressure with the mole-count reason, 1 temperature
-> direction, 1 states that $K$ itself decreases •\
-> **(e) 2 pts** 1 identifies the rate problem, 1 names the trade-off
+> 1 direction, 1 explicitly states $K$ unchanged • **(d) 3 pts** 1 pressure with the mole-count reason, 1 temperature
+> direction, 1 states that $K$ itself decreases • **(e) 2 pts** 1 identifies the rate problem, 1 names the trade-off
 > against yield.
 
 > 📌 **Spiral review • Chapter 13 • blocks 1–4**

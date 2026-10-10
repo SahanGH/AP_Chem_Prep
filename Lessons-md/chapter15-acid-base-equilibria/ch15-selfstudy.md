@@ -51,9 +51,9 @@ behind every buffer in this chapter.
 >
 > **Compare 0.10 M acetic acid alone with
 > 0.10 M acetic acid that also contains 0.10 M
-> sodium acetate. $K_{a} = 1.8e-5$.**
+> sodium acetate. $K_{a} = 1.8\times10^{-5}$.**
 > 
-> **Alone** (Chapter 14, Ladder 9): $x = \sqrt{K_{a}c} = 1.34e-3$, so pH $= 2.87$.
+> **Alone** (Chapter 14, Ladder 9): $x = \sqrt{K_{a}c} = 1.34\times10^{-3}$, so pH $= 2.87$.
 > 
 > **With acetate present**, the ICE table starts differently —
 > acetate is no longer zero:
@@ -66,7 +66,7 @@ behind every buffer in this chapter.
 
 $$ K_{a} = \frac{x(0.10+x)}{0.10-x}    \;\approx\; \frac{x(0.10)}{0.10} = x $$
 
-So $x = K_{a} = 1.8e-5$ and pH $= 4.74$.
+So $x = K_{a} = 1.8\times10^{-5}$ and pH $= 4.74$.
 
 **Nearly two pH units less acidic**, from adding a salt that
 contains no H+ at all. The added acetate pushed the ionisation
@@ -173,7 +173,7 @@ $$ \text{pH} = \text{p}K_{a}    + \log\!\left(\frac{[\text{A-}]}{[\text{HA}]}\ri
 
 > 📘 **I do: three buffers of the same acid**
 >
-> **Acetic acid has $K_{a} = 1.8e-5$, so
+> **Acetic acid has $K_{a} = 1.8\times10^{-5}$, so
 > p$K_{a} = 4.74$.**
 > 
 > **(a) Equal concentrations: 0.10 M CH₃COOH and
@@ -201,7 +201,7 @@ $$ \text{pH} = \text{p}K_{a}    + \log\!\left(\frac{[\text{A-}]}{[\text{HA}]}\ri
 > **Two errors to avoid.** The base goes on **top** — putting
 > HA there flips the sign of the correction and moves the pH the
 > wrong way. And the equation uses p$K_{a}$, not $K_{a}$: substituting
-> $1.8e-5$ where $4.74$ belongs produces nonsense you should catch
+> $1.8\times10^{-5}$ where $4.74$ belongs produces nonsense you should catch
 > by inspection.
 > 
 > **When it stops being valid.** H–H assumes both species are
@@ -378,19 +378,19 @@ stoichiometry first, then look at what is left.
 > 
 > **Step 1 — moles, not concentrations.**
 > 
-> $$ n(\text{H+}) = 0.0500 \times 0.100 = 5.00e-3\,\mathrm{mol} $$
+> $$ n(\text{H+}) = 0.0500 \times 0.100 = 5.00\times10^{-3}\,\mathrm{mol} $$
 > 
-> $$ n(\text{OH-}) = 0.0300 \times 0.100 = 3.00e-3\,\mathrm{mol} $$
+> $$ n(\text{OH-}) = 0.0300 \times 0.100 = 3.00\times10^{-3}\,\mathrm{mol} $$
 > 
 > **Step 2 — react them completely.** They cancel one for one:
 > 
-> $$ \text{excess } \text{H+} = 5.00 \times 10^{-3} - 3.00 \times 10^{-3}    = 2.00e-3\,\mathrm{mol} $$
+> $$ \text{excess } \text{H+} = 5.00 \times 10^{-3} - 3.00 \times 10^{-3}    = 2.00\times10^{-3}\,\mathrm{mol} $$
 > 
 > **Step 3 — divide by the TOTAL volume.**
 > 
 > $$ V_{\text{total}} = 50.0 + 30.0 = 80.0\,\mathrm{mL}    = 0.0800\,\mathrm{L} $$
 > 
-> $$ [\text{H+}] = \frac{2.00e-3}{0.0800}    = 0.0250\,\mathrm{M} $$
+> $$ [\text{H+}] = \frac{2.00\times10^{-3}}{0.0800}    = 0.0250\,\mathrm{M} $$
 > 
 > **Step 4 — take the logarithm.**
 > 
@@ -421,7 +421,7 @@ stoichiometry first, then look at what is left.
 > 4. Why must you use the combined volume?
 >    *(working space)*
 > 
-> > **check:** (a) 2.50e-3 mol H+     (b) 1.30     (c)
+> > **check:** (a) 2.50 &times; 10&minus;3 mol H+     (b) 1.30     (c)
 > 7.00     (d) the solution is diluted on mixing
 
 ## Ladder 7 • Weak acid $+$ strong base:
@@ -454,17 +454,17 @@ HA + OH- → A- + H₂O
 > 
 > **Moles first.**
 > 
-> $$ n(\text{HA}) = 0.0500 \times 0.100 = 5.00e-3\,\mathrm{mol} $$
+> $$ n(\text{HA}) = 0.0500 \times 0.100 = 5.00\times10^{-3}\,\mathrm{mol} $$
 > 
-> $$ n(\text{OH-}) = 0.0200 \times 0.100 = 2.00e-3\,\mathrm{mol} $$
+> $$ n(\text{OH-}) = 0.0200 \times 0.100 = 2.00\times10^{-3}\,\mathrm{mol} $$
 > 
 > **The ICF table.**
 > 
 > | (mol) | HA | OH- | A- |
 > |---|---|---|---|
-> | **I** | 5.00e-3 | 2.00e-3 | 0 |
-> | **C** | $-2.00e-3$ | $-2.00e-3$ | $+2.00e-3$ |
-> | **F** | 3.00e-3 | **0** | 2.00e-3 |
+> | **I** | 5.00 | thinsp; | times; | thinsp;10 | minus;3 | 2.00 | thinsp; | times; | thinsp;10 | minus;3 | 0 |
+> | **C** | $-2.00\times10^{-3}$ | $-2.00\times10^{-3}$ | $+2.00\times10^{-3}$ |
+> | **F** | 3.00 | thinsp; | times; | thinsp;10 | minus;3 | **0** | 2.00 | thinsp; | times; | thinsp;10 | minus;3 |
 
 **Read the F row and name the situation.** Both HA and
 A- are present in appreciable amounts — **this is a
@@ -473,7 +473,7 @@ buffer**. The hydroxide is gone.
 **So the pH comes from Henderson–Hasselbalch**, using the mole
 amounts directly (Ladder 3 showed the volume cancels):
 
-$$ \text{pH} = 4.74 + \log\!\left(\frac{2.00e-3}{3.00e-3}\right)    = 4.74 - 0.18 = \mathbf{4.56} $$
+$$ \text{pH} = 4.74 + \log\!\left(\frac{2.00\times10^{-3}}{3.00\times10^{-3}}\right)    = 4.74 - 0.18 = \mathbf{4.56} $$
 
 **The F row tells you which method to use**, and that is the real
 skill:
@@ -503,8 +503,8 @@ table decides which.
 > 4. Why is it an ICF and not an ICE table?
 >    *(working space)*
 > 
-> > **check:** (a) 4.00e-3  and 1.00e-3 mol     (b) 4.14
->     (c) 2.50e-3  each, pH 4.74     (d) the strong base is
+> > **check:** (a) 4.00 &times; 10&minus;3  and 1.00 &times; 10&minus;3 mol     (b) 4.14
+>     (c) 2.50 &times; 10&minus;3  each, pH 4.74     (d) the strong base is
 > consumed completely
 
 ## Ladder 8 • The three regions of a
@@ -524,11 +524,11 @@ you which you are in.
 > 
 > **ICF first, as always.**
 > 
-> $$ n(\text{HA}) = 5.00e-3    \qquad    n(\text{OH-}) = 0.0600 \times 0.100 = 6.00e-3 $$
+> $$ n(\text{HA}) = 5.00\times10^{-3}    \qquad    n(\text{OH-}) = 0.0600 \times 0.100 = 6.00\times10^{-3} $$
 > 
 > The base is now in excess:
 > 
-> $$ \text{excess } \text{OH-} = 6.00 \times 10^{-3} - 5.00 \times 10^{-3}    = 1.00e-3\,\mathrm{mol} $$
+> $$ \text{excess } \text{OH-} = 6.00 \times 10^{-3} - 5.00 \times 10^{-3}    = 1.00\times10^{-3}\,\mathrm{mol} $$
 > 
 > **Read the F row.** There is leftover *strong* base. Strong
 > base overwhelms the weak conjugate base A- that is also present —
@@ -539,7 +539,7 @@ you which you are in.
 > 
 > $$ V = 50.0 + 60.0 = 110.0\,\mathrm{mL} = 0.110\,\mathrm{L} $$
 > 
-> $$ [\text{OH-}] = \frac{1.00e-3}{0.110}    = 9.09e-3\,\mathrm{M} $$
+> $$ [\text{OH-}] = \frac{1.00\times10^{-3}}{0.110}    = 9.09\times10^{-3}\,\mathrm{M} $$
 > 
 > $$ \text{pOH} = 2.04    \qquad    \text{pH} = 14.00 - 2.04 = \mathbf{11.96} $$
 > 
@@ -591,27 +591,27 @@ Ladder 11.
 >
 > **Find the pH at the equivalence point of the Ladder 7 titration:
 > 50.0 mL of 0.100 M acetic acid with
-> 0.100 M NaOH. $K_{a} = 1.8e-5$.**
+> 0.100 M NaOH. $K_{a} = 1.8\times10^{-5}$.**
 > 
 > **Step 1 — how much base, and what is left?** Equivalence needs
-> 5.00e-3 mol of OH-, which is
+> 5.00 &times; 10&minus;3 mol of OH-, which is
 > 50.0 mL. The F row is: no HA, no OH-, and
-> 5.00e-3 mol of A-.
+> 5.00 &times; 10&minus;3 mol of A-.
 > 
 > **Step 2 — concentration of the conjugate base**, using the
 > **total** volume:
 > 
-> $$ [\text{A-}] = \frac{5.00e-3}{0.100\;\mathrm{L}}    = 0.0500\,\mathrm{M} $$
+> $$ [\text{A-}] = \frac{5.00\times10^{-3}}{0.100\;\mathrm{L}}    = 0.0500\,\mathrm{M} $$
 > 
 > The dilution is real — the acetate sits in twice the original volume.
 > 
 > **Step 3 — treat it as the weak base it is.**
 > 
-> $$ K_{b} = \frac{K_{w}}{K_{a}}    = \frac{1.0e-14}{1.8e-5} = 5.6e-10 $$
+> $$ K_{b} = \frac{K_{w}}{K_{a}}    = \frac{1.0\times10^{-14}}{1.8\times10^{-5}} = 5.6\times10^{-10} $$
 > 
-> $$ x = \sqrt{K_{b}c} = \sqrt{(5.6e-10)(0.0500)}      = 5.3e-6\,\mathrm{M} = [\text{OH-}] $$
+> $$ x = \sqrt{K_{b}c} = \sqrt{(5.6\times10^{-10})(0.0500)}      = 5.3\times10^{-6}\,\mathrm{M} = [\text{OH-}] $$
 > 
-> Check: $5.3e-6/0.0500$ is far below 5%. ✓
+> Check: $5.3\times10^{-6}/0.0500$ is far below 5%. ✓
 > 
 > **Step 4 — convert to pH**, remembering $x$ is $[\text{OH-}]$:
 > 
@@ -658,16 +658,16 @@ B + H+ → BH+
 > 📘 **I do: ammonia titrated with hydrochloric acid**
 >
 > **50.0 mL of 0.100 M NH₃
-> ($K_{b} = 1.8e-5$) is titrated with 0.100 M HCl.**
+> ($K_{b} = 1.8\times10^{-5}$) is titrated with 0.100 M HCl.**
 > 
 > **First convert to the acid constant you will need.** The buffer
 > here is NH₃/NH₄+, and Henderson–Hasselbalch is written for a
 > conjugate acid:
 > 
-> $$ K_{a}(\text{NH₄+}) = \frac{1.0e-14}{1.8e-5}    = 5.6e-10    \qquad    \text{p}K_{a} = 9.26 $$
+> $$ K_{a}(\text{NH₄+}) = \frac{1.0\times10^{-14}}{1.8\times10^{-5}}    = 5.6\times10^{-10}    \qquad    \text{p}K_{a} = 9.26 $$
 > 
 > **At half-equivalence (25.0 mL of acid):** the ICF
-> row gives 2.50e-3 mol each of NH₃ and NH₄+, so
+> row gives 2.50 &times; 10&minus;3 mol each of NH₃ and NH₄+, so
 > 
 > $$ \text{pH} = 9.26 + \log 1 = \mathbf{9.26} $$
 > 
@@ -676,11 +676,11 @@ B + H+ → BH+
 > **At equivalence (50.0 mL):** everything is
 > NH₄+, at
 > 
-> $$ [\text{NH₄+}] = \frac{5.00e-3}{0.100} = 0.0500\,\mathrm{M} $$
+> $$ [\text{NH₄+}] = \frac{5.00\times10^{-3}}{0.100} = 0.0500\,\mathrm{M} $$
 > 
 > NH₄+ is a weak *acid*, so
 > 
-> $$ x = \sqrt{(5.6e-10)(0.0500)} = 5.3e-6 = [\text{H+}] $$
+> $$ x = \sqrt{(5.6\times10^{-10})(0.0500)} = 5.3\times10^{-6} = [\text{H+}] $$
 > 
 > $$ \text{pH} = \mathbf{5.28} $$
 > 
@@ -696,7 +696,7 @@ B + H+ → BH+
 
 > ✏️ **YOUR TURN 10 — four questions**
 >
-> NH₃, $K_{b} = 1.8e-5$, p$K_{a}(\text{NH₄+}) = 9.26$.
+> NH₃, $K_{b} = 1.8\times10^{-5}$, p$K_{a}(\text{NH₄+}) = 9.26$.
 > 
 > 1. Is the equivalence pH above or below 7? Why?
 >    *(working space)*
@@ -797,7 +797,7 @@ The single most useful point on any weak-acid curve.
 > 
 > **Convert.**
 > 
-> $$ K_{a} = 10^{-5.20} = \mathbf{6.3e-6} $$
+> $$ K_{a} = 10^{-5.20} = \mathbf{6.3\times10^{-6}} $$
 > 
 > **This is a real laboratory method**, not a textbook trick. Titrate
 > a weak acid, find the equivalence volume from the steep jump, halve it,
@@ -828,7 +828,7 @@ The single most useful point on any weak-acid curve.
 >    *(working space)*
 > 
 > > **check:** (a) 15.0 mL     (b) 4.20 and
-> 6.3e-5     (c) the ratio is 1     (d) no — no buffer
+> 6.3 &times; 10&minus;5     (c) the ratio is 1     (d) no — no buffer
 > region
 
 ## Ladder 13 • Choosing an indicator
@@ -984,7 +984,7 @@ A diprotic acid gives up its protons in stages, so its curve has
 >    *(working space)*
 > 
 > > **check:** (a) 4.44     (b) 1.48     (c) NH₃/NH₄Cl    
-> (d) 1.6e-4     (e) same pH, 5x capacity
+> (d) 1.6 &times; 10&minus;4     (e) same pH, 5x capacity
 
 > ✏️ **MIXED SET — last five**
 >

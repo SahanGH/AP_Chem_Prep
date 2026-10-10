@@ -239,9 +239,7 @@ A galvanic cell is assembled from a nickel electrode in 1.0 M
 Ni(NO₃)₂ and a silver electrode in 1.0 M AgNO₃, joined
 by a salt bridge.
 
-$E^\circ$: Ag+ + e⁻ → Ag, $+0.80$ V •\
-Ni²⁺ + 2e⁻ → Ni, $-0.23$ V •\
-$F = 96485\,\mathrm{C/mol}$
+$E^\circ$: Ag+ + e⁻ → Ag, $+0.80$ V • Ni²⁺ + 2e⁻ → Ni, $-0.23$ V • $F = 96485\,\mathrm{C/mol}$
 
 Identify the anode and the cathode, and give the direction of
         electron flow through the wire.

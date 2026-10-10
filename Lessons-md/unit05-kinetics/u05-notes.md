@@ -64,18 +64,18 @@ $$ \text{rate} = -\frac{\Delta[\text{reactant}]}{\Delta t}    = +\frac{\Delta[\t
 > 📘 **Worked example 1: one reaction, three rates**
 >
 > For 2N₂O₅(g) → 4NO₂(g) + O₂(g), oxygen is forming at
-> 2.0e-3 M/s. Find the rate of the reaction and the rate
+> 2.0 &times; 10&minus;3 M/s. Find the rate of the reaction and the rate
 > of disappearance of N₂O₅.
 > 
 > Oxygen has coefficient 1, so the *reaction rate* is
-> $2.0e-3\,\mathrm{M/s}$.
+> $2.0\times10^{-3}\,\mathrm{M/s}$.
 > 
 > N₂O₅ has coefficient 2, so it disappears *twice* as fast:
 > 
 > $$ -\frac{\Delta[\text{N₂O₅}]}{\Delta t} = 2(2.0\times10^{-3})    = \mathbf{4.0\times10^{-3}}~\mathrm{M/s} $$
 > 
 > and NO₂ appears four times as fast,
-> $8.0e-3\,\mathrm{M/s}$.
+> $8.0\times10^{-3}\,\mathrm{M/s}$.
 
 #### GUIDED PRACTICE • Three kinds of rate 15 min
 
@@ -104,7 +104,7 @@ flattens.
 
 > 📌 **Exit ticket**
 >
-> For 2A → 3B, if B appears at 6.0e-4 M/s, how
+> For 2A → 3B, if B appears at 6.0 &times; 10&minus;4 M/s, how
 > fast does A disappear?
 
 ## Rate Laws and Orders CED 5.2 • Zumdahl §12.2–12.3

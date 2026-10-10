@@ -84,10 +84,8 @@ $K_{sp} = 4.0\times10^{-11}$ at 25 °C.
 > **(a) 2 pts** 1 balanced equation with states, 1 expression with the
 > fluoride squared • **(b) 3 pts** 1 recognizing
 > $[\text{F-}] = 2s$, 1 setting up $4s^3$, 1 answer $2.2\times10^{-4}$ M —
-> using $s^3$ instead of $4s^3$ caps this part at 1 •\
-> **(c) 2 pts** 1 correct substitution of 0.025 for $[\text{F-}]$,
-> 1 answer $6.4\times10^{-8}$ M with the approximation stated •\
-> **(d) 1 pt** unchanged, because $K_{sp}$ depends only on temperature
+> using $s^3$ instead of $4s^3$ caps this part at 1 • **(c) 2 pts** 1 correct substitution of 0.025 for $[\text{F-}]$,
+> 1 answer $6.4\times10^{-8}$ M with the approximation stated • **(d) 1 pt** unchanged, because $K_{sp}$ depends only on temperature
 > — saying “it decreases” earns 0 • **(e) 2 pts**
 > 1 more soluble, 1 justification naming F- as the conjugate base of a
 > weak acid.

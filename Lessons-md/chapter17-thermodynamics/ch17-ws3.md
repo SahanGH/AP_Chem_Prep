@@ -9,8 +9,7 @@ Zumdahl §17.3, 17.9 • favored says where it ends up, never how fast
 
 > 📌 **Directions & data**
 >
-> $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ •\
-> $\Delta G^\circ = -RT\ln K$ • $R = 8.314\,\mathrm{J/mol/K}$
+> $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ • $\Delta G^\circ = -RT\ln K$ • $R = 8.314\,\mathrm{J/mol/K}$
 > • $RT \approx 2.5\,\mathrm{kJ/mol}$ at
 > 298 K. Remember to convert $\Delta G^\circ$ to joules before
 > using $R$.

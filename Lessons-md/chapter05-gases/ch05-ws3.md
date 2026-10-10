@@ -76,8 +76,7 @@ pressure of 754 torr. The vapour pressure of water at
 > • **(b) 2 pts** 1 subtraction performed, 1 conversion to atm
 > • **(c) 2 pts** 1 correct rearrangement with kelvin, 1 value
 > with units • **(d) 2 pts** 1 explains the mixture/Dalton
-> reasoning, 1 states the direction of the error •\
-> **(e) 2 pts** 1 predicts larger, 1 gives BOTH reasons — one reason
+> reasoning, 1 states the direction of the error • **(e) 2 pts** 1 predicts larger, 1 gives BOTH reasons — one reason
 > only earns 1.
 
 > 📌 **Spiral review • Chapter 5 • blocks 1–4**

@@ -302,9 +302,9 @@ More soluble in water? Give the structural reason.
 > 📘 **Worked example: why soda goes flat**
 >
 > A sealed bottle is pressurized with CO₂ at 5.0 atm. Using
-> Zumdahl's Henry's law constant $k = 3.1e-2\,\mathrm{mol/L/atm}$:
+> Zumdahl's Henry's law constant $k = 3.1\times10^{-2}\,\mathrm{mol/L/atm}$:
 > 
-> $$ \begin{align*}   \text{sealed:}\quad C &= (3.1\times10^{-2})(5.0) = 0.16\,\mathrm{mol/L}\\   \text{opened:}\quad C &= (3.1\times10^{-2})(4.0\times10^{-4}) = 1.2e-5\,\mathrm{mol/L} \end{align*} $$
+> $$ \begin{align*}   \text{sealed:}\quad C &= (3.1\times10^{-2})(5.0) = 0.16\,\mathrm{mol/L}\\   \text{opened:}\quad C &= (3.1\times10^{-2})(4.0\times10^{-4}) = 1.2\times10^{-5}\,\mathrm{mol/L} \end{align*} $$
 > 
 > Once opened, the CO₂ equilibrates with the atmosphere, where its
 > partial pressure is only $4.0\times10^{-4}$ atm. The dissolved concentration

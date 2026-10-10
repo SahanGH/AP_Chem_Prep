@@ -10,8 +10,7 @@ Zumdahl §14.5–14.7 • for a base, x is [OH-] — convert
 > 📌 **Directions & data**
 >
 > $K_a$: HF $7.2\times10^{-4}$ • HC₂H₃O₂
-> $1.8\times10^{-5}$ • HOCl $3.5\times10^{-8}$ •\
-> HCN $6.2\times10^{-10}$. $K_b$: NH₃ $1.8\times10^{-5}$.
+> $1.8\times10^{-5}$ • HOCl $3.5\times10^{-8}$ • HCN $6.2\times10^{-10}$. $K_b$: NH₃ $1.8\times10^{-5}$.
 > Always run the 5% check.
 
 **1.** Set up the ICE table for 0.250 M HOCl and write

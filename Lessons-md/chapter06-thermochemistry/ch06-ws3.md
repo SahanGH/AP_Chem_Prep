@@ -75,8 +75,7 @@ $$ \text{N₂H₄(l) + O₂(g) → N₂(g) + 2 H₂O(l)} \qquad \Delta H^\circ =
 > $+50.4$ kJ/mol • **(b) 1 pt** interprets the positive sign
 > as endothermic formation • **(c) 2 pts** 1 moles, 1 heat
 > with sign and units • **(d) 2 pts** 1 says smaller,
-> 1 supports with the 88 kJ vaporization figure •\
-> **(e) 2 pts** 1 correct $\Delta T$, 1 final temperature.
+> 1 supports with the 88 kJ vaporization figure • **(e) 2 pts** 1 correct $\Delta T$, 1 final temperature.
 
 > 📌 **Spiral review • Chapter 6 • blocks 1–3**
 >

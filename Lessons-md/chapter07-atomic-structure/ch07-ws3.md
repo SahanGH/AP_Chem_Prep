@@ -87,7 +87,7 @@ element.
 >
 > 1. Configuration of Fe³⁺: $[\text{Ar}]3d^5$
 > 2. Energy of a 600 nm photon:
->    3.31e-19 J
+>    3.31 &times; 10&minus;19 J
 > 3. Unpaired electrons in ground-state O: 2
 > 4. Which fills first, 4$s$ or 3$d$? 4$s$
 > 5. Actual configuration of Cu:

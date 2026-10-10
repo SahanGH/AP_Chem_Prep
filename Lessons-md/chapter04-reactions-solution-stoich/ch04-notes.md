@@ -305,7 +305,7 @@ moles.
 >    AgCl(s) + KNO₃(aq)
 > 3. Moles of Ag+ in 20.0 mL of
 >    0.150 M AgNO₃:
->    3.00e-3 mol
+>    3.00 &times; 10&minus;3 mol
 
 #### INSTRUCTION A • Three equations, three levels of honesty 25 min
 
@@ -414,7 +414,7 @@ A student writes Ba²⁺ + SO₄²⁻ → BaSO₄(s) for the reaction of
 > 3. Strong acid example: HCl, HNO₃,
 >    H₂SO₄
 > 4. Moles in 35.0 mL of 0.200 M:
->    7.00e-3 mol
+>    7.00 &times; 10&minus;3 mol
 
 #### INSTRUCTION A • Two definitions, one behavior 25 min
 
@@ -492,7 +492,7 @@ indicator colour change.
 > It takes 27.4 mL of 0.150 M NaOH to
 > neutralize 25.0 mL of HCl. Find $[\text{HCl}]$.
 > 
-> $$ \begin{align*}   n(\text{OH-}) &= (0.0274)(0.150) = 4.11e-3\,\mathrm{mol}\\   &\text{H+ + OH⁻ → H₂O} \quad (1{:}1) \Rightarrow n(\text{H+}) = 4.11e-3\,\mathrm{mol}\\   [\text{HCl}] &= \frac{4.11\times10^{-3}}{0.0250} = 0.164\,\mathrm{M} \end{align*} $$
+> $$ \begin{align*}   n(\text{OH-}) &= (0.0274)(0.150) = 4.11\times10^{-3}\,\mathrm{mol}\\   &\text{H+ + OH⁻ → H₂O} \quad (1{:}1) \Rightarrow n(\text{H+}) = 4.11\times10^{-3}\,\mathrm{mol}\\   [\text{HCl}] &= \frac{4.11\times10^{-3}}{0.0250} = 0.164\,\mathrm{M} \end{align*} $$
 
 20.0 mL of H₂SO₄ requires
         32.0 mL of 0.250 M NaOH. Find
@@ -526,7 +526,7 @@ Why does the diprotic acid change the arithmetic?
 > 1. Net ionic for strong acid + strong base:
 >    H+ + OH⁻ → H₂O
 > 2. Moles of H+ in 25.0 mL of 0.100 M
->    H₂SO₄: 5.00e-3 mol
+>    H₂SO₄: 5.00 &times; 10&minus;3 mol
 > 3. Charge on the sulfate ion: $2-$
 
 #### INSTRUCTION A • Oxidation states 25 min

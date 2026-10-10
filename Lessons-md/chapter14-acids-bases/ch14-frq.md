@@ -57,7 +57,7 @@ Acetic acid, CH₃COOH, has $K_a = 1.8\times10^{-5}$. Consider a
 ### Free-response 3 • short • 4 points
 
 A solution at 25 °C has
-$[\text{OH-}] = 2.5e-4\,\mathrm{M}$.
+$[\text{OH-}] = 2.5\times10^{-4}\,\mathrm{M}$.
 
 1. Calculate the pOH, the $[\text{H₃O+}]$ and the pH.
    *(working space)*

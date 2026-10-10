@@ -73,8 +73,7 @@ is nearly seven times $\Delta H_{\text{fus}}$
 > **(a) 1 pt** 5.00 mol • **(b) 4 pts** 1 per correct
 > sloped-segment pair (ice and steam), 1 fusion, 1 vaporization, 1 liquid
 > warming — using mass in $n\Delta H$ or moles in $mc\Delta T$ loses the
-> point • **(c) 1 pt** 277 kJ •\
-> **(d) 2 pts** 1 percentage, 1 comment noting no temperature change
+> point • **(c) 1 pt** 277 kJ • **(d) 2 pts** 1 percentage, 1 comment noting no temperature change
 > • **(e) 2 pts** 1 correct shape with the longer plateau at
 > 100 °C, 1 explanation citing IMFs versus kinetic energy.
 

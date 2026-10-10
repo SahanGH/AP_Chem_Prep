@@ -232,12 +232,7 @@ makes $\Delta H$ more negative
 
 > 📌 **Data**
 >
-> rate $= k[\text{A}]^m[\text{B}]^n$ •\
-> $\ln[\text{A}] = -kt + \ln[\text{A}]_0$ •\
-> $1/[\text{A}] = kt + 1/[\text{A}]_0$ •\
-> $t_{1/2} = 0.693/k$ (first order) •\
-> $k = Ae^{-E_a/RT}$ •\
-> $\ln(k_2/k_1) = -\tfrac{E_a}{R}(\tfrac{1}{T_2}-\tfrac{1}{T_1})$
+> rate $= k[\text{A}]^m[\text{B}]^n$ • $\ln[\text{A}] = -kt + \ln[\text{A}]_0$ • $1/[\text{A}] = kt + 1/[\text{A}]_0$ • $t_{1/2} = 0.693/k$ (first order) • $k = Ae^{-E_a/RT}$ • $\ln(k_2/k_1) = -\tfrac{E_a}{R}(\tfrac{1}{T_2}-\tfrac{1}{T_1})$
 > • $R = 8.314\,\mathrm{J/mol/K}$.
 
 ### Free-response 1 • short • 4 points

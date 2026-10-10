@@ -11,9 +11,7 @@ Zumdahl §17.6–17.7 • entropies are in joules, enthalpies in kilojoules
 >
 > Zumdahl Appendix 4. Columns: $\Delta H_f^\circ$ (kJ/mol),
 > $\Delta G_f^\circ$ (kJ/mol), $S^\circ$ (J/K$\cdot$mol). H₂ 0, 0, 131
-> • O₂ 0, 0, 205 • N₂ 0, 0, 192 •\
-> C(gr) 0, 0, 6 • H₂O(l) $-286$, $-237$, 70 •\
-> H₂O(g) $-242$, $-229$, 189 • CO₂ $-393.5$, $-394$, 214
+> • O₂ 0, 0, 205 • N₂ 0, 0, 192 • C(gr) 0, 0, 6 • H₂O(l) $-286$, $-237$, 70 • H₂O(g) $-242$, $-229$, 189 • CO₂ $-393.5$, $-394$, 214
 > • CO $-110.5$, $-137$, 198 • CH₄ $-75$,
 > $-51$, 186 • NH₃ $-46$, $-17$, 193 • NO 90,
 > 87, 211 • NO₂ 34, 52, 240 • N₂O₄ 10, 98,

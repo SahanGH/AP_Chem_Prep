@@ -187,9 +187,9 @@ $$ \text{mass \%} =    \frac{\text{mass of solute}}{\text{mass of \textbf{soluti
 > per 1.0 kg of water. Express this in ppm.**
 > 
 > Parts per million is the same ratio scaled by $10^{6}$. Put both masses
-> in the same unit first: 2.5 mg $= 2.5e-3\,\mathrm{g}$ and 1.0 kg $= 1.0e3\,\mathrm{g}$.
+> in the same unit first: 2.5 mg $= 2.5\times10^{-3}\,\mathrm{g}$ and 1.0 kg $= 1.0\times10^{3}\,\mathrm{g}$.
 > 
-> $$ \frac{2.5e-3}{1.0e3} \times 10^{6}    = \mathbf{2.5 \text{ ppm}} $$
+> $$ \frac{2.5\times10^{-3}}{1.0\times10^{3}} \times 10^{6}    = \mathbf{2.5 \text{ ppm}} $$
 > 
 > **The shortcut worth memorising.** For dilute *aqueous*
 > solutions the density is essentially 1.00 g/mL,
@@ -616,13 +616,13 @@ $$ C = kP \qquad\text{or, comparing two conditions,}\qquad    \frac{C_{1}}{P_{1}
 
 > 📘 **I do: the soda can**
 >
-> **The solubility of a gas is 1.3e-3 M under
+> **The solubility of a gas is 1.3 &times; 10&minus;3 M under
 > 1.0 atm of that gas. What is it under
 > 4.0 atm?**
 > 
 > Solubility is directly proportional to partial pressure, so
 > 
-> $$ C_{2} = C_{1} \times \frac{P_{2}}{P_{1}}         = 1.3e-3 \times \frac{4.0}{1.0}         = \mathbf{5.2e-3\,\mathrm{M}} $$
+> $$ C_{2} = C_{1} \times \frac{P_{2}}{P_{1}}         = 1.3\times10^{-3} \times \frac{4.0}{1.0}         = \mathbf{5.2\times10^{-3}\,\mathrm{M}} $$
 > 
 > Four times the pressure, four times the dissolved gas. No other
 > variable enters.

@@ -20,8 +20,8 @@ Zumdahl §7.1–§7.12 • 5 questions • 32 points • 50 minutes
 > exceptions**, so Cr and Cu do not appear as configuration
 > questions. Both remain worth understanding; neither will be tested.
 > 
-> $h = 6.626e-34\,\mathrm{J\cdot s}$,  
-> $c = 3.00e8\,\mathrm{m/s}$.
+> $h = 6.626\times10^{-34}\,\mathrm{J\cdot s}$,  
+> $c = 3.00\times10^{8}\,\mathrm{m/s}$.
 
 ## Section II • Free Response 5 questions • 32 points • 50 minutes
 
@@ -85,7 +85,7 @@ lowest.
 ### Free-response 5 • short • 4 points
 
 1. Light of 300 nm strikes a metal whose electrons are
-   bound with an energy of 5.0e-19 J. Determine whether an
+   bound with an energy of 5.0 &times; 10&minus;19 J. Determine whether an
    electron is ejected.
    *(working space)*
 2. Doubling the intensity of the light does not change whether an

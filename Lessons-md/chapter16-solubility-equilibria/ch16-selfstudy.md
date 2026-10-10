@@ -126,20 +126,20 @@ is a multiple of it.
 > 📘 **I do: from measured solubility to $K_{sp}$**
 >
 > **(a) The molar solubility of AgCl is
-> 1.3e-5 M at 25 °C. Find $K_{sp}$.**
+> 1.3 &times; 10&minus;5 M at 25 °C. Find $K_{sp}$.**
 > 
 > Each dissolved formula unit gives one Ag+ and one Cl-:
 > 
-> $$ [\text{Ag+}] = [\text{Cl-}] = s = 1.3e-5 $$
+> $$ [\text{Ag+}] = [\text{Cl-}] = s = 1.3\times10^{-5} $$
 > 
-> $$ K_{sp} = s^{2} = (1.3e-5)^{2} = \mathbf{1.7e-10} $$
+> $$ K_{sp} = s^{2} = (1.3\times10^{-5})^{2} = \mathbf{1.7\times10^{-10}} $$
 > 
 > **(b) The molar solubility of PbI₂ is
-> 1.5e-3 M. Find $K_{sp}$.**
+> 1.5 &times; 10&minus;3 M. Find $K_{sp}$.**
 > 
-> Here $[\text{Pb²⁺}] = s$ and $[\text{I-}] = 2s = 3.0e-3$:
+> Here $[\text{Pb²⁺}] = s$ and $[\text{I-}] = 2s = 3.0\times10^{-3}$:
 > 
-> $$ K_{sp} = s(2s)^{2} = 4s^{3}           = 4(1.5e-3)^{3}           = 4 \times 3.375e-9           = \mathbf{1.4e-8} $$
+> $$ K_{sp} = s(2s)^{2} = 4s^{3}           = 4(1.5\times10^{-3})^{3}           = 4 \times 3.375\times10^{-9}           = \mathbf{1.4\times10^{-8}} $$
 > 
 > **Check the setup before the arithmetic.** The commonest wrong
 > answer here is $s \times (2s)$ without the square, or
@@ -155,10 +155,10 @@ is a multiple of it.
 
 > ✏️ **YOUR TURN 2 — four questions**
 >
-> 1. The molar solubility of AgBr is 7.1e-7 M.
+> 1. The molar solubility of AgBr is 7.1 &times; 10&minus;7 M.
 >    Find $K_{sp}$.
 >    *(working space)*
-> 2. The molar solubility of PbF₂ is 2.0e-3 M.
+> 2. The molar solubility of PbF₂ is 2.0 &times; 10&minus;3 M.
 >    Find $K_{sp}$.
 >    *(working space)*
 > 3. For CaF₂ dissolving with molar solubility $s$, give
@@ -168,7 +168,7 @@ is a multiple of it.
 >    both doubled and squared?
 >    *(working space)*
 > 
-> > **check:** (a) 5.0e-13     (b) 3.2e-8     (c) $s$ and
+> > **check:** (a) 5.0 &times; 10&minus;13     (b) 3.2 &times; 10&minus;8     (c) $s$ and
 > $2s$     (d) stoichiometry doubles it; the mass-action law squares it
 
 ## Ladder 3 • From $K_{sp}$ to solubility
@@ -180,27 +180,27 @@ dissolves?
 
 > 📘 **I do: two stoichiometries, two algebra shapes**
 >
-> **(a) $K_{sp}(\text{BaSO₄}) = 1.5e-9$. Find the molar
+> **(a) $K_{sp}(\text{BaSO₄}) = 1.5\times10^{-9}$. Find the molar
 > solubility.**
 > 
 > 1:1 salt, so $K_{sp} = s^{2}$:
 > 
-> $$ s = \sqrt{1.5e-9} = \mathbf{3.9e-5\,\mathrm{M}} $$
+> $$ s = \sqrt{1.5\times10^{-9}} = \mathbf{3.9\times10^{-5}\,\mathrm{M}} $$
 > 
-> **(b) $K_{sp}(\text{CaF₂}) = 4.0e-11$. Find the molar
+> **(b) $K_{sp}(\text{CaF₂}) = 4.0\times10^{-11}$. Find the molar
 > solubility.**
 > 
 > 1:2 salt, so $K_{sp} = 4s^{3}$:
 > 
-> $$ s^{3} = \frac{4.0e-11}{4} = 1.0e-11    \qquad    s = \sqrt[3]{1.0e-11} = \mathbf{2.2e-4\,\mathrm{M}} $$
+> $$ s^{3} = \frac{4.0\times10^{-11}}{4} = 1.0\times10^{-11}    \qquad    s = \sqrt[3]{1.0\times10^{-11}} = \mathbf{2.2\times10^{-4}\,\mathrm{M}} $$
 > 
-> **The no-calculator cube root.** $1.0e-11 = 10e-12$, and $\sqrt[3]{10e-12} = \sqrt[3]{10} \times 10^{-4} \approx 2.2 \times 10^{-4}$. Rewriting so the exponent is a
+> **The no-calculator cube root.** $1.0\times10^{-11} = 10\times10^{-12}$, and $\sqrt[3]{10\times10^{-12}} = \sqrt[3]{10} \times 10^{-4} \approx 2.2 \times 10^{-4}$. Rewriting so the exponent is a
 > multiple of 3 is the whole trick, and MCQ items are built to allow it.
 > 
 > **Convert to grams if asked.** For BaSO₄
 > ($M = 233.4\,\mathrm{g/mol}$):
 > 
-> $$ 3.9e-5 \times 233.4 \approx 9.0e-3\,\mathrm{g/L} $$
+> $$ 3.9\times10^{-5} \times 233.4 \approx 9.0\times10^{-3}\,\mathrm{g/L} $$
 > 
 > — about nine milligrams dissolving in a litre, which is why barium
 > sulfate can be swallowed for X-ray imaging even though barium ion is
@@ -212,10 +212,10 @@ dissolves?
 
 > ✏️ **YOUR TURN 3 — four questions**
 >
-> 1. A 1:1 salt has $K_{sp} = 4.0e-12$. Find its molar
+> 1. A 1:1 salt has $K_{sp} = 4.0\times10^{-12}$. Find its molar
 >    solubility.
 >    *(working space)*
-> 2. A 1:2 salt MX₂ has $K_{sp} = 3.2e-11$. Find its
+> 2. A 1:2 salt MX₂ has $K_{sp} = 3.2\times10^{-11}$. Find its
 >    molar solubility.
 >    *(working space)*
 > 3. For the salt in (a), find $[\text{M+}]$ in the saturated
@@ -225,8 +225,8 @@ dissolves?
 >    formula type, and what decides it?
 >    *(working space)*
 > 
-> > **check:** (a) 2.0e-6 M     (b) 2.0e-4 M    
-> (c) 2.0e-6 M     (d) 1:1 gives $s^{2}$; 1:2 gives
+> > **check:** (a) 2.0 &times; 10&minus;6 M     (b) 2.0 &times; 10&minus;4 M    
+> (c) 2.0 &times; 10&minus;6 M     (d) 1:1 gives $s^{2}$; 1:2 gives
 > $4s^{3}$ — the formula's stoichiometry
 
 ## Ladder 4 • Comparing solubilities —
@@ -244,8 +244,8 @@ same shape.*
 calculate**
 >
 > **Rule 1 — same formula type: compare $K_{sp}$ directly.**
-> AgCl ($1.6e-10$), AgBr ($5.0e-13$), AgI
-> ($1.5e-16$) are all 1:1, so the ranking of $K_{sp}$ *is* the
+> AgCl ($1.6\times10^{-10}$), AgBr ($5.0\times10^{-13}$), AgI
+> ($1.5\times10^{-16}$) are all 1:1, so the ranking of $K_{sp}$ *is* the
 > ranking of solubility: $\text{AgCl} > \text{AgBr} > \text{AgI}$. No
 > calculation needed — and this is CED 7.11.A.2's “predict the
 > relative solubility” skill.
@@ -253,9 +253,9 @@ calculate**
 > **Rule 2 — different formula types: you must compute $s$ for
 > each.** Compare AgCl with Ag₂CrO₄:
 > 
-> $$ s(\text{AgCl}) = \sqrt{1.6e-10} = 1.3e-5 $$
+> $$ s(\text{AgCl}) = \sqrt{1.6\times10^{-10}} = 1.3\times10^{-5} $$
 > 
-> $$ s(\text{Ag₂CrO₄}) = \sqrt[3]{\frac{9.0e-12}{4}}    = \sqrt[3]{2.25e-12} = 1.3e-4 $$
+> $$ s(\text{Ag₂CrO₄}) = \sqrt[3]{\frac{9.0\times10^{-12}}{4}}    = \sqrt[3]{2.25\times10^{-12}} = 1.3\times10^{-4} $$
 > 
 > The chromate is **ten times more soluble** despite a $K_{sp}$
 > eighteen times smaller. A bare comparison of the constants gives the
@@ -271,12 +271,12 @@ calculate**
 
 > ✏️ **YOUR TURN 4 — four questions**
 >
-> 1. Rank AgCl ($K_{sp} = 1.6e-10$), AgBr
->    ($5.0e-13$), AgI ($1.5e-16$) by solubility.
+> 1. Rank AgCl ($K_{sp} = 1.6\times10^{-10}$), AgBr
+>    ($5.0\times10^{-13}$), AgI ($1.5\times10^{-16}$) by solubility.
 >    Justify the shortcut.
 >    *(working space)*
-> 2. May you rank BaSO₄ ($1.5e-9$) against CaF₂
->    ($4.0e-11$) by comparing the constants? Why or why not?
+> 2. May you rank BaSO₄ ($1.5\times10^{-9}$) against CaF₂
+>    ($4.0\times10^{-11}$) by comparing the constants? Why or why not?
 >    *(working space)*
 > 3. Compute both molar solubilities from question 2 and give the
 >    ranking.
@@ -286,8 +286,8 @@ calculate**
 >    *(working space)*
 > 
 > > **check:** (a) AgCl $>$ AgBr $>$ AgI — same type    
-> (b) no — different types     (c) CaF₂ ($2.2e-4$) $>$
-> BaSO₄ ($3.9e-5$)     (d) compared constants across
+> (b) no — different types     (c) CaF₂ ($2.2\times10^{-4}$) $>$
+> BaSO₄ ($3.9\times10^{-5}$)     (d) compared constants across
 > formula types
 
 ## Ladder 5 • The common-ion effect
@@ -303,7 +303,7 @@ pushed back toward the solid, and the arithmetic says by how much.
 > 📘 **I do: solubility with a common ion**
 >
 > **Find the molar solubility of AgCl
-> ($K_{sp} = 1.6e-10$) in 0.10 M NaCl.**
+> ($K_{sp} = 1.6\times10^{-10}$) in 0.10 M NaCl.**
 > 
 > **Set up the equilibrium with the chloride head start.** Let $s$
 > dissolve. Then $[\text{Ag+}] = s$, but chloride starts at 0.10:
@@ -313,13 +313,13 @@ pushed back toward the solid, and the arithmetic says by how much.
 > **Approximate, Chapter 13 style.** $s$ will be tiny against 0.10
 > (the $K_{sp}$ is $10^{-10}$), so $0.10 + s \approx 0.10$:
 > 
-> $$ 1.6e-10 = s \times 0.10    \qquad\Longrightarrow\qquad    s = \mathbf{1.6e-9\,\mathrm{M}} $$
+> $$ 1.6\times10^{-10} = s \times 0.10    \qquad\Longrightarrow\qquad    s = \mathbf{1.6\times10^{-9}\,\mathrm{M}} $$
 > 
-> Check: $1.6e-9/0.10 \times 100$ is far below 5% — the
+> Check: $1.6\times10^{-9}/0.10 \times 100$ is far below 5% — the
 > approximation is comfortably valid.
 > 
-> **Compare with pure water.** There $s = 1.3e-5$; here
-> $s = 1.6e-9$ — the common ion suppressed the solubility by a
+> **Compare with pure water.** There $s = 1.3\times10^{-5}$; here
+> $s = 1.6\times10^{-9}$ — the common ion suppressed the solubility by a
 > factor of about **8000**. Qualitatively that is Le Ch\^atelier
 > (added product pushes the equilibrium left); quantitatively it falls
 > straight out of the $K_{sp}$ expression, because $[\text{Cl-}]$ is pinned
@@ -343,16 +343,16 @@ pushed back toward the solid, and the arithmetic says by how much.
 >    Le Ch\^atelier.
 >    *(working space)*
 > 2. Find the molar solubility of BaSO₄
->    ($K_{sp} = 1.5e-9$) in 0.10 M Na₂SO₄.
+>    ($K_{sp} = 1.5\times10^{-9}$) in 0.10 M Na₂SO₄.
 >    *(working space)*
 > 3. Find the molar solubility of AgBr
->    ($K_{sp} = 5.0e-13$) in 0.010 M NaBr.
+>    ($K_{sp} = 5.0\times10^{-13}$) in 0.010 M NaBr.
 >    *(working space)*
 > 4. Does the common ion change $K_{sp}$? Explain.
 >    *(working space)*
 > 
 > > **check:** (a) pure water — added sulfate pushes left     (b)
-> 1.5e-8 M     (c) 5.0e-11 M     (d) no —
+> 1.5 &times; 10&minus;8 M     (c) 5.0 &times; 10&minus;11 M     (d) no —
 > only temperature changes $K_{sp}$
 
 ## Ladder 6 • pH and solubility —
@@ -433,20 +433,20 @@ $K_{sp}$.
 
 > 📘 **I do: three verdicts on one salt**
 >
-> **$K_{sp}(\text{AgCl}) = 1.6e-10$. For each mixture, decide
+> **$K_{sp}(\text{AgCl}) = 1.6\times10^{-10}$. For each mixture, decide
 > what happens.**
 > 
-> **(a) $[\text{Ag+}] = 1.0e-6$, $[\text{Cl-}] = 1.0e-6$.**
+> **(a) $[\text{Ag+}] = 1.0\times10^{-6}$, $[\text{Cl-}] = 1.0\times10^{-6}$.**
 > 
-> $$ Q = (1.0e-6)(1.0e-6) = 1.0e-12 $$
+> $$ Q = (1.0\times10^{-6})(1.0\times10^{-6}) = 1.0\times10^{-12} $$
 > 
 > $Q  K_{sp}$ by a factor of ten: **a precipitate forms**, and it
 > keeps forming — consuming ions — until the product of what remains
-> in solution has fallen back to $1.6e-10$.
+> in solution has fallen back to $1.6\times10^{-10}$.
 > 
-> **(c) $[\text{Ag+}] = 1.6e-5$, $[\text{Cl-}] = 1.0e-5$.**
+> **(c) $[\text{Ag+}] = 1.6\times10^{-5}$, $[\text{Cl-}] = 1.0\times10^{-5}$.**
 > 
-> $$ Q = 1.6e-10 = K_{sp} $$
+> $$ Q = 1.6\times10^{-10} = K_{sp} $$
 > 
 > Exactly saturated: the solution sits at equilibrium, holding as much as
 > it ever will. Note the two concentrations are *not equal* — only
@@ -461,22 +461,22 @@ $K_{sp}$.
 
 > ✏️ **YOUR TURN 7 — four questions**
 >
-> $K_{sp}(\text{BaSO₄}) = 1.5e-9$.
+> $K_{sp}(\text{BaSO₄}) = 1.5\times10^{-9}$.
 > 
-> 1. $[\text{Ba²⁺}] = 1.0e-5$ and $[\text{SO₄²⁻}] =         1.0e-5$. Precipitate? 
+> 1. $[\text{Ba²⁺}] = 1.0\times10^{-5}$ and $[\text{SO₄²⁻}] =         1.0\times10^{-5}$. Precipitate? 
 >    *(working space)*
-> 2. $[\text{Ba²⁺}] = 1.0e-4$ and $[\text{SO₄²⁻}] =         1.0e-4$. Precipitate? 
+> 2. $[\text{Ba²⁺}] = 1.0\times10^{-4}$ and $[\text{SO₄²⁻}] =         1.0\times10^{-4}$. Precipitate? 
 >    *(working space)*
-> 3. For PbI₂ ($K_{sp} = 1.4e-8$):
->    $[\text{Pb²⁺}] = 1.0e-5$, $[\text{I-}] = 1.0e-3$.
+> 3. For PbI₂ ($K_{sp} = 1.4\times10^{-8}$):
+>    $[\text{Pb²⁺}] = 1.0\times10^{-5}$, $[\text{I-}] = 1.0\times10^{-3}$.
 >    Precipitate? (Mind the exponent.)
 >    *(working space)*
 > 4. What physically happens, and to which quantity, when
 >    $Q > K_{sp}$?
 >    *(working space)*
 > 
-> > **check:** (a) $Q = 1.0e-10$, no     (b) $Q = 1.0e-8$,
-> yes     (c) $Q = 1.0e-11$, no     (d) ions leave solution as
+> > **check:** (a) $Q = 1.0\times10^{-10}$, no     (b) $Q = 1.0\times10^{-8}$,
+> yes     (c) $Q = 1.0\times10^{-11}$, no     (d) ions leave solution as
 > solid until $Q$ falls to $K_{sp}$
 
 ## Ladder 8 • The mixing problem
@@ -491,28 +491,28 @@ and forgetting the dilution is the built-in trap.
 
 > 📘 **I do: mix, dilute, decide**
 >
-> **100. mL of 4.0e-4 M AgNO₃ is
-> mixed with 100. mL of 4.0e-4 M NaCl.
-> Does AgCl precipitate? ($K_{sp} = 1.6e-10$)**
+> **100. mL of 4.0 &times; 10&minus;4 M AgNO₃ is
+> mixed with 100. mL of 4.0 &times; 10&minus;4 M NaCl.
+> Does AgCl precipitate? ($K_{sp} = 1.6\times10^{-10}$)**
 > 
 > **Step 1 — dilution.** The total volume is
 > 200. mL, so each ion's concentration halves:
 > 
-> $$ [\text{Ag+}] = [\text{Cl-}]    = 4.0e-4 \times \frac{100.}{200.}    = 2.0e-4\;\mathrm{M} $$
+> $$ [\text{Ag+}] = [\text{Cl-}]    = 4.0\times10^{-4} \times \frac{100.}{200.}    = 2.0\times10^{-4}\;\mathrm{M} $$
 > 
 > **Step 2 — compute $Q$.**
 > 
-> $$ Q = (2.0e-4)(2.0e-4) = 4.0e-8 $$
+> $$ Q = (2.0\times10^{-4})(2.0\times10^{-4}) = 4.0\times10^{-8} $$
 > 
 > **Step 3 — compare.**
 > 
-> $$ 4.0e-8 > 1.6e-10    \qquad\Longrightarrow\qquad    \textbf{a precipitate forms} $$
+> $$ 4.0\times10^{-8} > 1.6\times10^{-10}    \qquad\Longrightarrow\qquad    \textbf{a precipitate forms} $$
 > 
 > $Q$ exceeds $K_{sp}$ by a factor of 250, so most of the silver ends up
 > as solid AgCl.
 > 
 > **The trap, run deliberately.** Skip the dilution and you compute
-> $Q = (4.0e-4)^{2} = 1.6e-7$ — still a “yes” here, but
+> $Q = (4.0\times10^{-4})^{2} = 1.6\times10^{-7}$ — still a “yes” here, but
 > four times too large, and on a question built closer to the boundary
 > the undiluted $Q$ gives the *wrong verdict*. The dilution step is
 > where the marks live; distractors are manufactured from exactly this
@@ -526,18 +526,18 @@ and forgetting the dilution is the built-in trap.
 
 > ✏️ **YOUR TURN 8 — four questions**
 >
-> 1. Equal volumes of 2.0e-3 M Pb(NO₃)₂ and
->    2.0e-3 M KI are mixed. Give the diluted
+> 1. Equal volumes of 2.0 &times; 10&minus;3 M Pb(NO₃)₂ and
+>    2.0 &times; 10&minus;3 M KI are mixed. Give the diluted
 >    $[\text{Pb²⁺}]$ and $[\text{I-}]$.
 >    *(working space)*
 > 2. Compute $Q$ for PbI₂ from those diluted values.
 >    *(working space)*
-> 3. $K_{sp}(\text{PbI₂}) = 1.4e-8$. Does a precipitate form?
+> 3. $K_{sp}(\text{PbI₂}) = 1.4\times10^{-8}$. Does a precipitate form?
 >    *(working space)*
 > 4. Why must the dilution come *before* the $Q$ calculation?
 >    *(working space)*
 > 
-> > **check:** (a) 1.0e-3 each     (b) $Q = 1.0e-9$    
+> > **check:** (a) 1.0 &times; 10&minus;3 each     (b) $Q = 1.0\times10^{-9}$    
 > (c) no — $Q  $Q$ must be computed from
 
 ## Ladder 9 • Reading and representing
@@ -611,43 +611,43 @@ diagrams, and the vocabulary of saturation, said precisely.
 >
 > 1. Write the $K_{sp}$ expression for Fe(OH)₃.
 >    *(working space)*
-> 2. A 1:1 salt has molar solubility 2.0e-4 M. Find
+> 2. A 1:1 salt has molar solubility 2.0 &times; 10&minus;4 M. Find
 >    $K_{sp}$.
 >    *(working space)*
-> 3. $K_{sp}(\text{MX₂}) = 4.0e-9$. Find the molar solubility.
+> 3. $K_{sp}(\text{MX₂}) = 4.0\times10^{-9}$. Find the molar solubility.
 >    *(working space)*
-> 4. Salt A (1:1) has $K_{sp} = 1.0e-10$; salt B (1:2) has
->    $K_{sp} = 1.0e-11$. May you conclude A is more soluble?
+> 4. Salt A (1:1) has $K_{sp} = 1.0\times10^{-10}$; salt B (1:2) has
+>    $K_{sp} = 1.0\times10^{-11}$. May you conclude A is more soluble?
 >    *(working space)*
 > 5. Is SrCO₃ more soluble at pH 4 than at pH 7? One sentence.
 >    *(working space)*
 > 
-> > **check:** (a) $[\text{Fe³⁺}][\text{OH-}]^{3}$     (b) 4.0e-8
->     (c) 1.0e-3 M     (d) no — different formula
+> > **check:** (a) $[\text{Fe³⁺}][\text{OH-}]^{3}$     (b) 4.0 &times; 10&minus;8
+>     (c) 1.0 &times; 10&minus;3 M     (d) no — different formula
 > types     (e) yes — carbonate is a weak-acid conjugate
 
 > ✏️ **MIXED SET — last five**
 >
 > 1. Find the molar solubility of AgCl
->    ($K_{sp} = 1.6e-10$) in 0.20 M KCl.
+>    ($K_{sp} = 1.6\times10^{-10}$) in 0.20 M KCl.
 >    *(working space)*
-> 2. $[\text{Ca²⁺}] = 2.0e-4$ and $[\text{F-}] = 2.0e-4$
->    in a mixture; $K_{sp}(\text{CaF₂}) = 4.0e-11$. Precipitate?
+> 2. $[\text{Ca²⁺}] = 2.0\times10^{-4}$ and $[\text{F-}] = 2.0\times10^{-4}$
+>    in a mixture; $K_{sp}(\text{CaF₂}) = 4.0\times10^{-11}$. Precipitate?
 >    *(working space)*
-> 3. Equal volumes of 2.0e-4 M AgNO₃ and
->    2.0e-4 M NaBr are mixed;
->    $K_{sp}(\text{AgBr}) = 5.0e-13$. Precipitate?
+> 3. Equal volumes of 2.0 &times; 10&minus;4 M AgNO₃ and
+>    2.0 &times; 10&minus;4 M NaBr are mixed;
+>    $K_{sp}(\text{AgBr}) = 5.0\times10^{-13}$. Precipitate?
 >    *(working space)*
 > 4. Adding solid NaCl to a saturated AgCl solution makes
 >    more AgCl precipitate. Explain in one sentence.
 >    *(working space)*
-> 5. A saturated solution of Ag₂CrO₄ has $[\text{CrO₄²⁻}] =         1.3e-4$. What is $[\text{Ag+}]$, and what $K_{sp}$ does
+> 5. A saturated solution of Ag₂CrO₄ has $[\text{CrO₄²⁻}] =         1.3\times10^{-4}$. What is $[\text{Ag+}]$, and what $K_{sp}$ does
 >    this give?
 >    *(working space)*
 > 
-> > **check:** (a) 8.0e-10 M     (b) $Q = 8.0e-12$, no
->     (c) $Q = 1.0e-8$, yes     (d) common ion pushes the
-> equilibrium left     (e) 2.6e-4; $K_{sp} \approx 8.8e-12$
+> > **check:** (a) 8.0 &times; 10&minus;10 M     (b) $Q = 8.0\times10^{-12}$, no
+>     (c) $Q = 1.0\times10^{-8}$, yes     (d) common ion pushes the
+> equilibrium left     (e) 2.6 &times; 10&minus;4; $K_{sp} \approx 8.8\times10^{-12}$
 
 ## Mastery tracker
 

@@ -10,8 +10,7 @@ Zumdahl §18.2–18.3 • scale the half-reaction, never scale the volts
 > 📌 **Directions & data**
 >
 > $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$ • $\Delta G^\circ = -nFE^\circ$
-> • $F = 96485\,\mathrm{C/mol}$ •\
-> $R = 8.314\,\mathrm{J/mol/K}$.   
+> • $F = 96485\,\mathrm{C/mol}$ • $R = 8.314\,\mathrm{J/mol/K}$.   
 > 
 > $E^\circ$ (V): F₂/F- $+2.87$ • Cl₂/Cl- $+1.36$
 > • Ag+/Ag $+0.80$ • Fe³⁺/Fe²⁺ $+0.77$

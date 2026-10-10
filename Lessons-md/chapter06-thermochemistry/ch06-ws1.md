@@ -29,7 +29,7 @@ $c = 4.184\,\mathrm{J/g/{}^\circ C}$.
    *(working space)*
 2. Heat released when 75.0 g of water cools from
    60.0 °C to 25.0 °C:
-   -1.10e4 J
+   -1.10 &times; 104 J
 3. Final temperature when 5.02 kJ is added to
    120. g of water initially at 20.0 °C:
    *(working space)*
@@ -69,7 +69,7 @@ solution has the density and specific heat of water.
 > 4. Gas collected over water: add or subtract $P_{\text{H₂O}}$?
 >    subtract
 > 5. Moles in 25.0 mL of 0.200 M:
->    5.00e-3 mol
+>    5.00 &times; 10&minus;3 mol
 
 ---
 

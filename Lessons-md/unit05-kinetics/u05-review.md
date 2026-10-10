@@ -63,7 +63,7 @@ Everything on the exam traces to this page • exam Fri Nov 20
 
 ## Self-check — 10 questions, exam conditions
 
-1. For 2A → 3B, B forms at 6.0e-4 M/s. How
+1. For 2A → 3B, B forms at 6.0 &times; 10&minus;4 M/s. How
    fast does A disappear?
    **\_\_\_\_\_\_**
 2. Doubling $[\text{A}]$ multiplies the rate by 4. Order in A?

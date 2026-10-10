@@ -72,7 +72,7 @@ shared configuration.
 > 📌 **Spiral review • Chapter 7 • blocks 1–2**
 >
 > 1. Energy of a 400 nm photon:
->    4.97e-19 J
+>    4.97 &times; 10&minus;19 J
 > 2. Below threshold frequency, brighter light does what?
 >    nothing
 > 3. Why is 3$s$ below 3$p$? greater penetration

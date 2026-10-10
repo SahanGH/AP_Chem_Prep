@@ -197,9 +197,7 @@ it has no anode, since $E^\circ = 0$
 > • Zn²⁺/Zn $-0.76$ • Al³⁺/Al $-1.66$.   
 > 
 > $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$ • $\Delta G^\circ = -nFE^\circ$
-> • $I = q/t$ •\
-> $F = 96485\,\mathrm{C/mol}$ •\
-> $M(\text{Ag}) = 107.87\,\mathrm{g/mol}$,
+> • $I = q/t$ • $F = 96485\,\mathrm{C/mol}$ • $M(\text{Ag}) = 107.87\,\mathrm{g/mol}$,
 > $M(\text{Cu}) = 63.55\,\mathrm{g/mol}$.
 
 ### Free-response 1 • long • 10 points

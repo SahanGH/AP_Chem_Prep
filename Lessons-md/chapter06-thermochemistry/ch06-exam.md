@@ -185,10 +185,7 @@ cannot occur
 
 > 📌 **Standard enthalpies of formation (kJ/mol)**
 >
-> CH₄(g) $-74.8$ • C₂H₆(g) $-84.7$ •\
-> CO₂(g) $-393.5$ • H₂O(l) $-285.8$ •\
-> H₂O(g) $-241.8$ • NH₃(g) $-46.1$ •\
-> NO(g) $+90.3$
+> CH₄(g) $-74.8$ • C₂H₆(g) $-84.7$ • CO₂(g) $-393.5$ • H₂O(l) $-285.8$ • H₂O(g) $-241.8$ • NH₃(g) $-46.1$ • NO(g) $+90.3$
 
 ### Free-response 1 • short • 4 points
 

@@ -184,16 +184,12 @@ shifting the equilibrium toward products
 
 > 📌 **Kinetics equations**
 >
-> $\ln[\text{A}]_t - \ln[\text{A}]_0 = -kt$ •\
-> $\dfrac{1}{[\text{A}]_t} - \dfrac{1}{[\text{A}]_0} = kt$ •\
-> $t_{1/2} = \dfrac{0.693}{k}$ (first order) •\
-> $\ln k = -\dfrac{E_a}{R}\left(\dfrac{1}{T}\right) + \ln A$ •\
-> $R = 8.314\,\mathrm{J/mol/K}$
+> $\ln[\text{A}]_t - \ln[\text{A}]_0 = -kt$ • $\dfrac{1}{[\text{A}]_t} - \dfrac{1}{[\text{A}]_0} = kt$ • $t_{1/2} = \dfrac{0.693}{k}$ (first order) • $\ln k = -\dfrac{E_a}{R}\left(\dfrac{1}{T}\right) + \ln A$ • $R = 8.314\,\mathrm{J/mol/K}$
 
 ### Free-response 1 • short • 4 points
 
 The decomposition 2 H₂O₂(aq) → 2 H₂O(l) + O₂(g) is first order in
-H₂O₂, with $k = 7.30e-4\,\mathrm{/s}$ at 20 °C. A
+H₂O₂, with $k = 7.30\times10^{-4}\,\mathrm{/s}$ at 20 °C. A
 solution is prepared with $[\text{H₂O₂}]_0 = 0.500\,\mathrm{M}$.
 
 Calculate the half-life. 

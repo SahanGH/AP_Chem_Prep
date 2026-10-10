@@ -60,7 +60,7 @@ barium is a larger, heavier atom. Correct the reasoning.
 >
 > 1. $\Delta H^\circ_f$ of N₂(g): 0
 > 2. Energy of a 500 nm photon:
->    3.98e-19 J
+>    3.98 &times; 10&minus;19 J
 > 3. Configuration of Fe³⁺: $[\text{Ar}]3d^5$
 > 4. PES peak area represents: electrons in that
 >    subshell

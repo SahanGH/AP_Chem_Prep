@@ -56,13 +56,13 @@ number of particles you cannot.
 >    *(working space)*
 > 2. Atoms in 2.25 g of magnesium: 
 >    *(working space)*
-> 3. Mass of 3.01e23  atoms of sodium: 
+> 3. Mass of 3.01 &times; 1023  atoms of sodium: 
 >    *(working space)*
 > 4. Without calculating: 10 g of helium or 10 g of
 >    iron — which contains more atoms, and why?
 >    *(working space)*
 > 
-> > **check:** (a) 0.150 mol     (b) 5.57e22 atoms    
+> > **check:** (a) 0.150 mol     (b) 5.57 &times; 1022 atoms    
 > (c) 11.5 g     (d) helium — far smaller molar mass, so the
 > same mass is many more moles
 

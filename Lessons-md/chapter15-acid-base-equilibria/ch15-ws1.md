@@ -9,8 +9,7 @@ Zumdahl §15.1–15.2 • the ratio sets the pH, not the concentration
 
 > 📌 **Directions & data**
 >
-> p$K_a$: HF 3.14 • HNO₂ 3.40 •\
-> HC₂H₃O₂ 4.74 • HOCl 7.46 • HCN 9.21
+> p$K_a$: HF 3.14 • HNO₂ 3.40 • HC₂H₃O₂ 4.74 • HOCl 7.46 • HCN 9.21
 > • NH₄+ 9.25. $K_a(\text{HF}) = 7.2\times10^{-4}$.
 
 **1.** Predict the effect of each addition on the pH of the solution

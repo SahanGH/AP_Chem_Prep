@@ -58,8 +58,8 @@ Calculate the work associated with this expansion.
 
 ### Free-response 3 • long • 5 points
 
-A weather balloon expands from 4.00e6 L to
-4.50e6 L while 1.3e8 J of heat is added, against a
+A weather balloon expands from 4.00 &times; 106 L to
+4.50 &times; 106 L while 1.3 &times; 108 J of heat is added, against a
 constant external pressure of 1.0 atm.
 ($1\,\mathrm{L\cdot atm} = 101.3\,\mathrm{J}$.)
 

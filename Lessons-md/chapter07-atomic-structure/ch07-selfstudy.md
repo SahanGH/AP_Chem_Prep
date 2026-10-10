@@ -27,9 +27,9 @@ Zumdahl §7.1–7.13 • PDF pp. 331–390 • four YOUR TURN questions per ladd
 > those three things about any electron, you can predict every trend
 > without memorizing a single arrow.
 > 
-> **Constants:** $c = 3.00e8\,\mathrm{m/s}$,
-> $h = 6.626e-34\,\mathrm{J\cdot s}$,
-> $N_A = 6.022e23\,\mathrm{/mol}$.
+> **Constants:** $c = 3.00\times10^{8}\,\mathrm{m/s}$,
+> $h = 6.626\times10^{-34}\,\mathrm{J\cdot s}$,
+> $N_A = 6.022\times10^{23}\,\mathrm{/mol}$.
 
 ## Ladder 1 • Wavelength, frequency, energy
 
@@ -52,19 +52,19 @@ per-*mole* figures chemists quote.
 > 
 > **Metres first — always convert before substituting:**
 > 
-> $$ 525~\text{nm} = 5.25e-7\,\mathrm{m} $$
+> $$ 525~\text{nm} = 5.25\times10^{-7}\,\mathrm{m} $$
 > 
 > **Frequency:**
 > 
-> $$ \nu = \frac{c}{\lambda} = \frac{3.00\times10^{8}}{5.25\times10^{-7}}    = 5.71e14\,\mathrm{/s} $$
+> $$ \nu = \frac{c}{\lambda} = \frac{3.00\times10^{8}}{5.25\times10^{-7}}    = 5.71\times10^{14}\,\mathrm{/s} $$
 > 
 > **Energy per photon:**
 > 
-> $$ E = h\nu = (6.626\times10^{-34})(5.71\times10^{14})    = 3.78e-19\,\mathrm{J} $$
+> $$ E = h\nu = (6.626\times10^{-34})(5.71\times10^{14})    = 3.78\times10^{-19}\,\mathrm{J} $$
 > 
 > **Per mole:**
 > 
-> $$ (3.78\times10^{-19})(6.022\times10^{23})    = 2.28e5\,\mathrm{J/mol} = 228\,\mathrm{kJ/mol} $$
+> $$ (3.78\times10^{-19})(6.022\times10^{23})    = 2.28\times10^{5}\,\mathrm{J/mol} = 228\,\mathrm{kJ/mol} $$
 > 
 > **Two sense checks worth thirty seconds.** A single photon carries
 > around $10^{-19}$ J — if your answer is $10^{-30}$ or $10^{-5}$, a
@@ -79,15 +79,15 @@ per-*mole* figures chemists quote.
 > 2. Energy of one photon of that light: 
 >    *(working space)*
 > 3. Wavelength, in nm, of a photon carrying
->    4.50e-19 J:
+>    4.50 &times; 10&minus;19 J:
 >    *(working space)*
 > 4. Which has more energy per photon, a 200 nm
 >    ultraviolet photon or a 700 nm red one? Answer
 >    without calculating.
 >    *(working space)*
 > 
-> > **check:** (a) 4.62e14 /s     (b)
-> 3.06e-19 J     (c) 442 nm     (d) the
+> > **check:** (a) 4.62 &times; 1014 /s     (b)
+> 3.06 &times; 10&minus;19 J     (c) 442 nm     (d) the
 > ultraviolet one — shorter wavelength
 
 ## Ladder 2 • The photoelectric effect
@@ -110,19 +110,19 @@ electron. Energy above the work function becomes kinetic energy.
 
 > 📘 **I do: reading the energy budget**
 >
-> A metal has a work function of 3.20e-19 J. Light of
+> A metal has a work function of 3.20 &times; 10&minus;19 J. Light of
 > wavelength 400. nm strikes it.
 > 
 > **Photon energy:**
 > 
-> $$ E = \frac{hc}{\lambda}    = \frac{(6.626\times10^{-34})(3.00\times10^{8})}{4.00\times10^{-7}}    = 4.97e-19\,\mathrm{J} $$
+> $$ E = \frac{hc}{\lambda}    = \frac{(6.626\times10^{-34})(3.00\times10^{8})}{4.00\times10^{-7}}    = 4.97\times10^{-19}\,\mathrm{J} $$
 > 
 > **Is it above the threshold?** $4.97 > 3.20$, so yes — electrons
 > are ejected.
 > 
 > **Kinetic energy of each ejected electron:**
 > 
-> $$ \mathrm{KE} = 4.97\times10^{-19} - 3.20\times10^{-19}    = 1.77e-19\,\mathrm{J} $$
+> $$ \mathrm{KE} = 4.97\times10^{-19} - 3.20\times10^{-19}    = 1.77\times10^{-19}\,\mathrm{J} $$
 > 
 > **Now the conceptual half.** What if we doubled the
 > *intensity* at the same wavelength? Twice as many photons arrive, so
@@ -133,7 +133,7 @@ electron. Energy above the work function becomes kinetic energy.
 
 > ✏️ **YOUR TURN 2 — four questions**
 >
-> A metal has work function 4.00e-19 J.
+> A metal has work function 4.00 &times; 10&minus;19 J.
 > 
 > 1. Energy of a 450 nm photon: 
 >    *(working space)*
@@ -146,8 +146,8 @@ electron. Energy above the work function becomes kinetic energy.
 >    for an hour. Predict what happens, and why.
 >    *(working space)*
 > 
-> > **check:** (a) 4.42e-19 J     (b) yes, KE $=$
-> 4.2e-20 J     (c) 497 nm     (d) nothing
+> > **check:** (a) 4.42 &times; 10&minus;19 J     (b) yes, KE $=$
+> 4.2 &times; 10&minus;20 J     (c) 497 nm     (d) nothing
 > — each photon is below the work function
 
 ## Ladder 3 • Line spectra and the Bohr model
@@ -174,11 +174,11 @@ electron just barely free — so every bound level lies below it.
 > 
 > **The two levels:**
 > 
-> $$ E_4 = \frac{-2.178\times10^{-18}}{16} = -1.361e-19\,\mathrm{J}    \qquad    E_2 = \frac{-2.178\times10^{-18}}{4} = -5.445e-19\,\mathrm{J} $$
+> $$ E_4 = \frac{-2.178\times10^{-18}}{16} = -1.361\times10^{-19}\,\mathrm{J}    \qquad    E_2 = \frac{-2.178\times10^{-18}}{4} = -5.445\times10^{-19}\,\mathrm{J} $$
 > 
 > **The change:**
 > 
-> $$ \Delta E = E_2 - E_4 = -5.445\times10^{-19} - (-1.361\times10^{-19})    = -4.084e-19\,\mathrm{J} $$
+> $$ \Delta E = E_2 - E_4 = -5.445\times10^{-19} - (-1.361\times10^{-19})    = -4.084\times10^{-19}\,\mathrm{J} $$
 > 
 > Negative because the atom *lost* energy. The photon carries that
 > energy away, so use its magnitude:
@@ -202,8 +202,8 @@ electron just barely free — so every bound level lies below it.
 >    you know from the sign?
 >    *(working space)*
 > 
-> > **check:** (a) -2.420e-19 J     (b)
-> -3.025e-19 J     (c) 657 nm    
+> > **check:** (a) -2.420 &times; 10&minus;19 J     (b)
+> -3.025 &times; 10&minus;19 J     (c) 657 nm    
 > (d) absorbed — $\Delta E$ is positive
 
 ## Ladder 4 • Quantum numbers
@@ -217,8 +217,7 @@ Four numbers address one electron, and each answers a different question.
 | $n$ | principal | $1, 2, 3, \ldots$ | shell; size and energy |
 | $\ell$ | angular momentum | $0$ to $n-1$ | subshell shape
   ($0=s$, $1=p$, $2=d$, $3=f$) |
-| $m_\ell$ | magnetic | $-\ell$ to $+\ell$ | which orbital, i.e.\
-  orientation |
+| $m_\ell$ | magnetic | $-\ell$ to $+\ell$ | which orbital, i.e. orientation |
 | $m_s$ | spin | $+\tfrac{1}{2}$ or $-\tfrac{1}{2}$ | which of the two
   electrons |
 

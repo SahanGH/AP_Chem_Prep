@@ -62,7 +62,7 @@ $$ \begin{align*} \text{Step 1:}\quad & \text{N₂O₅ → NO₂ + NO₃} \qquad
 
 ### Free-response 3 • short • 4 points
 
-A first-order decomposition has $k = 1.5e-3\,\mathrm{/s}$ and an
+A first-order decomposition has $k = 1.5\times10^{-3}\,\mathrm{/s}$ and an
 initial concentration of 0.80 M.
 
 1. Calculate the half-life. 

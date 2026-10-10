@@ -32,8 +32,7 @@ CED 5.1–5.11 • Session 1: Parts A–B, 27 questions, 142 points, 150 minutes
 > here because Arrhenius calculations are standard chemistry and because
 > Unit 9 electrochemistry leans on the same algebra.
 
-## Section A • Rates and Rate Laws from Data 10 questions •\
-  50 points
+## Section A • Rates and Rate Laws from Data 10 questions • 50 points
 
 ### Free-response 1 • short • 3 points
 
@@ -48,8 +47,8 @@ Determine the rate of production of P₄ and of H₂.
 
 For 2H₂O₂(aq) → 2H₂O(l) + O₂(g) at 40 °C:
 $[\text{H₂O₂}] = 1.000\,\mathrm{M}$ at $t=0$, 0.500 M at
-$t = 2.16e4\,\mathrm{s}$, 0.250 M at
-$t = 4.32e4\,\mathrm{s}$.
+$t = 2.16\times10^{4}\,\mathrm{s}$, 0.250 M at
+$t = 4.32\times10^{4}\,\mathrm{s}$.
 
 Calculate the average rate of H₂O₂ decomposition, and the
 corresponding average rate of O₂ production, over each interval.
@@ -220,7 +219,7 @@ Show that this reaction is first order, and determine $k$.
 
 ### Free-response 12 • short • 3 points
 
-Using the reaction and $k = 6.93e-3\,\mathrm{/s}$ from the previous
+Using the reaction and $k = 6.93\times10^{-3}\,\mathrm{/s}$ from the previous
 question, predict $[\text{N₂O₅}]$ at $t = 150\,\mathrm{s}$.
 
 *(working space)*
@@ -259,15 +258,15 @@ A first-order reaction has $t_{1/2} = 20.0\,\mathrm{min}$.
 
 ### Free-response 15 • short • 5 points
 
-For $a\text{A} \to b\text{B}$, $[\text{A}]_0 = 2.00e-2\,\mathrm{M}$. A plot of
+For $a\text{A} \to b\text{B}$, $[\text{A}]_0 = 2.00\times10^{-2}\,\mathrm{M}$. A plot of
 $\ln[\text{A}]$ vs. time is linear with slope
-$-2.97e-2\,\mathrm{/min}$.
+$-2.97\times10^{-2}\,\mathrm{/min}$.
 
 1. State the rate law and $k$. 
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 2. Find the half-life. 
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-3. Find the time for $[\text{A}]$ to reach $2.50e-3\,\mathrm{M}$.
+3. Find the time for $[\text{A}]$ to reach $2.50\times10^{-3}\,\mathrm{M}$.
    *(working space)*
 
 ### Free-response 16 • long • 8 points
@@ -305,9 +304,9 @@ Predict $[\text{NO₂}]$ at $t = 27000\,\mathrm{s}$.
 
 ### Free-response 17 • short • 5 points
 
-For $a\text{A} \to b\text{B}$, $[\text{A}]_0 = 2.80e-3\,\mathrm{M}$. A plot of
+For $a\text{A} \to b\text{B}$, $[\text{A}]_0 = 2.80\times10^{-3}\,\mathrm{M}$. A plot of
 $1/[\text{A}]$ vs. time is linear with slope
-$+3.60e-2\,\mathrm{L/mol/s}$.
+$+3.60\times10^{-2}\,\mathrm{L/mol/s}$.
 
 Find the half-life. 
 
@@ -315,7 +314,7 @@ Find the half-life.
 
         
 
-Find the time for $[\text{A}]$ to reach $7.00e-4\,\mathrm{M}$.
+Find the time for $[\text{A}]$ to reach $7.00\times10^{-4}\,\mathrm{M}$.
         
 
 *(working space)*
@@ -326,9 +325,9 @@ Find the time for $[\text{A}]$ to reach $7.00e-4\,\mathrm{M}$.
 
 C₂H₅OH(g) → [Al₂O₃] C₂H₄(g) + H₂O(g) at 600 K. A plot of
 $[\text{C₂H₅OH}]$ vs. time is *itself* linear, slope
-$-4.00e-5\,\mathrm{M/s}$.
+$-4.00\times10^{-5}\,\mathrm{M/s}$.
 
-Find the half-life given $[\text{C₂H₅OH}]_0 = 1.25e-2\,\mathrm{M}$.
+Find the half-life given $[\text{C₂H₅OH}]_0 = 1.25\times10^{-2}\,\mathrm{M}$.
         
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
@@ -414,7 +413,7 @@ concentration of A?
 ### Free-response 22 • short • 5 points
 
 2HI(g) → [Au] H₂(g) + I₂(g) is zero order in HI at
-150 °C: $k = 1.20e-4\,\mathrm{M/s}$.
+150 °C: $k = 1.20\times10^{-4}\,\mathrm{M/s}$.
 
 Find $[\text{HI}]$ 25 min after the start, if
         $[\text{HI}]_0 = 0.250\,\mathrm{M}$. 
@@ -481,9 +480,9 @@ Find the time for $[\text{NOBr}]$ to reach 0.100 M.
 
 $\text{A} + \text{B} + 2\text{C} \to 2\text{D} + 3\text{E}$, Rate
 $=-\Delta[\text{A}]/\Delta t = k[\text{A}][\text{B}]^2$.
-$[\text{A}]_0 = 1.0e-2\,\mathrm{M}$, $[\text{B}]_0 = 3.0\,\mathrm{M}$,
+$[\text{A}]_0 = 1.0\times10^{-2}\,\mathrm{M}$, $[\text{B}]_0 = 3.0\,\mathrm{M}$,
 $[\text{C}]_0 = 2.0\,\mathrm{M}$. After 8.0 s,
-$[\text{A}] = 3.8e-3\,\mathrm{M}$.
+$[\text{A}] = 3.8\times10^{-3}\,\mathrm{M}$.
 
 Find $k$. 
 
@@ -699,7 +698,7 @@ Determine $E_a$.
 
 (CH₃)₃CBr + OH⁻ → (CH₃)₃COH + Br⁻ is first order in
 (CH₃)₃CBr and zero order in OH⁻. A plot of $\ln k$ vs. $1/T$ is
-linear, slope $= -1.10e4\,\mathrm{K}$, $y$-intercept $=33.5$ ($k$ in
+linear, slope $= -1.10\times10^{4}\,\mathrm{K}$, $y$-intercept $=33.5$ ($k$ in
 s-1).
 
 Find $E_a$. 
@@ -839,8 +838,8 @@ Determine the rate law and $k$.
 
 Isomers A and B each dimerize, both by second-order kinetics:
 $2\text{A}\to\text{A₂}$ (rate constant $k_1$), $2\text{B}\to\text{B₂}$ (rate
-constant $k_2$). At 25 °C, $k_1 = 0.250\,\mathrm{L/mol/s}$. In separate containers, $[\text{A}]_0 = 1.00e-2\,\mathrm{M}$
-and $[\text{B}]_0 = 2.50e-2\,\mathrm{M}$. After 3.00 min,
+constant $k_2$). At 25 °C, $k_1 = 0.250\,\mathrm{L/mol/s}$. In separate containers, $[\text{A}]_0 = 1.00\times10^{-2}\,\mathrm{M}$
+and $[\text{B}]_0 = 2.50\times10^{-2}\,\mathrm{M}$. After 3.00 min,
 $[\text{A}] = 3.00[\text{B}]$.
 
 Find $[\text{A₂}]$ after 3.00 min. 
@@ -985,7 +984,7 @@ Which reactant was limiting?
 ### Free-response 53 • long • 10 points
 
 2NO₂(g) → 2NO(g) + O₂(g) is an **elementary, bimolecular**
-reaction: $k = 2.3e-12\,\mathrm{L/mol/s}$ at
+reaction: $k = 2.3\times10^{-12}\,\mathrm{L/mol/s}$ at
 273 K, $E_a = 111\,\mathrm{kJ/mol}$.
 
 Find the time for $[\text{NO₂}]$ to fall from a partial pressure of
@@ -1091,7 +1090,7 @@ Write the rate law and find $k$.
 
 H₂O₂(aq) + 3I⁻(aq) + 2H⁺(aq) → I₃⁻(aq) + 2H₂O(l), followed by the
 slope of $\ln[\text{H₂O₂}]$ vs. time in each run (all runs starting at
-$[\text{H₂O₂}]_0 = 8.0e-4\,\mathrm{M}$, with I⁻ and H⁺ flooded).
+$[\text{H₂O₂}]_0 = 8.0\times10^{-4}\,\mathrm{M}$, with I⁻ and H⁺ flooded).
 The rate law is known to have the form
 
 $$ \text{Rate} = (k_1 + k_2[\text{H⁺}])[\text{I⁻}]^m[\text{H₂O₂}]^n $$

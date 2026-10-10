@@ -11,9 +11,7 @@ Zumdahl §18.1 • An Ox, Red Cat — true in every cell there is
 >
 > Never label an electrode positive or negative — the AP exam
 > excludes it. Use **anode** and **cathode**. $E^\circ$ (V):
-> Ag+/Ag $+0.80$ • Cu²⁺/Cu $+0.34$ •\
-> Pb²⁺/Pb $-0.13$ • Fe²⁺/Fe $-0.44$ •\
-> Zn²⁺/Zn $-0.76$ • Mg²⁺/Mg $-2.37$.
+> Ag+/Ag $+0.80$ • Cu²⁺/Cu $+0.34$ • Pb²⁺/Pb $-0.13$ • Fe²⁺/Fe $-0.44$ • Zn²⁺/Zn $-0.76$ • Mg²⁺/Mg $-2.37$.
 
 **1.** Name the component of a galvanic cell responsible for each
 function:

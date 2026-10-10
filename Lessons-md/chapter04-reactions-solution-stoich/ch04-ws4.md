@@ -83,7 +83,7 @@ endpoint.
 > 2. Soluble? AgNO₃ yes — rules 1, 3
 > 3. Oxidation state of S in H₂S: $-2$
 > 4. 20.0 mL of 0.100 M NaOH contains how
->    many moles? 2.00e-3 mol
+>    many moles? 2.00 &times; 10&minus;3 mol
 > 5. Weak acid in a net ionic equation is written how?
 >    intact (undissociated)
 

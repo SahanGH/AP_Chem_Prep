@@ -67,8 +67,7 @@ neutral but NaCN solutions are basic.
 > 1 correct ICE setup, 1 pH $= 4.14$, 1 explicit 5% check with the number —
 > asserting validity earns 0 • **(c) 1 pt** 0.048%
 > • **(d) 2 pts** 1 basic, 1 identifies OCl- as the
-> conjugate base of a weak acid AND Na+ as inert •\
-> **(e) 2 pts** 1 $K_b$ from $K_w/K_a$, 1 pH via pOH — reporting
+> conjugate base of a weak acid AND Na+ as inert • **(e) 2 pts** 1 $K_b$ from $K_w/K_a$, 1 pH via pOH — reporting
 > $-\log x$ as the pH earns 0.
 
 > 📌 **Spiral review • Chapter 14 • blocks 1–4**

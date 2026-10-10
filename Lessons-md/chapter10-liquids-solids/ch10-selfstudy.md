@@ -404,16 +404,16 @@ neighbouring cells.
 > 
 > **Step 2 — mass of one cell.**
 > 
-> $$ m = \frac{4 \times 63.55\,\mathrm{g/mol}}             {6.022e23\,\mathrm{/mol}}      = 4.221e-22\,\mathrm{g} $$
+> $$ m = \frac{4 \times 63.55\,\mathrm{g/mol}}             {6.022\times10^{23}\,\mathrm{/mol}}      = 4.221\times10^{-22}\,\mathrm{g} $$
 > 
 > **Step 3 — volume of one cell.** Convert the edge to centimetres
-> first: 361.5 pm $= 3.615e-8\,\mathrm{cm}$.
+> first: 361.5 pm $= 3.615\times10^{-8}\,\mathrm{cm}$.
 > 
-> $$ V = (3.615e-8\,\mathrm{cm})^{3}      = 4.724e-23\,\mathrm{cm^3} $$
+> $$ V = (3.615\times10^{-8}\,\mathrm{cm})^{3}      = 4.724\times10^{-23}\,\mathrm{cm^3} $$
 > 
 > **Step 4 — divide.**
 > 
-> $$ d = \frac{4.221e-22\,\mathrm{g}}{4.724e-23\,\mathrm{cm^3}}      = 8.94\,\mathrm{g/cm^3} $$
+> $$ d = \frac{4.221\times10^{-22}\,\mathrm{g}}{4.724\times10^{-23}\,\mathrm{cm^3}}      = 8.94\,\mathrm{g/cm^3} $$
 > 
 > **Check it against reality:** copper's measured density is
 > 8.96 g/cm³. Agreement to three figures from

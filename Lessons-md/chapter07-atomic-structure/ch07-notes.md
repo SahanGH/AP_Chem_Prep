@@ -54,7 +54,7 @@ Light is characterized by three interlocking quantities:
 - Frequency $\nu$ — cycles per second, in
    /s (Hz).
 - Speed — all electromagnetic radiation travels at
-   $c =$ 3.00e8 m/s in a vacuum.
+   $c =$ 3.00 &times; 108 m/s in a vacuum.
 
 $c =$ $\lambda\nu$ $\qquad\Rightarrow\qquad   \nu =$ $c/\lambda$
 
@@ -66,7 +66,7 @@ frequency.
 
 Planck's insight was that energy is not continuous but
 quantized — transferred in discrete units. For a single photon:
-$E =$ $h\nu$ $=$ $\dfrac{hc}{\lambda}$ $\qquad h = 6.626e-34\,\mathrm{J\cdot s}$
+$E =$ $h\nu$ $=$ $\dfrac{hc}{\lambda}$ $\qquad h = 6.626\times10^{-34}\,\mathrm{J\cdot s}$
 
 > ⚠️ **AP trap**
 >
@@ -79,7 +79,7 @@ $E =$ $h\nu$ $=$ $\dfrac{hc}{\lambda}$ $\qquad h = 6.626e-34\,\mathrm{J\cdot s}$
 >
 > Find the energy of one photon of 400. nm light.
 > 
-> $$ \begin{align*}   \nu &= \frac{c}{\lambda} = \frac{3.00\times10^{8}}{400.\times10^{-9}}        = 7.50e14\,\mathrm{/s}\\   E &= h\nu = (6.626\times10^{-34})(7.50\times10^{14})      = 4.97e-19\,\mathrm{J} \end{align*} $$
+> $$ \begin{align*}   \nu &= \frac{c}{\lambda} = \frac{3.00\times10^{8}}{400.\times10^{-9}}        = 7.50\times10^{14}\,\mathrm{/s}\\   E &= h\nu = (6.626\times10^{-34})(7.50\times10^{14})      = 4.97\times10^{-19}\,\mathrm{J} \end{align*} $$
 > 
 > Per mole: $\times 6.022\times10^{23} = 299\,\mathrm{kJ/mol}$ —
 > comparable to a chemical bond energy, which is why UV light breaks bonds.
@@ -87,9 +87,9 @@ $E =$ $h\nu$ $=$ $\dfrac{hc}{\lambda}$ $\qquad h = 6.626e-34\,\mathrm{J\cdot s}$
 #### GUIDED PRACTICE • Photon arithmetic 15 min
 
 1. Frequency of 600. nm light:
-   5.00e14 /s
+   5.00 &times; 1014 /s
 2. Energy of one such photon:
-   3.31e-19 J
+   3.31 &times; 10&minus;19 J
 3. A photon of 200 nm light has how many times the
    energy of one at 800 nm? (No calculator.)
    4 times
@@ -136,9 +136,9 @@ over tells you how tightly that electron was held.
 #### APPLICATION • Reasoning from the model 20 min
 
 1. A metal has a threshold frequency of
-   6.0e14 /s. Predict what happens with (a) intense
-   red light at 4.0e14 /s and (b) dim violet light
-   at 7.5e14 /s.
+   6.0 &times; 1014 /s. Predict what happens with (a) intense
+   red light at 4.0 &times; 1014 /s and (b) dim violet light
+   at 7.5 &times; 1014 /s.
    
 2. Explain why microwave radiation warms food but does not cause
    sunburn, while ultraviolet does the reverse.
@@ -161,7 +161,7 @@ over tells you how tightly that electron was held.
 > 📌 **Retrieval warm-up**
 >
 > 1. $E$ of a 500 nm photon:
->    3.98e-19 J
+>    3.98 &times; 10&minus;19 J
 > 2. Below the threshold frequency, brighter light does what?
 >    still nothing
 > 3. Max electrons in a $p$ subshell: 6

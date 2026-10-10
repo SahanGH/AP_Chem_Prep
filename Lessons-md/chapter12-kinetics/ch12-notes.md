@@ -14,9 +14,7 @@ Zumdahl §12.1–12.7 • PDF pp. 593–632 • 5 blocks
 > one-to-one match in the book alongside Chapter 6. You can assign “read
 > Chapter 12” and mean it.
 > 
-> §12.1 $\to$ 5.1 • §12.2–12.3 $\to$ 5.2 •\
-> §12.4 $\to$ 5.3 • §12.5 $\to$ 5.4, 5.7–5.9 •\
-> §12.6 $\to$ 5.5, 5.6, 5.10 • §12.7 $\to$ 5.11.
+> §12.1 $\to$ 5.1 • §12.2–12.3 $\to$ 5.2 • §12.4 $\to$ 5.3 • §12.5 $\to$ 5.4, 5.7–5.9 • §12.6 $\to$ 5.5, 5.6, 5.10 • §12.7 $\to$ 5.11.
 > 
 > One idea governs the whole chapter and is worth holding onto from the start:
 > **everything about a rate must be determined by experiment.** You
@@ -304,7 +302,7 @@ and drug elimination are described by half-lives at all.
 > 200 s. Equal successive halvings confirm
 > **first order** with $t_{1/2} = 100\,\mathrm{s}$:
 > 
-> $$ k = \frac{0.693}{100.} = 6.93e-3\,\mathrm{/s} $$
+> $$ k = \frac{0.693}{100.} = 6.93\times10^{-3}\,\mathrm{/s} $$
 
 > 📘 **Worked example: the tempting wrong answer**
 >
@@ -540,7 +538,7 @@ Maxwell–Boltzmann curves from Unit 3.
 > 20 °C and $k = 2.9\times10^{-3}\ \mathrm{/s}$ at
 > 60 °C.
 > 
-> $$ \begin{align*}   \ln\frac{k_2}{k_1} &= -\frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)\\   \ln\frac{2.9\times10^{-3}}{2.0\times10^{-5}} &= \ln(145) = 4.98\\   \frac{1}{333}-\frac{1}{293} &= -4.10\times10^{-4}\\   E_a &= \frac{(8.314)(4.98)}{4.10\times10^{-4}} = 1.0e5\,\mathrm{J/mol}        = 100\,\mathrm{kJ/mol} \end{align*} $$
+> $$ \begin{align*}   \ln\frac{k_2}{k_1} &= -\frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)\\   \ln\frac{2.9\times10^{-3}}{2.0\times10^{-5}} &= \ln(145) = 4.98\\   \frac{1}{333}-\frac{1}{293} &= -4.10\times10^{-4}\\   E_a &= \frac{(8.314)(4.98)}{4.10\times10^{-4}} = 1.0\times10^{5}\,\mathrm{J/mol}        = 100\,\mathrm{kJ/mol} \end{align*} $$
 > 
 > A 40-degree rise multiplied the rate constant by roughly 145.
 

@@ -33,8 +33,7 @@ CED 4.1–4.9 • Session 1: Parts A–E, 19 questions, 139 points, 140 minutes 
 > *solution* (blood plasma), which the AP exam will not ask; it is here
 > because the redox stoichiometry leading up to it is exactly on syllabus.
 
-## Section A • Moles, Formulas, and Concentration 5 questions •\
-  25 minutes
+## Section A • Moles, Formulas, and Concentration 5 questions • 25 minutes
 
 ### Free-response 1 • short • 4 points
 
@@ -95,8 +94,7 @@ Calculate the concentration of each ion present after mixing.
 
 *(working space)*
 
-## Section B • Balancing and Mass Relationships 2 questions •\
-  20 minutes
+## Section B • Balancing and Mass Relationships 2 questions • 20 minutes
 
 ### Free-response 6 • long • 10 points
 
@@ -121,8 +119,7 @@ Ag+ as AgCl.
 
 *(working space)*
 
-## Section C • Limiting Reactant and Yield 1 question •\
-  15 minutes
+## Section C • Limiting Reactant and Yield 1 question • 15 minutes
 
 ### Free-response 8 • long • 10 points
 
@@ -143,8 +140,7 @@ volumes are additive.
 5. Identify the spectator ions and explain what makes them spectators.
    *(working space)*
 
-## Section D • Acid–Base Reactions and Titration 5 questions •\
-  35 minutes
+## Section D • Acid–Base Reactions and Titration 5 questions • 35 minutes
 
 ### Free-response 9 • short • 4 points
 

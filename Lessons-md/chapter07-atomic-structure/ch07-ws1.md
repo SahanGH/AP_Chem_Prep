@@ -9,20 +9,20 @@ Zumdahl §7.1–7.2, 7.5, 7.9 • wavelengths in metres, always
 
 > 📌 **Directions & data**
 >
-> Constants: $c = 3.00e8\,\mathrm{m/s}$,
-> $h = 6.626e-34\,\mathrm{J\cdot s}$,
-> $N_A = 6.022e23\,\mathrm{/mol}$. Convert nanometres to metres before
+> Constants: $c = 3.00\times10^{8}\,\mathrm{m/s}$,
+> $h = 6.626\times10^{-34}\,\mathrm{J\cdot s}$,
+> $N_A = 6.022\times10^{23}\,\mathrm{/mol}$. Convert nanometres to metres before
 > substituting.
 
 **1.** Photon calculations:
 
 1. Frequency of 750. nm light:
-   4.00e14 /s
+   4.00 &times; 1014 /s
 2. Energy of one photon at that wavelength:
-   2.65e-19 J
+   2.65 &times; 10&minus;19 J
 3. Energy per mole of those photons:
    160. kJ/mol
-4. Wavelength of a photon carrying 3.00e-19 J:
+4. Wavelength of a photon carrying 3.00 &times; 10&minus;19 J:
    *(working space)*
 
 **2.** Without a calculator, state which member of each pair has the
@@ -32,15 +32,15 @@ greater photon energy and why:
    300 nm — shorter $\lambda$, higher $E$
 2. Infrared or ultraviolet:
    ultraviolet
-3. $\nu = 2e15\,\mathrm{/s}$ or $\nu = 5e14\,\mathrm{/s}$:
+3. $\nu = 2\times10^{15}\,\mathrm{/s}$ or $\nu = 5\times10^{14}\,\mathrm{/s}$:
    $2\times10^{15}$ — higher frequency
 
 **3.** The photoelectric effect. A certain metal has a threshold
-frequency of 9.0e14 /s.
+frequency of 9.0 &times; 1014 /s.
 
-1. Will light of 5.0e14 /s eject electrons, no matter
+1. Will light of 5.0 &times; 1014 /s eject electrons, no matter
    how intense? Explain. 
-2. Will dim light at 1.2e15 /s eject electrons?
+2. Will dim light at 1.2 &times; 1015 /s eject electrons?
    
 3. Explain what these two results together prove about the nature of
    light. 

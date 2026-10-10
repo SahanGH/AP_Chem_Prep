@@ -51,7 +51,7 @@ A vessel is charged with 0.500 M PCl₅ and nothing else.
 3. A student claims that because $K$ is small, the reaction must be
    slow. Evaluate.
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-4. Calcium fluoride has $K_{sp} = 3.9e-11$. Calculate its molar
+4. Calcium fluoride has $K_{sp} = 3.9\times10^{-11}$. Calculate its molar
    solubility in pure water, then state and justify the effect of
    dissolving it in 0.10 M NaF instead.
    *(working space)*

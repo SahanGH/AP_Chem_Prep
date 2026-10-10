@@ -9,8 +9,7 @@ Zumdahl §17.5, 17.10 • free energies add, which is what makes coupling work
 
 > 📌 **Directions & data**
 >
-> $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ •\
-> $\Delta G^\circ = -RT\ln K$ • $R = 8.314\,\mathrm{J/mol/K}$. ATP hydrolysis:
+> $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ • $\Delta G^\circ = -RT\ln K$ • $R = 8.314\,\mathrm{J/mol/K}$. ATP hydrolysis:
 > $\Delta G^\circ = -30.5\,\mathrm{kJ/mol}$. $S^\circ$ (J/K$\cdot$mol):
 > H₂ 131 • O₂ 205 • H₂O(l) 70.
 > $\Delta G_f^\circ$ (kJ/mol): H₂O(l) $-237$.
@@ -98,11 +97,9 @@ with $\Delta G^\circ \approx +2870$ kJ per mole of glucose.
 > **(a) 2 pts** 1 positive, 1 justification citing 3 mol of gas formed
 > from a liquid • **(b) 2 pts** 1 correct setup with
 > coefficients, 1 answer $+327$ J/K • **(c) 2 pts** 1
-> $\Delta G^\circ = +474$ kJ, 1 states not favored •\
-> **(d) 3 pts** 1 recognizes $T = \Delta H^\circ/\Delta S^\circ$,
+> $\Delta G^\circ = +474$ kJ, 1 states not favored • **(d) 3 pts** 1 recognizes $T = \Delta H^\circ/\Delta S^\circ$,
 > 1 unit conversion to kJ/K and answer $1749$ K, 1 comment on impracticality
-> — an answer that forgets to convert J to kJ earns at most 1 •\
-> **(e) 1 pt** electrolysis identified as an external energy source
+> — an answer that forgets to convert J to kJ earns at most 1 • **(e) 1 pt** electrolysis identified as an external energy source
 > driving an unfavorable process.
 
 > 📌 **Spiral review • Chapter 17 • blocks 1–4**

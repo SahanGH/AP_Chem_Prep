@@ -19,13 +19,13 @@ CED 8.1–8.11 • 5 questions • 32 points • 50 minutes
 > to a buffer; `CED 8.11` restricts pH-and-solubility to
 > **qualitative** treatment only. None of the three is asked below.
 > 
-> $K_w = 1.0e-14$ at 25 °C.
+> $K_w = 1.0\times10^{-14}$ at 25 °C.
 
 ## Section II • Free Response 5 questions • 32 points • 50 minutes
 
 ### Free-response 1 • long • 10 points
 
-Hydrofluoric acid has $K_a = 7.2e-4$. Consider
+Hydrofluoric acid has $K_a = 7.2\times10^{-4}$. Consider
 0.250 M HF.
 
 1. Write the ionization equilibrium and the $K_a$ expression.

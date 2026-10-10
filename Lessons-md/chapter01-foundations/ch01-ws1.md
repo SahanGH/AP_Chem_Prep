@@ -9,9 +9,7 @@ Zumdahl §1.3–1.10 • 30 minutes • this is scored, but it is not a test gra
 
 > 📌 **Directions & data**
 >
-> $K = {}^\circ$C $+\ 273.15$ • $d = m/V$ •\
-> $1~\text{in} \equiv 2.54~\text{cm}$ (exact) •\
-> $1~\text{mi} = 5280~\text{ft}$ • $1~\text{ft} = 12~\text{in}$.
+> $K = {}^\circ$C $+\ 273.15$ • $d = m/V$ • $1~\text{in} \equiv 2.54~\text{cm}$ (exact) • $1~\text{mi} = 5280~\text{ft}$ • $1~\text{ft} = 12~\text{in}$.
 > **Show your work** — the point of this is to find out where you are,
 > not to sort you.
 

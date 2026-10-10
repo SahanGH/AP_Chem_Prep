@@ -670,8 +670,8 @@ On a paper chromatogram (polar stationary phase, nonpolar solvent),
 `SP 5`
 
 $c = \lambda\nu \qquad E = h\nu =$ $\dfrac{hc}{\lambda}$
-with $c = 3.00e8\,\mathrm{m/s}$ and
-$h = 6.626e-34\,\mathrm{J\cdot s}$.
+with $c = 3.00\times10^{8}\,\mathrm{m/s}$ and
+$h = 6.626\times10^{-34}\,\mathrm{J\cdot s}$.
 
 Short wavelength $\to$ high frequency $\to$
 high energy.

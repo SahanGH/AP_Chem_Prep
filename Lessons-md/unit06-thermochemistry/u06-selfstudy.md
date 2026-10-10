@@ -219,7 +219,7 @@ opposite sign, per mole.
 > 
 > **Heat absorbed by the solution:**
 > 
-> $$ q = (100.0)(4.18)(7.2) = 3.0e3\,\mathrm{J} =    3.01\,\mathrm{kJ} $$
+> $$ q = (100.0)(4.18)(7.2) = 3.0\times10^{3}\,\mathrm{J} =    3.01\,\mathrm{kJ} $$
 > 
 > **Moles of water formed:** $(0.0500)(1.00) = 0.0500$ mol —
 > both reactants supply exactly this, so neither is in excess.

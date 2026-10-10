@@ -12,8 +12,7 @@ Zumdahl §18.7–18.8 • the electron is a reagent; count it
 > $I = q/t$ • $F = 96485\,\mathrm{C/mol}$
 > e$^-$ • time in **seconds**. Molar masses
 > (g/mol): Ag 107.87 • Cu 63.55
-> • Cr 52.00 • Al 26.98 •\
-> Ni 58.69 • Au 196.97.
+> • Cr 52.00 • Al 26.98 • Ni 58.69 • Au 196.97.
 
 **1.** Write the conversion chain from a measured current to a mass of
 plated metal, naming each step.
@@ -112,8 +111,7 @@ Calculate $\Delta G^\circ$ for the cell reaction, taking $n = 2$.
 
 > 📌 **Rubric — score yourself, 10 points**
 >
-> **(a) 1 pt** balanced half-reaction with 2 electrons •\
-> **(b) 2 pts** 1 identifies that plating requires reduction, 1 states
+> **(a) 1 pt** balanced half-reaction with 2 electrons • **(b) 2 pts** 1 identifies that plating requires reduction, 1 states
 > reduction occurs at the cathode in *all* cells — an answer relying on
 > the electrode's sign earns 0 • **(c) 4 pts** 1 time
 > converted to seconds, 1 charge, 1 moles of electrons divided by 2, 1 mass

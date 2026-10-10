@@ -9,8 +9,7 @@ Zumdahl §1.5, 1.7, 1.9 • assigned from the diagnostic — drill until automat
 
 > 📌 **Directions & data**
 >
-> $K = {}^\circ$C $+\ 273.15$ • $d = m/V$ •\
-> $1~\text{in} \equiv 2.54~\text{cm}$ (exact). **Multiply or divide:**
+> $K = {}^\circ$C $+\ 273.15$ • $d = m/V$ • $1~\text{in} \equiv 2.54~\text{cm}$ (exact). **Multiply or divide:**
 > fewest significant figures. **Add or subtract:** fewest decimal
 > places.
 

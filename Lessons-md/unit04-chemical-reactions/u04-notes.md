@@ -377,7 +377,7 @@ A student mixes KNO₃(aq) and NaCl(aq) and reports a
 >    redox
 > 3. Always-soluble anion: nitrate
 > 4. Moles in 25.0 mL of 0.200 M:
->    5.00e-3 mol
+>    5.00 &times; 10&minus;3 mol
 
 #### INSTRUCTION A • Two definitions 25 min
 
@@ -568,7 +568,7 @@ back to volume or mass at the end.
 
 Moles of Ag+ in 30.0 mL of
         0.150 M AgNO₃:
-        4.50e-3 mol
+        4.50 &times; 10&minus;3 mol
 
 Mass of AgCl ($M = 143.32$) if all of it precipitates:
         0.645 g
@@ -589,7 +589,7 @@ possible.
 > 25.0 mL of H₂SO₄ needs 40.0 mL of
 > 0.200 M NaOH.
 > 
-> $$ \begin{align*}   n(\text{OH-}) &= (0.0400)(0.200) = 8.00e-3\,\mathrm{mol}\\   n(\text{H₂SO₄}) &= \tfrac12(8.00\times10^{-3}) = 4.00e-3\,\mathrm{mol}\\   [\text{H₂SO₄}] &= \frac{4.00\times10^{-3}}{0.0250} = 0.160\,\mathrm{M} \end{align*} $$
+> $$ \begin{align*}   n(\text{OH-}) &= (0.0400)(0.200) = 8.00\times10^{-3}\,\mathrm{mol}\\   n(\text{H₂SO₄}) &= \tfrac12(8.00\times10^{-3}) = 4.00\times10^{-3}\,\mathrm{mol}\\   [\text{H₂SO₄}] &= \frac{4.00\times10^{-3}}{0.0250} = 0.160\,\mathrm{M} \end{align*} $$
 > 
 > The factor of $\tfrac12$ is because H₂SO₄ is
 > diprotic.

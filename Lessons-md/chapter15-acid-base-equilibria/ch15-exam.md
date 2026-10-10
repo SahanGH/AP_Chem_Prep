@@ -188,8 +188,7 @@ the buffer has failed
 
 > 📌 **Data**
 >
-> $K_a$: HOCl $3.5\times10^{-8}$ (p$K_a$ 7.46) •\
-> HC₂H₃O₂ $1.8\times10^{-5}$ (p$K_a$ 4.74).
+> $K_a$: HOCl $3.5\times10^{-8}$ (p$K_a$ 7.46) • HC₂H₃O₂ $1.8\times10^{-5}$ (p$K_a$ 4.74).
 > $K_w = 1.0\times10^{-14}$.   
 > 
 > Indicator ranges: methyl red 4.4–6.2 • bromthymol blue

@@ -53,8 +53,8 @@ Convert this pressure to (a) atmospheres and (b) pascals.
 
 ### Free-response 2 • short • 3 points
 
-A 1.53 L sample of gaseous SO₂ at 5.6e3 Pa has
-its pressure changed to 1.5e4 Pa at constant temperature.
+A 1.53 L sample of gaseous SO₂ at 5.6 &times; 103 Pa has
+its pressure changed to 1.5 &times; 104 Pa at constant temperature.
 
 Calculate the new volume.
 
@@ -281,7 +281,7 @@ Find the gas pressure in the bag.
 ### Free-response 24 • short • 2 points
 
 A balloon is filled to $7.00\times10^2$ mL at 20.0 °C, then
-cooled at constant pressure to 1.00e2 K.
+cooled at constant pressure to 1.00 &times; 102 K.
 
 Find the final volume.
 

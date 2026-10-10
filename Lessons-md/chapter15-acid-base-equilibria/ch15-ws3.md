@@ -9,8 +9,7 @@ Zumdahl §15.4–15.5 • name the major species before choosing a method
 
 > 📌 **Directions & data**
 >
-> $K_a$: HC₂H₃O₂ $1.8\times10^{-5}$ (p$K_a$ 4.74) •\
-> HOCl $3.5\times10^{-8}$ (p$K_a$ 7.46). $K_b(\text{NH₃}) = 1.8\times10^{-5}$, $K_a(\text{NH₄+}) = 5.6\times10^{-10}$ (p$K_a$ 9.25).
+> $K_a$: HC₂H₃O₂ $1.8\times10^{-5}$ (p$K_a$ 4.74) • HOCl $3.5\times10^{-8}$ (p$K_a$ 7.46). $K_b(\text{NH₃}) = 1.8\times10^{-5}$, $K_a(\text{NH₄+}) = 5.6\times10^{-10}$ (p$K_a$ 9.25).
 > $K_w = 1.0\times10^{-14}$.
 
 **1.** For a weak acid titrated with a strong base, name the major
@@ -118,15 +117,11 @@ Choose an indicator for this titration from methyl red (4.4–6.2),
 
 > 📌 **Rubric — score yourself, 10 points**
 >
-> **(a) 2 pts** 1 mmol of base, 1 concentration •\
-> **(b) 2 pts** 1 identifies it as half the equivalence volume, 1 states
+> **(a) 2 pts** 1 mmol of base, 1 concentration • **(b) 2 pts** 1 identifies it as half the equivalence volume, 1 states
 > $[\text{HA}] = [\text{A⁻}]$ makes the log term zero — asserting
-> “pH $=$ p$K_a$ at halfway” with no reasoning earns 1 •\
-> **(c) 1 pt** $K_a = 10^{-4.85} = 1.4\times10^{-5}$ •\
-> **(d) 3 pts** 1 dilution to the total 42.40 mL,
+> “pH $=$ p$K_a$ at halfway” with no reasoning earns 1 • **(c) 1 pt** $K_a = 10^{-4.85} = 1.4\times10^{-5}$ • **(d) 3 pts** 1 dilution to the total 42.40 mL,
 > 1 $K_b$ from $K_w/K_a$, 1 pH via pOH — using $[\text{A⁻}] = 0.1120$
-> (forgetting dilution) caps this part at 2 •\
-> **(e) 2 pts** 1 phenolphthalein, 1 justification referring to the
+> (forgetting dilution) caps this part at 2 • **(e) 2 pts** 1 phenolphthalein, 1 justification referring to the
 > equivalence pH.
 
 > 📌 **Spiral review • Chapter 15 • blocks 1–3**

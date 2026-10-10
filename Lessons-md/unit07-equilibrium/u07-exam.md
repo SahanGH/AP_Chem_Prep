@@ -265,9 +265,7 @@ are all insoluble
 
 > 📌 **Data**
 >
-> $K_p = K_c(RT)^{\Delta n}$ •\
-> $R = 0.08206\,\mathrm{L\cdot atm/mol/K}$ •\
-> $K_{sp}$: AgCl $1.6\times10^{-10}$ • CaF₂
+> $K_p = K_c(RT)^{\Delta n}$ • $R = 0.08206\,\mathrm{L\cdot atm/mol/K}$ • $K_{sp}$: AgCl $1.6\times10^{-10}$ • CaF₂
 > $4.0\times10^{-11}$.
 
 ### Free-response 1 • short • 4 points

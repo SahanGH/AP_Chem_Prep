@@ -134,7 +134,7 @@ $\text{pH} = -\log[\text{H+}]$, $\text{pOH} = -\log[\text{OH-}]$, and at
 
 > 📘 **I do: all four quantities from one**
 >
-> A solution has $[\text{H+}] = 2.5e-5\,\mathrm{M}$. Find pH, pOH and
+> A solution has $[\text{H+}] = 2.5\times10^{-5}\,\mathrm{M}$. Find pH, pOH and
 > $[\text{OH-}]$.
 > 
 > $$ \text{pH} = -\log(2.5\times10^{-5}) = \mathbf{4.60} $$
@@ -153,7 +153,7 @@ $\text{pH} = -\log[\text{H+}]$, $\text{pOH} = -\log[\text{OH-}]$, and at
 
 > ✏️ **YOUR TURN 3 — four questions**
 >
-> 1. pH when $[\text{H+}] = 1.0e-3\,\mathrm{M}$:
+> 1. pH when $[\text{H+}] = 1.0\times10^{-3}\,\mathrm{M}$:
 >    *(working space)*
 > 2. $[\text{OH-}]$ when pH $= 9.00$: 
 >    *(working space)*
@@ -163,7 +163,7 @@ $\text{pH} = -\log[\text{H+}]$, $\text{pOH} = -\log[\text{OH-}]$, and at
 >    or neutral?
 >    *(working space)*
 > 
-> > **check:** (a) 3.00     (b) 1.0e-5 M    
+> > **check:** (a) 3.00     (b) 1.0 &times; 10&minus;5 M    
 > (c) 12.30     (d) very slightly acidic
 
 ## Ladder 4 • pH of strong acids and bases
@@ -226,7 +226,7 @@ Set up the $K_a$ equilibrium, assume $x$ is small, solve — then
 > 
 > **Assume $x \ll 0.200$:**
 > 
-> $$ x = \sqrt{(1.8\times10^{-5})(0.200)} = 1.90e-3~\text{M} $$
+> $$ x = \sqrt{(1.8\times10^{-5})(0.200)} = 1.90\times10^{-3}~\text{M} $$
 > 
 > **Test it:** $1.90\times10^{-3}/0.200 = 0.95\,\mathrm{\%}$, well
 > under 5 %. **Valid** — no quadratic needed.
@@ -249,7 +249,7 @@ Set up the $K_a$ equilibrium, assume $x$ is small, solve — then
 > 4. Why is $[\text{H+}]$ far less than the acid's concentration?
 >    *(working space)*
 > 
-> > **check:** (a) 6.3e-4 M     (b) 3.20    
+> > **check:** (a) 6.3 &times; 10&minus;4 M     (b) 3.20    
 > (c) yes — 0.63 %     (d) only a small fraction ionizes
 
 ## Ladder 6 • Percent ionization
@@ -282,7 +282,7 @@ It *rises* on dilution, even though the pH rises too.
 
 > ✏️ **YOUR TURN 6 — four questions**
 >
-> 1. $[\text{H+}] = 2.0e-3\,\mathrm{M}$ from 0.50 M acid.
+> 1. $[\text{H+}] = 2.0\times10^{-3}\,\mathrm{M}$ from 0.50 M acid.
 >    Percent ionization?
 >    *(working space)*
 > 2. On dilution, does percent ionization rise or fall?
@@ -333,7 +333,7 @@ $\mathrm{p}K_a = -\log K_a$. A *smaller* $\mathrm{p}K_a$ means a
 >    values compare?
 >    *(working space)*
 > 
-> > **check:** (a) 7.00     (b) 1.0e-2      (c) the
+> > **check:** (a) 7.00     (b) 1.0 &times; 10&minus;2      (c) the
 > 4.2 one     (d) a factor of 100
 
 ## Ladder 8 • Structure and acid strength

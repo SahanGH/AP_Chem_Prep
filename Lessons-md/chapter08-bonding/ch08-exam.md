@@ -180,8 +180,7 @@ is a smaller molecule
 > 📌 **Bond energies (kJ/mol)**
 >
 > H-H 432 • Cl-Cl 239 • H-Cl 427
-> • N#N 941 • N-H 391 •\
-> O=O 495 • O-H 467 • C-H 413
+> • N#N 941 • N-H 391 • O=O 495 • O-H 467 • C-H 413
 > • C=C 614 • C-C 347
 
 ### Free-response 1 • short • 4 points

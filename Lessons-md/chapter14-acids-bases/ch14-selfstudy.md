@@ -178,7 +178,7 @@ nothing to do with concentration.
 > **Acetic acid is weak.** It reaches an equilibrium,
 > CH₃COOH ⇌ H+ + CH₃COO-
 > written with a *double* arrow, and only about 1% of it comes
-> apart. $[\text{H+}]$ is around 1.3e-3 M — about
+> apart. $[\text{H+}]$ is around 1.3 &times; 10&minus;3 M — about
 > seventy-five times smaller than for the HCl, at the same nominal
 > concentration.
 > 
@@ -218,7 +218,7 @@ autoionisation
 Water ionises slightly on its own, and that single equilibrium underlies
 the entire pH scale.
 
-$$ \text{2H₂O(l) ⇌ H₃O+(aq) + OH-(aq)}    \qquad    K_{w} = [\text{H+}][\text{OH-}] = 1.0e-14    \text{ at 25\,\mathrm{{}^\circ C}} $$
+$$ \text{2H₂O(l) ⇌ H₃O+(aq) + OH-(aq)}    \qquad    K_{w} = [\text{H+}][\text{OH-}] = 1.0\times10^{-14}    \text{ at 25\,\mathrm{{}^\circ C}} $$
 
 ![figure](fig-ch14-selfstudy-5.png)
 
@@ -233,20 +233,20 @@ $$ \text{2H₂O(l) ⇌ H₃O+(aq) + OH-(aq)}    \qquad    K_{w} = [\text{H+}][\t
 
 > 📘 **I do: moving around the wheel**
 >
-> **A solution has $[\text{H+}] = 2.0e-4\,\mathrm{M}$ at
+> **A solution has $[\text{H+}] = 2.0\times10^{-4}\,\mathrm{M}$ at
 > 25 °C. Find $[\text{OH-}]$, pH and pOH.**
 > 
 > **$[\text{OH-}]$ from $K_{w}$:**
 > 
-> $$ [\text{OH-}] = \frac{1.0e-14}{2.0e-4}    = 5.0e-11\,\mathrm{M} $$
+> $$ [\text{OH-}] = \frac{1.0\times10^{-14}}{2.0\times10^{-4}}    = 5.0\times10^{-11}\,\mathrm{M} $$
 > 
 > **pH by definition:**
 > 
-> $$ \text{pH} = -\log(2.0e-4) = \mathbf{3.70} $$
+> $$ \text{pH} = -\log(2.0\times10^{-4}) = \mathbf{3.70} $$
 > 
 > **pOH two ways, and they must agree:**
 > 
-> $$ \text{pOH} = 14.00 - 3.70 = \mathbf{10.30}    \qquad\text{or}\qquad    -\log(5.0e-11) = 10.30 \quad\checkmark $$
+> $$ \text{pOH} = 14.00 - 3.70 = \mathbf{10.30}    \qquad\text{or}\qquad    -\log(5.0\times10^{-11}) = 10.30 \quad\checkmark $$
 > 
 > **Is the answer sensible?** pH 3.70 is below 7, so the solution is
 > acidic — consistent with $[\text{H+}]$ being far larger than
@@ -255,7 +255,7 @@ $$ \text{2H₂O(l) ⇌ H₃O+(aq) + OH-(aq)}    \qquad    K_{w} = [\text{H+}][\t
 > 
 > **Note about significant figures in logs.** Only the digits
 > *after* the decimal point in a pH are significant; the part before
-> it just records the power of ten. $[\text{H+}] = 2.0e-4$ has two
+> it just records the power of ten. $[\text{H+}] = 2.0\times10^{-4}$ has two
 > significant figures, so the pH is written with **two decimal
 > places**: 3.70. Writing “3.7” understates your precision and “3.6990”
 > overstates it.
@@ -264,9 +264,9 @@ $$ \text{2H₂O(l) ⇌ H₃O+(aq) + OH-(aq)}    \qquad    K_{w} = [\text{H+}][\t
 >
 > All at 25 °C.
 > 
-> 1. $[\text{H+}] = 1.0e-5\,\mathrm{M}$. Find $[\text{OH-}]$.
+> 1. $[\text{H+}] = 1.0\times10^{-5}\,\mathrm{M}$. Find $[\text{OH-}]$.
 >    *(working space)*
-> 2. $[\text{OH-}] = 1.0e-3\,\mathrm{M}$. Find $[\text{H+}]$ and pH.
+> 2. $[\text{OH-}] = 1.0\times10^{-3}\,\mathrm{M}$. Find $[\text{H+}]$ and pH.
 >    *(working space)*
 > 3. Pure water at 25 °C: give $[\text{H+}]$ and pH.
 >    *(working space)*
@@ -274,8 +274,8 @@ $$ \text{2H₂O(l) ⇌ H₃O+(aq) + OH-(aq)}    \qquad    K_{w} = [\text{H+}][\t
 >    Explain.
 >    *(working space)*
 > 
-> > **check:** (a) 1.0e-9 M     (b) 1.0e-11 M,
-> pH 11.00     (c) 1.0e-7 M, pH 7.00     (d) no — it is
+> > **check:** (a) 1.0 &times; 10&minus;9 M     (b) 1.0 &times; 10&minus;11 M,
+> pH 11.00     (c) 1.0 &times; 10&minus;7 M, pH 7.00     (d) no — it is
 > neutral
 
 ## Ladder 5 • The pH scale
@@ -296,7 +296,7 @@ $[\text{H+}]$.
 > 
 > $$ 10^{3} = \mathbf{1000 \text{ times}} $$
 > 
-> **Verify it directly.** pH 2 means $[\text{H+}] = 1e-2\,\mathrm{M}$; pH 5 means $[\text{H+}] = 1e-5\,\mathrm{M}$. The
+> **Verify it directly.** pH 2 means $[\text{H+}] = 1\times10^{-2}\,\mathrm{M}$; pH 5 means $[\text{H+}] = 1\times10^{-5}\,\mathrm{M}$. The
 > ratio is $10^{-2}/10^{-5} = 10^{3}$. Same answer, and this is the
 > version to fall back on whenever the shortcut feels slippery.
 > 
@@ -308,7 +308,7 @@ $[\text{H+}]$.
 > 
 > $$ [\text{H+}] = 10^{-\text{pH}} $$
 > 
-> So pH 3.70 gives $[\text{H+}] = 10^{-3.70} = 2.0e-4\,\mathrm{M}$ —
+> So pH 3.70 gives $[\text{H+}] = 10^{-3.70} = 2.0\times10^{-4}\,\mathrm{M}$ —
 > which is exactly where Ladder 4's worked example started. The two
 > operations are inverses, and being fluent in both directions is
 > assumed from here on.
@@ -330,7 +330,7 @@ $[\text{H+}]$.
 > 4. Which is more acidic, pH 2.5 or pH 4.5? By what factor?
 >    *(working space)*
 > 
-> > **check:** (a) 1000     (b) 1.0e-4 M     (c) pH 11.00,
+> > **check:** (a) 1000     (b) 1.0 &times; 10&minus;4 M     (c) pH 11.00,
 > basic     (d) pH 2.5, by 100
 
 ## Ladder 6 • pH of a strong acid
@@ -351,22 +351,22 @@ the acid concentration, and you take a logarithm.
 > 
 > **(b) Find the pH of 0.0025 M HNO₃.**
 > 
-> $$ [\text{H+}] = 0.0025\,\mathrm{M}    \qquad    \text{pH} = -\log(2.5e-3) = \mathbf{2.60} $$
+> $$ [\text{H+}] = 0.0025\,\mathrm{M}    \qquad    \text{pH} = -\log(2.5\times10^{-3}) = \mathbf{2.60} $$
 > 
-> **Check the sig figs.** 2.5e-3 has two significant figures,
+> **Check the sig figs.** 2.5 &times; 10&minus;3 has two significant figures,
 > so the pH carries two decimal places: 2.60, not 2.6 and not 2.602.
 > 
 > **The trap in this ladder is H₂SO₄.** It is the one strong
 > acid on the list that is diprotic, and only its *first* proton is
 > strong — the second comes off a weak acid, HSO₄-
-> ($K_{a2} = 1.2e-2$). So 0.010 M H₂SO₄ gives at
+> ($K_{a2} = 1.2\times10^{-2}$). So 0.010 M H₂SO₄ gives at
 > least 0.010 M H+ from the first ionisation, and a bit
 > more from the second. Unless a question tells you otherwise, treat only
 > the first proton as complete and say so.
 > 
 > **And a boundary worth knowing.** For extremely dilute strong acid
-> — below about 1e-7 M — water's own autoionisation
-> contributes as much H+ as the acid does, and $\text{pH} = -\log(c)$ breaks down. A 1e-10 M HCl solution is not
+> — below about 1 &times; 10&minus;7 M — water's own autoionisation
+> contributes as much H+ as the acid does, and $\text{pH} = -\log(c)$ breaks down. A 1 &times; 10&minus;10 M HCl solution is not
 > pH 10; it is very slightly below 7. Adding acid can never make water
 > basic.
 
@@ -379,7 +379,7 @@ the acid concentration, and you take a logarithm.
 > 3. Find $[\text{H+}]$ in a strong acid solution of pH 1.50.
 >    *(working space)*
 > 4. Why can you not simply write $\text{pH} = -\log(c)$ for
->    1e-10 M HCl?
+>    1 &times; 10&minus;10 M HCl?
 >    *(working space)*
 > 
 > > **check:** (a) 1.000     (b) 3.00     (c) 0.032 M    
@@ -458,16 +458,16 @@ $$ \text{HA ⇌ H+ + A-}    \qquad    K_{a} = \frac{[\text{H+}][\text{A-}]}{[\te
 > **$K_{a}$ answers “how far does this acid ionise?” — exactly
 > the question $K$ answered in Chapter 13, for one specific reaction.**
 > 
-> **Acetic acid, $K_{a} = 1.8e-5$.** Far below 1, so the
+> **Acetic acid, $K_{a} = 1.8\times10^{-5}$.** Far below 1, so the
 > equilibrium lies well to the left and the acid is mostly intact in
 > solution. Weak.
 > 
-> **HF, $K_{a} = 7.2e-4$.** Also below 1, so also weak —
+> **HF, $K_{a} = 7.2\times10^{-4}$.** Also below 1, so also weak —
 > but about forty times larger than acetic acid's, so HF is the
 > stronger of the two. Compare $K_{a}$ values directly; the bigger number
 > is the stronger acid, every time.
 > 
-> **HCN, $K_{a} = 6.2e-10$.** Extremely weak. A
+> **HCN, $K_{a} = 6.2\times10^{-10}$.** Extremely weak. A
 > 0.1 M solution is barely acidic at all.
 > 
 > **And strong acids?** Their $K_{a}$ values are enormous — for
@@ -509,7 +509,7 @@ $K_{a}$ in place of $K$.
 > 📘 **I do: acetic acid from scratch**
 >
 > **Find the pH of 0.500 M acetic acid,
-> $K_{a} = 1.8e-5$.**
+> $K_{a} = 1.8\times10^{-5}$.**
 > 
 > **Step 1 — equation and expression.**
 > 
@@ -525,16 +525,16 @@ $K_{a}$ in place of $K$.
 
 **Step 3 — substitute and approximate.**
 
-$$ 1.8e-5 = \frac{x^{2}}{0.500-x}    \;\approx\; \frac{x^{2}}{0.500} $$
+$$ 1.8\times10^{-5} = \frac{x^{2}}{0.500-x}    \;\approx\; \frac{x^{2}}{0.500} $$
 
-$$ x^{2} = 9.0e-6    \;\Longrightarrow\;    x = 3.0e-3\,\mathrm{M} $$
+$$ x^{2} = 9.0\times10^{-6}    \;\Longrightarrow\;    x = 3.0\times10^{-3}\,\mathrm{M} $$
 
 **Step 4 — justify the approximation.**
 
-$$ \frac{3.0e-3}{0.500} \times 100 = 0.60\%    \quad ✏️ **YOUR TURN 9 — four questions**
+$$ \frac{3.0\times10^{-3}}{0.500} \times 100 = 0.60\%    \quad ✏️ **YOUR TURN 9 — four questions**
 >
 > 1. Find the pH of 1.00 M acetic acid
->    ($K_{a} = 1.8e-5$).
+>    ($K_{a} = 1.8\times10^{-5}$).
 >    *(working space)*
 > 2. In the ICE table for a weak acid, what does $x$ represent
 >    physically?
@@ -570,20 +570,20 @@ answer, not a validity test.
 
 > 📘 **I do: the same acid at three concentrations**
 >
-> **Acetic acid, $K_{a} = 1.8e-5$, at three
+> **Acetic acid, $K_{a} = 1.8\times10^{-5}$, at three
 > concentrations.**
 > 
-> **1.00 M:** $x = \sqrt{1.8e-5 \times 1.00} = 4.24e-3$, so
+> **1.00 M:** $x = \sqrt{1.8\times10^{-5} \times 1.00} = 4.24\times10^{-3}$, so
 > 
-> $$ \frac{4.24e-3}{1.00} \times 100 = \mathbf{0.42\%} $$
+> $$ \frac{4.24\times10^{-3}}{1.00} \times 100 = \mathbf{0.42\%} $$
 > 
-> **0.100 M:** $x = 1.34e-3$, so
+> **0.100 M:** $x = 1.34\times10^{-3}$, so
 > 
-> $$ \frac{1.34e-3}{0.100} \times 100 = \mathbf{1.3\%} $$
+> $$ \frac{1.34\times10^{-3}}{0.100} \times 100 = \mathbf{1.3\%} $$
 > 
-> **0.0100 M:** $x = 4.24e-4$, so
+> **0.0100 M:** $x = 4.24\times10^{-4}$, so
 > 
-> $$ \frac{4.24e-4}{0.0100} \times 100 = \mathbf{4.2\%} $$
+> $$ \frac{4.24\times10^{-4}}{0.0100} \times 100 = \mathbf{4.2\%} $$
 > 
 > **Read the pattern.** A tenfold dilution multiplies the percent
 > ionisation by about $\sqrt{10} \approx 3.2$ — from 0.42 to 1.3 to 4.2.
@@ -591,7 +591,7 @@ answer, not a validity test.
 > percent ionisation is $x/c = \sqrt{K_{a}/c}$, so it rises as $c$ falls.
 > 
 > **But check what happened to the acidity.** $[\text{H+}]$ went
-> *down* at every step, from 4.24e-3 to 4.24e-4, so the
+> *down* at every step, from 4.24 &times; 10&minus;3 to 4.24 &times; 10&minus;4, so the
 > pH rose from about 2.4 to about 3.4. The solution became *less*
 > acidic while becoming *more* ionised. Both statements are correct,
 > and a question that asks for one while implying the other is testing
@@ -604,7 +604,7 @@ answer, not a validity test.
 
 > ✏️ **YOUR TURN 10 — four questions**
 >
-> 1. A 0.20 M weak acid has $[\text{H+}] =         2.0e-3\,\mathrm{M}$. Find its percent ionisation.
+> 1. A 0.20 M weak acid has $[\text{H+}] =         2.0\times10^{-3}\,\mathrm{M}$. Find its percent ionisation.
 >    *(working space)*
 > 2. Does diluting a weak acid raise or lower its percent
 >    ionisation?
@@ -630,22 +630,22 @@ $$ \text{B + H₂O ⇌ BH+ + OH-}    \qquad    K_{b} = \frac{[\text{BH+}][\text{
 > 📘 **I do: ammonia, and the extra step**
 >
 > **Find the pH of 0.500 M NH₃,
-> $K_{b} = 1.8e-5$.**
+> $K_{b} = 1.8\times10^{-5}$.**
 > 
 > **ICE gives the same algebra as Ladder 9:**
 > 
-> $$ 1.8e-5 \approx \frac{x^{2}}{0.500}    \;\Longrightarrow\;    x = 3.0e-3\,\mathrm{M} $$
+> $$ 1.8\times10^{-5} \approx \frac{x^{2}}{0.500}    \;\Longrightarrow\;    x = 3.0\times10^{-3}\,\mathrm{M} $$
 > 
 > Check: $0.60\%  
 > **Now the step that separates bases from acids.** Here $x$ is
 > $[\text{OH-}]$, not $[\text{H+}]$, so it gives you **pOH** first:
 > 
-> $$ \text{pOH} = -\log(3.0e-3) = 2.52 $$
+> $$ \text{pOH} = -\log(3.0\times10^{-3}) = 2.52 $$
 > 
 > $$ \text{pH} = 14.00 - 2.52 = \mathbf{11.48} $$
 > 
 > **Compare with Ladder 9 deliberately.** Acetic acid at
-> 0.500 M with $K_{a} = 1.8e-5$ gave pH 2.52. Ammonia at
+> 0.500 M with $K_{a} = 1.8\times10^{-5}$ gave pH 2.52. Ammonia at
 > 0.500 M with the same numerical $K_{b}$ gives pH 11.48. The
 > two are mirror images about 7 — $2.52 + 11.48 = 14.00$ — because the
 > constants are numerically equal. That symmetry is worth noticing, and it
@@ -661,7 +661,7 @@ $$ \text{B + H₂O ⇌ BH+ + OH-}    \qquad    K_{b} = \frac{[\text{BH+}][\text{
 >
 > 1. Write the $K_{b}$ expression for methylamine, CH₃NH₂.
 >    *(working space)*
-> 2. For 0.100 M of a base with $K_{b} = 1.0e-5$,
+> 2. For 0.100 M of a base with $K_{b} = 1.0\times10^{-5}$,
 >    find $[\text{OH-}]$.
 >    *(working space)*
 > 3. Convert that $[\text{OH-}]$ to a pH. 
@@ -671,7 +671,7 @@ $$ \text{B + H₂O ⇌ BH+ + OH-}    \qquad    K_{b} = \frac{[\text{BH+}][\text{
 >    *(working space)*
 > 
 > > **check:** (a) $[\text{CH₃NH₃+}][\text{OH-}]/[\text{CH₃NH₂}]$     (b)
-> 1.0e-3 M     (c) 11.00     (d) $x$ is $[\text{OH-}]$
+> 1.0 &times; 10&minus;3 M     (c) 11.00     (d) $x$ is $[\text{OH-}]$
 
 ## Ladder 12 • $K_{a} \times K_{b} = K_{w}$
 
@@ -680,25 +680,25 @@ $$ \text{B + H₂O ⇌ BH+ + OH-}    \qquad    K_{b} = \frac{[\text{BH+}][\text{
 For a **conjugate pair** — and only for a conjugate pair — the
 two constants multiply to $K_{w}$.
 
-$$ K_{a} \times K_{b} = K_{w} = 1.0e-14    \qquad\text{equivalently}\qquad    \text{p}K_{a} + \text{p}K_{b} = 14.00 $$
+$$ K_{a} \times K_{b} = K_{w} = 1.0\times10^{-14}    \qquad\text{equivalently}\qquad    \text{p}K_{a} + \text{p}K_{b} = 14.00 $$
 
 ![figure](fig-ch14-selfstudy-11.png)
 
 > 📘 **I do: converting between the two**
 >
-> **Acetic acid has $K_{a} = 1.8e-5$. Find $K_{b}$ for
+> **Acetic acid has $K_{a} = 1.8\times10^{-5}$. Find $K_{b}$ for
 > acetate, CH₃COO-.**
 > 
-> $$ K_{b} = \frac{K_{w}}{K_{a}}          = \frac{1.0e-14}{1.8e-5}          = \mathbf{5.6e-10} $$
+> $$ K_{b} = \frac{K_{w}}{K_{a}}          = \frac{1.0\times10^{-14}}{1.8\times10^{-5}}          = \mathbf{5.6\times10^{-10}} $$
 > 
-> **Sense-check the size.** $5.6e-10$ is small, so acetate is a
+> **Sense-check the size.** $5.6\times10^{-10}$ is small, so acetate is a
 > weak base — but not a negligible one, and that is precisely why sodium
 > acetate solutions come out basic (Ladder 14).
 > 
-> **Now the other direction. Ammonia has $K_{b} = 1.8e-5$;
+> **Now the other direction. Ammonia has $K_{b} = 1.8\times10^{-5}$;
 > find $K_{a}$ for the ammonium ion, NH₄+.**
 > 
-> $$ K_{a} = \frac{1.0e-14}{1.8e-5} = 5.6e-10 $$
+> $$ K_{a} = \frac{1.0\times10^{-14}}{1.8\times10^{-5}} = 5.6\times10^{-10} $$
 > 
 > So NH₄+ is a weak acid — which is why ammonium chloride
 > solutions are acidic.
@@ -718,9 +718,9 @@ $$ K_{a} \times K_{b} = K_{w} = 1.0e-14    \qquad\text{equivalently}\qquad    \t
 
 > ✏️ **YOUR TURN 12 — four questions**
 >
-> 1. HF has $K_{a} = 7.2e-4$. Find $K_{b}$ for F-.
+> 1. HF has $K_{a} = 7.2\times10^{-4}$. Find $K_{b}$ for F-.
 >    *(working space)*
-> 2. A base has $K_{b} = 1.0e-6$. Find $K_{a}$ for its
+> 2. A base has $K_{b} = 1.0\times10^{-6}$. Find $K_{a}$ for its
 >    conjugate acid.
 >    *(working space)*
 > 3. An acid has p$K_{a} = 4.00$. Find p$K_{b}$ for its conjugate
@@ -730,7 +730,7 @@ $$ K_{a} \times K_{b} = K_{w} = 1.0e-14    \qquad\text{equivalently}\qquad    \t
 >    *not* multiply to $K_{w}$?
 >    *(working space)*
 > 
-> > **check:** (a) 1.4e-11     (b) 1.0e-8     (c) 10.00
+> > **check:** (a) 1.4 &times; 10&minus;11     (b) 1.0 &times; 10&minus;8     (c) 10.00
 >     (d) they are not a conjugate pair
 
 ## Ladder 13 • Polyprotic acids
@@ -760,18 +760,18 @@ each stage is far weaker than the one before.
 > acid.
 > 
 > **Worked: the pH of 0.100 M H₂CO₃,
-> $K_{a1} = 4.3e-7$.**
+> $K_{a1} = 4.3\times10^{-7}$.**
 > 
-> $$ x^{2}/0.100 \approx 4.3e-7    \;\Longrightarrow\;    x^{2} = 4.3e-8    \;\Longrightarrow\;    x = 2.07e-4 $$
+> $$ x^{2}/0.100 \approx 4.3\times10^{-7}    \;\Longrightarrow\;    x^{2} = 4.3\times10^{-8}    \;\Longrightarrow\;    x = 2.07\times10^{-4} $$
 > 
-> $$ \text{pH} = -\log(2.07e-4) = \mathbf{3.68} $$
+> $$ \text{pH} = -\log(2.07\times10^{-4}) = \mathbf{3.68} $$
 > 
-> Check: $2.07e-4/0.100 = 0.21\%  $K_{a2} = 5.6e-11$ is nearly four orders of magnitude smaller, so
+> Check: $2.07\times10^{-4}/0.100 = 0.21\%  $K_{a2} = 5.6\times10^{-11}$ is nearly four orders of magnitude smaller, so
 > ignoring it was safe.
 > 
 > **The one exception on the strong-acid list.** H₂SO₄'s first
 > ionisation is *strong* and its second is weak but not negligible
-> ($K_{a2} = 1.2e-2$). It is the polyprotic acid where the second
+> ($K_{a2} = 1.2\times10^{-2}$). It is the polyprotic acid where the second
 > step genuinely matters, and it is the one an exam question will use if
 > it wants to test this.
 
@@ -821,9 +821,9 @@ the salt came from.
 > 
 > **Worked calculation.** Find the pH of a 0.10 M
 > solution of sodium acetate. From Ladder 12 we have
-> $K_{b}(\text{CH₃COO-}) = 5.6e-10$, so:
+> $K_{b}(\text{CH₃COO-}) = 5.6\times10^{-10}$, so:
 > 
-> $$ x^{2}/0.10 \approx 5.6e-10    \;\Longrightarrow\;    x = 7.5e-6 = [\text{OH-}] $$
+> $$ x^{2}/0.10 \approx 5.6\times10^{-10}    \;\Longrightarrow\;    x = 7.5\times10^{-6} = [\text{OH-}] $$
 > 
 > $$ \text{pOH} = 5.13    \;\Longrightarrow\;    \text{pH} = 14.00 - 5.13 = \mathbf{8.87} $$
 > 
@@ -833,7 +833,7 @@ the salt came from.
 > **The fourth box.** When *both* ions come from weak parents,
 > as in ammonium acetate, you must compare $K_{a}$ of the cation with
 > $K_{b}$ of the anion; the larger one wins. For ammonium acetate both are
-> $5.6e-10$, so the solution is very nearly neutral — a
+> $5.6\times10^{-10}$, so the solution is very nearly neutral — a
 > coincidence of that particular pair, not a general rule.
 > 
 > **One more class worth recognising:** small, highly charged metal
@@ -921,13 +921,13 @@ two tells you which form of the acid dominates.
 
 > 📘 **I do: p$K_{a}$ and which form you have**
 >
-> **Acetic acid has $K_{a} = 1.8e-5$. Find p$K_{a}$.**
+> **Acetic acid has $K_{a} = 1.8\times10^{-5}$. Find p$K_{a}$.**
 > 
-> $$ \text{p}K_{a} = -\log(1.8e-5) = \mathbf{4.74} $$
+> $$ \text{p}K_{a} = -\log(1.8\times10^{-5}) = \mathbf{4.74} $$
 > 
 > **Now compare acids by p$K_{a}$.** HF has
-> $K_{a} = 7.2e-4$, so p$K_{a} = 3.14$; HCN has
-> $K_{a} = 6.2e-10$, so p$K_{a} = 9.21$. The order of strength is
+> $K_{a} = 7.2\times10^{-4}$, so p$K_{a} = 3.14$; HCN has
+> $K_{a} = 6.2\times10^{-10}$, so p$K_{a} = 9.21$. The order of strength is
 > $\text{HF} > \text{CH₃COOH} > \text{HCN}$, and the p$K_{a}$ values 3.14,
 > 4.74, 9.21 rise in exactly the reverse order. **Lower p$K_{a}$,
 > stronger acid.**
@@ -949,7 +949,7 @@ two tells you which form of the acid dominates.
 
 > ✏️ **YOUR TURN 16 — four questions**
 >
-> 1. An acid has $K_{a} = 1.0e-3$. Find p$K_{a}$.
+> 1. An acid has $K_{a} = 1.0\times10^{-3}$. Find p$K_{a}$.
 >    *(working space)*
 > 2. Acid A has p$K_{a} = 3.0$ and acid B has p$K_{a} = 6.0$. Which
 >    is stronger?
@@ -984,7 +984,7 @@ two tells you which form of the acid dominates.
 > 4. Is a solution of K₂CO₃ acidic, basic or neutral? Explain
 >    in one sentence.
 >    *(working space)*
-> 5. A weak acid has $K_{a} = 4.0e-6$. Find $K_{b}$ for its
+> 5. A weak acid has $K_{a} = 4.0\times10^{-6}$. Find $K_{b}$ for its
 >    conjugate base.
 >    *(working space)*
 > 6. Which is the stronger acid, HBrO or HBrO₃? Give the
@@ -992,12 +992,12 @@ two tells you which form of the acid dominates.
 >    *(working space)*
 > 
 > > **check:** (a) 1.70     (b) 12.30     (c) HPO₄²⁻ and H₂CO₃
->     4. basic     5. 2.5e-9     6. HBrO₃
+>     4. basic     5. 2.5 &times; 10&minus;9     6. HBrO₃
 
 > ✏️ **MIXED SET — last six**
 >
 > 1. Find the pH of 0.250 M of a weak acid with
->    $K_{a} = 4.0e-5$.
+>    $K_{a} = 4.0\times10^{-5}$.
 >    *(working space)*
 > 2. Find the percent ionisation for question 7.
 >    *(working space)*
@@ -1013,7 +1013,7 @@ two tells you which form of the acid dominates.
 >    *(working space)*
 > 
 > > **check:** (a) 2.50     (b) 1.3%     (c) 12.00     (d) pH 9.80,
-> 1.6e-10 M     1(a) HA     1(b) one is strong, one
+> 1.6 &times; 10&minus;10 M     1(a) HA     1(b) one is strong, one
 > weak
 
 ## Mastery tracker

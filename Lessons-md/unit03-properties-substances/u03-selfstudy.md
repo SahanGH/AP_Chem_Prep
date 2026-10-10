@@ -583,7 +583,7 @@ wavelength: short wavelength means high energy.
 > 
 > $$ E = \frac{hc}{\lambda} =    \frac{(6.626\times10^{-34})(3.00\times10^{8})}{400\times10^{-9}}    = \mathbf{4.97\times10^{-19}~J} $$
 > 
-> **Per mole:** $4.97\times10^{-19} \times 6.022\times10^{23} = 2.99e5$ J $= \mathbf{299~kJ/mol}$.
+> **Per mole:** $4.97\times10^{-19} \times 6.022\times10^{23} = 2.99\times10^{5}$ J $= \mathbf{299~kJ/mol}$.
 > 
 > **The unit trap:** the wavelength must be in **metres**.
 > Leaving it in nanometres makes the answer wrong by a factor of
@@ -591,7 +591,7 @@ wavelength: short wavelength means high energy.
 > 
 > **Sense check:** 400 nm is violet, the high-energy end
 > of the visible range. Red light at 700 nm should come out
-> lower — and it does, at 2.84e-19 J.
+> lower — and it does, at 2.84 &times; 10&minus;19 J.
 
 > ✏️ **YOUR TURN 13 — four questions**
 >
@@ -606,7 +606,7 @@ wavelength: short wavelength means high energy.
 >    an electron is ejected from a metal. Explain.
 >    *(working space)*
 > 
-> > **check:** (a) 2.84e-19 J     (b) 471 kJ/mol
+> > **check:** (a) 2.84 &times; 10&minus;19 J     (b) 471 kJ/mol
 >     (c) ultraviolet — shorter wavelength     (d) intensity is photon
 > *number*, not photon energy
 
@@ -621,7 +621,7 @@ tool — measure $A$, get $c$.
 > 📘 **I do: absorbance to concentration**
 >
 > A solution has $A = 0.620$ in a 1.00 cm cell, with
-> $\varepsilon = 2.00e3\,\mathrm{}$ /M/cm. Find the
+> $\varepsilon = 2.00\times10^{3}\,\mathrm{}$ /M/cm. Find the
 > concentration.
 > 
 > $$ c = \frac{A}{\varepsilon b} = \frac{0.620}{(2.00\times10^{3})(1.00)}    = \mathbf{3.10\times10^{-4}~M} $$
@@ -640,7 +640,7 @@ tool — measure $A$, get $c$.
 >
 > 1. Same solution diluted to half. New absorbance?
 >    *(working space)*
-> 2. $c = 1.5e-4\,\mathrm{M}$, $\varepsilon = 2.00e3\,\mathrm{}$,
+> 2. $c = 1.5\times10^{-4}\,\mathrm{M}$, $\varepsilon = 2.00\times10^{3}\,\mathrm{}$,
 >    $b = 1.00\,\mathrm{cm}$. Find $A$.
 >    *(working space)*
 > 3. Why must the wavelength be chosen at the absorption maximum?

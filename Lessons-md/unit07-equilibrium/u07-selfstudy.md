@@ -494,7 +494,7 @@ multipliers of $s$.
 > $$ s^3 = 1.775\times10^{-9} \;\Rightarrow\;    s = \mathbf{1.2\times10^{-3}~M} $$
 > 
 > **The factor of 2 is the entire difficulty.** Writing
-> $K_{sp} = s^3$ instead of $4s^3$ gives 1.9e-3 — wrong, and a very
+> $K_{sp} = s^3$ instead of $4s^3$ gives 1.9 &times; 10&minus;3 — wrong, and a very
 > common answer.
 > 
 > **A warning about comparing:** PbI₂ has the smaller $K_{sp}$ yet
@@ -514,7 +514,7 @@ multipliers of $s$.
 >    *(working space)*
 > 
 > > **check:** (a) $[\text{Ag+}]^2[\text{CrO₄²⁻}]$     (b)
-> 6.5e-5 M     (c) 1.3e-4 M     (d) different
+> 6.5 &times; 10&minus;5 M     (c) 1.3 &times; 10&minus;4 M     (d) different
 > stoichiometries
 
 ## Ladder 12 • The common-ion effect
@@ -530,7 +530,7 @@ It is Le Ch\^atelier applied to dissolving.
 > pure water with that in 0.10 M NaCl.
 > 
 > **In pure water:**
-> $s = \sqrt{1.8\times10^{-10}} = 1.3e-5\,\mathrm{M}$.
+> $s = \sqrt{1.8\times10^{-10}} = 1.3\times10^{-5}\,\mathrm{M}$.
 > 
 > **In 0.10 M NaCl:** chloride is already present at
 > 0.10 M, overwhelmingly more than the dissolution could supply,

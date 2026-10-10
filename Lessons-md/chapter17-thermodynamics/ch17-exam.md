@@ -181,14 +181,11 @@ has no effect on anything
 > 📌 **Data**
 >
 > $\Delta H_f^\circ$ (kJ/mol), $\Delta G_f^\circ$ (kJ/mol),
-> $S^\circ$ (J/K$\cdot$mol): CO(g) $-110.5$, $-137$, 198 •\
-> CO₂(g) $-393.5$, $-394$, 214 • O₂(g) 0, 0, 205
+> $S^\circ$ (J/K$\cdot$mol): CO(g) $-110.5$, $-137$, 198 • CO₂(g) $-393.5$, $-394$, 214 • O₂(g) 0, 0, 205
 > • CaCO₃(s) $-1207$, $-1129$, 93 • CaO(s)
 > $-635$, $-604$, 40.   
 > 
-> $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ •\
-> $\Delta G^\circ = -RT\ln K$ •\
-> $R = 8.314\,\mathrm{J/mol/K}$. ATP hydrolysis:
+> $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$ • $\Delta G^\circ = -RT\ln K$ • $R = 8.314\,\mathrm{J/mol/K}$. ATP hydrolysis:
 > $\Delta G^\circ = -30.5\,\mathrm{kJ/mol}$.
 
 ### Free-response 1 • long • 10 points

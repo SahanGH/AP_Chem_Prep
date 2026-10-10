@@ -714,10 +714,10 @@ $$ \Delta G^{\circ} = -RT \ln K    \qquad    R = 8.314\;\mathrm{J\,mol^{-1}\,K^{
 
 > 📘 **I do: both directions of the translation**
 >
-> **(a) A reaction has $K = 1.0e6$ at 298 K. Find
+> **(a) A reaction has $K = 1.0\times10^{6}$ at 298 K. Find
 > $\Delta G^{\circ}$.**
 > 
-> $$ \Delta G^{\circ} = -RT \ln K    = -(8.314)(298)\ln(1.0e6) $$
+> $$ \Delta G^{\circ} = -RT \ln K    = -(8.314)(298)\ln(1.0\times10^{6}) $$
 > 
 > $$ = -(2478)(13.82) = -34200\,\mathrm{J}    = \mathbf{-34.2\,\mathrm{kJ}} $$
 > 
@@ -730,14 +730,14 @@ $$ \Delta G^{\circ} = -RT \ln K    \qquad    R = 8.314\;\mathrm{J\,mol^{-1}\,K^{
 > 
 > $$ \ln K = \frac{-\Delta G^{\circ}}{RT}          = \frac{-20000}{(8.314)(298)}          = \frac{-20000}{2478} = -8.07 $$
 > 
-> $$ K = e^{-8.07} = \mathbf{3.1e-4} $$
+> $$ K = e^{-8.07} = \mathbf{3.1\times10^{-4}} $$
 > 
 > Positive $\Delta G^{\circ}$, $K$ well below 1 — reactants favoured,
 > consistent again.
 > 
 > **The sign check that catches everything.** Before computing,
 > decide which side of 1 the answer should fall on. Negative
-> $\Delta G^{\circ}$ gives $K > 1$; positive gives $K  3.1e-4 for a positive $\Delta G^{\circ}$ passes; a $K$ of 3200
+> $\Delta G^{\circ}$ gives $K > 1$; positive gives $K &minus;4 for a positive $\Delta G^{\circ}$ passes; a $K$ of 3200
 > would not, and would mean a dropped minus sign.
 > 
 > **Units, again.** $R$ is in **joules**, so $\Delta G^{\circ}$
@@ -760,7 +760,7 @@ $$ \Delta G^{\circ} = -RT \ln K    \qquad    R = 8.314\;\mathrm{J\,mol^{-1}\,K^{
 > 2. $\Delta G^{\circ} = -10.0\,\mathrm{kJ}$. Is $K$ greater or
 >    less than 1?
 >    *(working space)*
-> 3. $K = 1.0e-3$. Find $\Delta G^{\circ}$.
+> 3. $K = 1.0\times10^{-3}$. Find $\Delta G^{\circ}$.
 >    *(working space)*
 > 4. A student computes $K = 500$ from $\Delta G^{\circ} =         +15\,\mathrm{kJ}$. What went wrong?
 >    *(working space)*
@@ -780,7 +780,7 @@ $$ \Delta G^{\circ} = -RT \ln K    \qquad    R = 8.314\;\mathrm{J\,mol^{-1}\,K^{
 produces something**
 >
 > **A reaction has $\Delta G^{\circ} = +20.0\,\mathrm{kJ}$, so
-> $K = 3.1e-4$ (Ladder 12). Start with pure reactants and no
+> $K = 3.1\times10^{-4}$ (Ladder 12). Start with pure reactants and no
 > product. What happens?**
 > 
 > **At the very start, $Q = 0$.** And $\ln Q \to -\infty$, so
@@ -959,7 +959,7 @@ beaker**
 > 3. For that reaction, find the crossover temperature and say
 >    which side is favoured.
 >    *(working space)*
-> 4. $K = 2.0e-5$ at 298 K
+> 4. $K = 2.0\times10^{-5}$ at 298 K
 >    ($RT = 2478\,\mathrm{J/mol}$). Find $\Delta G^{\circ}$.
 >    *(working space)*
 > 5. A reaction has $\Delta G^{\circ} = -150\,\mathrm{kJ}$ yet

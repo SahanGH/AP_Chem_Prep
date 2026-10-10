@@ -52,30 +52,30 @@ $$ \text{rate}    = -\frac{1}{a}\frac{\Delta[\text{A}]}{\Delta t}    = -\frac{1}
 > **Rate is always reported as a positive number.** A reactant's
 > concentration falls, so $\Delta[\text{A}]/\Delta t$ is negative — the
 > minus sign in the definition is there to cancel that, not to make the
-> rate negative. An answer of $-2.0e-3\,\mathrm{M/s}$ for a rate
+> rate negative. An answer of $-2.0\times10^{-3}\,\mathrm{M/s}$ for a rate
 > is wrong on sight.
 
 > 📘 **I do: one rate, four different species**
 >
 > **For 2N₂O₅ → 4NO₂ + O₂, N₂O₅ disappears at
-> 4.0e-3 M/s. Find the reaction rate and the rate of
+> 4.0 &times; 10&minus;3 M/s. Find the reaction rate and the rate of
 > appearance of each product.**
 > 
 > **Step 1 — get the reaction rate.** Divide the disappearance of
 > N₂O₅ by its coefficient, 2:
 > 
-> $$ \text{rate} = \frac{1}{2}\left(4.0e-3\,\mathrm{M/s}\right)    = 2.0e-3\,\mathrm{M/s} $$
+> $$ \text{rate} = \frac{1}{2}\left(4.0\times10^{-3}\,\mathrm{M/s}\right)    = 2.0\times10^{-3}\,\mathrm{M/s} $$
 > 
 > **Step 2 — multiply back out for each species.** Each species
 > changes at (rate $\times$ its own coefficient):
 > 
-> $$ \frac{\Delta[\text{NO₂}]}{\Delta t}    = 4 \times 2.0e-3\,\mathrm{} = 8.0e-3\,\mathrm{M/s} $$
+> $$ \frac{\Delta[\text{NO₂}]}{\Delta t}    = 4 \times 2.0\times10^{-3}\,\mathrm{} = 8.0\times10^{-3}\,\mathrm{M/s} $$
 > 
-> $$ \frac{\Delta[\text{O₂}]}{\Delta t}    = 1 \times 2.0e-3\,\mathrm{} = 2.0e-3\,\mathrm{M/s} $$
+> $$ \frac{\Delta[\text{O₂}]}{\Delta t}    = 1 \times 2.0\times10^{-3}\,\mathrm{} = 2.0\times10^{-3}\,\mathrm{M/s} $$
 > 
 > **Sanity-check against the chemistry.** Four NO₂ appear for
 > every two N₂O₅ consumed, so NO₂ should appear twice as fast as
-> N₂O₅ disappears — 8.0e-3  against 4.0e-3 . It does.
+> N₂O₅ disappears — 8.0 &times; 10&minus;3  against 4.0 &times; 10&minus;3 . It does.
 > That ratio check catches almost every slip in this ladder.
 > 
 > **Average versus instantaneous.** Concentration-versus-time curves
@@ -191,20 +191,20 @@ concentration at a time and watch what the rate does.
 >   (M) | **initial rate**
 >   (M/s) |
 > |---|---|---|---|
-> | 1 | 0.10 | 0.10 | 2.0e-3 |
-> | 2 | 0.20 | 0.10 | 8.0e-3 |
-> | 3 | 0.10 | 0.20 | 4.0e-3 |
+> | 1 | 0.10 | 0.10 | 2.0 | thinsp; | times; | thinsp;10 | minus;3 |
+> | 2 | 0.20 | 0.10 | 8.0 | thinsp; | times; | thinsp;10 | minus;3 |
+> | 3 | 0.10 | 0.20 | 4.0 | thinsp; | times; | thinsp;10 | minus;3 |
 
 **Order in A — use experiments 1 and 2**, because
 $[\text{B}]$ is the same in both. $[\text{A}]$ doubles
-($0.10 \to 0.20$) and the rate goes from 2.0e-3 to 8.0e-3,
+($0.10 \to 0.20$) and the rate goes from 2.0 &times; 10&minus;3 to 8.0 &times; 10&minus;3,
 a factor of 4.
 
 $$ 2^{m} = 4 \;\Longrightarrow\; m = \mathbf{2} $$
 
 **Order in B — use experiments 1 and 3**, where $[\text{A}]$
 is held fixed. $[\text{B}]$ doubles and the rate doubles
-(2.0e-3 to 4.0e-3).
+(2.0 &times; 10&minus;3 to 4.0 &times; 10&minus;3).
 
 $$ 2^{n} = 2 \;\Longrightarrow\; n = \mathbf{1} $$
 
@@ -214,11 +214,11 @@ overall order 3.
 **Now find $k$** by substituting any one experiment — use
 experiment 1:
 
-$$ k = \frac{\text{rate}}{[\text{A}]^{2}[\text{B}]}      = \frac{2.0e-3}{(0.10)^{2}(0.10)}      = \frac{2.0e-3}{1.0e-3}      = 2.0\;\mathrm{M^{-2}\,s^{-1}} $$
+$$ k = \frac{\text{rate}}{[\text{A}]^{2}[\text{B}]}      = \frac{2.0\times10^{-3}}{(0.10)^{2}(0.10)}      = \frac{2.0\times10^{-3}}{1.0\times10^{-3}}      = 2.0\;\mathrm{M^{-2}\,s^{-1}} $$
 
 **Then check $k$ against a different row** — this is free and it
 catches errors. Experiment 2:
-$2.0 \times (0.20)^{2} \times 0.10 = 2.0 \times 0.040 \times 0.10 = 8.0e-3$. Matches. If $k$ does not come out the same from every
+$2.0 \times (0.20)^{2} \times 0.10 = 2.0 \times 0.040 \times 0.10 = 8.0\times10^{-3}$. Matches. If $k$ does not come out the same from every
 row, an order is wrong.
 
 > ✏️ **YOUR TURN 3 — four questions**
@@ -228,9 +228,9 @@ row, an order is wrong.
 > | **Exp** | $[\text{X}]_{0}$ (M) | $[\text{Y}]_{0}$
 >   (M) | **initial rate** (M/s) |
 > |---|---|---|---|
-> | 1 | 0.10 | 0.10 | 1.5e-3 |
-> | 2 | 0.20 | 0.10 | 3.0e-3 |
-> | 3 | 0.10 | 0.20 | 1.5e-3 |
+> | 1 | 0.10 | 0.10 | 1.5 | thinsp; | times; | thinsp;10 | minus;3 |
+> | 2 | 0.20 | 0.10 | 3.0 | thinsp; | times; | thinsp;10 | minus;3 |
+> | 3 | 0.10 | 0.20 | 1.5 | thinsp; | times; | thinsp;10 | minus;3 |
 
 1. Find the order in X. 
    *(working space)*
@@ -242,7 +242,7 @@ row, an order is wrong.
    *(working space)*
 
 > **check:** (a) 1     (b) 0     (c) rate $= k[\text{X}]$, first order
-    (d) 1.5e-2 /s
+    (d) 1.5 &times; 10&minus;2 /s
 
 ## Ladder 4 • The units of $k$
 
@@ -258,8 +258,7 @@ your order.
 >
 > **Never memorise this table. Derive it in five seconds.**
 > 
-> Rate always has units M/s, i.e.\
-> $\mathrm{M\,s^{-1}}$. For a second-order reaction,
+> Rate always has units M/s, i.e. $\mathrm{M\,s^{-1}}$. For a second-order reaction,
 > rate $= k[\text{A}]^{2}$, so
 > 
 > $$ k = \frac{\text{rate}}{[\text{A}]^{2}}      = \frac{\mathrm{M\,s^{-1}}}{\mathrm{M^{2}}}      = \mathrm{M^{-1}\,s^{-1}} $$
@@ -671,9 +670,9 @@ Use the two-point form:
 
 $$ \ln\!\left(\frac{k_{2}}{k_{1}}\right)    = -\frac{E_{\mathrm{a}}}{R}      \left(\frac{1}{T_{2}} - \frac{1}{T_{1}}\right) $$
 
-$$ \ln 2 = -\frac{E_{\mathrm{a}}}{8.314}    \left(\frac{1}{310} - \frac{1}{300}\right)    = -\frac{E_{\mathrm{a}}}{8.314}\left(-1.075e-4\right) $$
+$$ \ln 2 = -\frac{E_{\mathrm{a}}}{8.314}    \left(\frac{1}{310} - \frac{1}{300}\right)    = -\frac{E_{\mathrm{a}}}{8.314}\left(-1.075\times10^{-4}\right) $$
 
-$$ 0.693 = E_{\mathrm{a}} \times 1.293e-5    \quad\Longrightarrow\quad    E_{\mathrm{a}} = 53600\,\mathrm{J/mol}    = \mathbf{53.6\,\mathrm{kJ/mol}} $$
+$$ 0.693 = E_{\mathrm{a}} \times 1.293\times10^{-5}    \quad\Longrightarrow\quad    E_{\mathrm{a}} = 53600\,\mathrm{J/mol}    = \mathbf{53.6\,\mathrm{kJ/mol}} $$
 
 **Two habits.** Temperature must be in **kelvin** — the
 equation is meaningless in celsius. And $R = 8.314\,\mathrm{}$ gives

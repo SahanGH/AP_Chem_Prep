@@ -322,9 +322,9 @@ the reaction goes before it balances.
 
 > ✏️ **YOUR TURN 5 — four questions**
 >
-> 1. A reaction has $K = 2e-8$. Which side is favoured?
+> 1. A reaction has $K = 2\times10^{-8}$. Which side is favoured?
 >    *(working space)*
-> 2. A reaction has $K = 4e6$. Which side is favoured?
+> 2. A reaction has $K = 4\times10^{6}$. Which side is favoured?
 >    *(working space)*
 > 3. Does a large $K$ mean the reaction is fast? Explain.
 >    *(working space)*
@@ -476,7 +476,7 @@ are handed equilibrium values and simply substitute.
 > 
 > **Substitute.**
 > 
-> $$ K_{c} = \frac{(0.055)^{2}}{(0.0075)(0.0075)}          = \frac{3.025e-3}{5.625e-5}          = \mathbf{54} $$
+> $$ K_{c} = \frac{(0.055)^{2}}{(0.0075)(0.0075)}          = \frac{3.025\times10^{-3}}{5.625\times10^{-5}}          = \mathbf{54} $$
 > 
 > **Is the answer sensible?** $K > 1$, so products are favoured —
 > consistent with the fact that $[\text{HI}]$ is far larger than either
@@ -592,11 +592,11 @@ simplify it.
 
 > 📘 **I do: approximate, then justify**
 >
-> **For A ⇌ B + C, $K = 1.0e-5$ and $[\text{A}]_{0} = 0.100\,\mathrm{M}$. Find the equilibrium concentrations.**
+> **For A ⇌ B + C, $K = 1.0\times10^{-5}$ and $[\text{A}]_{0} = 0.100\,\mathrm{M}$. Find the equilibrium concentrations.**
 > 
 > **The ICE row is** $0.100-x$, $x$, $x$, so
 > 
-> $$ K = \frac{x^{2}}{0.100-x} = 1.0e-5 $$
+> $$ K = \frac{x^{2}}{0.100-x} = 1.0\times10^{-5} $$
 > 
 > which is a quadratic — solvable, but tedious.
 > 
@@ -604,19 +604,19 @@ simplify it.
 > reacts and $x$ must be very small compared with 0.100. Drop it from the
 > denominator:
 > 
-> $$ \frac{x^{2}}{0.100} \approx 1.0e-5    \;\Longrightarrow\;    x^{2} = 1.0e-6    \;\Longrightarrow\;    x = 1.0e-3 $$
+> $$ \frac{x^{2}}{0.100} \approx 1.0\times10^{-5}    \;\Longrightarrow\;    x^{2} = 1.0\times10^{-6}    \;\Longrightarrow\;    x = 1.0\times10^{-3} $$
 > 
 > **Now justify it — this step is not optional.**
 > 
-> $$ \frac{1.0e-3}{0.100} \times 100 = 1.0\% $$
+> $$ \frac{1.0\times10^{-3}}{0.100} \times 100 = 1.0\% $$
 > 
 > That is comfortably under 5%, so the approximation was valid and the
 > answer stands.
 > 
-> $$ [\text{A}] = 0.099\,\mathrm{M}    \qquad    [\text{B}] = [\text{C}] = 1.0e-3\,\mathrm{M} $$
+> $$ [\text{A}] = 0.099\,\mathrm{M}    \qquad    [\text{B}] = [\text{C}] = 1.0\times10^{-3}\,\mathrm{M} $$
 > 
 > **How good was it, really?** Solving the full quadratic gives
-> $x = 9.95e-4$ against our 1.0e-3 — an error of about
+> $x = 9.95\times10^{-4}$ against our 1.0 &times; 10&minus;3 — an error of about
 > 0.5%, far smaller than the precision of the data. The shortcut cost
 > nothing.
 > 
@@ -627,7 +627,7 @@ simplify it.
 
 > ✏️ **YOUR TURN 10 — four questions**
 >
-> 1. For A ⇌ B + C with $K = 4.0e-6$ and
+> 1. For A ⇌ B + C with $K = 4.0\times10^{-6}$ and
 >    $[\text{A}]_{0} = 1.00\,\mathrm{M}$, find $x$ using the
 >    approximation.
 >    *(working space)*
@@ -638,7 +638,7 @@ simplify it.
 > 4. Why is the approximation safe when $K$ is very small?
 >    *(working space)*
 > 
-> > **check:** (a) $x = 2.0e-3$     (b) 0.20% — valid     (c)
+> > **check:** (a) $x = 2.0\times10^{-3}$     (b) 0.20% — valid     (c)
 > solve the quadratic     (d) barely any reactant is consumed
 
 ## Ladder 11 • Le Ch\^atelier:

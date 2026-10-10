@@ -11,8 +11,7 @@ Zumdahl §18.4 • reason from distance to equilibrium, not from Le Chatelier
 >
 > **CED 9.10 is reasoning, not calculation** — the Nernst
 > equation is not required. Standard conditions are $Q = 1$; at equilibrium
-> $Q = K$ and $E = 0$. $E^\circ$ (V): Ag+/Ag $+0.80$ •\
-> Cu²⁺/Cu $+0.34$ • Zn²⁺/Zn $-0.76$.
+> $Q = K$ and $E = 0$. $E^\circ$ (V): Ag+/Ag $+0.80$ • Cu²⁺/Cu $+0.34$ • Zn²⁺/Zn $-0.76$.
 
 **1.** State the central principle of this block in one sentence, then
 give the two consequences.

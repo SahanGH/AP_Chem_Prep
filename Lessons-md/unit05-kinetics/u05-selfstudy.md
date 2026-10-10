@@ -158,14 +158,14 @@ they depend on the overall order.
 > 2. Units of $k$ for a second-order reaction: 
 >    *(working space)*
 > 3. A reaction has rate $= k[\text{A}][\text{B}]$ with rate
->    6.0e-4 M/s when both are
+>    6.0 &times; 10&minus;4 M/s when both are
 >    0.20 M. Find $k$.
 >    *(working space)*
 > 4. Why do the units of $k$ differ between orders?
 >    *(working space)*
 > 
 > > **check:** (a) /s     (b) /M/s    
-> (c) 1.5e-2 /M/s     (d) they must make the
+> (c) 1.5 &times; 10&minus;2 /M/s     (d) they must make the
 > equation dimensionally consistent
 
 ## Ladder 4 • Integrated rate laws: which plot is straight?
@@ -242,7 +242,7 @@ concentration. Every half-life removes half of whatever remains.
 
 > ✏️ **YOUR TURN 5 — four questions**
 >
-> 1. Half-life when $k = 2.5e-4\,\mathrm{/s}$:
+> 1. Half-life when $k = 2.5\times10^{-4}\,\mathrm{/s}$:
 >    *(working space)*
 > 2. Fraction remaining after four half-lives: 
 >    *(working space)*
@@ -253,7 +253,7 @@ concentration. Every half-life removes half of whatever remains.
 >    concentration? Explain.
 >    *(working space)*
 > 
-> > **check:** (a) 2.8e3 s     (b) $1/16$    
+> > **check:** (a) 2.8 &times; 103 s     (b) $1/16$    
 > (c) 0.0375 M     (d) no — $t_{1/2} = 0.693/k$ only
 
 ## Ladder 6 • Elementary reactions

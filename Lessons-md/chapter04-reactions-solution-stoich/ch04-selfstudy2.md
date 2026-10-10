@@ -145,7 +145,7 @@ chosen to coincide).
 > 
 > **Moles of acid, from the balance:**
 > 
-> $$ \frac{0.6745}{204.22} = 3.303e-3\,\mathrm{mol}~\text{KHP} $$
+> $$ \frac{0.6745}{204.22} = 3.303\times10^{-3}\,\mathrm{mol}~\text{KHP} $$
 > 
 > **At the endpoint, moles of NaOH delivered $=$ moles of KHP**
 > (1:1, one acidic H):

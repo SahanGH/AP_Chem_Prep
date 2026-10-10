@@ -187,11 +187,7 @@ water's $\Delta H_{\text{vap}}$ changes with altitude
 
 > 📌 **Water data**
 >
-> $c_{\text{ice}} = 2.09$ • $c_{\text{water}} = 4.184$ •\
-> $c_{\text{steam}} = 2.0$ J/g/°C •\
-> $\Delta H_{\text{fus}} = 6.02\,\mathrm{kJ/mol}$ •\
-> $\Delta H_{\text{vap}} = 40.7\,\mathrm{kJ/mol}$ •\
-> $M = 18.02\,\mathrm{g/mol}$
+> $c_{\text{ice}} = 2.09$ • $c_{\text{water}} = 4.184$ • $c_{\text{steam}} = 2.0$ J/g/°C • $\Delta H_{\text{fus}} = 6.02\,\mathrm{kJ/mol}$ • $\Delta H_{\text{vap}} = 40.7\,\mathrm{kJ/mol}$ • $M = 18.02\,\mathrm{g/mol}$
 
 ### Free-response 1 • short • 4 points
 

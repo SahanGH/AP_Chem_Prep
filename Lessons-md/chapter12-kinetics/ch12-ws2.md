@@ -50,7 +50,7 @@ falling to 0.0500 M at 100 s and
 
 1. What order is the reaction, and how do the data show it?
    
-2. Calculate $k$. 6.93e-3 /s
+2. Calculate $k$. 6.93 &times; 10&minus;3 /s
 3. A student estimates $[\text{N₂O₅}]$ at 150 s by averaging
    0.0500 and 0.0250 to get 0.0375 M. Explain why this is
    wrong and compute the correct value.

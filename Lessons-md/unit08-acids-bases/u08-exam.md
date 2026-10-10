@@ -264,9 +264,7 @@ PbI₂
 
 > 📌 **Data**
 >
-> $K_a$: HOCl $3.5\times10^{-8}$ (p$K_a$ 7.46) •\
-> HC₂H₃O₂ $1.8\times10^{-5}$ (p$K_a$ 4.74) •\
-> $K_b(\text{NH₃}) = 1.8\times10^{-5}$. $K_w = 1.0\times10^{-14}$.   
+> $K_a$: HOCl $3.5\times10^{-8}$ (p$K_a$ 7.46) • HC₂H₃O₂ $1.8\times10^{-5}$ (p$K_a$ 4.74) • $K_b(\text{NH₃}) = 1.8\times10^{-5}$. $K_w = 1.0\times10^{-14}$.   
 > 
 > Indicator ranges: methyl red 4.4–6.2 • bromthymol blue
 > 6.0–7.6 • phenolphthalein 8.2–10.0.

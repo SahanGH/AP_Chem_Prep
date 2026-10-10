@@ -187,9 +187,9 @@ the energy of the incident photons
 
 ### Free-response 1 • short • 4 points
 
-A certain metal has a threshold frequency of 8.5e14 /s.
-Constants: $c = 3.00e8\,\mathrm{m/s}$,
-$h = 6.626e-34\,\mathrm{J\cdot s}$.
+A certain metal has a threshold frequency of 8.5 &times; 1014 /s.
+Constants: $c = 3.00\times10^{8}\,\mathrm{m/s}$,
+$h = 6.626\times10^{-34}\,\mathrm{J\cdot s}$.
 
 Calculate the minimum photon energy required to eject an electron
         from this metal. 

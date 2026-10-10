@@ -45,8 +45,8 @@ Silver chromate, Ag₂CrO₄, has $K_{sp} = 1.1\times10^{-12}$ at
 
 ### Free-response 2 • long • 10 points
 
-Equal volumes of 2.0e-3 M AgNO₃ and
-2.0e-3 M Na₂CrO₄ are mixed.
+Equal volumes of 2.0 &times; 10&minus;3 M AgNO₃ and
+2.0 &times; 10&minus;3 M Na₂CrO₄ are mixed.
 
 1. State the concentration of each ion immediately after mixing,
    before any reaction.
@@ -65,7 +65,7 @@ Equal volumes of 2.0e-3 M AgNO₃ and
 ### Free-response 3 • short • 4 points
 
 The molar solubility of BaSO₄ in water at 25 °C is
-measured as 1.05e-5 M.
+measured as 1.05 &times; 10&minus;5 M.
 
 1. Calculate $K_{sp}$. 
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

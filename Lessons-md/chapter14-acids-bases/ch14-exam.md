@@ -183,8 +183,7 @@ HClO₄
 > 📌 **Data**
 >
 > $K_a$: HF $7.2\times10^{-4}$ • HC₂H₃O₂
-> $1.8\times10^{-5}$ • HOCl $3.5\times10^{-8}$ •\
-> HCN $6.2\times10^{-10}$. $K_b$: NH₃ $1.8\times10^{-5}$.
+> $1.8\times10^{-5}$ • HOCl $3.5\times10^{-8}$ • HCN $6.2\times10^{-10}$. $K_b$: NH₃ $1.8\times10^{-5}$.
 > $K_w = 1.0\times10^{-14}$.
 
 ### Free-response 1 • short • 4 points

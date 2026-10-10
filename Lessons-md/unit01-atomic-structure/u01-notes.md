@@ -58,7 +58,7 @@ CaCO₃:     $M = 40.08 + 12.01 + 3(16.00) =$
 >
 > How many oxygen *atoms* are in 10.0 g of CaCO₃?
 > 
-> $$ \begin{align*}   n &= \frac{10.0\,\mathrm{g}}{100.09\,\mathrm{g/mol}}      = 9.99e-2\,\mathrm{mol}\ \text{CaCO₃}\\   N &= (9.99\times10^{-2})(6.022\times10^{23})      = 6.02\times10^{22}\ \text{formula units}\\   N_{\text{O}} &= 3 \times 6.02\times10^{22} = 1.80\times10^{23}\ \text{O atoms} \end{align*} $$
+> $$ \begin{align*}   n &= \frac{10.0\,\mathrm{g}}{100.09\,\mathrm{g/mol}}      = 9.99\times10^{-2}\,\mathrm{mol}\ \text{CaCO₃}\\   N &= (9.99\times10^{-2})(6.022\times10^{23})      = 6.02\times10^{22}\ \text{formula units}\\   N_{\text{O}} &= 3 \times 6.02\times10^{22} = 1.80\times10^{23}\ \text{O atoms} \end{align*} $$
 
 #### GUIDED PRACTICE • Mole conversions — you drive 15 min
 

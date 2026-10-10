@@ -276,9 +276,26 @@ def expand_units(spec: str) -> str:
     return out
 
 
+_ENOTATION = re.compile(r"^\s*([+-]?[\d.]+)\s*[eE]\s*([+-]?\d+)\s*$")
+
+
+def format_num(val: str, in_math: bool) -> str:
+    r"""siunitx typesets "2.16e4" as 2.16 x 10^4; passing it through raw
+    published the literal "2.16e4" on every rate constant and concentration
+    in the kinetics pages."""
+    m = _ENOTATION.match(val)
+    if not m:
+        return val
+    mant, exp = m.group(1), str(int(m.group(2)))
+    if in_math:
+        return rf"{mant}\times10^{{{exp}}}"
+    return f"{mant}&thinsp;&times;&thinsp;10<sup>{exp.replace('-', '&minus;')}</sup>"
+
+
 def convert_si(src: str, in_math: bool) -> str:
     def si(opts, reqs):
         val, spec = reqs
+        val = format_num(val, in_math)
         u = expand_units(spec)
         if in_math:
             um = (u.replace("&deg;", r"{}^\circ ").replace("&micro;", r"\mu ")
@@ -298,7 +315,7 @@ def convert_si(src: str, in_math: bool) -> str:
 
     src = sub_command(src, "SI", 1, 2, si)
     src = sub_command(src, "si", 0, 1, si1)
-    src = sub_command(src, "num", 0, 1, lambda o, r: r[0])
+    src = sub_command(src, "num", 0, 1, lambda o, r: format_num(r[0], in_math))
     return src
 
 
@@ -782,6 +799,10 @@ def convert_body(body: str, meta: dict, fig_names, log, restore=True, kind=""):
     ]
     for a, b in simple:
         body = body.replace(a, b)
+    # A control space at a line end ("\textbullet\" + newline) is a backslash
+    # then a newline, which "\ " above never matches -- it published as a
+    # stray "\" in every \examsection header. Lookbehind spares "\\".
+    body = re.sub(r"(?<!\\)\\\n[ \t]*", " ", body)
     body = body.replace("---", "\u2014").replace("--", "\u2013")
     body = re.sub(r"``(.*?)''", "\u201c\\1\u201d", body, flags=re.S)
     body = body.replace("``", "\u201c").replace("''", "\u201d")

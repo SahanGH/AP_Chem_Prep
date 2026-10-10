@@ -190,14 +190,9 @@ $+854$ kJ
 
 > 📌 **Data**
 >
-> $c$(water) $= 4.18\,\mathrm{J/g/{}^\circ C}$ •\
-> $\Delta H_{\text{fus}} = 6.02\,\mathrm{kJ/mol}$ •\
-> $\Delta H_{\text{vap}} = 40.7\,\mathrm{kJ/mol}$ •\
-> $M(\text{H₂O}) = 18.02\,\mathrm{g/mol}$.   
+> $c$(water) $= 4.18\,\mathrm{J/g/{}^\circ C}$ • $\Delta H_{\text{fus}} = 6.02\,\mathrm{kJ/mol}$ • $\Delta H_{\text{vap}} = 40.7\,\mathrm{kJ/mol}$ • $M(\text{H₂O}) = 18.02\,\mathrm{g/mol}$.   
 > 
-> $\Delta H_f^\circ$ (kJ/mol): CO₂(g) $-393.5$ •\
-> H₂O(l) $-286$ • CH₄(g) $-75$ •\
-> O₂(g) $0$.
+> $\Delta H_f^\circ$ (kJ/mol): CO₂(g) $-393.5$ • H₂O(l) $-286$ • CH₄(g) $-75$ • O₂(g) $0$.
 
 ### Free-response 1 • short • 4 points
 

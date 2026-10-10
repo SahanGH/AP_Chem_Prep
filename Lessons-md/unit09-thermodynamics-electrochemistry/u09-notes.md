@@ -787,8 +787,7 @@ more positive $E^\circ$ is the one reduced.
 #### GUIDED PRACTICE • Building cells from the table 15 min
 
 $E^\circ$ (V): Ag+/Ag $+0.80$ • Cu²⁺/Cu
-$+0.34$ • Pb²⁺/Pb $-0.13$ •\
-Ni²⁺/Ni $-0.23$ • Fe²⁺/Fe $-0.44$
+$+0.34$ • Pb²⁺/Pb $-0.13$ • Ni²⁺/Ni $-0.23$ • Fe²⁺/Fe $-0.44$
 • Zn²⁺/Zn $-0.76$ • Mg²⁺/Mg
 $-2.37$
 

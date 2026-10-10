@@ -10,10 +10,8 @@ Zumdahl §17.1–17.2 • count moles of gas before you do anything else
 > 📌 **Directions & data**
 >
 > Write **thermodynamically favored**, not “spontaneous.”
-> $S^\circ$ in J/K/mol: H₂ 131 •\
-> O₂ 205 • N₂ 192 • H₂O(l) 70
-> • H₂O(g) 189 • CO₂ 214 •\
-> CO 198 • C(gr) 6 • NH₃ 193.
+> $S^\circ$ in J/K/mol: H₂ 131 • O₂ 205 • N₂ 192 • H₂O(l) 70
+> • H₂O(g) 189 • CO₂ 214 • CO 198 • C(gr) 6 • NH₃ 193.
 
 **1.** Entropy measures dispersal. Name the two things that disperse,
 and give an example of each.

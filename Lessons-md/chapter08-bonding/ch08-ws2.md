@@ -11,10 +11,8 @@ Zumdahl §8.8 • broken minus formed — the reverse of the formation equation
 >
 > Bond energies (kJ/mol) for all problems:
 > H-H 432 • F-F 154 • Cl-Cl 239
-> • Br-Br 193 • H-F 565 •\
-> H-Cl 427 • H-Br 363 • N#N 941
-> • N-H 391 • O=O 495 •\
-> O-H 467 • C-H 413 • C-C 347
+> • Br-Br 193 • H-F 565 • H-Cl 427 • H-Br 363 • N#N 941
+> • N-H 391 • O=O 495 • O-H 467 • C-H 413 • C-C 347
 > • C=C 614 • C#C 839.
 
 **1.** Bond order, length, and energy:

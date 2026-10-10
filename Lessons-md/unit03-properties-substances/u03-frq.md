@@ -74,7 +74,7 @@ collection tube is 745 torr.
 
 A coloured solution has an absorbance of 0.435 in a
 1.00 cm cell. The molar absorptivity of the absorbing
-species is 1.25e3  /M/cm.
+species is 1.25 &times; 103  /M/cm.
 
 1. Calculate the concentration. 
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

@@ -40,7 +40,7 @@ CCl₄ does not.
 2. Mass of KMnO₄ ($M = 158.03$) in 250. mL of
    0.0200 M: 0.790 g
 3. Moles in 40.0 mL of 0.125 M:
-   5.00e-3 mol
+   5.00 &times; 10&minus;3 mol
 4. Volume of 0.250 M containing 0.0500 mol:
    200. mL
 

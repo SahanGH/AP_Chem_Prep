@@ -296,7 +296,7 @@ $\Delta G^\circ$ must be in **joules** to match $R$.
 > 4. Why must $\Delta G^\circ$ be converted to joules?
 >    *(working space)*
 > 
-> > **check:** (a) 2.4e-3     (b) greater than 1     (c) 1    
+> > **check:** (a) 2.4 &times; 10&minus;3     (b) greater than 1     (c) 1    
 > (d) to match $R$ in J/mol/K
 
 ## Ladder 7 • Free energy of dissolution
@@ -448,7 +448,7 @@ $E^\circ$ is *intensive* — never multiply it.
 > For the iron–copper cell above ($E^\circ = +0.78$ V, $n = 2$), find
 > $\Delta G^\circ$.
 > 
-> $$ \Delta G^\circ = -nFE^\circ = -(2)(96485)(0.78)    = -1.5e5~\text{J} = \mathbf{-151~kJ} $$
+> $$ \Delta G^\circ = -nFE^\circ = -(2)(96485)(0.78)    = -1.5\times10^{5}~\text{J} = \mathbf{-151~kJ} $$
 > 
 > Negative, as it must be for a cell that delivers current on its own.
 > 
