@@ -24,7 +24,10 @@ that already exists.
 | Name and address | **ChemStudy**, at **chem-study.com** (hosted on the existing SiteGround GrowBig plan). "AP® Chemistry" appears in the tagline, never as the brand. |
 | Look and feel | Calm, book-like: warm paper, serif headings, one muted color per unit. Home page quiet; lesson pages carry slightly more color. |
 | Technology | Astro static site. |
-| License | Creative Commons BY-NC-SA 4.0, as the repository already uses. |
+| License | Creative Commons BY-NC-SA 4.0, the same license as AP_Chem_Prep. |
+| Repository | A **new repository**, `chem-study`, separate from AP_Chem_Prep, in the local folder `Downloads\Chemistry_Resources\chem-study`. |
+| LaTeX | None. ChemStudy contains no LaTeX documents and needs no LaTeX software to build. Equations are typed in standard math notation, which the web renderer reads. |
+| Existing practice | **Converted once** into ChemStudy's own format, checked, and from then on edited only in ChemStudy. No ongoing import. AP_Chem_Prep stays as it is for printed class packets; the two diverge. |
 
 ## 3. Stages
 
@@ -33,9 +36,10 @@ Each stage ends with something live.
 1. **Foundation and brand.** Brand kit, site skeleton, Unit 5 (Kinetics)
    complete end to end, automatic build and deploy. The old site stays up
    at the old address.
-2. **Practice layer.** Import worksheets, self-study ladders, exams and
-   comprehensive tests for all 9 units; chapter material as extra
-   practice; periodic table and equation sheet; old address redirects.
+2. **Practice layer.** Convert worksheets, self-study ladders, exams and
+   comprehensive tests for all 9 units into ChemStudy (once); chapter
+   material as extra practice; periodic table and equation sheet; old
+   address redirects.
 3. **Theory, unit by unit.** Lessons for the remaining 8 units, each unit
    published when it is ready.
 4. **Later features.** Accounts, timed mock exams, flashcards, a teacher
@@ -122,13 +126,22 @@ comprehensive tests already do.
 
 ## 7. Architecture
 
-**Location.** A new `site/` folder in this repository. LaTeX sources,
-`build.ps1` and the existing `Lessons/` output are untouched in Stage 1.
+**Location.** Its own repository, `SahanGH/chem-study`, cloned to
+`Downloads\Chemistry_Resources\chem-study`. The site is the repository
+root. It builds on its own: no LaTeX, and no access to AP_Chem_Prep.
+AP_Chem_Prep is not changed by this project.
+
+The parent folder `Chemistry_Resources` also holds copyrighted textbooks,
+slides and `Tro_Reference\` (chapter-by-chapter text of two Tro
+textbooks, kept for fact-checking). All of it sits **beside** the
+repository, never inside it; a CI step refuses any PDF or slide deck
+committed by mistake. Reference books are for checking facts — lesson
+wording is always original.
 
 **Framework.** Astro, static output, TypeScript.
 
 **Content.** Lessons are MDX files, one per topic, in
-`site/src/content/lessons/unit-N/`. A schema validates each file's
+`src/content/lessons/unit-N/`. A schema validates each file's
 header: unit, topic code, title, reading time, summary. An invalid or
 missing header fails the build. Units are described in one data file
 (number, title, slug, color, topic order) that the home page, unit
@@ -165,12 +178,23 @@ storage. Pages use only that interface, so an account-backed version can
 replace the storage later. If storage is unavailable the site works
 without progress and says nothing about it.
 
-**Practice import (Stage 1: Unit 5 only).** `tools/tex2html.py` gains an
-output mode that writes each practice document as a content fragment
-plus metadata into `site/src/content/practice/`, instead of a finished
-page. The new site supplies layout, styling and math rendering. PDFs
-still come from the same LaTeX, so paper and web stay in step. TikZ
-figures are rendered on the build machine and committed, as now.
+**Practice (Stage 1: Unit 5 only).** Practice documents are MDX files in
+`src/content/practice/unit-N/`, built from the same kind of components
+as lessons: `Question` (prompt, points, topic), `Answer` (the worked
+solution behind "Show explanation") and `Figure`.
+
+The existing material gets there by a **one-time conversion**. The
+converter in AP_Chem_Prep (`tools/tex2html.py`) is given an export mode
+that writes each Unit 5 practice document as MDX, with its figures as
+image files, into a folder outside both repositories. Each converted
+document is then checked against its PDF — every question present, every
+answer present, every equation rendering — before it is committed to
+`chem-study`. After that the MDX is the master copy: corrections are
+made in ChemStudy, and AP_Chem_Prep is not consulted again. The export
+mode is a migration tool, not part of ChemStudy.
+
+Printable copies come from the site's own print layout; ChemStudy does
+not link to the LaTeX PDFs.
 
 **Styling.** Plain CSS with design tokens as custom properties; fluid
 type and spacing with `clamp()`; layout by grid and container queries.
@@ -192,19 +216,24 @@ diagrams need JavaScript.
   lesson and a practice page at phone and desktop widths, exercise a
   Check question and an interactive diagram by keyboard, and run an
   accessibility scan (axe). Target: WCAG 2.1 AA.
-- **Existing checks** (`tools/ci_check.py`) continue to guard the LaTeX.
+- **Converted practice.** Each converted document is compared with its
+  PDF before commit (question count, answer count, point totals), and a
+  build check fails on any math that does not render.
 
 ## 9. Build and deploy
 
-Extends the pipeline in `.github/workflows/deploy.yml` (PR #1):
+`chem-study` gets its own pipeline, set up the way AP_Chem_Prep and
+gbv-signups are: a `Test and deploy` workflow, a main-only `production`
+environment holding the SSH secrets, its own deploy key, and a `Protect
+main` ruleset (pull request required, checks required, no force-push or
+deletion, no bypass).
 
 - A pull request installs dependencies, builds the site and runs the
   unit and browser tests. This check is required to merge.
-- A push to `main` builds and deploys `site/dist/` to the chem-study.com
-  document root over SSH, from the main-only `production` environment,
-  then verifies by checksum over SSH and flushes the cache.
-- Until Stage 2, the old site keeps deploying to its old address from
-  `Lessons/` as it does now.
+- A push to `main` builds and deploys `dist/` to the chem-study.com
+  document root over SSH, then verifies by checksum over SSH and flushes
+  the cache.
+- The old site at its old address is not touched until Stage 2.
 - Changes are previewed on the build machine (`npm run dev`) before a
   pull request is opened.
 
@@ -231,12 +260,13 @@ was not involved in and does not endorse the site.
 
 ## 12. Outside Stage 1
 
-Importing Units 1–4 and 6–9 practice, the periodic table and equation
+Converting Units 1–4 and 6–9 practice, the periodic table and equation
 sheet, redirecting the old address, lessons for the other 8 units,
 accounts, mock exams, flashcards and the teacher area.
 
 ## 13. Depends on
 
 - chem-study.com registered and added as a site on the GrowBig plan.
-- PR #1 (CI/CD) merged, which needs the CI deploy key imported in Site
-  Tools.
+- A deploy key for `chem-study` imported in SiteGround Site Tools.
+- This document moves into `chem-study` (`docs/`) when that repository
+  is created.
