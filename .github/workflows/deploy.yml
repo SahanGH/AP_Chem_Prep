@@ -83,6 +83,7 @@ jobs:
           sudo apt-get install -y -qq --no-install-recommends \
             texlive-latex-base texlive-latex-recommended texlive-latex-extra \
             texlive-pictures texlive-science texlive-fonts-recommended \
+            texlive-plain-generic \
             lmodern poppler-utils > /dev/null
 
       - name: Compile changed sources in all four variants
