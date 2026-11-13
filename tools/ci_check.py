@@ -193,9 +193,9 @@ def normalise(text: str, suffix: str) -> str:
         text = re.sub(r"<figure>.*?</figure>", "", text, flags=re.S)
         text = re.sub(r'<p class="figure-missing">.*?</p>', "", text, flags=re.S)
     else:
-        text = re.sub(r"^!\[[^\]]*\]\([^)]*\)\s*$", "", text, flags=re.M)
-        text = re.sub(r"^\[figure \u2014 see the PDF edition\]\s*$", "", text,
-                      flags=re.M)
+        # Anywhere on the line: a figure inside a box comes out as "> ![..]".
+        text = re.sub(r"!\[[^\]]*\]\([^)]*\.png\)", "", text)
+        text = text.replace("[figure \u2014 see the PDF edition]", "")
     return text
 
 
