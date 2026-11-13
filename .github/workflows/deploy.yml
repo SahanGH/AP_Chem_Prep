@@ -1,0 +1,190 @@
+name: Test and deploy
+
+# Every push to main is checked and then deployed to SiteGround only if the
+# checks pass. Pull requests into main get the same checks without the
+# deploy. Setup, secrets and recovery steps: docs/DEPLOY.md.
+#
+# The site is NOT rebuilt here: tex2html.py renders figures with MiKTeX's
+# Ghostscript, which exists only on the build machine. Lessons/ is generated
+# locally and committed; the site check proves the committed copy is current.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  checks:
+    name: Source and site checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.14'
+
+      # The copyrighted textbook is excluded locally (.git/info/exclude),
+      # which a fresh clone does not have -- so refuse it outright here.
+      - name: Refuse personal and copyrighted files
+        run: |
+          bad=$(git ls-files | grep -E '^(Textbook/|\.claude/|CLAUDE\.md$|tools/extract_textbook\.py$|tools/sync_onedrive\.ps1$|tools/deploy\.config\.ps1$)' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::These must never be in the public repo:"
+            echo "$bad"
+            exit 1
+          fi
+
+      - name: Check the LaTeX sources
+        run: python tools/ci_check.py sources
+
+      - name: Regenerate the site and compare with the committed pages
+        run: python tools/ci_check.py site
+
+  latex:
+    name: LaTeX build (changed files)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Find the base commit
+        id: base
+        env:
+          EVENT: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT" = pull_request ]; then base="$PR_BASE"; else base="$BEFORE"; fi
+          # A new branch or a force-push has no usable "before": build HEAD's own changes.
+          if ! git cat-file -e "$base^{commit}" 2>/dev/null; then base="HEAD~1"; fi
+          echo "ref=$base" >> "$GITHUB_OUTPUT"
+          n=$(git diff --name-only "$base" HEAD | grep -cE '^(Units|Chapters|shared|tools/smoke)/' || true)
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+
+      - name: Install TeX Live
+        if: steps.base.outputs.count != '0'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            texlive-latex-base texlive-latex-recommended texlive-latex-extra \
+            texlive-pictures texlive-science texlive-fonts-recommended \
+            lmodern poppler-utils > /dev/null
+
+      - name: Compile changed sources in all four variants
+        if: steps.base.outputs.count != '0'
+        run: bash tools/ci_build.sh "${{ steps.base.outputs.ref }}"
+
+  deploy:
+    name: Deploy to SiteGround
+    needs: [checks, latex]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    # The deploy secrets live in this environment, which only main may use,
+    # so a pull request -- including one from a fork of this public repo --
+    # can never read the SSH key.
+    environment: production
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    env:
+      SG_HOST: ${{ secrets.SG_HOST }}
+      SG_USER: ${{ secrets.SG_USER }}
+      SG_PATH: ${{ secrets.SG_PATH }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check the deploy settings
+        env:
+          SG_SSH_KEY: ${{ secrets.SG_SSH_KEY }}
+          SG_KNOWN_HOSTS: ${{ secrets.SG_KNOWN_HOSTS }}
+        run: |
+          missing=""
+          for name in SG_HOST SG_USER SG_PATH SG_SSH_KEY SG_KNOWN_HOSTS; do
+            [ -n "${!name}" ] || missing="$missing $name"
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::Missing secrets in the production environment:$missing. See docs/DEPLOY.md."
+            exit 1
+          fi
+          # Plain names and paths only: they go into ssh and tar unquoted.
+          [[ "$SG_HOST" =~ ^[A-Za-z0-9.-]+$ ]] || { echo "::error::SG_HOST must be a bare hostname."; exit 1; }
+          [[ "$SG_USER" =~ ^[A-Za-z0-9._-]+$ ]] || { echo "::error::SG_USER must be the SSH username alone."; exit 1; }
+          if [[ ! "$SG_PATH" =~ ^/[A-Za-z0-9._/-]+$ || "$SG_PATH" =~ (^|/)\.\.(/|$) ]]; then
+            echo "::error::SG_PATH must be an absolute path without '..'."
+            exit 1
+          fi
+
+      - name: Set up SSH
+        env:
+          SG_SSH_KEY: ${{ secrets.SG_SSH_KEY }}
+          SG_KNOWN_HOSTS: ${{ secrets.SG_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SG_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # The server's host key, pinned: a host answering with a different
+          # key fails the connection instead of being trusted.
+          printf '%s\n' "$SG_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          cat > ~/.ssh/config <<EOF
+          Host siteground
+            HostName $SG_HOST
+            User $SG_USER
+            Port 18765
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+            StrictHostKeyChecking yes
+            BatchMode yes
+          EOF
+
+      # Refuses to unpack into a folder that is not already this site (a wrong
+      # SG_PATH), the same guard gbv-signups uses before its copy.
+      - name: Confirm the target is the lessons site
+        run: |
+          ssh siteground "test -f '$SG_PATH/index.html' && grep -q 'AP Chemistry' '$SG_PATH/index.html'" || {
+            echo "::error::$SG_PATH does not hold the AP Chemistry site -- check SG_PATH (docs/DEPLOY.md)."
+            exit 1
+          }
+
+      # Same as tools/deploy_site.ps1: the CONTENTS of Lessons/ into the
+      # document root, unpacked in place, the tarball removed so it is never
+      # served. conversion-report.txt is a build log, not part of the site.
+      - name: Upload and unpack the site
+        run: |
+          tar -czf site.tar.gz --exclude=conversion-report.txt -C Lessons .
+          scp -q site.tar.gz "siteground:$SG_PATH/.apchem-deploy.tar.gz"
+          ssh siteground "set -e; cd '$SG_PATH'; tar -xzf .apchem-deploy.tar.gz; rm -f .apchem-deploy.tar.gz"
+
+      # Checksums over SSH, never HTTP: hammering the site over HTTP trips
+      # SiteGround's bot protection (sgcaptcha) for the whole address.
+      - name: Verify the upload
+        run: |
+          for f in index.html style.css lessons.js; do
+            here=$(md5sum "Lessons/$f" | cut -d' ' -f1)
+            there=$(ssh siteground "md5sum '$SG_PATH/$f'" | cut -d' ' -f1)
+            if [ "$here" != "$there" ]; then
+              echo "::error::$f on the server does not match the commit ($here vs $there)."
+              exit 1
+            fi
+            echo "$f ok ($here)"
+          done
+
+      - name: Flush the SiteGround cache
+        run: ssh siteground "site-tools-client domain-all update id=2 flush_cache=1"
