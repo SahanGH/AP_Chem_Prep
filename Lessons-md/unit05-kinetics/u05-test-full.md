@@ -229,7 +229,7 @@ question, predict $[\text{N₂O₅}]$ at $t = 150\,\mathrm{s}$.
 A first-order reaction has $t_{1/2} = 20.0\,\mathrm{min}$.
 
 1. Find $k$. 
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   *(working space)*
 2. Find the time for the reaction to reach 75 %
    completion.
    *(working space)*
@@ -263,9 +263,9 @@ $\ln[\text{A}]$ vs. time is linear with slope
 $-2.97\times10^{-2}\,\mathrm{/min}$.
 
 1. State the rate law and $k$. 
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   *(working space)*
 2. Find the half-life. 
-   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   *(working space)*
 3. Find the time for $[\text{A}]$ to reach $2.50\times10^{-3}\,\mathrm{M}$.
    *(working space)*
 
@@ -330,12 +330,16 @@ $-4.00\times10^{-5}\,\mathrm{M/s}$.
 Find the half-life given $[\text{C₂H₅OH}]_0 = 1.25\times10^{-2}\,\mathrm{M}$.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Find the time for complete decomposition.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 ### Free-response 19 • long • 7 points
 
@@ -398,7 +402,7 @@ Given that the reaction is also first order in NO₂, write the
 
 ### Free-response 21 • short • 4 points
 
-For $\text{A} -> 2\text{B} + \text{C}$, the same data are plotted three ways:
+For A → 2B + C, the same data are plotted three ways:
 $[\text{A}]$ vs. time, $\ln[\text{A}]$ vs. time, and $1/[\text{A}]$ vs. time.
 Only the $1/[\text{A}]$ panel is a straight line, running from about
 $(1\text{ s}, 20)$ to $(6\text{ s}, 70)$; the other two panels both curve.
@@ -425,7 +429,9 @@ Find $[\text{HI}]$ 25 min after the start, if
 Find the time for all 0.250 M HI to decompose.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 ### Free-response 23 • short • 4 points
 
@@ -467,7 +473,9 @@ $[\text{NOBr}]_0 = 0.900\,\mathrm{M}$.
 
 Find $k$. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Find the time for $[\text{NOBr}]$ to reach 0.100 M.
         
@@ -492,7 +500,9 @@ Find $k$.
 
 Find the half-life for this experiment. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Find $[\text{A}]$ after 13.0 s. 
 
@@ -514,9 +524,9 @@ Find $[\text{C}]$ after 13.0 s.
 2NO₂(g) + F₂(g) → 2NO₂F(g) has experimental rate law
 Rate $=k[\text{NO₂}][\text{F₂}]$. A proposed mechanism:
 
-NO₂ + F₂ → [ M₃₈₃ , slow] NO₂F + F  
+NO₂ + F₂ → [ M₃₈₂ , slow] NO₂F + F  
 
-F + NO₂ → [ M₃₈₄ , fast] NO₂F
+F + NO₂ → [ M₃₈₃ , fast] NO₂F
 
 Is this mechanism acceptable? Justify against *both* requirements a
 mechanism must satisfy.
@@ -528,11 +538,11 @@ mechanism must satisfy.
 Cl₂(g) + CHCl₃(g) → HCl(g) + CCl₄(g) has experimental rate law
 Rate $=k[\text{Cl₂}]^{1/2}[\text{CHCl₃}]$. A proposed mechanism:
 
-Cl₂ ⇌ [ M₃₈₈ ][ M₃₈₉ ] 2Cl    (fast equilibrium)  
+Cl₂ ⇌ [ M₃₈₇ ][ M₃₈₈ ] 2Cl    (fast equilibrium)  
 
-Cl + CHCl₃ → [ M₃₉₀ , slow] HCl + CCl₃  
+Cl + CHCl₃ → [ M₃₈₉ , slow] HCl + CCl₃  
 
-CCl₃ + Cl → [ M₃₉₁ , fast] CCl₄
+CCl₃ + Cl → [ M₃₉₀ , fast] CCl₄
 
 Show that this mechanism predicts the observed rate law.
 
@@ -570,7 +580,9 @@ C₄H₉OH₂⁺ + H₂O → [fast] C₄H₉OH + H₃O⁺
 Write the rate law implied by this mechanism.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Write the overall balanced equation. 
 
@@ -580,7 +592,9 @@ Write the overall balanced equation.
 
 Identify the intermediates. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 ### Free-response 32 • short • 4 points
 
@@ -601,9 +615,9 @@ equation.
 Recall from Part A that 2NO(g) + Cl₂(g) → 2NOCl(g) has rate law
 Rate $=k[\text{NO}]^2[\text{Cl₂}]$. A proposed mechanism:
 
-NO + Cl₂ → [ M₃₉₅ ] NOCl₂  
+NO + Cl₂ → [ M₃₉₄ ] NOCl₂  
 
-NOCl₂ + NO → [ M₃₉₆ ] 2NOCl
+NOCl₂ + NO → [ M₃₉₅ ] 2NOCl
 
 (Neither step is labeled slow or fast in this proposal.) Is this
 mechanism consistent with the rate law above? If so, which step must be
@@ -703,7 +717,9 @@ s-1).
 
 Find $E_a$. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Find the frequency factor $A$. 
 
@@ -741,11 +757,15 @@ O₃ + O → 2O₂    (overall)
 
 Which species is a catalyst? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Which species is an intermediate? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 **[beyond CED]** $E_a\text{(uncatalyzed)} =         14.0\,\mathrm{kJ/mol}$; $E_a\text{(catalyzed)} =         11.9\,\mathrm{kJ/mol}$. Find the ratio
         $k_{\text{cat}}/k_{\text{uncat}}$ at 25 °C, assuming
@@ -758,7 +778,7 @@ Which species is an intermediate?
 ### Free-response 43 • short • 4 points
 
 Chlorine atoms, generated photochemically from Freon-12
-(CCl₂F₂ → [ M₅₀₆ ] CF₂Cl + Cl), also catalyze ozone destruction:
+(CCl₂F₂ → [ M₅₀₅ ] CF₂Cl + Cl), also catalyze ozone destruction:
 Cl + O₃ → ClO + O₂, $E_a = 2.1\,\mathrm{kJ/mol}$.
 
 Using your ratio from the previous question, which is the more effective
@@ -776,7 +796,9 @@ surfaces has the form Rate $=k[\text{NH₃}]/[\text{H₂}]$.
 
 Which surface is the better catalyst, and why? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 **[beyond CED]** How many times faster is the reaction on
         W than uncatalyzed, at 298 K, same $A$?
@@ -857,7 +879,9 @@ Find $k_2$.
 Find the half-life for the A experiment.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 ### Free-response 48 • long • 10 points
 
@@ -883,7 +907,9 @@ Determine the order with respect to each reactant.
 
 Write the overall rate law. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Find $k$ from each experiment, and an overall value.
         
@@ -898,11 +924,11 @@ Recall from Part A that
 BrO₃⁻ + 5 Br⁻ + 6 H⁺ → 3 Br₂ + 3 H₂O has the experimental rate
 law Rate $=k[\text{BrO₃⁻}][\text{Br⁻}][\text{H⁺}]^2$. A proposed mechanism:
 
-BrO₃⁻ + H⁺ ⇌ [ M₆₀₆ ][ M₆₀₇ ] HBrO₃    (fast equilibrium)  
+BrO₃⁻ + H⁺ ⇌ [ M₆₀₅ ][ M₆₀₆ ] HBrO₃    (fast equilibrium)  
 
-HBrO₃ + H⁺ ⇌ [ M₆₀₈ ][ M₆₀₉ ] H₂BrO₃⁺    (fast equilibrium)  
+HBrO₃ + H⁺ ⇌ [ M₆₀₇ ][ M₆₀₈ ] H₂BrO₃⁺    (fast equilibrium)  
 
-Br⁻ + H₂BrO₃⁺ → [ M₆₁₀ , slow] (BrOBrO₂) + H₂O  
+Br⁻ + H₂BrO₃⁺ → [ M₆₀₉ , slow] (BrOBrO₂) + H₂O  
 
 (BrOBrO₂) + 4H⁺ + 4Br⁻ → [fast] 3Br₂ + 3H₂O
 
@@ -915,11 +941,11 @@ the experimental one from Part A.
 
 CO(g) + Cl₂(g) → COCl₂(g) (phosgene). A proposed mechanism:
 
-Cl₂ ⇌ [ M₆₁₁ ][ M₆₁₂ ] 2Cl    (fast equilibrium)  
+Cl₂ ⇌ [ M₆₁₀ ][ M₆₁₁ ] 2Cl    (fast equilibrium)  
 
-Cl + CO ⇌ [ M₆₁₃ ][ M₆₁₄ ] COCl    (fast equilibrium)  
+Cl + CO ⇌ [ M₆₁₂ ][ M₆₁₃ ] COCl    (fast equilibrium)  
 
-COCl + Cl₂ → [ M₆₁₅ , slow] COCl₂ + Cl
+COCl + Cl₂ → [ M₆₁₄ , slow] COCl₂ + Cl
 
 Derive the rate law implied by this mechanism.
         
@@ -930,7 +956,9 @@ Derive the rate law implied by this mechanism.
 
 Identify the intermediates. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 ### Free-response 51 • short • 5 points
 
@@ -979,7 +1007,9 @@ Sketch a qualitative energy profile consistent with this
 
 Which reactant was limiting? 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 ### Free-response 53 • long • 10 points
 
@@ -1008,7 +1038,9 @@ $0.100$ (0), $0.0667$ (20.), $0.0500$ (40.), $0.0400$ (60.), $0.0333$
 Explain why $[\text{B}]_0 \gg [\text{A}]_0$ in both runs.
         
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
+
+        
 
 Determine the rate law and $k$. 
 
@@ -1119,7 +1151,7 @@ Determine $k_1$ and $k_2$.
 Suggest a reason the rate law has two terms, one independent of
         $[\text{H⁺}]$ and one proportional to it. 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+*(working space)*
 
 ---
 

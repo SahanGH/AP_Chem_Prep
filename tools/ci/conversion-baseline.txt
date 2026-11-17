@@ -1,0 +1,5 @@
+u01-notes.tex	?? unconverted: \text
+ch03-selfstudy.tex	?? check line with 1 parts but 0 workspace slots -- left non-interactive
+ch03-selfstudy2.tex	?? check line with 3 parts but 1 workspace slots -- left non-interactive
+ch14-selfstudy.tex	?? check line with 3 parts but 6 workspace slots -- left non-interactive
+ch14-selfstudy.tex	?? check line with 4 parts but 6 workspace slots -- left non-interactive
